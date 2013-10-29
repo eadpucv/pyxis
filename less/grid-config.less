@@ -1,0 +1,41 @@
+//****************************************************************** GRID CONFIG */
+//*-------------------------------------- Default configuration */
+@gridBaseContainer:	960px;		// Container Size
+@gridColumns:		24;			// Columns to workout
+@gridType:			pixels; 		// Unit type "pixels" or "percentages"
+@gridResponsive:	true;		// Responsive enable option "true" or "false"
+@gridGutter:		10px;			// Default distance between columns.
+@gridGutterInside:	false;		// Gutter as margin or padding, through options "true" or "false"
+@gridGutterMobile:	5%;			// Default distance between columns.
+@gridMarginBottom:	@gridGutter*2;	// Margin bottom between grids
+
+//*-------------------------------------- Class Utilization */
+@gridPrefix:			col-;
+@relativeLeftPrefix:	prefix-;
+@relativeRightPrefix:	suffix-;
+@absoluteLeftPrefix:	push-;
+@absoluteRightPrefix:	pull-;
+@gridPrefixSelector:	( ~"[class*='@{gridPrefix}']" );
+
+//*-------------------------------------- Responsive size support */
+@gridLargeContainer:	960px;	// Large Screens
+@gridTabletContainer:	720px;	// Tablet Screens (portrait)
+@gridMobileContainer:	100%;	// Mobile Screens (portrait)
+
+//*-------------------------------------- Responsive media conditions */
+@mediaLarge: 	( ~"only screen and ( min-width : 1360px )");
+@mediaTablet: 	( ~"only screen and ( min-width : 720px ) and ( max-width : 960px )");
+@mediaMobile: 	( ~"only screen and ( max-width : 720px )");
+
+
+@iphone-horizontal:				480;
+@iphone-vertical:				320;
+
+@iphone-retina-horizontal:		1136;
+@iphone-retina-vertical:		640;
+
+@ipad-horizontal:				1024;
+@ipad-vertical:					768;
+
+@ipad-retina-horizontal:		2048;
+@ipad-retina-vertical:			1536;
