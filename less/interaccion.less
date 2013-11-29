@@ -16,7 +16,7 @@ a.btn
         cursor: pointer;
         white-space: nowrap;
         font-size: @cuerpo *.9;
-        padding: @padding;
+        padding: @padding-sm;
         color: fade(@negro, 60);
         text-align: center;
         text-shadow: 1px 1px 0 fade(@blanco, 80%), -1px -1px 0 fade(@negro, 12%);
@@ -39,21 +39,21 @@ a.btn
                 font-size: @cuerpo * .65;
                 text-transform: uppercase;
                 font-weight: bold;
-                padding: @padding-chico;
+                padding: @padding-xs;
                 .border-radius(@radio/2);
         }
   
         &.grande{
                 font-weight: 300;
                 font-size: @cuerpo * 1.2;
-                padding: @padding-grande;
+                padding: @padding-md;
                 }
 
         &.gigante{
                 font-size: @cuerpo * 1.8;
                 letter-spacing: .05ex;
                 font-weight: 200;
-                padding: @padding-gigante;
+                padding: @padding-lg;
         }
 
         &.accion{
@@ -98,6 +98,7 @@ a.btn
 
 select,
 textarea,
+select,
 input[type='text'],
 input[type='password'],
 input[type='datetime'],
@@ -269,7 +270,7 @@ form{
         input[type=text], input[type=password]{
         display: inline-block;
         font-size: 25px;
-        padding: 4px 18px;
+        padding: @padding-md;
         margin:5px 0px;
         vertical-align: top;
         width: 60%;
@@ -278,3 +279,33 @@ form{
         }
 }
 
+.registro {
+    background-color: @pizarra;
+    color: @blanco;
+
+    input[type=text], input[type=password]{
+        display: inline-block;
+        padding: 6px 6px;
+        margin:0 6px 0 0;
+        vertical-align: top;
+        width: 40%;
+        float: right;
+        }
+
+    select{
+        display: inline-block;
+        padding: 6px 6px;
+        margin:0 6px 0 0;
+        vertical-align: top;
+        width: 40%;
+        float: right;
+    }
+
+    .pregunta{
+        color: @blanco;
+        font-size: @cuerpo * 1.6;
+        text-shadow: none;
+        background-color: red;
+    }
+
+}

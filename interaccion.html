@@ -83,24 +83,33 @@
 
     <div class='fila'>
         <div class='col-md-12'>
+        <code>div class='col-md-12'
+        form class='horizontal-lg'</code>
 
         <h4>Registrarse <span class='rojo chico'>Wiki - vertical</span></h4>
 
-                <form class='vertical-lg'>
+                <form class='vertical-lg registro'>
                 <h5>Nuevo Usuario</h5>           
-                    <label>Usuario</label>
+                    <label class='pregunta'>Usuario</label>
                     <input type='text' class='relleno' required />
-                    Elije un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.
+                    <p class='especificacion'>Elije un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</p>
 
-                    <label>Tipo</label>
-                    <input type='text' class='relleno' required />
+                    <label class='pregunta'>Tipo</label>
+                    <select>
+                        <option>Alumno(a)</option>
+                        <option>Profesora(a)</option>
+                        <option>Ex-Alumno(a)</option>
+                        <option>Amigo(a)</option>
+                        <option>Otro(a)</option>
+                    </select>
 
                     <label class="checkbox">
                     <input type="checkbox">
                         Acepto los <a href='#'>términos y condiciones</a>
                     </label>
 
-                    <input type='submit' class='accion grande izquierda' value='Crear nuevo usuario'>
+                    <input type='submit' class='btn grande' value='Crear nuevo usuario'>
+
 
                 </form>
             </div>
