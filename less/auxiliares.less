@@ -1,4 +1,4 @@
-// Estilos tipogr·ficos auxiliares
+// Estilos tipogr√°ficos auxiliares
 
 .gigante{
         font-size: 500%;
@@ -9,7 +9,11 @@
         font-size: 250%;
 }
 
-.chico,
+.grande2{
+    font-size: 190%;
+}
+
+.chico, 
 .chica{
         font-size: 80%;
 }
@@ -43,6 +47,7 @@
 .margen-inferior{margin-bottom: @cuadratin}
 .margen-inferior-negativo{margin-bottom: -@cuadratin}
 .interno{margin-left: 0} // para no acumular m·rgenes (@cuadratin) en columnas anidadas.
+
 .margen-vertical{.margen-superior; .margen-inferior}
 .centrada, .centrado{
         text-align: center;
@@ -102,13 +107,9 @@
 
 
 .caja{
-
 	display: block;
 	.border-radius(5px);
 	height: @cuadratin*2;
-
-        display: block;
-        .border-radius(5px);
 
 }
 
@@ -127,10 +128,13 @@
 }
 
 .ver{
-        background-color: rgba(0, 0, 0, 0.05);
-    border-radius: 3px 3px 3px 3px;
+    background-color: fade(@negro, 5);
+    .box-shadow(0 0 5px fade(@negro, 20));
     color: rgba(0, 0, 0, 0.3);
-    p{font-size: 10px}
+    p{
+        font-size: 10px;
+        padding: 10px;
+    }
 }
 
 
