@@ -126,26 +126,26 @@ input[type='color'],
 
 
 form{
-	
-	label{
-		color: @gris-oscuro;
-		font-weight: bold;
-		font-size: @cuerpo * .85;
-		text-shadow: -1px -1px 1px fade(@blanco, 60%);
-		
-		&.checkbox{
-			display: inline-block;
-			vertical-align: middle;
-			font-weight: 400;
-			
-			input[type=checkbox]{
-				display: inline-block;
-				padding: 4px;
-				margin: 0 1.2ex 0 -0.2ex;
-				vertical-align: top;
-			}
-		}
-	}
+    
+    label{
+        color: @gris-oscuro;
+        font-weight: bold;
+        font-size: @cuerpo * .85;
+        text-shadow: -1px -1px 1px fade(@blanco, 60%);
+        
+        &.checkbox{
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 400;
+            
+            input[type=checkbox]{
+                display: inline-block;
+                padding: 4px;
+                margin: 0 1.2ex 0 -0.2ex;
+                vertical-align: top;
+            }
+        }
+    }
     
     input[type='submit'],
     .btn{
@@ -164,20 +164,20 @@ form{
     }
 
 
-	input{
-		padding: 0px;
-		color: fade(@azul, 70%);
-		border: none;
-		.border-radius(4px);
-		.sombra;
+    input{
+        padding: 0px;
+        color: fade(@azul, 70%);
+        border: none;
+        .border-radius(4px);
+        .sombra;
 
-		&:focus{
-			.sombra-foco;
-		}
-	}
+        &:focus{
+            .sombra-foco;
+        }
+    }
 
-	.clearfix;
-	.margen-inferior;
+    .clearfix;
+    .margen-inferior;
 
     .relleno{
         background-color: @blanco;
@@ -258,7 +258,7 @@ form{
         }
 
         .control-usuario {
-            padding-top: @padding-md * 2;
+            padding-top: 20px;
             font-size: @cuerpo * 1.2;
             display: block;
             float: left;
@@ -283,7 +283,6 @@ form{
     background-color: @pizarra;
     color: @blanco;
 
-
     input[type=text], input[type=password]{
         display: inline-block;
         padding: 6px 6px;
@@ -300,9 +299,6 @@ form{
         vertical-align: top;
         width: 40%;
         float: right;
-        &:focus{
-            .sombra-foco;
-                }
     }
 
     .pregunta{
@@ -310,7 +306,6 @@ form{
         font-size: @cuerpo * 1.6;
         text-shadow: none;
         background-color: red;
-        margin-left: @cuadratin * 2;
     }
 
 }
