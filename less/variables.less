@@ -12,68 +12,12 @@
 
 //Importando tipografías a través de Font Face
 
-//@sans
-@font-face {
-        font-family: 'Source Sans Pro';
-        src: url('../fonts/SourceSansPro.eot');
-        src: url('../fonts/SourceSansPro.eot?#iefix') format('embedded-opentype'),
-             url('../fonts/SourceSansPro.woff') format('woff'),
-             url('../fonts/SourceSansPro.ttf') format('truetype'),
-             url('../fonts/SourceSansPro.svg#CreativeBlockBBBold') format('svg');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-@font-face {
-        font-family: 'PT Sans';
-        src: url('../fonts/PTS75F.eot');
-        src: url('../fonts/PTS75F.eot?#iefix') format('embedded-opentype'),
-             url('../fonts/PTS75F.woff') format('woff'),
-             url('../fonts/PTS75F.ttf') format('truetype'),
-             url('../fonts/PTS75F.svg#CreativeBlockBBBold') format('svg');
-        font-weight: normal;
-        font-style: normal;
-    }
 
-@font-face {
-        font-family: 'Pontano Sans';
-        src: url('../fonts/PontanoSans-Regular.eot');
-        src: url('../fonts/PontanoSans-Regular.eot?#iefix') format('embedded-opentype'),
-             url('../fonts/PontanoSans-Regular.woff') format('woff'),
-             url('../fonts/PontanoSans-Regular.ttf') format('truetype'),
-             url('../fonts/PontanoSans-Regular.svg#CreativeBlockBBBold') format('svg');
-        font-weight: normal;
-        font-style: normal;
-    }
-    
-//@serif
-@font-face {
-        font-family: 'Neuton';
-        src: url('../fonts/Neuton-Light.eot');
-        src: url('../fonts/Neuton-Light.eot?#iefix') format('embedded-opentype'),
-             url('../fonts/Neuton-Light.woff') format('woff'),
-             url('../fonts/Neuton-Light.ttf') format('truetype'),
-             url('../fonts/Neuton-Light.svg#CreativeBlockBBBold') format('svg');
-        font-weight: 400;
-        font-style: normal;
-    }
-    
-//@mono    
-@font-face {
-        font-family: 'Lucida Console';
-        src: url('../fonts/lucon.eot');
-        src: url('../fonts/lucon.eot?#iefix') format('embedded-opentype'),
-             url('../fonts/lucon.woff') format('woff'),
-             url('../fonts/lucon.ttf') format('truetype'),
-             url('../fonts/lucon.svg#CreativeBlockBBBold') format('svg');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-@sans:			    "Source Sans Pro", "Pontano Sans" "Lato",'PT Sans', sans-serif;
-@serif:				"Neuton",'Crimson','Noto Serif', serif;
+@sans:			    "SourceSansProLight", sans-serif;
+@serif:				"Neuton", serif;
 @mono:				"Lucida Console", monospace;
 @tipografia:		@sans;
+@tipografia-titulos: "SourceSansProBold";
 
 
 
@@ -88,7 +32,7 @@
 
 // Colores
 @celeste:                        rgba(87, 190, 255, .95);
-@azul:                                rgba(30, 105, 180, .95);
+@azul:                          rgba(30, 105, 180, .95);
 @azul-oscuro:                darken(@azul, 15%);
 @verde:                                rgba(120, 170, 20, .95);
 @verde-claro:                lighten(@verde, 50%);
@@ -126,7 +70,7 @@
 
 @cuerpo:			17px;				// tamaño tipográfico base en pixeles
 @em: 				@cuerpo * 1em;		// atajo para salida en ems, ej. '12/@em'
-@interlinea:		@em * 1.81;
+@interlinea:		22px;
 
 
 
