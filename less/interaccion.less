@@ -126,32 +126,17 @@ input[type='color'],
 
 form{
 	input[type='submit'],
-	.btn{
-		width: auto;
-		float: right;
-	}
-
-	input[type='text'],input[type='password'],input[type='email']{
-		height: auto;
-	}
+	.btn{margin-top: @gridGutter/2;}
 	
-	input[type='email']:valid{
-		color:@verde;
-	}
-
-
 	label{
 		color: @gris-oscuro;
-		font-weight: normal;
-		font-size: @cuerpo * .90;
+		font-weight: bold;
+		font-size: @cuerpo * .85;
 		text-shadow: -1px -1px 1px fade(@blanco, 60%);
-		text-align: left;
 		
 		&.checkbox{
-			display: block;
+			display: inline-block;
 			vertical-align: middle;
-			margin:10px auto;
-			padding-top: 35px;
 			font-weight: 400;
 			
 			input[type=checkbox]{
@@ -161,40 +146,11 @@ form{
 				vertical-align: top;
 			}
 		}
-
 	}
-
-
-
-	.relleno{
-		background-color: @blanco;
-		color: @pizarra;
-		width: 100%;
-	}
-
-	.verificacion{
-		background-color: @blanco;
-		color: @pizarra;
-		width: 55%;
-		float: left;
-	}
-
 	
 	input{
-		padding: 6px;
-		color: fade(@azul, 70%);
-		border: none;
-		.border-radius(4px);
-		.sombra;
-		&:focus{
-			.sombra-foco;
-		}
-	}
-
-	textarea{
 		padding: 4px;
 		color: fade(@azul, 70%);
-		height: 150px;
 		border: none;
 		.border-radius(4px);
 		.sombra;
@@ -216,21 +172,11 @@ form{
 		}
 	
 	&.vertical{
-		width: @gridBaseContainer / 2.5;
-		padding: 15px;
-		background-color: @gris-blanco;
-		border-radius: @radio * 1.5;
 		label{
 			display: block;
 			margin: @interlinea 0 5px 5px;
 		}
 	}
-
-	&.menor-padding{
-		padding: 15px;
-		float: left;
-	}
-		
 	&.horizontal{
 		label{
 			display: inline-block;
@@ -241,56 +187,3 @@ form{
 	.clearfix;
 	.margen-inferior;
 }
-
-.formulario-ancho-doble {
-	background-color: @gris-blanco;
-	border-radius: @radio * 1.5;
-	margin: 20px 10px;
-
-		.vertical{
-			background-color: rgba(0,0,0,0);
-		}
-}
-
-#formulario-login {
-	width: @gridBaseContainer / 1.8;
-	height: 240px;
-	background-color: @gris-blanco;
-	margin:50px auto;
-
-	.ingreso{
-		margin: 20px 20px 0px 20px;
-		height: 60px;
-	}
-
-	.control-usuario {
-		padding-top: 20px;
-		font-size: @cuerpo * 1.2;
-		display: block;
-		float: left;
-		text-align: right;
-		width: 180px;
-
-	}
-
-	input[type=text], input[type=password]{
-	display: inline-block;
-	font-size: 25px;
-	padding: 4px 18px;
-	margin:5px 0px;
-	vertical-align: top;
-	width: 60%;
-	height: 50px;
-	float: right;
-	}
-
-}
-
-.campo-registro {
-	border:1px solid @gris-blanco;
-	margin: 0 auto;
-	display: block;
-
-
-}
-
