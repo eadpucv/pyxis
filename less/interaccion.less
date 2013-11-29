@@ -258,7 +258,7 @@ form{
         }
 
         .control-usuario {
-            padding-top: 20px;
+            padding-top: @padding-md * 2;
             font-size: @cuerpo * 1.2;
             display: block;
             float: left;
@@ -283,6 +283,7 @@ form{
     background-color: @pizarra;
     color: @blanco;
 
+
     input[type=text], input[type=password]{
         display: inline-block;
         padding: 6px 6px;
@@ -299,6 +300,9 @@ form{
         vertical-align: top;
         width: 40%;
         float: right;
+        &:focus{
+            .sombra-foco;
+                }
     }
 
     .pregunta{
@@ -306,6 +310,7 @@ form{
         font-size: @cuerpo * 1.6;
         text-shadow: none;
         background-color: red;
+        margin-left: @cuadratin * 2;
     }
 
 }
