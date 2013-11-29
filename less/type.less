@@ -1,4 +1,6 @@
-// Tipografía
+
+	// Tipografía
+
 
 
 * {
@@ -48,10 +50,18 @@ p {
   
   	&.poema{
   		font-family: @serif;
-  		font-size: @cuerpo - 2;
+  		font-size: @cuerpo - 1;
   		line-height: @interlinea;
 		white-space: pre;
   	}
+}
+
+.antetitulos{
+    font-family: @sans;
+    font-weight:bold;
+    color:@rojo-oscuro;  
+    text-transform: uppercase;
+    font-size:@cuerpo -8px;
 }
 
 // Émfasis
@@ -69,6 +79,13 @@ em {
 	font-style: italic;
 	font-weight: inherit;
 	line-height: inherit;
+}
+
+.italica2{
+    font-family: @serif;
+    font-style: italic;
+	line-height: inherit;
+    color:@azul-oscuro;
 }
 
 .pesada,
@@ -108,15 +125,15 @@ h1, h2, h3, h4, h5, h6 {
 	vertical-align: bottom;
 	
 	&.filete{
-		margin: 0 -@gridGutter;
-		padding: 0 @gridGutter;
+		margin: 0 -@cuadratin;
+		padding: 0 @cuadratin;
 		border-bottom: 1px solid @color-borde;
 		.clearfix;
 	}
 }
 
-h1 {font-size: 32px;}
-h2 {font-size: 28px;}
+h1 {font-size: 28px;}
+h2 {font-size: 24px;}
 h3 {font-size: 22px;}
 h4 {font-size: 18px;}
 h5 {font-size: 16px;}
@@ -192,7 +209,7 @@ blockquote {
   }
 }
 
-// Dirección
+// DirecciÃ³n
 address {
   display: block;
   line-height: @interlinea;
@@ -200,7 +217,7 @@ address {
 }
 
 
-// código
+// cÃ³digo
 code, pre {
   font-family: @mono;
   font-size: @cuerpo *.666;
@@ -234,7 +251,6 @@ pre {
 }
 
 .global{
-	width: @gridBaseContainer;
 	-moz-column-count: 3;
 	-moz-column-gap: 20px;
 	-webkit-column-count: 3;
@@ -261,7 +277,7 @@ pre {
 }
 
 
-//------------------------------------------------------Estilos Semánticos
+//------------------------------------------------------Estilos SemÃ¡nticos
 
 
 .estracto{
