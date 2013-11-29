@@ -21,10 +21,10 @@
   <div class='pag'>
     <header>
       <div class='fila'>
-        <div class='col-12'>
+        <div class='col-md-12'>
           <h1 class='gigante'><span class='pesada'>LGG</span> <span class='rojo fino'>Lenguaje Gráfico Global</span></h1>
       </div>
-      <div class='col-12'>
+      <div class='col-md-12'>
           <p class='grande fino margen-superior'>Fundamentos gráficos para la unificación y consistencia del lenguaje visual en pantalla que busca definir un esquema de trabajo semántico y escalable para diseñadores y desarrolladores.</p>
           <p>Proyecto de código abierto desarrollado por <strong><a href="http://www.ead.pucv.cl/mundo/investigacion/tig/">Taller de Investigaciones Gráficas .:TIG:.</a></strong> y disponible en <a class='btn grande accion' href='http://eadpucv.github.io/LGG' title='LLG en Github'>Github</a></p>
       </div>
@@ -42,100 +42,149 @@
 </ul>
 </nav>
 <div class='contenido'>
-  <div class='fila'>
-
-    <div class='col-24'>
-        <h3>Elementos de formularios</h3>
-        <p>
+    <div class='fila'>
+        <h2>Clasificación de Formularios</h3>
+        <p>Los formularios se clasifican según su disposición en espacial en la página. Primero, siendo clases de <code>Form</code>, donde se diferencian si son de caracter <code>vertical</code> u <code>horizontal</code>. Además, se nombran sus tamaños, siendo sus extensiones muy pequeño<code>-xs</code>, pequeño<code>-sm</code>, medio<code>-md</code>, grande<code>-lg</code>.
         </p>
-        
-        <h3 class='filete'>Formularios del sitio e[ad]</h3>
-
-        <code>form class='vertical'</code>
-
-        <form class='vertical'>
-            <h4>Contáctate con nosotros</h4>
             
-            <label>Nombre *</label>
-            <input type='text' class='relleno' required />
+        <div class='col-md-6'>    
+            <h3 class='filete'>Formularios verticales</h3>
 
-            <label>Correo electrónico *</label>
-            <input type='email' class='relleno' required/>
-            
+<!-- Formulario Vertical Medio -->
 
-            <label>Asunto</label>
-            <input class='relleno' />
+             <code>div class='col-md-6'
+             form class='vertical-md'</code>
 
-            <label>Mensaje</label>
-            <textarea class='relleno'/></textarea>
+            <form class='vertical-md'>
+                <h4>Contáctate con nosotros <span class='rojo chico'>e[ad] - vertical</span></h4>
+                        
+                <label>Nombre *</label>
+                <input type='text' class='relleno' required />
 
-            <label>Verificación</label>
-            <input class='verificacion' placeholder="(¿CAPTCHA?)" />
+                <label>Correo electrónico *</label>
+                <input type='email' class='relleno' required/>
 
-            <input type='submit' class='accion grande izquierda' value='Enviar'>
+                <label>Asunto</label>
+                <input class='relleno' />
 
-        </form>
+                <label>Mensaje</label>
+                <textarea class='relleno'/></textarea>
+
+                <label>Verificación</label>
+                <input class='verificacion' placeholder="(¿CAPTCHA?)" />
+
+                <input type='submit' class='accion grande izquierda' value='Enviar'>
+
+            </form>
+        </div>
     </div>
 
-    <code>div class='col-20 formulario-ancho-doble'
-    form class='vertical menor-padding'</code>
+    <!-- Formulario Vertical Grande -->
 
-    <div class='col-20 formulario-ancho-doble'>
-        <form class='vertical menor-padding'>
+    <div class='fila'>
+        <div class='col-md-12'>
+        <code>div class='col-md-12'
+        form class='horizontal-lg'</code>
 
-            <h4>Publicar un trabajo</h4>
+        <h4>Registrarse <span class='rojo chico'>Wiki - vertical</span></h4>
 
-            <label>Nombre *</label>
-            <input type='text' class='relleno' required/>
+                <form class='vertical-lg registro'>
+                <h5>Nuevo Usuario</h5>           
+                    <label class='pregunta'>Usuario</label>
+                    <input type='text' class='relleno' required />
+                    <p class='especificacion'>Elije un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</p>
 
-            <label>Correo electrónico *</label>
-            <input type='email' class='relleno' required/>
+                    <label class='pregunta'>Tipo</label>
+                    <select>
+                        <option>Alumno(a)</option>
+                        <option>Profesora(a)</option>
+                        <option>Ex-Alumno(a)</option>
+                        <option>Amigo(a)</option>
+                        <option>Otro(a)</option>
+                    </select>
 
-            <label>Empresa</label>
-            <input class='relleno' />
+                    <label class="checkbox">
+                    <input type="checkbox">
+                        Acepto los <a href='#'>términos y condiciones</a>
+                    </label>
 
-            <label>Sitio web</label>
-            <input class='relleno' />
+                    <input type='submit' class='btn grande' value='Crear nuevo usuario'>
 
-            <label class="radio">Solicito a:</label>
-            <input type="radio" name="carrera" /> <span class='chico'>Arquitecto</span>
-            <input type="radio" name="carrera" /> <span class='chico'>Diseñador gráfico</span>
-            <input type="radio" name="carrera" /> <span class='chico'>Diseñado de objetos</span>
 
-            <label>Experiencia requerida</label>
-            <textarea class='relleno' placeholder="perfil y competencias necesarias para el cargo"/></textarea>
-        </form>
-
-        <form class='vertical menor-padding'>
-
-            <label>Descripción del trabajo</label>
-            <textarea class='relleno' placeholder="descripción detallada de labores a realizar, horarios, contexto y ubicación geográfica"/></textarea>
-
-            <label>Remuneración ofrecida</label>
-            <input class='relleno' placeholder="puede indicar un rango"/>
-
-            <label>Interesados contactar a:</label>
-            <textarea class='relleno' placeholder="Indique vía de postulación para interesados"/></textarea>
-
-            <label>Verificación</label>
-            <input class='verificacion' placeholder="(¿CAPTCHA?)" />
-
-            <input type='submit' class='accion grande izquierda' value='Publicar'>
-
-            <label class="checkbox">
-                <input type="checkbox">
-                Acepto los <a href='#'>términos y condiciones</a>
-            </label>
-  
-        </form>
+                </form>
+            </div>
     </div>
 
-    <div class='col-24'>
-        <h3 class='filete'>Formularios de Wiki Casiopea</h3>
+    <div class='fila'>
+        <h3 class='filete'>Formularios horizontales</h3>
 
-        <h4>Acceder</h4>
+<!-- Formulario Horizontal Grande -->
 
-             <form id='formulario-login'>
+        <div class='col-md-22'>
+        <code>div class='col-md-10'
+        form class='horizontal-lg'</code>
+
+            <form class='horizontal-lg'>
+                <div class='col-md-10'>
+
+                    <h4>Publicar un trabajo <span class='rojo chico'>e[ad] - horizontal</span></h4>
+
+                    <label>Nombre *</label>
+                    <input type='text' class='relleno' required/>
+
+                    <label>Correo electrónico *</label>
+                    <input type='email' class='relleno' required/>
+
+                    <label>Empresa</label>
+                    <input class='relleno' />
+
+                    <label>Sitio web</label>
+                    <input class='relleno' />
+
+                    <label class="radio">Solicito a:</label>
+                    <input type="radio" name="carrera" /> <span class='chico'>Arquitecto</span>
+                    <input type="radio" name="carrera" /> <span class='chico'>Diseñador gráfico</span>
+                    <input type="radio" name="carrera" /> <span class='chico'>Diseñado de objetos</span>
+
+                    <label>Experiencia requerida</label>
+                    <textarea class='relleno' placeholder="perfil y competencias necesarias para el cargo"/></textarea>
+                </div>
+
+                <div class='col-md-10'>
+                    <label>Descripción del trabajo</label>
+                    <textarea class='relleno' placeholder="descripción detallada de labores a realizar, horarios, contexto y ubicación geográfica"/></textarea>
+
+                    <label>Remuneración ofrecida</label>
+                    <input class='relleno' placeholder="puede indicar un rango"/>
+
+                    <label>Interesados contactar a:</label>
+                    <textarea class='relleno' placeholder="Indique vía de postulación para interesados"/></textarea>
+
+                    <label>Verificación</label>
+                    <input class='verificacion' placeholder="(¿CAPTCHA?)" />
+
+                    <input type='submit' class='accion grande izquierda' value='Publicar'>
+
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        Acepto los <a href='#'>términos y condiciones</a>
+                    </label>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+<!-- Formulario Horizontal Medio -->
+    
+    <div class='fila'>
+        <div class='col-md-16'>
+
+        <h4>Acceder <span class='rojo chico'>Wiki - horizontal</span></h4>
+        <code>div class='col-md-16'
+        form class='horizontal-lg'</code>
+
+            <form class='horizontal-md'>
                 <div class='ingreso'>
                     <label class='control-usuario negrita'>Nombre de usuario</label>
                     <input type='text' placeholder='username' required/>
@@ -149,113 +198,88 @@
                 <div class='ingreso'>
                     <input type='submit' class='accion grande izquierda' value='Iniciar sesión'>
                 </div>
-             </form>
-
-
-        <h4>Registrarse</h4>
-
-            <div class='campo-registro col-24'>
-            <h5>Nuevo Usuario</h5>
-                <form class='vertical'>
-                            
-                    <label>Usuario</label>
-                    <input type='text' class='relleno' required />
-                    Elije un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.
-
-                    <label>Tipo</label>
-                    <input type='text' class='relleno' required />
-
-                    <label class="checkbox">
-                    <input type="checkbox">
-                        Acepto los <a href='#'>términos y condiciones</a>
-                    </label>
-
-                    <input type='submit' class='accion grande izquierda' value='Crear nuevo usuario'>
-
-                </form>
-            </div>
+            </form>
+        </div>
+    </div>         
             
         <h4>Nuevo objeto</h4>
 
         <h4>Nuevo proyecto</h4>
 
+    <div class='fila'>
+    <code class='margen-superior'>input type='submit' class='accion grande derecha'</code>
+            
+     <h3 class='filete'>Botones</h3>
 
-<code class='margen-superior'>input type='submit' class='accion grande derecha'</code>
-        
- <h3 class='filete'>Botones</h3>
-
-        <p>Los botones se definen genéricamente mediante la clase <code>btn</code> y se aplican a las etiquetas <code>a</code>, <code>input [type='submit']</code> y a los elementos <code>button</code> genéricos de los formularios. Los estilos están pensados para ser aplicados de forma semántica como se describe en la tabla, pudiendo usarse en combinación con atributos de tamaño (<code>chico</code>, <code>grande</code>, <code>grigante</code>) y de atributo (<code>accion</code>, <code>alerta</code>).
-        </p>
-
-
-        <table class='w100'>
-            <tr>
-                <th class='w60'>
-                    Elemento
-                </th>
-                <th class='w30'>
-                    Código
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <a class='btn chico'>Acción</a>
-                </td>
-                <td>
-                    <code>btn chico</code>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a class='btn'>Acción</a>
-                </td>
-                <td>
-                    <code>btn</code>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a class='btn grande'>Acción</a>
-                </td>
-                <td>
-                    <code>btn grande</code>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a class='btn gigante'>Acción</a>
-                </td>
-                <td>
-                    <code>btn gigante</code>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a class='btn gigante accion'>Acción</a>
-                    <a class='btn grande accion'>Acción</a>
-                    <a class='btn accion'>Acción</a>
-                    <a class='btn chico accion'>Acción</a>
-                </td>
-                <td>
-                    <code>btn accion</code>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a class='btn gigante alerta'>Acción</a>
-                    <a class='btn grande alerta'>Acción</a>
-                    <a class='btn alerta'>Acción</a>
-                    <a class='btn chico alerta'>Acción</a>
-                </td>
-                <td>
-                    <code>btn alerta</code>
-                </td>
-            </tr>
-        </table>
-    </div>
-</div>
+            <p>Los botones se definen genéricamente mediante la clase <code>btn</code> y se aplican a las etiquetas <code>a</code>, <code>input [type='submit']</code> y a los elementos <code>button</code> genéricos de los formularios. Los estilos están pensados para ser aplicados de forma semántica como se describe en la tabla, pudiendo usarse en combinación con atributos de tamaño (<code>chico</code>, <code>grande</code>, <code>grigante</code>) y de atributo (<code>accion</code>, <code>alerta</code>).
+            </p>
 
 
+            <table class='w100'>
+                <tr>
+                    <th class='w60'>
+                        Elemento
+                    </th>
+                    <th class='w30'>
+                        Código
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <a class='btn chico'>Acción</a>
+                    </td>
+                    <td>
+                        <code>btn chico</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class='btn'>Acción</a>
+                    </td>
+                    <td>
+                        <code>btn</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class='btn grande'>Acción</a>
+                    </td>
+                    <td>
+                        <code>btn grande</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class='btn gigante'>Acción</a>
+                    </td>
+                    <td>
+                        <code>btn gigante</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class='btn gigante accion'>Acción</a>
+                        <a class='btn grande accion'>Acción</a>
+                        <a class='btn accion'>Acción</a>
+                        <a class='btn chico accion'>Acción</a>
+                    </td>
+                    <td>
+                        <code>btn accion</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class='btn gigante alerta'>Acción</a>
+                        <a class='btn grande alerta'>Acción</a>
+                        <a class='btn alerta'>Acción</a>
+                        <a class='btn chico alerta'>Acción</a>
+                    </td>
+                    <td>
+                        <code>btn alerta</code>
+                    </td>
+                </tr>
+            </table>
+        </div>
 </div>
 <hr>
 <footer>

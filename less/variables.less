@@ -10,23 +10,29 @@
 // "Libre Baskerville"
 // @import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
 
-@sans:                                Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-@serif:                                "Libre Baskerville", Georgia, serif;
-@mono:                                Monaco, Menlo, 'Courier New', Courier, monospace;
-@tipografia:                @sans;
+//Importando tipografías a través de Font Face
+
+
+@sans:			    "SourceSansProLight", sans-serif;
+@serif:				"Neuton", serif;
+@mono:				"Lucida Console", monospace;
+@tipografia:		@sans;
+@tipografia-titulos: "SourceSansProBold";
+
+
 
 
 // Grises
-@negro:                                rgba(0, 0, 0, 1);
-@gris-oscuro:                lighten(@negro, 25%);
-@gris:                                lighten(@negro, 50%);
-@gris-claro:                lighten(@negro, 75%);
-@gris-blanco:                rgba(51, 51, 51,.07);
+@negro:                         rgba(0, 0, 0, 1);
+@gris-oscuro:                   lighten(@negro, 25%);
+@gris:                          lighten(@negro, 50%);
+@gris-claro:                    lighten(@negro, 75%);
+@gris-blanco:                   rgba(51, 51, 51,.07);
 @blanco:                        rgba(255, 255, 255, 1);
 
 // Colores
 @celeste:                        rgba(87, 190, 255, .95);
-@azul:                                rgba(30, 105, 180, .95);
+@azul:                          rgba(30, 105, 180, .95);
 @azul-oscuro:                darken(@azul, 15%);
 @verde:                                rgba(120, 170, 20, .95);
 @verde-claro:                lighten(@verde, 50%);
@@ -46,10 +52,10 @@
 @borde-grueso:                5px solid @color-borde;
 
 // paddings
-@padding-chico:                @cuerpo * .25 @cuerpo * .4;
-@padding:                        @cuerpo * .25 @cuerpo * .6 @cuerpo *.36;
-@padding-grande:        @cuerpo * .3 @cuerpo * 0.7 @cuerpo * .5;
-@padding-gigante:        @cuerpo * .8 @cuerpo * 1.5 @cuerpo;
+@padding-xs:				@cuerpo * .1 @cuerpo * .2;
+@padding-sm:				@cuerpo * .2 @cuerpo * .6;
+@padding-md:				@cuerpo * .3 @cuerpo * 0.9;
+@padding-lg:				@cuerpo * .4 @cuerpo * 1.2;
 
 // radios
 @radio:                                6px;
@@ -61,9 +67,11 @@
 @color-opuesto:                spin(@link-color, 180);
 
 // Proporciones tipográficas
-@cuerpo:                        16px;                                // tamaño base en pixeles
-@em:                                 @cuerpo * 1em;                // atajo para salida en ems, ej. '12/@em'
-@interlinea:                @em * 1.81;
+
+@cuerpo:			17px;				// tamaño tipográfico base en pixeles
+@em: 				@cuerpo * 1em;		// atajo para salida en ems, ej. '12/@em'
+@interlinea:		22px;
+
 
 
 // blancos

@@ -1,4 +1,6 @@
+
 	// Tipografía
+
 
 
 * {
@@ -27,6 +29,7 @@ a{
 		color: fade(@color-link, 10);
 		text-decoration: line-through;
 	}
+
 }
 
 p {
@@ -39,7 +42,6 @@ p {
   		font-weight: 300;
 		line-height: 120%;
 		padding: 0;
-		background-color: green;
   	}
   	
   	&.chico {
@@ -49,10 +51,24 @@ p {
   
   	&.poema{
   		font-family: @serif;
-  		font-size: @cuerpo - 2;
+  		font-size: @cuerpo - 1;
   		line-height: @interlinea;
 		white-space: pre;
   	}
+
+  	&.especificacion {
+  		margin-bottom: @interlinea;
+  		line-height: @interlinea;
+  		color: fade(@blanco, 80%);
+  	}
+}
+
+.antetitulos{
+    font-family: @tipografia-titulos;
+    font-weight: normal;
+    color:@rojo-oscuro;  
+    text-transform: uppercase;
+    font-size:@cuerpo -8px;
 }
 
 // Émfasis
@@ -70,6 +86,13 @@ em {
 	font-style: italic;
 	font-weight: inherit;
 	line-height: inherit;
+}
+
+.italica2{
+    font-family: @serif;
+    font-style: italic;
+	line-height: inherit;
+    color:@azul-oscuro;
 }
 
 .pesada,
@@ -116,8 +139,8 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-h1 {font-size: 32px;}
-h2 {font-size: 28px;}
+h1 {font-size: 28px;}
+h2 {font-size: 24px;}
 h3 {font-size: 22px;}
 h4 {font-size: 18px;}
 h5 {font-size: 16px;}
@@ -193,7 +216,7 @@ blockquote {
   }
 }
 
-// Dirección
+// DirecciÃ³n
 address {
   display: block;
   line-height: @interlinea;
@@ -201,7 +224,7 @@ address {
 }
 
 
-// código
+// cÃ³digo
 code, pre {
   font-family: @mono;
   font-size: @cuerpo *.5;
@@ -261,7 +284,7 @@ pre {
 }
 
 
-//------------------------------------------------------Estilos Semánticos
+//------------------------------------------------------Estilos SemÃ¡nticos
 
 
 .estracto{
