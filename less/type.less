@@ -1,4 +1,4 @@
-// Tipograf韆
+// Tipograf铆a
 
 
 * {
@@ -48,13 +48,21 @@ p {
   
   	&.poema{
   		font-family: @serif;
-  		font-size: @cuerpo - 2;
+  		font-size: @cuerpo - 1;
   		line-height: @interlinea;
 		white-space: pre;
   	}
 }
 
-// 蒻fasis
+.antetitulos{
+    font-family: @sans;
+    font-weight:bold;
+    color:@rojo-oscuro;  
+    text-transform: uppercase;
+    font-size:@cuerpo -8px;
+}
+
+// 脡mfasis
 
 .negrita,
 strong {
@@ -69,6 +77,13 @@ em {
 	font-style: italic;
 	font-weight: inherit;
 	line-height: inherit;
+}
+
+.italica2{
+    font-family: @serif;
+    font-style: italic;
+	line-height: inherit;
+    color:@azul-oscuro;
 }
 
 .pesada,
@@ -115,8 +130,8 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-h1 {font-size: 32px;}
-h2 {font-size: 28px;}
+h1 {font-size: 28px;}
+h2 {font-size: 24px;}
 h3 {font-size: 22px;}
 h4 {font-size: 18px;}
 h5 {font-size: 16px;}
@@ -149,7 +164,7 @@ li {
   }
 }
 
-// Listas de descripci髇 o definici髇
+// Listas de descripci贸n o definici贸n
 
 dl {
 	margin-bottom: @interlinea;
@@ -192,7 +207,7 @@ blockquote {
   }
 }
 
-// Direcci髇
+// Direcci贸n
 address {
   display: block;
   line-height: @interlinea;
@@ -200,7 +215,7 @@ address {
 }
 
 
-// c骴igo
+// c贸digo
 code, pre {
   font-family: @mono;
   font-size: @cuerpo *.666;
@@ -261,7 +276,7 @@ pre {
 }
 
 
-//------------------------------------------------------Estilos Sem醤ticos
+//------------------------------------------------------Estilos Sem谩nticos
 
 
 .estracto{
