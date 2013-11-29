@@ -38,11 +38,11 @@
         
 
 // Márgenes de ajuste
-.margen-superior{margin-top: @gridGutter}
-.margen-superior-negativo{margin-top: -@gridGutter}
-.margen-inferior{margin-bottom: @gridGutter}
-.margen-inferior-negativo{margin-bottom: -@gridGutter}
-.interno{margin-left: 0} // para no acumular márgenes (@gridGutter) en columnas anidadas.
+.margen-superior{margin-top: @cuadratin}
+.margen-superior-negativo{margin-top: -@cuadratin}
+.margen-inferior{margin-bottom: @cuadratin}
+.margen-inferior-negativo{margin-bottom: -@cuadratin}
+.interno{margin-left: 0} // para no acumular márgenes (@cuadratin) en columnas anidadas.
 .margen-vertical{.margen-superior; .margen-inferior}
 .centrada, .centrado{
         text-align: center;
@@ -102,9 +102,15 @@
 
 
 .caja{
+<<<<<<< HEAD
+	display: block;
+	.border-radius(5px);
+	height: @cuadratin*2;
+=======
         display: block;
         .border-radius(5px);
         height: @gridGutter*2;
+>>>>>>> origin/Idar
 }
 
 // Estilos auxiliares

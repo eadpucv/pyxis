@@ -125,6 +125,69 @@ input[type='color'],
 
 
 form{
+<<<<<<< HEAD
+	input[type='submit'],
+	.btn{margin-top: @cuadratin/2;}
+	
+	label{
+		color: @gris-oscuro;
+		font-weight: bold;
+		font-size: @cuerpo * .85;
+		text-shadow: -1px -1px 1px fade(@blanco, 60%);
+		
+		&.checkbox{
+			display: inline-block;
+			vertical-align: middle;
+			font-weight: 400;
+			
+			input[type=checkbox]{
+				display: inline-block;
+				padding: 4px;
+				margin: 0 1.2ex 0 -0.2ex;
+				vertical-align: top;
+			}
+		}
+	}
+	
+	input{
+		padding: 4px;
+		color: fade(@azul, 70%);
+		border: none;
+		.border-radius(4px);
+		.sombra;
+		&:focus{
+			.sombra-foco;
+		}
+	}
+
+	&.buscador{
+		text-align: right;
+		input.texto{
+			.pegado-antes;
+			}
+		input[type=submit]{
+			.pegado-despues;
+			margin: -4px 0 0 -4px;
+			}
+				
+		}
+	
+	&.vertical{
+		label{
+			display: block;
+			margin: @interlinea 0 5px 5px;
+		}
+	}
+	&.horizontal{
+		label{
+			display: inline-block;
+			text-align: right;
+		}
+		
+	}
+	.clearfix;
+	.margen-inferior;
+=======
         input[type='submit'],
         .btn{
                 width: auto;
@@ -284,6 +347,7 @@ form{
         float: right;
         }
 
+>>>>>>> origin/Idar
 }
 
 .campo-registro {
