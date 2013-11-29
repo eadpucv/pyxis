@@ -125,9 +125,6 @@ input[type='color'],
 
 
 form{
-
-	input[type='submit'],
-	.btn{margin-top: @cuadratin/2;}
 	
 	label{
 		color: @gris-oscuro;
@@ -149,6 +146,21 @@ form{
 		}
 	}
 	
+    input[type='submit'],
+    .btn{
+        margin-top: @cuadratin/2;
+        width: auto;
+        float: right;
+    }
+
+    input[type='text'],input[type='password'],input[type='email']{
+        height: auto;
+    }
+        
+    input[type='email']:valid{
+        color:@verde;
+    }
+
 	input{
 		padding: 4px;
 		color: fade(@azul, 70%);
@@ -187,21 +199,6 @@ form{
 	}
 	.clearfix;
 	.margen-inferior;
-
-        input[type='submit'],
-        .btn{
-                width: auto;
-                float: right;
-        }
-
-        input[type='text'],input[type='password'],input[type='email']{
-                height: auto;
-        }
-        
-        input[type='email']:valid{
-                color:@verde;
-        }
-
 
         label{
                 color: @gris-oscuro;
@@ -280,8 +277,7 @@ form{
                                 
                 }
         
-        &.vertical{
-
+        &.vertical-md{
                 padding: 15px;
                 background-color: @gris-blanco;
                 border-radius: @radio * 1.5;
@@ -309,7 +305,7 @@ form{
         .margen-inferior;
 }
 
-.formulario-ancho-doble {
+.formulario-horizontal-lg{
         background-color: @gris-blanco;
         border-radius: @radio * 1.5;
         margin: 20px 10px;
@@ -319,7 +315,7 @@ form{
                 }
 }
 
-#formulario-login {
+.formulario-login {
 
         height: 240px;
         background-color: @gris-blanco;
