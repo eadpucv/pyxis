@@ -29,6 +29,7 @@ a{
 		color: fade(@color-link, 10);
 		text-decoration: line-through;
 	}
+
 }
 
 p {
@@ -41,7 +42,6 @@ p {
   		font-weight: 300;
 		line-height: 120%;
 		padding: 0;
-		background-color: green;
   	}
   	
   	&.chico {
@@ -54,6 +54,12 @@ p {
   		font-size: @cuerpo - 1;
   		line-height: @interlinea;
 		white-space: pre;
+  	}
+
+  	&.especificacion {
+  		margin-bottom: @interlinea;
+  		line-height: @interlinea;
+  		color: fade(@blanco, 80%);
   	}
 }
 
