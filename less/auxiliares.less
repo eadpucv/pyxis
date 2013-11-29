@@ -106,12 +106,7 @@
 .bg-color-opuesto{background-color: @color-opuesto}
 
 
-<<<<<<< HEAD
-.caja {
-=======
 .caja{
-
->>>>>>> b859da2036b23b896803dae0ea86227d25c8fadf
 	display: block;
 	.border-radius(5px);
 	height: @cuadratin*2;
@@ -132,10 +127,13 @@
 }
 
 .ver{
-        background-color: rgba(0, 0, 0, 0.05);
-    border-radius: 3px 3px 3px 3px;
+    background-color: fade(@negro, 5);
+    .box-shadow(0 0 5px fade(@negro, 20));
     color: rgba(0, 0, 0, 0.3);
-    p{font-size: 10px}
+    p{
+        font-size: 10px;
+        padding: 10px;
+    }
 }
 
 
