@@ -1,91 +1,91 @@
-//	Elementos de Interacción:	
-//	Botones, formularios
+//        Elementos de Interacción:        
+//        Botones, formularios
 
 *{
-	.transition(.2s ease all);
+        .transition(.2s ease all);
 }
 
-@radio:	6px;	// esquina redondeada de botones
+@radio:        6px;        // esquina redondeada de botones
 
 button.btn,
 input[type='submit'],
 a.btn
  {
-	display: inline-block;
-	margin-top: -4px;
-	cursor: pointer;
-	white-space: nowrap;
-	font-size: @cuerpo *.9;
-	padding: @padding;
-	color: fade(@negro, 60);
-	text-align: center;
-	text-shadow: 1px 1px 0 fade(@blanco, 80%), -1px -1px 0 fade(@negro, 12%);
-	vertical-align: middle;
-	background-color: lighten(@gris-claro, 10);
-	border: 1px solid @color-borde;
-	.border-radius(@radio);
-	
-	&:hover {
-		text-decoration: none;
-		background-color: @blanco;
-	}
+        display: inline-block;
+        margin-top: -4px;
+        cursor: pointer;
+        white-space: nowrap;
+        font-size: @cuerpo *.9;
+        padding: @padding;
+        color: fade(@negro, 60);
+        text-align: center;
+        text-shadow: 1px 1px 0 fade(@blanco, 80%), -1px -1px 0 fade(@negro, 12%);
+        vertical-align: middle;
+        background-color: lighten(@gris-claro, 10);
+        border: 1px solid @color-borde;
+        .border-radius(@radio);
+        
+        &:hover {
+                text-decoration: none;
+                background-color: @blanco;
+        }
 
-	// cuando se aprieta el botón, que aparezca una sombra interior para que se vea hundido
-	&:active{
-		.box-shadow(inset fade(@negro, 20%) 0 0 4px);
-	}
-	
-	&.chico{
-		font-size: @cuerpo * .65;
-		text-transform: uppercase;
-		font-weight: bold;
-		padding: @padding-chico;
-		.border-radius(@radio/2);
-	}
+        // cuando se aprieta el botón, que aparezca una sombra interior para que se vea hundido
+        &:active{
+                .box-shadow(inset fade(@negro, 20%) 0 0 4px);
+        }
+        
+        &.chico{
+                font-size: @cuerpo * .65;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding: @padding-chico;
+                .border-radius(@radio/2);
+        }
   
-	&.grande{
-		font-weight: 300;
-		font-size: @cuerpo * 1.2;
-		padding: @padding-grande;
-		}
+        &.grande{
+                font-weight: 300;
+                font-size: @cuerpo * 1.2;
+                padding: @padding-grande;
+                }
 
-	&.gigante{
-		font-size: @cuerpo * 1.8;
-		letter-spacing: .05ex;
-		font-weight: 200;
-		padding: @padding-gigante;
-	}
+        &.gigante{
+                font-size: @cuerpo * 1.8;
+                letter-spacing: .05ex;
+                font-weight: 200;
+                padding: @padding-gigante;
+        }
 
-	&.accion{
-		color: @blanco;
-		text-shadow: 1px 1px 0 fade(@negro, 40%);
-		border-color: fade(@azul-oscuro, 20%);
-		background-color: lighten(@azul, 10);
-		
-		&:hover{
-			background-color: @celeste;
-		}
-	
-	}
-	
-	&.alerta{
-		color: @blanco;
-		text-shadow: 1px 1px 0 fade(@negro, 40%);
-		border-color: fade(@rojo-oscuro, 20%);
-		background-color: @rojo;
-		
-		&:hover{
-			background-color: lighten(@rojo, 15);
-		}
-	
-	}
+        &.accion{
+                color: @blanco;
+                text-shadow: 1px 1px 0 fade(@negro, 40%);
+                border-color: fade(@azul-oscuro, 20%);
+                background-color: lighten(@azul, 10);
+                
+                &:hover{
+                        background-color: @celeste;
+                }
+        
+        }
+        
+        &.alerta{
+                color: @blanco;
+                text-shadow: 1px 1px 0 fade(@negro, 40%);
+                border-color: fade(@rojo-oscuro, 20%);
+                background-color: @rojo;
+                
+                &:hover{
+                        background-color: lighten(@rojo, 15);
+                }
+        
+        }
 
-	&.accion,
-	&.alerta{
-		&:active{
-			.box-shadow(inset fade(@negro, 40%) 1px 1px 10px);
-		}
-	}
+        &.accion,
+        &.alerta{
+                &:active{
+                        .box-shadow(inset fade(@negro, 40%) 1px 1px 10px);
+                }
+        }
 }
 
 
@@ -125,65 +125,171 @@ input[type='color'],
 
 
 form{
-	input[type='submit'],
-	.btn{margin-top: @gridGutter/2;}
-	
-	label{
-		color: @gris-oscuro;
-		font-weight: bold;
-		font-size: @cuerpo * .85;
-		text-shadow: -1px -1px 1px fade(@blanco, 60%);
-		
-		&.checkbox{
-			display: inline-block;
-			vertical-align: middle;
-			font-weight: 400;
-			
-			input[type=checkbox]{
-				display: inline-block;
-				padding: 4px;
-				margin: 0 1.2ex 0 -0.2ex;
-				vertical-align: top;
-			}
-		}
-	}
-	
-	input{
-		padding: 4px;
-		color: fade(@azul, 70%);
-		border: none;
-		.border-radius(4px);
-		.sombra;
-		&:focus{
-			.sombra-foco;
-		}
-	}
+        input[type='submit'],
+        .btn{
+                width: auto;
+                float: right;
+        }
 
-	&.buscador{
-		text-align: right;
-		input.texto{
-			.pegado-antes;
-			}
-		input[type=submit]{
-			.pegado-despues;
-			margin: -4px 0 0 -4px;
-			}
-				
-		}
-	
-	&.vertical{
-		label{
-			display: block;
-			margin: @interlinea 0 5px 5px;
-		}
-	}
-	&.horizontal{
-		label{
-			display: inline-block;
-			text-align: right;
-		}
-		
-	}
-	.clearfix;
-	.margen-inferior;
+        input[type='text'],input[type='password'],input[type='email']{
+                height: auto;
+        }
+        
+        input[type='email']:valid{
+                color:@verde;
+        }
+
+
+        label{
+                color: @gris-oscuro;
+                font-weight: normal;
+                font-size: @cuerpo * .90;
+                text-shadow: -1px -1px 1px fade(@blanco, 60%);
+                text-align: left;
+                
+                &.checkbox{
+                        display: block;
+                        vertical-align: middle;
+                        margin:10px auto;
+                        padding-top: 35px;
+                        font-weight: 400;
+                        
+                        input[type=checkbox]{
+                                display: inline-block;
+                                padding: 4px;
+                                margin: 0 1.2ex 0 -0.2ex;
+                                vertical-align: top;
+                        }
+                }
+
+        }
+
+
+
+        .relleno{
+                background-color: @blanco;
+                color: @pizarra;
+                width: 100%;
+        }
+
+        .verificacion{
+                background-color: @blanco;
+                color: @pizarra;
+                width: 55%;
+                float: left;
+        }
+
+        
+        input{
+                padding: 6px;
+                color: fade(@azul, 70%);
+                border: none;
+                .border-radius(4px);
+                .sombra;
+                &:focus{
+                        .sombra-foco;
+                }
+        }
+
+        textarea{
+                padding: 4px;
+                color: fade(@azul, 70%);
+                height: 150px;
+                border: none;
+                .border-radius(4px);
+                .sombra;
+                &:focus{
+                        .sombra-foco;
+                }
+        }
+
+        &.buscador{
+                text-align: right;
+                input.texto{
+                        .pegado-antes;
+                        }
+                input[type=submit]{
+                        .pegado-despues;
+                        margin: -4px 0 0 -4px;
+                        }
+                                
+                }
+        
+        &.vertical{
+                width: @gridBaseContainer / 2.5;
+                padding: 15px;
+                background-color: @gris-blanco;
+                border-radius: @radio * 1.5;
+                label{
+                        display: block;
+                        margin: @interlinea 0 5px 5px;
+                }
+        }
+
+        &.menor-padding{
+                padding: 15px;
+                float: left;
+        }
+                
+        &.horizontal{
+                label{
+                        display: inline-block;
+                        text-align: right;
+                }
+                
+        }
+        .clearfix;
+        .margen-inferior;
+}
+
+.formulario-ancho-doble {
+        background-color: @gris-blanco;
+        border-radius: @radio * 1.5;
+        margin: 20px 10px;
+
+                .vertical{
+                        background-color: rgba(0,0,0,0);
+                }
+}
+
+#formulario-login {
+        width: @gridBaseContainer / 1.8;
+        height: 240px;
+        background-color: @gris-blanco;
+        margin:50px auto;
+
+        .ingreso{
+                margin: 20px 20px 0px 20px;
+                height: 60px;
+        }
+
+        .control-usuario {
+                padding-top: 20px;
+                font-size: @cuerpo * 1.2;
+                display: block;
+                float: left;
+                text-align: right;
+                width: 180px;
+
+        }
+
+        input[type=text], input[type=password]{
+        display: inline-block;
+        font-size: 25px;
+        padding: 4px 18px;
+        margin:5px 0px;
+        vertical-align: top;
+        width: 60%;
+        height: 50px;
+        float: right;
+        }
+
+}
+
+.campo-registro {
+        border:1px solid @gris-blanco;
+        margin: 0 auto;
+        display: block;
+
+
 }

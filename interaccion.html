@@ -44,40 +44,148 @@
   <div class='fila'>
 
     <div class='col-24'>
-        <h3>Botones</h3>
-        <p>Los botones se definen genéricamente mediante la clase <code>btn</code> y se aplican a las etiquetas <code>a</code>, <code>input [type='submit']</code> y a los elementos <code>button</code> genéricos de los formularios. Los estilos están pensados para ser aplicados de forma semántica como se describe en la tabla, pudiendo usarse en combinación con atributos de tamaño (<code>chico</code>, <code>grande</code>, <code>grigante</code>) y de atributo (<code>accion</code>, <code>alerta</code>).
+        <h3>Elementos de formularios</h3>
+        <p>
         </p>
         
-        <h3 class='filete'>Elementos de Formulario</h3>
-        <form class='vertical b10'>
-            <code>form class='vertical'</code>
+        <h3 class='filete'>Formularios del sitio e[ad]</h3>
+
+        <code>form class='vertical'</code>
+
+        <form class='vertical'>
+            <h4>Contáctate con nosotros</h4>
             
-            <label>Etiqueta del campo</label>
-            <input class='b10' placeholder="Nombre" autofocus required />
+            <label>Nombre *</label>
+            <input type='text' class='relleno' required />
 
-            <label>Otra etiqueta</label>
-            <input class='b10' placeholder="Correo electrónico" />
-
-            <label>Otra etiqueta</label>
-            <input class='b10' placeholder="Asunto" />
-
-            <label>Otra etiqueta</label>
-            <input class='b10' placeholder="Tu mensaje" />
-
-            <label>Otra etiqueta</label>
-            <input class='b10' placeholder="Verificador" />
-
-            <label>Otra etiqueta</label>
-            <input class='b10' placeholder="Botón enviar" />
+            <label>Correo electrónico *</label>
+            <input type='email' class='relleno' required/>
             
+
+            <label>Asunto</label>
+            <input class='relleno' />
+
+            <label>Mensaje</label>
+            <textarea class='relleno'/></textarea>
+
+            <label>Verificación</label>
+            <input class='verificacion' placeholder="(¿CAPTCHA?)" />
+
+            <input type='submit' class='accion grande izquierda' value='Enviar'>
+
+        </form>
+    </div>
+
+    <code>div class='col-20 formulario-ancho-doble'
+    form class='vertical menor-padding'</code>
+
+    <div class='col-20 formulario-ancho-doble'>
+        <form class='vertical menor-padding'>
+
+            <h4>Publicar un trabajo</h4>
+
+            <label>Nombre *</label>
+            <input type='text' class='relleno' required/>
+
+            <label>Correo electrónico *</label>
+            <input type='email' class='relleno' required/>
+
+            <label>Empresa</label>
+            <input class='relleno' />
+
+            <label>Sitio web</label>
+            <input class='relleno' />
+
+            <label class="radio">Solicito a:</label>
+            <input type="radio" name="carrera" /> <span class='chico'>Arquitecto</span>
+            <input type="radio" name="carrera" /> <span class='chico'>Diseñador gráfico</span>
+            <input type="radio" name="carrera" /> <span class='chico'>Diseñado de objetos</span>
+
+            <label>Experiencia requerida</label>
+            <textarea class='relleno' placeholder="perfil y competencias necesarias para el cargo"/></textarea>
+        </form>
+
+        <form class='vertical menor-padding'>
+
+            <label>Descripción del trabajo</label>
+            <textarea class='relleno' placeholder="descripción detallada de labores a realizar, horarios, contexto y ubicación geográfica"/></textarea>
+
+            <label>Remuneración ofrecida</label>
+            <input class='relleno' placeholder="puede indicar un rango"/>
+
+            <label>Interesados contactar a:</label>
+            <textarea class='relleno' placeholder="Indique vía de postulación para interesados"/></textarea>
+
+            <label>Verificación</label>
+            <input class='verificacion' placeholder="(¿CAPTCHA?)" />
+
+            <input type='submit' class='accion grande izquierda' value='Publicar'>
+
             <label class="checkbox">
                 <input type="checkbox">
                 Acepto los <a href='#'>términos y condiciones</a>
             </label>
-
-            <code class='margen-superior'>input type='submit'  class='accion grande derecha'</code>
-            <input type='submit'  class='accion grande derecha' value='Acción'>
+  
         </form>
+    </div>
+
+    <div class='col-24'>
+        <h3 class='filete'>Formularios de Wiki Casiopea</h3>
+
+        <h4>Acceder</h4>
+
+             <form id='formulario-login'>
+                <div class='ingreso'>
+                    <label class='control-usuario negrita'>Nombre de usuario</label>
+                    <input type='text' placeholder='username' required/>
+                </div>
+
+                <div class='ingreso'>
+                    <label class='control-usuario negrita'>Contraseña</label>
+                    <input type='password' required/>
+                </div>
+
+                <div class='ingreso'>
+                    <input type='submit' class='accion grande izquierda' value='Iniciar sesión'>
+                </div>
+             </form>
+
+
+        <h4>Registrarse</h4>
+
+            <div class='campo-registro col-24'>
+            <h5>Nuevo Usuario</h5>
+                <form class='vertical'>
+                            
+                    <label>Usuario</label>
+                    <input type='text' class='relleno' required />
+                    Elije un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.
+
+                    <label>Tipo</label>
+                    <input type='text' class='relleno' required />
+
+                    <label class="checkbox">
+                    <input type="checkbox">
+                        Acepto los <a href='#'>términos y condiciones</a>
+                    </label>
+
+                    <input type='submit' class='accion grande izquierda' value='Crear nuevo usuario'>
+
+                </form>
+            </div>
+            
+        <h4>Nuevo objeto</h4>
+
+        <h4>Nuevo proyecto</h4>
+
+
+<code class='margen-superior'>input type='submit' class='accion grande derecha'</code>
+        
+ <h3 class='filete'>Botones</h3>
+
+        <p>Los botones se definen genéricamente mediante la clase <code>btn</code> y se aplican a las etiquetas <code>a</code>, <code>input [type='submit']</code> y a los elementos <code>button</code> genéricos de los formularios. Los estilos están pensados para ser aplicados de forma semántica como se describe en la tabla, pudiendo usarse en combinación con atributos de tamaño (<code>chico</code>, <code>grande</code>, <code>grigante</code>) y de atributo (<code>accion</code>, <code>alerta</code>).
+        </p>
+
 
         <table class='w100'>
             <tr>
