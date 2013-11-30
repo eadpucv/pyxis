@@ -84,38 +84,89 @@
     <div class='fila'>
         <div class='col-md-12'>
         <code>div class='col-md-12'
-        form class='horizontal-lg'</code>
+        fform class='vertical-lg registro-lg pure-form pure-form-aligned'</code>
 
         <h4>Registrarse <span class='rojo chico'>Wiki - vertical</span></h4>
 
-                <form class='vertical-lg registro'>
-                <h5>Nuevo Usuario</h5>           
-                    <label class='pregunta'>Usuario</label>
-                    <input type='text' class='relleno' required />
-                    <p class='especificacion'>Elije un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</p>
 
-                    <label class='pregunta'>Tipo</label>
-                    <select>
-                        <option>Alumno(a)</option>
-                        <option>Profesora(a)</option>
-                        <option>Ex-Alumno(a)</option>
-                        <option>Amigo(a)</option>
-                        <option>Otro(a)</option>
-                    </select>
+                <form class='vertical-lg registro-lg pure-form pure-form-aligned'>
+                <h1>Nuevo Usuario</h1>
+                        <div class='pure-control-group'>
+                            <label class='pregunta'>Usuario</label>
+                            <input id='user' type='text' class='relleno' required />
+                            <p class='especificacion'>Elije un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</p>
+                        </div>
 
-                    <label class='pregunta'>Carrera</label>
-                    <select>
-                        <option>Arquitectura</option>
-                        <option>Diseño</option>
-                    </select>
+                        <div class="pure-control-group">
+                            <label class='pregunta'>Tipo</label>
+                            <select>
+                                <option>Alumno(a)</option>
+                                <option>Profesora(a)</option>
+                                <option>Ex-Alumno(a)</option>
+                                <option>Amigo(a)</option>
+                                <option>Otro(a)</option>
+                            </select>
+                        </div>
 
-                    <label class="checkbox">
-                    <input type="checkbox">
-                        Acepto los <a href='#'>términos y condiciones</a>
-                    </label>
+                        <div class="pure-control-group">
+                            <label class='pregunta'>Carrera</label>
+                            <select>
+                                <option>Arquitectura</option>
+                                <option>Diseño</option>
+                            </select>
+                        </div>
 
-                    <input type='submit' class='btn grande' value='Crear nuevo usuario'>
+                        <div class="pure-control-group">
+                            <label class='pregunta'>Año ingreso</label>
+                            <input type='text' class='relleno' required />
+                        </div>
 
+                        <div class="pure-control-group">
+                            <label class='pregunta'>Nombre *</label>
+                            <input type='text' class='relleno' required />
+                        </div>
+
+                        <div class="pure-control-group">
+                            <label class='pregunta'>Apellido *</label>
+                            <input type='text' class='relleno' required />
+                        </div>
+
+                        <div class="pure-control-group">
+                            <label class='pregunta'>Rut *</label>
+                            <input type='text' class='relleno' required />
+                        </div>
+
+                        <div class="pure-control-group">
+                            <label class='pregunta'>Mail *</label>
+                            <input type='email' class='relleno' required />
+                        </div>
+
+                        <div class="pure-control-group">
+                            <label class='pregunta'>Página en Wiki Casiopea</label>
+                            <input type='text' class='relleno' required />
+                            <p class='especificacion'>En caso de no especificar una pagina, se creara una pagina con tus datos en la wiki</p>
+                        </div>
+
+                        <h3>Contraseña</h3>
+
+                        <div class="pure-control-group">
+                            <label class='pregunta'>Contraseña</label>
+                            <input type='password' class='relleno' required />
+                        </div>
+
+                        <div class="pure-control-group">
+                            <label class='pregunta'>Verificación contraseña</label>
+                            <input type='password' class='relleno' required />
+                        </div>
+
+                        <div class="pure-controls">
+                            <label class="checkbox">
+                            <input type="checkbox">
+                                Acepto los <a href='#'>términos y condiciones</a>
+                            </label>
+
+                            <input type='submit' class='btn grande' value='Crear nuevo usuario'>
+                        </div>
 
                 </form>
             </div>
@@ -184,10 +235,10 @@
 <!-- Formulario Horizontal Medio -->
     
     <div class='fila'>
-        <div class='col-md-16'>
+        <div class='col-md-14'>
 
         <h4>Acceder <span class='rojo chico'>Wiki - horizontal</span></h4>
-        <code>div class='col-md-16'
+        <code>div class='col-md-14'
         form class='horizontal-lg'</code>
 
             <form class='horizontal-md'>

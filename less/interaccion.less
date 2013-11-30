@@ -5,14 +5,12 @@
         .transition(.2s ease all);
 }
 
-@radio:        6px;        // esquina redondeada de botones
-
 button.btn,
 input[type='submit'],
 a.btn
  {
         display: inline-block;
-        margin-top: -4px;
+        margin-top: -@margen-md;
         cursor: pointer;
         white-space: nowrap;
         font-size: @cuerpo *.9;
@@ -116,8 +114,8 @@ input[type='color'],
 .uneditable-input {
   display: inline-block;
   height: @interlinea + @cuerpo;
-  padding: 4px;
-  margin-bottom: 9px;
+  padding: 0px;
+  margin-bottom: @margen-md;
   font-size: @cuerpo;
   line-height: @interlinea;
   color: @gris;
@@ -140,9 +138,7 @@ form{
             
             input[type=checkbox]{
                 display: inline-block;
-                padding: 4px;
-                margin: 0 1.2ex 0 -0.2ex;
-                vertical-align: top;
+                margin-top: @margen-md;
             }
         }
     }
@@ -156,7 +152,8 @@ form{
 
     input[type='text'],input[type='password'],input[type='email']{
         height: auto;
-        padding: 0px;
+        padding: 0;
+        color:@rojo;
     }
         
     input[type='email']:valid{
@@ -248,23 +245,20 @@ form{
 
 
 .horizontal-md {
-    height: 240px;
     background-color: @gris-blanco;
-    margin:50px auto;
+    margin:@margen-md auto;
 
         .ingreso{
-            margin: 20px 20px 0px 20px;
+            margin: @margen-md * 1.2;
             height: 60px;
         }
 
         .control-usuario {
-            padding-top: 20px;
+            padding-top: @padding-md;
             font-size: @cuerpo * 1.2;
             display: block;
             float: left;
             text-align: right;
-            width: 180px;
-
         }
 
         input[type=text], input[type=password]{
@@ -279,33 +273,47 @@ form{
         }
 }
 
-.registro {
-    background-color: @pizarra;
-    color: @blanco;
+.registro-lg {
 
-    input[type=text], input[type=password]{
+    input[type=text], input[type=password],input[type='email']{
         display: inline-block;
-        padding: 6px 6px;
-        margin:0 6px 0 0;
+        padding: @padding-lg;
+        margin:0;
         vertical-align: top;
         width: 40%;
         float: right;
         }
 
     select{
-        display: inline-block;
-        padding: 6px 6px;
-        margin:0 6px 0 0;
-        vertical-align: top;
-        width: 40%;
+        padding: @padding-lg;
+        margin-top:-@margen-md * .2;
+        width: 47%;
         float: right;
+
     }
 
     .pregunta{
-        color: @blanco;
-        font-size: @cuerpo * 1.6;
+        color: @gris-oscuro;
+        font-size: @cuerpo * 1.2;
         text-shadow: none;
-        background-color: red;
+        display: inline-block;
+        margin-bottom: @margen-lg / 1.8;
     }
 
+            .checkbox{
+            display: inline-block;
+            float: left;
+            font-weight: 400;
+            
+                input[type=checkbox]{
+                    display: inline-block;
+                    margin-top: @margen-lg * 1.5;
+                }
+            }
+
+}
+
+.pure-control-group {
+    margin-top: @margen-lg * 1;
+    margin-left: @margen-lg * 2;
 }
