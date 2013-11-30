@@ -3244,8 +3244,8 @@ footer {
   line-height: 15.399999999999999px;
 }
 footer p {
-  padding-top: 17px;
-  font-size: 11.899999999999999px;
+  padding-top: 16px;
+  font-size: 11.2px;
   letter-spacing: inherit;
 }
 footer p img {
@@ -3253,7 +3253,7 @@ footer p img {
   margin-bottom: -4px;
 }
 footer address {
-  font-size: 11.899999999999999px;
+  font-size: 11.2px;
   line-height: inherit;
 }
 footer nav {
@@ -3264,7 +3264,7 @@ footer nav ul li {
   margin-left: 22px;
 }
 footer nav ul li a {
-  font-size: 11.899999999999999px;
+  font-size: 11.2px;
   padding: 4px 10px 4px 10px;
   text-transform: none;
   -webkit-border-radius: 4px;
@@ -3277,9 +3277,6 @@ footer nav ul li a {
 }
 .grande {
   font-size: 250%;
-}
-.grande2 {
-  font-size: 190%;
 }
 .chico,
 .chica {
@@ -3793,7 +3790,7 @@ footer nav ul li a {
   font-weight: 400;
 }
 body {
-  font-size: 17px;
+  font-size: 16px;
   background-color: #e6e6e6;
   background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -3806,6 +3803,8 @@ body {
 a {
   color: #aa0000;
   text-decoration: none;
+  font-family: 'SourceSansProBold';
+  font-size: 16px -5;
 }
 a:hover {
   background-color: #eff2db;
@@ -3821,13 +3820,13 @@ p {
   color: rgba(0, 0, 0, 0.8);
 }
 p.grande {
-  font-size: 25.5px;
+  font-size: 24px;
   font-weight: 300;
   line-height: 120%;
   padding: 0;
 }
 p.chico {
-  font-size: 13.600000000000001px;
+  font-size: 14.4px;
   line-height: 17.6px;
 }
 p.poema {
@@ -3846,7 +3845,7 @@ p.especificacion {
   font-weight: normal;
   color: #440000;
   text-transform: uppercase;
-  font-size: 17px -8px;
+  font-size: 16px -8px;
 }
 .negrita,
 strong {
@@ -3879,7 +3878,7 @@ em {
 div.poema {
   margin-bottom: 22px;
   font-family: "Neuton", serif;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 22px;
   white-space: pre;
   color: rgba(0, 0, 0, 0.8);
@@ -4007,7 +4006,7 @@ address {
 code,
 pre {
   font-family: "Lucida Console", monospace;
-  font-size: 8.5px;
+  font-size: 11.2px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -4049,14 +4048,14 @@ pre {
 }
 .big {
   color: #bfbfbf;
-  margin: -17px 0 0 0;
+  margin: -16px 0 0 0;
 }
 .main {
   color: #aa0000;
-  font-size: 51px;
+  font-size: 48px;
 }
 .tdc {
-  padding: 17px 34px;
+  padding: 16px 32px;
   color: #808080;
   background-color: #eff2db;
   -webkit-border-radius: 0.2em;
@@ -4147,10 +4146,10 @@ nav ul li a,
 nav ol li a {
   display: inline-block;
   margin: 0;
-  padding: 17px;
+  padding: 16px;
   font-weight: bold;
   color: #000000 !important;
-  font-size: 17px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 nav ul li a:hover,
@@ -4176,8 +4175,8 @@ a.btn {
   margin-top: -4px;
   cursor: pointer;
   white-space: nowrap;
-  font-size: 15.3px;
-  padding: 3.4000000000000004px 10.2px;
+  font-size: 14.4px;
+  padding: 3.2px 9.6px;
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
   text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.8), -1px -1px 0 rgba(0, 0, 0, 0.12);
@@ -4204,10 +4203,10 @@ a.btn:active {
 button.btn.chico,
 input[type='submit'].chico,
 a.btn.chico {
-  font-size: 11.05px;
+  font-size: 10.4px;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 1.7000000000000002px 3.4000000000000004px;
+  padding: 1.6px 3.2px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -4216,16 +4215,16 @@ button.btn.grande,
 input[type='submit'].grande,
 a.btn.grande {
   font-weight: 300;
-  font-size: 20.4px;
-  padding: 5.1px 15.3px;
+  font-size: 19.2px;
+  padding: 4.8px 14.4px;
 }
 button.btn.gigante,
 input[type='submit'].gigante,
 a.btn.gigante {
-  font-size: 30.6px;
+  font-size: 28.8px;
   letter-spacing: .05ex;
   font-weight: 200;
-  padding: 6.800000000000001px 20.4px;
+  padding: 6.4px 19.2px;
 }
 button.btn.accion,
 input[type='submit'].accion,
@@ -4292,10 +4291,10 @@ input[type='tel'],
 input[type='color'],
 .uneditable-input {
   display: inline-block;
-  height: 39px;
+  height: 38px;
   padding: 4px;
   margin-bottom: 9px;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 22px;
   color: #808080;
 }
@@ -4306,7 +4305,7 @@ form {
 form label {
   color: #404040;
   font-weight: bold;
-  font-size: 14.45px;
+  font-size: 13.6px;
   text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.6);
 }
 form label.checkbox {
@@ -4432,7 +4431,7 @@ form.horizontal-lg label {
 }
 .horizontal-md .control-usuario {
   padding-top: 20px;
-  font-size: 20.4px;
+  font-size: 19.2px;
   display: block;
   float: left;
   text-align: right;
@@ -4442,7 +4441,7 @@ form.horizontal-lg label {
 .horizontal-md input[type=password] {
   display: inline-block;
   font-size: 25px;
-  padding: 5.1px 15.3px;
+  padding: 4.8px 14.4px;
   margin: 5px 0px;
   vertical-align: top;
   width: 60%;
@@ -4472,7 +4471,7 @@ form.horizontal-lg label {
 }
 .registro .pregunta {
   color: #ffffff;
-  font-size: 27.200000000000003px;
+  font-size: 25.6px;
   text-shadow: none;
   background-color: red;
 }
