@@ -9,10 +9,6 @@
         font-size: 250%;
 }
 
-.grande2{
-    font-size: 190%;
-}
-
 .chico, 
 .chica{
         font-size: 80%;
@@ -20,6 +16,32 @@
 
 .color{
         color: @link-color;
+}
+
+.diagonal {
+/* Safari */
+-webkit-transform: rotate(-50deg);
+/* Firefox */
+-moz-transform: rotate(-50deg);
+/* IE */
+-ms-transform: rotate(-50deg);
+/* Opera */
+-o-transform: rotate(-50deg);
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.vertical {
+/* Safari */
+-webkit-transform: rotate(-90deg);
+/* Firefox */
+-moz-transform: rotate(-90deg);
+/* IE */
+-ms-transform: rotate(-90deg);
+/* Opera */
+-o-transform: rotate(-90deg);
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
 .uc{
@@ -41,12 +63,12 @@
 }
         
 
-// M·rgenes de ajuste
+// M√°rgenes de ajuste
 .margen-superior{margin-top: @cuadratin}
 .margen-superior-negativo{margin-top: -@cuadratin}
 .margen-inferior{margin-bottom: @cuadratin}
 .margen-inferior-negativo{margin-bottom: -@cuadratin}
-.interno{margin-left: 0} // para no acumular m·rgenes (@cuadratin) en columnas anidadas.
+.interno{margin-left: 0} // para no acumular m√°rgenes (@cuadratin) en columnas anidadas.
 
 .margen-vertical{.margen-superior; .margen-inferior}
 .centrada, .centrado{
@@ -132,8 +154,12 @@
     .box-shadow(0 0 5px fade(@negro, 20));
     color: rgba(0, 0, 0, 0.3);
     p{
+<<<<<<< HEAD
         font-size: 10px;
         padding: 10px;
+=======
+        font-size: 12px;
+>>>>>>> Juan
     }
 }
 
