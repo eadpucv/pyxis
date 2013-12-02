@@ -1,5 +1,5 @@
 
-	// TipografÌa
+	// Tipograf√≠a
 
 
 
@@ -19,6 +19,9 @@ body{
 a{
 	color: @color-link;
 	text-decoration: none;
+    font-family: 'SourceSansProBold';
+    font-size:@cuerpo -5;
+
 	
 	&:hover{
 		background-color: @ahuesado;
@@ -36,6 +39,7 @@ p {
   	margin-bottom: @interlinea;
   	line-height: @interlinea;
   	color: fade(@negro, 80%);
+    
 
   	&.grande{
   		font-size: @cuerpo * 1.5;
@@ -45,13 +49,13 @@ p {
   	}
   	
   	&.chico {
-    	font-size: @cuerpo*.80;
+    	font-size: @cuerpo*.90;
     	line-height: @interlinea * .8;
   	}
   
   	&.poema{
   		font-family: @serif;
-  		font-size: @cuerpo - 1;
+  		font-size:   @cuerpo * 1.0;
   		line-height: @interlinea;
 		white-space: pre;
   	}
@@ -59,7 +63,7 @@ p {
   	&.especificacion {
   		margin-bottom: @interlinea;
   		line-height: @interlinea;
-  		color: fade(@blanco, 80%);
+  		color: fade(@pizarra, 80%);
   	}
 }
 
@@ -71,7 +75,7 @@ p {
     font-size:@cuerpo -8px;
 }
 
-// …mfasis
+// √âmfasis
 
 .negrita,
 strong {
@@ -173,7 +177,7 @@ li {
   }
 }
 
-// Listas de descripciÛn o definiciÛn
+// Listas de descripci√≥n o definici√≥n
 
 dl {
 	margin-bottom: @interlinea;
@@ -227,7 +231,7 @@ address {
 // c√≥digo
 code, pre {
   font-family: @mono;
-  font-size: @cuerpo *.5;
+  font-size: @cuerpo * .7;
   .border-radius(3px);
   color: fade(@negro, 50%);
 }
