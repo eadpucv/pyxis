@@ -6,8 +6,10 @@
 <head>
   <meta charset='UTF-8'/>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel="stylesheet" href="assets/css/bootstrap.css" 
+    media="screen" />
 
-  <title>LGG - Interacción</title>
+  <title>LGG - Grilla </title>
 
   <link href='css/lgg.css' rel='stylesheet'>
 
@@ -21,39 +23,44 @@
   <div class='pag'>
     <header>
       <div class='fila'>
-        <div class='col-md-12'>
-          <h1 class='gigante'><span class='pesada'>LGG</span> <span class='rojo fino'>Lenguaje Gráfico Global</span></h1>
-      </div>
-      <div class='col-md-12'>
+        <div class='col-12'>
+          <h1 class='gigante'><span class='gruesa'>LGG</span> <span class='rojo fino'>Lenguaje Gráfico Global</span></h1>
+        </div>
+        <div class='col-12'>
           <p class='grande fino margen-superior'>Fundamentos gráficos para la unificación y consistencia del lenguaje visual en pantalla que busca definir un esquema de trabajo semántico y escalable para diseñadores y desarrolladores.</p>
-          <p>Proyecto de código abierto desarrollado por <strong><a href="http://www.ead.pucv.cl/mundo/investigacion/tig/">Taller de Investigaciones Gráficas .:TIG:.</a></strong> y disponible en <a class='btn grande accion' href='http://eadpucv.github.io/LGG' title='LLG en Github'>Github</a></p>
+          <p>Proyecto de código abierto desarrollado por <a href="http://www.ead.pucv.cl/mundo/investigacion/tig/"><strong>Taller de Investigaciones Gráficas .:TIG:.</strong></a> y disponible en <a class='btn grande accion' href='http://eadpucv.github.io/LGG' title='LLG en Github'>Github</a></p>
+        </div>
       </div>
-  </div>
-</header>
-<nav class='margen-inferior'>
-  <ul class='centrado'>
-    <li><a href='index.html'>¶</a></li>
-    <li><a href='tipografia.html'>Tipografía</a></li>
-    <li><a href='grilla.html'>Grilla</a></li>
-    <li><a href='interaccion.html'>Interacción</a></li>
-    <li><a href='color.html'>Color</a></li>
-    <li><a href='versatilidad.html'>Versatilidad</a></li>
-    <li><a href='layout.html'>Lay out</a></li>
-</ul>
-</nav>
+    </header>
+    <nav class='margen-inferior'>
+      <ul class='centrado'>
+        <li><a href='index.html'>¶</a></li>
+        <li><a href='tipografia.html'>Tipografía</a></li>
+        <li><a href='grilla.html'>Grilla</a></li>
+        <li><a href='interaccion.html'>Interacción</a></li>
+        <li><a href='color.html'>Color</a></li>
+        <li><a href='versatilidad.html'>Versatilidad</a></li>
+        <li><a href='layout.html'>Lay out</a></li>
+      </ul>
+    </nav>
 <div class='contenido'>
     <div class='fila'>
-        <h2>Clasificación de Formularios</h3>
-        <p>Los formularios se clasifican según su disposición en espacial en la página. Primero, siendo clases de <code>Form</code>, donde se diferencian si son de caracter <code>vertical</code> u <code>horizontal</code>. Además, se nombran sus tamaños, siendo sus extensiones muy pequeño<code>-xs</code>, pequeño<code>-sm</code>, medio<code>-md</code>, grande<code>-lg</code>.
+
+        <h1 class='gruesa rojo'>Formularios</h1> 
+
+        <h3 class='rojo'>1. Clasificación de Formularios</h3>
+
+        <p>Los formularios se clasifican según su disposición en espacial en la página. Primero, siendo clases de <code> Form </code>, donde se diferencian si son de caracter <code> vertical </code> u <code> horizontal </code>. Además, se nombran sus tamaños, siendo sus extensiones muy pequeño <code> -xs </code> , pequeño <code>-sm </code> , medio <code>-md </code> , grande <code>-lg </code>.
         </p>
             
         <div class='col-md-6'>    
-            <h3 class='filete'>Formularios verticales</h3>
+            <h5 class='gris-oscuro'>1.1. Formularios verticales </h5> 
+            <code>div class='col-md-6'
+            form class='vertical-md'</code>
+           
 
 <!-- Formulario Vertical Medio -->
 
-             <code>div class='col-md-6'
-             form class='vertical-md'</code>
 
             <form class='vertical-md'>
                 <h4>Contáctate con nosotros <span class='rojo chico'>e[ad] - vertical</span></h4>
@@ -94,7 +101,7 @@
                         <div class='pure-control-group'>
                             <label class='pregunta'>Usuario</label>
                             <input id='user' type='text' class='relleno' required />
-                            <p class='especificacion'>Elije un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</p>
+                            <p class='especificacion'>Elige un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</p>
                         </div>
 
                         <div class="pure-control-group">
@@ -172,9 +179,9 @@
             </div>
     </div>
 
-    <div class='fila'>
-        <h3 class='filete'>Formularios horizontales</h3>
-
+    <div class='fila'> <br>
+        <h5 class='gris-oscuro'>1.2. Formularios horizontales</h5>
+        
 <!-- Formulario Horizontal Grande -->
 
         <div class='col-md-22'>
@@ -266,7 +273,7 @@
     <div class='fila'>
     <code class='margen-superior'>input type='submit' class='accion grande derecha'</code>
             
-     <h3 class='filete'>Botones</h3>
+     <h1 class='gruesa rojo filete'>Botones</h1>
 
             <p>Los botones se definen genéricamente mediante la clase <code>btn</code> y se aplican a las etiquetas <code>a</code>, <code>input [type='submit']</code> y a los elementos <code>button</code> genéricos de los formularios. Los estilos están pensados para ser aplicados de forma semántica como se describe en la tabla, pudiendo usarse en combinación con atributos de tamaño (<code>chico</code>, <code>grande</code>, <code>grigante</code>) y de atributo (<code>accion</code>, <code>alerta</code>).
             </p>

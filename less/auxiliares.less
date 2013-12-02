@@ -18,6 +18,32 @@
         color: @link-color;
 }
 
+.diagonal {
+/* Safari */
+-webkit-transform: rotate(-50deg);
+/* Firefox */
+-moz-transform: rotate(-50deg);
+/* IE */
+-ms-transform: rotate(-50deg);
+/* Opera */
+-o-transform: rotate(-50deg);
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+.vertical {
+/* Safari */
+-webkit-transform: rotate(-90deg);
+/* Firefox */
+-moz-transform: rotate(-90deg);
+/* IE */
+-ms-transform: rotate(-90deg);
+/* Opera */
+-o-transform: rotate(-90deg);
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
 .uc{
         text-transform: uppercase;
 }
@@ -127,6 +153,7 @@
     background-color: fade(@negro, 5);
     .box-shadow(0 0 5px fade(@negro, 20));
     color: rgba(0, 0, 0, 0.3);
+    
     p{
         font-size: 10px;
         padding: 10px;
