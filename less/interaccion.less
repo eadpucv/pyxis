@@ -282,34 +282,31 @@ form{
 
     }
 
-    // Formulario Horizontal Medium - Ingresar usuario
+    // Formulario Horizontal Small - Ingresar usuario
 
-    &.horizontal-md {
+    &.horizontal-sm {
     background-color: @gris-blanco;
-    margin:@margen-md auto;
+    margin:@margen-sm auto;
 
         .ingreso{
-            margin: @margen-md * 2;
-            margin-bottom: @margen-md;
-            float: right;
+            margin: @margen-sm * 3;
+            margin-bottom: @margen-sm;
+            float: left;
         }
 
         .control-usuario { 
             text-align: right;
             float: left;
-            width: 180px;
         }
 
         input[type=text], input[type=password]{
-        font-size: @cuerpo * 1.4;
+        font-size: @cuerpo * 1.45;
         margin:0;
         }
 
         input[type='submit'],
             .btn{
-            width: auto;
-            padding: @padding-md;
-            margin-bottom: @margen-md;
+            margin: @margen-sm * 3;
          }
 }
     // Formulario Horizontal Large - publicar un trabajo
