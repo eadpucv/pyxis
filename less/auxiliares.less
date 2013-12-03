@@ -151,16 +151,27 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
 .ver{
     background-color: fade(@negro, 5);
-    .box-shadow(0 0 5px fade(@negro, 20));
+    .box-shadow(0 0 1px fade(@negro, 20));
     color: rgba(0, 0, 0, 0.3);
-    p{
+    
 
-        font-size: 10px;
-        padding: 10px;
-        font-size: 12px;
-    }
+// Imágenes
+
+.imagen-lg {
+width: 100%;
+height: auto;
+overflow: hidden;
 }
 
+.absoluto {
+    position: absolute;
+    top: -200px;
+}
+
+
+.fondo {
+    background-image: url('http://www.focusarnhem.nl/media/movie/Eraserhead-eraserhead3.jpg');
+}
 
 // clases porcentuales .w1 - .w100
 

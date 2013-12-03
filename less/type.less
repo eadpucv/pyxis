@@ -19,8 +19,8 @@ body{
 a{
 	color: @color-link;
 	text-decoration: none;
-    font-family: 'SourceSansProBold';
-    font-size:@cuerpo -5;
+    font-family: @sans;
+    font-size:@cuerpo -2;
 
 	
 	&:hover{
@@ -35,6 +35,7 @@ a{
 
 }
 
+//Tamaños tipográficos
 p {
   	margin-bottom: @interlinea;
   	line-height: @interlinea;
@@ -45,12 +46,12 @@ p {
   		font-size: @cuerpo * 1.5;
   		font-weight: 300;
 		line-height: 120%;
-		padding: 0;
   	}
   	
   	&.chico {
     	font-size: @cuerpo*.90;
     	line-height: @interlinea * .8;
+    	margin: 0;
   	}
   
   	&.poema{
@@ -65,6 +66,14 @@ p {
   		line-height: @interlinea;
   		color: fade(@pizarra, 80%);
   	}
+    
+    &.mediano {
+        font-size: @cuerpo -2;
+  		font-weight: 300;
+		line-height: 120%;
+		padding: 0;
+    }
+    
 }
 
 .antetitulos{
@@ -92,18 +101,16 @@ em {
 	line-height: inherit;
 }
 
-.italica2{
-    font-family: @serif;
-    font-style: italic;
-	line-height: inherit;
-    color:@azul-oscuro;
-}
-
 .pesada,
 .pesado,
 .ultra-negrita{
 	font-weight: 900;
 	letter-spacing: 0.1ex;
+}
+
+.gruesa{
+    font-family:@tipografia-titulos;
+    font-weight:@cuerpo -3;
 }
 
 .altas{
@@ -220,6 +227,17 @@ blockquote {
   }
 }
 
+.referencias{
+    font-family:@tipografia-referencias;
+}
+
+//Footer
+
+.datos-footer{
+    font-family:@sans;
+    font-weight:@cuerpo - 2;
+}
+
 // Dirección
 address {
   display: block;
@@ -293,7 +311,18 @@ pre {
 //------------------------------------------------------Estilos Semánticos
 
 
-.estracto{
-	.chico;
+.extracto{
 	line-height: @interlinea * 0.81;
+    font-family: @tipografia-referencias;
+    font-size: 0.938em;
 }
+
+.resumen {
+        font-size: 15px;
+    	line-height: 120%;
+		padding: 0;
+}
+
+
+//Elementos laterales
+
