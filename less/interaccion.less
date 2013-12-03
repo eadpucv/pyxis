@@ -1,4 +1,4 @@
-//        Elementos de Interacción:        
+ //        Elementos de Interacción:        
 //        Botones, formularios
 
 *{
@@ -10,44 +10,44 @@ input[type='submit'],
 a.btn
  {
         display: inline-block;
-        margin-top: -@margen-md;
+        margin-top: 0;
         cursor: pointer;
         white-space: nowrap;
-        font-size: @cuerpo *.9;
+        font-size: @cuerpo * .9;
         padding: @padding-sm;
-        color: fade(@negro, 60);
+        color: @blanco;
         text-align: center;
-        text-shadow: 1px 1px 0 fade(@blanco, 80%), -1px -1px 0 fade(@negro, 12%);
+        text-shadow: 1px 1px 0 fade(@negro, 80%), -1px -1px 0 fade(@negro, 12%);
         vertical-align: middle;
-        background-color: lighten(@gris-claro, 10);
+        background-color: lighten(@azul, 10);
         border: 1px solid @color-borde;
         .border-radius(@radio);
         
         &:hover {
                 text-decoration: none;
-                background-color: @blanco;
+                background-color: @azul-claro;
         }
 
         // cuando se aprieta el botón, que aparezca una sombra interior para que se vea hundido
         &:active{
-                .box-shadow(inset fade(@negro, 20%) 0 0 4px);
+                .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
         }
         
-        &.chico{
+        &.sm{
                 font-size: @cuerpo * .65;
                 text-transform: uppercase;
-                font-weight: bold;
+                font-weight: normal;
                 padding: @padding-xs;
-                .border-radius(@radio/2);
+                .border-radius(@radio/1.5);
         }
   
-        &.grande{
+        &.md{
                 font-weight: 300;
                 font-size: @cuerpo * 1.2;
                 padding: @padding-md;
                 }
 
-        &.gigante{
+        &.lg{
                 font-size: @cuerpo * 1.8;
                 letter-spacing: .05ex;
                 font-weight: 200;
@@ -57,11 +57,11 @@ a.btn
         &.accion{
                 color: @blanco;
                 text-shadow: 1px 1px 0 fade(@negro, 40%);
-                border-color: fade(@azul-oscuro, 20%);
-                background-color: lighten(@azul, 10);
+                border-color: fade(@pizarra, 30%);
+                background-color: lighten(@verde, 10);
                 
                 &:hover{
-                        background-color: @celeste;
+                        background-color: lighten(@verde-claro, 10);
                 }
         
         }
@@ -73,7 +73,7 @@ a.btn
                 background-color: @rojo;
                 
                 &:hover{
-                        background-color: lighten(@rojo, 15);
+                        background-color: @rojo-anaranjado;
                 }
         
         }
@@ -81,7 +81,7 @@ a.btn
         &.accion,
         &.alerta{
                 &:active{
-                        .box-shadow(inset fade(@negro, 40%) 1px 1px 10px);
+                        .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
                 }
         }
 }
@@ -127,8 +127,8 @@ form{
     
     label{
         color: @gris-oscuro;
-        font-weight: bold;
-        font-size: @cuerpo * .85;
+        font-weight: normal;
+        font-size: @cuerpo * 1;
         text-shadow: -1px -1px 1px fade(@blanco, 60%);
         
         &.checkbox{
@@ -145,24 +145,24 @@ form{
     
     input[type='submit'],
     .btn{
-        margin-top: @cuadratin/2;
+        margin-top: -@cuadratin / 2.5;
         width: auto;
         float: right;
     }
 
     input[type='text'],input[type='password'],input[type='email']{
         height: auto;
-        padding: 0;
-        color:@rojo;
+        width: 90%;
+        padding: @padding-md;
+        color:@pizarra;
     }
         
     input[type='email']:valid{
-        color:@verde;
+        color:@verde-claro;
     }
 
 
     input{
-        padding: 0px;
         color: fade(@azul, 70%);
         border: none;
         .border-radius(4px);
@@ -179,7 +179,8 @@ form{
     .relleno{
         background-color: @blanco;
         color: @pizarra;
-        width: 100%;
+        width: 90%;
+        padding: @padding-md;
     }
 
     .verificacion{
@@ -214,7 +215,9 @@ form{
             margin: -4px 0 0 -4px;
         }                           
     }
-        
+
+    // Formulario Vertical Medium - Contáctese con nosotros
+
     &.vertical-md{
         padding: 0;
         margin-bottom: 10px;
@@ -225,55 +228,11 @@ form{
             margin: @interlinea 0 5px 5px;
         }
     }
-                
-    &.horizontal-lg{
-        margin-bottom: 10px;
-        margin-top: 10px;
-
-        .col-md-10{
-            padding-right:25px;
-        }
-
-        label{
-            display: inline-block;
-            text-align: right;
-        }          
-    }
 
 
-}
+    // Formulario Vertical Large - Registrar usuario
 
-
-.horizontal-md {
-    background-color: @gris-blanco;
-    margin:@margen-md auto;
-
-        .ingreso{
-            margin: @margen-md * 1.2;
-            height: 60px;
-        }
-
-        .control-usuario {
-            padding-top: @padding-md;
-            font-size: @cuerpo * 1.2;
-            display: block;
-            float: left;
-            text-align: right;
-        }
-
-        input[type=text], input[type=password]{
-        display: inline-block;
-        font-size: 25px;
-        padding: @padding-md;
-        margin:5px 0px;
-        vertical-align: top;
-        width: 60%;
-        height: 50px;
-        float: right;
-        }
-}
-
-.registro-lg {
+    &.vertical-lg {
 
     input[type=text], input[type=password],input[type='email']{
         display: inline-block;
@@ -292,6 +251,13 @@ form{
 
     }
 
+    input[type='submit'],
+    .btn{
+        margin-top: @cuadratin * 1.4;
+        width: auto;
+        float: right;
+    }
+
     .pregunta{
         color: @gris-oscuro;
         font-size: @cuerpo * 1.2;
@@ -300,20 +266,106 @@ form{
         margin-bottom: @margen-lg / 1.8;
     }
 
-            .checkbox{
+    .checkbox{
+        display: inline-block;
+        float: left;
+        font-weight: 400;
+
+        input[type=checkbox]{
             display: inline-block;
-            float: left;
-            font-weight: 400;
-            
-                input[type=checkbox]{
-                    display: inline-block;
-                    margin-top: @margen-lg * 1.5;
+            margin-top: @margen-lg * 2.5;
                 }
             }
+    .pure-control-group {
+        margin-top: @margen-lg * 1;
+        margin-left: @margen-lg * 2;
+    }
+
+    }
+
+    // Formulario Horizontal Medium - Ingresar usuario
+
+    &.horizontal-md {
+    background-color: @gris-blanco;
+    margin:@margen-md auto;
+
+        .ingreso{
+            margin: @margen-md * 2.2;
+            margin-bottom: @margen-md;
+        }
+
+        .control-usuario { 
+            text-align: right;
+            float: left;
+            width: 170px;
+        }
+
+        input[type=text], input[type=password]{
+        font-size: @cuerpo * 1.4;
+        padding: @padding-md;
+        height: @cuerpo * 2;
+
+        }
+
+        input[type='submit'],
+            .btn{
+            width: auto;
+         }
+}
+    // Formulario Horizontal Large - publicar un trabajo
+
+    &.horizontal-lg{
+        margin-bottom: 10px;
+        margin-top: 10px;
+
+        label{
+            display: inline-block;
+            text-align: right;
+        }  
+
+        input[type='submit'],
+            .btn{
+            margin-top: @cuadratin;
+            width: auto;
+            float: right;
+         }        
+    }
+
 
 }
 
-.pure-control-group {
-    margin-top: @margen-lg * 1;
-    margin-left: @margen-lg * 2;
+// Text input groups
+// -------------------------
+.input-group-addon {
+  padding: @padding-md;
+  font-size: @cuerpo * 1.6;
+  font-weight: normal;
+  color: @blanco;
+  text-align: center;
+  background-color: @azul-oscuro;
+  border: 1px solid @gris-oscuro;
+  border-top-left-radius: @radio;
+  border-bottom-left-radius: @radio;
 }
+
+.input-group {
+  display: table;
+  height: 20px;
+}
+
+// Display as table-cell
+// -------------------------
+.input-group-addon,
+.input-group-btn,
+.input-group .form-control {
+  display: table-cell;
+}
+
+// Addon and addon wrapper for buttons
+.input-group-addon,
+.input-group-btn {
+  width: 1%;
+  white-space: nowrap;
+  vertical-align: middle; // Match the inputs
+}
+
