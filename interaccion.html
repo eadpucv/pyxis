@@ -28,8 +28,7 @@
         </div>
         <div class='col-12'>
           <p class='grande fino margen-superior'>Fundamentos gráficos para la unificación y consistencia del lenguaje visual en pantalla que busca definir un esquema de trabajo semántico y escalable para diseñadores y desarrolladores.</p>
-          
-          <p>Proyecto de código abierto desarrollado por <strong><a href="http://www.ead.pucv.cl/mundo/investigacion/tig/">Taller de Investigaciones Gráficas .:TIG:.</a></strong> y disponible en <a class='btn sm' href='http://eadpucv.github.io/LGG' title='LLG en Github'>Github</a></p>
+          <p>Proyecto de código abierto desarrollado por <a href="http://www.ead.pucv.cl/mundo/investigacion/tig/"><strong>Taller de Investigaciones Gráficas .:TIG:.</strong></a> y disponible en <a class='btn sm' href='http://eadpucv.github.io/LGG' title='LLG en Github'>Github</a></p>
 
       </div>
     </header>
@@ -100,8 +99,14 @@
                 <form class='vertical-lg pure-form pure-form-aligned'>
                 <h1>Nuevo Usuario</h1>
                         <div class='pure-control-group'>
+
                             <label class='pregunta'>Usuario</label>
-                            <input id='user' type='text' class='relleno' required />
+                        <div class='ingreso'>
+                        <div class='input-group'>
+                        <span class="input-group-addon">@</span>
+                        <input type='text' placeholder='username' required/>
+                        </div>
+                        </div>
                             <p class='especificacion'>Elige un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</p>
                         </div>
 
@@ -247,13 +252,15 @@
 
         <h4>Acceder <span class='rojo chico'>Wiki - horizontal</span></h4>
         <code>div class='col-md-14'
-        form class='horizontal-lg'</code>
+        form class='horizontal-md'</code>
 
             <form class='horizontal-md'>
+            <div class='ingreso'>
                     <div class='input-group'>
                         <label class='control-usuario negrita'>Nombre de usuario</label>
                         <span class="input-group-addon">@</span>
                         <input type='text' placeholder='username' required/>
+                    </div>
                 </div>
 
                 <div class='ingreso'>
@@ -265,7 +272,7 @@
                 </div>
 
                 <div class='ingreso'>
-                    <input type='submit' class='accion md izquierda' value='Iniciar sesión'>
+                    <input type='submit' class='md izquierda' value='Iniciar sesión'>
                 </div>
             </form>
         </div>
@@ -283,7 +290,7 @@
     <div class='fila'>
     <code class='margen-superior'>input type='submit' class='accion grande derecha'</code>
             
-     <h2 class='gruesa rojo'>Botones</h2>
+     <h3 class='rojo'>2. Botones</h3>
 
             <p>Los botones se definen genéricamente mediante la clase <code>btn</code> y se aplican a las etiquetas <code>a</code>, <code>input [type='submit']</code> y a los elementos <code>button</code> genéricos de los formularios. Los estilos están pensados para ser aplicados de forma semántica como se describe en la tabla, pudiendo usarse en combinación con atributos de tamaño (<code>chico</code>, <code>grande</code>, <code>grigante</code>) y de atributo (<code>accion</code>, <code>alerta</code>).
             </p>

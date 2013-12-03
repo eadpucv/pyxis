@@ -152,7 +152,6 @@ form{
 
     input[type='text'],input[type='password'],input[type='email']{
         height: auto;
-        width: 90%;
         padding: @padding-md;
         color:@pizarra;
     }
@@ -290,26 +289,27 @@ form{
     margin:@margen-md auto;
 
         .ingreso{
-            margin: @margen-md * 2.2;
+            margin: @margen-md * 2;
             margin-bottom: @margen-md;
+            float: right;
         }
 
         .control-usuario { 
             text-align: right;
             float: left;
-            width: 170px;
+            width: 180px;
         }
 
         input[type=text], input[type=password]{
         font-size: @cuerpo * 1.4;
-        padding: @padding-md;
-        height: @cuerpo * 2;
-
+        margin:0;
         }
 
         input[type='submit'],
             .btn{
             width: auto;
+            padding: @padding-md;
+            margin-bottom: @margen-md;
          }
 }
     // Formulario Horizontal Large - publicar un trabajo
@@ -338,7 +338,10 @@ form{
 // -------------------------
 .input-group-addon {
   padding: @padding-md;
-  font-size: @cuerpo * 1.6;
+  margin-right:-@margen-sm;
+  width: @cuadratin;
+  display: inline-block;
+  font-size: @cuerpo * 1.35;
   font-weight: normal;
   color: @blanco;
   text-align: center;
@@ -348,24 +351,4 @@ form{
   border-bottom-left-radius: @radio;
 }
 
-.input-group {
-  display: table;
-  height: 20px;
-}
-
-// Display as table-cell
-// -------------------------
-.input-group-addon,
-.input-group-btn,
-.input-group .form-control {
-  display: table-cell;
-}
-
-// Addon and addon wrapper for buttons
-.input-group-addon,
-.input-group-btn {
-  width: 1%;
-  white-space: nowrap;
-  vertical-align: middle; // Match the inputs
-}
 
