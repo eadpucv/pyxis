@@ -28,8 +28,9 @@
         </div>
         <div class='col-12'>
           <p class='grande fino margen-superior'>Fundamentos gráficos para la unificación y consistencia del lenguaje visual en pantalla que busca definir un esquema de trabajo semántico y escalable para diseñadores y desarrolladores.</p>
-          <p>Proyecto de código abierto desarrollado por <a href="http://www.ead.pucv.cl/mundo/investigacion/tig/"><strong>Taller de Investigaciones Gráficas .:TIG:.</strong></a> y disponible en <a class='btn grande accion' href='http://eadpucv.github.io/LGG' title='LLG en Github'>Github</a></p>
-        </div>
+          
+          <p>Proyecto de código abierto desarrollado por <strong><a href="http://www.ead.pucv.cl/mundo/investigacion/tig/">Taller de Investigaciones Gráficas .:TIG:.</a></strong> y disponible en <a class='btn sm' href='http://eadpucv.github.io/LGG' title='LLG en Github'>Github</a></p>
+
       </div>
     </header>
     <nav class='margen-inferior'>
@@ -80,7 +81,7 @@
                 <label>Verificación</label>
                 <input class='verificacion' placeholder="(¿CAPTCHA?)" />
 
-                <input type='submit' class='accion grande izquierda' value='Enviar'>
+                <input type='submit' class='btn md izquierda' value='Enviar'>
 
             </form>
         </div>
@@ -96,7 +97,7 @@
         <h4>Registrarse <span class='rojo chico'>Wiki - vertical</span></h4>
 
 
-                <form class='vertical-lg registro-lg pure-form pure-form-aligned'>
+                <form class='vertical-lg pure-form pure-form-aligned'>
                 <h1>Nuevo Usuario</h1>
                         <div class='pure-control-group'>
                             <label class='pregunta'>Usuario</label>
@@ -172,7 +173,7 @@
                                 Acepto los <a href='#'>términos y condiciones</a>
                             </label>
 
-                            <input type='submit' class='btn grande' value='Crear nuevo usuario'>
+                            <input type='submit' class='accion md' value='Crear nuevo usuario'>
                         </div>
 
                 </form>
@@ -227,7 +228,7 @@
                     <label>Verificación</label>
                     <input class='verificacion' placeholder="(¿CAPTCHA?)" />
 
-                    <input type='submit' class='accion grande izquierda' value='Publicar'>
+                    <input type='submit' class='accion md izquierda' value='Publicar'>
 
                     <label class="checkbox">
                         <input type="checkbox">
@@ -249,25 +250,34 @@
         form class='horizontal-lg'</code>
 
             <form class='horizontal-md'>
-                <div class='ingreso'>
-                    <label class='control-usuario negrita'>Nombre de usuario</label>
-                    <input type='text' placeholder='username' required/>
+                    <div class='input-group'>
+                        <label class='control-usuario negrita'>Nombre de usuario</label>
+                        <span class="input-group-addon">@</span>
+                        <input type='text' placeholder='username' required/>
                 </div>
 
                 <div class='ingreso'>
-                    <label class='control-usuario negrita'>Contraseña</label>
-                    <input type='password' required/>
+                    <div class='input-group'>
+                        <label class='control-usuario negrita'>Contraseña</label>
+                        <span class="input-group-addon">#</span>
+                        <input type='password' required/>
+                    </div>
                 </div>
 
                 <div class='ingreso'>
-                    <input type='submit' class='accion grande izquierda' value='Iniciar sesión'>
+                    <input type='submit' class='accion md izquierda' value='Iniciar sesión'>
                 </div>
             </form>
         </div>
     </div>         
             
         <h4>Nuevo objeto</h4>
-
+            <div class="ingreso">
+                    <div class="input-group">
+                    <span class="input-group-addon">@</span>
+                    <input type="text" class="form-control" placeholder="Username">
+                </div>
+            </div>
         <h4>Nuevo proyecto</h4>
 
     <div class='fila'>
@@ -290,7 +300,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a class='btn chico'>Acción</a>
+                        <a class='btn sm'>Acción</a>
                     </td>
                     <td>
                         <code>btn chico</code>
@@ -306,7 +316,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a class='btn grande'>Acción</a>
+                        <a class='btn md'>Acción</a>
                     </td>
                     <td>
                         <code>btn grande</code>
@@ -314,7 +324,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a class='btn gigante'>Acción</a>
+                        <a class='btn lg'>Acción</a>
                     </td>
                     <td>
                         <code>btn gigante</code>
@@ -322,10 +332,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <a class='btn gigante accion'>Acción</a>
-                        <a class='btn grande accion'>Acción</a>
+                        <a class='btn lg accion'>Acción</a>
+                        <a class='btn md accion'>Acción</a>
                         <a class='btn accion'>Acción</a>
-                        <a class='btn chico accion'>Acción</a>
+                        <a class='btn sm accion'>Acción</a>
                     </td>
                     <td>
                         <code>btn accion</code>
@@ -333,10 +343,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <a class='btn gigante alerta'>Acción</a>
-                        <a class='btn grande alerta'>Acción</a>
+                        <a class='btn lg alerta'>Acción</a>
+                        <a class='btn md alerta'>Acción</a>
                         <a class='btn alerta'>Acción</a>
-                        <a class='btn chico alerta'>Acción</a>
+                        <a class='btn sm alerta'>Acción</a>
                     </td>
                     <td>
                         <code>btn alerta</code>
