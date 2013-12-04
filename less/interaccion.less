@@ -15,17 +15,18 @@ a.btn
         white-space: nowrap;
         font-size: @cuerpo * .9;
         padding: @padding-sm;
-        color: @blanco;
+        color: @azul;
         text-align: center;
-        text-shadow: 1px 1px 0 fade(@negro, 80%), -1px -1px 0 fade(@negro, 12%);
+        background-color: @blanco;
         vertical-align: middle;
-        background-color: lighten(@azul, 10);
-        border: 1px solid @color-borde;
-        .border-radius(@radio);
+        border: 1px solid @blanco;
+        .border-radius(@radio / 2);
         
         &:hover {
                 text-decoration: none;
-                background-color: @azul-claro;
+                background-color: @azul;
+                color:@blanco;
+                border: 1px solid @azul;
         }
 
         // cuando se aprieta el botón, que aparezca una sombra interior para que se vea hundido
@@ -139,6 +140,7 @@ form{
             input[type=checkbox]{
                 display: inline-block;
                 margin-top: @margen-md;
+                padding: @padding-md;
             }
         }
     }
@@ -203,6 +205,14 @@ form{
                 }
         }
 
+    select{
+        margin: @margen-md;
+        border-color:@pizarra;
+        height: auto;
+        border:1px solid;
+        padding: @padding-md;
+    }
+
     &.buscador{
         text-align: right;
 
@@ -244,10 +254,9 @@ form{
 
     select{
         padding: @padding-lg;
-        margin-top:-@margen-md * .2;
+        margin: -@margen-lg / 2 0;
         width: 47%;
         float: right;
-
     }
 
     input[type='submit'],
@@ -273,9 +282,10 @@ form{
         input[type=checkbox]{
             display: inline-block;
             margin-top: @margen-lg * 2.5;
+            padding: 100px;
                 }
             }
-    .pure-control-group {
+    .grupo-label-relleno {
         margin-top: @margen-lg * 1;
         margin-left: @margen-lg * 2;
     }
@@ -289,7 +299,7 @@ form{
     margin:@margen-sm auto;
 
         .ingreso{
-            margin: @margen-sm * 3;
+            margin: @margen-sm * 3.5;
             margin-bottom: @margen-sm;
             float: left;
         }
@@ -302,13 +312,45 @@ form{
         input[type=text], input[type=password]{
         font-size: @cuerpo * 1.45;
         margin:0;
+
         }
 
         input[type='submit'],
             .btn{
-            margin: @margen-sm * 3;
+            margin: @margen-sm * 3.5;
          }
-}
+
+             .grupo-label-relleno {
+        margin-top: @margen-lg * 1;
+        margin-left: @margen-lg * 2;
+    }
+    }
+
+    // Formulario Horizontal Medium - Nuevo objeto - Nuevo proyecto
+
+    &.horizontal-md {
+
+        .grupo-label-relleno {
+            margin: @margen-md * 2;
+
+            &.sm {
+                background-color: red;
+            }
+        }
+
+        input[type=text], input[type=password]{
+            margin:0 0 0 @margen-md;
+            width: 74%;
+        }
+
+        input[type='submit'],
+            .btn{
+            margin-right: @margen-md * 2;
+         }
+
+    }
+
+
     // Formulario Horizontal Large - publicar un trabajo
 
     &.horizontal-lg{
@@ -327,7 +369,6 @@ form{
             float: right;
          }        
     }
-
 
 }
 

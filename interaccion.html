@@ -98,19 +98,16 @@
 
                 <form class='vertical-lg pure-form pure-form-aligned'>
                 <h1>Nuevo Usuario</h1>
-                        <div class='pure-control-group'>
+                        <div class='grupo-label-relleno'>
 
-                            <label class='pregunta'>Usuario</label>
                         <div class='ingreso'>
-                        <div class='input-group'>
-                        <span class="input-group-addon">@</span>
+                        <label class='pregunta'>Usuario</label>
                         <input type='text' placeholder='username' required/>
-                        </div>
                         </div>
                             <p class='especificacion'>Elige un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</p>
                         </div>
 
-                        <div class="pure-control-group">
+                        <div class='grupo-label-relleno'>
                             <label class='pregunta'>Tipo</label>
                             <select>
                                 <option>Alumno(a)</option>
@@ -121,7 +118,7 @@
                             </select>
                         </div>
 
-                        <div class="pure-control-group">
+                        <div class='grupo-label-relleno'>
                             <label class='pregunta'>Carrera</label>
                             <select>
                                 <option>Arquitectura</option>
@@ -129,32 +126,32 @@
                             </select>
                         </div>
 
-                        <div class="pure-control-group">
+                        <div class='grupo-label-relleno'>
                             <label class='pregunta'>Año ingreso</label>
                             <input type='text' class='relleno' required />
                         </div>
 
-                        <div class="pure-control-group">
+                        <div class='grupo-label-relleno'>
                             <label class='pregunta'>Nombre *</label>
                             <input type='text' class='relleno' required />
                         </div>
 
-                        <div class="pure-control-group">
+                        <div class='grupo-label-relleno'>
                             <label class='pregunta'>Apellido *</label>
                             <input type='text' class='relleno' required />
                         </div>
 
-                        <div class="pure-control-group">
+                        <div class='grupo-label-relleno'>
                             <label class='pregunta'>Rut *</label>
                             <input type='text' class='relleno' required />
                         </div>
 
-                        <div class="pure-control-group">
+                        <div class='grupo-label-relleno'>
                             <label class='pregunta'>Mail *</label>
                             <input type='email' class='relleno' required />
                         </div>
 
-                        <div class="pure-control-group">
+                        <div class='grupo-label-relleno'>
                             <label class='pregunta'>Página en Wiki Casiopea</label>
                             <input type='text' class='relleno' required />
                             <p class='especificacion'>En caso de no especificar una pagina, se creara una pagina con tus datos en la wiki</p>
@@ -162,12 +159,12 @@
 
                         <h3>Contraseña</h3>
 
-                        <div class="pure-control-group">
+                        <div class='grupo-label-relleno'>
                             <label class='pregunta'>Contraseña</label>
                             <input type='password' class='relleno' required />
                         </div>
 
-                        <div class="pure-control-group">
+                        <div class='grupo-label-relleno'>
                             <label class='pregunta'>Verificación contraseña</label>
                             <input type='password' class='relleno' required />
                         </div>
@@ -178,7 +175,7 @@
                                 Acepto los <a href='#'>términos y condiciones</a>
                             </label>
 
-                            <input type='submit' class='accion md' value='Crear nuevo usuario'>
+                            <input type='submit' class='accion lg' value='Crear nuevo usuario'>
                         </div>
 
                 </form>
@@ -190,9 +187,10 @@
         
 <!-- Formulario Horizontal Grande -->
 
-        <div class='col-md-22'>
-        <code>div class='col-md-10'
-        form class='horizontal-lg'</code>
+        <div class='col-md-20'>
+        <code>div class='col-md-22'
+        form class='horizontal-lg'
+        div class='col-md-10' * 2</code>
 
             <form class='horizontal-lg'>
                 <div class='col-md-10'>
@@ -233,7 +231,7 @@
                     <label>Verificación</label>
                     <input class='verificacion' placeholder="(¿CAPTCHA?)" />
 
-                    <input type='submit' class='accion md izquierda' value='Publicar'>
+                    <input type='submit' class='accion lg izquierda' value='Publicar'>
 
                     <label class="checkbox">
                         <input type="checkbox">
@@ -245,19 +243,112 @@
         </div>
     </div>
 
+<!-- Formulario Horizontal Medio --> 
+    <div class='fila'>
+        <div class='col-md-14'>
+             <h4>Nuevo objeto <span class='rojo chico'>Wiki - horizontal</span></h4>
+             <code>div class='col-md-14'
+            form class='horizontal-md'</code>
+
+            <form class='horizontal-md'>
+                <h1>Agregar página con formulario</h1>
+                
+                <div class='grupo-label-relleno'>
+                    <label class='pregunta'>Nombre de objeto</label>
+                    <input type='text' required />
+                <p class='especificacion'>
+                <strong>Ingresa el nombre y de lo que vas a crear</strong>. Se creará una página con ese nombre. Si el nombre que eliges ya está ocupado, esta página te llevará al formulario que elijas con el contenido de la página existente donde podrás editar el nuevo objeto con atributos semánticos.</p>
+
+                </div>
+
+                <div class='grupo-label-relleno'>
+                    <label class='pregunta'>Tipo de formulario</label>
+                    <select>
+                        <option>Nueva asignatura</option>
+                        <option>Nueva bibliografía</option>
+                        <option>Nueva obra</option>
+                        <option>Nueva persona</option>
+                        <option>Nueva publicación</option>
+                        <option>Nueva revista académica</option>
+                        <option>Nueva tarea</option>
+                        <option>Nueva travesía</option>
+                        <option>Nuevo acto</option>
+                        <option>Nuevo caso de estudio</option>
+                        <option>Nuevo curso</option>
+                        <option>Nuevo evento</option>
+                        <option>Nuevo proyecto</option>
+                        <option>Nuevo proyecto de investigación</option>
+                        <option>Nuevo trabajo en madlab</option>
+                    </select>
+                <p class='especificacion'>Define el tipo de objeto que vas a crear con el selector.</p>
+                </div>
+
+                <input type='submit' class='accion md izquierda' value='Crear o editar'>
+            </form>
+        </div>
+    </div>
+
 <!-- Formulario Horizontal Grande -->
 
-        <h4>Nuevo proyecto</h4>
+    <div class='fila'>
+        <div class='col-md-14'>
+
+            <h4>Crear nuevo o editar <span class='rojo chico'>Wiki - horizontal</span></h4>
+<!-- copy -->
 
 
-<!-- Formulario Horizontal Medio -->   
-        <h4>Nuevo objeto</h4>
-            <div class="ingreso">
-                    <div class="input-group">
-                    <span class="input-group-addon">@</span>
-                    <input type="text" class="form-control" placeholder="Username">
+                <form class='vertical-lg pure-form pure-form-aligned'>
+                <h1>Nuevo Usuario</h1>
+                        <div class='grupo-label-relleno'>
+
+                        <div class='ingreso'>
+                        <label class='pregunta'>Usuario</label>
+                        <input type='text' placeholder='username' required/>
+                        </div>
+                            <p class='especificacion'>Elige un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</p>
+                        </div>
+                </form>
+
+<!-- fin copy -->
+            <form class='horizontal-md pure-form pure-form-aligned'>
+                <h1>Crear nuevo 'Proyecto'</h1>
+                
+                <div class='grupo-label-relleno'>
+                    <label class='pregunta'>Título</label>
+                    <input type='text' required />
                 </div>
-            </div>
+
+                <div class='grupo-label-relleno'>
+                    <label class="radio">Tipo de Proyecto</label>
+                    <input type="checkbox" name="tipo-proyecto" /> <span class='chico'>Proyecto de Taller</span>
+                    <input type="checkbox" name="tipo-proyecto" /> <span class='chico'>Proyecto de Curso</span>
+                    <input type="checkbox" name="tipo-proyecto" /> <span class='chico'>Proyecto de Tutoría</span>
+                    <input type="checkbox" name="tipo-proyecto" /> <span class='chico'>Proyecto de Titulación</span>
+                    <input type="checkbox" name="tipo-proyecto" /> <span class='chico'>Proyecto de Posgrado</span>
+                    <input type="checkbox" name="tipo-proyecto" /> <span class='chico'>Proyecto Extracurricular</span>
+
+                    <p class='especificacion'>Importante: Si se trata de un proyecto de Investigación, hay que cambiar el tipo de plantilla de {{Proyecto}} a {{Proyecto de Investigación}} en la pestaña EDITAR. Los proyectos de investigación tienen otros campos y particularidades.</p>
+                </div>
+
+                <div class='grupo-label-relleno'>
+                    <label class='pregunta'>Palabras claves</label>
+                    <input type='text' required />
+                </div>
+
+                <div class='grupo-label-relleno sm'>
+                    <label class='pregunta'>Año de inicio</label>
+                    <input type='text' required />
+                </div>
+
+                <div class='grupo-label-relleno'>
+                    <label class='pregunta'>Año de término</label>
+                    <input type='text' required />
+                </div>
+
+            </form>
+        
+        </div>
+    </div>
 
 <!-- Formulario Horizontal Pequeño -->
     
@@ -286,6 +377,10 @@
                 <input type='submit' class='md' value='Iniciar sesión'>
             
             </form>
+
+            <p class='especificacion'>
+                <a href='http://personas.ead.pucv.cl/personas/usuarios/recuperacionDatos'>¿olvidaste tu contraseña?</a> Si no tienes una cuenta, <a>regístrate</a>
+            </p>
         </div>
     </div>        
 
@@ -309,15 +404,15 @@
                 </tr>
                 <tr>
                     <td>
-                        <a class='btn sm'>Acción</a>
+                        <a class='btn sm'>Botón</a>
                     </td>
                     <td>
-                        <code>btn chico</code>
+                        <code>btn sm</code>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <a class='btn'>Acción</a>
+                        <a class='btn'>Botón</a>
                     </td>
                     <td>
                         <code>btn</code>
@@ -325,18 +420,18 @@
                 </tr>
                 <tr>
                     <td>
-                        <a class='btn md'>Acción</a>
+                        <a class='btn md'>Botón</a>
                     </td>
                     <td>
-                        <code>btn grande</code>
+                        <code>btn md</code>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <a class='btn lg'>Acción</a>
+                        <a class='btn lg'>Botón</a>
                     </td>
                     <td>
-                        <code>btn gigante</code>
+                        <code>btn lg</code>
                     </td>
                 </tr>
                 <tr>
@@ -352,10 +447,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <a class='btn lg alerta'>Acción</a>
-                        <a class='btn md alerta'>Acción</a>
-                        <a class='btn alerta'>Acción</a>
-                        <a class='btn sm alerta'>Acción</a>
+                        <a class='btn lg alerta'>Alerta</a>
+                        <a class='btn md alerta'>Alerta</a>
+                        <a class='btn alerta'>Alerta</a>
+                        <a class='btn sm alerta'>Alerta</a>
                     </td>
                     <td>
                         <code>btn alerta</code>
