@@ -12,8 +12,8 @@
 
 // Creates a wrapper for a series of columns
 .make-row(@gutter: @grid-gutter-width) {
-  margin-left:  (@gutter / -2);
-  margin-right: (@gutter / -2);
+  margin-left:  (@gutter / 2);
+  margin-right: (@gutter / 2);
   .clearfix();
 }
 
@@ -81,17 +81,17 @@
 // Generate the medium column offsets
 .make-md-column-offset(@columns) {
   @media (min-width: @screen-md-min) {
-    margin-left: percentage((@columns / @grilla-columnas));
+    margin-left: percentage((@columns / @grilla-columnas / 2));
   }
 }
 .make-md-column-push(@columns) {
   @media (min-width: @screen-md) {
-    left: percentage((@columns / @grilla-columnas));
+    left: percentage((@columns / @grilla-columnas / 2));
   }
 }
 .make-md-column-pull(@columns) {
   @media (min-width: @screen-md-min) {
-    right: percentage((@columns / @grilla-columnas));
+    right: percentage((@columns / @grilla-columnas / 2));
   }
 }
 
@@ -136,13 +136,16 @@
 
 .make-grid-columns() {
   // Common styles for all sizes of grid columns, widths 1-12
-  .col(@index) when (@index = 1) { // initial
+  //CAMBIO DE 1 A 0.5 PARA QUITAR PADDINGS
+  .col(@index) when (@index = 0.5) { // initial
     @item: ~".col-xs-@{index}, .col-sm-@{index}, .col-md-@{index}, .col-lg-@{index}";
-    .col(@index + 1, @item);
+    //CAMBIO DE 1 A 0.5 PARA QUITAR PADDINGS
+    .col(@index + 0.5, @item);
   }
   .col(@index, @list) when (@index =< @grilla-columnas) { // general; "=<" isn't a typo
     @item: ~".col-xs-@{index}, .col-sm-@{index}, .col-md-@{index}, .col-lg-@{index}";
-    .col(@index + 1, ~"@{list}, @{item}");
+    //CAMBIO DE 1 A 0.5 PARA QUITAR PADDINGS
+    .col(@index + 0.5, ~"@{list}, @{item}");
   }
   .col(@index, @list) when (@index > @grilla-columnas) { // terminal
     @{list} {
