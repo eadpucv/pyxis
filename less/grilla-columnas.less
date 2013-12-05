@@ -137,15 +137,15 @@
 .make-grid-columns() {
   // Common styles for all sizes of grid columns, widths 1-12
   //CAMBIO DE 1 A 0.5 PARA QUITAR PADDINGS
-  .col(@index) when (@index = 0.5) { // initial
+  .col(@index) when (@index = 1) { // initial
     @item: ~".col-xs-@{index}, .col-sm-@{index}, .col-md-@{index}, .col-lg-@{index}";
     //CAMBIO DE 1 A 0.5 PARA QUITAR PADDINGS
-    .col(@index + 0.5, @item);
+    .col(@index + 1, @item);
   }
   .col(@index, @list) when (@index =< @grilla-columnas) { // general; "=<" isn't a typo
     @item: ~".col-xs-@{index}, .col-sm-@{index}, .col-md-@{index}, .col-lg-@{index}";
     //CAMBIO DE 1 A 0.5 PARA QUITAR PADDINGS
-    .col(@index + 0.5, ~"@{list}, @{item}");
+    .col(@index + 1, ~"@{list}, @{item}");
   }
   .col(@index, @list) when (@index > @grilla-columnas) { // terminal
     @{list} {
