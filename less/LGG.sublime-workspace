@@ -1,0 +1,292 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"gutte",
+				"grid-gutter-width"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"marg",
+				"margin-right"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"backgrou",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"INSTAL",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/Valparaiso/LGG/less/auxiliares.less",
+		"/Users/Valparaiso/LGG/less/grilla-columnas.less",
+		"/Users/Valparaiso/LGG/less/grilla-medidas.less",
+		"/Users/Valparaiso/LGG/less/type.less",
+		"/Users/Valparaiso/LGG/less/grilla.less",
+		"/Users/Valparaiso/LGG/grilla.html",
+		"/Users/Valparaiso/LGG/less/tipografias-web.less",
+		"/Users/Valparaiso/LGG/less/grilla-variables.less",
+		"/Users/Valparaiso/LGG/less/lgg.less",
+		"/Users/Valparaiso/LGG/layout.html",
+		"/Users/Valparaiso/LGG/less/interaccion.less",
+		"/Users/Valparaiso/LGG/less/pagina.less",
+		"/Users/Valparaiso/LGG/less/tipografias-web.css",
+		"/Users/Valparaiso/LGG/less/variables.less",
+		"/Users/Valparaiso/LGG/less/grilla-utilidades.less",
+		"/Users/Valparaiso/LGG/less/reset.less",
+		"/Users/Valparaiso/LGG/less/funciones.less",
+		"/Users/Valparaiso/LGG/less/Find Results",
+		"/Users/Valparaiso/LGG/less/columnas.less",
+		"/Users/Valparaiso/LGG/less/untitled",
+		"/Users/Valparaiso/LGG/less/patrones.less",
+		"/Users/Valparaiso/LGG/less/tablas.less",
+		"/Users/Valparaiso/LGG/less/Grilla-tamaños.less",
+		"/Users/Valparaiso/bootstrap/examples/grid/grid.css",
+		"/Users/Valparaiso/bootstrap/examples/grid/index.html",
+		"/Users/Valparaiso/bootstrap/less/grid.less",
+		"/Users/Valparaiso/bootstrap/less/bootstrap.less",
+		"/Users/Valparaiso/LGG/grilla3.html",
+		"/Users/Valparaiso/LGG/grid.css",
+		"/Users/Valparaiso/LGG/grilla bootstrap/grid.css",
+		"/Users/Valparaiso/LGG/grilla bootstrap/index.html",
+		"/Users/Valparaiso/bootstrap/less/variables.less",
+		"/Users/Valparaiso/LGG/index.html",
+		"/Users/Valparaiso/LGG/tipografia.html",
+		"/Users/Valparaiso/LGG/interaccion.html",
+		"/Users/Valparaiso/LGG/color.html",
+		"/Users/Valparaiso/LGG/versatilidad.html"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/Valparaiso/LGG/less",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"col",
+			"vertical",
+			"diagonal",
+			"4",
+			"<p>",
+			"14",
+			"13",
+			"d",
+			"p",
+			"col",
+			"'><",
+			"p",
+			"'><",
+			"p",
+			"col",
+			"08",
+			".fila",
+			"><",
+			"col",
+			"'><",
+			"col",
+			"02",
+			"01",
+			";\n",
+			"code",
+			"col-",
+			".fila",
+			"@grid-columns",
+			"pag",
+			".col",
+			"row",
+			"padding: -15px",
+			"fila",
+			"pag",
+			"ver",
+			" <",
+			"class",
+			" <",
+			">\n",
+			"code",
+			" <",
+			"07",
+			"02",
+			"4",
+			"></",
+			"oculto",
+			"col",
+			"14",
+			"13",
+			"15",
+			"14",
+			"13",
+			"10",
+			"ver",
+			"fila",
+			"rotado",
+			"code",
+			"ver",
+			"code",
+			"p",
+			"ver",
+			"fila",
+			"row",
+			"cuadratin",
+			"cudratin",
+			"margen",
+			".fila",
+			".hidden",
+			".ver",
+			".pag",
+			".row",
+			"col-",
+			"col-6",
+			"col-4",
+			"col-4 ",
+			"col-2",
+			"col-1 ",
+			"@grid-columns",
+			"@gridGutter",
+			"@gridBaseContainer",
+			"gridBase",
+			"grid-gutter"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".oculto",
+			"@grilla-columnas",
+			"@cuadratin"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 206.0,
+	"status_bar_visible": true
+}
