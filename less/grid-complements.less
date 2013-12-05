@@ -53,7 +53,7 @@
 
 /* Normal Widths */
 .wClass (@index) when (@index > 0) {
-	(~".w-@{index}"){ width: ~`"@{index}"+'%'`; }
+	// (~".w-@{index}"){ width: ~`"@{index}"+'%'`; }
 	.wClass(@index - 1);
 }
 .wClass(0) {}

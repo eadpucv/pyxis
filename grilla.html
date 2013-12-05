@@ -6,6 +6,8 @@
 <head>
   <meta charset='UTF-8'/>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+   <link rel="stylesheet" href="assets/css/bootstrap.css" 
+    media="screen" />
 
   <title>LGG - Grilla</title>
 
@@ -17,16 +19,19 @@
   <link rel='apple-touch-icon-precomposed' href='img/favicon-57.png'>
 </head>
 
+
 <body lang='ES_es'>
+  <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
   <div class='pag'>
     <header>
       <div class='fila'>
-        <div class='col-12'>
+        <div class='col-md-12'>
           <h1 class='gigante'><span class='pesada'>LGG</span> <span class='rojo fino'>Lenguaje Gráfico Global</span></h1>
         </div>
-        <div class='col-12'>
+        <div class='col-md-20'>
           <p class='grande fino margen-superior'>Fundamentos gráficos para la unificación y consistencia del lenguaje visual en pantalla que busca definir un esquema de trabajo semántico y escalable para diseñadores y desarrolladores.</p>
-          <p>Proyecto de código abierto desarrollado por <strong><a href="http://www.ead.pucv.cl/mundo/investigacion/tig/">Taller de Investigaciones Gráficas .:TIG:.</a></strong> y disponible en <a class='btn grande accion' href='http://eadpucv.github.io/LGG' title='LLG en Github'>Github</a></p>
+          <p>Proyecto de código abierto desarrollado por <strong><a href="http://www.ead.pucv.cl/mundo/investigacion/tig/"><strong>Taller de Investigaciones Gráficas .:TIG:.</strong></a></strong> y disponible en <a class='btn grande accion' href='http://eadpucv.github.io/LGG' title='LLG en Github'>Github</a></p>
         </div>
       </div>
     </header>
@@ -38,138 +43,236 @@
         <li><a href='interaccion.html'>Interacción</a></li>
         <li><a href='color.html'>Color</a></li>
         <li><a href='versatilidad.html'>Versatilidad</a></li>
+        <li><a href='layout.html'>Lay out</a></li>
       </ul>
     </nav>
-    <div class='contenido'>
-      <h2 class='grande rojo'>Grilla</h2>
+    <div class='container'>
+      <h2 class='gruesa rojo'>Grilla</h2>
 
 
 
 
-      <p>La estructura para definir la geometría de la pantalla se basa en un sistema de filas y columnas, con un ancho máximo de 24 columnas en total, para dar un ancho de 1136px para la página contenedora. La columna tiene un ancho de <strong></p>
+      <p>La estructura para definir la geometría de la pantalla se basa en un sistema de filas y columnas, con un ancho máximo de 24 columnas en total, para dar un ancho de 1136px en la página contenedora. Los dispositivos grandes (lg), que no son utilizados en la grilla presente, tienen un ancho mínimo de 1200px. Los dispositivos medianos (md) tienen un ancho mínimo de 970px. Los dispositivos pequeños (sm) tienen un ancho mínimo de 750px, y los dispositivos extra pequeños (xs) tienen un ancho mínimo automático relativo al <i>viewport</i>, según el sistema de medidas fundamentado en <a href='http://getbootstrap.com/css/#grid-options'><i>Bootstrap</i></a> para su desarrollo, exceptuando el ancho máximo de 12 columnas en la diagramación de la página. </p>
 
+      <h3 class='rojo'>1. Ejemplos de base</h3>
 
+      <h5 class='gris-oscuro'>1.1. Ocultamiento de columnas</h5>
+
+      <p>La primera estructura como ejemplo de la grilla pasa de 24 columnas en dispositivos medianos a 12 columnas en dispositivos pequeños, y 6 columnas en dispositivos extra pequeños.</p>
 
 
       <div class='fila margen-inferior'>
-        <div class='col-1 ver'><p>01</p></div>
-        <div class='col-1 ver'><p>02</p></div>
-        <div class='col-1 ver'><p>03</p></div>
-        <div class='col-1 ver'><p>04</p></div>
-        <div class='col-1 ver'><p>05</p></div>
-        <div class='col-1 ver'><p>06</p></div>
-        <div class='col-1 ver'><p>07</p></div>
-        <div class='col-1 ver'><p>08</p></div>
-        <div class='col-1 ver'><p>09</p></div>
-        <div class='col-1 ver'><p>10</p></div>
-        <div class='col-1 ver'><p>11</p></div>
-        <div class='col-1 ver'><p>12</p></div>
-        <div class='col-1 ver'><p>13</p></div>
-        <div class='col-1 ver'><p>14</p></div>
-        <div class='col-1 ver'><p>15</p></div>
-        <div class='col-1 ver'><p>16</p></div>
-        <div class='col-1 ver'><p>17</p></div>
-        <div class='col-1 ver'><p>18</p></div>
-        <div class='col-1 ver'><p>19</p></div>
-        <div class='col-1 ver'><p>20</p></div>
-        <div class='col-1 ver'><p>21</p></div>
-        <div class='col-1 ver'><p>22</p></div>
-        <div class='col-1 ver'><p>23</p></div>
-        <div class='col-1 ver'><p>24</p></div>
+        <div class='col-md-1 col-sm-2 col-xs-4 ver'><p>01</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-4</code></div>
+        <div class='col-md-1 col-sm-2 col-xs-4 ver'><p>02</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-4</code></div>
+        <div class='col-md-1 col-sm-2 col-xs-4 ver'><p>03</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-4</code></div>
+        <div class='col-md-1 col-sm-2 col-xs-4 ver'><p>04</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-4</code></div>
+        <div class='col-md-1 col-sm-2 col-xs-4 ver'><p>05</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-4</code></div>
+        <div class='col-md-1 col-sm-2 col-xs-4 ver'><p>06</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-4</code></div>
+        <div class='col-md-1 col-sm-2 oculto-xs ver'><p>07</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-oculto</code></div>
+        <div class='col-md-1 col-sm-2 oculto-xs ver'><p>08</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-oculto</code></div>
+        <div class='col-md-1 col-sm-2 oculto-xs ver'><p>09</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-oculto</code></div>
+        <div class='col-md-1 col-sm-2 oculto-xs ver'><p>10</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-oculto</code></div>
+        <div class='col-md-1 col-sm-2 oculto-xs ver'><p>11</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-oculto</code></div>
+        <div class='col-md-1 col-sm-2 oculto-xs ver'><p>12</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-oculto</code></div>
+        <div class='col-md-1 oculto-sm oculto-xs ver'><p>13</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+        <div class='col-md-1 oculto-sm oculto-xs ver'><p>14</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+        <div class='col-md-1 oculto-sm oculto-xs ver'><p>15</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+        <div class='col-md-1 oculto-sm oculto-xs ver'><p>16</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+        <div class='col-md-1 oculto-sm oculto-xs ver'><p>17</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+        <div class='col-md-1 oculto-sm oculto-xs ver'><p>18</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+        <div class='col-md-1 oculto-sm oculto-xs ver'><p>19</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+        <div class='col-md-1 oculto-sm oculto-xs ver'><p>20</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+        <div class='col-md-1 oculto-sm oculto-xs ver'><p>21</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+        <div class='col-md-1 oculto-sm oculto-xs ver'><p>22</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+        <div class='col-md-1 oculto-sm oculto-xs ver'><p>23</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+        <div class='col-md-1 oculto-sm oculto-xs ver'><p>24</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
       </div>
 
 
+      <p>El segundo ejemplo muestra el paso desde las 12 columnas en dispositivos medianos, a 6 columnas en dispositivos pequeños y 3 columnas en dispositivos extra pequeños.</p>
 
 
       <div class='fila margen-inferior'>
-        <div class='col-2 ver'><p>01 <code>col-2</code></p></div>
-        <div class='col-2 ver'><p>02 <code>col-2</code></p></div>
-        <div class='col-2 ver'><p>03 <code>col-2</code></p></div>
-        <div class='col-2 ver'><p>04 <code>col-2</code></p></div>
-        <div class='col-2 ver'><p>05 <code>col-2</code></p></div>
-        <div class='col-2 ver'><p>06 <code>col-2</code></p></div>
-        <div class='col-2 ver'><p>07 <code>col-2</code></p></div>
-        <div class='col-2 ver'><p>08 <code>col-2</code></p></div>
-        <div class='col-2 ver'><p>09 <code>col-2</code></p></div>
-        <div class='col-2 ver'><p>10 <code>col-2</code></p></div>
-        <div class='col-2 ver'><p>11 <code>col-2</code></p></div>
-        <div class='col-2 ver'><p>12 <code>col-2</code></p></div>
+        <div class='col-md-2 col-sm-4 col-xs-8 ver'><p>01</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+        <div class='col-md-2 col-sm-4 col-xs-8 ver'><p>02</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+        <div class='col-md-2 col-sm-4 col-xs-8 ver'><p>03</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+        <div class='col-md-2 col-sm-4 oculto-xs ver'><p>04</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+        <div class='col-md-2 col-sm-4 oculto-xs ver'><p>05</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+        <div class='col-md-2 col-sm-4 oculto-xs ver'><p>06</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+        <div class='col-md-2 oculto-sm oculto-xs ver'><p>07</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+        <div class='col-md-2 oculto-sm oculto-xs ver'><p>08</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+        <div class='col-md-2 oculto-sm oculto-xs ver'><p>09</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+        <div class='col-md-2 oculto-sm oculto-xs ver'><p>10</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+        <div class='col-md-2 oculto-sm oculto-xs ver'><p>11</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+        <div class='col-md-2 oculto-sm oculto-xs ver'><p>12</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+      </div>
+
+      <h5 class='gris-oscuro'>1.2. Reordenación de columnas</h5>
+
+      <p>Con el objetivo de mostrar la dinámica funcional de la grilla, el tercer ejemplo muestra la nueva ordenación de las columnas en cada ancho diferente de pantalla. El paso es de 6 columnas en md a 2 columnas en sm en la parte superior de la grilla, y 4 columnas en la parte inferior. En xs aparece 1 columna en la parte superior, seguido de 1 más en segundo puesto y luego 2 columnas en los dos últimos puestos de la parte inferior de la grilla. </p>
+
+
+      <div class='fila margen-inferior'>
+        <div class='col-md-4 col-sm-12 col-xs-24 ver'><p>01</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+        <div class='col-md-4 col-sm-12 col-xs-24 ver'><p>02</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+        <div class='col-md-4 col-sm-6 col-xs-12 ver'><p>03</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+        <div class='col-md-4 col-sm-6 col-xs-12 ver'><p>04</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+        <div class='col-md-4 col-sm-6 col-xs-12 ver'><p>05</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+        <div class='col-md-4 col-sm-6 col-xs-12 ver'><p>06</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
       </div>
 
 
+  <h3 class='rojo'>2. Ejemplos de Lay out</h3>
+
+  <h5 class='gris-oscuro'>2.1. Primera forma</h5>
+
+      <p>La manera</p>
+
+    <div class='fila margen-inferior'>
+      <div class='col-md-24 col-sm-24 col-xs-24 ver'><p>01 (Header)</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+    </div>    
+
+      <div class='fila margen-inferior'>
+        <div class='col-md-6 col-sm-6 col-xs-24 ver'><p>01</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+        <div class='col-md-12 col-sm-12 col-xs-24 ver'><p>02</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+        <div class='col-md-6 col-sm-6 col-xs-24 ver'><p>03</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+      </div>
+
+      <div class='fila margen-inferior'> 
+        <div class='col-lg-24 col-md-24 col-sm-24 col-xs-24 ver'><p>05 (Footer)</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+      </div>      
+
+  <h5 class='gris-oscuro'>2.2. The great Discontent style</h5>
+
+      <p>La manera</p>
+
+
+    <div class='fila margen-inferior'>
+      <div class='col-md-24 col-sm-24 col-xs-24 ver'><p>01 (Header)</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code>
+       <div class='fila margen-inferior'>   
+         <div class='col-md-20 col-md-offset-2 col-sm-22 col-sm-offset-1 col-xs-22 col-xs-offset-1 ver'><p>01 (Texto anidado)</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+       </div>
+      </div>
+
+    <div class='fila margen-inferior'> 
+        <div class='col-md-6 col-md-offset-2 col-sm-6 col-sm-offset-1 col-xs-22 col-xs-offset-1 ver'><p>02 (Aside)</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+        <div class='col-md-14 col-sm-16 oculto-xs ver'><p>03 (Contenido)</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+        <div class='oculto-lg oculto-md oculto-sm oculto-xs ver'><p>04 (Aside)</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+      </div>
+      
+        <div class='oculto-lg oculto-md oculto-sm col-xs-22 col-xs-offset-1 ver'><p>03 (Contenido)</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div> 
+        <div class='oculto-lg oculto-md oculto-sm col-xs-22 col-xs-offset-1 ver'><p>04 (Aside)</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+    
+      <div class='fila margen-inferior'> 
+        <div class='col-md-24 col-sm-24 col-xs-24 ver'><p>05 (Footer)</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-6</code></div>
+      </div>
+    </div>
+      
+
+<!--PRUEBA-->
+
+  <h5 class='rojo'>2.2. PRUEBA</h5>
+
+      <p>La manera</p>
+
+
+    <div class='fila margen-inferior'>
+      <div class='col-md-24 col-sm-24 col-xs-24 ver'>
+       <div class='fila margen-inferior'>   
+         <div class='col-md-20 col-md-offset-2 col-sm-22 col-sm-offset-1 col-xs-22 col-xs-offset-1 ver'><span class='poema cursiva grande blanco absoluto'>"Lorem ipsum es un texto de color que lleva sangre entre los agujeros de su pronunciación para la correcta distribución de sus amigas comillas entre los escalones"</span></div>
+       </div>
+      </div>
+
+    <div class='fila margen-inferior'> 
+        <div class='col-md-6 col-md-offset-2 col-sm-6 col-sm-offset-1 col-xs-22 col-xs-offset-1 ver'><p>02 (Aside)<code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+        <div class='col-md-8 col-sm-10 oculto-xs ver'><p>03 (Contenido)<code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+        <div class='col-md-6 col-sm-6 oculto-xs ver'><p>04 (Aside)<code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+    </div>
+    
+      <div class='fila margen-inferior'>
+        <div class='oculto-lg oculto-md oculto-sm col-xs-22 col-xs-offset-1 ver'><p>03 (Contenido)<code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div> 
+        <div class='oculto-lg oculto-sm col-xs-22 col-xs-offset-1 ver'><p>04 (Aside)<code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+      </div> 
+
+      <div class='fila margen-inferior'> 
+        <div class='col-md-24 col-sm-24 col-xs-24 ver'><p>05 (Footer) <code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+      </div>
+      </div>
+
+<!--PRUEBA-->
+
+  <h5 class='rojo'>2.3. </h5>
+
+      <p>La manera</p>
 
 
       <div class='fila margen-inferior'>
-        <div class='col-4 ver'><p>01 <code>col-4</code></p></div>
-        <div class='col-4 ver'><p>02 <code>col-4</code></p></div>
-        <div class='col-4 ver'><p>03 <code>col-4</code></p></div>
-        <div class='col-4 ver'><p>04 <code>col-4</code></p></div>
-        <div class='col-4 ver'><p>05 <code>col-4</code></p></div>
-        <div class='col-4 ver'><p>06 <code>col-4</code></p></div>
+        <div class='col-md-24 col-sm-24 col-xs-24 ver'><p>01 (header) <code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p>
+      <div class='fila margen-inferior'>
+        <div class='col-md-20 col-md-offset-2 col-sm-22 col-sm-offset-1 col-xs-22 col-xs-offset-1 ver'><p>01 (Texto anidado) <code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p>
+      </div>
+      </div>
+      </div>
+
+      <div class='fila margen-inferior'>
+        <div class='col-md-6 col-sm-6 oculto-xs ver'><p>02 (Sidebar) <code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div> 
+        <div class='col-md-18 col-sm-18 col-xs-24 ver'><p>03 (Contenido) <code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+        <div class='col-md-9 col-md-offset-6 col-sm-9 col-sm-offset-6 col-xs-12 ver'><p>04 (Contenido) <code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+        <div class='col-md-9 col-sm-9 col-xs-12 ver'><p>05 (Contenido) <code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+        <div class='col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-8 ver'><p>06 (Contenido)<code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+        <div class='col-md-6 col-sm-6 col-xs-8 ver'><p>07 (Contenido)<code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+        <div class='col-md-6 col-sm-6 col-xs-8 ver'><p>08 (Contenido)<code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+      </div>
+
+      <div class='fila margen-inferior'>
+        <div class='col-md-24 col-sm-24 col-xs-24 ver'><p>05 (Footer) <code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+      </div>
       </div>
 
 
+    
+
+  <h5 class='rojo'>2.4. </h5>
+
+      <p>La manera</p>
 
 
       <div class='fila margen-inferior'>
-        <div class='col-6 ver'><p>01 <code>col-6</code></p></div>
-        <div class='col-6 ver'><p>02 <code>col-6</code></p></div>
-        <div class='col-6 ver'><p>03 <code>col-6</code></p></div>
-        <div class='col-6 ver'><p>04 <code>col-6</code></p></div>
+        <div class='col-md-24 col-sm-24 col-xs-24 ver'><p>01 (Header) <code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+      </div>  
+
+      <div class='fila margen-inferior'>
+        <div class='oculto-lg oculto-md oculto-sm col-xs-24 ver'><p>02 (Aside) <code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+        <div class='col-md-9 col-sm-18 col-xs-24 ver'><p>03 (Contenido) <code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+        <div class='col-md-9 oculto-sm oculto-xs ver'><p>04 (Contenido) <code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+        <div class='col-md-6 col-sm-6 oculto-xs ver'><p>02 (Aside) <code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+        <div class='oculto-lg oculto-md col-sm-18 col-xs-24 ver'><p>03 (Contenido) <code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+        </div>
+
+       <div class='fila margen-inferior'> 
+        <div class='col-md-24 col-sm-24 col-xs-24 ver'><p>05 (Footer) <code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+      </div>
+      
+
+      <h5 class='rojo'>2.5. </h5>
+
+      <p>La manera</p>
+
+
+      <div class='fila margen-inferior'>
+        <div class='col-md-11 col-sm-11 col-xs-11 ver'><p>01 <code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+        <div class='col-md-2 col-sm-2 col-xs-2 ver'><p>02 <code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+        <div class='col-md-11 col-sm-11 col-xs-11 ver'><p>03 <code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
       </div>
 
+      <h5 class='rojo'>2.6. </h5>
 
-
-
-      <div class='fila margen-inferior'>
-        <div class='col-7 ver'><p>01 <code>col-7</code></p></div>
-        <div class='col-3 ver'><p>02 <code>col-3</code></p></div>
-        <div class='col-2 ver'><p>03 <code>col-2</code></p></div>
-        <div class='col-2 ver'><p>04 <code>col-2</code></p></div>
-        <div class='col-3 ver'><p>05 <code>col-3</code></p></div>
-        <div class='col-7 ver'><p>06 <code>col-7</code></p></div>
-      </div>
-
-
+      <p>La manera</p>
 
 
       <div class='fila margen-inferior'>
-        <div class='col-8 ver'><p>01 <code>col-8</code></p></div>
-        <div class='col-8 ver'><p>02 <code>col-8</code></p></div>
-        <div class='col-8 ver'><p>03 <code>col-8</code></p></div>
-      </div>
-
-
-
-
-      <div class='fila margen-inferior'>
-        <div class='col-10 ver'><p>01 <code>col-10</code></p></div>
-        <div class='col-4 ver'><p>02 <code>col-4</code></p></div>
-        <div class='col-10 ver'><p>03 <code>col-10</code></p></div>
-      </div>
-
-
-
-
-      <div class='fila margen-inferior'>
-        <div class='col-11 ver'><p>01 <code>col-11</code></p></div>
-        <div class='col-2 ver'><p>02 <code>col-2</code></p></div>
-        <div class='col-11 ver'><p>03 <code>col-11</code></p></div>
-      </div>
-
-
-
-
-      <div class='fila margen-inferior'>
-        <div class='col-12 ver'><p>01 <code>col-12</code></p></div>
-        <div class='col-12 ver'><p>02 <code>col-12</code></p></div>
-      </div>
-
-
-
-
-      <div class='fila margen-inferior'>
-        <div class='col-24 ver'><p>01 <code>col-24</code></p></div>
+        <div class='col-md-12 col-sm-12 col-xs-12 ver'><p>01 <code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
+        <div class='col-md-12 col-sm-12 col-xs-12 ver'><p>02 <code class='diagonal'><p>col-md-2</p><p>col-sm-4</p><p>col-xs-6</p></code></p></div>
       </div>
 
 
@@ -179,7 +282,7 @@
     <hr>
     <footer>
       <div class='fila'>
-        <div class='col-18'>
+        <div class='col-md-24'>
           <nav>
             <ul>
               <li><a href='index.html'>¶</a></li>
@@ -197,7 +300,7 @@
           
         </div>
         
-        <div class='col-6'>
+        <div class='col-md-24'>
           <address>
             <a href="http://www.ead.pucv.cl/mundo/investigacion/tig/"><strong>.:TIG:.</strong> Taller de Investigaciones Gráficas</a><br />
             e[ad] Escuela de Arquitectura y Diseño<br />
