@@ -81,17 +81,17 @@
 // Generate the medium column offsets
 .make-md-column-offset(@columns) {
   @media (min-width: @screen-md-min) {
-    margin-left: percentage((@columns / @grilla-columnas / 2));
+    margin-left: percentage((@columns / @grilla-columnas));
   }
 }
 .make-md-column-push(@columns) {
   @media (min-width: @screen-md) {
-    left: percentage((@columns / @grilla-columnas / 2));
+    left: percentage((@columns / @grilla-columnas));
   }
 }
 .make-md-column-pull(@columns) {
   @media (min-width: @screen-md-min) {
-    right: percentage((@columns / @grilla-columnas / 2));
+    right: percentage((@columns / @grilla-columnas));
   }
 }
 
