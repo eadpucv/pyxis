@@ -21,7 +21,7 @@ table{
 		}
 	}
 	th, td{
-		padding: @cuadratin;
+		padding: @padding-md;
 		text-align: left;
 	}
 	
@@ -33,7 +33,6 @@ table{
 	td{
 
 		color: fade(@negro, 60%);
-		vertical-align: top;
 		.btn{
 			margin-top: 0;
 		}
@@ -43,5 +42,14 @@ table{
 	td.centrado-vertical{
 		vertical-align: middle;
 	}
+
+	input[type=text], input[type=password],input[type='email'], textarea{
+        margin:0;
+        width: 95%;
+    }
+
+    textarea {
+    	height: @cuadratin * 4;
+    }
 }
 
