@@ -1,77 +1,78 @@
 
-	// Tipografía
+  // Tipografía
 
 
 
 * {
-	font-family: @tipografia;
-	font-weight: 400;
+  font-family: @tipografia;
+  font-weight: 400;
 }
 
-	
+  
 body{
-	font-size: @cuerpo;	
-	#gradient > .striped(lighten(@gris-claro, 15%), -45deg);
-	background-size: 10px 10px;
-	background-repeat: repeat;
+  font-size: @cuerpo; 
+  #gradient > .striped(lighten(@gris-claro, 15%), -45deg);
+  background-size: 10px 10px;
+  background-repeat: repeat;
 }
 
 a{
-	color: @color-link;
-	text-decoration: none;
+  color: @color-link;
+  text-decoration: none;
     font-family: @sans;
     font-size:@cuerpo -2;
 
-	
-	&:hover{
-		background-color: @ahuesado;
-		text-decoration: underline;
-	}
-	
-	&:visited{
-		color: fade(@color-link, 10);
-		text-decoration: line-through;
-	}
+  
+  &:hover{
+    background-color: @ahuesado;
+    text-decoration: underline;
+  }
+  
+  &:visited{
+    color: fade(@color-link, 10);
+    text-decoration: line-through;
+  }
 
 }
 
 //Tamaños tipográficos
 p {
-  	margin-bottom: @interlinea;
-  	line-height: @interlinea;
-  	color: fade(@negro, 80%);
+    margin-bottom: @interlinea;
+    line-height: @interlinea;
+    color: fade(@negro, 80%);
     
 
-  	&.grande{
-  		font-size: @cuerpo * 1.5;
-  		font-weight: 300;
-		line-height: 120%;
-  	}
-  	
-  	&.chico {
-    	font-size: @cuerpo*.90;
-    	line-height: @interlinea * .8;
-    	margin: 0;
-  	}
-  
-  	&.poema{
-  		font-family: @serif;
-  		font-size:   @cuerpo * 1.0;
-  		line-height: @interlinea;
-		white-space: pre;
-  	}
+    &.grande{
 
-  	&.especificacion {
-  		margin-bottom: @interlinea;
-  		line-height: @interlinea;
-  		color: fade(@pizarra, 80%);
-  	}
+      font-size: @cuerpo * 1.5;
+      font-weight: 300;
+    line-height: 120%;
+    }
+    
+    &.chico {
+      font-size: @cuerpo*.90;
+      line-height: @interlinea * .8;
+      margin: 0;
+    }
+  
+    &.poema{
+      font-family: @serif;
+      font-size:   @cuerpo * 1.0;
+      line-height: @interlinea;
+    white-space: pre;
+    }
+
+    &.especificacion {
+      margin-bottom: @interlinea;
+      line-height: @interlinea;
+      color: fade(@pizarra, 80%);
+    }
     
     &.mediano {
         font-size: @cuerpo -2;
-  		font-weight: 300;
-		line-height: 120%;
-		padding: 0;
+      font-weight: 300;
+    line-height: 120%;
+    padding: 0;
     }
     
 }
@@ -84,51 +85,86 @@ p {
     font-size:@cuerpo -8px;
 }
 
+//Tamaños texto version 2
+
+.font-sm{
+    font-size:@cuerpo *.90;
+    line-height: @interlinea * .8;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+.font-md{
+    font-size:@cuerpo *1;
+    line-height: @interlinea * 1.2;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+.font-lg{
+    font-size:@cuerpo *1.5;
+    line-height: @interlinea * 1.2;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+.font-xl{
+    font-size:@cuerpo *2.2;
+    line-height: @interlinea * 1.2;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+
 // Émfasis
 
 .negrita,
 strong {
-	font-style: inherit;
-  	font-weight: bold;
+  font-style: inherit;
+    font-weight: bold;
 }
 
 .cursiva,
 .italica,
 em {
-	font-family: @serif;
-	font-style: italic;
-	font-weight: inherit;
-	line-height: inherit;
+  font-family: @serif;
+  font-style: italic;
+  font-weight: inherit;
+  line-height: inherit;
 }
 
 .pesada,
 .pesado,
 .ultra-negrita{
-	font-weight: 900;
-	letter-spacing: 0.1ex;
+  font-weight: 900;
+  letter-spacing: 0.1ex;
 }
 
 .gruesa{
     font-family:@tipografia-titulos;
-    font-weight:@cuerpo -3;
+    font-weight: 600;
 }
 
 .altas{
-	text-transform: uppercase,
+  text-transform: uppercase,
 }
 
 ul{
-	//font-size: @cuerpo * 1.2;
+  //font-size: @cuerpo * 1.2;
 }
 
 div.poema{
-	margin-bottom: @interlinea;
-	line-height: @interlinea;
+  margin-bottom: @interlinea;
+  line-height: @interlinea;
     font-family: @serif;
-  	font-size: @cuerpo - 2;
-  	line-height: @interlinea;
-	white-space: pre;
-	color: fade(@negro, 80%);
+    font-size: @cuerpo - 2;
+    line-height: @interlinea;
+  white-space: pre;
+  color: fade(@negro, 80%);
 }
 
 
@@ -137,17 +173,16 @@ div.poema{
 
 h1, h2, h3, h4, h5, h6 {
 
-	font-weight: bold;
-	color: @gris-oscuro;
-	margin: 0 0 @interlinea 0;
-	vertical-align: bottom;
-	
-	&.filete{
-		margin: 0 -@cuadratin;
-		padding: 0 @cuadratin;
-		border-bottom: 1px solid @color-borde;
-		.clearfix;
-	}
+  font-weight: 600;
+  color: @gris-oscuro;
+  margin: 0 0 @interlinea 0;
+  vertical-align: bottom;
+  
+  &.filete{
+//    padding: 0 @cuadratin;
+    border-bottom: 1px solid @color-borde;
+    .clearfix;
+  }
 }
 
 h1 {font-size: 28px;}
@@ -180,23 +215,23 @@ ol {
 li {
   line-height: @interlinea;
   &:before{
-  	.color;
+    .color;
   }
 }
 
 // Listas de descripción o definición
 
 dl {
-	margin-bottom: @interlinea;
-	dt, dd {
-		line-height: @interlinea;
-		}
-	dt {
-		font-weight: bold;
-		}
-	dd {
-		margin-left: @interlinea / 2;
-		}
+  margin-bottom: @interlinea;
+  dt, dd {
+    line-height: @interlinea;
+    }
+  dt {
+    font-weight: 600;
+    }
+  dd {
+    margin-left: @interlinea / 2;
+    }
 }
 
 // Otros
@@ -255,13 +290,13 @@ code, pre {
 }
 
 code {
-	display: inline-block;
-	line-height: @interlinea * .666;
-	white-space: pre;
-	background-color: @ahuesado;
-	margin: 15px 0px 15px 5px;
-	.box-shadow(inset 0 0 1px darken(@ahuesado, 30%));
-	font-size: 11px;
+  display: inline-block;
+  line-height: @interlinea * .666;
+  white-space: pre;
+  background-color: @ahuesado;
+  margin: 15px 0px 10px 5px;
+  .box-shadow(inset 0 0 1px darken(@ahuesado, 30%));
+  font-size: 11px;
 }
 
 pre {
@@ -288,29 +323,29 @@ pre {
 }
 
 .global{
-	-moz-column-count: 3;
-	-moz-column-gap: 20px;
-	-webkit-column-count: 3;
-	-webkit-column-gap: 20px;
-	column-count: 3;
-	column-gap: 20px;
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  column-count: 3;
+  column-gap: 20px;
 }
 
 .big{
-	color: @gris-claro;
-	margin: -@em 0 0 0;
-	
+  color: @gris-claro;
+  margin: - @em 0 0 0;
+  
 }
 .main{
-	color: @link-color;
-	font-size: @cuerpo * 3;
+  color: @link-color;
+  font-size: @cuerpo * 3;
 }
 .tdc{
-	padding: @em @em*2;
-	color: @gris;
-	background-color: @ahuesado;
-	.border-radius(1em / 5);
-	margin: 1em 0;
+  padding: @em @em*2;
+  color: @gris;
+  background-color: @ahuesado;
+  .border-radius(1em / 5);
+  margin: 1em 0;
 }
 
 
@@ -318,31 +353,26 @@ pre {
 
 
 .extracto{
-	line-height: @interlinea * 0.81;
+  line-height: @interlinea * 0.81;
     font-family: @tipografia-referencias;
     font-size: 0.938em;
 }
 
 .resumen {
         font-size: 15px;
-    	line-height: 120%;
-		padding: 0;
+      line-height: 120%;
+    padding: 0;
 }
 
 
 //Elementos laterales
 
 .columna-tipo{
-    width: 350px;
-    margin-left: 8px;
-    height: 500px;
+    width: 45%;
     float: left;
-    margin-top: 6px;
+    position: relative;
 }
 
-.columna-tipo2{
-    width: 300px;
-    height: 500px;
-    float: left;
-    margin-top: 6px;
-}
+
+
+
