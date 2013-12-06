@@ -18,6 +18,10 @@
         color: @link-color;
 }
 
+.importante {
+    color:@rojo-anaranjado;
+}
+
 .diagonal {
 /* Safari */
 -webkit-transform: rotate(-60deg);
@@ -34,27 +38,22 @@ margin: @margen-code;
 
 .vertical {
 /* Safari */
--webkit-transform-origin: 0 50%;   
-/* Safari */
--webkit-transform: rotate(-85deg) translate(-50%, 50%);
+-webkit-transform: rotate(-90deg);
 /* Firefox */
--moz-transform-origin: 0 50%;
-/* Firefox */
--moz-transform: rotate(-85deg) translate(-50%, 50%);
+-moz-transform: rotate(-90deg);
 /* IE */
--ms-transform-origin: 0 50%;
-/* IE */
--ms-transform: rotate(-85deg) translate(-50%, 50%);
+-ms-transform: rotate(-90deg);
 /* Opera */
--o-transform-origin: 0 50%;
-/* Opera */
--o-transform: rotate(-85deg) translate(-50%, 50%);
+-o-transform: rotate(-90deg);
 /* Internet Explorer */
 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 margin: @margen-code;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> Idar
 .uc{
         text-transform: uppercase;
 }
@@ -72,7 +71,7 @@ margin: @margen-code;
 .normal{
         font-weight: normal;
 }
-     
+        
 
 // Márgenes de ajuste
 .margen-superior{margin-top: @cuadratin}
@@ -147,12 +146,13 @@ margin: @margen-code;
 }
 
 // Estilos auxiliares
-.sombra{
-        .box-shadow(fade(@negro, 15%) 0 0 4px);
+.borde{
+        border:2px solid @gris-claro;
 }
 
-.sombra-foco{
-        .box-shadow(fade(@azul, 56%) 0 0 6px);
+.foco{
+        background-color: @pizarra;
+        color:@blanco;
 }
 
 .fulgor{
@@ -163,6 +163,7 @@ margin: @margen-code;
 .ver{
     background-color: fade(@negro, 5);
     .box-shadow(0 0 1px fade(@negro, 20));
+<<<<<<< HEAD
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -172,6 +173,10 @@ margin: @margen-code;
     padding: @cuadratin /   2;
     margin: 0;
 }
+=======
+    color: rgba(0, 0, 0, 0.3);}
+    
+>>>>>>> Idar
 
 // Imágenes
 
@@ -208,3 +213,21 @@ overflow: hidden;
 .w85{width:85%}.w86{width:86%}.w87{width:87%}.w88{width:88%}.w89{width:89%}.w90{width:90%}.w91{width:91%}
 .w92{width:92%}.w93{width:93%}.w94{width:94%}.w95{width:95%}.w96{width:96%}.w97{width:97%}.w98{width:98%}
 .w99{width:99%}.w100{width:100%}w99{width:99%}.w100{width:100%}
+
+// tamaños
+
+.sm {
+    padding: @padding-sm;
+
+}
+
+.md {
+    padding: @padding-md;
+
+}
+
+.lg {
+    padding: @padding-lg;
+
+}
+
