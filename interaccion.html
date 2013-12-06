@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap.css" 
     media="screen" />
 
-  <title>LGG - Grilla </title>
+  <title>LGG - Interacción </title>
 
   <link href='css/lgg.css' rel='stylesheet'>
 
@@ -62,20 +62,20 @@
 <!-- Formulario Vertical Medio -->
 
 
-            <form class='vertical-md'>
+            <form class='formulario-vertical md'>
                 <h4>Contáctate con nosotros <span class='rojo chico'>e[ad] - vertical</span></h4>
                         
-                <label>Nombre *</label>
-                <input type='text' class='relleno' required />
+                <label>Nombre <span class='importante'>*</span></label>
+                <input type='text' required />
 
-                <label>Correo electrónico *</label>
-                <input type='email' class='relleno' required/>
+                <label>Correo electrónico <span class='importante'>*</span></label>
+                <input type='email' required/>
 
                 <label>Asunto</label>
-                <input class='relleno' />
+                <input type='text'/>
 
                 <label>Mensaje</label>
-                <textarea class='relleno'/></textarea>
+                <textarea></textarea>
 
                 <label>Verificación</label>
                 <input class='verificacion' placeholder="(¿CAPTCHA?)" />
@@ -96,14 +96,13 @@
         <h4>Registrarse <span class='rojo chico'>Wiki - vertical</span></h4>
 
 
-                <form class='vertical-lg pure-form pure-form-aligned'>
+                <form class='formulario-vertical lg'>
                 <h1>Nuevo Usuario</h1>
                         <div class='grupo-label-relleno'>
 
-                        <div class='ingreso'>
                         <label class='pregunta'>Usuario</label>
                         <input type='text' placeholder='username' required/>
-                        </div>
+    
                             <p class='especificacion'>Elige un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</p>
                         </div>
 
@@ -132,22 +131,22 @@
                         </div>
 
                         <div class='grupo-label-relleno'>
-                            <label class='pregunta'>Nombre *</label>
+                            <label class='pregunta'>Nombre <span class='importante'>*</span></label>
                             <input type='text' class='relleno' required />
                         </div>
 
                         <div class='grupo-label-relleno'>
-                            <label class='pregunta'>Apellido *</label>
+                            <label class='pregunta'>Apellido <span class='importante'>*</span></label>
                             <input type='text' class='relleno' required />
                         </div>
 
                         <div class='grupo-label-relleno'>
-                            <label class='pregunta'>Rut *</label>
+                            <label class='pregunta'>Rut <span class='importante'>*</span></label>
                             <input type='text' class='relleno' required />
                         </div>
 
                         <div class='grupo-label-relleno'>
-                            <label class='pregunta'>Mail *</label>
+                            <label class='pregunta'>Mail <span class='importante'>*</span></label>
                             <input type='email' class='relleno' required />
                         </div>
 
@@ -188,19 +187,19 @@
 <!-- Formulario Horizontal Grande -->
 
         <div class='col-md-20'>
-        <code>div class='col-md-22'
+        <code>div class='col-md-20'
         form class='horizontal-lg'
         div class='col-md-10' * 2</code>
 
-            <form class='horizontal-lg'>
+            <form class='horizontal lg'>
                 <div class='col-md-10'>
 
                     <h4>Publicar un trabajo <span class='rojo chico'>e[ad] - horizontal</span></h4>
 
-                    <label>Nombre *</label>
+                    <label>Nombre <span class='importante'>*</span></label>
                     <input type='text' class='relleno' required/>
 
-                    <label>Correo electrónico *</label>
+                    <label>Correo electrónico <span class='importante'>*</span></label>
                     <input type='email' class='relleno' required/>
 
                     <label>Empresa</label>
@@ -280,7 +279,7 @@
                         <option>Nuevo proyecto de investigación</option>
                         <option>Nuevo trabajo en madlab</option>
                     </select>
-                <p class='especificacion'>Define el tipo de objeto que vas a crear con el selector.</p>
+                <p class='especificacion'>Define el tipo de formulario que necesitas para tu objeto.</p>
                 </div>
 
                 <input type='submit' class='accion md izquierda' value='Crear o editar'>
@@ -288,63 +287,183 @@
         </div>
     </div>
 
-<!-- Formulario Horizontal Grande -->
+<!-- Formulario Vertical Grande -->
 
     <div class='fila'>
-        <div class='col-md-14'>
+        <div class='col-md-20'>
 
             <h4>Crear nuevo o editar <span class='rojo chico'>Wiki - horizontal</span></h4>
-<!-- copy -->
 
+            <form class='horizontal-lg'>
 
-                <form class='vertical-lg pure-form pure-form-aligned'>
-                <h1>Nuevo Usuario</h1>
-                        <div class='grupo-label-relleno'>
+            <table class='w100'>
+                <tr>
+                    <td>
+                        <label class='pregunta'>Título</label>
+                    </td>
+                    <td>
+                        <input type='text' class='relleno' required/>
+                    </td>
+                </tr>
 
-                        <div class='ingreso'>
-                        <label class='pregunta'>Usuario</label>
-                        <input type='text' placeholder='username' required/>
-                        </div>
-                            <p class='especificacion'>Elige un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</p>
-                        </div>
-                </form>
+                <tr>
+                    <td>
+                        <label class='pregunta'>Tipo de proyecto</label>
+                    </td>
+                    <td>
+                    <input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Proyecto de taller</span>
+                    <input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Proyecto de curso</span>
+                    <input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Proyecto de tutoría</span>
+                    <input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Proyecto de titulación</span>
+                    <input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Proyecto de posgrado</span>
+                    <input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Proyecto extracurricular</span>
 
-<!-- fin copy -->
-            <form class='horizontal-md pure-form pure-form-aligned'>
-                <h1>Crear nuevo 'Proyecto'</h1>
+                    <p class='especificacion chica'><strong>Importante:</strong> Si se trata de un proyecto de Investigación, hay que cambiar el tipo de plantilla de {{Proyecto}} a {{Proyecto de Investigación}} en la pestaña EDITAR. Los proyectos de investigación tienen otros campos y particularidades.</p>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label class='pregunta'>Palabras claves</label>
+                    </td>
+                    <td>
+                        <input type='text' class='relleno' placeholder='todo en bajas, separadas por coma 'required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label class='pregunta'>Año de inicio</label>
+                    </td>
+                    <td>
+                        <input type='text' class='relleno-sm'required/>
+                    </td>
+                </tr>
                 
-                <div class='grupo-label-relleno'>
-                    <label class='pregunta'>Título</label>
-                    <input type='text' required />
-                </div>
+                <tr>
+                    <td>
+                        <label class='pregunta'>Año de término</label>
+                    </td>
+                    <td>
+                        <input type='text' class='relleno-sm' required/>
+                    </td>
+                </tr>
 
-                <div class='grupo-label-relleno'>
-                    <label class="radio">Tipo de Proyecto</label>
-                    <input type="checkbox" name="tipo-proyecto" /> <span class='chico'>Proyecto de Taller</span>
-                    <input type="checkbox" name="tipo-proyecto" /> <span class='chico'>Proyecto de Curso</span>
-                    <input type="checkbox" name="tipo-proyecto" /> <span class='chico'>Proyecto de Tutoría</span>
-                    <input type="checkbox" name="tipo-proyecto" /> <span class='chico'>Proyecto de Titulación</span>
-                    <input type="checkbox" name="tipo-proyecto" /> <span class='chico'>Proyecto de Posgrado</span>
-                    <input type="checkbox" name="tipo-proyecto" /> <span class='chico'>Proyecto Extracurricular</span>
+                <tr>
+                    <td>
+                        <label class='pregunta'>Carreras relacionadas</label>
+                    </td>
+                    <td>
+                    <input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Arquitectura</span>
+                    <input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Diseño gráfico</span>
+                    <input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Diseño industrial</span>
+                    <input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Náutico y marítimo</span>
+                    <input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Ciudad y territorio</span>
+                    <input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Formación y oficio</span>
+                    <input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Interacción</span>
+                    <input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Doctorado en A & D</span>
+                    </td>
+                </tr>
 
-                    <p class='especificacion'>Importante: Si se trata de un proyecto de Investigación, hay que cambiar el tipo de plantilla de {{Proyecto}} a {{Proyecto de Investigación}} en la pestaña EDITAR. Los proyectos de investigación tienen otros campos y particularidades.</p>
-                </div>
+                <tr>
+                    <td>
+                        <label class='pregunta'>Asignaturas relacionadas</label>
+                    </td>
+                    <td>
+                        <input type='text' class='relleno' required/>
+                    </td>
+                </tr>
 
-                <div class='grupo-label-relleno'>
-                    <label class='pregunta'>Palabras claves</label>
-                    <input type='text' required />
-                </div>
+                <tr>
+                    <td>
+                        <label class='pregunta'>Cursos relacionados</label>
+                    </td>
+                    <td>
+                        <input type='text' class='relleno' required/>
+                    </td>
+                </tr>
 
-                <div class='grupo-label-relleno sm'>
-                    <label class='pregunta'>Año de inicio</label>
-                    <input type='text' required />
-                </div>
+                <tr>
+                    <td>
+                        <label class='pregunta'>Profesor</label>
+                    </td>
+                    <td>
+                        <input type='text' class='relleno' required/>
+                    </td>
+                </tr>
 
-                <div class='grupo-label-relleno'>
-                    <label class='pregunta'>Año de término</label>
-                    <input type='text' required />
-                </div>
+                <tr>
+                    <td>
+                        <label class='pregunta'>Alumnos</label>
+                    </td>
+                    <td>
+                        <input type='text' class='relleno' required/>
+                    </td>
+                </tr>
 
+                <tr>
+                    <td>
+                        <label class='pregunta'>Imagen</label>
+                    </td>
+                    <td>
+                        <input type='text' class='relleno-sm' required/>
+                        <span class='especificacion'><a>Subir archivo</a> </span><span class='chica'> Si ya existe el archivo en la wiki escriba 'NombreDelArchivo.ext'.</span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label class='pregunta'>PDF</label>
+                    </td>
+                    <td>
+                        <input type='text' class='relleno-sm' required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label class='pregunta'>URL</label>
+                    </td>
+                    <td>
+                        <input type='text' class='relleno' required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label class='pregunta'>Texto libre</label>
+                    </td>
+                    <td>
+                        <textarea>Texto libre</textarea>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label class='pregunta'>Resumen</label>
+                    </td>
+                    <td>
+                        <input type='text' class='relleno' required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label class='pregunta'>Configuración</label>
+                    </td>
+                    <td>
+                    <input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Esta es una edición menor</span>
+                    <input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Vigilar esta página</span>
+                    </td>
+                </tr>
+
+            </table>
+
+            <a class='btn accion'>Grabar la página</a>
+            <a class='btn'>Mostrar previsualización</a>
+            <a class='btn'>Mostrar cambios</a>
+            <a class='btn alerta'>Cancelar</a>
             </form>
         
         </div>

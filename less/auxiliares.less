@@ -18,6 +18,10 @@
         color: @link-color;
 }
 
+.importante {
+    color:@rojo-anaranjado;
+}
+
 .diagonal {
 /* Safari */
 -webkit-transform: rotate(-50deg);
@@ -136,12 +140,13 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 }
 
 // Estilos auxiliares
-.sombra{
-        .box-shadow(fade(@negro, 15%) 0 0 4px);
+.borde{
+        border:2px solid @gris-claro;
 }
 
-.sombra-foco{
-        .box-shadow(fade(@azul, 56%) 0 0 6px);
+.foco{
+        background-color: @pizarra;
+        color:@blanco;
 }
 
 .fulgor{
@@ -190,3 +195,21 @@ overflow: hidden;
 .w85{width:85%}.w86{width:86%}.w87{width:87%}.w88{width:88%}.w89{width:89%}.w90{width:90%}.w91{width:91%}
 .w92{width:92%}.w93{width:93%}.w94{width:94%}.w95{width:95%}.w96{width:96%}.w97{width:97%}.w98{width:98%}
 .w99{width:99%}.w100{width:100%}w99{width:99%}.w100{width:100%}
+
+// tamaños
+
+.sm {
+    padding: @padding-sm;
+
+}
+
+.md {
+    padding: @padding-md;
+
+}
+
+.lg {
+    padding: @padding-lg;
+
+}
+

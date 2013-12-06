@@ -35,21 +35,21 @@ a.btn
         }
         
         &.sm{
-                font-size: @cuerpo * .65;
+                font-size: @cuerpo * .8;
                 text-transform: uppercase;
                 font-weight: normal;
-                padding: @padding-xs;
+                padding: @padding-sm;
                 .border-radius(@radio/1.5);
         }
   
         &.md{
                 font-weight: 300;
-                font-size: @cuerpo * 1.2;
+                font-size: @cuerpo * 1;
                 padding: @padding-md;
                 }
 
         &.lg{
-                font-size: @cuerpo * 1.8;
+                font-size: @cuerpo * 1.2;
                 letter-spacing: .05ex;
                 font-weight: 200;
                 padding: @padding-lg;
@@ -114,9 +114,8 @@ input[type='tel'],
 input[type='color'],
 .uneditable-input {
   display: inline-block;
-  height: @interlinea + @cuerpo;
-  padding: 0px;
-  margin-bottom: @margen-md;
+  padding:0;
+  margin-bottom: @margen-sm;
   font-size: @cuerpo;
   line-height: @interlinea;
   color: @gris;
@@ -139,7 +138,7 @@ form{
             
             input[type=checkbox]{
                 display: inline-block;
-                margin-top: @margen-md;
+                margin-top: @margen-md; 
                 padding: @padding-md;
             }
         }
@@ -152,9 +151,9 @@ form{
         float: right;
     }
 
-    input[type='text'],input[type='password'],input[type='email']{
+    input[type='text'],input[type='password'],input[type='email'], textarea{
         height: auto;
-        padding: @padding-md;
+        width: 100%;
         color:@pizarra;
     }
         
@@ -162,16 +161,18 @@ form{
         color:@verde-claro;
     }
 
-
-    input{
+    input, textarea{
         color: fade(@azul, 70%);
-        border: none;
         .border-radius(4px);
-        .sombra;
+        .borde;
 
         &:focus{
-            .sombra-foco;
+            .foco;
         }
+    }
+
+    textarea {
+        height: @cuadratin * 6;
     }
 
     .clearfix;
@@ -180,37 +181,21 @@ form{
     .relleno{
         background-color: @blanco;
         color: @pizarra;
-        width: 90%;
-        padding: @padding-md;
     }
 
     .verificacion{
         background-color: @blanco;
         color: @pizarra;
-        width: 55%;
+        width: 50%;
         float: left;
     }
 
-    textarea{
-        padding: 0;
-        color: fade(@azul, 70%);
-        height: 150px;
-        border: none;
-        
-        .border-radius(4px);
-        .sombra;
-                
-        &:focus{
-            .sombra-foco;
-                }
-        }
-
     select{
-        margin: @margen-md;
-        border-color:@pizarra;
+        .border-radius(4px);
+        .borde;
+        margin:0;
+        color:@pizarra;
         height: auto;
-        border:1px solid;
-        padding: @padding-md;
     }
 
     &.buscador{
@@ -225,71 +210,77 @@ form{
         }                           
     }
 
-    // Formulario Vertical Medium - Contáctese con nosotros
+// Diversidad de formularios
 
-    &.vertical-md{
+    &.formulario-vertical{
         padding: 0;
         margin-bottom: 10px;
         margin-top: 10px;
 
         label{
             display: block;
+            vertical-align: top;
             margin: @interlinea 0 5px 5px;
         }
-    }
 
+        // Formulario Vertical Medium
 
-    // Formulario Vertical Large - Registrar usuario
-
-    &.vertical-lg {
-
-    input[type=text], input[type=password],input[type='email']{
-        display: inline-block;
-        padding: @padding-lg;
-        margin:0;
-        vertical-align: top;
-        width: 40%;
-        float: right;
+        &.md {
+            input, textarea{
+                background-color: ;
+            }
         }
 
-    select{
-        padding: @padding-lg;
-        margin: -@margen-lg / 2 0;
-        width: 47%;
-        float: right;
-    }
+        // Formulario Vertical Large
 
-    input[type='submit'],
-    .btn{
-        margin-top: @cuadratin * 1.4;
-        width: auto;
-        float: right;
-    }
+        &.lg {
 
-    .pregunta{
-        color: @gris-oscuro;
-        font-size: @cuerpo * 1.2;
-        text-shadow: none;
-        display: inline-block;
-        margin-bottom: @margen-lg / 1.8;
-    }
+            input[type=text], input[type=password],input[type='email']{
+                display: inline-block;
+                margin:0;
+                width: 50%;
+                float: right;
+            }
 
-    .checkbox{
-        display: inline-block;
-        float: left;
-        font-weight: 400;
+            select{
+                width: 50%;
+                float: right;
+            }
 
-        input[type=checkbox]{
-            display: inline-block;
-            margin-top: @margen-lg * 2.5;
-            padding: 100px;
+            input[type='submit'],
+            .btn{
+                margin-top: @cuadratin * 1.4;
+                width: auto;
+                float: right;
+            }
+
+            .pregunta{
+                color: @gris-oscuro;
+                font-size: @cuerpo * 1.2;
+                text-shadow: none;
+                display: inline-block;
+                margin-bottom: @margen-lg / 1.8;
+                margin-top: 0;
+                margin-left: @margen-lg;
+                vertical-align: top;
+            }
+
+            .grupo-label-relleno {
+ 
+            }
+
+            .checkbox{
+                display: inline-block;
+                float: left;
+                font-weight: 400;
+
+                input[type=checkbox]{
+                    display: inline-block;
+                    margin-top: @margen-lg;
                 }
             }
-    .grupo-label-relleno {
-        margin-top: @margen-lg * 1;
-        margin-left: @margen-lg * 2;
-    }
 
+        }
     }
 
     // Formulario Horizontal Small - Ingresar usuario
@@ -329,6 +320,8 @@ form{
     // Formulario Horizontal Medium - Nuevo objeto - Nuevo proyecto
 
     &.horizontal-md {
+        border:1px solid @color-borde;
+        padding: @padding-sm;
 
         .grupo-label-relleno {
             margin: @margen-md * 2;
@@ -340,7 +333,7 @@ form{
 
         input[type=text], input[type=password]{
             margin:0 0 0 @margen-md;
-            width: 74%;
+            width: 70%;
         }
 
         input[type='submit'],
@@ -353,21 +346,28 @@ form{
 
     // Formulario Horizontal Large - publicar un trabajo
 
-    &.horizontal-lg{
-        margin-bottom: 10px;
-        margin-top: 10px;
+    &.horizontal{
 
-        label{
-            display: inline-block;
-            text-align: right;
-        }  
 
-        input[type='submit'],
-            .btn{
-            margin-top: @cuadratin;
-            width: auto;
-            float: right;
-         }        
+        &.lg {
+
+            label{
+                display: inline-block;
+            }  
+
+            input[type='submit'],
+                .btn{
+                margin-top: @cuadratin;
+                width: auto;
+                float: right;
+             }
+
+            .relleno-sm{
+                color: @pizarra;
+                width: 30%;
+                padding: @padding-md;
+            }
+        }            
     }
 
 }
@@ -379,12 +379,12 @@ form{
   margin-right:-@margen-sm;
   width: @cuadratin;
   display: inline-block;
-  font-size: @cuerpo * 1.35;
+  font-size: @cuerpo * 1.45;
   font-weight: normal;
   color: @blanco;
   text-align: center;
-  background-color: @azul-oscuro;
-  border: 1px solid @gris-oscuro;
+  background-color: @pizarra;
+  border: 2px solid @gris-claro;
   border-top-left-radius: @radio;
   border-bottom-left-radius: @radio;
 }
