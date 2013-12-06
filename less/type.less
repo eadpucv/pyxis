@@ -43,6 +43,7 @@ p {
     
 
   	&.grande{
+
   		font-size: @cuerpo * 1.5;
   		font-weight: 300;
 		line-height: 120%;
@@ -85,6 +86,41 @@ p {
     font-size:@cuerpo -8px;
 }
 
+//Tamaños texto version 2
+
+.font-sm{
+    font-size:@cuerpo *.90;
+    line-height: @interlinea * .8;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+.font-md{
+    font-size:@cuerpo *1;
+    line-height: @interlinea * 1.2;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+.font-lg{
+    font-size:@cuerpo *1.5;
+    line-height: @interlinea * 1.2;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+.font-xl{
+    font-size:@cuerpo *2.2;
+    line-height: @interlinea * 1.2;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+
 // Émfasis
 
 .negrita,
@@ -111,7 +147,7 @@ em {
 
 .gruesa{
     font-family:@tipografia-titulos;
-    font-weight:@cuerpo -3;
+    font-weight: 600;
 }
 
 .altas{
@@ -138,14 +174,13 @@ div.poema{
 
 h1, h2, h3, h4, h5, h6 {
 
-	font-weight: bold;
+	font-weight: 600;
 	color: @gris-oscuro;
 	margin: 0 0 @interlinea 0;
 	vertical-align: bottom;
 	
 	&.filete{
-		margin: 0 -@cuadratin;
-		padding: 0 @cuadratin;
+//		padding: 0 @cuadratin;
 		border-bottom: 1px solid @color-borde;
 		.clearfix;
 	}
@@ -193,7 +228,7 @@ dl {
 		line-height: @interlinea;
 		}
 	dt {
-		font-weight: bold;
+		font-weight: 600;
 		}
 	dd {
 		margin-left: @interlinea / 2;
@@ -260,11 +295,9 @@ code {
 	line-height: @interlinea * .666;
 	white-space: pre;
 	background-color: @ahuesado;
-
 	margin: 15px 0px 15px 5px;
-
 	.box-shadow(inset 0 0 1px darken(@ahuesado, 30%));
-	font-size: 10px;
+	font-size: 11px;
 }
 
 pre {
@@ -294,7 +327,7 @@ pre {
 
 .big{
 	color: @gris-claro;
-	margin: -@em 0 0 0;
+	margin: - @em 0 0 0;
 	
 }
 .main{
@@ -327,4 +360,10 @@ pre {
 
 
 //Elementos laterales
+
+.columna-tipo{
+    width: 45%;
+    float: left;
+    position: relative;
+}
 
