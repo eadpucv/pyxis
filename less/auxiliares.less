@@ -9,10 +9,6 @@
         font-size: 250%;
 }
 
-.grande2{
-    font-size: 190%;
-}
-
 .chico, 
 .chica{
         font-size: 80%;
@@ -20,6 +16,38 @@
 
 .color{
         color: @link-color;
+}
+
+.importante {
+    color:@rojo-anaranjado;
+}
+
+.diagonal {
+/* Safari */
+-webkit-transform: rotate(-60deg);
+/* Firefox */
+-moz-transform: rotate(-60deg);
+/* IE */
+-ms-transform: rotate(-60deg);
+/* Opera */
+-o-transform: rotate(-60deg);
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+margin: @margen-code;
+}
+
+.vertical {
+/* Safari */
+-webkit-transform: rotate(-90deg);
+/* Firefox */
+-moz-transform: rotate(-90deg);
+/* IE */
+-ms-transform: rotate(-90deg);
+/* Opera */
+-o-transform: rotate(-90deg);
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+margin: @margen-code;
 }
 
 .uc{
@@ -41,12 +69,12 @@
 }
         
 
-// M�rgenes de ajuste
+// Márgenes de ajuste
 .margen-superior{margin-top: @cuadratin}
 .margen-superior-negativo{margin-top: -@cuadratin}
 .margen-inferior{margin-bottom: @cuadratin}
 .margen-inferior-negativo{margin-bottom: -@cuadratin}
-.interno{margin-left: 0} // para no acumular m�rgenes (@cuadratin) en columnas anidadas.
+.interno{margin-left: 0} // para no acumular márgenes (@cuadratin) en columnas anidadas.
 
 .margen-vertical{.margen-superior; .margen-inferior}
 .centrada, .centrado{
@@ -107,19 +135,20 @@
 
 
 .caja{
+    display: block;
+    .border-radius(5px);
+    height: @cuadratin*2;
 
-	display: block;
-	.border-radius(5px);
-	height: @cuadratin*2;
 }
 
 // Estilos auxiliares
-.sombra{
-        .box-shadow(fade(@negro, 15%) 0 0 4px);
+.borde{
+        border:2px solid @gris-claro;
 }
 
-.sombra-foco{
-        .box-shadow(fade(@azul, 56%) 0 0 6px);
+.foco{
+        background-color: @pizarra;
+        color:@blanco;
 }
 
 .fulgor{
@@ -128,12 +157,37 @@
 }
 
 .ver{
-        background-color: rgba(0, 0, 0, 0.05);
-    border-radius: 3px 3px 3px 3px;
+    background-color: fade(@negro, 5);
+    .box-shadow(0 0 1px fade(@negro, 20));
+
     color: rgba(0, 0, 0, 0.3);
-    p{font-size: 10px}
 }
 
+//Márgenes columnas    
+
+.margen-columna{
+    padding: @cuadratin /   2;
+    margin: 0;
+}
+
+
+// Imágenes
+
+.imagen-lg {
+width: 100%;
+height: auto;
+overflow: hidden;
+}
+
+.absoluto {
+    position: absolute;
+    top: -200px;
+}
+
+
+.fondo {
+    background-image: url('http://www.focusarnhem.nl/media/movie/Eraserhead-eraserhead3.jpg');
+}
 
 // clases porcentuales .w1 - .w100
 
@@ -151,4 +205,22 @@
 .w78{width:78%}.w79{width:79%}.w80{width:80%}.w81{width:81%}.w82{width:82%}.w83{width:83%}.w84{width:84%}
 .w85{width:85%}.w86{width:86%}.w87{width:87%}.w88{width:88%}.w89{width:89%}.w90{width:90%}.w91{width:91%}
 .w92{width:92%}.w93{width:93%}.w94{width:94%}.w95{width:95%}.w96{width:96%}.w97{width:97%}.w98{width:98%}
-.w99{width:99%}.w100{width:100%}
+.w99{width:99%}.w100{width:100%}w99{width:99%}.w100{width:100%}
+
+// tamaños
+
+.sm {
+    padding: @padding-sm;
+
+}
+
+.md {
+    padding: @padding-md;
+
+}
+
+.lg {
+    padding: @padding-lg;
+
+}
+
