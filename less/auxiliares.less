@@ -24,15 +24,16 @@
 
 .diagonal {
 /* Safari */
--webkit-transform: rotate(-50deg);
+-webkit-transform: rotate(-60deg);
 /* Firefox */
--moz-transform: rotate(-50deg);
+-moz-transform: rotate(-60deg);
 /* IE */
--ms-transform: rotate(-50deg);
+-ms-transform: rotate(-60deg);
 /* Opera */
--o-transform: rotate(-50deg);
+-o-transform: rotate(-60deg);
 /* Internet Explorer */
 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+margin: @margen-code;
 }
 
 .vertical {
@@ -46,6 +47,7 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 -o-transform: rotate(-90deg);
 /* Internet Explorer */
 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+margin: @margen-code;
 }
 
 .uc{
@@ -157,8 +159,17 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 .ver{
     background-color: fade(@negro, 5);
     .box-shadow(0 0 1px fade(@negro, 20));
-    color: rgba(0, 0, 0, 0.3);}
-    
+
+    color: rgba(0, 0, 0, 0.3);
+}
+
+//Márgenes columnas    
+
+.margen-columna{
+    padding: @cuadratin /   2;
+    margin: 0;
+}
+
 
 // Imágenes
 
