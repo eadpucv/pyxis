@@ -20,15 +20,15 @@
 <body>
 <body lang='ES_es'>
   <div class='pag'>
-    <header>
+     <header>
       <div class='fila'>
         <div class='col-12'>
           <h1 class='gigante'><span class='gruesa'>LGG</span> <span class='rojo fino'>Lenguaje Gráfico Global</span></h1>
         </div>
         <div class='col-12'>
           <p class='grande fino margen-superior'>Fundamentos gráficos para la unificación y consistencia del lenguaje visual en pantalla que busca definir un esquema de trabajo semántico y escalable para diseñadores y desarrolladores.</p>
-          <p>Proyecto de código abierto desarrollado por <a href="http://www.ead.pucv.cl/mundo/investigacion/tig/"><strong>Taller de Investigaciones Gráficas .:TIG:.</strong></a> y disponible en <a class='btn grande accion' href='http://eadpucv.github.io/LGG' title='LLG en Github'>Github</a></p>
-        </div>
+          <p>Proyecto de código abierto desarrollado por <a href="http://www.ead.pucv.cl/mundo/investigacion/tig/"><strong>Taller de Investigaciones Gráficas .:TIG:.</strong></a> y disponible en <a class='btn sm' href='http://eadpucv.github.io/LGG' title='LLG en Github'>Github</a></p>
+
       </div>
     </header>
     <nav class='margen-inferior'>
@@ -50,17 +50,18 @@
 
 <p>Se crea la familia tipográfica llamada <strong>Ead Iconos</strong>, que consta de una serie de 40 íconos para ser implementados en los servicios web de la E [ad]. Se utiliza la aplicación web <a href="http://icomoon.io/"><i>IcoMoon</a></i> , un servicio de fuentes iconos, para importar archivos en formato .svg y luego exportarlos como una fuente tipográfica que posteriormente se incorpora al framework. </p>
 
-<p>Los iconos funcionan con la clase <code>fa</code>, de modo que para incorporarlos a un parrafo se utiliza como un span la clase fa más el nombre particular del ícono del siguiente modo: </p>
-<code> <span class="fa-engranaje"> </span></code> 
+<p>Los iconos funcionan con la clase <code>fa</code> como prefijo, de modo que para incorporarlos a un parrafo se utiliza como un span con la clase 'fa-nombre particular del ícono'. Del siguiente modo: <code> span class="fa-engranaje"</code> </p>
+
+<p>Se icorporan clases para controlar el tamaño del ícono, las que van de sm (pequeño), md (mediano), lg (grande) y xl (extra grande). Se agregan a la clase escribiendo 'fa-tamaño del ícono' luego de la clase que identifica al ícono específico. Por ejemplo: <code>span class="fa-engranaje fa-lg"</code></p>
 
   <h3>Clases y tamaños</h3>
   <table class='w100 centrado-vertical'>
     <tr>
         <th class='w20'>Clase</th>
-        <th class='w20'><code>sm</code></th>
-        <th class='w20'><code>md</code></th>
-        <th class='w20'><code>lg</code></th>
-        <th class='w20'><code>xl</code></th>
+        <th class='w20'><code>fa-sm</code></th>
+        <th class='w20'><code>fa-md</code></th>
+        <th class='w20'><code>fa-lg</code></th>
+        <th class='w20'><code>fa-xl</code></th>
     </tr>
 
     <tr>
