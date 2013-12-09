@@ -68,13 +68,14 @@ a.btn
         }
         
         &.alerta{
-                color: @blanco;
-                text-shadow: 1px 1px 0 fade(@negro, 40%);
-                border-color: fade(@rojo-oscuro, 20%);
-                background-color: @rojo;
+                color: @rojo-alerta;
+                background-color: @blanco;
                 
                 &:hover{
-                        background-color: @rojo-anaranjado;
+                        background-color: @rojo-alerta;
+                        color: @blanco;
+                        border-color: fade(@rojo-oscuro, 20%);
+
                 }
         
         }
@@ -335,8 +336,13 @@ form{
                         }
 
                         .especificacion {
-                            float: left;
+                            text-align: right;
+                            float: right;
                             display: inline-block;
+                            margin: 0;
+                            right: @margen-lg;
+                            position: absolute;
+
                         }
                     }
 
