@@ -36,18 +36,17 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 margin: @margen-code;
 }
 
-.vertical {
-/* Safari */
--webkit-transform: rotate(-90deg);
-/* Firefox */
--moz-transform: rotate(-90deg);
-/* IE */
--ms-transform: rotate(-90deg);
-/* Opera */
--o-transform: rotate(-90deg);
-/* Internet Explorer */
-filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-margin: @margen-code;
+.vertical { 
+/* Safari */ -webkit-transform-origin: 0 50%; 
+/* Safari */ -webkit-transform: rotate(-85deg) translate(-50%, 50%); 
+/* Firefox */ -moz-transform-origin: 0 50%; 
+/* Firefox */ -moz-transform: rotate(-85deg) translate(-50%, 50%); 
+/* IE */ -ms-transform-origin: 0 50%; 
+/* IE */ -ms-transform: rotate(-85deg) translate(-50%, 50%); 
+/* Opera */ -o-transform-origin: 0 50%; 
+/* Opera */ -o-transform: rotate(-85deg) translate(-50%, 50%); 
+/* Internet Explorer */ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); 
+margin: @margen-code; 
 }
 
 .uc{
@@ -179,15 +178,26 @@ height: auto;
 overflow: hidden;
 }
 
+
+.imagen-xs{
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+}
+
+.imagen-md{
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+}
+
+
 .absoluto {
+    top: -80px;
     position: absolute;
-    top: -200px;
 }
 
 
-.fondo {
-    background-image: url('http://www.focusarnhem.nl/media/movie/Eraserhead-eraserhead3.jpg');
-}
 
 // clases porcentuales .w1 - .w100
 

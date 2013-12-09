@@ -121,16 +121,13 @@ input[type='color'],
   color: @gris;
 }
 
-//
-
 form{
     
     label{
         color: @gris-oscuro;
         font-weight: normal;
         font-size: @cuerpo * 1;
-        text-shadow: -1px -1px 1px fade(@blanco, 60%);
-        
+
         &.checkbox{
             display: inline-block;
             vertical-align: middle;
@@ -138,10 +135,17 @@ form{
             
             input[type=checkbox]{
                 display: inline-block;
-                margin-top: @margen-md; 
+                margin-top: @margen-md;
+                margin-right: @margen-md; 
                 padding: @padding-md;
             }
         }
+    }
+
+    label.required:after{
+        content: '*';
+        color:@rojo-anaranjado;
+        font-size: @cuerpo * 4;
     }
     
     input[type='submit'],
@@ -247,9 +251,12 @@ form{
                 float: right;
             }
 
+            input[type=checkbox], .checkbox{
+                display: inline-block;}
+
             input[type='submit'],
             .btn{
-                margin-top: @cuadratin * 1.4;
+                margin-top: @margen-lg;
                 width: auto;
                 float: right;
             }
@@ -266,33 +273,92 @@ form{
             }
 
             .grupo-label-relleno {
- 
+                text-align: right;
+                margin-top: @margen-lg;
+                margin-bottom: @margen-lg;
+
+                label{
+                    padding: @padding-lg;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    display: inline-block;
+                }
             }
 
-            .checkbox{
-                display: inline-block;
-                float: left;
-                font-weight: 400;
+            &.nuevo-proyecto {
 
-                input[type=checkbox]{
+                input[type=text], input[type=password],input[type='email'],{
                     display: inline-block;
-                    margin-top: @margen-lg;
+                    margin:0;
+                    width: 70%;
+                    float: right;
+                }
+
+                textarea {
+                    width: 70%;
+                }
+
+                .especificacion{
+                    width: 85%;
+                    float: right;
+                    text-align: left;
+                }
+
+                .opciones{
+                    width: 70%;
+                    float: right;
+
+                    .checkbox-span{
+                        margin-right: @margen-lg;
+                        float: left;
+                    }
+                }
+
+                .input-sm{
+                    input[type=text], input[type=password],input[type='email']{
+                        display: inline-block;
+                        margin:0;
+                        margin-right: 35%;
+                        width: 35%;
+                    }
+
+                    &.grupo-label-relleno {
+                        text-align: right;
+                        margin-top: @margen-lg;
+                        margin-bottom: @margen-lg;
+
+                        label{
+                            padding: @padding-lg;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            display: inline-block;
+                        }
+
+                        .especificacion {
+                            float: left;
+                            display: inline-block;
+                        }
+                    }
+
+
                 }
             }
 
         }
     }
 
-    // Formulario Horizontal Small - Ingresar usuario
+    // Formulario Horizontal
 
-    &.horizontal-sm {
-    background-color: @gris-blanco;
-    margin:@margen-sm auto;
+    &.horizontal {
+        padding: @padding-sm;
+
+        &.sm {
+            background-color: @gris-blanco;
 
         .ingreso{
-            margin: @margen-sm * 3.5;
-            margin-bottom: @margen-sm;
+            margin: @margen-sm * 2;
             float: left;
+            width: 100%;
         }
 
         .control-usuario { 
@@ -301,8 +367,9 @@ form{
         }
 
         input[type=text], input[type=password]{
-        font-size: @cuerpo * 1.45;
+        font-size: @cuerpo * 1.6;
         margin:0;
+        width: 75%;
 
         }
 
@@ -317,49 +384,54 @@ form{
     }
     }
 
-    // Formulario Horizontal Medium - Nuevo objeto - Nuevo proyecto
+        &.md {
+            .grupo-label-relleno {
+                margin: @margen-md * 2;
 
-    &.horizontal-md {
-        border:1px solid @color-borde;
-        padding: @padding-sm;
-
-        .grupo-label-relleno {
-            margin: @margen-md * 2;
-
-            &.sm {
-                background-color: red;
+                &.sm {
+                    background-color: red;
+                }
             }
+
+            input[type=text], input[type=password]{
+                margin:0 0 0 @margen-md;
+                width: 70%;
+            }
+
+            input[type='submit'],
+                .btn{
+
+                margin-right: @margen-md * 2;
+             }
+
         }
 
-        input[type=text], input[type=password]{
-            margin:0 0 0 @margen-md;
-            width: 70%;
-        }
-
-        input[type='submit'],
-            .btn{
-            margin-right: @margen-md * 2;
-         }
-
-    }
-
-
-    // Formulario Horizontal Large - publicar un trabajo
-
-    //
-
-    &.horizontal{
-
+    
 
         &.lg {
 
             label{
-                display: inline-block;
+                display: block;
+                margin-top: @margen-lg / 2;
+            }
+
+            input[type=text], input[type=password],input[type='email'], .relleno, {
+                margin-bottom: @margen-lg;
+                width: 100%;
+            }
+
+            input[type=radio]{
+                padding-right: 10px;
+
             }  
 
-            input[type='submit'],
-                .btn{
-                margin-top: @cuadratin;
+            textarea:last-of-type{
+                margin-bottom: 0px;
+                display: block;
+            }
+
+            input[type='submit'],.btn{
+                margin-top: @margen-lg / 4;
                 width: auto;
                 float: right;
              }
@@ -369,6 +441,10 @@ form{
                 width: 30%;
                 padding: @padding-md;
             }
+
+            .formulario-vertical {
+                margin-right: @margen-lg;
+            }
         }            
     }
 
@@ -377,11 +453,11 @@ form{
 // Text input groups
 // -------------------------
 .input-group-addon {
-  padding: @padding-md;
+  padding: @padding-sm;
   margin-right:-@margen-sm;
   width: @cuadratin;
   display: inline-block;
-  font-size: @cuerpo * 1.45;
+  font-size: @cuerpo * 1.4;
   font-weight: normal;
   color: @blanco;
   text-align: center;
