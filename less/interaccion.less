@@ -168,7 +168,7 @@ form{
 
     input, textarea{
         color: fade(@azul, 70%);
-        .border-radius(4px);
+        .border-radius(@radio);
         .borde;
 
         &:focus{
@@ -231,6 +231,10 @@ form{
             margin: @margen-md 0;
         }
 
+        &.sm {
+            padding: @padding-sm;
+        }
+
         // Formulario Vertical Medium
 
         &.md {
@@ -238,10 +242,50 @@ form{
                 background-color: ;
             }
 
+            input[type=text], input[type=password],input[type='email']{
+                display: inline-block;
+                margin:0;
+                width: 50%;
+                float: right;
+            }
+
+            select{
+                width: 52%;
+                float: right;
+            }
+
+            input[type=checkbox], .checkbox{
+                display: inline-block;}
+
             input[type='submit'],
             .btn{
+                margin-top: @margen-md;
                 width: auto;
                 float: right;
+            }
+
+            .pregunta{
+                color: @gris-oscuro;
+                font-size: @cuerpo * 1.2;
+                text-shadow: none;
+                display: inline-block;
+                margin-bottom: @margen-lg / 1.8;
+                margin-top: 0;
+                margin-left: @margen-lg;
+                vertical-align: top;
+            }
+
+            .grupo-label-relleno {
+                text-align: right;
+                margin-top: @margen-lg;
+                margin-bottom: @margen-lg;
+
+                label{
+                    padding: @padding-lg;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    display: inline-block;
+                }
             }
         }
 
@@ -369,14 +413,15 @@ form{
     // Formulario Horizontal
 
     &.horizontal {
-        padding: @padding-sm;
+        padding: @padding-sm * 4;
 
         &.sm {
             background-color: @gris-blanco;
 
         .ingreso{
-            margin: @margen-sm * 2;
-            float: left;
+            margin-top: @margen-sm * 2;
+            margin-bottom: @margen-sm * 2;
+            float: center;
             width: 100%;
         }
 
@@ -386,15 +431,14 @@ form{
         }
 
         input[type=text], input[type=password]{
-        font-size: @cuerpo * 1.6;
+        font-size: @cuerpo * 1.5;
         margin:0;
-        width: 75%;
 
         }
 
         input[type='submit'],
             .btn{
-            margin: @margen-sm * 3.5;
+                margin:0;
          }
 
              .grupo-label-relleno {
@@ -474,15 +518,12 @@ form{
   padding: @padding-sm;
   margin-right:-@margen-sm;
   width: @cuadratin;
+  margin-top: 0;
   display: inline-block;
-  font-size: @cuerpo * 1.4;
+  font-size: @cuerpo * 1.3;
   font-weight: normal;
   color: @blanco;
   text-align: center;
-  background-color: @pizarra;
-  border: 2px solid @gris-claro;
-  border-top-left-radius: @radio;
-  border-bottom-left-radius: @radio;
 }
 
 
