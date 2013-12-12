@@ -21,20 +21,26 @@
 
 <body lang='ES_es'>
   <div class='pag'>
-    <header>
+   <header>
       <div class='fila'>
-        <div class='col-12'>
+        <div class='col-md-12 col-sm-12 col-xs-24'>
           <h1 class='gigante'><span class='gruesa'>LGG</span> <span class='rojo fino'>Lenguaje Gráfico Global</span></h1>
         </div>
-        <div class='col-12'>
+        
+        <div class='col-md-12 col-sm-12 col-xs-24'>
           <p class='grande fino margen-superior'>Fundamentos gráficos para la unificación y consistencia del lenguaje visual en pantalla que busca definir un esquema de trabajo semántico y escalable para diseñadores y desarrolladores.</p>
-          <p>Proyecto de código abierto desarrollado por <a href="http://www.ead.pucv.cl/mundo/investigacion/tig/"><strong>Taller de Investigaciones Gráficas .:TIG:.</strong></a> y disponible en <a class='btn sm' href='http://eadpucv.github.io/LGG' title='LLG en Github'>Github</a></p>
+          </div>
+          </div>
 
+       <div class='fila'>
+        <div class='col-md-24 col-sm-24 col-xs-24'>
+          <p>Proyecto de código abierto desarrollado por <a href="http://www.ead.pucv.cl/mundo/investigacion/tig/"><strong>Taller de Investigaciones Gráficas .:TIG:.</strong></a> y disponible en <a class='btn sm' href='http://eadpucv.github.io/LGG' title='LLG en Github'>Github</a></p>
+      </div>
       </div>
     </header>
     <nav class='margen-inferior'>
       <ul class='centrado'>
-        <li><a href='index.html'><span class="fa-parrafo fa-sm"></span></a></li>
+        <li><a href='index.html'><span class="ico-parrafo ico-sm"></span></a></li>
         <li><a href='tipografia.html'>Tipografía</a></li>
         <li><a href='grilla.html'>Grilla</a></li>
         <li><a href='interaccion.html'>Interacción</a></li>
@@ -51,37 +57,78 @@
 
         <h3 class='rojo'>1. Clasificación de Formularios</h3>
 
-        <p>Los formularios se clasifican según su disposición en espacial en la página. Primero, siendo clases de <code> Form </code>, donde se diferencian si son de caracter <code> vertical </code> u <code> horizontal </code>. Además, se nombran sus tamaños, siendo sus extensiones muy pequeño <code> -xs </code> , pequeño <code>-sm </code> , medio <code>-md </code> , grande <code>-lg </code>.
+        <p>Se parte con la idea de que los formularios es donde ocurre una mayor transacción de interacción entre el usuario y el sistema. Para que que la interacción sea de manera cómoda y agradable, se plantea construir una relación proporcional entre los diversos formularios existentes en las plataformas digitales.</p>
+
+        <p>Más allá de su similitud gráfica, debe haber un patrón proporcional que nos ayude a entender que todos estos elementos corresponden a la misma entidad.</p>
+
+        <p>Es factible que aún no existan todos los formularios necesarios para todo uso que podría llegar a desplegarse, pero por lo mismo es necesario plantear una manera de construcción que permita replicar la cualidad gráfica.</p>
+
+        <p>Los tipos de formularios existentes ahora difieren en su mayor parte, entre los que se encuentran en el Sitio e[ad], con los que existen en la Wiki Casiopea. En el primer caso son de caracter mesurado, donde no hay señal de interacción (Focus, box-shadow o algo similar), los bordes de las cajas son rectos y no existe una propiedad cromática. En cambio en la Wiki, se encuentran diversos lenguajes gráficos en los formularios. El hecho de ingresar como usuario y que la gráfica sea totalmente distinta genera una confusión y eso es porque aquella gráfica empleada allí no se encuentra en otro lado neuvamente. Al crear un nuevo objeto, un proyecto, por ejemplo, aparece una tabla donde el autor debe rellenar cada uno de esos campos y el acto mismo tiene una cualidad muy árida.</p>
+
+        <p>Por todas aquellas razones, de caracter tanto gráfico como de interacción, son pensados para construir una similitud y tratar de mantener un grado lúdico a la hora de establecer interacción directa con el usuario.</p>
+        
+        <h4>Proporciones</h4>
+
+        <p>Se usa la denominación de nombrar el caracter de formulario y luego su proporción. Es una manera de construir una versatilidad en LESS, donde se nombre que es de caracter Vertical y su contenido se adecúe a su tamaño.</p>
+
+        Las variables proporcionales son de
+
+            6 columnas sm (Vertical)
+            12 columnas md (vertical)
+            18 columnas lg (Vertical)
+            8 columnas sm (horizontal)
+            14 columnas md (horizontal)
+            20 columnas lg (horizontal) se compone de 8 columnas dos veces. 
         </p>
-            
+
+        <h4>Interacción</h4>
+
+        <p>Al hacer click en uno de los input, aparece un box-shadow, inset, donde se remarca demostrando una profunidad y se entienda que uno está rellenando ese campo. Además, el borde cambia de color, a un color verde.</p>
+
+        <p>Actualmente existen elementos que están en fase neutral, pues falta comenzar a impregnar cada decisión gráfica en su totalidad, en relación a los atributos gráficos.</p>
+
+        <p>Los elementos que están a modo neutral, o standard, son los Checkboxes, los dropdown y los avisos de rellenar campos requeridos para enviar el formulario.</p>
+        </div>
+
+        <div class='fila'>
         <div class='col-md-6'>    
             <h5 class='gris-oscuro'>1.1. Formularios verticales </h5> 
             <code>div class='col-md-6'
-            form class='vertical-md'</code>
+            form class='formulario-vertical sm'</code>
            
 
 <!-- Formulario Vertical Medio -->
 
 
-            <form class='formulario-vertical md'>
+            <form class='formulario-vertical sm'>
                 <h4>Contáctate con nosotros <span class='rojo chico'>e[ad] - vertical</span></h4>
                         
-                <label>Nombre <span class='importante'>*</span></label>
-                <input type='text' required />
+                <div class='grupo-relleno'>
+                    <label>Nombre <span class='importante'>*</span></label>
+                    <input type='text' class='relleno-formulario' required />
+                </div>
 
+                <div class='grupo-relleno'>
                 <label>Correo electrónico <span class='importante'>*</span></label>
-                <input type='email' required/>
+                <input type='email' class='relleno-formulario' required/>
+                </div>
 
+                <div class='grupo-relleno'>
                 <label>Asunto</label>
-                <input type='text'/>
+                <input type='text' class='relleno-formulario' />
+                </div>
 
+                <div class='grupo-relleno'>
                 <label>Mensaje</label>
                 <textarea></textarea>
+                </div>
 
+                <div class='grupo-relleno'>
                 <label>Verificación</label>
-                <input class='verificacion' placeholder="(¿CAPTCHA?)" />
+                <input class='verificacion' placeholder='captcha' />
+                </div>
 
-                <input type='submit' class='btn md izquierda' value='Enviar'>
+                <input type='submit' class='btn md derecha' value='Enviar'>
 
             </form>
         </div>
@@ -92,12 +139,12 @@
     <div class='fila'>
         <div class='col-md-12'>
         <code>div class='col-md-12'
-        fform class='vertical-lg registro-lg pure-form pure-form-aligned'</code>
+        form class='formulario-vertical md'</code>
 
         <h4>Registrarse <span class='rojo chico'>Wiki - vertical</span></h4>
 
 
-                <form class='formulario-vertical lg'>
+                <form class='formulario-vertical md'>
                 <h1>Nuevo Usuario</h1>
                         <div class='grupo-label-relleno'>
 
@@ -175,7 +222,7 @@
                                 Acepto los <a href='#'>términos y condiciones</a>
                             </label>
 
-                            <input type='submit' class='accion lg' value='Crear nuevo usuario'>
+                            <input type='submit' class='accion btn lg' value='Crear nuevo usuario'>
                         </div>
 
                 </form>
@@ -187,8 +234,8 @@
 
     <div class='fila'>
         <div class='col-md-18'>
-        <code>div class='col-md-12'
-        fform class='vertical-lg registro-lg pure-form pure-form-aligned'</code>
+        <code>div class='col-md-18'
+        form class='formulario-vertical lg nuevo-proyecto'</code>
 
         <h4>Crear nuevo o editar <span class='rojo chico'>Wiki - horizontal</span></h4>
 
@@ -297,10 +344,10 @@
                         </div>
 
 
-                            <input type='submit' class='accion' value='Grabar la página'>
-                            <a class='btn'>Mostrar previsualización</a>
-                            <a class='btn'>Mostrar cambios</a>
-                            <a class='btn alerta'>Cancelar</a>
+                            <input type='submit' class='btn md accion' value='Grabar la página'>
+                            <a class='btn md'>Mostrar previsualización</a>
+                            <a class='btn md'>Mostrar cambios</a>
+                            <a class='btn md alerta'>Cancelar</a>
 
                 </form>
             </div>
@@ -327,10 +374,10 @@
                     <input type='email' class='relleno' required/>
 
                     <label class='pregunta'>Empresa</label>
-                    <input class='relleno' />
+                    <input type='text' class='relleno' />
 
                     <label class='pregunta'>Sitio web</label>
-                    <input class='relleno' />
+                    <input type='text' class='relleno' />
 
                     <label class="radio">Solicito a:</label>
                     <input type="radio" name="carrera" /> <span class='chico'>Arquitecto</span>
@@ -346,7 +393,7 @@
                     <textarea class='relleno' placeholder="descripción detallada de labores a realizar, horarios, contexto y ubicación geográfica"/></textarea>
 
                     <label class='pregunta'>Remuneración ofrecida</label>
-                    <input class='relleno' placeholder="puede indicar un rango"/>
+                    <input type='text' class='relleno' placeholder="puede indicar un rango"/>
 
                     <label class='pregunta'>Interesados contactar a:</label>
                     <textarea class='relleno' placeholder="Indique vía de postulación para interesados"/></textarea>
@@ -365,9 +412,10 @@
 <!-- Formulario Horizontal Medio --> 
     <div class='fila'>
         <div class='col-md-14'>
+
+                     <code>div class='col-md-14'
+            form class='horizontal md'</code>
              <h4>Nuevo objeto <span class='rojo chico'>Wiki - horizontal</span></h4>
-             <code>div class='col-md-14'
-            form class='horizontal-md'</code>
 
             <form class='horizontal md'>
                 <h1>Agregar página con formulario</h1>
@@ -412,23 +460,18 @@
     <div class='fila'>
         <div class='col-md-8'>
 
+                <code>div class='col-md-8'
+        form class='horizontal sm'</code>
+
         <h4>Acceder <span class='rojo chico'>Wiki - horizontal</span></h4>
-        <code>div class='col-md-14'
-        form class='horizontal-sm'</code>
 
             <form class='horizontal sm'>
             <div class='ingreso'>
-                    <div class='input-group'>
-                        <span class="input-group-addon">@</span>
                         <input type='text' placeholder='nombre de usuario' required/>
-                    </div>
                 </div>
 
-                <div class='ingreso'>
-                    <div class='input-group'>
-                        <span class="input-group-addon">#</span>
+               <div class='ingreso'>
                         <input type='password' placeholder='contraseña' required/>
-                    </div>
                 </div>
 
                 <input type='submit' class='md' value='Iniciar sesión'>
@@ -461,7 +504,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a class='btn sm'>Botón</a>
+                        <a class='btn sm'>Neutral</a>
                     </td>
                     <td>
                         <code>btn sm</code>
@@ -469,15 +512,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a class='btn'>Botón</a>
-                    </td>
-                    <td>
-                        <code>btn</code>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <a class='btn md'>Botón</a>
+                        <a class='btn md'>Neutral</a>
                     </td>
                     <td>
                         <code>btn md</code>
@@ -485,7 +520,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <a class='btn lg'>Botón</a>
+                        <a class='btn lg'>Neutral</a>
                     </td>
                     <td>
                         <code>btn lg</code>
@@ -495,7 +530,6 @@
                     <td>
                         <a class='btn lg accion'>Acción</a>
                         <a class='btn md accion'>Acción</a>
-                        <a class='btn accion'>Acción</a>
                         <a class='btn sm accion'>Acción</a>
                     </td>
                     <td>
@@ -506,7 +540,6 @@
                     <td>
                         <a class='btn lg alerta'>Alerta</a>
                         <a class='btn md alerta'>Alerta</a>
-                        <a class='btn alerta'>Alerta</a>
                         <a class='btn sm alerta'>Alerta</a>
                     </td>
                     <td>
@@ -521,16 +554,16 @@
   <div class='fila'>
     <div class='col-md-24'>
       <nav>
-        <ul>          
-            <li><a href=''>¶</a></li>
+       <ul>
+            <li><a href='index.html'><span class="ico-parrafo ico-sm"></span></a></li>
             <li><a href='tipografia.html'>Tipografía</a></li>
             <li><a href='grilla.html'>Grilla</a></li>
             <li><a href='interaccion.html'>Interacción</a></li>
-            <li><a href='color.html'>Color</a></li>      
-            <li><a href='iconografia.html'>Iconografía</a></li>
+            <li><a href='color.html'>Color</a></li>
+            <li><a href='iconografia.html'>Íconografía</a></li>
             <li><a href='versatilidad.html'>Versatilidad</a></li>
-            <li><a href='layout.html'>Layout</a></li>        
-        </ul>
+            <li><a href='layout.html'>Lay out</a></li>
+      </ul>
     </nav>
 
     <p>

@@ -14,12 +14,11 @@ a.btn
         cursor: pointer;
         white-space: nowrap;
         font-size: @cuerpo * .9;
-        padding: @padding-sm;
         color: @azul;
         text-align: center;
         background-color: @blanco;
         vertical-align: middle;
-        border: 1px solid @blanco;
+        border: 1px solid @azul;
         .border-radius(@radio / 2);
         
         &:hover {
@@ -38,21 +37,21 @@ a.btn
                 font-size: @cuerpo * .8;
                 text-transform: uppercase;
                 font-weight: normal;
-                padding: @padding-sm;
+                padding: @padding-sm / 2 @padding-sm;
                 .border-radius(@radio/1.5);
         }
   
         &.md{
                 font-weight: 300;
                 font-size: @cuerpo * 1;
-                padding: @padding-md;
+                padding: @padding-md / 4 @padding-md;
                 }
 
         &.lg{
                 font-size: @cuerpo * 1.2;
                 letter-spacing: .05ex;
                 font-weight: 200;
-                padding: @padding-lg;
+                padding: @padding-lg / 4 @padding-lg;
         }
 
         &.accion{
@@ -68,13 +67,15 @@ a.btn
         }
         
         &.alerta{
-                color: @blanco;
-                text-shadow: 1px 1px 0 fade(@negro, 40%);
-                border-color: fade(@rojo-oscuro, 20%);
-                background-color: @rojo;
+                color: @rojo-alerta;
+                background-color: @blanco;
+                border:1px solid @rojo-alerta;
                 
                 &:hover{
-                        background-color: @rojo-anaranjado;
+                        background-color: @rojo-alerta;
+                        color: @blanco;
+                        border-color: fade(@rojo-oscuro, 20%);
+
                 }
         
         }
@@ -150,14 +151,14 @@ form{
     
     input[type='submit'],
     .btn{
-        margin-top: -@cuadratin / 2.5;
         width: auto;
         float: right;
     }
 
     input[type='text'],input[type='password'],input[type='email'], textarea{
         height: auto;
-        width: 100%;
+        padding: @padding-md / 4 @padding-md / 2;
+        width: 96%;
         color:@pizarra;
     }
         
@@ -167,7 +168,7 @@ form{
 
     input, textarea{
         color: fade(@azul, 70%);
-        .border-radius(4px);
+        .border-radius(@radio);
         .borde;
 
         &:focus{
@@ -189,7 +190,9 @@ form{
 
     .verificacion{
         background-color: @blanco;
+        padding: @padding-md / 4 @padding-md / 2;
         color: @pizarra;
+        margin:0;
         width: 50%;
         float: left;
     }
@@ -199,6 +202,7 @@ form{
         .borde;
         margin:0;
         color:@pizarra;
+        padding: @padding-md / 4 @padding-md / 2;
         height: auto;
     }
 
@@ -224,7 +228,11 @@ form{
         label{
             display: block;
             vertical-align: top;
-            margin: @interlinea 0 5px 5px;
+            margin: @margen-md 0;
+        }
+
+        &.sm {
+            padding: @padding-sm;
         }
 
         // Formulario Vertical Medium
@@ -232,6 +240,52 @@ form{
         &.md {
             input, textarea{
                 background-color: ;
+            }
+
+            input[type=text], input[type=password],input[type='email']{
+                display: inline-block;
+                margin:0;
+                width: 50%;
+                float: right;
+            }
+
+            select{
+                width: 52%;
+                float: right;
+            }
+
+            input[type=checkbox], .checkbox{
+                display: inline-block;}
+
+            input[type='submit'],
+            .btn{
+                margin-top: @margen-md;
+                width: auto;
+                float: right;
+            }
+
+            .pregunta{
+                color: @gris-oscuro;
+                font-size: @cuerpo * 1.2;
+                text-shadow: none;
+                display: inline-block;
+                margin-bottom: @margen-lg / 1.8;
+                margin-top: 0;
+                margin-left: @margen-lg;
+                vertical-align: top;
+            }
+
+            .grupo-label-relleno {
+                text-align: right;
+                margin-top: @margen-lg;
+                margin-bottom: @margen-lg;
+
+                label{
+                    padding: @padding-lg;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    display: inline-block;
+                }
             }
         }
 
@@ -247,7 +301,7 @@ form{
             }
 
             select{
-                width: 50%;
+                width: 52%;
                 float: right;
             }
 
@@ -305,13 +359,17 @@ form{
                 }
 
                 .opciones{
-                    width: 70%;
+                    width: 71%;
                     float: right;
 
                     .checkbox-span{
                         margin-right: @margen-lg;
                         float: left;
                     }
+                }
+
+                .btn {
+                    margin-left: @margen-lg / 2;
                 }
 
                 .input-sm{
@@ -335,8 +393,13 @@ form{
                         }
 
                         .especificacion {
-                            float: left;
+                            text-align: right;
+                            float: right;
                             display: inline-block;
+                            margin: 0;
+                            right: @margen-lg;
+                            position: absolute;
+
                         }
                     }
 
@@ -350,14 +413,15 @@ form{
     // Formulario Horizontal
 
     &.horizontal {
-        padding: @padding-sm;
+        padding: @padding-sm * 4;
 
         &.sm {
             background-color: @gris-blanco;
 
         .ingreso{
-            margin: @margen-sm * 2;
-            float: left;
+            margin-top: @margen-sm * 2;
+            margin-bottom: @margen-sm * 2;
+            float: center;
             width: 100%;
         }
 
@@ -367,15 +431,14 @@ form{
         }
 
         input[type=text], input[type=password]{
-        font-size: @cuerpo * 1.6;
+        font-size: @cuerpo * 1.5;
         margin:0;
-        width: 75%;
 
         }
 
         input[type='submit'],
             .btn{
-            margin: @margen-sm * 3.5;
+                margin:0;
          }
 
              .grupo-label-relleno {
@@ -389,7 +452,6 @@ form{
                 margin: @margen-md * 2;
 
                 &.sm {
-                    background-color: red;
                 }
             }
 
@@ -417,7 +479,6 @@ form{
 
             input[type=text], input[type=password],input[type='email'], .relleno, {
                 margin-bottom: @margen-lg;
-                width: 100%;
             }
 
             input[type=radio]{
@@ -431,7 +492,8 @@ form{
             }
 
             input[type='submit'],.btn{
-                margin-top: @margen-lg / 4;
+                margin-top: @margen-lg / 2;
+                margin-right: 0;
                 width: auto;
                 float: right;
              }
@@ -443,7 +505,7 @@ form{
             }
 
             .formulario-vertical {
-                margin-right: @margen-lg;
+                margin-left: @margen-lg;
             }
         }            
     }
@@ -456,15 +518,12 @@ form{
   padding: @padding-sm;
   margin-right:-@margen-sm;
   width: @cuadratin;
+  margin-top: 0;
   display: inline-block;
-  font-size: @cuerpo * 1.4;
+  font-size: @cuerpo * 1.3;
   font-weight: normal;
   color: @blanco;
   text-align: center;
-  background-color: @pizarra;
-  border: 2px solid @gris-claro;
-  border-top-left-radius: @radio;
-  border-bottom-left-radius: @radio;
 }
 
 
