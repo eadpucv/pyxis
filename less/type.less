@@ -41,13 +41,11 @@ p {
     margin-bottom: @interlinea;
     line-height: @interlinea;
     color: fade(@negro, 80%);
-    
 
     &.grande{
-
       font-size: @cuerpo * 1.5;
       font-weight: 300;
-    line-height: 120%;
+      line-height: 120%;
     }
     
     &.chico {
@@ -60,7 +58,7 @@ p {
       font-family: @serif;
       font-size:   @cuerpo * 1.0;
       line-height: @interlinea;
-    white-space: pre;
+      white-space: pre;
     }
 
     &.especificacion {
@@ -177,9 +175,12 @@ h1, h2, h3, h4, h5, h6 {
   vertical-align: bottom;
   
   &.filete{
-//    padding: 0 @cuadratin;
     border-bottom: 1px solid @color-borde;
     .clearfix;
+  }
+
+  &.gigante{
+    line-height: 100%;
   }
 }
 
