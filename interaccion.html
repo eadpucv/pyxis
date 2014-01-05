@@ -185,13 +185,13 @@
         <h4>Formulario Horizontal</h4>
             <form class='formulario-horizontal'>
                 <legend>Nuevo Usuario</legend>
-                <div class='grupo'>
-                    <label class='col-sm-6'>Usuario</label>
-                    <input class='col-sm-18' type='text' placeholder='username' required/>
+                <div class='grupo obligatorio'>
+                    <label>Usuario</label>
+                    <input type='text' placeholder='username' required/>
                     <p class='ayuda'>Elige un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</p>
                 </div>
 
-                <div class='grupo'>
+                <div class='grupo obligatorio'>
                     <label>Tipo</label>
                     <select>
                         <option>Alumno(a)</option>
@@ -202,7 +202,7 @@
                     </select>
                 </div>
 
-                <div class='grupo'>
+                <div class='grupo obligatorio'>
                     <label>Carrera</label>
                     <select>
                         <option>Arquitectura</option>
@@ -210,28 +210,28 @@
                     </select>
                 </div>
 
-                <div class='grupo'>
+                <div class='grupo obligatorio'>
                     <label>Año ingreso</label>
                     <input type='text' class='relleno'/>
                 </div>
 
-                <div class='grupo'>
-                    <label><span class='importante'>*</span> Nombre</label>
+                <div class='grupo obligatorio'>
+                    <label>Nombre</label>
                     <input type='text' class='relleno' required />
                 </div>
 
-                <div class='grupo'>
-                    <label><span class='importante'>*</span> Apellido</label>
+                <div class='grupo obligatorio'>
+                    <label>Apellido</label>
                     <input type='text' class='relleno' required />
                 </div>
 
-                <div class='grupo'>
-                    <label><span class='importante'>*</span> Rut</label>
+                <div class='grupo obligatorio'>
+                    <label>Rut</label>
                     <input type='text' class='relleno' required />
                 </div>
 
-                <div class='grupo'>
-                    <label><span class='importante'>*</span> Mail</label>
+                <div class='grupo obligatorio'>
+                    <label>Mail</label>
                     <input type='email' class='relleno' required />
                 </div>
 
@@ -253,7 +253,7 @@
                     <input type='password' class='relleno' required />
                 </div>
 
-                <div class="pure-controls">
+                <div class="grupo checkbox">
                     <label class="checkbox">
                     <input type="checkbox">
                         Acepto los <a href='#'>términos y condiciones</a>

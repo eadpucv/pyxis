@@ -145,6 +145,7 @@ form{
                 color: @rojo-anaranjado;
                 font-size: @cuerpo;
             }
+            select,
             input{
                 border: 1px solid fade(@rojo-anaranjado, 50);
             }
@@ -256,13 +257,16 @@ form{
     &.formulario-horizontal {
         .grupo{
             .clearfix;
-            .fila;
+            margin: @cuerpo 0;
             label{
+                
                 display: block;
-
-                margin: 0 2ex 0 0;
+                float: left;
+                width: 30%;
+                margin: 0;
                 vertical-align: middle;
                 text-align: right;
+                padding: .5em 1ex 0 0;
             }
 
             input[type='password'],
@@ -270,14 +274,31 @@ form{
             input[type='email'],
             select,
             textarea{
-
+                display: block;
+                float: left;
+                margin: 0;
+                width: 70%
             }
 
             p{
+                padding: @cuerpo/2 0 @cuerpo/2 30%;
                 clear: both;
-                display: block;
+
+                &.ayuda{
+                    font-size: @cuerpo * .8;
+                    color: fade(@gris-oscuro, 60);
+                }
+            }
+
+            &.checkbox{
+                label{
+                    text-align: left;
+                    width: 70%;
+                    margin: 0 0 @cuerpo*2 30%;
+                }
             }
         }
+
     }
 }
 
