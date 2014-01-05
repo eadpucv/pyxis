@@ -1,99 +1,166 @@
-	// Tipograf�a
+
+  // Tipografía
+
 
 
 * {
-	font-family: @tipografia;
-	font-weight: 400;
+  font-family: @tipografia;
+  font-weight: 400;
 }
 
-	
+  
 body{
-	font-size: @cuerpo;	
-	#gradient > .striped(lighten(@gris-claro, 15%), -45deg);
-	background-size: 10px 10px;
-	background-repeat: repeat;
+  font-size: @cuerpo;
+  background-color: darken(@blanco, 3%);
+  // #gradient > .striped(lighten(@gris-claro, 15%), -45deg);
+  // background-size: 10px 10px;
+  // background-repeat: repeat;
 }
 
 a{
-	color: @color-link;
-	text-decoration: none;
-	
-	&:hover{
-		background-color: @ahuesado;
-		text-decoration: underline;
-	}
-	
-	&:visited{
-		color: fade(@color-link, 10);
-		text-decoration: line-through;
-	}
-}
+  color: @color-link;
+  text-decoration: none;
+    font-family: @sans;
+    font-size:@cuerpo -2;
 
-p {
-  	margin-bottom: @interlinea;
-  	line-height: @interlinea;
-  	color: fade(@negro, 80%);
-
-  	&.grande{
-  		font-size: @cuerpo * 1.5;
-  		font-weight: 300;
-		line-height: 120%;
-		padding: 0;
-  	}
-  	
-  	&.chico {
-    	font-size: @cuerpo*.80;
-    	line-height: @interlinea * .8;
-  	}
   
-  	&.poema{
-  		font-family: @serif;
-  		font-size: @cuerpo - 2;
-  		line-height: @interlinea;
-		white-space: pre;
-  	}
+  &:hover{
+    color: @pizarra;
+    text-decoration: underline;
+  }
+  
+  &:visited{
+    color: fade(@color-link, 10);
+    text-decoration: line-through;
+  }
+
 }
 
-// �mfasis
+//Tamaños tipográficos
+p {
+    margin-bottom: @interlinea;
+    line-height: @interlinea;
+    color: fade(@negro, 80%);
+
+    &.grande{
+      font-size: @cuerpo * 1.5;
+      font-weight: 300;
+      line-height: 120%;
+    }
+    
+    &.chico {
+      font-size: @cuerpo*.90;
+      line-height: @interlinea * .9;
+      margin: 0;
+    }
+  
+    &.poema{
+      font-family: @serif;
+      font-size:   @cuerpo * 1.0;
+      line-height: @interlinea;
+      white-space: pre;
+    }
+
+    &.especificacion {
+      margin-bottom: @interlinea;
+      line-height: @interlinea;
+      color: fade(@pizarra, 80%);
+    }
+    
+    &.mediano {
+        font-size: @cuerpo -2;
+      font-weight: 300;
+    line-height: 120%;
+    padding: 0;
+    }
+    
+}
+
+.antetitulos{
+    font-family: @tipografia-titulos;
+    font-weight: normal;
+    color:@rojo-oscuro;  
+    text-transform: uppercase;
+    font-size:@cuerpo -8px;
+}
+
+//Tamaños texto version 2
+
+.font-sm{
+    font-size:@cuerpo *.90;
+    line-height: @interlinea * .95;
+    font-weight: 300;
+    margin: 0;
+}
+
+.font-md{
+    font-size:@cuerpo *1;
+    line-height: @interlinea * 1.1;
+    font-weight: 300;
+    margin: 0;
+}
+
+.font-lg{
+    font-size:@cuerpo *1.3;
+    line-height: @interlinea * 1.2;
+    font-weight: 300;
+    margin: 0;
+}
+
+.font-xl{
+    font-size:@cuerpo *2.2;
+    line-height: @interlinea * 1.2;
+    font-weight: 300;
+    margin: 0;
+}
+
+
+// Énfasis
 
 .negrita,
 strong {
-	font-style: inherit;
-  	font-weight: bold;
+  font-family:@sans;
+  font-style: normal;
+    font-weight: 300;
 }
 
 .cursiva,
 .italica,
 em {
-	font-family: @serif;
-	font-style: italic;
-	font-weight: inherit;
-	line-height: inherit;
+  font-family: @serif;
+  font-style: italic;
+  font-weight: inherit;
+  line-height: inherit;
 }
 
 .pesada,
 .pesado,
 .ultra-negrita{
-	font-weight: 900;
-	letter-spacing: 0.1ex;
+  font-weight: 900;
+  letter-spacing: 0.1ex;
+}
+
+.gruesa{
+    font-family:@tipografia-titulos;
+    font-weight: 600;
 }
 
 .altas{
-	text-transform: uppercase,
+  text-transform: uppercase,
 }
 
 ul{
-	//font-size: @cuerpo * 1.2;
+  //font-size: @cuerpo * 1.2;
 }
 
 div.poema{
-	margin-bottom: @interlinea;
-	line-height: @interlinea;
+  margin-bottom: @interlinea;
+  line-height: @interlinea;
     font-family: @serif;
-  	font-size: @cuerpo - 2;
-  	line-height: @interlinea;
-	white-space: pre;
-	color: fade(@negro, 80%);
+    font-size: @cuerpo - 2;
+    line-height: @interlinea;
+  white-space: pre;
+  color: fade(@negro, 80%);
 }
 
 
@@ -102,21 +169,23 @@ div.poema{
 
 h1, h2, h3, h4, h5, h6 {
 
-	font-weight: bold;
-	color: @gris-oscuro;
-	margin: 0 0 @interlinea 0;
-	vertical-align: bottom;
-	
-	&.filete{
-		margin: 0 -@cuadratin;
-		padding: 0 @cuadratin;
-		border-bottom: 1px solid @color-borde;
-		.clearfix;
-	}
+  font-weight: 600;
+  color: @gris-oscuro;
+  margin: 0 0 @interlinea 0;
+  vertical-align: bottom;
+  
+  &.filete{
+    border-bottom: 1px solid @color-borde;
+    .clearfix;
+  }
+
+  &.gigante{
+    line-height: 100%;
+  }
 }
 
-h1 {font-size: 32px;}
-h2 {font-size: 28px;}
+h1 {font-size: 28px;}
+h2 {font-size: 24px;}
 h3 {font-size: 22px;}
 h4 {font-size: 18px;}
 h5 {font-size: 16px;}
@@ -145,23 +214,23 @@ ol {
 li {
   line-height: @interlinea;
   &:before{
-  	.color;
+    .color;
   }
 }
 
-// Listas de descripci�n o definici�n
+// Listas de descripción o definición
 
 dl {
-	margin-bottom: @interlinea;
-	dt, dd {
-		line-height: @interlinea;
-		}
-	dt {
-		font-weight: bold;
-		}
-	dd {
-		margin-left: @interlinea / 2;
-		}
+  margin-bottom: @interlinea;
+  dt, dd {
+    line-height: @interlinea;
+    }
+  dt {
+    font-weight: 600;
+    }
+  dd {
+    margin-left: @interlinea / 2;
+    }
 }
 
 // Otros
@@ -192,7 +261,18 @@ blockquote {
   }
 }
 
-// Direcci�n
+.referencias{
+    font-family:@tipografia-referencias;
+}
+
+//Footer
+
+.datos-footer{
+    font-family:@sans;
+    font-weight:@cuerpo - 2;
+}
+
+// Dirección
 address {
   display: block;
   line-height: @interlinea;
@@ -200,21 +280,22 @@ address {
 }
 
 
-// c�digo
+// código
 code, pre {
   font-family: @mono;
-  font-size: @cuerpo *.666;
+  font-size: @cuerpo * .7;
   .border-radius(3px);
   color: fade(@negro, 50%);
 }
 
 code {
-	display: inline-block;
-	line-height: @interlinea * .666;
-	white-space: pre;
-	background-color: @ahuesado;
-	padding: 0 1ex 0 1ex;
-	.box-shadow(inset 0 0 1px darken(@ahuesado, 30%));
+  display: inline-block;
+  line-height: @interlinea * .666;
+  white-space: pre;
+  background-color: @ahuesado;
+  margin: 15px 0px 10px 5px;
+  .box-shadow(inset 0 0 1px darken(@ahuesado, 30%));
+  font-size: 11px;
 }
 
 pre {
@@ -233,37 +314,87 @@ pre {
 
 }
 
+.texto-grilla {
+  white-space: pre;
+  background-color: @ahuesado;
+  .box-shadow(inset 0 0 1px darken(@ahuesado, 30%));
+  font-size: 10px;
+}
+
 .global{
-	-moz-column-count: 3;
-	-moz-column-gap: 20px;
-	-webkit-column-count: 3;
-	-webkit-column-gap: 20px;
-	column-count: 3;
-	column-gap: 20px;
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  column-count: 3;
+  column-gap: 20px;
 }
 
 .big{
-	color: @gris-claro;
-	margin: -@em 0 0 0;
-	
+  color: @gris-claro;
+  margin: - @em 0 0 0;
+  
 }
 .main{
-	color: @link-color;
-	font-size: @cuerpo * 3;
+  color: @link-color;
+  font-size: @cuerpo * 3;
 }
 .tdc{
-	padding: @em @em*2;
-	color: @gris;
-	background-color: @ahuesado;
-	.border-radius(1em / 5);
-	margin: 1em 0;
+  padding: @em @em*2;
+  color: @gris;
+  background-color: @ahuesado;
+  .border-radius(1em / 5);
+  margin: 1em 0;
 }
 
 
-//------------------------------------------------------Estilos Sem�nticos
+//------------------------------------------------------Estilos Semánticos
 
 
-.estracto{
-	.chico;
-	line-height: @interlinea * 0.81;
+.extracto{
+  line-height: @interlinea * 0.81;
+    font-family: @tipografia-referencias;
+    font-size: 0.938em;
 }
+
+.resumen {
+        font-size: 15px;
+      line-height: 120%;
+    padding: 0;
+}
+
+
+//Elementos laterales
+
+.columna-tipo{
+    width: 45%;
+    float: left;
+    position: relative;
+}
+
+
+// Responsive 
+// ----------
+
+// Extra small screen / phone
+@media(max-width: @screen-xs-max){
+  h1.gigante{
+    font-size: 50px;
+    line-height: 100%;
+  }
+}
+
+// Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+}
+
+// Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+
+}
+
+// Large screen / wide desktop
+@media (min-width: @screen-lg){
+}
+
+

@@ -6,10 +6,12 @@
 <head>
   <meta charset='UTF-8'/>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel="stylesheet" href="assets/css/bootstrap.css" 
+    media="screen" />
 
-  <title>LGG - Interacción</title>
+  <title>EGO - Interacción </title>
 
-  <link href='css/lgg.css' rel='stylesheet'>
+  <link href='css/ego.css' rel='stylesheet'>
 
   <link rel='icon' type='image/x-icon' href='img/favicon.ico' />
   <link rel='apple-touch-icon-precomposed' sizes='114x114' href='img/favicon-114.png'>
@@ -21,264 +23,557 @@
   <div class='pag'>
     <header>
       <div class='fila'>
-        <div class='col-12'>
-          <h1 class='gigante'><span class='pesada'>LGG</span> <span class='rojo fino'>Lenguaje Gráfico Global</span></h1>
-      </div>
-      <div class='col-12'>
-          <p class='grande fino margen-superior'>Fundamentos gráficos para la unificación y consistencia del lenguaje visual en pantalla que busca definir un esquema de trabajo semántico y escalable para diseñadores y desarrolladores.</p>
-          <p>Proyecto de código abierto desarrollado por <strong><a href="http://www.ead.pucv.cl/mundo/investigacion/tig/">Taller de Investigaciones Gráficas .:TIG:.</a></strong> y disponible en <a class='btn grande accion' href='http://eadpucv.github.io/LGG' title='LLG en Github'>Github</a></p>
-      </div>
-  </div>
-</header>
-<nav class='margen-inferior'>
-  <ul class='centrado'>
-    <li><a href='index.html'>¶</a></li>
-    <li><a href='tipografia.html'>Tipografía</a></li>
-    <li><a href='grilla.html'>Grilla</a></li>
-    <li><a href='interaccion.html'>Interacción</a></li>
-    <li><a href='color.html'>Color</a></li>
-    <li><a href='versatilidad.html'>Versatilidad</a></li>
-    <li><a href='layout.html'>Lay out</a></li>
-</ul>
-</nav>
-<div class='contenido'>
-  <div class='fila'>
-
-    <div class='col-24'>
-        <h3>Elementos de formularios</h3>
-        <p>
-        </p>
+        <div class='col-md-24 col-sm-12 col-xs-24'>
+          <h1 class='gigante'><span class='gruesa'>EGO</span> <span class='rojo-alerta fino'>Experiencia Gráfica en la Organización</span></h1>
+        </div>
         
-        <h3 class='filete'>Formularios del sitio e[ad]</h3>
+        <div class='col-md-24 col-sm-12 col-xs-24'>
+          <p class='grande fino margen-superior'>Fundamentos gráficos para la unificación y consistencia del lenguaje visual en pantalla que busca definir un esquema de trabajo semántico y escalable para diseñadores y desarrolladores.</p>
+          </div>
+          </div>
 
-        <code>form class='vertical'</code>
+       <div class='fila'>
+        <div class='col-md-24 col-sm-24 col-xs-24'>
+          <p>Proyecto de código abierto desarrollado por <a href="http://www.ead.pucv.cl/mundo/investigacion/tig/"><strong>Taller de Investigaciones Gráficas .:TIG:.</strong></a> y disponible en <a class='btn sm' href='http://eadpucv.github.io/EGO' title='LLG en Github'>Github</a></p>
+      </div>
+      </div>
+    </header>
+    
+    <nav class='margen-inferior'>
+      <ul class='centrado'>
+        <li><a href='index.html'><span class="ico-parrafo ico-sm"></span></a></li>
+        <li><a href='tipografia.html'>Tipografía</a></li>
+        <li><a href='grilla.html'>Grilla</a></li>
+        <li><a href='interaccion.html'>Interacción</a></li>
+        <li><a href='color.html'>Color</a></li>
+        <li><a href='iconografia.html'>Íconografía</a></li>
+        <li><a href='versatilidad.html'>Versatilidad</a></li>
+        <li><a href='layout.html'>Layout</a></li>
+      </ul>
+    </nav>
+<div class='contenido'>
+    <div class='fila'>
 
-        <form class='vertical'>
-            <h4>Contáctate con nosotros</h4>
-            
-            <label>Nombre *</label>
-            <input type='text' class='relleno' required />
+        <h2 class='rojo'>Formularios</h2> 
 
-            <label>Correo electrónico *</label>
-            <input type='email' class='relleno' required/>
-            
+        <h3 class='rojo'>1. Clasificación de Formularios</h3>
 
-            <label>Asunto</label>
-            <input class='relleno' />
+        <p>Se parte con la idea de que los formularios es donde ocurre una mayor transacción de interacción entre el usuario y el sistema. Para que que la interacción sea de manera cómoda y agradable, se plantea construir una relación proporcional entre los diversos formularios existentes en las plataformas digitales.</p>
 
-            <label>Mensaje</label>
-            <textarea class='relleno'/></textarea>
+        <p>Más allá de su similitud gráfica, debe haber un patrón proporcional que nos ayude a entender que todos estos elementos corresponden a la misma entidad.</p>
 
-            <label>Verificación</label>
-            <input class='verificacion' placeholder="(¿CAPTCHA?)" />
+        <p>Es factible que aún no existan todos los formularios necesarios para todo uso que podría llegar a desplegarse, pero por lo mismo es necesario plantear una manera de construcción que permita replicar la cualidad gráfica.</p>
 
-            <input type='submit' class='accion grande izquierda' value='Enviar'>
+        <p>Los tipos de formularios existentes ahora difieren en su mayor parte, entre los que se encuentran en el Sitio e[ad], con los que existen en la Wiki Casiopea. En el primer caso son de caracter mesurado, donde no hay señal de interacción (Focus, box-shadow o algo similar), los bordes de las cajas son rectos y no existe una propiedad cromática. En cambio en la Wiki, se encuentran diversos lenguajes gráficos en los formularios. El hecho de ingresar como usuario y que la gráfica sea totalmente distinta genera una confusión y eso es porque aquella gráfica empleada allí no se encuentra en otro lado neuvamente. Al crear un nuevo objeto, un proyecto, por ejemplo, aparece una tabla donde el autor debe rellenar cada uno de esos campos y el acto mismo tiene una cualidad muy árida.</p>
 
-        </form>
+        <p>Por todas aquellas razones, de caracter tanto gráfico como de interacción, son pensados para construir una similitud y tratar de mantener un grado lúdico a la hora de establecer interacción directa con el usuario.</p>
+        
+        <h4>Proporciones</h4>
+
+        <p>Se usa la denominación de nombrar el caracter de formulario y luego su proporción. Es una manera de construir una versatilidad en LESS, donde se nombre que es de caracter Vertical y su contenido se adecúe a su tamaño.</p>
+
+        Las variables proporcionales son de
+
+            6 columnas sm (Vertical)
+            12 columnas md (vertical)
+            18 columnas lg (Vertical)
+            8 columnas sm (horizontal)
+            14 columnas md (horizontal)
+            20 columnas lg (horizontal) se compone de 8 columnas dos veces. 
+        </p>
+
+        <h4>Interacción</h4>
+
+        <p>Al hacer click en uno de los input, aparece un box-shadow, inset, donde se remarca demostrando una profunidad y se entienda que uno está rellenando ese campo. Además, el borde cambia de color, a un color verde.</p>
+
+        <p>Actualmente existen elementos que están en fase neutral, pues falta comenzar a impregnar cada decisión gráfica en su totalidad, en relación a los atributos gráficos.</p>
+
+        <p>Los elementos que están a modo neutral, o standard, son los Checkboxes, los dropdown y los avisos de rellenar campos requeridos para enviar el formulario.</p>
+        </div>
+
+        <div class='fila'>
+        <div class='col-md-6'>    
+            <h5 class='gris-oscuro'>1.1. Formularios verticales </h5> 
+            <code>div class='col-md-6'
+            form class='formulario-vertical sm'</code>
+           
+
+<!-- Formulario Vertical Medio -->
+
+
+            <form class='formulario-vertical sm'>
+                <h4>Contáctate con nosotros <span class='rojo chico'>e[ad] - vertical</span></h4>
+                        
+                <div class='grupo-relleno'>
+                    <label>Nombre <span class='importante'>*</span></label>
+                    <input type='text' class='relleno-formulario' required />
+                </div>
+
+                <div class='grupo-relleno'>
+                <label>Correo electrónico <span class='importante'>*</span></label>
+                <input type='email' class='relleno-formulario' required/>
+                </div>
+
+                <div class='grupo-relleno'>
+                <label>Asunto</label>
+                <input type='text' class='relleno-formulario' />
+                </div>
+
+                <div class='grupo-relleno'>
+                <label>Mensaje</label>
+                <textarea></textarea>
+                </div>
+
+                <div class='grupo-relleno'>
+                <label>Verificación</label>
+                <input class='verificacion' placeholder='captcha' />
+                </div>
+
+                <input type='submit' class='btn md derecha' value='Enviar'>
+
+            </form>
+        </div>
     </div>
 
-    <code>div class='col-20 formulario-ancho-doble'
-    form class='vertical menor-padding'</code>
+    <!-- Formulario Vertical Grande -->
 
-    <div class='col-20 formulario-ancho-doble'>
-        <form class='vertical menor-padding'>
+    <div class='fila'>
+        <div class='col-md-12'>
+        <code>div class='col-md-12'
+        form class='formulario-vertical md'</code>
 
-            <h4>Publicar un trabajo</h4>
-
-            <label>Nombre *</label>
-            <input type='text' class='relleno' required/>
-
-            <label>Correo electrónico *</label>
-            <input type='email' class='relleno' required/>
-
-            <label>Empresa</label>
-            <input class='relleno' />
-
-            <label>Sitio web</label>
-            <input class='relleno' />
-
-            <label class="radio">Solicito a:</label>
-            <input type="radio" name="carrera" /> <span class='chico'>Arquitecto</span>
-            <input type="radio" name="carrera" /> <span class='chico'>Diseñador gráfico</span>
-            <input type="radio" name="carrera" /> <span class='chico'>Diseñado de objetos</span>
-
-            <label>Experiencia requerida</label>
-            <textarea class='relleno' placeholder="perfil y competencias necesarias para el cargo"/></textarea>
-        </form>
-
-        <form class='vertical menor-padding'>
-
-            <label>Descripción del trabajo</label>
-            <textarea class='relleno' placeholder="descripción detallada de labores a realizar, horarios, contexto y ubicación geográfica"/></textarea>
-
-            <label>Remuneración ofrecida</label>
-            <input class='relleno' placeholder="puede indicar un rango"/>
-
-            <label>Interesados contactar a:</label>
-            <textarea class='relleno' placeholder="Indique vía de postulación para interesados"/></textarea>
-
-            <label>Verificación</label>
-            <input class='verificacion' placeholder="(¿CAPTCHA?)" />
-
-            <input type='submit' class='accion grande izquierda' value='Publicar'>
-
-            <label class="checkbox">
-                <input type="checkbox">
-                Acepto los <a href='#'>términos y condiciones</a>
-            </label>
-  
-        </form>
-    </div>
-
-    <div class='col-24'>
-        <h3 class='filete'>Formularios de Wiki Casiopea</h3>
-
-        <h4>Acceder</h4>
-
-             <form id='formulario-login'>
-                <div class='ingreso'>
-                    <label class='control-usuario negrita'>Nombre de usuario</label>
-                    <input type='text' placeholder='username' required/>
-                </div>
-
-                <div class='ingreso'>
-                    <label class='control-usuario negrita'>Contraseña</label>
-                    <input type='password' required/>
-                </div>
-
-                <div class='ingreso'>
-                    <input type='submit' class='accion grande izquierda' value='Iniciar sesión'>
-                </div>
-             </form>
+        <h4>Registrarse <span class='rojo chico'>Wiki - vertical</span></h4>
 
 
-        <h4>Registrarse</h4>
+                <form class='formulario-vertical md'>
+                <h1>Nuevo Usuario</h1>
+                        <div class='grupo-label-relleno'>
 
-            <div class='campo-registro col-24'>
-            <h5>Nuevo Usuario</h5>
-                <form class='vertical'>
-                            
-                    <label>Usuario</label>
-                    <input type='text' class='relleno' required />
-                    Elije un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.
+                        <label class='pregunta'>Usuario</label>
+                        <input type='text' placeholder='username' required/>
+    
+                            <p class='especificacion'>Elige un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</p>
+                        </div>
 
-                    <label>Tipo</label>
-                    <input type='text' class='relleno' required />
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'>Tipo</label>
+                            <select>
+                                <option>Alumno(a)</option>
+                                <option>Profesora(a)</option>
+                                <option>Ex-Alumno(a)</option>
+                                <option>Amigo(a)</option>
+                                <option>Otro(a)</option>
+                            </select>
+                        </div>
 
-                    <label class="checkbox">
-                    <input type="checkbox">
-                        Acepto los <a href='#'>términos y condiciones</a>
-                    </label>
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'>Carrera</label>
+                            <select>
+                                <option>Arquitectura</option>
+                                <option>Diseño</option>
+                            </select>
+                        </div>
 
-                    <input type='submit' class='accion grande izquierda' value='Crear nuevo usuario'>
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'>Año ingreso</label>
+                            <input type='text' class='relleno'/>
+                        </div>
+
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'><span class='importante'>*</span> Nombre</label>
+                            <input type='text' class='relleno' required />
+                        </div>
+
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'><span class='importante'>*</span> Apellido</label>
+                            <input type='text' class='relleno' required />
+                        </div>
+
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'><span class='importante'>*</span> Rut</label>
+                            <input type='text' class='relleno' required />
+                        </div>
+
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'><span class='importante'>*</span> Mail</label>
+                            <input type='email' class='relleno' required />
+                        </div>
+
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'>Página en Wiki Casiopea</label>
+                            <input type='text' class='relleno'/>
+                            <p class='especificacion'>En caso de no especificar una pagina, se creara una pagina con tus datos en la wiki</p>
+                        </div>
+
+                        <h3>Contraseña</h3>
+
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'>Contraseña</label>
+                            <input type='password' class='relleno' required />
+                        </div>
+
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'>Verificación contraseña</label>
+                            <input type='password' class='relleno' required />
+                        </div>
+
+                        <div class="pure-controls">
+                            <label class="checkbox">
+                            <input type="checkbox">
+                                Acepto los <a href='#'>términos y condiciones</a>
+                            </label>
+
+                            <input type='submit' class='accion btn lg' value='Crear nuevo usuario'>
+                        </div>
 
                 </form>
             </div>
-            
-        <h4>Nuevo objeto</h4>
-
-        <h4>Nuevo proyecto</h4>
-
-
-<code class='margen-superior'>input type='submit' class='accion grande derecha'</code>
-        
- <h3 class='filete'>Botones</h3>
-
-        <p>Los botones se definen genéricamente mediante la clase <code>btn</code> y se aplican a las etiquetas <code>a</code>, <code>input [type='submit']</code> y a los elementos <code>button</code> genéricos de los formularios. Los estilos están pensados para ser aplicados de forma semántica como se describe en la tabla, pudiendo usarse en combinación con atributos de tamaño (<code>chico</code>, <code>grande</code>, <code>grigante</code>) y de atributo (<code>accion</code>, <code>alerta</code>).
-        </p>
-
-
-        <table class='w100'>
-            <tr>
-                <th class='w60'>
-                    Elemento
-                </th>
-                <th class='w30'>
-                    Código
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    <a class='btn chico'>Acción</a>
-                </td>
-                <td>
-                    <code>btn chico</code>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a class='btn'>Acción</a>
-                </td>
-                <td>
-                    <code>btn</code>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a class='btn grande'>Acción</a>
-                </td>
-                <td>
-                    <code>btn grande</code>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a class='btn gigante'>Acción</a>
-                </td>
-                <td>
-                    <code>btn gigante</code>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a class='btn gigante accion'>Acción</a>
-                    <a class='btn grande accion'>Acción</a>
-                    <a class='btn accion'>Acción</a>
-                    <a class='btn chico accion'>Acción</a>
-                </td>
-                <td>
-                    <code>btn accion</code>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <a class='btn gigante alerta'>Acción</a>
-                    <a class='btn grande alerta'>Acción</a>
-                    <a class='btn alerta'>Acción</a>
-                    <a class='btn chico alerta'>Acción</a>
-                </td>
-                <td>
-                    <code>btn alerta</code>
-                </td>
-            </tr>
-        </table>
     </div>
-</div>
 
 
+    <!-- Formulario Vertical Grande - Nuevo proyecto-->
+
+    <div class='fila'>
+        <div class='col-md-18'>
+        <code>div class='col-md-18'
+        form class='formulario-vertical lg nuevo-proyecto'</code>
+
+        <h4>Crear nuevo o editar <span class='rojo chico'>Wiki - horizontal</span></h4>
+
+
+                <form class='formulario-vertical lg nuevo-proyecto'>
+                        <div class='grupo-label-relleno'>
+                        <label class='pregunta'>Título</label>
+                        <input type='text' placeholder='Nombre del nuevo objeto' required/>
+                        </div>
+
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'>Tipo de proyecto</label>
+                            <div class='opciones'>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Proyecto de taller</span></span>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Proyecto de curso</span></span>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Proyecto de tutoría</span></span>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Proyecto de titulación</span></span>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Proyecto de posgrado</span></span>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Proyecto extracurricular</span></span>
+                            </div>
+
+                    <p class='especificacion chica'><strong>Importante:</strong> Si se trata de un proyecto de Investigación, hay que cambiar el tipo de plantilla de {{Proyecto}} a {{Proyecto de Investigación}} en la pestaña EDITAR. Los proyectos de investigación tienen otros campos y particularidades.</p>
+                        </div>
+
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'>Palabras claves</label>
+                            <input type='text' class='relleno' placeholder='todo en bajas, separadas por coma 'required/>
+                        </div>
+
+                        <div class='grupo-label-relleno input-sm'>
+                            <label class='pregunta'>Año de inicio</label>
+                            <input type='text' class='relleno'required/>
+                        </div>
+
+                        <div class='grupo-label-relleno input-sm'>
+                            <label class='pregunta'>Año de término</label>
+                            <input type='text' class='relleno' required/>
+                        </div>
+
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'>Carreras relacionadas</label>
+                            <div class='opciones'>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Arquitectura</span></span>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Diseño gráfico</span></span>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Diseño industrial</span></span>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Náutico y marítimo</span></span>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Ciudad y territorio</span></span>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Formación y oficio</span></span>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Interacción</span></span>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Doctorado en A & D</span></span>
+                            </div>
+                        </div>
+
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'>Asignaturas relacionadas</label>
+                            <input type='text' class='relleno' required />
+                        </div>
+
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'>Cursos relacionados</label>
+                            <input type='email' class='relleno' required />
+                        </div>
+
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'>Profesor</label>
+                            <input type='text' class='relleno' required />
+                        </div>
+
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'>Alumnos</label>
+                            <input type='password' class='relleno' required />
+                        </div>
+
+                        <div class='grupo-label-relleno input-sm'>
+                            <label class='pregunta'>Imagen</label>
+                            <input type='text' class='relleno' placeholder='Si ya existe en la wiki escriba el nombre.ext.'required/>
+                        <p class='especificacion'><a>Subir archivo</a></p>
+                        </div>
+
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'>PDF</label>
+                            <input type='password' class='relleno-sm' required />
+                        </div>
+
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'>URL</label>
+                            <input type='password' class='relleno' required />
+                        </div>
+
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'>Texto libre</label>
+                            <textarea></textarea>
+                        </div>
+
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'>Resumen</label>
+                            <input type='password' class='relleno' required />
+                        </div>
+
+                        <div class='grupo-label-relleno'>
+                            <label class='pregunta'>Configuración</label>
+                            <div class='opciones'>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Esta es una edición menor</span></span>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Vigilar esta página</span></span>
+                            </div>
+                        </div>
+
+
+                            <input type='submit' class='btn md accion' value='Grabar la página'>
+                            <a class='btn md'>Mostrar previsualización</a>
+                            <a class='btn md'>Mostrar cambios</a>
+                            <a class='btn md alerta'>Cancelar</a>
+
+                </form>
+            </div>
+    </div>
+
+
+<!-- Formulario Horizontal Grande -->
+
+    <div class='fila'> <br>
+        <h5 class='gris-oscuro'>1.2. Formularios horizontales</h5>
+        
+        <code>div class='col-md-20'
+        form class='horizontal-lg'
+        div class='col-md-10' * 2</code>
+
+            <form class='horizontal lg'>
+            <h4>Publicar un trabajo <span class='rojo chico'>e[ad] - horizontal</span></h4>
+                <div class='col-md-8 formulario-vertical'>
+
+                    <label class='pregunta'>Nombre <span class='importante'>*</span></label>
+                    <input type='text' class='relleno' required/>
+
+                    <label class='pregunta'>Correo electrónico <span class='importante'>*</span></label>
+                    <input type='email' class='relleno' required/>
+
+                    <label class='pregunta'>Empresa</label>
+                    <input type='text' class='relleno' />
+
+                    <label class='pregunta'>Sitio web</label>
+                    <input type='text' class='relleno' />
+
+                    <label class="radio">Solicito a:</label>
+                    <input type="radio" name="carrera" /> <span class='chico'>Arquitecto</span>
+                    <input type="radio" name="carrera" /> <span class='chico'>Diseñador gráfico</span>
+                    <input type="radio" name="carrera" /> <span class='chico'>Diseñado de objetos</span>
+
+                    <label class='pregunta'>Experiencia requerida</label>
+                    <textarea class='relleno' placeholder="perfil y competencias necesarias para el cargo"/></textarea>
+                </div>
+
+                <div class='col-md-8 formulario-vertical'>
+                    <label class='pregunta'>Descripción del trabajo</label>
+                    <textarea class='relleno' placeholder="descripción detallada de labores a realizar, horarios, contexto y ubicación geográfica"/></textarea>
+
+                    <label class='pregunta'>Remuneración ofrecida</label>
+                    <input type='text' class='relleno' placeholder="puede indicar un rango"/>
+
+                    <label class='pregunta'>Interesados contactar a:</label>
+                    <textarea class='relleno' placeholder="Indique vía de postulación para interesados"/></textarea>
+
+                    <input type='submit' class='accion lg izquierda' value='Publicar'>
+
+                    <label class="checkbox">
+                        <input type="checkbox">
+                        Acepto los <a href='#'>términos y condiciones</a>
+                    </label>
+                </div>
+
+            </form>
+    </div>
+
+<!-- Formulario Horizontal Medio --> 
+    <div class='fila'>
+        <div class='col-md-14'>
+
+                     <code>div class='col-md-14'
+            form class='horizontal md'</code>
+             <h4>Nuevo objeto <span class='rojo chico'>Wiki - horizontal</span></h4>
+
+            <form class='horizontal md'>
+                <h1>Agregar página con formulario</h1>
+                
+                <div class='grupo-label-relleno'>
+                    <label class='pregunta'>Nombre de objeto</label>
+                    <input type='text' required />
+                <p class='especificacion'>
+                <strong>Ingresa el nombre y de lo que vas a crear</strong>. Se creará una página con ese nombre. Si el nombre que eliges ya está ocupado, esta página te llevará al formulario que elijas con el contenido de la página existente donde podrás editar el nuevo objeto con atributos semánticos.</p>
+
+                </div>
+
+                <div class='grupo-label-relleno'>
+                    <label class='pregunta'>Tipo de formulario</label>
+                    <select>
+                        <option>Nueva asignatura</option>
+                        <option>Nueva bibliografía</option>
+                        <option>Nueva obra</option>
+                        <option>Nueva persona</option>
+                        <option>Nueva publicación</option>
+                        <option>Nueva revista académica</option>
+                        <option>Nueva tarea</option>
+                        <option>Nueva travesía</option>
+                        <option>Nuevo acto</option>
+                        <option>Nuevo caso de estudio</option>
+                        <option>Nuevo curso</option>
+                        <option>Nuevo evento</option>
+                        <option>Nuevo proyecto</option>
+                        <option>Nuevo proyecto de investigación</option>
+                        <option>Nuevo trabajo en madlab</option>
+                    </select>
+                <p class='especificacion'>Define el tipo de formulario que necesitas para tu objeto.</p>
+                </div>
+
+                <input type='submit' class='accion md izquierda' value='Crear o editar'>
+            </form>
+        </div>
+    </div>
+
+<!-- Formulario Horizontal Pequeño -->
+    
+    <div class='fila'>
+        <div class='col-md-8'>
+
+                <code>div class='col-md-8'
+        form class='horizontal sm'</code>
+
+        <h4>Acceder <span class='rojo chico'>Wiki - horizontal</span></h4>
+
+            <form class='horizontal sm'>
+            <div class='ingreso'>
+                        <input type='text' placeholder='nombre de usuario' required/>
+                </div>
+
+               <div class='ingreso'>
+                        <input type='password' placeholder='contraseña' required/>
+                </div>
+
+                <input type='submit' class='md' value='Iniciar sesión'>
+            
+            </form>
+
+            <p class='especificacion chico'>
+                <a href='http://personas.ead.pucv.cl/personas/usuarios/recuperacionDatos'>¿olvidaste tu contraseña?</a> Si no tienes una cuenta, <a>regístrate</a>
+            </p>
+        </div>
+    </div>        
+
+    <div class='fila'>
+    <code class='margen-superior'>input type='submit' class='accion grande derecha'</code>
+            
+     <h3 class='rojo'>2. Botones</h3>
+
+            <p>Los botones se definen genéricamente mediante la clase <code>btn</code> y se aplican a las etiquetas <code>a</code>, <code>input [type='submit']</code> y a los elementos <code>button</code> genéricos de los formularios. Los estilos están pensados para ser aplicados de forma semántica como se describe en la tabla, pudiendo usarse en combinación con atributos de tamaño (<code>chico</code>, <code>grande</code>, <code>grigante</code>) y de atributo (<code>accion</code>, <code>alerta</code>).
+            </p>
+
+
+            <table class='w100'>
+                <tr>
+                    <th class='w60'>
+                        Elemento
+                    </th>
+                    <th class='w30'>
+                        Código
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <a class='btn sm'>Neutral</a>
+                    </td>
+                    <td>
+                        <code>btn sm</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class='btn md'>Neutral</a>
+                    </td>
+                    <td>
+                        <code>btn md</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class='btn lg'>Neutral</a>
+                    </td>
+                    <td>
+                        <code>btn lg</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class='btn lg accion'>Acción</a>
+                        <a class='btn md accion'>Acción</a>
+                        <a class='btn sm accion'>Acción</a>
+                    </td>
+                    <td>
+                        <code>btn accion</code>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a class='btn lg alerta'>Alerta</a>
+                        <a class='btn md alerta'>Alerta</a>
+                        <a class='btn sm alerta'>Alerta</a>
+                    </td>
+                    <td>
+                        <code>btn alerta</code>
+                    </td>
+                </tr>
+            </table>
+        </div>
 </div>
 <hr>
 <footer>
   <div class='fila'>
-    <div class='col-18'>
+    <div class='col-md-24'>
       <nav>
-        <ul>
-            <li><a href='index.html'>¶</a></li>
+       <ul>
+            <li><a href='index.html'><span class="ico-parrafo ico-sm"></span></a></li>
             <li><a href='tipografia.html'>Tipografía</a></li>
             <li><a href='grilla.html'>Grilla</a></li>
             <li><a href='interaccion.html'>Interacción</a></li>
             <li><a href='color.html'>Color</a></li>
+            <li><a href='iconografia.html'>Íconografía</a></li>
             <li><a href='versatilidad.html'>Versatilidad</a></li>
-        </ul>
+            <li><a href='layout.html'>Lay out</a></li>
+      </ul>
     </nav>
 
     <p>
-        <a rel='license' href='http://creativecommons.org/licenses/by/3.0/deed.es_CL'><img alt='Licencia Creative Commons' style='border-width:0' src='http://i.creativecommons.org/l/by/3.0/80x15.png' /></a> <span xmlns:dct='http://purl.org/dc/terms/' href='http://purl.org/dc/dcmitype/InteractiveResource' property='dct:title' rel='dct:type'>e[ad] EGGL</span> por <span xmlns:cc='http://creativecommons.org/ns#' property='cc:attributionName'>Taller de Investigaciones Gráficas .:TIG:.</span> se encuentra bajo una <a rel='license' href='http://creativecommons.org/licenses/by/3.0/deed.es_CL'>Licencia Creative Commons Atribución 3.0 Unported</a>.<br />Basada en una obra en <a xmlns:dct='http://purl.org/dc/terms/' href='http://eadpucv.github.io/LGG' rel='dct:source'>http://eadpucv.github.io/LGG</a>.
+        <a rel='license' href='http://creativecommons.org/licenses/by/3.0/deed.es_CL'><img alt='Licencia Creative Commons' style='border-width:0' src='http://i.creativecommons.org/l/by/3.0/80x15.png' /></a> <span xmlns:dct='http://purl.org/dc/terms/' href='http://purl.org/dc/dcmitype/InteractiveResource' property='dct:title' rel='dct:type'>e[ad] EGGL</span> por <span xmlns:cc='http://creativecommons.org/ns#' property='cc:attributionName'>Taller de Investigaciones Gráficas .:TIG:.</span> se encuentra bajo una <a rel='license' href='http://creativecommons.org/licenses/by/3.0/deed.es_CL'>Licencia Creative Commons Atribución 3.0 Unported</a>.<br />Basada en una obra en <a xmlns:dct='http://purl.org/dc/terms/' href='http://eadpucv.github.io/EGO' rel='dct:source'>http://eadpucv.github.io/EGO</a>.
     </p>
     
 </div>
 
-<div class='col-6'>
+<div class='col-md-24'>
   <address>
     <a href="http://www.ead.pucv.cl/mundo/investigacion/tig/"><strong>.:TIG:.</strong> Taller de Investigaciones Gráficas</a><br />
     e[ad] Escuela de Arquitectura y Diseño<br />

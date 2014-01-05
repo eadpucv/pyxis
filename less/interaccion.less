@@ -1,81 +1,81 @@
-//        Elementos de Interacción:        
+ //        Elementos de Interacción:        
 //        Botones, formularios
 
 *{
         .transition(.2s ease all);
 }
 
-@radio:        6px;        // esquina redondeada de botones
-
 button.btn,
 input[type='submit'],
 a.btn
  {
         display: inline-block;
-        margin-top: -4px;
+        margin-top: 0;
         cursor: pointer;
         white-space: nowrap;
-        font-size: @cuerpo *.9;
-        padding: @padding;
-        color: fade(@negro, 60);
+        font-size: @cuerpo * .9;
+        color: @azul;
         text-align: center;
-        text-shadow: 1px 1px 0 fade(@blanco, 80%), -1px -1px 0 fade(@negro, 12%);
+        background-color: @blanco;
         vertical-align: middle;
-        background-color: lighten(@gris-claro, 10);
-        border: 1px solid @color-borde;
-        .border-radius(@radio);
+        border: 1px solid @azul;
+        .border-radius(@radio / 2);
         
         &:hover {
                 text-decoration: none;
-                background-color: @blanco;
+                background-color: @azul;
+                color:@blanco;
+                border: 1px solid @azul;
         }
 
         // cuando se aprieta el botón, que aparezca una sombra interior para que se vea hundido
         &:active{
-                .box-shadow(inset fade(@negro, 20%) 0 0 4px);
+                .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
         }
         
-        &.chico{
-                font-size: @cuerpo * .65;
+        &.sm{
+                font-size: @cuerpo * .8;
                 text-transform: uppercase;
-                font-weight: bold;
-                padding: @padding-chico;
-                .border-radius(@radio/2);
+                font-weight: normal;
+                padding: @padding-sm / 2 @padding-sm;
+                .border-radius(@radio/1.5);
         }
   
-        &.grande{
+        &.md{
                 font-weight: 300;
-                font-size: @cuerpo * 1.2;
-                padding: @padding-grande;
+                font-size: @cuerpo * 1;
+                padding: @padding-md / 4 @padding-md;
                 }
 
-        &.gigante{
-                font-size: @cuerpo * 1.8;
+        &.lg{
+                font-size: @cuerpo * 1.2;
                 letter-spacing: .05ex;
                 font-weight: 200;
-                padding: @padding-gigante;
+                padding: @padding-lg / 4 @padding-lg;
         }
 
         &.accion{
                 color: @blanco;
                 text-shadow: 1px 1px 0 fade(@negro, 40%);
-                border-color: fade(@azul-oscuro, 20%);
-                background-color: lighten(@azul, 10);
+                border-color: fade(@pizarra, 30%);
+                background-color: lighten(@verde, 10);
                 
                 &:hover{
-                        background-color: @celeste;
+                        background-color: lighten(@verde-claro, 10);
                 }
         
         }
         
         &.alerta{
-                color: @blanco;
-                text-shadow: 1px 1px 0 fade(@negro, 40%);
-                border-color: fade(@rojo-oscuro, 20%);
-                background-color: @rojo;
+                color: @rojo-alerta;
+                background-color: @blanco;
+                border:1px solid @rojo-alerta;
                 
                 &:hover{
-                        background-color: lighten(@rojo, 15);
+                        background-color: @rojo-alerta;
+                        color: @blanco;
+                        border-color: fade(@rojo-oscuro, 20%);
+
                 }
         
         }
@@ -83,7 +83,7 @@ a.btn
         &.accion,
         &.alerta{
                 &:active{
-                        .box-shadow(inset fade(@negro, 40%) 1px 1px 10px);
+                        .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
                 }
         }
 }
@@ -98,6 +98,7 @@ a.btn
 
 select,
 textarea,
+select,
 input[type='text'],
 input[type='password'],
 input[type='datetime'],
@@ -114,246 +115,415 @@ input[type='tel'],
 input[type='color'],
 .uneditable-input {
   display: inline-block;
-  height: @interlinea + @cuerpo;
-  padding: 4px;
-  margin-bottom: 9px;
+  padding:0;
+  margin-bottom: @margen-sm;
   font-size: @cuerpo;
   line-height: @interlinea;
   color: @gris;
 }
 
-
-
 form{
-<<<<<<< HEAD
-	input[type='submit'],
-	.btn{margin-top: @cuadratin/2;}
-	
-	label{
-		color: @gris-oscuro;
-		font-weight: bold;
-		font-size: @cuerpo * .85;
-		text-shadow: -1px -1px 1px fade(@blanco, 60%);
-		
-		&.checkbox{
-			display: inline-block;
-			vertical-align: middle;
-			font-weight: 400;
-			
-			input[type=checkbox]{
-				display: inline-block;
-				padding: 4px;
-				margin: 0 1.2ex 0 -0.2ex;
-				vertical-align: top;
-			}
-		}
-	}
-	
-	input{
-		padding: 4px;
-		color: fade(@azul, 70%);
-		border: none;
-		.border-radius(4px);
-		.sombra;
-		&:focus{
-			.sombra-foco;
-		}
-	}
+    
+    label{
+        color: @gris-oscuro;
+        font-weight: normal;
+        font-size: @cuerpo * 1;
 
-	&.buscador{
-		text-align: right;
-		input.texto{
-			.pegado-antes;
-			}
-		input[type=submit]{
-			.pegado-despues;
-			margin: -4px 0 0 -4px;
-			}
-				
-		}
-	
-	&.vertical{
-		label{
-			display: block;
-			margin: @interlinea 0 5px 5px;
-		}
-	}
-	&.horizontal{
-		label{
-			display: inline-block;
-			text-align: right;
-		}
-		
-	}
-	.clearfix;
-	.margen-inferior;
-=======
-        input[type='submit'],
-        .btn{
-                width: auto;
-                float: right;
+        &.checkbox{
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 400;
+            
+            input[type=checkbox]{
+                display: inline-block;
+                margin-top: @margen-md;
+                margin-right: @margen-md; 
+                padding: @padding-md;
+            }
         }
+    }
 
-        input[type='text'],input[type='password'],input[type='email']{
-                height: auto;
-        }
+    label.required:after{
+        content: '*';
+        color:@rojo-anaranjado;
+        font-size: @cuerpo * 4;
+    }
+    
+    input[type='submit'],
+    .btn{
+        width: auto;
+        float: right;
+    }
+
+    input[type='text'],input[type='password'],input[type='email'], textarea{
+        height: auto;
+        padding: @padding-md / 4 @padding-md / 2;
+        width: 96%;
+        color:@pizarra;
+    }
         
-        input[type='email']:valid{
-                color:@verde;
-        }
+    input[type='email']:valid{
+        color:@verde-claro;
+    }
 
+    input, textarea{
+        color: fade(@azul, 70%);
+        .border-radius(@radio);
+        .borde;
+
+        &:focus{
+            .foco;
+        }
+    }
+
+    textarea {
+        height: @cuadratin * 6;
+    }
+
+    .clearfix;
+    .margen-inferior;
+
+    .relleno{
+        background-color: @blanco;
+        color: @pizarra;
+    }
+
+    .verificacion{
+        background-color: @blanco;
+        padding: @padding-md / 4 @padding-md / 2;
+        color: @pizarra;
+        margin:0;
+        width: 50%;
+        float: left;
+    }
+
+    select{
+        .border-radius(4px);
+        .borde;
+        margin:0;
+        color:@pizarra;
+        padding: @padding-md / 4 @padding-md / 2;
+        height: auto;
+    }
+
+    &.buscador{
+        text-align: right;
+
+        input.texto{
+            .pegado-antes;
+        }
+        input[type=submit]{
+            .pegado-despues;
+            margin: -4px 0 0 -4px;
+        }                           
+    }
+
+// Diversidad de formularios
+
+    &.formulario-vertical{
+        padding: 0;
+        margin-bottom: 10px;
+        margin-top: 10px;
 
         label{
+            display: block;
+            vertical-align: top;
+            margin: @margen-md 0;
+        }
+
+        &.sm {
+            padding: @padding-sm;
+        }
+
+        // Formulario Vertical Medium
+
+        &.md {
+            input, textarea{
+                background-color: ;
+            }
+
+            input[type=text], input[type=password],input[type='email']{
+                display: inline-block;
+                margin:0;
+                width: 50%;
+                float: right;
+            }
+
+            select{
+                width: 52%;
+                float: right;
+            }
+
+            input[type=checkbox], .checkbox{
+                display: inline-block;}
+
+            input[type='submit'],
+            .btn{
+                margin-top: @margen-md;
+                width: auto;
+                float: right;
+            }
+
+            .pregunta{
                 color: @gris-oscuro;
-                font-weight: normal;
-                font-size: @cuerpo * .90;
-                text-shadow: -1px -1px 1px fade(@blanco, 60%);
-                text-align: left;
-                
-                &.checkbox{
-                        display: block;
-                        vertical-align: middle;
-                        margin:10px auto;
-                        padding-top: 35px;
-                        font-weight: 400;
-                        
-                        input[type=checkbox]{
-                                display: inline-block;
-                                padding: 4px;
-                                margin: 0 1.2ex 0 -0.2ex;
-                                vertical-align: top;
-                        }
-                }
+                font-size: @cuerpo * 1.2;
+                text-shadow: none;
+                display: inline-block;
+                margin-bottom: @margen-lg / 1.8;
+                margin-top: 0;
+                margin-left: @margen-lg;
+                vertical-align: top;
+            }
 
-        }
-
-
-
-        .relleno{
-                background-color: @blanco;
-                color: @pizarra;
-                width: 100%;
-        }
-
-        .verificacion{
-                background-color: @blanco;
-                color: @pizarra;
-                width: 55%;
-                float: left;
-        }
-
-        
-        input{
-                padding: 6px;
-                color: fade(@azul, 70%);
-                border: none;
-                .border-radius(4px);
-                .sombra;
-                &:focus{
-                        .sombra-foco;
-                }
-        }
-
-        textarea{
-                padding: 4px;
-                color: fade(@azul, 70%);
-                height: 150px;
-                border: none;
-                .border-radius(4px);
-                .sombra;
-                &:focus{
-                        .sombra-foco;
-                }
-        }
-
-        &.buscador{
+            .grupo-label-relleno {
                 text-align: right;
-                input.texto{
-                        .pegado-antes;
-                        }
-                input[type=submit]{
-                        .pegado-despues;
-                        margin: -4px 0 0 -4px;
-                        }
-                                
-                }
-        
-        &.vertical{
-                width: @gridBaseContainer / 2.5;
-                padding: 15px;
-                background-color: @gris-blanco;
-                border-radius: @radio * 1.5;
+                margin-top: @margen-lg;
+                margin-bottom: @margen-lg;
+
                 label{
-                        display: block;
-                        margin: @interlinea 0 5px 5px;
+                    padding: @padding-lg;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    display: inline-block;
                 }
+            }
         }
 
-        &.menor-padding{
-                padding: 15px;
-                float: left;
-        }
-                
-        &.horizontal{
+        // Formulario Vertical Large
+
+        &.lg {
+
+            input[type=text], input[type=password],input[type='email']{
+                display: inline-block;
+                margin:0;
+                width: 50%;
+                float: right;
+            }
+
+            select{
+                width: 52%;
+                float: right;
+            }
+
+            input[type=checkbox], .checkbox{
+                display: inline-block;}
+
+            input[type='submit'],
+            .btn{
+                margin-top: @margen-lg;
+                width: auto;
+                float: right;
+            }
+
+            .pregunta{
+                color: @gris-oscuro;
+                font-size: @cuerpo * 1.2;
+                text-shadow: none;
+                display: inline-block;
+                margin-bottom: @margen-lg / 1.8;
+                margin-top: 0;
+                margin-left: @margen-lg;
+                vertical-align: top;
+            }
+
+            .grupo-label-relleno {
+                text-align: right;
+                margin-top: @margen-lg;
+                margin-bottom: @margen-lg;
+
                 label{
+                    padding: @padding-lg;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    display: inline-block;
+                }
+            }
+
+            &.nuevo-proyecto {
+
+                input[type=text], input[type=password],input[type='email'],{
+                    display: inline-block;
+                    margin:0;
+                    width: 70%;
+                    float: right;
+                }
+
+                textarea {
+                    width: 70%;
+                }
+
+                .especificacion{
+                    width: 85%;
+                    float: right;
+                    text-align: left;
+                }
+
+                .opciones{
+                    width: 71%;
+                    float: right;
+
+                    .checkbox-span{
+                        margin-right: @margen-lg;
+                        float: left;
+                    }
+                }
+
+                .btn {
+                    margin-left: @margen-lg / 2;
+                }
+
+                .input-sm{
+                    input[type=text], input[type=password],input[type='email']{
                         display: inline-block;
+                        margin:0;
+                        margin-right: 35%;
+                        width: 35%;
+                    }
+
+                    &.grupo-label-relleno {
                         text-align: right;
+                        margin-top: @margen-lg;
+                        margin-bottom: @margen-lg;
+
+                        label{
+                            padding: @padding-lg;
+                            padding-top: 0;
+                            padding-bottom: 0;
+                            display: inline-block;
+                        }
+
+                        .especificacion {
+                            text-align: right;
+                            float: right;
+                            display: inline-block;
+                            margin: 0;
+                            right: @margen-lg;
+                            position: absolute;
+
+                        }
+                    }
+
+
                 }
-                
+            }
+
         }
-        .clearfix;
-        .margen-inferior;
-}
+    }
 
-.formulario-ancho-doble {
-        background-color: @gris-blanco;
-        border-radius: @radio * 1.5;
-        margin: 20px 10px;
+    // Formulario Horizontal
 
-                .vertical{
-                        background-color: rgba(0,0,0,0);
-                }
-}
+    &.horizontal {
+        padding: @padding-sm * 4;
 
-#formulario-login {
-        width: @gridBaseContainer / 1.8;
-        height: 240px;
-        background-color: @gris-blanco;
-        margin:50px auto;
+        &.sm {
+            background-color: @gris-blanco;
 
         .ingreso{
-                margin: 20px 20px 0px 20px;
-                height: 60px;
+            margin-top: @margen-sm * 2;
+            margin-bottom: @margen-sm * 2;
+            float: center;
+            width: 100%;
         }
 
-        .control-usuario {
-                padding-top: 20px;
-                font-size: @cuerpo * 1.2;
-                display: block;
-                float: left;
-                text-align: right;
-                width: 180px;
-
+        .control-usuario { 
+            text-align: right;
+            float: left;
         }
 
         input[type=text], input[type=password]{
-        display: inline-block;
-        font-size: 25px;
-        padding: 4px 18px;
-        margin:5px 0px;
-        vertical-align: top;
-        width: 60%;
-        height: 50px;
-        float: right;
+        font-size: @cuerpo * 1.5;
+        margin:0;
+
         }
 
->>>>>>> origin/Idar
+        input[type='submit'],
+            .btn{
+                margin:0;
+         }
+
+             .grupo-label-relleno {
+        margin-top: @margen-lg * 1;
+        margin-left: @margen-lg * 2;
+    }
+    }
+
+        &.md {
+            .grupo-label-relleno {
+                margin: @margen-md * 2;
+
+                &.sm {
+                }
+            }
+
+            input[type=text], input[type=password]{
+                margin:0 0 0 @margen-md;
+                width: 70%;
+            }
+
+            input[type='submit'],
+                .btn{
+
+                margin-right: @margen-md * 2;
+             }
+
+        }
+
+    
+
+        &.lg {
+
+            label{
+                display: block;
+                margin-top: @margen-lg / 2;
+            }
+
+            input[type=text], input[type=password],input[type='email'], .relleno, {
+                margin-bottom: @margen-lg;
+            }
+
+            input[type=radio]{
+                padding-right: 10px;
+
+            }  
+
+            textarea:last-of-type{
+                margin-bottom: 0px;
+                display: block;
+            }
+
+            input[type='submit'],.btn{
+                margin-top: @margen-lg / 2;
+                margin-right: 0;
+                width: auto;
+                float: right;
+             }
+
+            .relleno-sm{
+                color: @pizarra;
+                width: 30%;
+                padding: @padding-md;
+            }
+
+            .formulario-vertical {
+                margin-left: @margen-lg;
+            }
+        }            
+    }
+
 }
 
-.campo-registro {
-        border:1px solid @gris-blanco;
-        margin: 0 auto;
-        display: block;
-
-
+// Text input groups
+// -------------------------
+.input-group-addon {
+  padding: @padding-sm;
+  margin-right:-@margen-sm;
+  width: @cuadratin;
+  margin-top: 0;
+  display: inline-block;
+  font-size: @cuerpo * 1.3;
+  font-weight: normal;
+  color: @blanco;
+  text-align: center;
 }
+
+
