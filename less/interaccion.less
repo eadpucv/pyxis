@@ -1,91 +1,77 @@
- //        Elementos de Interacción:        
-//        Botones, formularios
-
-*{
-        .transition(.2s ease all);
-}
+//  Elementos de Interacción:        
+//  Botones, formularios
 
 button.btn,
 input[type='submit'],
-a.btn
- {
-        display: inline-block;
-        margin-top: 0;
-        cursor: pointer;
-        white-space: nowrap;
-        font-size: @cuerpo * .9;
-        color: @azul;
-        text-align: center;
-        background-color: @blanco;
-        vertical-align: middle;
-        border: 1px solid @azul;
-        .border-radius(@radio / 2);
-        
-        &:hover {
-                text-decoration: none;
-                background-color: @azul;
-                color:@blanco;
-                border: 1px solid @azul;
-        }
+a.btn{
+    display: inline-block;
+    font-family: SourceSansProSemiBold;
+    margin-top: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: @cuerpo * .9;
+    color: @blanco;
+    text-align: center;
+    background-color: @pizarra;
+    vertical-align: middle;
+    .border-radius(@radio);
+    
+    &:hover {
+            text-decoration: none;
+            background-color: saturate(@pizarra, 50%);
+            color: @blanco;
+    }
 
-        // cuando se aprieta el botón, que aparezca una sombra interior para que se vea hundido
+    // cuando se aprieta el botón, que aparezca una sombra interior para que se vea hundido
+    &:active{
+            .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
+    }
+    
+    &.sm{
+            font-size: @cuerpo * .8;
+            text-transform: uppercase;
+            font-weight: normal;
+            padding: @padding-sm  4*@padding-sm;
+            .border-radius(@radio);
+    }
+
+    &.md{
+            font-weight: 300;
+            font-size: @cuerpo * 1;
+            padding: @padding-md 2*@padding-md;
+            }
+
+    &.lg{
+            font-size: @cuerpo * 1.2;
+            letter-spacing: .05ex;
+            font-weight: 200;
+            padding: @padding-lg 1.8*@padding-lg;
+    }
+
+    &.accion{
+        text-shadow: 1px 1px 0 fade(@negro, 40%);
+        background-color: lighten(@verde, 10);
+        
+        &:hover{
+                background-color: lighten(@verde-claro, 10);
+        }
+    }
+    
+    &.alerta{
+        text-shadow: 1px 1px 0 fade(@negro, 40%);
+        background-color:  @rojo-alerta;
+        &:hover{
+            background-color: darken(saturate(@rojo-alerta, 10), 10);
+            color: @blanco;
+        }
+    }
+
+    &.accion,
+    &.alerta{
         &:active{
-                .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
+            .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
         }
-        
-        &.sm{
-                font-size: @cuerpo * .8;
-                text-transform: uppercase;
-                font-weight: normal;
-                padding: @padding-sm / 2 @padding-sm;
-                .border-radius(@radio/1.5);
-        }
-  
-        &.md{
-                font-weight: 300;
-                font-size: @cuerpo * 1;
-                padding: @padding-md / 4 @padding-md;
-                }
-
-        &.lg{
-                font-size: @cuerpo * 1.2;
-                letter-spacing: .05ex;
-                font-weight: 200;
-                padding: @padding-lg / 4 @padding-lg;
-        }
-
-        &.accion{
-                color: @blanco;
-                text-shadow: 1px 1px 0 fade(@negro, 40%);
-                border-color: fade(@pizarra, 30%);
-                background-color: lighten(@verde, 10);
-                
-                &:hover{
-                        background-color: lighten(@verde-claro, 10);
-                }
-        
-        }
-        
-        &.alerta{
-                color: @rojo-alerta;
-                background-color: @blanco;
-                border:1px solid @rojo-alerta;
-                
-                &:hover{
-                        background-color: @rojo-alerta;
-                        color: @blanco;
-                        border-color: fade(@rojo-oscuro, 20%);
-
-                }
-        
-        }
-
-        &.accion,
-        &.alerta{
-                &:active{
-                        .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
-                }
-        }
+    }
 }
 
 
@@ -115,7 +101,7 @@ input[type='tel'],
 input[type='color'],
 .uneditable-input {
   display: inline-block;
-  padding:0;
+  padding: @padding-md 3*@padding-md;
   margin-bottom: @margen-sm;
   font-size: @cuerpo;
   line-height: @interlinea;
@@ -125,9 +111,10 @@ input[type='color'],
 form{
     
     label{
+        font-family: SourceSansProBold;
         color: @gris-oscuro;
         font-weight: normal;
-        font-size: @cuerpo * 1;
+        font-size: @cuerpo * .8;
 
         &.checkbox{
             display: inline-block;
@@ -157,7 +144,7 @@ form{
 
     input[type='text'],input[type='password'],input[type='email'], textarea{
         height: auto;
-        padding: @padding-md / 4 @padding-md / 2;
+        padding: @padding-md;
         width: 96%;
         color:@pizarra;
     }
@@ -190,7 +177,7 @@ form{
 
     .verificacion{
         background-color: @blanco;
-        padding: @padding-md / 4 @padding-md / 2;
+        padding: @padding-md;
         color: @pizarra;
         margin:0;
         width: 50%;
@@ -202,7 +189,7 @@ form{
         .borde;
         margin:0;
         color:@pizarra;
-        padding: @padding-md / 4 @padding-md / 2;
+        padding: @padding-md;
         height: auto;
     }
 
@@ -228,7 +215,7 @@ form{
         label{
             display: block;
             vertical-align: top;
-            margin: @margen-md 0;
+            margin: @margen-md 0 0 0;
         }
 
         &.sm {
@@ -265,14 +252,8 @@ form{
             }
 
             .pregunta{
-                color: @gris-oscuro;
-                font-size: @cuerpo * 1.2;
-                text-shadow: none;
-                display: inline-block;
-                margin-bottom: @margen-lg / 1.8;
-                margin-top: 0;
-                margin-left: @margen-lg;
-                vertical-align: top;
+                font-size: @cuerpo * .8;
+                vertical-align: middle;
             }
 
             .grupo-label-relleno {
@@ -281,10 +262,10 @@ form{
                 margin-bottom: @margen-lg;
 
                 label{
-                    padding: @padding-lg;
-                    padding-top: 0;
-                    padding-bottom: 0;
                     display: inline-block;
+                    margin: @cuerpo/3 0 0 0;
+                    padding: 0 @padding-lg 0 0;
+                    font-size: @cuerpo * .8;
                 }
             }
         }
@@ -316,14 +297,8 @@ form{
             }
 
             .pregunta{
-                color: @gris-oscuro;
-                font-size: @cuerpo * 1.2;
-                text-shadow: none;
-                display: inline-block;
-                margin-bottom: @margen-lg / 1.8;
-                margin-top: 0;
-                margin-left: @margen-lg;
-                vertical-align: top;
+                font-size: @cuerpo * .8;
+                vertical-align: middle;
             }
 
             .grupo-label-relleno {

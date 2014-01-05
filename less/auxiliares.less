@@ -15,7 +15,7 @@
 }
 
 .color{
-        color: @link-color;
+        color: @color-link;
 }
 
 .importante {
@@ -143,18 +143,22 @@ margin: @margen-code;
 
 // Estilos auxiliares
 .borde{
-        border:1px solid @gris-claro;
+        border: 1px solid fade(@gris-claro, 40);
+}
+
+.sombra{
+    box-shadow: 1px 1px 3px @gris-claro;
 }
 
 .foco{
-        border:1.5px solid @verde-claro;
-        color:@pizarra;
-        box-shadow:inset 1px 1px 3px @gris-claro;
+    border: 1px solid @blanco;
+    color: @negro;
+    .sombra;
 }
 
 .fulgor{
-        background-color: @blanco;
-        .box-shadow(0 0 10px @blanco);
+    background-color: @blanco;
+    .box-shadow(0 0 10px @blanco);
 }
 
 .ver{
