@@ -27,29 +27,35 @@ a.btn{
     &:active{
             .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
     }
+
+    &.btn-xs{
+        font-size: @cuerpo * .6;
+        text-transform: uppercase;
+        font-weight: normal;
+        padding: @padding-sm*.7  2*@padding-sm;
+    }
     
-    &.sm{
-            font-size: @cuerpo * .8;
-            text-transform: uppercase;
-            font-weight: normal;
-            padding: @padding-sm  4*@padding-sm;
-            .border-radius(@radio);
+    &.btn-sm{
+        font-size: @cuerpo * .8;
+        text-transform: uppercase;
+        font-weight: normal;
+        padding: @padding-sm  4*@padding-sm;
     }
 
-    &.md{
-            font-weight: 300;
-            font-size: @cuerpo * 1;
-            padding: @padding-md 2*@padding-md;
-            }
-
-    &.lg{
-            font-size: @cuerpo * 1.2;
-            letter-spacing: .05ex;
-            font-weight: 200;
-            padding: @padding-lg 1.8*@padding-lg;
+    &.btn-md{
+        font-weight: 300;
+        font-size: @cuerpo * 1;
+        padding: @padding-md 2*@padding-md;
     }
 
-    &.accion{
+    &.btn-lg{
+        font-size: @cuerpo * 1.5;
+        letter-spacing: .05ex;
+        font-weight: 200;
+        padding: @padding-lg 1.8*@padding-lg;
+    }
+
+    &.btn-accion{
         text-shadow: 1px 1px 0 fade(@negro, 40%);
         background-color: lighten(@verde, 10);
         
@@ -58,7 +64,7 @@ a.btn{
         }
     }
     
-    &.alerta{
+    &.btn-alerta{
         text-shadow: 1px 1px 0 fade(@negro, 40%);
         background-color:  @rojo-alerta;
         &:hover{
@@ -67,8 +73,8 @@ a.btn{
         }
     }
 
-    &.accion,
-    &.alerta{
+    &.btn-accion,
+    &.btn-alerta{
         &:active{
             .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
         }
@@ -115,6 +121,7 @@ form{
     .margen-inferior;
 
     label{
+        display: block;
         font-weight: 700;
         font-size: @cuerpo * .8;
 
@@ -125,17 +132,30 @@ form{
             
             input[type=checkbox]{
                 display: inline-block;
-                margin-top: @margen-md;
-                margin-right: @margen-md; 
+                margin-right: 1ex; 
                 padding: @padding-md;
             }
         }
     }
 
-    label.required:after{
-        content: '*';
-        color:@rojo-anaranjado;
-        font-size: @cuerpo * 4;
+    .grupo{
+        &.obligatorio{
+            label:after{
+                content: '*';
+                color: @rojo-anaranjado;
+                font-size: @cuerpo;
+            }
+            input{
+                border: 1px solid fade(@rojo-anaranjado, 50);
+            }
+        }
+    }
+
+    legend{
+        font-size: @cuerpo * 1.5;
+        margin: @cuerpo 0;
+        font-weight: 100;
+        color: fade(@pizarra, 30);
     }
     
     input[type='submit'],
@@ -158,7 +178,6 @@ form{
         }
     }
         
-
     input, textarea{
          color: fade(@azul, 70%);
         .border-radius(@radio);
@@ -195,213 +214,71 @@ form{
         }                           
     }
 
-// Diversidad de formularios
+    // Tamaños
 
-        &.formulario-vertical{
-            padding: 0;
-            margin-bottom: 10px;
-            margin-top: 10px;
+    &.sm{
+        legend{
+            font-size: @cuerpo;
+            text-transform: uppercase;
+            letter-spacing: .2ex;
+        }
+        label{
+            font-size: @cuerpo * .6;
+            text-transform: uppercase;
+        }
+        input,
+        select,
+        textarea{font-size: @cuerpo * .8}
+    }
+    &.md{
+        label{font-size: @cuerpo * .8}
+        input,
+        select,
+        textarea{font-size: @cuerpo}
+    }
+    &.lg{
+        legend{
+            font-size: @cuerpo * 2;
+            font-weight: 100;
+            line-height: 80%
+        }
+        label{
+            font-size: @cuerpo * .95;
+            font-weight: 300;
+        }
+        input,
+        select,
+        textarea{font-size: @cuerpo * 1.5}
+    }
 
+    // Formulario Horizontal
+
+    &.formulario-horizontal {
+        .grupo{
+            .clearfix;
+            .fila;
             label{
                 display: block;
-                vertical-align: top;
-                margin: @margen-md 0 0 0;
-            }
 
-            &.sm {
-                padding: @padding-sm;
-            }
-
-            // Formulario Vertical Medium
-
-            &.md {
-                input, textarea{
-                    background-color: ;
-                }
-
-                input[type=text], input[type=password],input[type='email']{
-                    display: inline-block;
-                    margin:0;
-                    width: 50%;
-                    float: right;
-                }
-
-                select{
-                    width: 52%;
-                    float: right;
-                }
-
-                input[type=checkbox], .checkbox{
-                    display: inline-block;}
-
-                input[type='submit'],
-                .btn{
-                    margin-top: @margen-md;
-                    width: auto;
-                    float: right;
-                }
-
-                .pregunta{
-                    font-size: @cuerpo * .8;
-                    vertical-align: middle;
-                }
-
-                .grupo {
-                    text-align: right;
-                    margin-top: @margen-lg;
-                    margin-bottom: @margen-lg;
-
-                    label{
-                        display: inline-block;
-                        margin: @cuerpo/3 0 0 0;
-                        padding: 0 @padding-lg 0 0;
-                        font-size: @cuerpo * .8;
-                    }
-                }
-            }
-
-            // Formulario Vertical Large
-
-            &.lg {
-
-                input[type=text], input[type=password],input[type='email']{
-                    display: inline-block;
-                    margin:0;
-                    width: 50%;
-                    float: right;
-                }
-
-                select{
-                    width: 52%;
-                    float: right;
-                }
-
-                input[type=checkbox], .checkbox{
-                    display: inline-block;}
-
-                input[type='submit'],
-                .btn{
-                    margin-top: @margen-lg;
-                    width: auto;
-                    float: right;
-                }
-
-                .pregunta{
-                    font-size: @cuerpo * .8;
-                    vertical-align: middle;
-                }
-
-                .grupo {
-                    .cf;
-                    //text-align: right;
-                    margin-top: @margen-lg;
-                    margin-bottom: @margen-lg;
-
-                    label{
-                        padding: @padding-lg;
-                        padding-top: 0;
-                        padding-bottom: 0;
-                        display: inline-block;
-                    }
-                }
-            }
-        }
-
-        // Formulario Horizontal
-
-        &.formulario-horizontal {
-            padding: @padding-sm * 4;
-
-            &.sm {
-                background-color: @gris-blanco;
-
-            .ingreso{
-                margin-top: @margen-sm * 2;
-                margin-bottom: @margen-sm * 2;
-                float: center;
-                width: 100%;
-            }
-
-            .control-usuario { 
+                margin: 0 2ex 0 0;
+                vertical-align: middle;
                 text-align: right;
-                float: left;
             }
 
-            input[type=text], input[type=password]{
-            font-size: @cuerpo * 1.5;
-            margin:0;
+            input[type='password'],
+            input[type='text'],
+            input[type='email'],
+            select,
+            textarea{
 
             }
 
-            input[type='submit'],
-                .btn{
-                    margin:0;
-             }
-
-                 .grupo {
-            margin-top: @margen-lg * 1;
-            margin-left: @margen-lg * 2;
-        }
-    }
-
-        &.md {
-            .grupo {
-                margin: @margen-md * 2;
-
-                &.sm {
-                }
-            }
-
-            input[type=text], input[type=password]{
-                margin:0 0 0 @margen-md;
-                width: 70%;
-            }
-
-            input[type='submit'],
-                .btn{
-
-                margin-right: @margen-md * 2;
-             }
-
-        }
-
-    
-
-        &.lg {
-
-            label{
-                display: block;
-                margin-top: @margen-lg / 2;
-            }
-
-            input[type=text], input[type=password],input[type='email'], .relleno, {
-                margin-bottom: @margen-lg;
-            }
-
-            input[type=radio]{
-                padding-right: 10px;
-
-            }  
-
-            textarea:last-of-type{
-                margin-bottom: 0px;
+            p{
+                clear: both;
                 display: block;
             }
-
-            input[type='submit'],.btn{
-                margin-top: @margen-lg / 2;
-                margin-right: 0;
-                width: auto;
-                float: right;
-             }
-
-
-            .formulario-vertical {
-                margin-left: @margen-lg;
-            }
-        }            
+        }
     }
-
 }
 
 
