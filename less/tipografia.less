@@ -3,7 +3,7 @@
 
 * {
   font-family: @tipografia;
-  font-weight: 400;
+  font-weight: 200;
 }
 
   
@@ -42,7 +42,7 @@ p {
 
     &.grande{
       font-size: @cuerpo * 1.5;
-      font-weight: 300;
+      font-weight: 200;
       line-height: 120%;
     }
     
@@ -124,11 +124,12 @@ strong {
 
 .cursiva,
 .italica,
-em {
+em, i{
   font-family: @serif;
   font-style: italic;
-  font-weight: inherit;
-  line-height: inherit;
+  &.grande{
+    letter-spacing: -.1ex;
+  }
 }
 
 .pesada,
