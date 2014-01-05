@@ -82,7 +82,6 @@ a.btn{
 
 // Reset
 
-select,
 textarea,
 select,
 input[type='text'],
@@ -99,8 +98,9 @@ input[type='url'],
 input[type='search'],
 input[type='tel'],
 input[type='color'],
-.uneditable-input {
+.uneditable-input, {
   display: inline-block;
+  width: 100%;
   padding: @padding-md 3*@padding-md;
   margin-bottom: @margen-sm;
   font-size: @cuerpo;
@@ -109,10 +109,12 @@ input[type='color'],
 }
 
 form{
-    
+
+    .clearfix;
+    .margen-inferior;
+
     label{
         font-family: SourceSansProBold;
-        color: @gris-oscuro;
         font-weight: normal;
         font-size: @cuerpo * .8;
 
@@ -142,19 +144,23 @@ form{
         float: right;
     }
 
-    input[type='text'],input[type='password'],input[type='email'], textarea{
+    input[type='text'],
+    input[type='password'],
+    input[type='email'], 
+    textarea,
+    select{
         height: auto;
         padding: @padding-md;
-        width: 96%;
-        color:@pizarra;
+        color: @pizarra;
+        .border-radius(@radio);
+        &:valid{
+            color: @verde-claro;
+        }
     }
         
-    input[type='email']:valid{
-        color:@verde-claro;
-    }
 
     input, textarea{
-        color: fade(@azul, 70%);
+         color: fade(@azul, 70%);
         .border-radius(@radio);
         .borde;
 
@@ -167,27 +173,11 @@ form{
         height: @cuadratin * 6;
     }
 
-    .clearfix;
-    .margen-inferior;
-
-    .relleno{
-        background-color: @blanco;
-        color: @pizarra;
-    }
-
-    .verificacion{
-        background-color: @blanco;
-        padding: @padding-md;
-        color: @pizarra;
-        margin:0;
-        width: 50%;
-        float: left;
-    }
 
     select{
         .border-radius(4px);
         .borde;
-        margin:0;
+        margin: 0;
         color:@pizarra;
         padding: @padding-md;
         height: auto;
@@ -207,223 +197,155 @@ form{
 
 // Diversidad de formularios
 
-    &.formulario-vertical{
-        padding: 0;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        &.formulario-vertical{
+            padding: 0;
+            margin-bottom: 10px;
+            margin-top: 10px;
 
-        label{
-            display: block;
-            vertical-align: top;
-            margin: @margen-md 0 0 0;
-        }
-
-        &.sm {
-            padding: @padding-sm;
-        }
-
-        // Formulario Vertical Medium
-
-        &.md {
-            input, textarea{
-                background-color: ;
+            label{
+                display: block;
+                vertical-align: top;
+                margin: @margen-md 0 0 0;
             }
 
-            input[type=text], input[type=password],input[type='email']{
-                display: inline-block;
-                margin:0;
-                width: 50%;
-                float: right;
+            &.sm {
+                padding: @padding-sm;
             }
 
-            select{
-                width: 52%;
-                float: right;
-            }
+            // Formulario Vertical Medium
 
-            input[type=checkbox], .checkbox{
-                display: inline-block;}
-
-            input[type='submit'],
-            .btn{
-                margin-top: @margen-md;
-                width: auto;
-                float: right;
-            }
-
-            .pregunta{
-                font-size: @cuerpo * .8;
-                vertical-align: middle;
-            }
-
-            .grupo-label-relleno {
-                text-align: right;
-                margin-top: @margen-lg;
-                margin-bottom: @margen-lg;
-
-                label{
-                    display: inline-block;
-                    margin: @cuerpo/3 0 0 0;
-                    padding: 0 @padding-lg 0 0;
-                    font-size: @cuerpo * .8;
+            &.md {
+                input, textarea{
+                    background-color: ;
                 }
-            }
-        }
 
-        // Formulario Vertical Large
-
-        &.lg {
-
-            input[type=text], input[type=password],input[type='email']{
-                display: inline-block;
-                margin:0;
-                width: 50%;
-                float: right;
-            }
-
-            select{
-                width: 52%;
-                float: right;
-            }
-
-            input[type=checkbox], .checkbox{
-                display: inline-block;}
-
-            input[type='submit'],
-            .btn{
-                margin-top: @margen-lg;
-                width: auto;
-                float: right;
-            }
-
-            .pregunta{
-                font-size: @cuerpo * .8;
-                vertical-align: middle;
-            }
-
-            .grupo-label-relleno {
-                text-align: right;
-                margin-top: @margen-lg;
-                margin-bottom: @margen-lg;
-
-                label{
-                    padding: @padding-lg;
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    display: inline-block;
-                }
-            }
-
-            &.nuevo-proyecto {
-
-                input[type=text], input[type=password],input[type='email'],{
+                input[type=text], input[type=password],input[type='email']{
                     display: inline-block;
                     margin:0;
-                    width: 70%;
+                    width: 50%;
                     float: right;
                 }
 
-                textarea {
-                    width: 70%;
-                }
-
-                .especificacion{
-                    width: 85%;
+                select{
+                    width: 52%;
                     float: right;
-                    text-align: left;
                 }
 
-                .opciones{
-                    width: 71%;
+                input[type=checkbox], .checkbox{
+                    display: inline-block;}
+
+                input[type='submit'],
+                .btn{
+                    margin-top: @margen-md;
+                    width: auto;
                     float: right;
-
-                    .checkbox-span{
-                        margin-right: @margen-lg;
-                        float: left;
-                    }
                 }
 
-                .btn {
-                    margin-left: @margen-lg / 2;
+                .pregunta{
+                    font-size: @cuerpo * .8;
+                    vertical-align: middle;
                 }
 
-                .input-sm{
-                    input[type=text], input[type=password],input[type='email']{
+                .grupo {
+                    text-align: right;
+                    margin-top: @margen-lg;
+                    margin-bottom: @margen-lg;
+
+                    label{
                         display: inline-block;
-                        margin:0;
-                        margin-right: 35%;
-                        width: 35%;
+                        margin: @cuerpo/3 0 0 0;
+                        padding: 0 @padding-lg 0 0;
+                        font-size: @cuerpo * .8;
                     }
-
-                    &.grupo-label-relleno {
-                        text-align: right;
-                        margin-top: @margen-lg;
-                        margin-bottom: @margen-lg;
-
-                        label{
-                            padding: @padding-lg;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            display: inline-block;
-                        }
-
-                        .especificacion {
-                            text-align: right;
-                            float: right;
-                            display: inline-block;
-                            margin: 0;
-                            right: @margen-lg;
-                            position: absolute;
-
-                        }
-                    }
-
-
                 }
             }
 
+            // Formulario Vertical Large
+
+            &.lg {
+
+                input[type=text], input[type=password],input[type='email']{
+                    display: inline-block;
+                    margin:0;
+                    width: 50%;
+                    float: right;
+                }
+
+                select{
+                    width: 52%;
+                    float: right;
+                }
+
+                input[type=checkbox], .checkbox{
+                    display: inline-block;}
+
+                input[type='submit'],
+                .btn{
+                    margin-top: @margen-lg;
+                    width: auto;
+                    float: right;
+                }
+
+                .pregunta{
+                    font-size: @cuerpo * .8;
+                    vertical-align: middle;
+                }
+
+                .grupo {
+                    .cf;
+                    //text-align: right;
+                    margin-top: @margen-lg;
+                    margin-bottom: @margen-lg;
+
+                    label{
+                        padding: @padding-lg;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        display: inline-block;
+                    }
+                }
+            }
         }
-    }
 
-    // Formulario Horizontal
+        // Formulario Horizontal
 
-    &.horizontal {
-        padding: @padding-sm * 4;
+        &.formulario-horizontal {
+            padding: @padding-sm * 4;
 
-        &.sm {
-            background-color: @gris-blanco;
+            &.sm {
+                background-color: @gris-blanco;
 
-        .ingreso{
-            margin-top: @margen-sm * 2;
-            margin-bottom: @margen-sm * 2;
-            float: center;
-            width: 100%;
+            .ingreso{
+                margin-top: @margen-sm * 2;
+                margin-bottom: @margen-sm * 2;
+                float: center;
+                width: 100%;
+            }
+
+            .control-usuario { 
+                text-align: right;
+                float: left;
+            }
+
+            input[type=text], input[type=password]{
+            font-size: @cuerpo * 1.5;
+            margin:0;
+
+            }
+
+            input[type='submit'],
+                .btn{
+                    margin:0;
+             }
+
+                 .grupo {
+            margin-top: @margen-lg * 1;
+            margin-left: @margen-lg * 2;
         }
-
-        .control-usuario { 
-            text-align: right;
-            float: left;
-        }
-
-        input[type=text], input[type=password]{
-        font-size: @cuerpo * 1.5;
-        margin:0;
-
-        }
-
-        input[type='submit'],
-            .btn{
-                margin:0;
-         }
-
-             .grupo-label-relleno {
-        margin-top: @margen-lg * 1;
-        margin-left: @margen-lg * 2;
-    }
     }
 
         &.md {
-            .grupo-label-relleno {
+            .grupo {
                 margin: @margen-md * 2;
 
                 &.sm {
@@ -473,11 +395,6 @@ form{
                 float: right;
              }
 
-            .relleno-sm{
-                color: @pizarra;
-                width: 30%;
-                padding: @padding-md;
-            }
 
             .formulario-vertical {
                 margin-left: @margen-lg;
@@ -486,6 +403,7 @@ form{
     }
 
 }
+
 
 // Text input groups
 // -------------------------
