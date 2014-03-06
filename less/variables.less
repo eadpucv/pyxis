@@ -13,31 +13,31 @@
 //Importando tipografías a través de Font Face
 
 
-@sans:			    "SourceSansProLight", sans-serif;
-@serif:				"Neuton", serif;
-@mono:				"Lucida Console", monospace;
-@tipografia:		@sans;
-@tipografia-titulos: "SourceSansProBold";
-@tipografia-referencias:"SourceSansProExtraLight";
+@sans:							'Source Sans Pro', sans-serif;
+@serif:							'Playfair Display', serif;
+@mono:							'Lucida Console', monospace;
+@tipografia:					@sans;
+@tipografia-titulos: 			'Source Sans Pro';
+@tipografia-referencias:		'Source Sans Pro';
 
 // Grises
-@negro:                         rgba(0, 0, 0, 1);
-@gris-oscuro:                   lighten(@negro, 25%);
-@gris:                          lighten(@negro, 50%);
-@gris-claro:                    lighten(@negro, 75%);
-@gris-blanco:                   rgba(51, 51, 51,.07);
-@blanco:                        rgba(255, 255, 255, 1);
-
-// Colores
 @celeste:                       rgba(87, 190, 255, .95);
 @azul:							rgba(23, 96, 125, 1);
 @azul-oscuro:					darken(@azul, 10%);
 @azul-claro:					lighten(@azul, 25%);
 @verde:							rgba(79, 117, 101, 1);
 @verde-claro:					lighten(@verde, 15%);
-@verde-oscuro:					darken(@verde, 10%);
+@verde-oscuro:					darken(@verde, 20%);	
+@negro:							rgba(0, 0, 0, 1);
+@gris-oscuro:					lighten(@negro, 25%);
+@gris:                          lighten(@negro, 50%);
+@gris-claro:                    lighten(@negro, 75%);
+@gris-blanco:                   rgba(51, 51, 51,.07);
+@blanco:                        rgba(255, 255, 255, 1);
+
+// Colores	darken(@verde, 10%);
 @rojo:							rgba(192, 57, 53, 1);
-@rojo-oscuro:					darken(@rojo, 20%);
+@rojo-oscuro:					darken(@rojo, 10%);
 @rojo-anaranjado:				rgba(231, 76, 60, 1);
 @amarillo:						rgba(220, 200, 40, .95);
 @ocre:							rgba(170, 160, 70, 1);
@@ -50,44 +50,42 @@
 
 
 // bordes
-@borde-fino:                1px solid @color-borde;
-@borde-grueso:                5px solid @color-borde;
+@borde-fino:					1px solid @color-borde;
+@borde-grueso:					5px solid @color-borde;
 
 // paddings
-@padding-sm:				@cuerpo * .3;
-@padding-md:				@cuerpo * .6;
-@padding-lg:				@cuerpo * .9;
+@padding-sm:					@cuerpo * .1;
+@padding-md:					@cuerpo * .3;
+@padding-lg:					@cuerpo * .5;
 
 // margenes
 
-@margen-xs:				@cuerpo * .4;
-@margen-sm:				@cuerpo * .6;
-@margen-md:				@cuerpo * .8;
-@margen-lg:				@cuerpo * 1;
-@margen-xl:				@cuerpo * 2;
+@margen-xs:						@cuerpo * .4;
+@margen-sm:						@cuerpo * .6;
+@margen-md:						@cuerpo * .8;
+@margen-lg:						@cuerpo * 1;
+@margen-xl:						@cuerpo * 2;
 
 // margenes específicos
 
-@margen-code:		@cuerpo * 2 @cuerpo * 0 @cuerpo * 3 @cuerpo * .3;
+@margen-code:					@cuerpo * 2 @cuerpo * 0 @cuerpo * 3 @cuerpo * .3;
 
 // radios
-@radio:                                6px;
+@radio:							3px;
 
 // Links
-@link-color:                @rojo;
-@color-link:                @link-color;
-@link-colorHover:        @rojo-oscuro;
-@color-opuesto:                spin(@link-color, 180);
+@color-link:					@rojo;
+@color-link-hover:				darken(@color-link, 20%);
+@color-opuesto:					spin(@color-link, 180);
 
 // Proporciones tipográficas
 
-@cuerpo:			16px;				// tamaño tipográfico base en pixeles
-@em: 				@cuerpo * 1em;		// atajo para salida en ems, ej. '12/@em'
-@interlinea:		22px;
-
+@cuerpo:						16px;				// tamaño tipográfico base en pixeles
+@em:							@cuerpo * 1em;		// atajo para salida en ems, ej. '12/@em'
+@interlinea:					22px;
 
 
 // blancos
 
-@cuadratin:                        30px;
+@cuadratin:						30px;
 

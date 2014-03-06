@@ -1,91 +1,84 @@
- //        Elementos de Interacción:        
-//        Botones, formularios
-
-*{
-        .transition(.2s ease all);
-}
+//  Elementos de Interacción:        
+//  Botones, formularios
 
 button.btn,
 input[type='submit'],
-a.btn
- {
-        display: inline-block;
-        margin-top: 0;
-        cursor: pointer;
-        white-space: nowrap;
-        font-size: @cuerpo * .9;
-        color: @azul;
-        text-align: center;
-        background-color: @blanco;
-        vertical-align: middle;
-        border: 1px solid @azul;
-        .border-radius(@radio / 2);
-        
-        &:hover {
-                text-decoration: none;
-                background-color: @azul;
-                color:@blanco;
-                border: 1px solid @azul;
-        }
+a.btn{
+    display: inline-block;
+    font-family: 'Source Sans Pro';
+    font-weight: 500;
+    margin-top: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: @cuerpo * .9;
+    color: @blanco;
+    text-align: center;
+    background-color: @pizarra;
+    vertical-align: middle;
+    .border-radius(@radio);
+    
+    &:hover {
+            text-decoration: none;
+            background-color: saturate(@pizarra, 50%);
+            color: @blanco;
+    }
 
-        // cuando se aprieta el botón, que aparezca una sombra interior para que se vea hundido
+    // cuando se aprieta el botón, que aparezca una sombra interior para que se vea hundido
+    &:active{
+            .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
+    }
+
+    &.btn-xs{
+        font-size: @cuerpo * .6;
+        text-transform: uppercase;
+        font-weight: normal;
+        padding: @padding-sm*.7  2*@padding-sm;
+    }
+    
+    &.btn-sm{
+        font-size: @cuerpo * .8;
+        text-transform: uppercase;
+        font-weight: normal;
+        padding: @padding-sm  4*@padding-sm;
+    }
+
+    &.btn-md{
+        font-weight: 300;
+        font-size: @cuerpo * 1;
+        padding: @padding-md 2*@padding-md;
+    }
+
+    &.btn-lg{
+        font-size: @cuerpo * 1.5;
+        letter-spacing: .05ex;
+        font-weight: 200;
+        padding: @padding-lg 1.8*@padding-lg;
+    }
+
+    &.btn-accion{
+        text-shadow: 1px 1px 0 fade(@negro, 40%);
+        background-color: lighten(@verde, 10);
+        
+        &:hover{
+                background-color: lighten(@verde-claro, 10);
+        }
+    }
+    
+    &.btn-alerta{
+        text-shadow: 1px 1px 0 fade(@negro, 40%);
+        background-color:  @rojo-alerta;
+        &:hover{
+            background-color: darken(saturate(@rojo-alerta, 10), 10);
+            color: @blanco;
+        }
+    }
+
+    &.btn-accion,
+    &.btn-alerta{
         &:active{
-                .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
+            .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
         }
-        
-        &.sm{
-                font-size: @cuerpo * .8;
-                text-transform: uppercase;
-                font-weight: normal;
-                padding: @padding-sm / 2 @padding-sm;
-                .border-radius(@radio/1.5);
-        }
-  
-        &.md{
-                font-weight: 300;
-                font-size: @cuerpo * 1;
-                padding: @padding-md / 4 @padding-md;
-                }
-
-        &.lg{
-                font-size: @cuerpo * 1.2;
-                letter-spacing: .05ex;
-                font-weight: 200;
-                padding: @padding-lg / 4 @padding-lg;
-        }
-
-        &.accion{
-                color: @blanco;
-                text-shadow: 1px 1px 0 fade(@negro, 40%);
-                border-color: fade(@pizarra, 30%);
-                background-color: lighten(@verde, 10);
-                
-                &:hover{
-                        background-color: lighten(@verde-claro, 10);
-                }
-        
-        }
-        
-        &.alerta{
-                color: @rojo-alerta;
-                background-color: @blanco;
-                border:1px solid @rojo-alerta;
-                
-                &:hover{
-                        background-color: @rojo-alerta;
-                        color: @blanco;
-                        border-color: fade(@rojo-oscuro, 20%);
-
-                }
-        
-        }
-
-        &.accion,
-        &.alerta{
-                &:active{
-                        .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
-                }
-        }
+    }
 }
 
 
@@ -96,7 +89,6 @@ a.btn
 
 // Reset
 
-select,
 textarea,
 select,
 input[type='text'],
@@ -113,9 +105,10 @@ input[type='url'],
 input[type='search'],
 input[type='tel'],
 input[type='color'],
-.uneditable-input {
+.uneditable-input, {
   display: inline-block;
-  padding:0;
+  width: 100%;
+  padding: @padding-md 3*@padding-md;
   margin-bottom: @margen-sm;
   font-size: @cuerpo;
   line-height: @interlinea;
@@ -123,11 +116,14 @@ input[type='color'],
 }
 
 form{
-    
+
+    .clearfix;
+    .margen-inferior;
+
     label{
-        color: @gris-oscuro;
-        font-weight: normal;
-        font-size: @cuerpo * 1;
+        display: block;
+        font-weight: 700;
+        font-size: @cuerpo * .8;
 
         &.checkbox{
             display: inline-block;
@@ -136,17 +132,31 @@ form{
             
             input[type=checkbox]{
                 display: inline-block;
-                margin-top: @margen-md;
-                margin-right: @margen-md; 
+                margin-right: 1ex; 
                 padding: @padding-md;
             }
         }
     }
 
-    label.required:after{
-        content: '*';
-        color:@rojo-anaranjado;
-        font-size: @cuerpo * 4;
+    .grupo{
+        &.obligatorio{
+            label:after{
+                content: '*';
+                color: @rojo-anaranjado;
+                font-size: @cuerpo;
+            }
+            select,
+            input{
+                border: 1px solid fade(@rojo-anaranjado, 50);
+            }
+        }
+    }
+
+    legend{
+        font-size: @cuerpo * 1.5;
+        margin: @cuerpo 0;
+        font-weight: 100;
+        color: fade(@pizarra, 30);
     }
     
     input[type='submit'],
@@ -155,19 +165,22 @@ form{
         float: right;
     }
 
-    input[type='text'],input[type='password'],input[type='email'], textarea{
+    input[type='text'],
+    input[type='password'],
+    input[type='email'], 
+    textarea,
+    select{
         height: auto;
-        padding: @padding-md / 4 @padding-md / 2;
-        width: 96%;
-        color:@pizarra;
+        padding: @padding-md;
+        color: @pizarra;
+        .border-radius(@radio);
+        &:valid{
+            color: @verde-claro;
+        }
     }
         
-    input[type='email']:valid{
-        color:@verde-claro;
-    }
-
     input, textarea{
-        color: fade(@azul, 70%);
+         color: fade(@azul, 70%);
         .border-radius(@radio);
         .borde;
 
@@ -180,29 +193,13 @@ form{
         height: @cuadratin * 6;
     }
 
-    .clearfix;
-    .margen-inferior;
-
-    .relleno{
-        background-color: @blanco;
-        color: @pizarra;
-    }
-
-    .verificacion{
-        background-color: @blanco;
-        padding: @padding-md / 4 @padding-md / 2;
-        color: @pizarra;
-        margin:0;
-        width: 50%;
-        float: left;
-    }
 
     select{
         .border-radius(4px);
         .borde;
-        margin:0;
+        margin: 0;
         color:@pizarra;
-        padding: @padding-md / 4 @padding-md / 2;
+        padding: @padding-md;
         height: auto;
     }
 
@@ -218,299 +215,93 @@ form{
         }                           
     }
 
-// Diversidad de formularios
+    // Tamaños
 
-    &.formulario-vertical{
-        padding: 0;
-        margin-bottom: 10px;
-        margin-top: 10px;
-
+    &.sm{
+        legend{
+            font-size: @cuerpo;
+            text-transform: uppercase;
+            letter-spacing: .2ex;
+        }
         label{
-            display: block;
-            vertical-align: top;
-            margin: @margen-md 0;
+            font-size: @cuerpo * .6;
+            text-transform: uppercase;
         }
-
-        &.sm {
-            padding: @padding-sm;
+        input,
+        select,
+        textarea{font-size: @cuerpo * .8}
+    }
+    &.md{
+        label{font-size: @cuerpo * .8}
+        input,
+        select,
+        textarea{font-size: @cuerpo}
+    }
+    &.lg{
+        legend{
+            font-size: @cuerpo * 2;
+            font-weight: 100;
+            line-height: 80%
         }
-
-        // Formulario Vertical Medium
-
-        &.md {
-            input, textarea{
-                background-color: ;
-            }
-
-            input[type=text], input[type=password],input[type='email']{
-                display: inline-block;
-                margin:0;
-                width: 50%;
-                float: right;
-            }
-
-            select{
-                width: 52%;
-                float: right;
-            }
-
-            input[type=checkbox], .checkbox{
-                display: inline-block;}
-
-            input[type='submit'],
-            .btn{
-                margin-top: @margen-md;
-                width: auto;
-                float: right;
-            }
-
-            .pregunta{
-                color: @gris-oscuro;
-                font-size: @cuerpo * 1.2;
-                text-shadow: none;
-                display: inline-block;
-                margin-bottom: @margen-lg / 1.8;
-                margin-top: 0;
-                margin-left: @margen-lg;
-                vertical-align: top;
-            }
-
-            .grupo-label-relleno {
-                text-align: right;
-                margin-top: @margen-lg;
-                margin-bottom: @margen-lg;
-
-                label{
-                    padding: @padding-lg;
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    display: inline-block;
-                }
-            }
+        label{
+            font-size: @cuerpo * .95;
+            font-weight: 300;
         }
-
-        // Formulario Vertical Large
-
-        &.lg {
-
-            input[type=text], input[type=password],input[type='email']{
-                display: inline-block;
-                margin:0;
-                width: 50%;
-                float: right;
-            }
-
-            select{
-                width: 52%;
-                float: right;
-            }
-
-            input[type=checkbox], .checkbox{
-                display: inline-block;}
-
-            input[type='submit'],
-            .btn{
-                margin-top: @margen-lg;
-                width: auto;
-                float: right;
-            }
-
-            .pregunta{
-                color: @gris-oscuro;
-                font-size: @cuerpo * 1.2;
-                text-shadow: none;
-                display: inline-block;
-                margin-bottom: @margen-lg / 1.8;
-                margin-top: 0;
-                margin-left: @margen-lg;
-                vertical-align: top;
-            }
-
-            .grupo-label-relleno {
-                text-align: right;
-                margin-top: @margen-lg;
-                margin-bottom: @margen-lg;
-
-                label{
-                    padding: @padding-lg;
-                    padding-top: 0;
-                    padding-bottom: 0;
-                    display: inline-block;
-                }
-            }
-
-            &.nuevo-proyecto {
-
-                input[type=text], input[type=password],input[type='email'],{
-                    display: inline-block;
-                    margin:0;
-                    width: 70%;
-                    float: right;
-                }
-
-                textarea {
-                    width: 70%;
-                }
-
-                .especificacion{
-                    width: 85%;
-                    float: right;
-                    text-align: left;
-                }
-
-                .opciones{
-                    width: 71%;
-                    float: right;
-
-                    .checkbox-span{
-                        margin-right: @margen-lg;
-                        float: left;
-                    }
-                }
-
-                .btn {
-                    margin-left: @margen-lg / 2;
-                }
-
-                .input-sm{
-                    input[type=text], input[type=password],input[type='email']{
-                        display: inline-block;
-                        margin:0;
-                        margin-right: 35%;
-                        width: 35%;
-                    }
-
-                    &.grupo-label-relleno {
-                        text-align: right;
-                        margin-top: @margen-lg;
-                        margin-bottom: @margen-lg;
-
-                        label{
-                            padding: @padding-lg;
-                            padding-top: 0;
-                            padding-bottom: 0;
-                            display: inline-block;
-                        }
-
-                        .especificacion {
-                            text-align: right;
-                            float: right;
-                            display: inline-block;
-                            margin: 0;
-                            right: @margen-lg;
-                            position: absolute;
-
-                        }
-                    }
-
-
-                }
-            }
-
-        }
+        input,
+        select,
+        textarea{font-size: @cuerpo * 1.5}
     }
 
     // Formulario Horizontal
 
-    &.horizontal {
-        padding: @padding-sm * 4;
+    &.formulario-horizontal {
+        .grupo{
+            .clearfix;
+            margin: @cuerpo 0;
+            label{
+                
+                display: block;
+                float: left;
+                width: 30%;
+                margin: 0;
+                vertical-align: middle;
+                text-align: right;
+                padding: .5em 1ex 0 0;
+            }
 
-        &.sm {
-            background-color: @gris-blanco;
+            input[type='password'],
+            input[type='text'],
+            input[type='email'],
+            select,
+            textarea{
+                display: block;
+                float: left;
+                margin: 0;
+                width: 70%
+            }
 
-        .ingreso{
-            margin-top: @margen-sm * 2;
-            margin-bottom: @margen-sm * 2;
-            float: center;
-            width: 100%;
-        }
+            p{
+                padding: @cuerpo/2 0 @cuerpo/2 30%;
+                clear: both;
 
-        .control-usuario { 
-            text-align: right;
-            float: left;
-        }
-
-        input[type=text], input[type=password]{
-        font-size: @cuerpo * 1.5;
-        margin:0;
-
-        }
-
-        input[type='submit'],
-            .btn{
-                margin:0;
-         }
-
-             .grupo-label-relleno {
-        margin-top: @margen-lg * 1;
-        margin-left: @margen-lg * 2;
-    }
-    }
-
-        &.md {
-            .grupo-label-relleno {
-                margin: @margen-md * 2;
-
-                &.sm {
+                &.ayuda{
+                    font-size: @cuerpo * .8;
+                    color: fade(@gris-oscuro, 60);
                 }
             }
 
-            input[type=text], input[type=password]{
-                margin:0 0 0 @margen-md;
-                width: 70%;
+            &.checkbox{
+                label{
+                    text-align: left;
+                    width: 70%;
+                    margin: 0 0 @cuerpo*2 30%;
+                }
             }
-
-            input[type='submit'],
-                .btn{
-
-                margin-right: @margen-md * 2;
-             }
-
         }
 
-    
-
-        &.lg {
-
-            label{
-                display: block;
-                margin-top: @margen-lg / 2;
-            }
-
-            input[type=text], input[type=password],input[type='email'], .relleno, {
-                margin-bottom: @margen-lg;
-            }
-
-            input[type=radio]{
-                padding-right: 10px;
-
-            }  
-
-            textarea:last-of-type{
-                margin-bottom: 0px;
-                display: block;
-            }
-
-            input[type='submit'],.btn{
-                margin-top: @margen-lg / 2;
-                margin-right: 0;
-                width: auto;
-                float: right;
-             }
-
-            .relleno-sm{
-                color: @pizarra;
-                width: 30%;
-                padding: @padding-md;
-            }
-
-            .formulario-vertical {
-                margin-left: @margen-lg;
-            }
-        }            
     }
-
 }
+
 
 // Text input groups
 // -------------------------
