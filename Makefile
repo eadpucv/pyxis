@@ -7,3 +7,5 @@ server:
 
 less:
 	lessc less/ego.less css/ego.css --clean-css
+
+css: less
