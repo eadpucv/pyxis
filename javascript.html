@@ -11,6 +11,7 @@
   <link href='css/ego.css' rel='stylesheet'>
   <script src="js/jquery.js"></script>
   <script src="js/modal.js"></script>
+  <script src="js/tooltip.js"></script>  
   <link rel='icon' type='image/x-icon' href='img/favicon.ico' />
   <link rel='apple-touch-icon-precomposed' sizes='114x114' href='img/favicon-114.png'>
   <link rel='apple-touch-icon-precomposed' sizes='72x72' href='img/favicon-72.png'>
@@ -53,7 +54,6 @@
     <div class='fila'>
 
         <h2 class='rojo'>Javascript</h2> 
-
         <h3 class='rojo'>1. Modal</h3>
 
         <p>Se parte con la idea de que los formularios es donde ocurre una mayor transacción de interacción entre el usuario y el sistema. Para que que la interacción sea de manera cómoda y agradable, se plantea construir una relación proporcional entre los diversos formularios existentes en las plataformas digitales.</p>
@@ -82,30 +82,46 @@
 </code>
       </p>
 
-<h4>Ejemplo</h4>
-<button class="btn btn-sm" data-toggle="modal" data-target="#modal_de_ejemplo"> Ejecutar Modal </button>
-<div class="modal fade" id="modal_de_ejemplo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="myModalLabel">Titulo del Modal</h4>
-      </div>
-      <div class="modal-body">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum. Mauris elementum arcu a nisl porta, eget sollicitudin diam accumsan. Phasellus mollis cursus vehicula. Mauris placerat vestibulum leo eu facilisis. Etiam sagittis blandit lectus, at hendrerit nunc egestas ac. Aliquam laoreet a mauris at consectetur. Donec at diam velit. Mauris mattis lorem elit, et laoreet ligula semper in. Integer eget massa ante. Pellentesque ornare urna at magna tristique, eget tempor nunc sagittis. Duis libero urna, eleifend eu velit cursus, auctor mollis nibh. Nulla posuere pulvinar mi. In hac habitasse platea dictumst. Curabitur eu eros auctor, pretium risus eu, rhoncus lorem.
-        </p>
-        <p>
-          Integer vulputate sapien eros, et ornare nisl mollis sit amet. Aliquam hendrerit consequat sem, cursus interdum est fringilla sed. Sed congue vitae ante vel luctus. Suspendisse potenti. Quisque porttitor pellentesque ligula. Quisque venenatis ut dui dapibus vulputate. Etiam dictum orci vel ipsum dictum, sagittis fringilla lectus viverra. Ut ut ligula ultricies, vehicula magna pellentesque, ultrices urna.
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Otro Boton</button>
-      </div>
-    </div>
-  </div>
-</div>
+        <h4>Ejemplo</h4>
+        <button class="btn btn-sm" data-toggle="modal" data-target="#modal_de_ejemplo"> Ejecutar Modal </button>
+        <div class="modal fade" id="modal_de_ejemplo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Titulo del Modal</h4>
+              </div>
+              <div class="modal-body">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum. Mauris elementum arcu a nisl porta, eget sollicitudin diam accumsan. Phasellus mollis cursus vehicula. Mauris placerat vestibulum leo eu facilisis. Etiam sagittis blandit lectus, at hendrerit nunc egestas ac. Aliquam laoreet a mauris at consectetur. Donec at diam velit. Mauris mattis lorem elit, et laoreet ligula semper in. Integer eget massa ante. Pellentesque ornare urna at magna tristique, eget tempor nunc sagittis. Duis libero urna, eleifend eu velit cursus, auctor mollis nibh. Nulla posuere pulvinar mi. In hac habitasse platea dictumst. Curabitur eu eros auctor, pretium risus eu, rhoncus lorem.
+                </p>
+                <p>
+                  Integer vulputate sapien eros, et ornare nisl mollis sit amet. Aliquam hendrerit consequat sem, cursus interdum est fringilla sed. Sed congue vitae ante vel luctus. Suspendisse potenti. Quisque porttitor pellentesque ligula. Quisque venenatis ut dui dapibus vulputate. Etiam dictum orci vel ipsum dictum, sagittis fringilla lectus viverra. Ut ut ligula ultricies, vehicula magna pellentesque, ultrices urna.
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Otro Boton</button>
+              </div>    
+            </div>
+          </div>
+        </div><br /><br />
 
+
+        <h3 class='rojo'>2. Tooltip</h3>  
+        <p>El tooltip es una pequeña ventana de ayuda que funciona al situar el cursor sobre algún elemento del DOM. Despliega la información del atributo "title" del elemento HTML</p>
+        
+        <h4>Archivos Necesarios</h4>
+        <p><code><span>&lt;script src="js/jquery.js"&gt;&lt;/script&gt;</span><br /><span>&lt;script src="js/tooltip.js">&gt;&lt;/script&gt;</span></code></p>
+
+        <h4>Codigo</h4>
+        <p><code>&lt;a data-toggle="tooltip" href="#" data-toggle="tooltip" title="Esto es un tooltip"&gt;Elemento con Tooltip&lt;/a&gt;</code></p>
+        <p>Luego, por un tema de performance, debes inicializar los tooltip, el siguiente codigo selecciona todos los elementos "a" que se encuentren dentro del elemento con clase "tooltip-demo" que tengan el atributo data-toggle=tooltip </p>
+        <p><code>&lt;script&gt; $('.tooltip-demo').tooltip({selector: "a[data-toggle=tooltip]"});&lt;/script&gt;</code></p>
+        <h4>Ejemplo</h4>
+        <ul class="tooltip-demo">
+            <li><a data-toggle="tooltip" href="#" data-original-title="Este es un tooltip">Tooltip funcionando</a></li>
+        </ul>
+        <script> $('.tooltip-demo').tooltip({selector: "a[data-toggle=tooltip]"});</script>
     </div>
 </div>
 
