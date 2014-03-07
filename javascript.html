@@ -11,7 +11,8 @@
   <link href='css/ego.css' rel='stylesheet'>
   <script src="js/jquery.js"></script>
   <script src="js/modal.js"></script>
-  <script src="js/tooltip.js"></script>  
+  <script src="js/tooltip.js"></script> 
+  <script src="js/popover.js"></script>  
   <link rel='icon' type='image/x-icon' href='img/favicon.ico' />
   <link rel='apple-touch-icon-precomposed' sizes='114x114' href='img/favicon-114.png'>
   <link rel='apple-touch-icon-precomposed' sizes='72x72' href='img/favicon-72.png'>
@@ -58,7 +59,7 @@
 
         <p>Se parte con la idea de que los formularios es donde ocurre una mayor transacción de interacción entre el usuario y el sistema. Para que que la interacción sea de manera cómoda y agradable, se plantea construir una relación proporcional entre los diversos formularios existentes en las plataformas digitales.</p>
         
-        <h4>Archivos Necesarios</h4>
+        <h4>Archivos necesarios</h4>
         <p><code><span>&lt;script src="js/jquery.js"&gt;&lt;/script&gt;</span><br /><span>&lt;script src="js/modal.js">&gt;&lt;/script&gt;</span></code></p>
 
         <h4>Codigo de ejemplo</h4>
@@ -110,18 +111,32 @@
         <h3 class='rojo'>2. Tooltip</h3>  
         <p>El tooltip es una pequeña ventana de ayuda que funciona al situar el cursor sobre algún elemento del DOM. Despliega la información del atributo "title" del elemento HTML</p>
         
-        <h4>Archivos Necesarios</h4>
+        <h4>Archivos necesarios</h4>
         <p><code><span>&lt;script src="js/jquery.js"&gt;&lt;/script&gt;</span><br /><span>&lt;script src="js/tooltip.js">&gt;&lt;/script&gt;</span></code></p>
 
         <h4>Codigo</h4>
         <p><code>&lt;a data-toggle="tooltip" href="#" data-toggle="tooltip" title="Esto es un tooltip"&gt;Elemento con Tooltip&lt;/a&gt;</code></p>
-        <p>Luego, por un tema de performance, debes inicializar los tooltip, el siguiente codigo selecciona todos los elementos "a" que se encuentren dentro del elemento con clase "tooltip-demo" que tengan el atributo data-toggle=tooltip </p>
+        <p>Luego, por un tema de performance, debes inicializar los tooltip, el siguiente codigo selecciona e inicializa todos los elementos "a" que se encuentren dentro del elemento con clase "tooltip-demo" que tengan el atributo data-toggle=tooltip </p>
         <p><code>&lt;script&gt; $('.tooltip-demo').tooltip({selector: "a[data-toggle=tooltip]"});&lt;/script&gt;</code></p>
         <h4>Ejemplo</h4>
         <ul class="tooltip-demo">
-            <li><a data-toggle="tooltip" href="#" data-original-title="Este es un tooltip">Tooltip funcionando</a></li>
+            <li><a data-toggle="tooltip" data-original-title="Este es un tooltip">Tooltip funcionando</a></li>
         </ul>
         <script> $('.tooltip-demo').tooltip({selector: "a[data-toggle=tooltip]"});</script>
+
+
+        <h3 class='rojo'>3. Popover</h3>  
+        
+        <h4>Archivos necesarios</h4>
+        <p><code><span>&lt;script src="js/jquery.js"&gt;&lt;/script&gt;</span><br /><span>&lt;script src="js/tooltip.js"&gt;&lt;/script&gt;</span><br /><span>&lt;script src="js/popover.js"&gt;&lt;/script&gt;</span></code></p>
+
+        <h4>Ejemplo</h4>
+        <p><code>&lt;a class="btn" id="popover-test" data-content="Este es un popover..." data-toggle="popover" data-original-title="Titulo de un popover"&gt;Elemento con Popover&lt;/a&gt;</code></p>
+        <p>Luego, por un tema de performance, debes inicializar los popovers (similiar a lo hecho con los tooltip), el siguiente codigo selecciona el elemento "a" con el id "popover-test" y lo inicializa </p>  
+        <p><code>&lt;script&gt; $('#popover-test').popover();&lt;/script&gt;</code></p>      
+        <h4>Ejemplo</h4>
+        <a class="btn" id="popover-test" title="" data-content="Este es un popover..." data-toggle="popover" data-original-title="Titulo de un popover">Popover</a>
+        <script>$('#popover-test').popover();</script>
     </div>
 </div>
 
