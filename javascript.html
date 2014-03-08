@@ -12,7 +12,8 @@
   <script src="js/jquery.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/tooltip.js"></script> 
-  <script src="js/popover.js"></script>  
+  <script src="js/popover.js"></script>
+  <script src="js/affix.js"></script>
   <link rel='icon' type='image/x-icon' href='img/favicon.ico' />
   <link rel='apple-touch-icon-precomposed' sizes='114x114' href='img/favicon-114.png'>
   <link rel='apple-touch-icon-precomposed' sizes='72x72' href='img/favicon-72.png'>
@@ -22,15 +23,20 @@
 <body lang='ES_es'>
   <div class='pag'>
     <header>
+        <div id="navbar" data-spy="affix" data-offset-top="100" style="background-color:white; display:none;"> 
+            <h2> Este es un ejemplo de Affix </h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in pretium lacus. Phasellus venenatis mollis tincidunt. Quisque semper adipiscing lorem, vel dictum elit molestie sed. Nullam luctus lorem mauris, quis fringilla sapien accumsan vitae. Sed et sem vestibulum eros interdum euismod id non dolor. In hendrerit risus ipsum, sit amet ultrices elit interdum tempor. Sed hendrerit augue metus, et ultricies odio viverra ut. Morbi vehicula justo dui, sagittis dignissim turpis posuere quis. Nam ullamcorper accumsan vestibulum.
+        </div>
       <div class='fila'>
+
         <div class='col-md-24 col-sm-12 col-xs-24'>
           <h1 class='gigante'><span class='gruesa'>EGO</span> <span class='rojo-alerta fino'>Experiencia Gráfica en la Organización</span></h1>
         </div>
         
         <div class='col-md-24 col-sm-12 col-xs-24'>
           <p class='grande fino margen-superior'>Fundamentos gráficos para la unificación y consistencia del lenguaje visual en pantalla que busca definir un esquema de trabajo semántico y escalable para diseñadores y desarrolladores.</p>
-          </div>
-          </div>
+        </div>
+        </div>
 
        <div class='fila'>
         <div class='col-md-24 col-sm-24 col-xs-24'>
@@ -49,6 +55,7 @@
         <li><a href='iconografia.html'>Íconografía</a></li>
         <li><a href='versatilidad.html'>Versatilidad</a></li>
         <li><a href='layout.html'>Layout</a></li>
+        <li><a href='javascript.html'>Javascript</a></li>        
       </ul>
     </nav>
 <div class='contenido'>
@@ -105,7 +112,7 @@
               </div>    
             </div>
           </div>
-        </div><br /><br />
+        </div><br /><br /><hr>
 
 
         <h3 class='rojo'>2. Tooltip</h3>  
@@ -121,7 +128,7 @@
         <h4>Ejemplo</h4>
         <ul class="tooltip-demo">
             <li><a data-toggle="tooltip" data-original-title="Este es un tooltip">Tooltip funcionando</a></li>
-        </ul>
+        </ul><hr>
         <script> $('.tooltip-demo').tooltip({selector: "a[data-toggle=tooltip]"});</script>
 
 
@@ -135,8 +142,25 @@
         <p>Luego, por un tema de performance, debes inicializar los popovers (similiar a lo hecho con los tooltip), el siguiente codigo selecciona el elemento "a" con el id "popover-test" y lo inicializa </p>  
         <p><code>&lt;script&gt; $('#popover-test').popover();&lt;/script&gt;</code></p>      
         <h4>Ejemplo</h4>
-        <a class="btn" id="popover-test" title="" data-content="Este es un popover..." data-toggle="popover" data-original-title="Titulo de un popover">Popover</a>
+        <a class="btn" id="popover-test" title="" data-content="Este es un popover..." data-toggle="popover" data-original-title="Titulo de un popover">Popover</a><br /><br /><hr>
         <script>$('#popover-test').popover();</script>
+
+
+        <h3 class='rojo'>4. Affix</h3>  
+        
+        <h4>Archivos necesarios</h4>
+        <p><code><span>&lt;script src="js/jquery.js"&gt;&lt;/script&gt;</span><br /><span>&lt;script src="js/affix.js"&gt;&lt;/script&gt;</span></code></p>
+
+        <h4>Codigo</h4>
+        <p><code>&lt;div data-spy="affix" data-offset-top="200" data-offset-bottom="200"&gt;Contenido de Affix&lt;/div&gt;</code></p>      
+
+        <h4>Ejemplo</h4>
+        <a id="link_ejemplo_affix" data-original-title="Mostrar el Affix, Lo puedes ocultar con el mismo boton">Mostrar/Ocultar el Affix</a>
+        <script>
+            $( "#link_ejemplo_affix" ).click(function() {
+              $( "#navbar" ).toggle();
+            });
+        </script>      
     </div>
 </div>
 
