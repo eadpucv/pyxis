@@ -4175,7 +4175,7 @@ strong {
 .italica,
 em,
 i {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Neuton', serif;
   font-style: italic;
 }
 .cursiva.grande,
@@ -4183,6 +4183,7 @@ i {
 em.grande,
 i.grande {
   letter-spacing: -0.1ex;
+  font-weight: 100;
 }
 .pesada,
 .pesado,
