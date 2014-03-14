@@ -5,7 +5,7 @@
 
 
 // Lato 100 300 400 700 800
-// @import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,700,900);
+// @import url(http://xfonts.googleapis.com/css?family=Lato:400,100,300,700,900);
 
 // "Libre Baskerville"
 // @import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
@@ -47,12 +47,12 @@
 @cafe-oscuro:					rgba(95, 53, 30, 1);
 @cafe:							rgba(115, 56, 22, 1);
 @cafe-claro:					rgba(135, 69, 28, 1);
-@rojo-oscuro:					rgba(95, 29, 25, 1);
-@rojo:							rgba(113, 25, 19, 1);
-@rojo-claro:					rgba(140, 35, 24, 1);
-@manzana-oscuro:				rgba(151, 53, 51, 1);
-@manzana:						rgba(172, 70, 67, 1);
-@manzana-claro:					rgba(199, 81, 77, 1);
+@burdeo-oscuro:					rgba(95, 29, 25, 1);
+@burdeo:						rgba(113, 25, 19, 1);
+@burdeo-claro:					rgba(140, 35, 24, 1);
+@rojo-oscuro:					rgba(151, 53, 51, 1);
+@rojo:							rgba(172, 70, 67, 1);
+@rojo-claro:					rgba(199, 81, 77, 1);
 
 
 // Adicionales
@@ -63,16 +63,15 @@
 @gris-blanco:                   rgba(51, 51, 51,.07);
 @blanco:                        rgba(255, 255, 255, 1);
 
-@amarillo:						rgba(220, 200, 40, .95);
-@ocre:							rgba(170, 160, 70, 1);
-@celeste:                       rgba(87, 190, 255, .95);
-@azul:							rgba(23, 96, 125, 1);
-@azul-oscuro:					darken(@azul, 10%);
-@azul-claro:					lighten(@azul, 25%);
-@verde:							rgba(79, 117, 101, 1);
-@verde-claro:					lighten(@verde, 15%);
-@verde-oscuro:					darken(@verde, 20%);	
-@rojo-anaranjado:				rgba(231, 76, 60, 1);
+// Opuestos 
+
+@oliva-opuesto:					spin(@oliva, 180);
+@beige-opuesto:					spin(@beige, 180);
+@damasco-opuesto:				spin(@damasco, 180);
+@naranja-opuesto:				spin(@naranja, 180);
+@cafe-opuesto:					spin(@cafe, 180);
+@burdeo-opuesto:				spin(@burdeo, 180);
+@rojo-opuesto:					spin(@rojo, 180);
 
 // Uso
 @color-borde:                	lighten(@gris-claro, 10%);
@@ -103,7 +102,7 @@
 @radio:							3px;
 
 // Links
-@color-link:					@manzana-claro;
+@color-link:					@rojo-claro;
 @color-link-hover:				darken(@color-link, 20%);
 @color-opuesto:					spin(@color-link, 180);
 
