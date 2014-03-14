@@ -12,10 +12,6 @@
 
 //Importando tipografías a través de Font Face
 
-@line-height-base:        1.428571429; // 20/14
-@font-size-base:          14px;
-@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
-@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
 @sans:							'Source Sans Pro', sans-serif;
 @texto-continuo:				'Signikaregular', serif;
@@ -86,10 +82,6 @@
 @borde-fino:					1px solid @color-borde;
 @borde-grueso:					5px solid @color-borde;
 
-@border-radius-base:        	4px;
-@border-radius-large:       	6px;
-@border-radius-small:       	3px;
-
 // paddings
 @padding-sm:					@cuerpo * .1;
 @padding-md:					@cuerpo * .3;
@@ -123,63 +115,6 @@
 
 
 // blancos
+
 @cuadratin:						30px;
 
-
-//== Modals
-//
-//##
-
-@zindex-modal-background:  1040;
-@zindex-modal:             1050;
-@modal-inner-padding:         20px;
-@modal-title-padding:         15px;
-@modal-title-line-height:     @line-height-base;
-@modal-content-bg:                             #fff;
-@modal-content-border-color:                   rgba(0,0,0,.2);
-@modal-content-fallback-border-color:          #999;
-@modal-backdrop-bg:           #000;
-@modal-backdrop-opacity:      .5;
-@modal-header-border-color:   #e5e5e5;
-@modal-footer-border-color:   @modal-header-border-color;
-
-@modal-lg:                    900px;
-@modal-md:                    600px;
-@modal-sm:                    300px;
-
-
-
-//== Tooltips
-//
-//##
-@zindex-tooltip:           	  1030;
-@tooltip-max-width:           200px;
-@tooltip-color:               #fff;
-@tooltip-bg:                  #000;
-@tooltip-opacity:             .9;
-@tooltip-arrow-width:         5px;
-@tooltip-arrow-color:         @tooltip-bg;
-
-
-//== Popovers
-//
-//##
-@zindex-popover:           			  1010;
-@popover-bg:                          #fff;
-@popover-max-width:                   276px;
-@popover-border-color:                rgba(0,0,0,.2);
-@popover-fallback-border-color:       #ccc;
-@popover-title-bg:                    darken(@popover-bg, 3%);
-@popover-arrow-width:                 10px;
-@popover-arrow-color:                 #fff;
-@popover-arrow-outer-width:           (@popover-arrow-width + 1);
-@popover-arrow-outer-color:           fadein(@popover-border-color, 5%);
-@popover-arrow-outer-fallback-color:  darken(@popover-fallback-border-color, 20%);
-
-
-// For Affix plugin
-// -------------------------
-
-.affix {
-  position: fixed;
-}
