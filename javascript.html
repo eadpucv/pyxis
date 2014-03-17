@@ -14,6 +14,7 @@
   <script src="js/tooltip.js"></script> 
   <script src="js/popover.js"></script>
   <script src="js/affix.js"></script>
+  <script src="js/dropdown.js"></script>  
   <link rel='icon' type='image/x-icon' href='img/favicon.ico' />
   <link rel='apple-touch-icon-precomposed' sizes='114x114' href='img/favicon-114.png'>
   <link rel='apple-touch-icon-precomposed' sizes='72x72' href='img/favicon-72.png'>
@@ -159,7 +160,58 @@
             $( "#link_ejemplo_affix" ).click(function() {
               $( "#navbar" ).toggle();
             });
-        </script>      
+        </script>
+        <br /><br /><hr>
+
+        <h3 class='rojo'>5. Dropdowns</h3>  
+        
+        <h4>Archivos necesarios</h4>
+        <p><code><span>&lt;script src="js/jquery.js"&gt;&lt;/script&gt;</span><br /><span>&lt;script src="js/dropdown.js"&gt;&lt;/script&gt;</span></code></p>
+
+        <h4>Codigo</h4>
+        <p><code>&lt;div class="dropdown"&gt;
+  &lt;a class="dropdown-toggle" data-toggle="dropdown" href="#"&gt;Dropdown trigger&lt;/a&gt;
+  &lt;ul class="dropdown-menu" role="menu" aria-labelledby="dLabel"&gt;Boton&lt;/ul&gt;
+&lt;/div&gt;</code>
+        </p>      
+        <h4>Ejemplo</h4>
+          <ul class="nav nav-pills">
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" role="button" id="drop4" class="dropdown-toggle">Dropdown <b class="caret"></b></a>
+              <ul aria-labelledby="drop4" role="menu" class="dropdown-menu" id="menu1">
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Action</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Another action</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Something else here</a></li>
+                <li class="divider" role="presentation"></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Separated link</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle">Dropdown 2 <b class="caret"></b></a>
+              <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu2">
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Action</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Another action</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Something else here</a></li>
+                <li class="divider" role="presentation"></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Separated link</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle">Dropdown 3 <b class="caret"></b></a>
+              <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Action</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Another action</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Something else here</a></li>
+                <li class="divider" role="presentation"></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        <script>
+            $( "#link_ejemplo_affix" ).click(function() {
+              $( "#navbar" ).toggle();
+            });
+        </script>            
     </div>
 </div>
 
@@ -170,34 +222,32 @@
     <div class='col-md-24'>
       <nav>
        <ul>
-            <li><a href='index.html'><span class="ico-parrafo ico-sm"></span></a></li>
-            <li><a href='tipografia.html'>Tipografía</a></li>
-            <li><a href='grilla.html'>Grilla</a></li>
-            <li><a href='interaccion.html'>Interacción</a></li>
-            <li><a href='color.html'>Color</a></li>
-            <li><a href='iconografia.html'>Íconografía</a></li>
-            <li><a href='versatilidad.html'>Versatilidad</a></li>
-            <li><a href='layout.html'>Lay out</a></li>
-      </ul>
-    </nav>
+          <li><a href='index.html'><span class="ico-parrafo ico-sm"></span></a></li>
+          <li><a href='tipografia.html'>Tipografía</a></li>
+          <li><a href='grilla.html'>Grilla</a></li>
+          <li><a href='interaccion.html'>Interacción</a></li>
+          <li><a href='color.html'>Color</a></li>
+          <li><a href='iconografia.html'>Íconografía</a></li>
+          <li><a href='versatilidad.html'>Versatilidad</a></li>
+          <li><a href='layout.html'>Lay out</a></li>
+        </ul>
+      </nav>
+      <p>
+          <a rel='license' href='http://creativecommons.org/licenses/by/3.0/deed.es_CL'><img alt='Licencia Creative Commons' style='border-width:0' src='http://i.creativecommons.org/l/by/3.0/80x15.png' /></a> <span xmlns:dct='http://purl.org/dc/terms/' href='http://purl.org/dc/dcmitype/InteractiveResource' property='dct:title' rel='dct:type'>e[ad] EGGL</span> por <span xmlns:cc='http://creativecommons.org/ns#' property='cc:attributionName'>Taller de Investigaciones Gráficas .:TIG:.</span> se encuentra bajo una <a rel='license' href='http://creativecommons.org/licenses/by/3.0/deed.es_CL'>Licencia Creative Commons Atribución 3.0 Unported</a>.<br />Basada en una obra en <a xmlns:dct='http://purl.org/dc/terms/' href='http://eadpucv.github.io/EGO' rel='dct:source'>http://eadpucv.github.io/EGO</a>.
+      </p>  
+    </div>
 
-    <p>
-        <a rel='license' href='http://creativecommons.org/licenses/by/3.0/deed.es_CL'><img alt='Licencia Creative Commons' style='border-width:0' src='http://i.creativecommons.org/l/by/3.0/80x15.png' /></a> <span xmlns:dct='http://purl.org/dc/terms/' href='http://purl.org/dc/dcmitype/InteractiveResource' property='dct:title' rel='dct:type'>e[ad] EGGL</span> por <span xmlns:cc='http://creativecommons.org/ns#' property='cc:attributionName'>Taller de Investigaciones Gráficas .:TIG:.</span> se encuentra bajo una <a rel='license' href='http://creativecommons.org/licenses/by/3.0/deed.es_CL'>Licencia Creative Commons Atribución 3.0 Unported</a>.<br />Basada en una obra en <a xmlns:dct='http://purl.org/dc/terms/' href='http://eadpucv.github.io/EGO' rel='dct:source'>http://eadpucv.github.io/EGO</a>.
-    </p>
-    
-</div>
-
-<div class='col-md-24'>
-  <address>
-    <a href="http://www.ead.pucv.cl/mundo/investigacion/tig/"><strong>.:TIG:.</strong> Taller de Investigaciones Gráficas</a><br />
-    e[ad] Escuela de Arquitectura y Diseño<br />
-    Matta 12, Recreo<br />
-    Viña del Mar<br />
-    fono: +56322274401<br />
-    fax: +56322274421
-</address>
-</div>
-</div>
+    <div class='col-md-24'>
+      <address>
+        <a href="http://www.ead.pucv.cl/mundo/investigacion/tig/"><strong>.:TIG:.</strong> Taller de Investigaciones Gráficas</a><br />
+          e[ad] Escuela de Arquitectura y Diseño<br />
+          Matta 12, Recreo<br />
+          Viña del Mar<br />
+          fono: +56322274401<br />
+          fax: +56322274421
+      </address>
+    </div>
+  </div>
 </footer>
 </div>
 </body>
