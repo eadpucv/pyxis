@@ -6,6 +6,6 @@ server:
 	jekyll server --watch --baseurl=
 
 less:
-	lessc less/ego.less css/ego.css --clean-css
+	lessc less/pyxis.less css/pyxis.css --clean-css
 
 css: less
