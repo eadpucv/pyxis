@@ -5,53 +5,90 @@
 
 
 // Lato 100 300 400 700 800
-// @import url(http://fonts.googleapis.com/css?family=Lato:400,100,300,700,900);
+// @import url(http://xfonts.googleapis.com/css?family=Lato:400,100,300,700,900);
 
 // "Libre Baskerville"
 // @import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
 
 //Importando tipografías a través de Font Face
 
+@line-height-base:        1.428571429; // 20/14
+@font-size-base:          14px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
 @sans:							'Source Sans Pro', sans-serif;
+@texto-continuo:				'Signikaregular', serif;
 @serif:							'Playfair Display', serif;
+@italica:						'Neuton', serif;
 @mono:							'Lucida Console', monospace;
 @tipografia:					@sans;
 @tipografia-titulos: 			'Source Sans Pro';
 @tipografia-referencias:		'Source Sans Pro';
 
+// Negros
+@negro-oscuro:					rgba(25, 26, 25, 1);
+@negro: 						rgba(43, 44, 42, 1);
+@negro-claro:					rgba(69, 71, 71, 1);
+
 // Grises
-@celeste:                       rgba(87, 190, 255, .95);
-@azul:							rgba(23, 96, 125, 1);
-@azul-oscuro:					darken(@azul, 10%);
-@azul-claro:					lighten(@azul, 25%);
-@verde:							rgba(79, 117, 101, 1);
-@verde-claro:					lighten(@verde, 15%);
-@verde-oscuro:					darken(@verde, 20%);	
-@negro:							rgba(0, 0, 0, 1);
-@gris-oscuro:					lighten(@negro, 25%);
-@gris:                          lighten(@negro, 50%);
-@gris-claro:                    lighten(@negro, 75%);
+@gris-oscuro:					rgba(164, 164, 162, 1);
+@gris:							rgba(193, 194, 194, 1);
+@gris-claro:					rgba(226, 226, 226, 1);
+
+// Cálidos
+@oliva-oscuro:					rgba(90, 81, 18, 1);
+@oliva:							rgba(123, 110, 27, 1);
+@oliva-claro:					rgba(160, 146, 34, 1);
+@beige-oscuro:					rgba(127, 112, 79, 1);
+@beige:							rgba(202, 182, 135, 1);
+@beige-claro:					rgba(235, 217, 164, 1);
+@damasco-oscuro:				rgba(189, 138, 71, 1);
+@damasco:						rgba(204, 142, 72, 1);
+@damasco-claro:					rgba(205, 146, 74, 1);
+@naranja-oscuro:				rgba(192, 90, 24, 1);
+@naranja:						rgba(210, 101, 29, 1);
+@naranja-claro:					rgba(242, 126, 47, 1);
+@cafe-oscuro:					rgba(95, 53, 30, 1);
+@cafe:							rgba(115, 56, 22, 1);
+@cafe-claro:					rgba(135, 69, 28, 1);
+@burdeo-oscuro:					rgba(95, 29, 25, 1);
+@burdeo:						rgba(113, 25, 19, 1);
+@burdeo-claro:					rgba(140, 35, 24, 1);
+@rojo-oscuro:					rgba(151, 53, 51, 1);
+@rojo:							rgba(172, 70, 67, 1);
+@rojo-claro:					rgba(199, 81, 77, 1);
+
+
+// Adicionales
+@pizarra-oscuro:				rgba(43, 44, 42, 1);
+@pizarra:						rgba(63, 68, 65, 1);
+@pizarra-claro:					rgba(76, 77, 76, 1);
+@ahuesado:                      rgba(239, 242, 219, 1);
 @gris-blanco:                   rgba(51, 51, 51,.07);
 @blanco:                        rgba(255, 255, 255, 1);
 
-// Colores	darken(@verde, 10%);
-@rojo:							rgba(192, 57, 53, 1);
-@rojo-oscuro:					darken(@rojo, 10%);
-@rojo-anaranjado:				rgba(231, 76, 60, 1);
-@amarillo:						rgba(220, 200, 40, .95);
-@ocre:							rgba(170, 160, 70, 1);
+// Opuestos 
 
-// Especiales
-@pizarra:                       rgba(50, 60, 70, 1);
-@ahuesado:                      rgba(239, 242, 219, 1);
+@oliva-opuesto:					spin(@oliva, 180);
+@beige-opuesto:					spin(@beige, 180);
+@damasco-opuesto:				spin(@damasco, 180);
+@naranja-opuesto:				spin(@naranja, 180);
+@cafe-opuesto:					spin(@cafe, 180);
+@burdeo-opuesto:				spin(@burdeo, 180);
+@rojo-opuesto:					spin(@rojo, 180);
+
+// Uso
 @color-borde:                	lighten(@gris-claro, 10%);
 @rojo-alerta:					rgba(214, 97, 82, 1);
-
 
 // bordes
 @borde-fino:					1px solid @color-borde;
 @borde-grueso:					5px solid @color-borde;
+
+@border-radius-base:        	4px;
+@border-radius-large:       	6px;
+@border-radius-small:       	3px;
 
 // paddings
 @padding-sm:					@cuerpo * .1;
@@ -74,7 +111,7 @@
 @radio:							3px;
 
 // Links
-@color-link:					@rojo;
+@color-link:					@rojo-claro;
 @color-link-hover:				darken(@color-link, 20%);
 @color-opuesto:					spin(@color-link, 180);
 
@@ -86,6 +123,63 @@
 
 
 // blancos
-
 @cuadratin:						30px;
 
+
+//== Modals
+//
+//##
+
+@zindex-modal-background:  1040;
+@zindex-modal:             1050;
+@modal-inner-padding:         20px;
+@modal-title-padding:         15px;
+@modal-title-line-height:     @line-height-base;
+@modal-content-bg:                             #fff;
+@modal-content-border-color:                   rgba(0,0,0,.2);
+@modal-content-fallback-border-color:          #999;
+@modal-backdrop-bg:           #000;
+@modal-backdrop-opacity:      .5;
+@modal-header-border-color:   #e5e5e5;
+@modal-footer-border-color:   @modal-header-border-color;
+
+@modal-lg:                    900px;
+@modal-md:                    600px;
+@modal-sm:                    300px;
+
+
+
+//== Tooltips
+//
+//##
+@zindex-tooltip:           	  1030;
+@tooltip-max-width:           200px;
+@tooltip-color:               #fff;
+@tooltip-bg:                  #000;
+@tooltip-opacity:             .9;
+@tooltip-arrow-width:         5px;
+@tooltip-arrow-color:         @tooltip-bg;
+
+
+//== Popovers
+//
+//##
+@zindex-popover:           			  1010;
+@popover-bg:                          #fff;
+@popover-max-width:                   276px;
+@popover-border-color:                rgba(0,0,0,.2);
+@popover-fallback-border-color:       #ccc;
+@popover-title-bg:                    darken(@popover-bg, 3%);
+@popover-arrow-width:                 10px;
+@popover-arrow-color:                 #fff;
+@popover-arrow-outer-width:           (@popover-arrow-width + 1);
+@popover-arrow-outer-color:           fadein(@popover-border-color, 5%);
+@popover-arrow-outer-fallback-color:  darken(@popover-fallback-border-color, 20%);
+
+
+// For Affix plugin
+// -------------------------
+
+.affix {
+  position: fixed;
+}
