@@ -1,17 +1,21 @@
 // Estilos tipográficos auxiliares
 
 .gigante{
-        font-size: 420%;
-        letter-spacing: -.07ex;
+    font-size: 420%;
+    letter-spacing: -.07ex;
 }
 
 .grande{
-        font-size: 250%;
+    font-size: 250%;
 }
 
 .chico, 
 .chica{
-        font-size: 80%;
+    font-size: 80%;
+}
+
+.datos {
+    font-size: 60%;
 }
 
 .color{
@@ -48,6 +52,8 @@ margin: @margen-code;
 /* Internet Explorer */ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); 
 margin: @margen-code; 
 }
+
+
 
 .uc{
         text-transform: uppercase;
@@ -269,6 +275,9 @@ overflow: hidden;
     position: absolute;
 }
 
+.ancho-maximo {
+    width: 100%;
+}
 
 
 // clases porcentuales .w1 - .w100
@@ -322,3 +331,4 @@ overflow: hidden;
     @opacity-ie: (@opacity * 100);
     filter: ~"alpha(opacity=@{opacity-ie})";
 }
+
