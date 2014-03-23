@@ -17,8 +17,10 @@
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
 @sans:							'Source Sans Pro', sans-serif;
-@texto-continuo:				'Signikaregular', serif;
+@texto-continuo:				'Signika', serif;
 @serif:							'Playfair Display', serif;
 @italica:						'Neuton', serif;
 @mono:							'Lucida Console', monospace;
@@ -67,6 +69,11 @@
 @ahuesado:                      rgba(239, 242, 219, 1);
 @gris-blanco:                   rgba(51, 51, 51,.07);
 @blanco:                        rgba(255, 255, 255, 1);
+
+@brand-primary:         		#428bca;
+@component-active-color:    	#fff;
+@component-active-bg:       	@brand-primary;
+
 
 // Opuestos 
 
@@ -124,12 +131,39 @@
 
 // blancos
 @cuadratin:						30px;
+@cuadratin-tercio:				10px;
+@body-bg:		               #fff;
 
+//== Navs
+//
+//##
+@nav-link-padding:                          10px 15px;
+@nav-link-hover-bg:                         @gris-claro;
+@nav-disabled-link-color:                   @gris;
+@nav-disabled-link-hover-color:             @gris;
+@nav-open-link-hover-color:                 #fff;
+
+//== Pills
+//
+//##
+@nav-pills-border-radius:                   @border-radius-base;
+@nav-pills-active-link-hover-bg:            @component-active-bg;
+@nav-pills-active-link-hover-color:         @component-active-color;
+
+//== Tabs
+//
+//##
+@nav-tabs-border-color:                     #ddd;
+@nav-tabs-link-hover-border-color:          @gris-claro;
+@nav-tabs-active-link-hover-bg:             @body-bg;
+@nav-tabs-active-link-hover-color:          @gris;
+@nav-tabs-active-link-hover-border-color:   #ddd;
+@nav-tabs-justified-link-border-color:            #ddd;
+@nav-tabs-justified-active-link-border-color:     @body-bg;
 
 //== Modals
 //
 //##
-
 @zindex-modal-background:  1040;
 @zindex-modal:             1050;
 @modal-inner-padding:         20px;
@@ -146,7 +180,6 @@
 @modal-lg:                    900px;
 @modal-md:                    600px;
 @modal-sm:                    300px;
-
 
 
 //== Tooltips
@@ -176,6 +209,37 @@
 @popover-arrow-outer-color:           fadein(@popover-border-color, 5%);
 @popover-arrow-outer-fallback-color:  darken(@popover-fallback-border-color, 20%);
 
+//== DropDowns
+//
+//##
+@zindex-dropdown:          1000;
+@caret-width-base:          4px;
+@caret-width-large:         5px;
+@dropdown-bg:                    #fff;
+@dropdown-border:                rgba(0,0,0,.15);
+@dropdown-fallback-border:       #ccc;
+@dropdown-divider-bg:            #e5e5e5;
+@dropdown-link-color:            @gris-oscuro;
+@dropdown-link-hover-color:      @negro;
+@dropdown-link-hover-bg:         #f5f5f5;
+@dropdown-link-active-color:     @component-active-color;
+@dropdown-link-active-bg:        @component-active-bg;
+@dropdown-link-disabled-color:   @gris-claro;
+@dropdown-header-color:          @gris-claro;
+@dropdown-caret-color:           #000;
+
+//== Carousel
+//
+//##
+
+@carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6);
+@carousel-control-color:                      #fff;
+@carousel-control-width:                      15%;
+@carousel-control-opacity:                    .5;
+@carousel-control-font-size:                  20px;
+@carousel-indicator-active-bg:                #fff;
+@carousel-indicator-border-color:             #fff;
+@carousel-caption-color:                      #fff;
 
 // For Affix plugin
 // -------------------------
