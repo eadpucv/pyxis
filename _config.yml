@@ -6,7 +6,5 @@ markdown: rdiscount
 pygments: true
 permalink: pretty
 baseurl: "http://eadpucv.github.io/pyxis"
-exclude: ['node_modules']
-
 project:
     name: Pyxis
