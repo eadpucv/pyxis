@@ -1,17 +1,21 @@
 // Estilos tipográficos auxiliares
 
 .gigante{
-        font-size: 420%;
-        letter-spacing: -.07ex;
+    font-size: 420%;
+    letter-spacing: -.07ex;
 }
 
 .grande{
-        font-size: 250%;
+    font-size: 250%;
 }
 
 .chico, 
 .chica{
-        font-size: 80%;
+    font-size: 80%;
+}
+
+.datos {
+    font-size: 60%;
 }
 
 .color{
@@ -19,7 +23,7 @@
 }
 
 .importante {
-    color:@rojo-anaranjado;
+    color:@rojo-claro;
 }
 
 .diagonal {
@@ -49,6 +53,8 @@ margin: @margen-code;
 margin: @margen-code; 
 }
 
+
+
 .uc{
         text-transform: uppercase;
 }
@@ -70,6 +76,7 @@ margin: @margen-code;
 
 // Márgenes de ajuste
 .margen-superior{margin-top: @cuadratin}
+.margen-superior-s{margin-top: @cuadratin / 2}
 .margen-superior-negativo{margin-top: -@cuadratin}
 .margen-inferior{margin-bottom: @cuadratin}
 .margen-inferior-negativo{margin-bottom: -@cuadratin}
@@ -87,47 +94,113 @@ margin: @margen-code;
         .cf;
 }
 
-// Grises
-
+// Negros y grises
 .negro{color: @negro}
-.bg-negro{background-color: @negro}
+.fondo-negro{background-color: @negro}
+.negro-oscuro{color: @negro-oscuro}
+.fondo-negro-oscuro{background-color: @negro-oscuro}
+.negro-claro{color: @negro-claro}
+.fondo-negro-claro{background-color: @negro-claro}
+
 .gris-oscuro{color: @gris-oscuro}
-.bg-gris-oscuro{background-color: @gris-oscuro}
+.fondo-gris-oscuro{background-color: @gris-oscuro}
 .gris{color: @gris}
-.bg-gris{background-color: @gris}
+.fondo-gris{background-color: @gris}
 .gris-claro{color: @gris-claro}
-.bg-gris-claro{background-color: @gris-claro}
+.fondo-gris-claro{background-color: @gris-claro}
+
 .blanco{color: @blanco}
-.bg-blanco{background-color: @blanco}
+.fondo-blanco{background-color: @blanco}
+
 
 // Colores
-.celeste{color: @celeste}
-.bg-celeste{background-color: @celeste}
-.azul{color: @azul}
-.bg-azul{background-color: @azul}
-.azul-oscuro{color: @azul-oscuro}
-.bg-azul-oscuro{background-color: @azul-oscuro}
-.verde{color: @verde}
-.bg-verde{background-color: @verde}
-.verde-oscuro{color: @verde-oscuro}
-.bg-verde-oscuro{background-color: @verde-oscuro}
-.verde-claro{color: @verde-claro}
-.bg-verde-claro{background-color: @verde-claro}
-.roja, .rojo{color: @rojo}
-.bg-rojo{background-color: @rojo}
+.oliva-oscuro{color: @oliva-oscuro}
+.fondo-oliva-oscuro{background-color: @oliva-oscuro}
+.oliva{color: @oliva}
+.fondo-oliva{background-color: @oliva}
+.oliva-claro{color: @oliva-claro}
+.fondo-oliva-claro{background-color: @oliva-claro}
+
+.beige-oscuro{color: @beige-oscuro}
+.fondo-beige-oscuro{background-color: @beige-oscuro}
+.beige{color: @beige}
+.fondo-beige{background-color: @beige}
+.beige-claro{color: @beige-claro}
+.fondo-beige-claro{background-color: @beige-claro}
+
+.damasco-oscuro{color: @damasco-oscuro}
+.fondo-damasco-oscuro{background-color: @damasco-oscuro}
+.damasco{color: @damasco}
+.fondo-damasco{background-color: @damasco}
+.damasco-claro{color: @damasco-claro}
+.fondo-damasco-claro{background-color: @damasco-claro}
+
+.cafe-oscuro{color: @cafe-oscuro}
+.fondo-cafe-oscuro{background-color: @cafe-oscuro}
+.cafe{color: @cafe}
+.fondo-cafe{background-color: @cafe}
+.cafe-claro{color: @cafe-claro}
+.fondo-cafe-claro{background-color: @cafe-claro}
+
+.naranja-oscuro{color: @naranja-oscuro}
+.fondo-naranja-oscuro{background-color: @naranja-oscuro}
+.naranja{color: @naranja}
+.fondo-naranja{background-color: @naranja}
+.naranja-claro{color: @naranja-claro}
+.fondo-naranja-claro{background-color: @naranja-claro}
+
+.burdeo-oscuro{color: @burdeo-oscuro}
+.fondo-burdeo-oscuro{background-color: @burdeo-oscuro}
+.burdeo{color: @burdeo}
+.fondo-burdeo{background-color: @burdeo}
+.burdeo-claro{color: @burdeo-claro}
+.fondo-burdeo-claro{background-color: @burdeo-claro}
+
 .rojo-oscuro{color: @rojo-oscuro}
-.rojo-alerta{color:@rojo-alerta}
-.bg-rojo-oscuro{background-color: @rojo-oscuro}
-.ocre{color: @ocre}
-.bg-ocre{background-color: @ocre}
-.amarillo{color: @amarillo}
-.bg-amarillo{background-color: @amarillo}
+.fondo-rojo-oscuro{background-color: @rojo-oscuro}
+.rojo{color: @rojo}
+.fondo-rojo{background-color: @rojo}
+.rojo-claro{color: @rojo-claro}
+.fondo-rojo-claro{background-color: @rojo-claro}
 
 // Colores Especiales
+
+.pizarra-oscuro{color: @pizarra-oscuro}
+.fondo-pizarra-oscuro{background-color: @pizarra-oscuro}
 .pizarra{color: @pizarra}
-.bg-pizarra{background-color: @pizarra}
+.fondo-pizarra{background-color: @pizarra}
+.pizarra-claro{color: @pizarra-claro}
+.fondo-pizarra-claro{background-color: @pizarra-claro}
+
 .ahuesado{color: @ahuesado}
-.bg-ahuesado{background-color: @ahuesado}
+.fondo-ahuesado{background-color: @ahuesado}
+
+// Colores opuestos
+.oliva-opuesto{color: @oliva-opuesto}
+.fondo-oliva-opuesto{background-color: @oliva-opuesto}
+
+.beige-opuesto{color: @beige-opuesto}
+.fondo-beige-opuesto{background-color: @beige-opuesto}
+
+.damasco-opuesto{color: @damasco-opuesto}
+.fondo-damasco-opuesto{background-color: @damasco-opuesto}
+
+.naranja-opuesto{color: @naranja-opuesto}
+.fondo-naranja-opuesto{background-color: @naranja-opuesto}
+
+.cafe-opuesto{color: @cafe-opuesto}
+.fondo-cafe-opuesto{background-color: @cafe-opuesto}
+
+.burdeo-opuesto{color: @burdeo-opuesto}
+.fondo-burdeo-opuesto{background-color: @burdeo-opuesto}
+
+.rojo-opuesto{color: @rojo-opuesto}
+.fondo-rojo-opuesto{background-color: @rojo-opuesto}
+
+.rojo-alerta{color:@rojo-alerta}
+
+
+// Colores Especiales
 .borde{color: @color-borde}
 .bg-borde{background-color: @color-borde}
 .color-opuesto{color: @color-opuesto}
@@ -203,6 +276,9 @@ overflow: hidden;
     position: absolute;
 }
 
+.ancho-maximo {
+    width: 100%;
+}
 
 
 // clases porcentuales .w1 - .w100
@@ -256,3 +332,4 @@ overflow: hidden;
     @opacity-ie: (@opacity * 100);
     filter: ~"alpha(opacity=@{opacity-ie})";
 }
+

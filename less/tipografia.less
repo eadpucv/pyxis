@@ -1,7 +1,7 @@
 
   // Tipografía
 
-* {
+*  {
   font-family: @tipografia;
   font-weight: 200;
 }
@@ -39,6 +39,8 @@ p {
     margin-bottom: @interlinea;
     line-height: @interlinea;
     color: fade(@negro, 80%);
+    font-family: @texto-continuo;
+    font-weight: 200;
 
     &.grande{
       font-size: @cuerpo * 1.5;
@@ -125,10 +127,11 @@ strong {
 .cursiva,
 .italica,
 em, i{
-  font-family: @serif;
+  font-family: @italica;
   font-style: italic;
   &.grande{
     letter-spacing: -.1ex;
+    font-weight: 100;
   }
 }
 
@@ -167,7 +170,7 @@ div.poema{
 // --------
 
 h1, h2, h3, h4, h5, h6 {
-
+  font-family: @tipografia-titulos;
   font-weight: 600;
   color: @gris-oscuro;
   margin: 0 0 @interlinea 0;

@@ -57,10 +57,10 @@ a.btn{
 
     &.btn-accion{
         text-shadow: 1px 1px 0 fade(@negro, 40%);
-        background-color: lighten(@verde, 10);
+        background-color: @rojo-opuesto;
         
         &:hover{
-                background-color: lighten(@verde-claro, 10);
+                background-color: @rojo-opuesto;
         }
     }
     
@@ -142,12 +142,12 @@ form{
         &.obligatorio{
             label:after{
                 content: '*';
-                color: @rojo-anaranjado;
+                color: @rojo-claro;
                 font-size: @cuerpo;
             }
             select,
             input{
-                border: 1px solid fade(@rojo-anaranjado, 50);
+                border: 1px solid fade(@gris-oscuro, 50);
             }
         }
     }
@@ -175,12 +175,12 @@ form{
         color: @pizarra;
         .border-radius(@radio);
         &:valid{
-            color: @verde-claro;
+            color: fade(@pizarra-claro, 70);
         }
     }
         
     input, textarea{
-         color: fade(@azul, 70%);
+         color: fade(@damasco-opuesto, 70%);
         .border-radius(@radio);
         .borde;
 
