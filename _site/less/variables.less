@@ -1,0 +1,249 @@
+// Nombres y Variables
+
+// importar "Source Sans Pro" en todos sus pesos y variantes
+// @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900italic,700italic,600italic,400italic,300italic,200italic,700,900,600,300,200);
+
+
+// Lato 100 300 400 700 800
+// @import url(http://xfonts.googleapis.com/css?family=Lato:400,100,300,700,900);
+
+// "Libre Baskerville"
+// @import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
+
+//Importando tipografías a través de Font Face
+
+@line-height-base:        1.428571429; // 20/14
+@font-size-base:          14px;
+@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+
+@line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+@sans:							'Source Sans Pro', sans-serif;
+@texto-continuo:				'Signika', serif;
+@serif:							'Playfair Display', serif;
+@italica:						'Neuton', serif;
+@mono:							'Lucida Console', monospace;
+@tipografia:					@sans;
+@tipografia-titulos: 			'Source Sans Pro';
+@tipografia-referencias:		'Source Sans Pro';
+
+// Negros
+@negro-oscuro:					rgba(25, 26, 25, 1);
+@negro: 						rgba(43, 44, 42, 1);
+@negro-claro:					rgba(69, 71, 71, 1);
+
+// Grises
+@gris-oscuro:					rgba(164, 164, 162, 1);
+@gris:							rgba(193, 194, 194, 1);
+@gris-claro:					rgba(226, 226, 226, 1);
+
+// Cálidos
+@oliva-oscuro:					rgba(90, 81, 18, 1);
+@oliva:							rgba(123, 110, 27, 1);
+@oliva-claro:					rgba(160, 146, 34, 1);
+@beige-oscuro:					rgba(127, 112, 79, 1);
+@beige:							rgba(202, 182, 135, 1);
+@beige-claro:					rgba(235, 217, 164, 1);
+@damasco-oscuro:				rgba(189, 138, 71, 1);
+@damasco:						rgba(204, 142, 72, 1);
+@damasco-claro:					rgba(205, 146, 74, 1);
+@naranja-oscuro:				rgba(192, 90, 24, 1);
+@naranja:						rgba(210, 101, 29, 1);
+@naranja-claro:					rgba(242, 126, 47, 1);
+@cafe-oscuro:					rgba(95, 53, 30, 1);
+@cafe:							rgba(115, 56, 22, 1);
+@cafe-claro:					rgba(135, 69, 28, 1);
+@burdeo-oscuro:					rgba(95, 29, 25, 1);
+@burdeo:						rgba(113, 25, 19, 1);
+@burdeo-claro:					rgba(140, 35, 24, 1);
+@rojo-oscuro:					rgba(151, 53, 51, 1);
+@rojo:							rgba(172, 70, 67, 1);
+@rojo-claro:					rgba(199, 81, 77, 1);
+
+
+// Adicionales
+@pizarra-oscuro:				rgba(43, 44, 42, 1);
+@pizarra:						rgba(63, 68, 65, 1);
+@pizarra-claro:					rgba(76, 77, 76, 1);
+@ahuesado:                      rgba(239, 242, 219, 1);
+@gris-blanco:                   rgba(51, 51, 51,.07);
+@blanco:                        rgba(255, 255, 255, 1);
+
+@brand-primary:         		#428bca;
+@component-active-color:    	#fff;
+@component-active-bg:       	@brand-primary;
+
+
+// Opuestos 
+
+@oliva-opuesto:					spin(@oliva, 180);
+@beige-opuesto:					spin(@beige, 180);
+@damasco-opuesto:				spin(@damasco, 180);
+@naranja-opuesto:				spin(@naranja, 180);
+@cafe-opuesto:					spin(@cafe, 180);
+@burdeo-opuesto:				spin(@burdeo, 180);
+@rojo-opuesto:					spin(@rojo, 180);
+
+// Uso
+@color-borde:                	lighten(@gris-claro, 10%);
+@rojo-alerta:					rgba(214, 97, 82, 1);
+
+// bordes
+@borde-fino:					1px solid @color-borde;
+@borde-grueso:					5px solid @color-borde;
+
+@border-radius-base:        	4px;
+@border-radius-large:       	6px;
+@border-radius-small:       	3px;
+
+// paddings
+@padding-sm:					@cuerpo * .1;
+@padding-md:					@cuerpo * .3;
+@padding-lg:					@cuerpo * .5;
+
+// margenes
+
+@margen-xs:						@cuerpo * .4;
+@margen-sm:						@cuerpo * .6;
+@margen-md:						@cuerpo * .8;
+@margen-lg:						@cuerpo * 1;
+@margen-xl:						@cuerpo * 2;
+
+// margenes específicos
+
+@margen-code:					@cuerpo * 2 @cuerpo * 0 @cuerpo * 3 @cuerpo * .3;
+
+// radios
+@radio:							3px;
+
+// Links
+@color-link:					@rojo-claro;
+@color-link-hover:				darken(@color-link, 20%);
+@color-opuesto:					spin(@color-link, 180);
+
+// Proporciones tipográficas
+
+@cuerpo:						16px;				// tamaño tipográfico base en pixeles
+@em:							@cuerpo * 1em;		// atajo para salida en ems, ej. '12/@em'
+@interlinea:					22px;
+
+
+// blancos
+@cuadratin:						30px;
+@cuadratin-tercio:				10px;
+@body-bg:		               #fff;
+
+//== Navs
+//
+//##
+@nav-link-padding:                          10px 15px;
+@nav-link-hover-bg:                         @gris-claro;
+@nav-disabled-link-color:                   @gris;
+@nav-disabled-link-hover-color:             @gris;
+@nav-open-link-hover-color:                 #fff;
+
+//== Pills
+//
+//##
+@nav-pills-border-radius:                   @border-radius-base;
+@nav-pills-active-link-hover-bg:            @component-active-bg;
+@nav-pills-active-link-hover-color:         @component-active-color;
+
+//== Tabs
+//
+//##
+@nav-tabs-border-color:                     #ddd;
+@nav-tabs-link-hover-border-color:          @gris-claro;
+@nav-tabs-active-link-hover-bg:             @body-bg;
+@nav-tabs-active-link-hover-color:          @gris;
+@nav-tabs-active-link-hover-border-color:   #ddd;
+@nav-tabs-justified-link-border-color:            #ddd;
+@nav-tabs-justified-active-link-border-color:     @body-bg;
+
+//== Modals
+//
+//##
+@zindex-modal-background:  1040;
+@zindex-modal:             1050;
+@modal-inner-padding:         20px;
+@modal-title-padding:         15px;
+@modal-title-line-height:     @line-height-base;
+@modal-content-bg:                             #fff;
+@modal-content-border-color:                   rgba(0,0,0,.2);
+@modal-content-fallback-border-color:          #999;
+@modal-backdrop-bg:           #000;
+@modal-backdrop-opacity:      .5;
+@modal-header-border-color:   #e5e5e5;
+@modal-footer-border-color:   @modal-header-border-color;
+
+@modal-lg:                    900px;
+@modal-md:                    600px;
+@modal-sm:                    300px;
+
+
+//== Tooltips
+//
+//##
+@zindex-tooltip:           	  1030;
+@tooltip-max-width:           200px;
+@tooltip-color:               #fff;
+@tooltip-bg:                  #000;
+@tooltip-opacity:             .9;
+@tooltip-arrow-width:         5px;
+@tooltip-arrow-color:         @tooltip-bg;
+
+
+//== Popovers
+//
+//##
+@zindex-popover:           			  1010;
+@popover-bg:                          #fff;
+@popover-max-width:                   276px;
+@popover-border-color:                rgba(0,0,0,.2);
+@popover-fallback-border-color:       #ccc;
+@popover-title-bg:                    darken(@popover-bg, 3%);
+@popover-arrow-width:                 10px;
+@popover-arrow-color:                 #fff;
+@popover-arrow-outer-width:           (@popover-arrow-width + 1);
+@popover-arrow-outer-color:           fadein(@popover-border-color, 5%);
+@popover-arrow-outer-fallback-color:  darken(@popover-fallback-border-color, 20%);
+
+//== DropDowns
+//
+//##
+@zindex-dropdown:          1000;
+@caret-width-base:          4px;
+@caret-width-large:         5px;
+@dropdown-bg:                    #fff;
+@dropdown-border:                rgba(0,0,0,.15);
+@dropdown-fallback-border:       #ccc;
+@dropdown-divider-bg:            #e5e5e5;
+@dropdown-link-color:            @gris-oscuro;
+@dropdown-link-hover-color:      @negro;
+@dropdown-link-hover-bg:         #f5f5f5;
+@dropdown-link-active-color:     @component-active-color;
+@dropdown-link-active-bg:        @component-active-bg;
+@dropdown-link-disabled-color:   @gris-claro;
+@dropdown-header-color:          @gris-claro;
+@dropdown-caret-color:           #000;
+
+//== Carousel
+//
+//##
+
+@carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6);
+@carousel-control-color:                      #fff;
+@carousel-control-width:                      15%;
+@carousel-control-opacity:                    .5;
+@carousel-control-font-size:                  20px;
+@carousel-indicator-active-bg:                #fff;
+@carousel-indicator-border-color:             #fff;
+@carousel-caption-color:                      #fff;
+
+// For Affix plugin
+// -------------------------
+
+.affix {
+  position: fixed;
+}
