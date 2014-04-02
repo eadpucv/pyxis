@@ -6,15 +6,6 @@
   font-weight: 200;
 }
 
-  
-body{
-  font-size: @cuerpo;
-  background-color: darken(@blanco, 3%);
-  // #gradient > .striped(lighten(@gris-claro, 15%), -45deg);
-  // background-size: 10px 10px;
-  // background-repeat: repeat;
-}
-
 a{
   color: @color-link;
   text-decoration: none;
@@ -40,7 +31,7 @@ p {
     line-height: @interlinea;
     color: fade(@negro, 80%);
     font-family: @texto-continuo;
-    font-weight: 300;
+    font-weight: 200;
 
     &.grande{
       font-size: @cuerpo * 1.5;
@@ -129,9 +120,10 @@ strong {
 em, i{
   font-family: @italica;
   font-style: italic;
+  font-weight: 100;
   &.grande{
     letter-spacing: -.1ex;
-    font-weight: 100;
+    font-weight: 200;
   }
 }
 
@@ -145,6 +137,11 @@ em, i{
 .gruesa{
     font-family:@tipografia-titulos;
     font-weight: 600;
+}
+
+.semi-gruesa {
+    font-family:@tipografia-titulos;
+    font-weight: 500;
 }
 
 .altas{

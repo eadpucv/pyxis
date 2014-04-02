@@ -1,17 +1,21 @@
 // Estilos tipográficos auxiliares
 
 .gigante{
-        font-size: 420%;
-        letter-spacing: -.07ex;
+    font-size: 420%;
+    letter-spacing: -.07ex;
 }
 
 .grande{
-        font-size: 250%;
+    font-size: 250%;
 }
 
 .chico, 
 .chica{
-        font-size: 80%;
+    font-size: 80%;
+}
+
+.datos {
+    font-size: 60%;
 }
 
 .color{
@@ -49,6 +53,8 @@ margin: @margen-code;
 margin: @margen-code; 
 }
 
+
+
 .uc{
         text-transform: uppercase;
 }
@@ -70,6 +76,7 @@ margin: @margen-code;
 
 // Márgenes de ajuste
 .margen-superior{margin-top: @cuadratin}
+.margen-superior-s{margin-top: @cuadratin / 2}
 .margen-superior-negativo{margin-top: -@cuadratin}
 .margen-inferior{margin-bottom: @cuadratin}
 .margen-inferior-negativo{margin-bottom: -@cuadratin}
@@ -85,6 +92,11 @@ margin: @margen-code;
         float: right;
         margin-right: 0;
         .cf;
+}
+
+.izquierda {
+    float: left;
+    .cf;
 }
 
 // Negros y grises
@@ -269,6 +281,9 @@ overflow: hidden;
     position: absolute;
 }
 
+.ancho-maximo {
+    width: 100%;
+}
 
 
 // clases porcentuales .w1 - .w100
@@ -322,3 +337,4 @@ overflow: hidden;
     @opacity-ie: (@opacity * 100);
     filter: ~"alpha(opacity=@{opacity-ie})";
 }
+

@@ -9,11 +9,66 @@ Contenedores y reglas generales
     .transition(.2s ease all);
 }
 
+body{
+  font-size: @cuerpo;
+  background-color: @gris-claro;
+  // #gradient > .striped(lighten(@gris-claro, 15%), -45deg);
+  // background-size: 10px 10px;
+  // background-repeat: repeat;
+}
+
+header {
+	background-image: url('http://wiki.ead.pucv.cl/images/a/af/Pyxis-anim.gif');
+	background-position: center center;
+	//background-repeat: no-repeat;
+	background-color: @negro;
+}
+
 .pag{
 	//.container();
 	margin: 0 auto;
-	background-color: darken(@blanco, 3%);
+	background-color: @gris-claro;
 	padding: @cuadratin;
+}
+
+.imagen-alta {
+	width: auto;
+	height: @cuadratin * 2;
+	overflow: hidden;
+	margin-top: @cuadratin;
+	margin-bottom: @cuadratin;
+}
+
+.imagen-ancha {
+	width: auto;
+	height: @cuadratin * 3;
+	overflow: hidden;
+	margin-top: @cuadratin;
+	margin-bottom: @cuadratin;
+}
+
+.franja {
+    margin: auto;
+    width: 100%;
+    padding: @cuadratin * 9;
+    background-color: rgba(0,0,0,.6);
+}
+
+.franja-xs {
+    margin: auto;
+    width: 100%;
+    padding: @cuadratin * 1;
+    background-color: rgba(0,0,0,.7);
+}
+
+.menu-pyxis {
+	margin: 0 auto;
+	width: 100%;
+	max-height: @cuadratin * 1.4;
+	position: fixed;
+	background-color: @blanco;
+	padding: 0;
+	z-index: 10;
 }
 
 .contenido{
@@ -29,7 +84,6 @@ footer{
 		padding-top: @cuerpo; 
 		font-size: @cuerpo*.7;
 		letter-spacing: inherit;
-		text-align: center;
 		
 		img{
 			display: inline-block;
@@ -46,7 +100,6 @@ footer{
 	nav{
 		border: none;
 		line-height: inherit;
-		text-align: center;
 		ul{
 			li{
 				margin-left: @cuadratin;

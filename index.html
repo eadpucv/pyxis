@@ -6,58 +6,81 @@
 <head>
   <meta charset='UTF-8'/>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <link rel="stylesheet" href="css/ego.css" 
+  <link rel="stylesheet" href="css/pyxis.css" 
     media="screen" />
 
-  <title>Pyxis - Grilla</title>
+  <title>Pyxis - Index</title>
 
-  <link href='css/ego.css' rel='stylesheet'>
-
-  <link rel='icon' type='image/x-icon' href='img/favicon.ico' />
+  <script type="text/javascript" src="https://raw.github.com/processing-js/processing-js/v1.4.7/processing.min.js"></script>
+  <link rel='icon' type='image/x-icon' href='img/favicon-pyxis.ico' />
   <link rel='apple-touch-icon-precomposed' sizes='114x114' href='img/favicon-114.png'>
   <link rel='apple-touch-icon-precomposed' sizes='72x72' href='img/favicon-72.png'>
   <link rel='apple-touch-icon-precomposed' href='img/favicon-57.png'>
 </head>
 
 <body lang='ES_es'>
-  <div class='pag'>
-    <header>
-      <div class='fila'>
-        <div class='col-md-24 col-sm-12 col-xs-24'>
-          <h1 class='gigante'><span class='gruesa rojo-claro'>Pyxis</span> <span class='fino'>framework</span> <span class='chico gris-claro'>1.0.1</span></h1>
-        </div>
-        
-        <div class='col-md-24 col-sm-12 col-xs-24'>
-          <p class='margen-inferior grande italica gris'>"La verdad se encuentra dentro de una pequeña brújula, pero el margen de error es inmenso".</p>
+
+          <!-- barra de menú -->
+          <div class='menu-pyxis'>
+          <nav class='margen-inferior'>
+          <ul class='centrado blanco'>
+          <li><a href='index.html'><span class="ico-parrafo ico-sm"></span></a></li>
+          <li><a href='tipografia.html'>Tipografía</a></li>
+          <li><a href='grilla.html'>Grilla</a></li>
+          <li><a href='interaccion.html'>Interacción</a></li>
+          <li><a href='color.html'>Color</a></li>
+          <li><a href='iconografia.html'>Íconografía</a></li>
+          <li><a href='versatilidad.html'>Versatilidad</a></li>
+          <li><a href='layout.html'>Layout</a></li>
+          <li><a href='javascript.html'>Javascript</a></li>        
+          </ul>
+          </nav>          
           </div>
-        </div>
+          <!-- fin barra de menú -->
 
-       <div class='fila margen-inferior'>
-        <div class='col-md-24 col-sm-24 col-xs-24'>
-          <p class='chico fino'>Proyecto de código abierto desarrollado por <a href="http://www.ead.pucv.cl/mundo/investigacion/tig/"><strong>Taller de Investigaciones Gráficas .:TIG:.</strong></a> y disponible en <a class='btn btn-sm' href='http://eadpucv.github.io/EGO' title='LLG en Github'>Github</a></p>
+  <!-- Descarga de Pyxis -->
+  <header>
+      <div class='franja'>    
+        <div class='fila centrado margen-superior' >
+          <div class='col-md-18 col-md-offset-3 col-sm-12 col-xs-24' style='z-index: 2'>
+            <h1 class='gigante margen-inferior margen-superior-s'><span class='gruesa rojo-claro'>Pyxis</span> <span class='fino gris'>framework</span> <span class='chico gris-claro'>1.0.1</span></h1>
+              <a class='btn btn-lg btn-accion margen-inferior' href='github-mac://openRepo/https://github.com/eadpucv/pyxis'>Descargar Pyxis</a>
+          </div>
+        
+          <div class='col-md-18 col-md-offset-3 col-sm-12 col-xs-24' style='z-index: 2'>
+            <p class='margen-inferior grande italica gris'>"La verdad se encuentra dentro de una pequeña brújula, pero el margen de error es inmenso".</p>
+          </div>
+        
+        <div class='fila margen-inferior'>
+          <div class='col-md-18 col-md-offset-3 col-sm-18 col-xs-24' style='z-index: 2'>
+            <p class='chico fino blanco'>Proyecto de código abierto desarrollado por <a href="http://www.ead.pucv.cl/mundo/investigacion/tig/"><strong>Taller de Investigaciones Gráficas .:TIG:.</strong></a> y disponible en <a class='btn btn-sm' href='https://github.com/eadpucv/pyxis' title='Pyxis en Github'>Github</a> </p>
+          </div>
+          </div> 
       </div>
-      </div>
-    </header>
-    
-    <nav class='margen-inferior'>
-      <ul class='centrado'>
-        <li><a href='index.html'><span class="ico-parrafo ico-sm"></span></a></li>
-        <li><a href='tipografia.html'>Tipografía</a></li>
-        <li><a href='grilla.html'>Grilla</a></li>
-        <li><a href='interaccion.html'>Interacción</a></li>
-        <li><a href='color.html'>Color</a></li>
-        <li><a href='iconografia.html'>Íconografía</a></li>
-        <li><a href='versatilidad.html'>Versatilidad</a></li>
-        <li><a href='layout.html'>Layout</a></li>
-        <li><a href='javascript.html'>Javascript</a></li>        
-      </ul>
-    </nav>
+    </div>
+   </header><!-- fin descarga de pyxis -->
+
+    <!-- Contenido -->
+    <div class='pag'>
     <div class='contenido'>
-      <h2 class='rojo'>Fundamentos</h2>
+      <h1 class='rojo fino centrado grande'>Fundamentos</h1>
+      <div class='fila'>
+      <div class='col-lg-5 col-lg-offset-2'>
+      <img class='imagen-ancha izquierda' src='http://johnpolacek.github.io/scrolldeck.js/decks/responsive/img/responsive_web_design.png'>
+      </div>
+      <div class='col-lg-6'>
+      <img class='imagen-ancha izquierda' src='http://ericlathrop.com/2013/05/introduction-to-blogging-with-jekyll/jekyll%20logo.png'>
+      </div>
+      <div class='col-lg-4'>
+      <img class='imagen-ancha izquierda' src='http://tactile.co.za/blog/wp-content/uploads/2010/02/less_logo.png'>
+      </div>
+      <div class='col-lg-5'>
+      <img class='imagen-ancha derecha' src='http://bower.io/img/bower-logo.png'>
+      </div>
+      </div>
 
-
+      <div class='fila'>
       <p>Las organizaciones, a medida que crecen, van generando nuevos puntos de contacto con sus públicos o audiencias. Hoy día, estos puntos de contacto son múltiples servicios que se traducen en variadas interfaces; tanto materiales como digitales, impresas o proyectadas, grandes o pequeñas, móviles o estacionarias. Mantener un lenguaje consistente a través de todos los servicios y dispositivos se vuelve una tarea titánica si se piensa cada uno por separado. Se hace preciso, entonces, definir un <strong>lenguage gráfico global</strong> que sea capaz de interpretar la voz de la organización y que se adapte a cada contexto, formato y dispositivo.</p>
-
 
       <p>Este proyecto busca definir fundamentos gráficos elementales para pantallas e impresos cumpliendo las siguientes premisas:
         <ul>
@@ -66,13 +89,27 @@
           <li>Orden y claridad de las funciones de cada archivo de este proyecto, ya que se desarrolla bajo el esquema de <a href="http://lesscss.org/"><i>LESS</i></a></li>
         </ul>
       </p>
+      </div>
 
+      <h1 class='rojo fino centrado grande'>Dependencias</h1>
+
+      <div class='fila'>
+      <p>Las organizaciones, a medida que crecen, van generando nuevos puntos de contacto con sus públicos o audiencias. Hoy día, estos puntos de contacto son múltiples servicios que se traducen en variadas interfaces; tanto materiales como digitales, impresas o proyectadas, grandes o pequeñas, móviles o estacionarias. Mantener un lenguaje consistente a través de todos los servicios y dispositivos se vuelve una tarea titánica si se piensa cada uno por separado. Se hace preciso, entonces, definir un <strong>lenguage gráfico global</strong> que sea capaz de interpretar la voz de la organización y que se adapte a cada contexto, formato y dispositivo.</p>
+
+           <p>Este proyecto busca definir fundamentos gráficos elementales para pantallas e impresos cumpliendo las siguientes premisas:
+        <ul>
+          <li><a>Sitio web oficial e[ad]</a></li>
+          <li><a>Wiki Casiopea</a></li>
+          <li><a>Archivo Histórico José Viál Amstrong (AHJVA)</a></li>
+        </ul>
+      </p>
+      </div>
 
     </div>
     <hr>
     <footer>
       <div class='fila'>
-        <div class='col-18'>
+        <div class='col-lg-16 col-md-16'>
           <nav>
           <ul>
             <li><a href='index.html'><span class="ico-parrafo ico-sm"></span></a></li>
@@ -91,8 +128,8 @@
           </p>
           
         </div>
-        
-        <div class='col-6'>
+             
+        <div class='col-2'>
           <address>
             <a href="http://www.ead.pucv.cl/mundo/investigacion/tig/"><strong>.:TIG:.</strong> Taller de Investigaciones Gráficas</a><br />
             e[ad] Escuela de Arquitectura y Diseño<br />
@@ -101,6 +138,7 @@
             fono: +56322274401<br />
             fax: +56322274421
           </address>
+          </div>
         </div>
       </div>
     </footer>
