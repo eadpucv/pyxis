@@ -18,10 +18,7 @@ body{
 }
 
 header {
-	background-image: url('http://wiki.ead.pucv.cl/images/a/af/Pyxis-anim.gif');
-	background-position: center center;
-	//background-repeat: no-repeat;
-	background-color: @negro;
+
 }
 
 .pag{
@@ -48,17 +45,36 @@ header {
 }
 
 .franja {
-    margin: auto;
-    width: 100%;
-    padding: @cuadratin * 9;
-    background-color: rgba(0,0,0,.6);
+	width: 100%;
+	min-height: 500px;
+	max-height: 800px;
+	background-color: @negro-oscuro;
+	position: relative;
+	overflow: hidden;
+	.cf;
+
+	canvas{
+		position: absolute;
+		top: 0;
+		left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+		z-index: 1;
+	}
+
+	.leyenda{
+		margin-top: @cuadratin * 4;
+		text-align: center;
+		z-index: 2;
+	}
 }
 
 .franja-xs {
     margin: auto;
     width: 100%;
     padding: @cuadratin * 1;
-    background-color: rgba(0,0,0,.7);
+    background-color: @negro-oscuro;
 }
 
 .menu-pyxis {
