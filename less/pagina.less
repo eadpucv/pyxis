@@ -24,7 +24,6 @@ header {
 .pag{
 	//.container();
 	margin: 0 auto;
-	background-color: @gris-claro;
 	padding: @cuadratin;
 }
 
@@ -73,14 +72,15 @@ header {
 .franja-xs {
     margin: auto;
     width: 100%;
-    padding: @cuadratin * 1;
-    background-color: @negro-oscuro;
+    padding-top: @cuadratin;
+    background-color: rgba(0, 0, 0, .4);
+    background-image: url('http://wiki.ead.pucv.cl/images/a/af/Pyxis-anim.gif');
 }
 
 .menu-pyxis {
 	margin: 0 auto;
 	width: 100%;
-	max-height: @cuadratin * 1.4;
+	min-height: @cuadratin * 1.4;
 	position: fixed;
 	background-color: @blanco;
 	padding: 0;
@@ -121,7 +121,7 @@ footer{
 				margin-left: @cuadratin;
 				a{
 					font-size: @cuerpo * .7;
-					padding: 4px 10px 4px 10px;
+					padding: 8px 16px 4px 10px;
 					text-transform: none;
 					.border-radius(4px);
 				}
