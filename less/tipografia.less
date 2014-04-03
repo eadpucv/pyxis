@@ -1,16 +1,16 @@
 
   // Tipografía
 
-*  {
-  font-family: @tipografia;
-  font-weight: 200;
-}
+  *  {
+      font-family: @tipografia;
+      font-weight: 200;
+    }
 
-a{
-  color: @color-link;
-  text-decoration: none;
-    font-family: @sans;
-    font-size:@cuerpo -2;
+  a{
+    color: @color-link;
+    text-decoration: none;
+      font-family: @sans;
+      font-size:@cuerpo -2;
 
   
   &:hover{
@@ -26,24 +26,39 @@ a{
 }
 
 //Tamaños tipográficos
-p {
+
+p, span {
     margin-bottom: @interlinea;
     line-height: @interlinea;
     color: fade(@negro, 80%);
     font-family: @texto-continuo;
     font-weight: 200;
+    }
+
+    &.gigante{
+    font-size: @cuerpo * 1.8;
+    line-height: 140%;
+    }
 
     &.grande{
       font-size: @cuerpo * 1.5;
       font-weight: 200;
-      line-height: 120%;
+      line-height: 140%;
+    }
+
+    &.mediano{
+      font-size: @cuerpo * 1.2;
+      line-height: 130%;
     }
     
     &.chico {
-      font-size: @cuerpo*.90;
+      font-size: @cuerpo * .90;
       line-height: @interlinea * .9;
       margin: 0;
     }
+
+
+// Clases diferenciadas
   
     &.poema{
       font-family: @serif;
@@ -65,14 +80,13 @@ p {
     padding: 0;
     }
     
-}
 
-.antetitulos{
-    font-family: @tipografia-titulos;
-    font-weight: normal;
-    color:@rojo-oscuro;  
-    text-transform: uppercase;
-    font-size:@cuerpo -8px;
+    .antetitulos{
+        font-family: @tipografia-titulos;
+        font-weight: normal;
+        color:@rojo-oscuro;  
+        text-transform: uppercase;
+        font-size:@cuerpo -8px;
 }
 
 //Tamaños texto version 2
@@ -178,7 +192,24 @@ h1, h2, h3, h4, h5, h6 {
     .clearfix;
   }
 
+  &.extra-chico{
+  font-size: -400%;
+  }
+
+  &.chico{
+  font-size: -300%;
+  }
+
+  &.mediano{
+  font-size: 200%;
+  }
+
+  &.grande{
+    font-size: 300%;
+  }
+
   &.gigante{
+    font-size: 420%;
     line-height: 100%;
   }
 }
