@@ -36,53 +36,50 @@
 
 
 <body lang='ES_es'>
-  <script src="assets/js/jquery.js"></script>
-    <script src="assets/js/bootstrap.js"></script>
-  <div class='pag'>
-    <header>
-      <div class='fila'>
-        <div class='col-md-24 col-sm-12 col-xs-24'>
-          <h1 class='gigante'><span class='gruesa rojo-claro'>Pyxis</span> <span class='fino'>framework</span> <span class='chico gris-claro'>1.0.1</span></h1>
-        </div>
-        
-        <div class='col-md-24 col-sm-12 col-xs-24'>
-          <p class='margen-inferior grande italica gris'>"La verdad se encuentra dentro de una pequeña brújula, pero el margen de error es inmenso".</p>
+
+          <!-- barra de menú -->
+          <div class='menu-pyxis'>
+          <nav>
+          <ul class='centrado blanco'>
+          <li><a href='index.html'><span class="ico-parrafo ico-sm"></span></a></li>
+          <li><a href='tipografia.html'>Tipografía</a></li>
+          <li><a href='grilla.html'>Grilla</a></li>
+          <li><a href='interaccion.html'>Interacción</a></li>
+          <li><a href='color.html'>Color</a></li>
+          <li><a href='iconografia.html'>Íconografía</a></li>
+          <li><a href='versatilidad.html'>Versatilidad</a></li>
+          <li><a href='layout.html'>Layout</a></li>
+          <li><a href='javascript.html'>Javascript</a></li>        
+          </ul>
+          </nav>          
           </div>
+          <!-- fin barra de menú -->
+
+  <!-- Descarga de Pyxis -->
+  <header>
+      <div class='franja-xs'>
+        <div class='fila margen-superior'> 
+          <div class='pag'>      
+            <h1><span class='gruesa rojo-claro'>Pyxis</span> <span class='fino gris'>framework</span> <span class='chico gris-claro'>1.0.1</span></h1>
+            <h1 class='gigante gris-claro fina'>Grilla</h1> 
+          </div>            
         </div>
-
-       <div class='fila margen-inferior'>
-        <div class='col-md-24 col-sm-24 col-xs-24'>
-          <p class='chico fino'>Proyecto de código abierto desarrollado por <a href="http://www.ead.pucv.cl/mundo/investigacion/tig/"><strong>Taller de Investigaciones Gráficas .:TIG:.</strong></a> y disponible en <a class='btn btn-sm' href='http://eadpucv.github.io/EGO' title='LLG en Github'>Github</a></p>
       </div>
-      </div>
-    </header>
-    
-    <div data-spy="affix" data-offset-top="60" data-offset-bottom="200">
-    <nav class='margen-inferior'>
-      <ul class='centrado'>
-        <li><a href='index.html'><span class="ico-parrafo ico-sm"></span></a></li>
-        <li><a href='tipografia.html'>Tipografía</a></li>
-        <li><a href='grilla.html'>Grilla</a></li>
-        <li><a href='interaccion.html'>Interacción</a></li>
-        <li><a href='color.html'>Color</a></li>
-        <li><a href='iconografia.html'>Íconografía</a></li>
-        <li><a href='versatilidad.html'>Versatilidad</a></li>
-        <li><a href='layout.html'>Layout</a></li>
-        <li><a href='javascript.html'>Javascript</a></li>        
-      </ul>
-    </nav>
-  </div>
-    
-      <h2 class="rojo">Grilla</h2>
+  </header><!-- fin descarga de pyxis -->
 
+    <!-- 
+        Jerarquías y estilos de párrafos articulos
+    -->
+
+      <div class='pag'>
 
       <p>La estructura para definir la geometría de la pantalla se basa en un sistema de filas y columnas, con un ancho máximo de 24 columnas en total, para dar un ancho de 1136px en la página contenedora. Los dispositivos grandes (lg) tienen un ancho mínimo de 1200px. Los dispositivos medianos (md) tienen un ancho mínimo de 992px. Los dispositivos pequeños (sm) tienen un ancho mínimo de 768px, y los dispositivos extra pequeños (xs) tienen un ancho mínimo automático y como los demás, relativo al <i>viewport</i>, desde 480px. según el sistema de medidas fundamentado en <a href='http://getbootstrap.com/css/#grid-options'><i>Bootstrap</i></a> para su desarrollo, exceptuando el ancho máximo de 12 columnas en la diagramación de la página. </p>
 
-      <h3 class='rojo'>1. Ejemplos de base</h3>
+      <h3 class='rojo-claro'>1. Ejemplos de base</h3>
 
       <h5 class='gris-oscuro'>1.1. Ocultamiento de columnas</h5>
 
-      <p>La primera estructura como ejemplo de la grilla pasa de 24 columnas en dispositivos medianos a 12 columnas en dispositivos pequeños, y 6 columnas en dispositivos extra pequeños.</p>
+      <p>La primera estructura como ejemplo de la grilla pasa de 24 columnas en dispositivos grandes y medianos a 12 columnas en dispositivos pequeños, y 6 columnas en dispositivos extra pequeños para un diseño responsivo adaptable. Para ocultar columnas escribe 'col-oculto-(formato de tamaño)', y recuerda esta clase con la respectiva nomenclatura.</p>
 
 
       <div class='fila margen-inferior'> 
@@ -112,6 +109,8 @@
         <div class='col-md-1 oculto-sm oculto-xs ver'><p>24</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div> 
       </div>
 
+      <script src="https://gist.github.com/JuanGodoy91/9943376.js"></script>
+
       <hr>
 
 
@@ -119,7 +118,6 @@
 
 
       <div class='fila margen-inferior'>
-
         <div class='col-md-2 col-sm-4 col-xs-8 ver'><p>01</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-8</code></div>
         <div class='col-md-2 col-sm-4 col-xs-8 ver'><p>02</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-8</code></div>
         <div class='col-md-2 col-sm-4 col-xs-8 ver'><p>03</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-8</code></div>
@@ -134,34 +132,34 @@
         <div class='col-md-2 oculto-sm oculto-xs ver'><p>12</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-oculto</code><code class='diagonal'>col-xs-oculto</code></div>
       </div>
 
+      <script src='https://gist.github.com/JuanGodoy91/9943657.js'></script>
+
       <hr>
 
       <h5 class='gris-oscuro'>1.2. Reordenación de columnas</h5>
 
-      <p>Con el objetivo de mostrar la dinámica funcional de la grilla, el tercer ejemplo muestra la nueva ordenación de las columnas en cada ancho diferente de pantalla. El paso es de 6 columnas en <i>md</i> a 2 columnas en <i>sm</i> en la parte superior de la grilla, y 4 columnas en la parte inferior. En xs aparece 1 columna en la parte superior, seguido de 1 más en segundo puesto y luego 2 columnas en los dos últimas filas de la parte inferior de la grilla.</p>
+      <p>Con el objetivo de mostrar la dinámica funcional de la grilla, el tercer ejemplo muestra la nueva ordenación de las columnas en cada ancho diferente de pantalla. El paso es de 6 columnas en <i>md</i> a 2 columnas en <i>sm</i> en la parte superior de la grilla, y 4 columnas en la parte inferior. En <i>xs</i> aparece 1 columna en la parte superior, seguido de 1 más en segundo puesto y luego 2 columnas en los dos últimas filas de la parte inferior de la grilla.</p>
 
 
       <div class='fila margen-inferior'>
-
         <div class='col-md-4 col-sm-12 col-xs-24 ver'><p>01</p><code class='diagonal'>col-md-4</code><code class='diagonal'>col-sm-12</code><code class='diagonal'>col-xs-24</code></div>
         <div class='col-md-4 col-sm-12 col-xs-24 ver'><p>02</p><code class='diagonal'>col-md-4</code><code class='diagonal'>col-sm-12</code><code class='diagonal'>col-xs-34</code></div>
         <div class='col-md-4 col-sm-6 col-xs-12 ver'><p>03</p><code class='diagonal'>col-md-4</code><code class='diagonal'>col-sm-6</code><code class='diagonal'>col-xs-12</code></div>
         <div class='col-md-4 col-sm-6 col-xs-12 ver'><p>04</p><code class='diagonal'>col-md-4</code><code class='diagonal'>col-sm-6</code><code class='diagonal'>col-xs-12</code></div>
         <div class='col-md-4 col-sm-6 col-xs-12 ver'><p>05</p><code class='diagonal'>col-md-4</code><code class='diagonal'>col-sm-6</code><code class='diagonal'>col-xs-12</code></div>
         <div class='col-md-4 col-sm-6 col-xs-12 ver'><p>06</p><code class='diagonal'>col-md-4</code><code class='diagonal'>col-sm-6</code><code class='diagonal'>col-xs-12</code></div>
-
       </div>
        
+      <script src="https://gist.github.com/JuanGodoy91/9943820.js"></script>
+
        <hr>
 
   <h3 class='rojo'>2. Ejemplos de Layout</h3>
 
   <h5 class='gris-oscuro'>2.1. Contenido central y secciones laterales</h5>
 
-      <p>Estructura donde el contenido se muestra de manera central, con 12 columnas en los dispositivos mayores, para luego pasar en xs a 24 columnas junto con el resto de las filas.</p>
+      <p>Estructura donde el contenido se muestra de manera central, con 12 columnas en los dispositivos mayores, para luego pasar en <i>xs<</i> a 24 columnas junto con el resto de las filas.</p>
 
-
-  <div class='container ver'>
       <div class='fila margen-inferior'>
         <div class='col-md-24 col-sm-24 col-xs-24 ver'><p>01 (Header)</p><code class='diagonal'>col-md-24</code><code class='diagonal'>col-sm-24</code><code class='diagonal'>col-xs-24</code></div>
       </div>
@@ -175,8 +173,8 @@
       <div class='fila margen-inferior'>
         <div class='col-lg-24 ver'><p>05 (Footer)</p><code class='diagonal'>col-md-24</code><code class='diagonal'>col-sm-24</code><code class='diagonal'>col-xs-24</code></div>
       </div>
-  </div>
 
+      <script src="https://gist.github.com/JuanGodoy91/9943890.js"></script>
 
        <hr>
 
@@ -184,7 +182,7 @@
 
       <p>La métrica de la grilla permite anidar columnas dentro de otras; en este ejemplo el header podría contener un texto centrado. Por otro lado, el "Aside" y el "contenido" están diseñados en un ancho menor a través del <i>Offset</i>.</p>
 
-<div class='container ver'>
+
     <div class='fila margen-inferior'>
       <div class='col-md-24 col-sm-24 col-xs-24 ver'><p>01 (Header)</p><code class='diagonal'>col-md-24</code><code class='diagonal'>col-sm-24</code><code class='diagonal'>col-xs-24</code>
        <div  class='fila'>   
@@ -205,9 +203,9 @@
     <div class='fila margen-inferior'> 
         <div class='col-md-24 col-sm-24 col-xs-24 ver'><p>05 (Footer)</p><code class='diagonal'>col-md-24</code><code class='diagonal'>col-sm-24</code><code class='diagonal'>col-xs-24</code></div>
     </div>
-</div>
-    
-      
+   
+      <script src="https://gist.github.com/JuanGodoy91/9944088.js"></script>
+
      <hr> 
     
 
@@ -217,12 +215,10 @@
 
         <p>Ejmplo de <i>offset</i> uniforme y lateral con 1 columna de ancho. En <i>xs</i> las filas pasan a medir 22 columnas de ancho.</p>
 
-<div class='container ver'>
+
     <div class='fila margen-inferior'>
-
          <div class='col-lg-20 col-md-20 col-md-offset-2 col-sm-22 col-sm-offset-1 col-xs-22 col-xs-offset-1 ver'><p>01 (Header)</p><code class='diagonal'>col-md-20</code><code class='diagonal'>col-md-offset-2</code><code class='diagonal'>col-sm-22</code><code class='diagonal'>col-sm-offset-1</code><code class='diagonal'>col-xs-22</code></div>
-
-      </div>
+    </div>
       
     <div class='fila margen-inferior'> 
         <div class='col-md-6 col-md-offset-2 col-sm-6 col-sm-offset-1 col-xs-22 col-xs-offset-1 ver'><p>02 (Aside)<code class='diagonal'>col-md-6</code><code class='diagonal'>col-md-offset-2</code><code class='diagonal'>col-sm-6</code><code class='diagonal'>col-sm-offset-1</code><code class='diagonal'>col-xs-22</code></div>
@@ -235,8 +231,9 @@
      
     <div class='fila margen-inferior'>
         <div class='col-lg-20 col-md-20 col-md-offset-2 col-sm-22 col-sm-offset-1 col-xs-22 col-xs-offset-1 ver'><p>05 (Footer)</p><code class='diagonal'>col-md-20</code><code class='diagonal'>col-md-offset-2</code><code class='diagonal'>col-sm-22</code><code class='diagonal'>col-sm-offset-1</code><code class='diagonal'>col-xs-22</code></div>
-    </div> 
-</div>    
+    </div>   
+
+    <script src="https://gist.github.com/JuanGodoy91/9944165.js"></script>
 
         <hr>
 
@@ -246,7 +243,7 @@
 
      <p>Ejemplo donde el Sidebar con un<code>nav</code> o<code>section</code> se ubican lateralmente a la izquierda, ocupando 6 columnas en los dispositivos mayores y desapareciendo en <i>xs</i>.</p>
 
-<div class='container ver'>
+
       <div class='fila margen-inferior'>
         <div class='col-md-24 col-sm-24 col-xs-24 ver'><p>01 (header)</p><code class='diagonal'>col-md-24</code><code class='diagonal'>col-sm-24</code><code class='diagonal'>col-xs-24</code>
       <div class='fila'>
@@ -255,7 +252,6 @@
       </div>
       </div> 
     
-
       <div class='fila margen-inferior'>
         <div class='col-md-6 col-sm-6 oculto-xs ver'><p>02 (Sidebar)</p><code class='diagonal'>col-md-6</code><code class='diagonal'>col-sm-6</code><code class='diagonal'>col-xs-oculto</code></div>
         <div class='col-md-18 col-sm-18 col-xs-24 ver'><p>03 (Contenido)</p><code class='diagonal'>col-md-18</code><code class='diagonal'>col-sm-18</code><code class='diagonal'>col-xs-24</code></div>
@@ -270,10 +266,12 @@
         <div class='col-md-24 col-sm-24 col-xs-24 ver'><p>05 (Footer)</p><code class='diagonal'>col-md-24</code><code class='diagonal'>col-sm-24</code><code class='diagonal'>col-xs-24</code></div>
       </div>
 
-</div>
       
+      <script src="https://gist.github.com/JuanGodoy91/9944459.js"></script>
+
       <hr>
 
+<!--// Corporación Cultural Amereida
 
 <h5 class='gris oscuro'>2.6. Sitio base C.C.A</h5>
 
@@ -296,12 +294,10 @@
     </div> 
 </div>
 
-<!--// Corporación Cultural Amereida -->
-
-
-
-   
     <hr>
+
+ -->
+    
     <footer>
       <div class='fila'>
         <div class='col-md-24'>
