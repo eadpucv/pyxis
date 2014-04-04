@@ -6,12 +6,13 @@
 <head>
   <meta charset='UTF-8'/>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <link rel="stylesheet" href="css/pyxis.css" 
-    media="screen" />
+  <link rel="stylesheet" href="css/pyxis.css" media="screen" />
 
   <title>Pyxis - Index</title>
 
-  <scripy src='js/collapse'></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/collapse.js"></script>
+  <script src="js/transition.js"></script>
   <script type="text/javascript" src="https://raw.github.com/processing-js/processing-js/v1.4.7/processing.min.js"></script>
   <link rel='icon' type='image/x-icon' href='img/favicon-pyxis.ico' />
   <link rel='apple-touch-icon-precomposed' sizes='114x114' href='img/favicon-114.png'>
@@ -39,6 +40,35 @@
           </nav>          
           </div>
           </div>
+
+          <!-- barra de menú móvil-->
+          <div class='oculto-lg oculto-md oculto-sm col-xs-24'>
+          <div class='menu-pyxis-movil'>
+          <nav>
+            <ul class='blanco centrado'>
+
+ <div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <button class='btn-accion margen-superior-s' data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          Menú
+        </button>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body negro col-xs-20">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  
+</div>
+  
+            </ul>  
+          </nav>          
+          </div>
+          </div>
           <!-- fin barra de menú -->
 
   <!-- Descarga de Pyxis -->
@@ -54,12 +84,12 @@
           </div>
         
           <div class='col-md-18 col-md-offset-3 col-sm-22 col-sm-offset-1 col-xs-22 col-xs-offset-1' style='z-index: 2'>
-            <p class='margen-inferior grande italica gris'>"La verdad se encuentra dentro de una pequeña brújula, pero el margen de error es inmenso".</p>
+            <p class='margen-inferior grande italica gris'>"La verdad se encuentra dentro de una pequeña brújula, pero el margen de error es inmenso".</p><p class='cita gris-oscuro'>William Blake</p>
           </div>
         
         <div class='fila margen-inferior'>
           <div class='col-md-18 col-md-offset-3 col-sm-22 col-sm-offset-1 col-xs-22 col-xs-offset-1' style='z-index: 2'>
-            <p class='chico fino blanco'>Proyecto de código abierto desarrollado por <a href="http://www.ead.pucv.cl/mundo/investigacion/tig/"><strong>Taller de Investigaciones Gráficas .:TIG:.</strong></a> y disponible en <a class='btn btn-sm' href='https://github.com/eadpucv/pyxis' title='Pyxis en Github'>Github</a> </p>
+            <p class='chico fino blanco'>Proyecto de código abierto desarrollado por <a href="http://www.ead.pucv.cl/mundo/investigacion/tig/"><strong>Taller de Investigaciones Gráficas .:TIG:.</strong></a> y disponible en <a class='btn btn-sm' href='https://github.com/eadpucv/pyxis' title='Pyxis en Github'>Github</a></p>
           </div>
           </div> 
       </div>
