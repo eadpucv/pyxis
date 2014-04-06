@@ -16,6 +16,7 @@ header .iso{
 	}
 }
 
+
 ul.meta{
 
 	top: 0;
@@ -37,6 +38,35 @@ ul.meta{
 			}
 	}
 }
+
+ul.menu {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+		a {
+			text-decoration: none;
+			color: @blanco;
+
+					li {
+						list-style: none;
+						border: 1px solid @gris;
+						background-color: @gris-oscuro;                                                                                                                              
+						width: 100%;
+						padding: @cuadratin /2 0 @cuadratin /2 0;
+						&:hover {
+						background-color: @pizarra;
+						}
+
+					}
+			}
+		}
+
+.panel-body {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
 
 
 // Bloque negro pizarra
@@ -81,7 +111,7 @@ nav{
 				font-weight: 500;	
 				margin: 0;
 				padding: @cuerpo * 0.5@cuerpo;
-				color: @negro !important;
+				color: @negro;
 				font-size: @cuerpo;
 				text-transform: uppercase;
 
@@ -95,4 +125,46 @@ nav{
 			}
 		}	
 	}
+
+	  //Nav para Simón
+  //  --------------------------------------------------
+
+    &.permanente {
+    margin-bottom: 0;
+    padding-left: 0; // Override default ul/ol
+    list-style: none;
+    min-height: 35px;
+    background-color: @negro-oscuro;
+  	
+	ul, ol{
+	margin: 0;
+	padding: 0;
+	.cf;
+		
+		li{
+		
+			a{	
+				font-weight: 200;
+				font-size: @cuerpo / 4 * 3;	
+				margin: 0;
+				padding: @cuerpo * 0.5 @cuerpo;
+				color: @blanco;
+
+			}
+
+      // Disabled state sets text to gray and nukes hover/tab effects
+      &.disabled > a {
+        color: @nav-disabled-link-color;
+
+        &:hover,
+        &:focus {
+          color: @nav-disabled-link-hover-color;
+          text-decoration: none;
+          background-color: transparent;
+          cursor: not-allowed;
+        }
+    	}
+      }
+    }
+}
 }
