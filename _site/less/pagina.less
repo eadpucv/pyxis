@@ -9,11 +9,94 @@ Contenedores y reglas generales
     .transition(.2s ease all);
 }
 
+body{
+  font-size: @cuerpo;
+  background-color: @gris-claro;
+  // #gradient > .striped(lighten(@gris-claro, 15%), -45deg);
+  // background-size: 10px 10px;
+  // background-repeat: repeat;
+}
+
+header {
+
+}
+
 .pag{
 	//.container();
 	margin: 0 auto;
-	background-color: darken(@blanco, 3%);
 	padding: @cuadratin;
+}
+
+.pag-movil {
+	margin: 0 auto;
+	padding: 0 @cuadratin 0 @cuadratin;
+}
+
+.imagen-alta {
+	width: auto;
+	height: @cuadratin * 2;
+	overflow: hidden;
+	margin-top: @cuadratin;
+	margin-bottom: @cuadratin;
+}
+
+.imagen-ancha {
+	width: auto;
+	height: @cuadratin * 3;
+	overflow: hidden;
+	margin-top: @cuadratin;
+	margin-bottom: @cuadratin;
+}
+
+.franja {
+	width: 100%;
+	min-height: 500px;
+	max-height: 800px;
+	background-color: @negro-oscuro;
+	position: relative;
+	overflow: hidden;
+	.cf;
+
+	canvas{
+		position: absolute;
+		top: 0;
+		left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+		z-index: 1;
+	}
+
+	.leyenda{
+		margin-top: @cuadratin * 4;
+		text-align: center;
+		z-index: 2;
+	}
+}
+
+.franja-xs {
+    margin: auto;
+    width: 100%;
+    padding-top: @cuadratin;
+    background-color: @negro-oscuro;
+}
+
+.menu-pyxis {
+	margin: 0 auto;
+	width: 100%;
+	min-height: @cuadratin * 1.4;
+	position: fixed;
+	background-color: @blanco;
+	padding: 0;
+	z-index: 10;
+}
+
+.menu-pyxis-movil {
+	margin: 0 auto;
+	width: 100%;
+	min-height: @cuadratin * 2;
+	background-color: @blanco;
+	z-index: 10;
 }
 
 .contenido{
@@ -29,7 +112,6 @@ footer{
 		padding-top: @cuerpo; 
 		font-size: @cuerpo*.7;
 		letter-spacing: inherit;
-		text-align: center;
 		
 		img{
 			display: inline-block;
@@ -46,13 +128,12 @@ footer{
 	nav{
 		border: none;
 		line-height: inherit;
-		text-align: center;
 		ul{
 			li{
 				margin-left: @cuadratin;
 				a{
 					font-size: @cuerpo * .7;
-					padding: 4px 10px 4px 10px;
+					padding: 8px 16px 4px 10px;
 					text-transform: none;
 					.border-radius(4px);
 				}
@@ -60,3 +141,5 @@ footer{
 		}
 	}
 }
+
+//Nav-m

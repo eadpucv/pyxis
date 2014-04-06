@@ -9,6 +9,3 @@ less:
 	lessc less/pyxis.less css/pyxis.css --clean-css
 
 css: less
-
-server:
-	jekyll server --watch --baseurl=
