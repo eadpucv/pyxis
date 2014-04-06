@@ -111,7 +111,7 @@ nav{
 				font-weight: 500;	
 				margin: 0;
 				padding: @cuerpo * 0.5@cuerpo;
-				color: @negro !important;
+				color: @negro;
 				font-size: @cuerpo;
 				text-transform: uppercase;
 
@@ -125,4 +125,46 @@ nav{
 			}
 		}	
 	}
+
+	  //Nav para Simón
+  //  --------------------------------------------------
+
+    &.permanente {
+    margin-bottom: 0;
+    padding-left: 0; // Override default ul/ol
+    list-style: none;
+    min-height: 35px;
+    background-color: @negro-oscuro;
+  	
+	ul, ol{
+	margin: 0;
+	padding: 0;
+	.cf;
+		
+		li{
+		
+			a{	
+				font-weight: 200;
+				font-size: @cuerpo / 4 * 3;	
+				margin: 0;
+				padding: @cuerpo * 0.5 @cuerpo;
+				color: @blanco;
+
+			}
+
+      // Disabled state sets text to gray and nukes hover/tab effects
+      &.disabled > a {
+        color: @nav-disabled-link-color;
+
+        &:hover,
+        &:focus {
+          color: @nav-disabled-link-hover-color;
+          text-decoration: none;
+          background-color: transparent;
+          cursor: not-allowed;
+        }
+    	}
+      }
+    }
+}
 }
