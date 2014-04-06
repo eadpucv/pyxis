@@ -1,0 +1,320 @@
+//  Elementos de Interacción:        
+//  Botones, formularios
+
+button.btn,
+input[type='submit'],
+a.btn{
+    display: inline-block;
+    font-family: 'Source Sans Pro';
+    font-weight: 500;
+    margin-top: 0;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: @cuerpo * .9;
+    color: @blanco;
+    text-align: center;
+    background-color: @pizarra;
+    vertical-align: middle;
+    .border-radius(@radio);
+    
+    &:hover {
+            text-decoration: none;
+            background-color: saturate(@pizarra, 50%);
+            color: @blanco;
+    }
+
+    // cuando se aprieta el botón, que aparezca una sombra interior para que se vea hundido
+    &:active{
+            .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
+    }
+
+    &.btn-xs{
+        font-size: @cuerpo * .6;
+        text-transform: uppercase;
+        font-weight: normal;
+        padding: @padding-sm*.7  2*@padding-sm;
+    }
+    
+    &.btn-sm{
+        font-size: @cuerpo * .8;
+        text-transform: uppercase;
+        font-weight: normal;
+        padding: @padding-sm  4*@padding-sm;
+    }
+
+    &.btn-md{
+        font-weight: 300;
+        font-size: @cuerpo * 1;
+        padding: @padding-md 2*@padding-md;
+    }
+
+    &.btn-lg{
+        font-size: @cuerpo * 1.5;
+        letter-spacing: .05ex;
+        font-weight: 200;
+        padding: @padding-lg 1.8*@padding-lg;
+    }
+
+    &.btn-accion{
+        text-shadow: 1px 1px 0 fade(@negro, 40%);
+        background-color: @rojo-opuesto;
+        
+        &:hover{
+                background-color: @rojo-opuesto;
+        }
+    }
+    
+    &.btn-alerta{
+        text-shadow: 1px 1px 0 fade(@negro, 40%);
+        background-color:  @rojo-alerta;
+        &:hover{
+            background-color: darken(saturate(@rojo-alerta, 10), 10);
+            color: @blanco;
+        }
+    }
+
+    &.btn-accion,
+    &.btn-alerta{
+        &:active{
+            .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
+        }
+    }
+}
+
+
+.pegado-antes{.border-radius(@radio 0 0 @radio)}
+.pegado-despues{.border-radius(0 @radio @radio 0)}
+
+/* Formularios *///---------------------------------------------------------------------------------------------------
+
+// Reset
+
+textarea,
+select,
+input[type='text'],
+input[type='password'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='date'],
+input[type='month'],
+input[type='time'],
+input[type='week'],
+input[type='number'],
+input[type='email'],
+input[type='url'],
+input[type='search'],
+input[type='tel'],
+input[type='color'],
+.uneditable-input, {
+  display: inline-block;
+  width: 100%;
+  padding: @padding-md 3*@padding-md;
+  margin-bottom: @margen-sm;
+  font-size: @cuerpo;
+  line-height: @interlinea;
+  color: @gris;
+}
+
+form{
+
+    .clearfix;
+    .margen-inferior;
+
+    label{
+        display: block;
+        font-weight: 700;
+        font-size: @cuerpo * .8;
+
+        &.checkbox{
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 400;
+            
+            input[type=checkbox]{
+                display: inline-block;
+                margin-right: 1ex; 
+                padding: @padding-md;
+            }
+        }
+    }
+
+    .grupo{
+        &.obligatorio{
+            label:after{
+                content: '*';
+                color: @rojo-claro;
+                font-size: @cuerpo;
+            }
+            select,
+            input{
+                border: 1px solid fade(@gris-oscuro, 50);
+            }
+        }
+    }
+
+    legend{
+        font-size: @cuerpo * 1.5;
+        margin: @cuerpo 0;
+        font-weight: 100;
+        color: fade(@pizarra, 30);
+    }
+    
+    input[type='submit'],
+    .btn{
+        width: auto;
+        float: right;
+    }
+
+    input[type='text'],
+    input[type='password'],
+    input[type='email'], 
+    textarea,
+    select{
+        height: auto;
+        padding: @padding-md;
+        color: @pizarra;
+        .border-radius(@radio);
+        &:valid{
+            color: fade(@pizarra-claro, 70);
+        }
+    }
+        
+    input, textarea{
+         color: fade(@damasco-opuesto, 70%);
+        .border-radius(@radio);
+        .borde;
+
+        &:focus{
+            .foco;
+        }
+    }
+
+    textarea {
+        height: @cuadratin * 6;
+    }
+
+
+    select{
+        .border-radius(4px);
+        .borde;
+        margin: 0;
+        color:@pizarra;
+        padding: @padding-md;
+        height: auto;
+    }
+
+    &.buscador{
+        text-align: right;
+
+        input.texto{
+            .pegado-antes;
+        }
+        input[type=submit]{
+            .pegado-despues;
+            margin: -4px 0 0 -4px;
+        }                           
+    }
+
+    // Tamaños
+
+    &.sm{
+        legend{
+            font-size: @cuerpo;
+            text-transform: uppercase;
+            letter-spacing: .2ex;
+        }
+        label{
+            font-size: @cuerpo * .6;
+            text-transform: uppercase;
+        }
+        input,
+        select,
+        textarea{font-size: @cuerpo * .8}
+    }
+    &.md{
+        label{font-size: @cuerpo * .8}
+        input,
+        select,
+        textarea{font-size: @cuerpo}
+    }
+    &.lg{
+        legend{
+            font-size: @cuerpo * 2;
+            font-weight: 100;
+            line-height: 80%
+        }
+        label{
+            font-size: @cuerpo * .95;
+            font-weight: 300;
+        }
+        input,
+        select,
+        textarea{font-size: @cuerpo * 1.5}
+    }
+
+    // Formulario Horizontal
+
+    &.formulario-horizontal {
+        .grupo{
+            .clearfix;
+            margin: @cuerpo 0;
+            label{
+                
+                display: block;
+                float: left;
+                width: 30%;
+                margin: 0;
+                vertical-align: middle;
+                text-align: right;
+                padding: .5em 1ex 0 0;
+            }
+
+            input[type='password'],
+            input[type='text'],
+            input[type='email'],
+            select,
+            textarea{
+                display: block;
+                float: left;
+                margin: 0;
+                width: 70%
+            }
+
+            p{
+                padding: @cuerpo/2 0 @cuerpo/2 30%;
+                clear: both;
+
+                &.ayuda{
+                    font-size: @cuerpo * .8;
+                    color: fade(@gris-oscuro, 60);
+                }
+            }
+
+            &.checkbox{
+                label{
+                    text-align: left;
+                    width: 70%;
+                    margin: 0 0 @cuerpo*2 30%;
+                }
+            }
+        }
+
+    }
+}
+
+
+// Text input groups
+// -------------------------
+.input-group-addon {
+  padding: @padding-sm;
+  margin-right:-@margen-sm;
+  width: @cuadratin;
+  margin-top: 0;
+  display: inline-block;
+  font-size: @cuerpo * 1.3;
+  font-weight: normal;
+  color: @blanco;
+  text-align: center;
+}
+
+
