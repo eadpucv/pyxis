@@ -3,16 +3,54 @@
 // --------------------------------------------------
 
 
-// Base class
-// --------------------------------------------------
+//  Por defecto:
+
+nav {
+  margin: 0 -@cuadratin;
+  border-top: 1px solid @color-borde;
+  border-bottom: 1px solid @color-borde;
+  
+  ul, ol{
+  margin: 0;
+  padding: 0;
+  .cf;
+    
+    li{
+      display: inline;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    
+      a{  
+        display: inline-block;
+        font-weight: 500; 
+        margin: 0;
+        padding: @cuerpo * 0.5@cuerpo;
+        color: @negro !important;
+        font-size: @cuerpo;
+        text-transform: uppercase;
+
+      }
+      
+      a:hover{
+        text-decoration: none;
+        background-color: @blanco;
+        color: @color-link !important;
+        .transition(.5s ease all);
+      }
+    } 
+  }
+}
+
+
+//  Para dropdowns:
 
 .nav {
   margin-bottom: 0;
-  padding-left: 0; // Override default ul/ol
+  padding-left: 0; 
   list-style: none;
 
-  //&:extend(.clearfix all); <-- HAY PROBLEMAS CON ESTA LÍNEA, NO DEJA COMPILAR!!!
-
+  &:extend(.clearfix all);
 
   > li {
     position: relative;
@@ -29,6 +67,12 @@
       }
     }
 
+
+//
+//  Setup de BOOTSTRAP para Dropdowns
+//--------------------
+
+
     // Disabled state sets text to gray and nukes hover/tab effects
     &.disabled > a {
       color: @nav-disabled-link-color;
@@ -43,7 +87,8 @@
     }
   }
 
-  // Open dropdowns
+  // Despliegue de Dropdowns
+
   .open > a {
     &,
     &:hover,
@@ -55,8 +100,8 @@
 
 
   // Prevent IE8 from misplacing imgs
-  //
   // See https://github.com/h5bp/html5-boilerplate/issues/984#issuecomment-3985989
+
   > li > a > img {
     max-width: none;
   }
@@ -67,6 +112,7 @@
 // -------------------------
 
 // Give the tabs something to sit on
+
 .nav-tabs {
   border-bottom: 1px solid @nav-tabs-border-color;
   > li {

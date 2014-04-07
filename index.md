@@ -20,7 +20,7 @@ title: Pyxis Framework
   </div>
 
   <div class='fila'>
-  <p>Las organizaciones, a medida que crecen, van generando nuevos puntos de contacto con sus públicos o audiencias. Hoy día, estos puntos de contacto son múltiples servicios que se traducen en variadas interfaces; tanto materiales como digitales, impresas o proyectadas, grandes o pequeñas, móviles o estacionarias. Mantener un lenguaje consistente a través de todos los servicios y dispositivos se vuelve una tarea titánica si se piensa cada uno por separado. Se hace preciso, entonces, definir un <strong>lenguage gráfico global</strong> que sea capaz de interpretar la voz de la organización y que se adapte a cada contexto, formato y dispositivo.</p>
+  <p>Las organizaciones, a medida que crecen, van generando nuevos puntos de contacto con sus públicos o audiencias. Hoy día, estos puntos de contacto son múltiples servicios que se traducen en variadas interfaces; tanto materiales como digitales, impresas o proyectadas, grandes o pequeñas, móviles o estacionarias. Mantener un lenguaje consistente a través de todos los servicios y dispositivos se vuelve una tarea titánica si se piensa cada uno por separado. Se hace preciso, entonces, definir un <i>lenguage gráfico global</i> que sea capaz de interpretar la voz de la organización y que se adapte a cada contexto, formato y dispositivo.</p>
 
   <p>Este proyecto busca definir fundamentos gráficos elementales para pantallas e impresos cumpliendo las siguientes premisas:
     <ul>

@@ -1,31 +1,39 @@
 
+  //
   // Tipografía
+  //---------------
 
-  *  {
-      font-family: @tipografia;
-      font-weight: 200;
+
+  //  Por defecto:
+
+  * {
+    font-family: @tipografia;
+    font-weight: 200;
     }
+
+
+  //  Vínculos:
 
   a{
     color: @color-link;
     text-decoration: none;
-      font-family: @sans;
-      font-size:@cuerpo -2;
+    font-family: @sans;
+    font-size:@cuerpo -2;
 
   
-  &:hover{
-    color: @pizarra;
-    text-decoration: underline;
-  }
+    &:hover{
+      color: @pizarra;
+      text-decoration: underline;
+    }
   
-  &:visited{
-    color: fade(@color-link, 10);
-    text-decoration: line-through;
-  }
-
+    &:visited{
+      color: fade(@color-link, 10);
+      text-decoration: line-through;
+    }
 }
 
-//Tamaños tipográficos
+
+//  Párrafo:
 
 p {
     margin-bottom: @interlinea;
@@ -33,7 +41,8 @@ p {
     color: fade(@negro, 80%);
     font-family: @texto-continuo;
     font-weight: 200;
-    }
+
+    //  Tamaños de Párrafo:
 
     &.gigante{
     font-size: @cuerpo * 1.8;
@@ -56,13 +65,17 @@ p {
       line-height: @interlinea * .9;
       margin: 0;
     }
+}
+
+
+//  Vistazo:
 
 span {
 
 }
 
 
-// Clases diferenciadas
+// Clases diferenciadas:
   
     &.poema{
       font-family: @serif;
@@ -77,359 +90,374 @@ span {
       color: fade(@pizarra, 80%);
     }
     
-    &.mediano {
-        font-size: @cuerpo -2;
-      font-weight: 300;
-    line-height: 120%;
-    padding: 0;
-    }
+    .antetitulo{
+      font-family: @tipografia-titulos;
+      font-weight: normal;
+      color:@rojo-oscuro;  
+      text-transform: uppercase;
+      font-size:@cuerpo -8px;
+}
+
+
+//  Énfasis:
+
+
+  .negrita,
     
-
-    .antetitulos{
-        font-family: @tipografia-titulos;
-        font-weight: normal;
-        color:@rojo-oscuro;  
-        text-transform: uppercase;
-        font-size:@cuerpo -8px;
-}
-
-//Tamaños texto version 2
-
-.font-sm{
-    font-size:@cuerpo *.90;
-    line-height: @interlinea * .95;
-    font-weight: 300;
-    margin: 0;
-}
-
-.font-md{
-    font-size:@cuerpo *1;
-    line-height: @interlinea * 1.1;
-    font-weight: 300;
-    margin: 0;
-}
-
-.font-lg{
-    font-size:@cuerpo *1.3;
-    line-height: @interlinea * 1.2;
-    font-weight: 300;
-    margin: 0;
-}
-
-.font-xl{
-    font-size:@cuerpo *2.2;
-    line-height: @interlinea * 1.2;
-    font-weight: 300;
-    margin: 0;
-}
-
-
-// Énfasis
-
-.negrita,
-strong {
-  font-family:@sans;
-  font-style: normal;
-    font-weight: 300;
-}
-
-.cursiva,
-.italica,
-em, i{
-  font-family: @italica;
-  font-style: italic;
-  font-weight: 100;
-  &.grande{
-    letter-spacing: -.1ex;
-    font-weight: 200;
-  }
-}
-
-.pesada,
-.pesado,
-.ultra-negrita{
-  font-weight: 900;
-  letter-spacing: 0.1ex;
-}
-
-.gruesa{
-    font-family:@tipografia-titulos;
-    font-weight: 600;
-}
-
-.semi-gruesa {
-    font-family:@tipografia-titulos;
+    strong {
+    font-family: @sans;
+    font-style: normal;
     font-weight: 500;
-}
-
-.altas{
-  text-transform: uppercase,
-}
-
-ul{
-  //font-size: @cuerpo * 1.2;
-}
-
-div.poema{
-  margin-bottom: @interlinea;
-  line-height: @interlinea;
-    font-family: @serif;
-    font-size: @cuerpo - 2;
-    line-height: @interlinea;
-  white-space: pre;
-  color: fade(@negro, 80%);
-}
-
-
-// Cabeceras
-// --------
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: @tipografia-titulos;
-  font-weight: 600;
-  color: @gris-oscuro;
-  margin: 0 0 @interlinea 0;
-  vertical-align: bottom;
-  
-  &.filete{
-    border-bottom: 1px solid @color-borde;
-    .clearfix;
   }
 
-  &.extra-chico{
-  font-size: -400%;
-  }
+  .cursiva,
+  .italica,
 
-  &.chico{
-  font-size: -300%;
-  }
-
-  &.mediano{
-  font-size: 200%;
-  }
-
-  &.grande{
-    font-size: 300%;
-      letter-spacing: -3px;
-
-  }
-
-  &.gigante{
-    font-size: 420%;
-    line-height: 100%;
-  }
-}
-
-h1 {font-size: 28px;}
-h2 {font-size: 24px;}
-h3 {font-size: 22px;}
-h4 {font-size: 18px;}
-h5 {font-size: 16px;}
-h6 {font-size: 14px;}
-
-// Listas
-ul, ol {
-  margin: 0 0 @interlinea 25px;
-}
-
-ul ul,
-ul ol,
-ol ol,
-ol ul {
-  margin-bottom: 0;
-}
-
-ul {
-  list-style: disc;
-}
-
-ol {
-  list-style: decimal;
-}
-
-li {
-  line-height: @interlinea;
-  &:before{
-    .color;
-  }
-}
-
-// Listas de descripción o definición
-
-dl {
-  margin-bottom: @interlinea;
-  dt, dd {
-    line-height: @interlinea;
+    em, i{
+    font-family: @italica;
+    font-style: italic;
+    font-weight: 100;
+    
+    &.grande{
+      letter-spacing: -.1ex;
+      font-weight: 200;
     }
-  dt {
+  }
+
+  .pesada,
+  .pesado,
+  .ultra-negrita{
+    font-weight: 900;
+    etter-spacing: 0.1ex;
+  }
+
+  .gruesa{
+    font-family: @tipografia-titulos;
+    font-weight: 700;
+  }
+
+  .semi-gruesa {
+    font-family: @tipografia-titulos;
+    font-weight: 500;
+  }
+
+  .altas{
+    text-transform: uppercase,
+  }
+
+  ul{
+    font-size: @cuerpo * 1.2;
+  }
+
+  div.poema{
+    margin-bottom: @interlinea;
+    line-height: @interlinea;
+      font-family: @serif;
+      font-size: @cuerpo - 2;
+      line-height: @interlinea;
+    white-space: pre;
+    color: fade(@negro, 80%);
+  }
+
+
+  //  Cabeceras:
+
+  //  Valores de cabecera:
+
+  h1 {font-size: 28px;}
+  h2 {font-size: 24px;}
+  h3 {font-size: 22px;}
+  h4 {font-size: 18px;}
+  h5 {font-size: 16px;}
+  h6 {font-size: 14px;}
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: @tipografia-titulos;
     font-weight: 600;
+    color: @gris-oscuro;
+    margin: 0 0 @interlinea 0;
+    vertical-align: bottom;
+    
+    &.filete{
+      border-bottom: 1px solid @color-borde;
+      .clearfix;
     }
-  dd {
-    margin-left: @interlinea / 2;
+
+    //  Tamaños de título:
+
+    &.extra-chico{
+    font-size: -400%;
     }
-}
 
-// Otros
+    &.chico{
+    font-size: -300%;
+    }
 
-// Regla horizontal
+    &.mediano{
+    font-size: 200%;
+    }
 
-hr {
-  margin: 20px 0 19px;
-  border: 0;
-  border-bottom: 1px solid #eee;
-}
+    &.grande{
+      font-size: 300%;
+        letter-spacing: -3px;
+    }
 
-
-// Citas
-
-blockquote {
-  margin-bottom: @interlinea;
-  border-left: 5px solid #eee;
-  padding-left: 15px;
-  
-  
-  small {
-    display: block;
-    color: @gris-claro;
-    &:before {
-      content: '\2014 \00A0';
+    &.gigante{
+      font-size: 420%;
+      line-height: 100%;
     }
   }
-}
-
-.referencias{
-    font-family:@tipografia-referencias;
-}
-
-//Footer
-
-.datos-footer{
-    font-family:@sans;
-    font-weight:@cuerpo - 2;
-}
-
-// Dirección
-address {
-  display: block;
-  line-height: @interlinea;
-  margin-bottom: @interlinea;
-}
 
 
-// código
-code, pre {
-  font-family: @mono;
-  font-size: @cuerpo * .7;
-  .border-radius(3px);
-  color: fade(@negro, 50%);
-}
+  // Listas:
 
-code {
-  display: inline-block;
-  line-height: @interlinea * .666;
-  white-space: pre;
-  background-color: @ahuesado;
-  font-size: 11px;
-  padding: 2px 6px;
-}
+  ul, ol {
+    margin: 0 0 @interlinea 25px;
+  }
 
-pre {
-  background-color: #f5f5f5;
-  display: block;
-  padding: (@interlinea - 1) / 2;
-  margin: 0 0 @interlinea;
-  line-height: @interlinea;
-  font-size: 12px;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0,0,0,.15);
-  .border-radius(3px);
-  white-space: pre;
-  white-space: pre-wrap;
-  word-wrap: break-word;
+  ul ul,
+  ul ol,
+  ol ol,
+  ol ul {
+    margin-bottom: 0;
+  }
 
-}
+  ul {
+    list-style: disc;
+  }
 
-.texto-grilla {
-  white-space: pre;
-  background-color: @ahuesado;
-  .box-shadow(inset 0 0 1px darken(@ahuesado, 30%));
+  ol {
+    list-style: decimal;
+  }
+
+  li {
+    line-height: @interlinea;
+    &:before{
+      .color;
+    }
+  }
+
+
+  ul.meta{
+
+  top: 0;
+  vertical-align: top;
+  text-align: right;
   font-size: 10px;
-}
-
-.global{
-  -moz-column-count: 3;
-  -moz-column-gap: 20px;
-  -webkit-column-count: 3;
-  -webkit-column-gap: 20px;
-  column-count: 3;
-  column-gap: 20px;
-}
-
-.big{
-  color: @gris-claro;
-  margin: - @em 0 0 0;
+  margin: -@cuadratin 0 @cuadratin/2 0;
+  padding: 0 20px;
   
-}
-.main{
-  color: @color-link;
-  font-size: @cuerpo * 3;
-}
-.tdc{
-  padding: @em @em*2;
-  color: @gris;
-  background-color: @ahuesado;
-  .border-radius(1em / 5);
-  margin: 1em 0;
-}
+  li{
+    display: inline;
+    border-right: 1px solid @color-borde;
+    padding: 0 10px;
+    &:last-of-type{
+      border: none;
+    }
+      a{
+        font-weight: bold;
+        }
+    }
+  }
+
+  ul.menu {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+    a {
+      text-decoration: none;
+      color: @blanco;
+
+          li {
+            list-style: none;
+            border: 1px solid @gris;
+            background-color: @gris-oscuro;                                                                                                                              
+            width: 100%;
+            padding: @cuadratin /2 0 @cuadratin /2 0;
+            &:hover {
+            background-color: @pizarra;
+            }
+          }
+        }
+      }
+      
+
+  // Listas de descripción o definición:
+
+  dl {
+    margin-bottom: @interlinea;
+    dt, dd {
+      line-height: @interlinea;
+      }
+    dt {
+      font-weight: 600;
+      }
+    dd {
+      margin-left: @interlinea / 2;
+      }
+  }
 
 
-//------------------------------------------------------Estilos Semánticos
+  // Otros
+
+  // Regla horizontal:
+
+  hr {
+    margin: 20px 0 19px;
+    border: 0;
+    border-bottom: 1px solid #eee;
+  }
 
 
-.extracto{
-  line-height: @interlinea * 0.81;
+  // Citas:
+
+  blockquote {
+    margin-bottom: @interlinea;
+    border-left: 5px solid #eee;
+    padding-left: 15px;
+    
+    //  chico:
+    
+    small {
+      display: block;
+      color: @gris-claro;
+      &:before {
+        content: '\2014 \00A0';
+      }
+    }
+  }
+
+  .referencias{
+      font-family:@tipografia-referencias;
+  }
+
+  //  Footer:
+
+  .datos-footer{
+      font-family:@sans;
+      font-weight:@cuerpo - 2;
+  }
+
+
+  //  Dirección
+
+  address {
+    display: block;
+    line-height: @interlinea;
+    margin-bottom: @interlinea;
+  }
+
+
+  //  Código y Texto sin estilos:
+
+  code, pre {
+    font-family: @mono;
+    font-size: @cuerpo * .7;
+    .border-radius(3px);
+    color: fade(@negro, 50%);
+  }
+
+
+  //  código escrito:
+
+  code {
+    display: inline-block;
+    line-height: @interlinea * .666;
+    white-space: pre;
+    background-color: @ahuesado;
+    font-size: 11px;
+    padding: 2px 6px;
+  }
+
+
+  //  Texto sin estilos (formato desde HTML):
+
+  pre {
+    background-color: #f5f5f5;
+    display: block;
+    padding: (@interlinea - 1) / 2;
+    margin: 0 0 @interlinea;
+    line-height: @interlinea;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    .border-radius(3px);
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .global{
+    -moz-column-count: 3;
+    -moz-column-gap: 20px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
+    column-count: 3;
+    column-gap: 20px;
+  }
+
+  .big{
+    color: @gris-claro;
+    margin: - @em 0 0 0;
+    
+  }
+  .main{
+    color: @color-link;
+    font-size: @cuerpo * 3;
+  }
+  .tdc{
+    padding: @em @em*2;
+    color: @gris;
+    background-color: @ahuesado;
+    .border-radius(1em / 5);
+    margin: 1em 0;
+  }
+
+
+  //  Estilos Semánticos
+
+  .extracto{
+    line-height: @interlinea * 0.81;
     font-family: @tipografia-referencias;
     font-size: 0.938em;
-}
-
-.resumen {
-        font-size: 15px;
-      line-height: 120%;
-    padding: 0;
-}
-
-
-//Elementos laterales
-
-.columna-tipo{
-    width: 45%;
-    float: left;
-    position: relative;
-}
-
-
-// Responsive 
-// ----------
-
-// Extra small screen / phone
-@media(max-width: @screen-xs-max){
-  h1.gigante{
-    font-size: 50px;
-    line-height: 100%;
   }
-}
 
-// Small screen / tablet
-@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
-}
+  .resumen {
+    font-size: 15px;
+    line-height: 120%;
+    padding: 0;
+  }
 
-// Medium screen / desktop
-@media (min-width: @screen-md) and (max-width: @screen-md-max){
 
-}
+  //  Elementos laterales
 
-// Large screen / wide desktop
-@media (min-width: @screen-lg){
-}
+  .columna-tipo{
+      width: 45%;
+      float: left;
+      position: relative;
+  }
+
+
+  //  Responsive 
+
+  //  Extra small screen / phone
+  @media(max-width: @screen-xs-max){
+    h1.gigante{
+      font-size: 50px;
+      line-height: 100%;
+    }
+  }
+
+  //  Small screen / tablet
+  @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+  }
+
+  //  Medium screen / desktop
+  @media (min-width: @screen-md) and (max-width: @screen-md-max){
+  }
+
+  //  Large screen / wide desktop
+  @media (min-width: @screen-lg){
+  }
 
 
