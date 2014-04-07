@@ -10,7 +10,7 @@ subtitle: Iconografía
 <p>Se icorporan clases para controlar el tamaño del ícono, las que van de sm (pequeño), md (mediano), lg (grande) y xl (extra grande). Se agregan a la clase escribiendo 'ico-tamaño del ícono' luego de la clase que identifica al ícono específico. Por ejemplo: <code>span class="icn ico-engranaje ico-lg"</code></p>
 <h3>Clases y tamaños</h3>
 
-<table>
+<table class='w100'>
     <tr>
         <th class='w20'>Clase</th>
         <th class='w20'><code>sm</code></th>
@@ -244,11 +244,11 @@ subtitle: Iconografía
     </tr>
 
     <tr>
-        <td><code>icn-cruz</code></div></td>
-        <td><span class="icn icn-cruz icn-sm"></span></td>
-        <td><span class="icn icn-cruz icn-md"></span></td>
-        <td><span class="icn icn-cruz icn-lg"></span></td>
-        <td><span class="icn icn-cruz icn-xl"></span></td>
+        <td><code>icn-mas</code></div></td>
+        <td><span class="icn icn-mas icn-sm"></span></td>
+        <td><span class="icn icn-mas icn-md"></span></td>
+        <td><span class="icn icn-mas icn-lg"></span></td>
+        <td><span class="icn icn-mas icn-xl"></span></td>
     </tr>
 
     <tr>
