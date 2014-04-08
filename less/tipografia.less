@@ -101,15 +101,6 @@ span {
 
 //  Énfasis:
 
-
-  .negrita,
-    
-    strong {
-    font-family: @sans;
-    font-style: normal;
-    font-weight: 500;
-  }
-
   .cursiva,
   .italica,
 
@@ -124,6 +115,14 @@ span {
     }
   }
 
+
+  .negrita,
+
+      strong{
+      font-weight: 700;
+      font-family: @texto-continuo;
+    }
+
   .pesada,
   .pesado,
   .ultra-negrita{
@@ -132,14 +131,18 @@ span {
   }
 
   .gruesa{
-    font-family: @tipografia-titulos;
     font-weight: 700;
+    font-family: inherit;
   }
+
+  // Sólo para títulos @sans:
 
   .semi-gruesa {
     font-family: @tipografia-titulos;
     font-weight: 500;
   }
+
+  //
 
   .altas{
     text-transform: uppercase,
@@ -173,7 +176,7 @@ span {
 
   h1, h2, h3, h4, h5, h6 {
     font-family: @tipografia-titulos;
-    font-weight: 600;
+    font-weight: 300;
     color: @gris-oscuro;
     margin: 0 0 @interlinea 0;
     vertical-align: bottom;
@@ -299,6 +302,23 @@ span {
 
 
   // Otros
+
+
+  //  Fecha
+
+  .fecha-evento {
+  font-family: @sans;
+  padding: 0;
+  margin: @margen-lg * 2.5 @margen-lg 0 0;
+  font-size: @cuerpo-nav * 9.5;
+  letter-spacing: -@cuadratin-tercio;
+  color: @rojo-claro;
+
+  &.xs {
+    font-size: @cuerpo-nav * 7;
+    margin-top: @margen-lg * 2;
+  }
+}
 
   // Regla horizontal:
 
