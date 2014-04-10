@@ -12,7 +12,11 @@ subtitle: Grilla
 
 <h5 class='gris-oscuro'>1.1. Ocultamiento de columnas</h5>
 
-<p>La primera estructura como ejemplo de la grilla pasa de 24 columnas en dispositivos grandes y medianos a 12 columnas en dispositivos pequeños, y 6 columnas en dispositivos extra pequeños para un diseño responsivo adaptable. Para ocultar columnas escribe 'col-oculto-(formato de tamaño)', y recuerda esta clase con la respectiva nomenclatura.</p>
+<p>La primera estructura como ejemplo de la grilla pasa de 24 columnas en dispositivos grandes y medianos a 12 columnas en dispositivos pequeños, y 6 columnas en dispositivos extra pequeños para un diseño responsivo adaptable. 
+
+<ol>
+	<li><p class='chico'><strong>Para ocultar columnas escribe 'col-oculto-(formato de tamaño)', y recuerda esta clase con la respectiva nomenclatura.</strong></p></li>
+</ol>
 
 
 <div class='fila margen-inferior'> 
