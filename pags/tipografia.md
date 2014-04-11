@@ -9,7 +9,7 @@ subtitle: Tipografía
 
 	<!-- Familias tipográficas -->
 
-<h3 class='rojo-claro'>Familias tipográficas</h3>
+<h2 class='rojo-claro'>Familias tipográficas</h2>
 
 <table class='w100'>
 <tr>
@@ -18,17 +18,17 @@ subtitle: Tipografía
 </tr>
 <tr>
     <td><div class=''><p>Se utiliza la familia tipográfica <a href="http://www.google.com/fonts/specimen/Source+Sans+Pro"><i> Source Sans Pro</i></a>, para títulos y encabezados de texto. Esta tipografía de tipo sans serif, presenta gran versatilidad a través de sus 12 pesos.</p></div></td>
-    <td><code></code></td>
+    <td><code>Títulos, antetítulos, listas</code></td>
 </tr>
 <tr>
     <td><div class=''><p>Se utiliza la familia tipográfica <a href="https://www.google.com/fonts/specimen/Merriweather"><i>Merriweather</i></a>, en su versión ligth para texto continuo, poemas o textos diferenciados, con una familia tipográfica de 6 pesos.</p></div></td>
-    <td><code></code></td>
+    <td><code>Texto continuo</code></td>
 </tr>
 </table>
 
 	<!-- Ènfasis de párrafo -->
 
-<h3 class='rojo-claro'>Valores tipográficos </h3>
+<h2 class='rojo-claro'>Valores tipográficos </h2>
 <h5 class='gris-oscuro'>Énfasis de párrafo</h5>
 
 <table class='w100'>
@@ -64,7 +64,7 @@ subtitle: Tipografía
 
 <!-- Cabeceras -->
 
-<h3 class='rojo-claro'>Títulos</h3>
+<h2 class='rojo-claro'>Títulos</h2>
 <h5 class='gris-oscuro'>Cabeceras</h5>
 
 <table class='w100'>
@@ -98,9 +98,9 @@ subtitle: Tipografía
 </tr>
 </table>
 
-<!-- Cabeceras -->
+<!-- Grosores -->
 
-<h3 class='rojo-claro'>Grosores</h3>
+<h2 class='rojo-claro'>Grosores</h2>
 <h5 class='gris-oscuro'>Enfasis de fuente</h5>
 
 <table class='w100'>
@@ -126,58 +126,101 @@ subtitle: Tipografía
 </tr>
 </table>
 
-</div>
-</div>
+<!-- Estilos -->
 
-<!-- Contenido -->
+<h2 class='rojo-claro'>Estilos de carácter</h2>
+<h5 class='gris-oscuro'>Cabeceras</h5>
 
-<div class='fila'>
+<table class='w100'>
+<tr>
+    <th class='w60'>Muestra</th>
+    <th class='w30'>Uso</th>
+</tr>
+<tr>
+    <td><div class=''><p class='italica'>Esto es un texto en cursiva</p></div></td>
+    <td><code>&lt;p class=&quot;italica&quot;&gt;, &lt;p class=&quot;cursiva&quot;&gt; o &lt;i&gt;</code></td>
+</tr>
+<tr>
+    <td><div class=''><p class='altas'>Esto es un texto en altas</p></div></td>
+    <td><code>&lt;p class=&quot;altas&quot;&gt;</code></td>
+</tr>
+</table>
 
-<!-- COLUMNA IZQUIERDA-->
+<!-- Aleneación -->
 
-<div class='col-md-14'>
+<h2 class='rojo-claro'>Alineación</h2>
+<h5 class='gris-oscuro'>Cabeceras</h5>
 
-<!-- Familias tipográficas -->
+<table class='w100'>
+<tr>
+    <th class='w60'>Muestra</th>
+    <th class='w30'>Uso</th>
+</tr>
+<tr>
+    <td><div class=''><p class='izquierda'>Esto es un texto a la izquierda</p></div></td>
+    <td><code>&lt;p class=&quot;izquierda&gt;</code></td>
+</tr>
+<tr>
+    <td><div class=''><p class='centrado'>Esto es un texto centrado</p></div></td>
+    <td><code>&lt;p class=&quot;derecha&quot;&gt;</code></td>
+</tr>
+<tr>
+    <td><div class=''><p class='derecha'>Esto es un texto a la derecha</p></div></td>
+    <td><code>&lt;p class=&quot;derecha&quot;&gt;</code></td>
+</tr>
+</table>
 
-<div class='col-md-24'>
-	<h3 class='rojo-claro'>Familias tipográficas</h3>
-	<p>Se utiliza la familia tipográfica <a href="http://www.google.com/fonts/specimen/Source+Sans+Pro"><i> Source Sans Pro</i></a>, para títulos y encabezados de texto. Esta tipografía de tipo sans serif, presenta gran versatilidad a través de sus 12 pesos.</p>
-	<p>Se utiliza la familia tipográfica <a href="https://www.google.com/fonts/specimen/Merriweather"><i>Merriweather</i></a>, en su versión ligth para texto continuo, poemas o textos diferenciados, con una familia tipográfica de 6 pesos.</p>
-</div>
+<!-- Listas -->
 
-<hr>
+<h2 class='rojo-claro'>Listas</h2>
+<h5 class='gris-oscuro'>Ordenada y desordenada</h5>
 
-<!-- Énfasis de párrafo de párrafo -->
-http://0.0.0.0:4000/pags/tipografia/versatilidad.html
+<table class='w100'>
+<tr>
+    <th class='w60'>Muestra</th>
+    <th class='w30'>Uso</th>
+</tr>
+<tr>
+    <td><div class=''><ul>
+			<li>Primer elemento</li>
+			<li>Segundo elemento</li>
+			<li>Tercer elemento</li>
+					 </ul>
+		</div></td>
+    <td><code>&lt;ul&gt;
+	&lt;li&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+		</code></td>
+</tr>
+<tr>
+    <td><div class=''><ol>
+			<li>Primer elemento</li>
+			<li>Segundo elemento</li>
+			<li>Tercer elemento</li>
+		</ol></div></td>
+    <td><code>&lt;ol&gt;
+	&lt;li&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+		</code></td>
+</tr>
+</table>
 
-<div class='col-md-24'>
-<h3 class='rojo-claro'>Valores tipográficos </h3>
-<h5 class='gris-oscuro'>Énfasis de párrafo</h5>
-    <div class='fila margen-superior'>
+<!-- Clases diferenciales -->
 
-		<code>&lt;p&gt;</code>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p>
-        <code>&lt;p class=&quot;chico&quot;&gt;</code>
-		<p class='chico'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p>
-		<code>&lt;p class=&quot;mediano&quot;&gt;</code>
-		<p class='mediano'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p>
-		<code>&lt;p class=&quot;grande&quot;&gt;</code>
-		<p class='grande'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p>
-		<code>&lt;p class=&quot;gigante&quot;&gt;</code>
-		<p class='gigante'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p>
+<h2 class='rojo-claro'>Clases diferenciales</h2>
+<h5 class='gris-oscuro'>Cabeceras</h5>
 
-	</div>
-</div>
-
-
-<hr>
-
-<!-- Poema -->
-
-<div class='col-md-24'>
-	<h3 class='rojo-claro'>Clases diferenciales</h3>
-	<code>&lt;p class=&quot;poema&quot;&gt;</code>
-	<p class='poema'>
+<table class='w100'>
+<tr>
+    <th class='w60'>Muestra</th>
+    <th class='w30'>Uso</th>
+</tr>
+<tr>
+    <td><div class=''><p class='poema'>
 		
         ¿no iluminan así las estrellas a los hombres
         y esclarecen
@@ -219,22 +262,11 @@ http://0.0.0.0:4000/pags/tipografia/versatilidad.html
         de otro significado
                         o vuelo de un sentido
 
-	</p>
-</div>
-
-
-<hr>
-
-<!-- Dirección -->
-
-
-<div class='col-md-24'>
-
-	<h5 class='gris-oscuro'>Dirección</h5>
-	<code>&lt;address&gt;</code>
-
-
-	<div class='col-md-22'>
+	</p></div></td>
+    <td><code>&lt;p class=&quot;poema&quot;&gt;</code> </td>
+</tr>
+<tr>
+    <td><div class='direccion'>
 
 	<address class='margen-superior-s'>
 		e[ad]
@@ -248,18 +280,12 @@ http://0.0.0.0:4000/pags/tipografia/versatilidad.html
 		Fax +56 32 2274421
 	</address>
 
-	</div>
-</div>
+	</div></td>
+    <td><code>&lt;p class=&quot;direccion&quot;&gt;</code></td>
+</tr>
 
-
-<hr>
-
-<!-- Citas y referencias -->
-
-<div class='col-md-24'>
-		
-		<h3 class='rojo-claro'>Citas y referencias</h3>
-		<code>&lt;h2 class=&quot;color fino filete&quot;&gt;</code>
+<tr>
+    <td><div class='col-md-24'>
 	
 	<div class='margen-superior-s'>
 		<span class='italica grande fina gris-oscuro'>Sólo lo que se idea es lo que se ve; pero lo que se idea es lo que se inventa</span>
@@ -270,128 +296,21 @@ http://0.0.0.0:4000/pags/tipografia/versatilidad.html
 
 		<span class="chico referencias gris"><sup>[8] </sup> <strong>Norman D </strong>, <i>“El Diseño Emocional. Por qué nos gustan (o no) los objetos cotidianos.</i> Capítulo 3 Tres Niveles de diseño visceral, conductual y reflexivo. <br> Paidós Ediciones S.A. Barcelona, España. Año 2005. Páginas 81 – 121.ISBN 84-493-1729-0</span>
 	</div>
-</div>
-
-</div> <!-- fin de columna izquierda -->
-
-<!-- COLUMNA DERECHA -->
-
-
-<div class='col-md-9 col-md-offset-1'>
-
-<!-- Énfasis -->
-
-<div class='col-md-24'>
-	<h3 class='rojo-claro'>Grosores</h3>
-	<code>&lt;p class=&quot;fino&quot;&gt;</code>
-	<p class='fino'>Esto es un texto fino</p>
-	<code>&lt;p class=&quot;semi-gruesa&quot;&gt;</code>
-	<p class='semi-gruesa'>Esto es un texto semigrueso</p>
-	<code>&lt;p class=&quot;gruesa&quot;&gt; y &lt;p class=&quot;negrita&quot;&gt; o &lt;strong&gt;</code>
-	<p class='gruesa'>Esto es un texto grueso (en negrita)</p>
-	<code>&lt;p class=&quot;pesada&quot;&gt;</code>
-	<p class='pesada'>Esto es un texto pesado</p>
-
-
-	<h3 class='rojo-claro'>Mayúsculas</h3>
-	<code>&lt;p class=&quot;altas&quot;&gt;</code>
-	<p class='altas'>Esto es un texto en altas</p>
-	<hr>
-	<h3 class='rojo-claro'>Itálica</h3>
-	<code>&lt;p class=&quot;italica&quot;&gt;, &lt;p class=&quot;cursiva&quot;&gt; o &lt;i&gt;</code>
-	<p class='italica'>Esto es un texto en cursiva</p>
-</div>
-
-<hr>
-
-<!-- Alineación -->
-
-<div class='col-md-24'>
-	<h3 class='rojo-claro'>Alineación</h3>
-
-	<div class='fila'>
-		<div class='col-md-24'>
-		<code>&lt;p class=&quot;derecha&quot;&gt;</code>
-		<p class='derecha'>Esto es un texto a la derecha</p>
-		</div>
-	</div>
-	<div class='fila'>
-		<div class='col-md-24'>
-		<code>&lt;p class=&quot;centrado&quot;&gt;</code>
-		<p class='centrado'>Esto es un texto centrado</p>
-		</div>
-	</div>
-	<div class='fila'>
-		<div class='col-md-24'>	
-		<code>&lt;p class=&quot;izquierda&quot;&gt;</code>
-		<p class='izquierda'>Esto es un texto a la izquierda</p>
-		</div>
-	</div>
-</div>	
-
-<hr>
-
-<!-- Listas -->
-
-<div class='col-md-24'>
-<h3 class='rojo-claro'>Listas</h3>
-<h5 class='gris-oscuro'>Desordenada</h5>
-<code>&lt;ul&gt;
-	&lt;li&gt;&lt;/li&gt;
-	&lt;li&gt;&lt;/li&gt;
-	&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</code>
-		<ul>
-			<li>Primer elemento</li>
-			<li>Segundo elemento</li>
-			<li>Tercer elemento</li>
-		</ul>
-
-<h5 class='gris-oscuro'>Ordenada</h5>
-<code>&lt;ol&gt;
-	&lt;li&gt;&lt;/li&gt;
-	&lt;li&gt;&lt;/li&gt;
-	&lt;li&gt;&lt;/li&gt;
-&lt;ol&gt;
-</code>
-		<ol>
-			<li>Primer elemento</li>
-			<li>Segundo elemento</li>
-			<li>Tercer elemento</li>
-		</ol>
-</div>
-
-<hr>
-
-
-<!-- Encabezados -->
-
-<div class='col-md-24'>
-	<h3 class='rojo-claro'>Títulos, Encabezados y Antetítulos</h3>
-	<code>&lt;h2 class=&quot;fino&quot;&gt;</code>
-		<div class='margen-superior-s'>
-		<h1>Encabezado de Primer Nivel <code>h1</code></h1>
-		<h2>Encabezado de Segundo Nivel <code>h2</code></h2>
-		<h3>Encabezado de Tercer Nivel <code>h3</code></h3>
-		<h4>Encabezado de Cuarto Nivel <code>h4</code></h4>
-		<h5>Encabezado de Quinto Nivel <code>h5</code></h5>
-		<h6>Encabezado de Sexto Nivel <code>h6</code></h6> 
-		</div>  
-</div>
-
-<hr>
-
-<!-- Fecha -->
-
-<div class='col-md-24'>
-	<h3 class='rojo-claro'>Fecha</h3>
-	<code>&lt;p class=&quot;fecha-evento&quot;&gt;</code>
+		</div></td>
+    <td><code>&lt;span class=&quot;italica grande fina gris-oscuro&quot;&gt;</code></td>
+</tr>
+<tr>
+    <td>
 	<div class='margen-superior'>
-	<p class='fecha-evento'>25</p>
-	</div>	<!-- fin de fecha -->
+	<span class='fecha-evento'>25</span>
+	</div></td>
+    <td><code>&lt;p class=&quot;fecha-evento&quot;&gt;</code></td>
+</tr>
+</table>
+
 </div>
-</div>	<!-- fin de fila columna derecha -->
 </div>
+
+
 
 

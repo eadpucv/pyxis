@@ -28,7 +28,8 @@ header .iso{
 
 body{
   font-size: @cuerpo;
-  background-color: @gris-claro;
+  background-color: @gris-blanco;
+  background: url('/img/ruido-gris-blanco.png');
   // #gradient > .striped(lighten(@gris-claro, 15%), -45deg);
   // background-size: 10px 10px;
   // background-repeat: repeat;
@@ -94,8 +95,8 @@ header {
 .franja-xs {
     margin: auto;
     width: 100%;
-    padding-top: @cuadratin;
-    background-color: @negro-oscuro;
+    background: url('/img/ruido-negro-oscuro.png');
+    background-repeat: repeat;
 }
 
 .menu-pyxis {
@@ -106,6 +107,7 @@ header {
 	background-color: @blanco;
 	padding: 0;
 	z-index: 10;
+	.box-shadow(0 0 10px fade(@negro, 30))
 }
 
 .menu-pyxis-movil {
