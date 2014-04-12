@@ -1,0 +1,10 @@
+safe: false
+source: .
+destination: _site
+lsi: false
+markdown: rdiscount
+pygments: true
+permalink: pretty
+baseurl: "http://eadpucv.github.io/pyxis"
+project:
+name: Pyxis
