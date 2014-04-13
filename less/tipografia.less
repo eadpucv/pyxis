@@ -147,10 +147,6 @@ span {
     text-transform: uppercase,
   }
 
-  ul{
-    font-size: @cuerpo * 1.2;
-  }
-
   div.poema{
     margin-bottom: @interlinea;
     line-height: @interlinea;
@@ -177,7 +173,7 @@ span {
     font-family: @tipografia-titulos;
     font-weight: 300;
     color: @gris-oscuro;
-    margin: 0 0 @interlinea 0;
+    margin: @interlinea 0 @interlinea 0;
     vertical-align: bottom;
     
     &.filete{
@@ -213,6 +209,11 @@ span {
 
   // Listas:
 
+    ul{
+    font-size: @cuerpo * 1.2;
+
+  }
+
   ul, ol {
     margin: @cuadratin * 0.4 0 @interlinea @cuadratin;
   }
@@ -222,6 +223,7 @@ span {
   ol ol,
   ol ul {
     margin-bottom: 0;
+    list-style: square;
   }
 
   ul {
@@ -233,12 +235,17 @@ span {
   }
 
   li {
+    list-style: none;
+  }
+
+  li:before {
     line-height: @interlinea;
+    font-family: 'Stampa';
+    content: "\e62f";
     &:before{
       .color;
     }
   }
-
 
 
 

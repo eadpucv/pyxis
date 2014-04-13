@@ -5,18 +5,23 @@ subtitle: Interacción
 ---
 
 <div class='fila'>
-    <h2 class='rojo-claro'>Formularios</h2> 
-    <h3 class='rojo-claro'>1. Clasificación de Formularios</h3>
+    <h1 class='rojo-claro'>Formularios</h1> 
+    <h4 class='gris-oscuro'>Clasificación</h4>
 
-    <h4>Interacción</h4>
     <p>Al hacer click en uno de los input, aparece un box-shadow, inset, donde se remarca demostrando una profunidad y se entienda que uno está rellenando ese campo. Además, el borde cambia de color, a un color verde.</p>
     <p>Actualmente existen elementos que están en fase neutral, pues falta comenzar a impregnar cada decisión gráfica en su totalidad, en relación a los atributos gráficos.</p>
     <p>Los elementos que están a modo neutral, o standard, son los Checkboxes, los dropdown y los avisos de rellenar campos requeridos para enviar el formulario.</p>
 </div>
 
-<h5 class='grande fino color'>Formularios verticales </h5> 
+<h2 class='rojo-claro'>Formulario de contacto </h2> 
 
 <p>Los formularios verticales son los formularios predeterminados, lo que implica que no llevan una clase específica; sólo se diferencian por los tamaños. El tamaño predeterminado es <code>md</code>.</p>
+
+<ul>
+    <li>Formulario-lg</li>
+    <li>Formulario-md</li>
+    <li>Formulario-sm</li>
+</ul>
 
 <table class='w100'>
 <tr>
@@ -54,7 +59,6 @@ subtitle: Interacción
     <td>
     <code>
         
-
 &lt;form class=&quot;sm&quot;&gt;
     &lt;legend&gt;Contáctate con nosotros&lt;/legend&gt;
     &lt;div class=&quot;grupo obligatorio&quot;&gt;
@@ -83,8 +87,7 @@ subtitle: Interacción
 </tr>
 
 <tr>
-    <td><div class='col-md-17'> 
-        <div class='md'>
+    <td><div class='col-md-17'>    
         <!-- Formulario Vertical Medio -->
         <form class='md'>
             <legend>Contáctate con nosotros</legend>    
@@ -106,7 +109,7 @@ subtitle: Interacción
             </div>
             <input type='submit' class='btn btn-md derecha' value='Enviar'>
         </form>
-    </div>
+   
 </div>
 </td>
     <div class='col-md-17'>
@@ -140,7 +143,7 @@ subtitle: Interacción
 </tr>
 
 <tr>
-    <td><div class='col-md-17'> 
+    <td><div class='col-md-22'> 
         <div class='lg'>
         <!-- Formulario Vertical Medio -->
         <form class='lg'>
@@ -197,7 +200,7 @@ subtitle: Interacción
 
 <!-- Formularios Verticales -->
 
-<h5 class='grande fino color'>Formulario vertical grande</h5>
+<h2 class='rojo-claro'>Agregar página con formulario</h2>
 
 <table class='w100'>
 <tr>
@@ -205,74 +208,38 @@ subtitle: Interacción
     <th class='w30'>Uso</th>
 </tr>
 <tr>
+    
     <td>
-        <div class='col-md-24'>    
+        <div class='col-md-22'>    
         <!-- Formulario Vertical Pequeño -->
-        <form class='formulario-horizontal'>
-            <legend>Nuevo Usuario</legend>
-            <div class='grupo obligatorio'>
-                <label>Usuario</label>
-                <input type='text' placeholder='username' required/>
-                <p class='ayuda'>Elige un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</p>
-            </div>
-            <div class='grupo obligatorio'>
-                <label>Tipo</label>
-                <select>
-                    <option>Alumno(a)</option>
-                    <option>Profesora(a)</option>
-                    <option>Ex-Alumno(a)</option>
-                    <option>Amigo(a)</option>
-                    <option>Otro(a)</option>
-                </select>
-            </div>
-            <div class='grupo obligatorio'>
-                <label>Carrera</label>
-                <select>
-                    <option>Arquitectura</option>
-                    <option>Diseño</option>
-                </select>
-            </div>
-            <div class='grupo obligatorio'>
-                <label>Año ingreso</label>
-                <input type='text' class='relleno'/>
-            </div>
-            <div class='grupo obligatorio'>
-                <label>Nombre</label>
-                <input type='text' class='relleno' required />
-            </div>
-            <div class='grupo obligatorio'>
-                <label>Apellido</label>
-                <input type='text' class='relleno' required />
-            </div>
-            <div class='grupo obligatorio'>
-                <label>Rut</label>
-                <input type='text' class='relleno' required />
-            </div>
-            <div class='grupo obligatorio'>
-                <label>Mail</label>
-                <input type='email' class='relleno' required />
-            </div>
-            <div class='grupo'>
-                <label>Página en Wiki Casiopea</label>
-                <input type='text' class='relleno'/>
-                <p class='especificacion'>En caso de no especificar una pagina, se creara una pagina con tus datos en la wiki</p>
-            </div>
-            <h3>Contraseña</h3>
-            <div class='grupo'>
-                <label>Contraseña</label>
-                <input type='password' class='relleno' required />
-            </div>
-            <div class='grupo'>
-                <label>Verificación contraseña</label>
-                <input type='password' class='relleno' required />
-            </div>
-            <div class="grupo checkbox">
-                <label class="checkbox">
-                <input type="checkbox">
-                    Acepto los <a href='#'>términos y condiciones</a>
-                </label>
-                <input type='submit' class='accion btn btn-lg' value='Crear nuevo usuario'>
-            </div>
+        <form class='horizontal md'>
+        <div class='grupo'>
+            <label class='pregunta'>Nombre de objeto</label>
+            <input type='text' required />
+            <p class='especificacion'><strong>Ingresa el nombre y de lo que vas a crear</strong>. Se creará una página con ese nombre. Si el nombre que eliges ya está ocupado, esta página te llevará al formulario que elijas con el contenido de la página existente donde podrás editar el nuevo objeto con atributos semánticos.</p>
+        </div>
+        <div class='grupo'>
+            <label class='pregunta'>Tipo de formulario</label>
+            <select>
+                <option>Nueva asignatura</option>
+                <option>Nueva bibliografía</option>
+                <option>Nueva obra</option>
+                <option>Nueva persona</option>
+                <option>Nueva publicación</option>
+                <option>Nueva revista académica</option>
+                <option>Nueva tarea</option>
+                <option>Nueva travesía</option>
+                <option>Nuevo acto</option>
+                <option>Nuevo caso de estudio</option>
+                <option>Nuevo curso</option>
+                <option>Nuevo evento</option>
+                <option>Nuevo proyecto</option>
+                <option>Nuevo proyecto de investigación</option>
+                <option>Nuevo trabajo en madlab</option>
+            </select>
+            <p class='especificacion'>Define el tipo de formulario que necesitas para tu objeto.</p>
+        </div>
+            <input type='submit' class='accion md izquierda' value='Crear o editar'>
         </form>
         </div>
     </td>
@@ -281,7 +248,6 @@ subtitle: Interacción
     <td>
     <code>
         
-
 &lt;form class=&quot;sm&quot;&gt;
     &lt;legend&gt;Contáctate con nosotros&lt;/legend&gt;
     &lt;div class=&quot;grupo obligatorio&quot;&gt;
@@ -307,10 +273,13 @@ subtitle: Interacción
     </code>
     </td>
 </div>
+
 </tr>
 
+
+
 <tr>
-    <td><div class='col-md-24'> 
+    <td><div class='col-md-22'> 
         <div class='md'>
         <!-- Formulario Vertical Medio -->
     <form class='formulario-vertical lg nuevo-proyecto'>
@@ -400,9 +369,8 @@ subtitle: Interacción
                     </div>
                 </div>
                     <input type='submit' class='btn btn-md accion' value='Grabar la página'>
-                    <a class='btn btn-md'>Mostrar previsualización</a>
-                    <a class='btn btn-md'>Mostrar cambios</a>
-                    <a class='btn btn-md alerta'>Cancelar</a>
+                    <a class='btn btn-md margen-derecho'>Previsualizar</a>
+                    <a class='btn btn-md margen-derecho'>Cancelar</a>
         </form>    
     </div>
 </div>
@@ -437,10 +405,11 @@ subtitle: Interacción
     </div>
 </tr>
 
-
 </table>
 
 <!-- Formularios horizontales -->
+
+<h2 class='rojo-claro'>Nuevo usario</h2>
 
 <table class='w100'>
 <tr>
@@ -449,7 +418,7 @@ subtitle: Interacción
 </tr>
 <tr>
     <td>
-        <div class='col-md-24'>    
+        <div class='col-md-22'>    
         <!-- Formulario Vertical Pequeño -->
         <form class='formulario-horizontal'>
             <legend>Nuevo Usuario</legend>
@@ -553,7 +522,7 @@ subtitle: Interacción
 
 </table>
 
-<h2>Publicar un trabajo <span class='rojo-claro'>e[ad] - horizontal</span></h2>
+<h2 class='rojo-claro'>Publicar un trabajo</h2>
 
 <table class='w100'>
 <tr>
@@ -562,7 +531,7 @@ subtitle: Interacción
 </tr>
 <tr>
     <td>
-        <div class='col-md-24'>    
+        <div class='col-md-22'>    
         <!-- Formulario Vertical Pequeño -->
         <form class='horizontal-horizontal'>
 
@@ -629,89 +598,10 @@ subtitle: Interacción
 
 </table>
 
-<!-- Nuevo objeto - wiki - horizontal -->
 
-<h2>Publicar un trabajo <span class='rojo-claro'>e[ad] - horizontal</span></h2>
+<!-- Iniciar sesión -->
 
-<table class='w100'>
-<tr>
-    <th class='w60'>Muestra</th>
-    <th class='w30'>Uso</th>
-</tr>
-<tr>
-    <td>
-        <div class='col-md-24'>    
-        <!-- Formulario Vertical Pequeño -->
-        <form class='horizontal md'>
-        <h1>Agregar página con formulario</h1>
-        <div class='grupo'>
-            <label class='pregunta'>Nombre de objeto</label>
-            <input type='text' required />
-            <p class='especificacion'><strong>Ingresa el nombre y de lo que vas a crear</strong>. Se creará una página con ese nombre. Si el nombre que eliges ya está ocupado, esta página te llevará al formulario que elijas con el contenido de la página existente donde podrás editar el nuevo objeto con atributos semánticos.</p>
-        </div>
-        <div class='grupo'>
-            <label class='pregunta'>Tipo de formulario</label>
-            <select>
-                <option>Nueva asignatura</option>
-                <option>Nueva bibliografía</option>
-                <option>Nueva obra</option>
-                <option>Nueva persona</option>
-                <option>Nueva publicación</option>
-                <option>Nueva revista académica</option>
-                <option>Nueva tarea</option>
-                <option>Nueva travesía</option>
-                <option>Nuevo acto</option>
-                <option>Nuevo caso de estudio</option>
-                <option>Nuevo curso</option>
-                <option>Nuevo evento</option>
-                <option>Nuevo proyecto</option>
-                <option>Nuevo proyecto de investigación</option>
-                <option>Nuevo trabajo en madlab</option>
-            </select>
-            <p class='especificacion'>Define el tipo de formulario que necesitas para tu objeto.</p>
-        </div>
-            <input type='submit' class='accion md izquierda' value='Crear o editar'>
-        </form>
-        </div>
-    </td>
-    <!-- Código -->
-    <div class='col-md-17'>
-    <td>
-    <code>
-        
-&lt;form class=&quot;sm&quot;&gt;
-    &lt;legend&gt;Contáctate con nosotros&lt;/legend&gt;
-    &lt;div class=&quot;grupo obligatorio&quot;&gt;
-        &lt;label&gt;nombre&lt;/label&gt;
-        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-    &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Correo electrónico&lt;/label&gt;
-        &lt;input type=&quot;email&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-        &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Asunto&lt;/label&gt;
-        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-        &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Mensaje&lt;/label&gt;
-        &lt;textarea&gt;&lt;/textarea&gt;
-    &lt;div&gt;
-        &lt;input type=&quot;email&quot; class=&quot;btn btn-sm derecha&quot; value=&quot;Enviar&quot;&gt;
-&lt;/form&gt;
-
-        </div>
-    </code>
-    </td>
-</div>
-</tr>
-
-</table>
-
-
-<!-- acceder -->
-
-<h2>Publicar un trabajo <span class='rojo-claro'>e[ad] - horizontal</span></h2>
+<h2 class='rojo-claro'>Iniciar sesión</h2>
 
 <table class='w100'>
 <tr>
@@ -720,7 +610,7 @@ subtitle: Interacción
 </tr>
 <tr>
     <td>
-        <div class='col-md-24'>    
+        <div class='col-md-22'>    
         <!-- Formulario Vertical Pequeño -->
         <form class='horizontal sm'>
         <h4>Acceder <span class='rojo chico'>Wiki - horizontal</span></h4>
@@ -773,7 +663,7 @@ subtitle: Interacción
 </table>
        
 <div class='fila'>      
-    <h3 class='rojo'>2. Botones</h3>
+    <h2 class='rojo-claro'>Botones</h2>
     <p>Los botones se definen genéricamente mediante la clase <code>btn</code> y se aplican a las etiquetas <code>a</code>, <code>input [type='submit']</code> y a los elementos <code>button</code> genéricos de los formularios. Los estilos están pensados para ser aplicados de forma semántica como se describe en la tabla, pudiendo usarse en combinación con atributos de tamaño (<code>chico</code>, <code>grande</code>, <code>grigante</code>) y de atributo (<code>accion</code>, <code>alerta</code>).
     </p>
     <table class='w100'>

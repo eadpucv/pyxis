@@ -17,6 +17,8 @@ a.btn{
     background-color: @pizarra;
     vertical-align: middle;
     border: none;
+    margin-top: @cuadratin / 2;
+    margin-bottom: @cuadratin / 2;
     .border-radius(@radio);
     
     &:hover {
@@ -109,7 +111,6 @@ input[type='tel'],
 input[type='color'],
 .uneditable-input, {
   display: inline-block;
-  width: 100%;
   padding: @padding-md 3 * @padding-md;
   margin-bottom: @margen-sm;
   font-size: @cuerpo;
@@ -249,7 +250,7 @@ form{
         legend{
             font-size: @cuerpo * 2;
             font-weight: 100;
-            line-height: 80%
+            line-height: 80%;
         }
         label{
             font-size: @cuerpo * .95;
