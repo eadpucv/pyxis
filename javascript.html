@@ -11,13 +11,12 @@
   <link rel="stylesheet" href="css/pyxis.css">
   
   <script src="js/jquery.js"></script>
-  <script src="js/transition.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/tooltip.js"></script> 
   <script src="js/popover.js"></script>
   <script src="js/affix.js"></script>
-  <script src="js/dropdown.js"></script>  
-  <script src="js/collapse.js"></script>
+  <script src="js/dropdown.js"></script>
+  <script src="js/carousel.js"></script>  
   <link rel='icon' type='image/x-icon' href='img/favicon-pyxis.ico' />
   <link rel='apple-touch-icon-precomposed' sizes='114x114' href='img/favicon-114.png'>
   <link rel='apple-touch-icon-precomposed' sizes='72x72' href='img/favicon-72.png'>
@@ -25,81 +24,42 @@
 </head>
 
 <body lang='ES_es'>
-
-          <!-- barra de menú -->
-          <div class='col-lg-24 col-md-24 col-sm-24 oculto-xs'>
-          <div class='menu-pyxis'>
-          <nav>
-          <ul class='centrado blanco'>
-          <li><a href='index.html'><span class="ico-parrafo ico-sm"></span></a></li>
-          <li><a href='tipografia.html'>Tipografía</a></li>
-          <li><a href='grilla.html'>Grilla</a></li>
-          <li><a href='interaccion.html'>Interacción</a></li>
-          <li><a href='color.html'>Color</a></li>
-          <li><a href='iconografia.html'>Íconografía</a></li>
-          <li><a href='versatilidad.html'>Versatilidad</a></li>
-          <li><a href='layout.html'>Layout</a></li>
-          <li><a href='javascript.html'>Javascript</a></li>        
-          </ul>
-          </nav>          
+  <div class='pag'>
+    <header>
+        <div id="navbar" data-spy="affix" data-offset-top="100" style="background-color:white; display:none;"> 
+            <h2> Este es un ejemplo de Affix </h2>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in pretium lacus. Phasellus venenatis mollis tincidunt. Quisque semper adipiscing lorem, vel dictum elit molestie sed. Nullam luctus lorem mauris, quis fringilla sapien accumsan vitae. Sed et sem vestibulum eros interdum euismod id non dolor. In hendrerit risus ipsum, sit amet ultrices elit interdum tempor. Sed hendrerit augue metus, et ultricies odio viverra ut. Morbi vehicula justo dui, sagittis dignissim turpis posuere quis. Nam ullamcorper accumsan vestibulum.
+        </div>
+      <div class='fila'>
+        <div class='col-md-24 col-sm-12 col-xs-24'>
+          <h1 class='gigante'><span class='gruesa rojo-claro'>Pyxis</span> <span class='fino'>framework</span> <span class='chico gris-claro'>1.0.1</span></h1>
+        </div>
+        
+        <div class='col-md-24 col-sm-12 col-xs-24'>
+          <p class='margen-inferior grande italica gris'>"La verdad se encuentra dentro de una pequeña brújula, pero el margen de error es inmenso".</p>
           </div>
         </div>
-          <!-- fin barra de menú -->
 
-                    <!-- barra de menú móvil-->
-          <div class='col-lg-24 col-md-24 col-sm-24 oculto-xs'>
-          <div class='oculto-lg oculto-md oculto-sm col-xs-24'>
-          <div class='menu-pyxis-movil'> 
-               <div class="panel-group" id="accordion">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class='pag-movil blanco'>
-                      <h4 class="panel-title">
-                        <button class='btn-alerta margen-superior-s' data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                          Menú
-                        </button>
-                      </h4>
-                    </div>
-                  <div id="collapseOne" class="panel-collapse collapse in">
-                    <div class="panel-body fondo-gris-oscuro">
-                      <ul class='menu altas gruesa'>
-                        <div class='pag-movil blanco'>
-                        <a href='tipografia.html'><li>tipografía</li></a>
-                        <a href='grilla.html'><li>Grilla</li></a>
-                        <a href='interaccion.html'><li>Interacción</li></a>
-                        <a href='color.html'><li>Color</li></a>
-                        <a href='iconografia.html'><li>Íconografía</li></a>
-                        <a href='versatilidad.html'><li>Versatilidad</li></a>
-                        <a href='layout.html'><li>Layout</li></a>
-                        <a href='javascript.html'><li>Javascript</li></a>
-                        </div>
-                        </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>         
-          </div>
-          </div>
-          </div>
-          <!-- fin barra de menú -->
-
-  <!-- Descarga de Pyxis -->
-  <header>
-      <div class='franja-xs'>
-        <div class='fila margen-superior'>
-          <div class='pag'>
-            <h1 class=''><span class='gruesa rojo-claro'>Pyxis</span> <span class='fino gris'>framework</span> <span class='chico gris-claro'>1.0.1</span></h1>
-            <h1 class='gigante gris-claro fina'>Javascript</h1>
-          </div>      
-        </div>
+       <div class='fila margen-inferior'>
+        <div class='col-md-24 col-sm-24 col-xs-24'>
+          <p class='chico fino'>Proyecto de código abierto desarrollado por <a href="http://www.ead.pucv.cl/mundo/investigacion/tig/"><strong>Taller de Investigaciones Gráficas .:TIG:.</strong></a> y disponible en <a class='btn btn-sm' href='http://eadpucv.github.io/EGO' title='LLG en Github'>Github</a></p>
       </div>
-  </header><!-- fin descarga de pyxis -->
-
-    <!-- 
-        Jerarquías y estilos de párrafos articulos
-    -->
-
-<div class='pag'>
+      </div>
+    </header>
+    
+    <nav class='margen-inferior'>
+      <ul class='centrado'>
+        <li><a href='index.html'><span class="ico-parrafo ico-sm"></span></a></li>
+        <li><a href='tipografia.html'>Tipografía</a></li>
+        <li><a href='grilla.html'>Grilla</a></li>
+        <li><a href='interaccion.html'>Interacción</a></li>
+        <li><a href='color.html'>Color</a></li>
+        <li><a href='iconografia.html'>Íconografía</a></li>
+        <li><a href='versatilidad.html'>Versatilidad</a></li>
+        <li><a href='layout.html'>Layout</a></li>
+        <li><a href='javascript.html'>Javascript</a></li>        
+      </ul>
+    </nav>
 <div class='contenido'>
     <div class='fila'>
 
@@ -190,21 +150,14 @@
 
         <h4>Ejemplo</h4>
         <a id="link_ejemplo_affix" data-original-title="Mostrar el Affix, Lo puedes ocultar con el mismo boton">Mostrar/Ocultar el Affix</a>
-        <script>
-            $( "#link_ejemplo_affix" ).click(function() {
-              $( "#navbar" ).toggle();
-            });
-        </script>
         <br /><br /><hr>
 
         <h3 class='rojo'>5. Dropdowns</h3>  
         
         <h4>Archivos necesarios</h4>
-
         <script src="https://gist.github.com/IdarGonzalez/9632079.js"></script>
 
         <h4>Codigo</h4>
-
         <script src="https://gist.github.com/IdarGonzalez/9632092.js"></script>
 
         </p>      
@@ -241,7 +194,47 @@
               </ul>
             </li>
           </ul>
+        <br /><br /><hr>
+
+        <h3 class='rojo'>7. Carousel</h3>  
+        
+        <h4>Archivos necesarios</h4>
+
+        <script src="https://gist.github.com/IdarGonzalez/9691248.js"></script>
+
+        <h4>Codigo</h4>
+
+        <script src="https://gist.github.com/IdarGonzalez/9691318.js"></script>
+
+        </p>      
+        <h4>Ejemplo</h4>
+        <div data-ride="carousel" class="carousel slide col-md-22" id="carousel-example-generic">
+          <ol class="carousel-indicators">
+            <li class="" data-slide-to="0" data-target="#carousel-example-generic"></li>
+            <li data-slide-to="1" data-target="#carousel-example-generic" class="active"></li>
+            <li data-slide-to="2" data-target="#carousel-example-generic"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item">
+              <img alt="First slide" src="img/mantoaero2.jpg">
+            </div>
+            <div class="item active">
+              <img alt="Second slide" src="img/torneo2.jpg">
+            </div>
+            <div class="item">
+              <img alt="Third slide" src="img/manto4.jpg">
+            </div>
+          </div>
+          <a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
+            <span class="ico-anterior"></span>
+          </a>
+          <a data-slide="next" href="#carousel-example-generic" class="right carousel-control">
+            <span class="ico-siguiente"></span>
+          </a>
+        </div>
         <script>
+            
+
             $( "#link_ejemplo_affix" ).click(function() {
               $( "#navbar" ).toggle();
             });
@@ -270,52 +263,6 @@
           <a rel='license' href='http://creativecommons.org/licenses/by/3.0/deed.es_CL'><img alt='Licencia Creative Commons' style='border-width:0' src='http://i.creativecommons.org/l/by/3.0/80x15.png' /></a> <span xmlns:dct='http://purl.org/dc/terms/' href='http://purl.org/dc/dcmitype/InteractiveResource' property='dct:title' rel='dct:type'>e[ad] EGGL</span> por <span xmlns:cc='http://creativecommons.org/ns#' property='cc:attributionName'>Taller de Investigaciones Gráficas .:TIG:.</span> se encuentra bajo una <a rel='license' href='http://creativecommons.org/licenses/by/3.0/deed.es_CL'>Licencia Creative Commons Atribución 3.0 Unported</a>.<br />Basada en una obra en <a xmlns:dct='http://purl.org/dc/terms/' href='http://eadpucv.github.io/EGO' rel='dct:source'>http://eadpucv.github.io/EGO</a>.
       </p>  
     </div>
-
-<div class="panel-group" id="accordion">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-          Collapsible Group Item #1
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-          Collapsible Group Item #2
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-          Collapsible Group Item #3
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-</div>
-    
 
     <div class='col-md-24'>
       <address>
