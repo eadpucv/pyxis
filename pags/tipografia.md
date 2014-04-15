@@ -2,6 +2,7 @@
 layout: base
 title: Pyxis Framework - Tipografía
 subtitle: Tipografía
+pde: type.pde
 ---
 
 <div class='fila'>

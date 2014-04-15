@@ -29,10 +29,7 @@ header .iso{
 body{
   font-size: @cuerpo;
   background-color: @gris-blanco;
-  background: url('/img/ruido-gris-blanco.png');
-  // #gradient > .striped(lighten(@gris-claro, 15%), -45deg);
-  // background-size: 10px 10px;
-  // background-repeat: repeat;
+  background: url('@{ruta-imagenes}/ruido-gris-blanco.png');
 }
 
 header {
@@ -40,7 +37,7 @@ header {
 }
 
 .pag{
-	//.container();
+	position: relative;
 	margin: 0 auto;
 	padding: @cuadratin;
 }
@@ -68,35 +65,45 @@ header {
 
 .franja {
 	width: 100%;
-	min-height: 500px;
-	max-height: 800px;
 	background-color: @negro-oscuro;
 	position: relative;
 	overflow: hidden;
 	.cf;
 
-	canvas{
-		position: absolute;
-		top: 0;
-		left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-		z-index: 1;
+	&.xl{
+		min-height: 500px;
+		max-height: 800px;
+
+		canvas{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+			z-index: 1;
+		}
+
+		.leyenda{
+			margin-top: @cuadratin * 4;
+			text-align: center;
+		}
+	}
+
+	&.xs{
+		height: 300 + @cuadratin * 1.4;
+		canvas{
+			position: absolute;
+			bottom: 0;
+			right: 26px;
+			z-index: 1;
+		}
 	}
 
 	.leyenda{
-		margin-top: @cuadratin * 4;
-		text-align: center;
-		z-index: 2;
+		position: relative;
+		z-index: 5;
 	}
-}
-
-.franja-xs {
-    margin: auto;
-    width: 100%;
-    background: url('/img/ruido-negro-oscuro.png');
-    background-repeat: repeat;
 }
 
 .menu-pyxis {
@@ -128,7 +135,7 @@ footer{
 	line-height: @interlinea * .7;
 	
 	p{
-		font-size: @cuerpo*.7;
+		font-size: @cuerpo * .7;
 		letter-spacing: inherit;
 		
 		img{
