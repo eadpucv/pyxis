@@ -1,46 +1,57 @@
 /**
  *
- * Pyxis - Type
+ * Pyxis - grid
  *
  */
 
 
 // Variables
 
-int steps = 27;
-float inc;
-float r = 150;
-color black = color(25, 26, 25);
-float zoom = 1000;
 
-void setup(){
-  size(300, 300);
-  inc = TWO_PI/steps;
-  stroke(255, 100);
+color black = color(25, 26, 25);
+int num = 27;
+Num[] forma;
+
+void setup() {
+  size(1200, 300);
+  forma = new Num[num];
+  for (int i = 0; i < num; i++) {
+    forma[i] = new Num();
+    }
+background(black);
 }
 
+class Num {
+  float xpos;
+  float zoom;
+  float amp;
+  int seed;
+  float n;
 
-void draw(){
-  background(black);
-  float x, y, n;
-  pushMatrix();{
-    translate(width/2, height/2);
-
-    for (float t = 0; t < TWO_PI; t += inc){
-      
-    	// initial position
-    	x = cos(t) * r;
-    	y = sin(t) * r;
-      
-      	// noise
-    	n = noise(x/zoom, y/zoom, millis()/zoom) - .5;
-      
-      	// recalc position
-    	x = cos(t) * 3*r * n;
-    	y = sin(t) * 3*r * n;
-
-      line(0, 0, x, y);
+  Num() {
+    zoom = random(800, 8000);
+    amp = random(1, 10);
+    xpos = random(width);
+    seed = round(random(100000));
     }
-  }  
-  popMatrix();
+
+void go() {   
+    stroke(255, 30);
+    n = (noise(millis()/zoom) - .5) * amp;
+    xpos += n;
+    line(xpos, 0, xpos, height);
+    }
+}
+
+void draw() {
+  for (int i = 0; i < num; i++) {
+    forma[i].go();
+    }
+velo();
+}
+
+void velo(){
+    noStroke();
+    fill(black, 10);
+    rect(0, 0, width, height);
 }
