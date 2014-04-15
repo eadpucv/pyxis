@@ -1,8 +1,5 @@
 /* 
 
-		e[ad] - EGGL
-		Taller de Investigaciones Gráficas 2012
-
 		Tablas
 
 */
@@ -11,11 +8,14 @@
 table{
 	border-collapse: collapse;
 	border-left: 3px solid @blanco;
-	border-right: 3px solid @blanco;
-	margin-bottom: @cuadratin;
+	border-right: 3px solid @blanco;	
+	
+
 	
 	tr{
 		border-bottom: 2px solid @blanco;
+
+
 		
 		&:first-of-type{
 			border-top: 2px solid @blanco;
@@ -24,19 +24,25 @@ table{
 	th, td{
 		padding: 0 0 0 @cuadratin;
 		text-align: left;
+
+
+		span{
+			margin: @cuadratin / 6 @cuadratin / 3 @cuadratin / 6 @cuadratin / 3;
+		}
 	}
 	
 	th{
 		font-weight: bold;
 		background-color: @blanco;
+
 	}
 	
 	td{
 
 		color: fade(@negro, 60%);
 		padding-left: @cuadratin;
-		.btn{
-			margin-top: 0;
+		;.btn{
+			//margin-top: 0;
 		}
 	}
 
@@ -46,8 +52,7 @@ table{
 	}
 
 	input[type=text], input[type=password],input[type='email'], textarea{
-        margin:0;
-        width: 95%;
+        width: 100%;
     }
 
     textarea {

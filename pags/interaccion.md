@@ -3,37 +3,34 @@ layout: base
 title: Pyxis Framework - Interacción
 subtitle: Interacción
 ---
-<h2 class="rojo">Elementos de interacción con el Usuario</h2>
 
 <div class='fila'>
-    <h2 class='rojo-claro'>Formularios</h2> 
-    <h3 class='rojo-claro'>1. Clasificación de Formularios</h3>
-    <p>Se parte con la idea de que los formularios es donde ocurre una mayor transacción de interacción entre el usuario y el sistema. Para que que la interacción sea de manera cómoda y agradable, se plantea construir una relación proporcional entre los diversos formularios existentes en las plataformas digitales.</p>
-    <p>Más allá de su similitud gráfica, debe haber un patrón proporcional que nos ayude a entender que todos estos elementos corresponden a la misma entidad.</p>
-    <p>Es factible que aún no existan todos los formularios necesarios para todo uso que podría llegar a desplegarse, pero por lo mismo es necesario plantear una manera de construcción que permita replicar la cualidad gráfica.</p>
-    <p>Los tipos de formularios existentes ahora difieren en su mayor parte, entre los que se encuentran en el Sitio e[ad], con los que existen en la Wiki Casiopea. En el primer caso son de caracter mesurado, donde no hay señal de interacción (Focus, box-shadow o algo similar), los bordes de las cajas son rectos y no existe una propiedad cromática. En cambio en la Wiki, se encuentran diversos lenguajes gráficos en los formularios. El hecho de ingresar como usuario y que la gráfica sea totalmente distinta genera una confusión y eso es porque aquella gráfica empleada allí no se encuentra en otro lado neuvamente. Al crear un nuevo objeto, un proyecto, por ejemplo, aparece una tabla donde el autor debe rellenar cada uno de esos campos y el acto mismo tiene una cualidad muy árida.</p>
-    <p>Por todas aquellas razones, de caracter tanto gráfico como de interacción, son pensados para construir una similitud y tratar de mantener un grado lúdico a la hora de establecer interacción directa con el usuario.</p>
-    <h4>Proporciones</h4>
-    <p>Se usa la denominación de nombrar el caracter de formulario y luego su proporción. Es una manera de construir una versatilidad en LESS, donde se nombre que es de caracter Vertical y su contenido se adecúe a su tamaño.</p>
-    Las variables proporcionales son de:</p>
-    <ol>
-        <li>6 columnas sm (Vertical)</li>
-        <li>12 columnas md (vertical)</li>
-        <li>18 columnas lg (Vertical)</li>
-        <li>8 columnas sm (horizontal)</li>
-        <li>14 columnas md (horizontal)</li>
-        <li>20 columnas lg (horizontal) se compone de 8 columnas dos veces.</li> 
-    </ol>
-    <h4>Interacción</h4>
+    <h1 class='rojo-claro'>Formularios</h1> 
+    <h4 class='gris-oscuro'>Clasificación</h4>
+
     <p>Al hacer click en uno de los input, aparece un box-shadow, inset, donde se remarca demostrando una profunidad y se entienda que uno está rellenando ese campo. Además, el borde cambia de color, a un color verde.</p>
     <p>Actualmente existen elementos que están en fase neutral, pues falta comenzar a impregnar cada decisión gráfica en su totalidad, en relación a los atributos gráficos.</p>
     <p>Los elementos que están a modo neutral, o standard, son los Checkboxes, los dropdown y los avisos de rellenar campos requeridos para enviar el formulario.</p>
 </div>
-<h5 class='grande fino color'>Formularios verticales </h5> 
+
+<h2 class='rojo-claro'>Formulario de contacto </h2> 
+
 <p>Los formularios verticales son los formularios predeterminados, lo que implica que no llevan una clase específica; sólo se diferencian por los tamaños. El tamaño predeterminado es <code>md</code>.</p>
-<div class='fila'>
-    <div class='col-md-7'>    
-        <code>form class='sm'</code>
+
+<ul>
+    <li>Formulario-lg</li>
+    <li>Formulario-md</li>
+    <li>Formulario-sm</li>
+</ul>
+
+<table class='w100'>
+<tr>
+    <th class='w60'>Muestra</th>
+    <th class='w30'>Uso</th>
+</tr>
+<tr>
+    <td>
+        <div class='col-md-14'>    
         <!-- Formulario Vertical Pequeño -->
         <form class='sm'>
             <legend>Contáctate con nosotros</legend>    
@@ -55,10 +52,42 @@ subtitle: Interacción
             </div>
             <input type='submit' class='btn btn-sm derecha' value='Enviar'>
         </form>
-    </div>
-    <div class='col-md-1'> </div>
-    <div class='col-md-7'>    
-        <code>form class='md'</code>
+        </div>
+    </td>
+    <!-- Código -->
+    <div class='col-md-17'>
+    <td>
+    <code>
+        
+&lt;form class=&quot;sm&quot;&gt;
+    &lt;legend&gt;Contáctate con nosotros&lt;/legend&gt;
+    &lt;div class=&quot;grupo obligatorio&quot;&gt;
+        &lt;label&gt;nombre&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+    &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Correo electrónico&lt;/label&gt;
+        &lt;input type=&quot;email&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Asunto&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Mensaje&lt;/label&gt;
+        &lt;textarea&gt;&lt;/textarea&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;email&quot; class=&quot;btn btn-sm derecha&quot; value=&quot;Enviar&quot;&gt;
+&lt;/form&gt;
+
+        </div>
+    </code>
+    </td>
+</div>
+</tr>
+
+<tr>
+    <td><div class='col-md-17'>    
         <!-- Formulario Vertical Medio -->
         <form class='md'>
             <legend>Contáctate con nosotros</legend>    
@@ -80,11 +109,43 @@ subtitle: Interacción
             </div>
             <input type='submit' class='btn btn-md derecha' value='Enviar'>
         </form>
+   
+</div>
+</td>
+    <div class='col-md-17'>
+    <td>
+    <code>
+
+&lt;form class=&quot;md&quot;&gt;
+    &lt;legend&gt;Contáctate con nosotros&lt;/legend&gt;
+    &lt;div class=&quot;grupo obligatorio&quot;&gt;
+        &lt;label&gt;nombre&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+    &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Correo electrónico&lt;/label&gt;
+        &lt;input type=&quot;email&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Asunto&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Mensaje&lt;/label&gt;
+        &lt;textarea&gt;&lt;/textarea&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;email&quot; class=&quot;btn btn-md derecha&quot; value=&quot;Enviar&quot;&gt;
+&lt;/form&gt;
+
+    </code>
+    </td>
     </div>
-    <div class='col-md-1'> </div>
-    <div class='col-md-7'>    
-        <code>form class='lg'</code>
-        <!-- Formulario Vertical Grande -->
+</tr>
+
+<tr>
+    <td><div class='col-md-22'> 
+        <div class='lg'>
+        <!-- Formulario Vertical Medio -->
         <form class='lg'>
             <legend>Contáctate con nosotros</legend>    
             <div class='grupo obligatorio'>
@@ -107,86 +168,121 @@ subtitle: Interacción
         </form>
     </div>
 </div>
-<!-- Formulario Vertical Grande -->
-<div class='fila'>
-	<div class='col-md-12'>
-	<code>form class='form-horizontal'</code>
-    <h4>Formulario Horizontal</h4>
-        <form class='formulario-horizontal'>
-            <legend>Nuevo Usuario</legend>
-            <div class='grupo obligatorio'>
-                <label>Usuario</label>
-                <input type='text' placeholder='username' required/>
-                <p class='ayuda'>Elige un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</p>
-            </div>
-            <div class='grupo obligatorio'>
-                <label>Tipo</label>
-                <select>
-                    <option>Alumno(a)</option>
-                    <option>Profesora(a)</option>
-                    <option>Ex-Alumno(a)</option>
-                    <option>Amigo(a)</option>
-                    <option>Otro(a)</option>
-                </select>
-            </div>
-            <div class='grupo obligatorio'>
-                <label>Carrera</label>
-                <select>
-                    <option>Arquitectura</option>
-                    <option>Diseño</option>
-                </select>
-            </div>
-            <div class='grupo obligatorio'>
-                <label>Año ingreso</label>
-                <input type='text' class='relleno'/>
-            </div>
-            <div class='grupo obligatorio'>
-                <label>Nombre</label>
-                <input type='text' class='relleno' required />
-            </div>
-            <div class='grupo obligatorio'>
-                <label>Apellido</label>
-                <input type='text' class='relleno' required />
-            </div>
-            <div class='grupo obligatorio'>
-                <label>Rut</label>
-                <input type='text' class='relleno' required />
-            </div>
-            <div class='grupo obligatorio'>
-                <label>Mail</label>
-                <input type='email' class='relleno' required />
-            </div>
-            <div class='grupo'>
-                <label>Página en Wiki Casiopea</label>
-                <input type='text' class='relleno'/>
-                <p class='especificacion'>En caso de no especificar una pagina, se creara una pagina con tus datos en la wiki</p>
-            </div>
-            <h3>Contraseña</h3>
-            <div class='grupo'>
-                <label>Contraseña</label>
-                <input type='password' class='relleno' required />
-            </div>
-            <div class='grupo'>
-                <label>Verificación contraseña</label>
-                <input type='password' class='relleno' required />
-            </div>
-            <div class="grupo checkbox">
-                <label class="checkbox">
-                <input type="checkbox">
-                    Acepto los <a href='#'>términos y condiciones</a>
-                </label>
-                <input type='submit' class='accion btn btn-lg' value='Crear nuevo usuario'>
-            </div>
+</td>
+    <td>
+    <code>
+
+&lt;form class=&quot;lg&quot;&gt;
+    &lt;legend&gt;Contáctate con nosotros&lt;/legend&gt;
+    &lt;div class=&quot;grupo obligatorio&quot;&gt;
+        &lt;label&gt;nombre&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+    &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Correo electrónico&lt;/label&gt;
+        &lt;input type=&quot;email&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Asunto&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Mensaje&lt;/label&gt;
+        &lt;textarea&gt;&lt;/textarea&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;email&quot; class=&quot;btn btn-lg derecha&quot; value=&quot;Enviar&quot;&gt;
+&lt;/form&gt;
+
+    </code>
+    </td>
+</tr>
+</table>
+
+<!-- Formularios Verticales -->
+
+<h2 class='rojo-claro'>Agregar página con formulario</h2>
+
+<table class='w100'>
+<tr>
+    <th class='w60'>Muestra</th>
+    <th class='w30'>Uso</th>
+</tr>
+<tr>
+    
+    <td>
+        <div class='col-md-22'>    
+        <!-- Formulario Vertical Pequeño -->
+        <form class='horizontal md'>
+        <div class='grupo'>
+            <label class='pregunta'>Nombre de objeto</label>
+            <input type='text' required />
+            <p class='especificacion'><strong>Ingresa el nombre y de lo que vas a crear</strong>. Se creará una página con ese nombre. Si el nombre que eliges ya está ocupado, esta página te llevará al formulario que elijas con el contenido de la página existente donde podrás editar el nuevo objeto con atributos semánticos.</p>
+        </div>
+        <div class='grupo'>
+            <label class='pregunta'>Tipo de formulario</label>
+            <select>
+                <option>Nueva asignatura</option>
+                <option>Nueva bibliografía</option>
+                <option>Nueva obra</option>
+                <option>Nueva persona</option>
+                <option>Nueva publicación</option>
+                <option>Nueva revista académica</option>
+                <option>Nueva tarea</option>
+                <option>Nueva travesía</option>
+                <option>Nuevo acto</option>
+                <option>Nuevo caso de estudio</option>
+                <option>Nuevo curso</option>
+                <option>Nuevo evento</option>
+                <option>Nuevo proyecto</option>
+                <option>Nuevo proyecto de investigación</option>
+                <option>Nuevo trabajo en madlab</option>
+            </select>
+            <p class='especificacion'>Define el tipo de formulario que necesitas para tu objeto.</p>
+        </div>
+            <input type='submit' class='accion md izquierda' value='Crear o editar'>
         </form>
-    </div>
+        </div>
+    </td>
+    <!-- Código -->
+    <div class='col-md-17'>
+    <td>
+    <code>
+        
+&lt;form class=&quot;sm&quot;&gt;
+    &lt;legend&gt;Contáctate con nosotros&lt;/legend&gt;
+    &lt;div class=&quot;grupo obligatorio&quot;&gt;
+        &lt;label&gt;nombre&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+    &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Correo electrónico&lt;/label&gt;
+        &lt;input type=&quot;email&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Asunto&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Mensaje&lt;/label&gt;
+        &lt;textarea&gt;&lt;/textarea&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;email&quot; class=&quot;btn btn-sm derecha&quot; value=&quot;Enviar&quot;&gt;
+&lt;/form&gt;
+
+        </div>
+    </code>
+    </td>
 </div>
-<!-- Formulario Vertical Grande - Nuevo proyecto-->
-<div class='fila'>
-    <div class='col-md-18'>
-    <code>div class='col-md-18'
-    form class='formulario-vertical lg nuevo-proyecto'</code>
-    <h4>Crear nuevo o editar <span class='rojo chico'>Wiki - horizontal</span></h4>
-        <form class='formulario-vertical lg nuevo-proyecto'>
+
+</tr>
+
+
+
+<tr>
+    <td><div class='col-md-22'> 
+        <div class='md'>
+        <!-- Formulario Vertical Medio -->
+    <form class='formulario-vertical lg nuevo-proyecto'>
                 <div class='grupo'>
                 <label>Título</label>
                 <input type='text' placeholder='Nombre del nuevo objeto' required/>
@@ -201,7 +297,7 @@ subtitle: Interacción
                         <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Proyecto de posgrado</span></span>
                         <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Proyecto extracurricular</span></span>
                     </div>
-            		<p class='especificacion chica'><strong>Importante:</strong> Si se trata de un proyecto de Investigación, hay que cambiar el tipo de plantilla de {{Proyecto}} a {{Proyecto de Investigación}} en la pestaña EDITAR. Los proyectos de investigación tienen otros campos y particularidades.</p>
+                    <p class='especificacion chica'><strong>Importante:</strong> Si se trata de un proyecto de Investigación, hay que cambiar el tipo de plantilla de {{Proyecto}} a {{Proyecto de Investigación}} en la pestaña EDITAR. Los proyectos de investigación tienen otros campos y particularidades.</p>
                 </div>
                 <div class='grupo'>
                     <label class='pregunta'>Palabras claves</label>
@@ -273,21 +369,172 @@ subtitle: Interacción
                     </div>
                 </div>
                     <input type='submit' class='btn btn-md accion' value='Grabar la página'>
-                    <a class='btn btn-md'>Mostrar previsualización</a>
-                    <a class='btn btn-md'>Mostrar cambios</a>
-                    <a class='btn btn-md alerta'>Cancelar</a>
-        </form>
-	</div>
+                    <a class='btn btn-md margen-derecho'>Previsualizar</a>
+                    <a class='btn btn-md margen-derecho'>Cancelar</a>
+        </form>    
+    </div>
 </div>
-<!-- Formulario Horizontal Grande -->
-<div class='fila'>
-    <h5 class='gris-oscuro'>1.2. Formularios horizontales</h5>
-    <code>div class='col-md-20'
-    form class='horizontal-lg'
-    div class='col-md-10' * 2</code>
-    <form class='horizontal lg'>
-    <h4>Publicar un trabajo <span class='rojo chico'>e[ad] - horizontal</span></h4>
-	<div class='col-md-8 formulario-vertical'>
+</td>
+    <div class='col-md-17'>
+    <td>
+    <code>
+
+&lt;form class=&quot;md&quot;&gt;
+    &lt;legend&gt;Contáctate con nosotros&lt;/legend&gt;
+    &lt;div class=&quot;grupo obligatorio&quot;&gt;
+        &lt;label&gt;nombre&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+    &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Correo electrónico&lt;/label&gt;
+        &lt;input type=&quot;email&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Asunto&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Mensaje&lt;/label&gt;
+        &lt;textarea&gt;&lt;/textarea&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;email&quot; class=&quot;btn btn-md derecha&quot; value=&quot;Enviar&quot;&gt;
+&lt;/form&gt;
+
+    </code>
+    </td>
+    </div>
+</tr>
+
+</table>
+
+<!-- Formularios horizontales -->
+
+<h2 class='rojo-claro'>Nuevo usario</h2>
+
+<table class='w100'>
+<tr>
+    <th class='w60'>Muestra</th>
+    <th class='w30'>Uso</th>
+</tr>
+<tr>
+    <td>
+        <div class='col-md-22'>    
+        <!-- Formulario Vertical Pequeño -->
+        <form class='formulario-horizontal'>
+            <legend>Nuevo Usuario</legend>
+            <div class='grupo obligatorio'>
+                <label>Usuario</label>
+                <input type='text' placeholder='username' required/>
+                <p class='ayuda'>Elige un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</p>
+            </div>
+            <div class='grupo obligatorio'>
+                <label>Tipo</label>
+                <select>
+                    <option>Alumno(a)</option>
+                    <option>Profesora(a)</option>
+                    <option>Ex-Alumno(a)</option>
+                    <option>Amigo(a)</option>
+                    <option>Otro(a)</option>
+                </select>
+            </div>
+            <div class='grupo obligatorio'>
+                <label>Carrera</label>
+                <select>
+                    <option>Arquitectura</option>
+                    <option>Diseño</option>
+                </select>
+            </div>
+            <div class='grupo obligatorio'>
+                <label>Año ingreso</label>
+                <input type='text' class='relleno'/>
+            </div>
+            <div class='grupo obligatorio'>
+                <label>Nombre</label>
+                <input type='text' class='relleno' required />
+            </div>
+            <div class='grupo obligatorio'>
+                <label>Apellido</label>
+                <input type='text' class='relleno' required />
+            </div>
+            <div class='grupo obligatorio'>
+                <label>Rut</label>
+                <input type='text' class='relleno' required />
+            </div>
+            <div class='grupo obligatorio'>
+                <label>Mail</label>
+                <input type='email' class='relleno' required />
+            </div>
+            <div class='grupo'>
+                <label>Página en Wiki Casiopea</label>
+                <input type='text' class='relleno'/>
+                <p class='especificacion'>En caso de no especificar una pagina, se creara una pagina con tus datos en la wiki</p>
+            </div>
+            <h3>Contraseña</h3>
+            <div class='grupo'>
+                <label>Contraseña</label>
+                <input type='password' class='relleno' required />
+            </div>
+            <div class='grupo'>
+                <label>Verificación contraseña</label>
+                <input type='password' class='relleno' required />
+            </div>
+            <div class="grupo checkbox">
+                <label class="checkbox">
+                <input type="checkbox">
+                    Acepto los <a href='#'>términos y condiciones</a>
+                </label>
+                <input type='submit' class='accion btn btn-lg' value='Crear nuevo usuario'>
+            </div>
+        </form>
+        </div>
+    </td>
+    <!-- Código -->
+    <div class='col-md-17'>
+    <td>
+    <code>
+
+&lt;form class=&quot;sm&quot;&gt;
+    &lt;legend&gt;Contáctate con nosotros&lt;/legend&gt;
+    &lt;div class=&quot;grupo obligatorio&quot;&gt;
+        &lt;label&gt;nombre&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+    &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Correo electrónico&lt;/label&gt;
+        &lt;input type=&quot;email&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Asunto&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Mensaje&lt;/label&gt;
+        &lt;textarea&gt;&lt;/textarea&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;email&quot; class=&quot;btn btn-sm derecha&quot; value=&quot;Enviar&quot;&gt;
+&lt;/form&gt;
+
+        </div>
+    </code>
+    </td>
+</div>
+</tr>
+
+</table>
+
+<h2 class='rojo-claro'>Publicar un trabajo</h2>
+
+<table class='w100'>
+<tr>
+    <th class='w60'>Muestra</th>
+    <th class='w30'>Uso</th>
+</tr>
+<tr>
+    <td>
+        <div class='col-md-22'>    
+        <!-- Formulario Vertical Pequeño -->
+        <form class='horizontal-horizontal'>
+
         <label class='pregunta'>Nombre <span class='importante'>*</span></label>
         <input type='text' class='relleno' required/>
         <label class='pregunta'>Correo electrónico <span class='importante'>*</span></label>
@@ -302,8 +549,6 @@ subtitle: Interacción
         <input type="radio" name="carrera" /> <span class='chico'>Diseñado de objetos</span>
         <label class='pregunta'>Experiencia requerida</label>
         <textarea class='relleno' placeholder="perfil y competencias necesarias para el cargo"/></textarea>
-    </div>
-    <div class='col-md-8 formulario-vertical'>
         <label class='pregunta'>Descripción del trabajo</label>
         <textarea class='relleno' placeholder="descripción detallada de labores a realizar, horarios, contexto y ubicación geográfica"/></textarea>
         <label class='pregunta'>Remuneración ofrecida</label>
@@ -315,53 +560,60 @@ subtitle: Interacción
             <input type="checkbox">
                 Acepto los <a href='#'>términos y condiciones</a>
             </label>
-        </div>
-    </form>
-</div>
-<!-- Formulario Horizontal Medio --> 
-<div class='fila'>
-    <div class='col-md-14'>
-        <code>div class='col-md-14'
-        form class='horizontal md'</code>
-        <h4>Nuevo objeto <span class='rojo chico'>Wiki - horizontal</span></h4>
-        <form class='horizontal md'>
-        <h1>Agregar página con formulario</h1>
-        <div class='grupo'>
-            <label class='pregunta'>Nombre de objeto</label>
-            <input type='text' required />
-            <p class='especificacion'><strong>Ingresa el nombre y de lo que vas a crear</strong>. Se creará una página con ese nombre. Si el nombre que eliges ya está ocupado, esta página te llevará al formulario que elijas con el contenido de la página existente donde podrás editar el nuevo objeto con atributos semánticos.</p>
-        </div>
-        <div class='grupo'>
-            <label class='pregunta'>Tipo de formulario</label>
-            <select>
-                <option>Nueva asignatura</option>
-                <option>Nueva bibliografía</option>
-                <option>Nueva obra</option>
-                <option>Nueva persona</option>
-                <option>Nueva publicación</option>
-                <option>Nueva revista académica</option>
-                <option>Nueva tarea</option>
-                <option>Nueva travesía</option>
-                <option>Nuevo acto</option>
-                <option>Nuevo caso de estudio</option>
-                <option>Nuevo curso</option>
-                <option>Nuevo evento</option>
-                <option>Nuevo proyecto</option>
-                <option>Nuevo proyecto de investigación</option>
-                <option>Nuevo trabajo en madlab</option>
-            </select>
-            <p class='especificacion'>Define el tipo de formulario que necesitas para tu objeto.</p>
-        </div>
-            <input type='submit' class='accion md izquierda' value='Crear o editar'>
         </form>
-    </div>
+        </div>
+    </td>
+    <!-- Código -->
+    <div class='col-md-17'>
+    <td>
+    <code>
+        
+
+&lt;form class=&quot;sm&quot;&gt;
+    &lt;legend&gt;Contáctate con nosotros&lt;/legend&gt;
+    &lt;div class=&quot;grupo obligatorio&quot;&gt;
+        &lt;label&gt;nombre&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+    &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Correo electrónico&lt;/label&gt;
+        &lt;input type=&quot;email&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Asunto&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Mensaje&lt;/label&gt;
+        &lt;textarea&gt;&lt;/textarea&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;email&quot; class=&quot;btn btn-sm derecha&quot; value=&quot;Enviar&quot;&gt;
+&lt;/form&gt;
+
+        </div>
+    </code>
+    </td>
 </div>
-<!-- Formulario Horizontal Pequeño -->
-<div class='fila'>
-    <div class='col-md-8'>
-        <code>div class='col-md-8'
-    form class='horizontal sm'</code>
-    <h4>Acceder <span class='rojo chico'>Wiki - horizontal</span></h4>
+</tr>
+
+</table>
+
+
+<!-- Iniciar sesión -->
+
+<h2 class='rojo-claro'>Iniciar sesión</h2>
+
+<table class='w100'>
+<tr>
+    <th class='w60'>Muestra</th>
+    <th class='w30'>Uso</th>
+</tr>
+<tr>
+    <td>
+        <div class='col-md-22'>    
+        <!-- Formulario Vertical Pequeño -->
+        <form class='horizontal sm'>
+        <h4>Acceder <span class='rojo chico'>Wiki - horizontal</span></h4>
         <form class='horizontal sm'>
             <div class='ingreso'>
                 <input type='text' placeholder='nombre de usuario' required/>
@@ -371,14 +623,47 @@ subtitle: Interacción
             </div>
             <input type='submit' class='md' value='Iniciar sesión'>
         </form>
-        <p class='especificacion chico'>
-       		<a href='http://personas.ead.pucv.cl/personas/usuarios/recuperacionDatos'>¿olvidaste tu contraseña?</a> Si no tienes una cuenta, <a>regístrate</a>
+                <p class='especificacion chico'>
+            <a href='http://personas.ead.pucv.cl/personas/usuarios/recuperacionDatos'>¿olvidaste tu contraseña?</a> Si no tienes una cuenta, <a>regístrate</a>
         </p>
-    </div>
-</div>        
-<div class='fila'>
-	<code class='margen-superior'>input type='submit' class='accion grande derecha'</code>      
-	<h3 class='rojo'>2. Botones</h3>
+        </div>
+    </td>
+    <!-- Código -->
+    <div class='col-md-17'>
+    <td>
+    <code>
+        
+&lt;form class=&quot;sm&quot;&gt;
+    &lt;legend&gt;Contáctate con nosotros&lt;/legend&gt;
+    &lt;div class=&quot;grupo obligatorio&quot;&gt;
+        &lt;label&gt;nombre&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+    &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Correo electrónico&lt;/label&gt;
+        &lt;input type=&quot;email&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Asunto&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Mensaje&lt;/label&gt;
+        &lt;textarea&gt;&lt;/textarea&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;email&quot; class=&quot;btn btn-sm derecha&quot; value=&quot;Enviar&quot;&gt;
+&lt;/form&gt;
+
+        </div>
+    </code>
+    </td>
+</div>
+</tr>
+
+</table>
+       
+<div class='fila'>      
+    <h2 class='rojo-claro'>Botones</h2>
     <p>Los botones se definen genéricamente mediante la clase <code>btn</code> y se aplican a las etiquetas <code>a</code>, <code>input [type='submit']</code> y a los elementos <code>button</code> genéricos de los formularios. Los estilos están pensados para ser aplicados de forma semántica como se describe en la tabla, pudiendo usarse en combinación con atributos de tamaño (<code>chico</code>, <code>grande</code>, <code>grigante</code>) y de atributo (<code>accion</code>, <code>alerta</code>).
     </p>
     <table class='w100'>
