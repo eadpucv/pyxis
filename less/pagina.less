@@ -9,9 +9,27 @@ Contenedores y reglas generales
     .transition(.2s ease all);
 }
 
+
+header .iso{
+	margin: 0 0 0 @cuadratin;
+
+	h1{
+		.rojo;
+		font-size: 34px;
+		font-weight: 200;
+		margin-bottom: @interlinea/2;
+	}
+	h2{
+		font-size: 16px;
+		font-weight: 400;
+	}
+}
+
+
 body{
   font-size: @cuerpo;
-  background-color: @gris-claro;
+  background-color: @gris-blanco;
+  background: url('/img/ruido-gris-blanco.png');
   // #gradient > .striped(lighten(@gris-claro, 15%), -45deg);
   // background-size: 10px 10px;
   // background-repeat: repeat;
@@ -77,8 +95,8 @@ header {
 .franja-xs {
     margin: auto;
     width: 100%;
-    padding-top: @cuadratin;
-    background-color: @negro-oscuro;
+    background: url('/img/ruido-negro-oscuro.png');
+    background-repeat: repeat;
 }
 
 .menu-pyxis {
@@ -89,6 +107,7 @@ header {
 	background-color: @blanco;
 	padding: 0;
 	z-index: 10;
+	.box-shadow(0 0 10px fade(@negro, 30))
 }
 
 .menu-pyxis-movil {
@@ -109,7 +128,6 @@ footer{
 	line-height: @interlinea * .7;
 	
 	p{
-		padding-top: @cuerpo; 
 		font-size: @cuerpo*.7;
 		letter-spacing: inherit;
 		
@@ -122,7 +140,6 @@ footer{
 	address{
 		font-size: @cuerpo * .7;
 		line-height: inherit;
-		text-align: center;
 	}
 	
 	nav{
@@ -140,6 +157,22 @@ footer{
 			}
 		}
 	}
+}
+
+.margen-derecho{
+	margin-right: @cuadratin;
+}
+
+.margen-izquierdo{
+	margin-left: @cuadratin;
+}
+
+.margen-superior{
+	margin-top: @cuadratin;
+}
+
+.margen-inferior{
+	margin-bottom: @cuadratin;
 }
 
 //Nav-m

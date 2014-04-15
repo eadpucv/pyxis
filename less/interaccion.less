@@ -17,6 +17,8 @@ a.btn{
     background-color: @pizarra;
     vertical-align: middle;
     border: none;
+    margin-top: @cuadratin / 2;
+    margin-bottom: @cuadratin / 2;
     .border-radius(@radio);
     
     &:hover {
@@ -76,7 +78,7 @@ a.btn{
     }
 
     &.btn-accion,
-    &.btn-alerta{
+    &.btn-alertaa{
         &:active{
             .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
         }
@@ -109,8 +111,7 @@ input[type='tel'],
 input[type='color'],
 .uneditable-input, {
   display: inline-block;
-  width: 100%;
-  padding: @padding-md 3*@padding-md;
+  padding: @padding-md 3 * @padding-md;
   margin-bottom: @margen-sm;
   font-size: @cuerpo;
   line-height: @interlinea;
@@ -126,6 +127,9 @@ form{
         display: block;
         font-weight: 700;
         font-size: @cuerpo * .8;
+        //  Paddings
+        padding-bottom: @padding-md;
+        padding-top: @padding-md * 2;
 
         &.checkbox{
             display: inline-block;
@@ -177,7 +181,7 @@ form{
         color: @pizarra;
         .border-radius(@radio);
         &:valid{
-            color: fade(@pizarra-claro, 70);
+        color: fade(@pizarra-claro, 70);
         }
     }
         
@@ -230,8 +234,11 @@ form{
             text-transform: uppercase;
         }
         input,
-        select,
-        textarea{font-size: @cuerpo * .8}
+        select, {font-size: @cuerpo * .8;}
+
+        textarea{font-size: @cuerpo * .8;
+            width:100%;}
+
     }
     &.md{
         label{font-size: @cuerpo * .8}
@@ -243,7 +250,7 @@ form{
         legend{
             font-size: @cuerpo * 2;
             font-weight: 100;
-            line-height: 80%
+            line-height: 80%;
         }
         label{
             font-size: @cuerpo * .95;
@@ -279,7 +286,7 @@ form{
                 display: block;
                 float: left;
                 margin: 0;
-                width: 70%
+                width: 70%;
             }
 
             p{
