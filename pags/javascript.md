@@ -5,7 +5,7 @@ subtitle: Javascript
 ---
 
 
-<div id='navbar' data-spy='affix' data-offset-top='345' style='background:white;'> 
+<div id='navbar' data-spy='affix' data-offset-top='345' style='background:white; display:none;'> 
     <h2> Este es un ejemplo de Affix </h2>
    	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in pretium lacus. Phasellus venenatis mollis tincidunt. Quisque semper adipiscing lorem, vel dictum elit molestie sed. Nullam luctus lorem mauris, quis fringilla sapien accumsan vitae. Sed et sem vestibulum eros interdum euismod id non dolor. In hendrerit risus ipsum, sit amet ultrices elit interdum tempor. Sed hendrerit augue metus, et ultricies odio viverra ut. Morbi vehicula justo dui, sagittis dignissim turpis posuere quis. Nam ullamcorper accumsan vestibulum.
 </div>
