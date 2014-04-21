@@ -10,16 +10,16 @@ nav {
   border-top: 1px solid @color-borde;
   
   ul, ol{
-  margin: 0;
-  padding: 0;
-  .cf;
+    margin: 0;
+    padding: 0;
+    .cf;
     
     li{
       display: inline;
       margin: 0;
       padding: 0;
       list-style-type: none;
-    
+      
       a{  
         display: inline-block;
         font-weight: 500; 
@@ -31,9 +31,9 @@ nav {
 
       }
 
-    span{
-      margin: 0 !important;
-    }
+      span{
+        margin: 0 !important;
+      }
       
       a:hover{
         text-decoration: none;
@@ -88,7 +88,6 @@ nav {
         cursor: not-allowed;
       }
     }
-  }
 
   // Despliegue de Dropdowns
 
@@ -105,8 +104,9 @@ nav {
   // Prevent IE8 from misplacing imgs
   // See https://github.com/h5bp/html5-boilerplate/issues/984#issuecomment-3985989
 
-  > li > a > img {
-    max-width: none;
+    > li > a > img {
+      max-width: none;
+    }
   }
 }
 
@@ -205,7 +205,7 @@ nav {
 
   > li {
     float: none;
-     > a {
+    > a {
       text-align: center;
       margin-bottom: 5px;
     }
@@ -283,4 +283,3 @@ nav {
   // Remove the top rounded corners here since there is a hard edge above the menu
   .border-top-radius(0);
 }
-
