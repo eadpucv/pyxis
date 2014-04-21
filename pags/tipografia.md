@@ -38,12 +38,12 @@ pde: type.pde
     <th class='w30'>Uso</th>
 </tr>
 <tr>
-    <td><div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
-    <td><code>&lt;p&gt;</code></td>
-</tr>
-<tr>
     <td><div><p class='xs'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
     <td><code>&lt;p class=&quot;xs&quot;&gt;</code></td>
+</tr>
+<tr>
+    <td><div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
+    <td><code>&lt;p&gt;</code></td>
 </tr>
 <tr>
     <td><div><p class='sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
@@ -321,11 +321,11 @@ pde: type.pde
     <td><div class='col-md-24'>
 	
 	<div class='margen-superior-s'>
-		<span class='italica md fina gris-oscuro'>Sólo lo que se idea es lo que se ve; pero lo que se idea es lo que se inventa</span>
-		<span class='italica negrita rojo-claro mediana derecha'>Martin Heidegger</span>
+		<span class='italica lg fina gris-oscuro'>Sólo lo que se idea es lo que se ve; pero lo que se idea es lo que se inventa</span>
+		<span class='italica xs negrita rojo-claro derecha'>Martin Heidegger</span>
 
-		<span class='italica mediana gris-oscuro'>Hay dos cosas infinitas: el Universo y la estupidez humana, y del Universo no estoy seguro.</span>        
-		<span class='italica negrita rojo-claro mediana derecha'>Albert Einstein</span>
+		<span class='italica md gris-oscuro'>Hay dos cosas infinitas: el Universo y la estupidez humana, y del Universo no estoy seguro.</span>        
+		<span class='italica xs negrita rojo-claro derecha'>Albert Einstein</span>
 
 		<span class="xs referencias gris"><sup>[8] </sup> <strong>Norman D </strong>, <i>“El Diseño Emocional. Por qué nos gustan (o no) los objetos cotidianos.</i> Capítulo 3 Tres Niveles de diseño visceral, conductual y reflexivo. <br> Paidós Ediciones S.A. Barcelona, España. Año 2005. Páginas 81 – 121.ISBN 84-493-1729-0</span>
 	</div>

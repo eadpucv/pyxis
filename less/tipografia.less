@@ -35,7 +35,7 @@
 
 //  Párrafo:
 
-p, {
+p {
     margin: @interlinea 0 @interlinea * 1.3 0;
     line-height: @interlinea;
     color: fade(@negro, 80%);
@@ -45,12 +45,12 @@ p, {
     //  Tamaños de Párrafo:
 
     &.lg { 
-    font-size: @cuerpo * 1.8;
+    font-size: @cuerpo * 2.2;
     line-height: 140%;
     }
 
     &.md {
-      font-size: @cuerpo * 1.5;
+      font-size: @cuerpo * 1.7;
       font-weight: 200;
       line-height: 140%;
     }
@@ -61,7 +61,7 @@ p, {
     }
     
     &.xs {
-      font-size: @cuerpo * .90;
+      font-size: @cuerpo * .80;
       line-height: @interlinea * .9;
     }
 }
@@ -70,18 +70,18 @@ p, {
 //  Vistazo:
 
 span {
-      margin: @interlinea 0 @interlinea * 1.5 0!important;
+      margin: @interlinea 0 @interlinea * 1.5 0;
       display: inline-block;
 
           //  Tamaños de Párrafo:
 
     &.lg { 
-    font-size: @cuerpo * 1.8;
+    font-size: @cuerpo * 2.2;
     line-height: 140%;
     }
 
     &.md {
-      font-size: @cuerpo * 1.5;
+      font-size: @cuerpo * 1.7;
       font-weight: 200;
       line-height: 140%;
     }
@@ -92,7 +92,7 @@ span {
     }
     
     &.xs {
-      font-size: @cuerpo * .90;
+      font-size: @cuerpo * .80;
       line-height: @interlinea * .9;
     }
 }
@@ -286,7 +286,7 @@ span {
   li:before {
     line-height: @interlinea;
     font-family: 'Stampa';
-    content: "\e62f";
+    //content: "\e62f";
     &:before{
       .color;
     }
