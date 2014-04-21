@@ -196,7 +196,7 @@ subtitle: Iconografía
     </tr>
 
     <tr>
-        <td><code>icn-anterior</code></div></td>
+        <td><code>nav-anterior</code></div></td>
         <td><span class="icn icn-anterior icn-sm"></span></td>
         <td><span class="icn icn-anterior icn-md"></span></td>
         <td><span class="icn icn-anterior icn-lg"></span></td>
@@ -204,7 +204,7 @@ subtitle: Iconografía
     </tr>
 
     <tr>
-        <td><code>icn-siguiente</code></div></td>
+        <td><code>nav-siguiente</code></div></td>
         <td><span class="icn icn-siguiente icn-sm"></span></td>
         <td><span class="icn icn-siguiente icn-md"></span></td>
         <td><span class="icn icn-siguiente icn-lg"></span></td>
