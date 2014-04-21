@@ -15,7 +15,7 @@ subtitle: Grilla
 <p>La primera estructura como ejemplo de la grilla pasa de 24 columnas en dispositivos grandes y medianos a 12 columnas en dispositivos pequeños, y 6 columnas en dispositivos extra pequeños para un diseño responsivo adaptable. 
 
 <ol>
-	<li><p class='chico'><strong>Para ocultar columnas escribe 'col-oculto-(formato de tamaño)', y recuerda esta clase con la respectiva nomenclatura.</strong></p></li>
+	<li class='chico'>Para ocultar columnas escribe 'col-oculto-(formato de tamaño)', y recuerda esta clase con la respectiva nomenclatura.</li>
 </ol>
 
 
@@ -55,18 +55,18 @@ subtitle: Grilla
 
 
 <div class='fila margen-inferior'>
-<div class='col-md-2 col-sm-4 col-xs-8 ver'><p>01</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-8</code></div>
-<div class='col-md-2 col-sm-4 col-xs-8 ver'><p>02</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-8</code></div>
-<div class='col-md-2 col-sm-4 col-xs-8 ver'><p>03</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-8</code></div>
-<div class='col-md-2 col-sm-4 oculto-xs ver'><p>04</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-oculto</code></div>
-<div class='col-md-2 col-sm-4 oculto-xs ver'><p>05</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-oculto</code></div>
-<div class='col-md-2 col-sm-4 oculto-xs ver'><p>06</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-4</code><code class='diagonal'>col-xs-oculto</code></div>
-<div class='col-md-2 oculto-sm oculto-xs ver'><p>07</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-oculto</code><code class='diagonal'>col-xs-oculto</code></div>
-<div class='col-md-2 oculto-sm oculto-xs ver'><p>08</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-oculto</code><code class='diagonal'>col-xs-oculto</code></div>
-<div class='col-md-2 oculto-sm oculto-xs ver'><p>09</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-oculto</code><code class='diagonal'>col-xs-oculto</code></div>
-<div class='col-md-2 oculto-sm oculto-xs ver'><p>10</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-oculto</code><code class='diagonal'>col-xs-oculto</code></div>
-<div class='col-md-2 oculto-sm oculto-xs ver'><p>11</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-oculto</code><code class='diagonal'>col-xs-oculto</code></div>
-<div class='col-md-2 oculto-sm oculto-xs ver'><p>12</p><code class='diagonal'>col-md-2</code><code class='diagonal'>col-sm-oculto</code><code class='diagonal'>col-xs-oculto</code></div>
+<div class='col-md-2 col-sm-4 col-xs-8 ver'><p>01</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-4</code><code class='vertical'>col-xs-8</code></div>
+<div class='col-md-2 col-sm-4 col-xs-8 ver'><p>02</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-4</code><code class='vertical'>col-xs-8</code></div>
+<div class='col-md-2 col-sm-4 col-xs-8 ver'><p>03</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-4</code><code class='vertical'>col-xs-8</code></div>
+<div class='col-md-2 col-sm-4 oculto-xs ver'><p>04</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-4</code><code class='vertical'>col-xs-oculto</code></div>
+<div class='col-md-2 col-sm-4 oculto-xs ver'><p>05</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-4</code><code class='vertical'>col-xs-oculto</code></div>
+<div class='col-md-2 col-sm-4 oculto-xs ver'><p>06</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-4</code><code class='vertical'>col-xs-oculto</code></div>
+<div class='col-md-2 oculto-sm oculto-xs ver'><p>07</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+<div class='col-md-2 oculto-sm oculto-xs ver'><p>08</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+<div class='col-md-2 oculto-sm oculto-xs ver'><p>09</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+<div class='col-md-2 oculto-sm oculto-xs ver'><p>10</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+<div class='col-md-2 oculto-sm oculto-xs ver'><p>11</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+<div class='col-md-2 oculto-sm oculto-xs ver'><p>12</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
 </div>
 
 <script src='https://gist.github.com/JuanGodoy91/9943657.js'></script>
@@ -79,12 +79,12 @@ subtitle: Grilla
 
 
 <div class='fila margen-inferior'>
-<div class='col-md-4 col-sm-12 col-xs-24 ver'><p>01</p><code class='diagonal'>col-md-4</code><code class='diagonal'>col-sm-12</code><code class='diagonal'>col-xs-24</code></div>
-<div class='col-md-4 col-sm-12 col-xs-24 ver'><p>02</p><code class='diagonal'>col-md-4</code><code class='diagonal'>col-sm-12</code><code class='diagonal'>col-xs-34</code></div>
-<div class='col-md-4 col-sm-6 col-xs-12 ver'><p>03</p><code class='diagonal'>col-md-4</code><code class='diagonal'>col-sm-6</code><code class='diagonal'>col-xs-12</code></div>
-<div class='col-md-4 col-sm-6 col-xs-12 ver'><p>04</p><code class='diagonal'>col-md-4</code><code class='diagonal'>col-sm-6</code><code class='diagonal'>col-xs-12</code></div>
-<div class='col-md-4 col-sm-6 col-xs-12 ver'><p>05</p><code class='diagonal'>col-md-4</code><code class='diagonal'>col-sm-6</code><code class='diagonal'>col-xs-12</code></div>
-<div class='col-md-4 col-sm-6 col-xs-12 ver'><p>06</p><code class='diagonal'>col-md-4</code><code class='diagonal'>col-sm-6</code><code class='diagonal'>col-xs-12</code></div>
+<div class='col-md-4 col-sm-12 col-xs-24 ver'><p>01</p><code class='vertical'>col-md-4</code><code class='vertical'>col-sm-12</code><code class='vertical'>col-xs-24</code></div>
+<div class='col-md-4 col-sm-12 col-xs-24 ver'><p>02</p><code class='vertical'>col-md-4</code><code class='vertical'>col-sm-12</code><code class='vertical'>col-xs-34</code></div>
+<div class='col-md-4 col-sm-6 col-xs-12 ver'><p>03</p><code class='vertical'>col-md-4</code><code class='vertical'>col-sm-6</code><code class='vertical'>col-xs-12</code></div>
+<div class='col-md-4 col-sm-6 col-xs-12 ver'><p>04</p><code class='vertical'>col-md-4</code><code class='vertical'>col-sm-6</code><code class='vertical'>col-xs-12</code></div>
+<div class='col-md-4 col-sm-6 col-xs-12 ver'><p>05</p><code class='vertical'>col-md-4</code><code class='vertical'>col-sm-6</code><code class='vertical'>col-xs-12</code></div>
+<div class='col-md-4 col-sm-6 col-xs-12 ver'><p>06</p><code class='vertical'>col-md-4</code><code class='vertical'>col-sm-6</code><code class='vertical'>col-xs-12</code></div>
 </div>
 
 <script src="https://gist.github.com/JuanGodoy91/9943820.js"></script>
@@ -98,17 +98,17 @@ subtitle: Grilla
 <p>Estructura donde el contenido se muestra de manera central, con 12 columnas en los dispositivos mayores, para luego pasar en <i>xs<</i> a 24 columnas junto con el resto de las filas.</p>
 
 <div class='fila margen-inferior'>
-<div class='col-md-24 col-sm-24 col-xs-24 ver'><p>01 (Header)</p><code class='diagonal'>col-md-24</code><code class='diagonal'>col-sm-24</code><code class='diagonal'>col-xs-24</code></div>
+<div class='col-md-24 col-sm-24 col-xs-24 ver'><p>01 (Header)</p><code class='vertical'>col-md-24</code><code class='vertical'>col-sm-24</code><code class='vertical'>col-xs-24</code></div>
 </div>
 
 <div class='fila margen-inferior'>
-<div class='col-md-6 col-sm-6 col-xs-24 ver'><p>01 (Aside)</p><code class='diagonal'>col-md-6</code><code class='diagonal'>col-sm-6</code><code class='diagonal'>col-xs-24</code></div>
-<div class='col-md-12 col-sm-12 col-xs-24 ver'><p>02 (Contenido)</p><code class='diagonal'>col-md-12</code><code class='diagonal'>col-sm-12</code><code class='diagonal'>col-xs-24</code></div>
-<div class='col-md-6 col-sm-6 col-xs-24 ver'><p>03 (Aside)</p><code class='diagonal'>col-md-6</code><code class='diagonal'>col-sm-6</code><code class='diagonal'>col-xs-24</code></div>
+<div class='col-md-6 col-sm-6 col-xs-24 ver'><p>01 (Aside)</p><code class='vertical'>col-md-6</code><code class='vertical'>col-sm-6</code><code class='vertical'>col-xs-24</code></div>
+<div class='col-md-12 col-sm-12 col-xs-24 ver'><p>02 (Contenido)</p><code class='vertical'>col-md-12</code><code class='vertical'>col-sm-12</code><code class='vertical'>col-xs-24</code></div>
+<div class='col-md-6 col-sm-6 col-xs-24 ver'><p>03 (Aside)</p><code class='vertical'>col-md-6</code><code class='vertical'>col-sm-6</code><code class='vertical'>col-xs-24</code></div>
 </div>
 
 <div class='fila margen-inferior'>
-<div class='col-lg-24 ver'><p>05 (Footer)</p><code class='diagonal'>col-md-24</code><code class='diagonal'>col-sm-24</code><code class='diagonal'>col-xs-24</code></div>
+<div class='col-lg-24 ver'><p>05 (Footer)</p><code class='vertical'>col-md-24</code><code class='vertical'>col-sm-24</code><code class='vertical'>col-xs-24</code></div>
 </div>
 
 <script src="https://gist.github.com/JuanGodoy91/9943890.js"></script>
@@ -121,24 +121,24 @@ subtitle: Grilla
 
 
 <div class='fila margen-inferior'>
-<div class='col-md-24 col-sm-24 col-xs-24 ver'><p>01 (Header)</p><code class='diagonal'>col-md-24</code><code class='diagonal'>col-sm-24</code><code class='diagonal'>col-xs-24</code>
+<div class='col-md-24 col-sm-24 col-xs-24 ver'><p>01 (Header)</p><code class='vertical'>col-md-24</code><code class='vertical'>col-sm-24</code><code class='vertical'>col-xs-24</code>
 <div  class='fila'>   
- <div class='col-md-20 col-md-offset-2 col-sm-22 col-sm-offset-1 col-xs-22 col-xs-offset-1 ver'><p>01 (Texto anidado)</p><code class='diagonal'>col-md-20</code><code class='diagonal'>col-md-offset-2</code><code class='diagonal'>col-sm-22</code><code class='diagonal'>col-sm-offset-1</code><code class='diagonal'>col-xs-22</code></div>
+ <div class='col-md-20 col-md-offset-2 col-sm-22 col-sm-offset-1 col-xs-22 col-xs-offset-1 ver'><p>01 (Texto anidado)</p><code class='vertical'>col-md-20</code><code class='vertical'>col-md-offset-2</code><code class='vertical'>col-sm-22</code><code class='vertical'>col-sm-offset-1</code><code class='vertical'>col-xs-22</code></div>
 </div>
 </div>
 </div> 
 
 <div class='fila margen-inferior'> 
-<div class='col-md-6 col-md-offset-2 col-sm-6 col-sm-offset-1 col-xs-22 oculto-xs ver'><p>02 (Aside)</p><code class='diagonal'>col-md-6</code><code class='diagonal'>col-md-offset-2</code><code class='diagonal'>col-sm-6</code><code class='diagonal'>col-sm-offset-1</code><code class='diagonal'>col-xs-22</code></div>
-<div class='col-md-14 col-sm-16 oculto-xs ver'><p>03 (Contenido)</p><code class='diagonal'>col-md-14</code><code class='diagonal'>col-sm-16</code><code class='diagonal'>col-xs-oculto</code></div>
-<div class='oculto-lg oculto-md oculto-sm oculto-xs ver'><p>04 (Aside)</p><code class='diagonal'>col-md-oculto</code><code class='diagonal'>col-sm-oculto</code><code class='diagonal'>col-xs-oculto</code></div>   
+<div class='col-md-6 col-md-offset-2 col-sm-6 col-sm-offset-1 col-xs-22 oculto-xs ver'><p>02 (Aside)</p><code class='vertical'>col-md-6</code><code class='vertical'>col-md-offset-2</code><code class='vertical'>col-sm-6</code><code class='vertical'>col-sm-offset-1</code><code class='vertical'>col-xs-22</code></div>
+<div class='col-md-14 col-sm-16 oculto-xs ver'><p>03 (Contenido)</p><code class='vertical'>col-md-14</code><code class='vertical'>col-sm-16</code><code class='vertical'>col-xs-oculto</code></div>
+<div class='oculto-lg oculto-md oculto-sm oculto-xs ver'><p>04 (Aside)</p><code class='vertical'>col-md-oculto</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>   
   
-<div class='oculto-lg oculto-md oculto-sm col-xs-22 col-xs-offset-1 ver'><p>03 (Contenido)</p><code class='diagonal'>col-md-oculto</code><code class='diagonal'>col-sm-oculto</code><code class='diagonal'>col-xs-22</code><code class='diagonal'>col-xs-offset-1</code></div> 
-<div class='oculto-lg oculto-md oculto-sm col-xs-22 col-xs-offset-1 ver'><p>04 (Aside)</p><code class='diagonal'>col-md-oculto</code><code class='diagonal'>col-sm-oculto</code><code class='diagonal'>col-xs-22</code><code class='diagonal'>col-xs-offset-1</code></div>
+<div class='oculto-lg oculto-md oculto-sm col-xs-22 col-xs-offset-1 ver'><p>03 (Contenido)</p><code class='vertical'>col-md-oculto</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-22</code><code class='vertical'>col-xs-offset-1</code></div> 
+<div class='oculto-lg oculto-md oculto-sm col-xs-22 col-xs-offset-1 ver'><p>04 (Aside)</p><code class='vertical'>col-md-oculto</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-22</code><code class='vertical'>col-xs-offset-1</code></div>
 </div>
 
 <div class='fila margen-inferior'> 
-<div class='col-md-24 col-sm-24 col-xs-24 ver'><p>05 (Footer)</p><code class='diagonal'>col-md-24</code><code class='diagonal'>col-sm-24</code><code class='diagonal'>col-xs-24</code></div>
+<div class='col-md-24 col-sm-24 col-xs-24 ver'><p>05 (Footer)</p><code class='vertical'>col-md-24</code><code class='vertical'>col-sm-24</code><code class='vertical'>col-xs-24</code></div>
 </div>
 
 <script src="https://gist.github.com/JuanGodoy91/9944088.js"></script>
@@ -154,20 +154,20 @@ subtitle: Grilla
 
 
 <div class='fila margen-inferior'>
- <div class='col-lg-20 col-md-20 col-md-offset-2 col-sm-22 col-sm-offset-1 col-xs-22 col-xs-offset-1 ver'><p>01 (Header)</p><code class='diagonal'>col-md-20</code><code class='diagonal'>col-md-offset-2</code><code class='diagonal'>col-sm-22</code><code class='diagonal'>col-sm-offset-1</code><code class='diagonal'>col-xs-22</code></div>
+ <div class='col-lg-20 col-md-20 col-md-offset-2 col-sm-22 col-sm-offset-1 col-xs-22 col-xs-offset-1 ver'><p>01 (Header)</p><code class='vertical'>col-md-20</code><code class='vertical'>col-md-offset-2</code><code class='vertical'>col-sm-22</code><code class='vertical'>col-sm-offset-1</code><code class='vertical'>col-xs-22</code></div>
 </div>
 
 <div class='fila margen-inferior'> 
-<div class='col-md-6 col-md-offset-2 col-sm-6 col-sm-offset-1 col-xs-22 col-xs-offset-1 ver'><p>02 (Aside)<code class='diagonal'>col-md-6</code><code class='diagonal'>col-md-offset-2</code><code class='diagonal'>col-sm-6</code><code class='diagonal'>col-sm-offset-1</code><code class='diagonal'>col-xs-22</code></div>
-<div class='col-md-8 col-sm-10 oculto-xs ver'><p>03 (Contenido)<code class='diagonal'>col-md-8</code><code class='diagonal'>col-sm-10</code><code class='diagonal'>col-xs-oculto</code></div>
-<div class='col-md-6 col-sm-6 oculto-xs ver'><p>04 (Aside)<code class='diagonal'>col-md-6</code><code class='diagonal'>col-sm-6</code><code class='diagonal'>col-xs-oculto</code></div>
+<div class='col-md-6 col-md-offset-2 col-sm-6 col-sm-offset-1 col-xs-22 col-xs-offset-1 ver'><p>02 (Aside)<code class='vertical'>col-md-6</code><code class='vertical'>col-md-offset-2</code><code class='vertical'>col-sm-6</code><code class='vertical'>col-sm-offset-1</code><code class='vertical'>col-xs-22</code></div>
+<div class='col-md-8 col-sm-10 oculto-xs ver'><p>03 (Contenido)<code class='vertical'>col-md-8</code><code class='vertical'>col-sm-10</code><code class='vertical'>col-xs-oculto</code></div>
+<div class='col-md-6 col-sm-6 oculto-xs ver'><p>04 (Aside)<code class='vertical'>col-md-6</code><code class='vertical'>col-sm-6</code><code class='vertical'>col-xs-oculto</code></div>
 
-<div class='oculto-lg oculto-md oculto-sm col-xs-22 col-xs-offset-1 ver'><p>03 (Contenido)<code class='diagonal'>col-md-oculto</code><code class='diagonal'>col-sm-22</code><code class='diagonal'>col-xs-22</code></div>
-<div class='oculto-lg oculto-md oculto-sm col-xs-22 col-xs-offset-1 ver'><p>04 (Aside)<code class='diagonal'>col-md-oculto</code><code class='diagonal'>col-sm-oculto</code><code class='diagonal'>col-xs-22</code></div>
+<div class='oculto-lg oculto-md oculto-sm col-xs-22 col-xs-offset-1 ver'><p>03 (Contenido)<code class='vertical'>col-md-oculto</code><code class='vertical'>col-sm-22</code><code class='vertical'>col-xs-22</code></div>
+<div class='oculto-lg oculto-md oculto-sm col-xs-22 col-xs-offset-1 ver'><p>04 (Aside)<code class='vertical'>col-md-oculto</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-22</code></div>
 </div>
 
 <div class='fila margen-inferior'>
-<div class='col-lg-20 col-md-20 col-md-offset-2 col-sm-22 col-sm-offset-1 col-xs-22 col-xs-offset-1 ver'><p>05 (Footer)</p><code class='diagonal'>col-md-20</code><code class='diagonal'>col-md-offset-2</code><code class='diagonal'>col-sm-22</code><code class='diagonal'>col-sm-offset-1</code><code class='diagonal'>col-xs-22</code></div>
+<div class='col-lg-20 col-md-20 col-md-offset-2 col-sm-22 col-sm-offset-1 col-xs-22 col-xs-offset-1 ver'><p>05 (Footer)</p><code class='vertical'>col-md-20</code><code class='vertical'>col-md-offset-2</code><code class='vertical'>col-sm-22</code><code class='vertical'>col-sm-offset-1</code><code class='vertical'>col-xs-22</code></div>
 </div>   
 
 <script src="https://gist.github.com/JuanGodoy91/9944165.js"></script>
@@ -182,25 +182,25 @@ subtitle: Grilla
 
 
 <div class='fila margen-inferior'>
-<div class='col-md-24 col-sm-24 col-xs-24 ver'><p>01 (header)</p><code class='diagonal'>col-md-24</code><code class='diagonal'>col-sm-24</code><code class='diagonal'>col-xs-24</code>
+<div class='col-md-24 col-sm-24 col-xs-24 ver'><p>01 (header)</p><code class='vertical'>col-md-24</code><code class='vertical'>col-sm-24</code><code class='vertical'>col-xs-24</code>
 <div class='fila'>
-<div class='col-md-20 col-md-offset-2 col-sm-22 col-sm-offset-1 col-xs-22 col-xs-offset-1 ver'><p>01 (Texto anidado)</p><code class='diagonal'>col-md-20</code><code class='diagonal'>col-md-offset-2</code><code class='diagonal'>col-sm-22</code><code class='diagonal'>col-sm-offset-1</code><code class='diagonal'>col-xs-22</code></div>
+<div class='col-md-20 col-md-offset-2 col-sm-22 col-sm-offset-1 col-xs-22 col-xs-offset-1 ver'><p>01 (Texto anidado)</p><code class='vertical'>col-md-20</code><code class='vertical'>col-md-offset-2</code><code class='vertical'>col-sm-22</code><code class='vertical'>col-sm-offset-1</code><code class='vertical'>col-xs-22</code></div>
 </div>
 </div>
 </div> 
 
 <div class='fila margen-inferior'>
-<div class='col-md-6 col-sm-6 oculto-xs ver'><p>02 (Sidebar)</p><code class='diagonal'>col-md-6</code><code class='diagonal'>col-sm-6</code><code class='diagonal'>col-xs-oculto</code></div>
-<div class='col-md-18 col-sm-18 col-xs-24 ver'><p>03 (Contenido)</p><code class='diagonal'>col-md-18</code><code class='diagonal'>col-sm-18</code><code class='diagonal'>col-xs-24</code></div>
-<div class='col-md-9 col-md-offset-6 col-sm-18 col-sm-offset-0 col-xs-12 ver'><p>04 (Contenido)</p><code class='diagonal'>col-md-9</code><code class='diagonal'>col-md-offset-6</code><code class='diagonal'>col-sm-18</code><code class='diagonal'>col-sm-offset-6</code><code class='diagonal'>col-xs-12</code></div>
-<div class='col-md-9 col-md-offset-0 col-sm-18 col-sm-offset-6 col-xs-12 ver'><p>05 (Contenido)</p><code class='diagonal'>col-md-9</code><code class='diagonal'>col-md-offset-0</code><code class='diagonal'>col-sm-18</code><code class='diagonal'>col-sm-offset-6</code><code class='diagonal'>col-xs-12</code></div>
-<div class='col-md-9 col-md-offset-6 col-sm-18 col-sm-offset-6 col-xs-8 ver'><p>06 (Contenido)</p><code class='diagonal'>col-md-9</code><code class='diagonal'>col-md-offset-6</code><code class='diagonal'>col-sm-18</code><code class='diagonal'>col-sm-offset-6</code><code class='diagonal'>col-xs-8</code></div>
-<div class='col-md-9 col-md-offset-0 col-sm-18 col-sm-offset-6 col-xs-8 ver'><p>07 (Contenido)</p><code class='diagonal'>col-md-9</code><code class='diagonal'>col-md-offsaet-0</code><code class='diagonal'>col-sm-18</code><code class='diagonal'>col-sm-offset-6</code><code class='diagonal'>col-xs-8</code></div>
-<div class='col-md-18 col-sm-18 col-sm-offset-6 col-xs-8 ver'><p>08 (Contenido)</p><code class='diagonal'>col-md-18</code><code class='diagonal'>col-sm-18</code><code class='diagonal'>col-sm-offset-6</code><code class='diagonal'>col-xs-8</code></div>
+<div class='col-md-6 col-sm-6 oculto-xs ver'><p>02 (Sidebar)</p><code class='vertical'>col-md-6</code><code class='vertical'>col-sm-6</code><code class='vertical'>col-xs-oculto</code></div>
+<div class='col-md-18 col-sm-18 col-xs-24 ver'><p>03 (Contenido)</p><code class='vertical'>col-md-18</code><code class='vertical'>col-sm-18</code><code class='vertical'>col-xs-24</code></div>
+<div class='col-md-9 col-md-offset-6 col-sm-18 col-sm-offset-0 col-xs-12 ver'><p>04 (Contenido)</p><code class='vertical'>col-md-9</code><code class='vertical'>col-md-offset-6</code><code class='vertical'>col-sm-18</code><code class='vertical'>col-sm-offset-6</code><code class='vertical'>col-xs-12</code></div>
+<div class='col-md-9 col-md-offset-0 col-sm-18 col-sm-offset-6 col-xs-12 ver'><p>05 (Contenido)</p><code class='vertical'>col-md-9</code><code class='vertical'>col-md-offset-0</code><code class='vertical'>col-sm-18</code><code class='vertical'>col-sm-offset-6</code><code class='vertical'>col-xs-12</code></div>
+<div class='col-md-9 col-md-offset-6 col-sm-18 col-sm-offset-6 col-xs-8 ver'><p>06 (Contenido)</p><code class='vertical'>col-md-9</code><code class='vertical'>col-md-offset-6</code><code class='vertical'>col-sm-18</code><code class='vertical'>col-sm-offset-6</code><code class='vertical'>col-xs-8</code></div>
+<div class='col-md-9 col-md-offset-0 col-sm-18 col-sm-offset-6 col-xs-8 ver'><p>07 (Contenido)</p><code class='vertical'>col-md-9</code><code class='vertical'>col-md-offsaet-0</code><code class='vertical'>col-sm-18</code><code class='vertical'>col-sm-offset-6</code><code class='vertical'>col-xs-8</code></div>
+<div class='col-md-18 col-sm-18 col-sm-offset-6 col-xs-8 ver'><p>08 (Contenido)</p><code class='vertical'>col-md-18</code><code class='vertical'>col-sm-18</code><code class='vertical'>col-sm-offset-6</code><code class='vertical'>col-xs-8</code></div>
 </div>
 
 <div class='fila margen-inferior'>
-<div class='col-md-24 col-sm-24 col-xs-24 ver'><p>05 (Footer)</p><code class='diagonal'>col-md-24</code><code class='diagonal'>col-sm-24</code><code class='diagonal'>col-xs-24</code></div>
+<div class='col-md-24 col-sm-24 col-xs-24 ver'><p>05 (Footer)</p><code class='vertical'>col-md-24</code><code class='vertical'>col-sm-24</code><code class='vertical'>col-xs-24</code></div>
 </div>
 
 
@@ -216,18 +216,18 @@ subtitle: Grilla
 
 <div class='container ver'>
 <div class='fila margen-inferior'> 
-<div class='col-md-24 col-sm-24 col-xs-24 ver'><p>01 (Header)</p><code class='diagonal'>col-md-24</code><code class='diagonal'>col-sm-24</code><code class='diagonal'>col-xs-24</code></div>
+<div class='col-md-24 col-sm-24 col-xs-24 ver'><p>01 (Header)</p><code class='vertical'>col-md-24</code><code class='vertical'>col-sm-24</code><code class='vertical'>col-xs-24</code></div>
 </div>
 
 <div class='fila margen-inferior'> 
-<div class='col-md-6 col-sm-6 oculto-xs ver'><p>02 (Sidebar)</p><code class='diagonal'>col-md-6</code><code class='diagonal'>col-sm-6</code><code class='diagonal'>col-xs-6</code></div>
-<div class='col-md-9 col-sm-18 col-xs-24 ver'><p>03 (contenido)</p><code class='diagonal'>col-md-9</code><code class='diagonal'>col-sm-18</code><code class='diagonal'>col-xs-18</code></div>
-<div class='oculto-lg oculto-md col-sm-18 col-sm-offset-6 col-xs-24 ver'><p>04 (contenido)</p><code class='diagonal'>oculto-md</code><code class='diagonal'>col-sm-18</code><code class='diagonal'>col-sm-offset-6</code><code class='diagonal'>col-xs-24</code></div>
-<div class='col-md-9 oculto-sm oculto-xs ver'><p>04 (contenido)</p><code class='diagonal'>col-md-9</code><code class='diagonal'>col-sm-18</code><code class='diagonal'>oculto-sm</code><code class='diagonal'>oculto-xs</code></div>
+<div class='col-md-6 col-sm-6 oculto-xs ver'><p>02 (Sidebar)</p><code class='vertical'>col-md-6</code><code class='vertical'>col-sm-6</code><code class='vertical'>col-xs-6</code></div>
+<div class='col-md-9 col-sm-18 col-xs-24 ver'><p>03 (contenido)</p><code class='vertical'>col-md-9</code><code class='vertical'>col-sm-18</code><code class='vertical'>col-xs-18</code></div>
+<div class='oculto-lg oculto-md col-sm-18 col-sm-offset-6 col-xs-24 ver'><p>04 (contenido)</p><code class='vertical'>oculto-md</code><code class='vertical'>col-sm-18</code><code class='vertical'>col-sm-offset-6</code><code class='vertical'>col-xs-24</code></div>
+<div class='col-md-9 oculto-sm oculto-xs ver'><p>04 (contenido)</p><code class='vertical'>col-md-9</code><code class='vertical'>col-sm-18</code><code class='vertical'>oculto-sm</code><code class='vertical'>oculto-xs</code></div>
 </div>    
 
 <div class='fila margen-inferior'>
-<div class='col-md-24 col-sm-24 col-xs-24 ver'><p>05 (Footer)</p><code class='diagonal'>col-md-24</code><code class='diagonal'>col-sm-24</code><code class='diagonal'>col-xs-24</code></div> 
+<div class='col-md-24 col-sm-24 col-xs-24 ver'><p>05 (Footer)</p><code class='vertical'>col-md-24</code><code class='vertical'>col-sm-24</code><code class='vertical'>col-xs-24</code></div> 
 </div> 
 </div>
 
