@@ -212,7 +212,7 @@ subtitle: Interacción
     <td>
         <div class='col-md-22'>    
         <!-- Formulario Vertical Pequeño -->
-        <form class='md'>
+        <form class='horizontal md'>
         <div class='grupo'>
             <label class='pregunta'>Nombre de objeto</label>
             <input type='text' required />
@@ -248,34 +248,25 @@ subtitle: Interacción
     <td>
     <code>
         
-&lt;form class=&quot;md&quot;&gt;
-&lt;div class=&quot;grupo&quot;&gt;
-    &lt;label class=&quot;pregunta&quot;&gt;&lt;/label&gt;
-    &lt;input type=&quot;text&quot; required /&gt;
-    &lt;p class=&quot;especificacion&quot;&gt;&lt;strong&gt;Ingresa el nombre y de lo que vas a crear&lt;/strong&gt;...&lt;/p&gt;
-        &lt;/div&gt;
-    &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label class=&quot;pregunta&quot;&gt;Tipo de formulario&lt;/label&gt;
-        &lt;select&gt;
-            &lt;option&gt;Nueva asignatura&lt;/option&gt;
-            &lt;option&gt;Nueva bibliografía&lt;/option&gt;
-            &lt;option&gt;Nueva obra&lt;/option&gt;
-            &lt;option&gt;Nueva persona&lt;/option&gt;
-            &lt;option&gt;Nueva publicación&lt;/option&gt;
-            &lt;option&gt;Nueva revista académica&lt;/option&gt;
-            &lt;option&gt;Nueva tarea&lt;/option&gt;
-            &lt;option&gt;Nueva travesía&lt;/option&gt;
-            &lt;option&gt;Nuevo acto&lt;/option&gt;
-            &lt;option&gt;Nuevo caso de estudio&lt;/option&gt;
-            &lt;option&gt;Nuevo curso&lt;/option&gt;
-            &lt;option&gt;Nuevo evento&lt;/option&gt;
-            &lt;option&gt;Nuevo proyecto&lt;/option&gt;
-            &lt;option&gt;Nuevo proyecto de investigación&lt;/option&gt;
-            &lt;option&gt;Nuevo trabajo en madlab&lt;/option&gt;
-        &lt;select&gt;
-        &lt;p class=&quot;especificacion&quot;&gt;Define el tipo de formulario que necesitas para tu trabajo&lt;/p&gt;
+&lt;form class=&quot;sm&quot;&gt;
+    &lt;legend&gt;Contáctate con nosotros&lt;/legend&gt;
+    &lt;div class=&quot;grupo obligatorio&quot;&gt;
+        &lt;label&gt;nombre&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
     &lt;div&gt;
-        &lt;input type=&quot;submit&quot; class=&quot;accion md izquierda&quot; value=&quot;Crear o editar&quot;&gt;
+    &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Correo electrónico&lt;/label&gt;
+        &lt;input type=&quot;email&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Asunto&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Mensaje&lt;/label&gt;
+        &lt;textarea&gt;&lt;/textarea&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;email&quot; class=&quot;btn btn-sm derecha&quot; value=&quot;Enviar&quot;&gt;
 &lt;/form&gt;
 
         </div>
@@ -283,14 +274,15 @@ subtitle: Interacción
     </td>
 </div>
 
-</tr><!-- final de celda -->
+</tr>
+
 
 
 <tr>
     <td><div class='col-md-22'> 
         <div class='md'>
         <!-- Formulario Vertical Medio -->
-    <form class='lg'>
+    <form class='formulario-vertical lg nuevo-proyecto'>
                 <div class='grupo'>
                 <label>Título</label>
                 <input type='text' placeholder='Nombre del nuevo objeto' required/>
@@ -387,116 +379,26 @@ subtitle: Interacción
     <td>
     <code>
 
-&lt;form class=&quot;lg&quot;&gt;
-    &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Título&lt;/label&gt;
-        &lt;input type=&quot;text&quot; placeholder=&quot;nombre del nuevo objeto&quot; required /&gt;
+&lt;form class=&quot;md&quot;&gt;
+    &lt;legend&gt;Contáctate con nosotros&lt;/legend&gt;
+    &lt;div class=&quot;grupo obligatorio&quot;&gt;
+        &lt;label&gt;nombre&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
     &lt;div&gt;
-
     &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label class=&quot;pregunta&quot;&gt;Tipo de proyecto&lt;/label&gt;
-                    &lt;div class=&quot;opciones&quot;&gt;
-                        &lt;span class=&quot;checkbox-span&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;tipo-proyecto&quot; /&gt; 
-                        &lt;span class=&quot;chico&quot;&gt;Proyecto de taller&lt;/span&gt;&lt;/span&gt;
-                        &lt;span class=&quot;checkbox-span&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;tipo-proyecto&quot; /&gt; 
-                        &lt;span class=&quot;chico&quot;&gt;Proyecto de curso&lt;/span&gt;&lt;/span&gt;
-                        &lt;span class=&quot;checkbox-span&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;tipo-proyecto&quot; /&gt; 
-                        &lt;span class=&quot;chico&quot;&gt;Proyecto de tutoría&lt;/span&gt;&lt;/span&gt;
-                        &lt;span class=&quot;checkbox-span&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;tipo-proyecto&quot; /&gt; 
-                        &lt;span class=&quot;chico&quot;&gt;Proyecto de titulación&lt;/span&gt;&lt;/span&gt;
-                        &lt;span class=&quot;checkbox-span&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;tipo-proyecto&quot; /&gt; 
-                        &lt;span class=&quot;chico&quot;&gt;Proyecto de posgrado&lt;/span&gt;&lt;/span&gt;
-                        &lt;span class=&quot;checkbox-span&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;tipo-proyecto&quot; /&gt; 
-                        &lt;span class=&quot;chico&quot;&gt;Proyecto extracurricular&lt;/span&gt;&lt;/span&gt;
-                    &lt;/div&gt;
-                    &lt;p class=&quot;especificacion chica&quot;&gt;&lt;strong&gt;Importante:
-                    &lt;/strong&gt; Si se trata de un proyecto de Investigación...&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;grupo&quot;&gt;
-                    &lt;label class=&quot;pregunta&quot;&gt;Palabras claves&lt;/label&gt;
-                    &lt;input type=&quot;text&quot; class=&quot;relleno&quot; 
-                    placeholder=&quot;todo en bajas, separadas por coma &quot;required/&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;grupo input-sm&quot;&gt;
-                    &lt;label class=&quot;pregunta&quot;&gt;Año de inicio&lt;/label&gt;
-                    &lt;input type=&quot;text&quot; class=&quot;relleno&quot;required/&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;grupo input-sm&quot;&gt;
-                    &lt;label class=&quot;pregunta&quot;&gt;Año de término&lt;/label&gt;
-                    &lt;input type=&quot;text&quot; class=&quot;relleno&quot; required/&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;grupo&quot;&gt;
-                    &lt;label class=&quot;pregunta&quot;&gt;Carreras relacionadas&lt;/label&gt;
-                    &lt;div class=&quot;opciones&quot;&gt;
-                        &lt;span class=&quot;checkbox-span&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;tipo-proyecto&quot; /&gt; 
-                        &lt;span class=&quot;chico&quot;&gt;Arquitectura&lt;/span&gt;&lt;/span&gt;
-                        &lt;span class=&quot;checkbox-span&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;tipo-proyecto&quot; /&gt; 
-                        &lt;span class=&quot;chico&quot;&gt;Diseño gráfico&lt;/span&gt;&lt;/span&gt;
-                        &lt;span class=&quot;checkbox-span&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;tipo-proyecto&quot; /&gt; 
-                        &lt;span class=&quot;chico&quot;&gt;Diseño industrial&lt;/span&gt;&lt;/span&gt;
-                        &lt;span class=&quot;checkbox-span&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;tipo-proyecto&quot; /&gt; 
-                        &lt;span class=&quot;chico&quot;&gt;Náutico y marítimo&lt;/span&gt;&lt;/span&gt;
-                        &lt;span class=&quot;checkbox-span&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;tipo-proyecto&quot; /&gt; 
-                        &lt;span class=&quot;chico&quot;&gt;Ciudad y territorio&lt;/span&gt;&lt;/span&gt;
-                        &lt;span class=&quot;checkbox-span&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;tipo-proyecto&quot; /&gt; 
-                        &lt;span class=&quot;chico&quot;&gt;Formación y oficio&lt;/span&gt;&lt;/span&gt;
-                        &lt;span class=&quot;checkbox-span&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;tipo-proyecto&quot; /&gt; 
-                        &lt;span class=&quot;chico&quot;&gt;Interacción&lt;/span&gt;&lt;/span&gt;
-                        &lt;span class=&quot;checkbox-span&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;tipo-proyecto&quot; /&gt; 
-                        &lt;span class=&quot;chico&quot;&gt;Doctorado en A & D&lt;/span&gt;&lt;/span&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;grupo&quot;&gt;
-                    &lt;label class=&quot;pregunta&quot;&gt;Asignaturas relacionadas&lt;/label&gt;
-                    &lt;input type=&quot;text&quot; class=&quot;relleno&quot; required /&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;grupo&quot;&gt;
-                    &lt;label class=&quot;pregunta&quot;&gt;Cursos relacionados&lt;/label&gt;
-                    &lt;input type=&quot;email&quot; class=&quot;relleno&quot; required /&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;grupo&quot;&gt;
-                    &lt;label class=&quot;pregunta&quot;&gt;Profesor&lt;/label&gt;
-                    &lt;input type=&quot;text&quot; class=&quot;relleno&quot; required /&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;grupo&quot;&gt;
-                    &lt;label class=&quot;pregunta&quot;&gt;Alumnos&lt;/label&gt;
-                    &lt;input type=&quot;password&quot; class=&quot;relleno&quot; required /&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;grupo input-sm&quot;&gt;
-                    &lt;label class=&quot;pregunta&quot;&gt;Imagen&lt;/label&gt;
-                    &lt;input type=&quot;text&quot; class=&quot;relleno&quot; 
-                    placeholder=&quot;Si ya existe en la wiki escriba el nombre.ext.&quot;required/&gt;
-                &lt;p class=&quot;especificacion&quot;&gt;&lt;a&gt;Subir archivo&lt;/a&gt;&lt;/p&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;grupo&quot;&gt;
-                    &lt;label class=&quot;pregunta&quot;&gt;PDF&lt;/label&gt;
-                    &lt;input type=&quot;password&quot; class=&quot;relleno-sm&quot; required /&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;grupo&quot;&gt;
-                    &lt;label class=&quot;pregunta&quot;&gt;URL&lt;/label&gt;
-                    &lt;input type=&quot;password&quot; class=&quot;relleno&quot; required /&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;grupo&quot;&gt;
-                    &lt;label class=&quot;pregunta&quot;&gt;Texto libre&lt;/label&gt;
-                    &lt;textarea&gt;&lt;/textarea&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;grupo&quot;&gt;
-                    &lt;label class=&quot;pregunta&quot;&gt;Resumen&lt;/label&gt;
-                    &lt;input type=&quot;password&quot; class=&quot;relleno&quot; required /&gt;
-                &lt;/div&gt;
-                &lt;div class=&quot;grupo&quot;&gt;
-                    &lt;label class=&quot;pregunta&quot;&gt;Configuración&lt;/label&gt;
-                    &lt;div class=&quot;opciones&quot;&gt;
-                        &lt;span class=&quot;checkbox-span&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;tipo-proyecto&quot; /&gt; 
-                        &lt;span class=&quot;chico&quot;&gt;Esta es una edición menor&lt;/span&gt;&lt;/span&gt;
-                        &lt;span class=&quot;checkbox-span&quot;&gt;&lt;input type=&quot;checkbox&quot; name=&quot;tipo-proyecto&quot; /&gt; 
-                        &lt;span class=&quot;chico&quot;&gt;Vigilar esta página&lt;/span&gt;&lt;/span&gt;
-                    &lt;/div&gt;
-                &lt;/div&gt;
-                    &lt;input type=&quot;submit&quot; class=&quot;btn btn-md accion&quot; value=&quot;Grabar la página&quot;&gt;
-                    &lt;a class=&quot;btn btn-md margen-derecho&quot;&gt;Previsualizar&lt;/a&gt;
-                    &lt;a class=&quot;btn btn-md margen-derecho&quot;&gt;Cancelar&lt;/a&gt;
-        &lt;/form&gt;    
+        &lt;label&gt;Correo electrónico&lt;/label&gt;
+        &lt;input type=&quot;email&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Asunto&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
+    &lt;div&gt;
+        &lt;div class=&quot;grupo&quot;&gt;
+        &lt;label&gt;Mensaje&lt;/label&gt;
+        &lt;textarea&gt;&lt;/textarea&gt;
+    &lt;div&gt;
+        &lt;input type=&quot;email&quot; class=&quot;btn btn-md derecha&quot; value=&quot;Enviar&quot;&gt;
+&lt;/form&gt;
 
     </code>
     </td>
