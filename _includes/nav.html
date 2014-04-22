@@ -26,29 +26,30 @@
       <div class="panel-heading">
         <div class='pag-movil blanco'>
           <h4 class="panel-title">
-            <button class='btn-alerta margen-superior-s' data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+            <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo">
               Menú
             </button>
-          </h4>
-        </div>
-      <div id="collapseOne" class="panel-collapse collapse in">
-        <div class="panel-body fondo-gris-oscuro">
-          <ul class='menu altas gruesa'>
-            <div class='pag-movil blanco'>
-            <a href='tipografia.html'><li>tipografía</li></a>
-            <a href='grilla.html'><li>Grilla</li></a>
-            <a href='interaccion.html'><li>Interacción</li></a>
-            <a href='color.html'><li>Color</li></a>
-            <a href='iconografia.html'><li>Íconografía</li></a>
-            <a href='versatilidad.html'><li>Versatilidad</li></a>
-            <a href='layout.html'><li>Layout</li></a>
-            <a href='javascript.html'><li>Javascript</li></a>
             </div>
+
+          <div id="demo" class="collapse in">
+          <div class="panel-body fondo-gris-oscuro">
+          <ul class='menu altas gruesa'>
+            <a href='{{ site.baseurl }}/pags/tipografia'><li>tipografía</li></a>
+            <a href='{{ site.baseurl }}/pags/grilla'><li>Grilla</li></a>
+            <a href='{{ site.baseurl }}/pags/interaccion'><li>Interacción</li></a>
+            <a href='{{ site.baseurl }}/pags/color'><li>Color</li></a>
+            <a href='{{ site.baseurl }}/pags/iconografia'><li>Íconografía</li></a>
+            <a href='{{ site.baseurl }}/pags/versatilidad'><li>Versatilidad</li></a>
+            <a href='{{ site.baseurl }}/pags/layout'><li>Layout</li></a>
+            <a href='{{ site.baseurl }}/pags/javascript'><li>Javascript</li></a>
             </ul>
-        </div>
-      </div>
+          </div>
+          </div>
+          </h4>
+        
     </div>
   </div>         
+</div>
 </div>
 </div>
 </div>

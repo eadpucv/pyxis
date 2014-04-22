@@ -64,7 +64,6 @@ header {
 	}
 }
 
-
 .pag-movil {
 	margin: 0 auto;
 	padding: 0 @cuadratin 0 @cuadratin;
@@ -129,6 +128,7 @@ header {
 	}
 }
 
+//	Menú Pyxis
 .menu-pyxis {
 	margin: 0 auto;
 	width: 100%;
@@ -137,19 +137,17 @@ header {
 	background-color: @blanco;
 	padding: 0;
 	z-index: 10;
-	.box-shadow(0 0 10px fade(@negro, 30))
-}
+	.box-shadow(0 0 10px fade(@negro, 30));
 
-.menu-pyxis-movil {
-	margin: 0 auto;
-	width: 100%;
-	min-height: @cuadratin * 2;
-	background-color: @blanco;
-	z-index: 10;
-}
 
-.contenido{
-	margin-bottom: 3 * @cuadratin;
+	&.movil {
+
+		ul{
+		li{
+			padding-left: @cuadratin;
+		}
+		}
+	}
 }
 
 footer{
@@ -193,20 +191,6 @@ footer{
 	}
 }
 
-.margen-derecho{
-	margin-right: @cuadratin;
-}
 
-.margen-izquierdo{
-	margin-left: @cuadratin;
-}
-
-.margen-superior{
-	margin-top: @cuadratin;
-}
-
-.margen-inferior{
-	margin-bottom: @cuadratin;
-}
 
 //Nav-m
