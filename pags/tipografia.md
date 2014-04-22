@@ -10,7 +10,7 @@ pde: type.pde
 
 	<!-- Familias tipográficas -->
 
-<h2 class='rojo-claro'>Familias tipográficas</h2>
+<h2 class='rojo-claro'>Familias tipográficas</h2><a name="titulo-uno"></a>
 
 <table class='w100'>
 <tr>
@@ -29,7 +29,7 @@ pde: type.pde
 
 	<!-- Ènfasis de párrafo -->
 
-<h2 class='rojo-claro'>Valores tipográficos </h2>
+<h2 class='rojo-claro'>Valores tipográficos </h2><a name="titulo-dos"></a>
 <h5 class='gris-oscuro'>Énfasis de párrafo</h5>
 
 <table class='w100'>
@@ -61,7 +61,7 @@ pde: type.pde
 
 <!-- Cabeceras -->
 
-<h2 class='rojo-claro'>Títulos</h2>
+<h2 class='rojo-claro'>Títulos</h2><a name="titulo-tres"></a>
 <h5 class='gris-oscuro'>Cabeceras</h5>
 
 <table class='w100'>
@@ -97,7 +97,7 @@ pde: type.pde
 
 <!-- Sub-Cabeceras -->
 
-<h2 class='rojo-claro'>Subtítulos</h2>
+<h2 class='rojo-claro'>Subtítulos</h2><a name="titulo-cuatro"></a>
 <h5 class='gris-oscuro'>Sub-cabeceras</h5>
 
 <table class='w100'>
@@ -133,7 +133,7 @@ pde: type.pde
 
 <!-- Grosores -->
 
-<h2 class='rojo-claro'>Grosores</h2>
+<h2 class='rojo-claro'>Grosores</h2><a name="titulo-cinco"></a>
 <h5 class='gris-oscuro'>Enfasis de fuente</h5>
 
 <table class='w100'>
@@ -161,7 +161,7 @@ pde: type.pde
 
 <!-- Estilos -->
 
-<h2 class='rojo-claro'>Estilos de carácter</h2>
+<h2 class='rojo-claro'>Estilos de carácter</h2><a name="titulo-seis"></a>
 <h5 class='gris-oscuro'>Cabeceras</h5>
 
 <table class='w100'>
@@ -181,7 +181,7 @@ pde: type.pde
 
 <!-- Aleneación -->
 
-<h2 class='rojo-claro'>Alineación</h2>
+<h2 class='rojo-claro'>Alineación</h2><a name="titulo-siete"></a>
 <h5 class='gris-oscuro'>Cabeceras</h5>
 
 <table class='w100'>
@@ -205,7 +205,7 @@ pde: type.pde
 
 <!-- Listas -->
 
-<h2 class='rojo-claro'>Listas</h2>
+<h2 class='rojo-claro'>Listas</h2><a name="titulo-ocho"></a>
 <h5 class='gris-oscuro'>Ordenada y desordenada</h5>
 
 <table class='w100'>
@@ -244,7 +244,7 @@ pde: type.pde
 
 <!-- Clases diferenciales -->
 
-<h2 class='rojo-claro'>Clases diferenciales</h2>
+<h2 class='rojo-claro'>Clases diferenciales</h2><a name="titulo-nueve"></a>
 <h5 class='gris-oscuro'>Cabeceras</h5>
 
 <table class='w100'>
@@ -330,7 +330,8 @@ pde: type.pde
 		<span class="xs referencias gris"><sup>[8] </sup> <strong>Norman D </strong>, <i>“El Diseño Emocional. Por qué nos gustan (o no) los objetos cotidianos.</i> Capítulo 3 Tres Niveles de diseño visceral, conductual y reflexivo. <br> Paidós Ediciones S.A. Barcelona, España. Año 2005. Páginas 81 – 121.ISBN 84-493-1729-0</span>
 	</div>
 		</div></td>
-    <td><code>&lt;span class=&quot;italica md fina gris-oscuro&quot;&gt;</code></td>
+    <td><code>&lt;span class=&quot;italica md 
+        fina gris-oscuro&quot;&gt;</code></td>
 </tr>
 <tr>
     <td>

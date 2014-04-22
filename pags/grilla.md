@@ -10,7 +10,7 @@ subtitle: Grilla
 
 <h3 class='rojo-claro'>1. Ejemplos de base</h3>
 
-<h5 class='gris-oscuro'>1.1. Ocultamiento de columnas</h5>
+<h5 class='gris-oscuro'>1.1. Ocultamiento de columnas</h5><a name="titulo-uno">
 
 <p>La primera estructura como ejemplo de la grilla pasa de 24 columnas en dispositivos mds y sms a 12 columnas en dispositivos pequeños, y 6 columnas en dispositivos extra pequeños para un diseño responsivo adaptable. 
 
@@ -73,7 +73,7 @@ subtitle: Grilla
 
 <hr>
 
-<h5 class='gris-oscuro'>1.2. Reordenación de columnas</h5>
+<h5 class='gris-oscuro'>1.2. Reordenación de columnas</h5><a name="titulo-dos">
 
 <p>Con el objetivo de mostrar la dinámica funcional de la grilla, el tercer ejemplo muestra la nueva ordenación de las columnas en cada ancho diferente de pantalla. El paso es de 6 columnas en <i>md</i> a 2 columnas en <i>sm</i> en la parte superior de la grilla, y 4 columnas en la parte inferior. En <i>xs</i> aparece 1 columna en la parte superior, seguido de 1 más en segundo puesto y luego 2 columnas en los dos últimas filas de la parte inferior de la grilla.</p>
 
@@ -93,7 +93,7 @@ subtitle: Grilla
 
 <h3 class='rojo-claro'>2. Ejemplos de Layout</h3>
 
-<h5 class='gris-oscuro'>2.1. Contenido central y secciones laterales</h5>
+<h5 class='gris-oscuro'>2.1. Contenido central y secciones laterales</h5><a name="titulo-tres">
 
 <p>Estructura donde el contenido se muestra de manera central, con 12 columnas en los dispositivos mayores, para luego pasar en <i>xs<</i> a 24 columnas junto con el resto de las filas.</p>
 
@@ -115,7 +115,7 @@ subtitle: Grilla
 
 <hr>
 
-<h5 class='gris-oscuro'>2.2. Anidación y Offset</h5>
+<h5 class='gris-oscuro'>2.2. Anidación y Offset</h5><a name="titulo-cuatro">
 
 <p>La métrica de la grilla permite anidar columnas dentro de otras; en este ejemplo el header podría contener un texto centrado. Por otro lado, el "Aside" y el "contenido" están diseñados en un ancho menor a través del <i>Offset</i>.</p>
 
@@ -148,7 +148,7 @@ subtitle: Grilla
 
 <!--PRUEBA-->
 
-<h5 class='gris-oscuro'>2.3. Offset y ancho uniforme</h5>
+<h5 class='gris-oscuro'>2.3. Offset y ancho uniforme</h5><a name="titulo-cinco">
 
 <p>Ejmplo de <i>offset</i> uniforme y lateral con 1 columna de ancho. En <i>xs</i> las filas pasan a medir 22 columnas de ancho.</p>
 
@@ -176,7 +176,7 @@ subtitle: Grilla
 
 
 
-<h5 class='gris-oscuro'>2.4. Uso de Sidebar</h5>
+<h5 class='gris-oscuro'>2.4. Uso de Sidebar</h5><a name="titulo-seis">
 
 <p>Ejemplo donde el Sidebar con un<code>nav</code> o<code>section</code> se ubican lateralmente a la izquierda, ocupando 6 columnas en los dispositivos mayores y desapareciendo en <i>xs</i>.</p>
 
