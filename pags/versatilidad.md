@@ -4,24 +4,6 @@ title: Pyxis Framework - Versatilidad
 subtitle: Versatilidad
 ---
 
-<!-- fin de Pag para inserción de affix -->
-</div>
-<!-- / -->
-
-<a name='ancla' id='a'></a>
-<div class='menu-affix col-lg-5 oculto-md oculto-sm oculto-xs'>
-<div data-spy="affix" data-offset-top="300" data-offset-bottom="400">
-    <ul>
-        <li><a class='gris-oscuro semi-gruesa' href='#titulo-uno'>Estilos de párrafo</a></li>
-        <li><a class='gris-oscuro semi-gruesa' href='#titulo-dos'>Elementos laterales</a></li>
-        <li><a class='gris-oscuro semi-gruesa' href='#titulo-tres'>Párrafos tipo</a></li>
-        <li><a class='gris-oscuro semi-gruesa' href='#titulo-cuatro'>Texto & imagen</a></li></a>
-    </ul>                                                                      
-</div>
-</div>
-
-<div class='pag'> <!-- Comienzo de Pag -->
-
 <div class='fila'>
 	<div class='col-md-14 margen-columna'>
 		<div class='w100'>

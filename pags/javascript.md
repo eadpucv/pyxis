@@ -4,31 +4,6 @@ title: Pyxis Framework - Javascript
 subtitle: Javascript
 ---
 
-<!-- fin de Pag para inserción de affix -->
-</div>
-<!-- / -->
-
-<a name='ancla' id='a'></a>
-<div class='menu-affix col-lg-5 oculto-md oculto-sm oculto-xs'>
-<div data-spy="affix" data-offset-top="300" data-offset-bottom="400">
-    <ul>
-        <li><a class='gris-oscuro semi-gruesa' href='#titulo-uno'>Modal</a></li>
-        <li><a class='gris-oscuro semi-gruesa' href='#titulo-dos'>Tooltip</a></li>
-        <li><a class='gris-oscuro semi-gruesa' href='#titulo-tres'>Popover</a></li>
-        <li><a class='gris-oscuro semi-gruesa' href='#titulo-cuatro'>Affix</a></li>
-        <li><a class='gris-oscuro semi-gruesa' href='#titulo-cinco'>Dropdowns</a></li>
-        <li><a class='gris-oscuro semi-gruesa' href='#titulo-seis'>Carousel</a></li>
-    </ul>                                                                      
-</div>
-</div>
-
-<div class='pag'> <!-- Comienzo de Pag -->
-
-<div id='navbar' data-spy='affix' data-offset-top='345' style='background:white; display:none;'> 
-    <h2> Este es un ejemplo de Affix </h2>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in pretium lacus. Phasellus venenatis mollis tincidunt. Quisque semper adipiscing lorem, vel dictum elit molestie sed. Nullam luctus lorem mauris, quis fringilla sapien accumsan vitae. Sed et sem vestibulum eros interdum euismod id non dolor. In hendrerit risus ipsum, sit amet ultrices elit interdum tempor. Sed hendrerit augue metus, et ultricies odio viverra ut. Morbi vehicula justo dui, sagittis dignissim turpis posuere quis. Nam ullamcorper accumsan vestibulum.
-</div>
-
 <h2 class='rojo-claro'>Javascript</h2> 
 <h3 class='rojo-claro'>1. Modal</h3><a name="titulo-uno"></a>
 <p>Se parte con la idea de que los formularios es donde ocurre una mayor transacción de interacción entre el usuario y el sistema. Para que que la interacción sea de manera cómoda y agradable, se plantea construir una relación proporcional entre los diversos formularios existentes en las plataformas digitales.</p> 

@@ -4,24 +4,6 @@ title: Pyxis Framework - Color
 subtitle: Color
 ---
 
-<!-- fin de Pag para inserción de affix -->
-</div>
-<!-- / -->
-
-<a name='ancla' id='a'></a>
-<div class='menu-affix col-lg-5 oculto-md oculto-sm oculto-xs'>
-<div data-spy="affix" data-offset-top="300" data-offset-bottom="400">
-    <ul>
-        <li><a class='gris-oscuro semi-gruesa' href='#titulo-uno'>Grises</a></li>
-        <li><a class='gris-oscuro semi-gruesa' href='#titulo-dos'>Colores</a></li>
-        <li><a class='gris-oscuro semi-gruesa' href='#titulo-tres'>Adicionales</a></li>
-        <li><a class='gris-oscuro semi-gruesa' href='#titulo-cuatro'>Opuestos</a></li>
-    </ul>                                                                      
-</div>
-</div>
-
-<div class='pag'> <!-- Comienzo de Pag -->
-
 <h2 class="rojo-claro">Paleta de Colores</h2>
 
 <!-- descripción -->

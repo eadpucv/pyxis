@@ -2,25 +2,8 @@
 layout: base
 title: Pyxis Framework - Grilla
 subtitle: Grilla
+ancla1: Ocultamiento de columnas
 ---
-<!-- fin de Pag para inserción de affix -->
-</div>
-<!-- / -->
-
-<a name='ancla' id='a'></a>
-<div class='menu-affix col-lg-5 oculto-md oculto-sm oculto-xs'>
-<div data-spy="affix" data-offset-top="300" data-offset-bottom="400">
-    <ul>
-        <li><a class='gris-oscuro sm semi-gruesa' href='#titulo-uno'>Ocultamiento de columnas</a></li>
-        <li><a class='gris-oscuro sm semi-gruesa' href='#titulo-dos'>Reordenación de columnas</a></li>
-        <li><a class='gris-oscuro sm semi-gruesa' href='#titulo-tres'>Anidación y offset</a></li>
-        <li><a class='gris-oscuro sm semi-gruesa' href='#titulo-cuatro'>Offset y ancho uniforme</a></li></a>
-        <li><a class='gris-oscuro sm semi-gruesa' href='#titulo-cinco'>Uso de sidebar</a></li>
-    </ul>                                                                      
-</div>
-</div>
-
-<div class='pag'> <!-- Comienzo de Pag -->
 
 <h2 class='rojo-claro'>Grilla</h2>
 
@@ -28,7 +11,7 @@ subtitle: Grilla
 
 <h3 class='rojo-claro'>1. Ejemplos de base</h3>
 
-<h5 class='gris-oscuro'>1.1. Ocultamiento de columnas</h5><a name="titulo-uno"></a>
+<h5 id='ancla-primero' class='gris-oscuro'>1.1. Ocultamiento de columnas</h5><a name="titulo-uno"></a>
 
 <p>La primera estructura como ejemplo de la grilla pasa de 24 columnas en dispositivos mds y sms a 12 columnas en dispositivos pequeños, y 6 columnas en dispositivos extra pequeños para un diseño responsivo adaptable. 
 
