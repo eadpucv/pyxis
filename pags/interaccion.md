@@ -4,6 +4,26 @@ title: Pyxis Framework - Interacción
 subtitle: Interacción
 ---
 
+<!-- fin de Pag para inserción de affix -->
+</div>
+<!-- / -->
+
+<a name='ancla' id='a'></a>
+<div class='menu-affix col-lg-5 oculto-md oculto-sm oculto-xs'>
+<div data-spy="affix" data-offset-top="300" data-offset-bottom="400">
+    <ul>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-uno'>Contacto</a></li>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-dos'>Agregar página</a></li>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-tres'>Nuevo usuario</a></li>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-cuatro'>Publicar trabajo</a></li></a>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-cinco'>Iniciar sesión</a></li>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-seis'>Botones</a></li>
+    </ul>                                                                      
+</div>
+</div>
+
+<div class='pag'> <!-- Comienzo de Pag -->
+
 <div class='fila'>
     <h1 class='rojo-claro'>Formularios</h1> 
     <h4 class='gris-oscuro'>Clasificación</h4>
@@ -13,7 +33,7 @@ subtitle: Interacción
     <p>Los elementos que están a modo neutral, o standard, son los Checkboxes, los dropdown y los avisos de rellenar campos requeridos para enviar el formulario.</p>
 </div>
 
-<h2 class='rojo-claro'>Formulario de contacto </h2> 
+<h2 class='rojo-claro'>Formulario de contacto</h2><a name="titulo-uno"></a> 
 
 <p>Los formularios verticales son los formularios predeterminados, lo que implica que no llevan una clase específica; sólo se diferencian por los tamaños. El tamaño predeterminado es <code>md</code>.</p>
 
@@ -140,7 +160,7 @@ subtitle: Interacción
 
 <!-- Formularios Verticales -->
 
-<h2 class='rojo-claro'>Agregar página con formulario</h2>
+<h2 class='rojo-claro'>Agregar página con formulario</h2><a name="titulo-dos"></a>
 
 <table class='w100'>
 <tr>
@@ -349,7 +369,7 @@ subtitle: Interacción
 
 <!-- Formularios horizontales -->
 
-<h2 class='rojo-claro'>Nuevo usario</h2>
+<h2 class='rojo-claro'>Nuevo usario</h2><a name="titulo-tres"></a>
 
 <table class='w100'>
 <tr>
@@ -462,7 +482,7 @@ subtitle: Interacción
 
 </table>
 
-<h2 class='rojo-claro'>Publicar un trabajo</h2>
+<h2 class='rojo-claro'>Publicar un trabajo</h2><a name="titulo-cuatro"></a>
 
 <table class='w100'>
 <tr>
@@ -541,7 +561,7 @@ subtitle: Interacción
 
 <!-- Iniciar sesión -->
 
-<h2 class='rojo-claro'>Iniciar sesión</h2>
+<h2 class='rojo-claro'>Iniciar sesión</h2><a name="titulo-cinco"></a>
 
 <table class='w100'>
 <tr>
@@ -603,7 +623,7 @@ subtitle: Interacción
 </table>
        
 <div class='fila'>      
-    <h2 class='rojo-claro'>Botones</h2>
+    <h2 class='rojo-claro'>Botones</h2><a name="titulo-seis"></a>
     <p>Los botones se definen genéricamente mediante la clase <code>btn</code> y se aplican a las etiquetas <code>a</code>, <code>input [type='submit']</code> y a los elementos <code>button</code> genéricos de los formularios. Los estilos están pensados para ser aplicados de forma semántica como se describe en la tabla, pudiendo usarse en combinación con atributos de tamaño (<code>xs</code>, <code>md</code>, <code>grigante</code>) y de atributo (<code>accion</code>, <code>alerta</code>).
     </p>
     <table class='w100'>
@@ -660,4 +680,5 @@ subtitle: Interacción
             </td>
         </tr>
     </table>
+</div>
 </div>

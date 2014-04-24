@@ -4,11 +4,34 @@ title: Pyxis Framework - Tipografía
 subtitle: Tipografía
 pde: type.pde
 ---
+<!-- fin de Pag para inserción de affix -->
+</div>
+<!-- / -->
+
+<a name='ancla' id='a'></a>
+<div class='menu-affix col-lg-4 oculto-md oculto-sm oculto-xs'>
+<div data-spy="affix" data-offset-top="300" data-offset-bottom="400">
+    <ul>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-uno'>Familias Tipográficas</a></li>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-dos'>Valores tipográficos</a></li>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-tres'>Títulos</a></li>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-cuatro'>Subtítulos</a></li>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-cinco'>Grosores</a></li></a>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-seis'>Estilos de carácter</a></li>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-siete'>Alineación</a></li>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-ocho'>Listas</a></li>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-nueve' id='ancla'>Clases diferenciales</a></li>
+    </ul>                                                                      
+</div>
+</div>
+
+<div class='pag'>
+<!-- prueba affix -->
 
 <div class='fila'>
 <div class='col-md-24'>
 
-	<!-- Familias tipográficas -->
+<!-- Familias tipográficas -->
 
 <h2 class='rojo-claro'>Familias tipográficas</h2><a name="titulo-uno"></a>
 
@@ -27,7 +50,7 @@ pde: type.pde
 </tr>
 </table>
 
-	<!-- Ènfasis de párrafo -->
+<!-- Ènfasis de párrafo -->
 
 <h2 class='rojo-claro'>Valores tipográficos </h2><a name="titulo-dos"></a>
 <h5 class='gris-oscuro'>Énfasis de párrafo</h5>
@@ -203,6 +226,7 @@ pde: type.pde
 </tr>
 </table>
 
+
 <!-- Listas -->
 
 <h2 class='rojo-claro'>Listas</h2><a name="titulo-ocho"></a>
@@ -344,6 +368,7 @@ pde: type.pde
 
 </div>
 </div>
+</div><!-- Fin de pag-->
 
 
 

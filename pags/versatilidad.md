@@ -4,10 +4,28 @@ title: Pyxis Framework - Versatilidad
 subtitle: Versatilidad
 ---
 
+<!-- fin de Pag para inserción de affix -->
+</div>
+<!-- / -->
+
+<a name='ancla' id='a'></a>
+<div class='menu-affix col-lg-5 oculto-md oculto-sm oculto-xs'>
+<div data-spy="affix" data-offset-top="300" data-offset-bottom="400">
+    <ul>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-uno'>Estilos de párrafo</a></li>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-dos'>Elementos laterales</a></li>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-tres'>Párrafos tipo</a></li>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-cuatro'>Texto & imagen</a></li></a>
+    </ul>                                                                      
+</div>
+</div>
+
+<div class='pag'> <!-- Comienzo de Pag -->
+
 <div class='fila'>
 	<div class='col-md-14 margen-columna'>
 		<div class='w100'>
-			<h3 class='rojo-claro'>Estilos de párrafo</h3>
+			<h3 class='rojo-claro'>Estilos de párrafo</h3><a name="titulo-uno"></a>
 			<h5 class='gris-oscuro'>1. Artículos: jerarquías de título y texto </h5>
 			<h2 class='altas pesada color'>Artículo destacado más reciente </h2><code>&lt;h2 class=&quot;altas&quot; &quot;pesada&quot; &gt;</code>
         	<p>
@@ -47,7 +65,7 @@ subtitle: Versatilidad
 	</div>
 <!-- Jerarquías y estilos de párrafos elementos laterales -->
   	<div class='col-xs-8 margen-columna'>
-     	<h3 class='rojo-claro'>Elementos laterales</h3>
+     	<h3 class='rojo-claro'>Elementos laterales</h3><a name="titulo-dos"></a>
     	<h5 class='gris-oscuro'>1.Secciones linkeables</h5>
     	<h6 class='altas gruesa gris'> Novedades </h6>  <code><strong>Título </strong>&lt;h6 class=&quot;altas&quot; &quot;gruesa&quot; &quot;color&quot; &gt;</code>
     	<ul class="xs">
@@ -88,7 +106,7 @@ subtitle: Versatilidad
 <!--	Pruebas de jerarquías texto -->
 	<div class="col-xs-24 margen-columna">
     	<div class="col-md-24 columna-tipo">
-        	<h3 class='rojo-claro'>Encabezados y párrafos tipo</h3>
+        	<h3 class='rojo-claro'>Encabezados y párrafos tipo</h3><a name="titulo-tres"></a>
         	<h1>Título — h1</h1>
           	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
           	Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
@@ -116,7 +134,7 @@ subtitle: Versatilidad
     	</div>
 <!-- Pruebas de composición texto-imágenes -->
 		<div class="col-md-14 columna-tipo">
-        	<h3 class='rojo-claro filete'>Composición texto - imagen</h3>
+        	<h3 class='rojo-claro filete'>Composición texto - imagen</h3><a name="titulo-cuatro"></a>
         <!-- ejemplo 1 -->
         	<h1>Torneo Manto Aerodinámico (1992)</h1>
         	<h4 class="gris"> Tincidunt ut laoreet dolore</h4>
@@ -201,3 +219,5 @@ subtitle: Versatilidad
       	</div>   -->  
 	</div>
 </div>
+
+</div><!-- fin de pag -->

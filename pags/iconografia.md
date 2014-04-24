@@ -4,10 +4,30 @@ title: Pyxis Framework - Iconografía
 subtitle: Iconografía
 ---
 
+<!-- fin de Pag para inserción de affix -->
+</div>
+<!-- / -->
+
+<a name='ancla' id='a'></a>
+<div class='menu-affix col-lg-5 oculto-md oculto-sm oculto-xs'>
+<div data-spy="affix" data-offset-top="300" data-offset-bottom="400">
+    <ul>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-uno'>Contacto</a></li>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-dos'>Agregar página</a></li>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-tres'>Nuevo usuario</a></li>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-cuatro'>Publicar trabajo</a></li></a>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-cinco'>Iniciar sesión</a></li>
+        <li><a class='gris-oscuro semi-gruesa' href='#titulo-seis'>Botones</a></li>
+    </ul>                                                                      
+</div>
+</div>
+
+<div class='pag'> <!-- Comienzo de Pag -->
+
 <h2 class='rojo-claro'>Iconografía</h2>
 <p>Familia tipográfica <strong>Ead Iconos</strong>: 40 íconos para ser implementados en los servicios web de la e[ad]. Se utiliza la aplicación web <a href="http://icomoon.io/"><i>IcoMoon</i></a> , un servicio de fuentes iconos, para importar archivos en formato .svg y luego exportarlos como una fuente tipográfica que posteriormente se incorpora al framework.</p>
 <p>Los iconos funcionan con la clase <code>ico</code> como prefijo, de modo que para incorporarlos a un parrafo se utiliza como un span con la clase 'icn-nombre particular del ícono'. Del siguiente modo: <code> span class="icn icn-engranaje"</code> </p>
-<p>Se icorporan clases para controlar el tamaño del ícono, las que van de sm (pequeño), md (mediano), lg (grande) y xl (extra grande). Se agregan a la clase escribiendo 'ico-tamaño del ícono' luego de la clase que identifica al ícono específico. Por ejemplo: <code>span class="icn ico-engranaje ico-lg"</code></p>
+<p>Se icorporan clases para controlar el tamaño del ícono, las que van de sm (pequeño), md (sm), lg (md) y xl (extra md). Se agregan a la clase escribiendo 'ico-tamaño del ícono' luego de la clase que identifica al ícono específico. Por ejemplo: <code>span class="icn ico-engranaje ico-lg"</code></p>
 <h3>Clases y tamaños</h3>
 
 <table class='w100'>
@@ -540,3 +560,4 @@ subtitle: Iconografía
         <td><span class="icn icn-cuadro icn-xl"></span></td>
     </tr>
 </table>
+</div>
