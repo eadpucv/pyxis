@@ -5,16 +5,37 @@ subtitle: Tipografía
 pde: type.pde
 ---
 
-<div class='fila'>
-<div class='col-md-24'>
+<div class='col-md-5'>
+<a name='ancla' id='a'></a>
+<div class='menu-affix'>
+<div data-spy="affix" data-offset-top="300" data-offset-bottom="400">
+    <ul>
+        <li><a class='sm gris-oscuro semi-gruesa' href='#titulo-uno'>Familias tipográficas</a></li>
+        <li><a class='sm gris-oscuro semi-gruesa' href='#titulo-dos'>Títulos</a></li>
+        <li><a class='sm gris-oscuro semi-gruesa' href='#titulo-tres'>Subtítulos</a></li>
+        <li><a class='sm gris-oscuro semi-gruesa' href='#titulo-cuatro'>Valores tipográficos</a></li>
+        <li><a class='sm gris-oscuro semi-gruesa' href='#titulo-cinco'>Grosores</a></li>
+        <li><a class='sm gris-oscuro semi-gruesa' href='#titulo-seis'>Estilos de carácter</a></li>
+        <li><a class='sm gris-oscuro semi-gruesa' href='#titulo-siete'>Alineación</a></li>
+        <li><a class='sm gris-oscuro semi-gruesa' href='#titulo-ocho'>Listas</a></li>
+        <li><a class='sm gris-oscuro semi-gruesa' href='#titulo-nueve'>Clases diferenciales</a></li>
+    </ul>               
+</div>
+</div>
+</div>
+
+
+<div class='col-md-19'>
 
 <!-- Familias tipográficas -->
 
 <h2 class='rojo-claro'>Familias tipográficas</h2><a name="titulo-uno"></a>
 
+<p>Pyxis utiliza globalmente y por defecto un <i>font-size</i> de 16px, con un <i>line-heigh</i> de 22px y un <i>font-weight</i> de 200, lo cual hace referencia a un <i>font-style</i> "normal" o "regular" en las dos familias de fuente escogidas.</p>
+
 <table class='w100'>
 <tr>
-    <th class='w60'>Muestra</th>
+    <th class='w60'>Ejemplo</th>
     <th class='w30'>Uso</th>
 </tr>
 <tr>
@@ -27,14 +48,92 @@ pde: type.pde
 </tr>
 </table>
 
-<!-- Ènfasis de párrafo -->
+<!-- Cabeceras -->
 
-<h2 class='rojo-claro'>Valores tipográficos </h2><a name="titulo-dos"></a>
-<h5 class='gris-oscuro'>Énfasis de párrafo</h5>
+<h2 class='rojo-claro'>Títulos</h2><a name="titulo-tres"></a>
+
+<p>Estas son las cabeceras HTML disponibles también en Pyxis. Las diferencias cuantitativas entre cabeceras, a medida que escalan, son de 2 a máximo 4px. <code>&lt;h1&gt;</code> alberga un <i>font-size</i> de 33px, mientras que <code>&lt;h6&gt;</code> es visible en 19px.</p>
 
 <table class='w100'>
 <tr>
-    <th class='w60'>Muestra</th>
+    <th class='w60'>Ejemplo</th>
+    <th class='w30'>Uso</th>
+</tr>
+<tr>
+    <td><div><h1>Encabezado de Primer Nivel {33px}</h1></div></td>
+    <td><code>&lt;h1&gt;</code></td>
+</tr>
+<tr>
+    <td><div><h2>Encabezado de Segundo Nivel {29px}</h2></div></td>
+    <td><code>&lt;h2&gt;</code></td>
+</tr>
+<tr>
+    <td><div><h3>Encabezado de Tercer Nivel {27px}</h3></div></td>
+    <td><code>&lt;h3&gt;</code></td>
+</tr>
+<tr>
+    <td><div><h4>Encabezado de Cuarto Nivel {23px}</h4></div></td>
+    <td><code>&lt;h4&gt;</code></td>
+</tr>
+<tr>
+    <td><div><h5>Encabezado de Quinto Nivel {21px}</h5></div></td>
+    <td><code>&lt;h5&gt;</code></td>
+</tr>
+<tr>
+    <td><div><h6>Encabezado de Sexto Nivel {19px}</h6></div></td>
+    <td><code>&lt;h6&gt;</code></td>
+</tr>
+</table>
+
+<!-- Sub-Cabeceras -->
+
+<h2 class='rojo-claro'>Subtítulos</h2><a name="titulo-cuatro"></a>
+
+<p>Puedes insertar un subtítulo añadiendo la clase <code>subtitulo</code>, más fino y en una escala menor a las cabeceras comunes, pero adoptando la misma proporción de diferenciado.</p>
+
+<table class='w100'>
+<tr>
+    <th class='w60'>Ejemplo</th>
+    <th class='w30'>Uso</th>
+</tr>
+<tr>
+    <td><div><h1 class='subtitulo'>Encabezado de Primer Nivel {28px}</h1></div></td>
+    <td><code>&lt;h1 class=&quot;subtitulo&quot;&gt;</code></td>
+</tr>
+<tr>
+    <td><div><h2 class='subtitulo'>Encabezado de Segundo Nivel {24px}</h2></div></td>
+    <td><code>&lt;h2 class=&quot;subtitulo&quot;&gt;</code></td>
+</tr>
+<tr>
+    <td><div><h3 class='subtitulo'>Encabezado de Tercer Nivel {22px}</h3></div></td>
+    <td><code>&lt;h3 class=&quot;subtitulo&quot;&gt;</code></td>
+</tr>
+<tr>
+    <td><div><h4 class='subtitulo'>Encabezado de Cuarto Nivel {18px}</h4></div></td>
+    <td><code>&lt;h4 class=&quot;subtitulo&quot;&gt;</code></td>
+</tr>
+<tr>
+    <td><div><h5 class='subtitulo'>Encabezado de Quinto Nivel {16px}</h5></div></td>
+    <td><code>&lt;h5 class=&quot;subtitulo&quot;&gt;</code></td>
+</tr>
+<tr>
+    <td><div><h6 class='subtitulo'>Encabezado de Sexto Nivel {14px}</h6></div></td>
+    <td><code>&lt;h6 class=&quot;subtitulo&quot;&gt;</code></td>
+</tr>
+</table>
+
+
+<!-- Ènfasis de párrafo -->
+
+<h2 class='rojo-claro'>Valores tipográficos </h2><a name="titulo-dos"></a>
+<h1 class='subtitulo gris-oscuro'>Énfasis</h1>
+<h3 class='subtitulo gris-oscuro'>Párrafo</h3>
+
+<p>El énfasis de párrafo responde a las medidas estandarizadas de tamaño de acuerdo a la nomenclatura también presente en la Grilla: <strong>xs</strong> (Extra-small), <strong>sm</strong> (Small), <strong>md</strong> (Medium) y <strong>lg</strong> (Large), respectivamente.</p>
+
+<table class='w100'>
+<tr>
+    <th class='w60'>Ejemplo</th>
     <th class='w30'>Uso</th>
 </tr>
 <tr>
@@ -59,86 +158,48 @@ pde: type.pde
 </tr>
 </table>
 
-<!-- Cabeceras -->
+<h3 class='subtitulo gris-oscuro'>Vistazo (span)</h3>
 
-<h2 class='rojo-claro'>Títulos</h2><a name="titulo-tres"></a>
-<h5 class='gris-oscuro'>Cabeceras</h5>
-
-<table class='w100'>
-<tr>
-    <th class='w60'>Muestra</th>
-    <th class='w30'>Uso</th>
-</tr>
-<tr>
-    <td><div><h1>Encabezado de Primer Nivel</h1></div></td>
-    <td><code>&lt;h1&gt;</code></td>
-</tr>
-<tr>
-    <td><div><h2>Encabezado de Primer Nivel</h2></div></td>
-    <td><code>&lt;h2&gt;</code></td>
-</tr>
-<tr>
-    <td><div><h3>Encabezado de Primer Nivel</h3></div></td>
-    <td><code>&lt;h3&gt;</code></td>
-</tr>
-<tr>
-    <td><div><h4>Encabezado de Primer Nivel</h4></div></td>
-    <td><code>&lt;h4&gt;</code></td>
-</tr>
-<tr>
-    <td><div><h5>Encabezado de Primer Nivel</h5></div></td>
-    <td><code>&lt;h5&gt;</code></td>
-</tr>
-<tr>
-    <td><div><h6>Encabezado de Primer Nivel</h6></div></td>
-    <td><code>&lt;h6&gt;</code></td>
-</tr>
-</table>
-
-<!-- Sub-Cabeceras -->
-
-<h2 class='rojo-claro'>Subtítulos</h2><a name="titulo-cuatro"></a>
-<h5 class='gris-oscuro'>Sub-cabeceras</h5>
+<p>El énfasis de vistazo sigue la misma línea que el de párrafo anterior.</p>
 
 <table class='w100'>
 <tr>
-    <th class='w60'>Muestra</th>
+    <th class='w60'>Ejemplo</th>
     <th class='w30'>Uso</th>
 </tr>
 <tr>
-    <td><div><h1 class='subtitulo'>Encabezado de Primer Nivel</h1></div></td>
-    <td><code>&lt;h1 class=&quot;subtitulo&quot;&gt;</code></td>
+    <td><div><span class='xs'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
+    <td><code>&lt;span class=&quot;xs&quot;&gt;</code></td>
 </tr>
 <tr>
-    <td><div><h2 class='subtitulo'>Encabezado de Primer Nivel</h2></div></td>
-    <td><code>&lt;h2 class=&quot;subtitulo&quot;&gt;</code></td>
+    <td><div><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
+    <td><code>&lt;span&gt;</code></td>
 </tr>
 <tr>
-    <td><div><h3 class='subtitulo'>Encabezado de Primer Nivel</h3></div></td>
-    <td><code>&lt;h3 class=&quot;subtitulo&quot;&gt;</code></td>
+    <td><div><span class='sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
+    <td><code>&lt;span class=&quot;sm&quot;&gt;</code></td>
 </tr>
 <tr>
-    <td><div><h4 class='subtitulo'>Encabezado de Primer Nivel</h4></div></td>
-    <td><code>&lt;h4 class=&quot;subtitulo&quot;&gt;</code></td>
+    <td><div><span class='md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
+    <td><code>&lt;span class=&quot;md&quot;&gt;</code></td>
 </tr>
 <tr>
-    <td><div><h5 class='subtitulo'>Encabezado de Primer Nivel</h5></div></td>
-    <td><code>&lt;h5 class=&quot;subtitulo&quot;&gt;</code></td>
-</tr>
-<tr>
-    <td><div><h6 class='subtitulo'>Encabezado de Primer Nivel</h6></div></td>
-    <td><code>&lt;h6 class=&quot;subtitulo&quot;&gt;</code></td>
+    <td><div><span class='lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
+    <td><code>&lt;span class=&quot;lg&quot;&gt;</code></td>
 </tr>
 </table>
+
 
 <!-- Grosores -->
 
 <h2 class='rojo-claro'>Grosores</h2><a name="titulo-cinco"></a>
-<h5 class='gris-oscuro'>Enfasis de fuente</h5>
+<h5 class='gris-oscuro'>Énfasis de fuente</h5>
+
+<p>Las variables de fuente de acuerdo al grosor están estandarizadas por cuatro clases más la que viene por defecto.</p>
 
 <table class='w100'>
 <tr>
-    <th class='w60'>Muestra</th>
+    <th class='w60'>Ejemplo</th>
     <th class='w30'>Uso</th>
 </tr>
 <tr>
@@ -162,11 +223,10 @@ pde: type.pde
 <!-- Estilos -->
 
 <h2 class='rojo-claro'>Estilos de carácter</h2><a name="titulo-seis"></a>
-<h5 class='gris-oscuro'>Cabeceras</h5>
 
 <table class='w100'>
 <tr>
-    <th class='w60'>Muestra</th>
+    <th class='w60'>Ejemplo</th>
     <th class='w30'>Uso</th>
 </tr>
 <tr>
@@ -186,7 +246,7 @@ pde: type.pde
 
 <table class='w100'>
 <tr>
-    <th class='w60'>Muestra</th>
+    <th class='w60'>Ejemplo</th>
     <th class='w30'>Uso</th>
 </tr>
 <tr>
@@ -211,15 +271,21 @@ pde: type.pde
 
 <table class='w100'>
 <tr>
-    <th class='w60'>Muestra</th>
+    <th class='w60'>Ejemplo</th>
     <th class='w30'>Uso</th>
 </tr>
 <tr>
     <td><div><ul>
 			<li>Primer elemento</li>
 			<li>Segundo elemento</li>
-			<li>Tercer elemento</li>
-					 </ul>
+                <ul>
+			        <li>Tercer elemento</li>
+                    <li>Cuarto elemento</li>
+                    <li>Quinto elemento</li>
+                </ul>
+            <li>Quinto elemento</li>
+            <li>Sexto elemento</li>
+			</ul>
 		</div></td>
     <td><code>&lt;ul&gt;
 	&lt;li&gt;&lt;/li&gt;
@@ -233,6 +299,14 @@ pde: type.pde
 			<li>Primer elemento</li>
 			<li>Segundo elemento</li>
 			<li>Tercer elemento</li>
+                <ol>
+                    <li>Tercer elemento</li>
+                    <li>Cuarto elemento</li>
+                    <li>Quinto elemento</li>
+                </ol>
+            <li>Quinto elemento</li>
+            <li>Sexto elemento</li>
+            </ol>
 		</ol></div></td>
     <td><code>&lt;ol&gt;
 	&lt;li&gt;&lt;/li&gt;
@@ -250,7 +324,7 @@ pde: type.pde
 
 <table class='w100'>
 <tr>
-    <th class='w60'>Muestra</th>
+    <th class='w60'>Ejemplo</th>
     <th class='w30'>Uso</th>
 </tr>
 <tr>

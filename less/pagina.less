@@ -45,8 +45,13 @@ header {
 .menu-affix{
 	margin: 0 auto;
 	position: relative;
-	padding-top: @cuadratin * 1.5;
-	padding-left: @cuadratin;
+	padding-top: @cuadratin;
+	//padding-left: @cuadratin;
+
+	ul{
+		margin: 0;
+		padding: 0;
+	}
 
 	a{
 	color: none;
@@ -54,13 +59,43 @@ header {
     font-family: @sans;
     line-height: @cuadratin * 1.1;
 
+        //  Tamaños de Párrafo:
+
+    &.lg { 
+    font-size: @cuerpo * 2.2;
+    line-height: 140%;
+    }
+
+    &.md {
+      font-size: @cuerpo * 1.7;
+      font-weight: 200;
+      line-height: 140%;
+    }
+
+    &.sm {
+      font-size: @cuerpo * 1.1;
+      line-height: 160%; //cambio para menú affix
+    }
+    
+    &.xs {
+      font-size: @cuerpo * .80;
+      line-height: @interlinea * .9;
+    }
+
+  
+    &:hover{
+      color: @pizarra;
+      text-decoration: none;
+    }
+}
+
   
     &:hover{
       color: @rojo-claro;
       text-decoration: none;
     }
 	}
-}
+
 
 .pag-movil {
 	margin: 0 auto;
@@ -111,7 +146,7 @@ header {
 	}
 
 	&.xs{
-		height: 300 + @cuadratin * 1.4;
+		height: 160 + @cuadratin * 1.4;
 		canvas{
 			position: absolute;
 			bottom: 0;
@@ -123,28 +158,6 @@ header {
 	.leyenda{
 		position: relative;
 		z-index: 5;
-	}
-}
-
-//	Menú Pyxis
-.menu-pyxis {
-	margin: 0 auto;
-	width: 100%;
-	min-height: @cuadratin * 1.4;
-	position: fixed;
-	background-color: @blanco;
-	padding: 0;
-	z-index: 10;
-	.box-shadow(0 0 10px fade(@negro, 30));
-
-
-	&.movil {
-
-		ul{
-		li{
-			padding-left: @cuadratin;
-		}
-		}
 	}
 }
 

@@ -4,7 +4,6 @@ title: Pyxis Framework - Javascript
 subtitle: Javascript
 ---
 
-<h2 class='rojo-claro'>Javascript</h2> 
 <h3 class='rojo-claro'>1. Modal</h3><a name="titulo-uno"></a>
 <p>Se parte con la idea de que los formularios es donde ocurre una mayor transacción de interacción entre el usuario y el sistema. Para que que la interacción sea de manera cómoda y agradable, se plantea construir una relación proporcional entre los diversos formularios existentes en las plataformas digitales.</p> 
 <h4>Archivos necesarios</h4>
