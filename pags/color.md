@@ -4,7 +4,24 @@ title: Pyxis Framework - Color
 subtitle: Color
 ---
 
-<h2 class="rojo-claro">Paleta de Colores</h2>
+<div class='col-lg-5 col-md-5'>
+<a name='ancla' id='a'></a>
+<div class='menu-affix alto-affix'>
+<div data-spy="affix" data-offset-top="220">
+    <ul>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-uno'>Paleta de colores</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-dos'>Grises</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-tres'>Colores</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-cuatro'>Adicionales</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-cinco'>Opuestos</a></li>
+    </ul>
+</div>
+</div>
+</div>
+
+<div class='col-lg-19 col-lg-offset-0 col-md-18 col-md-offset-1'>
+
+<h2 class="rojo-claro">Paleta de Colores</h2><a name="titulo-uno"></a>
 
 <!-- descripción -->
 
@@ -14,7 +31,7 @@ subtitle: Color
 
 <!-- colores nuevos -->
 
-<h2>Grises</h2><a name="titulo-uno"></a>
+<h2 class='rojo-claro'>Grises</h2><a name="titulo-dos"></a>
 
 <table class='w100 centrado-vertical'>
 <tr>
@@ -59,7 +76,7 @@ subtitle: Color
 </tr>
 </table>
 
-<h2 class='margen-superior'>Colores</h2><a name="titulo-dos"></a>
+<h2 class='rojo-claro'>Colores</h2><a name="titulo-tres"></a>
 
 <table class='w100'>
 <tr>
@@ -175,7 +192,7 @@ subtitle: Color
 
 </table>
 
-<h2>Adicionales</h2><a name="titulo-tres"></a>
+<h2 class='rojo-claro'>Adicionales</h2><a name="titulo-cuatro"></a>
 
 
 <table class='w100 centrado-vertical'>
@@ -206,7 +223,7 @@ subtitle: Color
 </tr>
 </table>
 
-<h2>Opuestos</h2><a name="titulo-cuatro"></a>
+<h2 class='rojo-claro'>Opuestos</h2><a name="titulo-cinco"></a>
 
 <table class='w100 centrado-vertical'>
 <tr>
