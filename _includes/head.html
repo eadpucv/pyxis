@@ -17,6 +17,25 @@
   <link rel='apple-touch-icon-precomposed' sizes='114x114' href='img/favicon-114.png'>
   <link rel='apple-touch-icon-precomposed' sizes='72x72' href='img/favicon-72.png'>
   <link rel='apple-touch-icon-precomposed' href='img/favicon-57.png'>
+  <!-- Smooth Scoolling -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('a[href*=#]').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+          var $target = $(this.hash);
+          $target = $target.length && $target
+          || $('[name=' + this.hash.slice(1) +']');
+          if ($target.length) {
+            var targetOffset = $target.offset().top;
+            $('html,body')
+            .animate({scrollTop: targetOffset}, 750);
+           return false;
+          }
+        }
+      });
+    });
+</script><!-- fin de Smooth Scoolling -->
 </head>
 
 

@@ -1,18 +1,37 @@
 // Estilos tipográficos auxiliares
 
 
-.grande{
-    font-size: 250%;
+.gist-file {
+    table{
+        margin-bottom: 0;
+        padding: 0;
+        border: none;
+
+        th, td{
+
+        span{
+            margin: 0;
+        }
+        }
+    }
+}
+
+#gist {
+    margin: @interlinea 0 0 0;
+}
+
+.gist-data {
+    overflow: auto;
+}
+
+.gist-syntax {
+    overflow: auto;
 }
 
 .gist {
     width: 100%;
 }
 
-.chico, 
-.chica{
-    font-size: 80%;
-}
 
 .datos {
     font-size: 60%;
@@ -25,6 +44,21 @@
 .importante {
     color:@rojo-claro;
 }
+
+
+//  Para el Affix
+
+a[name='titulo-uno'],
+a[name='titulo-dos'],
+a[name='titulo-tres'],
+a[name='titulo-cuatro'],
+a[name='titulo-cinco'],
+a[name='titulo-seis'],
+a[name='titulo-siete'],
+a[name='titulo-ocho'],
+a[name='titulo-nueve'] {    
+padding-top: @cuadratin * 3;
+}  
 
 .diagonal {
 /* Safari */
@@ -48,29 +82,28 @@ margin: @margen-code;
 /* IE */ -ms-transform-origin: 0 50%; 
 /* IE */ -ms-transform: rotate(-90deg) translate(-50%, 50%); 
 /* Opera */ -o-transform-origin: 0 50%; 
-/* Opera */ -o-transform: rotate(-90deg) translate(-50%, 50%); 
+/* Opera */ -o-transform: rotate(-80deg) translate(-50%, 50%); 
 /* Internet Explorer */ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); 
 margin: @margen-code; 
 }
 
 
+//  Visibilidad
 
-.uc{
-        text-transform: uppercase;
+.alto-affix {
+    //.box-shadow(0 0 2px fade(@negro, 20));
+    background-color: @blanco;
+    color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    margin-right: @cuadratin /2;
+    padding-left: @cuadratin /3;
 }
+
+// 
 
 .fina,
 .fino{
         font-weight: 200;
-}
-
-.muy-fina,
-.muy-fino{
-        font-weight: 100;
-}
-
-.normal{
-        font-weight: normal;
 }
         
 
@@ -238,6 +271,12 @@ margin: @margen-code;
     .box-shadow(0 0 10px @blanco);
 }
 
+.ver{
+    .box-shadow(0 0 2px fade(@negro, 20));
+    background-color: @gris-claro;
+    color: rgba(0, 0, 0, 0.8);
+    padding: @cuadratin / 2;
+}
 
 //Márgenes columnas    
 
