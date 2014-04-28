@@ -1,0 +1,91 @@
+// For Affix plugin
+// -------------------------
+
+.affix {
+  	position: fixed;
+  	width: 205px;
+	top: 50px;
+	margin-left: -30px;
+	padding-left: @cuadratin;
+	padding-top: @cuadratin /2;
+	background-color: @blanco;
+	height: 0 auto;
+	padding-bottom: @cuadratin;
+}
+
+//  Visibilidad
+
+.alto-affix {
+    width: 200px;
+    left: 0;
+    padding-left: @cuadratin;
+    height: 0 auto;
+
+}
+
+//  Para el Affix
+
+a[name='titulo-uno'],
+a[name='titulo-dos'],
+a[name='titulo-tres'],
+a[name='titulo-cuatro'],
+a[name='titulo-cinco'],
+a[name='titulo-seis'],
+a[name='titulo-siete'],
+a[name='titulo-ocho'],
+a[name='titulo-nueve'] {    
+padding-top: @cuadratin * 3;
+}  
+
+.menu-affix{
+	margin-top: @cuadratin / 2;
+	padding-top: @cuadratin / 2;
+	padding-bottom: @cuadratin;
+	//padding-left: @cuadratin;
+
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+
+	a{
+	color: none;
+    text-decoration: none;
+    font-family: @sans;
+    line-height: @cuadratin * 1.1;
+
+        //  Tamaños de Párrafo:
+
+    &.lg { 
+    font-size: @cuerpo * 2.2;
+    line-height: 140%;
+    }
+
+    &.md {
+      font-size: @cuerpo * 1.7;
+      font-weight: 200;
+      line-height: 140%;
+    }
+
+    &.sm {
+      font-size: @cuerpo * 1.1;
+      line-height: 160%; //cambio para menú affix
+    }
+    
+    &.xs {
+      font-size: @cuerpo * .80;
+      line-height: @interlinea * .9;
+    }
+
+  
+    &:hover{
+      color: @pizarra;
+      text-decoration: none;
+    }
+}
+
+    &:hover{
+      color: @rojo-claro;
+      text-decoration: none;
+    }
+	}

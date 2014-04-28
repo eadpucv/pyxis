@@ -6,7 +6,7 @@
 //  Por defecto:
 
 nav {
-  margin: 0 -@cuadratin;
+  margin: 0 auto;
   border-top: 1px solid @color-borde;
   
   ul, ol{
@@ -17,16 +17,16 @@ nav {
     li{
       display: inline;
       margin: 0;
-      padding: 0;
       list-style-type: none;
+      list-style: none;
     
       a{  
         display: inline-block;
-        font-weight: 500; 
+        font-weight: 300; 
         margin: 0;
-        padding: @cuerpo * 0.5@cuerpo;
+        padding: @cuerpo * 0.5 @cuerpo * 0.9;
         color: @negro !important;
-        font-size: @cuerpo;
+        font-size: @cuerpo * 0.95;
         text-transform: uppercase;
 
       }
@@ -45,6 +45,48 @@ nav {
   }
 }
 
+//  Menú Pyxis
+.menu-pyxis {
+  margin: 0 auto;
+  width: 100%;
+  min-height: @cuadratin * 1.4;
+  position: fixed;
+  background-color: @blanco;
+  padding: 0;
+  z-index: 10;
+  .box-shadow(0 0 10px fade(@negro, 30));
+
+  nav {
+
+    h5 {
+      margin: 0;
+      margin-top: 5px;
+      margin-left: @cuadratin / 3;
+      z-index: -1;
+
+        span{
+          margin: 0;
+          padding: 0;
+        }
+    }
+
+    ul{
+      li{
+        //padding: @cuadratin / 3;
+      }
+    }
+  }
+
+  &.movil {
+
+    ul{
+    li{
+      padding-left: @cuadratin;
+      padding: @cuadratin / 3;
+    }
+    }
+  }
+}
 
 //  Para dropdowns:
 
@@ -130,7 +172,7 @@ nav {
       border: 1px solid transparent;
       border-radius: @border-radius-base @border-radius-base 0 0;
       &:hover {
-        border-color: @nav-tabs-link-hover-border-color @nav-tabs-link-hover-border-color @nav-tabs-border-color;
+      border-color: @nav-tabs-link-hover-border-color @nav-tabs-link-hover-border-color @nav-tabs-border-color;
       }
     }
 

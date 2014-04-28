@@ -2,190 +2,290 @@
 layout: base
 title: Pyxis Framework - Tipografía
 subtitle: Tipografía
+pde: type.pde
 ---
 
-<div class='fila'>
-<div class='col-md-24'>
+<div class='col-lg-5 col-md-5'>
+<a name='ancla' id='a'></a>
+<div class='menu-affix alto-affix'>
+<div data-spy="affix" data-offset-top="220">
+    <ul>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-uno'>Familias tipográficas</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-dos'>Títulos</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-tres'>Subtítulos</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-cuatro'>Valores tipográficos</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-cinco'>Grosores</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-seis'>Estilos de carácter</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-siete'>Alineación</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-ocho'>Listas</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-nueve'>Clases diferenciales</a></li>
+    </ul>
+</div>             
+</div>
+</div>
 
-	<!-- Familias tipográficas -->
 
-<h2 class='rojo-claro'>Familias tipográficas</h2>
+<div class='col-lg-19 col-lg-offset-0 col-md-18 col-md-offset-1'>
+
+<!-- Familias tipográficas -->
+
+<h2 class='rojo-claro'>Familias tipográficas</h2><a name="titulo-uno"></a>
+
+<p>Pyxis utiliza globalmente y por defecto un <i>font-size</i> de 16px, con un <i>line-heigh</i> de 22px y un <i>font-weight</i> de 200, lo cual hace referencia a un <i>font-style</i> "normal" o "regular" en las dos familias de fuente escogidas.</p>
 
 <table class='w100'>
 <tr>
-    <th class='w60'>Muestra</th>
+    <th class='w60'>Ejemplo</th>
     <th class='w30'>Uso</th>
 </tr>
 <tr>
-    <td><div class=''><p>Se utiliza la familia tipográfica <a href="http://www.google.com/fonts/specimen/Source+Sans+Pro"><i> Source Sans Pro</i></a>, para títulos y encabezados de texto. Esta tipografía de tipo sans serif, presenta gran versatilidad a través de sus 12 pesos.</p></div></td>
+    <td><div><p>Se utiliza la familia tipográfica <a href="http://www.google.com/fonts/specimen/Source+Sans+Pro"><i> Source Sans Pro</i></a>, para títulos y encabezados de texto. Esta tipografía de tipo sans serif, presenta gran versatilidad a través de sus 12 pesos.</p></div></td>
     <td><code>Títulos, antetítulos, listas</code></td>
 </tr>
 <tr>
-    <td><div class=''><p>Se utiliza la familia tipográfica <a href="https://www.google.com/fonts/specimen/Merriweather"><i>Merriweather</i></a>, en su versión ligth para texto continuo, poemas o textos diferenciados, con una familia tipográfica de 6 pesos.</p></div></td>
+    <td><div><p>Se utiliza la familia tipográfica <a href="https://www.google.com/fonts/specimen/Merriweather"><i>Merriweather</i></a>, en su versión ligth para texto continuo, poemas o textos diferenciados, con una familia tipográfica de 6 pesos.</p></div></td>
     <td><code>Texto continuo</code></td>
-</tr>
-</table>
-
-	<!-- Ènfasis de párrafo -->
-
-<h2 class='rojo-claro'>Valores tipográficos </h2>
-<h5 class='gris-oscuro'>Énfasis de párrafo</h5>
-
-<table class='w100'>
-<tr>
-    <th class='w60'>Muestra</th>
-    <th class='w30'>Uso</th>
-</tr>
-<tr>
-    <td><div class=''><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
-    <td><code>&lt;p&gt;</code></td>
-</tr>
-<tr>
-    <td><div class=''><p class='chico'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
-    <td><code>&lt;p class=&quot;chico&quot;&gt;</code></td>
-</tr>
-<tr>
-    <td><div class=''><p class='mediano'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
-    <td><code>&lt;p class=&quot;mediano&quot;&gt;</code></td>
-</tr>
-<tr>
-    <td><div class=''><p class='grande'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
-    <td><code>&lt;p class=&quot;grande&quot;&gt;</code></td>
-</tr>
-<tr>
-    <td><div class=''><p class='gigante'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
-    <td><code>&lt;p class=&quot;gigante&quot;&gt;</code></td>
-</tr>
-<tr>
-    <td><div class=''><p class='mediano'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
-    <td><code>@oliva-claro</code></td>
 </tr>
 </table>
 
 <!-- Cabeceras -->
 
-<h2 class='rojo-claro'>Títulos</h2>
-<h5 class='gris-oscuro'>Cabeceras</h5>
+<h2 class='rojo-claro'>Títulos</h2><a name="titulo-dos"></a>
+
+<p>Estas son las cabeceras HTML disponibles también en Pyxis. Las diferencias cuantitativas entre cabeceras, a medida que escalan, son de 2 a máximo 4px. <code>&lt;h1&gt;</code> alberga un <i>font-size</i> de 33px, mientras que <code>&lt;h6&gt;</code> es visible en 19px.</p>
 
 <table class='w100'>
 <tr>
-    <th class='w60'>Muestra</th>
+    <th class='w60'>Ejemplo</th>
     <th class='w30'>Uso</th>
 </tr>
 <tr>
-    <td><div class=''><h1>Encabezado de Primer Nivel</h1></div></td>
+    <td><div><h1>Encabezado de Primer Nivel {33px}</h1></div></td>
     <td><code>&lt;h1&gt;</code></td>
 </tr>
 <tr>
-    <td><div class=''><h2>Encabezado de Primer Nivel</h2></div></td>
+    <td><div><h2>Encabezado de Segundo Nivel {29px}</h2></div></td>
     <td><code>&lt;h2&gt;</code></td>
 </tr>
 <tr>
-    <td><div class=''><h3>Encabezado de Primer Nivel</h3></div></td>
+    <td><div><h3>Encabezado de Tercer Nivel {27px}</h3></div></td>
     <td><code>&lt;h3&gt;</code></td>
 </tr>
 <tr>
-    <td><div class=''><h4>Encabezado de Primer Nivel</h4></div></td>
+    <td><div><h4>Encabezado de Cuarto Nivel {23px}</h4></div></td>
     <td><code>&lt;h4&gt;</code></td>
 </tr>
 <tr>
-    <td><div class=''><h5>Encabezado de Primer Nivel</h5></div></td>
+    <td><div><h5>Encabezado de Quinto Nivel {21px}</h5></div></td>
     <td><code>&lt;h5&gt;</code></td>
 </tr>
 <tr>
-    <td><div class=''><h6>Encabezado de Primer Nivel</h6></div></td>
+    <td><div><h6>Encabezado de Sexto Nivel {19px}</h6></div></td>
     <td><code>&lt;h6&gt;</code></td>
 </tr>
 </table>
 
-<!-- Grosores -->
+<!-- Sub-Cabeceras -->
 
-<h2 class='rojo-claro'>Grosores</h2>
-<h5 class='gris-oscuro'>Enfasis de fuente</h5>
+<h2 class='rojo-claro'>Subtítulos</h2><a name="titulo-tres"></a>
+
+<p>Puedes insertar un subtítulo añadiendo la clase <code>subtitulo</code>, más fino y en una escala menor a las cabeceras comunes, pero adoptando la misma proporción de diferenciado.</p>
 
 <table class='w100'>
 <tr>
-    <th class='w60'>Muestra</th>
+    <th class='w60'>Ejemplo</th>
     <th class='w30'>Uso</th>
 </tr>
 <tr>
-    <td><div class=''><p class='fino'>Esto es un texto fino</p></div></td>
+    <td><div><h1 class='subtitulo'>Encabezado de Primer Nivel {28px}</h1></div></td>
+    <td><code>&lt;h1 class=&quot;subtitulo&quot;&gt;</code></td>
+</tr>
+<tr>
+    <td><div><h2 class='subtitulo'>Encabezado de Segundo Nivel {24px}</h2></div></td>
+    <td><code>&lt;h2 class=&quot;subtitulo&quot;&gt;</code></td>
+</tr>
+<tr>
+    <td><div><h3 class='subtitulo'>Encabezado de Tercer Nivel {22px}</h3></div></td>
+    <td><code>&lt;h3 class=&quot;subtitulo&quot;&gt;</code></td>
+</tr>
+<tr>
+    <td><div><h4 class='subtitulo'>Encabezado de Cuarto Nivel {18px}</h4></div></td>
+    <td><code>&lt;h4 class=&quot;subtitulo&quot;&gt;</code></td>
+</tr>
+<tr>
+    <td><div><h5 class='subtitulo'>Encabezado de Quinto Nivel {16px}</h5></div></td>
+    <td><code>&lt;h5 class=&quot;subtitulo&quot;&gt;</code></td>
+</tr>
+<tr>
+    <td><div><h6 class='subtitulo'>Encabezado de Sexto Nivel {14px}</h6></div></td>
+    <td><code>&lt;h6 class=&quot;subtitulo&quot;&gt;</code></td>
+</tr>
+</table>
+
+
+<!-- Ènfasis de párrafo -->
+
+<h2 class='rojo-claro'>Valores tipográficos </h2><a name="titulo-cuatro"></a>
+<h1 class='subtitulo gris-oscuro'>Énfasis</h1>
+<h3 class='subtitulo gris-oscuro'>Párrafo</h3>
+
+<p>El énfasis de párrafo responde a las medidas estandarizadas de tamaño de acuerdo a la nomenclatura también presente en la Grilla: <strong>xs</strong> (Extra-small), <strong>sm</strong> (Small), <strong>md</strong> (Medium) y <strong>lg</strong> (Large), respectivamente.</p>
+
+<table class='w100'>
+<tr>
+    <th class='w60'>Ejemplo</th>
+    <th class='w30'>Uso</th>
+</tr>
+<tr>
+    <td><div><p class='xs'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
+    <td><code>&lt;p class=&quot;xs&quot;&gt;</code></td>
+</tr>
+<tr>
+    <td><div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
+    <td><code>&lt;p&gt;</code></td>
+</tr>
+<tr>
+    <td><div><p class='sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
+    <td><code>&lt;p class=&quot;sm&quot;&gt;</code></td>
+</tr>
+<tr>
+    <td><div><p class='md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
+    <td><code>&lt;p class=&quot;md&quot;&gt;</code></td>
+</tr>
+<tr>
+    <td><div><p class='lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
+    <td><code>&lt;p class=&quot;lg&quot;&gt;</code></td>
+</tr>
+</table>
+
+<h3 class='subtitulo gris-oscuro'>Vistazo (span)</h3>
+
+<p>El énfasis de vistazo sigue la misma línea que el de párrafo anterior.</p>
+
+<table class='w100'>
+<tr>
+    <th class='w60'>Ejemplo</th>
+    <th class='w30'>Uso</th>
+</tr>
+<tr>
+    <td><div><span class='xs'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
+    <td><code>&lt;span class=&quot;xs&quot;&gt;</code></td>
+</tr>
+<tr>
+    <td><div><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
+    <td><code>&lt;span&gt;</code></td>
+</tr>
+<tr>
+    <td><div><span class='sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
+    <td><code>&lt;span class=&quot;sm&quot;&gt;</code></td>
+</tr>
+<tr>
+    <td><div><span class='md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
+    <td><code>&lt;span class=&quot;md&quot;&gt;</code></td>
+</tr>
+<tr>
+    <td><div><span class='lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p></div></td>
+    <td><code>&lt;span class=&quot;lg&quot;&gt;</code></td>
+</tr>
+</table>
+
+
+<!-- Grosores -->
+
+<h2 class='rojo-claro'>Grosores</h2><a name="titulo-cinco"></a>
+<h5 class='gris-oscuro'>Énfasis de fuente</h5>
+
+<p>Las variables de fuente de acuerdo al grosor están estandarizadas por cuatro clases más la que viene por defecto.</p>
+
+<table class='w100'>
+<tr>
+    <th class='w60'>Ejemplo</th>
+    <th class='w30'>Uso</th>
+</tr>
+<tr>
+    <td><div><p class='fino'>Esto es un texto fino</p></div></td>
     <td><code>&lt;p class=&quot;fino&quot;&gt;</code></td>
 </tr>
 <tr>
-    <td><div class=''><p class='semi-gruesa'>Esto es un texto semigrueso</p></div></td>
+    <td><div><p class='semi-gruesa'>Esto es un texto semigrueso</p></div></td>
     <td><code>&lt;p class=&quot;semi-gruesa&quot;&gt;</code></td>
 </tr>
 <tr>
-    <td><div class=''><p class='gruesa'>Esto es un texto grueso (en negrita)</p></div></td>
+    <td><div><p class='gruesa'>Esto es un texto grueso (en negrita)</p></div></td>
     <td><code>&lt;p class=&quot;gruesa&quot;&gt;</code></td>
 </tr>
 <tr>
-    <td><div class=''><p class='pesada'>Esto es un texto pesado</p></div></td>
+    <td><div><p class='pesada'>Esto es un texto pesado</p></div></td>
     <td><code>&lt;p class=&quot;pesada&quot;&gt;</code></td>
 </tr>
 </table>
 
 <!-- Estilos -->
 
-<h2 class='rojo-claro'>Estilos de carácter</h2>
-<h5 class='gris-oscuro'>Cabeceras</h5>
+<h2 class='rojo-claro'>Estilos de carácter</h2><a name="titulo-seis"></a>
 
 <table class='w100'>
 <tr>
-    <th class='w60'>Muestra</th>
+    <th class='w60'>Ejemplo</th>
     <th class='w30'>Uso</th>
 </tr>
 <tr>
-    <td><div class=''><p class='italica'>Esto es un texto en cursiva</p></div></td>
+    <td><div><p class='italica'>Esto es un texto en cursiva</p></div></td>
     <td><code>&lt;p class=&quot;italica&quot;&gt;, &lt;p class=&quot;cursiva&quot;&gt; o &lt;i&gt;</code></td>
 </tr>
 <tr>
-    <td><div class=''><p class='altas'>Esto es un texto en altas</p></div></td>
+    <td><div><p class='altas'>Esto es un texto en altas</p></div></td>
     <td><code>&lt;p class=&quot;altas&quot;&gt;</code></td>
 </tr>
 </table>
 
 <!-- Aleneación -->
 
-<h2 class='rojo-claro'>Alineación</h2>
+<h2 class='rojo-claro'>Alineación</h2><a name="titulo-siete"></a>
 <h5 class='gris-oscuro'>Cabeceras</h5>
 
 <table class='w100'>
 <tr>
-    <th class='w60'>Muestra</th>
+    <th class='w60'>Ejemplo</th>
     <th class='w30'>Uso</th>
 </tr>
 <tr>
-    <td><div class=''><p class='izquierda'>Esto es un texto a la izquierda</p></div></td>
+    <td><div><p class='izquierda'>Esto es un texto a la izquierda</p></div></td>
     <td><code>&lt;p class=&quot;izquierda&gt;</code></td>
 </tr>
 <tr>
-    <td><div class=''><p class='centrado'>Esto es un texto centrado</p></div></td>
+    <td><div><p class='centrado'>Esto es un texto centrado</p></div></td>
     <td><code>&lt;p class=&quot;derecha&quot;&gt;</code></td>
 </tr>
 <tr>
-    <td><div class=''><p class='derecha'>Esto es un texto a la derecha</p></div></td>
+    <td><div><p class='derecha'>Esto es un texto a la derecha</p></div></td>
     <td><code>&lt;p class=&quot;derecha&quot;&gt;</code></td>
 </tr>
 </table>
 
+
 <!-- Listas -->
 
-<h2 class='rojo-claro'>Listas</h2>
+<h2 class='rojo-claro'>Listas</h2><a name="titulo-ocho"></a>
 <h5 class='gris-oscuro'>Ordenada y desordenada</h5>
 
 <table class='w100'>
 <tr>
-    <th class='w60'>Muestra</th>
+    <th class='w60'>Ejemplo</th>
     <th class='w30'>Uso</th>
 </tr>
 <tr>
-    <td><div class=''><ul>
+    <td><div><ul>
 			<li>Primer elemento</li>
 			<li>Segundo elemento</li>
-			<li>Tercer elemento</li>
-					 </ul>
+                <ul>
+			        <li>Tercer elemento</li>
+                    <li>Cuarto elemento</li>
+                    <li>Quinto elemento</li>
+                </ul>
+            <li>Quinto elemento</li>
+            <li>Sexto elemento</li>
+			</ul>
 		</div></td>
     <td><code>&lt;ul&gt;
 	&lt;li&gt;&lt;/li&gt;
@@ -195,10 +295,18 @@ subtitle: Tipografía
 		</code></td>
 </tr>
 <tr>
-    <td><div class=''><ol>
+    <td><div><ol>
 			<li>Primer elemento</li>
 			<li>Segundo elemento</li>
 			<li>Tercer elemento</li>
+                <ol>
+                    <li>Tercer elemento</li>
+                    <li>Cuarto elemento</li>
+                    <li>Quinto elemento</li>
+                </ol>
+            <li>Quinto elemento</li>
+            <li>Sexto elemento</li>
+            </ol>
 		</ol></div></td>
     <td><code>&lt;ol&gt;
 	&lt;li&gt;&lt;/li&gt;
@@ -211,16 +319,16 @@ subtitle: Tipografía
 
 <!-- Clases diferenciales -->
 
-<h2 class='rojo-claro'>Clases diferenciales</h2>
+<h2 class='rojo-claro'>Clases diferenciales</h2><a name="titulo-nueve"></a>
 <h5 class='gris-oscuro'>Cabeceras</h5>
 
 <table class='w100'>
 <tr>
-    <th class='w60'>Muestra</th>
+    <th class='w60'>Ejemplo</th>
     <th class='w30'>Uso</th>
 </tr>
 <tr>
-    <td><div class=''><p class='poema'>
+    <td><div><p class='poema'>
 		
         ¿no iluminan así las estrellas a los hombres
         y esclarecen
@@ -288,16 +396,17 @@ subtitle: Tipografía
     <td><div class='col-md-24'>
 	
 	<div class='margen-superior-s'>
-		<span class='italica grande fina gris-oscuro'>Sólo lo que se idea es lo que se ve; pero lo que se idea es lo que se inventa</span>
-		<span class='italica negrita rojo-claro mediana derecha'>Martin Heidegger</span>
+		<span class='italica lg fina gris-oscuro'>Sólo lo que se idea es lo que se ve; pero lo que se idea es lo que se inventa</span>
+		<span class='italica xs negrita rojo-claro derecha'>Martin Heidegger</span>
 
-		<span class='italica mediana gris-oscuro'>Hay dos cosas infinitas: el Universo y la estupidez humana, y del Universo no estoy seguro.</span>        
-		<span class='italica negrita rojo-claro mediana derecha'>Albert Einstein</span>
+		<span class='italica md gris-oscuro'>Hay dos cosas infinitas: el Universo y la estupidez humana, y del Universo no estoy seguro.</span>        
+		<span class='italica xs negrita rojo-claro derecha'>Albert Einstein</span>
 
-		<span class="chico referencias gris"><sup>[8] </sup> <strong>Norman D </strong>, <i>“El Diseño Emocional. Por qué nos gustan (o no) los objetos cotidianos.</i> Capítulo 3 Tres Niveles de diseño visceral, conductual y reflexivo. <br> Paidós Ediciones S.A. Barcelona, España. Año 2005. Páginas 81 – 121.ISBN 84-493-1729-0</span>
+		<span class="xs referencias gris"><sup>[8] </sup> <strong>Norman D </strong>, <i>“El Diseño Emocional. Por qué nos gustan (o no) los objetos cotidianos.</i> Capítulo 3 Tres Niveles de diseño visceral, conductual y reflexivo. <br> Paidós Ediciones S.A. Barcelona, España. Año 2005. Páginas 81 – 121.ISBN 84-493-1729-0</span>
 	</div>
 		</div></td>
-    <td><code>&lt;span class=&quot;italica grande fina gris-oscuro&quot;&gt;</code></td>
+    <td><code>&lt;span class=&quot;italica md 
+        fina gris-oscuro&quot;&gt;</code></td>
 </tr>
 <tr>
     <td>
@@ -310,6 +419,7 @@ subtitle: Tipografía
 
 </div>
 </div>
+</div><!-- Fin de pag-->
 
 
 

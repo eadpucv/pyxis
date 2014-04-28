@@ -4,7 +4,7 @@ title: Pyxis Framework - Color
 subtitle: Color
 ---
 
-<h2 class="rojo">Paleta de Colores</h2>
+<h2 class="rojo-claro">Paleta de Colores</h2>
 
 <!-- descripción -->
 
@@ -14,7 +14,7 @@ subtitle: Color
 
 <!-- colores nuevos -->
 
-<h2>Grises</h2>
+<h2>Grises</h2><a name="titulo-uno"></a>
 
 <table class='w100 centrado-vertical'>
 <tr>
@@ -59,7 +59,7 @@ subtitle: Color
 </tr>
 </table>
 
-<h2 class='margen-superior'>Colores</h2>
+<h2 class='margen-superior'>Colores</h2><a name="titulo-dos"></a>
 
 <table class='w100'>
 <tr>
@@ -158,26 +158,24 @@ subtitle: Color
     <td>burdeo claro: rgba(140, 35, 24, 1)</td>
 </tr>
 <tr>
-    <td><div class='caja fondo-rojo-oscuro'></div></td>
-    <td><code>@rojo-oscuro</code></td>
-    <td>rojo oscuro: rgba(95, 29, 25, 1)</td>
-</tr>
-<tr>
-    <td><div class='caja fondo-rojo'></div></td>
-    <td><code>@rojo</code></td>
-    <td>rojo: rgba(113, 25, 19, 1)</td>
+    <td><div class='caja fondo-rojo-claro-oscuro'></div></td>
+    <td><code>@rojo-claro-oscuro</code></td>
+    <td>rojo-claro oscuro: rgba(95, 29, 25, 1)</td>
 </tr>
 <tr>
     <td><div class='caja fondo-rojo-claro'></div></td>
     <td><code>@rojo-claro</code></td>
-    <td>rojo claro: rgba(140, 35, 24, 1)</td>
+    <td>rojo-claro: rgba(113, 25, 19, 1)</td>
+</tr>
+<tr>
+    <td><div class='caja fondo-rojo-claro'></div></td>
+    <td><code>@rojo-claro</code></td>
+    <td>rojo-claro claro: rgba(140, 35, 24, 1)</td>
 </tr>
 
 </table>
 
-<h2>Adicionales</h2>
-
-
+<h2>Adicionales</h2><a name="titulo-tres"></a>
 
 
 <table class='w100 centrado-vertical'>
@@ -208,7 +206,7 @@ subtitle: Color
 </tr>
 </table>
 
-<h2>Opuestos</h2>
+<h2>Opuestos</h2><a name="titulo-cuatro"></a>
 
 <table class='w100 centrado-vertical'>
 <tr>
@@ -247,11 +245,13 @@ subtitle: Color
     <td>burdeo opuesto: spin(@burdeo, 180)</td>
 </tr>
 <tr>
-    <td><div class='caja fondo-rojo-opuesto'></div></td>
-    <td><code>@rojo-opuesto</code></td>
-    <td>rojo opuesto: spin(@rojo, 180)</td>
+    <td><div class='caja fondo-rojo-claro-opuesto'></div></td>
+    <td><code>@rojo-claro-opuesto</code></td>
+    <td>rojo-claro opuesto: spin(@rojo-claro, 180)</td>
 </tr>
 </table>
 
 
 <!-- fin colores nuevos -->
+
+</div><!-- fin de pag -->

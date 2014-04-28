@@ -6,7 +6,7 @@ Contenedores y reglas generales
 
 
 *{
-    .transition(.2s ease all);
+    //.transition(.2s ease all);
 }
 
 
@@ -29,10 +29,7 @@ header .iso{
 body{
   font-size: @cuerpo;
   background-color: @gris-blanco;
-  background: url('/img/ruido-gris-blanco.png');
-  // #gradient > .striped(lighten(@gris-claro, 15%), -45deg);
-  // background-size: 10px 10px;
-  // background-repeat: repeat;
+  background: url('@{ruta-imagenes}/ruido-gris-blanco.png');
 }
 
 header {
@@ -40,10 +37,15 @@ header {
 }
 
 .pag{
-	//.container();
+	position: relative;
 	margin: 0 auto;
 	padding: @cuadratin;
+
+	&.menu{
+		padding: 0 0 0 @cuadratin;
+	}
 }
+
 
 .pag-movil {
 	margin: 0 auto;
@@ -68,73 +70,64 @@ header {
 
 .franja {
 	width: 100%;
-	min-height: 500px;
-	max-height: 800px;
 	background-color: @negro-oscuro;
 	position: relative;
 	overflow: hidden;
 	.cf;
 
-	canvas{
-		position: absolute;
-		top: 0;
-		left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
-		z-index: 1;
+	&.xl{
+		min-height: 650px;
+		max-height: 800px;
+
+		canvas{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin-left: auto;
+			margin-right: auto;
+			z-index: 1;
+		}
+
+		.leyenda{
+			margin-top: @cuadratin * 4;
+			text-align: center;
+		}
+	}
+
+	&.xs{
+		height: 160 + @cuadratin * 1.4;
+		canvas{
+			position: absolute;
+			bottom: 0;
+			right: 26px;
+			z-index: 1;
+		}
 	}
 
 	.leyenda{
-		margin-top: @cuadratin * 4;
-		text-align: center;
-		z-index: 2;
+		position: relative;
+		z-index: 5;
+
 	}
-}
-
-.franja-xs {
-    margin: auto;
-    width: 100%;
-    background: url('/img/ruido-negro-oscuro.png');
-    background-repeat: repeat;
-}
-
-.menu-pyxis {
-	margin: 0 auto;
-	width: 100%;
-	min-height: @cuadratin * 1.4;
-	position: fixed;
-	background-color: @blanco;
-	padding: 0;
-	z-index: 10;
-	.box-shadow(0 0 10px fade(@negro, 30))
-}
-
-.menu-pyxis-movil {
-	margin: 0 auto;
-	width: 100%;
-	min-height: @cuadratin * 2;
-	background-color: @blanco;
-	z-index: 10;
-}
-
-.contenido{
-	margin-bottom: 3 * @cuadratin;
 }
 
 footer{
 	margin: 0 auto;
-	padding-top: @cuadratin;
 	line-height: @interlinea * .7;
 	
 	p{
-		font-size: @cuerpo*.7;
+		font-size: @cuerpo * .7;
 		letter-spacing: inherit;
+		margin: 0 0 @interlinea * 1.3 0;
 		
 		img{
 			display: inline-block;
 			margin-bottom: -4px;
 		}
+	span {
+		margin: 0;
+	}
 	}
 	
 	address{
@@ -159,20 +152,6 @@ footer{
 	}
 }
 
-.margen-derecho{
-	margin-right: @cuadratin;
-}
 
-.margen-izquierdo{
-	margin-left: @cuadratin;
-}
-
-.margen-superior{
-	margin-top: @cuadratin;
-}
-
-.margen-inferior{
-	margin-bottom: @cuadratin;
-}
 
 //Nav-m

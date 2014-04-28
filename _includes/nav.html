@@ -1,19 +1,27 @@
 <!-- barra de menú -->
-<div class='col-lg-24 col-md-24 col-sm-24 oculto-xs'>
+
+<div class='col-lg-24 col-md-24 col-sm-24 oculto-xs fondo-damasco-opuesto'>
 <div class='menu-pyxis'>
+<div class='pag menu'>
 <nav>
-<ul class='centrado blanco'>
-    <li><a href='{{ site.baseurl }}/'><span class="icn icn-parrafo icn-sm"></span></a></li>
-    <li><a href='{{ site.baseurl }}/pags/tipografia'>Tipografía</a></li>
-    <li><a href='{{ site.baseurl }}/pags/grilla'>Grilla</a></li>
-    <li><a href='{{ site.baseurl }}/pags/interaccion'>Interacción</a></li>
-    <li><a href='{{ site.baseurl }}/pags/color'>Color</a></li>
-    <li><a href='{{ site.baseurl }}/pags/iconografia'>Íconografía</a></li>
-    <li><a href='{{ site.baseurl }}/pags/versatilidad'>Versatilidad</a></li>
-    <li><a href='{{ site.baseurl }}/pags/layout'>Layout</a></li>
-    <li><a href='{{ site.baseurl }}/pags/javascript'>Javascript</a></li>      
-</ul>
-</nav>          
+    <div class='col-lg-5 oculto-md'>
+        <h5><span class='gruesa rojo-claro'>Pyxis</span> <span class='fino gris-oscuro'>framework</span> <span class='chico gris-claro'>1.0.1</span></h5>
+    </div>
+    <div class='col-lg-19 col-md-24'>
+      <ul class='blanco'>
+        <li><a href='{{ site.baseurl }}/'><span class="icn icn-parrafo icn-sm"></span></a></li>
+        <li><a href='{{ site.baseurl }}/pags/tipografia'>Tipografía</a></li>
+        <li><a href='{{ site.baseurl }}/pags/grilla'>Grilla</a></li>
+        <li><a href='{{ site.baseurl }}/pags/interaccion'>Interacción</a></li>
+        <li><a href='{{ site.baseurl }}/pags/color'>Color</a></li>
+        <li><a href='{{ site.baseurl }}/pags/iconografia'>Íconografía</a></li>
+        <li><a href='{{ site.baseurl }}/pags/versatilidad'>Versatilidad</a></li>
+        <li><a href='{{ site.baseurl }}/pags/layout'>Layout</a></li>
+        <li><a href='{{ site.baseurl }}/pags/javascript'>Javascript</a></li>
+      </ul>
+</div>
+</nav> 
+</div>      
 </div>
 </div>
 
@@ -26,30 +34,34 @@
       <div class="panel-heading">
         <div class='pag-movil blanco'>
           <h4 class="panel-title">
-            <button class='btn-alerta margen-superior-s' data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+            <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo">
               Menú
             </button>
-          </h4>
-        </div>
-      <div id="collapseOne" class="panel-collapse collapse in">
-        <div class="panel-body fondo-gris-oscuro">
-          <ul class='menu altas gruesa'>
-            <div class='pag-movil blanco'>
-            <a href='tipografia.html'><li>tipografía</li></a>
-            <a href='grilla.html'><li>Grilla</li></a>
-            <a href='interaccion.html'><li>Interacción</li></a>
-            <a href='color.html'><li>Color</li></a>
-            <a href='iconografia.html'><li>Íconografía</li></a>
-            <a href='versatilidad.html'><li>Versatilidad</li></a>
-            <a href='layout.html'><li>Layout</li></a>
-            <a href='javascript.html'><li>Javascript</li></a>
             </div>
+
+          <div id="demo" class="collapse in">
+          <div class="panel-body fondo-gris-oscuro">
+          <ul class='menu altas gruesa'>
+            <a href='{{ site.baseurl }}/pags/tipografia'><li>tipografía</li></a>
+            <a href='{{ site.baseurl }}/pags/grilla'><li>Grilla</li></a>
+            <a href='{{ site.baseurl }}/pags/interaccion'><li>Interacción</li></a>
+            <a href='{{ site.baseurl }}/pags/color'><li>Color</li></a>
+            <a href='{{ site.baseurl }}/pags/iconografia'><li>Íconografía</li></a>
+            <a href='{{ site.baseurl }}/pags/versatilidad'><li>Versatilidad</li></a>
+            <a href='{{ site.baseurl }}/pags/layout'><li>Layout</li></a>
+            <a href='{{ site.baseurl }}/pags/javascript'><li>Javascript</li></a>
             </ul>
-        </div>
-      </div>
+          </div>
+          </div>
+          </h4>
+        
     </div>
   </div>         
 </div>
 </div>
 </div>
+</div>
 <!-- fin barra de menú -->
+  
+
+

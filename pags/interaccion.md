@@ -13,7 +13,7 @@ subtitle: Interacción
     <p>Los elementos que están a modo neutral, o standard, son los Checkboxes, los dropdown y los avisos de rellenar campos requeridos para enviar el formulario.</p>
 </div>
 
-<h2 class='rojo-claro'>Formulario de contacto </h2> 
+<h2 class='rojo-claro'>Formulario de contacto</h2><a name="titulo-uno"></a> 
 
 <p>Los formularios verticales son los formularios predeterminados, lo que implica que no llevan una clase específica; sólo se diferencian por los tamaños. El tamaño predeterminado es <code>md</code>.</p>
 
@@ -23,14 +23,14 @@ subtitle: Interacción
     <li>Formulario-sm</li>
 </ul>
 
+<!-- otra trabla -->
 <table class='w100'>
 <tr>
-    <th class='w60'>Muestra</th>
-    <th class='w30'>Uso</th>
+    <th class='w100'>Muestra</th>
 </tr>
 <tr>
     <td>
-        <div class='col-md-14'>    
+        <div class='col-md-8'>    
         <!-- Formulario Vertical Pequeño -->
         <form class='sm'>
             <legend>Contáctate con nosotros</legend>    
@@ -54,40 +54,20 @@ subtitle: Interacción
         </form>
         </div>
     </td>
-    <!-- Código -->
-    <div class='col-md-17'>
-    <td>
-    <code>
-        
-&lt;form class=&quot;sm&quot;&gt;
-    &lt;legend&gt;Contáctate con nosotros&lt;/legend&gt;
-    &lt;div class=&quot;grupo obligatorio&quot;&gt;
-        &lt;label&gt;nombre&lt;/label&gt;
-        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-    &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Correo electrónico&lt;/label&gt;
-        &lt;input type=&quot;email&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-        &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Asunto&lt;/label&gt;
-        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-        &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Mensaje&lt;/label&gt;
-        &lt;textarea&gt;&lt;/textarea&gt;
-    &lt;div&gt;
-        &lt;input type=&quot;email&quot; class=&quot;btn btn-sm derecha&quot; value=&quot;Enviar&quot;&gt;
-&lt;/form&gt;
-
-        </div>
-    </code>
-    </td>
-</div>
 </tr>
+</table>
+<!-- Código -->
+<div class='col-md-24'>
+    <script src="https://gist.github.com/JuanGodoy91/9944165.js"></script>
+</div>
 
+<!-- otra trabla -->
+<table class='w100'>
 <tr>
-    <td><div class='col-md-17'>    
+    <th class='w100'>Muestra</th>
+</tr>
+<tr>
+    <td><div class='col-md-10'>    
         <!-- Formulario Vertical Medio -->
         <form class='md'>
             <legend>Contáctate con nosotros</legend>    
@@ -109,41 +89,22 @@ subtitle: Interacción
             </div>
             <input type='submit' class='btn btn-md derecha' value='Enviar'>
         </form>
-   
-</div>
-</td>
-    <div class='col-md-17'>
-    <td>
-    <code>
-
-&lt;form class=&quot;md&quot;&gt;
-    &lt;legend&gt;Contáctate con nosotros&lt;/legend&gt;
-    &lt;div class=&quot;grupo obligatorio&quot;&gt;
-        &lt;label&gt;nombre&lt;/label&gt;
-        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-    &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Correo electrónico&lt;/label&gt;
-        &lt;input type=&quot;email&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-        &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Asunto&lt;/label&gt;
-        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-        &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Mensaje&lt;/label&gt;
-        &lt;textarea&gt;&lt;/textarea&gt;
-    &lt;div&gt;
-        &lt;input type=&quot;email&quot; class=&quot;btn btn-md derecha&quot; value=&quot;Enviar&quot;&gt;
-&lt;/form&gt;
-
-    </code>
+        </div>
     </td>
-    </div>
 </tr>
+</table>
+<!-- Código -->
+<div class='col-md-24'>
+    <script src="https://gist.github.com/JuanGodoy91/9944165.js"></script>
+</div>
 
+<!-- otra trabla -->
+<table class='w100'>
 <tr>
-    <td><div class='col-md-22'> 
+    <th class='w100'>Muestra</th>
+</tr>
+<tr>
+    <td><div class='col-md-12'> 
         <div class='lg'>
         <!-- Formulario Vertical Medio -->
         <form class='lg'>
@@ -169,38 +130,17 @@ subtitle: Interacción
     </div>
 </div>
 </td>
-    <td>
-    <code>
-
-&lt;form class=&quot;lg&quot;&gt;
-    &lt;legend&gt;Contáctate con nosotros&lt;/legend&gt;
-    &lt;div class=&quot;grupo obligatorio&quot;&gt;
-        &lt;label&gt;nombre&lt;/label&gt;
-        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-    &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Correo electrónico&lt;/label&gt;
-        &lt;input type=&quot;email&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-        &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Asunto&lt;/label&gt;
-        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-        &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Mensaje&lt;/label&gt;
-        &lt;textarea&gt;&lt;/textarea&gt;
-    &lt;div&gt;
-        &lt;input type=&quot;email&quot; class=&quot;btn btn-lg derecha&quot; value=&quot;Enviar&quot;&gt;
-&lt;/form&gt;
-
-    </code>
-    </td>
 </tr>
 </table>
 
+<!-- Código -->
+<div class='col-md-24'>
+    <script src="https://gist.github.com/JuanGodoy91/9944165.js"></script>
+</div>
+
 <!-- Formularios Verticales -->
 
-<h2 class='rojo-claro'>Agregar página con formulario</h2>
+<h2 class='rojo-claro'>Agregar página con formulario</h2><a name="titulo-dos"></a>
 
 <table class='w100'>
 <tr>
@@ -290,12 +230,12 @@ subtitle: Interacción
                 <div class='grupo'>
                     <label class='pregunta'>Tipo de proyecto</label>
                     <div class='opciones'>
-                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Proyecto de taller</span></span>
-                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Proyecto de curso</span></span>
-                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Proyecto de tutoría</span></span>
-                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Proyecto de titulación</span></span>
-                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Proyecto de posgrado</span></span>
-                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Proyecto extracurricular</span></span>
+                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Proyecto de taller</span></span>
+                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Proyecto de curso</span></span>
+                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Proyecto de tutoría</span></span>
+                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Proyecto de titulación</span></span>
+                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Proyecto de posgrado</span></span>
+                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Proyecto extracurricular</span></span>
                     </div>
                     <p class='especificacion chica'><strong>Importante:</strong> Si se trata de un proyecto de Investigación, hay que cambiar el tipo de plantilla de {{Proyecto}} a {{Proyecto de Investigación}} en la pestaña EDITAR. Los proyectos de investigación tienen otros campos y particularidades.</p>
                 </div>
@@ -314,14 +254,14 @@ subtitle: Interacción
                 <div class='grupo'>
                     <label class='pregunta'>Carreras relacionadas</label>
                     <div class='opciones'>
-                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Arquitectura</span></span>
-                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Diseño gráfico</span></span>
-                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Diseño industrial</span></span>
-                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Náutico y marítimo</span></span>
-                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Ciudad y territorio</span></span>
-                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Formación y oficio</span></span>
-                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Interacción</span></span>
-                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Doctorado en A & D</span></span>
+                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Arquitectura</span></span>
+                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Diseño gráfico</span></span>
+                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Diseño industrial</span></span>
+                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Náutico y marítimo</span></span>
+                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Ciudad y territorio</span></span>
+                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Formación y oficio</span></span>
+                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Interacción</span></span>
+                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Doctorado en A & D</span></span>
                     </div>
                 </div>
                 <div class='grupo'>
@@ -364,8 +304,8 @@ subtitle: Interacción
                 <div class='grupo'>
                     <label class='pregunta'>Configuración</label>
                     <div class='opciones'>
-                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Esta es una edición menor</span></span>
-                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='chico'>Vigilar esta página</span></span>
+                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Esta es una edición menor</span></span>
+                        <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Vigilar esta página</span></span>
                     </div>
                 </div>
                     <input type='submit' class='btn btn-md accion' value='Grabar la página'>
@@ -409,7 +349,7 @@ subtitle: Interacción
 
 <!-- Formularios horizontales -->
 
-<h2 class='rojo-claro'>Nuevo usario</h2>
+<h2 class='rojo-claro'>Nuevo usario</h2><a name="titulo-tres"></a>
 
 <table class='w100'>
 <tr>
@@ -522,7 +462,7 @@ subtitle: Interacción
 
 </table>
 
-<h2 class='rojo-claro'>Publicar un trabajo</h2>
+<h2 class='rojo-claro'>Publicar un trabajo</h2><a name="titulo-cuatro"></a>
 
 <table class='w100'>
 <tr>
@@ -544,9 +484,9 @@ subtitle: Interacción
         <label class='pregunta'>Sitio web</label>
         <input type='text' class='relleno' />
         <label class="radio">Solicito a:</label>
-        <input type="radio" name="carrera" /> <span class='chico'>Arquitecto</span>
-        <input type="radio" name="carrera" /> <span class='chico'>Diseñador gráfico</span>
-        <input type="radio" name="carrera" /> <span class='chico'>Diseñado de objetos</span>
+        <input type="radio" name="carrera" /> <span class='xs'>Arquitecto</span>
+        <input type="radio" name="carrera" /> <span class='xs'>Diseñador gráfico</span>
+        <input type="radio" name="carrera" /> <span class='xs'>Diseñado de objetos</span>
         <label class='pregunta'>Experiencia requerida</label>
         <textarea class='relleno' placeholder="perfil y competencias necesarias para el cargo"/></textarea>
         <label class='pregunta'>Descripción del trabajo</label>
@@ -601,7 +541,7 @@ subtitle: Interacción
 
 <!-- Iniciar sesión -->
 
-<h2 class='rojo-claro'>Iniciar sesión</h2>
+<h2 class='rojo-claro'>Iniciar sesión</h2><a name="titulo-cinco"></a>
 
 <table class='w100'>
 <tr>
@@ -613,7 +553,7 @@ subtitle: Interacción
         <div class='col-md-22'>    
         <!-- Formulario Vertical Pequeño -->
         <form class='horizontal sm'>
-        <h4>Acceder <span class='rojo chico'>Wiki - horizontal</span></h4>
+        <h4>Acceder <span class='rojo-claro xs'>Wiki - horizontal</span></h4>
         <form class='horizontal sm'>
             <div class='ingreso'>
                 <input type='text' placeholder='nombre de usuario' required/>
@@ -623,7 +563,7 @@ subtitle: Interacción
             </div>
             <input type='submit' class='md' value='Iniciar sesión'>
         </form>
-                <p class='especificacion chico'>
+                <p class='especificacion xs'>
             <a href='http://personas.ead.pucv.cl/personas/usuarios/recuperacionDatos'>¿olvidaste tu contraseña?</a> Si no tienes una cuenta, <a>regístrate</a>
         </p>
         </div>
@@ -663,8 +603,8 @@ subtitle: Interacción
 </table>
        
 <div class='fila'>      
-    <h2 class='rojo-claro'>Botones</h2>
-    <p>Los botones se definen genéricamente mediante la clase <code>btn</code> y se aplican a las etiquetas <code>a</code>, <code>input [type='submit']</code> y a los elementos <code>button</code> genéricos de los formularios. Los estilos están pensados para ser aplicados de forma semántica como se describe en la tabla, pudiendo usarse en combinación con atributos de tamaño (<code>chico</code>, <code>grande</code>, <code>grigante</code>) y de atributo (<code>accion</code>, <code>alerta</code>).
+    <h2 class='rojo-claro'>Botones</h2><a name="titulo-seis"></a>
+    <p>Los botones se definen genéricamente mediante la clase <code>btn</code> y se aplican a las etiquetas <code>a</code>, <code>input [type='submit']</code> y a los elementos <code>button</code> genéricos de los formularios. Los estilos están pensados para ser aplicados de forma semántica como se describe en la tabla, pudiendo usarse en combinación con atributos de tamaño (<code>xs</code>, <code>md</code>, <code>grigante</code>) y de atributo (<code>accion</code>, <code>alerta</code>).
     </p>
     <table class='w100'>
         <tr>
@@ -720,4 +660,5 @@ subtitle: Interacción
             </td>
         </tr>
     </table>
+</div>
 </div>

@@ -4,12 +4,7 @@ title: Pyxis Framework - Javascript
 subtitle: Javascript
 ---
 
-<div id="navbar" data-spy="affix" data-offset-top="100" style="background-color:white; display:none;"> 
-    <h2> Este es un ejemplo de Affix </h2>
-   	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in pretium lacus. Phasellus venenatis mollis tincidunt. Quisque semper adipiscing lorem, vel dictum elit molestie sed. Nullam luctus lorem mauris, quis fringilla sapien accumsan vitae. Sed et sem vestibulum eros interdum euismod id non dolor. In hendrerit risus ipsum, sit amet ultrices elit interdum tempor. Sed hendrerit augue metus, et ultricies odio viverra ut. Morbi vehicula justo dui, sagittis dignissim turpis posuere quis. Nam ullamcorper accumsan vestibulum.
-</div>
-<h2 class='rojo'>Javascript</h2> 
-<h3 class='rojo'>1. Modal</h3>
+<h3 class='rojo-claro'>1. Modal</h3><a name="titulo-uno"></a>
 <p>Se parte con la idea de que los formularios es donde ocurre una mayor transacción de interacción entre el usuario y el sistema. Para que que la interacción sea de manera cómoda y agradable, se plantea construir una relación proporcional entre los diversos formularios existentes en las plataformas digitales.</p> 
 <h4>Archivos necesarios</h4>
 <script src="https://gist.github.com/IdarGonzalez/9631633.js"></script>
@@ -39,7 +34,7 @@ subtitle: Javascript
 	</div>
 </div>
 <br/><br/><hr>
-<h3 class='rojo'>2. Tooltip</h3>  
+<h3 class='rojo-claro'>2. Tooltip</h3><a name="titulo-dos"></a>  
 <p>El tooltip es una pequeña ventana de ayuda que funciona al situar el cursor sobre algún elemento del DOM. Despliega la información del atributo "title" del elemento HTML</p>
 <h4>Archivos necesarios</h4>
 <script src="https://gist.github.com/IdarGonzalez/9631721.js"></script>
@@ -52,7 +47,7 @@ subtitle: Javascript
     <li><a data-toggle="tooltip" data-original-title="Este es un tooltip">Tooltip funcionando</a></li>
 </ul><hr>
 <script> $('.tooltip-demo').tooltip({selector: "a[data-toggle=tooltip]"});</script>
-<h3 class='rojo'>3. Popover</h3>  
+<h3 class='rojo-claro'>3. Popover</h3><a name="titulo-tres"></a>  
 <h4>Archivos necesarios</h4> 
 <script src="https://gist.github.com/IdarGonzalez/9631854.js"></script>
 <h4>Ejemplo</h4>
@@ -62,7 +57,7 @@ subtitle: Javascript
 <h4>Ejemplo</h4>
 <a class="btn" id="popover-test" title="" data-content="Este es un popover..." data-toggle="popover" data-original-title="Titulo de un popover">Popover</a><br /><br /><hr>
 <script>$('#popover-test').popover();</script>
-<h3 class='rojo'>4. Affix</h3>  
+<h3 class='rojo-claro'>4. Affix</h3><a name="titulo-cuatro"></a>  
 <h4>Archivos necesarios</h4>
 <script src="https://gist.github.com/IdarGonzalez/9631927.js"></script>
 <h4>Codigo</h4>
@@ -70,7 +65,7 @@ subtitle: Javascript
 <h4>Ejemplo</h4>
 <a id="link_ejemplo_affix" data-original-title="Mostrar el Affix, Lo puedes ocultar con el mismo boton">Mostrar/Ocultar el Affix</a>
 <br /><br /><hr>
-<h3 class='rojo'>5. Dropdowns</h3>  
+<h3 class='rojo-claro'>5. Dropdowns</h3><a name="titulo-cinco"></a>  
 <h4>Archivos necesarios</h4>
 <script src="https://gist.github.com/IdarGonzalez/9632079.js"></script>
 <h4>Codigo</h4>
@@ -109,7 +104,7 @@ subtitle: Javascript
     </li>
   </ul>
 <br /><br /><hr>
-<h3 class='rojo'>7. Carousel</h3>  
+<h3 class='rojo-claro'>7. Carousel</h3><a name="titulo-seis"></a>  
 <h4>Archivos necesarios</h4>
 <script src="https://gist.github.com/IdarGonzalez/9691248.js"></script>
 <h4>Codigo</h4>
@@ -144,3 +139,5 @@ subtitle: Javascript
 	$( "#navbar" ).toggle();
 	});
 </script>
+
+</div><!-- fin de pag -->
