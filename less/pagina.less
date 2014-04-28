@@ -6,7 +6,7 @@ Contenedores y reglas generales
 
 
 *{
-    .transition(.2s ease all);
+    //.transition(.2s ease all);
 }
 
 
@@ -40,61 +40,11 @@ header {
 	position: relative;
 	margin: 0 auto;
 	padding: @cuadratin;
-}
 
-.menu-affix{
-	margin: 0 auto;
-	position: relative;
-	padding-top: @cuadratin;
-	//padding-left: @cuadratin;
-
-	ul{
-		margin: 0;
-		padding: 0;
+	&.menu{
+		padding: 0 0 0 @cuadratin;
 	}
-
-	a{
-	color: none;
-    text-decoration: none;
-    font-family: @sans;
-    line-height: @cuadratin * 1.1;
-
-        //  Tamaños de Párrafo:
-
-    &.lg { 
-    font-size: @cuerpo * 2.2;
-    line-height: 140%;
-    }
-
-    &.md {
-      font-size: @cuerpo * 1.7;
-      font-weight: 200;
-      line-height: 140%;
-    }
-
-    &.sm {
-      font-size: @cuerpo * 1.1;
-      line-height: 160%; //cambio para menú affix
-    }
-    
-    &.xs {
-      font-size: @cuerpo * .80;
-      line-height: @interlinea * .9;
-    }
-
-  
-    &:hover{
-      color: @pizarra;
-      text-decoration: none;
-    }
 }
-
-  
-    &:hover{
-      color: @rojo-claro;
-      text-decoration: none;
-    }
-	}
 
 
 .pag-movil {
@@ -158,6 +108,7 @@ header {
 	.leyenda{
 		position: relative;
 		z-index: 5;
+
 	}
 }
 

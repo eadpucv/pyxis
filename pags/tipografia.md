@@ -5,27 +5,27 @@ subtitle: Tipografía
 pde: type.pde
 ---
 
-<div class='col-md-5'>
+<div class='col-lg-5 col-md-5'>
 <a name='ancla' id='a'></a>
-<div class='menu-affix'>
-<div data-spy="affix" data-offset-top="300" data-offset-bottom="400">
+<div class='menu-affix alto-affix'>
+<div data-spy="affix" data-offset-top="220">
     <ul>
-        <li><a class='sm gris-oscuro semi-gruesa' href='#titulo-uno'>Familias tipográficas</a></li>
-        <li><a class='sm gris-oscuro semi-gruesa' href='#titulo-dos'>Títulos</a></li>
-        <li><a class='sm gris-oscuro semi-gruesa' href='#titulo-tres'>Subtítulos</a></li>
-        <li><a class='sm gris-oscuro semi-gruesa' href='#titulo-cuatro'>Valores tipográficos</a></li>
-        <li><a class='sm gris-oscuro semi-gruesa' href='#titulo-cinco'>Grosores</a></li>
-        <li><a class='sm gris-oscuro semi-gruesa' href='#titulo-seis'>Estilos de carácter</a></li>
-        <li><a class='sm gris-oscuro semi-gruesa' href='#titulo-siete'>Alineación</a></li>
-        <li><a class='sm gris-oscuro semi-gruesa' href='#titulo-ocho'>Listas</a></li>
-        <li><a class='sm gris-oscuro semi-gruesa' href='#titulo-nueve'>Clases diferenciales</a></li>
-    </ul>               
-</div>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-uno'>Familias tipográficas</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-dos'>Títulos</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-tres'>Subtítulos</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-cuatro'>Valores tipográficos</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-cinco'>Grosores</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-seis'>Estilos de carácter</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-siete'>Alineación</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-ocho'>Listas</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-nueve'>Clases diferenciales</a></li>
+    </ul>
+</div>             
 </div>
 </div>
 
 
-<div class='col-md-19'>
+<div class='col-lg-19 col-lg-offset-0 col-md-18 col-md-offset-1'>
 
 <!-- Familias tipográficas -->
 
@@ -50,7 +50,7 @@ pde: type.pde
 
 <!-- Cabeceras -->
 
-<h2 class='rojo-claro'>Títulos</h2><a name="titulo-tres"></a>
+<h2 class='rojo-claro'>Títulos</h2><a name="titulo-dos"></a>
 
 <p>Estas son las cabeceras HTML disponibles también en Pyxis. Las diferencias cuantitativas entre cabeceras, a medida que escalan, son de 2 a máximo 4px. <code>&lt;h1&gt;</code> alberga un <i>font-size</i> de 33px, mientras que <code>&lt;h6&gt;</code> es visible en 19px.</p>
 
@@ -87,7 +87,7 @@ pde: type.pde
 
 <!-- Sub-Cabeceras -->
 
-<h2 class='rojo-claro'>Subtítulos</h2><a name="titulo-cuatro"></a>
+<h2 class='rojo-claro'>Subtítulos</h2><a name="titulo-tres"></a>
 
 <p>Puedes insertar un subtítulo añadiendo la clase <code>subtitulo</code>, más fino y en una escala menor a las cabeceras comunes, pero adoptando la misma proporción de diferenciado.</p>
 
@@ -125,7 +125,7 @@ pde: type.pde
 
 <!-- Ènfasis de párrafo -->
 
-<h2 class='rojo-claro'>Valores tipográficos </h2><a name="titulo-dos"></a>
+<h2 class='rojo-claro'>Valores tipográficos </h2><a name="titulo-cuatro"></a>
 <h1 class='subtitulo gris-oscuro'>Énfasis</h1>
 <h3 class='subtitulo gris-oscuro'>Párrafo</h3>
 
