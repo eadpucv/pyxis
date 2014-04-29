@@ -416,11 +416,7 @@ subtitle: Interacción
 </div>
 </div><!-- fin de fila -->
 
-
-
-
-       
-
+<!-- Botones -->
 <div class='fila'>      
     <h2 class='rojo-claro'>Botones</h2><a name="titulo-siete"></a>
     <p>Los botones se definen genéricamente mediante la clase <code>btn</code> y se aplican a las etiquetas <code>a</code>, <code>input [type='submit']</code> y a los elementos <code>button</code> genéricos de los formularios. Los estilos están pensados para ser aplicados de forma semántica como se describe en la tabla, pudiendo usarse en combinación con atributos de tamaño (<code>xs</code>, <code>md</code>, <code>grigante</code>) y de atributo (<code>accion</code>, <code>alerta</code>).
