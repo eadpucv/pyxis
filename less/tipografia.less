@@ -301,16 +301,6 @@ span {
     list-style: none;
   }
 
-  li:before {
-    line-height: @interlinea;
-    font-family: 'Stampa';
-    //content: "\e62f";
-    &:before{
-      .color;
-    }
-  }
-
-
 
   ul.meta{
 
@@ -336,20 +326,24 @@ span {
 
   ul.menu {
   width: 100%;
-  padding: 0;
   margin: 0;
+  padding: @cuadratin * 1.9 0 @cuadratin /3 0;
+  background-color: @blanco;
+
     a {
       text-decoration: none;
-      color: @blanco;
-
+      color: @negro;
+      font-size: @cuerpo;
+      
           li {
             list-style: none;
-            border: 1px solid @gris;
-            background-color: @gris-oscuro;                                                                                                                              
+            border: 1px solid @blanco;
+            background-color: @blanco;                                                                                                                              
             width: 100%;
-            padding: @cuadratin /2 0 @cuadratin /2 0;
+            padding: @cuadratin /2 0 @cuadratin /2 @cuadratin;
+
             &:hover {
-            background-color: @pizarra;
+            background-color: @gris-claro;
             }
           }
         }
