@@ -86,8 +86,8 @@ header {
 	.cf;
 
 	&.xl{
-		min-height: 650px;
-		max-height: 800px;
+		min-height: 500px;
+		max-height: 700px;
 
 		canvas{
 			position: absolute;
@@ -163,6 +163,24 @@ footer{
 }
 
 //	Responsive adaptable
+
+  //  Extra-small screen / Phones
+  @media (min-width: @screen-xs) and (max-width: @screen-xs-max){
+  
+  	.franja {
+
+	&.xl{
+		min-height: 500px;
+		max-height: 700px;
+
+		.leyenda{
+			margin-top: @cuadratin * 2.5;
+			text-align: center;
+		}
+	  }
+   }
+   }
+
 
   //  Small screen / tablet
   @media (min-width: @screen-sm) and (max-width: @screen-sm-max){

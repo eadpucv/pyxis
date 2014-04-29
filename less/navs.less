@@ -47,9 +47,9 @@ nav {
 
 //  Menú Pyxis
 .menu-pyxis {
-  margin: 0 auto;
-  width: 100%;
   min-height: @cuadratin * 1.4;
+  width: 100%;
+  margin: 0 auto;
   position: fixed;
   background-color: @blanco;
   padding: 0;
@@ -73,7 +73,7 @@ nav {
 
   &.movil {
 
-    position: inherit !important;
+    position: relative !important;
     margin: 0;
     padding: 0;
 
@@ -332,6 +332,14 @@ nav {
 
 //  Responsive adaptable
 
+    //  Extra Small screen / Phone
+  @media (min-width: @screen-xs) and (max-width: @screen-xs-max){
+
+  .menu-pyxis {
+    min-height: @cuadratin * 1.7;
+    }
+  }
+
   //  Small screen / tablet
   @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
 
@@ -347,7 +355,7 @@ nav {
   }
   }
   }
- 
+
 
   //  Medium screen / desktop
   @media (min-width: @screen-md) and (max-width: @screen-md-max){
