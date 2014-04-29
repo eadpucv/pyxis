@@ -4,7 +4,7 @@ title: Pyxis Framework - Layout
 subtitle: Layout
 ---
 
-<h2 class='rojo'>Plantillas y maquetas navegables</h2>
+<h2 class='rojo-claro'>Plantillas y maquetas navegables</h2>
 <p>Descripción de plantillas. <a href="#"><i>Enlaces a Maquetas</a></i> donde se puede navegar a través ella. </p>
 <p>Las diversas plantillas se especifican entre sus usos y disposición del espacio más variado:
 <ul>
