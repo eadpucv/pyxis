@@ -4,34 +4,33 @@ title: Pyxis Framework - Interacción
 subtitle: Interacción
 ---
 
-<div class='fila'>
-    <h1 class='rojo-claro'>Formularios</h1> 
-    <h4 class='gris-oscuro'>Clasificación</h4>
-
-    <p>Al hacer click en uno de los input, aparece un box-shadow, inset, donde se remarca demostrando una profunidad y se entienda que uno está rellenando ese campo. Además, el borde cambia de color, a un color verde.</p>
-    <p>Actualmente existen elementos que están en fase neutral, pues falta comenzar a impregnar cada decisión gráfica en su totalidad, en relación a los atributos gráficos.</p>
-    <p>Los elementos que están a modo neutral, o standard, son los Checkboxes, los dropdown y los avisos de rellenar campos requeridos para enviar el formulario.</p>
+<div class='col-lg-5 col-md-5'>
+<a name='ancla' id='a'></a>
+<div class='menu-affix alto-affix'>
+<div data-spy="affix" data-offset-top="220">
+    <ul>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-uno'>Formularios</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-dos'>Agregar página</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-tres'>Crear un proyecto</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-cuatro'>Nuevo usuario</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-cinco'>Publicar un trabajo</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-seis'>Iniciar sesión</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-siete'>Botones</a></li>
+    </ul>
+</div>
+</div>
 </div>
 
-<h2 class='rojo-claro'>Formulario de contacto</h2><a name="titulo-uno"></a> 
+<div class='col-lg-19 col-lg-offset-0 col-md-18 col-md-offset-1'>
 
-<p>Los formularios verticales son los formularios predeterminados, lo que implica que no llevan una clase específica; sólo se diferencian por los tamaños. El tamaño predeterminado es <code>md</code>.</p>
+    <h2 class='rojo-claro'>Formularios</h2><a name="titulo-uno"></a> 
 
-<ul>
-    <li>Formulario-lg</li>
-    <li>Formulario-md</li>
-    <li>Formulario-sm</li>
-</ul>
+    <p>...</p>
 
-<!-- otra trabla -->
-<table class='w100'>
-<tr>
-    <th class='w100'>Muestra</th>
-</tr>
-<tr>
-    <td>
-        <div class='col-md-8'>    
-        <!-- Formulario Vertical Pequeño -->
+<!-- Formulario de contacto (sm) -->
+<div class='fila'>
+<h4 class='gris-oscuro'>Formulario-sm</h4>
+       <div class='col-md-13'>
         <form class='sm'>
             <legend>Contáctate con nosotros</legend>    
             <div class='grupo obligatorio'>
@@ -52,63 +51,54 @@ subtitle: Interacción
             </div>
             <input type='submit' class='btn btn-sm derecha' value='Enviar'>
         </form>
-        </div>
-    </td>
-</tr>
-</table>
-<!-- Código -->
-<div class='col-md-24'>
-    <script src="https://gist.github.com/JuanGodoy91/9944165.js"></script>
-</div>
+       </div>
 
-<!-- otra trabla -->
-<table class='w100'>
-<tr>
-    <th class='w100'>Muestra</th>
-</tr>
-<tr>
-    <td><div class='col-md-10'>    
-        <!-- Formulario Vertical Medio -->
+<!-- Código Gist -->
+<div class='col-md-10 col-md-offset-1'>
+    <script src="https://gist.github.com/JuanGodoy91/11380984.js"></script>
+</div>
+</div><!-- fin de fila -->
+
+
+<!-- Formulario de contacto (md) -->
+<div class='fila'>
+<h4 class='gris-oscuro'>Formulario-md</h4>
+       <div class='col-md-13'>
         <form class='md'>
-            <legend>Contáctate con nosotros</legend>    
-            <div class='grupo obligatorio'>
-                <label>Nombre</label>
-                <input type='text' class='relleno-formulario' required />
-            </div>
-            <div class='grupo'>
-                <label>Correo electrónico</label>
-                <input type='email' class='relleno-formulario' required/>
-            </div>
-            <div class='grupo'>
-                <label>Asunto</label>
-                <input type='text' class='relleno-formulario' />
-            </div>
-            <div class='grupo'>
-                <label>Mensaje</label>
-                <textarea></textarea>
-            </div>
-            <input type='submit' class='btn btn-md derecha' value='Enviar'>
-        </form>
-        </div>
-    </td>
-</tr>
-</table>
-<!-- Código -->
-<div class='col-md-24'>
-    <script src="https://gist.github.com/JuanGodoy91/9944165.js"></script>
-</div>
+             <legend>Contáctate con nosotros</legend>    
+             <div class='grupo obligatorio'>
+                 <label>Nombre</label>
+                 <input type='text' class='relleno-formulario' required />
+             </div>
+             <div class='grupo'>
+                 <label>Correo electrónico</label>
+                 <input type='email' class='relleno-formulario' required/>
+             </div>
+             <div class='grupo'>
+                 <label>Asunto</label>
+                 <input type='text' class='relleno-formulario' />
+             </div>
+             <div class='grupo'>
+                 <label>Mensaje</label>
+                 <textarea></textarea>
+             </div>
+             <input type='submit' class='btn btn-md derecha' value='Enviar'>
+         </form>
+       </div>
 
-<!-- otra trabla -->
-<table class='w100'>
-<tr>
-    <th class='w100'>Muestra</th>
-</tr>
-<tr>
-    <td><div class='col-md-12'> 
-        <div class='lg'>
-        <!-- Formulario Vertical Medio -->
+<!-- Código Gist -->
+<div class='col-md-10 col-md-offset-1'>
+    <script src="https://gist.github.com/JuanGodoy91/11381220.js"></script>
+</div>
+</div><!-- fin de fila -->
+
+
+<!-- Formulario de contacto (lg) -->
+<div class='fila'>
+<h4 class='gris-oscuro'>Formulario-lg</h4>
+       <div class='col-md-13'> 
         <form class='lg'>
-            <legend>Contáctate con nosotros</legend>    
+              <legend>Contáctate con nosotros</legend>    
             <div class='grupo obligatorio'>
                 <label>Nombre</label>
                 <input type='text' class='relleno-formulario' required />
@@ -128,35 +118,23 @@ subtitle: Interacción
             <input type='submit' class='btn btn-lg derecha' value='Enviar'>
         </form>
     </div>
+
+<!-- Código Gist -->
+<div class='col-md-10 col-md-offset-1'>
+    <script src="https://gist.github.com/JuanGodoy91/11381286.js"></script>
 </div>
-</td>
-</tr>
-</table>
+</div><!-- fin de fila -->
 
-<!-- Código -->
-<div class='col-md-24'>
-    <script src="https://gist.github.com/JuanGodoy91/9944165.js"></script>
-</div>
 
-<!-- Formularios Verticales -->
-
-<h2 class='rojo-claro'>Agregar página con formulario</h2><a name="titulo-dos"></a>
-
-<table class='w100'>
-<tr>
-    <th class='w60'>Muestra</th>
-    <th class='w30'>Uso</th>
-</tr>
-<tr>
-    
-    <td>
-        <div class='col-md-22'>    
-        <!-- Formulario Vertical Pequeño -->
+<!-- Agregar página con formulario -->
+<div class='fila'>
+<h2 class='rojo-claro'>Agregar página con formulario</h2><a name="titulo-dos">
+       <div class='col-md-13'>    
         <form class='horizontal md'>
         <div class='grupo'>
             <label class='pregunta'>Nombre de objeto</label>
             <input type='text' required />
-            <p class='especificacion'><strong>Ingresa el nombre y de lo que vas a crear</strong>. Se creará una página con ese nombre. Si el nombre que eliges ya está ocupado, esta página te llevará al formulario que elijas con el contenido de la página existente donde podrás editar el nuevo objeto con atributos semánticos.</p>
+            <p class='especificacion'><strong>Ingresa el nombre de lo que vas a crear</strong>. Se creará una página con ese nombre. Si el nombre que eliges ya está ocupado, esta página te llevará al formulario que elijas con el contenido de la página existente donde podrás editar el nuevo objeto con atributos semánticos.</p>
         </div>
         <div class='grupo'>
             <label class='pregunta'>Tipo de formulario</label>
@@ -181,48 +159,19 @@ subtitle: Interacción
         </div>
             <input type='submit' class='accion md izquierda' value='Crear o editar'>
         </form>
-        </div>
-    </td>
-    <!-- Código -->
-    <div class='col-md-17'>
-    <td>
-    <code>
-        
-&lt;form class=&quot;sm&quot;&gt;
-    &lt;legend&gt;Contáctate con nosotros&lt;/legend&gt;
-    &lt;div class=&quot;grupo obligatorio&quot;&gt;
-        &lt;label&gt;nombre&lt;/label&gt;
-        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-    &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Correo electrónico&lt;/label&gt;
-        &lt;input type=&quot;email&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-        &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Asunto&lt;/label&gt;
-        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-        &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Mensaje&lt;/label&gt;
-        &lt;textarea&gt;&lt;/textarea&gt;
-    &lt;div&gt;
-        &lt;input type=&quot;email&quot; class=&quot;btn btn-sm derecha&quot; value=&quot;Enviar&quot;&gt;
-&lt;/form&gt;
+       </div>
 
-        </div>
-    </code>
-    </td>
+<!-- Código Gist -->
+<div class='col-md-10 col-md-offset-1'>  
+   <script src="https://gist.github.com/JuanGodoy91/11384540.js"></script>     
 </div>
+</div><!-- fin de fila -->
 
-</tr>
-
-
-
-<tr>
-    <td><div class='col-md-22'> 
-        <div class='md'>
-        <!-- Formulario Vertical Medio -->
-    <form class='formulario-vertical lg nuevo-proyecto'>
+<!-- Formulario Vertical Medio -->
+<div class='fila'>
+       <h2 class='rojo-claro'>Crear un proyecto</h2><a name="titulo-tres"></a>
+       <div class='col-md-13'>
+       <form class='formulario-vertical lg nuevo-proyecto'>
                 <div class='grupo'>
                 <label>Título</label>
                 <input type='text' placeholder='Nombre del nuevo objeto' required/>
@@ -311,55 +260,21 @@ subtitle: Interacción
                     <input type='submit' class='btn btn-md accion' value='Grabar la página'>
                     <a class='btn btn-md margen-derecho'>Previsualizar</a>
                     <a class='btn btn-md margen-derecho'>Cancelar</a>
-        </form>    
+       </form>    
     </div>
+
+<!-- Código -->
+<div class='col-md-10 col-md-offset-1'>  
+<script src="https://gist.github.com/JuanGodoy91/11384803.js"></script>
 </div>
-</td>
-    <div class='col-md-17'>
-    <td>
-    <code>
+</div><!-- fin de fila -->
 
-&lt;form class=&quot;md&quot;&gt;
-    &lt;legend&gt;Contáctate con nosotros&lt;/legend&gt;
-    &lt;div class=&quot;grupo obligatorio&quot;&gt;
-        &lt;label&gt;nombre&lt;/label&gt;
-        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-    &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Correo electrónico&lt;/label&gt;
-        &lt;input type=&quot;email&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-        &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Asunto&lt;/label&gt;
-        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-        &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Mensaje&lt;/label&gt;
-        &lt;textarea&gt;&lt;/textarea&gt;
-    &lt;div&gt;
-        &lt;input type=&quot;email&quot; class=&quot;btn btn-md derecha&quot; value=&quot;Enviar&quot;&gt;
-&lt;/form&gt;
 
-    </code>
-    </td>
-    </div>
-</tr>
+<!-- Nuevo usuario -->
 
-</table>
-
-<!-- Formularios horizontales -->
-
-<h2 class='rojo-claro'>Nuevo usario</h2><a name="titulo-tres"></a>
-
-<table class='w100'>
-<tr>
-    <th class='w60'>Muestra</th>
-    <th class='w30'>Uso</th>
-</tr>
-<tr>
-    <td>
-        <div class='col-md-22'>    
-        <!-- Formulario Vertical Pequeño -->
+<div class='fila'>
+       <h2 class='rojo-claro'>Nuevo usuario</h2><a name="titulo-cuatro"></a>
+       <div class='col-md-13'>
         <form class='formulario-horizontal'>
             <legend>Nuevo Usuario</legend>
             <div class='grupo obligatorio'>
@@ -427,131 +342,58 @@ subtitle: Interacción
             </div>
         </form>
         </div>
-    </td>
-    <!-- Código -->
-    <div class='col-md-17'>
-    <td>
-    <code>
 
-&lt;form class=&quot;sm&quot;&gt;
-    &lt;legend&gt;Contáctate con nosotros&lt;/legend&gt;
-    &lt;div class=&quot;grupo obligatorio&quot;&gt;
-        &lt;label&gt;nombre&lt;/label&gt;
-        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-    &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Correo electrónico&lt;/label&gt;
-        &lt;input type=&quot;email&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-        &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Asunto&lt;/label&gt;
-        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-        &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Mensaje&lt;/label&gt;
-        &lt;textarea&gt;&lt;/textarea&gt;
-    &lt;div&gt;
-        &lt;input type=&quot;email&quot; class=&quot;btn btn-sm derecha&quot; value=&quot;Enviar&quot;&gt;
-&lt;/form&gt;
-
-        </div>
-    </code>
-    </td>
+<!-- Código -->
+<div class='col-md-10 col-md-offset-1'>  
+<script src="https://gist.github.com/JuanGodoy91/11385161.js"></script>
 </div>
-</tr>
+</div><!-- fin de fila -->
 
-</table>
 
-<h2 class='rojo-claro'>Publicar un trabajo</h2><a name="titulo-cuatro"></a>
-
-<table class='w100'>
-<tr>
-    <th class='w60'>Muestra</th>
-    <th class='w30'>Uso</th>
-</tr>
-<tr>
-    <td>
-        <div class='col-md-22'>    
-        <!-- Formulario Vertical Pequeño -->
+<!-- Publicar un trabajo -->
+<div class='fila'>
+       <h2 class='rojo-claro'>Publicar un trabajo</h2><a name="titulo-cinco"></a>
+       <div class='col-md-13'>
         <form class='horizontal-horizontal'>
-
-        <label class='pregunta'>Nombre <span class='importante'>*</span></label>
-        <input type='text' class='relleno' required/>
-        <label class='pregunta'>Correo electrónico <span class='importante'>*</span></label>
-        <input type='email' class='relleno' required/>
-        <label class='pregunta'>Empresa</label>
-        <input type='text' class='relleno' />
-        <label class='pregunta'>Sitio web</label>
-        <input type='text' class='relleno' />
-        <label class="radio">Solicito a:</label>
-        <input type="radio" name="carrera" /> <span class='xs'>Arquitecto</span>
-        <input type="radio" name="carrera" /> <span class='xs'>Diseñador gráfico</span>
-        <input type="radio" name="carrera" /> <span class='xs'>Diseñado de objetos</span>
-        <label class='pregunta'>Experiencia requerida</label>
-        <textarea class='relleno' placeholder="perfil y competencias necesarias para el cargo"/></textarea>
-        <label class='pregunta'>Descripción del trabajo</label>
-        <textarea class='relleno' placeholder="descripción detallada de labores a realizar, horarios, contexto y ubicación geográfica"/></textarea>
-        <label class='pregunta'>Remuneración ofrecida</label>
-        <input type='text' class='relleno' placeholder="puede indicar un rango"/>
-        <label class='pregunta'>Interesados contactar a:</label>
-        <textarea class='relleno' placeholder="Indique vía de postulación para interesados"/></textarea>
-        <input type='submit' class='accion lg izquierda' value='Publicar'>
-        <label class="checkbox">
-            <input type="checkbox">
+              <label class='pregunta'>Nombre <span class='importante'>*</span></label>
+              <input type='text' class='relleno' required/>
+              <label class='pregunta'>Correo electrónico <span class='importante'>*</span></label>
+              <input type='email' class='relleno' required/>
+              <label class='pregunta'>Empresa</label>
+              <input type='text' class='relleno' />
+              <label class='pregunta'>Sitio web</label>
+              <input type='text' class='relleno' />
+              <label class="radio">Solicito a:</label>
+              <input type="radio" name="carrera" /> <span class='xs'>Arquitecto</span>
+              <input type="radio" name="carrera" /> <span class='xs'>Diseñador gráfico</span>
+              <input type="radio" name="carrera" /> <span class='xs'>Diseñado de objetos</span>
+              <label class='pregunta'>Experiencia requerida</label>
+              <textarea class='relleno' placeholder="perfil y competencias necesarias para el cargo"/></textarea>
+              <label class='pregunta'>Descripción del trabajo</label>
+              <textarea class='relleno' placeholder="descripción detallada de labores a realizar, horarios, contexto y ubicación geográfica"/></textarea>
+              <label class='pregunta'>Remuneración ofrecida</label>
+              <input type='text' class='relleno' placeholder="puede indicar un rango"/>
+              <label class='pregunta'>Interesados contactar a:</label>
+              <textarea class='relleno' placeholder="Indique vía de postulación para interesados"/></textarea>
+              <input type='submit' class='accion lg izquierda' value='Publicar'>
+              <label class="checkbox">
+              <input type="checkbox">
                 Acepto los <a href='#'>términos y condiciones</a>
             </label>
         </form>
         </div>
-    </td>
-    <!-- Código -->
-    <div class='col-md-17'>
-    <td>
-    <code>
-        
 
-&lt;form class=&quot;sm&quot;&gt;
-    &lt;legend&gt;Contáctate con nosotros&lt;/legend&gt;
-    &lt;div class=&quot;grupo obligatorio&quot;&gt;
-        &lt;label&gt;nombre&lt;/label&gt;
-        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-    &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Correo electrónico&lt;/label&gt;
-        &lt;input type=&quot;email&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-        &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Asunto&lt;/label&gt;
-        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-        &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Mensaje&lt;/label&gt;
-        &lt;textarea&gt;&lt;/textarea&gt;
-    &lt;div&gt;
-        &lt;input type=&quot;email&quot; class=&quot;btn btn-sm derecha&quot; value=&quot;Enviar&quot;&gt;
-&lt;/form&gt;
-
-        </div>
-    </code>
-    </td>
+<!-- Código -->
+<div class='col-md-10 col-md-offset-1'>  
+<script src="https://gist.github.com/JuanGodoy91/11386128.js"></script>
 </div>
-</tr>
-
-</table>
+</div><!-- fin de fila -->
 
 
 <!-- Iniciar sesión -->
-
-<h2 class='rojo-claro'>Iniciar sesión</h2><a name="titulo-cinco"></a>
-
-<table class='w100'>
-<tr>
-    <th class='w60'>Muestra</th>
-    <th class='w30'>Uso</th>
-</tr>
-<tr>
-    <td>
-        <div class='col-md-22'>    
-        <!-- Formulario Vertical Pequeño -->
+<div class='fila'>
+<h2 class='rojo-claro'>Iniciar sesión</h2><a name="titulo-seis"></a>
+       <div class='col-md-13'>
         <form class='horizontal sm'>
         <h4>Acceder <span class='rojo-claro xs'>Wiki - horizontal</span></h4>
         <form class='horizontal sm'>
@@ -563,47 +405,20 @@ subtitle: Interacción
             </div>
             <input type='submit' class='md' value='Iniciar sesión'>
         </form>
-                <p class='especificacion xs'>
+            <p class='especificacion xs'>
             <a href='http://personas.ead.pucv.cl/personas/usuarios/recuperacionDatos'>¿olvidaste tu contraseña?</a> Si no tienes una cuenta, <a>regístrate</a>
-        </p>
+            </p>
         </div>
-    </td>
-    <!-- Código -->
-    <div class='col-md-17'>
-    <td>
-    <code>
-        
-&lt;form class=&quot;sm&quot;&gt;
-    &lt;legend&gt;Contáctate con nosotros&lt;/legend&gt;
-    &lt;div class=&quot;grupo obligatorio&quot;&gt;
-        &lt;label&gt;nombre&lt;/label&gt;
-        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-    &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Correo electrónico&lt;/label&gt;
-        &lt;input type=&quot;email&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-        &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Asunto&lt;/label&gt;
-        &lt;input type=&quot;text&quot; class=&quot;relleno-formulario&quot; required /&gt;
-    &lt;div&gt;
-        &lt;div class=&quot;grupo&quot;&gt;
-        &lt;label&gt;Mensaje&lt;/label&gt;
-        &lt;textarea&gt;&lt;/textarea&gt;
-    &lt;div&gt;
-        &lt;input type=&quot;email&quot; class=&quot;btn btn-sm derecha&quot; value=&quot;Enviar&quot;&gt;
-&lt;/form&gt;
 
-        </div>
-    </code>
-    </td>
+<!-- Código -->
+<div class='col-md-10 col-md-offset-1'>  
+<script src="https://gist.github.com/JuanGodoy91/11385635.js"></script>
 </div>
-</tr>
+</div><!-- fin de fila -->
 
-</table>
-       
+<!-- Botones -->
 <div class='fila'>      
-    <h2 class='rojo-claro'>Botones</h2><a name="titulo-seis"></a>
+    <h2 class='rojo-claro'>Botones</h2><a name="titulo-siete"></a>
     <p>Los botones se definen genéricamente mediante la clase <code>btn</code> y se aplican a las etiquetas <code>a</code>, <code>input [type='submit']</code> y a los elementos <code>button</code> genéricos de los formularios. Los estilos están pensados para ser aplicados de forma semántica como se describe en la tabla, pudiendo usarse en combinación con atributos de tamaño (<code>xs</code>, <code>md</code>, <code>grigante</code>) y de atributo (<code>accion</code>, <code>alerta</code>).
     </p>
     <table class='w100'>

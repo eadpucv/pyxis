@@ -4,7 +4,26 @@ title: Pyxis Framework - Javascript
 subtitle: Javascript
 ---
 
-<h3 class='rojo-claro'>1. Modal</h3><a name="titulo-uno"></a>
+<div class='col-lg-5 col-md-5'>
+<a name='ancla' id='a'></a>
+<div class='menu-affix alto-affix'>
+<div data-spy="affix" data-offset-top="220">
+    <ul>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-uno'>Modal</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-dos'>Tooltip</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-tres'>Popover</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-cuatro'>Affix</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-cinco'>Dropdowns</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-seis'>Carousel</a></li>
+    </ul>
+</div>
+</div>
+</div>
+
+<div class='col-lg-19 col-lg-offset-0 col-md-18 col-md-offset-1'>
+
+<!-- Modal -->
+<h3 class='rojo-claro'>Modal</h3><a name="titulo-uno"></a>
 <p>Se parte con la idea de que los formularios es donde ocurre una mayor transacción de interacción entre el usuario y el sistema. Para que que la interacción sea de manera cómoda y agradable, se plantea construir una relación proporcional entre los diversos formularios existentes en las plataformas digitales.</p> 
 <h4>Archivos necesarios</h4>
 <script src="https://gist.github.com/IdarGonzalez/9631633.js"></script>
@@ -34,7 +53,9 @@ subtitle: Javascript
 	</div>
 </div>
 <br/><br/><hr>
-<h3 class='rojo-claro'>2. Tooltip</h3><a name="titulo-dos"></a>  
+
+<!-- Tooltip -->
+<h3 class='rojo-claro'>Tooltip</h3><a name="titulo-dos"></a>  
 <p>El tooltip es una pequeña ventana de ayuda que funciona al situar el cursor sobre algún elemento del DOM. Despliega la información del atributo "title" del elemento HTML</p>
 <h4>Archivos necesarios</h4>
 <script src="https://gist.github.com/IdarGonzalez/9631721.js"></script>
@@ -47,7 +68,9 @@ subtitle: Javascript
     <li><a data-toggle="tooltip" data-original-title="Este es un tooltip">Tooltip funcionando</a></li>
 </ul><hr>
 <script> $('.tooltip-demo').tooltip({selector: "a[data-toggle=tooltip]"});</script>
-<h3 class='rojo-claro'>3. Popover</h3><a name="titulo-tres"></a>  
+
+<!-- Popover -->
+<h3 class='rojo-claro'>Popover</h3><a name="titulo-tres"></a>  
 <h4>Archivos necesarios</h4> 
 <script src="https://gist.github.com/IdarGonzalez/9631854.js"></script>
 <h4>Ejemplo</h4>
@@ -57,7 +80,9 @@ subtitle: Javascript
 <h4>Ejemplo</h4>
 <a class="btn" id="popover-test" title="" data-content="Este es un popover..." data-toggle="popover" data-original-title="Titulo de un popover">Popover</a><br /><br /><hr>
 <script>$('#popover-test').popover();</script>
-<h3 class='rojo-claro'>4. Affix</h3><a name="titulo-cuatro"></a>  
+
+<!-- Affix -->
+<h3 class='rojo-claro'>Affix</h3><a name="titulo-cuatro"></a>  
 <h4>Archivos necesarios</h4>
 <script src="https://gist.github.com/IdarGonzalez/9631927.js"></script>
 <h4>Codigo</h4>
@@ -65,13 +90,15 @@ subtitle: Javascript
 <h4>Ejemplo</h4>
 <a id="link_ejemplo_affix" data-original-title="Mostrar el Affix, Lo puedes ocultar con el mismo boton">Mostrar/Ocultar el Affix</a>
 <br /><br /><hr>
-<h3 class='rojo-claro'>5. Dropdowns</h3><a name="titulo-cinco"></a>  
+
+<!-- Dorpdowns -->
+<h3 class='rojo-claro'>Dropdowns</h3><a name="titulo-cinco"></a>  
 <h4>Archivos necesarios</h4>
 <script src="https://gist.github.com/IdarGonzalez/9632079.js"></script>
 <h4>Codigo</h4>
 <script src="https://gist.github.com/IdarGonzalez/9632092.js"></script>
 <h4>Ejemplo</h4>
-  <ul class="nav nav-pills">
+<ul class="nav nav-pills">
     <li class="dropdown">
       <a href="#" data-toggle="dropdown" role="button" id="drop4" class="dropdown-toggle">Dropdown <b class="caret"></b></a>
       <ul aria-labelledby="drop4" role="menu" class="dropdown-menu" id="menu1">
@@ -104,7 +131,9 @@ subtitle: Javascript
     </li>
   </ul>
 <br /><br /><hr>
-<h3 class='rojo-claro'>7. Carousel</h3><a name="titulo-seis"></a>  
+
+<!-- Carousel -->
+<h3 class='rojo-claro'>Carousel</h3><a name="titulo-seis"></a>  
 <h4>Archivos necesarios</h4>
 <script src="https://gist.github.com/IdarGonzalez/9691248.js"></script>
 <h4>Codigo</h4>
