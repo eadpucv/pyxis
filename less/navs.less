@@ -20,14 +20,14 @@ nav {
       list-style-type: none;
       list-style: none;
     
-      a{  
-        display: inline-block;
-        font-weight: 300; 
-        margin: 0;
-        padding: @cuerpo * 0.5 @cuerpo * 0.9;
-        color: @negro !important;
-        font-size: @cuerpo * 0.95;
-        text-transform: uppercase;
+    a{  
+      display: inline-block;
+      font-weight: 300; 
+      margin: 0;
+      padding: @cuerpo * 1.1 * 0.5 @cuerpo * 0.9;
+      color: @negro !important;
+      font-size: @cuerpo * 0.95;
+      text-transform: uppercase;
 
       }
 
@@ -69,20 +69,23 @@ nav {
           padding: 0;
         }
     }
-
-    ul{
-      li{
-        //padding: @cuadratin / 3;
-      }
-    }
   }
 
   &.movil {
 
+    position: inherit !important;
+    margin: 0;
+    padding: 0;
+
+    h4 {
+      margin: 0;
+    }
+
     ul{
+      //Aquí los padding de la ul
     li{
-      padding-left: @cuadratin;
-      padding: @cuadratin / 3;
+      font-weight: 300;
+    
     }
     }
   }
@@ -325,4 +328,32 @@ nav {
   // Remove the top rounded corners here since there is a hard edge above the menu
   .border-top-radius(0);
 }
+
+
+//  Responsive adaptable
+
+  //  Small screen / tablet
+  @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+
+  nav {
+          ul{
+            li{
+              a{
+                padding: @cuerpo * 1.2 * 0.5 @cuerpo * 0.6;
+                font-size: @cuerpo * 0.9;
+              }
+            }
+            
+  }
+  }
+  }
+ 
+
+  //  Medium screen / desktop
+  @media (min-width: @screen-md) and (max-width: @screen-md-max){
+  }
+
+  //  Large screen / wide desktop
+  @media (min-width: @screen-lg){
+  }
 

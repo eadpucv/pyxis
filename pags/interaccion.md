@@ -4,7 +4,7 @@ title: Pyxis Framework - Interacción
 subtitle: Interacción
 ---
 
-<div class='col-lg-5 col-md-5'>
+<div class='col-lg-5 col-md-5 oculto-sm oculto-xs'>
 <a name='ancla' id='a'></a>
 <div class='menu-affix alto-affix'>
 <div data-spy="affix" data-offset-top="220">

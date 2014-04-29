@@ -5,7 +5,7 @@ subtitle: Tipografía
 pde: type.pde
 ---
 
-<div class='col-lg-5 col-md-5'>
+<div class='col-lg-5 col-md-5 oculto-sm oculto-xs'>
 <a name='ancla' id='a'></a>
 <div class='menu-affix alto-affix'>
 <div data-spy="affix" data-offset-top="220">
@@ -23,7 +23,6 @@ pde: type.pde
 </div>             
 </div>
 </div>
-
 
 <div class='col-lg-19 col-lg-offset-0 col-md-18 col-md-offset-1'>
 
