@@ -4,6 +4,25 @@ title: Pyxis Framework - Versatilidad
 subtitle: Versatilidad
 ---
 
+<div class='col-lg-5 col-md-5'>
+<a name='ancla' id='a'></a>
+<div class='menu-affix alto-affix'>
+<div data-spy="affix" data-offset-top="220">
+    <ul>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-uno'>Formularios</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-dos'>Agregar página</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-tres'>Crear un proyecto</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-cuatro'>Nuevo usuario</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-cinco'>Publicar un trabajo</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-seis'>Iniciar sesión</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-siete'>Botones</a></li>
+    </ul>
+</div>
+</div>
+</div>
+
+<div class='col-lg-19 col-lg-offset-0 col-md-18 col-md-offset-1'>
+
 <div class='fila'>
 	<div class='col-md-14 margen-columna'>
 		<div class='w100'>
