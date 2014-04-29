@@ -2,15 +2,17 @@
 // -------------------------
 
 .affix {
-  	position: fixed;
-  	width: 195px;
+  position: fixed;
+  width: 195px;
 	top: 50px;
 	margin-left: -30px;
 	padding-left: @cuadratin;
 	padding-top: @cuadratin /2;
-	background-color: @blanco;
 	height: 0 auto;
 	padding-bottom: @cuadratin;
+  border-top: 2px solid @blanco;
+  border-bottom: 2px solid @blanco;
+  background-color: @blanco;
 }
 
 //  Visibilidad
@@ -18,8 +20,11 @@
 .alto-affix {
     width: 195px;
     left: 0;
+    background-color: none!important;
     padding-left: @cuadratin;
     height: 0 auto;
+    border-top: 1px solid @blanco;
+    border-bottom: 1px solid @blanco;
 
 }
 
@@ -75,12 +80,6 @@ padding-top: @cuadratin * 3;
     &.xs {
       font-size: @cuerpo * .80;
       line-height: @interlinea * .9;
-    }
-
-  
-    &:hover{
-      color: @pizarra;
-      text-decoration: none;
     }
 }
 

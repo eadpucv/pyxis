@@ -4,7 +4,7 @@
 <div class='menu-pyxis'>
 <div class='pag menu'>
 <nav>
-    <div class='col-lg-5 oculto-md'>
+    <div class='col-lg-5 oculto-md oculto-sm col-xs-5'>
         <h5><span class='gruesa rojo-claro'>Pyxis</span> <span class='fino gris-oscuro'>framework</span> <span class='chico gris-claro'>1.0.1</span></h5>
     </div>
     <div class='col-lg-19 col-md-24'>
@@ -27,22 +27,25 @@
 
 <!-- barra de menú móvil-->
 <div class='oculto-lg oculto-md oculto-sm col-xs-24'>
-<div class='menu-pyxis-movil'> 
-
+<div class='menu-pyxis movil'> 
+   <!-- Collapse -->
    <div class="panel-group" id="accordion">
     <div class="panel panel-default">
       <div class="panel-heading">
-        <div class='pag-movil blanco'>
+        <div class='pag-movil'>
           <h4 class="panel-title">
-            <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo">
-              Menú
+            <div class='oculto-lg oculto-md oculto-sm col-xs-20'>
+              <h5><span class='gruesa rojo-claro'>Pyxis</span> <span class='fino gris-oscuro'>framework</span> <span class='chico gris-claro'>1.0.1</span></h5>
+            </div>
+            <button type="button" class="btn btn-danger derecha" data-toggle="collapse" data-target="#demo">
+              ...
             </button>
             </div>
 
-          <div id="demo" class="collapse in">
+          <div id="demo" class="collapse">
           <div class="panel-body fondo-gris-oscuro">
-          <ul class='menu altas gruesa'>
-            <a href='{{ site.baseurl }}/pags/tipografia'><li>tipografía</li></a>
+          <ul class='menu'>
+            <a href='{{ site.baseurl }}/pags/tipografia'><li>Tipografía</li></a>
             <a href='{{ site.baseurl }}/pags/grilla'><li>Grilla</li></a>
             <a href='{{ site.baseurl }}/pags/interaccion'><li>Interacción</li></a>
             <a href='{{ site.baseurl }}/pags/color'><li>Color</li></a>

@@ -50,6 +50,16 @@ header {
 .pag-movil {
 	margin: 0 auto;
 	padding: 0 @cuadratin 0 @cuadratin;
+
+	    h5 {
+      margin: @cuadratin/3 0 0 0;
+      z-index: -1;
+
+        span{
+          margin: 0;
+          padding: 0;
+        }
+       }
 }
 
 .imagen-alta {
@@ -152,6 +162,21 @@ footer{
 	}
 }
 
+//	Responsive adaptable
+
+  //  Small screen / tablet
+  @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+  		.pag{
+  			width: @container-sm *1.1;
+  		}
+  }
+
+  //  Medium screen / desktop
+  @media (min-width: @screen-md) and (max-width: @screen-md-max){
+  }
+
+  //  Large screen / wide desktop
+  @media (min-width: @screen-lg){
+  }
 
 
-//Nav-m
