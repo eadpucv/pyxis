@@ -170,11 +170,11 @@ footer{
   	.franja {
 
 	&.xl{
-		min-height: 500px;
+		min-height: 440px;
 		max-height: 700px;
 
 		.leyenda{
-			margin-top: @cuadratin * 2.5;
+			margin-top: @cuadratin * 2;
 			text-align: center;
 		}
 	  }
@@ -187,14 +187,71 @@ footer{
   		.pag{
   			width: @container-sm *1.1;
   		}
+
+  			.cita {
+			color: @gris;
+			//font-size: @cuerpo * 1.3;
+		}	
   }
 
   //  Medium screen / desktop
   @media (min-width: @screen-md) and (max-width: @screen-md-max){
+
+		.cita {
+			color: @gris;
+			//font-size: @cuerpo * 1.3;
+		}		  
+
+  	  .autor {
+      margin: 22px 0px 28.6px;
+      line-height: 22px;
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: 200;
+      letter-spacing: -0.1ex;
+      color: @gris;
+      //font-size: @cuerpo * 1.3;
+    }
   }
 
   //  Large screen / wide desktop
   @media (min-width: @screen-lg){
-  }
+  	  	.franja {
+
+	&.xl{
+		min-height: 750px;
+		max-height: 900px;
+
+		.leyenda{
+			margin-top: @cuadratin * 6;
+			text-align: center;
+		}
+
+		.cita {
+			margin: 22px 0px 28.6px;
+			line-height: 22px;
+			margin-bottom: 30px;
+			text-align: center;
+			font-style: italic;
+			font-weight: 200;
+			letter-spacing: -0.1ex;
+			color: #C1C2C2;
+			//font-size: @cuerpo * 1.3;
+		}
+		.autor {
+			margin: 22px 0px 28.6px;
+			line-height: 22px;
+			margin-bottom: 30px;
+			text-align: center;
+			font-weight: 200;
+			letter-spacing: -0.1ex;
+			color: @gris;
+			//font-size: @cuerpo * 1.3;
+		}
+	  }
+   }
+   }
+
+ 
 
 
