@@ -25,6 +25,7 @@ a.btn{
             text-decoration: none;
             background-color: saturate(@pizarra, 50%);
             color: @blanco;
+            .transition(.2s ease all);
     }
 
     // cuando se aprieta el botón, que aparezca una sombra interior para que se vea hundido
@@ -74,6 +75,7 @@ a.btn{
         &:hover{
             background-color: darken(saturate(@rojo-alerta, 10), 10);
             color: @blanco;
+            .transition(.2s ease all);
         }
     }
 
