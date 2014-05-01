@@ -148,14 +148,16 @@ form{
 
     .grupo{
         &.obligatorio{
+            position: relative;
             label:after{
-                content: '*';
+                font-family: Stampa;
+                line-height: 1;
                 color: @rojo-claro;
-                font-size: @cuerpo;
+                content: @icn-var-asterisco;
             }
             select,
             input{
-                border: 1px solid fade(@gris-oscuro, 50);
+                border: 1px solid fade(@gris-oscuro, 70);
                 width: 100%;
             }
         }
@@ -228,6 +230,7 @@ form{
     // Tamaños
 
     &.sm{
+        padding: 0;
         legend{
             font-size: @cuerpo;
             text-transform: uppercase;
@@ -245,12 +248,14 @@ form{
 
     }
     &.md{
+        padding: 0;
         label{font-size: @cuerpo * .8}
         input,
         select,
         textarea{font-size: @cuerpo}
     }
     &.lg{
+        padding: 0;
         legend{
             font-size: @cuerpo * 2;
             font-weight: 100;
@@ -263,6 +268,11 @@ form{
         input,
         select,
         textarea{font-size: @cuerpo * 1.5}
+    }
+
+    span.checkbox-span{
+        display: inline-block;
+        margin: -19px 8px -32px 0;
     }
 
     // Formulario Horizontal
@@ -330,4 +340,23 @@ form{
   text-align: center;
 }
 
+// Placeholder
+::-webkit-input-placeholder {
+   .italica;
+   color: @gris;
+}
 
+:-moz-placeholder { /* Firefox 18- */
+   .italica;
+   color: @gris;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   .italica;
+   color: @gris;  
+}
+
+:-ms-input-placeholder {  
+   .italica;
+   color: @gris;  
+}
