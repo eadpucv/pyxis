@@ -24,7 +24,7 @@ pde: type.pde
 </div>
 </div>
 
-<div class='col-lg-19 col-lg-offset-0 col-md-18 col-md-offset-1'>
+<div class='col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-1'>
 
 <!-- Familias tipográficas -->
 

@@ -157,7 +157,7 @@ subtitle: Interacción
             </select>
             <p class='especificacion'>Define el tipo de formulario que necesitas para tu objeto.</p>
         </div>
-            <input type='submit' class='accion md izquierda' value='Crear o editar'>
+            <input type='submit' class='accion btn-md izquierda' value='Crear o editar'>
         </form>
        </div>
 
@@ -338,7 +338,7 @@ subtitle: Interacción
                 <input type="checkbox">
                     Acepto los <a href='#'>términos y condiciones</a>
                 </label>
-                <input type='submit' class='accion btn btn-lg' value='Crear nuevo usuario'>
+                <input type='submit' class='accion btn btn-md' value='Crear nuevo usuario'>
             </div>
         </form>
         </div>
@@ -375,7 +375,7 @@ subtitle: Interacción
               <input type='text' class='relleno' placeholder="puede indicar un rango"/>
               <label class='pregunta'>Interesados contactar a:</label>
               <textarea class='relleno' placeholder="Indique vía de postulación para interesados"/></textarea>
-              <input type='submit' class='accion lg izquierda' value='Publicar'>
+              <input type='submit' class='accion btn-lg izquierda' value='Publicar'>
               <label class="checkbox">
               <input type="checkbox">
                 Acepto los <a href='#'>términos y condiciones</a>
@@ -403,7 +403,7 @@ subtitle: Interacción
             <div class='ingreso'>
                 <input type='password' placeholder='contraseña' required/>
             </div>
-            <input type='submit' class='md' value='Iniciar sesión'>
+            <input type='submit' class='btn-md' value='Iniciar Sesión'>
         </form>
             <p class='especificacion xs'>
             <a href='http://personas.ead.pucv.cl/personas/usuarios/recuperacionDatos'>¿olvidaste tu contraseña?</a> Si no tienes una cuenta, <a>regístrate</a>
