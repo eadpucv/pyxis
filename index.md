@@ -5,16 +5,16 @@ title: Pyxis Framework
 
 <h1 class='rojo fino centrado grande'>Fundamentos</h1>
 <div class='fila'>
-<div class='col-lg-5 col-lg-offset-2 col-md-5 col-md-offset-2 col-sm-9 col-sm-offset-4 oculto-xs'>
+<div class='col-lg-2 col-lg-offset-1 col-md-5 col-md-offset-2 col-sm-9 col-sm-offset-4 oculto-xs'>
 <img class='imagen-ancha izquierda' src='http://johnpolacek.github.io/scrolldeck.js/decks/responsive/img/responsive_web_design.png'>
 </div>
-<div class='col-lg-6 col-md-6 col-sm-6 oculto-xs'>
+<div class='col-lg-3 col-md-6 col-sm-6 oculto-xs'>
 <img class='imagen-ancha izquierda' src='http://ericlathrop.com/2013/05/introduction-to-blogging-with-jekyll/jekyll%20logo.png'>
 </div>
-<div class='col-lg-4 col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-3 oculto-xs'>
+<div class='col-lg-2 col-md-4 col-md-offset-0 col-sm-8 col-sm-offset-3 oculto-xs'>
 <img class='imagen-ancha izquierda' src='http://tactile.co.za/blog/wp-content/uploads/2010/02/less_logo.png'>
 </div>
-<div class='col-lg-5 col-md-5 col-sm-8 oculto-xs'>
+<div class='col-lg-3 col-md-5 col-sm-8 oculto-xs'>
 <img class='imagen-ancha derecha' src='http://bower.io/img/bower-logo.png'>
 </div>
 </div>
