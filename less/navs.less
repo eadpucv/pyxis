@@ -7,7 +7,6 @@
 
 nav {
   margin: 0 auto;
-  border-top: 1px solid @color-borde;
   
   ul, ol{
   margin: 0;
@@ -34,6 +33,18 @@ nav {
     span{
       margin: 0 !important;
     }
+
+    h5 {
+      margin: 0;
+      margin-top: 5px;
+      margin-left: 0;
+      z-index: -1;
+
+        span{
+          margin: 0;
+          padding: 0;
+        }
+    }
       
       a:hover{
         text-decoration: none;
@@ -47,29 +58,19 @@ nav {
 
 //  Menú Pyxis
 .menu-pyxis {
-  min-height: @cuadratin * 1.4;
-  width: 100%;
-  margin: 0 auto;
-  position: fixed;
-  background-color: @blanco;
-  padding: 0;
-  z-index: 10;
-  .box-shadow(0 0 10px fade(@negro, 30));
+    margin: 0 auto;
+    padding: 0;
 
-  nav {
-
-    h5 {
-      margin: 0;
-      margin-top: 5px;
-      margin-left: 0;
-      z-index: -1;
-
-        span{
-          margin: 0;
-          padding: 0;
-        }
+    h5{
+      display: inline-block;
+      margin: 5px;
+      padding: 7px 0.5px;
     }
-  }
+
+    span {
+      padding: 0;
+      margin: 0;
+    }
 
   &.movil {
 
@@ -89,6 +90,22 @@ nav {
     
     }
     }
+  }
+}
+.nav-rotulos {
+   padding: 8px 0 0;
+   }
+   
+// logo 
+
+.logo {
+  width: 200px;
+  float: left;
+
+  img {
+    padding: 10px 0;
+    width: 35px;
+    float: left;
   }
 }
 
