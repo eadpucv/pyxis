@@ -4,7 +4,7 @@ title: Pyxis Framework - Javascript
 subtitle: Javascript
 ---
 
-<div class='col-lg-5 col-md-5 oculto-sm oculto-xs'>
+<div class='col-lg-3 col-md-3 oculto-sm oculto-xs'>
 <a name='ancla' id='a'></a>
 <div class='menu-affix alto-affix'>
 <div data-spy="affix" data-offset-top="220">
@@ -20,7 +20,7 @@ subtitle: Javascript
 </div>
 </div>
 
-<div class='col-lg-19 col-lg-offset-0 col-md-18 col-md-offset-1'>
+<div class='col-lg-9 col-md-9 col-sm-12 col-xs-12'>
 
 <!-- Modal -->
 <h3 class='rojo-claro'>Modal</h3><a name="titulo-uno"></a>

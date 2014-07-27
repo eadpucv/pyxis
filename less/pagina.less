@@ -42,7 +42,7 @@ header {
 	padding: @cuadratin;
 
 	&.menu{
-		padding: 0 0 0 @cuadratin;
+		padding: 0;
 	}
 }
 
@@ -62,6 +62,15 @@ header {
        }
 }
 
+.fondo-header {
+	background-color: @blanco;
+  .box-shadow(0 0 10px fade(@negro, 30));
+	position: fixed;
+	z-index: 10;
+	margin: 0 auto;
+	width: 100%;
+}
+
 .imagen-alta {
 	width: auto;
 	height: @cuadratin * 2;
@@ -78,16 +87,19 @@ header {
 	margin-bottom: @cuadratin;
 }
 
-.franja {
+.imagen-index {
+	height: 200px;
+}
+
+ .franja {
 	width: 100%;
-	background-color: @negro-oscuro;
+	background-color: #3c464b;
 	position: relative;
 	overflow: hidden;
 	.cf;
 
 	&.xl{
 		min-height: 500px;
-		max-height: 700px;
 
 		canvas{
 			position: absolute;
@@ -102,6 +114,10 @@ header {
 		.leyenda{
 			margin-top: @cuadratin * 4;
 			text-align: center;
+		}
+
+		.descripcion-proyecto {
+			margin: 0 auto;
 		}
 	}
 
@@ -184,9 +200,6 @@ footer{
 
   //  Small screen / tablet
   @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
-  		.pag{
-  			width: @container-sm *1.1;
-  		}
 
   			.cita {
 			color: @gris;

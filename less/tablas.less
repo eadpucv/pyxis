@@ -39,7 +39,6 @@ table{
 	td{
 
 		color: fade(@negro, 60%);
-		padding-left: @cuadratin;
 		;.btn{
 			//margin-top: 0;
 		}
@@ -59,3 +58,39 @@ table{
     }
 }
 
+
+// Extra small screen / phone
+@media(max-width: @screen-xs-max){
+
+	table {
+		border-left: 1px solid @blanco;
+		border-right: 1px solid @blanco;
+
+		td {
+			padding-left: 10px;
+		}
+
+		tr {
+			border-bottom: 1px solid @blanco;
+		}
+	}
+
+}
+
+
+// Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+
+}
+
+// Medium screen / desktop
+
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+
+}
+
+// Large screen / wide desktop
+
+@media (min-width: @screen-lg){
+
+}

@@ -4,7 +4,7 @@ title: Pyxis Framework - Versatilidad
 subtitle: Versatilidad
 ---
 
-<div class='col-lg-5 col-md-5 oculto-sm oculto-xs'>
+<div class='col-lg-3 col-md-3 oculto-sm oculto-xs'>
 <a name='ancla' id='a'></a>
 <div class='menu-affix alto-affix'>
 <div data-spy="affix" data-offset-top="220">
@@ -21,7 +21,7 @@ subtitle: Versatilidad
 </div>
 </div>
 
-<div class='col-lg-19 col-lg-offset-0 col-md-18 col-md-offset-1'>
+<div class='col-lg-9 col-md-9 col-sm-12 col-xs-12'>
 
 <div class='fila'>
 	<div class='col-md-14 margen-columna'>
@@ -139,7 +139,7 @@ subtitle: Versatilidad
         <!-- ejemplo 1 -->
         	<h1>Torneo Manto Aerodinámico (1992)</h1>
         	<h4 class="gris"> Tincidunt ut laoreet dolore</h4>
-        	<img class='imagen-lg' src='img/mantoaero.jpg'>     
+        	<img class='imagen-lg' src='{{ site.baseurl }}img/mantoaero.jpg'>     
 		</div>
     	<div class="col-md-12 columna-tipo margen-columna">           
         	<p class="margen-columna">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.

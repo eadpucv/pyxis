@@ -2,6 +2,7 @@
 //  Botones, formularios
 
 
+button,
 button.btn,
 input[type='submit'],
 a.btn{
@@ -12,20 +13,29 @@ a.btn{
     cursor: pointer;
     white-space: nowrap;
     font-size: @cuerpo * .9;
-    color: @blanco;
+    color: lighten(@pizarra, 20);
     text-align: center;
-    background-color: @pizarra;
+    background-color: lighten(desaturate(@beige, 35), 15);
+    text-shadow: 1px 1px 1px fade(@negro, 10);
     vertical-align: middle;
-    border: none;
+    border: 1px solid fade(@pizarra, 30);
     margin-top: @cuadratin / 2;
     margin-bottom: @cuadratin / 2;
     .border-radius(@radio);
-    
+    position: relative;
+    bottom: @boton-resalte;
+    right: @boton-resalte;
+    box-shadow: @boton-resalte @boton-resalte 0 fade(@negro, 20);
+    .transition(.5s ease all);
     &:hover {
+            bottom: 0;
+            right: 0;
+            box-shadow: 0 0 0 fade(@negro, 90);
+            text-shadow: -1px -1px 2px fade(@negro, 60);
             text-decoration: none;
-            background-color: saturate(@pizarra, 50%);
+            background-color: desaturate(@beige, 35%);
             color: @blanco;
-            .transition(.2s ease all);
+            .transition(.5s ease all);
     }
 
     // cuando se aprieta el botón, que aparezca una sombra interior para que se vea hundido
@@ -49,6 +59,7 @@ a.btn{
 
     &.btn-md{
         font-weight: 300;
+        text-transform: uppercase;
         font-size: @cuerpo * 1;
         padding: @padding-md 2*@padding-md;
     }
@@ -61,21 +72,23 @@ a.btn{
     }
 
     &.btn-accion{
+        color: @blanco;
         text-shadow: 1px 1px 0 fade(@negro, 40%);
         background-color: @burdeo-opuesto;
         
         &:hover{
-                background-color: @gris;
+                background-color: darken(@burdeo-opuesto, 10%);
         }
     }
     
     &.btn-alerta{
+        color: @blanco;
         text-shadow: 1px 1px 0 fade(@negro, 40%);
         background-color:  @rojo-alerta;
         &:hover{
-            background-color: darken(saturate(@rojo-alerta, 10), 10);
+            background-color: darken(saturate(@rojo-alerta, 15), 10);
             color: @blanco;
-            .transition(.2s ease all);
+            
         }
     }
 
@@ -148,14 +161,16 @@ form{
 
     .grupo{
         &.obligatorio{
+            position: relative;
             label:after{
-                content: '*';
+                font-family: Stampa;
+                line-height: 1;
                 color: @rojo-claro;
-                font-size: @cuerpo;
+                content: @icn-var-asterisco;
             }
             select,
             input{
-                border: 1px solid fade(@gris-oscuro, 50);
+                border: 1px solid fade(@gris-oscuro, 70);
                 width: 100%;
             }
         }
@@ -228,6 +243,7 @@ form{
     // Tamaños
 
     &.sm{
+        padding: 0;
         legend{
             font-size: @cuerpo;
             text-transform: uppercase;
@@ -245,12 +261,14 @@ form{
 
     }
     &.md{
+        padding: 0;
         label{font-size: @cuerpo * .8}
         input,
         select,
         textarea{font-size: @cuerpo}
     }
     &.lg{
+        padding: 0;
         legend{
             font-size: @cuerpo * 2;
             font-weight: 100;
@@ -263,6 +281,11 @@ form{
         input,
         select,
         textarea{font-size: @cuerpo * 1.5}
+    }
+
+    span.checkbox-span{
+        display: inline-block;
+        margin: -19px 8px -32px 0;
     }
 
     // Formulario Horizontal
@@ -330,4 +353,30 @@ form{
   text-align: center;
 }
 
+// Placeholder
 
+
+
+::-webkit-input-placeholder {
+   color: fade(@damasco-opuesto, 50);
+   letter-spacing: -.08ex;
+   font-weight: lighter;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: fade(@damasco-opuesto, 50);
+   letter-spacing: -.08ex;
+   font-weight: lighter;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: fade(@damasco-opuesto, 50);
+   letter-spacing: -.08ex;
+   font-weight: lighter;  
+}
+
+:-ms-input-placeholder {  
+   color: fade(@damasco-opuesto, 50);
+   letter-spacing: -.08ex;
+   font-weight: lighter;  
+}
