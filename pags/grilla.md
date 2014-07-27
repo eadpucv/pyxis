@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Pyxis Framework - Grilla
-subtitle: Grilla
+subtitle: <i class="icn icn-pc"></i> Grilla
 ---
 
 <div class='col-lg-3 col-md-3 oculto-sm oculto-xs'>

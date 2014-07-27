@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Pyxis Framework - Color
-subtitle: Color
+subtitle: <i class="icn icn-lentes"></i> Color
 ---
 
 <div class='col-lg-3 col-md-3 oculto-sm oculto-xs'>
@@ -9,11 +9,11 @@ subtitle: Color
 <div class='menu-affix alto-affix'>
 <div data-spy="affix" data-offset-top="220">
     <ul>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-uno'>Paleta de colores</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-dos'>Grises</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-tres'>Colores</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-cuatro'>Adicionales</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-cinco'>Opuestos</a></li>
+        <li><a class='xs gris-oscuro gruesa' data-scroll href='#titulo-uno'>Paleta de colores</a></li>
+        <li><a class='xs gris-oscuro gruesa' data-scroll href='#titulo-dos'>Grises</a></li>
+        <li><a class='xs gris-oscuro gruesa' data-scroll href='#titulo-tres'>Colores</a></li>
+        <li><a class='xs gris-oscuro gruesa' data-scroll href='#titulo-cuatro'>Adicionales</a></li>
+        <li><a class='xs gris-oscuro gruesa' data-scroll href='#titulo-cinco'>Opuestos</a></li>
     </ul>
 </div>
 </div>

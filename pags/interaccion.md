@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Pyxis Framework - Interacción
-subtitle: Interacción
+subtitle: <i class="icn icn-mano-arriba"></i> Interacción
 ---
 
 <div class='col-lg-3 col-md-3 oculto-sm oculto-xs'>
