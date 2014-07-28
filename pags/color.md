@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Pyxis Framework - Color
-subtitle: <i class="icn icn-lentes"></i> Color
+subtitle: <i class="icn icn-lapiz"></i> Color
 ---
 
 <div class='col-lg-3 col-md-3 oculto-sm oculto-xs'>
@@ -33,7 +33,7 @@ subtitle: <i class="icn icn-lentes"></i> Color
 
 <h2 class='rojo-claro'>Grises</h2><a name="titulo-dos"></a>
 
-<table class='w100 centrado-vertical'>
+<table class='w100'>
 <tr>
     <th class='w20'>Muestra</th>
     <th class='w30'>Uso</th>
@@ -195,7 +195,7 @@ subtitle: <i class="icn icn-lentes"></i> Color
 <h2 class='rojo-claro'>Adicionales</h2><a name="titulo-cuatro"></a>
 
 
-<table class='w100 centrado-vertical'>
+<table class='w100'>
 <tr>
     <th class='w20'>Muestra</th>
     <th class='w30'>Uso</th>
@@ -225,7 +225,7 @@ subtitle: <i class="icn icn-lentes"></i> Color
 
 <h2 class='rojo-claro'>Opuestos</h2><a name="titulo-cinco"></a>
 
-<table class='w100 centrado-vertical'>
+<table class='w100'>
 <tr>
     <th class='w20'>Muestra</th>
     <th class='w30'>Uso</th>

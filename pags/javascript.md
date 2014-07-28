@@ -15,6 +15,7 @@ subtitle: <i class="icn icn-palabra"></i> Javascript
         <li><a class='xs gris-oscuro gruesa' href='#titulo-cuatro'>Affix</a></li>
         <li><a class='xs gris-oscuro gruesa' href='#titulo-cinco'>Dropdowns</a></li>
         <li><a class='xs gris-oscuro gruesa' href='#titulo-seis'>Carousel</a></li>
+        <li><a class='xs gris-oscuro gruesa' href='#titulo-siete'>Parallax</a></li>
     </ul>
 </div>
 </div>
@@ -139,21 +140,21 @@ subtitle: <i class="icn icn-palabra"></i> Javascript
 <h4>Codigo</h4>
 <script src="https://gist.github.com/IdarGonzalez/9691318.js"></script>    
 <h4>Ejemplo</h4>
-<div data-ride="carousel" class="carousel slide col-md-22" id="carousel-example-generic">
+<div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
   <ol class="carousel-indicators">
-    <li class="" data-slide-to="0" data-target="#carousel-example-generic"></li>
-    <li data-slide-to="1" data-target="#carousel-example-generic" class="active"></li>
+    <li data-slide-to="0" data-target="#carousel-example-generic" class="active"></li>
+    <li data-slide-to="1" data-target="#carousel-example-generic"></li>
     <li data-slide-to="2" data-target="#carousel-example-generic"></li>
   </ol>
   <div class="carousel-inner">
     <div class="item">
-      <img alt="First slide" src="img/mantoaero2.jpg">
+      <img alt="First slide" src="{{ site.baseurl }}/img/manto-6.jpg">
     </div>
     <div class="item active">
-      <img alt="Second slide" src="img/torneo2.jpg">
+      <img alt="Second slide" src="{{ site.baseurl }}/img/torneo2.jpg">
     </div>
     <div class="item">
-      <img alt="Third slide" src="img/manto4.jpg">
+      <img alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
     </div>
   </div>
   <a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
@@ -163,6 +164,23 @@ subtitle: <i class="icn icn-palabra"></i> Javascript
     <span class="ico-siguiente"></span>
   </a>
 </div>
+<!-- Affix -->
+<h3 class='rojo-claro'>Parallax</h3><a name="titulo-siete"></a>  
+<h4>Archivos necesarios</h4>
+<script src="https://gist.github.com/IdarGonzalez/9631927.js"></script>
+<h4>Codigo</h4>
+<script src="https://gist.github.com/IdarGonzalez/9632005.js"></script>
+<h4>Ejemplo</h4>
+<div id='parallax' class='ejemplo-1'>
+    <h1 class='blanco fino gigante centrado'>Primer parallax</h1>
+</div>
+<div id='parallax' class='ejemplo-2'>
+    <h1 class='blanco centrado fino gigante'>Segundo parallax</h1>
+</div>
+<div id='parallax' class='ejemplo-3'>
+    <h1 class='blanco centrado fino gigante'>Tercer parallax</h1>
+</div>
+<br /><br /><hr>
 <script>     
 	$( "#link_ejemplo_affix" ).click(function() {
 	$( "#navbar" ).toggle();
