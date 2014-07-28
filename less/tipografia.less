@@ -122,7 +122,7 @@ span {
   font-family: @serif;
   font-size:   @cuerpo * 1.0;
   line-height: @interlinea;
-  white-space: pre;
+  white-space: pre-wrap;
 }
 
 &.especificacion {
@@ -202,7 +202,11 @@ div.poema{
     color: fade(@negro, 80%);
 }
 
+// alineación
 
+.parrafo-izquierdo {
+  text-align: left;
+}
   //  Cabeceras:
 
   //  Valores de cabecera:
@@ -386,7 +390,7 @@ ul.menu {
 }
 
 .descripcion-proyecto {
-    color: #FFF;
+  font-size: @cuerpo * .7;
     font-weight: 200;
     margin: 22px 0px 28.6px;
     line-height: 22px;
@@ -469,7 +473,7 @@ ul.menu {
   code {
     display: inline-block;
     line-height: @interlinea * .666;
-    white-space: pre;
+    white-space: pre-wrap;
     background-color: @ahuesado;
     font-size: 11px;
     padding: 2px 6px;

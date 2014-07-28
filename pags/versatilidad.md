@@ -1,10 +1,10 @@
 ---
 layout: base
 title: Pyxis Framework - Versatilidad
-subtitle: Versatilidad
+subtitle: <i class="icn icn-imagen"></i> Versatilidad
 ---
 
-<div class='col-lg-5 col-md-5 oculto-sm oculto-xs'>
+<div class='col-lg-3 col-md-3 oculto-sm oculto-xs'>
 <a name='ancla' id='a'></a>
 <div class='menu-affix alto-affix'>
 <div data-spy="affix" data-offset-top="220">
@@ -21,7 +21,7 @@ subtitle: Versatilidad
 </div>
 </div>
 
-<div class='col-lg-19 col-lg-offset-0 col-md-18 col-md-offset-1'>
+<div class='col-lg-9 col-md-9 col-sm-12 col-xs-12'>
 
 <div class='fila'>
 	<div class='col-md-14 margen-columna'>

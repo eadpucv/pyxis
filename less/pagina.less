@@ -44,6 +44,10 @@ header {
 	&.menu{
 		padding: 0;
 	}
+
+	&.sin-relleno {
+		padding: 0 30px;
+	}
 }
 
 
@@ -112,7 +116,7 @@ header {
 		}
 
 		.leyenda{
-			margin-top: @cuadratin * 4;
+			padding: @cuadratin * 4 0;
 			text-align: center;
 		}
 
@@ -139,6 +143,7 @@ header {
 }
 
 footer{
+	background-color: #3c464b;
 	margin: 0 auto;
 	line-height: @interlinea * .7;
 	
@@ -200,9 +205,6 @@ footer{
 
   //  Small screen / tablet
   @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
-  		.pag{
-  			width: @container-sm *1.1;
-  		}
 
   			.cita {
 			color: @gris;

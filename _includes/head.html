@@ -3,39 +3,8 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <link href='{{ site.baseurl }}/css/pyxis.css' rel='stylesheet'>
   <title>{{ page.title }}</title>
-  <script src="{{ site.baseurl }}/js/jquery.js"></script>
-  <script src="{{ site.baseurl }}/js/collapse.js"></script>
-  <script src="{{ site.baseurl }}/js/carousel.js"></script>
-  <script src="{{ site.baseurl }}/js/transition.js"></script>
-  <script src="{{ site.baseurl }}/js/modal.js"></script>
-  <script src="{{ site.baseurl }}/js/tooltip.js"></script> 
-  <script src="{{ site.baseurl }}/js/popover.js"></script>
-  <script src="{{ site.baseurl }}/js/affix.js"></script>
-  <script src="{{ site.baseurl }}/js/dropdown.js"></script>  
-  <script type="text/javascript" src="https://raw.github.com/processing-js/processing-js/v1.4.7/processing.min.js"></script>
-  <link rel='icon' type='image/x-icon' href='{{ site.baseurl }}/img/favicon-pyxis.ico' />
-  <link rel='apple-touch-icon-precomposed' sizes='114x114' href='{{ site.baseurl }}img/favicon-114.png'>
-  <link rel='apple-touch-icon-precomposed' sizes='72x72' href='{{ site.baseurl }}img/favicon-72.png'>
-  <link rel='apple-touch-icon-precomposed' href='{{ site.baseurl }}img/favicon-57.png'>
-  <!-- Smooth Scoolling -->
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('a[href*=#]').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-        && location.hostname == this.hostname) {
-          var $target = $(this.hash);
-          $target = $target.length && $target
-          || $('[name=' + this.hash.slice(1) +']');
-          if ($target.length) {
-            var targetOffset = $target.offset().top;
-            $('html,body')
-            .animate({scrollTop: targetOffset}, 750);
-           return false;
-          }
-        }
-      });
-    });
-</script><!-- fin de Smooth Scoolling -->
+  <!--<script type="text/javascript" src="https://raw.github.com/processing-js/processing-js/v1.4.7/processing.min.js"></script>-->
+  <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}img/favicon-pyxis.ico" />
 </head>
 
 

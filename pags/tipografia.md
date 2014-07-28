@@ -1,12 +1,12 @@
 ---
 layout: base
 title: Pyxis Framework - Tipografía
-subtitle: Tipografía
+subtitle: <i class="icn icn-libro"></i> Tipografía
 pde: type.pde
 ---
 
 
-<div class='col-lg-3 oculto-xs'>
+<div class='col-lg-3 col-md-3 oculto-sm oculto-xs'>
 <a name='ancla' id='a'></a>
 <div class='menu-affix alto-affix'>
 <div data-spy="affix" data-offset-top="220">
@@ -25,7 +25,7 @@ pde: type.pde
 </div>
 </div>
 
-<div class='col-lg-9'>
+<div class='col-lg-9 col-md-9 col-sm-12 col-xs-12'>
 
 <!-- Familias tipográficas -->
 

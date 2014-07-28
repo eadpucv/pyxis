@@ -1,25 +1,25 @@
 ---
 layout: base
 title: Pyxis Framework - Color
-subtitle: Color
+subtitle: <i class="icn icn-lapiz"></i> Color
 ---
 
-<div class='col-lg-5 col-md-5 oculto-sm oculto-xs'>
+<div class='col-lg-3 col-md-3 oculto-sm oculto-xs'>
 <a name='ancla' id='a'></a>
 <div class='menu-affix alto-affix'>
 <div data-spy="affix" data-offset-top="220">
     <ul>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-uno'>Paleta de colores</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-dos'>Grises</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-tres'>Colores</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-cuatro'>Adicionales</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-cinco'>Opuestos</a></li>
+        <li><a class='xs gris-oscuro gruesa' data-scroll href='#titulo-uno'>Paleta de colores</a></li>
+        <li><a class='xs gris-oscuro gruesa' data-scroll href='#titulo-dos'>Grises</a></li>
+        <li><a class='xs gris-oscuro gruesa' data-scroll href='#titulo-tres'>Colores</a></li>
+        <li><a class='xs gris-oscuro gruesa' data-scroll href='#titulo-cuatro'>Adicionales</a></li>
+        <li><a class='xs gris-oscuro gruesa' data-scroll href='#titulo-cinco'>Opuestos</a></li>
     </ul>
 </div>
 </div>
 </div>
 
-<div class='col-lg-19 col-lg-offset-0 col-md-18 col-md-offset-1'>
+<div class='col-lg-9 col-md-9 col-sm-12 col-xs-12'>
 
 <h2 class="rojo-claro">Paleta de Colores</h2><a name="titulo-uno"></a>
 
@@ -33,7 +33,7 @@ subtitle: Color
 
 <h2 class='rojo-claro'>Grises</h2><a name="titulo-dos"></a>
 
-<table class='w100 centrado-vertical'>
+<table class='w100'>
 <tr>
     <th class='w20'>Muestra</th>
     <th class='w30'>Uso</th>
@@ -195,7 +195,7 @@ subtitle: Color
 <h2 class='rojo-claro'>Adicionales</h2><a name="titulo-cuatro"></a>
 
 
-<table class='w100 centrado-vertical'>
+<table class='w100'>
 <tr>
     <th class='w20'>Muestra</th>
     <th class='w30'>Uso</th>
@@ -225,7 +225,7 @@ subtitle: Color
 
 <h2 class='rojo-claro'>Opuestos</h2><a name="titulo-cinco"></a>
 
-<table class='w100 centrado-vertical'>
+<table class='w100'>
 <tr>
     <th class='w20'>Muestra</th>
     <th class='w30'>Uso</th>
