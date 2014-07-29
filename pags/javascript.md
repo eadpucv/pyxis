@@ -22,7 +22,10 @@ subtitle: <i class="icn icn-palabra"></i> Javascript
 </div>
 
 <div class='col-lg-9 col-md-9 col-sm-12 col-xs-12'>
-
+        <div id="navbar" data-spy="affix" data-offset-top="100" style="background-color:white; display:none;"> 
+            <h2> Este es un ejemplo de Affix </h2>
+            <p>Contenido</p>
+        </div>
 <!-- Modal -->
 <h3 class='rojo-claro'>Modal</h3><a name="titulo-uno"></a>
 <p>Se parte con la idea de que los formularios es donde ocurre una mayor transacción de interacción entre el usuario y el sistema. Para que que la interacción sea de manera cómoda y agradable, se plantea construir una relación proporcional entre los diversos formularios existentes en las plataformas digitales.</p> 
@@ -66,9 +69,8 @@ subtitle: <i class="icn icn-palabra"></i> Javascript
 <script src="https://gist.github.com/IdarGonzalez/9631822.js"></script>
 <h4>Ejemplo</h4>
 <ul class="tooltip-demo">
-    <li><a data-toggle="tooltip" data-original-title="Este es un tooltip">Tooltip funcionando</a></li>
+    <li><a data-toggle="tooltip" data-toggle="tooltip" data-original-title="Este es un tooltip">Tooltip funcionando</a></li>
 </ul><hr>
-<script> $('.tooltip-demo').tooltip({selector: "a[data-toggle=tooltip]"});</script>
 
 <!-- Popover -->
 <h3 class='rojo-claro'>Popover</h3><a name="titulo-tres"></a>  
@@ -80,7 +82,6 @@ subtitle: <i class="icn icn-palabra"></i> Javascript
 <script src="https://gist.github.com/IdarGonzalez/9631895.js"></script>
 <h4>Ejemplo</h4>
 <a class="btn" id="popover-test" title="" data-content="Este es un popover..." data-toggle="popover" data-original-title="Titulo de un popover">Popover</a><br /><br /><hr>
-<script>$('#popover-test').popover();</script>
 
 <!-- Affix -->
 <h3 class='rojo-claro'>Affix</h3><a name="titulo-cuatro"></a>  
@@ -89,7 +90,7 @@ subtitle: <i class="icn icn-palabra"></i> Javascript
 <h4>Codigo</h4>
 <script src="https://gist.github.com/IdarGonzalez/9632005.js"></script>
 <h4>Ejemplo</h4>
-<a id="link_ejemplo_affix" data-original-title="Mostrar el Affix, Lo puedes ocultar con el mismo boton">Mostrar/Ocultar el Affix</a>
+<a id="link_ejemplo_affix" href='#navbar' data-original-title="Mostrar el Affix, Lo puedes ocultar con el mismo boton">Mostrar/Ocultar el Affix</a>
 <br /><br /><hr>
 
 <!-- Dorpdowns -->
@@ -180,11 +181,5 @@ subtitle: <i class="icn icn-palabra"></i> Javascript
 <div id='parallax' class='ejemplo-3'>
     <h1 class='blanco centrado fino gigante'>Tercer parallax</h1>
 </div>
-<br /><br /><hr>
-<script>     
-	$( "#link_ejemplo_affix" ).click(function() {
-	$( "#navbar" ).toggle();
-	});
-</script>
 
 </div><!-- fin de pag -->
