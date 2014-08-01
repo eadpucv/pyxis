@@ -22,11 +22,11 @@ subtitle: <i class="icn icn-palabra"></i> Javascript
 </div>
 
 <div class='col-lg-9 col-md-9 col-sm-12 col-xs-12'>
-                  <ul class="nav nav-tabs" role="tablist">
-                      <li class="active"><a href='#tab1' role="tab" data-toggle="tab"><span class="glyphicon glyphicon-user"></span> Clientes</a></li>
-                      <li><a href='#tab2' role="tab" data-toggle="tab"><span class="glyphicon glyphicon-folder-open"></span> Instancias</a></li>
+                  <!--<ul class="nav nav-tabs" role="tablist">
+                      <li class="active"><a href='#tab1' role="tab" data-toggle="tab"> tab1</a></li>
+                      <li><a href='#tab2' role="tab" data-toggle="tab">> tab2</a></li>
                   </ul>
-                <div id="myTabContent" class="tab-content">
+                <div id="myTabContent" class="tab-content">-->
                 <!-- panel de clientes -->
                   <div class="tab-pane fade in active" id="tab1">hola
                   </div>
