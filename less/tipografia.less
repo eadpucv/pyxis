@@ -118,14 +118,14 @@ span {
 
 // Clases diferenciadas:
 
-&.poema{
+.poema{
   font-family: @serif;
   font-size:   @cuerpo * 1.0;
   line-height: @interlinea;
   white-space: pre-wrap;
 }
 
-&.especificacion {
+.especificacion {
   margin-bottom: @interlinea;
   line-height: @interlinea;
   color: fade(@pizarra, 80%);
@@ -139,6 +139,15 @@ span {
   font-size:@cuerpo -8px;
 }
 
+// Clases de familia tipográfica 
+
+.sans {
+  font-family: @sans;
+}
+
+.serif {
+  font-family: @serif;
+}
 
 //  Énfasis:
 
@@ -211,23 +220,24 @@ div.poema{
 
   //  Valores de cabecera:
 
-  h1 {font-size: 33px;
-    &.subtitulo{font-size: 28px}
+h1 {
+  font-size: 33px;
 }
-h2 {font-size: 29px;
-    &.subtitulo{font-size: 24px}
+
+h2 {
+  font-size: 29px;
 }
-h3 {font-size: 27px;
-  &.subtitulo{font-size: 22px}
+h3 {
+  font-size: 27px;
 }
-h4 {font-size: 23px;
-  &.subtitulo{font-size: 18px}
+h4 {
+  font-size: 23px;
 }
-h5 {font-size: 21px;
-  &.subtitulo{font-size: 16px}
+h5 {
+  font-size: 21px;
 }
-h6 {font-size: 19px;
-  &.subtitulo{font-size: 14px}
+h6 {
+  font-size: 19px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -471,11 +481,13 @@ ul.menu {
   //  código escrito:
 
   code {
+    background-color: @pizarra;
+    color: @blanco;
+    width: 100%; 
     display: inline-block;
     line-height: @interlinea * .666;
     white-space: pre-wrap;
-    background-color: @ahuesado;
-    font-size: 11px;
+    font-size: 13px;
     padding: 2px 6px;
     margin: 0;
 }

@@ -38,13 +38,28 @@
     $( "#navbar" ).toggle();
     });
 </script>
-
 <script> 
   $('.tooltip-demo').tooltip({selector: "a[data-toggle=tooltip]"});
 </script>
-
+<script>
+$('#tabla-contenido a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+</script>
 <script> 
     $('#popover-test').popover();
+</script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('#nav').localScroll(800);
+    
+    //.parallax(xPosition, speedFactor, outerHeight) options:
+    //xPosition - Horizontal position of the element
+    //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+    //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+    $('#parallax, .ejemplo1, .ejemplo2, .ejemplo3').parallax("50%", 0.1, true);
+  })
 </script>
   <!-- Smooth Scoolling -->
   <script type="text/javascript">
