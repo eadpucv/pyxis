@@ -50,42 +50,41 @@ title: Pyxis Framework
           <i class="gris icn icn-mapa-conceptual icn-xl"></i> 
           <p class='gris xs parrafo-izquierdo'>Orden y claridad de las funciones de cada archivo de este proyecto, ya que se desarrolla bajo el esquema de <a class='gris' href="http://lesscss.org/"><i class="icn icn-less"></i> less </a></p>
         </div>
-
+  </div>
+</div>
+<div class='fondo-blanco'>
+  <div class='pag'>
     <h1 class='rojo-claro fino centrado grande'>Dependencias</h1>
     <p class='gris'>Las dependencias de Pyxis Framework son Stampa, Meta (personas), Gamma y AHJVA. Este quiere decir que cada dependencia forma parte de un ecosistema digital donde radica el complemento y alimentación directa entre las mismas, cada una desde su propia ruta en GitHub.</p>
-  </div>
-</div>
-<div class='fondo-naranja-opuesto'>
-  <div class='pag'>
-    <h1 class='blanco centrado'><i class="icn icn-stampa icn-lg"></i> Stampa</h1>
-    <h6 class='blanco centrado'>¿Qué es Stampa?</h6>
-    <p class='blanco'>Stampa es un proyecto centralizado en la iconografía que se complementa con Pyxis. Es una rama de la función del Framework para desarrollar las herramientas de diseño, externalizada en su propio <a class='blanco' href='#'>repositorio</a> y <a class='blanco' href='#'>documentación</a>.</p>
-    <h6 class='blanco centrado'>Origen</h6>
-    <p class='blanco'>"Stampa", en italiano, significa: "carattere, indole", lo que en español se traduce como "carácter o índole", referenciando la tipografía y lo iconográfico. </p>
-  </div>
-</div>
-<div class='fondo-blanco'>
-  <div class='pag'>
-    <h1 class='rojo-claro centrado'><i class="icn icn-noticias icn-lg"></i> Gamma</h1>
-    <h6 class='rojo-claro centrado'>¿Qué es Gamma?</h6>
-    <p class='gris-oscuro'>Gamma es una plataforma digital de trabajo colaborativo (específicamente almacenado como repositorio en GitHub), donde se registra el avance de las maquetas navegables para el re-diseño del sitio web oficial de la e[ad] ,previamente investigada como una organización compleja de estructuras en base a una jerarquía y oficio reconocibles en su identidad. Es desde la conceptualización de dicha identidad que Gamma sostiene el proceso constructivo-gráfico ulterior a la arquitectura de información y diseño de Wireframes.</p>
-    <h6 class='rojo-claro centrado'>Origen</h6>
-    <p class='gris-oscuro'>El nombre del repositorio "Gamma" constituye una referencia directa con la estrella del mismo nombre que forma parte de la constelación "Pyxis", ubicada en el hemisferio sur entre los paralelos 20º a 40º de latitud sur, cerca de la constelación Puppis, muy próxima al ecuador de nuestra galaxia. Es una de las tres estrellas principales de la constelación, junto a las otras dos: Alpha y Beta.</p>
-    <p class='gris-oscuro'>Esta analogía pretende enlazar de manera creativa los elementos constituyentes del proceso "Atomic-design", donde la identidad se torna relevante si consta formalmente de una imagen coherente y holística (construida metódicamente a través de niveles aesignados) y, en este caso, con un carácter mitológico. </p>
-  </div>
-</div>
-<div class='fondo-naranja'>
-  <div class='pag'>
-    <h1 class='blanco centrado'><i class="icn icn-archivo icn-lg"></i> Archivo Histórico José Vial (en construcción)</h1>
-    <h6 class='blanco centrado'>Acerca de la plataforma</h6>
-    <p class='blanco'>El Archivo Histórico (AHJVA) existe como plataforma digital en Flickr. Sin embargo hoy es un proyecto en paralelo y que forma parte de Gamma, para transformarse en un sitio de diseño autónomo, también con su propia documentación. </p>
-  </div>
-</div>
-<div class='fondo-blanco'>
-  <div class='pag'>
-    <h1 class='damasco-opuesto centrado'><i class="icn icn-travesia icn-lg"></i> Travesías (en construcción)</h1>
-    <h6 class='damasco-opuesto centrado'>Acerca de la plataformae en proceso de rediseño</h6>
-    <p class='damasco-opuesto'>El sitio actual de travesías requiere una renovación en cuanto al diseño de interfaz y principalmente lo que sostiene todo el diseño, su arquitectura de información. Existe una lista de parámetros para medir la eficiencia de un sitio, en base a los requerimientos de contenidos y usabilidad actuales. </p>
+    <hr>
+    <div class='fila'>
+      <h1 class='naranja-opuesto centrado'><i class="icn icn-stampa icn-lg"></i> Stampa</h1>
+      <h6 class='naranja-opuesto  centrado'>¿Qué es Stampa?</h6>
+      <p class='gris'>Stampa es un proyecto centralizado en la iconografía que se complementa con Pyxis. Es una rama de la función del Framework para desarrollar las herramientas de diseño, externalizada en su propio <a class='gris' href='#'>repositorio</a> y <a class='gris' href='#'>documentación</a>.</p>
+      <h6 class='naranja-opuesto centrado'>Origen</h6>
+      <p class='gris'>"Stampa", en italiano, significa: "carattere, indole", lo que en español se traduce como "carácter o índole", referenciando la tipografía y lo iconográfico. </p>
+    </div>
+    <hr>
+    <div class='fila'>
+      <h1 class='rojo-claro centrado'><i class="icn icn-noticias icn-lg"></i> Gamma</h1>
+      <h6 class='rojo-claro centrado'>¿Qué es Gamma?</h6>
+      <p class='gris-oscuro'>Gamma es una plataforma digital de trabajo colaborativo (específicamente almacenado como repositorio en GitHub), donde se registra el avance de las maquetas navegables para el re-diseño del sitio web oficial de la e[ad] ,previamente investigada como una organización compleja de estructuras en base a una jerarquía y oficio reconocibles en su identidad. Es desde la conceptualización de dicha identidad que Gamma sostiene el proceso constructivo-gráfico ulterior a la arquitectura de información y diseño de Wireframes.</p>
+      <h6 class='rojo-claro centrado'>Origen</h6>
+      <p class='gris-oscuro'>El nombre del repositorio "Gamma" constituye una referencia directa con la estrella del mismo nombre que forma parte de la constelación "Pyxis", ubicada en el hemisferio sur entre los paralelos 20º a 40º de latitud sur, cerca de la constelación Puppis, muy próxima al ecuador de nuestra galaxia. Es una de las tres estrellas principales de la constelación, junto a las otras dos: Alpha y Beta.</p>
+      <p class='gris-oscuro'>Esta analogía pretende enlazar de manera creativa los elementos constituyentes del proceso "Atomic-design", donde la identidad se torna relevante si consta formalmente de una imagen coherente y holística (construida metódicamente a través de niveles aesignados) y, en este caso, con un carácter mitológico. </p>
+    </div>
+    <hr>
+    <div class='fila'>
+      <h1 class='naranja centrado'><i class="icn icn-archivo icn-lg"></i> Archivo Histórico José Vial (en construcción)</h1>
+      <h6 class='naranja centrado'>Acerca de la plataforma</h6>
+      <p class='gris'>El Archivo Histórico (AHJVA) existe como plataforma digital en Flickr. Sin embargo hoy es un proyecto en paralelo y que forma parte de Gamma, para transformarse en un sitio de diseño autónomo, también con su propia documentación. </p>
+    </div>
+    <hr>
+    <div class='fila'>
+      <h1 class='burdeo-opuesto centrado'><i class="icn icn-travesia icn-lg"></i> Travesías (en construcción)</h1>
+      <h6 class='burdeo-opuesto centrado'>Acerca de la plataformae en proceso de rediseño</h6>
+      <p class='gris'>El sitio actual de travesías requiere una renovación en cuanto al diseño de interfaz y principalmente lo que sostiene todo el diseño, su arquitectura de información. Existe una lista de parámetros para medir la eficiencia de un sitio, en base a los requerimientos de contenidos y usabilidad actuales. </p>
+    </div>
   </div>
 </div>
 
