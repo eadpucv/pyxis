@@ -26,7 +26,7 @@ pde: type.pde
 </div>-->
 
 <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
-
+    <p>Se hace necesario declarar los roles tipográficos para delimitar las familias, variables, estilos y formas de uso tipográfico.</p>
 
     <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
         <li class="active"><a href="#familias" role="tab" data-toggle="tab">Familias tipográficas</a></li>

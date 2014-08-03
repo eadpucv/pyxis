@@ -4,7 +4,7 @@ title: Pyxis Framework - Grilla
 subtitle: <i class="icn icn-pc"></i> Grilla
 ---
 
-<div class='col-lg-3 col-md-3 oculto-sm oculto-xs'>
+<!--<div class='col-lg-3 col-md-3 oculto-sm oculto-xs'>
 <a name='ancla' id='a'></a>
 <div class='menu-affix alto-affix'>
 <div data-spy="affix" data-offset-top="220">
@@ -19,71 +19,91 @@ subtitle: <i class="icn icn-pc"></i> Grilla
     </ul>
 </div>             
 </div>
-</div>
+</div>  -->
 
-<div class='col-lg-9 col-md-9 col-sm-12 col-xs-12'>
-
-<h2 class='rojo-claro'>Estructura</h2><a name="titulo-uno"></a>
-
+<div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
 <p>La estructura para definir la geometría de la pantalla se basa en un sistema de filas y columnas, con un ancho máximo de 24 columnas en total, para dar un ancho de 1136px en la página contenedora. Los dispositivos mds (lg) tienen un ancho mínimo de 1200px. Los dispositivos sms (md) tienen un ancho mínimo de 992px. Los dispositivos pequeños (sm) tienen un ancho mínimo de 768px, y los dispositivos extra pequeños (xs) tienen un ancho mínimo automático y como los demás, relativo al <i>viewport</i>, desde 480px. según el sistema de medidas fundamentado en <a href='http://getbootstrap.com/css/#grid-options'><i>Bootstrap</i></a> para su desarrollo, exceptuando el ancho máximo de 12 columnas en la diagramación de la página. </p>
 
-<h2 id='ancla-primero' class='rojo-claro'>Ocultar columnas</h5><a name="titulo-dos"></a>
+    <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
+        <li class="active"><a href="#ocultar" role="tab" data-toggle="tab">Ocultar columnas</a></li>
+        <li><a href="#ordenar" role="tab" data-toggle="tab">Ordenar columnas</a></li>
+        <li><a href="#anidacion" role="tab" data-toggle="tab">Anidación y offset</a></li>
+        <li><a href="#sidebar" role="tab" data-toggle="tab">Sidebar</a></li>
+    </ul>
+    <!-- contenido en tabs -->
+    <div class="tab-content">
+        <div class="tab-pane fade in active" id="ocultar">
+            <h2 id='ancla-primero' class='rojo-claro'>Ocultar columnas</h2><a name="titulo-dos"></a>
+            <p>La primera estructura como ejemplo de la grilla pasa de 24 columnas en dispositivos mds y sms a 12 columnas en dispositivos pequeños, y 6 columnas en dispositivos extra pequeños para un diseño responsivo adaptable. 
+            <p><strong>Para ocultar columnas escribe 'oculto-(formato de tamaño)', y recuerda esta clase con la respectiva nomenclatura.</strong> Por ejemplo: </p>
+            <code> 
+                // visible en lg, md, sm pero no en xs
+                &lt;div class='col-lg-12 col-md-12 col-sm-12 oculto-xs'&gt;&lt;/div&gt;
 
-<p>La primera estructura como ejemplo de la grilla pasa de 24 columnas en dispositivos mds y sms a 12 columnas en dispositivos pequeños, y 6 columnas en dispositivos extra pequeños para un diseño responsivo adaptable. 
+                // visible en lg, md, xs pero no en sm
+                &lt;div class='col-lg-12 col-md-12 oculto-sm col-xs-12'&gt;&lt;/div&gt;
 
-<ol>
-	<li><p class='xs'><strong>Para ocultar columnas escribe 'col-oculto-(formato de tamaño)', y recuerda esta clase con la respectiva nomenclatura.</strong></p></li>
-</ol>
+                // visible en sólo en md y oculto en el resto
+                &lt;div class='oculto-lg col-md-12 oculto-sm oculto-xs'&gt;&lt;/div&gt;
+            </code>
+            <p>Adicionalmente existe una manera de nombrar genéricamente si queremos que esté oculto o visible específicamente en alguna pantalla, lg - md - sm ó xs. Esto se aplica como clase extendida por lo tanto se puede mezclar nomenclaturas. Se explica a continuación:</p>
+            <code> 
+                // sólo visible en xs
+                &lt;div class='visible-xs'&gt;&lt;/div&gt;
 
-<div class='fila margen-inferior'> 
-<div class='col-md-1 col-sm-2 col-xs-4 ver'><p>01</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-4</code></div> 
-<div class='col-md-1 col-sm-2 col-xs-4 ver'><p>02</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-4</code></div> 
-<div class='col-md-1 col-sm-2 col-xs-4 ver'><p>03</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-4</code></div> 
-<div class='col-md-1 col-sm-2 col-xs-4 ver'><p>04</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-4</code></div> 
-<div class='col-md-1 col-sm-2 col-xs-4 ver'><p>05</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-4</code></div> 
-<div class='col-md-1 col-sm-2 col-xs-4 ver'><p>06</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-4</code></div> 
-<div class='col-md-1 col-sm-2 oculto-xs ver'><p>07</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-oculto</code></div> 
-<div class='col-md-1 col-sm-2 oculto-xs ver'><p>08</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-oculto</code></div> 
-<div class='col-md-1 col-sm-2 oculto-xs ver'><p>09</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-oculto</code></div> 
-<div class='col-md-1 col-sm-2 oculto-xs ver'><p>10</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-oculto</code></div> 
-<div class='col-md-1 col-sm-2 oculto-xs ver'><p>11</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-oculto</code></div> 
-<div class='col-md-1 col-sm-2 oculto-xs ver'><p>12</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-oculto</code></div> 
-<div class='col-md-1 oculto-sm oculto-xs ver'><p>13</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div> 
-<div class='col-md-1 oculto-sm oculto-xs ver'><p>14</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div> 
-<div class='col-md-1 oculto-sm oculto-xs ver'><p>15</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div> 
-<div class='col-md-1 oculto-sm oculto-xs ver'><p>16</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div> 
-<div class='col-md-1 oculto-sm oculto-xs ver'><p>17</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div> 
-<div class='col-md-1 oculto-sm oculto-xs ver'><p>18</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div> 
-<div class='col-md-1 oculto-sm oculto-xs ver'><p>19</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div> 
-<div class='col-md-1 oculto-sm oculto-xs ver'><p>20</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div> 
-<div class='col-md-1 oculto-sm oculto-xs ver'><p>21</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div> 
-<div class='col-md-1 oculto-sm oculto-xs ver'><p>22</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div> 
-<div class='col-md-1 oculto-sm oculto-xs ver'><p>23</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div> 
-<div class='col-md-1 oculto-sm oculto-xs ver'><p>24</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div> 
-</div>
+                // sólo visible en sm
+                &lt;div class='visible-sm'&gt;&lt;/div&gt;
 
-<script src="https://gist.github.com/JuanGodoy91/9943376.js"></script>
+                // sólo visible en md
+                &lt;div class='visible-md'&gt;&lt;/div&gt;
 
+                // sólo visible en lg
+                &lt;div class='visible-lg'&gt;&lt;/div&gt;
 
-<p>El segundo ejemplo muestra el paso desde las 12 columnas en dispositivos sms, a 6 columnas en dispositivos pequeños y 3 columnas en dispositivos extra pequeños.</p>
+                // sólo visible en md y la cantidad de columnas que ocupará
+                &lt;div class='visible-md col-md-3'&gt;&lt;/div&gt;
+            </code>
 
+            <div class='fila margen-inferior'> 
+            <div class='col-md-1 col-sm-1 col-xs-1 ver'><p>01</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-1</code><code class='vertical'>col-xs-4</code></div> 
+            <div class='col-md-1 col-sm-1 col-xs-1 ver'><p>02</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-1</code><code class='vertical'>col-xs-4</code></div> 
+            <div class='col-md-1 col-sm-1 col-xs-1 ver'><p>03</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-1</code><code class='vertical'>col-xs-4</code></div> 
+            <div class='col-md-1 col-sm-1 col-xs-1 ver'><p>04</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-1</code><code class='vertical'>col-xs-4</code></div> 
+            <div class='col-md-1 col-sm-1 col-xs-1 ver'><p>05</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-1</code><code class='vertical'>col-xs-4</code></div> 
+            <div class='col-md-1 col-sm-1 col-xs-1 ver'><p>06</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-1</code><code class='vertical'>col-xs-4</code></div> 
+            <div class='col-md-1 col-sm-1 col-xs-1 ver'><p>07</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-1</code><code class='vertical'>col-xs-1</code></div> 
+            <div class='col-md-1 col-sm-1 col-xs-1 ver'><p>08</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-1</code><code class='vertical'>col-xs-1</code></div> 
+            <div class='col-md-1 col-sm-1 col-xs-1 ver'><p>09</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-1</code><code class='vertical'>col-xs-1</code></div> 
+            <div class='col-md-1 col-sm-1 col-xs-1 ver'><p>10</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-1</code><code class='vertical'>col-xs-1</code></div> 
+            <div class='col-md-1 col-sm-1 col-xs-1 ver'><p>11</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-1</code><code class='vertical'>col-xs-1</code></div> 
+            <div class='col-md-1 col-sm-1 col-xs-1 ver'><p>12</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-1</code><code class='vertical'>col-xs-1</code></div> 
+            </div>
+            <script src="https://gist.github.com/JuanGodoy91/9943376.js"></script>
+            <p>El segundo ejemplo muestra el paso desde las 12 columnas en dispositivos md, a 6 columnas en dispositivos pequeños (sm) y 3 columnas en dispositivos extra pequeños (xs).</p>
+            <div class='fila margen-inferior'>
+            <div class='col-md-1 col-sm-2 col-xs-8 ver'><p>01</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-4</code><code class='vertical'>col-xs-8</code></div>
+            <div class='col-md-1 col-sm-2 col-xs-8 ver'><p>02</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-4</code><code class='vertical'>col-xs-8</code></div>
+            <div class='col-md-1 col-sm-2 col-xs-8 ver'><p>03</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-4</code><code class='vertical'>col-xs-8</code></div>
+            <div class='col-md-1 col-sm-2 oculto-xs ver'><p>04</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-4</code><code class='vertical'>col-xs-oculto</code></div>
+            <div class='col-md-1 col-sm-2 oculto-xs ver'><p>05</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-4</code><code class='vertical'>col-xs-oculto</code></div>
+            <div class='col-md-1 col-sm-2 oculto-xs ver'><p>06</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-4</code><code class='vertical'>col-xs-oculto</code></div>
+            <div class='col-md-1 oculto-sm oculto-xs ver'><p>07</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+            <div class='col-md-1 oculto-sm oculto-xs ver'><p>08</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+            <div class='col-md-1 oculto-sm oculto-xs ver'><p>09</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+            <div class='col-md-1 oculto-sm oculto-xs ver'><p>10</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+            <div class='col-md-1 oculto-sm oculto-xs ver'><p>11</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+            <div class='col-md-1 oculto-sm oculto-xs ver'><p>12</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
+            </div>
 
-<div class='fila margen-inferior'>
-<div class='col-md-2 col-sm-4 col-xs-8 ver'><p>01</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-4</code><code class='vertical'>col-xs-8</code></div>
-<div class='col-md-2 col-sm-4 col-xs-8 ver'><p>02</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-4</code><code class='vertical'>col-xs-8</code></div>
-<div class='col-md-2 col-sm-4 col-xs-8 ver'><p>03</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-4</code><code class='vertical'>col-xs-8</code></div>
-<div class='col-md-2 col-sm-4 oculto-xs ver'><p>04</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-4</code><code class='vertical'>col-xs-oculto</code></div>
-<div class='col-md-2 col-sm-4 oculto-xs ver'><p>05</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-4</code><code class='vertical'>col-xs-oculto</code></div>
-<div class='col-md-2 col-sm-4 oculto-xs ver'><p>06</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-4</code><code class='vertical'>col-xs-oculto</code></div>
-<div class='col-md-2 oculto-sm oculto-xs ver'><p>07</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
-<div class='col-md-2 oculto-sm oculto-xs ver'><p>08</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
-<div class='col-md-2 oculto-sm oculto-xs ver'><p>09</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
-<div class='col-md-2 oculto-sm oculto-xs ver'><p>10</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
-<div class='col-md-2 oculto-sm oculto-xs ver'><p>11</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
-<div class='col-md-2 oculto-sm oculto-xs ver'><p>12</p><code class='vertical'>col-md-2</code><code class='vertical'>col-sm-oculto</code><code class='vertical'>col-xs-oculto</code></div>
-</div>
-
-<script src='https://gist.github.com/JuanGodoy91/9943657.js'></script>
+            <script src='https://gist.github.com/JuanGodoy91/9943657.js'></script>
+        </div>
+        <div class="tab-pane fade" id="ordenar">
+        </div>
+        <div class="tab-pane fade" id="anidacion">
+        </div>
+        <div class="tab-pane fade" id="sidebar">
+        </div>
+    </div>
 
 <h2 class='rojo-claro'>Ordenar de columnas</h2><a name="titulo-tres"></a>
 
