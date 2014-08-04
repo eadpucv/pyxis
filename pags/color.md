@@ -33,47 +33,47 @@ subtitle: <i class="icn icn-lapiz"></i> Color
             <p> A continuación se muestran a modo de lista los colores escogidos, pasando desde los tonos grises y luego los cromáticos</p>
             <div class='col-md-12'>
                 <h3>Grises</h3>
-                <div class='fondo-negro-oscuro'><code class='codigo-color'>@negro-oscuro / rgba(25, 26, 25, 1) / #191a19</code></div>
-                <div class='fondo-negro'><code class='codigo-color'>@negro / rgba(43, 44, 42, 1) / #2b2c2a</code></div>
-                <div class='fondo-negro-claro'><code class='codigo-color'>@negro-claro / rgba(69, 71, 71, 1) / #454747</code></div>
-                <div class='fondo-pizarra'><code class='codigo-color'>@pizarra / rgba(25, 26, 25, 1) / #191a19</code></div>
-                <div class='fondo-pizarra-claro'><code class='codigo-color'>@pizarra-claro / rgba(25, 26, 25, 1) / #191a19</code></div>
-                <div class='fondo-gris-oscuro'><code class='codigo-color'>@gris-oscuro / rgba(164, 164, 162, 1) / #a4a4a2</code></div>
-                <div class='fondo-gris'><code class='codigo-color'>@gris / rgba(193, 194, 194, 1) / #c1c2c2</code></div>
-                <div class='fondo-gris-claro'><code class='codigo-color'>@gris-claro / rgba(226, 226, 226, 1) / #e2e2e2</code></div>
-                <div class='fondo-blanco-gris'><code class='codigo-color'>@gris-blanco / rgba(226, 226, 226, 1) / #e2e2e2</code></div>
-                <div class='fondo-blanco'><code class='codigo-color'>@blanco / rgba(255, 255, 255, 1) / #fff</code></div>
+                <code class='codigo-color'>@negro-oscuro / rgba(25, 26, 25, 1) / #191a19</code><div class='caja-color fondo-negro-oscuro'></div>
+                <code class='codigo-color'>@negro / rgba(43, 44, 42, 1) / #2b2c2a</code><div class='caja-color fondo-negro'></div>
+                <code class='codigo-color'>@negro-claro / rgba(69, 71, 71, 1) / #454747</code><div class='caja-color fondo-negro-claro'></div>
+                <code class='codigo-color'>@pizarra / rgba(25, 26, 25, 1) / #191a19</code><div class='caja-color fondo-pizarra'></div>
+                <code class='codigo-color'>@pizarra-claro / rgba(25, 26, 25, 1) / #191a19</code><div class='caja-color fondo-pizarra-claro'></div>
+                <code class='codigo-color'>@gris-oscuro / rgba(164, 164, 162, 1) / #a4a4a2</code><div class='caja-color fondo-gris-oscuro'></div>
+                <code class='codigo-color'>@gris / rgba(193, 194, 194, 1) / #c1c2c2</code><div class='caja-color fondo-gris'></div>
+                <code class='codigo-color'>@gris-claro / rgba(226, 226, 226, 1) / #e2e2e2</code><div class='caja-color fondo-gris-claro'></div>
+                <code class='codigo-color'>@gris-blanco / rgba(226, 226, 226, 1) / #e2e2e2</code><div class='caja-color fondo-blanco-gris'></div>
+                <code class='codigo-color'>@blanco / rgba(255, 255, 255, 1) / #fff</code><div class='caja-color fondo-blanco'></div>
                 <h3>Colores iniciales</h3>
-                <div class='fondo-oliva-oscuro'><code class='codigo-color'>@negro-oscuro / rgba(25, 26, 25, 1) / #191a19</code></div>
-                <div class='fondo-oliva'><code class='codigo-color'>@negro / rgba(43, 44, 42, 1) / #2b2c2a</code></div>
-                <div class='fondo-oliva-claro'><code class='codigo-color'>@negro-claro / rgba(69, 71, 71, 1) / #454747</code></div>
-                <div class='fondo-beige-oscuro'><code class='codigo-color'>@gris-oscuro / rgba(164, 164, 162, 1) / #a4a4a2</code></div>
-                <div class='fondo-beige'><code class='codigo-color'>@gris / rgba(193, 194, 194, 1) / #c1c2c2</code></div>
-                <div class='fondo-beige-claro'><code class='codigo-color'>@gris-claro / rgba(226, 226, 226, 1) / #e2e2e2</code></div>
-                <div class='fondo-damasco-oscuro'><code class='codigo-color'>@negro-oscuro / rgba(25, 26, 25, 1) / #191a19</code></div>
-                <div class='fondo-damasco'><code class='codigo-color'>@negro / rgba(43, 44, 42, 1) / #2b2c2a</code></div>
-                <div class='fondo-damasco-claro'><code class='codigo-color'>@negro-claro / rgba(69, 71, 71, 1) / #454747</code></div>
-                <div class='fondo-naranja-oscuro'><code class='codigo-color'>@gris-oscuro / rgba(164, 164, 162, 1) / #a4a4a2</code></div>
-                <div class='fondo-naranja'><code class='codigo-color'>@gris / rgba(193, 194, 194, 1) / #c1c2c2</code></div>
-                <div class='fondo-naranja-claro'><code class='codigo-color'>@gris-claro / rgba(226, 226, 226, 1) / #e2e2e2</code></div>
-                <div class='fondo-cafe-oscuro'><code class='codigo-color'>@negro-oscuro / rgba(25, 26, 25, 1) / #191a19</code></div>
-                <div class='fondo-cafe'><code class='codigo-color'>@negro / rgba(43, 44, 42, 1) / #2b2c2a</code></div>
-                <div class='fondo-cafe-claro'><code class='codigo-color'>@negro-claro / rgba(69, 71, 71, 1) / #454747</code></div>
-                <div class='fondo-burdeo-oscuro'><code class='codigo-color'>@gris-oscuro / rgba(164, 164, 162, 1) / #a4a4a2</code></div>
-                <div class='fondo-burdeo'><code class='codigo-color'>@gris / rgba(193, 194, 194, 1) / #c1c2c2</code></div>
-                <div class='fondo-burdeo-claro'><code class='codigo-color'>@gris-claro / rgba(226, 226, 226, 1) / #e2e2e2</code></div>
-                <div class='fondo-rojo-oscuro'><code class='codigo-color'>@negro-oscuro / rgba(25, 26, 25, 1) / #191a19</code></div>
-                <div class='fondo-rojo'><code class='codigo-color'>@negro / rgba(43, 44, 42, 1) / #2b2c2a</code></div>
-                <div class='fondo-rojo-claro'><code class='codigo-color'>@negro-claro / rgba(69, 71, 71, 1) / #454747</code></div>
+                <code class='codigo-color'>@negro-oscuro / rgba(25, 26, 25, 1) / #191a19</code><div class='caja-color fondo-oliva-oscuro'></div>
+                <code class='codigo-color'>@negro / rgba(43, 44, 42, 1) / #2b2c2a</code><div class='caja-color fondo-oliva'></div>
+                <code class='codigo-color'>@negro-claro / rgba(69, 71, 71, 1) / #454747</code><div class='caja-color fondo-oliva-claro'></div>
+                <code class='codigo-color'>@gris-oscuro / rgba(164, 164, 162, 1) / #a4a4a2</code><div class='caja-color fondo-beige-oscuro'></div>
+                <code class='codigo-color'>@gris / rgba(193, 194, 194, 1) / #c1c2c2</code><div class='caja-color fondo-beige'></div>
+                <code class='codigo-color'>@gris-claro / rgba(226, 226, 226, 1) / #e2e2e2</code><div class='caja-color fondo-beige-claro'></div>
+                <code class='codigo-color'>@negro-oscuro / rgba(25, 26, 25, 1) / #191a19</code><div class='caja-color fondo-damasco-oscuro'></div>
+                <code class='codigo-color'>@negro / rgba(43, 44, 42, 1) / #2b2c2a</code><div class='caja-color fondo-damasco'></div>
+                <code class='codigo-color'>@negro-claro / rgba(69, 71, 71, 1) / #454747</code><div class='caja-color fondo-damasco-claro'></div>
+                <code class='codigo-color'>@gris-oscuro / rgba(164, 164, 162, 1) / #a4a4a2</code><div class='caja-color fondo-naranja-oscuro'></div>
+                <code class='codigo-color'>@gris / rgba(193, 194, 194, 1) / #c1c2c2</code><div class='caja-color fondo-naranja'></div>
+                <code class='codigo-color'>@gris-claro / rgba(226, 226, 226, 1) / #e2e2e2</code><div class='caja-color fondo-naranja-claro'></div>
+                <code class='codigo-color'>@negro-oscuro / rgba(25, 26, 25, 1) / #191a19</code><div class='caja-color fondo-cafe-oscuro'></div>
+                <code class='codigo-color'>@negro / rgba(43, 44, 42, 1) / #2b2c2a</code><div class='caja-color fondo-cafe'></div>
+                <code class='codigo-color'>@negro-claro / rgba(69, 71, 71, 1) / #454747</code><div class='caja-color fondo-cafe-claro'></div>
+                <code class='codigo-color'>@gris-oscuro / rgba(164, 164, 162, 1) / #a4a4a2</code><div class='caja-color fondo-burdeo-oscuro'></div>
+                <code class='codigo-color'>@gris / rgba(193, 194, 194, 1) / #c1c2c2</code><div class='caja-color fondo-burdeo'></div>
+                <code class='codigo-color'>@gris-claro / rgba(226, 226, 226, 1) / #e2e2e2</code><div class='caja-color fondo-burdeo-claro'></div>
+                <code class='codigo-color'>@negro-oscuro / rgba(25, 26, 25, 1) / #191a19</code><div class='caja-color fondo-rojo-oscuro'></div>
+                <code class='codigo-color'>@negro / rgba(43, 44, 42, 1) / #2b2c2a</code><div class='caja-color fondo-rojo'></div>
+                <code class='codigo-color'>@negro-claro / rgba(69, 71, 71, 1) / #454747</code><div class='caja-color fondo-rojo-claro'></div>
                 <h3>Colores adicionales</h3>
-                <div class='fondo-rojo-opuesto'><code class='codigo-color'>@negro / rgba(43, 44, 42, 1) / #2b2c2a</code></div>
-                <div class='fondo-burdeo-opuesto'><code class='codigo-color'>@negro-claro / rgba(69, 71, 71, 1) / #454747</code></div>
-                <div class='fondo-cafe-opuesto'><code class='codigo-color'>@gris-oscuro / rgba(164, 164, 162, 1) / #a4a4a2</code></div>
-                <div class='fondo-naranja-opuesto'><code class='codigo-color'>@gris / rgba(193, 194, 194, 1) / #c1c2c2</code></div>
-                <div class='fondo-damasco-opuesto'><code class='codigo-color'>@gris-claro / rgba(226, 226, 226, 1) / #e2e2e2</code></div>
-                <div class='fondo-beige-opuesto'><code class='codigo-color'>@negro-oscuro / rgba(25, 26, 25, 1) / #191a19</code></div>
-                <div class='fondo-oliva-opuesto'><code class='codigo-color'>@negro / rgba(43, 44, 42, 1) / #2b2c2a</code></div>
-                <div class='fondo-ahuesado'><code class='codigo-color'>@negro-claro / rgba(69, 71, 71, 1) / #454747</code></div>
+                <code class='codigo-color'>@negro / rgba(43, 44, 42, 1) / #2b2c2a</code><div class='caja-color fondo-rojo-opuesto'></div>
+                <code class='codigo-color'>@negro-claro / rgba(69, 71, 71, 1) / #454747</code><div class='caja-color fondo-burdeo-opuesto'></div>
+                <code class='codigo-color'>@gris-oscuro / rgba(164, 164, 162, 1) / #a4a4a2</code><div class='caja-color fondo-cafe-opuesto'></div>
+                <code class='codigo-color'>@gris / rgba(193, 194, 194, 1) / #c1c2c2</code><div class='caja-color fondo-naranja-opuesto'></div>
+                <code class='codigo-color'>@gris-claro / rgba(226, 226, 226, 1) / #e2e2e2</code><div class='caja-color fondo-damasco-opuesto'></div>
+                <code class='codigo-color'>@negro-oscuro / rgba(25, 26, 25, 1) / #191a19</code><div class='caja-color fondo-beige-opuesto'></div>
+                <code class='codigo-color'>@negro / rgba(43, 44, 42, 1) / #2b2c2a</code><div class='caja-color fondo-oliva-opuesto'></div>
+                <code class='codigo-color'>@negro-claro / rgba(69, 71, 71, 1) / #454747</code><div class='caja-color fondo-ahuesado'></div>
             </div>
         </div>
         <div class="tab-pane fade in active" id="paleta-adicional">

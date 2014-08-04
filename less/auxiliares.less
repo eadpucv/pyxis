@@ -268,6 +268,37 @@ width: auto;
     margin: 5px 0;
 }
 
+.caja-color {
+    display: block;
+    float: right;
+    height: 20px;
+    margin: 0;
+    width: 60%;
+}
+
+.caja-icono {
+    width: 90px;
+    height: 90px;
+    background-color: rgba(226, 226, 226, 1);
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+    float: left;
+}
+
+.caja-icono p {
+    font-size: 10px;
+    font-weight: 400;
+    margin: 0;
+    line-height: 13px;
+}
+
+.caja-icono:last-child{
+    margin-bottom: 60px;
+}
+
 // Estilos auxiliares
 .borde{
         border: 1px solid fade(@gris-claro, 40);
@@ -388,3 +419,31 @@ overflow: hidden;
     filter: ~"alpha(opacity=@{opacity-ie})";
 }
 
+//  Responsive adaptable
+
+  //  Extra-small screen / Phones
+  @media (min-width: @screen-xs) and (max-width: @screen-xs-max){
+
+    .caja-icono {
+    display: block;
+    float: none;
+    width:90%;
+    height: auto;
+    background-color: rgba(226, 226, 226, 1);
+    display: block;
+    margin: 5px 0px;
+    padding: 5px;
+    float: left;
+    }
+
+    .caja-icono p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 10px;
+    }
+
+    .caja-icono i{
+        font-size: 21px;
+        line-height: 10px;  
+    }
+}
