@@ -34,13 +34,13 @@ subtitle: <i class="icn icn-pc"></i> Grilla
     <div class="tab-content">
         <div class="tab-pane fade in active" id="sintaxis">
             <h2 class='rojo-claro'>Sintaxis de estructura</h2>
-            <p>Hay que comprender que las columnas traen una separación interna (gutter) que hace que los bloques estén uno al lado de otro pero sus contenidos tengan una separación de 30px. De esta forma, todos los contenidos dentro de las columnas estarán identados con 15px hacia adentro. Esto va definiendo la alineación vertical de la página.</p>
+            <p>Hay que comprender que las columnas traen una separación interna (gutter) que hace que los bloques estén uno al lado de otro pero sus contenidos tengan una separación de 30px. De esta forma, todos los contenidos dentro de las columnas estarán indentados con 15px hacia adentro. Esto va definiendo la alineación vertical de la página.</p>
             <p>Sin embargo, existe una sintaxis que nos permite eliminar la separación interna y así mantener los bloques alineados hacia el borde de su contenedor. Al insertas las columnas dentro de una fila nos da esta posibilidad. Hay que tener en cuenta de que esto nos puede generar problemas si es que no hay otro elemento que contenga a la fila, ya que se creará un scroll horizontal, puesto que las columnas tomarán márgenes negativos y se saldrán de su contenedor natural.</p>
             <code>
-                // Sintaxis de columnas con separación interna, identación (con gutter)
+                // Sintaxis de columnas con separación interna, indentación (con gutter)
                 &lt;div class='col-md-12'>&lt;/div>
 
-                // Sintaxis de columnas sin separación interna, sin identación (sin gutter)
+                // Sintaxis de columnas sin separación interna, sin indentación (sin gutter)
                 &lt;div class='fila'>
                     &lt;div class='col-md-12'>
                     &lt;/div>
@@ -78,7 +78,7 @@ subtitle: <i class="icn icn-pc"></i> Grilla
                 // sólo visible en md y la cantidad de columnas que ocupará
                 &lt;div class='visible-md col-md-3'&gt;&lt;/div&gt;
             </code>
-
+            
             <div class='fila margen-inferior'> 
                 <div class='col-lg-1 col-md-1 col-sm-1 col-xs-1 ver'><p>01</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-1</code><code class='vertical'>col-xs-4</code></div> 
                 <div class='col-lg-1 col-md-1 col-sm-1 col-xs-1 ver'><p>02</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-1</code><code class='vertical'>col-xs-4</code></div> 
@@ -93,20 +93,23 @@ subtitle: <i class="icn icn-pc"></i> Grilla
                 <div class='col-lg-1 col-md-1 col-sm-1 col-xs-1 ver'><p>11</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-1</code><code class='vertical'>col-xs-1</code></div> 
                 <div class='col-lg-1 col-md-1 col-sm-1 col-xs-1 ver'><p>12</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-1</code><code class='vertical'>col-xs-1</code></div> 
             </div>
-            <code>
-                &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
-                &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
-                &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
-                &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
-                &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
-                &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
-                &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
-                &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
-                &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
-                &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
-                &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
-                &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
-            </code>
+            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla1">ver código</a> 
+            <div id="ver-codigo-grilla1" class="collapse">
+                <code>
+                    &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+                    &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+                    &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+                    &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+                    &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+                    &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+                    &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+                    &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+                    &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+                    &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+                    &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+                    &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
+                </code>
+            </div>
             <p>El segundo ejemplo muestra el paso desde las 12 columnas en dispositivos md, a 6 columnas en dispositivos pequeños (sm) y 3 columnas en dispositivos extra pequeños (xs).</p>
             <div class='fila margen-inferior'>
                 <div class='col-md-1 col-sm-2 col-xs-8 ver'><p>01</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-8</code></div>
@@ -122,20 +125,23 @@ subtitle: <i class="icn icn-pc"></i> Grilla
                 <div class='col-md-1 oculto-sm oculto-xs ver'><p>11</p><code class='vertical'>col-md-1</code><code class='vertical'>oculto-sm</code><code class='vertical'>oculto-xs</code></div>
                 <div class='col-md-1 oculto-sm oculto-xs ver'><p>12</p><code class='vertical'>col-md-1</code><code class='vertical'>oculto-sm</code><code class='vertical'>oculto-xs</code></div>
             </div>
-            <code>
-                &lt;div class='col-md-1 col-sm-2 col-xs-8'>&lt;/div>
-                &lt;div class='col-md-1 col-sm-2 col-xs-8'>&lt;/div>
-                &lt;div class='col-md-1 col-sm-2 col-xs-8'>&lt;/div>
-                &lt;div class='col-md-1 col-sm-2 oculto-xs'>&lt;/div>
-                &lt;div class='col-md-1 col-sm-2 oculto-xs'>&lt;/div>
-                &lt;div class='col-md-1 col-sm-2 oculto-xs'>&lt;/div>
-                &lt;div class='col-md-1 oculto-sm oculto-xs'>&lt;/div>
-                &lt;div class='col-md-1 oculto-sm oculto-xs'>&lt;/div>
-                &lt;div class='col-md-1 oculto-sm oculto-xs'>&lt;/div>
-                &lt;div class='col-md-1 oculto-sm oculto-xs'>&lt;/div>
-                &lt;div class='col-md-1 oculto-sm oculto-xs'>&lt;/div>
-                &lt;div class='col-md-1 oculto-sm oculto-xs'>&lt;/div>
-            </code>
+            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla2">ver código</a> 
+            <div id="ver-codigo-grilla2" class="collapse">
+                <code>
+                    &lt;div class='col-md-1 col-sm-2 col-xs-8'>&lt;/div>
+                    &lt;div class='col-md-1 col-sm-2 col-xs-8'>&lt;/div>
+                    &lt;div class='col-md-1 col-sm-2 col-xs-8'>&lt;/div>
+                    &lt;div class='col-md-1 col-sm-2 oculto-xs'>&lt;/div>
+                    &lt;div class='col-md-1 col-sm-2 oculto-xs'>&lt;/div>
+                    &lt;div class='col-md-1 col-sm-2 oculto-xs'>&lt;/div>
+                    &lt;div class='col-md-1 oculto-sm oculto-xs'>&lt;/div>
+                    &lt;div class='col-md-1 oculto-sm oculto-xs'>&lt;/div>
+                    &lt;div class='col-md-1 oculto-sm oculto-xs'>&lt;/div>
+                    &lt;div class='col-md-1 oculto-sm oculto-xs'>&lt;/div>
+                    &lt;div class='col-md-1 oculto-sm oculto-xs'>&lt;/div>
+                    &lt;div class='col-md-1 oculto-sm oculto-xs'>&lt;/div>
+                </code>
+            </div>
         </div>
         <div class="tab-pane fade" id="ordenar">
             <h2 class='rojo-claro'>Ordenar de columnas en función de diagramación</h2>
@@ -148,14 +154,17 @@ subtitle: <i class="icn icn-pc"></i> Grilla
                 <div class='col-md-2 col-sm-3 col-xs-6 ver'><p>05</p><code class='vertical'>col-md-4</code><code class='vertical'>col-sm-6</code><code class='vertical'>col-xs-12</code></div>
                 <div class='col-md-2 col-sm-3 col-xs-6 ver'><p>06</p><code class='vertical'>col-md-4</code><code class='vertical'>col-sm-6</code><code class='vertical'>col-xs-12</code></div>
             </div>
-            <code>
-                &lt;div class='col-md-2 col-sm-6 col-xs-12'>&lt;/div>
-                &lt;div class='col-md-2 col-sm-6 col-xs-12'>&lt;/div>
-                &lt;div class='col-md-2 col-sm-3 col-xs-6'>&lt;/div>
-                &lt;div class='col-md-2 col-sm-3 col-xs-6'>&lt;/div>
-                &lt;div class='col-md-2 col-sm-3 col-xs-6'>&lt;/div>
-                &lt;div class='col-md-2 col-sm-3 col-xs-6'>&lt;/div>
-            </code>
+            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla3">ver código</a> 
+            <div id="ver-codigo-grilla3" class="collapse">
+                <code>
+                    &lt;div class='col-md-2 col-sm-6 col-xs-12'>&lt;/div>
+                    &lt;div class='col-md-2 col-sm-6 col-xs-12'>&lt;/div>
+                    &lt;div class='col-md-2 col-sm-3 col-xs-6'>&lt;/div>
+                    &lt;div class='col-md-2 col-sm-3 col-xs-6'>&lt;/div>
+                    &lt;div class='col-md-2 col-sm-3 col-xs-6'>&lt;/div>
+                    &lt;div class='col-md-2 col-sm-3 col-xs-6'>&lt;/div>
+                </code>
+            </div>
             <h2 class='rojo-claro'>Centro y secciones laterales</h2>
             <p>Estructura donde el contenido se muestra de manera central, con 12 columnas en los dispositivos mayores, para luego pasar en <i>xs</i> a 24 columnas junto con el resto de las filas.</p>
             <div class='fila margen-inferior'>
@@ -169,19 +178,22 @@ subtitle: <i class="icn icn-pc"></i> Grilla
             <div class='fila margen-inferior'>
                 <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 ver'><p>05 (Footer)</p><code class='vertical'>col-md-12</code><code class='vertical'>col-sm-12</code><code class='vertical'>col-xs-12</code></div>
             </div>
-            <code>
-                &lt;div class='fila'>
-                    &lt;div class='col-md-12 col-sm-12 col-xs-12'>&lt;/div>
-                &lt;/div>
-                &lt;div class='fila'>
-                    &lt;div class='col-md-3 col-sm-3 col-xs-12'>&lt;/div>
-                    &lt;div class='col-md-6 col-sm-6 col-xs-12'>&lt;/div>
-                    &lt;div class='col-md-3 col-sm-3 col-xs-12'>&lt;/div>
-                &lt;/div>
-                &lt;div class='fila'>
-                    &lt;div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>&lt;/div>
-                &lt;/div>
-            </code>
+            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla4">ver código</a> 
+            <div id="ver-codigo-grilla4" class="collapse">
+                <code>
+                    &lt;div class='fila'>
+                        &lt;div class='col-md-12 col-sm-12 col-xs-12'>&lt;/div>
+                    &lt;/div>
+                    &lt;div class='fila'>
+                        &lt;div class='col-md-3 col-sm-3 col-xs-12'>&lt;/div>
+                        &lt;div class='col-md-6 col-sm-6 col-xs-12'>&lt;/div>
+                        &lt;div class='col-md-3 col-sm-3 col-xs-12'>&lt;/div>
+                    &lt;/div>
+                    &lt;div class='fila'>
+                        &lt;div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>&lt;/div>
+                    &lt;/div>
+                </code>
+            </div>
         </div>
         <div class="tab-pane fade" id="anidacion">
             <h2 class='rojo-claro'>Anidación y Offset</h2><a name="titulo-cinco"></a>
@@ -200,22 +212,25 @@ subtitle: <i class="icn icn-pc"></i> Grilla
             <div class='fila margen-inferior'> 
                 <div class='col-md-12 col-sm-12 col-xs-12 ver'><p>05 (Footer)</p><code class='vertical'>col-md-12</code><code class='vertical'>col-sm-12</code><code class='vertical'>col-xs-12</code></div>
             </div>
-            <code>
-                &lt;div class='fila'>
-                    &lt;div class='col-md-12 col-sm-12 col-xs-12'>
-                        &lt;div  class='fila'>   
-                            &lt;div class='col-md-10 col-md-offset-2 col-sm-1 col-sm-offset-1 col-xs-11 col-xs-offset-1'>&lt;/div>
-                        &lt;/div>
-                    &lt;/div>
-                &lt;/div> 
-                &lt;div class='fila'> 
-                    &lt;div class='col-md-3 col-sm-3 col-xs-12'>&lt;/div>
-                    &lt;div class='col-md-9 col-sm-9 col-xs-12'>&lt;/div>  
-                &lt;/div>
-                &lt;div class='fila'> 
-                    &lt;div class='col-md-12 col-sm-12 col-xs-12'>&lt;/div>
-                &lt;/div>
-            </code>
+            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla5">ver código</a> 
+            <div id="ver-codigo-grilla5" class="collapse">
+                <code>
+&lt;div class='fila'>
+    &lt;div class='col-md-12 col-sm-12 col-xs-12'>
+        &lt;div  class='fila'>   
+            &lt;div class='col-md-10 col-md-offset-2 col-sm-1 col-sm-offset-1 col-xs-11 col-xs-offset-1'>&lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div> 
+&lt;div class='fila'> 
+    &lt;div class='col-md-3 col-sm-3 col-xs-12'>&lt;/div>
+    &lt;div class='col-md-9 col-sm-9 col-xs-12'>&lt;/div>  
+&lt;/div>
+&lt;div class='fila'> 
+    &lt;div class='col-md-12 col-sm-12 col-xs-12'>&lt;/div>
+&lt;/div>
+                </code>
+            </div>
             <h2 class='rojo-claro'>Offset</h2>
 
             <p>Ejemplo de <i>offset</i>, la idea es utilizarlo sólo cuando se quiera alinear un bloque sin nada que lo ajuste. Lo ideal no es abusar de offset puesto que es un procedimiento engorroso y comienza a ensuciar el concepto de estructura. Esta forma de construir la estructura puede servir para elaborar elementos aside, sidebars, secciones, etc.</p>
@@ -230,6 +245,8 @@ subtitle: <i class="icn icn-pc"></i> Grilla
             <div class='fila margen-inferior'>
                 <div class='col-lg-10 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0 ver'><p>05 (Footer)</p><code class='vertical'>col-md-10</code><code class='vertical'>col-md-offset-1</code><code class='vertical'>col-sm-10</code><code class='vertical'>col-sm-offset-1</code><code class='vertical'>col-xs-12</code><code class='vertical'>col-xs-offset-0</code></div>
             </div>
+            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla6">ver código</a> 
+            <div id="ver-codigo-grilla6" class="collapse">
             <code>
 &lt;div class='fila'>
     &lt;div class='col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-2'>&lt;/div>
@@ -244,6 +261,7 @@ subtitle: <i class="icn icn-pc"></i> Grilla
     &lt;/div>
 &lt;/div>
             </code>
+        </div>
         </div>
     </div>
 </div>

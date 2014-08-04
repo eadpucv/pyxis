@@ -59,8 +59,8 @@ subtitle: <i class="icn icn-palabra"></i> Javascript
             </div>
         </div>
       </div>
-      <a class="btn btn-danger" data-toggle="collapse" data-target="#ver-codigo-modal">ver código</a> 
-      <div id="ver-codigo-modal" class="collapse">
+      <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-modal">ver código</a> 
+      <div id="ver-codigo-modal" class="collapse pag-javascript">
         <h4>Archivos necesarios</h4>
         <code>
           &lt;script src="js/jquery.js"&gt;&lt;/script&gt;
@@ -94,14 +94,21 @@ subtitle: <i class="icn icn-palabra"></i> Javascript
           <li><a data-toggle="tooltip" data-toggle="tooltip" data-original-title="Este es un tooltip">Tooltip funcionando</a></li>
       </ul> 
       <p>El tooltip es una pequeña señal de ayuda que funciona al situar el cursor sobre algún elemento del DOM. Despliega la información del atributo "title" del elemento HTML y puede dar cuenta de una mayor contextualización hacia el usuario</p>
-      <a class="btn btn-danger" data-toggle="collapse" data-target="#ver-codigo-tooltip">ver código</a> 
-      <div id="ver-codigo-tooltip" class="collapse">
+      <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-tooltip">ver código</a> 
+      <div id="ver-codigo-tooltip" class="collapse pag-javascript">
         <h4>Archivos necesarios</h4>
-        <script src="https://gist.github.com/IdarGonzalez/9631721.js"></script>
+        <code>
+          &lt;script src="js/jquery.js">&lt;/script>
+          &lt;script src="js/tooltip.js">&lt;/script>
+        </code>
         <h4>Codigo</h4>
-        <script src="https://gist.github.com/IdarGonzalez/9631808.js"></script>
+        <code>
+  &lt;a data-toggle="tooltip" href="#" data-toggle="tooltip" title="Esto es un tooltip">Elemento con Tooltip&lt;/a>
+        </code>
         <p>Luego, por un tema de performance, debes inicializar los tooltip, el siguiente codigo selecciona e inicializa todos los elementos "a" que se encuentren dentro del elemento con clase "tooltip-demo" que tengan el atributo data-toggle=tooltip </p>
-        <script src="https://gist.github.com/IdarGonzalez/9631822.js"></script>
+        <code>
+          &lt;script> $('.tooltip-demo').tooltip({selector: "a[data-toggle=tooltip]"});&lt;/script>
+        </code>
       </div>
     </div>
     <div class="tab-pane fade" id="popover">
@@ -109,14 +116,21 @@ subtitle: <i class="icn icn-palabra"></i> Javascript
       <h4>Ejemplo</h4>
       <a class="btn" id="popover-test" title="" data-content="Este es un popover..." data-toggle="popover" data-original-title="Titulo de un popover">Popover</a>
       <p>El popover es una pequeña ventana de ayuda que funciona al situar el cursor sobre algún elemento del DOM. Despliega la información del atributo "title" del elemento HTML. A diferencia del tooltip, éste debe ser cliqueado para gatillar la interacción.</p>
-      <a class="btn btn-danger" data-toggle="collapse" data-target="#ver-codigo-popover">ver código</a> 
-      <div id="ver-codigo-popover" class="collapse">
+      <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-popover">ver código</a> 
+      <div id="ver-codigo-popover" class="collapse pag-javascript">
         <h4>Archivos necesarios</h4> 
-        <script src="https://gist.github.com/IdarGonzalez/9631854.js"></script>
+        <code>
+           &lt;script src="js/jquery.js"> &lt;/script>
+           &lt;script src="js/popover.js"> &lt;/script>
+        </code>
         <h4>Ejemplo</h4>
-        <script src="https://gist.github.com/IdarGonzalez/9631878.js"></script>
+        <code>
+&lt;a class="btn" id="popover-test" data-content="Este es un popover..." data-toggle="popover" data-original-title="Titulo de un popover">Elemento con Popover&lt;/a>
+        </code>
         <p>Luego, por un tema de performance, debes inicializar los popovers (similiar a lo hecho con los tooltip), el siguiente codigo selecciona el elemento "a" con el id "popover-test" y lo inicializa </p>  
-        <script src="https://gist.github.com/IdarGonzalez/9631895.js"></script>
+        <code>
+          &lt;script> $('#popover-test').popover();&lt;/script>
+        </code>
       </div>
     </div>
     <div class="tab-pane fade" id="affix">
@@ -127,12 +141,17 @@ subtitle: <i class="icn icn-palabra"></i> Javascript
       <h3 class='rojo-claro'>Affix</h3>
       <a id="link_ejemplo_affix" href='#navbar' data-original-title="Mostrar el Affix, Lo puedes ocultar con el mismo boton">Mostrar/Ocultar el Affix</a>
       <p>Affix es un elemento que se activa para estar fijo en la pantalla siguiendo la navegación del usuario. Puede ser utilizado para menúes, elementos de navegación y auxiliares a la "página".</p>
-      <a class="btn btn-danger" data-toggle="collapse" data-target="#ver-codigo-affix">ver código</a> 
-      <div id="ver-codigo-affix" class="collapse"> 
+      <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-affix">ver código</a> 
+      <div id="ver-codigo-affix" class="collapse pag-javascript"> 
         <h4>Archivos necesarios</h4>
-        <script src="https://gist.github.com/IdarGonzalez/9631927.js"></script>
+        <code>
+          &lt;script src="js/jquery.js">&lt;/script>
+          &lt;script src="js/affix.js">&lt;/script>
+        </code>
         <h4>Codigo</h4>
-        <script src="https://gist.github.com/IdarGonzalez/9632005.js"></script>
+        <code>
+          &lt;div data-spy="affix" data-offset-top="200" data-offset-bottom="200">Contenido de Affix&lt;/div>
+        </code>
       </div>
     </div>
     <div class="tab-pane fade" id="dropdown">
@@ -170,17 +189,30 @@ subtitle: <i class="icn icn-palabra"></i> Javascript
         </li>
       </ul>
       <p>Utilizar dropdowns permite condensar una navegación compleja en grandes rótulos, dando paso a a una navegación más simplificada con una jerarquía notoria.</p>
-      <a class="btn btn-danger" data-toggle="collapse" data-target="#ver-codigo-dropdown">ver código</a> 
-      <div id="ver-codigo-dropdown" class="collapse">  
+      <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-dropdown">ver código</a> 
+      <div id="ver-codigo-dropdown" class="collapse pag-javascript">  
         <h4>Archivos necesarios</h4>
-        <script src="https://gist.github.com/IdarGonzalez/9632079.js"></script>
+        <code>
+          &lt;script src="js/jquery.js">&lt;/script>
+          &lt;script src="js/dropdown.js">&lt;/script>
+        </code>
         <h4>Codigo</h4>
-        <script src="https://gist.github.com/IdarGonzalez/9632092.js"></script>
+        <code>
+          &lt;div class="dropdown">
+            &lt;a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown trigger&lt;/a>
+            &lt;ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+              &lt;li role="presentation">&lt;a href="#" tabindex="-1" role="menuitem">Action&lt;/a>&lt;/li>
+              &lt;li role="presentation">&lt;a href="#" tabindex="-1" role="menuitem">Another action&lt;/a>&lt;/li>
+              &lt;li role="presentation">&lt;a href="#" tabindex="-1" role="menuitem">Something else here&lt;/a>&lt;/li>
+              &lt;li class="divider" role="presentation">&lt;/li>
+              &lt;li role="presentation">&lt;a href="#" tabindex="-1" role="menuitem">Separated link&lt;/a>&lt;/li>
+            &lt;/ul>
+        </code>
       </div>
     </div>
     <div class="tab-pane fade" id="carrusel">
       <h3 class='rojo-claro'>Carousel</h3>
-          <div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
+      <div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
         <ol class="carousel-indicators">
           <li data-slide-to="0" data-target="#carousel-example-generic" class="active"></li>
           <li data-slide-to="1" data-target="#carousel-example-generic"></li>
@@ -198,23 +230,51 @@ subtitle: <i class="icn icn-palabra"></i> Javascript
           </div>
         </div>
         <a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
-          <span class="ico-anterior"></span>
+          <span class="icn icn-nav-izq"></span>
         </a>
         <a data-slide="next" href="#carousel-example-generic" class="right carousel-control">
-          <span class="ico-siguiente"></span>
+          <span class="icn icn-nav-der"></span>
         </a>
       </div>
-      <a class="btn btn-danger" data-toggle="collapse" data-target="#ver-codigo-carrusel">ver código</a> 
-      <div id="ver-codigo-carrusel" class="collapse">  
+      <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-carrusel">ver código</a> 
+      <div id="ver-codigo-carrusel" class="collapse pag-javascript">  
         <h4>Archivos necesarios</h4>
-        <script src="https://gist.github.com/IdarGonzalez/9691248.js"></script>
+        <code>
+          &lt;script src="js/jquery.js">&lt;/script>
+          &lt;script src="js/carousel.js">&lt;/script>
+        </code>
         <h4>Codigo</h4>
-        <script src="https://gist.github.com/IdarGonzalez/9691318.js"></script>    
+        <code>
+          &lt;div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
+            &lt;ol class="carousel-indicators">
+              &lt;li data-slide-to="0" data-target="#carousel-example-generic" class="active">&lt;/li>
+              &lt;li data-slide-to="1" data-target="#carousel-example-generic">&lt;/li>
+              &lt;li data-slide-to="2" data-target="#carousel-example-generic">&lt;/li>
+            &lt;/ol>
+            &lt;div class="carousel-inner">
+              &lt;div class="item">
+                &lt;img alt="First slide" src="{{ site.baseurl }}/img/manto-6.jpg">
+              &lt;/div>
+              &lt;div class="item active">
+                &lt;img alt="Second slide" src="{{ site.baseurl }}/img/torneo2.jpg">
+              &lt;/div>
+              &lt;div class="item">
+                &lt;img alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+              &lt;/div>
+            &lt;/div>
+            &lt;a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
+              &lt;span class="icn icn-nav-izq">&lt;/span>
+            &lt;/a>
+            &lt;a data-slide="next" href="#carousel-example-generic" class="right carousel-control">
+              &lt;span class="icn icn-nav-der">&lt;/span>
+            &lt;/a>
+          &lt;/div>
+        </code>
       </div>
     </div>
     <div class="tab-pane fade" id="parallax-tab">
       <h3 class='rojo-claro'>Parallax</h3><a name="titulo-siete"></a> 
-            <div id='parallax' class='columna ejemplo-1'>
+      <div id='parallax' class='columna ejemplo-1'>
         <h1 class='blanco fino gigante centrado'>Primer parallax</h1>
       </div>
       <div id='parallax' class='columna ejemplo-2'>
@@ -223,12 +283,26 @@ subtitle: <i class="icn icn-palabra"></i> Javascript
       <div id='parallax' class='columna ejemplo-3'>
         <h1 class='blanco centrado fino gigante'>Tercer parallax</h1>
       </div>
-      <a class="btn btn-danger" data-toggle="collapse" data-target="#ver-codigo-parallax">ver código</a> 
-      <div id="ver-codigo-parallax" class="collapse">  
+      <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-parallax">ver código</a> 
+      <div id="ver-codigo-parallax" class="collapse pag-javascript">  
         <h4>Archivos necesarios</h4>
-        <script src="https://gist.github.com/IdarGonzalez/9631927.js"></script>
+        <code>
+          &lt;script src="js/jquery.js">&lt;/script>
+          &lt;script src="js/jquery.localScroll.js">&lt;/script>
+          &lt;script src="js/jquery.parallax.1.1.-.js">&lt;/script>
+        </code>
         <h4>Codigo</h4>
-        <script src="https://gist.github.com/IdarGonzalez/9632005.js"></script>
+        <code>
+          &lt;div id='parallax' class='columna ejemplo-1'>
+            &lt;h1 class='blanco fino gigante centrado'>Primer parallax&lt;/h1>
+          &lt;/div>
+          &lt;div id='parallax' class='columna ejemplo-2'>
+            &lt;h1 class='blanco centrado fino gigante'>Segundo parallax&lt;/h1>
+          &lt;/div>
+          &lt;div id='parallax' class='columna ejemplo-3'>
+            &lt;h1 class='blanco centrado fino gigante'>Tercer parallax&lt;/h1>
+          &lt;/div>
+        </code>
       </div>
     </div>
   </div>
