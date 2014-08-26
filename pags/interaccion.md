@@ -22,7 +22,7 @@ subtitle: <i class="icn icn-mano-arriba"></i> Interacción
 </div>-->
 
 <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
-    <p>Descripción. . .</p>
+    <p>Éstos elementos son los encargados de establecer un vínculo de comunicación entre el usuario y la plataforma o sistema. Por una parte existen los formularios que son los objetos digitales de recibir la información que proporciona el usuario a través de distintos input. La configuración de los input resulta ser un tipo de formulario. Mientras que los botones son el elemento interactivo más común de los sitios web, donde al ser accionado se gatilla algún elemento, interacción o envía algún tipo de introducción.</p>
 
     <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
         <li class="active"><a href="#formularios" role="tab" data-toggle="tab">Formularios</a></li>
@@ -32,8 +32,28 @@ subtitle: <i class="icn icn-mano-arriba"></i> Interacción
     <div class="tab-content">
         <div class="tab-pane fade in active" id="formularios">
             <h2 class='rojo-claro'>Formularios</h2>
+            <form role="form">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Dirección de e-mail</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Introduce email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile">Carga un archivo</label>
+                <input type="file" id="exampleInputFile">
+                <p class="help-block">Example block-level help text here.</p>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox"> Check me out
+                </label>
+              </div>
+              <button type="submit" class="btn btn-default">Enviar</button>
+            </form>
             <!-- Formulario de contacto (sm) -->
-            <div class='fila'>
             <h4 class='gris-oscuro'>Formulario-sm</h4>
                    <div class='col-md-13'>
                     <form class='sm'>
@@ -59,7 +79,6 @@ subtitle: <i class="icn icn-mano-arriba"></i> Interacción
                    </div>
             <!-- Código Gist -->
                 <script src="https://gist.github.com/JuanGodoy91/11380984.js"></script>
-            </div><!-- fin de fila -->
             <!-- Formulario de contacto (md) -->
             <div class='fila'>
             <h4 class='gris-oscuro'>Formulario-md</h4>

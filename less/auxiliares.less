@@ -309,11 +309,11 @@ width: auto;
 }
 
 .sombra{
-    box-shadow: 1px 1px 3px @gris-claro;
+    box-shadow: 1px 1px 3px fade(@pizarra-claro, 30);
 }
 
 .foco{
-    border: 1px solid @blanco;
+    border: 1px solid fade(@pizarra-claro, 50);
     color: @negro;
     .sombra;
 }

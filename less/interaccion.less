@@ -145,7 +145,8 @@ input[type='color'],
   display: inline-block;
   padding: @padding-md 3 * @padding-md;
   margin-bottom: @margen-sm;
-  font-size: @cuerpo;
+  font-size: 16px;
+  font-weight: 300;
   line-height: @interlinea;
   color: @gris;
 }
@@ -157,11 +158,10 @@ form{
 
     label{
         display: block;
-        font-weight: 700;
-        font-size: @cuerpo * .8;
-        //  Paddings
-        padding-bottom: @padding-md;
-        padding-top: @padding-md * 2;
+        font-size: 14.2px;
+        font-weight: 300;
+        padding-bottom: 5px;
+        padding-top: 10px;
 
         &.checkbox{
             display: inline-block;
@@ -213,11 +213,11 @@ form{
     select{
         height: auto;
         width: 100%;
-        padding: @padding-md;
+        padding: 5px 10px;
         color: @pizarra;
         .border-radius(@radio);
         &:valid{
-        color: fade(@pizarra-claro, 70);
+        color: #27ae60;
         }
     }
         
@@ -372,28 +372,23 @@ form{
 
 // Placeholder
 
-
-
 ::-webkit-input-placeholder {
-   color: fade(@damasco-opuesto, 50);
-   letter-spacing: -.08ex;
-   font-weight: lighter;
+    color: @gris-oscuro;
+    font-weight: 300;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: fade(@damasco-opuesto, 50);
-   letter-spacing: -.08ex;
-   font-weight: lighter;  
+    color: @gris-oscuro;
+    font-weight: 300;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: fade(@damasco-opuesto, 50);
-   letter-spacing: -.08ex;
-   font-weight: lighter;  
+    color: @gris-oscuro;
+    font-weight: 300;
 }
 
 :-ms-input-placeholder {  
-   color: fade(@damasco-opuesto, 50);
-   letter-spacing: -.08ex;
-   font-weight: lighter;  
+    color: @gris-oscuro;
+    font-weight: 300;
+
 }
