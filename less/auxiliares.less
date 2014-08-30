@@ -426,7 +426,10 @@ overflow: hidden;
 //  Responsive adaptable
 
   //  Extra-small screen / Phones
-  @media (min-width: @screen-xs) and (max-width: @screen-xs-max){
+@media(max-width: @screen-xs-max){
+    .ver {
+        padding: 0;
+    }
 
     .caja-icono {
     display: block;

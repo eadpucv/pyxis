@@ -112,9 +112,9 @@ subtitle: <i class="icn icn-pc"></i> Grilla
             </div>
             <p>El segundo ejemplo muestra el paso desde las 12 columnas en dispositivos md, a 6 columnas en dispositivos pequeños (sm) y 3 columnas en dispositivos extra pequeños (xs).</p>
             <div class='fila margen-inferior'>
-                <div class='col-md-1 col-sm-2 col-xs-8 ver'><p>01</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-8</code></div>
-                <div class='col-md-1 col-sm-2 col-xs-8 ver'><p>02</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-8</code></div>
-                <div class='col-md-1 col-sm-2 col-xs-8 ver'><p>03</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-8</code></div>
+                <div class='col-md-1 col-sm-2 col-xs-4 ver'><p>01</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-4</code></div>
+                <div class='col-md-1 col-sm-2 col-xs-4 ver'><p>02</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-4</code></div>
+                <div class='col-md-1 col-sm-2 col-xs-4 ver'><p>03</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>col-xs-4</code></div>
                 <div class='col-md-1 col-sm-2 oculto-xs ver'><p>04</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>oculto-xs</code></div>
                 <div class='col-md-1 col-sm-2 oculto-xs ver'><p>05</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>oculto-xs</code></div>
                 <div class='col-md-1 col-sm-2 oculto-xs ver'><p>06</p><code class='vertical'>col-md-1</code><code class='vertical'>col-sm-2</code><code class='vertical'>oculto-xs</code></div>
