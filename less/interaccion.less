@@ -15,7 +15,6 @@ a.btn{
     font-size: @cuerpo * .9;
     color: lighten(@pizarra, 20);
     text-align: center;
-    background-color: lighten(desaturate(@beige, 35), 15);
     text-shadow: 1px 1px 1px fade(@negro, 10);
     vertical-align: middle;
     border: 1px solid fade(@pizarra, 30);
@@ -25,22 +24,20 @@ a.btn{
     position: relative;
     bottom: @boton-resalte;
     right: @boton-resalte;
-    box-shadow: @boton-resalte @boton-resalte 0 fade(@negro, 20);
+    box-shadow: 0 @boton-resalte 0 fade(@negro, 20);
     .transition(.5s ease all);
     &:hover {
-            bottom: 0;
-            right: 0;
-            box-shadow: 0 0 0 fade(@negro, 90);
-            text-shadow: -1px -1px 2px fade(@negro, 60);
+            box-shadow: 0 @boton-resalte 0 fade(@pizarra, 50%);
+            border-color: fade(@pizarra, 50%);
             text-decoration: none;
-            background-color: desaturate(@beige, 35%);
-            color: @blanco;
+            color: @pizarra;
             .transition(.5s ease all);
     }
 
     // cuando se aprieta el botón, que aparezca una sombra interior para que se vea hundido
     &:active{
-            .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
+        .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
+        box-shadow: 0 @boton-resalte/2 0 fade(@pizarra, 5%);
     }
 
     &.btn-xs{
@@ -145,7 +142,8 @@ input[type='color'],
   display: inline-block;
   padding: @padding-md 3 * @padding-md;
   margin-bottom: @margen-sm;
-  font-size: @cuerpo;
+  font-size: 16px;
+  font-weight: 300;
   line-height: @interlinea;
   color: @gris;
 }
@@ -157,11 +155,10 @@ form{
 
     label{
         display: block;
-        font-weight: 700;
-        font-size: @cuerpo * .8;
-        //  Paddings
-        padding-bottom: @padding-md;
-        padding-top: @padding-md * 2;
+        font-size: 14.2px;
+        font-weight: 300;
+        padding-bottom: 5px;
+        padding-top: 10px;
 
         &.checkbox{
             display: inline-block;
@@ -213,11 +210,11 @@ form{
     select{
         height: auto;
         width: 100%;
-        padding: @padding-md;
+        padding: 5px 10px;
         color: @pizarra;
         .border-radius(@radio);
         &:valid{
-        color: fade(@pizarra-claro, 70);
+        color: #27ae60;
         }
     }
         
@@ -372,28 +369,23 @@ form{
 
 // Placeholder
 
-
-
 ::-webkit-input-placeholder {
-   color: fade(@damasco-opuesto, 50);
-   letter-spacing: -.08ex;
-   font-weight: lighter;
+    color: @gris-oscuro;
+    font-weight: 300;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: fade(@damasco-opuesto, 50);
-   letter-spacing: -.08ex;
-   font-weight: lighter;  
+    color: @gris-oscuro;
+    font-weight: 300;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: fade(@damasco-opuesto, 50);
-   letter-spacing: -.08ex;
-   font-weight: lighter;  
+    color: @gris-oscuro;
+    font-weight: 300;
 }
 
 :-ms-input-placeholder {  
-   color: fade(@damasco-opuesto, 50);
-   letter-spacing: -.08ex;
-   font-weight: lighter;  
+    color: @gris-oscuro;
+    font-weight: 300;
+
 }
