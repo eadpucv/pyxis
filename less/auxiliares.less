@@ -90,6 +90,10 @@ width: auto;
 
 .codigo-parrafo {
     width: auto;
+    background-color: fade(@pizarra, 1%);
+    font-size: 14px;
+    color: @pizarra;
+    padding: 1px 5px !important;
 }
 
 .codigo-color {
@@ -305,11 +309,11 @@ width: auto;
 }
 
 .sombra{
-    box-shadow: 1px 1px 3px @gris-claro;
+    box-shadow: 1px 1px 3px fade(@pizarra-claro, 30);
 }
 
 .foco{
-    border: 1px solid @blanco;
+    border: 1px solid fade(@pizarra-claro, 50);
     color: @negro;
     .sombra;
 }
@@ -422,7 +426,10 @@ overflow: hidden;
 //  Responsive adaptable
 
   //  Extra-small screen / Phones
-  @media (min-width: @screen-xs) and (max-width: @screen-xs-max){
+@media(max-width: @screen-xs-max){
+    .ver {
+        padding: 0;
+    }
 
     .caja-icono {
     display: block;
