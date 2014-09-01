@@ -1,11 +1,8 @@
-
   //
   // Tipografía
   //---------------
 
-
   //  Por defecto:
-
   * {
     font-family: @tipografia;
     font-weight: 200;
@@ -292,6 +289,10 @@ h1, h2, h3, h4, h5, h6 {
 
   ul{
       font-size: @cuerpo * 1.2;
+
+      li{
+        list-style: none;
+      }
   }
 
   ul, ol {
@@ -307,10 +308,6 @@ ol ol,
 ol ul {
     margin-bottom: 0;
     list-style: square;
-}
-
-ul li{
-    list-style: disc;
 }
 
 ol li{

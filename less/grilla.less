@@ -1,18 +1,525 @@
 //
+// Sistema de Grilla y columnas
+// --------------------------------------------------
+
+// Centered container element
+.container-fixed() {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left:  (@grid-gutter-width / -2);
+  padding-right: (@grid-gutter-width / -2);
+  .clearfix();
+}
+
+// Creates a wrapper for a series of columns
+.make-row(@gutter: @grid-gutter-width) {
+  margin-left:  (@gutter / -2);
+  margin-right: (@gutter / -2);
+  .clearfix();
+}
+
+// Generate the extra small columns
+.make-xs-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  float: left;
+  width: percentage((@columns / @grilla-columnas));
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Inner gutter via padding
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+}
+
+// Generate the small columns
+.make-sm-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Inner gutter via padding
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  // Calculate width based on number of columns available
+  @media (min-width: @screen-sm-min) {
+    float: left;
+    width: percentage((@columns / @grilla-columnas));
+  }
+}
+
+// Generate the small column offsets
+.make-sm-column-offset(@columns) {
+  @media (min-width: @screen-sm-min) {
+    margin-left: percentage((@columns / @grilla-columnas));
+  }
+}
+.make-sm-column-push(@columns) {
+  @media (min-width: @screen-sm-min) {
+    left: percentage((@columns / @grilla-columnas));
+  }
+}
+.make-sm-column-pull(@columns) {
+  @media (min-width: @screen-sm-min) {
+    right: percentage((@columns / @grilla-columnas));
+  }
+}
+
+// Generate the medium columns
+.make-md-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Inner gutter via padding
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  // Calculate width based on number of columns available
+  @media (min-width: @screen-md-min) {
+    float: left;
+    width: percentage((@columns / @grilla-columnas));
+  }
+}
+
+// Generate the medium column offsets
+.make-md-column-offset(@columns) {
+  @media (min-width: @screen-md-min) {
+    margin-left: percentage((@columns / @grilla-columnas));
+  }
+}
+.make-md-column-push(@columns) {
+  @media (min-width: @screen-md) {
+    left: percentage((@columns / @grilla-columnas));
+  }
+}
+.make-md-column-pull(@columns) {
+  @media (min-width: @screen-md-min) {
+    right: percentage((@columns / @grilla-columnas));
+  }
+}
+
+// Generate the large columns
+.make-lg-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  // Prevent columns from collapsing when empty
+  min-height: 1px;
+  // Inner gutter via padding
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  // Calculate width based on number of columns available
+  @media (min-width: @screen-lg-min) {
+    float: left;
+    width: percentage((@columns / @grilla-columnas));
+  }
+}
+
+// Generate the large column offsets
+.make-lg-column-offset(@columns) {
+  @media (min-width: @screen-lg-min) {
+    margin-left: percentage((@columns / @grilla-columnas));
+  }
+}
+.make-lg-column-push(@columns) {
+  @media (min-width: @screen-lg-min) {
+    left: percentage((@columns / @grilla-columnas));
+  }
+}
+.make-lg-column-pull(@columns) {
+  @media (min-width: @screen-lg-min) {
+    right: percentage((@columns / @grilla-columnas));
+  }
+}
+
+
+// Framework grid generation
+//
+// Used only by Bootstrap to generate the correct number of grid classes given
+// any value of `@grilla-columnas`.
+
+.make-grid-columns() {
+  // Common styles for all sizes of grid columns, widths 1-12
+
+  //CAMBIO DE 1 A 0.5 PARA QUITAR PADDINGS
+  .col(@index) when (@index = 1) { // initial
+    @item: ~".col-xs-@{index}, .col-sm-@{index}, .col-md-@{index}, .col-lg-@{index}";
+    //CAMBIO DE 1 A 0.5 PARA QUITAR PADDINGS
+
+    .col(@index + 1, @item);
+  }
+  .col(@index, @list) when (@index =< @grilla-columnas) { // general; "=<" isn't a typo
+    @item: ~".col-xs-@{index}, .col-sm-@{index}, .col-md-@{index}, .col-lg-@{index}";
+
+    //CAMBIO DE 1 A 0.5 PARA QUITAR PADDINGS
+
+    .col(@index + 1, ~"@{list}, @{item}");
+  }
+  .col(@index, @list) when (@index > @grilla-columnas) { // terminal
+    @{list} {
+      position: relative;
+      // Prevent columns from collapsing when empty
+      min-height: 1px;
+      // Inner gutter via padding
+      padding-left:  (@grid-gutter-width / 2);
+      padding-right: (@grid-gutter-width / 2);
+    }
+  }
+  .col(1); // kickstart it
+}
+
+.make-grid-columns-float(@class) {
+  .col(@index) when (@index = 1) { // initial
+    @item: ~".col-@{class}-@{index}";
+    .col(@index + 1, @item);
+  }
+  .col(@index, @list) when (@index < @grilla-columnas) { // general
+    @item: ~".col-@{class}-@{index}";
+    .col(@index + 1, ~"@{list}, @{item}");
+  }
+  .col(@index, @list) when (@index = @grilla-columnas) { // terminal
+    @{list} {
+      float: left;
+    }
+  }
+  .col(1); // kickstart it
+}
+
+.calc-grid(@index, @class, @type) when (@type = width) and (@index > 0) {
+  .col-@{class}-@{index} {
+    width: percentage((@index / @grilla-columnas));
+  }
+}
+.calc-grid(@index, @class, @type) when (@type = push) {
+  .col-@{class}-push-@{index} {
+    left: percentage((@index / @grilla-columnas));
+  }
+}
+.calc-grid(@index, @class, @type) when (@type = pull) {
+  .col-@{class}-pull-@{index} {
+    right: percentage((@index / @grilla-columnas));
+  }
+}
+.calc-grid(@index, @class, @type) when (@type = offset) {
+  .col-@{class}-offset-@{index} {
+    margin-left: percentage((@index / @grilla-columnas));
+  }
+}
+
+// Basic looping in LESS
+.make-grid(@index, @class, @type) when (@index >= 0) {
+  .calc-grid(@index, @class, @type);
+  // next iteration
+  .make-grid(@index - 1, @class, @type);
+}
+
+// Offset Vertical 
+
+.voffset-0 {
+  padding-top: -2;
+  padding-bottom: -2;
+  margin-top: -2;
+  margin-bottom: -2;
+}
+
+//
+// Responsive: Utility classes
+// --------------------------------------------------
+
+
+// IE10 in Windows (Phone) 8
+//
+// Support for responsive views via media queries is kind of borked in IE10, for
+// Surface/desktop in split view and for Windows Phone 8. This particular fix
+// must be accompanied by a snippet of JavaScript to sniff the user agent and
+// apply some conditional CSS to *only* the Surface/desktop Windows 8. Look at
+// our Getting Started page for more information on this bug.
+//
+// For more information, see the following:
+//
+// Issue: https://github.com/twbs/bootstrap/issues/10497
+// Docs: http://getbootstrap.com/getting-started/#browsers
+// Source: http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
+
+@-ms-viewport {
+  width: device-width;
+}
+
+// Responsive utilities
+// -------------------------
+// More easily include all the states for responsive-utilities.less.
+.responsive-visibility() {
+  display: block !important;
+  tr& { display: table-row !important; }
+  th&,
+  td& { display: table-cell !important; }
+}
+
+.responsive-invisibility() {
+    &,
+  tr&,
+  th&,
+  td& { display: none !important; }
+}
+
+// Visibility utilities
+
+.visible-xs {
+  .responsive-invisibility();
+  @media (max-width: @screen-xs-max) {
+    .responsive-visibility();
+  }
+  &.visible-sm {
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+      .responsive-visibility();
+    }
+  }
+  &.visible-md {
+    @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+      .responsive-visibility();
+    }
+  }
+  &.visible-lg {
+    @media (min-width: @screen-lg-min) {
+      .responsive-visibility();
+    }
+  }
+}
+.visible-sm {
+  .responsive-invisibility();
+  &.visible-xs {
+    @media (max-width: @screen-xs-max) {
+      .responsive-visibility();
+    }
+  }
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    .responsive-visibility();
+  }
+  &.visible-md {
+    @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+      .responsive-visibility();
+    }
+  }
+  &.visible-lg {
+    @media (min-width: @screen-lg-min) {
+      .responsive-visibility();
+    }
+  }
+}
+.visible-md {
+  .responsive-invisibility();
+  &.visible-xs {
+    @media (max-width: @screen-xs-max) {
+      .responsive-visibility();
+    }
+  }
+  &.visible-sm {
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+      .responsive-visibility();
+    }
+  }
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    .responsive-visibility();
+  }
+  &.visible-lg {
+    @media (min-width: @screen-lg-min) {
+      .responsive-visibility();
+    }
+  }
+}
+.visible-lg {
+  .responsive-invisibility();
+  &.visible-xs {
+    @media (max-width: @screen-xs-max) {
+      .responsive-visibility();
+    }
+  }
+  &.visible-sm {
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+      .responsive-visibility();
+    }
+  }
+  &.visible-md {
+    @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+      .responsive-visibility();
+    }
+  }
+  @media (min-width: @screen-lg-min) {
+    .responsive-visibility();
+  }
+}
+
+.oculto-xs {
+  .responsive-visibility();
+  @media (max-width: @screen-xs-max) {
+    .responsive-invisibility();
+  }
+  &.oculto-sm {
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+      .responsive-invisibility();
+    }
+  }
+  &.oculto-md {
+    @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+      .responsive-invisibility();
+    }
+  }
+  &.oculto-lg {
+    @media (min-width: @screen-lg-min) {
+      .responsive-invisibility();
+    }
+  }
+}
+.oculto-sm {
+  .responsive-visibility();
+  &.oculto-xs {
+    @media (max-width: @screen-xs-max) {
+      .responsive-invisibility();
+    }
+  }
+  @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    .responsive-invisibility();
+  }
+  &.oculto-md {
+    @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+      .responsive-invisibility();
+    }
+  }
+  &.oculto-lg {
+    @media (min-width: @screen-lg-min) {
+      .responsive-invisibility();
+    }
+  }
+}
+.oculto-md {
+  .responsive-visibility();
+  &.oculto-xs {
+    @media (max-width: @screen-xs-max) {
+      .responsive-invisibility();
+    }
+  }
+  &.oculto-sm {
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+      .responsive-invisibility();
+    }
+  }
+  @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    .responsive-invisibility();
+  }
+  &.oculto-lg {
+    @media (min-width: @screen-lg-min) {
+      .responsive-invisibility();
+    }
+  }
+}
+.oculto-lg {
+  .responsive-visibility();
+  &.oculto-xs {
+    @media (max-width: @screen-xs-max) {
+      .responsive-invisibility();
+    }
+  }
+  &.oculto-sm {
+    @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+      .responsive-invisibility();
+    }
+  }
+  &.oculto-md {
+    @media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+      .responsive-invisibility();
+    }
+  }
+  @media (min-width: @screen-lg-min) {
+    .responsive-invisibility();
+  }
+}
+
+// Print utilities
+.visible-print {
+  .responsive-invisibility();
+}
+
+@media print {
+  .visible-print {
+    .responsive-visibility();
+  }
+  .oculto-print {
+    .responsive-invisibility();
+  }
+}
+
+//
+// Variables de grilla
+// --------------------------------------------------
+
+// Extra small screen / phone
+// Note: Deprecated @screen-xs and @screen-phone as of v3.0.1
+@screen-xs:                  480px;
+@screen-xs-min:              @screen-xs;
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+// Note: Deprecated @screen-sm and @screen-tablet as of v3.0.1
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+// Note: Deprecated @screen-md and @screen-desktop as of v3.0.1
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+// Note: Deprecated @screen-lg and @screen-lg-desktop as of v3.0.1
+@screen-lg:                  1420px;
+@screen-lg-min:              @screen-lg;
+@screen-lg-desktop:          @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+
 // Grid system
 // --------------------------------------------------
 
+// Number of columns in the grid system
+@grilla-columnas:       12;
+// Padding, to be divided by two and applied to the left and right of all columns
+
+@grid-gutter-width:       30px;
+
+// Point at which the navbar stops collapsing
+@grid-float-breakpoint:     @screen-sm-min;
+
+// Container sizes
+// --------------------------------------------------
+
+// Small screen / tablet
+@container-tablet:             ((720px + @grid-gutter-width));
+@container-sm:                 @container-tablet;
+
+// Medium screen / desktop
+@container-desktop:            ((940px + @grid-gutter-width));
+@container-md:                 @container-desktop;
+
+// Large screen / wide desktop
+@container-large-desktop:      ((1140px + @grid-gutter-width));
+@container-lg:                 @container-large-desktop;
+
+
+//
+// Sistema de Grilla y medidas
+// --------------------------------------------------
+
 // Set the container width, and override it for fixed navbars in media queries
+.pag,
 .formato,
-.container,
-.pag {
+.container {
   .container-fixed();
 }
 
 // mobile first defaults
-.fila,
-.row {
-
+.row, .fila {
   .make-row();
 }
 
@@ -44,9 +551,9 @@
 // it's full-width.
 
 @media (min-width: @screen-sm-min) {
-  .formato
-  .container,
-  .pag {
+  .pag,
+  .formato,
+  .container {
     width: @container-sm;
   }
 
@@ -66,9 +573,9 @@
 // it's full-width.
 
 @media (min-width: @screen-md-min) {
-  .formato
-  .container,
-  .pag {
+  .pag,
+  .formato,
+  .container {
     width: @container-md;
   }
 
@@ -88,9 +595,9 @@
 // it's full-width.
 
 @media (min-width: @screen-lg-min) {
-  .formato
-  .container,
-  .pag {
+  .pag,
+  .formato,
+  .container {
     width: @container-lg;
   }
 
@@ -100,4 +607,3 @@
   .make-grid(@grilla-columnas, lg, push);
   .make-grid(@grilla-columnas, lg, offset);
 }
-
