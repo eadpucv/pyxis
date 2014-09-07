@@ -1,64 +1,6 @@
+//
 // Estilos tipográficos auxiliares
-
-
-.gist-file {
-    table{
-        margin-bottom: 0;
-        padding: 0;
-        border: none;
-
-        th, td{
-
-        span{
-            margin: 0;
-        }
-        }
-    }
-}
-
-#gist {
-    margin: @interlinea 0 0 0;
-}
-
-.gist-data {
-    overflow: auto;
-}
-
-.gist-syntax {
-    overflow: auto;
-}
-
-.gist {
-    width: 100%;
-}
-
-
-.datos {
-    font-size: 60%;
-}
-
-.color{
-        color: @color-link;
-}
-
-.importante {
-    color:@rojo-claro;
-}
-
-
-//  Para el Affix
-
-a[name='titulo-uno'],
-a[name='titulo-dos'],
-a[name='titulo-tres'],
-a[name='titulo-cuatro'],
-a[name='titulo-cinco'],
-a[name='titulo-seis'],
-a[name='titulo-siete'],
-a[name='titulo-ocho'],
-a[name='titulo-nueve'] {    
-padding-top: @cuadratin * 3;
-}  
+// --------------------------------------------------
 
 .diagonal {
 /* Safari */
@@ -99,18 +41,9 @@ width: auto;
 .codigo-color {
     margin: 0;
     width: auto;
-    font-size: 10px;
-}
-
-//  Visibilidad
-
-.alto-affix {
-    //.box-shadow(0 0 2px fade(@negro, 20));
-    background-color: @blanco;
-    color: rgba(0, 0, 0, 0.8);
-    height: 100%;
-    margin-right: @cuadratin /2;
-    padding-left: @cuadratin /3;
+    height: 20.5px;
+    font-size: 9px;
+    float: right;
 }
 
 // 
@@ -119,7 +52,6 @@ width: auto;
 .fino{
         font-weight: 200;
 }
-        
 
 // Márgenes de ajuste
 .margen-superior{margin-top: @cuadratin}
@@ -257,13 +189,69 @@ width: auto;
 
 .rojo-alerta{color:@rojo-alerta}
 
+// Paleta de colores adicionales - Flat UI COLORES
 
-// Colores Especiales
-.borde{color: @color-borde}
-.bg-borde{background-color: @color-borde}
-.color-opuesto{color: @color-opuesto}
-.bg-color-opuesto{background-color: @color-opuesto}
+.clouds{color: @clouds}
+.fondo-clouds{background-color: @clouds}
 
+.silver{color: @silver}
+.fondo-silver{background-color: @silver}
+
+.concrete{color: @concrete}
+.fondo-concrete{background-color: @concrete}
+
+.asbestos{color: @asbestos}
+.fondo-asbestos{background-color: @asbestos}
+
+.turquoise{color: @turquoise}
+.fondo-turquoise{background-color: @turquoise}
+
+.green-sea{color: @green-sea}
+.fondo-green-sea{background-color: @green-sea}
+
+.emerald{color: @emerald}
+.fondo-emerald{background-color: @emerald}
+
+.nephritis{color: @nephritis}
+.fondo-nephritis{background-color: @nephritis}
+
+.peter-river{color: @peter-river}
+.fondo-peter-river{background-color: @peter-river}
+
+.belize-hole{color: @belize-hole}
+.fondo-belize-hole{background-color: @belize-hole}
+
+.amethyst{color: @amethyst}
+.fondo-amethyst{background-color: @amethyst}
+
+.wisteria{color: @wisteria}
+.fondo-wisteria{background-color: @wisteria}
+
+.wet-asphalt{color: @wet-asphalt}
+.fondo-wet-asphalt{background-color: @wet-asphalt}
+
+.midnight-blue{color: @midnight-blue}
+.fondo-midnight-blue{background-color: @midnight-blue}
+
+.sun-flower{color: @sun-flower}
+.fondo-sun-flower{background-color: @sun-flower}
+
+.orange{color: @orange}
+.fondo-orange{background-color: @orange}
+
+.carrot{color: @carrot}
+.fondo-carrot{background-color: @carrot}
+
+.pumpkin{color: @pumpkin}
+.fondo-pumpkin{background-color: @pumpkin}
+
+.alizarin{color: @alizarin}
+.fondo-alizarin{background-color: @alizarin}
+
+.pomegranate{color: @pomegranate}
+.fondo-pomegranate{background-color: @pomegranate}
+
+// íconos de Stampa
 
 .caja{
     display: block;
@@ -277,7 +265,7 @@ width: auto;
     float: right;
     height: 20px;
     margin: 0;
-    width: 60%;
+    width: 100%;
 }
 
 .caja-icono {
@@ -318,52 +306,11 @@ width: auto;
     .sombra;
 }
 
-.fulgor{
-    background-color: @blanco;
-    .box-shadow(0 0 10px @blanco);
-}
-
 .ver{
     .box-shadow(0 0 2px fade(@negro, 20));
     background-color: @gris-claro;
     color: rgba(0, 0, 0, 0.8);
     padding: @cuadratin / 2;
-}
-
-//Márgenes columnas    
-
-.margen-columna{
-    padding: @cuadratin / 2;
-    margin: 0;
-}
-
-
-// Imágenes
-
-.imagen-lg {
-width: 100%;
-height: auto;
-overflow: hidden;
-}
-
-
-.imagen-xs{
-    width: 60%;
-    height: auto;
-    overflow: hidden;
-}
-
-
-.imagen-md{
-    width: 90%;
-    height: auto;
-    overflow: hidden;
-}
-
-
-.absoluto {
-    top: -80px;
-    position: absolute;
 }
 
 .ancho-maximo {
@@ -388,23 +335,6 @@ overflow: hidden;
 .w85{width:85% !important}.w86{width:86% !important}.w87{width:87% !important}.w88{width:88% !important}.w89{width:89% !important}.w90{width:90% !important}.w91{width:91% !important}
 .w92{width:92% !important}.w93{width:93% !important}.w94{width:94% !important}.w95{width:95% !important}.w96{width:96% !important}.w97{width:97% !important}.w98{width:98% !important}
 .w99{width:99% !important}.w100{width:100% !important}w99{width:99% !important}.w100{width:100% !important}
-
-// tamaños
-
-.sm {
-    padding: @padding-sm;
-
-}
-
-.md {
-    padding: @padding-md;
-
-}
-
-.lg {
-    padding: @padding-lg;
-
-}
 
 
 // Transitions
