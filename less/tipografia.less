@@ -1,11 +1,8 @@
-
   //
   // Tipografía
   //---------------
 
-
   //  Por defecto:
-
   * {
     font-family: @tipografia;
     font-weight: 200;
@@ -125,18 +122,27 @@ span {
   white-space: pre-wrap;
 }
 
-.especificacion {
-  margin-bottom: @interlinea;
-  line-height: @interlinea;
-  color: fade(@pizarra, 80%);
-}
-
 .antetitulo{
   font-family: @tipografia-titulos;
   font-weight: normal;
   color:@rojo-oscuro;  
   text-transform: uppercase;
   font-size:@cuerpo -8px;
+}
+
+// Párrafo en formulario
+
+.especificacion {
+  font-family: @sans;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 5px 0 25px;
+  color: fade(@pizarra, 80%);
+
+  strong {
+    font-family: @sans;
+    font-weight: 500;
+  }
 }
 
 // Clases de familia tipográfica 
@@ -292,6 +298,11 @@ h1, h2, h3, h4, h5, h6 {
 
   ul{
       font-size: @cuerpo * 1.2;
+      padding: 0;
+
+      li{
+        list-style: none;
+      }
   }
 
   ul, ol {
@@ -307,10 +318,6 @@ ol ol,
 ol ul {
     margin-bottom: 0;
     list-style: square;
-}
-
-ul li{
-    list-style: disc;
 }
 
 ol li{

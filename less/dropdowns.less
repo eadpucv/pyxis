@@ -8,11 +8,12 @@
   display: inline-block;
   width: 0;
   height: 0;
-  margin-left: 2px;
+  margin-left: @cuadratin-tercio;
+  margin-right: @cuadratin * 1.5;
   vertical-align: middle;
-  border-top:   @caret-width-base solid;
+  border-top: @caret-width-base solid;
   border-right: @caret-width-base solid transparent;
-  border-left:  @caret-width-base solid transparent;
+  border-left: @caret-width-base solid transparent;
 }
 
 // The dropdown wrapper (div)
@@ -34,15 +35,13 @@
   display: none; // none by default, but block on "open" of the menu
   float: left;
   min-width: 160px;
-  padding: 5px 0;
-  margin: 2px 0 0; // override default ul
+  padding: @cuadratin-tercio @cuadratin-tercio;
+  margin:0; // override default ul
   list-style: none;
-  font-size: @font-size-base;
+  font-size: @cuerpo-nav;
   background-color: @dropdown-bg;
   border: 1px solid @dropdown-fallback-border; // IE8 fallback
-  border: 1px solid @dropdown-border;
-  border-radius: @border-radius-base;
-  .box-shadow(0 6px 12px rgba(0,0,0,.175));
+  border: 1px solid @gris-claro;
   background-clip: padding-box;
 
   // Aligns the dropdown menu to right
@@ -61,13 +60,39 @@
   // Links within the dropdown menu
   > li > a {
     display: block;
-    padding: 3px 20px;
+    padding: @cuadratin-tercio / 2 @cuadratin-tercio;
     clear: both;
-    font-weight: normal;
+    font-weight: 300;
     line-height: @line-height-base;
-    color: @dropdown-link-color;
+    color: @negro-claro;
     white-space: nowrap; // prevent links from randomly breaking onto new lines
   }
+
+  &.user {
+      background-color: @blanco;
+      color: @pizarra;
+
+    > li > a {
+      display: block;
+      padding: @cuadratin-tercio / 2 @cuadratin-tercio;
+      clear: both;
+      font-weight: 300;
+      line-height: @line-height-base;
+      color: @dropdown-link-color;
+      white-space: nowrap; // prevent links from randomly breaking onto new lines
+    }
+  }
+
+  &.xs {
+      background-color: @damasco-opuesto;
+      width: 100%;
+  }
+
+  &.left {
+  left: 0;
+  right: auto;
+}
+
 }
 
 // Hover/Focus state
@@ -75,8 +100,8 @@
   &:hover,
   &:focus {
     text-decoration: none;
-    color: @dropdown-link-hover-color;
-    background-color: @dropdown-link-hover-bg;
+    color: @rojo-claro;
+    background-color: @gris-blanco;
   }
 }
 
@@ -100,7 +125,7 @@
   &,
   &:hover,
   &:focus {
-    color: @dropdown-link-disabled-color;
+    color: @rojo;
   }
 }
 // Nuke hover/focus effects
@@ -211,3 +236,33 @@
   }
 }
 
+
+// Extra small screen / phone
+@media(max-width: @screen-xs-max){
+
+}
+
+
+// Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+    .caret {
+    margin-left: @padding-md;
+    margin-right: @cuadratin * .4;
+  }
+}
+
+// Medium screen / desktop
+
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+  .caret {
+    margin-left: @padding-md;
+    margin-right: @cuadratin * .8;
+  }
+
+}
+
+// Large screen / wide desktop
+
+@media (min-width: @screen-lg){
+
+}

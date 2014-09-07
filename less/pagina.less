@@ -1,14 +1,10 @@
-/*
-
-Contenedores y reglas generales
-
-*/
-
+//
+// Página y sus reglas generales
+// --------------------------------------------------
 
 *{
-    //.transition(.2s ease all);
+    .transition(.2s ease all);
 }
-
 
 header .iso{
 	margin: 0 0 0 @cuadratin;
@@ -55,20 +51,20 @@ header {
 	margin: 0 auto;
 	padding: 0 @cuadratin 0 @cuadratin;
 
-	    h5 {
-      margin: @cuadratin/3 0 0 0;
-      z-index: -1;
+	h5 {
+    	margin: @cuadratin/3 0 0 0;
+    	z-index: -1;
 
-        span{
-          margin: 0;
-          padding: 0;
-        }
-       }
+    	span{
+        	margin: 0;
+        	padding: 0;
+       	}
+    }
 }
 
 .fondo-header-pyxis {
 	background-color: @blanco;
-  .box-shadow(0 0 10px fade(@negro, 30));
+  	.box-shadow(0 0 10px fade(@negro, 30));
 	position: fixed;
 	z-index: 10;
 	margin: 0 auto;
@@ -126,7 +122,9 @@ header {
 	}
 
 	&.xs{
-		height: 160 + @cuadratin * 1.4;
+		height: 200;
+		padding-top: 35px;
+
 		canvas{
 			position: absolute;
 			bottom: 0;
@@ -225,9 +223,8 @@ footer{
 			text-align: center;
 		}
 	  }
-   }
-   }
-
+   	}
+}
 
   //  Small screen / tablet
   @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
@@ -262,7 +259,3 @@ footer{
   @media (min-width: @screen-lg){
 
    }
-
- 
-
-
