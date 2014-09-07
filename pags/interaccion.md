@@ -31,124 +31,213 @@ subtitle: <i class="icn icn-mano-arriba"></i> Interacción
     <!-- contenido en tabs -->
     <div class="tab-content">
         <div class="tab-pane fade in active" id="formularios">
-            <h2 class='rojo-claro'>Formularios</h2>
-            <form role="form">
-              <div class="form-group">
-                <label for="exampleInputEmail1">Dirección de e-mail</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Introduce email">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputPassword1">Contraseña</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
-              </div>
-              <div class="form-group">
-                <label for="exampleInputFile">Carga un archivo</label>
-                <input type="file" id="exampleInputFile">
-                <p class="help-block">Example block-level help text here.</p>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox"> Check me out
-                </label>
-              </div>
-              <button type="submit" class="btn btn-default">Enviar</button>
-            </form>
-            <!-- Formulario de contacto (sm) -->
-            <h4 class='gris-oscuro'>Formulario-sm</h4>
-                   <div class='col-md-13'>
-                    <form class='sm'>
-                        <legend>Contáctate con nosotros</legend>    
-                        <div class='grupo obligatorio'>
-                            <label>Nombre</label>
-                            <input type='text' class='relleno-formulario' required />
-                        </div>
-                        <div class='grupo'>
-                            <label>Correo electrónico</label>
-                            <input type='email' class='relleno-formulario' required/>
-                        </div>
-                        <div class='grupo'>
-                            <label>Asunto</label>
-                            <input type='text' class='relleno-formulario' />
-                        </div>
-                        <div class='grupo'>
-                            <label>Mensaje</label>
-                            <textarea></textarea>
-                        </div>
-                        <input type='submit' class='btn btn-sm derecha' value='Enviar'>
+            <div class="fila">
+                <h2 class='rojo-claro'>Formularios</h2>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <h5 class='rojo-claro'>Formulario genérico</h5>
+                    <form role="form">
+                      <div class="form-group">
+                        <label for="ejemplo-formulario">Dirección de e-mail *</label>
+                        <input type="email" class="form-control" id="ejemplo-formulario" placeholder="Introduce email" required />
+                      </div>
+                      <div class="form-group">
+                        <label for="ejemplo-contraseña">Contraseña *</label>
+                        <input type="password" class="form-control" id="ejemplo-contraseña" placeholder="Contraseña" required />
+                      </div>
+                      <div class="form-group">
+                        <label for="ejemplo-archivo">Carga un archivo</label>
+                        <input type="file" id="ejemplo-archivo">
+                      </div>
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Anótame
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-default">Enviar</button>
                     </form>
-                   </div>
-            <!-- Código Gist -->
-                <script src="https://gist.github.com/JuanGodoy91/11380984.js"></script>
-            <!-- Formulario de contacto (md) -->
-            <div class='fila'>
-            <h4 class='gris-oscuro'>Formulario-md</h4>
-                   <div class='col-md-13'>
-                    <form class='md'>
-                         <legend>Contáctate con nosotros</legend>    
-                         <div class='grupo obligatorio'>
-                             <label>Nombre</label>
-                             <input type='text' class='relleno-formulario' required />
-                         </div>
-                         <div class='grupo'>
-                             <label>Correo electrónico</label>
-                             <input type='email' class='relleno-formulario' required/>
-                         </div>
-                         <div class='grupo'>
-                             <label>Asunto</label>
-                             <input type='text' class='relleno-formulario' />
-                         </div>
-                         <div class='grupo'>
-                             <label>Mensaje</label>
-                             <textarea></textarea>
-                         </div>
-                         <input type='submit' class='btn btn-md derecha' value='Enviar'>
-                     </form>
-                   </div>
-
-            <!-- Código Gist -->
-                <script src="https://gist.github.com/JuanGodoy91/11381220.js"></script>
-            </div><!-- fin de fila -->
-            <!-- Formulario de contacto (lg) -->
-            <div class='fila'>
-            <h4 class='gris-oscuro'>Formulario-lg</h4>
-                   <div class='col-md-13'> 
-                    <form class='lg'>
-                          <legend>Contáctate con nosotros</legend>    
-                        <div class='grupo obligatorio'>
-                            <label>Nombre</label>
-                            <input type='text' class='relleno-formulario' required />
-                        </div>
-                        <div class='grupo'>
-                            <label>Correo electrónico</label>
-                            <input type='email' class='relleno-formulario' required/>
-                        </div>
-                        <div class='grupo'>
-                            <label>Asunto</label>
-                            <input type='text' class='relleno-formulario' />
-                        </div>
-                        <div class='grupo'>
-                            <label>Mensaje</label>
-                            <textarea></textarea>
-                        </div>
-                        <input type='submit' class='btn btn-lg derecha' value='Enviar'>
-                    </form>
+                    <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form1">ver código</a> 
+            <div id="ver-codigo-form1" class="collapse">
+                <code>
+&lt;form role="form">
+  &lt;div class="form-group">
+    &lt;label for="ejemplo-formulario">Dirección de e-mail *&lt;/label>
+    &lt;input type="email" class="form-control" id="ejemplo-formulario" placeholder="Introduce email" required />
+  &lt;/div>
+  &lt;div class="form-group">
+    &lt;label for="ejemplo-contraseña">Contraseña *&lt;/label>
+    &lt;input type="password" class="form-control" id="ejemplo-contraseña" placeholder="Contraseña" required />
+  &lt;/div>
+  &lt;div class="form-group">
+    &lt;label for="ejemplo-archivo">Carga un archivo&lt;/label>
+    &lt;input type="file" id="ejemplo-archivo">
+  &lt;/div>
+  &lt;div class="checkbox">
+    &lt;label>
+      &lt;input type="checkbox"> Anótame
+    &lt;/label>
+  &lt;/div>
+  &lt;button type="submit" class="btn btn-default">Enviar&lt;/button>
+&lt;/form>
+                </code>
+            </div>
                 </div>
-
-            <!-- Código Gist -->
-                <script src="https://gist.github.com/JuanGodoy91/11381286.js"></script>
-            </div><!-- fin de fila -->
-            <!-- Agregar página con formulario -->
-            <div class='fila'>
-            <h2 class='rojo-claro'>Agregar página con formulario</h2>
-                   <div class='col-md-13'>    
-                    <form class='horizontal md'>
-                    <div class='grupo'>
-                        <label class='pregunta'>Nombre de objeto</label>
-                        <input type='text' required />
-                        <p class='especificacion'><strong>Ingresa el nombre de lo que vas a crear</strong>. Se creará una página con ese nombre. Si el nombre que eliges ya está ocupado, esta página te llevará al formulario que elijas con el contenido de la página existente donde podrás editar el nuevo objeto con atributos semánticos.</p>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <h5 class='rojo-claro'>Formulario genérico - variantes</h5>
+                    <form role="form">
+                      <div class="form-group">
+                        <label>Seleccione color</label>
+                        <input type="color" />
+                      </div>
+                      <div class="form-group">
+                        <label>Tiempo</label>
+                        <input type="time" />
+                      </div>
+                      <div class="form-group">
+                        <label>Mes</label>
+                        <input type="month" />
+                      </div>
+                      <div class="form-group">
+                        <label>Semana</label>
+                        <input type="week" />
+                      </div>
+                    </form>
+                    <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form2">ver código</a>
+                    <div id="ver-codigo-form2" class="collapse">
+                        <code>
+&lt;form role="form">
+  &lt;div class="form-group">
+    &lt;label>Seleccione color&lt;/label>
+    &lt;input type="color" />
+  &lt;/div>
+  &lt;div class="form-group">
+    &lt;label>Tiempo&lt;/label>
+    &lt;input type="time" />
+  &lt;/div>
+  &lt;div class="form-group">
+    &lt;label>Mes&lt;/label>
+    &lt;input type="month" />
+  &lt;/div>
+  &lt;div class="form-group">
+    &lt;label>Semana&lt;/label>
+    &lt;input type="week" />
+  &lt;/div>
+&lt;/form>
+                        </code>
                     </div>
-                    <div class='grupo'>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <h5 class='rojo-claro'>Formulario lineal</h5>
+                    <form class="form-inline" role="form">
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="ejemplo-nombre2" placeholder="Ingresa nombre" required />
+                      </div>
+                      <div class="form-group">
+                        <div class="input-group">
+                          <div class="input-group-addon">@</div>
+                          <input class="form-control" type="email" placeholder="Ingresa email" required />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control" id="ejemplo-contraseña2" placeholder="Contraseña" required />
+                      </div>
+                      <div class="form-group">
+                          <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> Recuerdame
+                            </label>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-default">Accede</button>
+                    </form>
+                    <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form3">ver código</a>
+                    <div id="ver-codigo-form3" class="collapse">
+                        <code>
+&lt;form class="form-inline" role="form">
+  &lt;div class="form-group">
+    &lt;input type="email" class="form-control" id="ejemplo-nombre2" placeholder="Ingresa nombre" required />
+  &lt;/div>
+  &lt;div class="form-group">
+    &lt;div class="input-group">
+      &lt;div class="input-group-addon">@&lt;/div>
+      &lt;input class="form-control" type="email" placeholder="Ingresa email" required />
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="form-group">
+    &lt;input type="password" class="form-control" id="ejemplo-contraseña2" placeholder="Contraseña" required />
+  &lt;/div>
+  &lt;div class="form-group">
+      &lt;div class="checkbox">
+        &lt;label>
+            &lt;input type="checkbox"> Recuerdame
+        &lt;/label>
+    &lt;/div>
+  &lt;/div>
+  &lt;button type="submit" class="btn btn-default">Accede&lt;/button>
+&lt;/form>
+                        </code>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <h5 class='rojo-claro'>Formulario de contacto</h5>
+                    <form role="form">
+                      <div class="form-group">
+                        <label for="nombre">Nombre *</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Introduce su nombre" required />
+                      </div>
+                      <div class="form-group">
+                        <label for="correo-electronico">Correo electrónico</label>
+                        <input type="email" class="form-control" id="correo-electronico" placeholder="correo electrónico">
+                      </div>
+                      <div class="form-group">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" class="form-control" id="asunto" placeholder="asunto">
+                      </div>
+                      <div class='form-group'>
+                            <label>Mensaje</label>
+                            <textarea placeholder='Su mensaje' required></textarea>
+                        </div>
+                      <button type="submit" class="btn btn-default">Enviar</button>
+                    </form>
+                    <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form4">ver código</a>
+                    <div id="ver-codigo-form4" class="collapse">
+                        <code>
+&lt;form role="form">
+  &lt;div class="form-group">
+    &lt;label for="nombre">Nombre *&lt;/label>
+    &lt;input type="text" class="form-control" id="nombre" placeholder="Introduce su nombre" required />
+  &lt;/div>
+  &lt;div class="form-group">
+    &lt;label for="correo-electronico">Correo electrónico&lt;/label>
+    &lt;input type="email" class="form-control" id="correo-electronico" placeholder="correo electrónico">
+  &lt;/div>
+  &lt;div class="form-group">
+    &lt;label for="asunto">Asunto&lt;/label>
+    &lt;input type="text" class="form-control" id="asunto" placeholder="asunto">
+  &lt;/div>
+  &lt;div class='form-group'>
+        &lt;label>Mensaje&lt;/label>
+        &lt;textarea placeholder='Su mensaje' required>&lt;/textarea>
+    &lt;/div>
+  &lt;button type="submit" class="btn btn-default">Enviar&lt;/button>
+&lt;/form>
+                        </code>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <h5 class='rojo-claro'>Agregar página (Wiki Casiopea)</h5>
+                    <form role="form">
+                      <div class="form-group">
+                        <label for="nombre">Nombre del objeto *</label>
+                        <p class='especificacion'><strong>Ingresa el nombre de lo que vas a crear</strong>. Se creará una página con ese nombre. Si el nombre que eliges ya está ocupado, esta página te llevará al formulario que elijas con el contenido de la página existente donde podrás editar el nuevo objeto con atributos semánticos.</p>
+                        <input type="text" class="form-control" id="nombre" placeholder="Introduce nombre de objeto a crear" required />
+                      </div>
+                      <div class="form-group">
                         <label class='pregunta'>Tipo de formulario</label>
+                        <p class='especificacion'>Define el tipo de formulario que necesitas para tu objeto.</p>
                         <select>
                             <option>Nueva asignatura</option>
                             <option>Nueva bibliografía</option>
@@ -166,242 +255,347 @@ subtitle: <i class="icn icn-mano-arriba"></i> Interacción
                             <option>Nuevo proyecto de investigación</option>
                             <option>Nuevo trabajo en madlab</option>
                         </select>
-                        <p class='especificacion'>Define el tipo de formulario que necesitas para tu objeto.</p>
-                    </div>
-                        <input type='submit' class='accion btn-md izquierda' value='Crear o editar'>
+                      </div>
+                      <button type="submit" class="btn btn-default">Crear o editar</button>
                     </form>
-                   </div>
-            <!-- Código Gist -->
-               <script src="https://gist.github.com/JuanGodoy91/11384540.js"></script>     
-            </div><!-- fin de fila -->
-            <!-- Formulario Vertical Medio -->
-            <div class='fila'>
-                   <h2 class='rojo-claro'>Crear un proyecto</h2>
-                   <div class='col-md-13'>
-                   <form class='formulario-vertical lg nuevo-proyecto'>
-                            <div class='grupo'>
-                            <label>Título</label>
-                            <input type='text' placeholder='Nombre del nuevo objeto' required/>
-                            </div>
-                            <div class='grupo'>
-                                <label class='pregunta'>Tipo de proyecto</label>
-                                <div class='opciones'>
-                                    <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Proyecto de taller</span></span>
-                                    <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Proyecto de curso</span></span>
-                                    <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Proyecto de tutoría</span></span>
-                                    <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Proyecto de titulación</span></span>
-                                    <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Proyecto de posgrado</span></span>
-                                    <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Proyecto extracurricular</span></span>
-                                </div>
-                                <p class='especificacion chica'><strong>Importante:</strong> Si se trata de un proyecto de Investigación, hay que cambiar el tipo de plantilla de {{Proyecto}} a {{Proyecto de Investigación}} en la pestaña EDITAR. Los proyectos de investigación tienen otros campos y particularidades.</p>
-                            </div>
-                            <div class='grupo'>
-                                <label class='pregunta'>Palabras claves</label>
-                                <input type='text' class='relleno' placeholder='todo en bajas, separadas por coma 'required/>
-                            </div>
-                            <div class='grupo input-sm'>
-                                <label class='pregunta'>Año de inicio</label>
-                                <input type='text' class='relleno'required/>
-                            </div>
-                            <div class='grupo input-sm'>
-                                <label class='pregunta'>Año de término</label>
-                                <input type='text' class='relleno' required/>
-                            </div>
-                            <div class='grupo'>
-                                <label class='pregunta'>Carreras relacionadas</label>
-                                <div class='opciones'>
-                                    <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Arquitectura</span></span>
-                                    <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Diseño gráfico</span></span>
-                                    <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Diseño industrial</span></span>
-                                    <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Náutico y marítimo</span></span>
-                                    <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Ciudad y territorio</span></span>
-                                    <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Formación y oficio</span></span>
-                                    <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Interacción</span></span>
-                                    <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Doctorado en A & D</span></span>
-                                </div>
-                            </div>
-                            <div class='grupo'>
-                                <label class='pregunta'>Asignaturas relacionadas</label>
-                                <input type='text' class='relleno' required />
-                            </div>
-                            <div class='grupo'>
-                                <label class='pregunta'>Cursos relacionados</label>
-                                <input type='email' class='relleno' required />
-                            </div>
-                            <div class='grupo'>
-                                <label class='pregunta'>Profesor</label>
-                                <input type='text' class='relleno' required />
-                            </div>
-                            <div class='grupo'>
-                                <label class='pregunta'>Alumnos</label>
-                                <input type='password' class='relleno' required />
-                            </div>
-                            <div class='grupo input-sm'>
-                                <label class='pregunta'>Imagen</label>
-                                <input type='text' class='relleno' placeholder='Si ya existe en la wiki escriba el nombre.ext.'required/>
-                            <p class='especificacion'><a>Subir archivo</a></p>
-                            </div>
-                            <div class='grupo'>
-                                <label class='pregunta'>PDF</label>
-                                <input type='password' class='relleno-sm' required />
-                            </div>
-                            <div class='grupo'>
-                                <label class='pregunta'>URL</label>
-                                <input type='password' class='relleno' required />
-                            </div>
-                            <div class='grupo'>
-                                <label class='pregunta'>Texto libre</label>
-                                <textarea></textarea>
-                            </div>
-                            <div class='grupo'>
-                                <label class='pregunta'>Resumen</label>
-                                <input type='password' class='relleno' required />
-                            </div>
-                            <div class='grupo'>
-                                <label class='pregunta'>Configuración</label>
-                                <div class='opciones'>
-                                    <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Esta es una edición menor</span></span>
-                                    <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Vigilar esta página</span></span>
-                                </div>
-                            </div>
-                                <input type='submit' class='btn btn-md accion' value='Grabar la página'>
-                                <a class='btn btn-md margen-derecho'>Previsualizar</a>
-                                <a class='btn btn-md margen-derecho'>Cancelar</a>
-                   </form>    
+                    <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form5">ver código</a>
+                    <div id="ver-codigo-form5" class="collapse">
+                        <code>
+&lt;form role="form">
+  &lt;div class="form-group">
+    &lt;label for="nombre">Nombre del objeto *&lt;/label>
+    &lt;p class='especificacion'>&lt;strong>Ingresa el nombre de lo que vas a crear&lt;/strong>. Se creará una página con ese nombre. Si el nombre que eliges ya está ocupado, esta página te llevará al formulario que elijas con el contenido de la página existente donde podrás editar el nuevo objeto con atributos semánticos.&lt;/p>
+    &lt;input type="text" class="form-control" id="nombre" placeholder="Introduce nombre de objeto a crear" required />
+  &lt;/div>
+  &lt;div class="form-group">
+    &lt;label class='pregunta'>Tipo de formulario&lt;/label>
+    &lt;p class='especificacion'>Define el tipo de formulario que necesitas para tu objeto.&lt;/p>
+    &lt;select>
+        &lt;option>Nueva asignatura&lt;/option>
+        &lt;option>Nueva bibliografía&lt;/option>
+        &lt;option>Nueva obra&lt;/option>
+        &lt;option>Nueva persona&lt;/option>
+        &lt;option>Nueva publicación&lt;/option>
+        &lt;option>Nueva revista académica&lt;/option>
+        &lt;option>Nueva tarea&lt;/option>
+        &lt;option>Nueva travesía&lt;/option>
+        &lt;option>Nuevo acto&lt;/option>
+        &lt;option>Nuevo caso de estudio&lt;/option>
+        &lt;option>Nuevo curso&lt;/option>
+        &lt;option>Nuevo evento&lt;/option>
+        &lt;option>Nuevo proyecto&lt;/option>
+        &lt;option>Nuevo proyecto de investigación&lt;/option>
+        &lt;option>Nuevo trabajo en madlab&lt;/option>
+    &lt;/select>
+  &lt;/div>
+  &lt;button type="submit" class="btn btn-default">Crear o editar&lt;/button>
+&lt;/form>
+                        </code>
+                    </div>
                 </div>
-            <!-- Código -->
-            <script src="https://gist.github.com/JuanGodoy91/11384803.js"></script>
-            </div><!-- fin de fila -->
-            <!-- Nuevo usuario -->
-            <div class='fila'>
-                   <h2 class='rojo-claro'>Nuevo usuario</h2>
-                   <div class='col-md-13'>
-                    <form class='formulario-horizontal'>
-                        <legend>Nuevo Usuario</legend>
-                        <div class='grupo obligatorio'>
-                            <label>Usuario</label>
-                            <input type='text' placeholder='username' required/>
-                            <p class='ayuda'>Elige un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</p>
+            </div>
+            <div class="fila">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <h5 class='rojo-claro'>Crear un proyecto (Wiki Casiopea)</h5>
+                    <form role="form">
+                      <div class="form-group">
+                        <label for="nombre">Título *</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre del nuevo objeto" required />
+                      </div>
+                      <div class="form-group">
+                        <label for="nombre">Tipo *</label>
+                        <select>
+                            <option>Alumno/a</option>
+                            <option>Profesor/a</option>
+                            <option>Ex-alumno/a</option>
+                            <option>Amigo/a</option>
+                            <option>Staff</option>
+                            <option>Otro/a</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                            <label class='pregunta'>Palabras claves</label>
+                            <input type='text' placeholder='todo en bajas, separadas por coma 'required/>
+                      </div>
+                      <div class="form-group">
+                            <label class='pregunta'>Año de inicio</label>
+                            <input type='text' required/>
+                      </div>
+                      <div class="form-group">
+                            <label class='pregunta'>Año de término</label>
+                            <input type='date' required/>
+                      </div>
+                      <div class="form-group">
+                          <label class='pregunta'>Carreras relacionadas</label>
+                            <div class='opciones'>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Arquitectura</span></span>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Diseño gráfico</span></span>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Diseño industrial</span></span>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Náutico y marítimo</span></span>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Ciudad y territorio</span></span>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Formación y oficio</span></span>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Interacción</span></span>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Doctorado en A & D</span></span>
+                            </div>
+                      </div>
+                      <div class="form-group">
+                            <label class='pregunta'>Asignaturas relacionadas</label>
+                            <input type='text' required />
+                      </div>
+                      <div class="form-group">
+                            <label class='pregunta'>Cursos relacionados</label>
+                            <input type='text' required />
+                      </div>
+                      <div class="form-group">
+                            <label class='pregunta'>Profesor</label>
+                            <input type='text' required />
+                      </div>
+                      <div class="form-group">
+                            <label class='pregunta'>Alumnos</label>
+                            <input type='text' required />
+                      </div>
+                      <div class="form-group">
+                            <label for="ejemplo-archivo">Imagen (carga un archivo)</label>
+                            <input type="file" id="ejemplo-archivo">
+                      </div>
+                      <div class="form-group">
+                            <label class='pregunta'>PDF</label>
+                            <input type='text' required />
+                      </div>
+                      <div class="form-group">
+                            <label class='pregunta'>URL (enlace)</label>
+                            <input type='url' required />
+                      </div>
+                      <div class='form-group'>
+                            <label>Descripción</label>
+                            <textarea placeholder='Texto libre' required></textarea>
                         </div>
-                        <div class='grupo obligatorio'>
-                            <label>Tipo</label>
-                            <select>
-                                <option>Alumno(a)</option>
-                                <option>Profesora(a)</option>
-                                <option>Ex-Alumno(a)</option>
-                                <option>Amigo(a)</option>
-                                <option>Otro(a)</option>
-                            </select>
-                        </div>
-                        <div class='grupo obligatorio'>
-                            <label>Carrera</label>
-                            <select>
-                                <option>Arquitectura</option>
-                                <option>Diseño</option>
-                            </select>
-                        </div>
-                        <div class='grupo obligatorio'>
-                            <label>Año ingreso</label>
-                            <input type='text' class='relleno'/>
-                        </div>
-                        <div class='grupo obligatorio'>
-                            <label>Nombre</label>
-                            <input type='text' class='relleno' required />
-                        </div>
-                        <div class='grupo obligatorio'>
-                            <label>Apellido</label>
-                            <input type='text' class='relleno' required />
-                        </div>
-                        <div class='grupo obligatorio'>
-                            <label>Rut</label>
-                            <input type='text' class='relleno' required />
-                        </div>
-                        <div class='grupo obligatorio'>
-                            <label>Mail</label>
-                            <input type='email' class='relleno' required />
-                        </div>
-                        <div class='grupo'>
-                            <label>Página en Wiki Casiopea</label>
-                            <input type='text' class='relleno'/>
-                            <p class='especificacion'>En caso de no especificar una pagina, se creara una pagina con tus datos en la wiki</p>
-                        </div>
-                        <h3>Contraseña</h3>
-                        <div class='grupo'>
-                            <label>Contraseña</label>
-                            <input type='password' class='relleno' required />
-                        </div>
-                        <div class='grupo'>
-                            <label>Verificación contraseña</label>
-                            <input type='password' class='relleno' required />
-                        </div>
-                        <div class="grupo checkbox">
-                            <label class="checkbox">
-                            <input type="checkbox">
+                        <div class="form-group">
+                          <label class='pregunta'>Configuración</label>
+                            <div class='opciones'>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Esta es una edición menor</span></span>
+                                <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Vigilar esta página</span></span>
+                            </div>
+                      </div>
+                      <button type="submit" class="btn btn-success">Grabar página</button>
+                      <button type="submit" class="btn btn-default">Previsualizar</button>
+                      <button type="submit" class="btn btn-cancel">Cancelar</button>
+                    </form>
+                    <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form6">ver código</a>
+                    <div id="ver-codigo-form6" class="collapse">
+                        <code>
+&lt;form role="form">
+  &lt;div class="form-group">
+    &lt;label for="nombre">Título *&lt;/label>
+    &lt;input type="text" class="form-control" id="nombre" placeholder="Nombre del nuevo objeto" required />
+  &lt;/div>
+  &lt;div class="form-group">
+    &lt;label for="nombre">Tipo *&lt;/label>
+    &lt;select>
+        &lt;option>Alumno/a&lt;/option>
+        &lt;option>Profesor/a&lt;/option>
+        &lt;option>Ex-alumno/a&lt;/option>
+        &lt;option>Amigo/a&lt;/option>
+        &lt;option>Staff&lt;/option>
+        &lt;option>Otro/a&lt;/option>
+    &lt;/select>
+  &lt;/div>
+  &lt;div class="form-group">
+        &lt;label class='pregunta'>Palabras claves&lt;/label>
+        &lt;input type='text' placeholder='todo en bajas, separadas por coma 'required/>
+  &lt;/div>
+  &lt;div class="form-group">
+        &lt;label class='pregunta'>Año de inicio&lt;/label>
+        &lt;input type='text' required/>
+  &lt;/div>
+  &lt;div class="form-group">
+        &lt;label class='pregunta'>Año de término&lt;/label>
+        &lt;input type='date' required/>
+  &lt;/div>
+  &lt;div class="form-group">
+      &lt;label class='pregunta'>Carreras relacionadas&lt;/label>
+        &lt;div class='opciones'>
+            &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Arquitectura&lt;/span>&lt;/span>
+            &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Diseño gráfico&lt;/span>&lt;/span>
+            &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Diseño industrial&lt;/span>&lt;/span>
+            &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Náutico y marítimo&lt;/span>&lt;/span>
+            &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Ciudad y territorio&lt;/span>&lt;/span>
+            &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Formación y oficio&lt;/span>&lt;/span>
+            &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Interacción&lt;/span>&lt;/span>
+            &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Doctorado en A & D&lt;/span>&lt;/span>
+        &lt;/div>
+  &lt;/div>
+  &lt;div class="form-group">
+        &lt;label class='pregunta'>Asignaturas relacionadas&lt;/label>
+        &lt;input type='text' required />
+  &lt;/div>
+  &lt;div class="form-group">
+        &lt;label class='pregunta'>Cursos relacionados&lt;/label>
+        &lt;input type='text' required />
+  &lt;/div>
+  &lt;div class="form-group">
+        &lt;label class='pregunta'>Profesor&lt;/label>
+        &lt;input type='text' required />
+  &lt;/div>
+  &lt;div class="form-group">
+        &lt;label class='pregunta'>Alumnos&lt;/label>
+        &lt;input type='text' required />
+  &lt;/div>
+  &lt;div class="form-group">
+        &lt;label for="ejemplo-archivo">Imagen (carga un archivo)&lt;/label>
+        &lt;input type="file" id="ejemplo-archivo">
+  &lt;/div>
+  &lt;div class="form-group">
+        &lt;label class='pregunta'>PDF&lt;/label>
+        &lt;input type='text' required />
+  &lt;/div>
+  &lt;div class="form-group">
+        &lt;label class='pregunta'>URL (enlace)&lt;/label>
+        &lt;input type='url' required />
+  &lt;/div>
+  &lt;div class='form-group'>
+        &lt;label>Descripción&lt;/label>
+        &lt;textarea placeholder='Texto libre' required>&lt;/textarea>
+    &lt;/div>
+    &lt;div class="form-group">
+      &lt;label class='pregunta'>Configuración&lt;/label>
+        &lt;div class='opciones'>
+            &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Esta es una edición menor&lt;/span>&lt;/span>
+            &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Vigilar esta página&lt;/span>&lt;/span>
+        &lt;/div>
+  &lt;/div>
+  &lt;button type="submit" class="btn btn-success">Grabar página&lt;/button>
+  &lt;button type="submit" class="btn btn-default">Previsualizar&lt;/button>
+  &lt;button type="submit" class="btn btn-cancel">Cancelar&lt;/button>
+&lt;/form>
+                        </code>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <h5 class='rojo-claro'>Nuevo usuario (Personas)</h5>
+                    <form role="form">
+                      <div class="form-group">
+                        <label for="nombre">Nombre de usuario</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre del nuevo objeto" required />
+                        <p class='especificacion'>Elige un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</p>
+                      </div>
+                      <div class="form-group">
+                        <label for="nombre">Tipo *</label>
+                        <select>
+                            <option>Alumno/a</option>
+                            <option>Profesor/a</option>
+                            <option>Ex-alumno/a</option>
+                            <option>Amigo/a</option>
+                            <option>Staff</option>
+                            <option>Otro/a</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="nombre">Carrera</label>
+                        <select>
+                            <option>Arquitectura</option>
+                            <option>Diseño gráfico</option>
+                            <option>Diseño industrial</option>
+                            <option>Estudios avanzados</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                            <label class='pregunta'>Año de ingreso</label>
+                            <input type='text' placeholder='todo en bajas, separadas por coma '/>
+                      </div>
+                      <div class="form-group">
+                            <label class='pregunta'>Nombre *</label>
+                            <input type='text' required/>
+                      </div>
+                      <div class="form-group">
+                            <label class='pregunta'>Apellido *</label>
+                            <input type='date' required/>
+                      </div>
+                      <div class="form-group">
+                            <label class='pregunta'>e-mail *</label>
+                            <input type='email' required />
+                      </div>
+                      <div class="form-group">
+                            <label class='pregunta'>Página en Wiki Casiopea</label>
+                            <input type='url' />
+                      </div>
+                      <div class="form-group">
+                        <label for="nombre">Contraseña *</label>
+                        <input type="password" id="contraseña" placeholder="introduzca contraseña" required />
+                        <input type="password" id="contraseña" placeholder="verificación contraseña" required />
+                      </div>
+                      <div class="form-group">
+                          <input type="checkbox">
                                 Acepto los <a href='#'>términos y condiciones</a>
                             </label>
-                            <input type='submit' class='accion btn btn-md' value='Crear nuevo usuario'>
-                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-success">Crear nuevo usuario</button>
                     </form>
+                    <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form7">ver código</a>
+                    <div id="ver-codigo-form7" class="collapse">
+                        <code>
+&lt;form role="form">
+  &lt;div class="form-group">
+    &lt;label for="nombre">Nombre de usuario&lt;/label>
+    &lt;input type="text" class="form-control" id="nombre" placeholder="Nombre del nuevo objeto" required />
+    &lt;p class='especificacion'>Elige un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.&lt;/p>
+  &lt;/div>
+  &lt;div class="form-group">
+    &lt;label for="nombre">Tipo *&lt;/label>
+    &lt;select>
+        &lt;option>Alumno/a&lt;/option>
+        &lt;option>Profesor/a&lt;/option>
+        &lt;option>Ex-alumno/a&lt;/option>
+        &lt;option>Amigo/a&lt;/option>
+        &lt;option>Staff&lt;/option>
+        &lt;option>Otro/a&lt;/option>
+    &lt;/select>
+  &lt;/div>
+  &lt;div class="form-group">
+    &lt;label for="nombre">Carrera&lt;/label>
+    &lt;select>
+        &lt;option>Arquitectura&lt;/option>
+        &lt;option>Diseño gráfico&lt;/option>
+        &lt;option>Diseño industrial&lt;/option>
+        &lt;option>Estudios avanzados&lt;/option>
+    &lt;/select>
+  &lt;/div>
+  &lt;div class="form-group">
+        &lt;label class='pregunta'>Año de ingreso&lt;/label>
+        &lt;input type='text' placeholder='todo en bajas, separadas por coma '/>
+  &lt;/div>
+  &lt;div class="form-group">
+        &lt;label class='pregunta'>Nombre *&lt;/label>
+        &lt;input type='text' required/>
+  &lt;/div>
+  &lt;div class="form-group">
+        &lt;label class='pregunta'>Apellido *&lt;/label>
+        &lt;input type='date' required/>
+  &lt;/div>
+  &lt;div class="form-group">
+        &lt;label class='pregunta'>e-mail *&lt;/label>
+        &lt;input type='email' required />
+  &lt;/div>
+  &lt;div class="form-group">
+        &lt;label class='pregunta'>Página en Wiki Casiopea&lt;/label>
+        &lt;input type='url' />
+  &lt;/div>
+  &lt;div class="form-group">
+    &lt;label for="nombre">Contraseña *&lt;/label>
+    &lt;input type="password" id="contraseña" placeholder="introduzca contraseña" required />
+    &lt;input type="password" id="contraseña" placeholder="verificación contraseña" required />
+  &lt;/div>
+  &lt;div class="form-group">
+      &lt;input type="checkbox">
+            Acepto los &lt;a href='#'>términos y condiciones&lt;/a>
+        &lt;/label>
+  &lt;/div>
+  &lt;button type="submit" class="btn btn-success">Crear nuevo usuario&lt;/button>
+&lt;/form>
+                        </code>
                     </div>
-            <!-- Código -->
-            <script src="https://gist.github.com/JuanGodoy91/11385161.js"></script>
-            </div><!-- fin de fila -->
-            <!-- Publicar un trabajo -->
-            <div class='fila'>
-                   <h2 class='rojo-claro'>Publicar un trabajo</h2>
-                   <div class='col-md-13'>
-                    <form class='horizontal-horizontal'>
-                          <label class='pregunta'>Nombre <span class='importante'>*</span></label>
-                          <input type='text' class='relleno' required/>
-                          <label class='pregunta'>Correo electrónico <span class='importante'>*</span></label>
-                          <input type='email' class='relleno' required/>
-                          <label class='pregunta'>Empresa</label>
-                          <input type='text' class='relleno' />
-                          <label class='pregunta'>Sitio web</label>
-                          <input type='text' class='relleno' />
-                          <label class="radio">Solicito a:</label>
-                          <input type="radio" name="carrera" /> <span class='xs'>Arquitecto</span>
-                          <input type="radio" name="carrera" /> <span class='xs'>Diseñador gráfico</span>
-                          <input type="radio" name="carrera" /> <span class='xs'>Diseñado de objetos</span>
-                          <label class='pregunta'>Experiencia requerida</label>
-                          <textarea class='relleno' placeholder="perfil y competencias necesarias para el cargo"></textarea>
-                          <label class='pregunta'>Descripción del trabajo</label>
-                          <textarea class='relleno' placeholder="descripción detallada de labores a realizar, horarios, contexto y ubicación geográfica"></textarea>
-                          <label class='pregunta'>Remuneración ofrecida</label>
-                          <input type='text' class='relleno' placeholder="puede indicar un rango"/>
-                          <label class='pregunta'>Interesados contactar a:</label>
-                          <textarea class='relleno' placeholder="Indique vía de postulación para interesados"></textarea>
-                          <input type='submit' class='accion btn-lg izquierda' value='Publicar'>
-                          <label class="checkbox">
-                          <input type="checkbox">
-                            Acepto los <a href='#'>términos y condiciones</a>
-                        </label>
-                    </form>
-                    </div>
-            <!-- Código -->
-            <script src="https://gist.github.com/JuanGodoy91/11386128.js"></script>
-            </div><!-- fin de fila -->
-            <!-- Iniciar sesión -->
-            <div class='fila'>
-            <h2 class='rojo-claro'>Iniciar sesión</h2>
-                   <div class='col-md-13'>
-                    <h4>Acceder <span class='rojo-claro xs'>Wiki - horizontal</span></h4>
-                    <form class='horizontal sm'>
-                        <div class='ingreso'>
-                            <input type='text' placeholder='nombre de usuario' required/>
-                        </div>
-                        <div class='ingreso'>
-                            <input type='password' placeholder='contraseña' required/>
-                        </div>
-                        <input type='submit' class='btn-md' value='Iniciar Sesión'>
-                    </form>
-                        <p class='especificacion xs'>
-                        <a href='http://personas.ead.pucv.cl/personas/usuarios/recuperacionDatos'>¿olvidaste tu contraseña?</a> Si no tienes una cuenta, <a>regístrate</a>
-                        </p>
-                    </div>
-            <!-- Código -->
-            <script src="https://gist.github.com/JuanGodoy91/11385635.js"></script>
-            </div><!-- fin de fila -->
+                </div>
+            </div>
         </div>
         <div class="tab-pane fade" id="botones">
             <!-- Botones -->
