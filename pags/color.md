@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Pyxis Framework - Color
-subtitle: <i class="icn icn-lapiz"></i> Color
+subtitle: <i class="icn icn-lapiz-lig"></i> Color
 ---
 
 <!--<div class='col-lg-3 col-md-3 oculto-sm oculto-xs'>
