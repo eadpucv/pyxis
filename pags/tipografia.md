@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Pyxis Framework - Tipografía
-subtitle: <i class="icn icn-libro"></i> Tipografía
+subtitle: <i class="icn icn-libro-lig"></i> Tipografía
 pde: type.pde
 ---
 
