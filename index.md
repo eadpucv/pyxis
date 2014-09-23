@@ -3,6 +3,8 @@ layout: index
 title: Pyxis Framework
 ---
 <div class='fondo-blanco'>
+                                                                      <a class="btn btn-lg btn-alerta" href="https://welcu.com/eadpucv/pix-worksop-disenando-experiencia-de-los-servicios">Inscríbete Aquí</a>
+
   <div class='pag'>
     <div class='fila'>
       <h1 class='rojo-claro fino centrado grande'>Componentes</h1>

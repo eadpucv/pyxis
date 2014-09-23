@@ -32,6 +32,7 @@ a.btn{
     &:hover {
             box-shadow: 0 @boton-resalte 0 fade(@pizarra, 50%);
             border-color: fade(@pizarra, 50%);
+            background-color: darken(white, 1%);
             text-decoration: none;
             color: @pizarra;
             .transition(.5s ease all);
@@ -85,7 +86,7 @@ a.btn{
         text-shadow: 1px 1px 0 fade(@negro, 40%);
         background-color:  @rojo-alerta !important;
         &:hover{
-            background-color: darken(saturate(@rojo-alerta, 15), 10);
+            background-color: darken(@rojo-claro, 7%) !important;
             color: @blanco;
             
         }
@@ -108,12 +109,12 @@ a.btn{
         }
     }
 
-    &.btn-accion,
-    &.btn-alertaa{
-        &:active{
-            .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
-        }
-    }
+    // &.btn-accion,
+    // &.btn-alertaa{
+    //     &:active{
+    //         .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
+    //     }
+    // }
 }
 
 
