@@ -22,12 +22,14 @@ subtitle: <i class="icn icn-mano-arriba-lig"></i> Interacción
 </div>-->
 
 <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
-    <p>Éstos elementos son los encargados de establecer un vínculo de comunicación entre el usuario y la plataforma o sistema. Por una parte existen los formularios que son los objetos digitales de recibir la información que proporciona el usuario a través de distintos input. La configuración de los input resulta ser un tipo de formulario. Mientras que los botones son el elemento interactivo más común de los sitios web, donde al ser accionado se gatilla algún elemento, interacción o envía algún tipo de introducción.</p>
 
     <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
         <li class="active"><a href="#formularios" role="tab" data-toggle="tab">Formularios</a></li>
         <li><a href="#botones" role="tab" data-toggle="tab">Botones</a></li>
     </ul>
+
+        <p>Éstos elementos son los encargados de establecer un vínculo de comunicación entre el usuario y la plataforma o sistema. Por una parte existen los formularios que son los objetos digitales de recibir la información que proporciona el usuario a través de distintos input. La configuración de los input resulta ser un tipo de formulario. Mientras que los botones son el elemento interactivo más común de los sitios web, donde al ser accionado se gatilla algún elemento, interacción o envía algún tipo de introducción.</p>
+
     <!-- contenido en tabs -->
     <div class="tab-content">
         <div class="tab-pane fade in active" id="formularios">

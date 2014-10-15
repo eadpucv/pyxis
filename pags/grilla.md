@@ -22,7 +22,6 @@ subtitle: <i class="icn icn-pc-lig"></i> Grilla
 </div>  -->
 
 <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
-    <p>La estructura para definir la geometría de la pantalla se basa en un sistema de filas y columnas, con un ancho máximo de 12 columnas en total, para dar un ancho de 1136px en la página contenedora. Los dispositivos mds grandes (lg) tienen un ancho mínimo de 1200px. Los dispositivos medianos (md) tienen un ancho mínimo de 992px. Los dispositivos pequeños (sm) tienen un ancho mínimo de 768px, y los dispositivos extra pequeños (xs) tienen un ancho mínimo automático y como los demás, relativo al <i>viewport</i>, desde 480px hacia abajo. según el sistema de medidas fundamentado en <a href='http://getbootstrap.com/css/#grid-options'><i>Bootstrap</i></a> para su desarrollo, exceptuando el ancho máximo de 12 columnas en la diagramación de la página. </p>
 
     <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
         <li class="active"><a href="#sintaxis" role="tab" data-toggle="tab">Sintaxis</a></li>
@@ -31,6 +30,8 @@ subtitle: <i class="icn icn-pc-lig"></i> Grilla
         <li><a href="#anidacion" role="tab" data-toggle="tab">Anidación y offset</a></li>
     </ul>
     <!-- contenido en tabs -->
+    <p>La estructura para definir la geometría de la pantalla se basa en un sistema de filas y columnas, con un ancho máximo de 12 columnas en total, para dar un ancho de 1136px en la página contenedora. Los dispositivos mds grandes (lg) tienen un ancho mínimo de 1200px. Los dispositivos medianos (md) tienen un ancho mínimo de 992px. Los dispositivos pequeños (sm) tienen un ancho mínimo de 768px, y los dispositivos extra pequeños (xs) tienen un ancho mínimo automático y como los demás, relativo al <i>viewport</i>, desde 480px hacia abajo. según el sistema de medidas fundamentado en <a href='http://getbootstrap.com/css/#grid-options'><i>Bootstrap</i></a> para su desarrollo, exceptuando el ancho máximo de 12 columnas en la diagramación de la página. </p>
+    
     <div class="tab-content">
         <div class="tab-pane fade in active" id="sintaxis">
             <h2 class='rojo-claro'>Sintaxis de estructura</h2>

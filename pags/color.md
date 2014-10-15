@@ -20,12 +20,14 @@ subtitle: <i class="icn icn-lapiz-lig"></i> Color
 </div>-->
 
 <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
-    <p>La paleta gráfica del framework establece una gama de colores que deviene de un poroceso de registro y abstracción determinado y disponible en la <a href="http://wiki.ead.pucv.cl/index.php/Pyxis_framework:_Experiencia_gr%C3%A1fica_de_una_organizaci%C3%B3n#Paleta_de_colores">Documentación</a> de <a href='http://wiki.ead.pucv.cl/index.php/Casiopea'>Wiki Casiopea</a>. De esta manera, la identidad cromática se fundamenta en procesos tecnificados y metodológicos con respecto al sistema orgánico de la organización.</p>
 
     <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
         <li class="active"><a href="#paleta-gamma" role="tab" data-toggle="tab">Paleta cromática Gamma</a></li>
         <li><a href="#paleta-adicional" role="tab" data-toggle="tab">Paleta cromática adicional</a></li>
     </ul>
+
+    <p>La paleta gráfica del framework establece una gama de colores que deviene de un poroceso de registro y abstracción determinado y disponible en la <a href="http://wiki.ead.pucv.cl/index.php/Pyxis_framework:_Experiencia_gr%C3%A1fica_de_una_organizaci%C3%B3n#Paleta_de_colores">Documentación</a> de <a href='http://wiki.ead.pucv.cl/index.php/Casiopea'>Wiki Casiopea</a>. De esta manera, la identidad cromática se fundamenta en procesos tecnificados y metodológicos con respecto al sistema orgánico de la organización.</p>
+    
     <!-- contenido en tabs -->
     <div class="tab-content">
         <div class="tab-pane fade in active" id="paleta-gamma">

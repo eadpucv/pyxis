@@ -22,7 +22,7 @@ subtitle: <i class="icn icn-palabra-lig"></i> Javascript
 </div>-->
 
 <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
-  <p>Los javascript se utilizan para auxiliar en la interacción entre el usuario y el sistema. Para utilizarlo, es necesario incorporar archivos que contengan los script y establecer una conexión entre elementos de HTML y el script inscrito en el archivo .js</p>
+
 <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
     <li class="active"><a href="#modal" role="tab" data-toggle="tab">Modal</a></li>
@@ -33,6 +33,8 @@ subtitle: <i class="icn icn-palabra-lig"></i> Javascript
     <li><a href="#carrusel" role="tab" data-toggle="tab">Carrusel</a></li>
     <li><a href="#parallax-tab" role="tab" data-toggle="tab">Parallax</a></li>
   </ul>
+
+    <p>Los javascript se utilizan para auxiliar en la interacción entre el usuario y el sistema. Para utilizarlo, es necesario incorporar archivos que contengan los script y establecer una conexión entre elementos de HTML y el script inscrito en el archivo .js</p>
 
   <!-- Tab panes -->
   <div class="tab-content">
