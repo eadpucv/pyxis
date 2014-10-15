@@ -5,19 +5,22 @@
 //Importando tipografías a través de Font Face
 
 @line-height-base:        1.428571429; // 20/14
-@font-size-base:          14px;
+@font-size-base:          15px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
 @sans:							'Source Sans Pro';
-@texto-continuo:				'Merriweather', serif;
+@cond:							'Open Sans';
+@texto-continuo:				'Source Sans Pro', serif;
 @serif:							'Merriweather', serif;
-@italica:						'Merriweather', serif;
+@italica:						'Source Sans Pro', serif;
+@italica-cond:					'Open Sans';
 @mono:							'Lucida Console', monospace;
 @tipografia:					@sans;
 @tipografia-titulos: 			'Source Sans Pro';
+@tipografia-titulos-cond:		'Open Sans';
 @tipografia-referencias:		'Source Sans Pro';
 
 // Negros
@@ -29,7 +32,8 @@
 @gris-oscuro:					rgba(164, 164, 162, 1);
 @gris:							rgba(193, 194, 194, 1);
 @gris-claro:					rgba(226, 226, 226, 1);
-@blanco-gris: 					#f9f9f9;
+@blanco-gris:					#f9f9f9;
+@gris-blanco:					#f9f9f9;
 
 // Cálidos
 @oliva-oscuro:					rgba(90, 81, 18, 1);
@@ -141,7 +145,7 @@
 
 // Proporciones tipográficas
 
-@cuerpo:						14px;				// tamaño tipográfico base en pixeles
+@cuerpo:						15px;				// tamaño tipográfico base en pixeles
 @em:							@cuerpo * 1em;		// atajo para salida en ems, ej. '12/@em'
 @interlinea:					22px;
 @cuerpo-nav:					16px;
@@ -151,12 +155,12 @@
 // blancos
 @cuadratin:						30px;
 @cuadratin-tercio:				10px;
-@body-bg:		               #fff;
+@body-bg:		               #f9f9f9;
 
 //Navs
 //
 //##
-@nav-link-padding:                          10px 15px;
+@nav-link-padding:                          10px 30px;
 @nav-link-hover-bg:                         @gris-claro;
 @nav-disabled-link-color:                   @gris;
 @nav-disabled-link-hover-color:             @gris;

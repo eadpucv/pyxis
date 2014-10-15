@@ -3,8 +3,9 @@ source: .
 destination: _site
 lsi: false
 markdown: rdiscount
-pygments: true
+highlighter: pygments
 permalink: pretty
 baseurl: "http://eadpucv.github.io/pyxis"
 project:
 name: Pyxis
+exclude: [bower_components]

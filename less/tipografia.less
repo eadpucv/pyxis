@@ -5,7 +5,7 @@
   //  Por defecto:
   * {
     font-family: @tipografia;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 
@@ -55,7 +55,7 @@ p {
     line-height: @interlinea;
     color: fade(@negro, 80%);
     font-family: @texto-continuo;
-    font-weight: 200;
+    font-weight: 300;
 
     //  Tamaños de Párrafo:
 
@@ -130,6 +130,12 @@ span {
   font-size:@cuerpo -8px;
 }
 
+.linea-lateral{
+  border-left: 2px solid @rojo-claro;
+  height: 70%;
+  padding-left: 10px;
+}
+
 // Párrafo en formulario
 
 .especificacion {
@@ -163,12 +169,17 @@ span {
 em, i{
     font-family: @italica;
     font-style: italic;
-    font-weight: 100;
+    font-weight: 300;
     
     &.grande{
       letter-spacing: -.1ex;
       font-weight: 200;
-  }
+    }
+
+    &.condensado,
+    &.condensada{
+      font-family: @italica-cond;
+    }
 }
 
 .sombra-cabecera {
@@ -181,6 +192,11 @@ em, i{
 strong{
   font-weight: 700;
   font-family: @texto-continuo;
+}
+
+.fina,
+.fino{
+        font-weight: 300;
 }
 
 .pesada,
@@ -234,21 +250,21 @@ h2 {
   font-size: 29px;
 }
 h3 {
-  font-size: 27px;
+  font-size: 26px;
 }
 h4 {
-  font-size: 23px;
+  font-size: 22px;
 }
 h5 {
-  font-size: 21px;
+  font-size: 19px;
 }
 h6 {
-  font-size: 19px;
+  font-size: 17px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: @tipografia-titulos;
-    font-weight: 300;
+    font-weight: 500;
     color: @gris-oscuro;
     margin: @interlinea 0 @interlinea 0;
     vertical-align: bottom;
@@ -257,6 +273,15 @@ h1, h2, h3, h4, h5, h6 {
       border-bottom: 1px solid @color-borde;
       .clearfix;
   }
+
+    &.condensado{
+      font-family: @tipografia-titulos-cond;
+      font-weight: 700;
+    }
+
+    &.condensado-fino {
+      font-weight: 200;
+    }
 
     //  Tamaños de título:
 
@@ -278,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   &.gigante{
-      font-size: 420%;
+      font-size: 440%;
       line-height: 100%;
   }
 }

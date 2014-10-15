@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Pyxis Framework - Tipografía
-subtitle: <i class="icn icn-libro-lig"></i> Tipografía
+subtitle: <!--<i class="icn icn-libro-lig"></i>--> Tipografía
 pde: type.pde
 ---
 
@@ -26,10 +26,9 @@ pde: type.pde
 </div>-->
 
 <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
-    <p>Se hace necesario declarar los roles tipográficos para delimitar las familias, variables, estilos y formas de uso tipográfico.</p>
 
     <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
-        <li class="active"><a href="#familias" role="tab" data-toggle="tab">Familias tipográficas</a></li>
+        <li class="active"><a class='condensado' href="#familias" role="tab" data-toggle="tab">Fuentes tipográficas</a></li>
         <li><a href="#encabezados" role="tab" data-toggle="tab">Encabezados</a></li>
         <li><a href="#valores" role="tab" data-toggle="tab">Valores tipográficos</a></li>
         <li><a href="#clases" role="tab" data-toggle="tab">Clases diferenciales</a></li>
@@ -38,11 +37,11 @@ pde: type.pde
     <!-- Tab panes -->
     <div class="tab-content">
         <div class="tab-pane fade in active" id="familias">
-            <h2 class='rojo-claro'>Familias tipográficas</h2>
+            <h2 class='condensado pizarra'>Parámetros de fuente</h2>
             <p>Pyxis utiliza globalmente y por defecto un <i>font-size</i> de 16px, con un <i>line-heigh</i> de 22px y un <i>font-weight</i> de 200, lo cual hace referencia a un <i>font-style</i> "normal" o "regular" en las dos familias de fuente escogidas.</p>
-            <h3 class='centrado'>Source Sans Pro</h3>
-            <p>Se utiliza la familia tipográfica <a href="http://www.google.com/fonts/specimen/Source+Sans+Pro"><i> Source Sans Pro</i></a>, para títulos y encabezados de texto. Esta tipografía de tipo sans-serif, presenta gran versatilidad a través de sus 12 pesos.</p>
-            <h4>Declaraciones</h4>
+            <h4 class='condensado pizarra'>Source Sans Pro</h4>
+            <p>Se utiliza la familia tipográfica <a href="http://www.google.com/fonts/specimen/Source+Sans+Pro">Source Sans Pro</a>, para títulos y encabezados de texto. Esta tipografía de tipo sans-serif, presenta gran versatilidad a través de sus 12 pesos.</p>
+            <h6 class='pizarra fino linea-lateral'>Declaraciones</h6>
             <code> 
                 h1, h2, h3, h4, h5, h6 {
                     font-family: @tipografia-titulos;
@@ -51,9 +50,9 @@ pde: type.pde
                 @tipografia-titulos:            'Source Sans Pro';
             </code>
             <hr>
-            <h3 class='centrado'>Merriweather</h3>
-            <p>Se utiliza la familia tipográfica <a href="https://www.google.com/fonts/specimen/Merriweather"><i>Merriweather</i></a>, en su versión ligth para texto continuo, poemas o textos diferenciados, con una familia tipográfica de 6 pesos.</p>
-            <h4>Declaraciones</h4>
+            <h4 class='condensado pizarra'>Merriweather</h4>
+            <p>Se utiliza la familia tipográfica <a href="https://www.google.com/fonts/specimen/Merriweather">Merriweather</a>, en su versión ligth para texto continuo, poemas o textos diferenciados, con una familia tipográfica de 6 pesos.</p>
+            <h6 class='pizarra fino linea-lateral'>Declaraciones</h6>
             <code> 
                 //  Párrafo:
 
@@ -86,6 +85,18 @@ pde: type.pde
                 @serif:                         'Merriweather', serif;
                 @italica:                       'Merriweather', serif;
             </code>
+            <hr>
+            <h4 class='condensado pizarra'>Open Sans Condensed</h4>
+            <p>Se utiliza la familia tipográfica <a href="http://www.google.com/fonts/specimen/Source+Sans+Pro">Open Sans Condensed</a>, para títulos y encabezados de texto. Esta tipografía de tipo sans-serif, presenta gran versatilidad a través de sus 12 pesos.</p>
+            <h6 class='pizarra fino linea-lateral'>Declaraciones</h6>
+            <code> 
+                h1, h2, h3, h4, h5, h6 {
+                    font-family: @tipografia-titulos-cond;
+                }
+
+                @tipografia-titulos-cond:            'Open Sans';
+            </code>
+            <hr>
         </div>
         <div class="tab-pane fade" id="encabezados">
             <h2 class='rojo-claro'>Títulos</h2>
