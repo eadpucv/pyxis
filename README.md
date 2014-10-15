@@ -1,13 +1,18 @@
-PYXIS FRAMEWORK
+PYXIS
 ===
 
-Este framework delimita los componentes visuales y estructurales del ecosistema digital de la **Escuela de Arquitectura y Diseño e[ad]**, construyendo una estructura gráfica unificada coherente y consistente entre las diversas plataformas de la organización en pantalla e impresos.
+**Pyxis** es un framework gráfico que define los componentes visuales y estructurales del ecosistema digital de la **[Escuela de Arquitectura y Diseño e[ad]](http://www.ead.pucv.cl)**, proponiendo una estructura gráfica unificada coherente y consistente entre las diversas plataformas de la organización en pantalla e impresos.
 
-Este proyecto, iniciado en la <a href="http://ead.pucv.cl" title="Sitio de la e[ad]">e[ad] Escuela de Arquitectura y Diseño PUCV</a>, busca definir un esquema de trabajo semántico y escalable para diseñadores y desarrolladores.
+Este proyecto busca definir un esquema de trabajo semántico y escalable para diseñadores y desarrolladores.
 
-Este proyecto es de código libre y está disponible en <http://eadpucv.github.io/pyxis/>
+
+Dependencias
+---
+* [Stampa](http://github.com/eadpucv/stampa) - Iconografía e[ad]
+* [JQuery](http://jquery.org) - Framework de Javascript
 
 Referencias:
-* http://lesscss.org/
-* http://bower.io/ bower
-* http://getbootstrap.com/css/#grid bootstrapgrid
+---
+* [LESS](http://lesscss.org/)
+* [Bower](http://bower.io/)
+* [Bootstrap](http://getbootstrap.com)
