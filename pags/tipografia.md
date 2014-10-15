@@ -25,6 +25,7 @@ pde: type.pde
 </div>
 </div>-->
 
+<div class='fila'>
 <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
 
     <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
@@ -373,4 +374,5 @@ pde: type.pde
                 </code>
         </div>
     </div>
+</div>
 </div>
