@@ -1,7 +1,8 @@
 ---
 layout: base
 title: Pyxis Framework - Grilla
-subtitle: <i class="icn icn-pc-lig"></i> Grilla
+subtitle: <i class="icn icn-pc"></i> Grilla
+intro: La grilla es el sistema de medida encargado de diagramar el contenido visual en la pantalla. Su característica base es ordenar el contenido a través de filas y columnas<!--La estructura que define la Grilla cuenta con un ancho máximo de 12 columnas en total, para dar un ancho de 1136px en la página contenedora. Los dispositivos mds grandes (lg) tienen un ancho mínimo de 1200px. Los dispositivos medianos (md) tienen un ancho mínimo de 992px. Los dispositivos pequeños (sm) tienen un ancho mínimo de 768px, y los dispositivos extra pequeños (xs) tienen un ancho mínimo automático y como los demás, relativo al <i>viewport</i>, desde 480px hacia abajo. según el sistema de medidas fundamentado en <a href='http://getbootstrap.com/css/#grid-options'><i>Bootstrap</i></a> para su desarrollo.-->
 ---
 
 <!--<div class='col-lg-3 col-md-3 oculto-sm oculto-xs'>
@@ -30,7 +31,6 @@ subtitle: <i class="icn icn-pc-lig"></i> Grilla
         <li><a href="#anidacion" role="tab" data-toggle="tab">Anidación y offset</a></li>
     </ul>
     <!-- contenido en tabs -->
-    <p>La estructura para definir la geometría de la pantalla se basa en un sistema de filas y columnas, con un ancho máximo de 12 columnas en total, para dar un ancho de 1136px en la página contenedora. Los dispositivos mds grandes (lg) tienen un ancho mínimo de 1200px. Los dispositivos medianos (md) tienen un ancho mínimo de 992px. Los dispositivos pequeños (sm) tienen un ancho mínimo de 768px, y los dispositivos extra pequeños (xs) tienen un ancho mínimo automático y como los demás, relativo al <i>viewport</i>, desde 480px hacia abajo. según el sistema de medidas fundamentado en <a href='http://getbootstrap.com/css/#grid-options'><i>Bootstrap</i></a> para su desarrollo, exceptuando el ancho máximo de 12 columnas en la diagramación de la página. </p>
     
     <div class="tab-content">
         <div class="tab-pane fade in active" id="sintaxis">

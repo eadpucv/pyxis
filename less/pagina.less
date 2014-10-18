@@ -24,7 +24,7 @@ header .iso{
 
 body{
   font-size: @cuerpo;
-  background-color: @gris-blanco;
+  background-color: @blanco;
   //background: url('@{ruta-imagenes}/ruido-gris-blanco.png');
 }
 
@@ -32,10 +32,16 @@ header {
 
 }
 
+.fondo-contenido{
+	background-color: @gris-blanco;
+	z-index: 600;
+}
+
 .pag{
 	position: relative;
 	margin: 0 auto;
 	padding: @cuadratin;
+	.cf;
 
 	&.menu{
 		padding: 0;
@@ -64,9 +70,9 @@ header {
 
 .fondo-header-pyxis {
 	background-color: @blanco;
-  	.box-shadow(0 0 10px fade(@negro, 30));
+  	//.box-shadow(0 0 10px fade(@negro, 30));
 	position: fixed;
-	z-index: 10;
+	z-index: 40;
 	margin: 0 auto;
 	width: 100%;
 }
@@ -101,7 +107,7 @@ header {
 
  .franja {
 	width: 100%;
-	background-color: @rojo-claro;
+	background-color: none;
 	position: relative;
 	overflow: hidden;
 	.cf;
@@ -130,8 +136,8 @@ header {
 	}
 
 	&.xs{
-		height: 200;
-		padding-top: 50px;
+		min-height: 600px;
+		padding-top: 150px;
 		padding-bottom: 40px;
 
 		canvas{
@@ -143,9 +149,14 @@ header {
 	}
 
 	.leyenda{
-		position: relative;
-		z-index: 5;
+		position: fixed;
+		height: 300px;
+		width: 70%;
+		z-index: -1;
 
+		h5{
+			width: 90%;
+		}
 	}
 }
 

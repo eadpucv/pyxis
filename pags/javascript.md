@@ -1,7 +1,8 @@
 ---
 layout: base
 title: Pyxis Framework - Javascript
-subtitle: <i class="icn icn-palabra-lig"></i> Javascript
+subtitle: <i class="icn icn-palabra"></i> Javascript
+intro: Texto sobre javascript
 ---
 
 <!--<div class='col-lg-3 col-md-3 oculto-sm oculto-xs'>

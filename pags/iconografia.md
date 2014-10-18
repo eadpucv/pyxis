@@ -1,7 +1,8 @@
 ---
 layout: base
 title: Pyxis Framework - Iconografía
-subtitle: <i class="icn icn-stampa-lig"></i> Iconografía
+subtitle: <i class="icn icn-stampa"></i> Iconografía
+intro: Texto sobre Iconografía
 ---
 
 <!--<div class='col-lg-3 col-md-3 oculto-sm oculto-xs'>

@@ -2,7 +2,11 @@
 // Variables de imágenes parallax
 // --------------------------------------------------
 
-#parallax{
+// Ejemplos
+//
+// Componente: Javascript
+
+#parallax { 
     background-size: 100%;
     color: white;
     height: 300px;
@@ -27,10 +31,25 @@
 	}
 }
 
+// Uso en Pyxis
+// 
+// Index y Componentes
+
 #parallax-index {
     height: auto;
 
     &.universo {
         background:url(../img/universo.jpg) 50% 0 no-repeat fixed;
     }
+}
+
+#parallax-componentes {
+    height: auto;
+    z-index: -500;
+
+    .franja{
+        &.xs{
+        }
+    }
+    
 }
