@@ -31,9 +31,9 @@ pde: type.pde
 
     <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
         <li class="active"><a class='condensado' href="#familias" role="tab" data-toggle="tab">Fuentes tipográficas</a></li>
-        <li><a href="#encabezados" role="tab" data-toggle="tab">Encabezados</a></li>
-        <li><a href="#valores" role="tab" data-toggle="tab">Valores tipográficos</a></li>
-        <li><a href="#clases" role="tab" data-toggle="tab">Clases diferenciales</a></li>
+        <li><a class='condensado' href="#encabezados" role="tab" data-toggle="tab">Encabezados</a></li>
+        <li><a class='condensado' href="#valores" role="tab" data-toggle="tab">Valores tipográficos</a></li>
+        <li><a class='condensado' href="#clases" role="tab" data-toggle="tab">Clases diferenciales</a></li>
     </ul>
 
     <!-- Tab panes -->

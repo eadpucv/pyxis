@@ -25,10 +25,10 @@ intro: La grilla es el sistema de medida encargado de diagramar el contenido vis
 <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
 
     <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
-        <li class="active"><a href="#sintaxis" role="tab" data-toggle="tab">Sintaxis</a></li>
-        <li><a href="#ocultar" role="tab" data-toggle="tab">Ocultar columnas</a></li>
-        <li><a href="#ordenar" role="tab" data-toggle="tab">Ordenar columnas</a></li>
-        <li><a href="#anidacion" role="tab" data-toggle="tab">Anidación y offset</a></li>
+        <li class="active"><a class='condensado' href="#sintaxis" role="tab" data-toggle="tab">Sintaxis</a></li>
+        <li><a class='condensado' href="#ocultar" role="tab" data-toggle="tab">Ocultar columnas</a></li>
+        <li><a class='condensao' href="#ordenar" role="tab" data-toggle="tab">Ordenar columnas</a></li>
+        <li><a class='condensado' href="#anidacion" role="tab" data-toggle="tab">Anidación y offset</a></li>
     </ul>
     <!-- contenido en tabs -->
     

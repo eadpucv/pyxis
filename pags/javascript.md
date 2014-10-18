@@ -27,12 +27,12 @@ intro: Texto sobre javascript
 <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
     <li class="active"><a href="#modal" role="tab" data-toggle="tab">Modal</a></li>
-    <li><a href="#tooltip" role="tab" data-toggle="tab">Tooltip</a></li>
-    <li><a href="#popover" role="tab" data-toggle="tab">Popover</a></li>
-    <li><a href="#affix" role="tab" data-toggle="tab">Affix</a></li>
-    <li><a href="#dropdown" role="tab" data-toggle="tab">Dropdown</a></li>
-    <li><a href="#carrusel" role="tab" data-toggle="tab">Carrusel</a></li>
-    <li><a href="#parallax-tab" role="tab" data-toggle="tab">Parallax</a></li>
+    <li><a class='condensado' href="#tooltip" role="tab" data-toggle="tab">Tooltip</a></li>
+    <li><a class='condensado' href="#popover" role="tab" data-toggle="tab">Popover</a></li>
+    <li><a class='condensado' href="#affix" role="tab" data-toggle="tab">Affix</a></li>
+    <li><a class='condensado' href="#dropdown" role="tab" data-toggle="tab">Dropdown</a></li>
+    <li><a class='condensado' href="#carrusel" role="tab" data-toggle="tab">Carrusel</a></li>
+    <li><a class='condensado' href="#parallax-tab" role="tab" data-toggle="tab">Parallax</a></li>
   </ul>
 
     <p>Los javascript se utilizan para auxiliar en la interacción entre el usuario y el sistema. Para utilizarlo, es necesario incorporar archivos que contengan los script y establecer una conexión entre elementos de HTML y el script inscrito en el archivo .js</p>
