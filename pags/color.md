@@ -22,17 +22,18 @@ intro: Texto sobre color
 
 <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
 
-    <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
-        <li class="active"><a class='condensado' href="#paleta-gamma" role="tab" data-toggle="tab">Paleta cromática Gamma</a></li>
-        <li><a class='condensado' href="#paleta-adicional" role="tab" data-toggle="tab">Paleta cromática adicional</a></li>
-    </ul>
-
-    <p>La paleta gráfica del framework establece una gama de colores que deviene de un poroceso de registro y abstracción determinado y disponible en la <a href="http://wiki.ead.pucv.cl/index.php/Pyxis_framework:_Experiencia_gr%C3%A1fica_de_una_organizaci%C3%B3n#Paleta_de_colores">Documentación</a> de <a href='http://wiki.ead.pucv.cl/index.php/Casiopea'>Wiki Casiopea</a>. De esta manera, la identidad cromática se fundamenta en procesos tecnificados y metodológicos con respecto al sistema orgánico de la organización.</p>
+    <div id='sub-componentes'>
+        <ul class="nav nav-tabs centrado" role="tablist" id="tabla-contenido">
+            <li class="active"><a class='condensado' href="#paleta-gamma" role="tab" data-toggle="tab">Paleta cromática Gamma</a></li>
+            <li><a class='condensado' href="#paleta-adicional" role="tab" data-toggle="tab">Paleta cromática adicional</a></li>
+        </ul>
+    </div>
     
     <!-- contenido en tabs -->
     <div class="tab-content">
         <div class="tab-pane fade in active" id="paleta-gamma">
             <h2 class="rojo-claro">Paleta de Colores</h2>
+            <p>La paleta gráfica del framework establece una gama de colores que deviene de un poroceso de registro y abstracción determinado y disponible en la <a href="http://wiki.ead.pucv.cl/index.php/Pyxis_framework:_Experiencia_gr%C3%A1fica_de_una_organizaci%C3%B3n#Paleta_de_colores">Documentación</a> de <a href='http://wiki.ead.pucv.cl/index.php/Casiopea'>Wiki Casiopea</a>. De esta manera, la identidad cromática se fundamenta en procesos tecnificados y metodológicos con respecto al sistema orgánico de la organización.</p>
             <p> A continuación se muestran a modo de lista los colores escogidos, pasando desde los tonos grises y luego los cromáticos</p>
             <div class='col-md-12'>
                 <h3>Grises</h3>

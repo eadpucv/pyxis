@@ -29,12 +29,14 @@ pde: type.pde
 <div class='fila'>
 <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
 
-    <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
+    <div id='sub-componentes'>
+    <ul class="nav nav-tabs centrado" role="tablist" id="tabla-contenido">
         <li class="active"><a class='condensado' href="#familias" role="tab" data-toggle="tab">Fuentes tipográficas</a></li>
         <li><a class='condensado' href="#encabezados" role="tab" data-toggle="tab">Encabezados</a></li>
         <li><a class='condensado' href="#valores" role="tab" data-toggle="tab">Valores tipográficos</a></li>
         <li><a class='condensado' href="#clases" role="tab" data-toggle="tab">Clases diferenciales</a></li>
     </ul>
+    </div>
 
     <!-- Tab panes -->
     <div class="tab-content">

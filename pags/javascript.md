@@ -25,21 +25,23 @@ intro: Texto sobre javascript
 <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
 
 <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
-    <li class="active"><a href="#modal" role="tab" data-toggle="tab">Modal</a></li>
-    <li><a class='condensado' href="#tooltip" role="tab" data-toggle="tab">Tooltip</a></li>
-    <li><a class='condensado' href="#popover" role="tab" data-toggle="tab">Popover</a></li>
-    <li><a class='condensado' href="#affix" role="tab" data-toggle="tab">Affix</a></li>
-    <li><a class='condensado' href="#dropdown" role="tab" data-toggle="tab">Dropdown</a></li>
-    <li><a class='condensado' href="#carrusel" role="tab" data-toggle="tab">Carrusel</a></li>
-    <li><a class='condensado' href="#parallax-tab" role="tab" data-toggle="tab">Parallax</a></li>
-  </ul>
-
-    <p>Los javascript se utilizan para auxiliar en la interacción entre el usuario y el sistema. Para utilizarlo, es necesario incorporar archivos que contengan los script y establecer una conexión entre elementos de HTML y el script inscrito en el archivo .js</p>
+  <div id='sub-componentes'>
+    <ul class="nav nav-tabs centrado" role="tablist" id="tabla-contenido">
+      <li class="active"><a href="#modal" role="tab" data-toggle="tab">Modal</a></li>
+      <li><a class='condensado' href="#tooltip" role="tab" data-toggle="tab">Tooltip</a></li>
+      <li><a class='condensado' href="#popover" role="tab" data-toggle="tab">Popover</a></li>
+      <li><a class='condensado' href="#affix" role="tab" data-toggle="tab">Affix</a></li>
+      <li><a class='condensado' href="#dropdown" role="tab" data-toggle="tab">Dropdown</a></li>
+      <li><a class='condensado' href="#carrusel" role="tab" data-toggle="tab">Carrusel</a></li>
+      <li><a class='condensado' href="#parallax-tab" role="tab" data-toggle="tab">Parallax</a></li>
+    </ul>
+  </div>
 
   <!-- Tab panes -->
   <div class="tab-content">
     <div class="tab-pane fade in active" id="modal">
+      <h2 class='rojo-claro'>Jquery</h2>
+         <p>Los javascript se utilizan para auxiliar en la interacción entre el usuario y el sistema. Para utilizarlo, es necesario incorporar archivos que contengan los script y establecer una conexión entre elementos de HTML y el script inscrito en el archivo .js</p>
       <h3 class='rojo-claro'>Modal</h3>
       <button class="btn btn-md" data-toggle="modal" data-target="#modal_de_ejemplo"> Ejecutar Modal </button>
       <p>Se parte con la idea de que los formularios es donde ocurre una mayor transacción de interacción entre el usuario y el sistema. Para que que la interacción sea de manera cómoda y agradable, se incorpora un elemento de interacción adicional de manera auxiliar, donde aparece más contenido en una ventana emergente.</p>

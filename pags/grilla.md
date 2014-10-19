@@ -2,34 +2,19 @@
 layout: base
 title: Pyxis Framework - Grilla
 subtitle: <i class="icn icn-pc"></i> Grilla
-intro: La grilla es el sistema de medida encargado de diagramar el contenido visual en la pantalla. Su característica base es ordenar el contenido a través de filas y columnas<!--La estructura que define la Grilla cuenta con un ancho máximo de 12 columnas en total, para dar un ancho de 1136px en la página contenedora. Los dispositivos mds grandes (lg) tienen un ancho mínimo de 1200px. Los dispositivos medianos (md) tienen un ancho mínimo de 992px. Los dispositivos pequeños (sm) tienen un ancho mínimo de 768px, y los dispositivos extra pequeños (xs) tienen un ancho mínimo automático y como los demás, relativo al <i>viewport</i>, desde 480px hacia abajo. según el sistema de medidas fundamentado en <a href='http://getbootstrap.com/css/#grid-options'><i>Bootstrap</i></a> para su desarrollo.-->
+<!--intro: La grilla es el sistema de medida encargado de diagramar el contenido visual en la pantalla. Su característica base es ordenar el contenido a través de filas y columnas La estructura que define la Grilla cuenta con un ancho máximo de 12 columnas en total, para dar un ancho de 1136px en la página contenedora. Los dispositivos mds grandes (lg) tienen un ancho mínimo de 1200px. Los dispositivos medianos (md) tienen un ancho mínimo de 992px. Los dispositivos pequeños (sm) tienen un ancho mínimo de 768px, y los dispositivos extra pequeños (xs) tienen un ancho mínimo automático y como los demás, relativo al <i>viewport</i>, desde 480px hacia abajo. según el sistema de medidas fundamentado en <a href='http://getbootstrap.com/css/#grid-options'><i>Bootstrap</i></a> para su desarrollo.-->
 ---
-
-<!--<div class='col-lg-3 col-md-3 oculto-sm oculto-xs'>
-<a name='ancla' id='a'></a>
-<div class='menu-affix alto-affix'>
-<div data-spy="affix" data-offset-top="220">
-    <ul>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-uno'>Estructura</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-dos'>Ocultar columnas</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-tres'>Ordenar de columnas</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-cuatro'>Centro y secciones</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-cinco'>Anidación y Offset</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-seis'>Offset y ancho uniforme</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-siete'>Uso de Sidebar</a></li>
-    </ul>
-</div>             
-</div>
-</div>  -->
 
 <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
 
-    <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
+    <div id='sub-componentes'>
+    <ul class="nav nav-tabs centrado" role="tablist" id="tabla-contenido">
         <li class="active"><a class='condensado' href="#sintaxis" role="tab" data-toggle="tab">Sintaxis</a></li>
         <li><a class='condensado' href="#ocultar" role="tab" data-toggle="tab">Ocultar columnas</a></li>
-        <li><a class='condensao' href="#ordenar" role="tab" data-toggle="tab">Ordenar columnas</a></li>
+        <li><a class='condensado' href="#ordenar" role="tab" data-toggle="tab">Ordenar columnas</a></li>
         <li><a class='condensado' href="#anidacion" role="tab" data-toggle="tab">Anidación y offset</a></li>
     </ul>
+    </div>
     <!-- contenido en tabs -->
     
     <div class="tab-content">
