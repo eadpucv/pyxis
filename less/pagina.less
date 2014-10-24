@@ -40,6 +40,7 @@ header {
 .pag{
 	position: relative;
 	margin: 0 auto;
+	height: auto;
 	padding: @cuadratin;
 	.cf;
 
@@ -48,7 +49,9 @@ header {
 	}
 
 	&.sin-relleno {
-		padding: 0 30px;
+		width: 890px;
+		padding: 0;
+		position: relative;
 	}
 }
 
@@ -71,7 +74,6 @@ header {
 .fondo-header-pyxis {
 	background-color: @blanco;
   	.box-shadow(0 0 10px fade(@negro, 30));
-	position: fixed;
 	top: 0;
 	z-index: -1;
 	margin: 0 auto;
@@ -108,75 +110,44 @@ header {
 
  .franja {
 	width: 100%;
-	background-color: rgba(226, 226, 226, 1);
+	background-color: @gris-claro;
 	position: relative;
 	overflow: hidden;
 	z-index: -10;
 	.cf;
 
 	&.xl{
-		min-height: 500px;
-		margin-top: 60px;
-
-		canvas{
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			margin-left: auto;
-			margin-right: auto;
-		}
+		min-height: 500/@em;
+		margin-top: 60/@em;
 
 		.leyenda{
-			padding: @cuadratin * 4 0;
+			padding: @cuadratin * 2 0;
 			text-align: center;
-		}
-
-		.descripcion-proyecto {
-			margin: 0 auto;
 		}
 	}
 
 	&.xs{
-		min-height: 170px;
-		margin-top: 60px;
-
-		canvas{
-			position: absolute;
-			bottom: 0;
-			right: 26px;
-			z-index: 1;
-		}
+		height: 120/@em;
 
 		.leyenda{
-			position: fixed;
 			height: auto;
-			width: 70%;
+			width: 100%;
 			z-index: 100;
-			margin-top: -10px;
+			position: relative;
 
-			h5{
-				width: 90%;
+			h1{
+				display: inline-block;
+				margin: 0 auto !important;
+				position: fixed;
 			}
 		}
 	}
 }
 
 footer{
-	background-color: #3c464b;
 	margin: 0 auto;
-	line-height: @interlinea * .7;
 
-	h4 {
-		margin-bottom: 0;
-	}
-
-	
-	p{
-		font-size: @cuerpo * .7;
-		letter-spacing: inherit;
-		margin: 0;
-		
+	p{	
 		img{
 			display: inline-block;
 			margin-bottom: -4px;
@@ -189,19 +160,21 @@ footer{
 
 	a {
 		&:hover{
-			color: @blanco; 
+			color: @negro-oscuro; 
 		}
 	}
 
 	ul {
-		margin: 10px 0;
+		//margin: 10px 0;
+		display: block;
+		width: 200px;
+		margin: 0 auto;
 		padding: 0;
-		float: right;
 
 		li {
-			float: left;
-			padding-left: 15px;
-			color: @blanco;
+			padding: 5px 10px 15px;
+			display: inline-block;
+			margin: 0 auto;
 			font-size: @cuerpo;
 			list-style: none;
 		}
@@ -231,25 +204,47 @@ footer{
 
 //	Responsive adaptable
 
-  //  Extra-small screen / Phones
-  @media (min-width: @screen-xs) and (max-width: @screen-xs-max){
+    //  Extra Small screen / Phone
+  @media(max-width: @screen-xs-max){
   
   	.franja {
 
-	&.xl{
-		min-height: 440px;
-		max-height: 700px;
+		&.xl{
+			min-height: 440px;
+			max-height: 700px;
 
-		.leyenda{
-			margin-top: @cuadratin * 2;
-			text-align: center;
+			.leyenda{
+				margin-top: @cuadratin * 2;
+				text-align: center;
+			}
 		}
-	  }
-   	}
+
+		&.xs{
+
+			.leyenda{
+
+				h1{
+					display: inline !important;
+					margin: 0 auto !important;
+					text-align: center;
+					width: 85%;
+				}
+			}
+		}
+	}
 }
 
   //  Small screen / tablet
   @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+
+  	.franja {
+
+	&.xs{
+
+		.leyenda{
+		}
+	  }
+   	}
 
   			.cita {
 			color: @gris;
@@ -279,5 +274,22 @@ footer{
 
   //  Large screen / wide desktop
   @media (min-width: @screen-lg){
+
+  	.pag{
+	&.sin-relleno {
+		width: 1110px;
+		padding: 0;
+		position: relative;
+	}
+}
+
+  	  	.franja {
+
+	&.xs{
+
+		.leyenda{
+		}
+	  }
+   	}
 
    }

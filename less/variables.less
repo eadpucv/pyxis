@@ -5,7 +5,8 @@
 //Importando tipografías a través de Font Face
 
 @line-height-base:        1.428571429; // 20/14
-@font-size-base:          15px;
+@font-size-base:          16px;
+
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
@@ -19,19 +20,19 @@
 @italica-cond:					'Open Sans';
 @mono:							'Lucida Console', monospace;
 @tipografia:					@sans;
-@tipografia-titulos: 			'Source Sans Pro';
+@tipografia-titulos: 			@sans;
 @tipografia-titulos-cond:		'Open Sans';
 @tipografia-referencias:		'Source Sans Pro';
 
 // Negros
-@negro-oscuro:					rgba(25, 26, 25, 1);
-@negro: 						rgba(43, 44, 42, 1);
+@negro-oscuro:					rgba(25, 26, 25, .8);
+@negro: 						rgba(1, 1, 1, 1);
 @negro-claro:					rgba(69, 71, 71, 1);
 
 // Grises
 @gris-oscuro:					rgba(164, 164, 162, 1);
 @gris:							rgba(193, 194, 194, 1);
-@gris-claro:					rgba(226, 226, 226, 1);
+@gris-claro:					rgba(226, 226, 226, .7);
 @blanco-gris:					#f9f9f9;
 @gris-blanco:					#f9f9f9;
 
@@ -140,15 +141,15 @@
 
 // Links
 @color-link:					@rojo-claro;
-@color-link-hover:				darken(@color-link, 20%);
+@color-link-hover:				@negro;
 @color-opuesto:					spin(@color-link, 180);
 
 // Proporciones tipográficas
 
-@cuerpo:						16px;				// tamaño tipográfico base en pixeles
+@cuerpo:						15px;				// tamaño tipográfico base en pixeles
 @em:							@cuerpo * 1em;		// atajo para salida en ems, ej. '12/@em'
-@interlinea:					22px;
-@cuerpo-nav:					16px;
+@interlinea:					25/@em;	//*25/16=1.5625em*//
+@cuerpo-nav:					@cuerpo;
 @interlinea-nav:				22px;
 
 

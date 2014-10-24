@@ -1,18 +1,27 @@
-<footer> 
+<footer class='fondo-gris-claro'> 
   <div class='pag'>
     <div class='fila'>
     <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
-      <h4 class='centrado rojo-claro'>Pyxis <span class='gris-claro'>Framework</span></h4>
-      <ul>
-        <li>Ver en <a href='https://github.com/eadpucv/pyxis'>Github</a></li>
-        <li>Ver <a href='http://wiki.ead.pucv.cl/index.php/Pyxis_framework_y_Gamma:_El_dise%C3%B1o_y_la_gr%C3%A1fica_como_un_ecosistema_digital'>Documentación</a></li>
+      <a href='{{ site.baseurl }}/'>
+      <div class='logo-pyxis footer centrado'>
+      <img src='{{ site.baseurl }}/img/pyxis-brujula-06.png'><h6 class='gruesa rojo-claro centrado'>Pyxis <span class='negro-oscuro'>framework</span></h6>
+      </div>
+      </a>
+      <ul class='bloque centrado'>
+        <li><a class='xs' href='{{ site.baseurl }}/pags/tipografia'>Tipografía</a></li>
+        <li><a class='xs' href='{{ site.baseurl }}/pags/grilla'>Grilla</a></li>
+        <li><a class='xs' href='{{ site.baseurl }}/pags/interaccion'>Interacción</a></li>
+        <li><a class='xs' href='{{ site.baseurl }}/pags/color'>Color</a></li>
+        <li><a class='xs' href='{{ site.baseurl }}/pags/iconografia'>Íconografía</a></li>
+        <li><a class='xs' href='{{ site.baseurl }}/pags/versatilidad'>Versatilidad</a></li>
+        <li><a class='xs' href='{{ site.baseurl }}/pags/javascript'>Javascript</a></li>
       </ul>
     </div>
   </div>
   <div class='fila'>
     <div class='col-md-12'>
-      <p class='gris'><span xmlns:dct='http://purl.org/dc/terms/' href='http://purl.org/dc/dcmitype/InteractiveResource' property='dct:title' rel='dct:type'>e[ad] Pyxis</span> por <span xmlns:cc='http://creativecommons.org/ns#' property='cc:attributionName'>Taller de Investigaciones Gráficas .:TIG:.</span> se encuentra bajo una <a rel='license' href='http://creativecommons.org/licenses/by/3.0/deed.es_CL'>Licencia Creative Commons Atribución 3.0 Unported</a>
-      <a class='derecha' rel='license' href='http://creativecommons.org/licenses/by/3.0/deed.es_CL'><img alt='Licencia Creative Commons' style='border-width:0' src='http://i.creativecommons.org/l/by/3.0/80x15.png' /></a> </p>
+      <p class='xs sin-margen centrado negro'><span xmlns:dct='http://purl.org/dc/terms/' href='http://purl.org/dc/dcmitype/InteractiveResource' property='dct:title' rel='dct:type'>e[ad] Pyxis</span> por <span xmlns:cc='http://creativecommons.org/ns#' property='cc:attributionName'>Taller de Investigaciones Gráficas .:TIG:.</span> se encuentra bajo una <a class='xs' rel='license' href='http://creativecommons.org/licenses/by/3.0/deed.es_CL'>Licencia Creative Commons Atribución 3.0 Unported</a>
+      <a class='xs' rel='license' href='http://creativecommons.org/licenses/by/3.0/deed.es_CL'><img alt='Licencia Creative Commons' style='border-width:0' src='http://i.creativecommons.org/l/by/3.0/80x15.png' /></a></p>
             </div>
           </div>
   </div>
@@ -88,4 +97,35 @@ $('#tabla-contenido a').click(function (e) {
       $("#nav-page").sticky({topSpacing:30});
       });
     </script>
+
+    <script type='text/javascript'>
+    jQuery(document).ready(function($) {
+    $('a[href=#topbar]').click(function(){
+        $('html, body').animate({scrollTop:0}, 'slow');
+        return false;
+    });
+}); 
+    </script>
+
+<script type='text/javascript'>
+$("#subiendo-1").click(function(e){
+    $('html, body').animate({scrollTop:$('#fondo-este').offset().top + 35}, 'slow');
+});
+$("#subiendo-2").click(function(e){
+    $('html, body').animate({scrollTop:$('#fondo-este').offset().top + 35}, 'slow');
+});
+$("#subiendo-3").click(function(e){
+    $('html, body').animate({scrollTop:$('#fondo-este').offset().top + 35}, 'slow');
+});
+$("#subiendo-4").click(function(e){
+    $('html, body').animate({scrollTop:$('#fondo-este').offset().top + 35}, 'slow');
+});
+$("#subiendo-5").click(function(e){
+    $('html, body').animate({scrollTop:$('#fondo-este').offset().top + 35}, 'slow');
+});
+$("#subiendo-5").click(function(e){
+    $('html, body').animate({scrollTop:$('#fondo-este').offset().top + 35}, 'slow');
+});
+</script>
+
 </footer>

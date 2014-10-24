@@ -3,49 +3,35 @@ layout: base
 title: Pyxis Framework - Tipografía
 subtitle: <i class="icn icn-libro"></i> Tipografía
 intro: Texto sobre tipografía
+link-1: Fuentes tipográficas
+link-2: Encabezados
+link-3: Valores tipográficos
+link-4: Clases diferenciales
 pde: type.pde
 ---
 
-
-<!--<div class='col-lg-3 col-md-3 oculto-sm oculto-xs'>
-<a name='ancla' id='a'></a>
-<div class='menu-affix alto-affix'>
-<div data-spy="affix" data-offset-top="220">
-    <ul>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-uno'>Familias tipográficas</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-dos'>Títulos</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-tres'>Subtítulos</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-cuatro'>Valores tipográficos</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-cinco'>Grosores</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-seis'>Estilos de carácter</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-siete'>Alineación</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-ocho'>Listas</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-nueve'>Clases diferenciales</a></li>
-    </ul>
-</div>             
-</div>
-</div>-->
-
 <div class='fila'>
 <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
-
     <div id='sub-componentes'>
-    <ul class="nav nav-tabs centrado" role="tablist" id="tabla-contenido">
-        <li class="active"><a class='condensado' href="#familias" role="tab" data-toggle="tab">Fuentes tipográficas</a></li>
-        <li><a class='condensado' href="#encabezados" role="tab" data-toggle="tab">Encabezados</a></li>
-        <li><a class='condensado' href="#valores" role="tab" data-toggle="tab">Valores tipográficos</a></li>
-        <li><a class='condensado' href="#clases" role="tab" data-toggle="tab">Clases diferenciales</a></li>
-    </ul>
+    <div class='pag sin-relleno'>
+            <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
+                <li class="active"><a id='subiendo-1' class='condensado' href="#familias" role="tab" data-toggle="tab">{{ page.link-1 }}</a></li>
+                <li><a id='subiendo-2' class='condensado' href="#encabezados" role="tab" data-toggle="tab">{{ page.link-2 }}</a></li>
+                <li><a id='subiendo-3' class='condensado' href="#valores" role="tab" data-toggle="tab">{{ page.link-3 }}</a></li>
+                <li><a id='subiendo-4' class='condensado' href="#clases" role="tab" data-toggle="tab">{{ page.link-4 }}</a></li>
+                <li class='subir'><a href="#topbar"><i class="icn icn-libro"></i></a></li>
+            </ul>
+    </div>
     </div>
 
     <!-- Tab panes -->
     <div class="tab-content">
         <div class="tab-pane fade in active" id="familias">
-            <h2 class='condensado pizarra'>Parámetros de fuente</h2>
+            <h4 class='pizarra gruesa'>Parámetros de fuente</h4>
             <p>Pyxis utiliza globalmente y por defecto un <i>font-size</i> de 16px, con un <i>line-heigh</i> de 22px y un <i>font-weight</i> de 200, lo cual hace referencia a un <i>font-style</i> "normal" o "regular" en las dos familias de fuente escogidas.</p>
-            <h4 class='condensado pizarra'>Source Sans Pro</h4>
-            <p>Se utiliza la familia tipográfica <a href="http://www.google.com/fonts/specimen/Source+Sans+Pro">Source Sans Pro</a>, para títulos y encabezados de texto. Esta tipografía de tipo sans-serif, presenta gran versatilidad a través de sus 12 pesos.</p>
-            <h6 class='pizarra fino linea-lateral'>Declaraciones</h6>
+            <h5 class='pizarra gruesa'>Source Sans Pro</h5>
+            <p>Se utiliza la familia tipográfica <a href="http://www.fontsquirrel.com/fonts/source-sans-pro" target="blank">Source Sans Pro</a>, para títulos y encabezados de texto. Esta tipografía de tipo sans-serif, presenta gran versatilidad a través de sus 12 pesos.</p>
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
             <code> 
                 h1, h2, h3, h4, h5, h6 {
                     font-family: @tipografia-titulos;
@@ -53,46 +39,10 @@ pde: type.pde
 
                 @tipografia-titulos:            'Source Sans Pro';
             </code>
-            <hr>
-            <h4 class='condensado pizarra'>Merriweather</h4>
-            <p>Se utiliza la familia tipográfica <a href="https://www.google.com/fonts/specimen/Merriweather">Merriweather</a>, en su versión ligth para texto continuo, poemas o textos diferenciados, con una familia tipográfica de 6 pesos.</p>
-            <h6 class='pizarra fino linea-lateral'>Declaraciones</h6>
-            <code> 
-                //  Párrafo:
-
-                p {
-                    font-family: @texto-continuo;
-                }
-
-                // Clases diferenciadas:
-
-                .poema{
-                    font-family: @serif;
-                }
-
-                .serif {
-                  font-family: @serif;
-                }
-
-                //  Énfasis:
-
-                .cursiva,
-                .italica,
-
-                em, i{
-                    font-family: @italica;
-                    font-style: italic;
-                    font-weight: 100;
-                }
-
-                @texto-continuo:                'Merriweather', serif;
-                @serif:                         'Merriweather', serif;
-                @italica:                       'Merriweather', serif;
-            </code>
-            <hr>
-            <h4 class='condensado pizarra'>Open Sans Condensed</h4>
-            <p>Se utiliza la familia tipográfica <a href="http://www.google.com/fonts/specimen/Source+Sans+Pro">Open Sans Condensed</a>, para títulos y encabezados de texto. Esta tipografía de tipo sans-serif, presenta gran versatilidad a través de sus 12 pesos.</p>
-            <h6 class='pizarra fino linea-lateral'>Declaraciones</h6>
+            <hr class='invisible'>
+            <h5 class='pizarra gruesa'>Open Sans Condensed</h5>
+            <p>Se utiliza la familia tipográfica <a href="http://www.google.com/fonts/specimen/Open+Sans+Condensed" target="blank">Open Sans Condensed</a>, para títulos y encabezados de texto. Esta tipografía de tipo sans-serif, presenta gran versatilidad a través de sus 12 pesos.</p>
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
             <code> 
                 h1, h2, h3, h4, h5, h6 {
                     font-family: @tipografia-titulos-cond;
@@ -100,13 +50,12 @@ pde: type.pde
 
                 @tipografia-titulos-cond:            'Open Sans';
             </code>
-            <hr>
+            <hr class='invisible'>
         </div>
         <div class="tab-pane fade" id="encabezados">
-            <h2 class='rojo-claro'>Títulos</h2>
+            <h4 class='pizarra gruesa'>Títulos</h4>
             <p>Estas son las cabeceras HTML disponibles también en Pyxis. Las diferencias cuantitativas entre cabeceras, a medida que escalan, son de 2 a máximo 4px. <code class='codigo-parrafo'>&lt;h1&gt;</code> alberga un <i>font-size</i> de 33px, mientras que <code class='codigo-parrafo'>&lt;h6&gt;</code> es visible en 19px.</p>
-            
-            <h1>Ejemplo:</h1>
+        
             <h1>Encabezado de Primer Nivel {33px}</h1>
             <h2>Encabezado de Segundo Nivel {29px}</h2>
             <h3>Encabezado de Tercer Nivel {27px}</h3>
@@ -114,6 +63,8 @@ pde: type.pde
             <h5>Encabezado de Quinto Nivel {21px}</h5>
             <h6>Encabezado de Sexto Nivel {19px}</h6>
 
+            <hr class='invisible'>
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
             <code>
                 &lt;h1>Encabezado de Primer Nivel&lt;/h1>
                 &lt;h2>Encabezado de Segundo Nivel&lt;/h2>
@@ -122,10 +73,12 @@ pde: type.pde
                 &lt;h5>Encabezado de Quinto Nivel&lt;/h5>
                 &lt;h6>Encabezado de Sexto Nivel&lt;/h6>
             </code>
+            <hr class='invisible'>
+
             <!-- Sub-Cabeceras -->
-            <h2 class='rojo-claro'>Subtítulos</h2><a name="titulo-tres"></a>
+            <h4 class='pizarra gruesa'>Subtítulos</h4><a name="titulo-tres"></a>
             <p>Puedes insertar un subtítulo añadiendo la clase <code class='codigo-parrafo'>&ltsmall></code>, más fino y en una escala menor a las cabeceras comunes, pero adoptando la misma proporción de diferenciado. La disminución tipográfica es de un 80%.</p>
-            <h1>Ejemplo:</h1>
+
             <h1><small>Subtitulo de Primer Nivel</small></h1>
             <h2><small>Subtitulo de Segundo Nivel</small></h2>
             <h3><small>Subtitulo de Tercer Nivel</small></h3>
@@ -133,6 +86,8 @@ pde: type.pde
             <h5><small>Subtitulo de Quinto Nivel</small></h5>
             <h6><small>Subtitulo de Sexto Nivel</small></h6>
 
+            <hr class='invisible'>
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
             <code>
                 &lt;h1>&lt;small>Subtitulo de Primer Nivel&lt;/small>&lt;/h1>
                 &lt;h2>&lt;small>Subtitulo de Segundo Nivel&lt;/small>&lt;/h2>
@@ -141,14 +96,18 @@ pde: type.pde
                 &lt;h5>&lt;small>Subtitulo de Quinto Nivel&lt;/small>&lt;/h5>
                 &lt;h6>&lt;small>Subtitulo de Sexto Nivel&lt;/small>&lt;/h6>
             </code>
+            <hr class='invisible'>
 
-            <h1>Ejemplo comparativo:</h1>
+            <h5 class='pizarra gruesa'>Ejemplo comparativo:</h5>
             <h1>Encabezado de Primer Nivel {33px}<small>Subtitulo de Primer Nivel</small></h1>
-            <h2>Encabezado de Segundo Nivel {29px}<small>Subtitulo de Primer Nivel</small></h2>
-            <h3>Encabezado de Tercer Nivel {27px}<small>Subtitulo de Primer Nivel</small></h3>
-            <h4>Encabezado de Cuarto Nivel {23px}<small>Subtitulo de Primer Nivel</small></h4>
-            <h5>Encabezado de Quinto Nivel {21px}<small>Subtitulo de Primer Nivel</small></h5>
-            <h6>Encabezado de Sexto Nivel {19px}<small>Subtitulo de Primer Nivel</small></h6>
+            <h2>Encabezado de Segundo Nivel {29px}<small>Subtitulo de Segundo Nivel</small></h2>
+            <h3>Encabezado de Tercer Nivel {27px}<small>Subtitulo de Tercer Nivel</small></h3>
+            <h4>Encabezado de Cuarto Nivel {23px}<small>Subtitulo de Cuarto Nivel</small></h4>
+            <h5>Encabezado de Quinto Nivel {21px}<small>Subtitulo de Quinto Nivel</small></h5>
+            <h6>Encabezado de Sexto Nivel {19px}<small>Subtitulo de Sexto Nivel</small></h6>
+
+            <hr class='invisible'>
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
             <code>
                 &lt;h1>Encabezado de Primer Nivel&lt;small>Subtitulo de Primer Nivel&lt;/small>&lt;/h1>
                 &lt;h2>Encabezado de Segundo Nivel&lt;small>Subtitulo de Primer Nivel&lt;/small>&lt;/h2>
@@ -157,107 +116,104 @@ pde: type.pde
                 &lt;h5>Encabezado de Quinto Nivel&lt;small>Subtitulo de Primer Nivel&lt;/small>&lt;/h5>
                 &lt;h6>Encabezado de Sexto Nivel&lt;small>Subtitulo de Primer Nivel&lt;/small>&lt;/h6>
             </code>
+            <hr class='invisible'>
+
         </div>
         <div class="tab-pane fade" id="valores">
-            <h1 class='rojo-claro'>Valores tipográficos </h1>
-            <h2 class='rojo-claro'>Tamaños de párrafo</h2>
-            <p>Los tamaños de párrafo responde a las medidas estandarizadas de acuerdo a la nomenclatura también presente en la Grilla: <strong>xs</strong> (Extra-small), <strong>sm</strong> (Small), <strong>md</strong> (Medium) y <strong>lg</strong> (Large), respectivamente.</p>
+            <h4 class='pizarra gruesa'>Tamaños de párrafo</h4>
+            <p>Los tamaños de párrafo responde a las medidas estandarizadas de acuerdo a la nomenclatura también presente en la Grilla: <code class='codigo-parrafo'>xs</code> (Extra-small), <code class='codigo-parrafo'>sm</code> (Small), <code class='codigo-parrafo'>md</code> (Medium) y <code class='codigo-parrafo'>lg</code> (Large), respectivamente.</p>
 
-            <h6>Ejemplos:</h6>
             <p class='xs'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p>
+            <p class='sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p>
+            <p class='md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p>
+            <p class='lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p>
+
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+
             <code>
                 &lt;p class=&quot;xs&quot;&gt;
-            </code>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p>
-            <code>
                 &lt;p&gt;
-            </code>
-            <p class='sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p>
-            <code>
                 &lt;p class=&quot;sm&quot;&gt;
-            </code>
-            <p class='md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p>
-            <code>
                 &lt;p class=&quot;md&quot;&gt;
-            </code>
-            <p class='lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</p>
-            <code>
                 &lt;p class=&quot;lg&quot;&gt;
             </code>
+            <hr class='invisible'>
 
-            <h2 class='rojo-claro'>Vistazo (span)</h2>
+            <h4 class='Pizarra gruesa'>Vistazo (span)</h4>
             <p>El énfasis de vistazo sigue la misma línea que el de párrafo anterior.</p>
             <h6>Ejemplos:</h6>
             <span class='xs'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</span>
-            <code>
-                &lt;span class=&quot;xs&quot;&gt;
-            </code>
             <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</span>
-            <code>
-                &lt;span&gt;
-            </code>
             <span class='sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</span>
-            <code>
-                &lt;span class=&quot;sm&quot;&gt;
-            </code>
             <span class='md'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</span>
-            <code>
-                &lt;span class=&quot;md&quot;&gt;
-            </code>
             <span class='lg'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at diam lorem, ut consectetur elit. Pellentesque non gravida lacus. <strong>Duis lobortis</strong> interdum nisi, nec ultrices est consequat sit amet. Etiam consequat mattis aliquam.</span>
+
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+
             <code>
+                &lt;span class=&quot;xs&quot;&gt;      
+                &lt;span&gt;
+                &lt;span class=&quot;sm&quot;&gt;
+                &lt;span class=&quot;md&quot;&gt;
                 &lt;span class=&quot;lg&quot;&gt;
             </code>
+            <hr class='invisible'>
+
             <!-- Grosores -->
-            <h2 class='rojo-claro'>Grosores</h2>
+            <h4 class='pizarra gruesa'>Grosores</h4>
             <p>Las variables de fuente de acuerdo al grosor están estandarizadas por cuatro clases más la que viene por defecto.</p>
-            <h6>Ejemplos:</h6>
+
             <p class='fino'>Esto es un texto fino</p>
+            <p class='semi-gruesa'>Esto es un texto semigrueso</p>
+            <p class='gruesa'>Esto es un texto grueso (en negrita)</p>
+            <p class='pesada'>Esto es un texto pesado</p>
+
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+
             <code>
                 &lt;p class=&quot;fino&quot;&gt;
-            </code>
-            <p class='semi-gruesa'>Esto es un texto semigrueso</p>
-            <code>
                 &lt;p class=&quot;semi-gruesa&quot;&gt;
-            </code>
-            <p class='gruesa'>Esto es un texto grueso (en negrita)</p>
-            <code>
                 &lt;p class=&quot;gruesa&quot;&gt;
-            </code>
-            <p class='pesada'>Esto es un texto pesado</p>
-            <code>
                 &lt;p class=&quot;pesada&quot;&gt;
             </code>
+            <hr class='invisible'>
+
             <!-- Estilos -->
-            <h2 class='rojo-claro'>Estilos de carácter</h2>
+            <h4 class='pizarra gruesa'>Estilos de carácter</h4>
             <p>Estilos de ajuste tipográfico de manera estándar</p>
-            <h6>Ejemplos:</h6>
+
             <p class='italica'>Esto es un texto en cursiva</p>
+            <p class='altas'>Esto es un texto en altas</p>
+
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+
             <code>
                 &lt;p class=&quot;italica&quot;&gt;, &lt;p class=&quot;cursiva&quot;&gt; o &lt;i&gt;
-            </code>
-            <p class='altas'>Esto es un texto en altas</p>
-            <code>
                 &lt;p class=&quot;altas&quot;&gt;
             </code>
+            <hr class='invisible'>
+
             <!-- Alineación -->
-            <h2 class='rojo-claro'>Alineación</h2>
+            <h4 class='pizarra gruesa'>Alineación</h4>
             <p>Estilos de ajuste en función de alinear el texto hacia alguna dirección.</p>
-            <h6>Ejemplos:</h6>
+
             <p class='izquierda'>Esto es un texto a la izquierda</p>
+            <p class='centrado'>Esto es un texto centrado</p>
+            <p class='derecha'>Esto es un texto a la derecha</p>
+            <hr class='invisible'>
+
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+
             <code>
                 &lt;p class=&quot;izquierda&gt;
-            </code>
-            <p class='centrado'>Esto es un texto centrado</p>
-            <code>
                 &lt;p class=&quot;centrado&quot;&gt;
-            </code>
-            <p class='derecha'>Esto es un texto a la derecha</p>
-            <code>
                 &lt;p class=&quot;derecha&quot;&gt;
             </code>
+            <hr class='invisible'>
+
             <!-- Listas -->
-            <h2 class='rojo-claro'>Listas</h2>
+            <h4 class='pizarra gruesa'>Listas</h4>
             <h6>Ejemplo de lista desordenada:</h6>
             <ul>
                 <li>Primer elemento</li>
@@ -270,6 +226,7 @@ pde: type.pde
                 <li>Quinto elemento</li>
                 <li>Sexto elemento</li>
             </ul>
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
             <code>
                 &lt;ul&gt;
                     &lt;li&gt;&lt;/li&gt;
@@ -289,7 +246,8 @@ pde: type.pde
                 <li>Quinto elemento</li>
                 <li>Sexto elemento</li>
             </ol>
-                    
+
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>  
             <code>
                 &lt;ol&gt;
                     &lt;li&gt;&lt;/li&gt;
@@ -299,7 +257,7 @@ pde: type.pde
             </code>
         </div>
         <div class="tab-pane fade" id="clases">
-            <h2 class='rojo-claro'>Clases diferenciales</h2>
+            <h4 class='pizarra gruesa'>Clases diferenciales</h4>
             <p>La clase "poema" funciona de igual manera que la clase "code" o "pre", ya que nos permite hacer válido todos los elementos insertos en html, incluyendo los esppacios en blanco y los enter. Esto es útil al momento de escribir poemas.</p>
             <p class='poema'>
                     

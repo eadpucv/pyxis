@@ -5,28 +5,23 @@ subtitle: <i class="icn icn-imagen"></i> Versatilidad
 intro: Texto sobre versatilidad
 ---
 
-<!--<div class='col-lg-3 col-md-3 oculto-sm oculto-xs'>
-<a name='ancla' id='a'></a>
-<div class='menu-affix alto-affix'>
-<div data-spy="affix" data-offset-top="220">
-    <ul>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-uno'>Formularios</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-dos'>Agregar página</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-tres'>Crear un proyecto</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-cuatro'>Nuevo usuario</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-cinco'>Publicar un trabajo</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-seis'>Iniciar sesión</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-siete'>Botones</a></li>
-    </ul>
-</div>
-</div>
-</div>-->
+<div class='fila'>
 <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
-    <p>Esta sección busca demostrar la versatilidad de elementos establecidos del framework. </p>
-    <h2 class='rojo-claro'>Estilos de párrafo</h2>
+        <div id='sub-componentes'>
+        <div class='pag sin-relleno'>
+            <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
+                <li class="active"><a id='subiendo-1' class='condensado' href="#paleta-gamma" role="tab" data-toggle="tab">Header</a></li>
+                <li><a id='subiendo-2' class='condensado' href="#paleta-adicional" role="tab" data-toggle="tab">Content</a></li>
+                <li><a id='subiendo-3' class='condensado' href="#paleta-gamma" role="tab" data-toggle="tab">Footer</a></li>
+                <li><a id='subiendo-4' class='condensado' href="#paleta-gamma" role="tab" data-toggle="tab">Textos</a></li>
+                <li><a id='subiendo-5' class='condensado' href="#paleta-gamma" role="tab" data-toggle="tab">Imágenes</a></li>
+                <li class='subir'><a href="#topbar"><i class="icn icn-imagen"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <h4 class='pizarra gruesa'>Estilos de párrafo</h4>
+    
     <div class="h-entry">
-        <h1 class='altas rojo-claro'>1. Artículos: jerarquías de título y texto</h1>
-        <h3>Artículo destacado más reciente </h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel consectetur mauris. Vivamus id orci maximus, feugiat sapien a, interdum massa. Sed et facilisis dolor. Mauris velit nunc, eleifend vel molestie et, luctus eget justo. Ut semper diam turpis, non rutrum lorem scelerisque in. Suspendisse potenti. In hac habitasse platea dictumst. Duis id justo at risus porta feugiat lacinia molestie turpis. Mauris viverra et nibh condimentum tincidunt. Suspendisse sagittis congue dapibus. Integer tempus lorem ac tellus tincidunt egestas. Nunc nec placerat nisi, vel tincidunt leo.</p>
         <img src="{{ site.baseurl }}/img/manto-5.jpg" alt="versatilidad de imagen">
         <blockquote>Imagen ancho completo de su elemento padre</blockquote>
@@ -94,7 +89,11 @@ intro: Texto sobre versatilidad
             <li>No hay tercera sin cuarta</li>
         </ul>
     </div>
-
+    <a class='lg'>Money, get away, get a good job with more pay and you're okay</a>
+    <a class='md'>Money, get away, get a good job with more pay and you're okay</a>
+    <a class='sm'>Money, get away, get a good job with more pay and you're okay</a>
+    <a class='xs'>Money, get away, get a good job with more pay and you're okay</a>
+</div>
 <!--
 <div class='col-lg-9 col-md-9 col-sm-12 col-xs-12'>
 
