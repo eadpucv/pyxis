@@ -8,22 +8,22 @@ title: Pyxis Framework
       <h1 class='rojo-claro fino centrado grande'>Componentes</h1>
       <h5 class='centrado'>Pyxis se articula con diversos elementos , que proponen un entorno de trabajo específico. Los elementos se incorporan para facilitar el uso del framework.</h5>
       <div class='col-lg-3 col-md-3 col-sm-3 oculto-xs centrado'>
-        <i class="icn icn-pc-lig icn-xl"></i> <i class="icn icn-tablet-lig icn-xl"></i> <i class="icn icn-movil-lig icn-xl"></i> 
+        <i class="icn icn-pc-lig icn-xl"></i> <i class="icn icn-tablet icn-xl"></i> <i class="icn icn-movil icn-xl"></i> 
         <h2 class='rojo-claro'>Responsive</h2>
         <p class='parrafo-izquierdo sans'>Al incorporar una grilla responsiva y adaptable, permite que la construcción de bloques en la diagramación de la página sea fácil y coherente. Esta es la base para lograr una accesibilidad a las plataformas de cualquier dispositivo sin importar su resolución de pantalla.</p>
       </div>
       <div class='col-lg-3 col-md-3 col-sm-3 oculto-xs centrado'>
-        <i class="icn icn-less-lig icn-xl"></i> 
+        <i class="icn icn-less icn-xl"></i> 
         <h2 class='rojo-claro'>Less</h2>
         <p class='parrafo-izquierdo sans'>El uso de less da pie a una mayor parametrización a la hora de configurar las clases gráficas. Además de construir variables y reutilizar sus valores en otros elementos genera una conexión gráfica a lo largo de la plataforma.</p>
       </div>
       <div class='col-lg-3 col-md-3 col-sm-3 oculto-xs centrado'>
-        <i class="icn icn-bower-lig icn-xl"></i> 
+        <i class="icn icn-bower icn-xl"></i> 
         <h2 class='rojo-claro'>Bower</h2>
         <p class='parrafo-izquierdo sans'>Bower es un manejador de paquetes que garantiza la correcta instalación del framework junto con todas sus dependencias, en este caso jQuery y Stampa. </p>
       </div>
       <div class='col-lg-3 col-md-3 col-sm-3 oculto-xs centrado'>
-        <i class="icn icn-codigo-lig icn-xl"></i>
+        <i class="icn icn-codigo icn-xl"></i>
         <h2 class='rojo-claro'>OpenSource</h2>
         <p class='parrafo-izquierdo sans'>El framework al igual que sus dependencias están alojados en github, por ende toda su estructura y elaboración está al libre acceso de cualquier persona, pudiendo tomar partes del framework y extenderlas a su propio deseo.</p>
       </div>

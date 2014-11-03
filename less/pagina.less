@@ -6,11 +6,32 @@
     .transition(.2s ease all);
 }
 
+img{
+	width: 100%;
+
+	&.xs{
+		width: 40%;
+	}
+	&.sm{
+		width: 80%;
+	}
+	&.md{
+		width: 150%;
+	}
+	&.lg{
+		width: 200%;
+	}
+
+	&.por-defecto{
+		width: auto;
+	}
+}
+
 header .iso{
 	margin: 0 0 0 @cuadratin;
 
 	h1{
-		.rojo;
+		.rojo-claro;
 		font-size: 34px;
 		font-weight: 200;
 		margin-bottom: @interlinea/2;
@@ -44,8 +65,8 @@ header {
 	padding: @cuadratin;
 	.cf;
 
-	&.menu{
-		padding: 0;
+	&.franja-componente{
+		padding: 20px 30px 0;
 	}
 
 	&.sin-relleno {
@@ -73,6 +94,7 @@ header {
 
 .fondo-header-pyxis {
 	background-color: @blanco;
+	min-height: 60px;
   	.box-shadow(0 0 10px fade(@negro, 30));
 	top: 0;
 	z-index: -1;
@@ -113,12 +135,10 @@ header {
 	background-color: @gris-claro;
 	position: relative;
 	overflow: hidden;
-	z-index: -10;
 	.cf;
 
 	&.xl{
 		min-height: 500/@em;
-		margin-top: 60/@em;
 
 		.leyenda{
 			padding: @cuadratin * 2 0;
@@ -127,6 +147,7 @@ header {
 	}
 
 	&.xs{
+		z-index: -10;
 		height: 120/@em;
 
 		.leyenda{
@@ -134,6 +155,7 @@ header {
 			width: 100%;
 			z-index: 100;
 			position: relative;
+			.cf
 
 			h1{
 				display: inline-block;
@@ -146,6 +168,7 @@ header {
 
 footer{
 	margin: 0 auto;
+	border-top: 20px solid @blanco;
 
 	p{	
 		img{
@@ -206,6 +229,27 @@ footer{
 
     //  Extra Small screen / Phone
   @media(max-width: @screen-xs-max){
+
+  	.fondo-header-pyxis {
+	min-height: 60px;
+}
+
+  	.pag{
+	padding: @cuadratin/1.5;
+
+		&.franja-componente{
+			padding: 20px 20px !important;
+		}
+
+		&.sin-relleno {
+			width: 100%;
+			padding: 0 !important;
+		}
+
+		&.menu-movil{
+			padding: 15px 20px !important;
+		}
+	}
   
   	.franja {
 
@@ -226,7 +270,7 @@ footer{
 				h1{
 					display: inline !important;
 					margin: 0 auto !important;
-					text-align: center;
+					text-align: left;
 					width: 85%;
 				}
 			}
@@ -236,6 +280,13 @@ footer{
 
   //  Small screen / tablet
   @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+
+  	.pag{
+
+	&.sin-relleno {
+		width: 720px;
+	}
+}
 
   	.franja {
 

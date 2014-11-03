@@ -1,13 +1,13 @@
 <!-- barra de menú -->
-<div class='fondo-header-pyxis oculto-sm oculto-xs'>
+<div class='fondo-header-pyxis oculto-xs'>
    <div class='pag sin-relleno menu'>
         <nav class='menu-pyxis'>
           <a href='{{ site.baseurl }}/'>
             <div class='logo-pyxis'>
-              <img src='{{ site.baseurl }}/img/pyxis-brujula-06.png'><h6 class='gruesa sans rojo-claro'>Pyxis<span class='fino gris-oscuro'>framework</span></h6>
+              <img src='{{ site.baseurl }}/img/pyxis-brujula-06.png'><h6 class='gruesa sans rojo-claro'>Pyxis<span class='fino gris-oscuro sans'>framework</span></h6>
             </div>
           </a>
-            <ul class='nav-rotulos'>
+            <ul class='nav-rotulos gruesa condensado'>
               <li><a href='{{ site.baseurl }}/pags/tipografia'>Tipografía</a></li>
               <li><a href='{{ site.baseurl }}/pags/grilla'>Grilla</a></li>
               <li><a href='{{ site.baseurl }}/pags/interaccion'>Interacción</a></li>
@@ -19,64 +19,24 @@
         </nav>     
         </div> 
 </div> 
-   <div class="fondo-blanco oculto-lg oculto-md">
+   <div class="fondo-header-pyxis oculto-lg oculto-sm oculto-md">
       <!--Begin Pattern HTML-->
-      <a href='{{ site.baseurl }}/'>
-        <div class='logo'>
-          <img src='{{ site.baseurl }}/img/pyxis-brujula-06.png'><h5 class='gruesa rojo-claro'>Pyxis<span class='fino gris-oscuro'>framework</span></h5>
+      <div class='pag menu-movil'>
+        <div class='logo-pyxis'>
+          <a href='{{ site.baseurl }}/'>
+              <img src='{{ site.baseurl }}/img/pyxis-brujula-06.png'><h6 class='gruesa sans rojo-claro sin-margen relleno-izq-xs'>Pyxis<span class='fino gris-oscuro sans relleno-izq-xs'>framework</span></h6>
+           </a>
         </div>
-      </a>
-      <a href="#menu" class="menu-link"><i class="icn icn-menu icn-lg"></i> </a>
-      <nav id="menu" role="navigation">
-              <li><a href='{{ site.baseurl }}/pags/tipografia'>Tipografía</a></li>
-              <li><a href='{{ site.baseurl }}/pags/grilla'>Grilla</a></li>
-              <li><a href='{{ site.baseurl }}/pags/interaccion'>Interacción</a></li>
-              <li><a href='{{ site.baseurl }}/pags/color'>Color</a></li>
-              <li><a href='{{ site.baseurl }}/pags/iconografia'>Íconografía</a></li>
-              <li><a href='{{ site.baseurl }}/pags/versatilidad'>Versatilidad</a></li>
-              <li><a href='{{ site.baseurl }}/pags/javascript'>Javascript</a></li>
+
+      <a href="#menu" class="menu-link derecha"><i class="icn icn-menu icn-lg"></i> </a>
+      <nav id="menu" class='lista-sin-estilo' role="navigation">
+              <li class='margen-sup'><a class='sans' href='{{ site.baseurl }}/pags/tipografia'>Tipografía</a></li>
+              <li><a class='sans' href='{{ site.baseurl }}/pags/grilla'>Grilla</a></li>
+              <li><a class='sans' href='{{ site.baseurl }}/pags/interaccion'>Interacción</a></li>
+              <li><a class='sans' href='{{ site.baseurl }}/pags/color'>Color</a></li>
+              <li><a class='sans' href='{{ site.baseurl }}/pags/iconografia'>Íconografía</a></li>
+              <li><a class='sans' href='{{ site.baseurl }}/pags/versatilidad'>Versatilidad</a></li>
+              <li><a class='sans' href='{{ site.baseurl }}/pags/javascript'>Javascript</a></li>
       </nav>
     </div>
-  <!-- 
-  <div class='oculto-lg oculto-md oculto-sm col-xs-12'>
-    <div class='menu-pyxis movil'> 
-      <div class="panel-group" id="accordion">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <div class='pag-movil'>
-              <h4 class="panel-title">
-                <div class='oculto-lg oculto-md oculto-sm col-xs-20'>
-                  <h5><span class='gruesa rojo-claro'>Pyxis</span> <span class='fino gris-oscuro'>framework</span> <span class='chico gris-claro'>1.0.1</span></h5>
-                </div>
-                <button type="button" class="btn btn-danger derecha" data-toggle="collapse" data-target="#demo">
-                  ...
-                </button>
-              </div>
-
-              <div id="demo" class="collapse">
-                <div class="panel-body fondo-gris-oscuro">
-                  <ul class='menu'>
-                    <a href='{{ site.baseurl }}/pags/tipografia'><li>Tipografía</li></a>
-                    <a href='{{ site.baseurl }}/pags/grilla'><li>Grilla</li></a>
-                    <a href='{{ site.baseurl }}/pags/interaccion'><li>Interacción</li></a>
-                    <a href='{{ site.baseurl }}/pags/color'><li>Color</li></a>
-                    <a href='{{ site.baseurl }}/pags/iconografia'><li>Íconografía</li></a>
-                    <a href='{{ site.baseurl }}/pags/versatilidad'><li>Versatilidad</li></a>
-                    <a href='{{ site.baseurl }}/pags/layout'><li>Layout</li></a>
-                    <a href='{{ site.baseurl }}/pags/javascript'><li>Javascript</li></a>
-                  </ul>
-                </div>
-              </div>
-            </h4>
-
-          </div>
-        </div>         
-      </div>
-    </div>
   </div>
-</div>
-</div>
- -->
-
-
-

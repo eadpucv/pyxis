@@ -2,11 +2,14 @@
 // Navs
 // --------------------------------------------------
 
-
 //  Por defecto:
 
 nav {
   margin: 0 auto;
+
+  &.lista-sin-estilo{
+      list-style: none;
+    }
   
   ul, ol{
   margin: 0;
@@ -16,7 +19,7 @@ nav {
     li{
       display: inline;
       margin: 0;
-      list-style-type: none;
+      //list-style-type: none;
       list-style: none;
     
     a{  
@@ -27,7 +30,6 @@ nav {
       color: @negro !important;
       font-size: 13px;
       text-transform: uppercase;
-
       }
 
     span{
@@ -53,6 +55,12 @@ nav {
         .transition(.5s ease all);
       }
     } 
+
+    // Sin interletraje
+
+        &.sin-interlinea{
+          line-height: 0;
+    }
   }
 }
 
@@ -83,20 +91,25 @@ nav {
     margin: 0 auto;
     padding: 0;     
     padding: 0;  
+    font-family: 'Open sans';
+    min-height: 60px;
 
     .nav-rotulos {
-      margin: 7.5px 0 0;
+      height: 60px;
       float: right;
 
       li a {
-        padding: 7.7px 18.5px;
+        margin: 17px 21px;
+        padding: 0;
+        font-family: @cond;
+        font-weight: 700;
       }
    }        
 
     h6{
       display: inline-block;
-      margin: 2px 0 3px 3px;
-      padding: 10px 0.5px;
+      margin: 15px 5px;
+      padding: 0;
     }
 
     span {
@@ -110,12 +123,12 @@ nav {
 // logo 
 
 .logo-pyxis {
-  width: 160/@em;
+  width: auto;
   float: left;
 
   img {
-    padding: 12px 0;
-    width: 25/@em;
+    padding: 18px 0;
+    width: 20/@em;
     float: left;
   }
 
@@ -145,10 +158,10 @@ nav {
 // -------------------------------------------------- Responsive
 
 a.menu-link {
-        float: right;
-        display: block;
-        padding: 0 1em;
+        display: inline-block;
+        margin-top: 7px;
     }
+
     nav[role=navigation] {
       clear: both;
       -webkit-transition: all 0.3s ease-out;
@@ -171,7 +184,7 @@ a.menu-link {
     }
     nav[role=navigation] li a {
       display: block;
-      padding: 10px 40px;
+      padding: 10px 15px;
     }
     
     @media screen and (min-width: 68.25em) {
@@ -224,7 +237,6 @@ a.menu-link {
       &:hover,
       &:focus {
         text-decoration: none;
-        background-color: @nav-link-hover-bg;
       }
     }
 
@@ -275,13 +287,12 @@ a.menu-link {
 // Give the tabs something to sit on
 
 .nav-tabs {
-  //border-bottom: 1px solid @nav-tabs-border-color;
   margin-bottom: 0px;
   margin-top: 0px;
-  background-color: @gris-claro;
   border-radius: 3px;
   display: inline-block;
   width: auto;
+  font-size: 0;
 
   > li {
     //float: left;
@@ -289,49 +300,33 @@ a.menu-link {
     display: inline-block;
     margin-bottom: 0px;
     margin-left-top: 0px;
-    //margin-right: -5px;
-    border-top: 0.5px solid rgba(164,164,162,.2);
-    -webkit-border-top: 0.5px solid rgba(164,164,162,.2);
-    -moz-border-top: 0.5px solid rgba(164,164,162,.2);
-    border-left: 1px solid rgba(164,164,162,.2);
-    -webkit-border-left: 1px solid rgba(164,164,162,.2);
-    -moz-border-left: 1px solid rgba(164,164,162,.2);
-    border-right: 0.5px solid rgba(164,164,162,.2);
-    -webkit-border-right: 0.5px solid rgba(164,164,162,.2);
-    -moz-border-right: 0.5px solid rgba(164,164,162,.2);
-    border-bottom: 3px solid rgba(69,71,71,.1);
-    -webkit-border-bottom: 3px solid rgba(69,71,71,.1);
-    -moz-border-bottom: 3px solid rgba(69,71,71,.1);
+    background-color: @blanco;
+    //letter-spacing: .4px;
+    border-bottom: 3px solid @blanco;
+    -webkit-border-bottom: 3px solid @blanco;
+    -moz-border-bottom: 3px solid @blanco;
     z-index: 30;
-
-      &:last-child{
-        border-right: 3px solid rgba(164,164,162,.1);
-    }
 
     // Actual tabs (as links)
     > a {
       margin: 0px;
-      //background-color: lighten(@gris, 15%);
-      font-size: 15px;
-      letter-spacing: 0.4px;
-      color: rgba(69,71,71,.5);
-      padding: 5px 15px;
+      font-size: 16px;
+      color: rgba(69,71,71,.7);
+      padding: 7px 15px 10px 15px;
       font-weight: 300;
       line-height: @line-height-base;
-      //border: 1px solid @gris;
       border-bottom: transparent;
       border-radius: none;
     }
 
     &:hover{
       border-bottom: 3px solid fade(@rojo-claro, 30);
-      background-color: @gris-claro;
+      background-color: @blanco !important;
     }
 
     // Active state, and its :hover to override normal :hover
     &.active {
       border-bottom: 3px solid fade(@rojo-claro, 80) !important;
-      background-color: @gris-claro;
 
       &.subir{
         border-bottom: 0px !important;
@@ -339,13 +334,11 @@ a.menu-link {
     }
 
     &.active > a {
-      color: rgba(69,71,71,.5);
+      color: rgba(69,71,71,1);
       &,
       &:hover,
       &:focus {
-        //color: @nav-tabs-active-link-hover-color;
-        //background-color: @nav-tabs-active-link-hover-bg;
-        //border: 1px solid @nav-tabs-active-link-hover-border-color;
+        background-color: @blanco;
         border-bottom-color: transparent;
         cursor: default;
       }
@@ -495,42 +488,52 @@ a.menu-link {
     //  Extra Small screen / Phone
   @media(max-width: @screen-xs-max){
 
-          // logo 
+  // logo
 
-  .logo {
-    width: 300px;
-    margin: 0 auto;
-    float: none;
-    text-align: center;
-    padding: 20px 0 0 0;
+  .logo-pyxis {
+    width: auto;
+    float: left;
+    display: inline-block;
 
-    h5 {
-      font-size: 25px;
-      margin: 0;
-      padding: 0 0 0 5px;
+    h6 {
       display: inline-block;
     }
 
-    span {
-      margin: 0;
+    img {
+      width: 20/@em;
+      float: left;
+      padding: 3px 0;
     }
 
-    img {
-      float: none;
+  &.footer {
+    width: 0 auto;
+    float: none;
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 5px;
+
+    h6{
+      display: inline-block;
+      margin: 0px;
+      padding: 0px 0.5px;
+    }
+
+    img{
       padding: 0;
-      width: 25px;
+      width: 20/@em;
+      display: block;
     }
   }
+}
 
   .menu-pyxis {
-    min-height: @cuadratin * 1.7;
     }
 
   .nav>li {
     position: relative;
     display: block;
     width: 100%;
-    border: 1px solid @gris;
+    //border: 1px solid @gris;
 
     a {
       border: none;
@@ -538,6 +541,53 @@ a.menu-link {
       border-radius: 0;
     }
   }
+
+  .nav-tabs {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-radius: 3px;
+  display: inline-block;
+  width: auto;
+  font-size: 0;
+
+  > li {
+    //float: left;
+    // Make the list-items overlay the bottom border
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-left-top: 0px;
+    background-color: @blanco;
+    //letter-spacing: .4px;
+    border-bottom: 0px;
+    z-index: 30;
+
+    // Actual tabs (as links)
+    > a {
+      margin: 0px;
+      font-size: 16px;
+      color: rgba(69,71,71,.7);
+      padding: 10px 15px 12px 15px;
+      font-weight: 300;
+      line-height: @line-height-base;
+      border-bottom: transparent;
+      border-radius: none;
+    }
+
+    &:hover{
+      border-bottom: 0px;
+    }
+
+    // Active state, and its :hover to override normal :hover
+    &.active {
+      border-bottom: 0 !important;
+    }
+
+    &.active > a {
+      color: @rojo-claro !important;
+      background-color: @gris-claro !important; 
+    }
+  }
+}
 
   .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
     color: #c1c2c2;
@@ -550,6 +600,17 @@ a.menu-link {
 
   //  Small screen / tablet
   @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+
+//  Menú Pyxis
+.menu-pyxis {
+
+    .nav-rotulos {
+
+      li a {
+        margin: 17px 9px;
+      }
+   }        
+}
 
       // logo 
 
