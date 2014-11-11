@@ -28,7 +28,7 @@ pde: type.pde
     <div class="tab-content">
         <div class="tab-pane fade in active" id="familias">
             <h4 class='pizarra gruesa'>Parámetros de fuente</h4>
-            <p>Pyxis utiliza globalmente y por defecto un <i>font-size</i> de 16px, con un <i>line-heigh</i> de 22px y un <i>font-weight</i> de 200, lo cual hace referencia a un <i>font-style</i> "normal" o "regular" en las dos familias de fuente escogidas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt turpis et metus scelerisque posuere vel sed ligula. Cras ullamcorper tortor at tortor finibus posuere. Suspendisse egestas eget magna a luctus.</p>
+            <p>Pyxis utiliza globalmente y por defecto un <i>font-size</i> de <span class='rojo-opuesto'>@cuerpo:</span> <b>15px</b>, con un <i>line-heigh</i> de <span class='rojo-opuesto'>@interlinea:</span> <b>25px</b> y un <i>font-weight</i> de <span class='rojo-opuesto'>@peso:</span> <b>200</b>, lo cual hace referencia a un <i>font-style</i> "normal" o "regular" en las dos familias de fuente escogidas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt turpis et metus scelerisque posuere vel sed ligula. Cras ullamcorper tortor at tortor finibus posuere. Suspendisse egestas eget magna a luctus.</p>
             <div class='fila'>
                 <div class='col-md-6 col-sm-12 col-xs-12'>
                     <h5 class='rojo-claro gruesa'>Source Sans Pro</h5>
@@ -139,203 +139,205 @@ h1, h2, h3, h4, h5, h6 {
         </div>
         <div class="tab-pane fade" id="valores">
             <h4 class='pizarra gruesa'>Tamaños de párrafo</h4>
-            <p>Los tamaños de párrafo responde a las medidas estandarizadas de acuerdo a la nomenclatura también presente en la Grilla: <b>xs</b> (Extra-small), <b>sm</b> (Small), <b>md</b> (Medium) y <b>lg</b> (Large), respectivamente.</p>
-
-            <h1 class='rojo-claro menudo en-linea relleno-der-sm alineado-izq'>h1</h1> 
+            <p>Los tamaños de párrafo están asociados a las medidas estandarizadas de acuerdo a la nomenclatura presente en la <a href='#'>Grilla</a>: <b>xs</b> (Extra-small), <b>sm</b> (Small), <b>md</b> (Medium) y <b>lg</b> (Large), respectivamente. En este caso, la nomenclatura de clases tiene referencia directa con su sinónimo declarado en español, a saber: <b>menudo (xs), pequeno (sm), mediano (md) y grande (lg)</b>. Para cada uno de los ejemplos de párrafo se antepone un título <span class='rojo-opuesto'>(hx)</span> con la clase correspondiente a su tamaño y jerarquía; de esta manera, se evidencia la versatilidad de cada elemento y su legibilidad sometida a los diferentes anchos de columna (col-lg, col-md, col-sm, col-xs). En cada ancho de patalla los párrafos muestran un orden diferente con el fin de comprender la dinámica en los anchos de línea y el interlineado del texto.</p>
+            <h5 class='pizarra'>Menudo (xs)</h5>
+            <p>El tamaño de párrafo que responde a la clase <i>xs</i> o <i>menudo</i> contiene las propiedades de un tamaño de fuente <span class='rojo-opuesto'>(font-size: @cuerpo * .75)</span> de <b>11.25px</b> o <b>0.75em</b> y una interlínea <span class='rojo-opuesto'>(line-height: @interlinea * 1.1)</span> de <b>27.5px</b> o <b>1.83333333em</b>. </p>
+            <hr>
+            <h6>Ejemplo</h6>
+            <h1 class='rojo-claro menudo relleno-sup-sm'>h1</h1> 
             <p class='xs sin-margen'><b>Menudo (xs)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
             <i>Is there anybody out there?</i></p>
             <div class='fila'>
-                <div class='col-md-6 col-sm-6 col-xs-6'>
+                <div class='col-md-6 col-sm-8 col-xs-12'>
                     <h2 class='rojo-claro menudo relleno-sup-sm'>h2</h2>
                     <p class='xs sin-margen'><b>Menudo (xs)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
                     <i>Is there anybody out there?</i></p>
                 </div>
-                <div class='col-md-6 col-sm-6 col-xs-6'>
+                <div class='col-md-6 col-sm-4 col-xs-12'>
                     <h3 class='rojo-claro menudo relleno-sup-sm'>h3</h3>
                     <p class='xs sin-margen'><b>Menudo (xs)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
                     <i>Is there anybody out there?</i></p>
                 </div>
             </div>
             <div class='fila'>
-                <div class='col-md-4 col-sm-4 col-xs-4'>
+                <div class='col-md-4 col-sm-4 col-xs-12'>
                     <h4 class='rojo-claro menudo relleno-sup-sm'>h4</h4>
                     <p class='xs sin-margen'><b>Menudo (xs)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
                     <i>Is there anybody out there?</i></p>
                 </div>
-                <div class='col-md-4 col-sm-4 col-xs-4'>
+                <div class='col-md-4 col-sm-4 col-xs-12'>
                     <h5 class='rojo-claro menudo relleno-sup-sm'>h5</h5>
                     <p class='xs sin-margen'><b>Menudo (xs)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
                     <i>Is there anybody out there?</i></p>
                 </div>
-                <div class='col-md-4 col-sm-4 co-xs-4'>
+                <div class='col-md-4 col-sm-4 co-xs-12'>
                     <h6 class='rojo-claro menudo relleno-sup-sm'>h6</h6>
                     <p class='xs sin-margen'><b>Menudo (xs)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
                     <i>Is there anybody out there?</i></p>
                 </div>
             </div>
             <hr class='invisible'>
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
             <code>
 &lt;p class=&quot;menudo&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;xs&quot;&gt;...&lt;/p&gt;
-&lt;p&gt;...&lt;/p&gt;
-&lt;p class=&quot;pequeno&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;sm&quot;&gt;...&lt;/p&gt;
-&lt;p class=&quot;mediano&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;md&quot;&gt;...&lt;/p&gt;
-&lt;p class=&quot;grande&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;lg&quot;&gt;...&lt;/p&gt;
             </code>
             <hr class='invisible'>
-
-            <h1 class='rojo-claro menudo relleno-sup-sm'>h1</h1>
+            <h5 class='pizarra'>Estándar</h5>
+            <p>El tamaño de párrafo que responde a la clase <i>por defecto</i> contiene las propiedades de un tamaño de fuente <span class='rojo-opuesto'>(font-size: @cuerpo)</span> de <b>15px</b> o <b>1em</b> y una interlínea <span class='rojo-opuesto'>(line-height: @interlinea)</span> de <b>25px</b> o <b>1.66666667em</b></p>
+            <hr>
+            <h6>Ejemplo</h6>
+            <h1 class='rojo-claro relleno-sup-sm'>h1</h1>
             <p class='sin-margen'><b>Estándar</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
             <i>Is there anybody out there?</i></p>
             <div class='fila'>
-                <div class='col-md-6 col-sm-6 col-xs-6'>
+                <div class='col-md-6 col-sm-6 col-xs-12'>
                     <h2 class='rojo-claro relleno-sup-sm'>h2</h2>
                     <p class='sin-margen relleno-sup-sm'><b>Estándar</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
                     <i>Is there anybody out there?</i></p>
                 </div>
-                <div class='col-md-6 col-sm-6 col-xs-6'>
+                <div class='col-md-6 col-sm-6 col-xs-12'>
                     <h3 class='rojo-claro relleno-sup-sm'>h3</h3>
                     <p class='sin-margen relleno-sup-sm'><b>Estándar</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
                     <i>Is there anybody out there?</i></p>
                 </div>
             </div>
             <div class='fila'>
-                <div class='col-md-4 col-sm-4 col-xs-4'>
+                <div class='col-md-4 col-sm-12 col-xs-12'>
                     <h4 class='rojo-claro relleno-sup-sm'>h4</h4>
                     <p class='sin-margen relleno-sup-sm'><b>Estándar</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
                     <i>Is there anybody out there?</i></p>
                 </div>
-                <div class='col-md-4 col-sm-4 col-xs-4'>
+                <div class='col-md-4 col-sm-8 col-xs-12'>
                     <h5 class='rojo-claro relleno-sup-sm'>h5</h5>
                     <p class='sin-margen relleno-sup-sm'><b>Estándar</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
                     <i>Is there anybody out there?</i></p>
                 </div>
-                <div class='col-md-4 col-sm-4 col-xs-4'>
+                <div class='col-md-4 col-sm-4 col-xs-12'>
                     <h6 class='rojo-claro relleno-sup-sm'>h6</h6>
                     <p class='sin-margen relleno-sup-sm'><b>Estándar</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
                     <i>Is there anybody out there?</i></p>
                 </div>
             </div>
             <hr class='invisible'>
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
             <code>
-&lt;p class=&quot;menudo&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;xs&quot;&gt;...&lt;/p&gt;
 &lt;p&gt;...&lt;/p&gt;
-&lt;p class=&quot;pequeno&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;sm&quot;&gt;...&lt;/p&gt;
-&lt;p class=&quot;mediano&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;md&quot;&gt;...&lt;/p&gt;
-&lt;p class=&quot;grande&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;lg&quot;&gt;...&lt;/p&gt;
             </code>
             <hr class='invisible'>
-
+            <h5 class='pizarra'>Pequeño (sm)</h5>
+            <p>El tamaño de párrafo que responde a la clase <i>sm</i> o <i>pequeno</i> contiene las propiedades de un tamaño de fuente <span class='rojo-opuesto'>(font-size: @cuerpo * 1.2)</span> de <b>18px</b> o <b>1.2em</b> y una interlínea <span class='rojo-opuesto'>(line-height: @interlinea)</span> de <b>25px</b> o <b>1.66666667em</b></p>
+            <hr>
+            <h6>Ejemplo</h6>
             <h1 class='rojo-claro pequeno relleno-sup-sm'>h1</h1>
             <p class='sm sin-margen'><b>Pequeño (sm)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
              <i>Is there anybody out there?</i> </p>
             <div class='fila'>
-                <div class='col-md-6 col-sm-6 col-xs-6'>
+                <div class='col-md-6 col-sm-6 col-xs-12'>
                     <h2 class='rojo-claro pequeno relleno-sup-sm'>h2</h2>
                     <p class='sm sin-margen relleno-sup-sm'><b>Pequeño (sm)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
                     <i>Is there anybody out there?</i></p>
                 </div>
-                <div class='col-md-6 col-sm-6 col-xs-6'>
+                <div class='col-md-6 col-sm-6 col-xs-12'>
                     <h3 class='rojo-claro pequeno relleno-sup-sm'>h3</h3>
                     <p class='sm sin-margen relleno-sup-sm'><b>Pequeño (sm)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
                     <i>Is there anybody out there?</i></p>
                 </div>
             </div>
             <div class='fila'>
-                <div class='col-md-4 col-sm-4 col-xs-4'>
+                <div class='col-md-4 col-sm-12 col-xs-12'>
                     <h4 class='rojo-claro pequeno relleno-sup-sm'>h4</h4>
                     <p class='sm sin-margen relleno-sup-sm'><b>Pequeño (sm)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
                     <i>Is there anybody out there?</i></p>
                 </div>
-                <div class='col-md-4 col-sm-4 col-xs-4'>
+                <div class='col-md-4 col-sm-8 col-xs-12'>
                     <h5 class='rojo-claro pequeno relleno-sup-sm'>h5</h5>
                     <p class='sm sin-margen relleno-sup-sm'><b>Pequeño (sm)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
                     <i>Is there anybody out there?</i></p>
                 </div>
-                <div class='col-md-4 col-sm-4 col-xs-4'>
+                <div class='col-md-4 col-sm-4 col-xs-12'>
                     <h6 class='rojo-claro pequeno relleno-sup-sm'>h6</h6>
                     <p class='sm sin-margen relleno-sup-sm'><b>Pequeño (sm)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
                     <i>Is there anybody out there?</i></p>
                 </div>
             </div>
             <hr class='invisible'>
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
             <code>
-&lt;p class=&quot;menudo&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;xs&quot;&gt;...&lt;/p&gt;
-&lt;p&gt;...&lt;/p&gt;
 &lt;p class=&quot;pequeno&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;sm&quot;&gt;...&lt;/p&gt;
-&lt;p class=&quot;mediano&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;md&quot;&gt;...&lt;/p&gt;
-&lt;p class=&quot;grande&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;lg&quot;&gt;...&lt;/p&gt;
             </code>
             <hr class='invisible'>
-
+            <h5 class='pizarra'>Mediano (md)</h5>
+            <p>El tamaño de párrafo que responde a la clase <i>md</i> o <i>mediano</i> contiene las propiedades de un tamaño de fuente <span class='rojo-opuesto'>(font-size: @cuerpo * 1.7)</span> de <b>25.5px</b> o <b>1.7em</b> y una interlínea <span class='rojo-opuesto'>(line-height: @interlinea)</span> de <b>25px</b> o <b>1.66666667em</b></p>
+            <hr>
+            <h6>Ejemplo</h6>
             <h1 class='rojo-claro mediano relleno-sup-sm'>h1</h1>
             <p class='mediano sin-margen'><b>Mediano (md)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
             <i>Is there anybody out there?</i></p>
             <div class='fila'>
-                <div class='col-md-6 col-sm-6 col-xs-6'>
+                <div class='col-md-6 col-sm-7 col-xs-12'>
                     <h2 class='rojo-claro mediano relleno-sup-sm'>h2</h2>
                     <p class='md sin-margen relleno-sup-sm'><b>Mediano (md)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here... 
                     <i>Is there anybody out there?</i></p>
                 </div>
-                <div class='col-md-6 col-sm-6 col-xs-6'>
+                <div class='col-md-6 col-sm-5 col-xs-12'>
                     <h3 class='rojo-claro mediano relleno-sup-sm'>h3</h3>
                     <p class='md sin-margen relleno-sup-sm'><b>Mediano (md)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here... 
                     <i>Is there anybody out there?</i></p>
                 </div>
             </div>
             <div class='fila'>
-                <div class='col-md-4 col-sm-4 col-xs-4'>
+                <div class='col-md-4 col-sm-12 col-xs-12'>
                     <h4 class='rojo-claro mediano relleno-sup-sm'>h4</h4>
                     <p class='md sin-margen relleno-sup-sm'><b>Mediano (md)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here..." 
                     <i>Is there anybody out there?</i></p>
                 </div>
-                <div class='col-md-4 col-sm-4 col-xs-4'>
+                <div class='col-md-4 col-sm-6 col-xs-12'>
                     <h5 class='rojo-claro mediano relleno-sup-sm'>h5</h5>
                     <p class='md sin-margen relleno-sup-sm'><b>Mediano (md)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here..." 
                     <i>Is there anybody out there?</i></p>
                 </div>
-                <div class='col-md-4 col-sm-4 col-xs-4'>
+                <div class='col-md-4 col-sm-6 col-xs-12'>
                     <h6 class='rojo-claro mediano relleno-sup-sm'>h6</h6>
                     <p class='md sin-margen relleno-sup-sm'><b>Mediano (md)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here..." 
                     <i>Is there anybody out there?</i></p>
                 </div>
             </div>
-            <hr class='invisible'>
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
             <code>
-&lt;p class=&quot;menudo&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;xs&quot;&gt;...&lt;/p&gt;
-&lt;p&gt;...&lt;/p&gt;
-&lt;p class=&quot;pequeno&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;sm&quot;&gt;...&lt;/p&gt;
-&lt;p class=&quot;mediano&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;md&quot;&gt;...&lt;/p&gt;
 &lt;p class=&quot;grande&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;lg&quot;&gt;...&lt;/p&gt;
             </code>
             <hr class='invisible'>
-
+            <h5 class='pizarra'>Grande (lg)</h5>
+            <p>El tamaño de párrafo que responde a la clase <i>lg</i> o <i>grande</i> contiene las propiedades de un tamaño de fuente <span class='rojo-opuesto'>(font-size: @cuerpo * 2.2)</span> de <b>33px</b> o <b>2.2em</b> y una interlínea <span class='rojo-opuesto'>(line-height: @interlinea * .9)</span> de <b>22.5px</b> o <b>1.5em</b></p>
+            <hr>
+            <h6>Ejemplo</h6>
             <h1 class='rojo-claro gigante relleno-sup-sm'>h1</h1>
             <p class='grande sin-margen'><b>Grande (lg)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night?..." 
             <i>Is there anybody out there?</i></p>
             <div class='fila'>
-                <div class='col-md-6 col-sm-6 col-xs-6'>
+                <div class='col-md-6 col-sm-5 col-xs-12'>
                     <h2 class='rojo-claro gigante relleno-sup-md'>h2</h2>
                     <p class='lg sin-margen relleno-sup-sm'><b>Grande (lg)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night?... 
                     <i>Is there anybody out there?</i></p>
                 </div>
-                <div class='col-md-6 col-sm-6 col-xs-6'>
+                <div class='col-md-6 col-sm-7 col-xs-12'>
                     <h3 class='rojo-claro gigante relleno-sup-md'>h3</h3>
                     <p class='lg sin-margen relleno-sup-sm'><b>Grande (lg)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night?... 
                     <i>Is there anybody out there?</i></p>
                 </div>
             </div>
             <div class='fila'>
-                <div class='col-md-4 col-sm-4 col-xs-4'>
+                <div class='col-md-4 col-sm-6 col-xs-12'>
                     <h4 class='rojo-claro gigante relleno-sup-md'>h4</h4>
                     <p class='lg sin-margen relleno-sup-sm'><b>Grande (lg)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night?..." 
                     <i>Is there anybody out there?</i></p>
                 </div>
-                <div class='col-md-4 col-sm-4 col-xs-4'>
+                <div class='col-md-4 col-sm-6 col-xs-12'>
                     <h5 class='rojo-claro gigante relleno-sup-md'>h5</h5>
                     <p class='lg sin-margen relleno-sup-sm'><b>Grande (lg)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night?..." 
                     <i>Is there anybody out there?</i></p>
                 </div>
-                <div class='col-md-4 col-sm-4 col-xs-4'>
+                <div class='col-md-4 col-sm-12 col-xs-12'>
                     <h6 class='rojo-claro gigante relleno-sup-md'>h6</h6>
                     <p class='lg sin-margen relleno-sup-sm'><b>Grande (lg)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night?..." 
                     <i>Is there anybody out there?</i></p>
@@ -688,6 +690,7 @@ h1, h2, h3, h4, h5, h6 {
 
         <div class="tab-pane fade" id="clases">
             <h4 class='pizarra gruesa'>Clases diferenciales</h4>
+            <h5 class='pizarra'>Poema</h5>
             <p>La clase "poema" funciona de igual manera que la clase "code" o "pre", ya que nos permite hacer válido todos los elementos insertos en html, incluyendo los esppacios en blanco y los enter. Esto es útil al momento de escribir poemas.</p>
             <p class='poema'>
                     
@@ -700,7 +703,6 @@ h1, h2, h3, h4, h5, h6 {
                     como los ojos
                     
 
-
                     su tierra así transida
                                           ¿no expondrá en la carne
                     
@@ -711,7 +713,6 @@ h1, h2, h3, h4, h5, h6 {
                                                 aunque se adueñen
                     deforman y engañan
                     
-
 
                                       ¿un lenguaje?
                     ¿acaso este
@@ -725,7 +726,6 @@ h1, h2, h3, h4, h5, h6 {
                     
 
 
-
                     bajo su luz
                                     la carencia se muda en riesgo
                     de otro significado
@@ -735,6 +735,8 @@ h1, h2, h3, h4, h5, h6 {
                 <code>
 &lt;p class=&quot;poema&quot;&gt;...&lt;/p&gt;
                 </code> 
+                <hr class='invisible'>
+                <h5 class='pizarra'>Dirección</h5>
                 <div class='direccion'>
                     <address class='margen-sup-xs'>
                         e[ad]
@@ -751,15 +753,39 @@ h1, h2, h3, h4, h5, h6 {
                 <code>
 &lt;p class=&quot;direccion&quot;&gt;...&lt;/p&gt;
                 </code>
+                <hr class='invisible'>
+                <h5 class='pizarra'>Breadcrumb</h5>
+                <ul id='breadcrumb'>
+                    <li><a class='gris-oscuro'><i class='icn icn-hogar'></i></a></li>
+                    <li><a class='gris-oscuro'>Actualidad</a></li>
+                    <li><a class='gris-oscuro'>Arquitectura</a></li>
+                    <li><a class='gris-oscuro'>Carrusel</a></li>
+                    <li><a class='gris-oscuro'>Noticias</a></li>
+                </ul>
+                <code>
+&lt;ul id=&quot;breadcrumb&quot;&gt;
+    &lt;li&gt;&lt;a&gt;&lt;i class='icn icn-hogar'&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                </code>
+                <hr class='invisible'>
+                <h5 class='pizarra'>Cita</h5>
                 <span class='italica lg fina gris-oscuro'>Sólo lo que se idea es lo que se ve; pero lo que se idea es lo que se inventa</span>
                 <span class='italica xs negrita rojo-claro derecha'>Martin Heidegger</span>
+                <hr class='invisible'>
                 <span class='italica md gris-oscuro'>Hay dos cosas infinitas: el Universo y la estupidez humana, y del Universo no estoy seguro.</span>        
                 <span class='italica xs negrita rojo-claro derecha'>Albert Einstein</span>
+                <hr class='invisible'>
                 <span class="xs referencias gris"><sup>[8] </sup> <strong>Norman D </strong>, <i>“El Diseño Emocional. Por qué nos gustan (o no) los objetos cotidianos.</i> Capítulo 3 Tres Niveles de diseño visceral, conductual y reflexivo. <br> Paidós Ediciones S.A. Barcelona, España. Año 2005. Páginas 81 – 121.ISBN 84-493-1729-0</span>
+                <hr class='invisible'>
                 <code>
 &lt;span class=&quot;italica md fina gris-oscuro&quot;&gt;...&lt;/span&gt;
                 </code>
-                <span class='fecha-evento'>25</span>
+                <hr class='invisible'>
+                <h5 class='pizarra'>Fecha evento</h5>
+                <span class='fecha-evento'>012356789</span>
                 <code>
 &lt;p class=&quot;fecha-evento&quot;&gt;...&lt;/p&gt;
                 </code>

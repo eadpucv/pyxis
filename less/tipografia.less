@@ -55,7 +55,7 @@ p {
     margin: 0 0 @interlinea * 1.3 0;
     font-family: @texto-continuo;
     font-size: @cuerpo;
-    line-height: 1.666em;
+    line-height: @interlinea;
     color: fade(@negro, 80%);
     font-weight: 300;
 
@@ -69,17 +69,17 @@ p {
 
     &.lg, &.grande { 
       font-size: @cuerpo * 2.2;
-      line-height: 150%;
+      line-height: @interlinea * .9;
     }
 
     &.md, &.mediano {
       font-size: @cuerpo * 1.7;
-      line-height: 150%;
+      line-height: @interlinea;
     }
 
     &.sm, &.pequeno {
       font-size: @cuerpo * 1.2;
-      line-height: 150%;
+      line-height: @interlinea;
     }
 
     &.xs, &.menudo {
@@ -156,11 +156,56 @@ span {
   font-size:@cuerpo -8px;
 }
 
+#breadcrumb{
+  text-transform: uppercase;
+  letter-spacing: .5;
+  font-family: @tipografia-titulos;
+
+  li{
+    display: inline-block;
+    font-family: @sans;
+    font-size: @cuerpo * .9;
+    font-weight: 200;
+
+      &:last-child{
+        a{
+          color: @rojo-claro;
+        }
+      }
+
+    &:after{
+      font-family: Stampa;
+      content: "";
+      float: right;
+      vertical-align: middle;
+      color: @gris-oscuro;
+    }
+
+    a{
+      font-family: @tipografia-titulos;
+      .margen-horizontal-xs;
+      font-size: @cuerpo * .8;
+
+        &:hover{
+          color: @rojo-claro;
+        }
+    }
+  }
+}
+
 .linea-lateral{
   border-left: 2px solid @rojo-claro;
   height: 70%;
   padding-left: 10px;
   display: inline-block;
+}
+
+.justificado{
+   -webkit-box-pack: flex-start;
+   -moz-box-pack: start;
+   -webkit-justify-content: start;
+   -ms-flex-pack: flex-start;
+   justify-content: flex-start;
 }
 
 .condensado {
@@ -251,8 +296,6 @@ strong{
     font-family: @tipografia-titulos;
     font-weight: 500;
 }
-
-  //
 
   .altas{
     text-transform: uppercase,
@@ -565,7 +608,7 @@ ul.menu {
       margin: @margen-lg * 2.5 @margen-lg 0 0;
       font-size: @cuerpo-nav * 9.5;
       letter-spacing: -@cuadratin-tercio;
-      color: @rojo-claro;
+      line-height: inherit;
 
       &.xs {
         font-size: @cuerpo-nav * 7;
@@ -599,7 +642,6 @@ ul.menu {
 
   blockquote {
     margin-bottom: @interlinea;
-    border-left: 5px solid #eee;
     padding-left: 15px;
 
         //  Sin márgenes:
@@ -827,21 +869,21 @@ h1 {
     }
 
     &.md, &.mediano {
-      font-size: (@font-size-titulos-1 * .7);
+      font-size: @font-size-titulos-1;
         &.no-responsivo{
           font-size: (@font-size-titulos-1 * 1.5);
         }
     }
 
     &.sm, &.pequeno {
-      font-size: (@font-size-titulos-1 * .4);
+      font-size: (@font-size-titulos-1 * .9);
         &.no-responsivo{
           font-size: (@font-size-titulos-1 * 1.2);
         }
     }
 
     &.xs, &.menudo {
-      font-size: @font-size-titulos-1;
+      font-size: (@font-size-titulos-1 * .7);
         &.no-responsivo{
           font-size: (@font-size-titulos-1 * .8);
         }
@@ -860,21 +902,21 @@ h2 {
     }
 
     &.md, &.mediano {
-      font-size: (@font-size-titulos-2 * .7);
+      font-size: @font-size-titulos-2;
         &.no-responsivo{
           font-size: (@font-size-titulos-2 * 1.5);
         }
     }
 
     &.sm, &.pequeno {
-      font-size: (@font-size-titulos-2 * .4);
+      font-size: (@font-size-titulos-2 * .9);
         &.no-responsivo{
           font-size: (@font-size-titulos-2 * 1.2);
         }
     }
 
     &.xs, &.menudo {
-      font-size: @font-size-titulos-2;
+      font-size: (@font-size-titulos-2 * .7);
         &.no-responsivo{
           font-size: (@font-size-titulos-2 * .8);
         }
@@ -893,21 +935,21 @@ h3 {
     }
 
     &.md, &.mediano {
-      font-size: (@font-size-titulos-3 * .7);
+      font-size: @font-size-titulos-3;
         &.no-responsivo{
           font-size: (@font-size-titulos-3 * 1.5);
         }
     }
 
     &.sm, &.pequeno {
-      font-size: (@font-size-titulos-3 * .4);
+      font-size: (@font-size-titulos-3 * .9);
         &.no-responsivo{
           font-size: (@font-size-titulos-3 * 1.2);
         }
     }
 
     &.xs, &.menudo {
-      font-size: @font-size-titulos-3;
+      font-size: (@font-size-titulos-3 * .7);
         &.no-responsivo{
           font-size: (@font-size-titulos-3 * .8);
         }
@@ -926,21 +968,21 @@ h4 {
     }
 
     &.md, &.mediano {
-      font-size: (@font-size-titulos-4 * .7);
+      font-size: @font-size-titulos-4;
         &.no-responsivo{
           font-size: (@font-size-titulos-4 * 1.5);
         }
     }
 
     &.sm, &.pequeno {
-      font-size: (@font-size-titulos-4 * .4);
+      font-size: (@font-size-titulos-4 * .9);
         &.no-responsivo{
           font-size: (@font-size-titulos-4 * 1.2);
         }
     }
 
     &.xs, &.menudo {
-      font-size: @font-size-titulos-4;
+      font-size: (@font-size-titulos-4 * .7);
         &.no-responsivo{
           font-size: (@font-size-titulos-4 * .8);
         }
@@ -959,21 +1001,21 @@ h5 {
     }
 
     &.md, &.mediano {
-      font-size: (@font-size-titulos-5 * .7);
+      font-size: @font-size-titulos-5;
         &.no-responsivo{
           font-size: (@font-size-titulos-5 * 1.5);
         }
     }
 
     &.sm, &.pequeno {
-      font-size: (@font-size-titulos-5 * .4);
+      font-size: (@font-size-titulos-5 * .9);
         &.no-responsivo{
           font-size: (@font-size-titulos-5 * 1.2);
         }
     }
 
     &.xs, &.menudo {
-      font-size: @font-size-titulos-5;
+      font-size: (@font-size-titulos-5 * .7);
         &.no-responsivo{
           font-size: (@font-size-titulos-5 * .8);
         }
@@ -992,21 +1034,21 @@ h6 {
     }
 
     &.md, &.mediano {
-      font-size: (@font-size-titulos-6 * .7);
+      font-size: @font-size-titulos-6;
         &.no-responsivo{
           font-size: (@font-size-titulos-6 * 1.5);
         }
     }
 
     &.sm, &.pequeno {
-      font-size: (@font-size-titulos-6 * .4);
+      font-size: (@font-size-titulos-6 * .9);
         &.no-responsivo{
           font-size: (@font-size-titulos-6 * 1.2);
         }
     }
 
     &.xs, &.menudo {
-      font-size: @font-size-titulos-6;
+      font-size: (@font-size-titulos-6 * .7);
         &.no-responsivo{
           font-size: (@font-size-titulos-6 * .8);
         }
@@ -1051,14 +1093,14 @@ h6 {
     }
 
     &.sm, &.pequeno {
-      font-size: (@font-size-titulos-1 * .8);
+      font-size: @font-size-titulos-1;
         &.no-responsivo{
           font-size: (@font-size-titulos-1 * 1.2);
         }
     }
 
     &.xs, &.menudo {
-      font-size: (@font-size-titulos-1 * .4);
+      font-size: (@font-size-titulos-1 * .7);
         &.no-responsivo{
           font-size: (@font-size-titulos-1 * .8);
         }
@@ -1084,14 +1126,14 @@ h2 {
     }
 
     &.sm, &.pequeno {
-      font-size: (@font-size-titulos-2 * .8);
+      font-size: @font-size-titulos-2;
         &.no-responsivo{
           font-size: (@font-size-titulos-2 * 1.2);
         }
     }
 
     &.xs, &.menudo {
-      font-size: (@font-size-titulos-2 * .4);
+      font-size: (@font-size-titulos-2 * .7);
         &.no-responsivo{
           font-size: (@font-size-titulos-2 * .8);
         }
@@ -1117,14 +1159,14 @@ h3 {
     }
 
     &.sm, &.pequeno {
-      font-size: (@font-size-titulos-3 * .8);
+      font-size: @font-size-titulos-3;
         &.no-responsivo{
           font-size: (@font-size-titulos-3 * 1.2);
         }
     }
 
     &.xs, &.menudo {
-      font-size: @font-size-titulos-3 * .4;
+      font-size: @font-size-titulos-3 * .7;
         &.no-responsivo{
           font-size: (@font-size-titulos-3 * .8);
         }
@@ -1150,14 +1192,14 @@ h4 {
     }
 
     &.sm, &.pequeno {
-      font-size: (@font-size-titulos-4 * .8);
+      font-size: @font-size-titulos-4;
         &.no-responsivo{
           font-size: (@font-size-titulos-4 * 1.2);
         }
     }
 
     &.xs, &.menudo {
-      font-size: (@font-size-titulos-4 * .4);
+      font-size: (@font-size-titulos-4 * .7);
         &.no-responsivo{
           font-size: (@font-size-titulos-4 * .8);
         }
@@ -1183,14 +1225,14 @@ h5 {
     }
 
     &.sm, &.pequeno {
-      font-size: (@font-size-titulos-5 * .8);
+      font-size: @font-size-titulos-5;
         &.no-responsivo{
           font-size: (@font-size-titulos-5 * 1.2);
         }
     }
 
     &.xs, &.menudo {
-      font-size: (@font-size-titulos-5 * .4);
+      font-size: (@font-size-titulos-5 * .7);
         &.no-responsivo{
           font-size: (@font-size-titulos-5 * .8);
         }
@@ -1216,14 +1258,14 @@ h6 {
     }
 
     &.sm, &.pequeno {
-      font-size: (@font-size-titulos-6 * .8);
+      font-size: @font-size-titulos-6;
         &.no-responsivo{
           font-size: (@font-size-titulos-6 * 1.2);
         }
     }
 
     &.xs, &.menudo {
-      font-size: (@font-size-titulos-6 * .4);
+      font-size: (@font-size-titulos-6 * .7);
         &.no-responsivo{
           font-size: (@font-size-titulos-6 * .8);
         }

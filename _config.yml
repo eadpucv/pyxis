@@ -8,4 +8,4 @@ permalink: pretty
 baseurl: "http://eadpucv.github.io/pyxis"
 project:
 name: Pyxis
-exclude: [bower_components]
+
