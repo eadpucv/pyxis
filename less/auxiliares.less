@@ -6,19 +6,19 @@
 
     // Laterales
 
-.margen-horizontal{margin: 0 @cuadratin;}
+.margen-horizontal{margin: 0 @cuadratin !important;}
 .margen-horizontal-xs{margin: 0 @cuadratin / 6 !important;}
-.margen-horizontal-sm{margin: 0 @cuadratin / 1.5;}
-.margen-horizontal-md{margin: 0 @cuadratin * 1.5;}
-.margen-horizontal-lg{margin: 0 @cuadratin * 1.8;}
+.margen-horizontal-sm{margin: 0 @cuadratin / 1.5 !important;}
+.margen-horizontal-md{margin: 0 @cuadratin * 1.5 !important;}
+.margen-horizontal-lg{margin: 0 @cuadratin * 1.8 !important;}
 
     // Arriba-abajo
 
-.margen-vertical{margin: @cuadratin 0;}
-.margen-vertical-xs{margin: @cuadratin / 6 0;}
-.margen-vertical-sm{margin: @cuadratin / 1.5 0;}
-.margen-vertical-md{margin: @cuadratin * 1.5 0;}
-.margen-vertical-lg{margin: @cuadratin * 2 0;}
+.margen-vertical{margin: @cuadratin 0 !important;}
+.margen-vertical-xs{margin: @cuadratin / 6 0 !important;}
+.margen-vertical-sm{margin: @cuadratin / 1.5 0 !important;}
+.margen-vertical-md{margin: @cuadratin * 1.5 0 !important;}
+.margen-vertical-lg{margin: @cuadratin * 2 0 !important;}
 
     // Específicos
 
@@ -99,6 +99,12 @@
 .relleno-inf-md{padding-bottom: @cuadratin * 1.5}
 .relleno-inf-lg{padding-bottom: @cuadratin * 2}
 
+        // Anchos específicos
+
+.ancho-xs{width: 30px}
+.ancho-sm{width: 100px}
+.ancho-md{width: 200px}
+.ancho-lg{width: 400px}
 
         // Centrar un elemento de línea
 
@@ -124,6 +130,10 @@
 .bloque{
     display: inline-block;
     width: 100%;
+}
+
+.en-linea{
+    display: inline-block;
 }
 
 .diagonal {

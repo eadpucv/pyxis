@@ -83,8 +83,9 @@
 
 // Set gradients for backgrounds
 &.left {
-top: 27%;
+top: 35%;
 left: 0;
+left: auto;
 background-color: fade(@gris, 50);
 border-top-right-radius: 7px;
 border-bottom-right-radius: 7px;
@@ -96,7 +97,7 @@ height: @cuadratin * 3;
   }
 }
 &.right {
-top: 27%;
+top: 35%;
 left: auto;
 right: 0;
 background-color: fade(@gris, 50);
@@ -163,7 +164,7 @@ content: "\e601";
 position: absolute;
 top: 27px;
 width: 40px;
-height: 40px;
+height: auto;
 font-size: @cuerpo * 2.2;
 right: 0px;
 left: 2px;
@@ -295,7 +296,7 @@ cursor: pointer;
       color: @rojo-claro;
     }
 
-      &.left {
+  &.left {
     top: 18%;
     left: 0;
 
@@ -304,6 +305,12 @@ cursor: pointer;
     top: 18%;
     left: auto;
   }
+
+  .icn-nav-der,
+  .icn-nav-izq {
+    position: absolute;
+    top: 40px;
+}
   }
 
 

@@ -29,7 +29,7 @@
 // The dropdown menu (ul)
 .dropdown-menu {
   position: absolute;
-  top: 100%;
+  top: 80%;
   left: 0;
   z-index: @zindex-dropdown;
   display: none; // none by default, but block on "open" of the menu
@@ -62,6 +62,7 @@
     display: block;
     padding: @cuadratin-tercio / 2 @cuadratin-tercio;
     clear: both;
+    font-family: @sans;
     font-weight: 300;
     line-height: @line-height-base;
     color: @negro-claro;
@@ -110,10 +111,10 @@
   &,
   &:hover,
   &:focus {
-    color: @dropdown-link-active-color;
+    //color: @dropdown-link-active-color;
     text-decoration: none;
     outline: 0;
-    background-color: @dropdown-link-active-bg;
+    background-color: @blanco;
   }
 }
 
