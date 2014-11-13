@@ -649,6 +649,34 @@ a.menu-link {
 
   //  Large screen / wide desktop
   @media (min-width: @screen-lg){
+
+    //  Por defecto:
+
+    nav {
+      margin: 0 auto;
+
+      &.lista-sin-estilo{
+          list-style: none;
+        }
+      
+      ul, ol{
+      margin: 0;
+      padding: 0;
+      .cf;
+        
+        li{
+          a{  
+            font-size: 14px;
+          }  
+        } 
+
+        // Sin interletraje
+
+            &.sin-interlinea{
+              line-height: 0;
+        }
+      }
+    }
   }
 
 

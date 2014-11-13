@@ -852,6 +852,38 @@ ul.menu {
   //  Extra small screen / phone
   @media(max-width: @screen-xs-max){
 
+//  Párrafos:
+
+p {
+    margin: 0 0 @interlinea * 1.1 0;
+    font-family: @texto-continuo;
+    font-size: @cuerpo * .9;
+    line-height: @interlinea * .97;
+    font-weight: 200;
+
+    //  Tamaños de Párrafos:
+
+    &.lg, &.grande { 
+      font-size: @cuerpo * 1.35; //1.2
+      line-height: @interlinea * .9;
+    }
+
+    &.md, &.mediano {
+      font-size: @cuerpo * 1.2; //1.7
+      line-height: @interlinea;
+    }
+
+    &.sm, &.pequeno {
+      font-size: @cuerpo; //1.2
+      line-height: @interlinea * .9;
+    }
+
+    &.xs, &.menudo {
+      font-size: @cuerpo * .8; //.75
+      line-height: @interlinea;
+    }
+}
+
      //  Cabeceras:
 
   //  Valores de cabecera:
@@ -1073,6 +1105,39 @@ h6 {
   //  Small screen / tablet
   @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
 
+
+//  Párrafos:
+
+p {
+    margin: 0 0 @interlinea * 1.3 0;
+    font-family: @texto-continuo;
+    font-size: @cuerpo;
+    line-height: @interlinea * .9;
+    font-weight: 200;
+
+    //  Tamaños de Párrafos:
+
+    &.lg, &.grande { 
+      font-size: @cuerpo * 1.35; //1.2
+      line-height: @interlinea * .9;
+    }
+
+    &.md, &.mediano {
+      font-size: @cuerpo * 1.2; //1.7
+      line-height: @interlinea;
+    }
+
+    &.sm, &.pequeno {
+      font-size: @cuerpo; //1.2
+      line-height: @interlinea * .9;
+    }
+
+    &.xs, &.menudo {
+      font-size: @cuerpo * .8; //.75
+      line-height: @interlinea * .97;
+    }
+}
+
     h1 {
   font-size: @font-size-titulos-1 - 2; //*33/16=2.0625*//
     &.no-responsivo{font-size: (@font-size-titulos-1)}
@@ -1284,6 +1349,240 @@ h6 {
 
   //  Large screen / wide desktop
   @media (min-width: @screen-lg){
+
+
+    //  Párrafos:
+
+    p {
+        margin: 0 0 @interlinea * 1.3 0;
+        font-family: @texto-continuo;
+        font-size: 0.95vw; //@cuerpo
+        line-height: @interlinea * 1.15;
+        color: fade(@negro, 80%);
+        font-weight: 300;
+
+        //  Tamaños de Párrafos:
+
+        &.lg, &.grande { 
+          font-size: 1.5vw; //2.2
+          line-height: @interlinea;
+        }
+
+        &.md, &.mediano {
+          font-size: 1.1vw; //1.7
+          line-height: @interlinea;
+        }
+
+        &.sm, &.pequeno {
+          font-size: 1vw; //1.2
+          line-height: @interlinea * 1.1;
+        }
+
+        &.xs, &.menudo {
+          font-size: .8vw;
+          line-height: @interlinea * 1.1;
+        }
+    }
+
+    // Cabeceras
+
+    h1 {
+      font-size: 2.1vw; //*33/16=2.0625*//
+        &.no-responsivo{font-size: 3.5vw}
+
+        &.lg, &.grande, &.gigante { 
+          font-size: 4.5vw;
+            &.no-responsivo{
+              font-size: 4.5vw;
+            }
+        }
+
+        &.md, &.mediano {
+          font-size: 3.5vw;
+            &.no-responsivo{
+              font-size: 3.5vw;
+            }
+        }
+
+        &.sm, &.pequeno {
+          font-size: 2.5vw;
+            &.no-responsivo{
+              font-size: 2.5vw;
+            }
+        }
+
+        &.xs, &.menudo {
+          font-size: 1.8vw;
+            &.no-responsivo{
+              font-size: 1.8vw;
+            }
+        }
+    }
+
+    h2 {
+      font-size: 1.8vw;  //*29/16=1.8125*//
+        &.no-responsivo{font-size: (@font-size-titulos-2)}
+
+        &.lg, &.grande, &.gigante { 
+          font-size: (@font-size-titulos-2 * 1.6);
+            &.no-responsivo{
+              font-size: (@font-size-titulos-2 * 2);
+            }
+        }
+
+        &.md, &.mediano {
+          font-size: (@font-size-titulos-2 * 1.1);
+            &.no-responsivo{
+              font-size: (@font-size-titulos-2 * 1.5);
+            }
+        }
+
+        &.sm, &.pequeno {
+          font-size: @font-size-titulos-2;
+            &.no-responsivo{
+              font-size: (@font-size-titulos-2 * 1.2);
+            }
+        }
+
+        &.xs, &.menudo {
+          font-size: (@font-size-titulos-2 * .7);
+            &.no-responsivo{
+              font-size: (@font-size-titulos-2 * .8);
+            }
+        }
+    }
+
+    h3 {
+      font-size: 1.6vw;  //*27/16=1.6875*//
+        &.no-responsivo{font-size: (@font-size-titulos-3)}
+
+        &.lg, &.grande, &.gigante { 
+          font-size: (@font-size-titulos-3 * 1.6);
+            &.no-responsivo{
+              font-size: (@font-size-titulos-3 * 2);
+            }
+        }
+
+        &.md, &.mediano {
+          font-size: (@font-size-titulos-3 * 1.1);
+            &.no-responsivo{
+              font-size: (@font-size-titulos-3 * 1.5);
+            }
+        }
+
+        &.sm, &.pequeno {
+          font-size: @font-size-titulos-3;
+            &.no-responsivo{
+              font-size: (@font-size-titulos-3 * 1.2);
+            }
+        }
+
+        &.xs, &.menudo {
+          font-size: @font-size-titulos-3 * .7;
+            &.no-responsivo{
+              font-size: (@font-size-titulos-3 * .8);
+            }
+        }
+    }
+
+    h4 {
+      font-size: 1.4vw;  //*23/16=1.4375*//
+        &.no-responsivo{font-size: (@font-size-titulos-4)}
+
+        &.lg, &.grande, &.gigante { 
+          font-size: (@font-size-titulos-4 * 1.6);
+            &.no-responsivo{
+              font-size: (@font-size-titulos-4 * 2);
+            }
+        }
+
+        &.md, &.mediano {
+          font-size: (@font-size-titulos-4 * 1.1);
+            &.no-responsivo{
+              font-size: (@font-size-titulos-4 * 1.5);
+            }
+        }
+
+        &.sm, &.pequeno {
+          font-size: @font-size-titulos-4;
+            &.no-responsivo{
+              font-size: (@font-size-titulos-4 * 1.2);
+            }
+        }
+
+        &.xs, &.menudo {
+          font-size: (@font-size-titulos-4 * .7);
+            &.no-responsivo{
+              font-size: (@font-size-titulos-4 * .8);
+            }
+        }
+    }
+
+    h5 {
+      font-size: 1.2vw;  //*19/16=1.1875*//
+        &.no-responsivo{font-size: (@font-size-titulos-5)}
+
+        &.lg, &.grande, &.gigante { 
+          font-size: (@font-size-titulos-5 * 1.6);
+            &.no-responsivo{
+              font-size: (@font-size-titulos-5 * 2);
+            }
+        }
+
+        &.md, &.mediano {
+          font-size: (@font-size-titulos-5 * 1.1);
+            &.no-responsivo{
+              font-size: (@font-size-titulos-5 * 1.5);
+            }
+        }
+
+        &.sm, &.pequeno {
+          font-size: @font-size-titulos-5;
+            &.no-responsivo{
+              font-size: (@font-size-titulos-5 * 1.2);
+            }
+        }
+
+        &.xs, &.menudo {
+          font-size: (@font-size-titulos-5 * .7);
+            &.no-responsivo{
+              font-size: (@font-size-titulos-5 * .8);
+            }
+        }
+    }
+
+    h6 {
+      font-size: 1vw;  //*17/16=1.0625*//
+        &.no-responsivo{font-size: 1.1vw}
+
+        &.lg, &.grande, &.gigante { 
+          font-size: (@font-size-titulos-6 * 1.6);
+            &.no-responsivo{
+              font-size: (@font-size-titulos-6 * 2);
+            }
+        }
+
+        &.md, &.mediano {
+          font-size: (@font-size-titulos-6 * 1.1);
+            &.no-responsivo{
+              font-size: (@font-size-titulos-6 * 1.5);
+            }
+        }
+
+        &.sm, &.pequeno {
+          font-size: @font-size-titulos-6;
+            &.no-responsivo{
+              font-size: (@font-size-titulos-6 * 1.2);
+            }
+        }
+
+        &.xs, &.menudo {
+          font-size: (@font-size-titulos-6 * .7);
+            &.no-responsivo{
+              font-size: (@font-size-titulos-6 * .8);
+            }
+        }
+    }
   }
 
 
