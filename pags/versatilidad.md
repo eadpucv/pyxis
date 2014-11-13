@@ -59,7 +59,7 @@ intro: Texto sobre versatilidad
         </p>   
 </div>
 <div class='col-lg-4 col-md-4 col-sm-4 col-xs-12 margen-columna'>
-        <h3 class='rojo-claro'>Elementos laterales</h3><a name="titulo-dos"></a>
+        <h3 class='rojo'>Elementos laterales</h3><a name="titulo-dos"></a>
         <h5 class='gris-oscuro'>1.Secciones linkeables</h5>
         <h6 class='altas gruesa gris'> Novedades </h6>
         <ul class="xs">
@@ -100,7 +100,7 @@ intro: Texto sobre versatilidad
 <div class='fila'>
 	<div class='col-md-14 margen-columna'>
 		<div class='w100'>
-			<h3 class='rojo-claro'>Estilos de párrafo</h3><a name="titulo-uno"></a>
+			<h3 class='rojo'>Estilos de párrafo</h3><a name="titulo-uno"></a>
 			<h5 class='gris-oscuro'>1. Artículos: jerarquías de título y texto </h5>
 			<h2 class='altas pesada color'>Artículo destacado más reciente </h2><code>&lt;h2 class=&quot;altas&quot; &quot;pesada&quot; &gt;</code>
         	<p>
@@ -139,7 +139,7 @@ intro: Texto sobre versatilidad
 		<br>
 	</div>
   	<div class='col-xs-8 margen-columna'>
-     	<h3 class='rojo-claro'>Elementos laterales</h3><a name="titulo-dos"></a>
+     	<h3 class='rojo'>Elementos laterales</h3><a name="titulo-dos"></a>
     	<h5 class='gris-oscuro'>1.Secciones linkeables</h5>
     	<h6 class='altas gruesa gris'> Novedades </h6>  <code><strong>Título </strong>&lt;h6 class=&quot;altas&quot; &quot;gruesa&quot; &quot;color&quot; &gt;</code>
     	<ul class="xs">
@@ -179,7 +179,7 @@ intro: Texto sobre versatilidad
 	<br>
 	<div class="col-xs-24 margen-columna">
     	<div class="col-md-24 columna-tipo">
-        	<h3 class='rojo-claro'>Encabezados y párrafos tipo</h3><a name="titulo-tres"></a>
+        	<h3 class='rojo'>Encabezados y párrafos tipo</h3><a name="titulo-tres"></a>
         	<h1>Título — h1</h1>
           	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
           	Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
@@ -206,7 +206,7 @@ intro: Texto sobre versatilidad
         	Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
     	</div>
 		<div class="col-md-14 columna-tipo">
-        	<h3 class='rojo-claro filete'>Composición texto - imagen</h3><a name="titulo-cuatro"></a>
+        	<h3 class='rojo filete'>Composición texto - imagen</h3><a name="titulo-cuatro"></a>
         	<h1>Torneo Manto Aerodinámico (1992)</h1>
         	<h4 class="gris"> Tincidunt ut laoreet dolore</h4>
         	<img class='imagen-lg' src='{{ site.baseurl }}img/mantoaero.jpg'>     
@@ -233,7 +233,7 @@ intro: Texto sobre versatilidad
     	</div>
     	<div class="col-md-22">
         	<img class='imagen-lg' src='img/mantoaero2.jpg'>
-			<h3 class="rojo-claro-oscuro">Torneo Manto Aerodinámico (1992) <h3>
+			<h3 class="rojo-oscuro">Torneo Manto Aerodinámico (1992) <h3>
 			<h6 class="gris"> Tincidunt ut laoreet dolore</h6>
 			<p class="col-md-20">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
         	Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet.</p>
@@ -241,7 +241,7 @@ intro: Texto sobre versatilidad
 		</div>   
     	<div class="columna-tipo">
        		<h6 class='altas gruesa gris-oscuro'>Torneos</h6>            
-        	<h3 class="rojo-claro-oscuro">Manto Aerodinámico (1992) <h3>
+        	<h3 class="rojo-oscuro">Manto Aerodinámico (1992) <h3>
         	<h6 class="gris"> Tincidunt ut laoreet dolore</h6>           
         	<p class="col-lg-24 xs">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
        		Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet.</p>
@@ -253,7 +253,7 @@ intro: Texto sobre versatilidad
 
     	<div class="columna-tipo">  
         	<h6 class='altas gruesa gris-oscuro'>Torneos</h6>            
-        	<h3 class="rojo-claro-oscuro">Manto Aerodinámico (1992) <h3>
+        	<h3 class="rojo-oscuro">Manto Aerodinámico (1992) <h3>
         	<h6 class="gris"> Tincidunt ut laoreet dolore</h6>
         	<p class="xs">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
         	Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud</p> 

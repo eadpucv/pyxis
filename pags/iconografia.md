@@ -19,13 +19,13 @@ intro: Texto sobre Iconografía
     <h4 class='pizarra gruesa'>Stampa v3.0.0</h4>
     <p>Stampa es una familia tipográfica de íconos diseñada para trabajar con Pyxis.
     Consta de un set de 95 glifos en 2 pesos tipográficos: "Regular" y "Ligera", diseñados especialmente para su visualización en texto continuo y rotulados, respectivamente. Su uso depende únicamente de CSS3, y son llamados en el HTML usando clases de la cascada de estilos que permiten controlar su tamaño, color y distintas funciones.</p>
-    <h5 class='rojo-claro'><i class="icn icn-estrella icn-sm"></i>  <a href="http://fontawesome.io/">Font Awesome</a></h5>
+    <h5 class='rojo'><i class="icn icn-estrella icn-sm"></i>  <a href="http://fontawesome.io/">Font Awesome</a></h5>
     <p>Font Awesome es el lenguaje iconográfico diseñado especialmente para Bootstrap. El proyecto está completamente documentado en Github, y siendo de código abierto, fue posible incorporar ciertos componentes de su repositorio al proyecto Stampa.</p>
-    <h5 class='rojo-claro'><i class="icn icn-estrella icn-sm"></i>  <a href="http://icomoon.io/">Icomoon</a></h5>
+    <h5 class='rojo'><i class="icn icn-estrella icn-sm"></i>  <a href="http://icomoon.io/">Icomoon</a></h5>
     <p>Icomoon es una solución para la problemática de los íconos escalables en la web. Incluye sets de  íconos, una aplicación web y un host para fuentes iconográficas.Para el desarrollo de Stampa se usa la aplicaciçón Icomoon App, con la cual se convierten los archivos .svg provenientes de illustrator en glifos con un código Unicode asignado.</p>
     <p>En la versión  3.0.0 de Stampa, se introduce la variante de peso a la fuente iconográfica llamada 'Ligera', utilizando el sufijo <code class='codigo-parrafo'>-lig</code> para su nombramiento.<br>Se aconseja que el uso de la fuente en su peso 'Regular' sea en un mínimo de 16 px, y el uso del peso 'Ligero' sea en al menos 21 px; esto es, para lograr la mejor visualización posible en dispositivos web.<br>
     Para una lista completa de íconos de la versión 3.0.0,  ve la <a href="http://eadpucv.github.io/stampa/cheatsheet.html">Cheatsheet</a>.
-    <h5 class="rojo-claro gruesa"> Stampa Regular </h5>
+    <h5 class="rojo gruesa"> Stampa Regular </h5>
     <h5 class='pizarra fino linea-lateral'>Íconos de aplicación web</h5>
     <div class='fila'>
     <!-- aplicación web -->
@@ -91,7 +91,7 @@ intro: Texto sobre Iconografía
         <p>icn-enlace</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-enlace-hor icn-lg"></i>
+        <i class="icn icn-enlacehor icn-lg"></i>
         <p>icn-enlace-hor</p>
     </li>
     <li class="caja-icono"> 
@@ -139,11 +139,11 @@ intro: Texto sobre Iconografía
         <p>icn-lupa</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-lupa-mas icn-lg"></i>
+        <i class="icn icn-lupamas icn-lg"></i>
         <p>icn-lupa-mas</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-lupa-menos icn-lg"></i>
+        <i class="icn icn-lupamenos icn-lg"></i>
         <p>icn-lupa-menos</p>
     </li>
     <li class="caja-icono"> 
@@ -151,7 +151,7 @@ intro: Texto sobre Iconografía
         <p>icn-mapa</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-mapa-mas icn-lg"></i>
+        <i class="icn icn-mapamas icn-lg"></i>
         <p>icn-mapa-mas</p>
     </li>
     <li class="caja-icono"> 
@@ -171,11 +171,11 @@ intro: Texto sobre Iconografía
         <p>icn-ojo</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-orden-hor icn-lg"></i>
+        <i class="icn icn-ordenhor icn-lg"></i>
         <p>icn-orden-hor</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-orden-ver icn-lg"></i>
+        <i class="icn icn-ordenver icn-lg"></i>
         <p>icn-orden-ver</p>
     </li>
     <li class="caja-icono"> 
@@ -219,7 +219,7 @@ intro: Texto sobre Iconografía
         <p>icn-usuario</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-usuario-admin icn-lg"></i>
+        <i class="icn icn-usuarioadmin icn-lg"></i>
         <p>icn-usuario- admin</p>
     </li>
     <li class="caja-icono"> 
@@ -498,10 +498,14 @@ intro: Texto sobre Iconografía
         <i class="icn icn-youtube icn-lg"></i>
         <p>icn-youtube</p>
     </li>
+    <li class="caja-icono"> 
+        <span class="icn icn-light icn-lg">casiopea</span>
+        <p>acto</p>
+    </li>
     </ul>
     </div>
 <!-- stampa ligera -->
-     <h4 class="rojo-claro gruesa">Stampa Ligera</h4>
+     <h4 class="rojo gruesa">Stampa Ligera</h4>
     <h5 class='pizarra fino linea-lateral'>Íconos de aplicación web</h5>
     <!-- aplicación web -->
     <div class='fila'>
@@ -631,11 +635,11 @@ intro: Texto sobre Iconografía
         <p>icn-mapa-mas-lig</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-mapa-concept-lig icn-lg"></i>
+        <i class="icn icn-sitemap icn-lg"></i>
         <p>icn-mapa- concept-lig</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-marcador-lig icn-lg"></i>
+        <i class="icn icn-marcador icn-lg"></i>
         <p>icn-marcador- lig</p>
     </li>
     <li class="caja-icono"> 
@@ -663,56 +667,56 @@ intro: Texto sobre Iconografía
         <p>icn-pc-lig</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-perfil-lig icn-lg"></i>
-        <p>icn-perfil-lig</p>
+        <i class="icn icn-perfil icn-lg"></i>
+        <p>icn-perfil</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-prohibir-lig icn-lg"></i>
-        <p>icn-prohibir-lig</p>
+        <i class="icn icn-prohibir icn-lg"></i>
+        <p>icn-prohibir</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-refrescar-lig icn-lg"></i>
-        <p>icn-refrescar-lig</p>
+        <i class="icn icn-refrescar icn-lg"></i>
+        <p>icn-refrescar</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-rss-lig icn-lg"></i>
-        <p>icn-rss-lig</p>
+        <i class="icn icn-rss icn-lg"></i>
+        <p>icn-rss</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-salir-lig icn-lg"></i>
-        <p>icn-salir-lig</p>
+        <i class="icn icn-salir icn-lg"></i>
+        <p>icn-salir</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-subir-lig icn-lg"></i>
-        <p>icn-subir-lig</p>
+        <i class="icn icn-subir icn-lg"></i>
+        <p>icn-subir</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-tablet-lig icn-lg"></i>
-        <p>icn-tablet-lig</p>
+        <i class="icn icn-tablet icn-lg"></i>
+        <p>icn-tablet</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-usuario-lig icn-lg"></i>
-        <p>icn-usuario-lig</p>
+        <i class="icn icn-usuario icn-lg"></i>
+        <p>icn-usuario</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-usuario-admin-lig icn-lg"></i>
-        <p>icn-usuario- admin-lig</p>
+        <i class="icn icn-usuario-admin icn-lg"></i>
+        <p>icn-usuario- admin</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-usuario-mas-lig icn-lg"></i>
-        <p>icn-usuario- mas-lig</p>
+        <i class="icn icn-usuario-mas icn-lg"></i>
+        <p>icn-usuario- mas</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-usuario-menos-lig icn-lg"></i>
-        <p>icn-usuario- menos-lig</p>
+        <i class="icn icn-usuario-menos icn-lg"></i>
+        <p>icn-usuario- menos</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-usuarios-lig icn-lg"></i>
-        <p>icn-usuarios-lig</p>
+        <i class="icn icn-usuarios icn-lg"></i>
+        <p>icn-usuarios</p>
     </li>   
     <li class="caja-icono"> 
-        <i class="icn icn-vinculo-lig icn-lg"></i>
-        <p>icn-vinculo-lig</p>
+        <i class="icn icn-vinculo icn-lg"></i>
+        <p>icn-vinculo</p>
     </li> 
     </ul>
     </div>
@@ -721,28 +725,28 @@ intro: Texto sobre Iconografía
     <div class='fila'>
     <ul>
     <li class="caja-icono"> 
-        <i class="icn icn-asterisco-lig icn-lg"></i>
-        <p>icn-asterisco-lig</p>
+        <i class="icn icn-asterisco icn-lg"></i>
+        <p>icn-asterisco</p>
     </li> 
     <li class="caja-icono"> 
-        <i class="icn icn-ese-lig icn-lg"></i>
-        <p>icn-ese-lig</p>
+        <i class="icn icn-ese icn-lg"></i>
+        <p>icn-ese</p>
     </li> 
     <li class="caja-icono"> 
-        <i class="icn icn-hedera-lig icn-lg"></i>
-        <p>icn-hedera-lig</p>
+        <i class="icn icn-hedera icn-lg"></i>
+        <p>icn-hedera</p>
     </li> 
     <li class="caja-icono"> 
-        <i class="icn icn-mas-lig icn-lg"></i>
-        <p>icn-mas-lig</p>
+        <i class="icn icn-mas icn-lg"></i>
+        <p>icn-mas</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-menos-lig icn-lg"></i>
-        <p>icn-menos-lig</p>
+        <i class="icn icn-menos icn-lg"></i>
+        <p>icn-menos</p>
     </li>  
     <li class="caja-icono"> 
-        <i class="icn icn-parrafo-lig icn-lg"></i>
-        <p>icn-parrafo-lig</p>
+        <i class="icn icn-parrafo icn-lg"></i>
+        <p>icn-parrafo</p>
     </li>   
     </ul>
     </div>
@@ -751,68 +755,68 @@ intro: Texto sobre Iconografía
     <div class='fila'>
     <ul>
     <li class="caja-icono"> 
-        <i class="icn icn-caron-der-lig icn-lg"></i>
-        <p>icn-caron-der-lig</p>
+        <i class="icn icn-caron-der icn-lg"></i>
+        <p>icn-caron-der</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-caron-izq-lig icn-lg"></i>
-        <p>icn-caron-izq-lig</p>
+        <i class="icn icn-caron-izq icn-lg"></i>
+        <p>icn-caron-izq</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-caron-arriba-lig icn-lg"></i>
-        <p>icn-caron-arriba-lig</p>
+        <i class="icn icn-caron-arriba icn-lg"></i>
+        <p>icn-caron-arriba</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-caron-abajo-lig icn-lg"></i>
-        <p>icn-caron- abajo-lig</p>
+        <i class="icn icn-caron-abajo icn-lg"></i>
+        <p>icn-caron- abajo</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-flecha-der-lig icn-lg"></i>
-        <p>icn-flecha-der-lig</p>
+        <i class="icn icn-flecha-der icn-lg"></i>
+        <p>icn-flecha-der</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-flecha-izq-lig icn-lg"></i>
-        <p>icn-flecha-izq-lig</p>
+        <i class="icn icn-flecha-izq icn-lg"></i>
+        <p>icn-flecha-izq</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-flecha-arriba-lig icn-lg"></i>
-        <p>icn-flecha-arriba-lig</p>
+        <i class="icn icn-flecha-arriba icn-lg"></i>
+        <p>icn-flecha-arriba</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-flecha-abajo-lig icn-lg"></i>
-        <p>icn-flecha- abajo-lig</p>
+        <i class="icn icn-flecha-abajo icn-lg"></i>
+        <p>icn-flecha- abajo</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-mano-arriba-lig icn-lg"></i>
-        <p>icn-mano-arriba-lig</p>
+        <i class="icn icn-mano-arriba icn-lg"></i>
+        <p>icn-mano-arriba</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-mano-abajo-lig icn-lg"></i>
-        <p>icn-mano- abajo-lig</p>
+        <i class="icn icn-mano-abajo icn-lg"></i>
+        <p>icn-mano- abajo</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-mano-izq-lig icn-lg"></i>
-        <p>icn-mano-izq-lig</p>
+        <i class="icn icn-mano-izq icn-lg"></i>
+        <p>icn-mano-izq</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-mano-der-lig icn-lg"></i>
-        <p>icn-mano-der-lig</p>
+        <i class="icn icn-mano-der icn-lg"></i>
+        <p>icn-mano-der</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-nav-izq-lig icn-lg"></i>
-        <p>icn-nav-izq-lig</p>
+        <i class="icn icn-nav-izq icn-lg"></i>
+        <p>icn-nav-izq</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-nav-der-lig icn-lg"></i>
-        <p>icn-nav-der-lig</p>
+        <i class="icn icn-nav-der icn-lg"></i>
+        <p>icn-nav-der</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-nav-arriba-lig icn-lg"></i>
-        <p>icn-nav-arriba-lig</p>
+        <i class="icn icn-nav-arriba icn-lg"></i>
+        <p>icn-nav-arriba</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-nav-abajo-lig icn-lg"></i>
-        <p>icn-nav-abajo-lig</p>
+        <i class="icn icn-nav-abajo icn-lg"></i>
+        <p>icn-nav-abajo</p>
     </li>
     </ul>
     </div>
@@ -821,20 +825,20 @@ intro: Texto sobre Iconografía
     <div class='fila'>
     <ul>
     <li class="caja-icono"> 
-        <i class="icn icn-calendario-lig icn-lg"></i>
-        <p>icn-calendario-lig</p>
+        <i class="icn icn-calendario icn-lg"></i>
+        <p>icn-calendario</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-tiempo-lig icn-lg"></i>
-        <p>icn-tiempo-lig</p>
+        <i class="icn icn-tiempo icn-lg"></i>
+        <p>icn-tiempo</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-reloj-lig icn-lg"></i>
-        <p>icn-reloj-lig</p>
+        <i class="icn icn-reloj icn-lg"></i>
+        <p>icn-reloj</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-alarma-lig icn-lg"></i>
-        <p>icn-alarma-lig</p>
+        <i class="icn icn-alarma icn-lg"></i>
+        <p>icn-alarma</p>
     </li>
     </ul>
     </div>
@@ -843,32 +847,32 @@ intro: Texto sobre Iconografía
     <div class='fila'>
     <ul>
     <li class="caja-icono"> 
-        <i class="icn icn-circulo-lig icn-lg"></i>
-        <p>icn-circulo-lig</p>
+        <i class="icn icn-circulo icn-lg"></i>
+        <p>icn-circulo</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-circulo-l-lig icn-lg"></i>
-        <p>icn-circulo-l-lig</p>
+        <i class="icn icn-circulo-l icn-lg"></i>
+        <p>icn-circulo-l</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-cuadro-lig icn-lg"></i>
-        <p>icn-cuadro-lig</p>
+        <i class="icn icn-cuadro icn-lg"></i>
+        <p>icn-cuadro</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-cuadro-l-lig icn-lg"></i>
-        <p>icn-cuadro-l-lig</p>
+        <i class="icn icn-cuadro-l icn-lg"></i>
+        <p>icn-cuadro-l</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-equis-lig icn-lg"></i>
-        <p>icn-equis-lig</p>
+        <i class="icn icn-equis icn-lg"></i>
+        <p>icn-equis</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-vineta-lig icn-lg"></i>
-        <p>icn-vineta-lig</p>
+        <i class="icn icn-vineta icn-lg"></i>
+        <p>icn-vineta</p>
     </li>    
     <li class="caja-icono"> 
-        <i class="icn icn-visto-lig icn-lg"></i>
-        <p>icn-visto-lig</p>
+        <i class="icn icn-visto icn-lg"></i>
+        <p>icn-visto</p>
     </li> 
     </ul>
     </div>
@@ -877,60 +881,60 @@ intro: Texto sobre Iconografía
     <div class='fila'>
     <ul>
     <li class="caja-icono"> 
-        <i class="icn icn-acto-lig icn-lg"></i>
-        <p>icn-acto-lig</p>
+        <i class="icn icn-acto icn-lg"></i>
+        <p>icn-acto</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-anuncio-lig icn-lg"></i>
-        <p>icn-anuncio-lig</p>
+        <i class="icn icn-anuncio icn-lg"></i>
+        <p>icn-anuncio</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-archivo-lig icn-lg"></i>
-        <p>icn-archivo-lig</p>
+        <i class="icn icn-archivo icn-lg"></i>
+        <p>icn-archivo</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-biblioteca-lig icn-lg"></i>
+        <i class="icn icn-biblioteca icn-lg"></i>
         <p>icn-biblioteca- lig</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-casiopea-lig icn-lg"></i>
-        <p>icn-casiopea-lig</p>
+        <i class="icn icn-casiopea icn-lg"></i>
+        <p>icn-casiopea</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-constel-lig icn-lg"></i>
-        <p>icn-constel-lig</p>
+        <i class="icn icn-constel icn-lg"></i>
+        <p>icn-constel</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-cruz-sur-lig icn-lg"></i>
-        <p>icn-cruz-sur-lig</p>
+        <i class="icn icn-cruz-sur icn-lg"></i>
+        <p>icn-cruz-sur</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-estorninos-lig icn-lg"></i>
+        <i class="icn icn-estorninos icn-lg"></i>
         <p>icn-estorninos- lig</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-menu-lig icn-lg"></i>
-        <p>icn-menu-lig</p>
+        <i class="icn icn-menu icn-lg"></i>
+        <p>icn-menu</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-noticias-lig icn-lg"></i>
-        <p>icn-noticias-lig</p>
+        <i class="icn icn-noticias icn-lg"></i>
+        <p>icn-noticias</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-palabra-lig icn-lg"></i>
-        <p>icn-palabra-lig</p>
+        <i class="icn icn-palabra icn-lg"></i>
+        <p>icn-palabra</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-stampa-lig icn-lg"></i>
-        <p>icn-stampa-lig</p>
+        <i class="icn icn-stampa icn-lg"></i>
+        <p>icn-stampa</p>
     </li>  
     <li class="caja-icono"> 
-        <i class="icn icn-trabajo-lig icn-lg"></i>
-        <p>icn-trabajo-lig</p>
+        <i class="icn icn-trabajo icn-lg"></i>
+        <p>icn-trabajo</p>
     </li>  
     <li class="caja-icono"> 
-        <i class="icn icn-travesia-lig icn-lg"></i>
-        <p>icn-travesia-lig</p>
+        <i class="icn icn-travesia icn-lg"></i>
+        <p>icn-travesia</p>
     </li>   
     </ul>
     </div>
@@ -939,40 +943,40 @@ intro: Texto sobre Iconografía
     <div class='fila'>
     <ul>
      <li class="caja-icono"> 
-        <i class="icn icn-bower-lig icn-lg"></i>
-        <p>icn-bower-lig</p>
+        <i class="icn icn-bower icn-lg"></i>
+        <p>icn-bower</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-facebook-lig icn-lg"></i>
-        <p>icn-facebook-lig</p>
+        <i class="icn-light icn-facebook icn-lg"></i>
+        <p>icn-facebook</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-flickr-lig icn-lg"></i>
-        <p>icn-flickr-lig</p>
+        <i class="icn icn-flickr icn-lg"></i>
+        <p>icn-flickr</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-jekyll-lig icn-lg"></i>
-        <p>icn-jekyll-lig</p>
+        <i class="icn icn-jekyll icn-lg"></i>
+        <p>icn-jekyll</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-less-lig icn-lg"></i>
-        <p>icn-less-lig</p>
+        <i class="icn icn-less icn-lg"></i>
+        <p>icn-less</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-soundcloud-lig icn-lg"></i>
-        <p>icn-soundcloud-lig</p>
+        <i class="icn icn-soundcloud icn-lg"></i>
+        <p>icn-soundcloud</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-twitter-lig icn-lg"></i>
-        <p>icn-twitter-lig</p>
+        <i class="icn icn-twitter icn-lg"></i>
+        <p>icn-twitter</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-vimeo-lig icn-lg"></i>
-        <p>icn-vimeo-lig</p>
+        <i class="icn icn-vimeo icn-lg"></i>
+        <p>icn-vimeo</p>
     </li>
     <li class="caja-icono"> 
-        <i class="icn icn-youtube-lig icn-lg"></i>
-        <p>icn-youtube-lig</p>
+        <i class="icn icn-youtube icn-lg"></i>
+        <p>icn-youtube</p>
     </li>
     </ul>
     </div>

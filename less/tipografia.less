@@ -169,7 +169,7 @@ span {
 
       &:last-child{
         a{
-          color: @rojo-claro;
+          color: @rojo;
         }
       }
 
@@ -187,14 +187,14 @@ span {
       font-size: @cuerpo * .8;
 
         &:hover{
-          color: @rojo-claro;
+          color: @rojo;
         }
     }
   }
 }
 
 .linea-lateral{
-  border-left: 2px solid @rojo-claro;
+  border-left: 2px solid @rojo;
   height: 70%;
   padding-left: 10px;
   display: inline-block;
@@ -641,7 +641,7 @@ ul.menu {
 
   blockquote {
     margin-bottom: @interlinea;
-    padding-left: 15px;
+    //padding-left: 15px;
 
         //  Sin márgenes:
 
@@ -725,7 +725,7 @@ ul.menu {
   //  código escrito:
 
   code {
-    background-color: rgba(45, 45, 50, 0.7) !important;
+    background-color: @pizarra;
     color: @blanco;
     border: 1px solid @gris-claro;
     border-right: 1px solid rgba(164,164,162,.1);
@@ -1134,12 +1134,12 @@ p {
 
     &.xs, &.menudo {
       font-size: @cuerpo * .8; //.75
-      line-height: @interlinea * .97;
+      line-height: @interlinea * .95;
     }
 }
 
     h1 {
-  font-size: @font-size-titulos-1 - 2; //*33/16=2.0625*//
+  font-size: @font-size-titulos-1; //*33/16=2.0625*//
     &.no-responsivo{font-size: (@font-size-titulos-1)}
 
     &.lg, &.grande, &.gigante { 
@@ -1340,7 +1340,12 @@ h6 {
 
     code {
       padding: 5px 80px;
+        &.sin-relleno{
+        padding: 5px 5px;
+        }
     }
+
+
   }
 
   //  Medium screen / desktop
@@ -1350,16 +1355,42 @@ h6 {
   //  Large screen / wide desktop
   @media (min-width: @screen-lg){
 
+    //  Vínculos:
+
+    a{
+      font-size: 0.95vw;
+
+          //  Tamaños de Vínculos:
+
+        &.lg, &.grande  { 
+          font-size: 1.5vw;
+          line-height: 140%;
+        }
+
+        &.md, &.mediano  {
+          font-size: 1.1vw;
+          font-weight: 200;
+          line-height: 140%;
+        }
+
+        &.sm, &.pequeno  {
+          font-size: 1vw;;
+          line-height: 130%;
+        }
+
+        &.xs, &.menudo  {
+          font-size: .8vw;
+          line-height: @interlinea * .9;
+        }
+      }
+
 
     //  Párrafos:
 
     p {
         margin: 0 0 @interlinea * 1.3 0;
-        font-family: @texto-continuo;
         font-size: 0.95vw; //@cuerpo
         line-height: @interlinea * 1.15;
-        color: fade(@negro, 80%);
-        font-weight: 300;
 
         //  Tamaños de Párrafos:
 
@@ -1369,7 +1400,7 @@ h6 {
         }
 
         &.md, &.mediano {
-          font-size: 1.1vw; //1.7
+          font-size: 1.3vw; //1.7
           line-height: @interlinea;
         }
 
@@ -1383,6 +1414,42 @@ h6 {
           line-height: @interlinea * 1.1;
         }
     }
+
+    //  Vistazo:
+
+    span {
+      margin: auto 0 auto 0;
+      display: inline-block;
+      line-height: 25/@em;
+
+        //  Sin márgenes:
+
+        &.sin-margen{
+          margin: 0;
+            }
+
+        //  Tamaños de Vistazo:
+
+        &.lg, &.grande { 
+          font-size: 1.5vw; 
+          line-height: 150%;
+          }
+
+        &.md, &.mediano {
+          font-size: 1.1vw;
+          line-height: 150%;
+          }
+
+        &.sm, &.pequeno {
+          font-size: 1vw; 
+          line-height: 150%;
+        }
+
+        &.xs, &.menudo {
+          font-size: .8vw;
+          line-height: @interlinea * 1.1;
+        }
+      }
 
     // Cabeceras
 
@@ -1405,16 +1472,16 @@ h6 {
         }
 
         &.sm, &.pequeno {
-          font-size: 2.5vw;
+          font-size: 2.8vw;
             &.no-responsivo{
-              font-size: 2.5vw;
+              font-size: 2.8vw;
             }
         }
 
         &.xs, &.menudo {
-          font-size: 1.8vw;
+          font-size: 2vw;
             &.no-responsivo{
-              font-size: 1.8vw;
+              font-size: 2vw;
             }
         }
     }
@@ -1424,30 +1491,30 @@ h6 {
         &.no-responsivo{font-size: (@font-size-titulos-2)}
 
         &.lg, &.grande, &.gigante { 
-          font-size: (@font-size-titulos-2 * 1.6);
+          font-size: 4vw;
             &.no-responsivo{
-              font-size: (@font-size-titulos-2 * 2);
+              font-size: 4vw;
             }
         }
 
         &.md, &.mediano {
-          font-size: (@font-size-titulos-2 * 1.1);
+          font-size: 3vw;
             &.no-responsivo{
-              font-size: (@font-size-titulos-2 * 1.5);
+              font-size: 3vw;
             }
         }
 
         &.sm, &.pequeno {
-          font-size: @font-size-titulos-2;
+          font-size: 2.4vw;
             &.no-responsivo{
               font-size: (@font-size-titulos-2 * 1.2);
             }
         }
 
         &.xs, &.menudo {
-          font-size: (@font-size-titulos-2 * .7);
+          font-size: 1.7vw;
             &.no-responsivo{
-              font-size: (@font-size-titulos-2 * .8);
+              font-size: 1.7vw;
             }
         }
     }
@@ -1457,30 +1524,30 @@ h6 {
         &.no-responsivo{font-size: (@font-size-titulos-3)}
 
         &.lg, &.grande, &.gigante { 
-          font-size: (@font-size-titulos-3 * 1.6);
+          font-size: 3.6vw;
             &.no-responsivo{
-              font-size: (@font-size-titulos-3 * 2);
+              font-size: 3.6vw;
             }
         }
 
         &.md, &.mediano {
-          font-size: (@font-size-titulos-3 * 1.1);
+          font-size: 2.6vw;
             &.no-responsivo{
-              font-size: (@font-size-titulos-3 * 1.5);
+              font-size: 2.6vw;
             }
         }
 
         &.sm, &.pequeno {
-          font-size: @font-size-titulos-3;
+          font-size: 2vw;
             &.no-responsivo{
-              font-size: (@font-size-titulos-3 * 1.2);
+              font-size: 2vw;
             }
         }
 
         &.xs, &.menudo {
-          font-size: @font-size-titulos-3 * .7;
+          font-size: 1.4vw;
             &.no-responsivo{
-              font-size: (@font-size-titulos-3 * .8);
+              font-size: 1.4vw;
             }
         }
     }
@@ -1490,30 +1557,30 @@ h6 {
         &.no-responsivo{font-size: (@font-size-titulos-4)}
 
         &.lg, &.grande, &.gigante { 
-          font-size: (@font-size-titulos-4 * 1.6);
+          font-size: 3.2vw;
             &.no-responsivo{
-              font-size: (@font-size-titulos-4 * 2);
+              font-size: 3.2vw;
             }
         }
 
         &.md, &.mediano {
-          font-size: (@font-size-titulos-4 * 1.1);
+          font-size: 2.2vw;
             &.no-responsivo{
-              font-size: (@font-size-titulos-4 * 1.5);
+              font-size: 2.2vw;
             }
         }
 
         &.sm, &.pequeno {
-          font-size: @font-size-titulos-4;
+          font-size: 1.8vw;
             &.no-responsivo{
-              font-size: (@font-size-titulos-4 * 1.2);
+              font-size: 1.8vw;
             }
         }
 
         &.xs, &.menudo {
-          font-size: (@font-size-titulos-4 * .7);
+          font-size: 1.1vw;
             &.no-responsivo{
-              font-size: (@font-size-titulos-4 * .8);
+              font-size: 1.1vw;
             }
         }
     }
@@ -1523,30 +1590,30 @@ h6 {
         &.no-responsivo{font-size: (@font-size-titulos-5)}
 
         &.lg, &.grande, &.gigante { 
-          font-size: (@font-size-titulos-5 * 1.6);
+          font-size: 2.7vw;
             &.no-responsivo{
-              font-size: (@font-size-titulos-5 * 2);
+              font-size: 2.7vw;
             }
         }
 
         &.md, &.mediano {
-          font-size: (@font-size-titulos-5 * 1.1);
+          font-size: 1.8vw;
             &.no-responsivo{
-              font-size: (@font-size-titulos-5 * 1.5);
+              font-size: 1.8vw;
             }
         }
 
         &.sm, &.pequeno {
-          font-size: @font-size-titulos-5;
+          font-size: 1.4vw;
             &.no-responsivo{
-              font-size: (@font-size-titulos-5 * 1.2);
+              font-size: 1.4vw;
             }
         }
 
         &.xs, &.menudo {
-          font-size: (@font-size-titulos-5 * .7);
+          font-size: .9vw;
             &.no-responsivo{
-              font-size: (@font-size-titulos-5 * .8);
+              font-size: .9vw;
             }
         }
     }
@@ -1556,30 +1623,30 @@ h6 {
         &.no-responsivo{font-size: 1.1vw}
 
         &.lg, &.grande, &.gigante { 
-          font-size: (@font-size-titulos-6 * 1.6);
+          font-size: 2.2vw;
             &.no-responsivo{
-              font-size: (@font-size-titulos-6 * 2);
+              font-size: 2.2vw;
             }
         }
 
         &.md, &.mediano {
-          font-size: (@font-size-titulos-6 * 1.1);
+          font-size: 1.4vw;
             &.no-responsivo{
-              font-size: (@font-size-titulos-6 * 1.5);
+              font-size: 1.4vw;
             }
         }
 
         &.sm, &.pequeno {
-          font-size: @font-size-titulos-6;
+          font-size: 1vw;
             &.no-responsivo{
-              font-size: (@font-size-titulos-6 * 1.2);
+              font-size: 1vw;
             }
         }
 
         &.xs, &.menudo {
-          font-size: (@font-size-titulos-6 * .7);
+          font-size: .7vw;
             &.no-responsivo{
-              font-size: (@font-size-titulos-6 * .8);
+              font-size: .7vw;
             }
         }
     }
