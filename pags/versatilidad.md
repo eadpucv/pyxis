@@ -10,8 +10,8 @@ intro: Texto sobre versatilidad
         <div id='sub-componentes'>
         <div class='pag sin-relleno'>
             <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
-                <li class="active"><a id='subiendo-1' class='condensado' href="#paleta-gamma" role="tab" data-toggle="tab">Header</a></li>
-                <li><a id='subiendo-2' class='condensado' href="#paleta-adicional" role="tab" data-toggle="tab">Content</a></li>
+                <li class="active"><a id='subiendo-1' class='condensado' href="#parametros" role="tab" data-toggle="tab">Parámetros</a></li>
+                <li><a id='subiendo-2' class='condensado' href="#maquetas" role="tab" data-toggle="tab">Maquetas</a></li>
                 <li><a id='subiendo-3' class='condensado' href="#paleta-gamma" role="tab" data-toggle="tab">Footer</a></li>
                 <li><a id='subiendo-4' class='condensado' href="#paleta-gamma" role="tab" data-toggle="tab">Textos</a></li>
                 <li><a id='subiendo-5' class='condensado' href="#paleta-gamma" role="tab" data-toggle="tab">Imágenes</a></li>
@@ -19,6 +19,110 @@ intro: Texto sobre versatilidad
             </ul>
         </div>
     </div>
+
+    <div class="tab-content">
+    <div class="tab-pane fade in active" id="parametros">
+
+    <h4 class='pizarra gruesa'>Márgenes</h4>
+
+    <h5 class='pizarra gruesa'>Márgen horizontal</h5>
+
+        <h6 class='pizarra gruesa'>Margen horizontal xs</h6>
+        <div class='fondo-gris-claro margen-inf-sm'>
+        <p class='margen-horizontal-xs fondo-blanco centrado'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum. Mauris elementum arcu a nisl porta, eget sollicitudin diam accumsan. Phasellus mollis cursus vehicula. Mauris placerat vestibulum leo eu facilisis. Etiam sagittis blandit lectus, at hendrerit nunc egestas ac. </p>
+        </div>
+        <h6 class='pizarra gruesa'>Margen horizontal sm</h6>
+        <div class='fondo-gris-claro margen-inf-sm'>
+        <p class='margen-horizontal-sm fondo-blanco centrado'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum. Mauris elementum arcu a nisl porta, eget sollicitudin diam accumsan. Phasellus mollis cursus vehicula. Mauris placerat vestibulum leo eu facilisis. Etiam sagittis blandit lectus, at hendrerit nunc egestas ac.</p>
+        </div>
+        <h6 class='pizarra gruesa'>Margen horizontal</h6>
+        <div class='fondo-gris-claro margen-inf-sm'>
+        <p class='margen-horizontal fondo-blanco centrado'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum. Mauris elementum arcu a nisl porta, eget sollicitudin diam accumsan. Phasellus mollis cursus vehicula. Mauris placerat vestibulum leo eu facilisis. Etiam sagittis blandit lectus, at hendrerit nunc egestas ac.</p>
+        </div>
+        <h6 class='pizarra gruesa'>Margen horizontal md</h6>
+        <div class='fondo-gris-claro margen-inf-sm'>
+        <p class='margen-horizontal-md fondo-blanco centrado'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum. Mauris elementum arcu a nisl porta, eget sollicitudin diam accumsan. Phasellus mollis cursus vehicula. Mauris placerat vestibulum leo eu facilisis. Etiam sagittis blandit lectus, at hendrerit nunc egestas ac.</p>
+        </div>
+        <h6 class='pizarra gruesa'>Margen horizontal lg</h6>
+        <div class='fondo-gris-claro margen-inf-sm'>
+            <p class='margen-horizontal-lg fondo-blanco centrado'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum. Mauris elementum arcu a nisl porta, eget sollicitudin diam accumsan. Phasellus mollis cursus vehicula. Mauris placerat vestibulum leo eu facilisis. Etiam sagittis blandit lectus, at hendrerit nunc egestas ac.</p>
+        </div>
+
+        <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+            <code> 
+&lt;span class='margen-horizontal-xs'>...&lt;/span>
+&lt;span class='margen-horizontal'>...&lt;/span>
+&lt;span class='margen-horizontal-sm'>...&lt;/span>
+&lt;span class='margen-horizontal-md'>...&lt;/span>
+&lt;span class='margen-horizontal-lg'>...&lt;/span>
+            </code>
+        <hr class='invisible'>
+   
+    <h5 class='pizarra gruesa'>Márgen vertical</h5>
+        <div class='fila'>
+            <div class='col-md-12 col-sm-12 col-xs-12 margen-inf'>
+                <h6 class='pizarra gruesa'>Márgen vertical estándar</h6>
+                <div class='fondo-gris-claro'>
+                    <p class='margen-vertical-xs fondo-gris-claro '><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum. Mauris elementum arcu a nisl porta, eget sollicitudin  </span><span class='sin-margen fondo-blanco ancho-completo margen-vertical'>Esto es un span con márgenes verticales <span class='verde'>(estándar) = 30px o 2em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum. Mauris elementum arcu a nisl porta, eget sollicitudin  </span></p>
+                </div>
+            </div>
+        </div>
+        <div class='fila'>
+            <div class='col-md-3 col-sm-6 col-xs-12 margen-inf'>
+                <h6 class='pizarra gruesa'>Margen vertical xs</h6>
+                <div class='fondo-rojo'>
+                    <p class='margen-vertical-xs fondo-gris-claro '><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.  </span><span class='sin-margen fondo-blanco ancho-completo margen-vertical-xs'>Esto es un span con márgenes verticales <span class='verde'>(xs) = 5px o 0,33333333em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.  </span></p>
+                </div>
+            </div>
+            <div class='col-md-3 col-sm-6 col-xs-12 margen-inf'>
+                <h6 class='pizarra gruesa'>Margen vertical sm</h6>
+                <div class='fondo-gris-claro'>
+                    <p class='margen-vertical-xs fondo-gris-claro '><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span><span class='sin-margen fondo-blanco ancho-completo margen-vertical-sm'>Esto es un span con márgenes verticales <span class='verde'>(sm) = 20px o 1,33333333em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span></p>
+                </div>
+            </div>
+            <div class='col-md-3 col-sm-6 col-xs-12 margen-inf'>
+                <h6 class='pizarra gruesa'>Margen vertical md</h6>
+                <div class='fondo-gris-claro'>
+                    <p class='margen-vertical-xs fondo-gris-claro '><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span><span class='sin-margen fondo-blanco ancho-completo margen-vertical-md'>Esto es un span con márgenes verticales <span class='verde'>(md) = 45px o 3em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span></p>
+                </div>
+            </div>
+            <div class='col-md-3 col-sm-6 col-xs-12 margen-inf'>
+                <h6 class='pizarra gruesa'>Margen vertical lg</h6>
+                <div class='fondo-gris-claro'>
+                    <p class='margen-vertical-xs fondo-gris-claro '><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span><span class='sin-margen fondo-blanco ancho-completo margen-vertical-lg'>Esto es un span con márgenes verticales <span class='verde'>(lg) = 54px o 3,6em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span></p>
+                </div>
+            </div>
+        </div>
+
+        <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+            <code> 
+&lt;span class='margen-vertical-xs'>...&lt;/span>
+&lt;span class='margen-vertical'>...&lt;/span>
+&lt;span class='margen-vertical-sm'>...&lt;/span>
+&lt;span class='margen-vertical-md'>...&lt;/span>
+&lt;span class='margen-vertical-lg'>...&lt;/span>
+
+            </code>
+        <hr class='invisible'>
+
+    <h5 class='pizarra gruesa'>Márgen superior</h5>
+
+    <h5 class='pizarra gruesa'>Márgen derecho</h5>
+
+    <h5 class='pizarra gruesa'>Márgen inferior</h5>
+
+    <h5 class='pizarra gruesa'>Márgen izquierdo</h5>
+
+
+    <hr class='invisible'>
+    <h4 class='pizarra gruesa'>Relleno</h4>
+    
+    </div>
+
+
+
+<div class="tab-pane fade in" id="maquetas">
+
     <h4 class='pizarra gruesa'>Estilos de párrafo</h4>
     
     <div class="h-entry">
@@ -38,8 +142,7 @@ intro: Texto sobre versatilidad
         <p>Vestibulum id felis eros. Proin condimentum accumsan hendrerit. Ut commodo, lorem id facilisis dignissim, nibh mi interdum enim, id eleifend nibh magna et nulla. Curabitur efficitur feugiat tellus, at ornare sem fermentum id. Aliquam a tristique felis, scelerisque lacinia est. Fusce pharetra semper tempor. Duis interdum viverra enim, vitae consequat est hendrerit vel. Donec dui erat, commodo at laoreet in, suscipit eget libero. Suspendisse elementum, risus vel sagittis elementum, lectus ante viverra lectus, in ultrices felis leo rhoncus nisl. In at diam at augue porttitor efficitur in quis massa. Fusce vel orci vestibulum, accumsan ante suscipit, rutrum augue. Cras posuere laoreet lectus, eget commodo libero condimentum at. Etiam volutpat nibh ac ullamcorper tincidunt. Aenean accumsan, metus vel efficitur fringilla, risus enim facilisis lorem, ut congue tellus enim dignissim libero. Duis ut euismod risus, et blandit nisi. Pellentesque cursus condimentum ex, sit amet ornare erat ultrices sit amet.</p>
         <p>Sed sagittis enim et elementum ullamcorper. Nam blandit augue nec massa efficitur elementum. Nulla tempor ullamcorper neque vel tempor. Proin porttitor nisl eget condimentum lobortis. Proin venenatis ligula ut ultrices consequat. Suspendisse tincidunt eu sem at fringilla. Cras non sem magna. Quisque eget tincidunt sem.</p>
     </div>           
-</div>
-<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+
     <h3 class="sm color"> Artículo reciente</h3>
         <p class='resumen'>
         No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
@@ -57,8 +160,7 @@ intro: Texto sobre versatilidad
         <p class='xs fino'>
         Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
         </p>   
-</div>
-<div class='col-lg-4 col-md-4 col-sm-4 col-xs-12 margen-columna'>
+
         <h3 class='rojo'>Elementos laterales</h3><a name="titulo-dos"></a>
         <h5 class='gris-oscuro'>1.Secciones linkeables</h5>
         <h6 class='altas gruesa gris'> Novedades </h6>
@@ -88,12 +190,19 @@ intro: Texto sobre versatilidad
             <li>Tercera cosa, y así...</li>
             <li>No hay tercera sin cuarta</li>
         </ul>
-    </div>
+   
     <a class='lg'>Money, get away, get a good job with more pay and you're okay</a>
     <a class='md'>Money, get away, get a good job with more pay and you're okay</a>
     <a class='sm'>Money, get away, get a good job with more pay and you're okay</a>
     <a class='xs'>Money, get away, get a good job with more pay and you're okay</a>
+
 </div>
+</div>
+
+
+</div>
+</div>
+
 <!--
 <div class='col-lg-9 col-md-9 col-sm-12 col-xs-12'>
 
