@@ -12,7 +12,6 @@
 //  Vínculos:
 
 a{
-  font-size: @cuerpo;
   line-height: inherit;
   color: @color-link;
   text-decoration: none;
@@ -518,6 +517,10 @@ h1, h2, h3, h4, h5, h6 {
     &.sin-relleno{
       padding: 0;
     }
+
+    &.sin-margen{
+      margin: 0 !important;
+    }
 }
 
 ul ul,
@@ -680,7 +683,20 @@ ul.menu {
       &:before {
         content: '\2014 \00A0';
     }
-}
+  }
+    //  pie de foto 
+
+    &.pie-de-foto{
+        line-height: 24px;
+        font-weight: 100;
+        border-left: 2px solid @rojo;
+        display: inline-block;
+        font-size: 12px !important;
+        font-style: italic !important; 
+        line-height: 16px !important;
+        margin: 5px 0 15px !important;
+        padding: 0 0 0 10px !important;
+    }
 }
 
 .autor {

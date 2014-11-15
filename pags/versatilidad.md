@@ -63,7 +63,7 @@ intro: Texto sobre versatilidad
             <div class='col-md-12 col-sm-12 col-xs-12 margen-inf'>
                 <h6 class='pizarra gruesa'>Márgen vertical estándar</h6>
                 <div class='fondo-gris-claro'>
-                    <p class='margen-vertical-xs fondo-gris-claro '><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum. Mauris elementum arcu a nisl porta, eget sollicitudin  </span><span class='sin-margen fondo-blanco ancho-completo margen-vertical'>Esto es un span con márgenes verticales <span class='verde'>(estándar) = 30px o 2em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum. Mauris elementum arcu a nisl porta, eget sollicitudin  </span></p>
+                    <p class='margen-vertical-xs fondo-gris-claro '><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum. Mauris elementum arcu a nisl porta, eget sollicitudin  </span><span class='sin-margen fondo-blanco ancho-completo margen-vertical'><b>Esto es un span con márgenes verticales </b><span class='verde'>(estándar) = 30px o 2em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum. Mauris elementum arcu a nisl porta, eget sollicitudin  </span></p>
                 </div>
             </div>
         </div>
@@ -71,25 +71,25 @@ intro: Texto sobre versatilidad
             <div class='col-md-3 col-sm-6 col-xs-12 margen-inf'>
                 <h6 class='pizarra gruesa'>Margen vertical xs</h6>
                 <div class='fondo-rojo'>
-                    <p class='margen-vertical-xs fondo-gris-claro '><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.  </span><span class='sin-margen fondo-blanco ancho-completo margen-vertical-xs'>Esto es un span con márgenes verticales <span class='verde'>(xs) = 5px o 0,33333333em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.  </span></p>
+                    <p class='margen-vertical-xs fondo-gris-claro '><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.  </span><span class='sin-margen fondo-blanco ancho-completo margen-vertical-xs'><b>Esto es un span con márgenes verticales</b> <span class='verde'>(xs) = 5px o 0,33333333em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.  </span></p>
                 </div>
             </div>
             <div class='col-md-3 col-sm-6 col-xs-12 margen-inf'>
                 <h6 class='pizarra gruesa'>Margen vertical sm</h6>
                 <div class='fondo-gris-claro'>
-                    <p class='margen-vertical-xs fondo-gris-claro '><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span><span class='sin-margen fondo-blanco ancho-completo margen-vertical-sm'>Esto es un span con márgenes verticales <span class='verde'>(sm) = 20px o 1,33333333em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span></p>
+                    <p class='margen-vertical-xs fondo-gris-claro '><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.  </span><span class='sin-margen fondo-blanco ancho-completo margen-vertical-sm'><b>Esto es un span con márgenes verticales </b><span class='verde'>(sm) = 20px o 1,33333333em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span></p>
                 </div>
             </div>
             <div class='col-md-3 col-sm-6 col-xs-12 margen-inf'>
                 <h6 class='pizarra gruesa'>Margen vertical md</h6>
                 <div class='fondo-gris-claro'>
-                    <p class='margen-vertical-xs fondo-gris-claro '><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span><span class='sin-margen fondo-blanco ancho-completo margen-vertical-md'>Esto es un span con márgenes verticales <span class='verde'>(md) = 45px o 3em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span></p>
+                    <p class='margen-vertical-xs fondo-gris-claro '><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span><span class='sin-margen fondo-blanco ancho-completo margen-vertical-md'><b>Esto es un span con márgenes verticales</b> <span class='verde'>(md) = 45px o 3em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span></p>
                 </div>
             </div>
             <div class='col-md-3 col-sm-6 col-xs-12 margen-inf'>
                 <h6 class='pizarra gruesa'>Margen vertical lg</h6>
                 <div class='fondo-gris-claro'>
-                    <p class='margen-vertical-xs fondo-gris-claro '><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span><span class='sin-margen fondo-blanco ancho-completo margen-vertical-lg'>Esto es un span con márgenes verticales <span class='verde'>(lg) = 54px o 3,6em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span></p>
+                    <p class='margen-vertical-xs fondo-gris-claro'><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span><span class='sin-margen fondo-blanco ancho-completo margen-vertical-lg'><b>Esto es un span con márgenes verticales</b><br> <span class='verde'>(lg) = 54px o 3,6em</span></span><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.</span></p>
                 </div>
             </div>
         </div>
@@ -106,25 +106,278 @@ intro: Texto sobre versatilidad
         <hr class='invisible'>
 
     <h5 class='pizarra gruesa'>Márgen superior</h5>
-
-    <h5 class='pizarra gruesa'>Márgen derecho</h5>
-
-    <h5 class='pizarra gruesa'>Márgen inferior</h5>
-
-    <h5 class='pizarra gruesa'>Márgen izquierdo</h5>
-
-
-    <hr class='invisible'>
-    <h4 class='pizarra gruesa'>Relleno</h4>
-    
+    <h6 class='pizarra gruesa'>Margen superior estándar</h6>
+    <div class='fondo-gris-claro'>
+        <img class='margen-sup fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+        <p class='fondo-gris-claro'><span class='sin-margen fondo-blanco ancho-completo'><b>margen-sup estándar</b> <span class='verde'>(md) = 45px o 3em</span></span><br><span class='sin-margen fondo-blanco ancho-completo'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span></p>
     </div>
 
+            <div class='fila'>
+            <div class='col-md-3 col-sm-6 col-xs-12 margen-inf'>
+                <h6 class='pizarra gruesa'>Margen superior xs</h6>
+                <div class='fondo-gris-claro'>
+                    <img class='margen-sup-xs fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-xs fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-xs fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                </div>
+                    <p class='fondo-gris-claro'><span class='sin-margen fondo-blanco ancho-completo margen-sup-sm'><b>margen-sup-xs</b><span class='verde'>(xs) = 5px o 0,33333333em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.  </span></p>
+            </div>
+            <div class='col-md-3 col-sm-6 col-xs-12 margen-inf'>
+                <h6 class='pizarra gruesa'>Margen superior sm</h6>
+                <div class='fondo-gris-claro'>
+                    <img class='margen-sup-sm fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-sm fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-sm fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                </div>
+                    <p class='fondo-gris-claro'><span class='sin-margen fondo-blanco ancho-completo margen-sup-sm'><b>margen-sup-sm</b><span class='verde'>(sm) = 20px o 1,33333333em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span></p>
+            </div>
+            <div class='col-md-3 col-sm-6 col-xs-12 margen-inf'>
+                <h6 class='pizarra gruesa'>Margen superior md</h6>
+                <div class='fondo-gris-claro'>
+                    <img class='margen-sup-md fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-md fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-md fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                </div>
+                    <p class='fondo-gris-claro'><span class='sin-margen fondo-blanco ancho-completo'><b>margen-sup-md</b> <span class='verde'>(md) = 45px o 3em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.</span></p>
+            </div>
+            <div class='col-md-3 col-sm-6 col-xs-12 margen-inf'>
+                <h6 class='pizarra gruesa'>Margen superior lg</h6>
+                <div class='fondo-gris-claro'>
+                    <img class='margen-sup-lg fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-lg fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-lg fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                </div>
+                    <p><span class='sin-margen fondo-blanco ancho-completo margen-sup-lg'><b>margen-sup-lg</b><br> <span class='verde'>(lg) = 60px o 4em</span></span><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.</span></p>
+            </div>
+            </div>
 
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+            <code> 
+&lt;span class='margen-vertical-xs'>...&lt;/span>
+&lt;span class='margen-vertical'>...&lt;/span>
+&lt;span class='margen-vertical-sm'>...&lt;/span>
+&lt;span class='margen-vertical-md'>...&lt;/span>
+&lt;span class='margen-vertical-lg'>...&lt;/span>
 
-<div class="tab-pane fade in" id="maquetas">
+            </code>
+        <hr class='invisible'>
 
-    <h4 class='pizarra gruesa'>Estilos de párrafo</h4>
+    <h5 class='pizarra gruesa'>Márgen derecho</h5>
+        <h6 class='pizarra gruesa'>Margen derecho xs</h6>
+        <ul class='fondo-gris sin-relleno en-linea'>
+            <li class='en-linea margen-der-xs fondo-blanco'><a class='sans negro'>Escuela</a></li>
+            <li class='en-linea margen-der-xs fondo-blanco'><a class='sans negro'>Carreras & postgrados</a></li>
+            <li class='en-linea margen-der-xs fondo-blanco'><a class='sans negro'>Admisión</a></li>
+            <li class='en-linea margen-der-xs fondo-blanco'><a class='sans negro'>Estudiantes</a></li>
+            <li class='en-linea margen-der-xs fondo-blanco'><a class='sans negro'>Extensión</a></li>
+            <li class='en-linea margen-der-xs fondo-blanco'><a class='sans negro'>Amereida</a></li>
+        </ul>
+        <h6 class='pizarra gruesa'>Margen derecho sm</h6>
+        <ul class='fondo-gris sin-relleno en-linea'>
+            <li class='en-linea margen-der-sm fondo-blanco'><a class='sans negro'>Escuela</a></li>
+            <li class='en-linea margen-der-sm fondo-blanco'><a class='sans negro'>Carreras & postgrados</a></li>
+            <li class='en-linea margen-der-sm fondo-blanco'><a class='sans negro'>Admisión</a></li>
+            <li class='en-linea margen-der-sm fondo-blanco'><a class='sans negro'>Estudiantes</a></li>
+            <li class='en-linea margen-der-sm fondo-blanco'><a class='sans negro'>Extensión</a></li>
+            <li class='en-linea margen-der-sm fondo-blanco'><a class='sans negro'>Amereida</a></li>
+        </ul>
+        <h6 class='pizarra gruesa'>Margen derecho</h6>
+        <ul class='fondo-gris sin-relleno en-linea'>
+            <li class='en-linea margen-der fondo-blanco'><a class='sans negro'>Escuela</a></li>
+            <li class='en-linea margen-der fondo-blanco'><a class='sans negro'>Carreras & postgrados</a></li>
+            <li class='en-linea margen-der fondo-blanco'><a class='sans negro'>Admisión</a></li>
+            <li class='en-linea margen-der fondo-blanco'><a class='sans negro'>Estudiantes</a></li>
+            <li class='en-linea margen-der fondo-blanco'><a class='sans negro'>Extensión</a></li>
+            <li class='en-linea margen-der fondo-blanco'><a class='sans negro'>Amereida</a></li>
+        </ul>
+        <h6 class='pizarra gruesa'>Margen derecho md</h6>
+        <ul class='fondo-gris sin-relleno en-linea'>
+            <li class='en-linea margen-der-md fondo-blanco'><a class='sans negro'>Escuela</a></li>
+            <li class='en-linea margen-der-md fondo-blanco'><a class='sans negro'>Carreras & postgrados</a></li>
+            <li class='en-linea margen-der-md fondo-blanco'><a class='sans negro'>Admisión</a></li>
+            <li class='en-linea margen-der-md fondo-blanco'><a class='sans negro'>Estudiantes</a></li>
+            <li class='en-linea margen-der-md fondo-blanco'><a class='sans negro'>Extensión</a></li>
+            <li class='en-linea margen-der-md fondo-blanco'><a class='sans negro'>Amereida</a></li>
+        </ul>
+        <h6 class='pizarra gruesa'>Margen derecho lg</h6>
+        <ul class='fondo-gris sin-relleno en-linea'>
+            <li class='en-linea margen-der-lg fondo-blanco'><a class='sans negro'>Escuela</a></li>
+            <li class='en-linea margen-der-lg fondo-blanco'><a class='sans negro'>Carreras & postgrados</a></li>
+            <li class='en-linea margen-der-lg fondo-blanco'><a class='sans negro'>Admisión</a></li>
+            <li class='en-linea margen-der-lg fondo-blanco'><a class='sans negro'>Estudiantes</a></li>
+            <li class='en-linea margen-der-lg fondo-blanco'><a class='sans negro'>Extensión</a></li>
+            <li class='en-linea margen-der-lg fondo-blanco'><a class='sans negro'>Amereida</a></li>
+        </ul>
+
+        <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+            <code> 
+&lt;span class='margen-vertical-xs'>...&lt;/span>
+&lt;span class='margen-vertical'>...&lt;/span>
+&lt;span class='margen-vertical-sm'>...&lt;/span>
+&lt;span class='margen-vertical-md'>...&lt;/span>
+&lt;span class='margen-vertical-lg'>...&lt;/span>
+
+            </code>
+        <hr class='invisible'>
+    <h5 class='pizarra gruesa'>Márgen inferior</h5>
+    <h6 class='pizarra gruesa'>Margen inferior estándar</h6>
+    <div class='fila'>
+        <div class='col-md-3 col-sm-3 col-xs-12'>
+            <ul class='menudo fondo-gris sin-margen sin-relleno'>
+                <li class='margen-inf fondo-blanco'><a class='sans' href='#'>Escuela</a></li>
+                <li class='margen-inf fondo-blanco'><a class='sans' href='#'>Carreras & postgrados</a></li>
+                <li class='margen-inf fondo-blanco'><a class='sans' href='#'>Admisión</a></li>
+                <li class='margen-inf fondo-blanco'><a class='sans' href='#'>Estudiantes</a></li>
+                <li class='margen-inf fondo-blanco'><a class='sans' href='#'>Extensión</a></li>
+                <li class='margen-inf fondo-blanco'><a class='sans' href='#'>Amereida</a></li>
+            </ul>
+        </div>
+        <div class='col-md-4 col-sm-9 col-xs-12'>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum. Mauris elementum arcu a nisl porta, eget sollicitudin diam accumsan. Phasellus mollis cursus vehicula. Mauris placerat vestibulum leo eu facilisis. Etiam sagittis blandit lectus, at hendrerit nunc egestas ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class='col-md-5 col-sm-9 col-xs-12'>
+            <img alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+            <blockquote class='pie-de-foto'>Pie de imagen shiwanson</blockquote>
+        </div>
+    </div>
+    <div class='fila'>
+        <div class='col-md-3 col-sm-6'>
+            <h6 class='pizarra gruesa'>Margen inferior xs</h6>
+            <ul class='fondo-gris sin-relleno'>
+                <li class='margen-inf-xs fondo-blanco'><a class='sans'>Escuela</a></li>
+                <li class='margen-inf-xs fondo-blanco'><a class='sans'>Carreras & postgrados</a></li>
+                <li class='margen-inf-xs fondo-blanco'><a class='sans'>Admisión</a></li>
+                <li class='margen-inf-xs fondo-blanco'><a class='sans'>Estudiantes</a></li>
+                <li class='margen-inf-xs fondo-blanco'><a class='sans'>Extensión</a></li>
+                <li class='margen-inf-xs fondo-blanco'><a class='sans'>Amereida</a></li>
+            </ul>
+        </div>
+        <div class='col-md-3 col-sm-6'>
+            <h6 class='pizarra gruesa'>Margen inferior sm</h6>
+            <ul class='fondo-gris sin-relleno'>
+                <li class='margen-inf-sm fondo-blanco'><a class='sans'>Escuela</a></li>
+                <li class='margen-inf-sm fondo-blanco'><a class='sans'>Carreras & postgrados</a></li>
+                <li class='margen-inf-sm fondo-blanco'><a class='sans'>Admisión</a></li>
+                <li class='margen-inf-sm fondo-blanco'><a class='sans'>Estudiantes</a></li>
+                <li class='margen-inf-sm fondo-blanco'><a class='sans'>Extensión</a></li>
+                <li class='margen-inf-sm fondo-blanco'><a class='sans'>Amereida</a></li>
+            </ul>
+        </div>
+        <div class='col-md-3 col-sm-6'>
+            <h6 class='pizarra gruesa'>Margen inferior md</h6>
+            <ul class='fondo-gris sin-relleno'>
+                <li class='margen-inf-md fondo-blanco'><a class='sans'>Escuela</a></li>
+                <li class='margen-inf-md fondo-blanco'><a class='sans'>Carreras & postgrados</a></li>
+                <li class='margen-inf-md fondo-blanco'><a class='sans'>Admisión</a></li>
+                <li class='margen-inf-md fondo-blanco'><a class='sans'>Estudiantes</a></li>
+                <li class='margen-inf-md fondo-blanco'><a class='sans'>Extensión</a></li>
+                <li class='margen-inf-md fondo-blanco'><a class='sans'>Amereida</a></li>
+            </ul>
+        </div>
+        <div class='col-md-3 col-sm-6'>
+            <h6 class='pizarra gruesa'>Margen inferior lg</h6>
+            <ul class='fondo-gris sin-relleno'>
+                <li class='margen-inf-lg fondo-blanco'><a class='sans'>Escuela</a></li>
+                <li class='margen-inf-lg fondo-blanco'><a class='sans'>Carreras & postgrados</a></li>
+                <li class='margen-inf-lg fondo-blanco'><a class='sans'>Admisión</a></li>
+                <li class='margen-inf-lg fondo-blanco'><a class='sans'>Estudiantes</a></li>
+                <li class='margen-inf-lg fondo-blanco'><a class='sans'>Extensión</a></li>
+                <li class='margen-inf-lg fondo-blanco'><a class='sans'>Amereida</a></li>
+            </ul>
+        </div>
+    </div>
+        <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+            <code> 
+&lt;span class='margen-vertical-xs'>...&lt;/span>
+&lt;span class='margen-vertical'>...&lt;/span>
+&lt;span class='margen-vertical-sm'>...&lt;/span>
+&lt;span class='margen-vertical-md'>...&lt;/span>
+&lt;span class='margen-vertical-lg'>...&lt;/span>
+            </code>
+        <hr class='invisible'>
+
+    <h5 class='pizarra gruesa'>Márgen izquierdo</h5>
+    <h6 class='pizarra gruesa'>Márgen izquierdo estándar</h6>
+    <div class='fila'>
+        <div class='col-md-12'>   
+                <img class='ancho-lg margen-izq derecha ' alt="Third slide" src="http://4.bp.blogspot.com/_d3mbXUwjes4/TSi8RPzBYEI/AAAAAAAABM8/75cBKoaty1Q/s1600/rimbaud2.gif">
+                <blockquote class='gris derecha sin-margen ancho-lg cita texto-derecha relleno-inf-sm relleno-sup-xs relleno-horizontal-sm '>¿Qué era yo en el siglo pasado? Sólo hoy vuelvo a encontrarme. No más vagabundos, no más guerras vagas. La raza inferior lo ha cubierto todo -el pueblo, como dicen-; la razón, la nación y la ciencia. ¡Oh, la ciencia! Todo se ha hecho de nuevo.</blockquote>
+                <blockquote class='gris derecha sin-margen ancho-lg cita texto-derecha relleno-inf-sm relleno-horizontal-sm '>¿Qué era yo en el siglo pasado? Sólo hoy vuelvo a encontrarme. No más vagabundos, no más guerras vagas. La raza inferior lo ha cubierto todo -el pueblo, como dicen-; la razón, la nación y la ciencia. ¡Oh, la ciencia! Todo se ha hecho de nuevo.</blockquote>
+                <blockquote class='gris derecha sin-margen ancho-lg cita texto-derecha relleno-inf-sm relleno-horizontal-sm '>¿Qué era yo en el siglo pasado? Sólo hoy vuelvo a encontrarme. No más vagabundos, no más guerras vagas. La raza inferior lo ha cubierto todo -el pueblo, como dicen-; la razón, la nación y la ciencia. ¡Oh, la ciencia! Todo se ha hecho de nuevo.</blockquote>
+                <blockquote class='gris derecha sin-margen ancho-lg cita texto-derecha relleno-inf-sm relleno-horizontal-sm '>¿Qué era yo en el siglo pasado? Sólo hoy vuelvo a encontrarme. No más vagabundos, no más guerras vagas. La raza inferior lo ha cubierto todo -el pueblo, como dicen-; la razón, la nación y la ciencia. ¡Oh, la ciencia! Todo se ha hecho de nuevo.</blockquote>
+        </div>
+    </div>
+    <div class='fila'>
+        <div class='col-md-12'>
+            <img class='ancho-sm margen-izq derecha fondo-rojo' alt="Third slide" src="http://4.bp.blogspot.com/_d3mbXUwjes4/TSi8RPzBYEI/AAAAAAAABM8/75cBKoaty1Q/s1600/rimbaud2.gif">
+            <img class='ancho-sm margen-izq derecha fondo-azul' alt="Third slide" src="http://4.bp.blogspot.com/_d3mbXUwjes4/TSi8RPzBYEI/AAAAAAAABM8/75cBKoaty1Q/s1600/rimbaud2.gif">
+            <img class='ancho-sm margen-izq derecha fondo-ahuesado' alt="Third slide" src="http://4.bp.blogspot.com/_d3mbXUwjes4/TSi8RPzBYEI/AAAAAAAABM8/75cBKoaty1Q/s1600/rimbaud2.gif">
+            <img class='ancho-sm margen-izq derecha fondo-verde' alt="Third slide" src="http://4.bp.blogspot.com/_d3mbXUwjes4/TSi8RPzBYEI/AAAAAAAABM8/75cBKoaty1Q/s1600/rimbaud2.gif">
+            <img class='ancho-sm margen-izq derecha fondo-celeste' alt="Third slide" src="http://4.bp.blogspot.com/_d3mbXUwjes4/TSi8RPzBYEI/AAAAAAAABM8/75cBKoaty1Q/s1600/rimbaud2.gif">
+            <img class='ancho-sm margen-izq derecha fondo-naranja' alt="Third slide" src="http://4.bp.blogspot.com/_d3mbXUwjes4/TSi8RPzBYEI/AAAAAAAABM8/75cBKoaty1Q/s1600/rimbaud2.gif">
+        </div> 
+    </div>
+    <hr class='invisible'>
+    <div class='fila'>
+        <div class='col-md-3 col-sm-6'>
+            <h6 class='pizarra gruesa'>Margen izquierdo xs</h6>
+            <ul class='fondo-gris sin-relleno'>
+                <li class='margen-izq-xs fondo-blanco'><a class='sans negro'>Escuela</a></li>
+                <li class='margen-izq-xs fondo-blanco'><a class='sans negro'>Carreras y postgrados</a></li>
+                <li class='margen-izq-xs fondo-blanco'><a class='sans negro'>Admisión</a></li>
+                <li class='margen-izq-xs fondo-blanco'><a class='sans negro'>Estudiantes</a></li>
+                <li class='margen-izq-xs fondo-blanco'><a class='sans negro'>Extensión</a></li>
+                <li class='margen-izq-xs fondo-blanco'><a class='sans negro'>Amereida</a></li>
+            </ul>
+        </div>
+        <div class='col-md-3 col-sm-6'>
+            <h6 class='pizarra gruesa'>Margen izquierdo sm</h6>
+            <ul class='fondo-gris sin-relleno'>
+                <li class='margen-izq-sm fondo-blanco'><a class='sans negro'>Escuela</a></li>
+                <li class='margen-izq-sm fondo-blanco'><a class='sans negro'>Carreras y postgrados</a></li>
+                <li class='margen-izq-sm fondo-blanco'><a class='sans negro'>Admisión</a></li>
+                <li class='margen-izq-sm fondo-blanco'><a class='sans negro'>Estudiantes</a></li>
+                <li class='margen-izq-sm fondo-blanco'><a class='sans negro'>Extensión</a></li>
+                <li class='margen-izq-sm fondo-blanco'><a class='sans negro'>Amereida</a></li>
+            </ul>
+        </div>
+        <div class='col-md-3 col-sm-6'>
+            <h6 class='pizarra gruesa'>Margen izquierdo md</h6>
+            <ul class='fondo-gris sin-relleno'>
+                <li class='margen-izq-md fondo-blanco'><a class='sans negro'>Escuela</a></li>
+                <li class='margen-izq-md fondo-blanco'><a class='sans negro'>Carreras y postgrados</a></li>
+                <li class='margen-izq-md fondo-blanco'><a class='sans negro'>Admisión</a></li>
+                <li class='margen-izq-md fondo-blanco'><a class='sans negro'>Estudiantes</a></li>
+                <li class='margen-izq-md fondo-blanco'><a class='sans negro'>Extensión</a></li>
+                <li class='margen-izq-md fondo-blanco'><a class='sans negro'>Amereida</a></li>
+            </ul>
+        </div>
+        <div class='col-md-3 col-sm-6'>
+            <h6 class='pizarra gruesa'>Margen izquierdo lg</h6>
+            <ul class='fondo-gris sin-relleno'>
+                <li class='margen-izq-lg fondo-blanco'><a class='sans negro'>Escuela</a></li>
+                <li class='margen-izq-lg fondo-blanco'><a class='sans negro'>Carreras y postgrados</a></li>
+                <li class='margen-izq-lg fondo-blanco'><a class='sans negro'>Admisión</a></li>
+                <li class='margen-izq-lg fondo-blanco'><a class='sans negro'>Estudiantes</a></li>
+                <li class='margen-izq-lg fondo-blanco'><a class='sans negro'>Extensión</a></li>
+                <li class='margen-izq-lg fondo-blanco'><a class='sans negro'>Amereida</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr class='invisible'>
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+            <code> 
+&lt;span class='margen-vertical-xs'>...&lt;/span>
+&lt;span class='margen-vertical'>...&lt;/span>
+&lt;span class='margen-vertical-sm'>...&lt;/span>
+&lt;span class='margen-vertical-md'>...&lt;/span>
+&lt;span class='margen-vertical-lg'>...&lt;/span>
+            </code>
     
+    </div> <!--fin de tab-pane-->
+
+<div class="tab-pane fade" id="maquetas">
+    <h4 class='pizarra gruesa'>Estilos de párrafo</h4>
     <div class="h-entry">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel consectetur mauris. Vivamus id orci maximus, feugiat sapien a, interdum massa. Sed et facilisis dolor. Mauris velit nunc, eleifend vel molestie et, luctus eget justo. Ut semper diam turpis, non rutrum lorem scelerisque in. Suspendisse potenti. In hac habitasse platea dictumst. Duis id justo at risus porta feugiat lacinia molestie turpis. Mauris viverra et nibh condimentum tincidunt. Suspendisse sagittis congue dapibus. Integer tempus lorem ac tellus tincidunt egestas. Nunc nec placerat nisi, vel tincidunt leo.</p>
         <img src="{{ site.baseurl }}/img/manto-5.jpg" alt="versatilidad de imagen">
@@ -197,11 +450,11 @@ intro: Texto sobre versatilidad
     <a class='xs'>Money, get away, get a good job with more pay and you're okay</a>
 
 </div>
-</div>
+</div> <!-- fin de tab-content-->
 
 
-</div>
-</div>
+</div> <!-- fin de col -->
+</div> <!-- fin de fila-->
 
 <!--
 <div class='col-lg-9 col-md-9 col-sm-12 col-xs-12'>
