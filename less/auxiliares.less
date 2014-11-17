@@ -309,7 +309,25 @@ width: auto;
 
 // Estilos auxiliares
 .borde{
-        border: 1px solid fade(@gris-claro, 40);
+        &.sup-punteado-xs{border-top: 1px dotted @rojo}
+        &.sup-punteado-sm{border-top: 2px dotted @rojo}
+        &.sup-punteado-md{border-top: 3px dotted @rojo}
+        &.sup-punteado-lg{border-top: 5px dotted @rojo;}
+
+        &.der-punteado-xs{border-right: 1px dotted @rojo}
+        &.der-punteado-sm{border-right: 2px dotted @rojo}
+        &.der-punteado-md{border-right: 3px dotted @rojo}
+        &.der-punteado-lg{border-right: 5px dotted @rojo}
+
+        &.inf-punteado-xs{border-bottom: 1px dotted @rojo;}
+        &.inf-punteado-sm{border-bottom: 2px dotted @rojo;}
+        &.inf-punteado-md{border-bottom: 3px dotted @rojo;}
+        &.inf-punteado-lg{border-bottom: 5px dotted @rojo;}
+
+        &.izq-punteado-xs{border-left: 1px dotted @rojo;}
+        &.izq-punteado-sm{border-left: 2px dotted @rojo;}
+        &.izq-punteado-md{border-left: 3px dotted @rojo;}
+        &.izq-punteado-lg{border-left: 5px dotted @rojo;}
 }
 
 .sombra{

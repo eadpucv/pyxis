@@ -168,7 +168,7 @@ span {
 
       &:last-child{
         a{
-          color: @rojo;
+          color: @negro;
         }
       }
 
@@ -270,7 +270,6 @@ em, i{
 
 strong{
   font-weight: 700;
-  font-family: @texto-continuo;
 }
 
 .fina,
@@ -490,6 +489,8 @@ h1, h2, h3, h4, h5, h6 {
   ul, ol {
     line-height: 25/@em;
     font-size: @cuerpo;
+    margin: 0;
+    color: rgba(1,1,1,.8);
     //margin: @cuadratin * 0.4 0 @interlinea @cuadratin;
 
         //  Tamaños de Lista:
@@ -643,9 +644,7 @@ ul.menu {
   // Citas:
 
   blockquote {
-    margin-bottom: @interlinea;
-    //padding-left: 15px;
-
+    line-height: 22/@em;
         //  Sin márgenes:
 
     &.sin-margen{

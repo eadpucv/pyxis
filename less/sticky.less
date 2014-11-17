@@ -1,12 +1,12 @@
 
 .sticky-wrapper{
-	height: 50px !important;
+
 	width: 0 !important;
 	width: auto;
 	margin-bottom: 30px;
 
   #sub-componentes{
-
+  	margin-bottom: 30px;
   	i{
   		display: none;
   	}
@@ -29,6 +29,19 @@
 		a{
 		color: @negro;
 		}
+	}
+
+	#ead-sticky{
+		ul{
+			width: 260px;
+			display: block;
+		}
+	}
+
+	#meta-barra{
+		width: 935px;
+		z-index: 200;
+		background-color: @negro;
 	}
 }
 
@@ -56,17 +69,16 @@
 				}
 			}
 		}
-
-		ul{
-			margin: 0 auto;
-			display: block;
-		}
 	}
 
 	#ejemplo-sticky, #ejemplo-sticky-2, #ejemplo-sticky-3{
 		a{
 		color: @rojo;
 		}
+	}
+
+	#meta-barra{
+		background-color: fade(@negro, 60);
 	}
 }
 
@@ -75,10 +87,15 @@
 
 
 .sticky-wrapper{
-	height: auto;
+	
 	width: 0;
 	margin-bottom: 30px;
 	border-radius: 3px;
+
+	  #sub-componentes{
+  	margin-bottom: 30px;
+
+  }
 }
 
 .is-sticky {

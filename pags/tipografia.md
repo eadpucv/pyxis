@@ -785,10 +785,21 @@ h1, h2, h3, h4, h5, h6 {
                 </code>
                 <hr class='invisible'>
                 <h5 class='pizarra'>Fecha evento</h5>
-                <span class='fecha-evento'>012356789</span>
+                <span class='fecha-evento'>12</span>
                 <code>
 &lt;p class=&quot;fecha-evento&quot;&gt;...&lt;/p&gt;
                 </code>
+                <hr class='invisible'>
+                <div class='ancho-lg'>
+                <div class='logo en-linea'>
+                    <span class='lg rojo sans relleno-sup-xs'>e[ad]</span>
+                 </div>
+                <div class='logo en-linea'>
+                    <span class='sm gris-oscuro'>Escuela de arquitectura y diseño</span>
+                    <span class='xs gris-oscuro en-linea'>Pontificia universidad católica de Valparaíso</span>
+                </div>
+                </div>
+               
         </div>
     </div>
 </div>
