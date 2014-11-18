@@ -20,48 +20,37 @@
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
 @sans:							'Source Sans Pro';
-@cond:							'Open Sans';
-@texto-continuo:				'Palatino','georgia', serif;
-@serif:							'Palatino', 'georgia', serif;
+@cond:							'Open Sans Condensed';
+@serif:							'Palatino','Times New Roman', Times,'georgia', serif;
+@texto-continuo:				@serif;
 @italica:						'Palatino', 'Source Sans Pro', serif;
-@italica-cond:					'Open Sans';
+@italica-cond:					@cond;
 @mono:							'Lucida Console', monospace;
 @tipografia:					'Palatino', 'georgia', serif;
 @tipografia-titulos: 			@sans;
-@tipografia-titulos-cond:		'Open Sans';
+@tipografia-titulos-cond:		@cond;
 @tipografia-referencias:		'Source Sans Pro';
 
-// Negros
-@pizarra:					rgba(25, 26, 25, .8);
-@negro: 						rgba(1, 1, 1, 1);
-@negro-claro:					rgba(69, 71, 71, 1);
-
 // Grises
-@gris-oscuro:					rgba(164, 164, 162, 1);
+@negro: 						rgba(1, 1, 1, 1);
+@pizarra:						rgba(45, 45, 50, 0.7) !important;
+@gris-oscuro:					rgba(45, 45, 50, 0.7) !important;
 @gris:							rgba(193, 194, 194, 1);
 @gris-claro:					rgba(232,230,228,1);
-@blanco-gris:					#f9f9f9;
 @gris-blanco:					#f9f9f9;
 
 // Cálidos
-@oliva-oscuro:					rgba(90, 81, 18, 1);
-@oliva:							rgba(123, 110, 27, 1);
-@oliva-claro:					rgba(160, 146, 34, 1);
-@beige-oscuro:					rgba(127, 112, 79, 1);
-@beige:							rgba(202, 182, 135, 1);
-@beige-claro:					rgba(235, 217, 164, 1);
-@damasco-oscuro:				rgba(189, 138, 71, 1);
-@damasco:						rgba(204, 142, 72, 1);
-@damasco-claro:					rgba(205, 146, 74, 1);
-@naranja-oscuro:				rgba(192, 90, 24, 1);
-@naranja:						rgba(242, 126, 47, 1);
+
+@naranja:						rgba(270, 146, 100, 1);
 @rojo:							rgba(199, 81, 77, 1);
-@verde:							#43A9AC;
+@verde:							#7fb129;// rgba(40, 117, 120, .9); Turquesa
+@masking:						rgba(245, 242, 219, 1);
+@ahuesado:                      ivory;
+@azul:							rgba(65, 130, 197, 1);
 
 
 // Adicionales
-@pizarra:						rgba(45, 45, 50, 0.7) !important;
-@ahuesado:                      rgba(245, 242, 219, 1);
+
 @blanco:                        rgba(255, 255, 255, 1);
 @celeste: 						#e8f0f2;		
 @brand-primary:         		#428bca;
@@ -69,19 +58,10 @@
 @component-active-bg:       	@brand-primary;
 
 
-// Opuestos 
-
-@oliva-opuesto:					spin(@oliva, 180);
-@beige-opuesto:					spin(@beige, 180);
-@damasco-opuesto:				spin(@damasco, 180);
-@azul:							spin(@naranja, 180);
-@rojo-opuesto:					spin(@rojo, 180);
-
-
 // Uso
 @color-borde:                	lighten(@gris-claro, 10%);
 @rojo-alerta:					rgba(214, 97, 82, 1);
-@boton-resalte:					2px;
+@boton-resalte:					3px;
 
 // bordes
 @borde-fino:					1px solid @color-borde;

@@ -143,11 +143,9 @@ intro: Texto sobre Interacción
                         <div class="form-group">
                           <input type="email" class="form-control" id="ejemplo-nombre2" placeholder="Ingresa nombre" required />
                         </div>
-                        <div class="form-group">
-                          <div class="input-group">
-                            <div class="input-group-addon">@</div>
+                        <div class="grupo-inputs">
+                            <span class="input">@</span>
                             <input class="form-control" type="email" placeholder="Ingresa email" required />
-                          </div>
                         </div>
                         <div class="form-group">
                           <input type="password" class="form-control" id="ejemplo-contraseña2" placeholder="Contraseña" required />
@@ -393,9 +391,11 @@ intro: Texto sobre Interacción
                                   <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Vigilar esta página</span></span>
                               </div>
                         </div>
-                        <button type="submit" class="btn btn-success">Grabar página</button>
-                        <button type="submit" class="btn btn-default">Previsualizar</button>
-                        <button type="submit" class="btn btn-cancel">Cancelar</button>
+                        <div class='grupo-botones'>
+                          <button type="submit" class="btn btn-success">Grabar página</button>
+                          <button type="submit" class="btn btn-default">Previsualizar</button>
+                          <button type="submit" class="btn btn-cancel">Cancelar</button>
+                        </div>
                       </form>
                       <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form6">ver código</a>
                       <div id="ver-codigo-form6" class="collapse">

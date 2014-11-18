@@ -428,14 +428,16 @@ h1, h2, h3, h4, h5, h6 {
                     <ul class='xs'>
                         <b>Menuda</b>
                         <li>Primer elemento</li>
-                        <li>Segundo elemento</li>
+                        <li>Segundo elemento
                             <ul class='xs'>
-                                <li>Primer sub-elemento</li>
+                                <li>Primer sub-elemento
                                     <ul class='xs'>
                                         <li>Primer sub-sub-elemento</li>
                                     </ul>
+                                 </li>
                                 <li>Segundo sub-elemento</li>
                             </ul>
+                        </li>
                         <li>Tercer elemento</li>
                         <li>Cuarto elemento</li>
                     </ul>
@@ -445,14 +447,16 @@ h1, h2, h3, h4, h5, h6 {
                     <ul>
                     <b>Estándar</b>
                         <li>Primer elemento</li>
-                        <li>Segundo elemento</li>
+                        <li>Segundo elemento
                             <ul>
-                                <li>Primer sub-elemento</li>
+                                <li>Primer sub-elemento
                                     <ul>
                                         <li>Primer sub-sub-elemento</li>
                                     </ul>
+                                </li>
                                 <li>Segundo sub-elemento</li>
                             </ul>
+                        </li>
                         <li>tercer elemento</li>
                         <li>cuarto elemento</li>
                     </ul>
@@ -464,14 +468,16 @@ h1, h2, h3, h4, h5, h6 {
                     <ul class='sm'>
                     <b>Pequeña</b>
                         <li>Primer elemento</li>
-                        <li>Segundo elemento</li>
+                        <li>Segundo elemento
                             <ul class='sm'>
-                                <li>Primer sub-elemento</li>
+                                <li>Primer sub-elemento
                                     <ul class='sm'>
                                         <li>Primer sub-sub-elemento</li>
                                     </ul>
+                                </li>
                                 <li>Segundo sub-elemento</li>
                             </ul>
+                        </li>
                         <li>tercer elemento</li>
                         <li>cuarto elemento</li>
                     </ul>

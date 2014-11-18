@@ -3,7 +3,7 @@
 
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans Condensed';
     src: url('opensans-condbold-webfont.eot');
     src: url('opensans-condbold-webfont.eot?#iefix') format('embedded-opentype'),
          url('opensans-condbold-webfont.woff2') format('woff2'),
@@ -19,7 +19,7 @@
 
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans Condensed';
     src: url('opensans-condlight-webfont.eot');
     src: url('opensans-condlight-webfont.eot?#iefix') format('embedded-opentype'),
          url('opensans-condlight-webfont.woff2') format('woff2'),
@@ -35,7 +35,7 @@
 
 
 @font-face {
-    font-family: 'Open Sans';
+    font-family: 'Open Sans Condensed';
     src: url('opensans-condlightitalic-webfont.eot');
     src: url('opensans-condlightitalic-webfont.eot?#iefix') format('embedded-opentype'),
          url('opensans-condlightitalic-webfont.woff2') format('woff2'),
