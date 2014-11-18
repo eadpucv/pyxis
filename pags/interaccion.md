@@ -139,7 +139,7 @@ intro: Texto sobre Interacción
               <div class="fila">
                   <div class="col-md-12 col-sm-12 col-xs-12">
                       <h5 class='pizarra gruesa'>Formulario lineal</h5>
-                      <form class="form-inline" role="form">
+                      <form class="formulario-horizontal" role="form">
                         <div class="form-group">
                           <input type="email" class="form-control" id="ejemplo-nombre2" placeholder="Ingresa nombre" required />
                         </div>
@@ -162,7 +162,7 @@ intro: Texto sobre Interacción
                       <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form3">ver código</a>
                       <div id="ver-codigo-form3" class="collapse">
                           <code>
-  &lt;form class="form-inline" role="form">
+  &lt;form class="formulario-horizontal" role="form">
     &lt;div class="form-group">
       &lt;input type="email" class="form-control" id="ejemplo-nombre2" placeholder="Ingresa nombre" required />
     &lt;/div>

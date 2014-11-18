@@ -117,19 +117,28 @@ a.btn{
 
 
 .grupo-inputs{
+    position: relative;
   display: inline-block;
   input, .input{
+    position: relative;
     width: auto !important;
     display: inline-block;
     border-radius: 0 !important;
-    margin-left: -1px;
   }
-  :first-child{.border-radius(@radio 0 0@radio) !important}
-  :last-child{.border-radius(0 @radio @radio 0) !important}
+
+  :first-child{
+    .border-radius(@radio 0 0@radio) !important;
+    margin-right: -3px; 
+    }
+  :last-child{
+    .border-radius(0 @radio @radio 0) !important;
+    margin-left: -3px;
+    }
   .input{
-    position: relative;
-    margin: 0 -3px;
     background-color: @gris-claro;
+    line-height: 1.6; //1.533;
+    border: 1px solid darken(@gris-claro, 5);
+    top: -3.5px !important;
   }
 }
 
@@ -162,6 +171,7 @@ input[type='url'],
 input[type='search'],
 input[type='tel'],
 input[type='color'],
+input[type='file'],
 .uneditable-input, {
     font-family: @sans;
     width: 100%;
@@ -296,8 +306,8 @@ form{
 // clases de formularios
 // todo comentado porque está copiado de bootstrap, al menos traducir
 
-/*
-.form-inline .input-group {
+
+.formulario-horizontal .input-group {
     display: inline-table;
     vertical-align: super !important;
 }
@@ -308,7 +318,7 @@ form{
     }
 }
 
-.form-inline {
+.formulario-horizontal {
 
   // Kick in the inline
   @media (min-width: @screen-sm-min) {
@@ -377,7 +387,7 @@ form{
   }
 }
 
-*/
+
 
 
 // Placeholders
