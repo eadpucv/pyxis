@@ -1,6 +1,6 @@
 safe: false
 source: .
-destination: _site
+destination: _gh-pages
 lsi: false
 markdown: rdiscount
 highlighter: pygments
@@ -8,5 +8,6 @@ permalink: pretty
 baseurl: "http://eadpucv.github.io/pyxis"
 project:
 name: Pyxis
-exclude: [bower_components]
+exclude: [bower_components, less]
+version: 3.0.0
 

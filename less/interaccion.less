@@ -128,8 +128,7 @@ a.btn{
   :last-child{.border-radius(0 @radio @radio 0) !important}
   .input{
     position: relative;
-    top: -3px;
-    right: -3px;
+    margin: 0 -3px;
     background-color: @gris-claro;
   }
 }
@@ -168,12 +167,12 @@ input[type='color'],
     width: 100%;
     display: inline-block;
     padding: @padding-md 3 * @padding-md;
-    margin-bottom: @margen-sm;
+    margin: 0 0 @margen-sm 0;
     font-size: 16px;
     font-weight: 300;
     line-height: @interlinea;
     color: @gris;
-    border: 1px solid fade(@pizarra, 30);
+    border: 1px solid @gris-claro;
     &:focus{
       box-shadow: inset 0 @boton-resalte 0 fade(@negro, 13);
       background-color: fade(@negro, 3);
@@ -194,9 +193,8 @@ form{
         text-transform: uppercase;
         font-size: 90%;
         letter-spacing: .02ex;
-        color: @gris; 
+        color: darken(@gris, 20); 
         display: block;
-        font-weight: 700;
         padding-bottom: 5px;
         padding-top: 10px;
 
@@ -296,7 +294,9 @@ form{
 }
 
 // clases de formularios
+// todo comentado porque está copiado de bootstrap, al menos traducir
 
+/*
 .form-inline .input-group {
     display: inline-table;
     vertical-align: super !important;
@@ -377,7 +377,10 @@ form{
   }
 }
 
-// Placeholder
+*/
+
+
+// Placeholders
 
 ::-webkit-input-placeholder {
     color: @gris-oscuro;
