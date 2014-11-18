@@ -1,52 +1,56 @@
+//
+// Sticky element
+// --------------------------------------------------
 
+// * Sticky Estático *
 .sticky-wrapper{
-
 	width: 0 !important;
 	width: auto;
 	margin-bottom: 30px;
+	// Para menú secundario en Pyxis
+	#sub-componentes{
+	  	margin-bottom: 30px;
+	  	// Para que no aparezca ícono de componente (id "subir")
+	  	i{
+	  		display: none;
+	  	}
 
-  #sub-componentes{
-  	margin-bottom: 30px;
-  	i{
-  		display: none;
-  	}
-
-
-  	h2{
-  		display: inline-block; 
-  	}
-
-			.nav-tabs {
+	  	h2{
+	  		display: inline-block; 
+	  	}
+	  	// Para que no exista interacción con el a: ícono de componente (id "subir")
+		.nav-tabs {
 			> li{
 				&:last-child{
 					display: none;
 				}
 			}
 		}
-  }
-
+	}
+	// Sticky como ejemeplo en Componente "Javascript"
   	#ejemplo-sticky, #ejemplo-sticky-2, #ejemplo-sticky-3{
 		a{
 		color: @negro;
 		}
 	}
-
+	// Sticky dispuesto para maquetas de "Gamma"
 	#ead-sticky{
 		ul{
 			width: 260px;
 			display: block;
 		}
 	}
-
+	// Meta-barra dispuesta para maquetas de "Gamma"
 	#meta-barra{
 		width: 935px;
 		z-index: 200;
 		background-color: @negro;
 	}
-}
+} // Fin de Sticky-wrapper
 
+// * Sticky en funcionamiento *
 .is-sticky {
-
+	// Para menú secundario en Pyxis
 	#sub-componentes {
 		left: 0;
 		margin: 0 auto;
@@ -54,12 +58,11 @@
 		width: 100%;
 		z-index: 100;
 		.box-shadow(0 0 10px fade(@negro, 60));
-		//border: .2px solid rgba(164,164,162,.2);
-
+		// Aparece ícono de componente
 		i{
 			display: inline-block;
 		}
-
+		// Es posible la interacción con el ícono
 		.nav-tabs {
 			> li{
 				border-bottom: 0px solid;
@@ -70,76 +73,66 @@
 			}
 		}
 	}
-
+	// Sticky como ejemeplo en Componente "Javascript"
 	#ejemplo-sticky, #ejemplo-sticky-2, #ejemplo-sticky-3{
 		a{
 		color: @rojo;
 		}
 	}
-
+	// Meta-barra dispuesta para maquetas de "Gamma"
 	#meta-barra{
 		background-color: fade(@negro, 90);
 	}
 }
 
-
+// Medium screen / desktop
 @media (min-width: @screen-md) and (max-width: @screen-md-max){
 
-
-.sticky-wrapper{
-	
-	width: 0;
-	margin-bottom: 30px;
-	border-radius: 3px;
-
-	  #sub-componentes{
-  	margin-bottom: 30px;
-
-  }
+	.sticky-wrapper{
+		width: 0;
+		margin-bottom: 30px;
+		border-radius: 3px;
+		#sub-componentes{
+	  		margin-bottom: 30px;
+	  	}
+	}
 }
 
-.is-sticky {
-	
-}
-
-}
-
+// Small screen / tablet
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
 
-.is-sticky {
+	.is-sticky {
 
+	}
 }
 
-}
-
+//  Extra-small screen / Phones
 @media(max-width: @screen-xs-max){
 
-.sticky-wrapper{
-	height: auto !important;
-	width: 100% !important;
-	margin-bottom: 15px;
+	.sticky-wrapper{
+		height: auto !important;
+		width: 100% !important;
+		margin-bottom: 15px;
 
-	  #sub-componentes{
+		  #sub-componentes{
 
-		.nav-tabs {
-			width: 100%;
-		}
-  }
-}
+			.nav-tabs {
+				width: 100%;
+			}
+	  }
+	}
 
-.is-sticky {
+	.is-sticky {
 
-	#sub-componentes {
-		position: relative !important; 
-		.nav-tabs {
-			> li{
-
-				&:last-child{
-					display: none;
+		#sub-componentes {
+			position: relative !important; 
+			.nav-tabs {
+				> li{
+					&:last-child{
+						display: none;
+					}
 				}
 			}
 		}
 	}
-}
-
 }

@@ -2,7 +2,10 @@
 // Nombres de variables
 // --------------------------------------------------
 
-//Importando tipografías a través de Font Face
+//Importando tipografías a través de * Font Face *
+
+// Estándares de interlínea y tamaño de fuente 
+// (párrafos y títulos)
 
 @line-height-base:        1.428571429; // 20/14
 @font-size-base:          15px;
@@ -13,11 +16,13 @@
 @font-size-titulos-5:	  1.26666667em; //19px
 @font-size-titulos-6:	  1.13333333em; //17px
 
+// Estándares tipográficas suplementarios
 
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
-
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
+
+// Variables tipográficas
 
 @sans:							'Source Sans Pro';
 @cond:							'Open Sans Condensed';
@@ -32,38 +37,38 @@
 @tipografia-referencias:		'Source Sans Pro';
 
 // Grises
+
 @negro: 						rgba(1, 1, 1, 1);
 @pizarra:						rgba(45, 45, 50, 0.7) !important;
 @gris-oscuro:					rgba(45, 45, 50, 0.7) !important;
 @gris:							rgba(193, 194, 194, 1);
 @gris-claro:					rgba(232,230,228,1);
 @gris-blanco:					#f9f9f9;
+@blanco:                        rgba(255, 255, 255, 1);
 
-// Cálidos
+// Colores
 
 @naranja:						rgba(270, 146, 100, 1);
 @rojo:							rgba(199, 81, 77, 1);
-@verde:							#7fb129;// rgba(40, 117, 120, .9); Turquesa
-@masking:						rgba(245, 242, 219, 1);
-@ahuesado:                      ivory;
+@verde:							#7fb129;	// rgba(40, 117, 120, .9); // Color 'Verde turquesa'
 @azul:							rgba(65, 130, 197, 1);
 
+// Colores adicionales
 
-// Adicionales
-
-@blanco:                        rgba(255, 255, 255, 1);
-@celeste: 						#e8f0f2;		
+@masking:						rgba(245, 242, 219, 1);
+@ahuesado:                      ivory;	
 @brand-primary:         		#428bca;
 @component-active-color:    	@blanco;
 @component-active-bg:       	@brand-primary;
 
-
 // Uso
+
 @color-borde:                	lighten(@gris-claro, 10%);
 @rojo-alerta:					rgba(214, 97, 82, 1);
 @boton-resalte:					3px;
 
 // bordes
+
 @borde-fino:					1px solid @color-borde;
 @borde-grueso:					5px solid @color-borde;
 
@@ -72,6 +77,7 @@
 @border-radius-small:       	3px;
 
 // paddings
+
 @padding-sm:					@cuerpo * .1;
 @padding-md:					@cuerpo * .3;
 @padding-lg:					@cuerpo * .5;
@@ -89,31 +95,32 @@
 @margen-code:					@cuerpo * 2 @cuerpo * 0 @cuerpo * 3 @cuerpo * .3;
 
 // radios
+
 @radio:							3px;
 
 // Links
+
 @color-link:					@rojo;
 @color-link-hover:				@negro;
 @color-opuesto:					spin(@color-link, 180);
 
 // Proporciones tipográficas
 
-@cuerpo:						15px;				// tamaño tipográfico base en pixeles
-@em:							@cuerpo * 1em;		// atajo para salida en ems, ej. '12/@em'
+@cuerpo:						15px;	// tamaño tipográfico base en pixeles
+@em:							@cuerpo * 1em;	// atajo para salida en ems, ej. '12/@em'
 @interlinea:					23/@em;	//*25/16=1.5625em*//
 @cuerpo-nav:					@cuerpo;
 @interlinea-nav:				22px;
 @peso:							200;
 
+// Medida estándar
 
-// blancos
 @cuadratin:						30px;
 @cuadratin-tercio:				10px;
-@body-bg:		               #f9f9f9;
+@body-bg:		               	#f9f9f9;
 
 //Navs
-//
-//##
+
 @nav-link-padding:                          10px 10px 10px 0;
 @nav-link-hover-bg:                         @gris-claro;
 @nav-disabled-link-color:                   @pizarra;
@@ -121,47 +128,42 @@
 @nav-open-link-hover-color:                 #fff;
 
 //== Pills
-//
-//##
+
 @nav-pills-border-radius:                   @border-radius-base;
 @nav-pills-active-link-hover-bg:            @component-active-bg;
 @nav-pills-active-link-hover-color:         @component-active-color;
 
 //== Tabs
-//
-//##
-@nav-tabs-border-color:                     #ddd;
-@nav-tabs-link-hover-border-color:          @gris-claro;
-@nav-tabs-active-link-hover-bg:             @body-bg;
-@nav-tabs-active-link-hover-color:          @gris;
-@nav-tabs-active-link-hover-border-color:   #ddd;
-@nav-tabs-justified-link-border-color:            #ddd;
-@nav-tabs-justified-active-link-border-color:     @body-bg;
+
+@nav-tabs-border-color:                     	#ddd;
+@nav-tabs-link-hover-border-color:          	@gris-claro;
+@nav-tabs-active-link-hover-bg:             	@body-bg;
+@nav-tabs-active-link-hover-color:          	@gris;
+@nav-tabs-active-link-hover-border-color:   	#ddd;
+@nav-tabs-justified-link-border-color:          #ddd;
+@nav-tabs-justified-active-link-border-color:   @body-bg;
 
 //== Modals
-//
-//##
-@zindex-modal-background:  1040;
-@zindex-modal:             1050;
-@modal-inner-padding:         20px;
-@modal-title-padding:         15px;
-@modal-title-line-height:     @line-height-base;
-@modal-content-bg:                             #fff;
-@modal-content-border-color:                   rgba(0,0,0,.2);
-@modal-content-fallback-border-color:          #999;
-@modal-backdrop-bg:           #000;
-@modal-backdrop-opacity:      .5;
-@modal-header-border-color:   #e5e5e5;
-@modal-footer-border-color:   @modal-header-border-color;
+
+@zindex-modal-background:  				1040;
+@zindex-modal:             				1050;
+@modal-inner-padding:         			20px;
+@modal-title-padding:         			15px;
+@modal-title-line-height:     			@line-height-base;
+@modal-content-bg:                  	#fff;
+@modal-content-border-color:        	rgba(0,0,0,.2);
+@modal-content-fallback-border-color:   #999;
+@modal-backdrop-bg:           			#000;
+@modal-backdrop-opacity:      			.5;
+@modal-header-border-color:   			#e5e5e5;
+@modal-footer-border-color:   			@modal-header-border-color;
 
 @modal-lg:                    900px;
 @modal-md:                    600px;
 @modal-sm:                    300px;
 
-
 //== Tooltips
-//
-//##
+
 @zindex-tooltip:           	  1030;
 @tooltip-max-width:           200px;
 @tooltip-color:               #fff;
@@ -170,10 +172,8 @@
 @tooltip-arrow-width:         5px;
 @tooltip-arrow-color:         @tooltip-bg;
 
-
 //== Popovers
-//
-//##
+
 @zindex-popover:           			  1010;
 @popover-bg:                          #fff;
 @popover-max-width:                   276px;
@@ -187,11 +187,10 @@
 @popover-arrow-outer-fallback-color:  darken(@popover-fallback-border-color, 20%);
 
 //== DropDowns
-//
-//##
-@zindex-dropdown:          1000;
-@caret-width-base:          4px;
-@caret-width-large:         5px;
+
+@zindex-dropdown:          		 1000;
+@caret-width-base:          	 4px;
+@caret-width-large:         	 5px;
 @dropdown-bg:                    #fff;
 @dropdown-border:                rgba(0,0,0,.15);
 @dropdown-fallback-border:       #ccc;
@@ -206,8 +205,6 @@
 @dropdown-caret-color:           #000;
 
 //== Carousel
-//
-//##
 
 @carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6);
 @carousel-control-color:                      #fff;

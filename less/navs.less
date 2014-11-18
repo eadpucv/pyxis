@@ -2,7 +2,7 @@
 // Navs
 // --------------------------------------------------
 
-//  Por defecto:
+//  Por defecto
 
 nav {
   margin: 0 auto;
@@ -31,20 +31,9 @@ nav {
       text-transform: uppercase;
       }
 
-    span{
-      margin: 0 !important;
-    }
-
-    h5 {
-      margin: 0;
-      margin-top: 5px;
-      margin-left: 0;
-      z-index: -1;
-
-        span{
-          margin: 0;
-          padding: 0;
-        }
+      span{
+        margin: 0 !important;
+      }
     }
       
       a:hover{
@@ -53,39 +42,16 @@ nav {
         color: @color-link !important;
         .transition(.5s ease all);
       }
-    } 
+  } 
 
     // Sin interletraje
-
-        &.sin-interlinea{
-          line-height: 0;
+      &.sin-interlinea{
+        line-height: 0;
     }
   }
-}
-
-// Horizontal dividers
-//
-// Dividers (basically an hr) within dropdowns and nav lists
-
-.nav-divider(@color: #e5e5e5) {
-  height: 1px;
-  margin: ((@line-height-computed / 2) - 1) 0;
-  overflow: hidden;
-  background-color: @color;
-}
-
-// Navbar vertical align
-//
-// Vertically center elements in the navbar.
-// Example: an element has a height of 30px, so write out `.navbar-vertical-align(30px);` to calculate the appropriate top margin.
-
-.navbar-vertical-align(@element-height) {
-  margin-top: ((@navbar-height - @element-height) / 2);
-  margin-bottom: ((@navbar-height - @element-height) / 2);
-}
-
 
 //  Menú Pyxis
+
 .menu-pyxis {
     margin: 0 auto;
     padding: 0;     
@@ -127,7 +93,7 @@ nav {
 
   img {
     padding: 18px 0;
-    width: 29px;
+    width: 20/@em;
     float: left;
   }
 
@@ -245,7 +211,6 @@ a.menu-link {
 //  Setup de BOOTSTRAP para Dropdowns
 //--------------------
 
-
     // Disabled state sets text to gray and nukes hover/tab effects
     &.disabled > a {
       color: @nav-disabled-link-color;
@@ -271,7 +236,6 @@ a.menu-link {
     }
   }
 
-
   // Prevent IE8 from misplacing imgs
   // See https://github.com/h5bp/html5-boilerplate/issues/984#issuecomment-3985989
 
@@ -295,13 +259,10 @@ a.menu-link {
   font-size: 0;
 
   > li {
-    //float: left;
-    // Make the list-items overlay the bottom border
     display: inline-block;
     margin-bottom: 0px;
     margin-left-top: 0px;
     background-color: @blanco;
-    //letter-spacing: .4px;
     border-bottom: 3px solid @blanco;
     -webkit-border-bottom: 3px solid @blanco;
     -moz-border-bottom: 3px solid @blanco;
@@ -487,8 +448,8 @@ a.menu-link {
 
 //  Responsive adaptable
 
-    //  Extra Small screen / Phone
-  @media(max-width: @screen-xs-max){
+//  Extra Small screen / Phone
+@media(max-width: @screen-xs-max){
 
   // logo
 
@@ -507,35 +468,31 @@ a.menu-link {
       padding: 3px 0;
     }
 
-  &.footer {
-    width: 0 auto;
-    float: none;
-    margin: 0 auto;
-    display: block;
-    padding-bottom: 5px;
-
-    h6{
-      display: inline-block;
-      margin: 0px;
-      padding: 0px 0.5px;
-    }
-
-    img{
-      padding: 0;
-      width: 20/@em;
+    &.footer {
+      width: 0 auto;
+      float: none;
+      margin: 0 auto;
       display: block;
+      padding-bottom: 5px;
+
+      h6{
+        display: inline-block;
+        margin: 0px;
+        padding: 0px 0.5px;
+      }
+
+      img{
+        padding: 0;
+        width: 20/@em;
+        display: block;
+      }
     }
   }
-}
-
-  .menu-pyxis {
-    }
 
   .nav>li {
     position: relative;
     display: block;
     width: 100%;
-    //border: 1px solid @gris;
 
     a {
       border: none;
@@ -545,51 +502,51 @@ a.menu-link {
   }
 
   .nav-tabs {
-  margin-bottom: 0px;
-  margin-top: 0px;
-  border-radius: 3px;
-  display: inline-block;
-  width: auto;
-  font-size: 0;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      border-radius: 3px;
+      display: inline-block;
+      width: auto;
+      font-size: 0;
 
-  > li {
-    //float: left;
-    // Make the list-items overlay the bottom border
-    display: inline-block;
-    margin-bottom: 0px;
-    margin-left-top: 0px;
-    background-color: @blanco;
-    //letter-spacing: .4px;
-    border-bottom: 0px;
-    z-index: 30;
-
-    // Actual tabs (as links)
-    > a {
-      margin: 0px;
-      font-size: 16px;
-      color: rgba(69,71,71,.7);
-      padding: 10px 15px 12px 15px;
-      font-weight: 300;
-      line-height: @line-height-base;
-      border-bottom: transparent;
-      border-radius: none;
-    }
-
-    &:hover{
+    > li {
+      //float: left;
+      // Make the list-items overlay the bottom border
+      display: inline-block;
+      margin-bottom: 0px;
+      margin-left-top: 0px;
+      background-color: @blanco;
+      //letter-spacing: .4px;
       border-bottom: 0px;
-    }
+      z-index: 30;
 
-    // Active state, and its :hover to override normal :hover
-    &.active {
-      border-bottom: 0 !important;
-    }
+      // Actual tabs (as links)
+      > a {
+        margin: 0px;
+        font-size: 16px;
+        color: rgba(69,71,71,.7);
+        padding: 10px 15px 12px 15px;
+        font-weight: 300;
+        line-height: @line-height-base;
+        border-bottom: transparent;
+        border-radius: none;
+      }
 
-    &.active > a {
-      color: @rojo !important;
-      background-color: @gris-claro !important; 
+      &:hover{
+        border-bottom: 0px;
+      }
+
+      // Active state, and its :hover to override normal :hover
+      &.active {
+        border-bottom: 0 !important;
+      }
+
+      &.active > a {
+        color: @rojo !important;
+        background-color: @gris-claro !important; 
+      }
     }
   }
-}
 
   .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
     color: #c1c2c2;
@@ -600,21 +557,21 @@ a.menu-link {
   }
 }
 
-  //  Small screen / tablet
-  @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+//  Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
 
-//  Menú Pyxis
-.menu-pyxis {
+  //  Menú Pyxis
+  .menu-pyxis {
 
-    .nav-rotulos {
+      .nav-rotulos {
 
-      li a {
-        margin: 17px 9px;
-      }
-   }        
-}
+        li a {
+          margin: 17px 9px;
+        }
+     }        
+  }
 
-      // logo 
+  // logo 
 
   .logo {
     width: 300px;
@@ -640,45 +597,44 @@ a.menu-link {
       width: 35px;
     }
   }
+}
 
-  }
+//  Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+}
 
+//  Large screen / wide desktop
+@media (min-width: @screen-lg){
 
-  //  Medium screen / desktop
-  @media (min-width: @screen-md) and (max-width: @screen-md-max){
-  }
+  //  Por defecto:
 
-  //  Large screen / wide desktop
-  @media (min-width: @screen-lg){
+  nav {
+    margin: 0 auto;
 
-    //  Por defecto:
-
-    nav {
-      margin: 0 auto;
-
-      &.lista-sin-estilo{
-          list-style: none;
-        }
+    &.lista-sin-estilo{
+        list-style: none;
+      }
+    
+    ul, ol{
+    margin: 0;
+    padding: 0;
+    .cf;
       
-      ul, ol{
-      margin: 0;
-      padding: 0;
-      .cf;
-        
-        li{
-          a{  
-            font-size: 14px;
-          }  
-        } 
+      li{
+        a{  
+          font-size: 14px;
+        }  
+      } 
 
-        // Sin interletraje
+      // Sin interletraje
 
-            &.sin-interlinea{
-              line-height: 0;
-        }
+          &.sin-interlinea{
+            line-height: 0;
       }
     }
   }
+}
 
-
-
+// Large screen / wide desktop
+@media (min-width: @screen-lg){
+}

@@ -2,95 +2,12 @@
 // Página y sus reglas generales
 // --------------------------------------------------
 
+// Todas las cosas abarcan una transición de 2s
 *{
     .transition(.2s ease all);
 }
 
-img{
-	width: 100%;
-
-	&.xs{
-		width: 40%;
-	}
-	&.sm{
-		width: 80%;
-	}
-	&.md{
-		width: 150%;
-	}
-	&.lg{
-		width: 200%;
-	}
-
-	&.por-defecto{
-		width: auto;
-	}
-}
-
-header .iso{
-	margin: 0 0 0 @cuadratin;
-
-	h1{
-		.rojo;
-		font-size: 34px;
-		font-weight: 200;
-		margin-bottom: @interlinea/2;
-	}
-	h2{
-		font-size: 16px;
-		font-weight: 400;
-	}
-}
-
-
-body{
-  font-size: @cuerpo;
-  background-color: @blanco;
-  //background: url('@{ruta-imagenes}/ruido-gris-blanco.png');
-}
-
-header {
-
-}
-
-.fondo-contenido{
-	background-color: @blanco;
-	z-index: 600;
-}
-
-.pag{
-	position: relative;
-	margin: 0 auto;
-	height: auto;
-	padding: @cuadratin;
-	.cf;
-
-	&.franja-componente{
-		padding: 20px 30px 0;
-	}
-
-	&.sin-relleno {
-		width: 890px;
-		padding: 0;
-		position: relative;
-	}
-}
-
-
-.pag-movil {
-	margin: 0 auto;
-	padding: 0 @cuadratin 0 @cuadratin;
-
-	h5 {
-    	margin: @cuadratin/3 0 0 0;
-    	z-index: -1;
-
-    	span{
-        	margin: 0;
-        	padding: 0;
-       	}
-    }
-}
+// Menú superior Pyxis
 
 .fondo-header-pyxis {
 	background-color: @blanco;
@@ -102,33 +19,7 @@ header {
 	width: 100%;
 }
 
-.imagen-alta {
-	width: auto;
-	height: @cuadratin * 2;
-	overflow: hidden;
-	margin-top: @cuadratin;
-	margin-bottom: @cuadratin;
-}
-
-.imagen-ancha {
-	width: auto;
-	height: @cuadratin * 3;
-	overflow: hidden;
-	margin-top: @cuadratin;
-	margin-bottom: @cuadratin;
-}
-
-.imagen-index {
-	height: 200px;
-}
-
-.index-responsive {
-	width: 100%;
-
-	img {
-		width: 100%;
-	}
-}
+//	Franjas para Layout Index y Base: 
 
  .franja {
 	width: 100%;
@@ -136,35 +27,48 @@ header {
 	position: relative;
 	overflow: hidden;
 	.cf;
-
+	//	Franja xl en index (cabecera-index)
 	&.xl{
 		min-height: 500/@em;
-
-		.leyenda{
-			padding: @cuadratin * 2 0;
-			text-align: center;
-		}
+		text-align: center;
+		padding: @cuadratin *1.5 0;
 	}
-
+	//	Franja xs en Base (cabecera)
 	&.xs{
 		z-index: -10;
 		height: 120/@em;
-
-		.leyenda{
-			height: auto;
-			width: 100%;
-			z-index: 100;
-			position: relative;
-			.cf
-
-			h1{
-				display: inline-block;
-				margin: 0 auto !important;
-				position: fixed;
-			}
-		}
 	}
 }
+
+// Cuerpo *
+
+body{
+  font-size: @cuerpo;
+  background-color: @blanco;
+}
+
+// Container - Página - Formato
+
+.pag{
+	position: relative;
+	margin: 0 auto;
+	height: auto;
+	padding: @cuadratin;
+	.cf;
+
+	// Para Sub-menú de Pyxis
+	&.franja-componente{
+		padding: 20px 30px 0;
+	}
+	// Sin padding
+	&.sin-relleno {
+		width: 890px;
+		padding: 0;
+		position: relative;
+	}
+}
+
+//	Footer
 
 footer{
 	margin: 0 auto;
@@ -226,17 +130,65 @@ footer{
 	}
 }
 
+// Imágenes
+
+img{
+	width: 100%;
+
+	//Tamaños
+	&.xs{
+		width: 40%;
+	}
+	&.sm{
+		width: 80%;
+	}
+	&.md{
+		width: 150%;
+	}
+	&.lg{
+		width: 200%;
+	}
+
+	// Por defecto
+	&.por-defecto{
+		width: auto;
+	}
+}
+
+	// Imagen vertical
+.imagen-alta {
+	width: auto;
+	height: @cuadratin * 2;
+	overflow: hidden;
+	margin-top: @cuadratin;
+	margin-bottom: @cuadratin;
+}
+
+	// Imagen horizontal
+.imagen-ancha {
+	width: auto;
+	height: @cuadratin * 3;
+	overflow: hidden;
+	margin-top: @cuadratin;
+	margin-bottom: @cuadratin;
+}
+
+	// Ilustración de logo en Index
+.imagen-index {
+	height: 200px;
+}
+
 //	Responsive adaptable
 
     //  Extra Small screen / Phone
   @media(max-width: @screen-xs-max){
 
   	.fondo-header-pyxis {
-	min-height: 60px;
-}
+		min-height: 60px;
+	}
 
   	.pag{
-	padding: @cuadratin/1.5;
+		padding: @cuadratin/1.5;
 
 		&.franja-componente{
 			padding: 20px 20px !important;
@@ -251,95 +203,54 @@ footer{
 			padding: 15px 20px !important;
 		}
 	}
-  
-  	.franja {
+}
 
-		&.xl{
-			min-height: 440px;
-			max-height: auto;
+//  Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
 
-			.leyenda{
-				text-align: center;
-			}
+  	.pag{
+		&.sin-relleno {
+			width: 720px;
 		}
+	}
 
+  	.cita {
+			//font-size: @cuerpo * 1.3;
+	}	
+}
+
+//  Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+
+	.cita {
+		//font-size: @cuerpo * 1.3;
+	}		  
+
+	.autor {
+	  	margin: 22px 0px 28.6px;
+	  	line-height: 22px;
+	  	margin-bottom: 30px;
+	  	text-align: center;
+	  	font-weight: 200;
+	  	letter-spacing: -0.1ex;
+	  	color: @gris;
+	}	
+}
+
+//  Large screen / wide desktop
+@media (min-width: @screen-lg){
+
+  	.pag{
+		&.sin-relleno {
+			width: 1110px;
+			padding: 0;
+			position: relative;
+		}
+	}
+
+  	.franja {
 		&.xs{
-
-			.leyenda{
-
-				h1{
-					display: inline !important;
-					margin: 0 auto !important;
-					text-align: left;
-					width: 85%;
-				}
-			}
+			height: 7.5vw;
 		}
-	}
-}
-
-  //  Small screen / tablet
-  @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
-
-  	.pag{
-
-	&.sin-relleno {
-		width: 720px;
-	}
-}
-
-  	.franja {
-
-	&.xs{
-
-		.leyenda{
-		}
-	  }
    	}
-
-  			.cita {
-			//font-size: @cuerpo * 1.3;
-		}	
-  }
-
-  //  Medium screen / desktop
-  @media (min-width: @screen-md) and (max-width: @screen-md-max){
-
-		.cita {
-			//font-size: @cuerpo * 1.3;
-		}		  
-
-  	  .autor {
-      margin: 22px 0px 28.6px;
-      line-height: 22px;
-      margin-bottom: 30px;
-      text-align: center;
-      font-weight: 200;
-      letter-spacing: -0.1ex;
-      color: @gris;
-      //font-size: @cuerpo * 1.3;
-    }
-  }
-
-  //  Large screen / wide desktop
-  @media (min-width: @screen-lg){
-
-  	.pag{
-	&.sin-relleno {
-		width: 1110px;
-		padding: 0;
-		position: relative;
-	}
 }
-
-  	  	.franja {
-
-	&.xs{
-		height: 7.5vw;
-
-		.leyenda{
-		}
-	  }
-   	}
-
-   }

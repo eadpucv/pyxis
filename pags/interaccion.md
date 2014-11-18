@@ -1,26 +1,9 @@
 ---
 layout: base
 title: Pyxis Framework - Interacción
-subtitle: <i class="icn icn-vinculo"></i> Interacción
+subtitle: <i class="icn icn-rama"></i> Interacción
 intro: Texto sobre Interacción
 ---
-
-<!--<div class='col-lg-3 col-md-3 oculto-sm oculto-xs'>
-<a name='ancla' id='a'></a>
-<div class='menu-affix alto-affix'>
-<div data-spy="affix" data-offset-top="220">
-    <ul>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-uno'>Formularios</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-dos'>Agregar página</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-tres'>Crear un proyecto</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-cuatro'>Nuevo usuario</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-cinco'>Publicar un trabajo</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-seis'>Iniciar sesión</a></li>
-        <li><a class='xs gris-oscuro gruesa' href='#titulo-siete'>Botones</a></li>
-    </ul>
-</div>
-</div>
-</div>-->
 
 <div class='fila'>
   <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>

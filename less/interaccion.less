@@ -30,12 +30,12 @@ a.btn{
     box-shadow: 0 @boton-resalte 0 fade(@negro, 20);
     .transition(.5s ease all);
     &:hover {
-            box-shadow: 0 @boton-resalte 0 fade(@pizarra, 50%);
-            border-color: fade(@pizarra, 50%);
-            background-color: darken(white, 1%);
-            text-decoration: none;
-            color: @pizarra;
-            .transition(.5s ease all);
+        box-shadow: 0 @boton-resalte 0 fade(@pizarra, 50%);
+        border-color: fade(@pizarra, 50%);
+        background-color: darken(white, 1%);
+        text-decoration: none;
+        color: @pizarra;
+        .transition(.5s ease all);
     }
 
     &:active{
@@ -88,7 +88,6 @@ a.btn{
         &:hover{
             background-color: darken(@rojo, 7%) !important;
             color: @blanco;
-            
         }
     }
 
@@ -111,37 +110,12 @@ a.btn{
     }
 }
 
+// Para grupo de botones
 
 .pegado-antes{.border-radius(@radio 0 0 @radio)}
 .pegado-despues{.border-radius(0 @radio @radio 0)}
 
-
-.grupo-inputs{
-    position: relative;
-  display: inline-block;
-  input, .input{
-    position: relative;
-    width: auto !important;
-    display: inline-block;
-    border-radius: 0 !important;
-  }
-
-  :first-child{
-    .border-radius(@radio 0 0@radio) !important;
-    margin-right: -3px; 
-    }
-  :last-child{
-    .border-radius(0 @radio @radio 0) !important;
-    margin-left: -3px;
-    }
-  .input{
-    background-color: @gris-claro;
-    line-height: 1.6; //1.533;
-    border: 1px solid darken(@gris-claro, 5);
-    top: -3.5px !important;
-  }
-}
-
+    // Grupo de botones
 .grupo-botones{
   .btn{
     border-radius: 0 !important;
@@ -150,10 +124,35 @@ a.btn{
     &:last-child{.border-radius(@radio 0 0 @radio) !important}
   }
 }
+
+.grupo-inputs{
+    position: relative;
+    display: inline-block;
+    input, .input{
+        position: relative;
+        width: auto !important;
+        display: inline-block;
+        border-radius: 0 !important;
+    }
+    :first-child{
+    .border-radius(@radio 0 0@radio) !important;
+        margin-right: -3px; 
+    }
+    :last-child{
+    .border-radius(0 @radio @radio 0) !important;
+        margin-left: -3px;
+    }
+    .input{
+        background-color: @gris-claro;
+        line-height: 1.6; //1.533;
+        border: 1px solid darken(@gris-claro, 5);
+        top: -3.5px !important;
+  }
+}
+
 /* Formularios *///---------------------------------------------------------------------------------------------------
 
-// Reset
-
+    // Reset
 .input,
 textarea,
 select,
@@ -194,7 +193,6 @@ form{
     border-radius: 5px;
     border: 1px solid @gris;
     margin-bottom: 0 !important;
-
     .clearfix;
     .margen-inf;
 
@@ -306,7 +304,6 @@ form{
 // clases de formularios
 // todo comentado porque está copiado de bootstrap, al menos traducir
 
-
 .formulario-horizontal .input-group {
     display: inline-table;
     vertical-align: super !important;
@@ -319,7 +316,6 @@ form{
 }
 
 .formulario-horizontal {
-
   // Kick in the inline
   @media (min-width: @screen-sm-min) {
     // Inline-block all the things for "inline"
@@ -387,11 +383,7 @@ form{
   }
 }
 
-
-
-
 // Placeholders
-
 ::-webkit-input-placeholder {
     color: @gris-oscuro;
     font-weight: 300;
@@ -410,5 +402,4 @@ form{
 :-ms-input-placeholder {  
     color: @gris-oscuro;
     font-weight: 300;
-
 }

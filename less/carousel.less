@@ -13,27 +13,18 @@
   width: 100%;
 
   &.home {
-    border-top:1px solid @gris-claro;
+      border-top:1px solid @gris-claro;
   }
 
   > .item {
-    display: none;
-    position: relative;
-    .transition(.6s ease-in-out left);
-
-    // Account for jankitude on images
-    //> img,
-    //> a > img {
-      //&:extend(.img-responsive);
-      //line-height: 1;
-      //width: 100%;
-      //overflow: hidden;
-    //}
+      display: none;
+      position: relative;
+      .transition(.6s ease-in-out left);
   }
 
   > .active,
   > .next,
-  > .prev { display: block; }
+  > .prev {display: block;}
 
   > .active {
     left: 0;
@@ -49,9 +40,11 @@
   > .next {
     left: 100%;
   }
+
   > .prev {
     left: -100%;
   }
+
   > .next.left,
   > .prev.right {
     left: 0;
@@ -60,11 +53,12 @@
   > .active.left {
     left: -100%;
   }
+
   > .active.right {
     left: 100%;
   }
-
 }
+
 
 // Left/right controls for nav
 // ---------------------------
@@ -78,135 +72,115 @@
   font-size: @carousel-control-font-size;
   color: @carousel-control-color;
   text-align: center;
-  // We can't have this transition here because WebKit cancels the carousel
-// animation if you trip this while in the middle of another animation.
 
-// Set gradients for backgrounds
-&.left {
-top: 35%;
-left: 0;
-left: auto;
-background-color: fade(@gris, 50);
-border-top-right-radius: 7px;
-border-bottom-right-radius: 7px;
-width: @cuadratin * 1.5;
-height: @cuadratin * 3;
-  
-  &.carrera {
-    top: 37%;
+  &.left {
+    top: 35%;
+    left: 0;
+    left: auto;
+    background-color: fade(@gris, 50);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    width: @cuadratin * 1.5;
+    height: @cuadratin * 3;
+  } 
+
+  &.right {
+    top: 35%;
+    left: auto;
+    right: 0;
+    background-color: fade(@gris, 50);
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    width: @cuadratin * 1.5;
+    height: @cuadratin * 3;
   }
-}
-&.right {
-top: 35%;
-left: auto;
-right: 0;
-background-color: fade(@gris, 50);
-border-top-left-radius: 7px;
-border-bottom-left-radius: 7px;
-width: @cuadratin * 1.5;
-height: @cuadratin * 3;
 
-  &.carrera {
-    top: 37%;
-  }
-}
+  // Hover/focus state
+    &:hover,
+    &:focus {
+      outline: 0;
+      color: @carousel-control-color;
+      text-decoration: none;
+      background-color: @rojo;
+      .transition(.3s ease all);
+    }
 
-// Hover/focus state
-&:hover,
-&:focus {
-outline: 0;
-color: @carousel-control-color;
-text-decoration: none;
-background-color: @rojo;
-.transition(.3s ease all);
-}
+    .icon-prev,
+    .icon-next,
+    .glyphicon-chevron-left,
+    .glyphicon-chevron-right {
+      position: absolute;
+      top: 50%;
+      z-index: 5;
+      display: inline-block;
+    }
 
-// Toggles
-.icon-prev,
-.icon-next,
-.glyphicon-chevron-left,
-.glyphicon-chevron-right {
-position: absolute;
-top: 50%;
-z-index: 5;
-display: inline-block;
-}
-.icon-prev,
-.glyphicon-chevron-left {
-left: 50%;
-}
-.icon-next,
-.glyphicon-chevron-right {
-right: 50%;
-}
-.icon-prev,
-.icon-next {
-width: 20px;
-height: 20px;
-margin-top: -10px;
-margin-left: -10px;
-}
+    .icon-prev,
+    .glyphicon-chevron-left {
+      left: 50%;
+    }
 
-.icon-prev {
-&:before {
-font-family: 'Stampa';
-content: "\e602";
-}
-}
-.icon-next {
-&:before {
-font-family: 'Stampa';
-content: "\e601";
-}
-}
-.icn-nav-der,
-.icn-nav-izq {
-position: absolute;
-top: 27px;
-width: 40px;
-height: auto;
-font-size: @cuerpo * 2.2;
-right: 0px;
-left: 2px;
-}
-}
+    .icon-next,
+    .glyphicon-chevron-right {
+      right: 50%;
+    }
 
-// Optional indicator pips
-//
-// Add an unordered list with the following class and add a list item for each
-// slide your carousel holds.
+    .icon-prev,
+    .icon-next {
+      width: 20px;
+      height: 20px;
+      margin-top: -10px;
+      margin-left: -10px;
+    }
+
+    .icon-prev {
+      &:before {
+        font-family: 'Stampa';
+        content: "\e602";
+        }
+    }
+    .icon-next {
+      &:before {
+        font-family: 'Stampa';
+        content: "\e601";
+      }
+    }
+
+    .icn-nav-der,
+    .icn-nav-izq {
+      position: absolute;
+      top: 27px;
+      width: 40px;
+      height: auto;
+      font-size: @cuerpo * 2.2;
+      right: 0px;
+      left: 2px;
+    }
+}
 
 .carousel-indicators {
-position: absolute;
-left: 50%;
-z-index: 15;
-width: 60%;
-margin-left: -30%;
-padding-left: 0;
-list-style: none;
-text-align: center;
+  position: absolute;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
 
-li {
-display: inline-block;
-width: 10px;
-height: 10px;
-margin: 1px;
-text-indent: -999px;
-border: 1px solid @carousel-indicator-border-color;
-border-radius: 10px;
-cursor: pointer;
-
-// IE8-9 hack for event handling
-//
-// Internet Explorer 8-9 does not support clicks on elements without a set
-// `background-color`. We cannot use `filter` since that's not viewed as a
-    // background color by the browser. Thus, a hack is needed.
-    //
-    // For IE8, we set solid black as it doesn't support `rgba()`. For IE9, we
-    // set alpha transparency for the best results possible.
+  li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    border: 1px solid @carousel-indicator-border-color;
+    border-radius: 10px;
+    cursor: pointer;
     background-color: #000 \9; // IE8
     background-color: rgba(0,0,0,0); // IE9
   }
+
   .active {
     margin: 0;
     width: 12px;
@@ -215,9 +189,6 @@ cursor: pointer;
   }
 }
 
-// Optional captions
-// -----------------------------
-// Hidden by default for smaller viewports
 .carousel-caption {
   position: absolute;
   left: 15%;
@@ -229,11 +200,60 @@ cursor: pointer;
   color: @carousel-caption-color;
   text-align: center;
   text-shadow: @carousel-text-shadow;
-  & .btn {
+  &.btn {
     text-shadow: none; // No shadow for button elements in carousel-caption
   }
 }
 
+
+// Extra-small screen / Phones
+@media(max-width: @screen-xs-max){
+
+  .carousel-inner {
+    > .item {
+      .transition(.6s ease-in-out left);
+      > img,
+      > a > img {
+
+        &.altura-maxima {
+        line-height: 1;
+        left: -30%;
+        width: 145%;
+        overflow: hidden;
+        }
+      }
+    }
+  }
+
+  .carousel-control {
+    text-shadow: none;
+
+    &.left, &.right {
+      background-color: rgba(0, 0, 0, 0);
+      color: @rojo;
+    }
+
+    &.left {
+      top: 18%;
+      left: 0;
+
+    }
+    &.right {
+      top: 18%;
+      left: auto;
+    }
+
+    .icn-nav-der,
+    .icn-nav-izq {
+      position: absolute;
+      top: 40px;
+    }
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
+}
 
 // Scale up controls for tablets and up
 @media screen and (min-width: @screen-sm-min) {
@@ -265,13 +285,21 @@ cursor: pointer;
   }
 }
 
+// Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
 
-// Responsive
+    .carousel-control {
+    text-shadow: none;
+    &.left, &.right {
+      background-color: rgba(0, 0, 0, 0);
+      color: @rojo;
+    }
+  }
+}
 
-// ----------
+// Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
 
-// Extra small screen / phone
-@media(max-width: @screen-xs-max){
   .carousel-inner {
     > .item {
       .transition(.6s ease-in-out left);
@@ -281,97 +309,30 @@ cursor: pointer;
 
         &.altura-maxima {
         line-height: 1;
-        left: -30%;
-        width: 145%;
+        width: 100%;
         overflow: hidden;
         }
       }
     }
   }
-
-  .carousel-control {
-    text-shadow: none;
-    &.left, &.right {
-      background-color: rgba(0, 0, 0, 0);
-      color: @rojo;
-    }
-
-  &.left {
-    top: 18%;
-    left: 0;
-
-  }
-  &.right {
-    top: 18%;
-    left: auto;
-  }
-
-  .icn-nav-der,
-  .icn-nav-izq {
-    position: absolute;
-    top: 40px;
-}
-  }
-
-
-  .carousel-indicators {
-
-  display: none;
-}
-}
-// Small screen / tablet
-@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
-    .carousel-control {
-    text-shadow: none;
-    &.left, &.right {
-      background-color: rgba(0, 0, 0, 0);
-      color: @rojo;
-    }
-  }
-
-}
-
-// Medium screen / desktop
-
-@media (min-width: @screen-md) and (max-width: @screen-md-max){
-
-.carousel-inner {
-  > .item {
-    .transition(.6s ease-in-out left);
-    > img,
-    > a > img {
-      //&:extend(.img-responsive);
-
-      &.altura-maxima {
-      line-height: 1;
-      width: 100%;
-      overflow: hidden;
-      }
-    }
-  }
-}
-
 }
 
 // Large screen / wide desktop
-
 @media (min-width: @screen-lg){
 
+  .carousel-inner {
+    > .item {
+      .transition(.6s ease-in-out left);
+      > img,
+      > a > img {
+        //&:extend(.img-responsive);
 
-.carousel-inner {
-  > .item {
-    .transition(.6s ease-in-out left);
-    > img,
-    > a > img {
-      //&:extend(.img-responsive);
-
-      &.altura-maxima {
-      line-height: 1;
-      width: 100%;
-      overflow: hidden;
+        &.altura-maxima {
+        line-height: 1;
+        width: 100%;
+        overflow: hidden;
+        }
       }
     }
   }
-}
-
 }

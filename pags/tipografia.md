@@ -28,7 +28,7 @@ pde: type.pde
     <div class="tab-content">
         <div class="tab-pane fade in active" id="familias">
             <h4 class='pizarra gruesa'>Parámetros de fuente</h4>
-            <p>Pyxis utiliza globalmente y por defecto un <i>font-size</i> de <span class='verde'>@cuerpo:</span> <b>15px</b>, con un <i>line-heigh</i> de <span class='verde'>@interlinea:</span> <b>25px</b> y un <i>font-weight</i> de <span class='verde'>@peso:</span> <b>200</b>, lo cual hace referencia a un <i>font-style</i> "normal" o "regular" en las dos familias de fuente escogidas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt turpis et metus scelerisque posuere vel sed ligula. Cras ullamcorper tortor at tortor finibus posuere. Suspendisse egestas eget magna a luctus.</p>
+            <p class='hyphens justify-content'>Pyxis utiliza globalmente y por defecto un <i>font-size</i> de <span class='verde'>@cuerpo:</span> <b>15px</b>, con un <i>line-heigh</i> de <span class='verde'>@interlinea:</span> <b>25px</b> y un <i>font-weight</i> de <span class='verde'>@peso:</span> <b>200</b>, lo cual hace referencia a un <i>font-style</i> "normal" o "regular" en las dos familias de fuente escogidas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt turpis et metus scelerisque posuere vel sed ligula. Cras ullamcorper tortor at tortor finibus posuere. Suspendisse egestas eget magna a luctus.</p>
             <div class='fila'>
                 <div class='col-md-6 col-sm-12 col-xs-12'>
                     <h5 class='rojo gruesa'>Source Sans Pro</h5>

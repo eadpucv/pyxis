@@ -122,6 +122,22 @@
   }
 }
 
+// Transitions
+.transition-transform(@transition) {
+  -webkit-transition: -webkit-transform @transition;
+     -moz-transition: -moz-transform @transition;
+       -o-transition: -o-transform @transition;
+          transition: transform @transition;
+}
+
+// Opacity
+.opacity(@opacity) {
+    opacity: @opacity;
+    // IE8 filter
+    @opacity-ie: (@opacity * 100);
+    filter: ~"alpha(opacity=@{opacity-ie})";
+}
+
 // Scale up the modal
 @media (min-width: @screen-sm-min) {
   // Automatically set modal's width for larger viewports

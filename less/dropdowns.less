@@ -2,6 +2,26 @@
 // Dropdown menus
 // --------------------------------------------------
 
+// Horizontal dividers
+//
+// Dividers (basically an hr) within dropdowns and nav lists
+
+.nav-divider(@color: #e5e5e5) {
+  height: 1px;
+  margin: ((@line-height-computed / 2) - 1) 0;
+  overflow: hidden;
+  background-color: @color;
+}
+
+// Navbar vertical align
+//
+// Vertically center elements in the navbar.
+// Example: an element has a height of 30px, so write out `.navbar-vertical-align(30px);` to calculate the appropriate top margin.
+
+.navbar-vertical-align(@element-height) {
+  margin-top: ((@navbar-height - @element-height) / 2);
+  margin-bottom: ((@navbar-height - @element-height) / 2);
+}
 
 // Dropdown arrow/caret
 .caret {
@@ -70,8 +90,8 @@
   }
 
   &.user {
-      background-color: @blanco;
-      color: @pizarra;
+    background-color: @blanco;
+    color: @pizarra;
 
     > li > a {
       display: block;
@@ -90,10 +110,9 @@
   }
 
   &.left {
-  left: 0;
-  right: auto;
-}
-
+    left: 0;
+    right: auto;
+  }
 }
 
 // Hover/Focus state
@@ -121,7 +140,6 @@
 // Disabled state
 //
 // Gray out text and ensure the hover/focus state remains gray
-
 .dropdown-menu > .disabled > a {
   &,
   &:hover,
@@ -129,6 +147,7 @@
     color: @rojo;
   }
 }
+
 // Nuke hover/focus effects
 .dropdown-menu > .disabled > a {
   &:hover,
@@ -219,11 +238,6 @@
   }
 }
 
-
-// Component alignment
-//
-// Reiterate per navbar.less and the modified component alignment there.
-
 @media (min-width: @grid-float-breakpoint) {
   .navbar-right {
     .dropdown-menu {
@@ -237,33 +251,28 @@
   }
 }
 
-
 // Extra small screen / phone
 @media(max-width: @screen-xs-max){
-
+  
 }
-
 
 // Small screen / tablet
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
     .caret {
-    margin-left: @padding-md;
-    margin-right: @cuadratin * .4;
+      margin-left: @padding-md;
+      margin-right: @cuadratin * .4;
   }
 }
 
 // Medium screen / desktop
-
 @media (min-width: @screen-md) and (max-width: @screen-md-max){
   .caret {
     margin-left: @padding-md;
     margin-right: @cuadratin * .8;
   }
-
 }
 
 // Large screen / wide desktop
-
 @media (min-width: @screen-lg){
 
 }
