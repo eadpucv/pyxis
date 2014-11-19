@@ -4,9 +4,9 @@
 
 // * Sticky Estático *
 .sticky-wrapper{
-	width: 0 !important;
-	width: auto;
-	margin-bottom: 30px;
+	width: 100% !important;
+	margin-bottom: 0px !important;
+
 	// Para menú secundario en Pyxis
 	#sub-componentes{
 	  	margin-bottom: 30px;
@@ -35,6 +35,7 @@
 	}
 	// Sticky dispuesto para maquetas de "Gamma"
 	#ead-sticky{
+		
 		ul{
 			width: 260px;
 			display: block;
@@ -42,7 +43,7 @@
 	}
 	// Meta-barra dispuesta para maquetas de "Gamma"
 	#meta-barra{
-		width: 935px;
+		width: 100%;
 		z-index: 200;
 		background-color: @negro;
 	}
@@ -82,6 +83,7 @@
 	// Meta-barra dispuesta para maquetas de "Gamma"
 	#meta-barra{
 		background-color: fade(@negro, 90);
+		width: 100%;
 	}
 }
 
@@ -123,7 +125,6 @@
 	}
 
 	.is-sticky {
-
 		#sub-componentes {
 			position: relative !important; 
 			.nav-tabs {

@@ -156,11 +156,8 @@ span {
       }
 
     &:after{
-      font-family: Stampa;
-      content: "";
-      float: right;
-      vertical-align: middle;
-      color: @gris-oscuro;
+      color: @rojo;
+      content: "→"
     }
 
     a{
@@ -168,9 +165,9 @@ span {
       .margen-horizontal-xs;
       font-size: @cuerpo * .8;
 
-        &:hover{
-          color: @rojo;
-        }
+      &:hover{
+        color: @rojo;
+      }
     }
   }
 }
@@ -407,7 +404,8 @@ ul{
   margin-bottom: 0;
 }
 
-ul li {list-style-type: disc;}
+ul li {list-style-type: disc; &.sin-estilo{list-style: none !important;}
+} 
 ul li ul li{list-style-type: circle;}
 ul li ul li ul li{list-style-type: square;}
 
@@ -543,11 +541,15 @@ dl {
 hr {
   margin: 10px 0 30px;
   border: 0;
-  border-bottom: 1px solid @gris-claro;
+  border-bottom: 1px solid @gris-blanco;
   .box-shadow(0 0px 1px fade(@gris-oscuro, 20));
 
   &.invisible{
     visibility: hidden;
+  }
+
+  &.sin-margen{
+    margin: 0 !important;
   }
 }
 

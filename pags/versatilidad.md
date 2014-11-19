@@ -22,7 +22,7 @@ intro: Texto sobre versatilidad
 
     <div class="tab-content">
     <div class="tab-pane fade in active" id="parametros">
-
+        <a class='btn btn-alerta' href='{{ site.baseurl }}/maquetas/page'>Ir a maquetas</a>
     <h4 class='pizarra gruesa'>Márgenes</h4>
 
     <h5 class='pizarra gruesa'>Márgen horizontal</h5>
@@ -482,81 +482,81 @@ intro: Texto sobre versatilidad
     </div>
 
 </div>
-    <!-- Contenido -->
-    <div class='pag'>
-    <div class='fila'>
-        <div class='col-md-4 col-sm-4'>
-            <div id='ead-sticky'>
-              <ul class='sin-relleno texto-derecha'>
-                  <li class="relleno-inf-xs"><a class='sans pizarra' href='#'>Estudiar arquitectura en la e[ad]</a></li>
-                  <li class="relleno-inf-xs"><a class='sans pizarra' href='#'>Perfil del egresado</a></li>
-                  <li class="relleno-inf-xs"><a class='sans pizarra' href='#'>Competencias fundamentales</a></li>
-                  <li class="relleno-inf-xs"><a class='sans pizarra' href='#'>Objetivos educacionales</a></li>
-              </ul>
-            </div>
-        </div>
-        <div class='col-md-8 col-sm-4'>
-            <h2 class='rojo xs'>Estudiar arquitectura en la e[ad]</h2>
-            <p>La misión de la Escuela de Arquitectura y Diseño es cultivar, el arte de la Arquitectura, del Diseño Gráfico y del Diseño Industrial por medio de la creación y transmisión del conocimiento del oficio de estas artes, formar arquitectos y diseñadores con la vocación de concebir obras que den cabida y expresión al habitar humano.</p>
 
-            <h2 class='rojo xs'>Perfil del egresado</h2>
-            <p>Un arquitecto que conciba la arquitectura como un arte al servicio del hombre. Que desde una visión poética de su contexto y una alta capacidad de reflexión sean capaces con creatividad de proponer, proyectar y construir obras arquitectónicas y urbanas que de un modo innovador en el arte y en la técnica den cabida y expresión al habitar humano, satisfaciendo necesidades de la sociedad en las distintas escalas- edificio, ciudad, continente- y magnitudes del proyecto arquitectónico y urbano.
-            Las competencias fundamentales, disciplinares y profesionales de este arquitecto son aquellas que permiten que sus proyectos sean un consecuente paso de la observación arquitectónica a la forma construida.</p>
-
-            <h2 class='rojo xs'>Competencias fundamentales</h2>
-            <p>Se propicia una educación integral, que favorece el crecimiento armónico de todas las dimensiones que constituyen la persona humana, abordados tanto desde la perspectiva intelectual como vivencial, de modo de promover la coherencia entre el conocimiento, la verdad y la vida. Se privilegian valores que sustentan una integridad y competencias humanísticas que permiten acceder al método de estudio que propone la carrera basado principalmente en la Observación dibujada, medida y escrita que es el modo de comprender e interactuar con el entorno.</p>
-
-            <ol class='margen-inf'>
-                <li  class='sans'>Valores de apertura a la trascendencia; libertad; solidaridad; respeto y aceptación de la diversidad; y compromiso ético y de responsabilidad social.</li>
-                <li  class='sans'>Capacidad para observar la realidad circundante, la ciudad se origina y se desarrolla, a partir de la observación directa de su realidad.</li>
-            </ol>
-
-            <h4 class='rojo xs margen-inf'>Competencias disciplinares</h4>
-
-            <ol class='margen-inf'>
-                <li class='sans'>Competencias que permiten al arquitecto a dar existencia física a la formulación del paso de la observación a la forma.</li>
-                <li class='sans'>Capacidad para integrar los aspectos poéticos, sociales y físicos presentes en los lugares y casos a abordar.</li>
-                <li class='sans'>Capacidad creativa y de maestría formal, que le permita innovar en la forma arquitectónica del espacio habitable y su contexto.</li>
-                <li class='sans'>Capacidad analítica, de reflexión y de intervención social que le permita realizar planes y programas apropiados en una correcta relación lugar y contexto..</li>
-            </ol>
-
-            <h2 class='rojo xs margen-inf'>Objetivos educacionales</h2>
-
-            <p>Los objetivos educacionales que transmiten el oficio de dar cabida al habitar humano construyen simultáneamente tres magnitudes del arte arquitectónico:</p>
-
-            <ul class='margen-inf'>
-                <li class='sans'><b>Magnitud y lenguaje</b></li>
-            </ul>
-
-            <p>La magnitud de un lenguaje que funda la vocación desde la relación Poesía y Arquitectura. Es una experiencia de la Poesía de Amereida, de la Música de las Matemáticas, del Taller de América, los cursos de matemáticas y de Cultura Religiosa. Y que como experiencia de los Originales se ejerce en todo concebir de los talleres y de la Escuela en general.</p>
-
-            <ul class='margen-inf'>
-                <li class='sans'><b>Vida, Trabajo y Estudio</b></li>
-            </ul>
-
-            <p> un régimen que funda la convergencia de la vida, el trabajo y el estudio. Es una experiencia del acto del habitar y que se lleva a cabo en el “Taller”, en la casa de la Escuela, en la Ciudad Abierta, en las Travesías: experiencia en su sentido histórico en el curso de “Presentación de la Arquitectura”, en su sentido corporal en el curso de “Cultura del Cuerpo” y en un sentido ejecutorio de las ciencias y las técnicas en los cursos de “Construcción” y que se ejerce en toda realización del alumno en la Escuela.</p>
-
-            <ul class='margen-inf'>
-                <li class='sans'><b>Magnitud de un Instrumento</b></li>
-            </ul>
-
-            <p>Se trata de tres magnitudes que generan gratuitamente una cuarta: de celebración. Ella arma, para sí misma e invitados, lecturas poéticas, conciertos, exposiciones de esculturas, cine de vanguardia, comidas para dialogar y en donde se madura la fidelidad al origen de todas las magnitudes. Estos objetivos devienen en propósitos, que fueron planteados por primera vez en 1952, cuando la Escuela de Arquitectura se refunda. Momento inicial en que los Arquitectos exponen en formulación y el poeta abre el entusiasmo de la fidelidad. Desde el comienzo de la Escuela, hace ya 50 años, no ha habido modificaciones en cuanto a la formulación inicial y a tener conciencia de fidelidad. Sí ha habido en cuanto a su dilatarse en profundizaciones y ampliaciones. Así, específicamente en los talleres y en la Escuela en general.</p>
-
-            <blockquote><i>El Taller es así un ámbito de estudio colectivo en que cada alumno fructifica en su trabajo individual, por medio de un camino creativo en común que considera el desarrollo individual de cada cual.</i></blockquote>
-
-            <p>Este modelo conduce a ciertas capacidades que definen el perfil de un egresado de arquitectura en esta Escuela. Este perfil se logra mediante la transmisión de los conocimientos y herramientas para el logro de un conjunto de competencias genéricas de formación fundamental, disciplinares y profesionales que se dan en la relación entre ciclos del proyecto formativo y las áreas de formación[1]. El concepto de ciclo corresponde a la estructura temporal de la carrera, seis años que se dividen en cuatro ciclos:Ciclo de inicio en primer año; ciclo de Formación, Segundo y tercer año; Tercer ciclo disciplinar,  cuarto y quinto año; y cuarto ciclo profesionalizante, correspondiente a la Titulación. El concepto de área corresponde a las áreas formativas las que se constituyen en columnas vertebrales de la carrera estructurando los ciclos</p>
-
-            <h2 class='rojo xs'>Competencias Genéricas de formación fundamental</h2>
-            <p>Lo fundamental es tener presente las magnitudes del arte arquitectónico descritas anteriormente desde dichas magnitudes traducidas como competencias se vinculan más bien al concepto de área y se van logrando a lo largo de la carrera implícitas concretamente en el ámbito de estudio sostenido académicamente por aquellas dimensiones que construyen en los estudiantes el vinculo entre vida, trabajo y estudio. Dicho vinculo se da principalmente en las Travesías, en la Ciudad Abierta y en la posibilidad de construcción de obras que se da en el Taller Arquitectónico, es decir, se dan mediante experiencias sensibles. La contextualización de esas experiencias se da en ciertos ejes estructurales como lo son el Taller de Amereida, Cultura del Cuerpo, Matemáticas y estudios generales. Cabe mencionar que el conjunto de competencias genéricas de formación fundamental han sido estudiadas por un grupo de expertos de la PUCV para determinar ciertas competencias claves y transversales al perfil de un egresado de la PUCV</p>
-
-            <ul class='margen-inf'>
-                <li class='sans'><b>Capacidad de observación:</b> Capacidad para observar la realidad circundante, la ciudad se origina y se desarrolla, a partir de esa observación directa de la realidad.</li>
-                <li class='sans'><b>Conocer reflexivamente:</b> Reflexionar sobre los propios planes de acción, los propios conocimientos, y la relación de ambos con las demás personas que intervienen en la situación. Se trata de un metaconocimiento, es decir un conjunto de conocimientos que permiten la reflexión acerca de los propios conocimientos.</li>
-                <li class='sans'><b>Capacidad crítica, autocrítica y propositiva:</b> Analizar, examinar y juzgar de manera consciente el objeto de estudio integrando las consideraciones relevantes y generando una opinión fundada (crítica) y de realizar esas acciones sobre sí mismo (autocrítica).</li>
-            </ul>
+<div class='pag'>
+<div class='fila'>
+    <div class='col-md-4 col-sm-4'>
+        <div id='ead-sticky'>
+          <ul class='sin-relleno texto-derecha'>
+              <li class="relleno-inf-xs"><a class='sans pizarra' href='#'>Estudiar arquitectura en la e[ad]</a></li>
+              <li class="relleno-inf-xs"><a class='sans pizarra' href='#'>Perfil del egresado</a></li>
+              <li class="relleno-inf-xs"><a class='sans pizarra' href='#'>Competencias fundamentales</a></li>
+              <li class="relleno-inf-xs"><a class='sans pizarra' href='#'>Objetivos educacionales</a></li>
+          </ul>
         </div>
     </div>
+    <div class='col-md-8 col-sm-4'>
+        <h2 class='rojo xs'>Estudiar arquitectura en la e[ad]</h2>
+        <p>La misión de la Escuela de Arquitectura y Diseño es cultivar, el arte de la Arquitectura, del Diseño Gráfico y del Diseño Industrial por medio de la creación y transmisión del conocimiento del oficio de estas artes, formar arquitectos y diseñadores con la vocación de concebir obras que den cabida y expresión al habitar humano.</p>
+
+        <h2 class='rojo xs'>Perfil del egresado</h2>
+        <p>Un arquitecto que conciba la arquitectura como un arte al servicio del hombre. Que desde una visión poética de su contexto y una alta capacidad de reflexión sean capaces con creatividad de proponer, proyectar y construir obras arquitectónicas y urbanas que de un modo innovador en el arte y en la técnica den cabida y expresión al habitar humano, satisfaciendo necesidades de la sociedad en las distintas escalas- edificio, ciudad, continente- y magnitudes del proyecto arquitectónico y urbano.
+        Las competencias fundamentales, disciplinares y profesionales de este arquitecto son aquellas que permiten que sus proyectos sean un consecuente paso de la observación arquitectónica a la forma construida.</p>
+
+        <h2 class='rojo xs'>Competencias fundamentales</h2>
+        <p>Se propicia una educación integral, que favorece el crecimiento armónico de todas las dimensiones que constituyen la persona humana, abordados tanto desde la perspectiva intelectual como vivencial, de modo de promover la coherencia entre el conocimiento, la verdad y la vida. Se privilegian valores que sustentan una integridad y competencias humanísticas que permiten acceder al método de estudio que propone la carrera basado principalmente en la Observación dibujada, medida y escrita que es el modo de comprender e interactuar con el entorno.</p>
+
+        <ol class='margen-inf'>
+            <li  class='sans'>Valores de apertura a la trascendencia; libertad; solidaridad; respeto y aceptación de la diversidad; y compromiso ético y de responsabilidad social.</li>
+            <li  class='sans'>Capacidad para observar la realidad circundante, la ciudad se origina y se desarrolla, a partir de la observación directa de su realidad.</li>
+        </ol>
+
+        <h4 class='rojo xs margen-inf'>Competencias disciplinares</h4>
+
+        <ol class='margen-inf'>
+            <li class='sans'>Competencias que permiten al arquitecto a dar existencia física a la formulación del paso de la observación a la forma.</li>
+            <li class='sans'>Capacidad para integrar los aspectos poéticos, sociales y físicos presentes en los lugares y casos a abordar.</li>
+            <li class='sans'>Capacidad creativa y de maestría formal, que le permita innovar en la forma arquitectónica del espacio habitable y su contexto.</li>
+            <li class='sans'>Capacidad analítica, de reflexión y de intervención social que le permita realizar planes y programas apropiados en una correcta relación lugar y contexto..</li>
+        </ol>
+
+        <h2 class='rojo xs margen-inf'>Objetivos educacionales</h2>
+
+        <p>Los objetivos educacionales que transmiten el oficio de dar cabida al habitar humano construyen simultáneamente tres magnitudes del arte arquitectónico:</p>
+
+        <ul class='margen-inf'>
+            <li class='sans'><b>Magnitud y lenguaje</b></li>
+        </ul>
+
+        <p>La magnitud de un lenguaje que funda la vocación desde la relación Poesía y Arquitectura. Es una experiencia de la Poesía de Amereida, de la Música de las Matemáticas, del Taller de América, los cursos de matemáticas y de Cultura Religiosa. Y que como experiencia de los Originales se ejerce en todo concebir de los talleres y de la Escuela en general.</p>
+
+        <ul class='margen-inf'>
+            <li class='sans'><b>Vida, Trabajo y Estudio</b></li>
+        </ul>
+
+        <p> un régimen que funda la convergencia de la vida, el trabajo y el estudio. Es una experiencia del acto del habitar y que se lleva a cabo en el “Taller”, en la casa de la Escuela, en la Ciudad Abierta, en las Travesías: experiencia en su sentido histórico en el curso de “Presentación de la Arquitectura”, en su sentido corporal en el curso de “Cultura del Cuerpo” y en un sentido ejecutorio de las ciencias y las técnicas en los cursos de “Construcción” y que se ejerce en toda realización del alumno en la Escuela.</p>
+
+        <ul class='margen-inf'>
+            <li class='sans'><b>Magnitud de un Instrumento</b></li>
+        </ul>
+
+        <p>Se trata de tres magnitudes que generan gratuitamente una cuarta: de celebración. Ella arma, para sí misma e invitados, lecturas poéticas, conciertos, exposiciones de esculturas, cine de vanguardia, comidas para dialogar y en donde se madura la fidelidad al origen de todas las magnitudes. Estos objetivos devienen en propósitos, que fueron planteados por primera vez en 1952, cuando la Escuela de Arquitectura se refunda. Momento inicial en que los Arquitectos exponen en formulación y el poeta abre el entusiasmo de la fidelidad. Desde el comienzo de la Escuela, hace ya 50 años, no ha habido modificaciones en cuanto a la formulación inicial y a tener conciencia de fidelidad. Sí ha habido en cuanto a su dilatarse en profundizaciones y ampliaciones. Así, específicamente en los talleres y en la Escuela en general.</p>
+
+        <blockquote><i>El Taller es así un ámbito de estudio colectivo en que cada alumno fructifica en su trabajo individual, por medio de un camino creativo en común que considera el desarrollo individual de cada cual.</i></blockquote>
+
+        <p>Este modelo conduce a ciertas capacidades que definen el perfil de un egresado de arquitectura en esta Escuela. Este perfil se logra mediante la transmisión de los conocimientos y herramientas para el logro de un conjunto de competencias genéricas de formación fundamental, disciplinares y profesionales que se dan en la relación entre ciclos del proyecto formativo y las áreas de formación[1]. El concepto de ciclo corresponde a la estructura temporal de la carrera, seis años que se dividen en cuatro ciclos:Ciclo de inicio en primer año; ciclo de Formación, Segundo y tercer año; Tercer ciclo disciplinar,  cuarto y quinto año; y cuarto ciclo profesionalizante, correspondiente a la Titulación. El concepto de área corresponde a las áreas formativas las que se constituyen en columnas vertebrales de la carrera estructurando los ciclos</p>
+
+        <h2 class='rojo xs'>Competencias Genéricas de formación fundamental</h2>
+        <p>Lo fundamental es tener presente las magnitudes del arte arquitectónico descritas anteriormente desde dichas magnitudes traducidas como competencias se vinculan más bien al concepto de área y se van logrando a lo largo de la carrera implícitas concretamente en el ámbito de estudio sostenido académicamente por aquellas dimensiones que construyen en los estudiantes el vinculo entre vida, trabajo y estudio. Dicho vinculo se da principalmente en las Travesías, en la Ciudad Abierta y en la posibilidad de construcción de obras que se da en el Taller Arquitectónico, es decir, se dan mediante experiencias sensibles. La contextualización de esas experiencias se da en ciertos ejes estructurales como lo son el Taller de Amereida, Cultura del Cuerpo, Matemáticas y estudios generales. Cabe mencionar que el conjunto de competencias genéricas de formación fundamental han sido estudiadas por un grupo de expertos de la PUCV para determinar ciertas competencias claves y transversales al perfil de un egresado de la PUCV</p>
+
+        <ul class='margen-inf'>
+            <li class='sans'><b>Capacidad de observación:</b> Capacidad para observar la realidad circundante, la ciudad se origina y se desarrolla, a partir de esa observación directa de la realidad.</li>
+            <li class='sans'><b>Conocer reflexivamente:</b> Reflexionar sobre los propios planes de acción, los propios conocimientos, y la relación de ambos con las demás personas que intervienen en la situación. Se trata de un metaconocimiento, es decir un conjunto de conocimientos que permiten la reflexión acerca de los propios conocimientos.</li>
+            <li class='sans'><b>Capacidad crítica, autocrítica y propositiva:</b> Analizar, examinar y juzgar de manera consciente el objeto de estudio integrando las consideraciones relevantes y generando una opinión fundada (crítica) y de realizar esas acciones sobre sí mismo (autocrítica).</li>
+        </ul>
     </div>
+</div>
+</div>
 <hr>
     <h4 class='pizarra gruesa'>Estilos de párrafo</h4>
     <div class="h-entry">
@@ -577,58 +577,58 @@ intro: Texto sobre versatilidad
         <p>Sed sagittis enim et elementum ullamcorper. Nam blandit augue nec massa efficitur elementum. Nulla tempor ullamcorper neque vel tempor. Proin porttitor nisl eget condimentum lobortis. Proin venenatis ligula ut ultrices consequat. Suspendisse tincidunt eu sem at fringilla. Cras non sem magna. Quisque eget tincidunt sem.</p>
     </div>           
 
-    <h3 class="sm color"> Artículo reciente</h3>
-        <p class='resumen'>
-        No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-        </p>
-        <h4 class=" fina color">Artículo menor</h4>
-        <p class='extracto'>
-        Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza clásica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad.
-        </p>
-        <h5 class="gris-oscuro pesada">Cuarto artículo mucho menos reciente</h5>
-        <p class='xs'>
-        Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto.
-        </p>
-        <br>
-        <h6 class='sm gris'>Artículo anterior o pasado</h6>
-        <p class='xs fino'>
-        Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-        </p>   
+<h3 class="sm color"> Artículo reciente</h3>
+<p class='resumen'>
+No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+</p>
+<h4 class=" fina color">Artículo menor</h4>
+<p class='extracto'>
+Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza clásica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad.
+</p>
+<h5 class="gris-oscuro pesada">Cuarto artículo mucho menos reciente</h5>
+<p class='xs'>
+Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto.
+</p>
+<br>
+<h6 class='sm gris'>Artículo anterior o pasado</h6>
+<p class='xs fino'>
+Fue popularizado en los 60s con la creación de las hojas 'Letraset', las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+</p>   
 
-        <h3 class='rojo'>Elementos laterales</h3><a name="titulo-dos"></a>
-        <h5 class='gris-oscuro'>1.Secciones linkeables</h5>
-        <h6 class='altas gruesa gris'> Novedades </h6>
-        <ul class="xs">
-            <a href="#"><li>Premio Chile Diseño 2013</li></a>
-            <a href="#"><li>Profesores y alumnos participarán en seminario y workshop en Río de Janeiro</li></a>
-            <a href="#"><li>Examen Preventivo para alumnos ead</li></a>
-            <a href="#"><li>Admisión 2014</li></a>
-        </ul>
-        <h6 class='altas gruesa gris-oscuro'>Elemento Lateral</h6>
-        <ul class="extracto ">
-            <br>
-            <a href="#"><li >Parque Cívico de Loncura seleccionado dentro de las <br>“Medidas Destacadas en el Sistema de Evaluación de Impacto Ambiental”</li></a>
-            <a href="#"><li>Programa I+D Aplicada, de Innova Chile – CORFO </li></a>
-            <a href="#"><li>Línea de Fomento de la Arquitectura – FONDART 2014 </li></a>
-        </ul>
-        <h6 class='altas'><a href="#">Detalle noticia</a></h6>
-        <p class='xs gris-oscuro'> 
-        Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto.
-        </p>
-        <br>
-        <br>
-        <h6 class='altas xs bold gris'>Elemento Lateral</h6>
-        <ul class="xs gris">
-            <li>Primer enlace a algo relevante</li>
-            <li>Tal vez, con seguridad, esto es menos relevante</li>
-            <li>Tercera cosa, y así...</li>
-            <li>No hay tercera sin cuarta</li>
-        </ul>
-   
-    <a class='lg'>Money, get away, get a good job with more pay and you're okay</a>
-    <a class='md'>Money, get away, get a good job with more pay and you're okay</a>
-    <a class='sm'>Money, get away, get a good job with more pay and you're okay</a>
-    <a class='xs'>Money, get away, get a good job with more pay and you're okay</a>
+<h3 class='rojo'>Elementos laterales</h3><a name="titulo-dos"></a>
+<h5 class='gris-oscuro'>1.Secciones linkeables</h5>
+<h6 class='altas gruesa gris'> Novedades </h6>
+<ul class="xs">
+    <a href="#"><li>Premio Chile Diseño 2013</li></a>
+    <a href="#"><li>Profesores y alumnos participarán en seminario y workshop en Río de Janeiro</li></a>
+    <a href="#"><li>Examen Preventivo para alumnos ead</li></a>
+    <a href="#"><li>Admisión 2014</li></a>
+</ul>
+<h6 class='altas gruesa gris-oscuro'>Elemento Lateral</h6>
+<ul class="extracto ">
+    <br>
+    <a href="#"><li >Parque Cívico de Loncura seleccionado dentro de las <br>“Medidas Destacadas en el Sistema de Evaluación de Impacto Ambiental”</li></a>
+    <a href="#"><li>Programa I+D Aplicada, de Innova Chile – CORFO </li></a>
+    <a href="#"><li>Línea de Fomento de la Arquitectura – FONDART 2014 </li></a>
+</ul>
+<h6 class='altas'><a href="#">Detalle noticia</a></h6>
+<p class='xs gris-oscuro'> 
+Hay muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría sufrió alteraciones en alguna manera, ya sea porque se le agregó humor, o palabras aleatorias que no parecen ni un poco creíbles. Si vas a utilizar un pasaje de Lorem Ipsum, necesitás estar seguro de que no hay nada avergonzante escondido en el medio del texto.
+</p>
+<br>
+<br>
+<h6 class='altas xs bold gris'>Elemento Lateral</h6>
+<ul class="xs gris">
+    <li>Primer enlace a algo relevante</li>
+    <li>Tal vez, con seguridad, esto es menos relevante</li>
+    <li>Tercera cosa, y así...</li>
+    <li>No hay tercera sin cuarta</li>
+</ul>
+
+<a class='lg'>Money, get away, get a good job with more pay and you're okay</a>
+<a class='md'>Money, get away, get a good job with more pay and you're okay</a>
+<a class='sm'>Money, get away, get a good job with more pay and you're okay</a>
+<a class='xs'>Money, get away, get a good job with more pay and you're okay</a>
 
 </div>
 </div> <!-- fin de tab-content-->

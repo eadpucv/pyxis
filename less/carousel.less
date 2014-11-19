@@ -12,11 +12,12 @@
   overflow: hidden;
   width: 100%;
 
-  &.home {
-      border-top:1px solid @gris-claro;
-  }
-
   > .item {
+  &.car-xs{height: 400px}
+  &.car-sm{height: 500px}
+  &.car-md{height: 600px}
+  &.car-lg{height: 700px}
+
       display: none;
       position: relative;
       .transition(.6s ease-in-out left);
@@ -146,15 +147,16 @@
       }
     }
 
-    .icn-nav-der,
-    .icn-nav-izq {
+    .icn-nav,
+    .icn-navizquierda {
       position: absolute;
-      top: 27px;
-      width: 40px;
+      top: 50%;
+      width: 20px;
+      margin-top: -10px;
       height: auto;
-      font-size: @cuerpo * 2.2;
+      font-size: 20px;
       right: 0px;
-      left: 2px;
+      left: 12px;
     }
 }
 
@@ -285,6 +287,19 @@
   }
 }
 
+//  Extra small screen / phone
+@media(max-width: @screen-xs-max){
+
+  .carousel-inner{
+      > .item {
+    &.car-xs{height: 200px}
+    &.car-sm{height: 250px}
+    &.car-md{height: 300px}
+    &.car-lg{height: 350px}
+    }
+  }
+}
+
 // Small screen / tablet
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
 
@@ -322,6 +337,11 @@
 
   .carousel-inner {
     > .item {
+    &.car-xs{height: 550px}
+    &.car-sm{height: 700px}
+    &.car-md{height: 750px}
+    &.car-lg{height: 800px}
+    
       .transition(.6s ease-in-out left);
       > img,
       > a > img {
