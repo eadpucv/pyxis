@@ -40,8 +40,20 @@ a{
 
       //  Hover:
     &:hover{
-      color: fade(@color-link-hover, 80%);
+      color: @pizarra;
       text-decoration: none;
+    }
+
+    &.negro{
+      &:hover{
+        color: fade(@color-link-hover, 80%);
+      }
+    }
+
+    &.blanco{
+      &:hover{
+        color: @gris;
+      }
     }
 }
 
