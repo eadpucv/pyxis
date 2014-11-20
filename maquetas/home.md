@@ -477,7 +477,7 @@ title: Pyxis Framework - Maquetas
         <p class='xs margen-sup-xs'>El viernes 17 de octubre se llevó a cabo la presentación del anteproyecto 'Parque de Mar Puerto Barón', del Magíster en Arquitectura y Diseño, mención Náutico y Marítimo.</p>
         </a>
       </div>
-   
+  </div>
   </div>
 
   <footer class='fondo-pizarra'>
