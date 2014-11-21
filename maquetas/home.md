@@ -41,7 +41,7 @@ title: Pyxis Framework - Maquetas
         <li class="dropdown">
           <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Carreras & Postgrados<b class="caret"></b></a>
               <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu2">
-                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Arquitectura</a></li>
+                <li role="presentation"><a href="{{ site.baseurl }}/maquetas/page" tabindex="-1" role="menuitem">Arquitectura</a></li>
                 <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Diseño gráfico</a></li>
                 <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Diseño industrial</a></li>
                 <li class="divider" role="presentation"></li>
@@ -125,7 +125,7 @@ title: Pyxis Framework - Maquetas
         <p class='sin-margen relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Presentación libros Triángulo de Pascal y Estructura Esencial</p>
       </div>
       <div class='oculto-sm oculto-xs'>
-        <a href='#'>
+        <a href="{{ site.baseurl }}/maquetas/post">
           <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque ancho-lg alto-completo relleno'>
             <h2 class='fino'>Presentación libros Triángulo de Pascal y Estructura Esencial</h2>
             <p class='sin-margen relleno-vertical-xs'></i>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem, ambos arquitectos y académicos de la Escuela de Arquitectura y Diseño.</p>
@@ -186,7 +186,7 @@ title: Pyxis Framework - Maquetas
 </div>
 
 <div class='pag sin-relleno margen-sup'>
-  <h2 class='xs gris centrado margen-inf-md'><i class='icn icn-calendario margen-der-xs'></i><a href='#' class='gris sans fino interletraje-xs'>Eventos</a></h2>
+  <h2 class='xs gris centrado margen-inf-md'><i class='icn icn-calendario margen-der-xs'></i><a href='#' class='gris condensado fino interletraje-xs'>Eventos</a></h2>
   <div class='fila'>
   <div class='col-md-3 col-sm-6 col-xs-12'>
   <div class='relleno-inf'>
@@ -219,19 +219,19 @@ title: Pyxis Framework - Maquetas
   </div>
 
   <!-- Encabezado de sección -->
-  <h2 class='xs centrado gris margen-inf-md'><i class='icn icn-noticias margen-der-xs'></i><a href='#' class='gris sans fino interletraje-xs'>Noticias</a></h2>
+  <h2 class='xs centrado gris margen-inf-md'><i class='icn icn-noticias margen-der-xs'></i><a href='{{ site.baseurl }}/maquetas/portada-noticias' class='gris condensado fino interletraje-xs'>Noticias</a></h2>
   <!-- Fila de 4 noticias -->
   <div class='fila margen-inf-sm'>
     <!-- 1 de 4 Columnas de noticias a lo largo -->
     <div class='col-md-3 col-sm-6 col-xs-12'>
       <!-- Div que oculta el desborde de la imagen -->
       <div class='ocultar-desborde alto-xs'>
-        <a href='#'>
+        <a href="{{ site.baseurl }}/maquetas/post">
         <img class='w130' src="http://www.ead.pucv.cl/wp-content/uploads/2014/10/DSC_1016-850x563.jpg" alt="" class="ancho-maximo">
         </a>
       </div>
       <!-- Título, fecha de publicación, reseña de noticia -->
-      <h5 class='xs sin-margen relleno-sup-xs'><a class='sans fino' href='#'>Presentación libros Triángulo de Pascal y Estructura Esencial</a></h5>
+      <h5 class='xs sin-margen relleno-sup-xs'><a class='sans fino' href="{{ site.baseurl }}/maquetas/post">Presentación libros Triángulo de Pascal y Estructura Esencial</a></h5>
       <span class='xs sans pizarra italica'>Publicado el 30 de octubre, 2014</span>
       <p class='xs margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem, [...]</p>
     </div>
@@ -335,7 +335,7 @@ title: Pyxis Framework - Maquetas
 
 <!-- franja de postulante -->
   <!-- Encabezado de sección -->
-  <h2 class='xs gris centrado margen-inf-md'><i class='icn icn-noticias margen-der-xs'></i><a href='#' class='gris sans fino interletraje-xs'>Escuela & enlaces</a></h2>
+  <h2 class='xs gris centrado margen-inf-md'><i class='icn icn-noticias margen-der-xs'></i><a href='#' class='gris condensado fino interletraje-xs'>Escuela & enlaces</a></h2>
   <!-- Carrousel -->
   <div class='margen-inf-lg'>
     <div data-ride="carousel" class="carousel slide">
@@ -417,13 +417,13 @@ title: Pyxis Framework - Maquetas
   </div>
 -->
   <!-- Encabezado de sección -->
-  <h2 class='xs gris centrado'><i class='icn icn-noticias margen-der-xs'></i><a href='#' class='gris sans fino interletraje-xs'>Publicaciones</a></h2>
+  <h2 class='xs gris centrado'><i class='icn icn-noticias margen-der-xs'></i><a href='#' class='gris condensado fino interletraje-xs'>Publicaciones</a></h2>
 
   <div class='pag'>
     <div class='fila margen-inf'>
       <div class='col-md-4 col-sm-6 col-xs-12'>
         <a href='#'>
-        <h6 class='xs altas interletraje-xs linea-lateral'>archivo histórico J.V.A.</h6>
+        <h6 class='xs altas interletraje-xs linea-lateral condensado gruesa'>archivo histórico J.V.A.</h6>
         </a>
         <h5 class='xs'><a class='fina sans' href='#'>Realizan exposición con material del Archivo Histórico José Vial Armstrong en México</a></h5>
         <span class='xs sans pizarra italica'>Publicado el 08 de noviembre, 2014</span>
@@ -432,7 +432,7 @@ title: Pyxis Framework - Maquetas
       </div>
       <div class='col-md-4 col-sm-6 col-xs-12'>
         <a href='#'>
-        <h6 class='xs altas interletraje-xs linea-lateral'>magíster ciudad y territorio</h6>
+        <h6 class='xs altas interletraje-xs linea-lateral condensado gruesa'>magíster ciudad y territorio</h6>
         </a>
         <h5 class='xs'><a class='fina sans' href='#'>Magíster Ciudad y Territorio: Calendario de Postulación segundo semestre 2014</a></h5>
         <span class='xs sans pizarra italica'>Publicado el 08 de noviembre, 2014</span>
@@ -441,7 +441,7 @@ title: Pyxis Framework - Maquetas
       </div>
       <div class='col-md-4 col-sm-6 col-xs-12'>
         <a href='#'>
-        <h6 class='xs altas interletraje-xs linea-lateral'>magíster náutico y marítimo</h6>
+        <h6 class='xs altas interletraje-xs linea-lateral condensado gruesa'>magíster náutico y marítimo</h6>
         </a>
         <h5 class='xs'><a class='fina sans' href='#'>Magíster Náutico y Marítimo presenta anteproyecto Parque de Mar Puerto Barón</a></h5>
         <span class='xs sans pizarra italica'>Publicado el 08 de noviembre, 2014</span>
@@ -452,7 +452,7 @@ title: Pyxis Framework - Maquetas
         <div class='fila'>
       <div class='col-md-4 col-sm-6 col-xs-12'>
         <a href='#'>
-        <h6 class='xs altas interletraje-xs linea-lateral'>Bolsa de trabajo</h6>
+        <h6 class='xs altas interletraje-xs linea-lateral condensado gruesa'>Bolsa de trabajo</h6>
         </a>
         <h5 class='xs'><a class='fina sans' href='#'>Realizan exposición con material del Archivo Histórico José Vial Armstrong en México</a></h5>
         <span class='xs sans pizarra italica'>Publicado el 08 de noviembre, 2014</span>
@@ -461,7 +461,7 @@ title: Pyxis Framework - Maquetas
       </div>
       <div class='col-md-4 col-sm-6 col-xs-12'>
         <a href='#'>
-        <h6 class='xs altas interletraje-xs linea-lateral'>Observación de la semana</h6>
+        <h6 class='xs altas interletraje-xs linea-lateral condensado gruesa'>Observación de la semana</h6>
         </a>
         <h5 class='xs'><a class='fina sans' href='#'>Magíster Ciudad y Territorio: Calendario de Postulación segundo semestre 2014</a></h5>
         <span class='xs sans pizarra italica'>Publicado el 08 de noviembre, 2014</span>
@@ -470,7 +470,7 @@ title: Pyxis Framework - Maquetas
       </div>
       <div class='col-md-4 col-sm-6 col-xs-12'>
         <a href='#'>
-        <h6 class='xs altas interletraje-xs linea-lateral'>Investigación</h6>
+        <h6 class='xs altas interletraje-xs linea-lateral condensado gruesa'>Investigación</h6>
         </a>
         <h5 class='xs'><a class='fina sans' href='#'>Magíster Náutico y Marítimo presenta anteproyecto Parque de Mar Puerto Barón</a></h5>
         <span class='xs sans pizarra italica'>Publicado el 08 de noviembre, 2014</span>

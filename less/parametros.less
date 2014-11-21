@@ -88,7 +88,6 @@
 
 .h-entry {
     width: 100%;
-    margin: 0 auto;
 
     h1, h2{
         margin-bottom: 15px;
@@ -118,22 +117,22 @@
         text-align: center;
     }
 
-    p {
-        margin: 0 auto;
-        padding: 0 0 20px 0;
-        font-size: 18px;
-        line-height: 30px;
+    img{
+        margin-bottom: @cuadratin/2;
+    }  
 
+    p {
+        font-size: .sm;
+        // Wordpress inserta 
         img{
             width: 100%;
             height: auto;
             margin: 0px 0px 15px 0px;
-        }   
+        } 
 
         .ajax-loader {
             width: auto;
         }   
-
     }
     
     img{
@@ -251,15 +250,60 @@
     }
 
     blockquote, .wp-caption-text{
-        line-height: 24px;
-        font-weight: 100;
-        border-left: 2px solid @rojo;
-        display: inline-block;
-        font-size: 12px !important;
-        font-style: italic !important; 
-        line-height: 16px !important;
-        margin: 5px 0 15px !important;
+        line-height: 22/@em;
+        border-left: 3px solid @gris-claro;
+        margin: 0 @cuadratin @cuadratin @cuadratin;
         padding: 0 0 0 10px !important;
+        color: rgba(1,1,1,0.8);
+
+         //  Sin márgenes:
+          &.sin-margen{
+            margin: 0;
+          }
+
+          //  Tamaños de Párrafos:
+          &.lg { 
+            font-size: @cuerpo * 2.2;
+            line-height: 140%;
+          }
+
+          &.md {
+            font-size: @cuerpo * 1.7;
+            font-weight: 200;
+            line-height: 140%;
+          }
+
+          &.sm {
+            font-size: @cuerpo * 1.2;
+            line-height: 140%;
+          }
+
+          &.xs {
+            font-size: @cuerpo * .75;
+            line-height: @interlinea * .9;
+          }
+
+            //  Chico:
+          small {
+            display: block;
+            color: @gris-claro;
+            &:before {
+            content: '\2014 \00A0';
+          }
+        }
+          //  Pie de foto 
+          &.pie-de-foto{
+            line-height: 24px;
+            font-weight: 100;
+            border-left: 2px solid fade(@rojo, 80);
+            display: inline-block;
+            font-size: 16px !important;
+            font-style: inherit !important;
+            font-style: italic !important; 
+            line-height: 16px !important;
+            margin: 0 0 30px !important;
+            padding: 0 0 0 10px !important;
+          }
     }
 
 
@@ -339,8 +383,16 @@
 } // Fin de h-entry
 
 .e-content, .p-summary, .p-name {
-    width: 65%;
+    width: 80%;
     margin: 0 auto;
+
+    blockquote{
+
+    }
+
+    img{
+        .margen-inf-sm;
+    }
 
     &.enunciado {
         width: 90%;
@@ -364,32 +416,7 @@
     padding: 0 0 0 10px !important;
 }
 
-// Variables de altura para diversos bloques (contenedores)
-// -------------------------
 
-    // el valor de alto-xs es la unidad
-.alto-xs {
-    min-height: 130px;
-}
-
-    // el valor de alto-sm son 2 unidades + una mitad
-.alto-sm {
-    height: @cuadratin * 9;
-    margin: 0 0 0 0;
-}
-
-    // el valor de alto-md son 3 unidades
-.alto-md {
-    height: @cuadratin * 14;
-    margin: 0 0 20px 0;
-}
-
-    // el valor de alto-lg son 4 unidades 
-.alto-lg {
-    height: @cuadratin * 22;
-}
-
-// Página - Container - Formato
 
 .pagina {
     

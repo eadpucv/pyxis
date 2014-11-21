@@ -15,9 +15,10 @@ title: Pyxis Framework - Maquetas
 	</div>
 </div>
 
+
 <!-- Menú dropdown -->
 <div class="oculto-xs">
-  <div class='pag'>
+  <div class='pag sin-relleno margen-sup-sm margen-inf-xs'>
   <a href='{{ site.baseurl }}/maquetas/home'>
   <img class='ancho-lg' alt="Third slide" src="{{ site.baseurl }}/img/logo-ead-pucv.png">
   </a>
@@ -28,48 +29,63 @@ title: Pyxis Framework - Maquetas
                 <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Historia</a></li>
                 <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Amereida</a></li>
                 <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Campus</a></li>
-                <li class="divider" role="presentation"></li>
                 <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Cuerpo académico</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Autoridades</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Noticias</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Agenda</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Información de docencia</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Wiki Casiopea</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Prensa</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Contacto</a></li>
               </ul>
         </li>
         <li class="dropdown">
           <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Carreras & Postgrados<b class="caret"></b></a>
               <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu2">
-                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Action</a></li>
-                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Another action</a></li>
-                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Something else here</a></li>
+                <li role="presentation"><a href="{{ site.baseurl }}/maquetas/page" tabindex="-1" role="menuitem">Arquitectura</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Diseño gráfico</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Diseño industrial</a></li>
                 <li class="divider" role="presentation"></li>
-                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Separated link</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Magister Nautico & Marítimo</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Magister Ciudad & Territorio</a></li>
               </ul>
         </li>
         <li class="dropdown">
           <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Estudiantes<b class="caret"></b></a>
               <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
-                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Action</a></li>
-                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Another action</a></li>
-                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Something else here</a></li>
-                <li class="divider" role="presentation"></li>
-                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Separated link</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Pregrado</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Postgrado</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Intercambio estudiantil</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Becas y ayudas estudiantiles</a></li>
               </ul>
         </li>
         <li class="dropdown">
           <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Admisión<b class="caret"></b></a>
               <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
-                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Action</a></li>
-                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Another action</a></li>
-                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Something else here</a></li>
-                <li class="divider" role="presentation"></li>
-                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Separated link</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Cuerpo coordinador</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Asuntos estudiantiles</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Estudia en el extranjero</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Servicios e[ad]</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Bolsa de trabajo</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Ex-alumnos</a></li>
+              </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Extensión<b class="caret"></b></a>
+              <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Archivo histórico J.V.A</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Ediciones e[ad]</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Concursos</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Investigación</a></li>
               </ul>
         </li>
         <li class="dropdown">
           <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Amereida<b class="caret"></b></a>
               <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
-                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Action</a></li>
-                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Another action</a></li>
-                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Something else here</a></li>
-                <li class="divider" role="presentation"></li>
-                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Separated link</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Taller de amereida</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Ciudad abierta</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Travesías</a></li>
+                <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Biblioteca Constel</a></li>
               </ul>
         </li>
       </ul>
@@ -84,7 +100,7 @@ title: Pyxis Framework - Maquetas
     </a>
     <a href="#menu" class="menu-link derecha"><i class="icn icn-menu"></i> </a>
     </div>
-  <nav id="menu" class='lista-sin-estilo' role="navigation">
+  <nav id="menu" class='lista-sin-estilo margen-inf-sm' role="navigation">
     <li class='margen-sup'><a class='sans' href='{{ site.baseurl }}/pags/tipografia'>Escuela</a></li>
     <li><a class='sans' href='{{ site.baseurl }}/pags/grilla'>Carreras & postgrados</a></li>
     <li><a class='sans' href='{{ site.baseurl }}/pags/interaccion'>Estudiantes</a></li>
@@ -92,8 +108,6 @@ title: Pyxis Framework - Maquetas
     <li><a class='sans' href='{{ site.baseurl }}/pags/iconografia'>Amereida</a></li>
   </nav>
 </div>
-<!-- hr -->
-<hr class='sin-margen'>
 
 <!-- Breadcrumbs -->
 <div class='pag sin-relleno'>
@@ -116,15 +130,15 @@ title: Pyxis Framework - Maquetas
     <li data-slide-to="1" data-target="#carousel-example-generic"></li>
     <li data-slide-to="2" data-target="#carousel-example-generic"></li>
   </ol>
-  <div class="carousel-inner car-sm">
-    <div class="item imagen-carousel">
-      <img class='altura-maxima' alt="First slide" src="{{ site.baseurl }}/img/manto-6.jpg">
+  <div class="carousel-inner">
+    <div class="item car-sm">
+      <img class='altura-maxima' alt="First slide" src="">
     </div>
-    <div class="item active">
-      <img alt="Second slide" src="{{ site.baseurl }}/img/torneo2.jpg">
+    <div class="item active car-sm">
+      <img alt="Second slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/10/3.5-croquis-hab.jpg">
     </div>
-    <div class="item">
-      <img alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+    <div class="item car-sm">
+      <img alt="Third slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/07/DSC_0864-1.jpg">
     </div>
   </div>
   <a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
@@ -196,3 +210,54 @@ title: Pyxis Framework - Maquetas
     </div> <!-- fin de segunda columna -->
   </div> <!-- fin de segunda fila -->
 </div> <!-- fin de pag -->
+
+<footer class='fondo-pizarra'>
+<div class='pag'>
+  <div class='fila'>
+    <div class='col-md-4'>
+      <h6 class='sin-margen relleno-inf-xs'><a href='#' class='ahuesado sans fino'>Escuela de Arquitectura y Diseño</a></h6>
+      <h6 class='xs fino serif gris'>Pontificia Universidad Católica de Valpraíso</h6>
+      <h6><a href='#' class='ahuesado sans fino'>Contacto</a></h6>
+      <p class='xs sans blanco sin-margen'>Matta 12, Recreo, Viña del Mar, Chile.</p>
+      <p class='xs sans blanco sin-margen'>Cód. Postal: 2580129, Casilla 4170 V2 Valparaíso</p>
+    </div>
+    <div class='col-md-4'>
+      <p class='xs fino serif gris sin-margen'>1998 - 2014 | <a href='#' class='blanco'>Suscripción (RSS)</a> | <a href='#' class='blanco'>Cómo Suscribirse</a> | <a href='#' class='blanco'>Colofón</a> | Optimizado para <a href='#' class='blanco'>Firefox</a></p>
+      <p class='xs fino serif gris'>e[ad] de la Escuela de Arquitectura y Diseño PUCV está licenciado bajo <a href='#' class='blanco'>Creative Commons Atribución-No Comercial-Licenciar Igual 2.0 Chile License</a></p>
+    </div>
+    <div class='col-md-4'>
+      <h6 class='fino blanco'>e[ad] en redes sociales</h6>
+      <a href='#'>
+       <span class="icn-stack">
+        <span class="icn icn-cuadrolleno icn-stack-2x ahuesado"></span>
+        <span class="icn icn-facebook icn-stack-1x pizarra"></span>
+      </span>
+      </a>
+      <a href='#'>
+      <span class="icn-stack">
+        <span class="icn icn-cuadrolleno icn-stack-2x ahuesado"></span>
+        <span class="icn icn-twitter icn-stack-1x pizarra"></span>
+      </span>
+      </a>
+      <a href='#'>
+      <span class="icn-stack">
+        <span class="icn icn-cuadrolleno icn-stack-2x ahuesado"></span>
+        <span class="icn icn-flickr icn-stack-1x pizarra"></span>
+      </span>
+      </a>
+      <a href='#'>
+      <span class="icn-stack">
+        <span class="icn icn-cuadrolleno icn-stack-2x ahuesado"></span>
+        <span class="icn icn-soundcloud icn-stack-1x pizarra"></span>
+      </span>
+      </a>
+      <a href='#'>
+      <span class="icn-stack">
+        <span class="icn icn-cuadrolleno icn-stack-2x ahuesado"></span>
+        <span class="icn icn-vimeo icn-stack-1x pizarra"></span>
+      </span>
+      </a>
+    </div>
+  </div>
+</div>
+</footer>

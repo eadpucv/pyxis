@@ -204,10 +204,10 @@
 
 // Altos específicos
 
-.alto-xs{height: 30px}
-.alto-sm{height: 100px}
-.alto-md{height: 200px}
-.alto-lg{height: 400px}
+.alto-xs{height: @cuadratin * 4}
+.alto-sm{height: @cuadratin * 6}
+.alto-md{height: @cuadratin * 12}
+.alto-lg{height: @cuadratin * 16}
 .alto-completo{height: 100%}
 
 
@@ -513,6 +513,14 @@
         font-weight: 400;
         line-height: 10px;
     }
+
+    // Altos específicos
+
+    .alto-xs{height: @cuadratin * 4; &.auto{height: auto !important;}}
+    .alto-sm{height: auto}
+    .alto-md{height: auto}
+    .alto-lg{height: auto}
+    .alto-completo{height: 100%}
 }
 
 // Small screen / tablet
