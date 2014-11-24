@@ -10,7 +10,7 @@ nav {
   &.lista-sin-estilo{
       list-style: none;
     }
-  
+
   ul, ol{
   margin: 0;
   padding: 0;
@@ -25,7 +25,7 @@ nav {
       display: inline-block;
       font-weight: 400; 
       margin: 0;
-      padding: @cuerpo * 1.1 * 0.5 @cuerpo * 0.9;
+      padding: @cuerpo @cuerpo * 0.9;
       color: @negro !important;
       font-size: 13px;
       text-transform: uppercase;
@@ -57,17 +57,17 @@ nav {
     padding: 0;     
     padding: 0;  
     font-family: 'Open Sans Condensed';
-    min-height: 60px;
 
     .nav-rotulos {
-      height: 60px;
       float: right;
 
       li a {
-        margin: 17px 21px;
-        padding: 0;
+        padding: @cuerpo @cuerpo * 1.2;// 17px 21px;
+        margin: 0;
         font-family: @cond;
         font-weight: 700;
+        &:first-child{margin-left: 0}
+        &.last-child{margin-right: 0}
       }
    }        
 
@@ -90,19 +90,26 @@ nav {
 .logo-pyxis {
   width: auto;
   float: left;
+  padding: 0;
+  margin: 0;
+  
+  a{
+    display: inline-block;
+    padding: @cuerpo *.7 0 0 0;
+    
+    img {
+      float: left;
+      margin: -@cuerpo *.1 1ex 0 0;
+    }
 
-  img {
-    padding: 18px 0;
-    width: 20/@em;
-    float: left;
+    h6{
+      margin: .3em 0 -.3ex 0;
+    }
   }
-
+  
   &.footer {
-    width: 0 auto;
     float: none;
-    margin: 0 auto;
     display: block;
-    padding-bottom: 5px;
 
     h6{
       display: inline-block;
@@ -112,11 +119,10 @@ nav {
 
     img{
       padding: 0;
-      margin: 4px 5px 0 0;
-      width: 20/@em;
+      margin: -2px 5px 0px 0px;
       display: block;
     }
-  }
+  } 
 }
 
 //
@@ -354,6 +360,18 @@ a.menu-link {
 }
 
 
+footer{
+  ul, nav{
+    margin: 1em 0;
+  }
+  nav li,
+  ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 1em;
+  }
+}
+
 // Nav variations
 // --------------------------------------------------
 
@@ -454,7 +472,6 @@ a.menu-link {
   // logo
 
   .logo-pyxis {
-    width: auto;
     float: left;
     display: inline-block;
 
@@ -463,9 +480,10 @@ a.menu-link {
     }
 
     img {
-      width: 20/@em;
+      width: auto;
       float: left;
-      padding: 3px 0;
+      padding: 0;
+      margin: 0;
     }
 
     &.footer {
@@ -482,9 +500,9 @@ a.menu-link {
       }
 
       img{
-        padding: 0;
-        width: 20/@em;
         display: block;
+        padding: 0;
+        margin: 0 5px 0 0 !important;
       }
     }
   }
@@ -589,12 +607,6 @@ a.menu-link {
 
     span {
       margin: 0;
-    }
-
-    img {
-      float: none;
-      padding: 0;
-      width: 35px;
     }
   }
 }

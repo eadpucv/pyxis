@@ -26,4 +26,4 @@ Pyxis (latín para brújula) es una constelación menor del sur, introducida por
 ### Para desarrolladores
 * ejecute `make install` para instalar las dependencias necesarias para compilar la CSS
 * ejecute `make dist` para copiar todos los archivos necesarios a su distribución
-* ejecute 'make less' para compilar los archivos LESS en `css/pyxis.css`
+* ejecute `make less` para compilar los archivos LESS en `css/pyxis.css`
