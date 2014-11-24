@@ -23,6 +23,100 @@ intro: Texto sobre versatilidad
     <div class="tab-content">
     <div class="tab-pane fade in active" id="parametros">
         <a class='btn btn-alerta' href='{{ site.baseurl }}/maquetas/page'>Ir a maquetas</a>
+
+    <!-- Menú dropdown -->
+    <div class="oculto-xs">
+      <div class='pag sin-relleno margen-sup-sm margen-inf-xs'>
+      <a href='{{ site.baseurl }}/maquetas/home'>
+      <img class='ancho-lg' alt="Third slide" src="{{ site.baseurl }}/img/logo-ead-pucv.png">
+      </a>
+          <ul class="nav nav-pills ">
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" role="button" id="drop4" class="dropdown-toggle negro">Escuela<b class="caret"></b></a>
+                  <ul aria-labelledby="drop4" role="menu" class="dropdown-menu" id="menu1">
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Historia</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Amereida</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Campus</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Cuerpo académico</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Autoridades</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Noticias</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Agenda</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Información de docencia</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Wiki Casiopea</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Prensa</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Contacto</a></li>
+                  </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Carreras & Postgrados<b class="caret"></b></a>
+                  <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu2">
+                    <li role="presentation"><a href="{{ site.baseurl }}/maquetas/page" tabindex="-1" role="menuitem">Arquitectura</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Diseño gráfico</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Diseño industrial</a></li>
+                    <li class="divider" role="presentation"></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Magister Nautico & Marítimo</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Magister Ciudad & Territorio</a></li>
+                  </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Estudiantes<b class="caret"></b></a>
+                  <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Pregrado</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Postgrado</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Intercambio estudiantil</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Becas y ayudas estudiantiles</a></li>
+                  </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Admisión<b class="caret"></b></a>
+                  <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Cuerpo coordinador</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Asuntos estudiantiles</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Estudia en el extranjero</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Servicios e[ad]</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Bolsa de trabajo</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Ex-alumnos</a></li>
+                  </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Extensión<b class="caret"></b></a>
+                  <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Archivo histórico J.V.A</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Ediciones e[ad]</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Concursos</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Investigación</a></li>
+                  </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Amereida<b class="caret"></b></a>
+                  <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Taller de amereida</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Ciudad abierta</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Travesías</a></li>
+                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Biblioteca Constel</a></li>
+                  </ul>
+            </li>
+          </ul>
+      </div>
+    </div>
+
+    <!-- Menú responsivo -->
+    <div class="oculto-lg oculto-md oculto-sm">
+      <div class='pag menu-movil'>
+        <a href='{{ site.baseurl }}/'>
+          <img class='ancho-lg' alt="Third slide" src="{{ site.baseurl }}/img/logo-ead-pucv.png">
+        </a>
+        <a href="#menu" class="menu-link derecha"><i class="icn icn-menu"></i> </a>
+        </div>
+      <nav id="menu" class='lista-sin-estilo margen-inf-sm' role="navigation">
+        <li class='margen-sup'><a class='sans' href='{{ site.baseurl }}/pags/tipografia'>Escuela</a></li>
+        <li><a class='sans' href='{{ site.baseurl }}/pags/grilla'>Carreras & postgrados</a></li>
+        <li><a class='sans' href='{{ site.baseurl }}/pags/interaccion'>Estudiantes</a></li>
+        <li><a class='sans' href='{{ site.baseurl }}/pags/color'>Admisión</a></li>
+        <li><a class='sans' href='{{ site.baseurl }}/pags/iconografia'>Amereida</a></li>
+      </nav>
+    </div>
+
     <h4 class='pizarra gruesa'>Márgenes</h4>
 
     <h5 class='pizarra gruesa'>Márgen horizontal</h5>
@@ -108,7 +202,7 @@ intro: Texto sobre versatilidad
     <h5 class='pizarra gruesa'>Márgen superior</h5>
     <h6 class='pizarra gruesa'>Margen superior estándar</h6>
     <div class='fondo-gris-claro'>
-        <img class='margen-sup fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+        <img class='margen-sup fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
         <p class='fondo-gris-claro'><span class='sin-margen fondo-blanco ancho-completo'><b>margen-sup estándar</b> <span class='verde'>(md) = 45px o 3em</span></span><br><span class='sin-margen fondo-blanco ancho-completo'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span></p>
     </div>
 
@@ -116,36 +210,36 @@ intro: Texto sobre versatilidad
             <div class='col-md-3 col-sm-6 col-xs-12 margen-inf'>
                 <h6 class='pizarra gruesa'>Margen superior xs</h6>
                 <div class='fondo-gris-claro'>
-                    <img class='margen-sup-xs fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
-                    <img class='margen-sup-xs fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
-                    <img class='margen-sup-xs fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-xs fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-xs fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-xs fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
                 </div>
                     <p class='fondo-gris-claro'><span class='sin-margen fondo-blanco ancho-completo margen-sup-sm'><b>margen-sup-xs</b><span class='verde'>(xs) = 5px o 0,33333333em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.  </span></p>
             </div>
             <div class='col-md-3 col-sm-6 col-xs-12 margen-inf'>
                 <h6 class='pizarra gruesa'>Margen superior sm</h6>
                 <div class='fondo-gris-claro'>
-                    <img class='margen-sup-sm fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
-                    <img class='margen-sup-sm fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
-                    <img class='margen-sup-sm fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-sm fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-sm fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-sm fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
                 </div>
                     <p class='fondo-gris-claro'><span class='sin-margen fondo-blanco ancho-completo margen-sup-sm'><b>margen-sup-sm</b><span class='verde'>(sm) = 20px o 1,33333333em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span></p>
             </div>
             <div class='col-md-3 col-sm-6 col-xs-12 margen-inf'>
                 <h6 class='pizarra gruesa'>Margen superior md</h6>
                 <div class='fondo-gris-claro'>
-                    <img class='margen-sup-md fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
-                    <img class='margen-sup-md fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
-                    <img class='margen-sup-md fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-md fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-md fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-md fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
                 </div>
                     <p class='fondo-gris-claro'><span class='sin-margen fondo-blanco ancho-completo'><b>margen-sup-md</b> <span class='verde'>(md) = 45px o 3em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.</span></p>
             </div>
             <div class='col-md-3 col-sm-6 col-xs-12 margen-inf'>
                 <h6 class='pizarra gruesa'>Margen superior lg</h6>
                 <div class='fondo-gris-claro'>
-                    <img class='margen-sup-lg fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
-                    <img class='margen-sup-lg fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
-                    <img class='margen-sup-lg fondo-gris-claro' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-lg fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-lg fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-lg fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
                 </div>
                     <p><span class='sin-margen fondo-blanco ancho-completo margen-sup-lg'><b>margen-sup-lg</b><br> <span class='verde'>(lg) = 60px o 4em</span></span><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.</span></p>
             </div>
@@ -236,8 +330,8 @@ intro: Texto sobre versatilidad
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum. Mauris elementum arcu a nisl porta, eget sollicitudin diam accumsan. Phasellus mollis cursus vehicula. Mauris placerat vestibulum leo eu facilisis. Etiam sagittis blandit lectus, at hendrerit nunc egestas ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div class='col-md-5 col-sm-9 col-xs-12'>
-            <img alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
-            <blockquote class='pie-de-foto'>Pie de imagen shiwanson</blockquote>
+            <img class='w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+            <blockquote class='pie-de-foto'>Pie de imagen</blockquote>
         </div>
     </div>
     <div class='fila'>
@@ -376,206 +470,26 @@ intro: Texto sobre versatilidad
     
     </div> <!--fin de tab-pane-->
 <div class="tab-pane fade" id="maquetas">
-    <!-- Metabarra -->
-    <div class='fila margen-inf-xs'>
-    <div id='meta-barra'>
-   
-        <ul>
-            <li class='en-linea'><a class='xs rojo sans relleno-der'>e[ad]</a></li>
-            <li class='en-linea'><a class='xs blanco sans relleno-der'>Wiki Casiopea</a></li>
-            <li class='en-linea'><a class='xs blanco sans relleno-der'>Estorninos</a></li>
-            <li class='en-linea'><a class='xs blanco sans relleno-der'>Travesías</a></li>
-        </ul>
-    </div>
-    </div>
-   
-    <div class='fila'>
-    <img class='ancho-lg' alt="Third slide" src="{{ site.baseurl }}/img/logo-ead-pucv.png">
-    <!-- Dropdowns -->
-        <ul class="nav nav-pills ">
-          <li class="dropdown">
-            <a href="#" data-toggle="dropdown" role="button" id="drop4" class="dropdown-toggle negro">Escuela<b class="caret"></b></a>
-                <ul aria-labelledby="drop4" role="menu" class="dropdown-menu" id="menu1">
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Una cosa</a></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Otra cosa</a></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Relevancia de tercera cosa</a></li>
-                  <li class="divider" role="presentation"></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Algo más</a></li>
-                </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Carreras & Postgrados<b class="caret"></b></a>
-                <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu2">
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Action</a></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Another action</a></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Something else here</a></li>
-                  <li class="divider" role="presentation"></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Separated link</a></li>
-                </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Estudiantes<b class="caret"></b></a>
-                <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Action</a></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Another action</a></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Something else here</a></li>
-                  <li class="divider" role="presentation"></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Separated link</a></li>
-                </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Admisión<b class="caret"></b></a>
-                <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Action</a></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Another action</a></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Something else here</a></li>
-                  <li class="divider" role="presentation"></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Separated link</a></li>
-                </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Amereida<b class="caret"></b></a>
-                <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Action</a></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Another action</a></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Something else here</a></li>
-                  <li class="divider" role="presentation"></li>
-                  <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Separated link</a></li>
-                </ul>
-          </li>
-        </ul>
-    <hr>
-    </div>
-
-    <div class='fila'>
-    <ul class='sin-relleno margen-inf-xs' id="breadcrumb">
-        <li><a><i class='icn icn-hogar'></i></a></li>
-        <li><a>Carreras y postgrados</a></li>
-        <li><a>Arquitectura</a></li>
-    </ul>
-    <!-- Títutlo -->
-    <h1>Arquitectura</h1>
-    <!-- Carrousel -->
-    <div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
-      <ol class="carousel-indicators">
-        <li data-slide-to="0" data-target="#carousel-example-generic" class="active"></li>
-        <li data-slide-to="1" data-target="#carousel-example-generic"></li>
-        <li data-slide-to="2" data-target="#carousel-example-generic"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item">
-          <img alt="First slide" src="{{ site.baseurl }}/img/manto-6.jpg">
-        </div>
-        <div class="item active">
-          <img alt="Second slide" src="{{ site.baseurl }}/img/torneo2.jpg">
-        </div>
-        <div class="item">
-          <img alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
-        </div>
-      </div>
-      <a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
-        <span class="icn icn-nav-izq"></span>
-      </a>
-      <a data-slide="next" href="#carousel-example-generic" class="right carousel-control">
-        <span class="icn icn-nav-der"></span>
-      </a>
-    </div>
-
+  
 </div>
-
-<div class='pag'>
-<div class='fila'>
-    <div class='col-md-4 col-sm-4'>
-        <div id='ead-sticky'>
-          <ul class='sin-relleno texto-derecha'>
-              <li class="relleno-inf-xs"><a class='sans pizarra' href='#'>Estudiar arquitectura en la e[ad]</a></li>
-              <li class="relleno-inf-xs"><a class='sans pizarra' href='#'>Perfil del egresado</a></li>
-              <li class="relleno-inf-xs"><a class='sans pizarra' href='#'>Competencias fundamentales</a></li>
-              <li class="relleno-inf-xs"><a class='sans pizarra' href='#'>Objetivos educacionales</a></li>
-          </ul>
-        </div>
+<h4 class='pizarra gruesa'>Estilos de párrafo</h4>
+<div class="h-entry">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel consectetur mauris. Vivamus id orci maximus, feugiat sapien a, interdum massa. Sed et facilisis dolor. Mauris velit nunc, eleifend vel molestie et, luctus eget justo. Ut semper diam turpis, non rutrum lorem scelerisque in. Suspendisse potenti. In hac habitasse platea dictumst. Duis id justo at risus porta feugiat lacinia molestie turpis. Mauris viverra et nibh condimentum tincidunt. Suspendisse sagittis congue dapibus. Integer tempus lorem ac tellus tincidunt egestas. Nunc nec placerat nisi, vel tincidunt leo.</p>
+    <img src="{{ site.baseurl }}/img/manto-5.jpg" alt="versatilidad de imagen">
+    <blockquote>Imagen ancho completo de su elemento padre</blockquote>
+    <p>Vestibulum ultrices congue placerat. Donec at molestie ex. Vivamus sagittis tellus et leo fermentum, et sollicitudin nunc hendrerit. Maecenas nec posuere ante. Donec ullamcorper dui non enim viverra tempor. Nunc porttitor orci sapien, congue dictum metus porttitor nec. Donec consectetur commodo finibus.</p>
+    <div class="prev-imagen md">
+        <img class='ancho-maximo'src="{{ site.baseurl }}/img/manto-5.jpg" alt="versatilidad de imagen">
     </div>
-    <div class='col-md-8 col-sm-4'>
-        <h2 class='rojo xs'>Estudiar arquitectura en la e[ad]</h2>
-        <p>La misión de la Escuela de Arquitectura y Diseño es cultivar, el arte de la Arquitectura, del Diseño Gráfico y del Diseño Industrial por medio de la creación y transmisión del conocimiento del oficio de estas artes, formar arquitectos y diseñadores con la vocación de concebir obras que den cabida y expresión al habitar humano.</p>
-
-        <h2 class='rojo xs'>Perfil del egresado</h2>
-        <p>Un arquitecto que conciba la arquitectura como un arte al servicio del hombre. Que desde una visión poética de su contexto y una alta capacidad de reflexión sean capaces con creatividad de proponer, proyectar y construir obras arquitectónicas y urbanas que de un modo innovador en el arte y en la técnica den cabida y expresión al habitar humano, satisfaciendo necesidades de la sociedad en las distintas escalas- edificio, ciudad, continente- y magnitudes del proyecto arquitectónico y urbano.
-        Las competencias fundamentales, disciplinares y profesionales de este arquitecto son aquellas que permiten que sus proyectos sean un consecuente paso de la observación arquitectónica a la forma construida.</p>
-
-        <h2 class='rojo xs'>Competencias fundamentales</h2>
-        <p>Se propicia una educación integral, que favorece el crecimiento armónico de todas las dimensiones que constituyen la persona humana, abordados tanto desde la perspectiva intelectual como vivencial, de modo de promover la coherencia entre el conocimiento, la verdad y la vida. Se privilegian valores que sustentan una integridad y competencias humanísticas que permiten acceder al método de estudio que propone la carrera basado principalmente en la Observación dibujada, medida y escrita que es el modo de comprender e interactuar con el entorno.</p>
-
-        <ol class='margen-inf'>
-            <li  class='sans'>Valores de apertura a la trascendencia; libertad; solidaridad; respeto y aceptación de la diversidad; y compromiso ético y de responsabilidad social.</li>
-            <li  class='sans'>Capacidad para observar la realidad circundante, la ciudad se origina y se desarrolla, a partir de la observación directa de su realidad.</li>
-        </ol>
-
-        <h4 class='rojo xs margen-inf'>Competencias disciplinares</h4>
-
-        <ol class='margen-inf'>
-            <li class='sans'>Competencias que permiten al arquitecto a dar existencia física a la formulación del paso de la observación a la forma.</li>
-            <li class='sans'>Capacidad para integrar los aspectos poéticos, sociales y físicos presentes en los lugares y casos a abordar.</li>
-            <li class='sans'>Capacidad creativa y de maestría formal, que le permita innovar en la forma arquitectónica del espacio habitable y su contexto.</li>
-            <li class='sans'>Capacidad analítica, de reflexión y de intervención social que le permita realizar planes y programas apropiados en una correcta relación lugar y contexto..</li>
-        </ol>
-
-        <h2 class='rojo xs margen-inf'>Objetivos educacionales</h2>
-
-        <p>Los objetivos educacionales que transmiten el oficio de dar cabida al habitar humano construyen simultáneamente tres magnitudes del arte arquitectónico:</p>
-
-        <ul class='margen-inf'>
-            <li class='sans'><b>Magnitud y lenguaje</b></li>
-        </ul>
-
-        <p>La magnitud de un lenguaje que funda la vocación desde la relación Poesía y Arquitectura. Es una experiencia de la Poesía de Amereida, de la Música de las Matemáticas, del Taller de América, los cursos de matemáticas y de Cultura Religiosa. Y que como experiencia de los Originales se ejerce en todo concebir de los talleres y de la Escuela en general.</p>
-
-        <ul class='margen-inf'>
-            <li class='sans'><b>Vida, Trabajo y Estudio</b></li>
-        </ul>
-
-        <p> un régimen que funda la convergencia de la vida, el trabajo y el estudio. Es una experiencia del acto del habitar y que se lleva a cabo en el “Taller”, en la casa de la Escuela, en la Ciudad Abierta, en las Travesías: experiencia en su sentido histórico en el curso de “Presentación de la Arquitectura”, en su sentido corporal en el curso de “Cultura del Cuerpo” y en un sentido ejecutorio de las ciencias y las técnicas en los cursos de “Construcción” y que se ejerce en toda realización del alumno en la Escuela.</p>
-
-        <ul class='margen-inf'>
-            <li class='sans'><b>Magnitud de un Instrumento</b></li>
-        </ul>
-
-        <p>Se trata de tres magnitudes que generan gratuitamente una cuarta: de celebración. Ella arma, para sí misma e invitados, lecturas poéticas, conciertos, exposiciones de esculturas, cine de vanguardia, comidas para dialogar y en donde se madura la fidelidad al origen de todas las magnitudes. Estos objetivos devienen en propósitos, que fueron planteados por primera vez en 1952, cuando la Escuela de Arquitectura se refunda. Momento inicial en que los Arquitectos exponen en formulación y el poeta abre el entusiasmo de la fidelidad. Desde el comienzo de la Escuela, hace ya 50 años, no ha habido modificaciones en cuanto a la formulación inicial y a tener conciencia de fidelidad. Sí ha habido en cuanto a su dilatarse en profundizaciones y ampliaciones. Así, específicamente en los talleres y en la Escuela en general.</p>
-
-        <blockquote><i>El Taller es así un ámbito de estudio colectivo en que cada alumno fructifica en su trabajo individual, por medio de un camino creativo en común que considera el desarrollo individual de cada cual.</i></blockquote>
-
-        <p>Este modelo conduce a ciertas capacidades que definen el perfil de un egresado de arquitectura en esta Escuela. Este perfil se logra mediante la transmisión de los conocimientos y herramientas para el logro de un conjunto de competencias genéricas de formación fundamental, disciplinares y profesionales que se dan en la relación entre ciclos del proyecto formativo y las áreas de formación[1]. El concepto de ciclo corresponde a la estructura temporal de la carrera, seis años que se dividen en cuatro ciclos:Ciclo de inicio en primer año; ciclo de Formación, Segundo y tercer año; Tercer ciclo disciplinar,  cuarto y quinto año; y cuarto ciclo profesionalizante, correspondiente a la Titulación. El concepto de área corresponde a las áreas formativas las que se constituyen en columnas vertebrales de la carrera estructurando los ciclos</p>
-
-        <h2 class='rojo xs'>Competencias Genéricas de formación fundamental</h2>
-        <p>Lo fundamental es tener presente las magnitudes del arte arquitectónico descritas anteriormente desde dichas magnitudes traducidas como competencias se vinculan más bien al concepto de área y se van logrando a lo largo de la carrera implícitas concretamente en el ámbito de estudio sostenido académicamente por aquellas dimensiones que construyen en los estudiantes el vinculo entre vida, trabajo y estudio. Dicho vinculo se da principalmente en las Travesías, en la Ciudad Abierta y en la posibilidad de construcción de obras que se da en el Taller Arquitectónico, es decir, se dan mediante experiencias sensibles. La contextualización de esas experiencias se da en ciertos ejes estructurales como lo son el Taller de Amereida, Cultura del Cuerpo, Matemáticas y estudios generales. Cabe mencionar que el conjunto de competencias genéricas de formación fundamental han sido estudiadas por un grupo de expertos de la PUCV para determinar ciertas competencias claves y transversales al perfil de un egresado de la PUCV</p>
-
-        <ul class='margen-inf'>
-            <li class='sans'><b>Capacidad de observación:</b> Capacidad para observar la realidad circundante, la ciudad se origina y se desarrolla, a partir de esa observación directa de la realidad.</li>
-            <li class='sans'><b>Conocer reflexivamente:</b> Reflexionar sobre los propios planes de acción, los propios conocimientos, y la relación de ambos con las demás personas que intervienen en la situación. Se trata de un metaconocimiento, es decir un conjunto de conocimientos que permiten la reflexión acerca de los propios conocimientos.</li>
-            <li class='sans'><b>Capacidad crítica, autocrítica y propositiva:</b> Analizar, examinar y juzgar de manera consciente el objeto de estudio integrando las consideraciones relevantes y generando una opinión fundada (crítica) y de realizar esas acciones sobre sí mismo (autocrítica).</li>
-        </ul>
+    <blockquote>Imagen + contenedor tamaño medio</blockquote>
+    <p>Phasellus quis erat eget mauris volutpat ultricies. Nam sed commodo turpis. Sed aliquam lacinia malesuada. Duis quis venenatis mauris, aliquam scelerisque elit. Pellentesque hendrerit, lorem id tempus accumsan, eros est volutpat dolor, vel gravida libero tortor in nibh. Morbi tellus ipsum, pulvinar eu nisl id, blandit congue tortor. Suspendisse ac tellus enim.</p>
+    <div class="prev-imagen md">
+        <img class='ancho-maximo centrado-vertical'src="{{ site.baseurl }}/img/manto-5.jpg" alt="versatilidad de imagen">
     </div>
-</div>
-</div>
-<hr>
-    <h4 class='pizarra gruesa'>Estilos de párrafo</h4>
-    <div class="h-entry">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel consectetur mauris. Vivamus id orci maximus, feugiat sapien a, interdum massa. Sed et facilisis dolor. Mauris velit nunc, eleifend vel molestie et, luctus eget justo. Ut semper diam turpis, non rutrum lorem scelerisque in. Suspendisse potenti. In hac habitasse platea dictumst. Duis id justo at risus porta feugiat lacinia molestie turpis. Mauris viverra et nibh condimentum tincidunt. Suspendisse sagittis congue dapibus. Integer tempus lorem ac tellus tincidunt egestas. Nunc nec placerat nisi, vel tincidunt leo.</p>
-        <img src="{{ site.baseurl }}/img/manto-5.jpg" alt="versatilidad de imagen">
-        <blockquote>Imagen ancho completo de su elemento padre</blockquote>
-        <p>Vestibulum ultrices congue placerat. Donec at molestie ex. Vivamus sagittis tellus et leo fermentum, et sollicitudin nunc hendrerit. Maecenas nec posuere ante. Donec ullamcorper dui non enim viverra tempor. Nunc porttitor orci sapien, congue dictum metus porttitor nec. Donec consectetur commodo finibus.</p>
-        <div class="prev-imagen md">
-            <img class='ancho-maximo'src="{{ site.baseurl }}/img/manto-5.jpg" alt="versatilidad de imagen">
-        </div>
-        <blockquote>Imagen + contenedor tamaño medio</blockquote>
-        <p>Phasellus quis erat eget mauris volutpat ultricies. Nam sed commodo turpis. Sed aliquam lacinia malesuada. Duis quis venenatis mauris, aliquam scelerisque elit. Pellentesque hendrerit, lorem id tempus accumsan, eros est volutpat dolor, vel gravida libero tortor in nibh. Morbi tellus ipsum, pulvinar eu nisl id, blandit congue tortor. Suspendisse ac tellus enim.</p>
-        <div class="prev-imagen md">
-            <img class='ancho-maximo centrado-vertical'src="{{ site.baseurl }}/img/manto-5.jpg" alt="versatilidad de imagen">
-        </div>
-        <blockquote>Imagen + contenedor tamaño medio + centrado vertical de la imagen</blockquote>
-        <p>Vestibulum id felis eros. Proin condimentum accumsan hendrerit. Ut commodo, lorem id facilisis dignissim, nibh mi interdum enim, id eleifend nibh magna et nulla. Curabitur efficitur feugiat tellus, at ornare sem fermentum id. Aliquam a tristique felis, scelerisque lacinia est. Fusce pharetra semper tempor. Duis interdum viverra enim, vitae consequat est hendrerit vel. Donec dui erat, commodo at laoreet in, suscipit eget libero. Suspendisse elementum, risus vel sagittis elementum, lectus ante viverra lectus, in ultrices felis leo rhoncus nisl. In at diam at augue porttitor efficitur in quis massa. Fusce vel orci vestibulum, accumsan ante suscipit, rutrum augue. Cras posuere laoreet lectus, eget commodo libero condimentum at. Etiam volutpat nibh ac ullamcorper tincidunt. Aenean accumsan, metus vel efficitur fringilla, risus enim facilisis lorem, ut congue tellus enim dignissim libero. Duis ut euismod risus, et blandit nisi. Pellentesque cursus condimentum ex, sit amet ornare erat ultrices sit amet.</p>
-        <p>Sed sagittis enim et elementum ullamcorper. Nam blandit augue nec massa efficitur elementum. Nulla tempor ullamcorper neque vel tempor. Proin porttitor nisl eget condimentum lobortis. Proin venenatis ligula ut ultrices consequat. Suspendisse tincidunt eu sem at fringilla. Cras non sem magna. Quisque eget tincidunt sem.</p>
-    </div>           
+    <blockquote>Imagen + contenedor tamaño medio + centrado vertical de la imagen</blockquote>
+    <p>Vestibulum id felis eros. Proin condimentum accumsan hendrerit. Ut commodo, lorem id facilisis dignissim, nibh mi interdum enim, id eleifend nibh magna et nulla. Curabitur efficitur feugiat tellus, at ornare sem fermentum id. Aliquam a tristique felis, scelerisque lacinia est. Fusce pharetra semper tempor. Duis interdum viverra enim, vitae consequat est hendrerit vel. Donec dui erat, commodo at laoreet in, suscipit eget libero. Suspendisse elementum, risus vel sagittis elementum, lectus ante viverra lectus, in ultrices felis leo rhoncus nisl. In at diam at augue porttitor efficitur in quis massa. Fusce vel orci vestibulum, accumsan ante suscipit, rutrum augue. Cras posuere laoreet lectus, eget commodo libero condimentum at. Etiam volutpat nibh ac ullamcorper tincidunt. Aenean accumsan, metus vel efficitur fringilla, risus enim facilisis lorem, ut congue tellus enim dignissim libero. Duis ut euismod risus, et blandit nisi. Pellentesque cursus condimentum ex, sit amet ornare erat ultrices sit amet.</p>
+    <p>Sed sagittis enim et elementum ullamcorper. Nam blandit augue nec massa efficitur elementum. Nulla tempor ullamcorper neque vel tempor. Proin porttitor nisl eget condimentum lobortis. Proin venenatis ligula ut ultrices consequat. Suspendisse tincidunt eu sem at fringilla. Cras non sem magna. Quisque eget tincidunt sem.</p>
+</div>           
 
 <h3 class="sm color"> Artículo reciente</h3>
 <p class='resumen'>

@@ -98,8 +98,9 @@ nav {
     padding: @cuerpo *.7 0 0 0;
     
     img {
+      width: 20px;
       float: left;
-      margin: -@cuerpo *.1 1ex 0 0;
+      margin: @cuerpo * .3 / 2;
     }
 
     h6{
@@ -119,7 +120,7 @@ nav {
 
     img{
       padding: 0;
-      margin: -2px 5px 0px 0px;
+      margin: 2px 4px 0px 0px;
       display: block;
     }
   } 
@@ -584,7 +585,8 @@ footer{
       .nav-rotulos {
 
         li a {
-          margin: 17px 9px;
+          margin: 0px 16px;
+          padding: 14px 0;
         }
      }        
   }
@@ -649,4 +651,22 @@ footer{
 
 // Large screen / wide desktop
 @media (min-width: @screen-lg){
+
+    // logo 
+
+  .logo-pyxis {
+    
+    a{
+      img {
+        width: 1.4vw;
+      }
+    }
+    
+    &.footer {
+
+      img{
+        width: 1.4vw;
+      }
+    } 
+  }
 }
