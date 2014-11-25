@@ -20,7 +20,7 @@ intro: Texto sobre versatilidad
         </div>
     </div>
 
-    <div class="tab-content">
+    <div class="tab-content margen-sup">
     <div class="tab-pane fade in active" id="parametros">
         <a class='btn btn-alerta' href='{{ site.baseurl }}/maquetas/page'>Ir a maquetas</a>
 

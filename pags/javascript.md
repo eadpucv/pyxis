@@ -24,7 +24,7 @@ intro: Texto sobre javascript
     </div>
 
     <!-- Tab panes -->
-    <div class="tab-content">
+    <div class="tab-content margen-sup">
       <div class="tab-pane fade in active" id="modal">
         <h4 class='pizarra gruesa'>Jquery</h4>
            <p>Los javascript se utilizan para auxiliar en la interacción entre el usuario y el sistema. Para utilizarlo, es necesario incorporar archivos que contengan los script y establecer una conexión entre elementos de HTML y el script inscrito en el archivo .js</p>

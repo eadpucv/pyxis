@@ -16,7 +16,7 @@ intro: Texto sobre Iconografía
             </ul>
         </div>
     </div>
-    <div class="tab-content">
+    <div class="tab-content margen-sup">
         <div class="tab-pane fade in active" id="stampa-regular">
         <h4 class='pizarra gruesa'>Stampa v3.0.0</h4>
             <p>Stampa es una familia tipográfica de íconos diseñada para trabajar con Pyxis.

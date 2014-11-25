@@ -24,7 +24,7 @@ link-8: Anidación y offset
         </div>
         <!-- contenido en tabs -->
         
-        <div class="tab-content">
+        <div class="tab-content margen-sup">
             <div class="tab-pane fade in active" id="sintaxis">
                 <h4 class='pizarra gruesa'>Sintaxis de estructura</h4>
                 <p>Hay que comprender que las columnas traen una separación interna (gutter) que hace que los bloques estén uno al lado de otro pero sus contenidos tengan una separación de 30px. De esta forma, todos los contenidos dentro de las columnas estarán indentados con 15px hacia adentro. Esto va definiendo la alineación vertical de la página.</p>
