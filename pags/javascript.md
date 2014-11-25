@@ -280,8 +280,355 @@ intro: Texto sobre javascript
         <div id="ver-codigo-carrusel" class="collapse pag-javascript">  
           <h6>Archivos necesarios</h6>
           <code class='margen-inf-sm'>
-            &lt;script src="js/jquery.js">&lt;/script>
-            &lt;script src="js/carousel.js">&lt;/script>
+&lt;script src="js/jquery.js">&lt;/script>
+&lt;script src="js/carousel.js">&lt;/script>
+          </code>
+          <h6>Codigo</h6>
+          <code>
+&lt;div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
+  &lt;ol class="carousel-indicators">
+    &lt;li data-slide-to="0" data-target="#carousel-example-generic" class="active">&lt;/li>
+    &lt;li data-slide-to="1" data-target="#carousel-example-generic">&lt;/li>
+    &lt;li data-slide-to="2" data-target="#carousel-example-generic">&lt;/li>
+  &lt;/ol>
+  &lt;div class="carousel-inner">
+    &lt;div class="item">
+      &lt;img alt="First slide" src="{{ site.baseurl }}/img/manto-6.jpg">
+    &lt;/div>
+    &lt;div class="item active">
+      &lt;img alt="Second slide" src="{{ site.baseurl }}/img/torneo2.jpg">
+    &lt;/div>
+    &lt;div class="item">
+      &lt;img alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+    &lt;/div>
+  &lt;/div>
+  &lt;a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
+    &lt;span class="icn icn-nav-izq">&lt;/span>
+  &lt;/a>
+  &lt;a data-slide="next" href="#carousel-example-generic" class="right carousel-control">
+    &lt;span class="icn icn-nav-der">&lt;/span>
+  &lt;/a>
+&lt;/div>
+          </code>
+        </div>
+        <hr class='invisible'>
+        <h4 class='pizarra gruesa'>Carousel xs / Menudo</h4>
+        <!-- Carrousel --> 
+        <div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
+          <ol class="carousel-indicators">
+            <li data-slide-to="0" data-target="#carousel-example-generic" class="active"></li>
+            <li data-slide-to="1" data-target="#carousel-example-generic"></li>
+            <li data-slide-to="2" data-target="#carousel-example-generic"></li>
+          </ol>
+          <div class="carousel-inner">
+            <!-- item (la clase 'car-sm' corresponde al height de visibilidad) -->
+            <div class="item active car-xs">
+              <img  alt="First slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/10/DSC_1016-1400x927.jpg">
+              <!-- pie de imagen carousel -->
+              <div class='fondo-gris-blanco absoluto abs-inf bloque ancho-completo al-frente borde sup-lineal-xs'>
+                <p class='sin-margen relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Presentación libros Triángulo de Pascal y Estructura Esencial</p>
+              </div>
+              <div class='oculto-sm oculto-xs'>
+                <a href="{{ site.baseurl }}/maquetas/post">
+                  <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque ancho-lg alto-completo relleno'>
+                    <h2 class='fino'>Presentación libros Triángulo de Pascal y Estructura Esencial</h2>
+                    <p class='sin-margen relleno-vertical-xs'></i>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem, ambos arquitectos y académicos de la Escuela de Arquitectura y Diseño.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="item car-xs">
+              <img alt="Second slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/11/DSC_1170-1400x927.jpg">
+              <!-- pie de imagen carousel -->
+              <div class='fondo-gris-blanco absoluto abs-inf bloque ancho-completo al-frente borde sup-lineal-xs'>
+                <p class='sin-margen relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</p>
+              </div>
+              <div class='oculto-sm oculto-xs'>
+                <a href='#'>
+                  <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque ancho-lg alto-completo relleno'>
+                    <h2 class='fino'>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</h2>
+                    <p class='sin-margen relleno-vertical-xs'></i>La Escuela de Arquitectura y Diseño estuvo presente en la actividad mediante dos proyectos que se adjudicaron el fondo extraordinario Ideas y Manos para Valparaíso</p>
+                  </div>
+                </a>
+            </div>
+            </div>
+            <!-- item -->
+            <div class="item car-xs">
+              <img alt="Third slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/10/2014-10-04-14.49.18-1400x785.jpg">
+              <!-- pie de imagen carousel -->
+              <div class='fondo-gris-blanco absoluto abs-inf bloque ancho-completo al-frente borde sup-lineal-xs'>
+                <p class='sin-margen relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Diseño Gráfico organiza taller abierto para alumnos interesados en la carrera</p>
+              </div>
+              <div class='oculto-sm oculto-xs'>
+                <a href='#'>
+                  <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque ancho-lg alto-completo relleno'>
+                    <h2 class='fino'>Diseño gráfico organiza taller abierto para alumnos interesadsos en la carrera</h2>
+                    <p class='sin-margen relleno-vertical-xs'></i>A los alumnos indicados para el taller se les permitirá buscar las opciones diferentes si presentan noticiass sobre Valparaíso de los arquitectos Mauricio Puentes y Juan Purcell en FILSA 2014</p>
+                  </div>
+                </a>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class='invisible'>
+        <h4 class='pizarra gruesa'>Carousel sm / Pequeño</h4>
+        <!-- Carrousel --> 
+        <div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
+          <ol class="carousel-indicators">
+            <li data-slide-to="0" data-target="#carousel-example-generic" class="active"></li>
+            <li data-slide-to="1" data-target="#carousel-example-generic"></li>
+            <li data-slide-to="2" data-target="#carousel-example-generic"></li>
+          </ol>
+          <div class="carousel-inner">
+            <!-- item (la clase 'car-sm' corresponde al height de visibilidad) -->
+            <div class="item active car-sm">
+              <img  alt="First slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/10/DSC_1016-1400x927.jpg">
+              <!-- pie de imagen carousel -->
+              <div class='fondo-gris-blanco absoluto abs-inf bloque ancho-completo al-frente borde sup-lineal-xs'>
+                <p class='sin-margen relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Presentación libros Triángulo de Pascal y Estructura Esencial</p>
+              </div>
+              <div class='oculto-sm oculto-xs'>
+                <a href="{{ site.baseurl }}/maquetas/post">
+                  <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque ancho-lg alto-completo relleno'>
+                    <h2 class='fino'>Presentación libros Triángulo de Pascal y Estructura Esencial</h2>
+                    <p class='sin-margen relleno-vertical-xs'></i>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem, ambos arquitectos y académicos de la Escuela de Arquitectura y Diseño.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="item car-sm">
+              <img alt="Second slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/11/DSC_1170-1400x927.jpg">
+              <!-- pie de imagen carousel -->
+              <div class='fondo-gris-blanco absoluto abs-inf bloque ancho-completo al-frente borde sup-lineal-xs'>
+                <p class='sin-margen relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</p>
+              </div>
+              <div class='oculto-sm oculto-xs'>
+                <a href='#'>
+                  <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque ancho-lg alto-completo relleno'>
+                    <h2 class='fino'>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</h2>
+                    <p class='sin-margen relleno-vertical-xs'></i>La Escuela de Arquitectura y Diseño estuvo presente en la actividad mediante dos proyectos que se adjudicaron el fondo extraordinario Ideas y Manos para Valparaíso</p>
+                  </div>
+                </a>
+            </div>
+            </div>
+            <!-- item -->
+            <div class="item car-sm">
+              <img alt="Third slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/10/2014-10-04-14.49.18-1400x785.jpg">
+              <!-- pie de imagen carousel -->
+              <div class='fondo-gris-blanco absoluto abs-inf bloque ancho-completo al-frente borde sup-lineal-xs'>
+                <p class='sin-margen relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Diseño Gráfico organiza taller abierto para alumnos interesados en la carrera</p>
+              </div>
+              <div class='oculto-sm oculto-xs'>
+                <a href='#'>
+                  <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque ancho-lg alto-completo relleno'>
+                    <h2 class='fino'>Diseño gráfico organiza taller abierto para alumnos interesadsos en la carrera</h2>
+                    <p class='sin-margen relleno-vertical-xs'></i>A los alumnos indicados para el taller se les permitirá buscar las opciones diferentes si presentan noticiass sobre Valparaíso de los arquitectos Mauricio Puentes y Juan Purcell en FILSA 2014</p>
+                  </div>
+                </a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-carrusel">ver código</a> 
+        <div id="ver-codigo-carrusel" class="collapse pag-javascript">  
+          <h6>Archivos necesarios</h6>
+          <code class='margen-inf-sm'>
+&lt;script src="js/jquery.js">&lt;/script>
+&lt;script src="js/carousel.js">&lt;/script>
+          </code>
+          <h6>Codigo</h6>
+          <code>
+&lt;div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
+  &lt;ol class="carousel-indicators">
+    &lt;li data-slide-to="0" data-target="#carousel-example-generic" class="active">&lt;/li>
+    &lt;li data-slide-to="1" data-target="#carousel-example-generic">&lt;/li>
+    &lt;li data-slide-to="2" data-target="#carousel-example-generic">&lt;/li>
+  &lt;/ol>
+  &lt;div class="carousel-inner">
+    &lt;div class="item">
+      &lt;img alt="First slide" src="{{ site.baseurl }}/img/manto-6.jpg">
+    &lt;/div>
+    &lt;div class="item active">
+      &lt;img alt="Second slide" src="{{ site.baseurl }}/img/torneo2.jpg">
+    &lt;/div>
+    &lt;div class="item">
+      &lt;img alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+    &lt;/div>
+  &lt;/div>
+  &lt;a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
+    &lt;span class="icn icn-nav-izq">&lt;/span>
+  &lt;/a>
+  &lt;a data-slide="next" href="#carousel-example-generic" class="right carousel-control">
+    &lt;span class="icn icn-nav-der">&lt;/span>
+  &lt;/a>
+&lt;/div>
+          </code>
+        </div>
+        <hr class='invisible'>
+        <h4 class='pizarra gruesa'>Carousel md / Mediano</h4>
+        <!-- Carrousel --> 
+        <div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
+          <ol class="carousel-indicators">
+            <li data-slide-to="0" data-target="#carousel-example-generic" class="active"></li>
+            <li data-slide-to="1" data-target="#carousel-example-generic"></li>
+            <li data-slide-to="2" data-target="#carousel-example-generic"></li>
+          </ol>
+          <div class="carousel-inner">
+            <!-- item (la clase 'car-sm' corresponde al height de visibilidad) -->
+            <div class="item active car-md">
+              <img  alt="First slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/10/DSC_1016-1400x927.jpg">
+              <!-- pie de imagen carousel -->
+              <div class='fondo-gris-blanco absoluto abs-inf bloque ancho-completo al-frente borde sup-lineal-xs'>
+                <p class='sin-margen relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Presentación libros Triángulo de Pascal y Estructura Esencial</p>
+              </div>
+              <div class='oculto-sm oculto-xs'>
+                <a href="{{ site.baseurl }}/maquetas/post">
+                  <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque ancho-lg alto-completo relleno'>
+                    <h2 class='fino'>Presentación libros Triángulo de Pascal y Estructura Esencial</h2>
+                    <p class='sin-margen relleno-vertical-xs'></i>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem, ambos arquitectos y académicos de la Escuela de Arquitectura y Diseño.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="item car-md">
+              <img alt="Second slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/11/DSC_1170-1400x927.jpg">
+              <!-- pie de imagen carousel -->
+              <div class='fondo-gris-blanco absoluto abs-inf bloque ancho-completo al-frente borde sup-lineal-xs'>
+                <p class='sin-margen relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</p>
+              </div>
+              <div class='oculto-sm oculto-xs'>
+                <a href='#'>
+                  <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque ancho-lg alto-completo relleno'>
+                    <h2 class='fino'>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</h2>
+                    <p class='sin-margen relleno-vertical-xs'></i>La Escuela de Arquitectura y Diseño estuvo presente en la actividad mediante dos proyectos que se adjudicaron el fondo extraordinario Ideas y Manos para Valparaíso</p>
+                  </div>
+                </a>
+            </div>
+            </div>
+            <!-- item -->
+            <div class="item car-md">
+              <img alt="Third slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/10/2014-10-04-14.49.18-1400x785.jpg">
+              <!-- pie de imagen carousel -->
+              <div class='fondo-gris-blanco absoluto abs-inf bloque ancho-completo al-frente borde sup-lineal-xs'>
+                <p class='sin-margen relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Diseño Gráfico organiza taller abierto para alumnos interesados en la carrera</p>
+              </div>
+              <div class='oculto-sm oculto-xs'>
+                <a href='#'>
+                  <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque ancho-lg alto-completo relleno'>
+                    <h2 class='fino'>Diseño gráfico organiza taller abierto para alumnos interesadsos en la carrera</h2>
+                    <p class='sin-margen relleno-vertical-xs'></i>A los alumnos indicados para el taller se les permitirá buscar las opciones diferentes si presentan noticiass sobre Valparaíso de los arquitectos Mauricio Puentes y Juan Purcell en FILSA 2014</p>
+                  </div>
+                </a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-carrusel">ver código</a> 
+        <div id="ver-codigo-carrusel" class="collapse pag-javascript">  
+          <h6>Archivos necesarios</h6>
+          <code class='margen-inf-sm'>
+&lt;script src="js/jquery.js">&lt;/script>
+&lt;script src="js/carousel.js">&lt;/script>
+          </code>
+          <h6>Codigo</h6>
+          <code>
+&lt;div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
+  &lt;ol class="carousel-indicators">
+    &lt;li data-slide-to="0" data-target="#carousel-example-generic" class="active">&lt;/li>
+    &lt;li data-slide-to="1" data-target="#carousel-example-generic">&lt;/li>
+    &lt;li data-slide-to="2" data-target="#carousel-example-generic">&lt;/li>
+  &lt;/ol>
+  &lt;div class="carousel-inner">
+    &lt;div class="item">
+      &lt;img alt="First slide" src="{{ site.baseurl }}/img/manto-6.jpg">
+    &lt;/div>
+    &lt;div class="item active">
+      &lt;img alt="Second slide" src="{{ site.baseurl }}/img/torneo2.jpg">
+    &lt;/div>
+    &lt;div class="item">
+      &lt;img alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+    &lt;/div>
+  &lt;/div>
+  &lt;a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
+    &lt;span class="icn icn-nav-izq">&lt;/span>
+  &lt;/a>
+  &lt;a data-slide="next" href="#carousel-example-generic" class="right carousel-control">
+    &lt;span class="icn icn-nav-der">&lt;/span>
+  &lt;/a>
+&lt;/div>
+          </code>
+        </div>
+        <hr class='invisible'>
+        <h4 class='pizarra gruesa'>Carousel lg / Grande</h4>
+        <!-- Carrousel --> 
+        <div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
+          <ol class="carousel-indicators">
+            <li data-slide-to="0" data-target="#carousel-example-generic" class="active"></li>
+            <li data-slide-to="1" data-target="#carousel-example-generic"></li>
+            <li data-slide-to="2" data-target="#carousel-example-generic"></li>
+          </ol>
+          <div class="carousel-inner">
+            <!-- item (la clase 'car-sm' corresponde al height de visibilidad) -->
+            <div class="item active car-lg">
+              <img  alt="First slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/10/DSC_1016-1400x927.jpg">
+              <!-- pie de imagen carousel -->
+              <div class='fondo-gris-blanco absoluto abs-inf bloque ancho-completo al-frente borde sup-lineal-xs'>
+                <p class='sin-margen relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Presentación libros Triángulo de Pascal y Estructura Esencial</p>
+              </div>
+              <div class='oculto-sm oculto-xs'>
+                <a href="{{ site.baseurl }}/maquetas/post">
+                  <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque ancho-lg alto-completo relleno'>
+                    <h2 class='fino'>Presentación libros Triángulo de Pascal y Estructura Esencial</h2>
+                    <p class='sin-margen relleno-vertical-xs'></i>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem, ambos arquitectos y académicos de la Escuela de Arquitectura y Diseño.</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="item car-lg">
+              <img alt="Second slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/11/DSC_1170-1400x927.jpg">
+              <!-- pie de imagen carousel -->
+              <div class='fondo-gris-blanco absoluto abs-inf bloque ancho-completo al-frente borde sup-lineal-xs'>
+                <p class='sin-margen relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</p>
+              </div>
+              <div class='oculto-sm oculto-xs'>
+                <a href='#'>
+                  <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque ancho-lg alto-completo relleno'>
+                    <h2 class='fino'>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</h2>
+                    <p class='sin-margen relleno-vertical-xs'></i>La Escuela de Arquitectura y Diseño estuvo presente en la actividad mediante dos proyectos que se adjudicaron el fondo extraordinario Ideas y Manos para Valparaíso</p>
+                  </div>
+                </a>
+            </div>
+            </div>
+            <!-- item -->
+            <div class="item car-lg">
+              <img alt="Third slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/10/2014-10-04-14.49.18-1400x785.jpg">
+              <!-- pie de imagen carousel -->
+              <div class='fondo-gris-blanco absoluto abs-inf bloque ancho-completo al-frente borde sup-lineal-xs'>
+                <p class='sin-margen relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Diseño Gráfico organiza taller abierto para alumnos interesados en la carrera</p>
+              </div>
+              <div class='oculto-sm oculto-xs'>
+                <a href='#'>
+                  <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque ancho-lg alto-completo relleno'>
+                    <h2 class='fino'>Diseño gráfico organiza taller abierto para alumnos interesadsos en la carrera</h2>
+                    <p class='sin-margen relleno-vertical-xs'></i>A los alumnos indicados para el taller se les permitirá buscar las opciones diferentes si presentan noticiass sobre Valparaíso de los arquitectos Mauricio Puentes y Juan Purcell en FILSA 2014</p>
+                  </div>
+                </a>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-carrusel">ver código</a> 
+        <div id="ver-codigo-carrusel" class="collapse pag-javascript">  
+          <h6>Archivos necesarios</h6>
+          <code class='margen-inf-sm'>
+&lt;script src="js/jquery.js">&lt;/script>
+&lt;script src="js/carousel.js">&lt;/script>
           </code>
           <h6>Codigo</h6>
           <code>
