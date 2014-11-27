@@ -50,82 +50,6 @@ nav {
     }
   }
 
-//  Menú Pyxis
-
-.menu-pyxis {
-    margin: 0 auto;
-    padding: 0;     
-    padding: 0;  
-    font-family: 'Open Sans Condensed';
-
-    .nav-rotulos {
-      float: right;
-
-      li a {
-        padding: @cuerpo @cuerpo * 1.2;// 17px 21px;
-        margin: 0;
-        font-family: @cond;
-        font-weight: 700;
-        &:first-child{margin-left: 0}
-        &.last-child{margin-right: 0}
-      }
-   }        
-
-    h6{
-      display: inline-block;
-      margin: 15px 5px;
-      padding: 0;
-    }
-
-    span {
-      padding: 0;
-      margin: 0 0 0 3px;
-      letter-spacing: .25/@em;
-    }
-}
-
-   
-// logo 
-
-.logo-pyxis {
-  width: auto;
-  float: left;
-  padding: 0;
-  margin: 0;
-  
-  a{
-    display: inline-block;
-    padding: @cuerpo *.7 0 0 0;
-    
-    img {
-      width: 20px;
-      float: left;
-      margin: @cuerpo * .3 / 2;
-    }
-
-    h6{
-      margin: .3em 0 -.3ex 0;
-    }
-  }
-  
-  &.footer {
-    float: none;
-    display: block;
-
-    h6{
-      display: inline-block;
-      margin: 0px;
-      padding: 0px 0.5px;
-    }
-
-    img{
-      padding: 0;
-      margin: 2px 4px 0px 0px;
-      display: block;
-    }
-  } 
-}
-
 //
 // Navs
 // -------------------------------------------------- Responsive
@@ -348,7 +272,6 @@ a.menu-link {
   }
 }
 
-
 // Stacked pills
 .nav-stacked {
   > li {
@@ -360,7 +283,7 @@ a.menu-link {
   }
 }
 
-
+//Nav y ul en Footer
 footer{
   ul, nav{
     margin: 1em 0;
@@ -464,8 +387,8 @@ footer{
   .border-top-radius(0);
 }
 
-
-//  Responsive adaptable
+// --------------------------------------------------
+// diseño de utilidad responsive
 
 //  Extra Small screen / Phone
 @media(max-width: @screen-xs-max){
@@ -583,39 +506,6 @@ footer{
 
 //  Small screen / tablet
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
-
-  //  Menú Pyxis
-  .menu-pyxis {
-
-      .nav-rotulos {
-
-        li a {
-          margin: 0px 16px;
-          padding: 14px 0;
-        }
-     }        
-  }
-
-  // logo 
-
-  .logo {
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px 0 0 0;
-    float: none;
-    text-align: center;
-
-    h5 {
-      font-size: 30px;
-      margin: 0;
-      padding: 0 0 0 5px;
-      display: inline-block;
-    }
-
-    span {
-      margin: 0;
-    }
-  }
 }
 
 //  Medium screen / desktop

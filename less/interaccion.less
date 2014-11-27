@@ -25,6 +25,15 @@ a.btn{
     position: relative;
     box-shadow: 0 @boton-resalte 0 fade(@negro, 20);
     .transition(.5s ease all);
+
+    &.sin-relleno{
+        padding: 0 !important;
+    }
+
+    &.sin-margen{
+        margin: 0 !important;
+    }
+    
     &:hover {
         box-shadow: 0 @boton-resalte 0 fade(@pizarra, 50%);
         border-color: fade(@pizarra, 50%);
@@ -113,17 +122,17 @@ a.btn{
 
 // Para grupo de botones
 
-.pegado-antes{.border-radius(@radio 0 0 @radio)}
-.pegado-despues{.border-radius(0 @radio @radio 0)}
+.pegado-antes{.border-radius(@radio 0 0 @radio) !important}
+.pegado-despues{.border-radius(0 @radio @radio 0) !important}
 
     // Grupo de botones
 .grupo-botones{
   .btn{
     float: left;
-    border-radius: 0 !important;
+    border-radius: 0;
     margin-left: -1px;
-    &:first-child{.border-radius(@radio 0 0 @radio) !important}
-    &:last-child{.border-radius(0 @radio @radio 0) !important}
+    &:first-child{.border-radius(@radio 0 0 @radio) !important;}
+    &:last-child{.border-radius(0 @radio @radio 0) !important;}
   }
 }
 

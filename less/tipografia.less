@@ -60,7 +60,7 @@ a{
 //  Párrafos:
 
 p {
-    margin: 0 0 @interlinea * 1.3 0;
+    margin: 0 0 25px 0;
     font-family: @texto-continuo;
     font-size: @cuerpo;
     line-height: @interlinea;
@@ -373,7 +373,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: @tipografia-titulos;
     font-weight: 400;
     color: @pizarra;
-    margin: 0 0 10/@em 0;
+    margin: 0px 0px 10px 0px;
 
     &.sin-margen{
         margin: 0 !important;
@@ -774,6 +774,9 @@ code {
     float: left;
     position: relative;
 }
+
+// ----------------------------------------------------------------------------------------------------------------------------
+// diseño de utilidad responsive
 
 //  Extra small screen / phone
 @media(max-width: @screen-xs-max){

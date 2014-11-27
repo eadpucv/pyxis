@@ -1,0 +1,325 @@
+//
+// Documentación
+// --------------------------------------------------
+
+// ** Este archivo contiene los ejemplos documentados de cada componente específico en Pyxis **
+// ** (esto implica las clases de carácter específico (id='') y otras clases diferenciales (class='')
+// ** + Clases particulares para el layout del Framework) **
+
+// --------------------------------------------------
+// LAYOUT DE PYXIS FRAMEWORK
+
+// Menú superior Pyxis
+
+.fondo-header-pyxis {
+	background-color: @blanco;
+	// min-height: 60px;
+  	.box-shadow(0 0 10px fade(@negro, 30));
+	top: 0;
+	z-index: -1;
+	margin: 0 auto;
+	width: 100%;
+}
+
+//	Franjas para Layout 'Index' y 'Base': 
+
+ .franja {
+	width: 100%;
+	background-color: @gris-claro;
+	position: relative;
+	overflow: hidden;
+	.cf;
+	//	Franja xl en index (cabecera-index)
+	&.xl{
+		min-height: 500/@em;
+		text-align: center;
+		padding: @cuadratin *1.5 0;
+	}
+	//	Franja xs en Base (cabecera)
+	&.xs{
+		z-index: -10;
+		height: 120px;
+	}
+}
+
+// Container - Página - Formato
+
+.pag{
+	position: relative;
+	margin: 0 auto;
+	height: auto;
+	padding: @cuadratin;
+	.cf;
+
+	// padding de h1 en Header (franja xs)
+	&.franja-componente{
+		padding: 20px 30px 0;
+	}
+	// Sin padding
+	&.sin-relleno {
+		width: 890px;
+		padding: 0;
+		position: relative;
+	}
+}
+
+//	Footer
+
+footer{
+	margin: 0 auto;
+	border-top: 20px solid @blanco;
+
+	p{	
+		img{
+			display: inline-block;
+			margin-bottom: -4px;
+		}
+	}
+
+	span {
+		margin: 0;
+	}
+
+	a {
+
+		&:hover{
+			color: @pizarra; 
+		}
+	}
+	
+	address{
+		font-size: @cuerpo * .7;
+		line-height: inherit;
+	}
+}
+
+// Navs
+
+//  Menú Pyxis
+
+.menu-pyxis {
+    margin: 0 auto;
+    padding: 0;     
+    padding: 0;  
+    font-family: 'Open Sans Condensed';
+
+    .nav-rotulos {
+      float: right;
+
+      li a {
+        padding: @cuerpo @cuerpo * 1.2;// 17px 21px;
+        margin: 0;
+        font-family: @cond;
+        font-weight: 700;
+        &:first-child{margin-left: 0}
+        &.last-child{margin-right: 0}
+      }
+   }        
+
+    h6{
+      display: inline-block;
+      margin: 15px 5px;
+      padding: 0;
+    }
+
+    span {
+      padding: 0;
+      margin: 0 0 0 3px;
+      letter-spacing: .25/@em;
+    }
+}
+
+   
+// logo 
+
+.logo-pyxis {
+  width: auto;
+  float: left;
+  padding: 0;
+  margin: 0;
+  
+  a{
+    display: inline-block;
+    padding: @cuerpo *.7 0 0 0;
+    
+    img {
+      width: 20px;
+      float: left;
+      margin: @cuerpo * .3 / 2;
+    }
+
+    h6{
+      margin: .3em 0 -.3ex 0;
+    }
+  }
+  
+  &.footer {
+    float: none;
+    display: block;
+
+    h6{
+      display: inline-block;
+      margin: 0px;
+      padding: 0px 0.5px;
+    }
+
+    img{
+      padding: 0;
+      margin: 2px 4px 0px 0px;
+      display: block;
+    }
+  } 
+}
+
+// --------------------------------------------------
+// EJEMPLOS DE DOCUMENTACIÓN (CLASES ESPECÍFICAS)
+
+// --------------------------------------------------
+// DISEÑO DE UTILIDAD RESPONSIVE
+
+//  Extra Small screen / Phone
+@media(max-width: @screen-xs-max){
+
+  	.pag{
+		padding: @cuadratin/1.5;
+
+		&.sin-relleno {
+			min-height: 50px;
+			width: 100% !important;
+			// Para representar el @grid-gutter-width en formato 'xs'
+			&.gutter{
+				padding: 0 @cuadratin/1.5;
+			}
+		}
+		// padding de h1 en Header (franja xs)
+		&.franja-componente{
+			padding: @cuadratin/1.5 !important;
+		}
+
+		&.menu-movil{
+			padding: @cuadratin/2 @cuadratin/1.5 !important;
+		}
+	}
+
+	  //Nav y ul en Footer
+	footer{
+		ul, nav{
+		  margin: 1em 0;
+		}
+		.nav-footer{
+		  li,
+			ul li{
+			list-style-type: none;
+			display: block;
+			margin: 0;
+			padding: 1em 0;
+			border-bottom: 1px solid @gris-claro;
+				&:first-child{
+				  border-top: 1px solid @gris-claro;
+				}
+			}
+		}
+	}
+}
+
+//  Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+
+	.pag{
+		&.sin-relleno {
+			width: 720px;
+		}
+	}
+
+	//  Menú Pyxis
+	.menu-pyxis {
+		.nav-rotulos {
+			li a {
+			  margin: 0px 16px;
+			  padding: 15px 1px !important;
+			}
+	 	}        
+	}
+
+	// logo 
+	.logo {
+		width: 300px;
+		margin: 0 auto;
+		padding: 20px 0 0 0;
+		float: none;
+		text-align: center;
+
+		h5 {
+			font-size: 30px;
+			margin: 0;
+			padding: 0 0 0 5px;
+			display: inline-block;
+		}
+
+		span {
+			margin: 0;
+		}
+	}
+
+    //Nav y ul en Footer
+	footer{
+		ul, nav{
+		  margin: 1em 0;
+		}
+
+	// Clases específicas
+
+		.nav-footer{
+			li,
+			ul li{
+			margin: 0px;
+			padding: 0.5em 1em;
+			border-right: 1px solid @gris-claro;
+				&:first-child{
+				  border-left: 1px solid @gris-claro;
+				}
+			}
+		}
+	}
+}
+
+//  Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){	  
+
+	.autor {
+	  	margin: 22px 0px 28.6px;
+	  	line-height: 22px;
+	  	margin-bottom: 30px;
+	  	text-align: center;
+	  	font-weight: 200;
+	  	letter-spacing: -0.1ex;
+	  	color: @gris;
+	}	
+}
+
+//  Large screen / wide desktop
+@media (min-width: @screen-lg){
+
+  	.pag{
+		&.sin-relleno {
+			width: 1110px;
+			padding: 0;
+			position: relative;
+		}
+	}
+
+  	.franja {
+		&.xs{
+			height: 7.5vw;
+		}
+   	}
+
+	// Ilustración de logo en Index
+	.imagen-index {
+		height: 15vw;
+	}
+
+	.imagen-menu {
+		height: 15vw;
+	}
+}

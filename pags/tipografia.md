@@ -3,10 +3,10 @@ layout: base
 title: Pyxis Framework - Tipografía
 subtitle: <i class="icn icn-libro"></i> Tipografía
 intro: Texto sobre tipografía
-link-1: Fuentes tipográficas
+link-1: Fuentes
 link-2: Encabezados
-link-3: Valores tipográficos
-link-4: Clases diferenciales
+link-3: Tamaños
+link-4: Clases
 pde: type.pde
 ---
 
