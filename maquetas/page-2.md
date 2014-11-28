@@ -28,7 +28,7 @@ title: Pyxis Framework - Maquetas
 	 </div>
 	<div class='izquierda relleno-sup-xs logo en-linea'>
 	    <span class='sm sans bloque negro'>Escuela de arquitectura y diseño</span>
-	    <span class='xs bloque izquierda gruesa negro-fundido en-linea'>Pontificia Universidad Católica de Valparaíso</span>
+	    <span class='xs bloque izquierda negro-fundido en-linea'>Pontificia universidad católica de Valparaíso</span>
 	</div>
 	</div>
       <ul class="nav nav-pills">
@@ -135,7 +135,7 @@ title: Pyxis Framework - Maquetas
               <li><a>Diseño Gráfico</a></li>
           </ul>
           <div class='bloque ancho-completo'>
-	          	<h1 class='lg gruesa negro condensado margen-inf-sm en-linea margen-der-xs sombra-cabecera-neutro-xs'>Diseño Gráfico</h1>
+	          	<h1 class='lg gruesa negro condensado margen-inf-md en-linea margen-der-xs sombra-cabecera-neutro-xs'>Diseño Gráfico</h1>
 	          	<div class='grupo-botones en-linea tooltip-demo'>
 	          	<div class='oculto-xs'>
 	          	<a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Editar página" class='btn sin-relleno sin-margen en-linea' href='#'><code class='sin-relleno bajas xs fondo-rojo'>e[ad]</code></a>
@@ -258,18 +258,18 @@ title: Pyxis Framework - Maquetas
             <div class='col-md-9 col-sm-8 col-xs-12'>
                 <div class='fila'>
                   <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-                <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2012/04/regalo_T1_2012_02.jpg'></a>
+                <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2012/04/regalo_T1_2012_02.jpg'></a>
                   </div>
                   <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-                <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Ediciones e[ad]"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2013/07/libros-2_1.jpg'></a>
+                <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Ediciones e[ad]"><img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2013/07/libros-2_1.jpg'></a>
                   </div>
                 </div>
                 <div class='fila'>
                   <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-                <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Faenas farándula 2012"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/themes/gamma/img/disenografico.jpg'></a>
+                <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Faenas farándula 2012"><img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/themes/gamma/img/disenografico.jpg'></a>
                   </div>
                   <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-                <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Talleres de grabado"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/themes/gamma/img/diseno-grafico2.jpg'></a>
+                <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Talleres de grabado"><img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/themes/gamma/img/diseno-grafico2.jpg'></a>
                   </div>
                 </div>
               <h4 class='inteletraje-sm-negativo gruesa negro'><i class='icn icn-usuario margen-der-xs'></i>Concepción del diseñador</h4>
