@@ -153,7 +153,7 @@ intro: Texto sobre javascript
                 </ol>
                 <div class="carousel-inner borde radio-md">
                   <!-- item -->
-                  <div class="item active car-sm ocultar-desborde">
+                  <div class="item active car-xs ocultar-desborde">
                     <img alt="First slide" src="http://www.ead.pucv.cl/wp-content/themes/gamma/img/diseno-grafico6.jpg">
                     <div class='oculto-sm oculto-xs'>
                       <a href='#'>
@@ -169,7 +169,7 @@ intro: Texto sobre javascript
                     </div>
                   </div>
                   <!-- item -->
-                  <div class="item car-sm ocultar-desborde">
+                  <div class="item car-xs ocultar-desborde">
                     <img class='w140' alt="Second slide" src="http://www.ead.pucv.cl/wp-content/themes/gamma/img/diseno-grafico4.jpg">
                     <div class='oculto-xs oculto-xs'>
                       <a href='#'>
@@ -185,7 +185,7 @@ intro: Texto sobre javascript
                     </div>
                   </div>
                   <!-- item (la clase 'car-sm' corresponde al height de visibilidad) -->
-                  <div class="item car-sm ocultar-desborde">
+                  <div class="item car-xs ocultar-desborde">
                     <img  alt="Third slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/10/texturas_juntas.jpg">
                     <div class='oculto-sm oculto-xs'>
                       <a href="{{ site.baseurl }}/maquetas/post">
@@ -201,7 +201,7 @@ intro: Texto sobre javascript
                     </div>
                   </div>
                   <!-- item (la clase 'car-sm' corresponde al height de visibilidad) -->
-                  <div class="item car-sm ocultar-desborde">
+                  <div class="item car-xs ocultar-desborde">
                     <img class='w150'  alt="Fourth slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/10/t2.jpg">
                     <div class='oculto-sm oculto-xs'>
                       <a href="{{ site.baseurl }}/maquetas/post">
@@ -217,7 +217,7 @@ intro: Texto sobre javascript
                     </div>
                   </div>
                   <!-- item (la clase 'car-sm' corresponde al height de visibilidad) -->
-                  <div class="item car-sm ocultar-desborde">
+                  <div class="item car-xs ocultar-desborde">
                     <img class='w150'  alt="Fifth slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/09/04-proceso-de-serigrafia-03-1400x786.jpg">
                     <div class='oculto-sm oculto-xs'>
                       <a href="{{ site.baseurl }}/maquetas/post">

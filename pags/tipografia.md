@@ -796,15 +796,14 @@ h1, h2, h3, h4, h5, h6 {
 &lt;p class=&quot;fecha-evento&quot;&gt;...&lt;/p&gt;
                 </code>
                 <hr class='invisible'>
-                <div class='ancho-lg'>
-                <div class='logo en-linea'>
-                    <span class='lg rojo sans relleno-sup-xs'>e[ad]</span>
+                <div class='izquierda margen-der-xs logo en-linea'>
+                    <span class='lg bloque izquierda rojo sans'>e[ad]</span>
                  </div>
-                <div class='logo en-linea'>
-                    <span class='sm gris-oscuro'>Escuela de arquitectura y diseño</span>
-                    <span class='xs gris-oscuro en-linea'>Pontificia universidad católica de Valparaíso</span>
+                <div class='izquierda relleno-sup-xs logo en-linea'>
+                    <span class='sm sans bloque negro-fundido'>Escuela de arquitectura y diseño</span>
+                    <span class='xs bloque negro-fundido en-linea'>Pontificia universidad católica de Valparaíso</span>
                 </div>
-                </div>
+             
                
         </div>
     </div>

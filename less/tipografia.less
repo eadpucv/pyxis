@@ -40,7 +40,7 @@ a{
 
       //  Hover:
     &:hover{
-      color: @pizarra;
+      color: @negro-fundido;
       text-decoration: none;
     }
 
@@ -132,7 +132,7 @@ span {
 
     &.sm, &.pequeno {
       font-size: @cuerpo * 1.2;
-      line-height: 150%;
+      line-height: 130%;
     }
 
     &.xs, &.menudo {
@@ -152,30 +152,32 @@ span {
 
 #breadcrumb{
   text-transform: uppercase;
-  letter-spacing: .5;
   font-family: @tipografia-titulos;
 
   li{
     display: inline-block;
-    font-family: @sans;
-    font-size: @cuerpo * .9;
-    font-weight: 200;
+    font-family: @cond;
+    font-size: @cuerpo * .8;
 
       &:last-child{
         a{
           color: @negro;
         }
+      &:after{
+        content: none;
       }
+    }
 
     &:after{
-      color: @rojo;
+      color: @negro;
       content: "→"
     }
 
     a{
-      font-family: @tipografia-titulos;
+      font-family: @cond;
+      font-weight: 700;
       .margen-horizontal-xs;
-      font-size: @cuerpo * .8;
+      font-size: @cuerpo * .75;
 
       &:hover{
         color: @rojo;
@@ -209,15 +211,15 @@ span {
 // Clases de familia tipográfica 
 
 .sans {
-  font-family: @sans;
+  font-family: @sans !important;
 }
 
 .cond, .condensada, .condensado{
-  font-family: @cond;
+  font-family: @cond !important;
 }
 
 .serif {
-  font-family: @serif;
+  font-family: @serif !important;
 }
 
 //  Énfasis:
@@ -788,7 +790,7 @@ code {
       font-family: @texto-continuo;
       font-size: @cuerpo * .9;
       line-height: @interlinea * .97;
-      font-weight: 200;
+      font-weight: 300;
 
       //  Tamaños de Párrafos:
 
@@ -1019,7 +1021,7 @@ code {
     font-family: @texto-continuo;
     font-size: @cuerpo;
     line-height: @interlinea * .9;
-    font-weight: 200;
+    font-weight: 300;
 
     //  Tamaños de Párrafos:
     &.lg, &.grande { 

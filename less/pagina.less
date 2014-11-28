@@ -1,0 +1,82 @@
+//
+// Página y sus reglas generales
+// --------------------------------------------------
+
+// Todas las cosas abarcan una transición de 2s
+*{
+    .transition(.2s ease all);
+}
+
+// Cuerpo *
+
+body{
+  font-size: @cuerpo;
+  background-color: @gris-blanco;
+}
+
+// Imágenes
+
+img{
+	// nope - width: 100%;
+
+	//Tamaños
+	&.xs{
+		width: 40%;
+	}
+	&.sm{
+		width: 80%;
+	}
+	&.md{
+		width: 150%;
+	}
+	&.lg{
+		width: 200%;
+	}
+
+	// Ancho completo
+	&.ancho-completo{
+		width: 100%;
+	}
+}
+
+	// Imagen vertical
+.imagen-alta {
+	width: auto;
+	height: @cuadratin * 2;
+	overflow: hidden;
+	margin-top: @cuadratin;
+	margin-bottom: @cuadratin;
+}
+
+	// Imagen horizontal
+.imagen-ancha {
+	width: auto;
+	height: @cuadratin * 3;
+	overflow: hidden;
+	margin-top: @cuadratin;
+	margin-bottom: @cuadratin;
+}
+
+	// Ilustración de logo en Index
+.imagen-index {
+	height: 200px;
+}
+
+// --------------------------------------------------
+// diseño de utilidad responsive
+
+//  Extra Small screen / Phone
+@media(max-width: @screen-xs-max){
+}
+
+//  Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+}
+
+//  Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+}
+
+//  Large screen / wide desktop
+@media (min-width: @screen-lg){
+}
