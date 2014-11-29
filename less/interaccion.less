@@ -7,8 +7,9 @@ button,
 button.btn,
 input[type='submit'],
 a.btn{
-    background-color: white;
     display: inline-block;
+    position: relative;
+    background-color: white;
     font-family: 'Source Sans Pro';
     font-weight: 500;
     margin: @cuadratin/2 0;
@@ -22,9 +23,8 @@ a.btn{
     border: 1px solid fade(@pizarra, 30);
     padding: 5px 10px;
     .border-radius(@radio);
-    position: relative;
-    box-shadow: 0 @boton-resalte 0 fade(@negro, 20);
-    .transition(.5s ease all);
+    .box-shadow(0 @boton-resalte 0 fade(@negro, 30), inset fade(@blanco, 20%) 0 0 5px);
+    .transition(.1s ease all);
 
     &.sin-relleno{
         padding: 0 !important;
@@ -35,12 +35,12 @@ a.btn{
     }
     
     &:hover {
-        box-shadow: 0 @boton-resalte 0 fade(@pizarra, 50%);
+        .box-shadow(0 @boton-resalte 0 fade(@pizarra, 50%), inset fade(@blanco, 40%) 0 0 10px);
         border-color: fade(@pizarra, 50%);
         background-color: darken(white, 1%);
         text-decoration: none;
         color: @pizarra;
-        .transition(.5s ease all);
+        .transition(.2s ease all);
     }
 
     .icn{
@@ -48,7 +48,7 @@ a.btn{
     }
 
     &:active{
-        .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
+        .box-shadow(0 0 5px fade(@negro, 10), inset fade(@negro, 30%) 0 @boton-resalte 0);
         box-shadow: 0 @boton-resalte/2 0 fade(@pizarra, 5%);
         margin: @cuadratin/2 + @boton-resalte 0 -@boton-resalte + @cuadratin/2 0;
     }
@@ -202,7 +202,7 @@ input[type='file'],
 form{
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid @gris;
+    border: 1px solid @gris-claro;
     margin-bottom: 0 !important;
     .clearfix;
     .margen-inf;

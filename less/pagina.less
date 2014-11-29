@@ -3,9 +3,12 @@
 // --------------------------------------------------
 
 // Todas las cosas abarcan una transición de 2s
+
+/*
 *{
     .transition(.2s ease all);
 }
+*/
 
 // Cuerpo *
 
@@ -60,6 +63,24 @@ img{
 	// Ilustración de logo en Index
 .imagen-index {
 	height: 200px;
+}
+
+
+table{
+	th{
+		font-family: @cond;
+		text-transform: uppercase;
+	}
+	td{
+		padding: @padding-md;
+		border: @borde-fino;
+	}
+
+	&.sin-bordes{
+		td{
+			border: none;
+		}
+	}
 }
 
 // --------------------------------------------------
