@@ -129,18 +129,18 @@ title: Pyxis Framework - Maquetas
 <div class='fila'>
 		<div class='col-md-12'>
           <!-- Breadcrumbs -->
-          <ul class='sin-relleno margen-inf-xs' id="breadcrumb">
-              <li><a><i class='icn icn-hogar'></i></a></li>
-              <li><a>Carreras y postgrados</a></li>
+          <ul class='sin-relleno margen-sup-sm' id="breadcrumb">
+              <li><a href='#'><i class='icn icn-hogar'></i></a></li>
+              <li><a href='#'>Carreras y postgrados</a></li>
               <li><a>Diseño Gráfico</a></li>
           </ul>
           <div class='bloque ancho-completo'>
-	          	<h1 class='lg gruesa negro condensado margen-inf-md en-linea margen-der-xs'>Diseño Gráfico
-	          	<div class='en-linea tooltip-demo'>
+	          	<h1 class='lg gruesa negro condensado sombra-cabecera-claro-sm margen-inf-md en-linea margen-der-xs'>Diseño Gráfico</h1>
+              <h1 class='lg margen-inf-md en-linea negro'>
+	          	<div class='en-linea tooltip-demo margen-izq-xs'>
 	          	<div class='oculto-xs'>
-	          	<a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Editar página" class='btn sin-relleno sin-margen en-linea' href='#'><code class='sin-relleno bajas xs fondo-rojo'><i class='icn icn-lapiz'></i></code></a>
-	          	<span class='margen-izq-xs-negativo xs interlinea-xs'><a class='sin-relleno en-linea sm sin-margen en-linea izquierda' id="popover-test" data-content="Puedes editar el contenido de ésta y otras páginas en su tema de Wordpress. Sólo debes copiar el enlace y loguearte como usuario en: http://www.ead.pucv.cl/wp-admin" data-toggle="popover" data-original-title="" title="¿Quieres editar esta página?"><span class='sm'><i class='icn icn-lupamas margen-izq-xs izquierda'></i></span></a></span>
-
+	          	<a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Editar página" class='btn sin-relleno sin-margen en-linea' href='#'><code class='sin-relleno bajas xs fondo-verde'><i class='icn icn-lapiz'></i></code></a>
+	          	<span class='margen-izq-xs-negativo xs interlinea-xs'><a class='izquierda sin-sombra-cabecera' id="popover-test" data-content="Puedes editar el contenido de ésta y otras páginas en su tema de Wordpress. Sólo debes copiar el enlace y loguearte como usuario en: http://www.ead.pucv.cl/wp-admin" data-toggle="popover" data-original-title="" title="¿Quieres editar esta página?"><span class='sm sin-sombra-cabecera'><i class='icn icn-lupamas margen-izq-xs izquierda sin-sombra-cabecera'></i></span></a></span>
 	          </div>
 	      	</div>
 	      	 	</h1>
@@ -462,7 +462,7 @@ title: Pyxis Framework - Maquetas
 	         </div>
 		</div>
      </div>
-	</div>
+	
 
  <footer class='fondo-negro-fundido'>
     <div class='pag'>
