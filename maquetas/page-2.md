@@ -2,7 +2,7 @@
 layout: particular
 title: Pyxis Framework - Maquetas
 ---
-<div class='fondo-gris-blanco'>
+
 <!-- Metabarra -->
 <div class="oculto-xs">
 <div id='meta-barra'>
@@ -24,7 +24,7 @@ title: Pyxis Framework - Maquetas
   <div class='pag sin-relleno margen-sup-sm margen-inf-xs borde inf-lineal-xs'>
   <div class='bloque ancho-completo margen-inf-sm margen-sup-xs cf'>
 	<div class='izquierda margen-der-xs logo en-linea'>
-	    <span class='lg bloque izquierda rojo sans'><a class='sans' href='{{ site.baseurl }}/maquetas/home'>e[ad]</a></span>
+	    <span class='bloque izquierda rojo sans'><a class='lg ead sans' href='{{ site.baseurl }}/maquetas/home'>e[ad]</a></span>
 	 </div>
 	<div class='izquierda relleno-sup-xs logo en-linea'>
 	    <span class='sm sans bloque negro'>Escuela de arquitectura y diseño</span>
@@ -135,18 +135,22 @@ title: Pyxis Framework - Maquetas
               <li><a>Diseño Gráfico</a></li>
           </ul>
           <div class='bloque ancho-completo'>
-	          	<h1 class='lg gruesa negro condensado margen-inf-md en-linea margen-der-xs sombra-cabecera-neutro-xs'>Diseño Gráfico</h1>
-	          	<div class='grupo-botones en-linea tooltip-demo'>
+	          	<h1 class='lg gruesa negro condensado margen-inf-md en-linea margen-der-xs'>Diseño Gráfico
+	          	<div class='en-linea tooltip-demo'>
 	          	<div class='oculto-xs'>
-	          	<a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Editar página" class='btn sin-relleno sin-margen en-linea' href='#'><code class='sin-relleno bajas xs fondo-rojo'>e[ad]</code></a>
-	          	<a class='btn sin-relleno sin-margen en-linea' id="popover-test" data-content="Puedes editar el contenido de ésta y otras páginas en su tema de Wordpress. Sólo debes copiar el enlace y loguearte como usuario en: http://www.ead.pucv.cl/wp-admin" data-toggle="popover" data-original-title="" title="¿Quieres editar esta página?"><code class='sin-relleno bajas xs'><i class='icn icn-lapiz'></i></code></a>
+	          	<a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Editar página" class='btn sin-relleno sin-margen en-linea' href='#'><code class='sin-relleno bajas xs fondo-rojo'><i class='icn icn-lapiz'></i></code></a>
+	          	<span class='margen-izq-xs-negativo xs interlinea-xs'><a class='sin-relleno en-linea sm sin-margen en-linea izquierda' id="popover-test" data-content="Puedes editar el contenido de ésta y otras páginas en su tema de Wordpress. Sólo debes copiar el enlace y loguearte como usuario en: http://www.ead.pucv.cl/wp-admin" data-toggle="popover" data-original-title="" title="¿Quieres editar esta página?"><span class='sm'><i class='icn icn-lupamas margen-izq-xs izquierda'></i></span></a></span>
+
 	          </div>
 	      	</div>
+	      	 	</h1>
       	  </div>
-      			</div>
+      	</div>
+      </div>
+      <div class='fila'>
           <div class='col-md-3 col-sm-4 oculto-xs'>
 	          <div id='ejemplo-sticky'>
-	              <a><h6 class='xs negro condensado gruesa texto-derecha ancho-md bloque relleno-der-sm'><i class='sin-interletraje icn icn-usuarios margen-der-xs'></i>Estudiar diseño en la e[ad]</h6></a>
+	              <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-usuarios margen-der-xs'></i>Estudiar diseño en la e[ad]</h6></a>
 	          </div>
       	  </div>
     
@@ -251,25 +255,25 @@ title: Pyxis Framework - Maquetas
         	<div class='col-md-3 col-sm-4 oculto-xs'>
             <div id='ejemplo-sticky-2'>
             
-              <a><h6 class='xs negro condensado gruesa texto-derecha ancho-md bloque relleno-der-sm'><i class='sin-interletraje icn icn-usuario margen-der-xs sombra-cabecera-claro-xs'></i>Concepción del diseñador</h6></a>
+              <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-usuario margen-der-xs sombra-cabecera-claro-xs'></i>Concepción del diseñador</h6></a>
           
             </div>
         	</div>
             <div class='col-md-9 col-sm-8 col-xs-12'>
                 <div class='fila'>
                   <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-                <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2012/04/regalo_T1_2012_02.jpg'></a>
+                <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2012/04/regalo_T1_2012_02.jpg'></a>
                   </div>
                   <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-                <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Ediciones e[ad]"><img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2013/07/libros-2_1.jpg'></a>
+                <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Ediciones e[ad]"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2013/07/libros-2_1.jpg'></a>
                   </div>
                 </div>
                 <div class='fila'>
                   <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-                <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Faenas farándula 2012"><img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/themes/gamma/img/disenografico.jpg'></a>
+                <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Faenas farándula 2012"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/themes/gamma/img/disenografico.jpg'></a>
                   </div>
                   <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-                <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Talleres de grabado"><img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/themes/gamma/img/diseno-grafico2.jpg'></a>
+                <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Talleres de grabado"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/themes/gamma/img/diseno-grafico2.jpg'></a>
                   </div>
                 </div>
               <h4 class='inteletraje-sm-negativo gruesa negro'><i class='icn icn-usuario margen-der-xs'></i>Concepción del diseñador</h4>
@@ -294,7 +298,7 @@ title: Pyxis Framework - Maquetas
          	<div class='col-md-3 col-sm-4 oculto-xs'>
             <div id='ejemplo-sticky-3'>
 
-              <a><h6 class='xs negro condensado gruesa texto-derecha ancho-md bloque relleno-der-sm'><i class='sin-interletraje icn icn-perfil margen-der-xs sombra-cabecera-claro-xs'></i>Perfil de egreso</h6></a>
+              <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-perfil margen-der-xs sombra-cabecera-claro-xs'></i>Perfil de egreso</h6></a>
 
             </div>
         	</div>
@@ -324,7 +328,7 @@ title: Pyxis Framework - Maquetas
           <div class='col-md-3 col-sm-4 oculto-xs'>
           <div id='ejemplo-sticky-4'>
 
-            <a><h6 class='xs negro condensado gruesa texto-derecha ancho-md bloque relleno-der-sm'><i class='sin-interletraje icn icn-engranaje icn-spin margen-der-xs'></i>Competencias fundamentales</h6></a>
+            <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-engranaje icn-spin margen-der-xs'></i>Competencias fundamentales</h6></a>
 
           </div>
       	</div>
@@ -369,7 +373,7 @@ title: Pyxis Framework - Maquetas
           	<div class='col-md-3 col-sm-4 oculto-xs'>
             <div id='ejemplo-sticky-5'>
 
-              <a><h6 class='xs negro condensado gruesa texto-derecha ancho-md bloque relleno-der-sm'><i class='sin-interletraje icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Objetivos educacionales</h6></a>
+              <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Objetivos educacionales</h6></a>
 
             </div>
             </div>
@@ -388,7 +392,7 @@ title: Pyxis Framework - Maquetas
           <div class='col-md-3 col-sm-4 oculto-xs'>
             <div id='ejemplo-sticky-6'>
 
-              <a><h6 class='xs negro condensado gruesa texto-derecha ancho-md bloque relleno-der-sm'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Malla curricular</h6></a>
+              <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Malla curricular</h6></a>
 
             </div>
         	</div>
@@ -401,7 +405,7 @@ title: Pyxis Framework - Maquetas
           	<div class='col-md-3 col-sm-4 col-xs-12'>
             <div id='ejemplo-sticky-7'>
 
-              <a><h6 class='xs negro condensado gruesa texto-derecha ancho-md bloque relleno-der-sm'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Profesores de carrera</h6></a>
+              <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Profesores de carrera</h6></a>
 
             </div>
             </div>
@@ -439,7 +443,7 @@ title: Pyxis Framework - Maquetas
           	<div class='col-md-3 col-sm-4 col-xs-12'>
             <div id='ejemplo-sticky-8'>
 
-              <a><h6 class='xs negro condensado gruesa texto-derecha ancho-md bloque relleno-der-sm'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Profesores ayudantes</h6></a>
+              <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Profesores ayudantes</h6></a>
 
             </div>
             </div>
@@ -459,7 +463,7 @@ title: Pyxis Framework - Maquetas
 	         </div>
 		</div>
      </div>
- </div>
+	</div>
 
  <footer class='fondo-negro-fundido'>
     <div class='pag'>
