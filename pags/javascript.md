@@ -475,10 +475,10 @@ intro: Texto sobre javascript
             </div>
           </div>
           <a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
-            <span class="icn icn-nav-izq"></span>
+            <span class="icn icn-navizquierda"></span>
           </a>
           <a data-slide="next" href="#carousel-example-generic" class="right carousel-control">
-            <span class="icn icn-nav-der"></span>
+            <span class="icn icn-nav"></span>
           </a>
         </div>
         <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-carrusel">ver código</a> 
@@ -508,10 +508,10 @@ intro: Texto sobre javascript
     &lt;/div>
   &lt;/div>
   &lt;a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
-    &lt;span class="icn icn-nav-izq">&lt;/span>
+    &lt;span class="icn icn-navizquierda">&lt;/span>
   &lt;/a>
   &lt;a data-slide="next" href="#carousel-example-generic" class="right carousel-control">
-    &lt;span class="icn icn-nav-der">&lt;/span>
+    &lt;span class="icn icn-nav">&lt;/span>
   &lt;/a>
 &lt;/div>
           </code>
@@ -664,10 +664,10 @@ intro: Texto sobre javascript
     &lt;/div>
   &lt;/div>
   &lt;a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
-    &lt;span class="icn icn-nav-izq">&lt;/span>
+    &lt;span class="icn icn-navizquierda">&lt;/span>
   &lt;/a>
   &lt;a data-slide="next" href="#carousel-example-generic" class="right carousel-control">
-    &lt;span class="icn icn-nav-der">&lt;/span>
+    &lt;span class="icn icn-nav">&lt;/span>
   &lt;/a>
 &lt;/div>
           </code>
@@ -759,10 +759,10 @@ intro: Texto sobre javascript
     &lt;/div>
   &lt;/div>
   &lt;a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
-    &lt;span class="icn icn-nav-izq">&lt;/span>
+    &lt;span class="icn icn-navizquierda">&lt;/span>
   &lt;/a>
   &lt;a data-slide="next" href="#carousel-example-generic" class="right carousel-control">
-    &lt;span class="icn icn-nav-der">&lt;/span>
+    &lt;span class="icn icn-nav">&lt;/span>
   &lt;/a>
 &lt;/div>
           </code>
@@ -855,10 +855,10 @@ intro: Texto sobre javascript
     &lt;/div>
   &lt;/div>
   &lt;a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
-    &lt;span class="icn icn-nav-izq">&lt;/span>
+    &lt;span class="icn icn-navizquierda">&lt;/span>
   &lt;/a>
   &lt;a data-slide="next" href="#carousel-example-generic" class="right carousel-control">
-    &lt;span class="icn icn-nav-der">&lt;/span>
+    &lt;span class="icn icn-nav">&lt;/span>
   &lt;/a>
 &lt;/div>
           </code>
