@@ -291,7 +291,6 @@ title: Pyxis Framework - Maquetas
               <p class='sans'>El método de trabajo del taller se basa en la “observación” dibujada, medida y escrita de la ciudad en que vivimos y lo que en ella acontece, para dar con el acto o lectura de su presente. Dichas experiencias, vividas por los alumnos en la ciudad, constituyen un suelo fecundo de relaciones las cuales son orientadas por el profesor comunicando a los alumnos su visión. La docencia impartida corresponde entonces a un acto creativo donde ningún taller es repetición de otro, procurando despertar la capacidad de observación en los alumnos y exteriorizar el modo peculiar en que ella se manifiesta para cada uno.</p>
               <p class='sans'>La observación -acto de naturaleza artística- al situarse en el origen mismo de la forma no se opone ni se contradice con la formación técnica, ya que como acto creativo se le ubica como un medio y no como un fin, concretándose para cada caso y nivel específico.</p>
               <p class='sans'>Todos los talleres realizan <a class='italica negrita' href='#'>travesías</a>, que son viajes en los que se recorre el continente americano, realizando obras junto a profesores y alumnos de <a class='sans' href='#'>Arquitectura</a> y <a class='sans' href='#'>Diseño Industrial</a>.</p>
-             
             </div>
           </div>
           <div class='fila margen-sup'>
