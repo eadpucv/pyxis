@@ -27,6 +27,7 @@
 			}
 		}
 	}
+
 	// Sticky como ejemeplo en Componente "Javascript"
 	#ejemplo-sticky{
 		width: 210px;
@@ -51,6 +52,7 @@
 			}
 		}
 	}
+
 	// Sticky dispuesto para maquetas de "Gamma"
 	#ead-sticky{
 		
@@ -92,6 +94,7 @@
 			}
 		}
 	}
+
 	// Sticky como ejemeplo en Componente "Javascript"
 	#ejemplo-sticky{
 		a{
@@ -113,6 +116,7 @@
 			}
 		}
 	}
+
 	// Meta-barra dispuesta para maquetas de "Gamma"
 	#meta-barra{
 		background-color: @negro-fundido;
@@ -148,8 +152,11 @@
 	  		margin-bottom: 30px;
 	  	}
 	}
-}
 
+		// * Sticky en funcionamiento *
+		.is-sticky {
+	}
+}
 // Small screen / tablet
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
 
@@ -172,6 +179,10 @@
 				width: 100%;
 			}
 	  }
+		// Sticky como ejemeplo en Componente "Javascript"
+		#ejemplo-sticky, #ejemplo-sticky-2, #ejemplo-sticky-3, #ejemplo-sticky-4, #ejemplo-sticky-5, #ejemplo-sticky-6, #ejemplo-sticky-7, #ejemplo-sticky-8{
+			display: none !important;
+		}
 	}
 
 	.is-sticky {
@@ -185,18 +196,21 @@
 				}
 			}
 		}
+
+		// Sticky como ejemeplo en Componente "Javascript"
+		#ejemplo-sticky, #ejemplo-sticky-2, #ejemplo-sticky-3, #ejemplo-sticky-4, #ejemplo-sticky-5, #ejemplo-sticky-6, #ejemplo-sticky-7, #ejemplo-sticky-8{
+			display: none !important;
+		}
 	}
 }
 
+
 //  Large screen / wide desktop
 @media (min-width: @screen-lg){
-
-	// Sticky como ejemeplo en Componente "Javascript"
-	#ejemplo-sticky{
-		width: 260px !important;
-	}
-
-  	#ejemplo-sticky-2, #ejemplo-sticky-3, #ejemplo-sticky-4, #ejemplo-sticky-5, #ejemplo-sticky-6, #ejemplo-sticky-7, #ejemplo-sticky-8{
-		width: 260px !important;
+	.sticky-wrapper{
+		// Sticky como ejemeplo en Componente "Javascript"
+		#ejemplo-sticky, #ejemplo-sticky-2, #ejemplo-sticky-3, #ejemplo-sticky-4, #ejemplo-sticky-5, #ejemplo-sticky-6, #ejemplo-sticky-7, #ejemplo-sticky-8{
+			width: 260px !important;
+		}
 	}
 }

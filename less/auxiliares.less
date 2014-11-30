@@ -614,10 +614,33 @@
     .alto-md{height: auto}
     .alto-lg{height: auto}
     .alto-completo{height: 100%}
+
+    // Ubicar a la derecha un elemento de bloque
+    .derecha{
+        float: right;
+        .cf;
+        // Para útima columna de footer
+        &.responsive-izquierda{
+            float: left !important;
+            text-align: left !important;
+        }
+    }
+
 }
 
 // Small screen / tablet
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+
+    // Ubicar a la derecha un elemento de bloque
+    .derecha{
+        float: right;
+        .cf;
+        // Para útima columna de footer
+        &.responsive-izquierda{
+            float: left !important;
+            text-align: left !important;
+        }
+    }
 }
 
 // Medium screen / desktop
