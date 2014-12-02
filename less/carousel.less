@@ -13,7 +13,7 @@
   width: 100%;
 
   > .item {
-  &.car-xs{height: 400px}
+  &.car-xs{height: 360px}
   &.car-sm{height: 500px}
   &.car-md{height: 600px}
   &.car-lg{height: 700px}
@@ -71,29 +71,31 @@
   bottom: 0;
   width: @carousel-control-width;
   font-size: @carousel-control-font-size;
-  color: @carousel-control-color;
+  color: @negro;
   text-align: center;
 
   &.left {
     top: 35%;
     left: 0;
     left: auto;
-    background-color: fade(@gris, 50);
+    background-color: @blanco;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
     width: @cuadratin * 1.5;
     height: @cuadratin * 3;
+    box-shadow: 1px 1px 3px fade(@pizarra, 30);
   } 
 
   &.right {
     top: 35%;
     left: auto;
     right: 0;
-    background-color: fade(@gris, 50);
+    background-color: @blanco;
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
     width: @cuadratin * 1.5;
     height: @cuadratin * 3;
+    box-shadow: 1px 1px 3px fade(@pizarra, 30);
   }
 
   // Hover/focus state
@@ -294,7 +296,7 @@
 
   .carousel-inner{
       > .item {
-    &.car-xs{height: 380px}
+    &.car-xs{height: 360px}
     &.car-sm{height: 250px}
     &.car-md{height: auto}
     &.car-lg{height: auto}
