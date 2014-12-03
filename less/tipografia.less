@@ -40,8 +40,14 @@ a{
 
       //  Hover:
     &:hover{
-      color: @negro-fundido;
+      color: @negro;
       text-decoration: none;
+    }
+
+    &.rojo{
+      &:hover{
+        color: @blanco;
+      }
     }
 
     &.negro{
@@ -947,6 +953,9 @@ code {
 
       &.xs, &.menudo {
         font-size: (@font-size-titulos-4 * .7);
+        a{
+          font-size: (@font-size-titulos-4 * .7);
+        }
           &.no-responsivo{
             font-size: (@font-size-titulos-4 * .8);
           }
@@ -977,7 +986,10 @@ code {
           }
       }
       &.xs, &.menudo {
-        font-size: (@font-size-titulos-5 * .7);
+        font-size: (@font-size-titulos-5 * .8);
+          a{
+            font-size: (@font-size-titulos-5 * .8);         
+          }
           &.no-responsivo{
             font-size: (@font-size-titulos-5 * .8);
           }
@@ -1304,7 +1316,7 @@ code {
     p {
         margin: 0 0 @interlinea * 1.3 0;
         font-size: 1vw; //@cuerpo
-        line-height: @interlinea * 1.15;
+        line-height: @interlinea;
 
         //  Tamaños de Párrafos:
 
@@ -1324,7 +1336,10 @@ code {
         }
 
         &.xs, &.menudo {
-          font-size: 1vw;
+          font-size: 0.8vw;
+          a{
+            font-size: 0.8vw;
+          }
           line-height: @interlinea * 1.1;
         }
     }
@@ -1360,7 +1375,7 @@ code {
         }
 
         &.xs, &.menudo {
-          font-size: 1vw;
+          font-size: 0.8vw;
           line-height: @interlinea * 1.1;
         }
       }
@@ -1426,7 +1441,10 @@ code {
         }
 
         &.xs, &.menudo {
-          font-size: 2vw;
+          font-size: 1.6vw;
+            a{
+              font-size: 1.6vw;
+            }
             &.no-responsivo{
               font-size: 1.7vw;
             }
@@ -1492,7 +1510,10 @@ code {
         }
 
         &.xs, &.menudo {
-          font-size: 1.1vw;
+          font-size: 1.3vw;
+          a{
+            font-size: 1.3vw;
+          }
             &.no-responsivo{
               font-size: 1.1vw;
             }
@@ -1526,6 +1547,9 @@ code {
 
         &.xs, &.menudo {
           font-size: .9vw;
+          a{
+            font-size: 1.1vw;
+          }
             &.no-responsivo{
               font-size: .9vw;
             }

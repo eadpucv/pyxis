@@ -211,7 +211,7 @@
 // Altos específicos
 
 .alto-xs{height: @cuadratin * 4}
-.alto-sm{height: @cuadratin * 6}
+.alto-sm{height: @cuadratin * 5}
 .alto-md{height: @cuadratin * 12}
 .alto-lg{height: @cuadratin * 16}
 .alto-completo{height: 100%}
@@ -219,14 +219,14 @@
 
 // Interletraje
 
-.interletraje-xs {letter-spacing: 1px !important}
-.interletraje-sm{letter-spacing: 2.5px !important}
-.interletraje-md{letter-spacing: 3.5px !important}
-.interletraje-lg{letter-spacing: 5px !important}
-.interletraje-xs-negativo{letter-spacing: -1px !important}
-.interletraje-sm-negativo{letter-spacing: -2.5px !important}
-.interletraje-md-negativo{letter-spacing: -3.5px !important}
-.interletraje-lg-negativo{letter-spacing: -5px !important}
+.interletraje-xs {letter-spacing: 1px}
+.interletraje-sm{letter-spacing: 2.5px}
+.interletraje-md{letter-spacing: 3.5px}
+.interletraje-lg{letter-spacing: 5px}
+.interletraje-xs-negativo{letter-spacing: -1px}
+.interletraje-sm-negativo{letter-spacing: -2.5px}
+.interletraje-md-negativo{letter-spacing: -3.5px}
+.interletraje-lg-negativo{letter-spacing: -5px}
 .sin-interletraje{letter-spacing: 0px !important}
 
 // Pesos
@@ -619,7 +619,7 @@
     // Altos específicos
 
     .alto-xs{height: @cuadratin * 4; &.auto{height: auto !important;}}
-    .alto-sm{height: auto}
+    .alto-sm{height: 150px;}
     .alto-md{height: auto}
     .alto-lg{height: auto}
     .alto-completo{height: 100%}
@@ -658,4 +658,11 @@
 
 // Large screen / wide desktop
 @media (min-width: @screen-lg){
+    // Altos específicos
+
+    .alto-xs{height: @cuadratin * 6}
+    .alto-sm{height: @cuadratin * 7}
+    .alto-md{height: @cuadratin * 14}
+    .alto-lg{height: @cuadratin * 18}
+
 }

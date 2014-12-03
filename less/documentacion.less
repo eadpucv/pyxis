@@ -87,13 +87,25 @@ footer{
 	a {
 
 		&:hover{
-			color: @pizarra; 
+			color: @rojo; 
 		}
 	}
 	
 	address{
 		font-size: @cuerpo * .7;
 		line-height: inherit;
+	}
+
+	#mapa{
+		height: 150px;
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		img{
+			top: -120%;
+			width: 120%;
+			position: absolute;
+		}
 	}
 }
 
@@ -227,6 +239,12 @@ footer{
 				}
 			}
 		}
+		#mapa{
+			display: none;
+			img{
+				display: none;
+			}
+		}
 	}
 }
 
@@ -288,6 +306,12 @@ footer{
 				}
 			}
 		}
+		#mapa{
+			display: none;
+			img{
+				display: none;
+			}
+		}
 	}
 }
 
@@ -329,5 +353,18 @@ footer{
 
 	.imagen-menu {
 		height: 15vw;
+	}
+
+	//	Footer
+
+	footer{
+
+		#mapa{
+			height: 200px;
+
+			img{
+				top: -130%;
+			}
+		}
 	}
 }

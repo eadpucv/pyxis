@@ -62,9 +62,8 @@ a.btn{
     
     &.btn-sm{
         font-size: @cuerpo * .8;
-        text-transform: uppercase;
         font-weight: normal;
-        padding: @padding-sm  4*@padding-sm;
+        padding: 5px 7px;
     }
 
     &.btn-md{
@@ -408,4 +407,50 @@ form{
 :-ms-input-placeholder {  
     color: @gris-oscuro;
     font-weight: 300;
+}
+
+//  Extra small screen / phone
+@media(max-width: @screen-xs-max){
+}
+
+// Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+}
+
+// Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+}
+
+// Large screen / wide desktop
+@media (min-width: @screen-lg){
+
+    //  Botones, formularios
+    button,
+    button.btn,
+    input[type='submit'],
+    a.btn{
+        font-size: .9vw;
+        padding: 8px 13px;
+        .transition(.5s ease all);
+
+        &.btn-accion{
+            color: @blanco;
+            text-shadow: 1px 1px 0 fade(@negro, 40%);
+            background-color: @verde;
+            
+            &:hover{
+                background-color: darken(@verde, 10%);
+            }
+        }
+        
+        &.btn-alerta{
+            color: @blanco;
+            text-shadow: 1px 1px 0 fade(@negro, 40%);
+            background-color:  @rojo-alerta !important;
+            &:hover{
+                background-color: darken(@rojo, 7%) !important;
+                color: @blanco;
+            }
+        }
+    }
 }
