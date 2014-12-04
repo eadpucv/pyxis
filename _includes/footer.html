@@ -1,22 +1,22 @@
-<footer> 
+<footer class='fondo-blanco'> 
   <div class='pag'>
     <div class='fila'>
     <div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
       
       <div class='logo-pyxis footer centrado'>
         <a class='en-linea' href='{{ site.baseurl }}/'>
-      <img src='{{ site.baseurl }}/img/pyxis-brujula-06.png'><h6 class='gruesa rojo centrado sans'>Pyxis <span class='gris-oscuro sans fino'>framework</span></h6>
+      <img src='{{ site.baseurl }}/img/pyxis-logo-sm.png'><h6 class='gruesa rojo centrado sans'>Pyxis <span class='gris-oscuro sans fino'>framework</span></h6>
         </a>
       </div>
-      <ul class='bloque centrado ancho-completo'>
-        <li><a class='xs sans' href='{{ site.baseurl }}/pags/tipografia'>Tipografía</a></li>
-        <li><a class='xs sans' href='{{ site.baseurl }}/pags/grilla'>Grilla</a></li>
-        <li><a class='xs sans' href='{{ site.baseurl }}/pags/interaccion'>Interacción</a></li>
-        <li><a class='xs sans' href='{{ site.baseurl }}/pags/color'>Color</a></li>
-        <li><a class='xs sans' href='{{ site.baseurl }}/pags/iconografia'>Íconografía</a></li>
-        <li><a class='xs sans' href='{{ site.baseurl }}/pags/versatilidad'>Versatilidad</a></li>
-        <li><a class='xs sans' href='{{ site.baseurl }}/pags/javascript'>Javascript</a></li>
-      </ul>
+      <nav class='nav-footer bloque centrado ancho-completo'>
+        <li><a class='xs negrita altas sans' href='{{ site.baseurl }}/pags/tipografia'>Tipografía</a></li>
+        <li><a class='xs negrita altas sans' href='{{ site.baseurl }}/pags/grilla'>Grilla</a></li>
+        <li><a class='xs negrita altas sans' href='{{ site.baseurl }}/pags/interaccion'>Interacción</a></li>
+        <li><a class='xs negrita altas sans' href='{{ site.baseurl }}/pags/color'>Color</a></li>
+        <li><a class='xs negrita altas sans' href='{{ site.baseurl }}/pags/iconografia'>Íconografía</a></li>
+        <li><a class='xs negrita altas sans' href='{{ site.baseurl }}/pags/versatilidad'>Versatilidad</a></li>
+        <li><a class='xs negrita altas sans' href='{{ site.baseurl }}/pags/javascript'>Javascript</a></li>
+      </nav>
     </div>
   </div>
   <div class='fila'>
@@ -96,9 +96,12 @@ $('#tabla-contenido a').click(function (e) {
     <script type='text/javascript'>
       $(document).ready(function(){
       $("#sub-componentes").sticky({topSpacing: 0});
-      $("#ejemplo-sticky").sticky({topSpacing: 40});
-      $("#ejemplo-sticky-2").sticky({topSpacing: 90});
-      $("#ejemplo-sticky-3").sticky({topSpacing: 140});
+      $("#ejemplo-sticky").sticky({topSpacing: 60});
+      $("#ejemplo-sticky-2").sticky({topSpacing: 80});
+      $("#ejemplo-sticky-3").sticky({topSpacing: 100});
+      $("#ejemplo-sticky-4").sticky({topSpacing: 120});
+      $("#ejemplo-sticky-5").sticky({topSpacing: 140});
+      $("#ejemplo-sticky-6").sticky({topSpacing: 160});
       $("#ead-sticky").sticky({topSpacing: 40});
       $("#meta-barra").sticky({topSpacing: 0});
       $("#nav-page").sticky({topSpacing:30});

@@ -10,7 +10,7 @@ nav {
   &.lista-sin-estilo{
       list-style: none;
     }
-  
+
   ul, ol{
   margin: 0;
   padding: 0;
@@ -25,7 +25,7 @@ nav {
       display: inline-block;
       font-weight: 400; 
       margin: 0;
-      padding: @cuerpo * 1.1 * 0.5 @cuerpo * 0.9;
+      padding: @cuerpo @cuerpo * 0.9;
       color: @negro !important;
       font-size: 13px;
       text-transform: uppercase;
@@ -49,75 +49,6 @@ nav {
         line-height: 0;
     }
   }
-
-//  Menú Pyxis
-
-.menu-pyxis {
-    margin: 0 auto;
-    padding: 0;     
-    padding: 0;  
-    font-family: 'Open Sans Condensed';
-    min-height: 60px;
-
-    .nav-rotulos {
-      height: 60px;
-      float: right;
-
-      li a {
-        margin: 17px 21px;
-        padding: 0;
-        font-family: @cond;
-        font-weight: 700;
-      }
-   }        
-
-    h6{
-      display: inline-block;
-      margin: 15px 5px;
-      padding: 0;
-    }
-
-    span {
-      padding: 0;
-      margin: 0 0 0 3px;
-      letter-spacing: .25/@em;
-    }
-}
-
-   
-// logo 
-
-.logo-pyxis {
-  width: auto;
-  float: left;
-
-  img {
-    padding: 18px 0;
-    width: 20/@em;
-    float: left;
-  }
-
-  &.footer {
-    width: 0 auto;
-    float: none;
-    margin: 0 auto;
-    display: block;
-    padding-bottom: 5px;
-
-    h6{
-      display: inline-block;
-      margin: 0px;
-      padding: 0px 0.5px;
-    }
-
-    img{
-      padding: 0;
-      margin: 4px 5px 0 0;
-      width: 20/@em;
-      display: block;
-    }
-  }
-}
 
 //
 // Navs
@@ -150,7 +81,7 @@ a.menu-link {
     }
     nav[role=navigation] li a {
       display: block;
-      padding: 10px 15px;
+      padding: 10px 20px;
     }
     
     @media screen and (min-width: 68.25em) {
@@ -323,7 +254,7 @@ a.menu-link {
     // Links rendered as pills
     > a {
       border-radius: @nav-pills-border-radius;
-      font-family: @sans !important;
+      font-family: @sans;
     }
     + li {
       margin-left: 2px;
@@ -341,7 +272,6 @@ a.menu-link {
   }
 }
 
-
 // Stacked pills
 .nav-stacked {
   > li {
@@ -353,6 +283,18 @@ a.menu-link {
   }
 }
 
+//Nav y ul en Footer
+footer{
+  ul, nav{
+    margin: 1em 0;
+  }
+  nav li,
+  ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 1em;
+  }
+}
 
 // Nav variations
 // --------------------------------------------------
@@ -445,8 +387,8 @@ a.menu-link {
   .border-top-radius(0);
 }
 
-
-//  Responsive adaptable
+// --------------------------------------------------
+// diseño de utilidad responsive
 
 //  Extra Small screen / Phone
 @media(max-width: @screen-xs-max){
@@ -454,18 +396,23 @@ a.menu-link {
   // logo
 
   .logo-pyxis {
-    width: auto;
     float: left;
     display: inline-block;
+
+    a{
+      display: inline-block;
+      padding: @cuerpo *.7 0 14px 0;
+    }
 
     h6 {
       display: inline-block;
     }
 
     img {
-      width: 20/@em;
+      width: auto;
       float: left;
-      padding: 3px 0;
+      padding: 0;
+      margin: 0;
     }
 
     &.footer {
@@ -482,9 +429,9 @@ a.menu-link {
       }
 
       img{
-        padding: 0;
-        width: 20/@em;
         display: block;
+        padding: 0;
+        margin: 0 5px 0 0 !important;
       }
     }
   }
@@ -559,44 +506,6 @@ a.menu-link {
 
 //  Small screen / tablet
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
-
-  //  Menú Pyxis
-  .menu-pyxis {
-
-      .nav-rotulos {
-
-        li a {
-          margin: 17px 9px;
-        }
-     }        
-  }
-
-  // logo 
-
-  .logo {
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px 0 0 0;
-    float: none;
-    text-align: center;
-
-    h5 {
-      font-size: 30px;
-      margin: 0;
-      padding: 0 0 0 5px;
-      display: inline-block;
-    }
-
-    span {
-      margin: 0;
-    }
-
-    img {
-      float: none;
-      padding: 0;
-      width: 35px;
-    }
-  }
 }
 
 //  Medium screen / desktop
@@ -637,4 +546,22 @@ a.menu-link {
 
 // Large screen / wide desktop
 @media (min-width: @screen-lg){
+
+    // logo 
+
+  .logo-pyxis {
+    
+    a{
+      img {
+        width: 1.4vw;
+      }
+    }
+    
+    &.footer {
+
+      img{
+        width: 1.4vw;
+      }
+    } 
+  }
 }

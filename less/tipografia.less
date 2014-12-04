@@ -40,8 +40,14 @@ a{
 
       //  Hover:
     &:hover{
-      color: @pizarra;
+      color: @negro;
       text-decoration: none;
+    }
+
+    &.rojo{
+      &:hover{
+        color: @blanco;
+      }
     }
 
     &.negro{
@@ -60,7 +66,7 @@ a{
 //  Párrafos:
 
 p {
-    margin: 0 0 @interlinea * 1.3 0;
+    margin: 0 0 25px 0;
     font-family: @texto-continuo;
     font-size: @cuerpo;
     line-height: @interlinea;
@@ -80,6 +86,11 @@ p {
 
     &.md, &.mediano {
       font-size: @cuerpo * 1.7;
+      line-height: @interlinea;
+    }
+
+    &.st, &.estandar{
+      font-size: @cuerpo;
       line-height: @interlinea;
     }
 
@@ -130,14 +141,24 @@ span {
       line-height: 150%;
       }
 
+    &.st, &.estandar{
+      font-size: @cuerpo;
+      line-height: @interlinea;
+    }
+
     &.sm, &.pequeno {
       font-size: @cuerpo * 1.2;
-      line-height: 150%;
+      line-height: 130%;
     }
 
     &.xs, &.menudo {
       font-size: @cuerpo * .75;
-      line-height: @interlinea * 1.1;
+      line-height: @interlinea ;
+    }
+
+    &.centrado{
+      display: block;
+      margin: 0 auto;
     }
   }
 
@@ -152,30 +173,32 @@ span {
 
 #breadcrumb{
   text-transform: uppercase;
-  letter-spacing: .5;
   font-family: @tipografia-titulos;
 
   li{
     display: inline-block;
-    font-family: @sans;
-    font-size: @cuerpo * .9;
-    font-weight: 200;
+    font-family: @cond;
+    font-size: @cuerpo * .8;
 
       &:last-child{
         a{
           color: @negro;
         }
+      &:after{
+        content: none;
       }
+    }
 
     &:after{
-      color: @rojo;
+      color: @negro;
       content: "→"
     }
 
     a{
-      font-family: @tipografia-titulos;
+      font-family: @cond;
+      font-weight: 700;
       .margen-horizontal-xs;
-      font-size: @cuerpo * .8;
+      font-size: @cuerpo * .75;
 
       &:hover{
         color: @rojo;
@@ -209,15 +232,15 @@ span {
 // Clases de familia tipográfica 
 
 .sans {
-  font-family: @sans;
+  font-family: @sans !important;
 }
 
 .cond, .condensada, .condensado{
-  font-family: @cond;
+  font-family: @cond !important;
 }
 
 .serif {
-  font-family: @serif;
+  font-family: @serif !important;
 }
 
 //  Énfasis:
@@ -373,7 +396,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: @tipografia-titulos;
     font-weight: 400;
     color: @pizarra;
-    margin: 0 0 10/@em 0;
+    margin: 0px 0px 10px 0px;
 
     &.sin-margen{
         margin: 0 !important;
@@ -775,6 +798,9 @@ code {
     position: relative;
 }
 
+// ----------------------------------------------------------------------------------------------------------------------------
+// diseño de utilidad responsive
+
 //  Extra small screen / phone
 @media(max-width: @screen-xs-max){
 
@@ -785,7 +811,7 @@ code {
       font-family: @texto-continuo;
       font-size: @cuerpo * .9;
       line-height: @interlinea * .97;
-      font-weight: 200;
+      font-weight: 300;
 
       //  Tamaños de Párrafos:
 
@@ -927,6 +953,9 @@ code {
 
       &.xs, &.menudo {
         font-size: (@font-size-titulos-4 * .7);
+        a{
+          font-size: (@font-size-titulos-4 * .7);
+        }
           &.no-responsivo{
             font-size: (@font-size-titulos-4 * .8);
           }
@@ -957,7 +986,10 @@ code {
           }
       }
       &.xs, &.menudo {
-        font-size: (@font-size-titulos-5 * .7);
+        font-size: (@font-size-titulos-5 * .8);
+          a{
+            font-size: (@font-size-titulos-5 * .8);         
+          }
           &.no-responsivo{
             font-size: (@font-size-titulos-5 * .8);
           }
@@ -1016,7 +1048,7 @@ code {
     font-family: @texto-continuo;
     font-size: @cuerpo;
     line-height: @interlinea * .9;
-    font-weight: 200;
+    font-weight: 300;
 
     //  Tamaños de Párrafos:
     &.lg, &.grande { 
@@ -1244,10 +1276,16 @@ code {
 //  Large screen / wide desktop
 @media (min-width: @screen-lg){
 
+    // e[ad] escrito
+
+    .ead{
+      font-size: 2.8vw !important;
+    }
+
     //  Vínculos:
 
     a{
-      font-size: 0.95vw;
+      font-size: 1vw;
 
           //  Tamaños de Vínculos:
 
@@ -1263,12 +1301,12 @@ code {
         }
 
         &.sm, &.pequeno  {
-          font-size: 1vw;;
+          font-size: 1.2vw;;
           line-height: 130%;
         }
 
         &.xs, &.menudo  {
-          font-size: .8vw;
+          font-size: 1vw;
           line-height: @interlinea * .9;
         }
       }
@@ -1277,8 +1315,8 @@ code {
 
     p {
         margin: 0 0 @interlinea * 1.3 0;
-        font-size: 0.95vw; //@cuerpo
-        line-height: @interlinea * 1.15;
+        font-size: 1.1vw; //@cuerpo
+        line-height: @interlinea;
 
         //  Tamaños de Párrafos:
 
@@ -1293,12 +1331,15 @@ code {
         }
 
         &.sm, &.pequeno {
-          font-size: 1vw; //1.2
+          font-size: 1.2vw; //1.2
           line-height: @interlinea * 1.1;
         }
 
         &.xs, &.menudo {
-          font-size: .8vw;
+          font-size: 0.8vw;
+          a{
+            font-size: 0.8vw;
+          }
           line-height: @interlinea * 1.1;
         }
     }
@@ -1329,12 +1370,12 @@ code {
           }
 
         &.sm, &.pequeno {
-          font-size: 1vw; 
+          font-size: 1.2vw; 
           line-height: 150%;
         }
 
         &.xs, &.menudo {
-          font-size: .8vw;
+          font-size: 0.8vw;
           line-height: @interlinea * 1.1;
         }
       }
@@ -1393,14 +1434,17 @@ code {
         }
 
         &.sm, &.pequeno {
-          font-size: 2.4vw;
+          font-size: 2.9vw;
             &.no-responsivo{
               font-size: (@font-size-titulos-2 * 1.2);
             }
         }
 
         &.xs, &.menudo {
-          font-size: 1.7vw;
+          font-size: 1.6vw;
+            a{
+              font-size: 1.6vw;
+            }
             &.no-responsivo{
               font-size: 1.7vw;
             }
@@ -1466,7 +1510,10 @@ code {
         }
 
         &.xs, &.menudo {
-          font-size: 1.1vw;
+          font-size: 1.3vw;
+          a{
+            font-size: 1.3vw;
+          }
             &.no-responsivo{
               font-size: 1.1vw;
             }
@@ -1500,6 +1547,9 @@ code {
 
         &.xs, &.menudo {
           font-size: .9vw;
+          a{
+            font-size: 1.1vw;
+          }
             &.no-responsivo{
               font-size: .9vw;
             }
@@ -1532,7 +1582,7 @@ code {
         }
 
         &.xs, &.menudo {
-          font-size: .7vw;
+          font-size: 1vw;
             &.no-responsivo{
               font-size: .7vw;
             }

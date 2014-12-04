@@ -25,6 +25,15 @@ a.btn{
     position: relative;
     box-shadow: 0 @boton-resalte 0 fade(@negro, 20);
     .transition(.5s ease all);
+
+    &.sin-relleno{
+        padding: 0 !important;
+    }
+
+    &.sin-margen{
+        margin: 0 !important;
+    }
+    
     &:hover {
         box-shadow: 0 @boton-resalte 0 fade(@pizarra, 50%);
         border-color: fade(@pizarra, 50%);
@@ -32,6 +41,10 @@ a.btn{
         text-decoration: none;
         color: @pizarra;
         .transition(.5s ease all);
+    }
+
+    .icn{
+        letter-spacing: normal !important;
     }
 
     &:active{
@@ -49,9 +62,8 @@ a.btn{
     
     &.btn-sm{
         font-size: @cuerpo * .8;
-        text-transform: uppercase;
         font-weight: normal;
-        padding: @padding-sm  4*@padding-sm;
+        padding: 5px 7px;
     }
 
     &.btn-md{
@@ -109,17 +121,17 @@ a.btn{
 
 // Para grupo de botones
 
-.pegado-antes{.border-radius(@radio 0 0 @radio)}
-.pegado-despues{.border-radius(0 @radio @radio 0)}
+.pegado-antes{.border-radius(@radio 0 0 @radio) !important}
+.pegado-despues{.border-radius(0 @radio @radio 0) !important}
 
     // Grupo de botones
 .grupo-botones{
   .btn{
     float: left;
-    border-radius: 0 !important;
+    border-radius: 0;
     margin-left: -1px;
-    &:first-child{.border-radius(@radio 0 0 @radio) !important}
-    &:last-child{.border-radius(0 @radio @radio 0) !important}
+    &:first-child{.border-radius(@radio 0 0 @radio) !important;}
+    &:last-child{.border-radius(0 @radio @radio 0) !important;}
   }
 }
 
@@ -395,4 +407,50 @@ form{
 :-ms-input-placeholder {  
     color: @gris-oscuro;
     font-weight: 300;
+}
+
+//  Extra small screen / phone
+@media(max-width: @screen-xs-max){
+}
+
+// Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+}
+
+// Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+}
+
+// Large screen / wide desktop
+@media (min-width: @screen-lg){
+
+    //  Botones, formularios
+    button,
+    button.btn,
+    input[type='submit'],
+    a.btn{
+        font-size: .9vw;
+        padding: 8px 13px;
+        .transition(.5s ease all);
+
+        &.btn-accion{
+            color: @blanco;
+            text-shadow: 1px 1px 0 fade(@negro, 40%);
+            background-color: @verde;
+            
+            &:hover{
+                background-color: darken(@verde, 10%);
+            }
+        }
+        
+        &.btn-alerta{
+            color: @blanco;
+            text-shadow: 1px 1px 0 fade(@negro, 40%);
+            background-color:  @rojo-alerta !important;
+            &:hover{
+                background-color: darken(@rojo, 7%) !important;
+                color: @blanco;
+            }
+        }
+    }
 }

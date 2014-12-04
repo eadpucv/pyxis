@@ -34,7 +34,7 @@ intro: Texto sobre color
         </div>
         
         <!-- contenido en tabs -->
-        <div class="tab-content">
+        <div class="tab-content margen-sup">
             <div class="tab-pane fade in active" id="paleta-gamma">
                 <h4 class="pizarra gruesa">Paleta de Colores</h4>
                 <p>La paleta gráfica del framework establece una gama de colores que deviene de un poroceso de registro y abstracción determinado y disponible en la <a href="http://wiki.ead.pucv.cl/index.php/Pyxis_framework:_Experiencia_gr%C3%A1fica_de_una_organizaci%C3%B3n#Paleta_de_colores">Documentación</a> de <a href='http://wiki.ead.pucv.cl/index.php/Casiopea'>Wiki Casiopea</a>. De esta manera, la identidad cromática se fundamenta en procesos tecnificados y metodológicos con respecto al sistema orgánico de la organización.  A continuación se muestran a modo de lista los colores escogidos, pasando desde los tonos grises y luego los cromáticos</p>
@@ -45,6 +45,7 @@ intro: Texto sobre color
                         <div class="fila">
                             <div class="col-lg-5 col-md-5 col-sm-5 oculto-xs">
                                 <code class='codigo-color sin-relleno sin-borde'>@negro / rgba(43, 44, 42, 1) / #2b2c2</code>
+                                <code class='codigo-color sin-relleno sin-borde'>@negro-fundido / rgba(43, 44, 42, 1) / #2b2c2</code>
                                 <code class='codigo-color sin-relleno sin-borde'>@pizarra / rgba(45,45,50,.7) / </code>
                                 <code class='codigo-color sin-relleno sin-borde'>@gris / rgba(193, 194, 194, 1) / #c1c2c2</code>
                                 <code class='codigo-color sin-relleno sin-borde'>@gris-claro / rgba(226, 226, 226, 1) / #e2e2e2</code>
@@ -52,6 +53,7 @@ intro: Texto sobre color
                             </div>
                             <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                                 <div class='caja-color fondo-negro'></div>
+                                <div class='caja-color fondo-negro-fundido'></div>
                                 <div class='caja-color fondo-pizarra'></div>
                                 <div class='caja-color fondo-gris'></div>
                                 <div class='caja-color fondo-gris-claro'></div>

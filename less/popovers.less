@@ -34,7 +34,7 @@
   font-size: @font-size-base;
   font-weight: normal;
   line-height: 18px;
-  background-color: @popover-title-bg;
+  background-color: @blanco;
   border-bottom: 1px solid darken(@popover-title-bg, 5%);
   border-radius: 5px 5px 0 0;
 }
@@ -42,6 +42,7 @@
 .popover-content {
   padding: 20px 15px;
   font-family: @sans;
+  background-color: @gris-blanco;
 }
 
 // Arrows
@@ -72,15 +73,15 @@
     left: 50%;
     margin-left: -@popover-arrow-outer-width;
     border-bottom-width: 0;
-    border-top-color: @popover-arrow-outer-fallback-color; // IE8 fallback
-    border-top-color: @popover-arrow-outer-color;
+    border-top-color: blanco; // IE8 fallback
+    border-top-color: blanco;
     bottom: -@popover-arrow-outer-width;
     &:after {
       content: " ";
       bottom: 1px;
       margin-left: -@popover-arrow-width;
       border-bottom-width: 0;
-      border-top-color: @popover-arrow-color;
+      border-top-color: blanco;
     }
   }
   &.right > .arrow {
@@ -88,29 +89,29 @@
     left: -@popover-arrow-outer-width;
     margin-top: -@popover-arrow-outer-width;
     border-left-width: 0;
-    border-right-color: @popover-arrow-outer-fallback-color; // IE8 fallback
-    border-right-color: @popover-arrow-outer-color;
+    border-right-color: blanco; // IE8 fallback
+    border-right-color: blanco;
     &:after {
       content: " ";
       left: 1px;
       bottom: -@popover-arrow-width;
       border-left-width: 0;
-      border-right-color: @popover-arrow-color;
+      border-right-color: blanco;
     }
   }
   &.bottom > .arrow {
     left: 50%;
     margin-left: -@popover-arrow-outer-width;
     border-top-width: 0;
-    border-bottom-color: @popover-arrow-outer-fallback-color; // IE8 fallback
-    border-bottom-color: @popover-arrow-outer-color;
+    border-bottom-color: blanco; // IE8 fallback
+    border-bottom-color: blanco;
     top: -@popover-arrow-outer-width;
     &:after {
       content: " ";
       top: 1px;
       margin-left: -@popover-arrow-width;
       border-top-width: 0;
-      border-bottom-color: @popover-arrow-color;
+      border-bottom-color: blanco;
     }
   }
 
@@ -119,13 +120,13 @@
     right: -@popover-arrow-outer-width;
     margin-top: -@popover-arrow-outer-width;
     border-right-width: 0;
-    border-left-color: @popover-arrow-outer-fallback-color; // IE8 fallback
-    border-left-color: @popover-arrow-outer-color;
+    border-left-color: blanco; // IE8 fallback
+    border-left-color: blanco;
     &:after {
       content: " ";
       right: 1px;
       border-right-width: 0;
-      border-left-color: @popover-arrow-color;
+      border-left-color: blanco;
       bottom: -@popover-arrow-width;
     }
   }

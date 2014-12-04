@@ -3,10 +3,10 @@ layout: base
 title: Pyxis Framework - Tipografía
 subtitle: <i class="icn icn-libro"></i> Tipografía
 intro: Texto sobre tipografía
-link-1: Fuentes tipográficas
+link-1: Fuentes
 link-2: Encabezados
-link-3: Valores tipográficos
-link-4: Clases diferenciales
+link-3: Tamaños
+link-4: Clases
 pde: type.pde
 ---
 
@@ -25,10 +25,10 @@ pde: type.pde
     </div>
 
     <!-- Tab panes -->
-    <div class="tab-content">
+    <div class="tab-content margen-sup">
         <div class="tab-pane fade in active" id="familias">
             <h4 class='pizarra gruesa'>Parámetros de fuente</h4>
-            <p class='hyphens justify-content'>Pyxis utiliza globalmente y por defecto un <i>font-size</i> de <span class='verde'>@cuerpo:</span> <b>15px</b>, con un <i>line-heigh</i> de <span class='verde'>@interlinea:</span> <b>25px</b> y un <i>font-weight</i> de <span class='verde'>@peso:</span> <b>200</b>, lo cual hace referencia a un <i>font-style</i> "normal" o "regular" en las dos familias de fuente escogidas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt turpis et metus scelerisque posuere vel sed ligula. Cras ullamcorper tortor at tortor finibus posuere. Suspendisse egestas eget magna a luctus.</p>
+            <p class='hyphens justify-content'>Pyxis utiliza globalmente y por defecto un <i>font-size</i> de <span class='verde'>@cuerpo:</span> <b>15px</b>, con un <i>line-height</i> de <span class='verde'>@interlinea:</span> <b>25px</b> y un <i>font-weight</i> de <span class='verde'>@peso:</span> <b>200</b>, lo cual hace referencia a un <i>font-style</i> "normal" o "regular" en las dos familias de fuente escogidas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt turpis et metus scelerisque posuere vel sed ligula. Cras ullamcorper tortor at tortor finibus posuere. Suspendisse egestas eget magna a luctus.</p>
             <div class='fila'>
                 <div class='col-md-6 col-sm-12 col-xs-12'>
                     <h5 class='rojo gruesa'>Source Sans Pro</h5>
@@ -796,15 +796,14 @@ h1, h2, h3, h4, h5, h6 {
 &lt;p class=&quot;fecha-evento&quot;&gt;...&lt;/p&gt;
                 </code>
                 <hr class='invisible'>
-                <div class='ancho-lg'>
-                <div class='logo en-linea'>
-                    <span class='lg rojo sans relleno-sup-xs'>e[ad]</span>
+                <div class='izquierda margen-der-xs logo en-linea'>
+                    <span class='lg bloque izquierda rojo sans'>e[ad]</span>
                  </div>
-                <div class='logo en-linea'>
-                    <span class='sm gris-oscuro'>Escuela de arquitectura y diseño</span>
-                    <span class='xs gris-oscuro en-linea'>Pontificia universidad católica de Valparaíso</span>
+                <div class='izquierda relleno-sup-xs logo en-linea'>
+                    <span class='sm sans bloque negro-fundido'>Escuela de arquitectura y diseño</span>
+                    <span class='xs bloque negro-fundido en-linea'>Pontificia universidad católica de Valparaíso</span>
                 </div>
-                </div>
+             
                
         </div>
     </div>

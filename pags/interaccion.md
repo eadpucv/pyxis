@@ -18,7 +18,7 @@ intro: Texto sobre Interacción
     </div>
 
     <!-- contenido en tabs -->
-    <div class="tab-content">
+    <div class="tab-content margen-sup">
       <div class="tab-pane fade in active" id="formularios">
         <h4 class='pizarra gruesa'>Formularios</h4>
         <p>Éstos elementos son los encargados de establecer un vínculo de comunicación entre el usuario y la plataforma o sistema. Por una parte existen los formularios que son los objetos digitales de recibir la información que proporciona el usuario a través de distintos input. La configuración de los input resulta ser un tipo de formulario. Mientras que los botones son el elemento interactivo más común de los sitios web, donde al ser accionado se gatilla algún elemento, interacción o envía algún tipo de introducción.</p>
