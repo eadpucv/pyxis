@@ -11,10 +11,6 @@ intro: Texto sobre versatilidad
         <div class='pag sin-relleno'>
             <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
                 <li class="active"><a id='subiendo-1' class='condensado' href="#parametros" role="tab" data-toggle="tab">Parámetros</a></li>
-                <li><a id='subiendo-2' class='condensado' href="#maquetas" role="tab" data-toggle="tab">Maquetas</a></li>
-                <li><a id='subiendo-3' class='condensado' href="#paleta-gamma" role="tab" data-toggle="tab">Footer</a></li>
-                <li><a id='subiendo-4' class='condensado' href="#paleta-gamma" role="tab" data-toggle="tab">Textos</a></li>
-                <li><a id='subiendo-5' class='condensado' href="#paleta-gamma" role="tab" data-toggle="tab">Imágenes</a></li>
                 <li class='subir'><a href="#topbar"><i class="icn icn-imagen"></i></a></li>
             </ul>
         </div>

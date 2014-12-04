@@ -185,40 +185,40 @@ title: Pyxis Framework - Maquetas
 </div>
 
 <div class='pag sin-relleno margen-sup'>
-  <h2 class='xs gris centrado margen-inf-md'><i class='icn icn-calendario margen-der-xs'></i><a href='#' class='gris condensado fino interletraje-xs'>Eventos</a></h2>
+  <h2 class='xs centrado gris oculto-xs margen-inf-md gris condensado fino oculto-xs interletraje-xs'><i class='icn icn-calendario icn-light margen-der-xs'></i>Eventos</h2>
  
     <div class='col-md-6 col-sm-6 col-xs-12 alto-sm'>
       <div class='h38'>
       <div class='en-linea izquierda w20 h60'><span class='sm cond gruesa pizarra linea-lateral fondo-blanco sombra borde radio-sup-der-sm radio-inf-der-sm relleno-der-sm'>22 Oct</span></div>
-        <h5 class='xs sin-margen relleno-inf-xs'><a class='naranja sombra-cabecera-claro-xs fina condensado gruesa' href='#'>Segundo coloquio de Fabricación Digital 2014: Nuevas tecnologías, nuevas prácticas</a></h5>
+        <h5 class='xs sin-margen relleno-inf-xs'><a class='fina condensado gruesa' href='#'>Segundo coloquio de Fabricación Digital 2014: Nuevas tecnologías, nuevas prácticas</a></h5>
       </div>
     <p class='xs sans'>El lunes 20 de octubre se llevará a cabo en Valparaíso el segundo coloquio de Fabricación Digital organizado por la Escuela de Arquitectura y Diseño de la PUCV. Al evento [...]</p>
     </div>
     <div class='col-md-6 col-sm-6 col-xs-12 alto-sm'>
       <div class='h38'>
         <div class='en-linea izquierda w20 h60'><span class='sm cond gruesa pizarra linea-lateral fondo-blanco sombra borde radio-sup-der-sm radio-inf-der-sm relleno-der-sm'>14 Oct</span></div>
-        <h5 class='xs sin-margen relleno-inf-xs'><a class='naranja sombra-cabecera-claro-xs fina condensado gruesa' href='#'>Charla fundación Superación de la Pobreza</a></h5>
+        <h5 class='xs sin-margen relleno-inf-xs'><a class='fina condensado gruesa' href='#'>Charla fundación Superación de la Pobreza</a></h5>
       </div><p class='xs sans'>Este martes 14 de octubre se realizará en la Escuela de Arquitectura y Diseño una charla de Enseña Chile para los titulantes y recién titulados. El objetivo de la actividad es [..
       .]</p>
     </div>
     <div class='col-md-6 col-sm-6 col-xs-12 alto-sm'>
       <div class='h38'>
         <div class='en-linea izquierda w20 h60'><span class='sm cond gruesa pizarra linea-lateral fondo-blanco sombra borde radio-sup-der-sm radio-inf-der-sm relleno-der-sm'>06 Oct</span></div>
-        <h5 class='xs sin-margen relleno-inf-xs'><a class='naranja sombra-cabecera-claro-xs fina condensado gruesa' href='#'>Venta especial ediciones ARQ</a></h5>
+        <h5 class='xs sin-margen relleno-inf-xs'><a class='fina condensado gruesa' href='#'>Venta especial ediciones ARQ</a></h5>
       </div>
       <p class='xs sans'>Durante el lunes 6 y martes 7 de octubre se llevará a cabo una venta especial de libros de Ediciones ARQ, entre las 10:00 y las 16:00 horas en la Biblioteca de la Escuela.</p>
     </div>
     <div class='col-md-6 col-sm-6 col-xs-12 alto-sm'>
       <div class='h38'>
         <div class='en-linea izquierda w20 h60'><span class='sm cond gruesa pizarra linea-lateral fondo-blanco sombra borde radio-sup-der-sm radio-inf-der-sm relleno-der-sm'>06 Oct</span></div>
-        <h5 class='xs sin-margen relleno-inf-xs'><a class='naranja sombra-cabecera-claro-xs fina condensado gruesa' href='#'>Venta especial ediciones ARQ</a></h5>
+        <h5 class='xs sin-margen relleno-inf-xs'><a class='fina condensado gruesa' href='#'>Venta especial ediciones ARQ</a></h5>
       </div>
       <p class='xs sans'>Durante el lunes 6 y martes 7 de octubre se llevará a cabo una venta especial de libros de Ediciones ARQ, entre las 10:00 y las 16:00 horas en la Biblioteca de la Escuela.</p>
     </div>
  
 
   <!-- Encabezado de sección -->
-  <h2 class='xs centrado gris margen-inf-md'><i class='icn icn-noticias margen-der-xs'></i><a href='{{ site.baseurl }}/maquetas/portada-noticias' class='gris condensado fino interletraje-xs'>Noticias</a></h2>
+  <h2 class='xs centrado gris margen-inf-md'><a href='{{ site.baseurl }}/maquetas/portada-noticias' class='gris condensado fino interletraje-xs'><i class='icn icn-noticias icn-light margen-der-xs'></i>Noticias</a></h2>
   <!-- Fila de 3 noticias -->
   <div class='pag sin-relleno gutter margen-sup'>
     <div class='fila'>
@@ -344,7 +344,7 @@ title: Pyxis Framework - Maquetas
 
 <!-- franja de postulante -->
   <!-- Encabezado de sección -->
-  <h2 class='xs centrado gris oculto-xs margen-inf-md'><i class='icn icn-cruzdelsur icn-light margen-der-xs'></i><a href='{{ site.baseurl }}/maquetas/portada-noticias' class='gris condensado fino oculto-xs interletraje-xs'>Escuela & Enlaces</a></h2>
+  <h2 class='xs centrado gris oculto-xs margen-inf-md gris condensado fino oculto-xs interletraje-xs'><i class='icn icn-cruzdelsur icn-light margen-der-xs'></i>Escuela & Enlaces</h2>
   <!-- Carrousel -->
   <div class='margen-inf-md'>
     <div data-ride="carousel" class="carousel slide oculto-xs">
@@ -443,14 +443,14 @@ title: Pyxis Framework - Maquetas
     </div>
   </div>
   <!-- Encabezado de sección -->
-  <h2 class='xs centrado gris margen-inf-xs'><i class='icn icn-lapiz icn-light margen-der-xs'></i><a href='{{ site.baseurl }}/maquetas/portada-noticias' class='gris margen-sup-xs condensado fino interletraje-xs'>Publicaciones</a></h2>
+  <h2 class='xs centrado gris oculto-xs margen-inf-xs gris condensado fino oculto-xs interletraje-xs'><i class='icn icn-lapiz icn-light margen-der-xs'></i>Publicaciones</h2>
   <div class='pag'>
     <div class='fila margen-inf margen-sup-xs'>
       <div class='col-md-4 col-sm-6 col-xs-12'>
         <a href='#'>
         <i class='icn icn-archivo margen-der-xs relleno-der-xs fondo-blanco linea-lateral relleno-vertical-xs icn-light borde radio-sup-der-sm radio-inf-der-sm sombra relleno-izq-xs negro'></i><h6 class='xs altas negro-fundido en-linea relleno-izq-xs interletraje-xs sombra-cabecera-claro-xs gruesa condensado negro'>archivo histórico</h6>
         </a>
-        <h5 class='xs sin-margen relleno-inf-xs'><a class='naranja sombra-cabecera-claro-xs fina condensado gruesa' href='#'>Presentación libro Fotografías de Valparaíso de Juan Hernández Tapia</a></h5>
+        <h5 class='xs sin-margen relleno-inf-xs'><a class='fina condensado gruesa' href='#'>Presentación libro Fotografías de Valparaíso de Juan Hernández Tapia</a></h5>
         <span class='xs negro-fundido relleno-sup-xs italica'>Publicado el 08 de noviembre, 2014.</span>
         <p class='xs negro sans margen-sup-xs'>Ediciones e[ad], Archivo Histórico José Vial Armstrong, en conjunto con Ediciones Universitarias de Valparaíso, tienen el agrado de invitarles a la presentación del libro tienen el agrado de invitarles a la presentación del libro “Fotografías de Valparaíso” [...]</p>
         </a>
@@ -459,7 +459,7 @@ title: Pyxis Framework - Maquetas
         <a href='#'>
         <i class='icn icn-documento margen-der-xs relleno-der-xs fondo-blanco linea-lateral relleno-vertical-xs icn-light borde radio-sup-der-sm radio-inf-der-sm sombra relleno-izq-xs negro'></i><h6 class='xs altas negro-fundido en-linea relleno-izq-xs interletraje-xs sombra-cabecera-claro-xs condensado gruesa'>magíster ciudad y territorio</h6>
         </a>
-        <h5 class='xs sin-margen relleno-inf-xs'><a class='naranja sombra-cabecera-claro-xs fina condensado gruesa' href='#'>Magíster Ciudad y Territorio: Calendario de Postulación segundo semestre 2014</a></h5>
+        <h5 class='xs sin-margen relleno-inf-xs'><a class='fina condensado gruesa' href='#'>Magíster Ciudad y Territorio: Calendario de Postulación segundo semestre 2014</a></h5>
         <span class='xs negro-fundido relleno-sup-xs italica'>Publicado el 08 de noviembre, 2014.</span>
         <p class='xs negro sans margen-sup-xs'>El Magíster en Arquitectura y Diseño, mención Ciudad y Territorio, de la Pontificia Universidad Católica de Valparaíso, a partir de 2014, ofrecerá 2 períodos de ingreso durante el año con el fin de aumentar el agrado de invitarles a la presentación del libro las [...]</p>
         </a>
@@ -468,7 +468,7 @@ title: Pyxis Framework - Maquetas
         <a href='#'>
         <i class='icn icn-documento margen-der-xs relleno-der-xs fondo-blanco linea-lateral relleno-vertical-xs icn-light borde radio-sup-der-sm radio-inf-der-sm sombra relleno-izq-xs negro'></i><h6 class='xs altas negro-fundido en-linea relleno-izq-xs interletraje-xs sombra-cabecera-claro-xs condensado gruesa'>magíster náutico y marítimo</h6>
         </a>
-        <h5 class='xs sin-margen relleno-inf-xs'><a class='naranja sombra-cabecera-claro-xs fina condensado gruesa' href='#'>Presentación anteproyecto Parque de Mar Puerto Barón</a></h5>
+        <h5 class='xs sin-margen relleno-inf-xs'><a class='fina condensado gruesa' href='#'>Presentación anteproyecto Parque de Mar Puerto Barón</a></h5>
         <span class='xs negro-fundido relleno-sup-xs italica'>Publicado el 08 de noviembre, 2014.</span>
         <p class='xs negro sans margen-sup-xs'>El viernes 17 de octubre se llevó a cabo la presentación y tienen el material y el agrado de invitarles a la presentación del libro anteproyecto 'Parque de Mar Puerto Barón', del Magíster en Arquitectura y Diseño, mención Náutico y Marítimo [...]</p>
         </a>
@@ -479,7 +479,7 @@ title: Pyxis Framework - Maquetas
         <a href='#'>
         <i class='icn icn-clip margen-der-xs relleno-der-xs fondo-blanco linea-lateral relleno-vertical-xs icn-light borde radio-sup-der-sm radio-inf-der-sm sombra relleno-izq-xs negro'></i><h6 class='xs altas negro-fundido en-linea interletraje-xs relleno-izq-xs sombra-cabecera-claro-xs condensado gruesa'>Bolsa de trabajo</h6>
         </a>
-        <h5 class='xs sin-margen relleno-inf-xs'><a class='naranja sombra-cabecera-claro-xs fina condensado gruesa' href='#'>Servicio País invita a jóvenes diseñadores y arquitectos a participar en las postulaciones 2015</a></h5>
+        <h5 class='xs sin-margen relleno-inf-xs'><a class='fina condensado gruesa' href='#'>Servicio País invita a jóvenes diseñadores y arquitectos a participar en las postulaciones 2015</a></h5>
         <span class='xs negro-fundido relleno-sup-xs italica'>Publicado el 08 de noviembre, 2014.</span>
         <p class='xs negro sans margen-sup-xs'>Fundación Superación de la Pobreza invita a diseñadores y arquitectos a postular al programa de intervención social Servicio País, cuyo propósito es contribuir al agrado de invitarles a la presentación del libro que “personas que viven en situación de pobreza y vulnerabilidad [...]</p>
         </a>
@@ -488,7 +488,7 @@ title: Pyxis Framework - Maquetas
         <a href='#'>
         <i class='icn icn-ojo margen-der-xs relleno-der-xs fondo-blanco linea-lateral relleno-vertical-xs icn-light borde radio-sup-der-sm radio-inf-der-sm sombra relleno-izq-xs negro'></i><h6 class='xs altas negro-fundido en-linea interletraje-xs relleno-izq-xs sombra-cabecera-claro-xs condensado gruesa'>Observación de la semana</h6>
         </a>
-        <h5 class='xs sin-margen relleno-inf-xs'><a class='naranja sombra-cabecera-claro-xs fina condensado gruesa' href='#'>La naturaleza y su acción muestra la singularidad favorable</a></h5>
+        <h5 class='xs sin-margen relleno-inf-xs'><a class='fina condensado gruesa' href='#'>La naturaleza y su acción muestra la singularidad favorable</a></h5>
         <span class='xs negro-fundido relleno-sup-xs italica'>Publicado el 08 de noviembre, 2014.</span>
         <p class='xs negro sans margen-sup-xs'>Un curso de agua turbulento, una cantidad de agua que va a una velocidad notable sobre un lecho de lava volcánica, entre piedras y rocas del agrado de invitarles a la presentación del libro mismo origen. Una naturaleza actuante, mas bien, dada la velocidad del agua [...]</p>
         </a>
@@ -497,7 +497,7 @@ title: Pyxis Framework - Maquetas
         <a href='#'>
         <i class='icn icn-libro margen-der-xs relleno-der-xs fondo-blanco linea-lateral relleno-vertical-xs icn-light borde radio-sup-der-sm radio-inf-der-sm sombra relleno-izq-xs negro'></i><h6 class='xs altas negro-fundido interletraje-xs relleno-izq-xs en-linea sombra-cabecera-claro-xs condensado gruesa'>Investigación</h6>
         </a>
-        <h5 class='xs sin-margen relleno-inf-xs'><a class='naranja sombra-cabecera-claro-xs fina condensado gruesa' href='#'>Presentación libros Triángulo de Pascal y Estructura Esencial</a></h5>
+        <h5 class='xs sin-margen relleno-inf-xs'><a class='fina condensado gruesa' href='#'>Presentación libros Triángulo de Pascal y Estructura Esencial</a></h5>
         <span class='xs negro-fundido relleno-sup-xs italica'>Publicado el 08 de noviembre, 2014.</span>
         <p class='xs negro sans margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros Estructura Esencial. Curso de geometría del agrado de invitarles a la presentación del libro para pensar construyendo un cuerpo estable, de Miguel Eyquem [...]</p>
         </a>

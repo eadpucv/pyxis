@@ -65,13 +65,13 @@ title: Pyxis Framework
     <p>Las dependencias de Pyxis Framework son Stampa, Meta (personas), Gamma y AHJVA. Este quiere decir que cada dependencia forma parte de un ecosistema digital donde radica el complemento y alimentación directa entre las mismas, cada una desde su propia ruta en GitHub.</p>
     <div class='fila'>
       <div class='col-md-6'>
-      <h1 class='azul centrado'><i class="icn icn-light icn-lg icn-stampa"></i>Stampa</h1>
-      <h6 class='azul centrado'>¿Qué es Stampa?</h6>
+      <h1 class='rojo centrado'><i class="icn icn-light icn-lg icn-stampa"></i>Stampa</h1>
+      <h6 class='rojo centrado'>¿Qué es Stampa?</h6>
       <p>Stampa es un proyecto centralizado en la iconografía que se complementa con Pyxis. Es una rama de la función del Framework para desarrollar las herramientas de diseño, externalizada en su propio <a href='#'>repositorio</a> y <a href='#'>documentación</a>.</p>
-      <h6 class='azul centrado'>Origen</h6>
+      <h6 class='rojo centrado'>Origen</h6>
       <p>"Stampa", en italiano, significa: "carattere, indole", lo que en español se traduce como "carácter o índole", referenciando la tipografía y lo iconográfico. </p>
-      <h1 class='centrado verde'><i class="icn icn-travesia icn-lg"></i> Travesías (en construcción)</h1>
-      <h6 class='centrado verde'>Acerca de la plataformae en proceso de rediseño</h6>
+      <h1 class='centrado rojo'><i class="icn icn-travesia icn-lg"></i> Travesías (en construcción)</h1>
+      <h6 class='centrado rojo'>Acerca de la plataformae en proceso de rediseño</h6>
       <p>El sitio actual de travesías requiere una renovación en cuanto al diseño de interfaz y principalmente lo que sostiene todo el diseño, su arquitectura de información. Existe una lista de parámetros para medir la eficiencia de un sitio, en base a los requerimientos de contenidos y usabilidad actuales. </p>
       </div>
       <div class='col-md-6'>
