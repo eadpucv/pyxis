@@ -11,7 +11,7 @@ a.btn{
     display: inline-block;
     font-family: 'Source Sans Pro';
     font-weight: 500;
-    margin-top: 0;
+    margin: @cuadratin/2 0;
     cursor: pointer;
     white-space: nowrap;
     font-size: @cuerpo * .9;
@@ -21,26 +21,36 @@ a.btn{
     vertical-align: middle;
     border: 1px solid fade(@pizarra, 30);
     padding: 5px 10px;
-    margin-top: @cuadratin / 2;
-    margin-bottom: @cuadratin / 2;
     .border-radius(@radio);
     position: relative;
-    bottom: @boton-resalte;
-    right: @boton-resalte;
     box-shadow: 0 @boton-resalte 0 fade(@negro, 20);
     .transition(.5s ease all);
+
+    &.sin-relleno{
+        padding: 0 !important;
+    }
+
+    &.sin-margen{
+        margin: 0 !important;
+    }
+    
     &:hover {
-            box-shadow: 0 @boton-resalte 0 fade(@pizarra, 50%);
-            border-color: fade(@pizarra, 50%);
-            background-color: darken(white, 1%);
-            text-decoration: none;
-            color: @pizarra;
-            .transition(.5s ease all);
+        box-shadow: 0 @boton-resalte 0 fade(@pizarra, 50%);
+        border-color: fade(@pizarra, 50%);
+        background-color: darken(white, 1%);
+        text-decoration: none;
+        color: @pizarra;
+        .transition(.5s ease all);
+    }
+
+    .icn{
+        letter-spacing: normal !important;
     }
 
     &:active{
         .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
         box-shadow: 0 @boton-resalte/2 0 fade(@pizarra, 5%);
+        margin: @cuadratin/2 + @boton-resalte 0 -@boton-resalte + @cuadratin/2 0;
     }
 
     &.btn-xs{
@@ -52,9 +62,8 @@ a.btn{
     
     &.btn-sm{
         font-size: @cuerpo * .8;
-        text-transform: uppercase;
         font-weight: normal;
-        padding: @padding-sm  4*@padding-sm;
+        padding: 5px 7px;
     }
 
     &.btn-md{
@@ -74,10 +83,10 @@ a.btn{
     &.btn-accion{
         color: @blanco;
         text-shadow: 1px 1px 0 fade(@negro, 40%);
-        background-color: @burdeo-opuesto;
+        background-color: @verde;
         
         &:hover{
-                background-color: darken(@burdeo-opuesto, 10%);
+            background-color: darken(@verde, 10%);
         }
     }
     
@@ -86,9 +95,8 @@ a.btn{
         text-shadow: 1px 1px 0 fade(@negro, 40%);
         background-color:  @rojo-alerta !important;
         &:hover{
-            background-color: darken(@rojo-claro, 7%) !important;
+            background-color: darken(@rojo, 7%) !important;
             color: @blanco;
-            
         }
     }
 
@@ -99,32 +107,63 @@ a.btn{
         right: 0;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
-        background-color: #3f4441;
-        color: @gris;
+        background-color: @gris-claro;
+        color: @pizarra;
+        border: none;
         box-shadow: none;
         padding: 5px 0;
 
         &:hover {
-            color: @blanco;
+            color: @rojo;
         }
     }
-
-    // &.btn-accion,
-    // &.btn-alertaa{
-    //     &:active{
-    //         .box-shadow(inset fade(@negro, 30%) 1px 1px 10px);
-    //     }
-    // }
 }
 
+// Para grupo de botones
 
-.pegado-antes{.border-radius(@radio 0 0 @radio)}
-.pegado-despues{.border-radius(0 @radio @radio 0)}
+.pegado-antes{.border-radius(@radio 0 0 @radio) !important}
+.pegado-despues{.border-radius(0 @radio @radio 0) !important}
+
+    // Grupo de botones
+.grupo-botones{
+  .btn{
+    float: left;
+    border-radius: 0;
+    margin-left: -1px;
+    &:first-child{.border-radius(@radio 0 0 @radio) !important;}
+    &:last-child{.border-radius(0 @radio @radio 0) !important;}
+  }
+}
+
+.grupo-inputs{
+    position: relative;
+    display: inline-block;
+    input, .input{
+        position: relative;
+        width: auto !important;
+        display: inline-block;
+        border-radius: 0 !important;
+    }
+    :first-child{
+    .border-radius(@radio 0 0@radio) !important;
+        margin-right: -3px; 
+    }
+    :last-child{
+    .border-radius(0 @radio @radio 0) !important;
+        margin-left: -3px;
+    }
+    .input{
+        background-color: @gris-claro;
+        line-height: 1.6; //1.533;
+        border: 1px solid darken(@gris-claro, 5);
+        top: -3.5px !important;
+  }
+}
 
 /* Formularios *///---------------------------------------------------------------------------------------------------
 
-// Reset
-
+    // Reset
+.input,
 textarea,
 select,
 input[type='text'],
@@ -141,29 +180,39 @@ input[type='url'],
 input[type='search'],
 input[type='tel'],
 input[type='color'],
+input[type='file'],
 .uneditable-input, {
+    font-family: @sans;
     width: 100%;
     display: inline-block;
     padding: @padding-md 3 * @padding-md;
-    margin-bottom: @margen-sm;
+    margin: 0 0 @margen-sm 0;
     font-size: 16px;
     font-weight: 300;
     line-height: @interlinea;
     color: @gris;
+    border: 1px solid @gris-claro;
+    &:focus{
+      box-shadow: inset 0 @boton-resalte 0 fade(@negro, 13);
+      background-color: fade(@negro, 3);
+    }
 }
 
 form{
     padding: 10px;
     border-radius: 5px;
     border: 1px solid @gris;
-
+    margin-bottom: 0 !important;
     .clearfix;
-    .margen-inferior;
+    .margen-inf;
 
     label{
+        font-family: @cond;
+        text-transform: uppercase;
+        font-size: 90%;
+        letter-spacing: .02ex;
+        color: darken(@gris, 20); 
         display: block;
-        font-size: 14.2px;
-        font-weight: 300;
         padding-bottom: 5px;
         padding-top: 10px;
 
@@ -186,8 +235,8 @@ form{
             label:after{
                 font-family: Stampa;
                 line-height: 1;
-                color: @rojo-claro;
-                content: @icn-var-asterisco;
+                color: @rojo;
+                //content: @icn-var-asterisco;
             }
             select,
             input{
@@ -204,11 +253,6 @@ form{
         color: fade(@pizarra, 30);
     }
     
-    input[type='submit'],
-    .btn{
-        width: auto;
-        float: right;
-    }
 
     input[type='text'],
     input[type='password'],
@@ -226,7 +270,7 @@ form{
     }
         
     input, textarea{
-         color: fade(@damasco-opuesto, 70%);
+         color: fade(@azul, 70%);
         .border-radius(@radio);
         .borde;
 
@@ -263,8 +307,9 @@ form{
 }
 
 // clases de formularios
+// todo comentado porque está copiado de bootstrap, al menos traducir
 
-.form-inline .input-group {
+.formulario-horizontal .input-group {
     display: inline-table;
     vertical-align: super !important;
 }
@@ -275,8 +320,7 @@ form{
     }
 }
 
-.form-inline {
-
+.formulario-horizontal {
   // Kick in the inline
   @media (min-width: @screen-sm-min) {
     // Inline-block all the things for "inline"
@@ -344,8 +388,7 @@ form{
   }
 }
 
-// Placeholder
-
+// Placeholders
 ::-webkit-input-placeholder {
     color: @gris-oscuro;
     font-weight: 300;
@@ -364,157 +407,50 @@ form{
 :-ms-input-placeholder {  
     color: @gris-oscuro;
     font-weight: 300;
-
 }
 
-//
-// Input groups
-// --------------------------------------------------
-
-// Base styles
-// -------------------------
-.input-group {
-  position: relative; // For dropdowns
-  display: table;
-  border-collapse: separate; // prevent input groups from inheriting border styles from table cells when placed within a table
-
-  // Undo padding and float of grid classes
-  &[class*="col-"] {
-    float: none;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .form-control {
-    // Ensure that the input is always above the *appended* addon button for
-    // proper border colors.
-    position: relative;
-    z-index: 2;
-
-    // IE9 fubars the placeholder attribute in text inputs and the arrows on
-    // select elements in input groups. To fix it, we float the input. Details:
-    // https://github.com/twbs/bootstrap/issues/11561#issuecomment-28936855
-    float: left;
-
-    width: 100%;
-    margin-bottom: 0;
-  }
+//  Extra small screen / phone
+@media(max-width: @screen-xs-max){
 }
 
-
-// Display as table-cell
-// -------------------------
-.input-group-addon,
-.input-group-btn,
-.input-group .form-control {
-  display: table-cell;
-
-  &:not(:first-child):not(:last-child) {
-    border-radius: 0;
-  }
-}
-// Addon and addon wrapper for buttons
-.input-group-addon,
-.input-group-btn {
-  width: 1%;
-  white-space: nowrap;
-  vertical-align: middle; // Match the inputs
+// Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
 }
 
-// Text input groups
-// -------------------------
-.input-group-addon {
-  padding: 0 5px ;
-  font-size: @cuerpo;
-  font-weight: normal;
-  line-height: 1;
-  color: @pizarra;
-  text-align: center;
-  background-color: @blanco-gris;
-  border: 1px solid @pizarra;
-  border-radius: 5px;
-
-  // Sizing
-  &.input-sm {
-    padding: 1px;
-    font-size: @cuerpo;
-    border-radius: 5px;
-  }
-  &.input-lg {
-    padding: 1px;
-    font-size: @cuerpo;
-    border-radius: 5px;
-  }
-
-  // Nuke default margins from checkboxes and radios to vertically center within.
-  input[type="radio"],
-  input[type="checkbox"] {
-    margin-top: 0;
-  }
+// Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
 }
 
-// Reset rounded corners
-.input-group .form-control:first-child,
-.input-group-addon:first-child,
-.input-group-btn:first-child > .btn,
-.input-group-btn:first-child > .btn-group > .btn,
-.input-group-btn:first-child > .dropdown-toggle,
-.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
-.input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
-  .border-right-radius(0);
-}
-.input-group-addon:first-child {
-  border-right: 0;
-}
-.input-group .form-control:last-child,
-.input-group-addon:last-child,
-.input-group-btn:last-child > .btn,
-.input-group-btn:last-child > .btn-group > .btn,
-.input-group-btn:last-child > .dropdown-toggle,
-.input-group-btn:first-child > .btn:not(:first-child),
-.input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
-  .border-left-radius(0);
-}
-.input-group-addon:last-child {
-  border-left: 0;
-}
+// Large screen / wide desktop
+@media (min-width: @screen-lg){
 
-// Button input groups
-// -------------------------
-.input-group-btn {
-  position: relative;
-  // Jankily prevent input button groups from wrapping with `white-space` and
-  // `font-size` in combination with `inline-block` on buttons.
-  font-size: 0;
-  white-space: nowrap;
+    //  Botones, formularios
+    button,
+    button.btn,
+    input[type='submit'],
+    a.btn{
+        font-size: .9vw;
+        padding: 8px 13px;
+        .transition(.5s ease all);
 
-  // Negative margin for spacing, position for bringing hovered/focused/actived
-  // element above the siblings.
-  > .btn {
-    position: relative;
-    + .btn {
-      margin-left: -1px;
+        &.btn-accion{
+            color: @blanco;
+            text-shadow: 1px 1px 0 fade(@negro, 40%);
+            background-color: @verde;
+            
+            &:hover{
+                background-color: darken(@verde, 10%);
+            }
+        }
+        
+        &.btn-alerta{
+            color: @blanco;
+            text-shadow: 1px 1px 0 fade(@negro, 40%);
+            background-color:  @rojo-alerta !important;
+            &:hover{
+                background-color: darken(@rojo, 7%) !important;
+                color: @blanco;
+            }
+        }
     }
-    // Bring the "active" button to the front
-    &:hover,
-    &:focus,
-    &:active {
-      z-index: 2;
-    }
-  }
-
-  // Negative margin to only have a 1px border between the two
-  &:first-child {
-    > .btn,
-    > .btn-group {
-      margin-right: -1px;
-    }
-  }
-  &:last-child {
-    > .btn,
-    > .btn-group {
-      margin-left: -1px;
-    }
-  }
 }
-

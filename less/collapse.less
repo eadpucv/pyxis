@@ -2,7 +2,7 @@
 // Component animations
 // --------------------------------------------------
 
-
+// Clases para JS Collapse
 .fade {
   opacity: 0;
   .transition(opacity .15s linear);
@@ -19,8 +19,28 @@
   tbody&.in { display: table-row-group; }
 
   &.pag-javascript {
-    background-color: @pizarra;
+    background-color: @blanco;
     padding: 10px;
+
+    p {
+      color: @negro;
+    }
+
+    h6 {
+      color: @negro;
+    }
+  }
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  .transition(height .35s ease);
+
+    &.pag-javascript {
+      background-color: @blanco;
+      padding: 10px;
 
     p {
       color: @blanco;
@@ -33,23 +53,18 @@
   }
 }
 
-.collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  .transition(height .35s ease);
+//  Extra-small screen / Phones
+@media(max-width: @screen-xs-max){
+}
 
-    &.pag-javascript {
-    background-color: @pizarra;
-    padding: 10px;
+// Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+}
 
-    p {
-      color: @blanco;
-    }
+// Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+}
 
-    h4 {
-      margin-top: 0;
-      color: @blanco;
-    }
-  }
+// Large screen / wide desktop
+@media (min-width: @screen-lg){
 }

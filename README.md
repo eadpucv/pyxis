@@ -1,13 +1,29 @@
-PYXIS FRAMEWORK
-===
+# PYXIS                   
 
-Este framework delimita los componentes visuales y estructurales del ecosistema digital de la **Escuela de Arquitectura y Diseño e[ad]**, construyendo una estructura gráfica unificada coherente y consistente entre las diversas plataformas de la organización en pantalla e impresos.
+![Pyxis, Brújula Náutica](img/pyxis-logo.png)
 
-Este proyecto, iniciado en la <a href="http://ead.pucv.cl" title="Sitio de la e[ad]">e[ad] Escuela de Arquitectura y Diseño PUCV</a>, busca definir un esquema de trabajo semántico y escalable para diseñadores y desarrolladores.
+**v4.0.0**
 
-Este proyecto es de código libre y está disponible en <http://eadpucv.github.io/pyxis/>
 
-Referencias:
-* http://lesscss.org/
-* http://bower.io/ bower
-* http://getbootstrap.com/css/#grid bootstrapgrid
+**Pyxis** es un framework gráfico que define los componentes tipográficos, geomátricos, cromáticos y estructurales del ecosistema digital de la **[Escuela de Arquitectura y Diseño e[ad]](http://www.ead.pucv.cl)**, proponiendo una estructura gráfica unificada coherente y consistente entre las diversas plataformas de la organización en pantalla e impresos.
+
+Este proyecto busca definir un esquema de trabajo semántico y escalable para diseñadores y desarrolladores.
+
+Pyxis (latín para brújula) es una constelación menor del sur, introducida por Nicolas Louis de Lacaille bajo el nombre de Pyxis Nautica.
+
+
+## Dependencias
+
+* [Stampa](http://github.com/eadpucv/stampa) - Iconografía e[ad]
+* [JQuery](http://jquery.org) - Framework de Javascript
+
+## Referencias:
+
+* [LESS](http://lesscss.org/)
+* [Bower](http://bower.io/)
+* [Bootstrap](http://getbootstrap.com)
+
+### Para desarrolladores
+* ejecute `make install` para instalar las dependencias necesarias para compilar la CSS
+* ejecute `make dist` para copiar todos los archivos necesarios a su distribución
+* ejecute `make less` para compilar los archivos LESS en `css/pyxis.css`

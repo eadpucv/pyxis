@@ -2,75 +2,53 @@
 // Página y sus reglas generales
 // --------------------------------------------------
 
+// Todas las cosas abarcan una transición de 2s
+
+/*
 *{
     .transition(.2s ease all);
 }
+*/
 
-header .iso{
-	margin: 0 0 0 @cuadratin;
-
-	h1{
-		.rojo;
-		font-size: 34px;
-		font-weight: 200;
-		margin-bottom: @interlinea/2;
-	}
-	h2{
-		font-size: 16px;
-		font-weight: 400;
-	}
-}
-
+// Cuerpo *
 
 body{
   font-size: @cuerpo;
   background-color: @gris-blanco;
-  background: url('@{ruta-imagenes}/ruido-gris-blanco.png');
 }
 
-header {
+// Imágenes
 
-}
+img{
+	// nope - width: 100%;
 
-.pag{
-	position: relative;
-	margin: 0 auto;
-	padding: @cuadratin;
-
-	&.menu{
-		padding: 0;
+	//Tamaños
+	&.xs{
+		width: 40%;
+	}
+	&.sm{
+		width: 80%;
+	}
+	&.md{
+		width: 150%;
+	}
+	&.lg{
+		width: 200%;
 	}
 
-	&.sin-relleno {
-		padding: 0 30px;
+	// Ancho completo
+	&.ancho-completo{
+		width: 100%;
+	}
+
+	// Clases específicas
+	&.noticia{
+		margin-top: -15%;
+		margin-left: -25%;
 	}
 }
 
-
-.pag-movil {
-	margin: 0 auto;
-	padding: 0 @cuadratin 0 @cuadratin;
-
-	h5 {
-    	margin: @cuadratin/3 0 0 0;
-    	z-index: -1;
-
-    	span{
-        	margin: 0;
-        	padding: 0;
-       	}
-    }
-}
-
-.fondo-header-pyxis {
-	background-color: @blanco;
-  	.box-shadow(0 0 10px fade(@negro, 30));
-	position: fixed;
-	z-index: 10;
-	margin: 0 auto;
-	width: 100%;
-}
-
+	// Imagen vertical
 .imagen-alta {
 	width: auto;
 	height: @cuadratin * 2;
@@ -79,6 +57,7 @@ header {
 	margin-bottom: @cuadratin;
 }
 
+	// Imagen horizontal
 .imagen-ancha {
 	width: auto;
 	height: @cuadratin * 3;
@@ -87,183 +66,44 @@ header {
 	margin-bottom: @cuadratin;
 }
 
+	// Ilustración de logo en Index
 .imagen-index {
 	height: 200px;
 }
 
-.index-responsive {
-	width: 100%;
 
-	img {
-		width: 100%;
+table{
+	th{
+		font-family: @cond;
+		text-transform: uppercase;
 	}
-}
-
- .franja {
-	width: 100%;
-	background-color: #3c464b;
-	position: relative;
-	overflow: hidden;
-	.cf;
-
-	&.xl{
-		min-height: 500px;
-
-		canvas{
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			margin-left: auto;
-			margin-right: auto;
-			z-index: 1;
-		}
-
-		.leyenda{
-			padding: @cuadratin * 4 0;
-			text-align: center;
-		}
-
-		.descripcion-proyecto {
-			margin: 0 auto;
-		}
+	td{
+		padding: @padding-md;
+		border: @borde-fino;
 	}
 
-	&.xs{
-		height: 200;
-		padding-top: 35px;
-
-		canvas{
-			position: absolute;
-			bottom: 0;
-			right: 26px;
-			z-index: 1;
-		}
-	}
-
-	.leyenda{
-		position: relative;
-		z-index: 5;
-
-	}
-}
-
-footer{
-	background-color: #3c464b;
-	margin: 0 auto;
-	line-height: @interlinea * .7;
-
-	h4 {
-		margin-bottom: 0;
-	}
-
-	
-	p{
-		font-size: @cuerpo * .7;
-		letter-spacing: inherit;
-		margin: 0;
-		
-		img{
-			display: inline-block;
-			margin-bottom: -4px;
-		}
-	}
-
-	span {
-		margin: 0;
-	}
-
-	a {
-		&:hover{
-			color: @blanco; 
-		}
-	}
-
-	ul {
-		margin: 10px 0;
-		padding: 0;
-		float: right;
-
-		li {
-			float: left;
-			padding-left: 15px;
-			color: @blanco;
-			font-size: @cuerpo;
-			list-style: none;
-		}
-	}
-	
-	address{
-		font-size: @cuerpo * .7;
-		line-height: inherit;
-	}
-	
-	nav{
-		border: none;
-		line-height: inherit;
-		ul{
-			li{
-				margin-left: @cuadratin;
-				a{
-					font-size: @cuerpo * .7;
-					padding: 8px 16px 4px 10px;
-					text-transform: none;
-					.border-radius(4px);
-				}
-			}
+	&.sin-bordes{
+		td{
+			border: none;
 		}
 	}
 }
 
-//	Responsive adaptable
+// --------------------------------------------------
+// diseño de utilidad responsive
 
-  //  Extra-small screen / Phones
-  @media (min-width: @screen-xs) and (max-width: @screen-xs-max){
-  
-  	.franja {
-
-	&.xl{
-		min-height: 440px;
-		max-height: 700px;
-
-		.leyenda{
-			margin-top: @cuadratin * 2;
-			text-align: center;
-		}
-	  }
-   	}
+//  Extra Small screen / Phone
+@media(max-width: @screen-xs-max){
 }
 
-  //  Small screen / tablet
-  @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+//  Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+}
 
-  			.cita {
-			color: @gris;
-			//font-size: @cuerpo * 1.3;
-		}	
-  }
+//  Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+}
 
-  //  Medium screen / desktop
-  @media (min-width: @screen-md) and (max-width: @screen-md-max){
-
-		.cita {
-			color: @gris;
-			//font-size: @cuerpo * 1.3;
-		}		  
-
-  	  .autor {
-      margin: 22px 0px 28.6px;
-      line-height: 22px;
-      margin-bottom: 30px;
-      text-align: center;
-      font-weight: 200;
-      letter-spacing: -0.1ex;
-      color: @gris;
-      //font-size: @cuerpo * 1.3;
-    }
-  }
-
-  //  Large screen / wide desktop
-  @media (min-width: @screen-lg){
-
-   }
+//  Large screen / wide desktop
+@media (min-width: @screen-lg){
+}

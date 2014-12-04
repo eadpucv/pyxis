@@ -2,111 +2,76 @@
 // Nombres de variables
 // --------------------------------------------------
 
-//Importando tipografías a través de Font Face
+//Importando tipografías a través de * Font Face *
+
+// Estándares de interlínea y tamaño de fuente 
+// (párrafos y títulos)
 
 @line-height-base:        1.428571429; // 20/14
-@font-size-base:          14px;
+@font-size-base:          15px;
+@font-size-titulos-1:	  2.2em; //33px
+@font-size-titulos-2:	  1.93333333em; //29px
+@font-size-titulos-3:	  1.8em; //27px
+@font-size-titulos-4:	  1.5333333em; //23px
+@font-size-titulos-5:	  1.26666667em; //19px
+@font-size-titulos-6:	  1.13333333em; //17px
+
+// Estándares tipográficas suplementarios
+
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
-
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
 
+// Variables tipográficas
+
 @sans:							'Source Sans Pro';
-@texto-continuo:				'Merriweather', serif;
-@serif:							'Merriweather', serif;
-@italica:						'Merriweather', serif;
+@cond:							'Open Sans Condensed';
+@serif:							'Palatino','Times New Roman', Times,'georgia', serif;
+@texto-continuo:				@serif;
+@italica:						'Palatino', 'Source Sans Pro', serif;
+@italica-cond:					@cond;
 @mono:							'Lucida Console', monospace;
-@tipografia:					@sans;
-@tipografia-titulos: 			'Source Sans Pro';
+@tipografia:					'Palatino', 'georgia', serif;
+@tipografia-titulos: 			@sans;
+@tipografia-titulos-cond:		@cond;
 @tipografia-referencias:		'Source Sans Pro';
 
-// Negros
-@negro-oscuro:					rgba(25, 26, 25, 1);
-@negro: 						rgba(43, 44, 42, 1);
-@negro-claro:					rgba(69, 71, 71, 1);
-
 // Grises
-@gris-oscuro:					rgba(164, 164, 162, 1);
+
+@negro: 						rgba(1, 1, 1, 1);
+@negro-fundido: 				fade(@negro, 80%);
+@pizarra:						rgba(45, 45, 50, 0.7);
+@gris-oscuro:					rgba(45, 45, 50, 0.7);
 @gris:							rgba(193, 194, 194, 1);
-@gris-claro:					rgba(226, 226, 226, 1);
-@blanco-gris: 					#f9f9f9;
-
-// Cálidos
-@oliva-oscuro:					rgba(90, 81, 18, 1);
-@oliva:							rgba(123, 110, 27, 1);
-@oliva-claro:					rgba(160, 146, 34, 1);
-@beige-oscuro:					rgba(127, 112, 79, 1);
-@beige:							rgba(202, 182, 135, 1);
-@beige-claro:					rgba(235, 217, 164, 1);
-@damasco-oscuro:				rgba(189, 138, 71, 1);
-@damasco:						rgba(204, 142, 72, 1);
-@damasco-claro:					rgba(205, 146, 74, 1);
-@naranja-oscuro:				rgba(192, 90, 24, 1);
-@naranja:						rgba(210, 101, 29, 1);
-@naranja-claro:					rgba(242, 126, 47, 1);
-@cafe-oscuro:					rgba(95, 53, 30, 1);
-@cafe:							rgba(115, 56, 22, 1);
-@cafe-claro:					rgba(135, 69, 28, 1);
-@burdeo-oscuro:					rgba(95, 29, 25, 1);
-@burdeo:						rgba(113, 25, 19, 1);
-@burdeo-claro:					rgba(140, 35, 24, 1);
-@rojo-oscuro:					rgba(151, 53, 51, 1);
-@rojo:							rgba(172, 70, 67, 1);
-@rojo-claro:					rgba(199, 81, 77, 1);
-
-
-// Adicionales
-@pizarra-oscuro:				rgba(43, 44, 42, 1);
-@pizarra:						rgba(63, 68, 65, 1);
-@pizarra-claro:					rgba(76, 77, 76, 1);
-@ahuesado:                      rgba(239, 242, 219, 1);
+@gris-claro:					rgba(232,230,228,1);
+@gris-blanco:					rgba(249, 249, 249, 1);
+@gris-blanco-transparente:		rgba(249, 249, 249, 0.9);
+@gris-blanco-transparente-xs:	rgba(249, 249, 249, 0.8);
 @blanco:                        rgba(255, 255, 255, 1);
-@celeste: 						#e8f0f2;		
+
+// Colores
+
+@naranja:						rgba(270, 146, 100, 1);
+@rojo:							rgba(199, 81, 77, 1);
+@verde:							#7fb129;	// rgba(40, 117, 120, .9); // Color 'Verde turquesa'
+@azul:							rgba(65, 130, 197, 1);
+
+// Colores adicionales
+
+@masking:						rgba(245, 242, 219, 1);
+@ahuesado:                      ivory;	
 @brand-primary:         		#428bca;
-@component-active-color:    	#fff;
+@component-active-color:    	@blanco;
 @component-active-bg:       	@brand-primary;
 
-
-// Opuestos 
-
-@oliva-opuesto:					spin(@oliva, 180);
-@beige-opuesto:					spin(@beige, 180);
-@damasco-opuesto:				spin(@damasco, 180);
-@naranja-opuesto:				spin(@naranja, 180);
-@cafe-opuesto:					spin(@cafe, 180);
-@burdeo-opuesto:				spin(@burdeo, 180);
-@rojo-opuesto:					spin(@rojo, 180);
-@rojo-claro-opuesto:			spin(@rojo-claro, 180);
-
-// Paleta de colores adicionales
-
-@clouds: 						#ecf0f1;
-@silver: 						#bdc3c7;
-@concrete: 						#95a5a6;
-@asbestos: 						#7f8c8d;
-@turquoise: 					#1abc9c;
-@green-sea: 					#16a085;
-@emerald: 						#2ecc71;
-@nephritis: 					#27ae60;
-@peter-river: 					#3498db;
-@belize-hole: 					#2980b9;
-@amethyst: 						#9b59b6;
-@wisteria: 						#8e44ad;
-@wet-asphalt: 					#34495e;
-@midnight-blue: 				#2c3e50;
-@sun-flower: 					#f1c40f;
-@orange: 						#f39c12;
-@carrot: 						#e67e22;
-@pumpkin: 						#d35400;
-@alizarin: 						#e74c3c;
-@pomegranate: 					#c0392b;
-
 // Uso
-@color-borde:                	lighten(@gris-claro, 10%);
+
+@color-borde:                	@gris-claro; // lighten(@gris-claro, 10%);
 @rojo-alerta:					rgba(214, 97, 82, 1);
-@boton-resalte:					2px;
+@boton-resalte:					3px;
 
 // bordes
+
 @borde-fino:					1px solid @color-borde;
 @borde-grueso:					5px solid @color-borde;
 
@@ -115,6 +80,7 @@
 @border-radius-small:       	3px;
 
 // paddings
+
 @padding-sm:					@cuerpo * .1;
 @padding-md:					@cuerpo * .3;
 @padding-lg:					@cuerpo * .5;
@@ -132,78 +98,76 @@
 @margen-code:					@cuerpo * 2 @cuerpo * 0 @cuerpo * 3 @cuerpo * .3;
 
 // radios
+
 @radio:							3px;
 
 // Links
-@color-link:					@rojo-claro;
-@color-link-hover:				darken(@color-link, 20%);
+
+@color-link:					@rojo;
+@color-link-hover:				@negro;
 @color-opuesto:					spin(@color-link, 180);
 
 // Proporciones tipográficas
 
-@cuerpo:						14px;				// tamaño tipográfico base en pixeles
-@em:							@cuerpo * 1em;		// atajo para salida en ems, ej. '12/@em'
-@interlinea:					22px;
-@cuerpo-nav:					16px;
+@cuerpo:						15px;	// tamaño tipográfico base en pixeles
+@em:							@cuerpo * 1em;	// atajo para salida en ems, ej. '12/@em'
+@interlinea:					23/@em;
+
+@cuerpo-nav:					@cuerpo;
 @interlinea-nav:				22px;
+@peso:							200;
 
+// Medida estándar
 
-// blancos
 @cuadratin:						30px;
 @cuadratin-tercio:				10px;
-@body-bg:		               #fff;
+@body-bg:		               	#f9f9f9;
 
 //Navs
-//
-//##
-@nav-link-padding:                          10px 15px;
+
+@nav-link-padding:                          10px 10px 10px 0;
 @nav-link-hover-bg:                         @gris-claro;
-@nav-disabled-link-color:                   @gris;
+@nav-disabled-link-color:                   @pizarra;
 @nav-disabled-link-hover-color:             @gris;
 @nav-open-link-hover-color:                 #fff;
 
 //== Pills
-//
-//##
+
 @nav-pills-border-radius:                   @border-radius-base;
 @nav-pills-active-link-hover-bg:            @component-active-bg;
 @nav-pills-active-link-hover-color:         @component-active-color;
 
 //== Tabs
-//
-//##
-@nav-tabs-border-color:                     #ddd;
-@nav-tabs-link-hover-border-color:          @gris-claro;
-@nav-tabs-active-link-hover-bg:             @body-bg;
-@nav-tabs-active-link-hover-color:          @gris;
-@nav-tabs-active-link-hover-border-color:   #ddd;
-@nav-tabs-justified-link-border-color:            #ddd;
-@nav-tabs-justified-active-link-border-color:     @body-bg;
+
+@nav-tabs-border-color:                     	#ddd;
+@nav-tabs-link-hover-border-color:          	@gris-claro;
+@nav-tabs-active-link-hover-bg:             	@body-bg;
+@nav-tabs-active-link-hover-color:          	@gris;
+@nav-tabs-active-link-hover-border-color:   	#ddd;
+@nav-tabs-justified-link-border-color:          #ddd;
+@nav-tabs-justified-active-link-border-color:   @body-bg;
 
 //== Modals
-//
-//##
-@zindex-modal-background:  1040;
-@zindex-modal:             1050;
-@modal-inner-padding:         20px;
-@modal-title-padding:         15px;
-@modal-title-line-height:     @line-height-base;
-@modal-content-bg:                             #fff;
-@modal-content-border-color:                   rgba(0,0,0,.2);
-@modal-content-fallback-border-color:          #999;
-@modal-backdrop-bg:           #000;
-@modal-backdrop-opacity:      .5;
-@modal-header-border-color:   #e5e5e5;
-@modal-footer-border-color:   @modal-header-border-color;
+
+@zindex-modal-background:  				1040;
+@zindex-modal:             				1050;
+@modal-inner-padding:         			20px;
+@modal-title-padding:         			15px;
+@modal-title-line-height:     			@line-height-base;
+@modal-content-bg:                  	#fff;
+@modal-content-border-color:        	rgba(0,0,0,.2);
+@modal-content-fallback-border-color:   #999;
+@modal-backdrop-bg:           			#000;
+@modal-backdrop-opacity:      			.5;
+@modal-header-border-color:   			#e5e5e5;
+@modal-footer-border-color:   			@modal-header-border-color;
 
 @modal-lg:                    900px;
 @modal-md:                    600px;
 @modal-sm:                    300px;
 
-
 //== Tooltips
-//
-//##
+
 @zindex-tooltip:           	  1030;
 @tooltip-max-width:           200px;
 @tooltip-color:               #fff;
@@ -212,10 +176,8 @@
 @tooltip-arrow-width:         5px;
 @tooltip-arrow-color:         @tooltip-bg;
 
-
 //== Popovers
-//
-//##
+
 @zindex-popover:           			  1010;
 @popover-bg:                          #fff;
 @popover-max-width:                   276px;
@@ -229,11 +191,10 @@
 @popover-arrow-outer-fallback-color:  darken(@popover-fallback-border-color, 20%);
 
 //== DropDowns
-//
-//##
-@zindex-dropdown:          1000;
-@caret-width-base:          4px;
-@caret-width-large:         5px;
+
+@zindex-dropdown:          		 1000;
+@caret-width-base:          	 4px;
+@caret-width-large:         	 5px;
 @dropdown-bg:                    #fff;
 @dropdown-border:                rgba(0,0,0,.15);
 @dropdown-fallback-border:       #ccc;
@@ -248,8 +209,6 @@
 @dropdown-caret-color:           #000;
 
 //== Carousel
-//
-//##
 
 @carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6);
 @carousel-control-color:                      #fff;

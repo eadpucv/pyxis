@@ -2,12 +2,15 @@
 // Navs
 // --------------------------------------------------
 
-
-//  Por defecto:
+//  Por defecto
 
 nav {
   margin: 0 auto;
-  
+
+  &.lista-sin-estilo{
+      list-style: none;
+    }
+
   ul, ol{
   margin: 0;
   padding: 0;
@@ -16,34 +19,21 @@ nav {
     li{
       display: inline;
       margin: 0;
-      list-style-type: none;
       list-style: none;
     
     a{  
       display: inline-block;
-      font-weight: 300; 
+      font-weight: 400; 
       margin: 0;
-      padding: @cuerpo * 1.1 * 0.5 @cuerpo * 0.9;
+      padding: @cuerpo @cuerpo * 0.9;
       color: @negro !important;
-      font-size: @cuerpo * 0.95;
+      font-size: 13px;
       text-transform: uppercase;
-
       }
 
-    span{
-      margin: 0 !important;
-    }
-
-    h5 {
-      margin: 0;
-      margin-top: 5px;
-      margin-left: 0;
-      z-index: -1;
-
-        span{
-          margin: 0;
-          padding: 0;
-        }
+      span{
+        margin: 0 !important;
+      }
     }
       
       a:hover{
@@ -52,82 +42,23 @@ nav {
         color: @color-link !important;
         .transition(.5s ease all);
       }
-    } 
-  }
-}
+  } 
 
-// Horizontal dividers
-//
-// Dividers (basically an hr) within dropdowns and nav lists
-
-.nav-divider(@color: #e5e5e5) {
-  height: 1px;
-  margin: ((@line-height-computed / 2) - 1) 0;
-  overflow: hidden;
-  background-color: @color;
-}
-
-// Navbar vertical align
-//
-// Vertically center elements in the navbar.
-// Example: an element has a height of 30px, so write out `.navbar-vertical-align(30px);` to calculate the appropriate top margin.
-
-.navbar-vertical-align(@element-height) {
-  margin-top: ((@navbar-height - @element-height) / 2);
-  margin-bottom: ((@navbar-height - @element-height) / 2);
-}
-
-
-//  Menú Pyxis
-.menu-pyxis {
-    margin: 0 auto;
-    padding: 0;     
-    padding: 0;  
-
-    .nav-rotulos {
-      padding: 11px 0 0;
-      float: right;
-
-      li a {
-        padding: 7.7px 16.6px;
-      }
-   }        
-
-    h5{
-      display: inline-block;
-      margin: 5px;
-      padding: 7px 0.5px;
+    // Sin interletraje
+      &.sin-interlinea{
+        line-height: 0;
     }
-
-    span {
-      padding: 0;
-      margin: 0;
-    }
-}
-
-   
-// logo 
-
-.logo-pyxis {
-  width: 200px;
-  float: left;
-
-  img {
-    padding: 10px 0;
-    width: 35px;
-    float: left;
   }
-}
 
 //
 // Navs
 // -------------------------------------------------- Responsive
 
 a.menu-link {
-        float: right;
-        display: block;
-        padding: 0 1em;
+        display: inline-block;
+        margin-top: 7px;
     }
+
     nav[role=navigation] {
       clear: both;
       -webkit-transition: all 0.3s ease-out;
@@ -150,7 +81,7 @@ a.menu-link {
     }
     nav[role=navigation] li a {
       display: block;
-      padding: 10px 40px;
+      padding: 10px 20px;
     }
     
     @media screen and (min-width: 68.25em) {
@@ -203,7 +134,6 @@ a.menu-link {
       &:hover,
       &:focus {
         text-decoration: none;
-        background-color: @nav-link-hover-bg;
       }
     }
 
@@ -211,7 +141,6 @@ a.menu-link {
 //
 //  Setup de BOOTSTRAP para Dropdowns
 //--------------------
-
 
     // Disabled state sets text to gray and nukes hover/tab effects
     &.disabled > a {
@@ -233,11 +162,10 @@ a.menu-link {
     &,
     &:hover,
     &:focus {
-      background-color: @nav-link-hover-bg;
+      background-color: none;
       border-color: @color-link;
     }
   }
-
 
   // Prevent IE8 from misplacing imgs
   // See https://github.com/h5bp/html5-boilerplate/issues/984#issuecomment-3985989
@@ -254,36 +182,55 @@ a.menu-link {
 // Give the tabs something to sit on
 
 .nav-tabs {
-  border-bottom: 1px solid @nav-tabs-border-color;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-radius: 3px;
+  display: inline-block;
+  width: auto;
+  font-size: 0;
+
   > li {
-    float: left;
-    // Make the list-items overlay the bottom border
-    margin-bottom: -1px;
+    display: inline-block;
+    margin-bottom: 0px;
+    margin-left-top: 0px;
+    background-color: @blanco;
+    border-bottom: 3px solid @blanco;
+    -webkit-border-bottom: 3px solid @blanco;
+    -moz-border-bottom: 3px solid @blanco;
+    z-index: 30;
 
     // Actual tabs (as links)
     > a {
-      margin-right: 2px;
-      background-color: lighten(@gris, 15%);
-      color: @gris-oscuro;
+      margin: 0px;
+      font-size: 16px;
+      color: rgba(69,71,71,.7);
+      padding: 7px 15px 10px 15px;
       font-weight: 300;
       line-height: @line-height-base;
-      border: 1px solid @gris;
       border-bottom: transparent;
-      border-radius: @border-radius-base @border-radius-base 0 0;
-      &:hover {
-      border-color: @gris-oscuro;
-      }
+      border-radius: none;
+    }
+
+    &:hover{
+      border-bottom: 3px solid fade(@rojo, 30);
+      background-color: @blanco !important;
     }
 
     // Active state, and its :hover to override normal :hover
+    &.active {
+      border-bottom: 3px solid fade(@rojo, 80) !important;
+
+      &.subir{
+        border-bottom: 0px !important;
+      }
+    }
+
     &.active > a {
-      color: @rojo-claro !important;
+      color: rgba(69,71,71,1);
       &,
       &:hover,
       &:focus {
-        color: @nav-tabs-active-link-hover-color;
-        background-color: @nav-tabs-active-link-hover-bg;
-        border: 1px solid @nav-tabs-active-link-hover-border-color;
+        background-color: @blanco;
         border-bottom-color: transparent;
         cursor: default;
       }
@@ -300,12 +247,14 @@ a.menu-link {
 // Pills
 // -------------------------
 .nav-pills {
+  margin: 0;
   > li {
     float: left;
 
     // Links rendered as pills
     > a {
       border-radius: @nav-pills-border-radius;
+      font-family: @sans;
     }
     + li {
       margin-left: 2px;
@@ -323,7 +272,6 @@ a.menu-link {
   }
 }
 
-
 // Stacked pills
 .nav-stacked {
   > li {
@@ -335,6 +283,18 @@ a.menu-link {
   }
 }
 
+//Nav y ul en Footer
+footer{
+  ul, nav{
+    margin: 1em 0;
+  }
+  nav li,
+  ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 1em;
+  }
+}
 
 // Nav variations
 // --------------------------------------------------
@@ -411,6 +371,7 @@ a.menu-link {
   }
   > .active {
     display: block;
+    margin-top: 10px;
   }
 }
 
@@ -426,53 +387,111 @@ a.menu-link {
   .border-top-radius(0);
 }
 
+// --------------------------------------------------
+// diseño de utilidad responsive
 
-//  Responsive adaptable
+//  Extra Small screen / Phone
+@media(max-width: @screen-xs-max){
 
-    //  Extra Small screen / Phone
-  @media(max-width: @screen-xs-max){
+  // logo
 
-          // logo 
+  .logo-pyxis {
+    float: left;
+    display: inline-block;
 
-  .logo {
-    width: 300px;
-    margin: 0 auto;
-    float: none;
-    text-align: center;
-    padding: 20px 0 0 0;
+    a{
+      display: inline-block;
+      padding: @cuerpo *.7 0 14px 0;
+    }
 
-    h5 {
-      font-size: 25px;
-      margin: 0;
-      padding: 0 0 0 5px;
+    h6 {
       display: inline-block;
     }
 
-    span {
+    img {
+      width: auto;
+      float: left;
+      padding: 0;
       margin: 0;
     }
 
-    img {
+    &.footer {
+      width: 0 auto;
       float: none;
-      padding: 0;
-      width: 25px;
+      margin: 0 auto;
+      display: block;
+      padding-bottom: 5px;
+
+      h6{
+        display: inline-block;
+        margin: 0px;
+        padding: 0px 0.5px;
+      }
+
+      img{
+        display: block;
+        padding: 0;
+        margin: 0 5px 0 0 !important;
+      }
     }
   }
-
-  .menu-pyxis {
-    min-height: @cuadratin * 1.7;
-    }
 
   .nav>li {
     position: relative;
     display: block;
     width: 100%;
-    border: 1px solid @gris;
 
     a {
       border: none;
       margin: 0;
       border-radius: 0;
+    }
+  }
+
+  .nav-tabs {
+      margin-bottom: 0px;
+      margin-top: 0px;
+      border-radius: 3px;
+      display: inline-block;
+      width: auto;
+      font-size: 0;
+
+    > li {
+      //float: left;
+      // Make the list-items overlay the bottom border
+      display: inline-block;
+      margin-bottom: 0px;
+      margin-left-top: 0px;
+      background-color: @blanco;
+      //letter-spacing: .4px;
+      border-bottom: 0px;
+      z-index: 30;
+
+      // Actual tabs (as links)
+      > a {
+        margin: 0px;
+        font-size: 16px;
+        color: rgba(69,71,71,.7);
+        padding: 10px 15px 12px 15px;
+        font-weight: 300;
+        line-height: @line-height-base;
+        border-bottom: transparent;
+        border-radius: none;
+      }
+
+      &:hover{
+        border-bottom: 0px;
+      }
+
+      // Active state, and its :hover to override normal :hover
+      &.active {
+        border-bottom: 0 !important;
+      }
+
+      &.active > a {
+        color: @rojo !important;
+        background-color: @gris-claro !important; 
+      }
     }
   }
 
@@ -485,46 +504,64 @@ a.menu-link {
   }
 }
 
-  //  Small screen / tablet
-  @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+//  Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+}
 
-      // logo 
+//  Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+}
 
-  .logo {
-    width: 300px;
+//  Large screen / wide desktop
+@media (min-width: @screen-lg){
+
+  //  Por defecto:
+
+  nav {
     margin: 0 auto;
-    padding: 20px 0 0 0;
-    float: none;
-    text-align: center;
 
-    h5 {
-      font-size: 30px;
-      margin: 0;
-      padding: 0 0 0 5px;
-      display: inline-block;
+    &.lista-sin-estilo{
+        list-style: none;
+      }
+    
+    ul, ol{
+    margin: 0;
+    padding: 0;
+    .cf;
+      
+      li{
+        a{  
+          font-size: 14px;
+        }  
+      } 
+
+      // Sin interletraje
+
+          &.sin-interlinea{
+            line-height: 0;
+      }
     }
+  }
+}
 
-    span {
-      margin: 0;
+// Large screen / wide desktop
+@media (min-width: @screen-lg){
+
+    // logo 
+
+  .logo-pyxis {
+    
+    a{
+      img {
+        width: 1.4vw;
+      }
     }
+    
+    &.footer {
 
-    img {
-      float: none;
-      padding: 0;
-      width: 35px;
-    }
+      img{
+        width: 1.4vw;
+      }
+    } 
   }
-
-  }
-
-
-  //  Medium screen / desktop
-  @media (min-width: @screen-md) and (max-width: @screen-md-max){
-  }
-
-  //  Large screen / wide desktop
-  @media (min-width: @screen-lg){
-  }
-
-
-
+}

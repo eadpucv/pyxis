@@ -1,0 +1,223 @@
+//
+// Sticky element
+// --------------------------------------------------
+
+// * Sticky Estático *
+.sticky-wrapper{
+	width: 100% !important;
+	margin-bottom: 0px !important;
+
+	// Para menú secundario en Pyxis
+	#sub-componentes{
+	  	margin-bottom: 30px;
+	  	// Para que no aparezca ícono de componente (id "subir")
+	  	i{
+	  		display: none;
+	  	}
+
+	  	h2{
+	  		display: inline-block; 
+	  	}
+	  	// Para que no exista interacción con el a: ícono de componente (id "subir")
+		.nav-tabs {
+			> li{
+				&:last-child{
+					display: none;
+				}
+			}
+		}
+	}
+
+	// Sticky como ejemeplo en Componente "Javascript"
+	#ejemplo-sticky{
+		width: 210px;
+		a{
+			h6{
+				color: @negro-fundido;
+				i{
+					color: @negro-fundido !important;
+				}
+			}
+		}
+	}
+
+  	#ejemplo-sticky-2, #ejemplo-sticky-3, #ejemplo-sticky-4, #ejemplo-sticky-5, #ejemplo-sticky-6, #ejemplo-sticky-7, #ejemplo-sticky-8{
+		width: 210px;
+		a{
+			h6{
+		color: @gris-blanco;
+				i{
+					color: @gris-blanco !important;
+				}
+			}
+		}
+	}
+
+	// Sticky dispuesto para maquetas de "Gamma"
+	#ead-sticky{
+		
+		ul{
+			width: 260px;
+			display: block;
+		}
+	}
+	// Meta-barra dispuesta para maquetas de "Gamma"
+	#meta-barra, #meta-barra-movil{
+		width: 100%;
+		z-index: 200;
+		background-color: @negro;
+	}
+} // Fin de Sticky-wrapper
+
+// * Sticky en funcionamiento *
+.is-sticky {
+	// Para menú secundario en Pyxis
+	#sub-componentes {
+		left: 0;
+		margin: 0 auto;
+		background-color: @blanco;
+		width: 100%;
+		z-index: 100;
+		.box-shadow(0 0 10px fade(@negro, 60));
+		// Aparece ícono de componente
+		i{
+			display: inline-block;
+		}
+		// Es posible la interacción con el ícono
+		.nav-tabs {
+			> li{
+				border-bottom: 0px solid;
+				background-color: @blanco;
+
+				&.active > a{
+					
+						background-color: @blanco !important;
+					
+				}
+
+				&:last-child{
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+	// Sticky como ejemeplo en Componente "Javascript"
+	#ejemplo-sticky{
+		a{
+			h6{
+			color: @negro-fundido;
+				i{
+					color: @negro-fundido !important;
+				}
+			}
+		}
+	}
+	#ejemplo-sticky-2, #ejemplo-sticky-3, #ejemplo-sticky-4, #ejemplo-sticky-5, #ejemplo-sticky-6, #ejemplo-sticky-7, #ejemplo-sticky-8{
+		a{
+			h6{
+			color: @negro-fundido;
+				i{
+					color: @negro-fundido !important;
+				}
+			}
+		}
+	}
+
+	// Meta-barra dispuesta para maquetas de "Gamma"
+	#meta-barra{
+		background-color: @negro-fundido;
+		width: 100%;
+		a{
+			color: @blanco !important;	
+		}
+			ul{
+				li{
+					&:last-child{
+						a{
+							i{
+								color: @rojo !important;	
+							}
+						}
+					}	
+				}
+			}
+	}
+}
+
+// --------------------------------------------------
+// diseño de utilidad responsive
+
+// Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+
+	.sticky-wrapper{
+		width: 0;
+		margin-bottom: 30px;
+		border-radius: 3px;
+		#sub-componentes{
+	  		margin-bottom: 30px;
+	  	}
+	}
+
+		// * Sticky en funcionamiento *
+		.is-sticky {
+	}
+}
+// Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+
+	.is-sticky {
+
+	}
+}
+
+//  Extra-small screen / Phones
+@media(max-width: @screen-xs-max){
+
+	.sticky-wrapper{
+		height: auto !important;
+		width: 100% !important;
+		margin-bottom: 15px;
+
+		  #sub-componentes{
+
+			.nav-tabs {
+				width: 100%;
+			}
+	  }
+		// Sticky como ejemeplo en Componente "Javascript"
+		#ejemplo-sticky, #ejemplo-sticky-2, #ejemplo-sticky-3, #ejemplo-sticky-4, #ejemplo-sticky-5, #ejemplo-sticky-6, #ejemplo-sticky-7, #ejemplo-sticky-8{
+			display: none !important;
+		}
+	}
+
+	.is-sticky {
+		#sub-componentes {
+			position: relative !important; 
+			.nav-tabs {
+				> li{
+					&:last-child{
+						display: none;
+					}
+				}
+			}
+		}
+
+		// Sticky como ejemeplo en Componente "Javascript"
+		#ejemplo-sticky, #ejemplo-sticky-2, #ejemplo-sticky-3, #ejemplo-sticky-4, #ejemplo-sticky-5, #ejemplo-sticky-6, #ejemplo-sticky-7, #ejemplo-sticky-8{
+			display: none !important;
+		}
+	}
+}
+
+
+//  Large screen / wide desktop
+@media (min-width: @screen-lg){
+	.sticky-wrapper{
+		// Sticky como ejemeplo en Componente "Javascript"
+		#ejemplo-sticky, #ejemplo-sticky-2, #ejemplo-sticky-3, #ejemplo-sticky-4, #ejemplo-sticky-5, #ejemplo-sticky-6, #ejemplo-sticky-7, #ejemplo-sticky-8{
+			width: 260px !important;
+		}
+	}
+}

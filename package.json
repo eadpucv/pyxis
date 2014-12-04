@@ -1,0 +1,27 @@
+{
+  "name": "Pyxis",
+  "title": "Pyxis",
+  "description": "Framework gráfico e[ad]",
+  "version": "3.0.0",
+  "homepage": "http://eadpucv.github.io/pyxis/",
+  "author": {
+    "name": "TIG",
+    "email": "escuela@ead.cl"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eadpucv/pyxis.git"
+  },
+  "bugs": "https://github.com/eadpucv/pyxis/issues",
+  "licenses": [
+    {
+      "type": "Artistic 2.0",
+      "url": "http://opensource.org/licenses/Artistic-2.0"
+    }
+  ],
+  "devDependencies": {
+   "jquery": "2.0.3",
+   "stampa": "https://github.com/eadpucv/stampa.git"
+  },
+  "keywords": ["framework","gui","css","less"]
+}
