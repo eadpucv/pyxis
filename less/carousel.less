@@ -13,6 +13,10 @@
   width: 100%;
 
   > .item {
+  img{
+    top: -25%;
+  }
+
   &.car-xs{height: 360px}
   &.car-sm{height: 500px}
   &.car-md{height: 600px}
@@ -20,7 +24,7 @@
 
       display: none;
       position: relative;
-      .transition(.6s ease-in-out left);
+      .transition(.5s ease-in-out left);
   }
 
   > .active,
@@ -214,7 +218,7 @@
 
   .carousel-inner {
     > .item {
-      .transition(.6s ease-in-out left);
+      .transition(.5s ease-in-out left);
       > img,
       > a > img {
 
@@ -297,6 +301,9 @@
 
   .carousel-inner{
       > .item {
+    img{
+      top: 0%;
+    }
     &.car-xs{height: 360px}
     &.car-sm{height: 250px}
     &.car-md{height: auto}
@@ -307,6 +314,15 @@
 
 // Small screen / tablet
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+
+    .carousel-inner{
+    > .item {
+  &.car-xs{height: 360px}
+  &.car-sm{height: 400px}
+  &.car-md{height: auto}
+  &.car-lg{height: auto}
+  }
+}
 
     .carousel-control {
     text-shadow: none;

@@ -5,16 +5,16 @@ title: Pyxis Framework - Maquetas
 <!-- Menú dropdown -->
 <div class="oculto-xs">
   <div class='pag sin-relleno margen-sup-sm borde inf-lineal-xs'>
-  <div class='bloque ancho-completo margen-inf-sm margen-sup-xs cf'>
+  <div class='bloque auto margen-inf-sm en-linea izquierda cf'>
   <div class='izquierda margen-der-xs logo en-linea'>
-      <span class='bloque izquierda rojo sans'><a class='lg ead sans' href='{{ site.baseurl }}/maquetas/home'>e[ad]</a></span>
-   </div>
+      <span class='bloque izquierda sombra-cabecera-claro-xs relleno-der-xs rojo sans'><a class='lg ead sans' href='{{ site.baseurl }}/maquetas/home'>e[ad]</a></span>
+  </div>
   <div class='izquierda relleno-sup-xs logo en-linea'>
-      <span class='sm sans bloque negro'>Escuela de arquitectura y diseño</span>
-      <span class='xs bloque izquierda sans negro-fundido en-linea'>Pontificia universidad católica de Valparaíso</span>
+      <!--<span class='sm sans bloque negro'>Escuela de arquitectura y diseño</span>-->
+      <!--<span class='xs bloque izquierda sans negro-fundido en-linea'>Pontificia universidad católica de Valparaíso</span>-->
   </div>
   </div>
-      <ul class="nav nav-pills margen-inf-xs">
+      <ul class="nav nav-pills margen-inf-xs en-linea margen-izq-sm izquierda">
         <li class="dropdown">
           <a href="#" data-toggle="dropdown" role="button" id="drop4" class="dropdown-toggle cond gruesa negro">Escuela<b class="caret"></b></a>
               <ul aria-labelledby="drop4" role="menu" class="dropdown-menu" id="menu1">
@@ -118,50 +118,59 @@ title: Pyxis Framework - Maquetas
   <div class="carousel-inner">
     <!-- item (la clase 'car-sm' corresponde al height de visibilidad) -->
     <div class="item active car-sm">
-      <img class='ancho-completo' alt="First slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/10/DSC_1016-1400x927.jpg">
+      <img class='ancho-completo absoluto' alt="First slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/12/IMG_3945.jpg">
       <!-- pie de imagen carousel -->
       <div class='fondo-gris-blanco absoluto abs-inf bloque ancho-completo al-frente borde sup-lineal-xs'>
-        <p class='sin-margen italica relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Presentación libros Triángulo de Pascal y Estructura Esencial</p>
+        <p class='negro sombra-cabecera-blanco-xs sin-margen sans relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Presentación libros Triángulo de Pascal y Estructura Esencial</p>
       </div>
-      <div class='oculto-sm oculto-xs'>
+      <div class='pag sin-relleno cf h100'>
+      <div class='col-md-4 oculto-sm h100 oculto-xs derecha cf'>
         <a href="{{ site.baseurl }}/maquetas/post">
-          <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque ancho-lg alto-completo relleno'>
-            <h2 class='gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Presentación libros Triángulo de Pascal y Estructura Esencial</h2>
-            <p class='sin-margen sans relleno-vertical-xs'></i>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem, ambos arquitectos y académicos de la Escuela de Arquitectura y Diseño.</p>
+          <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque alto-completo relleno'>
+            <h2 class='interletraje-negativo sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Presentación libros Triángulo de Pascal y Estructura Esencial</h2>
+            <p class='margen-sup-sm italica negro sombra-cabecera-blanco-xs borde sup-punteado-md borde-blanco relleno-sup-sm'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem, ambos arquitectos y académicos [...]</p>
+            <span class='xs interletraje-xs fondo-blanco-trans sombra relleno-der-xs relleno-vertical-xs borde radio-md condensado derecha negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
           </div>
-        </a>
+          </a>
+        </div>
       </div>
     </div>
     <!-- item -->
     <div class="item car-sm">
-      <img class='ancho-completo' alt="Second slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/11/DSC_1170-1400x927.jpg">
+      <img class='ancho-completo absoluto' alt="Second slide" src="http://www.ead.pucv.cl/wp-content/uploads/2012/02/Vodudahue-1b.jpg">
       <!-- pie de imagen carousel -->
       <div class='fondo-gris-blanco absoluto abs-inf bloque ancho-completo al-frente borde sup-lineal-xs'>
-        <p class='sin-margen italica relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</p>
+        <p class='negro sombra-cabecera-blanco-xs sin-margen sans relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</p>
       </div>
-      <div class='oculto-sm oculto-xs'>
-        <a href='#'>
-          <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque ancho-lg alto-completo relleno'>
-            <h2 class='gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</h2>
-            <p class='sin-margen sans relleno-vertical-xs'></i>La Escuela de Arquitectura y Diseño estuvo presente en la actividad mediante dos proyectos que se adjudicaron el fondo extraordinario Ideas y Manos para Valparaíso</p>
-          </div>
-        </a>
+      <div class='pag sin-relleno cf h100'>
+      <div class='col-md-4 oculto-sm h100 oculto-xs derecha cf'>
+          <a href='#'>
+            <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque alto-completo relleno'>
+              <h2 class='interletraje-negativo sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</h2>
+              <p class='margen-sup-sm italica negro sombra-cabecera-blanco-xs borde sup-punteado-md borde-blanco relleno-sup-sm'>La Escuela de Arquitectura y Diseño estuvo presente en la actividad mediante dos proyectos que se adjudicaron el fondo extraordinario Ideas y Manos para Valparaíso [...]</p>
+            <span class='xs interletraje-xs fondo-blanco-trans sombra relleno-der-xs relleno-vertical-xs borde radio-md condensado derecha negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>e[ad]</span>
+            </div>
+          </a>
+        </div>
     </div>
     </div>
     <!-- item -->
     <div class="item car-sm">
-      <img class='ancho-completo' alt="Third slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/10/2014-10-04-14.49.18-1400x785.jpg">
+      <img class='ancho-completo absoluto' alt="Third slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/11/PERSPECTIVAS-RENDER-850x490.jpg">
       <!-- pie de imagen carousel -->
       <div class='fondo-gris-blanco absoluto abs-inf bloque ancho-completo al-frente borde sup-lineal-xs'>
-        <p class='sin-margen italica relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Diseño Gráfico organiza taller abierto para alumnos interesados en la carrera</p>
+        <p class='sin-margen sans relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Diseño Gráfico organiza taller abierto para alumnos interesados en la carrera</p>
       </div>
-      <div class='oculto-sm oculto-xs'>
-        <a href='#'>
-          <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque ancho-lg alto-completo relleno'>
-            <h2 class='gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Diseño gráfico organiza taller abierto para alumnos interesados en la carrera</h2>
-            <p class='sin-margen sans relleno-vertical-xs'></i>A los alumnos indicados para el taller se les permitirá buscar las opciones diferentes si presentan noticiass sobre Valparaíso de los arquitectos Mauricio Puentes y Juan Purcell en FILSA 2014</p>
-          </div>
-        </a>
+      <div class='pag sin-relleno cf h100'>
+      <div class='col-md-4 oculto-sm h100 oculto-xs derecha cf'>
+          <a href='#'>
+            <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque alto-completo relleno'>
+              <h2 class='interletraje-negativo sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h2>
+              <p class='margen-sup-sm italica negro sombra-cabecera-blanco-xs borde sup-punteado-md borde-blanco relleno-sup-sm'>A los alumnos indicados para el taller se les permitirá buscar las opciones diferentes si presentan noticiass sobre Valparaíso de los arquitectos Mauricio Puentes y Juan Purcell en FILSA [...]</p>
+              <span class='xs interletraje-xs fondo-blanco-trans sombra relleno-der-xs relleno-vertical-xs borde radio-md condensado derecha negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
+            </div>
+          </a>
+        </div>
     </div>
     </div>
   </div>
@@ -173,7 +182,7 @@ title: Pyxis Framework - Maquetas
     <div class='col-md-3 col-sm-4'>
       <i class='icn icn-lg blanco icn-anuncio en-linea izquierda'></i>
       <h6 class='xs gris en-linea w60 margen-izq-sm'>PROCESO RETARJETIZACION TNE 2015</h6>
-      <span class='xs sans blanco'>Publicado el 03 de noviembre, 2014</span>
+      <span class='xs italica blanco'>Publicado el 03 de noviembre, 2014</span>
     </div>
     <div class='col-md-6 col-sm-4'>
       <p class='xs sans blanco'>Debido al nuevo diseño en la Tarjeta Nacional Estudiantil 2015, JUNAEB realizará la captura fotográfica a los alumnos PUCV., matriculados en el 2º semestre 2014, los egresados y los estudiantes de postgrado que tienen la Tarjeta Nacional [...]</p>
@@ -442,6 +451,7 @@ title: Pyxis Framework - Maquetas
       </a>
     </div>
   </div>
+
   <!-- Encabezado de sección -->
   <h2 class='xs centrado gris oculto-xs margen-inf-xs gris condensado fino oculto-xs interletraje-xs'><i class='icn icn-lapiz icn-light margen-der-xs'></i>Publicaciones</h2>
   <div class='pag'>

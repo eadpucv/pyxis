@@ -66,6 +66,25 @@
 		width: 100%;
 		z-index: 200;
 		background-color: @negro;
+		ul{
+			li{
+				&:first-child{
+					a{
+					.transition(.1s ease all);
+					color: @blanco !important;
+					font-size: 11.25px;
+					}
+				}
+				&:last-child{
+					a{
+						i{
+							.transition(.3s ease all);
+							color: @blanco;	
+						}
+					}
+				}	
+			}
+		}
 	}
 } // Fin de Sticky-wrapper
 
@@ -129,10 +148,17 @@
 		background-color: @negro-fundido;
 		width: 100%;
 		a{
-			color: @blanco !important;	
+			color: @blanco !important;
 		}
 			ul{
 				li{
+					&:first-child{
+						a{
+						.transition(.2s ease all);
+						color: @rojo !important;
+						font-size: 15px;
+						}
+					}
 					&:last-child{
 						a{
 							i{
@@ -218,6 +244,60 @@
 		// Sticky como ejemeplo en Componente "Javascript"
 		#ejemplo-sticky, #ejemplo-sticky-2, #ejemplo-sticky-3, #ejemplo-sticky-4, #ejemplo-sticky-5, #ejemplo-sticky-6, #ejemplo-sticky-7, #ejemplo-sticky-8{
 			width: 260px !important;
+		}
+	}
+	.sticky-wrapper{
+		// Meta-barra dispuesta para maquetas de "Gamma"
+		#meta-barra, #meta-barra-movil{
+			width: 100%;
+			z-index: 200;
+			background-color: @negro;
+			ul{
+				li{
+					&:first-child{
+						a{
+						.transition(.1s ease all);
+						color: @blanco !important;
+						font-size: 1vw;
+						}
+					}
+					&:last-child{
+						a{
+							i{
+								.transition(.3s ease all);
+								color: @blanco;	
+							}
+						}
+					}	
+				}
+			}
+		}
+	}
+	.is-sticky {
+		// Meta-barra dispuesta para maquetas de "Gamma"
+		#meta-barra, #meta-barra-movil{
+			width: 100%;
+			z-index: 200;
+			background-color: @negro;
+			ul{
+				li{
+					&:first-child{
+						a{
+						.transition(.2s ease all);
+						color: @rojo !important;
+						font-size: 1.2vw;
+						}
+					}
+					&:last-child{
+						a{
+							i{
+								.transition(.3s ease all);
+								color: @rojo;	
+							}
+						}
+					}	
+				}
+			}
 		}
 	}
 }

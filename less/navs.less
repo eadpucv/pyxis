@@ -506,6 +506,20 @@ footer{
 
 //  Small screen / tablet
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+
+  .nav-pills {
+    margin: 0;
+    > li {
+      // Links rendered as pills
+      > a {
+        padding: 10px 10px 10px 0;
+      }
+      
+      + li {
+        margin-left: 0px;
+      }
+    }
+  }
 }
 
 //  Medium screen / desktop
@@ -517,31 +531,34 @@ footer{
 
   //  Por defecto:
 
-  nav {
-    margin: 0 auto;
+.nav-pills {
+  margin: 0;
+  > li {
+    float: left;
 
-    &.lista-sin-estilo{
-        list-style: none;
-      }
-    
-    ul, ol{
-    margin: 0;
-    padding: 0;
-    .cf;
-      
-      li{
-        a{  
-          font-size: 14px;
-        }  
-      } 
+    // Links rendered as pills
+    > a {
+      font-size: 18px;
+      border-radius: @nav-pills-border-radius;
+      font-family: @sans;
+      padding: 15px 0px 10px 0;
 
-      // Sin interletraje
+    }
+    + li {
+      margin-left: 2px;
+    }
 
-          &.sin-interlinea{
-            line-height: 0;
+    // Active state
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @nav-pills-active-link-hover-color;
+        background-color: @nav-pills-active-link-hover-bg;
       }
     }
   }
+}
 }
 
 // Large screen / wide desktop
