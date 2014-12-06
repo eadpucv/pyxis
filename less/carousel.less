@@ -16,6 +16,23 @@
   img{
     top: -25%;
   }
+    a{
+        .fondo-gris-blanco-trans{
+        background-color: @gris-blanco-transparente !important;
+        .transition(.2s ease all);
+        }
+      &:hover{
+        .fondo-gris-blanco-trans{
+        .transition(.2s ease all);
+          background-color: @rojo !important;
+            h2{color: @blanco; text-shadow: none; .transition(.2s ease all)}
+            p{color: @blanco; text-shadow: none; .transition(.2s ease all)}
+            span{color: @blanco; text-shadow: none; .transition(.2s ease all)}
+            i{color: @blanco; text-shadow: none; .transition(.2s ease all)}
+        }
+      }
+    }
+
 
   &.car-xs{height: 360px}
   &.car-sm{height: 500px}

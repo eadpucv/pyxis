@@ -129,7 +129,7 @@ title: Pyxis Framework - Maquetas
           <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque alto-completo relleno'>
             <h2 class='interletraje-negativo sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Presentación libros Triángulo de Pascal y Estructura Esencial</h2>
             <p class='margen-sup-sm italica negro sombra-cabecera-blanco-xs borde sup-punteado-md borde-blanco relleno-sup-sm'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem, ambos arquitectos y académicos [...]</p>
-            <span class='xs interletraje-xs fondo-blanco-trans sombra relleno-der-xs relleno-vertical-xs borde radio-md condensado derecha negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
+            <span class='xs interletraje-xs fondo-blanco-trans sombra relleno-der-xs relleno-vertical-xs borde radio-md condensado derecha negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario sin-interletraje relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
           </div>
           </a>
         </div>
@@ -144,11 +144,11 @@ title: Pyxis Framework - Maquetas
       </div>
       <div class='pag sin-relleno cf h100'>
       <div class='col-md-4 oculto-sm h100 oculto-xs derecha cf'>
-          <a href='#'>
+          <a class='bloque' href='#'>
             <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque alto-completo relleno'>
               <h2 class='interletraje-negativo sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</h2>
               <p class='margen-sup-sm italica negro sombra-cabecera-blanco-xs borde sup-punteado-md borde-blanco relleno-sup-sm'>La Escuela de Arquitectura y Diseño estuvo presente en la actividad mediante dos proyectos que se adjudicaron el fondo extraordinario Ideas y Manos para Valparaíso [...]</p>
-            <span class='xs interletraje-xs fondo-blanco-trans sombra relleno-der-xs relleno-vertical-xs borde radio-md condensado derecha negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>e[ad]</span>
+            <span class='xs interletraje-xs fondo-blanco-trans sombra relleno-der-xs relleno-vertical-xs borde radio-md condensado derecha negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario sin-interletraje relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>e[ad]</span>
             </div>
           </a>
         </div>
@@ -156,7 +156,7 @@ title: Pyxis Framework - Maquetas
     </div>
     <!-- item -->
     <div class="item car-sm">
-      <img class='ancho-completo absoluto' alt="Third slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/11/PERSPECTIVAS-RENDER-850x490.jpg">
+      <img class='ancho-completo absoluto' alt="Third slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/11/PERSPECTIVA-RENDER-2.jpg">
       <!-- pie de imagen carousel -->
       <div class='fondo-gris-blanco absoluto abs-inf bloque ancho-completo al-frente borde sup-lineal-xs'>
         <p class='sin-margen sans relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Diseño Gráfico organiza taller abierto para alumnos interesados en la carrera</p>
@@ -167,7 +167,7 @@ title: Pyxis Framework - Maquetas
             <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque alto-completo relleno'>
               <h2 class='interletraje-negativo sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h2>
               <p class='margen-sup-sm italica negro sombra-cabecera-blanco-xs borde sup-punteado-md borde-blanco relleno-sup-sm'>A los alumnos indicados para el taller se les permitirá buscar las opciones diferentes si presentan noticiass sobre Valparaíso de los arquitectos Mauricio Puentes y Juan Purcell en FILSA [...]</p>
-              <span class='xs interletraje-xs fondo-blanco-trans sombra relleno-der-xs relleno-vertical-xs borde radio-md condensado derecha negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
+              <span class='xs interletraje-xs fondo-blanco-trans sombra relleno-der-xs relleno-vertical-xs borde radio-md condensado derecha negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario sin-interletraje relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
             </div>
           </a>
         </div>
@@ -238,7 +238,7 @@ title: Pyxis Framework - Maquetas
         <div class='fondo-blanco borde ocultar-desborde radio-md sombra'>
           <div class='ocultar-desborde margen-inf-xs borde inf-lineal-xs alto-sm'>
             <a href='#'>
-              <img class='w150 noticia' src="http://www.ead.pucv.cl/wp-content/uploads/2014/11/DSC_0293-850x563.jpg" alt="" class="ancho-maximo">
+              <img class='w150 noticia' src="http://www.ead.pucv.cl/wp-content/uploads/2014/12/IMG_3945.jpg" alt="" class="ancho-maximo">
             </a>
           </div>
           <!-- Título, fecha de publicación, reseña de noticia -->
@@ -274,7 +274,7 @@ title: Pyxis Framework - Maquetas
       <div class='fondo-blanco borde ocultar-desborde radio-md sombra'>
         <div class='ocultar-desborde margen-inf-xs borde inf-lineal-xs alto-sm'>
           <a href='#'>
-            <img class='w150 noticia' src="http://www.ead.pucv.cl/wp-content/uploads/2014/11/PERSPECTIVAS-RENDER-850x490.jpg" alt="" class="ancho-maximo">
+            <img class='w150 noticia' src="http://www.ead.pucv.cl/wp-content/uploads/2014/11/PERSPECTIVA-RENDER-2.jpg" alt="" class="ancho-maximo">
           </a>
         </div>
         <!-- Título, fecha de publicación, reseña de noticia -->
