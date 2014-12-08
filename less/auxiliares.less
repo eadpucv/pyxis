@@ -129,8 +129,9 @@
 .margen-izq-lg{margin-left: @cuadratin * 2 }
 
 .margen-sup{margin-top: @cuadratin }
-.margen-sup-negativo{margin-top: -@cuadratin }
+.margen-sup-negativo{margin-top: -@cuadratin}
 .margen-sup-xs{margin-top: @cuadratin / 6 }
+.margen-sup-xs-negativo{margin-top: -@cuadratin / 6 }
 .margen-sup-sm{margin-top: @cuadratin / 1.5 }
 .margen-sup-md{margin-top: @cuadratin * 1.5 }
 .margen-sup-lg{margin-top: @cuadratin * 2 }
@@ -212,7 +213,7 @@
 
 .alto-xs{height: @cuadratin * 4}
 .alto-sm{height: @cuadratin * 5}
-.alto-md{height: @cuadratin * 12}
+.alto-md{height: @cuadratin * 12.5}
 .alto-lg{height: @cuadratin * 16}
 .alto-completo{height: 100%}
 
@@ -244,7 +245,7 @@
         &.lineal-xs{border: 1px solid @gris-claro; &.borde-rojo{border: 1px solid @rojo !important} &.borde-blanco{border: 1px solid @blanco !important}}
         &.lineal-sm{border: 2px solid @gris-claro; &.borde-rojo{border: 2px solid @rojo !important} &.borde-blanco{border: 2px solid @blanco !important}}
         &.lineal-md{border: 3px solid @gris-claro; &.borde-rojo{border: 3px solid @rojo !important} &.borde-blanco{border: 3px solid @blanco !important}}
-        &.lineal-lg{border: px4 solid @gris-claro; &.borde-rojo{border: 4px solid @rojo !important} &.borde-blanco{border: 4px solid @blanco !important}}
+        &.lineal-lg{border: 4px solid @gris-claro; &.borde-rojo{border: 4px solid @rojo !important} &.borde-blanco{border: 4px solid @blanco !important}}
 
         &.sup-lineal-xs{border-top: 1px solid @gris-claro; &.borde-rojo{border-top: 1px solid @rojo !important} &.borde-blanco{border-top: 1px solid @blanco !important}}
         &.sup-lineal-sm{border-top: 2px solid @gris-claro; &.borde-rojo{border-top: 2px solid @rojo !important} &.borde-blanco{border-top: 2px solid @blanco !important}}
@@ -568,6 +569,7 @@
 .margen-sup{margin-top: @cuadratin !important}
 .margen-sup-negativo{margin-top: -@cuadratin !important}
 .margen-sup-xs{margin-top: @cuadratin / 6 !important}
+.margen-sup-xs-negativo{margin-top: -@cuadratin !important}
 .margen-sup-sm{margin-top: @cuadratin / 1.5 !important}
 .margen-sup-md{margin-top: @cuadratin * 0.5 !important}
 .margen-sup-lg{margin-top: @cuadratin * 2 !important}
@@ -661,8 +663,8 @@
     // Altos específicos
 
     .alto-xs{height: @cuadratin * 6}
-    .alto-sm{height: @cuadratin * 7}
-    .alto-md{height: @cuadratin * 14}
+    .alto-sm{height: 12vw}
+    .alto-md{height: 27vw} //14
     .alto-lg{height: @cuadratin * 18}
 
 }
