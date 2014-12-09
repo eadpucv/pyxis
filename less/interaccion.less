@@ -146,7 +146,6 @@ a.btn{
     }
     :first-child{
     .border-radius(@radio 0 0@radio) !important;
-        margin-right: -3px; 
     }
     :last-child{
     .border-radius(0 @radio @radio 0) !important;
@@ -157,6 +156,30 @@ a.btn{
         line-height: 1.6; //1.533;
         border: 1px solid darken(@gris-claro, 5);
         top: -3.5px !important;
+    }
+
+      &.metabarra{
+          input, .input{
+        }
+        :first-child{
+            border-radius: 0px !important;
+        }
+        :last-child{
+            border-radius: 0px !important;
+        }
+            .input{
+                background-color: @gris-claro;
+                padding: 4.5px 10.5px 4.5px 12.5px!important;
+                right: -4px;
+                top: 0px !important;
+            }
+
+            &.buscar{
+                padding: 5.5px 1.5px 4.5px 10px !important;
+                font-size: 15px !important;
+                margin-left: -4px;
+            }
+    
   }
 }
 
@@ -195,6 +218,16 @@ input[type='file'],
     &:focus{
       box-shadow: inset 0 @boton-resalte 0 fade(@negro, 13);
       background-color: fade(@negro, 3);
+    }
+
+    &.sin-margen{
+        margin: 0;
+    }
+
+    &.buscar{
+        width: auto;
+        padding: 5.5px 1.5px 4.5px 10px !important;
+        background-color: @gris-blanco-transparente;
     }
 }
 
@@ -276,6 +309,10 @@ form{
 
         &:focus{
             .foco;
+        }
+
+        &.sin-radio{
+            border-radius: 0px;
         }
     }
 

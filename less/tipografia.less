@@ -849,6 +849,33 @@ code {
       }
   }
 
+  //  Vistazo o Span:
+
+span {
+  line-height: @interlinea * .9;
+
+    //  Tamaños de Vistazo:
+    &.lg, &.grande { 
+        font-size: @cuerpo * 1.35; //1.2
+        line-height: @interlinea * .9;
+      }
+
+    &.md, &.mediano {
+      font-size: @cuerpo * 1.2; //1.7
+      line-height: @interlinea;
+      }
+
+    &.sm, &.pequeno {
+      font-size: @cuerpo; //1.2
+      line-height: @interlinea * .9;
+    }
+
+    &.xs, &.menudo {
+      font-size: @cuerpo * .8; //.75
+      line-height: @interlinea * .95;
+    }
+  }
+
   //  Cabeceras:
 
   h1 {
@@ -1084,6 +1111,35 @@ code {
       line-height: @interlinea * .95;
     }
   }
+
+  //  Vistazo o Span:
+
+span {
+  line-height: @interlinea * .9;
+
+    //  Tamaños de Vistazo:
+    &.lg, &.grande { 
+      font-size: @cuerpo * 1.35; //1.2
+      line-height: @interlinea * .9;
+      }
+
+    &.md, &.mediano {
+      font-size: @cuerpo * 1.2; //1.7
+      line-height: @interlinea;
+      }
+
+    &.sm, &.pequeno {
+      font-size: @cuerpo; //1.2
+      line-height: @interlinea * .9;
+    }
+
+    &.xs, &.menudo {
+      font-size: @cuerpo * .8; //.75
+      line-height: @interlinea * .95;
+    }
+  }
+
+  // Cabeceras
 
     h1 {
   font-size: @font-size-titulos-1; //*33/16=2.0625*//
@@ -1344,7 +1400,7 @@ code {
         }
 
         &.sm, &.pequeno {
-          font-size: 1.2vw; a{font-size: 1.2vw;}
+          font-size: 1.1vw; a{font-size: 1.2vw;}
           line-height: @interlinea * 1.1;
         }
 
@@ -1359,7 +1415,6 @@ code {
     span {
       margin: auto 0 auto 0;
       display: inline-block;
-      line-height: 25/@em;
 
         //  Sin márgenes:
 
@@ -1380,7 +1435,7 @@ code {
           }
 
         &.sm, &.pequeno {
-          font-size: 1.2vw; a{font-size: 1.2vw;}
+          font-size: 1.1vw; a{font-size: 1.2vw;}
           line-height: 150%;
         }
 

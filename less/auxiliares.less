@@ -348,6 +348,9 @@
     &.abs-izq{left: 0}
 }
 
+.relativo{
+    position: relative !important; 
+}
 
 // Ubicación direccional de elementos
 
@@ -621,9 +624,9 @@
     // Altos específicos
 
     .alto-xs{height: @cuadratin * 4; &.auto{height: auto !important;}}
-    .alto-sm{height: 150px;}
-    .alto-md{height: auto}
-    .alto-lg{height: auto}
+    .alto-sm{height: 160px; &.auto{height: auto !important;}}
+    .alto-md{height: auto; &.auto{height: auto !important;}}
+    .alto-lg{height: auto; &.auto{height: auto !important;}}
     .alto-completo{height: 100%}
 
     // Ubicar a la derecha un elemento de bloque
