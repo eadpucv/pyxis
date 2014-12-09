@@ -218,15 +218,15 @@ title: Pyxis Framework - Maquetas
 </div>
 
 <div class='pag sin-relleno gutter margen-sup'>
-  <h2 class='xs centrado gris oculto-xs margen-inf-md gris condensado fino oculto-xs interletraje-xs'><i class='icn icn-calendario icn-light margen-der-xs sin-interletraje'></i>Eventos</h2>
+  <h2 class='xs centrado gris margen-inf-md gris condensado fino interletraje-xs'><i class='icn icn-calendario icn-light margen-der-xs sin-interletraje'></i>Eventos</h2>
 
     <div class='fila'>
       <div class='col-md-6 col-sm-6 col-xs-12 gutter alto-sm auto margen-inf-md'>
           <div class='fila'>
-            <div class='col-lg-3 col-md-2 col-sm-12'>
+            <div class='col-lg-12 col-md-2 col-sm-12'>
               <div class='izquierda fondo-blanco sombra borde radio-sup-der-sm radio-inf-der-sm izq-lineal-sm borde-rojo margen-inf-sm ancho-completo'><span class='sm cond gruesa negro-fundido centrado relleno-xs'>22 Oct</span></div>
             </div>
-            <div class='col-lg-8 col-md-10 col-sm-12 tooltip-demo'>
+            <div class='col-lg-12 col-md-10 col-sm-12 tooltip-demo'>
               <h5 class='xs sin-margen relleno-inf-xs'><a class='fina condensado gruesa' href='#'>Segundo coloquio de Fabricación Digital 2014: Nuevas tecnologías, nuevas prácticas</a></h5>
               <span class='xs negro-fundido relleno-inf-sm italica'>Publicado el 08 de noviembre, 2014.</span>            <!-- ícono de Tooltip -->
               <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
@@ -238,10 +238,10 @@ title: Pyxis Framework - Maquetas
       </div>
       <div class='col-md-6 col-sm-6 col-xs-12 gutter alto-sm auto margen-inf-md'>
         <div class='fila'>
-          <div class='col-lg-3 col-md-2 col-sm-12'>
+          <div class='col-lg-12 col-md-2 col-sm-12'>
             <div class='izquierda fondo-blanco sombra borde radio-sup-der-sm radio-inf-der-sm izq-lineal-sm borde-rojo margen-inf-sm ancho-completo'><span class='sm cond gruesa negro-fundido centrado relleno-xs'>14 Oct</span></div>
           </div>
-          <div class='col-lg-8 col-md-10 col-sm-12 tooltip-demo'>
+          <div class='col-lg-12 col-md-10 col-sm-12 tooltip-demo'>
             <h5 class='xs sin-margen relleno-inf-xs'><a class='fina condensado gruesa' href='#'>Charla fundación Superación de la Pobrezas</a></h5>
             <span class='xs negro-fundido relleno-inf-sm italica'>Publicado el 08 de noviembre, 2014.</span>
               <!--ícono de Tooltip -->
@@ -255,10 +255,10 @@ title: Pyxis Framework - Maquetas
       </div>
       <div class='col-md-6 col-sm-6 col-xs-12 gutter alto-sm auto margen-inf-md'>
         <div class='fila'>
-          <div class='col-lg-3 col-md-2 col-sm-12'>
+          <div class='col-lg-12 col-md-2 col-sm-12'>
             <div class='izquierda fondo-blanco sombra borde radio-sup-der-sm radio-inf-der-sm izq-lineal-sm borde-rojo margen-inf-sm ancho-completo'><span class='sm cond gruesa negro-fundido centrado relleno-xs'>06 Oct</span></div>
           </div>
-          <div class='col-lg-8 col-md-10 col-sm-12 tooltip-demo'>
+          <div class='col-lg-12 col-md-10 col-sm-12 tooltip-demo'>
             <h5 class='xs sin-margen relleno-inf-xs'><a class='fina condensado gruesa' href='#'>Venta especial ediciones ARQ</a></h5>
             <span class='xs negro-fundido relleno-inf-sm italica'>Publicado el 08 de noviembre, 2014.</span>
               <!--ícono de Tooltip -->
@@ -272,10 +272,10 @@ title: Pyxis Framework - Maquetas
     </div>
       <div class='col-md-6 col-sm-6 col-xs-12 gutter alto-sm auto margen-inf-md'>
         <div class='fila'>
-          <div class='col-lg-3 col-md-2 col-sm-12'>
+          <div class='col-lg-12 col-md-2 col-sm-12'>
             <div class='izquierda fondo-blanco sombra borde radio-sup-der-sm radio-inf-der-sm izq-lineal-sm borde-rojo margen-inf-sm ancho-completo'><span class='sm cond gruesa negro-fundido centrado relleno-xs'>06 Oct</span></div>
           </div>
-          <div class='col-lg-8 col-md-10 col-sm-12 tooltip-demo'>
+          <div class='col-lg-12 col-md-10 col-sm-12 tooltip-demo'>
             <h5 class='xs sin-margen relleno-inf-xs'><a class='fina condensado gruesa' href='#'>Venta especial ediciones ARQ</a></h5>
             <span class='xs negro-fundido relleno-inf-sm italica'>Publicado el 08 de noviembre, 2014.</span>
               <!--ícono de Tooltip -->
@@ -549,7 +549,7 @@ title: Pyxis Framework - Maquetas
   </div>
 
   <!-- Encabezado de sección -->
-  <h2 class='xs centrado gris margen-inf-xs gris condensado fino oculto-xs interletraje-xs'><i class='icn icn-lapiz icn-light margen-der-xs sin-interletraje'></i>Publicaciones</h2>
+  <h2 class='xs centrado gris margen-inf-xs gris condensado fino interletraje-xs'><i class='icn icn-lapiz icn-light margen-der-xs sin-interletraje'></i>Publicaciones</h2>
   <div class='pag'>
     <div class='fila'>
       <div class='col-lg-4 col-md-6 col-sm-6 col-xs-12'>
