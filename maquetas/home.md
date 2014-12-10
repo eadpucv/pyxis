@@ -93,7 +93,8 @@ title: Pyxis Framework - Maquetas
 
 <!-- Menú responsivo -->
 <div class="oculto-lg oculto-md oculto-sm">
-  <div class='fondo-negro'>
+  <div class='fondo-negro textura-2'>
+    <div class='fondo-negro-fundido'>
     <div class='pag menu-movil'>
     <div class='centrado bloque izquierda margen-der-xs logo en-linea'>
         <h1 class='lg linea centrado rojo sans'><a class='sans centrado' href='{{ site.baseurl }}/maquetas/home'>e[ad]</a></h1>
@@ -113,6 +114,7 @@ title: Pyxis Framework - Maquetas
       <li><a class='sans blanco margen-inf' href='{{ site.baseurl }}/pags/iconografia'>Amereida</a></li>
     </nav>
   </div>
+</div>
 </div>
 
 <!-- Carrousel -->
@@ -196,7 +198,8 @@ title: Pyxis Framework - Maquetas
 </div>
 
 <!-- Info de docencia -->
-<div class='fondo-negro'>
+<div class='fondo-negro textura-2'>
+  <div class='fondo-negro-fundido margen-inf'>
 <div class='pag'>
     <div class='col-md-3 col-sm-4'>
     <div class='fila borde izq-lineal-xs relleno-izq-xs'>
@@ -221,6 +224,7 @@ title: Pyxis Framework - Maquetas
       <span class='centrado'><a class='btn btn-alerta fondo-blanco'>Ver información de docencia</a></span>
       </div>
     </div>
+</div>
 </div>
 </div>
 
@@ -483,9 +487,9 @@ title: Pyxis Framework - Maquetas
             <div class='fila'>
               <div class='col-md-4 col-sm-12 oculto-xs'>
                 <h5 class='sm condensado gruesa negro margen-inf-sm'>La escuela y el oficio</h5>
-                <p class='serif italica sin-margen relleno-inf-xs'>La <span class='rojo'>e[ad]</span> se ha consolidado como una de las escuelas referentes en Chile y el mundo, que se funda en el encuentro y co-generación de los tres oficios que imparte: Arquitectura, y los Diseños Gráfico e Industrial, en permanente relación con la poesía. Así, afirmamos que tanto la Arquitectura como el Diseño son, en su sentido más profundo, un arte.</p>
+                <p class='serif italica sin-margen relleno-inf-sm'>La <span class='rojo'>e[ad]</span> se ha consolidado como una de las escuelas referentes en Chile y el mundo, que se funda en el encuentro y co-generación de los tres oficios que imparte: Arquitectura, y los Diseños Gráfico e Industrial, en permanente relación con la poesía. Así, afirmamos que tanto la Arquitectura como el Diseño son, en su sentido más profundo, un arte.</p>
                 <hr class='sin-margen'>
-                  <div class='grupo-botones margen-sup-xs'>
+                  <div class='grupo-botones oculto-sm margen-sup-xs'>
                     <button class='btn btn-alerta'>Historia</button>
                     <button class='btn btn-alerta'>Amereida</button>
                   </div>
@@ -504,9 +508,9 @@ title: Pyxis Framework - Maquetas
             <div class='fila'>
               <div class='col-md-4 col-sm-12 oculto-xs'>
                 <h5 class='sm condensado gruesa negro margen-inf-sm'>Carreras y postgrados</h5>
-                <p class='serif italica sin-margen relleno-inf-xs'>La <span class='rojo'>e[ad]</span> ofrece tres carreras: Arquitectura, Diseño Gráfico y Diseño Industrial. Además, imparte el Magíster en Arquitectura y Diseño, en sus menciones Ciudad y Territorio, y Náutico y Marítimo.</p>
+                <p class='serif italica sin-margen relleno-inf-sm'>La <span class='rojo'>e[ad]</span> ofrece tres carreras: Arquitectura, Diseño Gráfico y Diseño Industrial. Además, imparte el Magíster en Arquitectura y Diseño, en sus menciones Ciudad y Territorio, y Náutico y Marítimo.</p>
                 <hr class='sin-margen'>
-                  <div class='grupo-botones margen-sup-xs'>
+                  <div class='grupo-botones oculto-sm margen-sup-xs'>
                     <button class='btn btn-alerta'>Arquitectura</button>
                     <button class='btn btn-alerta'>Diseños</button>
                   </div>
@@ -525,9 +529,9 @@ title: Pyxis Framework - Maquetas
             <div class='fila'>
               <div class='col-md-4 col-sm-offset-0 col-sm-12 oculto-xs'>
                 <h5 class='sm condensado gruesa negro margen-inf-sm'>Campus</h5>
-                <p class='serif italica sin-margen relleno-inf-xs'>La <span class='rojo'>e[ad]</span> desarrolla sus actividades académicas en dos lugares, principalmente: en Sede Recreo, en Viña del Mar y en la Ciudad Abierta.</p>
+                <p class='serif italica sin-margen relleno-inf-sm'>La <span class='rojo'>e[ad]</span> desarrolla sus actividades académicas en dos lugares, principalmente: en Sede Recreo, en Viña del Mar y en la Ciudad Abierta.</p>
                 <hr class='sin-margen'>
-                  <div class='grupo-botones margen-sup-xs'>
+                  <div class='grupo-botones oculto-sm margen-sup-xs'>
                     <button class='btn btn-alerta'>Casa de estudio</button>
                     <button class='btn btn-alerta'>Ciudad abierta</button>
                   </div>
