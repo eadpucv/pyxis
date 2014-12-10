@@ -116,11 +116,11 @@ title: Pyxis Framework - Maquetas
 </div>
 
 <!-- Carrousel -->
-<div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
+<div data-ride="carousel" class="carousel slide" id="carousel-home">
   <ol class="carousel-indicators">
-    <li data-slide-to="0" data-target="#carousel-example-generic" class="active"></li>
-    <li data-slide-to="1" data-target="#carousel-example-generic"></li>
-    <li data-slide-to="2" data-target="#carousel-example-generic"></li>
+    <li data-slide-to="0" data-target="#carousel-home" class="active"></li>
+    <li data-slide-to="1" data-target="#carousel-home"></li>
+    <li data-slide-to="2" data-target="#carousel-home"></li>
   </ol>
   <div class="carousel-inner">
     <!-- item (la clase 'car-sm' corresponde al height de visibilidad) -->
@@ -186,6 +186,13 @@ title: Pyxis Framework - Maquetas
     </div>
     </div>
   </div>
+        <!-- botones adelante y atrás -->
+      <a data-slide="prev" data-target='#carousel-home' href="#carousel-2" class="left carousel-control">
+        <span class="icn icn-navizquierda"></span>
+      </a>
+      <a data-slide="next" data-target='#carousel-home' href="#carousel-2" class="right carousel-control">
+        <span class="icn icn-nav"></span>
+      </a>
 </div>
 
 <!-- Info de docencia -->
@@ -217,11 +224,11 @@ title: Pyxis Framework - Maquetas
 </div>
 </div>
 
-<div class='pag sin-relleno gutter margen-sup'>
+<div class='pag sin-relleno gutter margen-sup-sm'>
   <h2 class='xs centrado gris margen-inf-md gris condensado fino interletraje-xs'><i class='icn icn-calendario icn-light margen-der-xs sin-interletraje'></i>Eventos</h2>
 
     <div class='fila'>
-      <div class='col-md-6 col-sm-6 col-xs-12 gutter alto-sm auto margen-inf-md'>
+      <div class='col-md-6 col-sm-6 col-xs-12 gutter alto-sm auto margen-inf-sm'>
           <div class='fila'>
             <div class='col-lg-12 col-md-2 col-sm-12'>
               <div class='izquierda fondo-blanco sombra borde radio-sup-der-sm radio-inf-der-sm izq-lineal-sm borde-rojo margen-inf-sm ancho-completo'><span class='sm cond gruesa negro-fundido centrado relleno-xs'>22 Oct</span></div>
@@ -236,7 +243,7 @@ title: Pyxis Framework - Maquetas
             </div>
           </div>
       </div>
-      <div class='col-md-6 col-sm-6 col-xs-12 gutter alto-sm auto margen-inf-md'>
+      <div class='col-md-6 col-sm-6 col-xs-12 gutter alto-sm auto margen-inf-sm'>
         <div class='fila'>
           <div class='col-lg-12 col-md-2 col-sm-12'>
             <div class='izquierda fondo-blanco sombra borde radio-sup-der-sm radio-inf-der-sm izq-lineal-sm borde-rojo margen-inf-sm ancho-completo'><span class='sm cond gruesa negro-fundido centrado relleno-xs'>14 Oct</span></div>
@@ -253,7 +260,7 @@ title: Pyxis Framework - Maquetas
           </div>
         </div>
       </div>
-      <div class='col-md-6 col-sm-6 col-xs-12 gutter alto-sm auto margen-inf-md'>
+      <div class='col-md-6 col-sm-6 col-xs-12 gutter alto-sm auto margen-inf-sm'>
         <div class='fila'>
           <div class='col-lg-12 col-md-2 col-sm-12'>
             <div class='izquierda fondo-blanco sombra borde radio-sup-der-sm radio-inf-der-sm izq-lineal-sm borde-rojo margen-inf-sm ancho-completo'><span class='sm cond gruesa negro-fundido centrado relleno-xs'>06 Oct</span></div>
@@ -270,7 +277,7 @@ title: Pyxis Framework - Maquetas
           </div>
         </div>
     </div>
-      <div class='col-md-6 col-sm-6 col-xs-12 gutter alto-sm auto margen-inf-md'>
+      <div class='col-md-6 col-sm-6 col-xs-12 gutter alto-sm auto margen-inf-sm'>
         <div class='fila'>
           <div class='col-lg-12 col-md-2 col-sm-12'>
             <div class='izquierda fondo-blanco sombra borde radio-sup-der-sm radio-inf-der-sm izq-lineal-sm borde-rojo margen-inf-sm ancho-completo'><span class='sm cond gruesa negro-fundido centrado relleno-xs'>06 Oct</span></div>
@@ -444,15 +451,11 @@ title: Pyxis Framework - Maquetas
           </div>
         </div>
       </div> <!-- fin de col menor -->
-
 </div> <!-- fin de pag -->
-
-<!-- franja de postulante -->
-  <!-- Encabezado de sección -->
   <h2 class='xs centrado gris oculto-xs margen-inf-md gris condensado fino oculto-xs interletraje-xs'><i class='icn icn-cruzdelsur icn-light margen-der-xs sin-interletraje'></i>Escuela & Enlaces</h2>
   <!-- Carrousel -->
-  <div class='margen-inf-md oculto-xs'>
-    <div data-ride="carousel" class="carousel slide">
+  <div class='margen-inf-lg oculto-xs'>
+    <div data-ride="carousel" class="carousel slide" id="carousel-enlaces">
       <div class="carousel-inner">
         <!-- item (la clase 'car-sm' corresponde al height de visibilidad) -->
         <div class="item active car-xs escuela-y-enlaces">
@@ -539,18 +542,16 @@ title: Pyxis Framework - Maquetas
         </div>
       </div>
       <!-- botones adelante y atrás -->
-      <a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
+      <a data-slide="prev" data-target='#carousel-enlaces' href="#carousel-2" class="left carousel-control">
         <span class="icn icn-navizquierda"></span>
       </a>
-      <a data-slide="next" href="#carousel-example-generic" class="right carousel-control">
+      <a data-slide="next" data-target='#carousel-enlaces' href="#carousel-2" class="right carousel-control">
         <span class="icn icn-nav"></span>
       </a>
     </div>
   </div>
-
-  <!-- Encabezado de sección -->
-  <h2 class='xs centrado gris margen-inf-xs gris condensado fino interletraje-xs'><i class='icn icn-lapiz icn-light margen-der-xs sin-interletraje'></i>Publicaciones</h2>
-  <div class='pag'>
+  <h2 class='xs centrado gris gris condensado fino interletraje-xs'><i class='icn icn-lapiz icn-light margen-der-xs sin-interletraje'></i>Publicaciones</h2>
+  <div class='pag margen-sup-sm'>
     <div class='fila'>
       <div class='col-lg-4 col-md-6 col-sm-6 col-xs-12'>
         <a href='#'>
