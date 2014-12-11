@@ -96,15 +96,15 @@ title: Pyxis Framework - Maquetas
   <div class='fondo-negro textura-2'>
     <div class='fondo-negro-fundido'>
     <div class='pag menu-movil'>
-    <div class='centrado bloque izquierda margen-der-xs logo en-linea'>
+      <div class='centrado bloque izquierda margen-der-xs logo en-linea'>
         <h1 class='lg linea centrado rojo sans'><a class='sans centrado' href='{{ site.baseurl }}/maquetas/home'>e[ad]</a></h1>
-     </div>
+      </div>
       <a href="#menu" class="menu-link derecha"><i class="icn icn-lg icn-menu"></i> </a>
-    <div class='izquierda ancho-completo relleno-inf-xs logo en-linea'>
+      <div class='izquierda ancho-completo relleno-inf-xs logo en-linea'>
         <span class='sm sans bloque blanco'>Escuela de Arquitectura y Diseño</span>
         <span class='xs bloque izquierda sans blanco en-linea'>Pontificia universidad católica de Valparaíso</span>
-    </div>
       </div>
+    </div>
     <nav id="menu" class='lista-sin-estilo' role="navigation">
       <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Escuela</a></li>
       <li><a class='sans blanco' href='{{ site.baseurl }}/pags/grilla'>Carreras & postgrados</a></li>
@@ -203,9 +203,9 @@ title: Pyxis Framework - Maquetas
 <div class='pag'>
     <div class='col-md-3 col-sm-4'>
     <div class='fila borde izq-lineal-xs relleno-izq-xs'>
-      <i class='icn icn-lg blanco margen-izq-sm icn-anuncio en-linea izquierda'></i>
+      <i class='icn icn-lg blanco margen-izq-sm icn-anuncio en-linea izquierda margen-inf'></i>
       <div class='h100 tooltip-demo'>
-      <h6 class='xs rojo condensado gruesa en-linea w60 altas margen-izq-sm'>Proceso retarjetización TNE 2015</h6>
+      <h6 class='xs sin-margen rojo condensado gruesa en-linea w60 altas relleno-izq-sm'>Proceso retarjetización TNE 2015</h6>
         <span class='xs italica margen-izq-sm blanco relleno-inf-xs'>03 de noviembre, 2014</span>
           <!-- ícono de Tooltip -->
           <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea rojo relleno-sup-xs sin-margen' href='#'>

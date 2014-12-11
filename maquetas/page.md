@@ -3,28 +3,123 @@ layout: particular
 title: Pyxis Framework - Maquetas
 ---
 
-<!-- Metabarra -->
-<div id='meta-barra'>
-	<div class='pag sin-relleno'>
-    <ul class='sin-relleno'>
-        <li class='en-linea'><a class='xs rojo sans relleno-der'>e[ad]</a></li>
-        <li class='en-linea'><a class='xs blanco sans relleno-der'>Wiki Casiopea</a></li>
-        <li class='en-linea'><a class='xs blanco sans relleno-der'>Estorninos</a></li>
-        <li class='en-linea'><a class='xs blanco sans relleno-der'>Travesías</a></li>
-    </ul>
-	</div>
+<!-- Menú responsivo -->
+<div class="oculto-lg oculto-md oculto-sm">
+  <div class='fondo-negro textura-2'>
+    <div class='fondo-negro-fundido'>
+    <div class='pag menu-movil'>
+      <div class='centrado bloque izquierda margen-der-xs logo en-linea'>
+        <h1 class='lg linea centrado rojo sans'><a class='sans centrado' href='{{ site.baseurl }}/maquetas/home'>e[ad]</a></h1>
+      </div>
+      <a href="#menu" class="menu-link derecha"><i class="icn icn-lg icn-menu"></i> </a>
+      <div class='izquierda ancho-completo relleno-inf-xs logo en-linea'>
+        <span class='sm sans bloque blanco'>Escuela de Arquitectura y Diseño</span>
+        <span class='xs bloque izquierda sans blanco en-linea'>Pontificia universidad católica de Valparaíso</span>
+      </div>
+    </div>
+    <nav id="menu" class='lista-sin-estilo' role="navigation">
+      <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Escuela</a></li>
+      <li><a class='sans blanco' href='{{ site.baseurl }}/pags/grilla'>Carreras & postgrados</a></li>
+      <li><a class='sans blanco' href='{{ site.baseurl }}/pags/interaccion'>Estudiantes</a></li>
+      <li><a class='sans blanco' href='{{ site.baseurl }}/pags/color'>Admisión</a></li>
+      <li><a class='sans blanco' href='{{ site.baseurl }}/pags/color'>Extensión</a></li>
+      <li><a class='sans blanco margen-inf' href='{{ site.baseurl }}/pags/iconografia'>Amereida</a></li>
+    </nav>
+  </div>
+</div>
 </div>
 
+<!-- Carrousel -->
+<div data-ride="carousel" class="carousel slide" id="carousel-home">
+  <div class="carousel-inner">
+    <!-- item (la clase 'car-sm' corresponde al height de visibilidad) -->
+    <div class="item active car-lg">
+      <img class='ancho-completo absoluto sombra' alt="First slide" src="http://www.ead.pucv.cl/wp-content/themes/gamma/img/diseno-grafico12.jpg">
+      <!-- pie de imagen carousel -->
+      <div class='ancho-completo alto-completo oculto-xs izquierda cf'>
+          <a href='#'>
+            <div class='fondo-gris-blanco-trans-xs alto-completo absoluto abs-inf abs-izq bloque ancho-completo relleno-sm'>
+              <div class='pag sin-relleno cf margen-sup-lg'>
+              <div class='col-md-8 col-md-offset-2 margen-sup-lg'>
+              <h1 class='interletraje-negativo centrado margen-sup-lg sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h1>
+              <div class='ancho-completo bloque izquierda'>
+              <p class='sm italica negro centrado sombra-cabecera-blanco-xs borde sup-punteado-md borde-blanco relleno-sup-sm'>A los alumnos indicados para el taller se les permitirá buscar las opciones diferentes si presentan noticiass sobre Valparaíso de los arquitectos Mauricio Puentes y Juan Purcell en FILSA [...]</p>
+              <div class='centrado'>
+              <span class='xs interletraje-xs fondo-blanco-trans sombra margen-inf-sm relleno-der-xs relleno-vertical-xs borde radio-md condensado negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario sin-interletraje relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
+              </div>
+                <div class='grupo-botones centrado cf borde sup-punteado-md borde-blanco ancho-auto'>
+                <a class='btn btn-alerta'>Ver noticias</a>
+                <a class='btn btn-alerta'>Ver categoría</a>
+                <a class='btn btn-alerta'>Ver tags</a>
+                </div>
+            </div>
+            </div>
+            </div>
+            </div>
+          </a>
+        </div>
+    </div>
+    <!-- item -->
+    <div class="item car-lg">
+      <img class='ancho-completo absoluto' alt="Second slide" src="http://www.ead.pucv.cl/wp-content/themes/gamma/img/disenografico.jpg">
+      <!-- pie de imagen carousel -->
+      <div class='col-md-4 oculto-sm ancho-completo alto-completo oculto-xs izquierda cf'>
+          <a href='#'>
+            <div class='fondo-gris-blanco-trans-xs absoluto al-medio abs-izq bloque ancho-completo relleno-sm'>
+              <div class='pag sin-relleno'>
+              <div class='col-md-9'>
+              <h2 class='interletraje-negativo sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h2>
+              <p class='margen-sup-sm italica negro sombra-cabecera-blanco-xs borde sup-punteado-md borde-blanco relleno-sup-sm'>A los alumnos indicados para el taller se les permitirá buscar las opciones diferentes si presentan noticiass sobre Valparaíso de los arquitectos Mauricio Puentes y Juan Purcell en FILSA [...]</p>
+              <span class='xs interletraje-xs fondo-blanco-trans sombra margen-inf-sm relleno-der-xs relleno-vertical-xs borde radio-md condensado izquierda negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario sin-interletraje relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
+            </div>
+            </div>
+            </div>
+          </a>
+        </div>
+    </div>
+    <!-- item -->
+    <div class="item car-lg">
+      <img class='ancho-completo absoluto' alt="Third slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/08/pizarra.jpg">
+      <!-- pie de imagen carousel -->
+      <div class='col-md-4 oculto-sm ancho-completo alto-completo oculto-xs izquierda cf'>
+          <a href='#'>
+            <div class='fondo-gris-blanco-trans-xs absoluto abs-inf abs-izq bloque ancho-completo relleno-sm'>
+              <div class='pag sin-relleno'>
+              <div class='col-md-9'>
+              <h2 class='interletraje-negativo sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h2>
+              <p class='margen-sup-sm italica negro sombra-cabecera-blanco-xs borde sup-punteado-md borde-blanco relleno-sup-sm'>A los alumnos indicados para el taller se les permitirá buscar las opciones diferentes si presentan noticiass sobre Valparaíso de los arquitectos Mauricio Puentes y Juan Purcell en FILSA [...]</p>
+              <span class='xs interletraje-xs fondo-blanco-trans sombra margen-inf-sm relleno-der-xs relleno-vertical-xs borde radio-md condensado izquierda negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario sin-interletraje relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
+            </div>
+            </div>
+            </div>
+          </a>
+        </div>
+    </div>
+  </div>
+        <!-- botones adelante y atrás -->
+      <a data-slide="prev" data-target='#carousel-home' href="#carousel-2" class="left carousel-control">
+        <span class="icn icn-navizquierda"></span>
+      </a>
+      <a data-slide="next" data-target='#carousel-home' href="#carousel-2" class="right carousel-control">
+        <span class="icn icn-nav"></span>
+      </a>
+</div>
 
 <!-- Menú dropdown -->
 <div class="oculto-xs">
-  <div class='pag sin-relleno margen-sup-sm margen-inf-xs'>
-  <a href='{{ site.baseurl }}/maquetas/home'>
-  <img class='ancho-lg' alt="Third slide" src="{{ site.baseurl }}/img/logo-ead-pucv.png">
-  </a>
-      <ul class="nav nav-pills ">
+  <div class='pag sin-relleno margen-sup-sm borde inf-lineal-xs'>
+  <div class='bloque auto margen-inf-sm en-linea izquierda cf'>
+  <div class='izquierda margen-der-xs logo en-linea'>
+      <span class='bloque izquierda sombra-cabecera-claro-xs relleno-der-xs rojo sans'><a class='lg ead sans' href='{{ site.baseurl }}/maquetas/home'>e[ad]</a></span>
+  </div>
+  <div class='izquierda relleno-sup-xs logo en-linea'>
+      <!--<span class='sm sans bloque negro'>Escuela de arquitectura y diseño</span>-->
+      <!--<span class='xs bloque izquierda sans negro-fundido en-linea'>Pontificia universidad católica de Valparaíso</span>-->
+  </div>
+  </div>
+      <ul class="nav nav-pills margen-inf-xs en-linea margen-izq-sm izquierda">
         <li class="dropdown">
-          <a href="#" data-toggle="dropdown" role="button" id="drop4" class="dropdown-toggle negro">Escuela<b class="caret"></b></a>
+          <a href="#" data-toggle="dropdown" role="button" id="drop4" class="dropdown-toggle cond gruesa negro">Escuela<b class="caret"></b></a>
               <ul aria-labelledby="drop4" role="menu" class="dropdown-menu" id="menu1">
                 <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Historia</a></li>
                 <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Amereida</a></li>
@@ -40,7 +135,7 @@ title: Pyxis Framework - Maquetas
               </ul>
         </li>
         <li class="dropdown">
-          <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Carreras & Postgrados<b class="caret"></b></a>
+          <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle cond gruesa negro">Carreras & Postgrados<b class="caret"></b></a>
               <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu2">
                 <li role="presentation"><a href="{{ site.baseurl }}/maquetas/page" tabindex="-1" role="menuitem">Arquitectura</a></li>
                 <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Diseño gráfico</a></li>
@@ -51,7 +146,7 @@ title: Pyxis Framework - Maquetas
               </ul>
         </li>
         <li class="dropdown">
-          <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Estudiantes<b class="caret"></b></a>
+          <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle cond gruesa negro">Estudiantes<b class="caret"></b></a>
               <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
                 <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Pregrado</a></li>
                 <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Postgrado</a></li>
@@ -60,7 +155,7 @@ title: Pyxis Framework - Maquetas
               </ul>
         </li>
         <li class="dropdown">
-          <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Admisión<b class="caret"></b></a>
+          <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle cond gruesa negro">Admisión<b class="caret"></b></a>
               <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
                 <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Cuerpo coordinador</a></li>
                 <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Asuntos estudiantiles</a></li>
@@ -71,7 +166,7 @@ title: Pyxis Framework - Maquetas
               </ul>
         </li>
         <li class="dropdown">
-          <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Extensión<b class="caret"></b></a>
+          <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle cond gruesa negro">Extensión<b class="caret"></b></a>
               <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
                 <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Archivo histórico J.V.A</a></li>
                 <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Ediciones e[ad]</a></li>
@@ -80,7 +175,7 @@ title: Pyxis Framework - Maquetas
               </ul>
         </li>
         <li class="dropdown">
-          <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Amereida<b class="caret"></b></a>
+          <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle cond gruesa negro">Amereida<b class="caret"></b></a>
               <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
                 <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Taller de amereida</a></li>
                 <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Ciudad abierta</a></li>
@@ -89,175 +184,248 @@ title: Pyxis Framework - Maquetas
               </ul>
         </li>
       </ul>
+      <div class='absoluto abs-der margen-sup-xs tooltip-demo oculto-sm oculto-xs'>
+        <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea relleno-sup-xs sin-margen' href='#'>
+          <!-- ícono de Tooltip -->
+          <span><i class='icn icn-lapiz margen-izq-xs margen-sup-xs'></i></span>
+          <span class='xs semi-gruesa sans margen-sup-xs'>editar</span>
+        </a>
+      </div>
   </div>
 </div>
 
-<!-- Menú responsivo -->
-<div class="oculto-lg oculto-md oculto-sm">
-  <div class='pag menu-movil'>
-    <a href='{{ site.baseurl }}/'>
-      <img class='ancho-lg' alt="Third slide" src="{{ site.baseurl }}/img/logo-ead-pucv.png">
-    </a>
-    <a href="#menu" class="menu-link derecha"><i class="icn icn-menu"></i> </a>
-    </div>
-  <nav id="menu" class='lista-sin-estilo margen-inf-sm' role="navigation">
-    <li class='margen-sup'><a class='sans' href='{{ site.baseurl }}/pags/tipografia'>Escuela</a></li>
-    <li><a class='sans' href='{{ site.baseurl }}/pags/grilla'>Carreras & postgrados</a></li>
-    <li><a class='sans' href='{{ site.baseurl }}/pags/interaccion'>Estudiantes</a></li>
-    <li><a class='sans' href='{{ site.baseurl }}/pags/color'>Admisión</a></li>
-    <li><a class='sans' href='{{ site.baseurl }}/pags/iconografia'>Amereida</a></li>
-  </nav>
-</div>
-
-<!-- Breadcrumbs -->
 <div class='pag sin-relleno'>
-<ul class='sin-relleno margen-sup-sm margen-inf-xs' id="breadcrumb">
-    <li><a><i class='icn icn-hogar'></i></a></li>
-    <li><a>Carreras y postgrados</a></li>
-    <li><a>Arquitectura</a></li>
-</ul>
-</div>
-
-<!-- Títutlo -->
-<div class='pag sin-relleno'>
-<h1>Arquitectura</h1>
-</div>
-
-<!-- Carrousel -->
-<div data-ride="carousel" class="carousel slide" id="carousel-example-generic">
-  <ol class="carousel-indicators">
-    <li data-slide-to="0" data-target="#carousel-example-generic" class="active"></li>
-    <li data-slide-to="1" data-target="#carousel-example-generic"></li>
-    <li data-slide-to="2" data-target="#carousel-example-generic"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="item car-sm">
-      <img class='altura-maxima' alt="First slide" src="">
-    </div>
-    <div class="item active car-sm">
-      <img alt="Second slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/10/3.5-croquis-hab.jpg">
-    </div>
-    <div class="item car-sm">
-      <img alt="Third slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/07/DSC_0864-1.jpg">
+  <div class='col-md-12'>
+    <!-- Breadcrumbs -->
+    <ul class='sin-relleno margen-sup-sm' id="breadcrumb">
+        <li><a href='#'><i class='icn icn-hogar'></i></a></li>
+        <li><a href='#'>Carreras y postgrados</a></li>
+        <li><a>Diseño Gráfico</a></li>
+    </ul>
+    <div class='bloque ancho-completo'>
+        <h1 class='lg gruesa negro condensado sombra-cabecera-claro-sm margen-inf-sm en-linea margen-der-xs'>Diseño Gráfico</h1>
+        <h1 class='lg margen-inf-sm en-linea negro'>
+          <div class='en-linea tooltip-demo margen-izq-xs'>
+            <div class='oculto-xs'>
+                <!-- Tooltip en botón 'editar'-->
+                <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Editar página" class='btn sin-relleno sin-margen en-linea' href='#'>
+                  <!-- ícono de Tooltip -->
+                  <code class='sin-relleno bajas xs fondo-verde'><i class='icn icn-lapiz'></i></code>
+                </a>
+                <!-- Popover de aclaraciones para editar en WP -->
+                <span class='margen-izq-xs-negativo xs interlinea-xs'>
+                  <a class='izquierda sin-sombra-cabecera' id="popover-test" data-content="Puedes editar el contenido de ésta y otras páginas en su tema de Wordpress. Sólo debes copiar el enlace y loguearte como usuario en: http://www.ead.pucv.cl/wp-admin" data-toggle="popover" data-original-title="" title="¿Quieres editar esta página?">
+                  <!-- ícono de popover -->
+                  <span class='sm sin-sombra-cabecera'><i class='icn icn-lupamas margen-izq-xs izquierda sin-sombra-cabecera'></i></span>
+                  </a>
+                </span>
+            </div>
+          </div>
+        </h1>
     </div>
   </div>
-  <a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
-    <span class="icn icn-navizquierda"></span>
-  </a>
-  <a data-slide="next" href="#carousel-example-generic" class="right carousel-control">
-    <span class="icn icn-nav"></span>
-  </a>
 </div>
 
 <!-- Contenido escrito -->
-<div class='pag'>
-  <div class='fila'>
-    <!-- Primera columna -->
-    <div class='col-md-4 oculto-sm oculto-xs'>
-        <!-- Sticky de anclas -->
-        <div id='ead-sticky'>
-          <ul class='sin-relleno texto-derecha'>
-              <li class="sin-estilo relleno-inf-xs"><a class='sans pizarra' href='#'>Estudiar arquitectura en la e[ad]</a></li>
-              <li class="sin-estilo relleno-inf-xs"><a class='sans pizarra' href='#'>Perfil del egresado</a></li>
-              <li class="sin-estilo relleno-inf-xs"><a class='sans pizarra' href='#'>Competencias fundamentales</a></li>
-              <li class="sin-estilo relleno-inf-xs"><a class='sans pizarra' href='#'>Objetivos educacionales</a></li>
-          </ul>
+<!-- Pag para page (para toda la página) -->
+<div class='pag page'>
+      <!-- Contenido 1/8 -->
+      <div class='col-md-9 col-sm-8'>
+      <h3 class='inteletraje-sm-negativo gruesa negro'><i class='icn icn-usuarios margen-der-xs'></i>Estudiar diseño en la e[ad]</h3>
+      <p class='sans' class='margen-sup-xs'>La misión de la Escuela de Arquitectura y Diseño es cultivar el arte de la <a class='sans' href='#'>Arquitectura</a>, del <a class='sans' href='#'>Diseño Gráfico</a> y del <a class='sans' href='#'>Diseño Industrial</a> por medio de la creación y transmisión del conocimiento del oficio de estas artes, formar Arquitectos y Diseñadores con la vocación de concebir obras que den cabida y expresión al habitar humano. La Escuela afirma que tanto la Arquitectura como el Diseño son un Arte. Esto diferencia profundamente de otras orientaciones, disciplinas y saberes, e implica una manera peculiar de estudiar y de hacer.
+      </p>
+      <h5 class='serif italica negrita inteletraje-sm-negativo negro'>La observación como fundamento</h5>
+      <p class='sans'>En nuestra Escuela se accede a la Arquitectura y al Diseño a través de <a class='italica negrita' href='#'>la observación</a>. La observación es una actividad profundamente artística que permite penetrar la realidad de manera siempre nueva y original. A partir de esta postura de pensamiento tomada como fundamento se desarrollan los diferentes trabajos, estudios y proyectos.</p>
+      <h5 class='serif italica negrita inteletraje-sm-negativo negro'>Compromiso de vida y ámbito</h5>
+      <p class='sans'>Esta modalidad de estudiar y hacer exige de alumnos y profesores un real compromiso de vida. Este que le confiere a la Escuela una gran unidad y, a su vez establece un ámbito, y un ritmo de estudio que da cabida a actividades ordinarias y extraordinarias, en que participan creativamente todos los alumnos y profesores.</p>
+      <h5 class='serif italica negrita inteletraje-sm-negativo negro'>El taller: columna vertebral</h5>
+      <p class='sans'>El taller es la columna vertebral de los estudios de cada disciplina impartida en nuestra Escuela. En él tiene lugar el proceso creativo de cada estudiante, y es donde se decantan los conocimientos humanísticos, matemáticos, científicos y tecnológicos que se imparten en las demás asignaturas de nuestro <a class='sans' href='#'>Plan de Estudios</a>.</p>
+    </div> <!-- fin de col-->
+    <div class='col-md-3 col-sm-4 oculto-xs'>
+      <ol class='lista-sin-estilo margen-sup-md'>
+        <li class='relleno-vertical-xs borde inf-lineal-xs sup-lineal-xs'><a class='sans'>Estudiar diseño gráfico</a></li>
+        <li class='relleno-vertical-xs borde inf-lineal-xs'><a class='sans'>Programa de estudios</a></li>
+        <li class='relleno-vertical-xs borde inf-lineal-xs'><a class='sans'>Malla curricular</a></li>
+        <li class='relleno-vertical-xs borde inf-lineal-xs'><a class='sans'>Admisión</a></li>
+      </ol>
+    </div>
+    <div class='col-md-9 col-sm-8 col-xs-12'>
+      <div class='fila'>
+        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2012/04/regalo_T1_2012_02.jpg'></a>
         </div>
+        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Ediciones e[ad]"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2013/07/libros-2_1.jpg'></a>
+        </div>
+      </div>
+      <div class='fila'>
+        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Faenas farándula 2012"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/themes/gamma/img/disenografico.jpg'></a>
+        </div>
+        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Talleres de grabado"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/themes/gamma/img/diseno-grafico2.jpg'></a>
+        </div>
+      </div>
+      <h4 class='inteletraje-sm-negativo gruesa negro'><i class='icn icn-usuario margen-der-xs'></i>Concepción del diseñador</h4>
+      <p class='sans'>El Diseñador Gráfico de la Pontificia Universidad Católica de Valparaíso es capaz de ubicarse dentro de equipos multidisciplinarios proyectando y concretando trabajos de distintos grados de complejidad, de manera original y eficiente.</p>
+      <p class='sans'>Además, ha desarrollado un lenguaje teórico del <a class='sans' href='#'>oficio</a> en constante resonancia con la <a class='sans' href='#'>Poesía</a>, lo cual le permite interpretar y poseer una visión artística del mundo, permanece así en la abertura creativa del oficio; concibiendo y realizando obras y estudios de postítulos en el ámbito profesional; generando líneas de investigación y estudiando postgrados en el ámbito académico.</p>
+      <h5 class='serif italica negrita inteletraje-sm-negativo negro'>Sentido general de la formación</h5>
+      <p class='sans'>En esta Escuela, cuyo centro es <a class='sans' href='#'>el taller</a>, la convergencia de todas las dimensiones formativas va en dirección a acotar el proceso de una obra, que se da en cinco dimensiones, ellas son:</p>
+      <ul class='margen-inf'>
+        <li class='italica'>El Origen Común desde una misma Visión.</li>
+        <li class='italica'>El Ser en Completitud.</li>
+        <li class='italica'>Un Método de Estudio.</li>
+        <li class='italica'>La capacidad de contemplación.</li>
+        <li class='italica'>La Capacidad de Celebración.</li>
+      </ul>
+      <p class='sans'>El método de trabajo del taller se basa en la “observación” dibujada, medida y escrita de la ciudad en que vivimos y lo que en ella acontece, para dar con el acto o lectura de su presente. Dichas experiencias, vividas por los alumnos en la ciudad, constituyen un suelo fecundo de relaciones las cuales son orientadas por el profesor comunicando a los alumnos su visión. La docencia impartida corresponde entonces a un acto creativo donde ningún taller es repetición de otro, procurando despertar la capacidad de observación en los alumnos y exteriorizar el modo peculiar en que ella se manifiesta para cada uno.</p>
+      <p class='sans'>La observación -acto de naturaleza artística- al situarse en el origen mismo de la forma no se opone ni se contradice con la formación técnica, ya que como acto creativo se le ubica como un medio y no como un fin, concretándose para cada caso y nivel específico.</p>
+      <p class='sans'>Todos los talleres realizan <a class='italica negrita' href='#'>travesías</a>, que son viajes en los que se recorre el continente americano, realizando obras junto a profesores y alumnos de <a class='sans' href='#'>Arquitectura</a> y <a class='sans' href='#'>Diseño Industrial</a>.</p>
     </div>
-    <!-- Segunda columna -->
-    <div class='col-md-8 col-sm-12'>
-        <h2 class='rojo xs'>Estudiar arquitectura en la e[ad]</h2>
-        <p>La misión de la Escuela de Arquitectura y Diseño es cultivar, el arte de la Arquitectura, del Diseño Gráfico y del Diseño Industrial por medio de la creación y transmisión del conocimiento del oficio de estas artes, formar arquitectos y diseñadores con la vocación de concebir obras que den cabida y expresión al habitar humano.</p>
-        <h2 class='rojo xs'>Perfil del egresado</h2>
-        <p>Un arquitecto que conciba la arquitectura como un arte al servicio del hombre. Que desde una visión poética de su contexto y una alta capacidad de reflexión sean capaces con creatividad de proponer, proyectar y construir obras arquitectónicas y urbanas que de un modo innovador en el arte y en la técnica den cabida y expresión al habitar humano, satisfaciendo necesidades de la sociedad en las distintas escalas- edificio, ciudad, continente- y magnitudes del proyecto arquitectónico y urbano.
-        Las competencias fundamentales, disciplinares y profesionales de este arquitecto son aquellas que permiten que sus proyectos sean un consecuente paso de la observación arquitectónica a la forma construida.</p>
-        <h2 class='rojo xs'>Competencias fundamentales</h2>
-        <p>Se propicia una educación integral, que favorece el crecimiento armónico de todas las dimensiones que constituyen la persona humana, abordados tanto desde la perspectiva intelectual como vivencial, de modo de promover la coherencia entre el conocimiento, la verdad y la vida. Se privilegian valores que sustentan una integridad y competencias humanísticas que permiten acceder al método de estudio que propone la carrera basado principalmente en la Observación dibujada, medida y escrita que es el modo de comprender e interactuar con el entorno.</p>
-        <ol class='margen-inf'>
-            <li  class='sans'>Valores de apertura a la trascendencia; libertad; solidaridad; respeto y aceptación de la diversidad; y compromiso ético y de responsabilidad social.</li>
-            <li  class='sans'>Capacidad para observar la realidad circundante, la ciudad se origina y se desarrolla, a partir de la observación directa de su realidad.</li>
-        </ol>
-        <h4 class='rojo xs margen-inf'>Competencias disciplinares</h4>
-        <ol class='margen-inf'>
-            <li class='sans'>Competencias que permiten al arquitecto a dar existencia física a la formulación del paso de la observación a la forma.</li>
-            <li class='sans'>Capacidad para integrar los aspectos poéticos, sociales y físicos presentes en los lugares y casos a abordar.</li>
-            <li class='sans'>Capacidad creativa y de maestría formal, que le permita innovar en la forma arquitectónica del espacio habitable y su contexto.</li>
-            <li class='sans'>Capacidad analítica, de reflexión y de intervención social que le permita realizar planes y programas apropiados en una correcta relación lugar y contexto..</li>
-        </ol>
-        <h2 class='rojo xs margen-inf'>Objetivos educacionales</h2>
-        <p>Los objetivos educacionales que transmiten el oficio de dar cabida al habitar humano construyen simultáneamente tres magnitudes del arte arquitectónico:</p>
-        <ul class='margen-inf'>
-            <li class='sans'><b>Magnitud y lenguaje</b></li>
-        </ul>
-        <p>La magnitud de un lenguaje que funda la vocación desde la relación Poesía y Arquitectura. Es una experiencia de la Poesía de Amereida, de la Música de las Matemáticas, del Taller de América, los cursos de matemáticas y de Cultura Religiosa. Y que como experiencia de los Originales se ejerce en todo concebir de los talleres y de la Escuela en general.</p>
-        <ul class='margen-inf'>
-            <li class='sans'><b>Vida, Trabajo y Estudio</b></li>
-        </ul>
-        <p> un régimen que funda la convergencia de la vida, el trabajo y el estudio. Es una experiencia del acto del habitar y que se lleva a cabo en el “Taller”, en la casa de la Escuela, en la Ciudad Abierta, en las Travesías: experiencia en su sentido histórico en el curso de “Presentación de la Arquitectura”, en su sentido corporal en el curso de “Cultura del Cuerpo” y en un sentido ejecutorio de las ciencias y las técnicas en los cursos de “Construcción” y que se ejerce en toda realización del alumno en la Escuela.</p>
-        <ul class='margen-inf'>
-            <li class='sans'><b>Magnitud de un Instrumento</b></li>
-        </ul>
-        <p>Se trata de tres magnitudes que generan gratuitamente una cuarta: de celebración. Ella arma, para sí misma e invitados, lecturas poéticas, conciertos, exposiciones de esculturas, cine de vanguardia, comidas para dialogar y en donde se madura la fidelidad al origen de todas las magnitudes. Estos objetivos devienen en propósitos, que fueron planteados por primera vez en 1952, cuando la Escuela de Arquitectura se refunda. Momento inicial en que los Arquitectos exponen en formulación y el poeta abre el entusiasmo de la fidelidad. Desde el comienzo de la Escuela, hace ya 50 años, no ha habido modificaciones en cuanto a la formulación inicial y a tener conciencia de fidelidad. Sí ha habido en cuanto a su dilatarse en profundizaciones y ampliaciones. Así, específicamente en los talleres y en la Escuela en general.</p>
-        <blockquote><i>El Taller es así un ámbito de estudio colectivo en que cada alumno fructifica en su trabajo individual, por medio de un camino creativo en común que considera el desarrollo individual de cada cual.</i></blockquote>
-        <p>Este modelo conduce a ciertas capacidades que definen el perfil de un egresado de arquitectura en esta Escuela. Este perfil se logra mediante la transmisión de los conocimientos y herramientas para el logro de un conjunto de competencias genéricas de formación fundamental, disciplinares y profesionales que se dan en la relación entre ciclos del proyecto formativo y las áreas de formación[1]. El concepto de ciclo corresponde a la estructura temporal de la carrera, seis años que se dividen en cuatro ciclos:Ciclo de inicio en primer año; ciclo de Formación, Segundo y tercer año; Tercer ciclo disciplinar,  cuarto y quinto año; y cuarto ciclo profesionalizante, correspondiente a la Titulación. El concepto de área corresponde a las áreas formativas las que se constituyen en columnas vertebrales de la carrera estructurando los ciclos</p>
-        <h2 class='rojo xs'>Competencias Genéricas de formación fundamental</h2>
-        <p>Lo fundamental es tener presente las magnitudes del arte arquitectónico descritas anteriormente desde dichas magnitudes traducidas como competencias se vinculan más bien al concepto de área y se van logrando a lo largo de la carrera implícitas concretamente en el ámbito de estudio sostenido académicamente por aquellas dimensiones que construyen en los estudiantes el vinculo entre vida, trabajo y estudio. Dicho vinculo se da principalmente en las Travesías, en la Ciudad Abierta y en la posibilidad de construcción de obras que se da en el Taller Arquitectónico, es decir, se dan mediante experiencias sensibles. La contextualización de esas experiencias se da en ciertos ejes estructurales como lo son el Taller de Amereida, Cultura del Cuerpo, Matemáticas y estudios generales. Cabe mencionar que el conjunto de competencias genéricas de formación fundamental han sido estudiadas por un grupo de expertos de la PUCV para determinar ciertas competencias claves y transversales al perfil de un egresado de la PUCV</p>
-        <ul class='margen-inf'>
-            <li class='sans'><b>Capacidad de observación:</b> Capacidad para observar la realidad circundante, la ciudad se origina y se desarrolla, a partir de esa observación directa de la realidad.</li>
-            <li class='sans'><b>Conocer reflexivamente:</b> Reflexionar sobre los propios planes de acción, los propios conocimientos, y la relación de ambos con las demás personas que intervienen en la situación. Se trata de un metaconocimiento, es decir un conjunto de conocimientos que permiten la reflexión acerca de los propios conocimientos.</li>
-            <li class='sans'><b>Capacidad crítica, autocrítica y propositiva:</b> Analizar, examinar y juzgar de manera consciente el objeto de estudio integrando las consideraciones relevantes y generando una opinión fundada (crítica) y de realizar esas acciones sobre sí mismo (autocrítica).</li>
-        </ul>
-    </div> <!-- fin de segunda columna -->
-  </div> <!-- fin de segunda fila -->
-</div> <!-- fin de pag -->
-
-<footer class='fondo-pizarra'>
-<div class='pag'>
   <div class='fila'>
-    <div class='col-md-4'>
-      <h6 class='sin-margen relleno-inf-xs'><a href='#' class='ahuesado sans fino'>Escuela de Arquitectura y Diseño</a></h6>
-      <h6 class='xs fino serif gris'>Pontificia Universidad Católica de Valpraíso</h6>
-      <h6><a href='#' class='ahuesado sans fino'>Contacto</a></h6>
-      <p class='xs sans blanco sin-margen'>Matta 12, Recreo, Viña del Mar, Chile.</p>
-      <p class='xs sans blanco sin-margen'>Cód. Postal: 2580129, Casilla 4170 V2 Valparaíso</p>
+    <div class='col-md-9 col-sm-8 col-xs-12'>
+      <div class='fila'>
+        <div class='col-md-12 col-sm-12 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2014/08/MG_0755.jpg'></a>
+        </div>
+      </div>
+      <div class='fila'>
+        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2013/12/puntaarenas0012013.jpg'></a>
+        </div>
+        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2013/12/puntaarenas0052013.jpg'></a>
+        </div>
+      </div>
+      <h4 class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-perfil margen-der-xs'></i>Perfil de egreso</h4>
+      <ul class='margen-inf-sm'>
+        <li class='italica'>Un egresado de esta Escuela posee las competencias que le permiten ejercer el Diseño Gráfico desde la observación, como origen del proceso creativo. Este ha sido encarnado durante los estudios de lo urbano en los talleres de Valparaíso, de lo experimental en la Ciudad Abierta y de la visión de Continente en las Travesías.</li>
+        <li class='italica'>Un egresado de esta Escuela posee las competencias que le permiten ejercer el Diseño Gráfico desde la observación, como origen del proceso creativo. Este ha sido encarnado durante los estudios de lo urbano en los talleres de Valparaíso, de lo experimental en la Ciudad Abierta y de la visión de Continente en las Travesías.</li>
+      </ul>
+    </div> <!-- fin de col -->
+  </div> <!-- fin de fila -->
+    <div class='col-md-9 col-sm-8 col-xs-12'>
+      <div class='fila'>
+        <div class='col-md-12 col-sm-12 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2014/01/ceremoniatitulacion22014.jpg'></a>
+        </div>
+      </div>
+      <h4 class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-engranaje icn-spin margen-der-xs'></i>Competencias fundamentales</h4>
+      <p class='sans'>El egresado de la Escuela de Arquitectura y Diseño de la Pontificia Universidad Católica de Valparaíso posee las competencias valóricas, disciplinares y profesionales que le permiten ejercer el Diseño Gráfico a partir de una visión poética del mundo, colocándolo de esta manera en el origen del oficio y proyectándolo creativamente en todos los campos de su desempeño.</p>
+      <p class='sans'>Esta virtud que se encarna a lo largo de los años de estudio, se hace posible a través del desarrollo de la observación; lenguaje complejo al que concurren el dibujo y el texto como medio eficaz para develar la realidad y proponer en ella las distintas escalas y campos del diseño.</p>
+      <h5 class='serif italica negrita inteletraje-sm-negativo margen-inf-sm negro'>Competencias genéricas de formación fundamental</h5>
+      <ul class='margen-inf-sm'>
+        <li class='italica'>Posee una postura ética fundada en el compromiso con la obra que emprende y con la responsabilidad social implícita en toda creación humana, en concordancia con el marco valórico señalado en la misión de nuestra universidad.</li>
+        <li class='italica'>Posee un lenguaje teórico del oficio en constante resonancia con la poesía, lo cual le permite interpretar y manifestar a través del elogio y la celebración una visión artística del mundo.</li>
+        <li class='italica'>Posee un pensamiento crítico para abordar y generar proyectos, desarrollarse profesionalmente, y realizar estudios de postítulo y posgrado.</li>
+      </ul>
+      <h5 class='serif italica negrita inteletraje-sm-negativo margen-inf-sm negro'>Competencias específicas disciplinares</h5>
+      <ul class='margen-inf-sm'>
+        <li class='italica'>Con capacidad de observación que le permite acceder a un sentido original de la realidad, orientado a la construcción de los fundamentos del trabajo creativo.</li>
+        <li class='italica'>Posee un lenguaje teórico del oficio en constante resonancia con la poesía y las distintas manifestaciones artísticas, lo cual le permite reinterpretar el mundo.</li>
+        <li class='italica'>Posee una abertura creativa del oficio que integra e interpreta la realidad de los requerimientos en formas visuales, espaciales e interactivas en concordancia y justeza al público que sirve.</li>
+        <li class='italica'>Posee gran versatilidad para afrontar artísticamente el oficio en todas sus manifestaciones y magnitudes: desde el diseño tipográfico al complejo editorial, desde la miniatura al gran formato, desde el afiche a la escenografía, desde el grabado a la página web, desde la infografía a la interfaz, desde el envase al packaging, desde el módulo a la exposición y finalmente desde todos ellos al espacio.</li>
+        <li class='italica'>Es capaz de formular un pensamiento previo a la idea, comprendiendo y analizando los actos, construcciones humanas y elementos naturales que lo circundan.</li>
+        <li class='italica'>Domina el lenguaje computacional específico del oficio, quedando acorde con las actuales dinámicas de búsqueda, creación, proyección necesarias para comprender las técnicas modernas de producción, pudiendo dialogar así con diferentes disciplinas.</li>
+        <li class='italica'>Domina un lenguaje de dibujo para develar la realidad y utilizarla además como elemento expresivo y proyectivo de las nuevas ideas hacia la realidad.</li>
+      </ul>
+      <h5 class='serif italica negrita inteletraje-sm-negativo margen-inf-sm negro'>Competencias específicas profesionales</h5>
+      <ul class='margen-inf-sm'>
+        <li class='italica'>Lidera e integra equipos transdisciplinarios, ideando, proyectando y concretando trabajos en distintos grados de complejidad de manera original y eficiente.</li>
+        <li class='italica'>Domina las bases de los lenguajes técnicos y tecnológicos lo que le permiten interactuar con distintas especialidades.</li>
+        <li class='italica'>Reconoce y abstrae cualquier campo del diseño gráfico que le permite actuar con autonomía y eficiencia en ellos, sea por autogestión o coparticipación.</li>
+        <li class='italica'>Gestiona proyectos desde su diseño hasta la producción de la obra, respondiendo a los requerimientos del medio.</li>
+        <li class='italica'>Construye diálogos entre audiencias identificando territorios culturales, geográficos, sociales, económicos y tecnológicos para la innovación, dando respuestas y recreando los constantes cambios en el mundo.</li>
+        <li class='italica'>Escucha empáticamente para integrar e interpretar la realidad de los requerimientos de forma visual, espacial e interactiva en concordancia y justeza al público que sirve.</li>
+      </ul>
+    </div> <!-- fin de col -->
+    <div class='col-md-3 col-sm-4 oculto-xs'>
+    </div> <!-- fin de col -->
+  <div class='fila margen-sup-sm'>
+    <div class='col-md-9 col-sm-8 col-xs-12'>
+      <div class='fila'>
+        <div class='col-md-12 col-sm-12 col-xs-12 tooltip-demo tooltip-imagenes'>
+        <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2014/03/DSC_1440.jpg'></a>
+        </div>
+      </div>
+      <h4 class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Objetivos educacionales</h4>
+      <p  class='sans'>El ejercicio profesional se desarrolla en instituciones y empresas relacionadas con la comunicación, campo publicitario, editorial, la industria gráfica y multimedial. Ejercicio independiente de la profesión. Docencia universitaria y continuidad en estudios de post-grado.</p>
     </div>
-    <div class='col-md-4'>
-      <p class='xs fino serif gris sin-margen'>1998 - 2014 | <a href='#' class='blanco'>Suscripción (RSS)</a> | <a href='#' class='blanco'>Cómo Suscribirse</a> | <a href='#' class='blanco'>Colofón</a> | Optimizado para <a href='#' class='blanco'>Firefox</a></p>
-      <p class='xs fino serif gris'>e[ad] de la Escuela de Arquitectura y Diseño PUCV está licenciado bajo <a href='#' class='blanco'>Creative Commons Atribución-No Comercial-Licenciar Igual 2.0 Chile License</a></p>
-    </div>
-    <div class='col-md-4'>
-      <h6 class='fino blanco'>e[ad] en redes sociales</h6>
-      <a href='#'>
-       <span class="icn-stack">
-        <span class="icn icn-cuadrolleno icn-stack-2x ahuesado"></span>
-        <span class="icn icn-facebook icn-stack-1x pizarra"></span>
-      </span>
-      </a>
-      <a href='#'>
-      <span class="icn-stack">
-        <span class="icn icn-cuadrolleno icn-stack-2x ahuesado"></span>
-        <span class="icn icn-twitter icn-stack-1x pizarra"></span>
-      </span>
-      </a>
-      <a href='#'>
-      <span class="icn-stack">
-        <span class="icn icn-cuadrolleno icn-stack-2x ahuesado"></span>
-        <span class="icn icn-flickr icn-stack-1x pizarra"></span>
-      </span>
-      </a>
-      <a href='#'>
-      <span class="icn-stack">
-        <span class="icn icn-cuadrolleno icn-stack-2x ahuesado"></span>
-        <span class="icn icn-soundcloud icn-stack-1x pizarra"></span>
-      </span>
-      </a>
-      <a href='#'>
-      <span class="icn-stack">
-        <span class="icn icn-cuadrolleno icn-stack-2x ahuesado"></span>
-        <span class="icn icn-vimeo icn-stack-1x pizarra"></span>
-      </span>
-      </a>
+    <div class='col-md-3 col-sm-4 oculto-xs'>
+      <!-- Sticky 5/8 -->
+      <div id='ejemplo-sticky-5'>
+        <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Objetivos educacionales</h6></a>
+      </div> <!-- fin de stikcy -->
     </div>
   </div>
-</div>
-</footer>
+  <div class='fila margen-sup-xs'>
+    <div class='col-md-9 col-sm-8 col-xs-12'>
+      <h4 class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Malla Curricular</h4>
+      <a class='btn btn-alerta'>Descargar malla curricular</a>
+    </div> <!-- fin de col -->
+    <div class='col-md-3 col-sm-4 oculto-xs'>
+      <!-- Sticky 6/8 -->
+      <div id='ejemplo-sticky-6'>
+        <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Malla curricular</h6></a>
+      </div> <!-- fin de stikcy -->
+    </div> <!-- fin de col -->
+  </div>
+  <div class='fila margen-sup-sm'>
+    <div class='col-md-9 col-sm-8 col-xs-12'>
+      <h4 class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Profesores de carrera</h4>
+      <div class='fila'>
+        <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Sylvia Arriagada"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://ipark2012ephemeraltravesia.files.wordpress.com/2012/09/silvia-arriagada.jpg'></a>
+        </div>
+        <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="José Balcells"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://ipark2012ephemeraltravesia.files.wordpress.com/2012/09/jose-balcells.jpg'></a>
+        </div>
+        <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Alejandro Garretón"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://farm4.staticflickr.com/3262/3483598559_d1c644fb76_q.jpg'></a>
+        </div>
+        <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Manuel Sanfuentes"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://farm4.staticflickr.com/3157/3082752662_1d39dde79b_q.jpg'></a>
+        </div>
+      </div>
+      <div class='fila'>
+        <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Herbert Spencer"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://farm6.staticflickr.com/5194/7176578488_3c88076e53_q.jpg'></a>
+        </div>
+        <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Michèle Wilkomirsky"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://farm5.staticflickr.com/4004/4481267383_02353ef1ba_q.jpg'></a>
+        </div>
+        <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Katherine Exss"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://wiki.ead.pucv.cl/images/5/59/Katherine_exss_wiki.jpg'></a>
+        </div>
+      </div>
+    </div> <!-- fin de col-->
+    <div class='col-md-3 col-sm-4 oculto-xs'>
+      <!-- Sticky 7/8 -->
+      <div id='ejemplo-sticky-7'>
+        <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Profesores de carrera</h6></a>
+      </div>
+    </div>
+  </div> <!-- fin de fila-->
+  <div class='fila margen-sup-sm'>
+    <div class='col-md-9 col-sm-8 col-xs-12'>
+      <h4 class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Profesores ayudantes</h4>
+      <div class='fila'>
+        <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Karen Carrera"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://farm8.staticflickr.com/7207/6979639313_f74d11b3cd_q.jpg'></a>
+        </div>
+        <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Macarena Álamos"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://farm3.staticflickr.com/2493/4172133723_ffbc7e6c4d_q.jpg'></a>
+        </div>
+        <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Jaime Pérez Moena"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://farm8.staticflickr.com/7220/7171615052_2a29d54806_q.jpg'></a>
+        </div>
+      </div>
+    </div> <!-- fin de col-->
+    <div class='col-md-3 col-sm-4 oculto-xs'>
+      <!-- Sticky 8/8 -->
+      <div id='ejemplo-sticky-8'>
+        <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Profesores ayudantes</h6></a>
+      </div> <!-- fin de stikcy -->
+    </div>
+  </div> <!-- fin de fila-->
+</div> <!-- fin de * pag page * -->

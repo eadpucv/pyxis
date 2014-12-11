@@ -352,6 +352,7 @@
     &.abs-inf{bottom: 0}
     &.abs-der{right: 0}
     &.abs-izq{left: 0}
+    &.al-medio{top: 50%;}
 }
 
 .relativo{
@@ -397,10 +398,10 @@
 
     // Rotar un elemento a posición diagonal
 .diagonal {
-    /* Safari */-webkit-transform: rotate(-60deg);
-    /* Firefox */-moz-transform: rotate(-60deg);
-    /* IE */-ms-transform: rotate(-60deg);
-    /* Opera */-o-transform: rotate(-60deg);
+    /* Safari */-webkit-transform: rotate(60deg);
+    /* Firefox */-moz-transform: rotate(60deg);
+    /* IE */-ms-transform: rotate(60deg);
+    /* Opera */-o-transform: rotate(60deg);
     /* Internet Explorer */filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     margin: @margen-code;
 
@@ -412,6 +413,15 @@
     /* Internet Explorer */filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     margin: 20px 0;    
     }
+}
+
+.horizontal {
+    /* Safari */-webkit-transform: rotate(-60deg);
+    /* Firefox */-moz-transform: rotate(-60deg);
+    /* IE */-ms-transform: rotate(-60deg);
+    /* Opera */-o-transform: rotate(-60deg);
+    /* Internet Explorer */filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    margin: @margen-code;
 }
 
     // Rotar un elemento a posición vertical
