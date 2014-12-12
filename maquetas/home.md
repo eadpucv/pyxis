@@ -198,11 +198,11 @@ title: Pyxis Framework - Maquetas
 </div>
 
 <!-- Info de docencia -->
-<div class='fondo-negro textura-2'>
-  <div class='fondo-negro-fundido margen-inf'>
+<div class='fondo-negro ruido'>
+  <div class='margen-inf'>
 <div class='pag'>
     <div class='col-md-3 col-sm-4'>
-    <div class='fila borde izq-lineal-xs relleno-izq-xs'>
+    <div class='fila relleno-izq-xs'>
       <i class='icn icn-lg blanco margen-izq-sm icn-anuncio en-linea izquierda margen-inf'></i>
       <div class='h100 tooltip-demo'>
       <h6 class='xs sin-margen rojo condensado gruesa en-linea w60 altas relleno-izq-sm'>Proceso retarjetización TNE 2015</h6>
@@ -215,11 +215,11 @@ title: Pyxis Framework - Maquetas
     </div>
     </div>
     <div class='col-md-5 col-sm-12'>
-      <div class='fila borde izq-lineal-xs der-lineal-xs'>
-      <p class='xs sans sin-margen relleno-horizontal-sm blanco'>Debido al nuevo diseño en la Tarjeta Nacional Estudiantil 2015, JUNAEB realizará la captura fotográfica a los alumnos PUCV., matriculados en el 2º semestre 2014, los egresados y los estudiantes de postgrado que tienen la Tarjeta Nacional [...]</p>
+      <div class='fila der-lineal-xs'>
+      <p class='xs sans sin-margen relleno-horizontal-sm blanco justificado'>Debido al nuevo diseño en la Tarjeta Nacional Estudiantil 2015, JUNAEB realizará la captura fotográfica a los alumnos PUCV., matriculados en el 2º semestre 2014, los egresados y los estudiantes de postgrado que tienen la Tarjeta Nacional [...]</p>
     </div>
     </div>
-    <div class='col-md-4 oculto-sm oculto-xs borde der-lineal-xs izq-lineal-xs'>
+    <div class='col-md-4 oculto-sm oculto-xs izq-lineal-xs'>
       <div class='fila'>
       <span class='centrado'><a class='btn btn-alerta fondo-blanco'>Ver información de docencia</a></span>
       </div>
@@ -321,7 +321,7 @@ title: Pyxis Framework - Maquetas
             <span class='centrado xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
               <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
                  <span class="icn-stack">
-                  <span class="icn icn-cuadrolleno icn-stack-2x masking"></span>
+                  <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
                   <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
                 </span>
               </a>
@@ -345,7 +345,7 @@ title: Pyxis Framework - Maquetas
             <span class='centrado xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
               <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
                <span class="icn-stack">
-                <span class="icn icn-cuadrolleno icn-stack-2x masking"></span>
+                <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
                 <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
               </span>
               </a>
@@ -369,7 +369,7 @@ title: Pyxis Framework - Maquetas
           <span class='centrado xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
             <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
                <span class="icn-stack">
-                <span class="icn icn-cuadrolleno icn-stack-2x masking"></span>
+                <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
                 <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
               </span>
             </a>
@@ -397,7 +397,7 @@ title: Pyxis Framework - Maquetas
               <span class='centrado xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
                 <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
                  <span class="icn-stack">
-                  <span class="icn icn-cuadrolleno icn-stack-2x masking"></span>
+                  <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
                   <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
                 </span>
                 </a>
@@ -421,7 +421,7 @@ title: Pyxis Framework - Maquetas
               <span class='centrado xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
                 <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
                  <span class="icn-stack">
-                  <span class="icn icn-cuadrolleno icn-stack-2x masking"></span>
+                  <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
                   <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
                 </span>
                 </a>
@@ -445,7 +445,7 @@ title: Pyxis Framework - Maquetas
               <span class='xs centrado relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
                 <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
                  <span class="icn-stack">
-                  <span class="icn icn-cuadrolleno icn-stack-2x masking"></span>
+                  <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
                   <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
                 </span>
                 </a>

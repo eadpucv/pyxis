@@ -15,6 +15,11 @@
   > .item {
   img{
     top: -25%;
+
+    &.portadilla{
+      top: -10%;
+      width: 120%;
+    }
   }
     a{
         .fondo-gris-blanco-trans{
@@ -24,20 +29,16 @@
       &:hover{
         .fondo-gris-blanco-trans{
         .transition(.2s ease all);
-          background-color: @rojo !important;
-            h2{color: @blanco; text-shadow: none; .transition(.2s ease all)}
-            p{color: @blanco; text-shadow: none; .transition(.2s ease all)}
-            span{color: @blanco; text-shadow: none; .transition(.2s ease all)}
-            i{color: @blanco; text-shadow: none; .transition(.2s ease all)}
+            h2{color: @rojo; text-shadow: none;}
+            i{color: @rojo; text-shadow: none;}
         }
       }
     }
 
-
   &.car-xs{height: 360px}
   &.car-sm{height: 500px}
   &.car-md{height: 600px}
-  &.car-lg{height: 700px}
+  &.car-lg{height: 700px; &.relativo-vw{height: 55vw;}}
 
       display: none;
       position: relative;
@@ -245,6 +246,11 @@
         width: 145%;
         overflow: hidden;
         }
+
+        &.portadilla{
+          top: 0;
+          width: 135%;
+        }
       }
     }
   }
@@ -337,7 +343,7 @@
   &.car-xs{height: 360px}
   &.car-sm{height: 400px}
   &.car-md{height: auto}
-  &.car-lg{height: auto}
+  &.car-lg{height: 400px}
   }
 }
 
