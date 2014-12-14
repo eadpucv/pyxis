@@ -143,6 +143,7 @@ $('#tabla-contenido a').click(function (e) {
       $("#ead-sticky").sticky({topSpacing: 40});
       $("#meta-barra").sticky({topSpacing: 0});
       $("#nav-page").sticky({topSpacing:30});
+      $("#fondo-publicacion").sticky({topSpacing: 0});
       });
     </script>
     <!-- fin menú sticky -->
@@ -154,6 +155,13 @@ $('#tabla-contenido a').click(function (e) {
     });
 }); 
     </script>
+
+  <script>
+ (function($) {
+    var limit_bottom=$('#titulo-post').height(); 
+    $('.titulo-post').sticky({topSpacing:0, bottomSpacing:limit_bottom});
+   })(jQuery);
+</script>
 
 <script type='text/javascript'>
 $("#subiendo-1").click(function(e){

@@ -153,7 +153,7 @@ title: Pyxis Framework - Maquetas
     </div>
   </div>
   <div class='fila'>
-    <div class='col-md-3 col-sm-4 oculto-xs'>
+    <div class='col-md-3 col-sm-4 oculto-xs alto-lg'>
       <!-- Sticky 1/8 -->
       <div id='ejemplo-sticky'>
         <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-usuarios margen-der-xs'></i>Estudiar diseño en la e[ad]</h6></a>

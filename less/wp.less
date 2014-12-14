@@ -87,7 +87,7 @@
 // Post en Gamma (estilos de Gamma)
 
 .h-entry {
-    width: 100%;
+    width: 98%;
 
     h1, h2{
         margin-bottom: 15px;
@@ -118,6 +118,7 @@
     }
 
     img{
+        width: 110%;
         margin-bottom: @cuadratin/2;
     }  
 
@@ -574,10 +575,18 @@
     width: 90%;
     }
 
-        .wrap {
+    .wrap {
         &.header {
             height: auto;
         }
+    }
+
+    .h-entry {
+        width: 100%;
+    }
+
+    .e-content, .p-summary, .p-name {
+        width: 100%;
     }
 }
 
@@ -592,6 +601,14 @@
 
     .contenedor-sin-relleno {
         margin: 0;
+    }
+
+    .h-entry {
+        width: 95%;
+    }
+
+    .e-content, .p-summary, .p-name {
+        width: 90%;
     }
 
 

@@ -87,7 +87,17 @@
 			}
 		}
 	}
-} // Fin de Sticky-wrapper
+	// Sticky en post
+	#fondo-publicacion{
+		background-color: @gris-blanco-transparente !important;
+		.transition(.4s ease all);
+
+		h4{
+			margin-top: 220px !important;
+		}
+	}
+}
+// Fin de Sticky-wrapper
 
 // * Sticky en funcionamiento *
 .is-sticky {
@@ -151,24 +161,35 @@
 		a{
 			color: @blanco !important;
 		}
-			ul{
-				li{
-					&:first-child{
-						a{
-						.transition(.2s ease all);
-						color: @rojo !important;
-						font-size: 15px;
+		ul{
+			li{
+				&:first-child{
+					a{
+					.transition(.2s ease all);
+					color: @rojo !important;
+					font-size: 15px;
+					}
+				}
+				&:last-child{
+					a{
+						i{
+							color: @rojo !important;	
 						}
 					}
-					&:last-child{
-						a{
-							i{
-								color: @rojo !important;	
-							}
-						}
-					}	
-				}
+				}	
 			}
+		}
+	}
+	// Sticky en post
+	#fondo-publicacion{
+		width: 100%;
+		background-color: transparent !important;
+		.transition(.7s ease all);
+
+		h4{
+			display: none !important;
+			.transition(.9s ease all);
+		}
 	}
 }
 

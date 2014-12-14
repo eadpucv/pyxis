@@ -118,9 +118,18 @@ title: Pyxis Framework - Maquetas
   </div>
 </div>
 
-<div class='ocultar-desborde alto-lg'>
-	<img class='ancho-completo fijo atras noticia' src="http://www.ead.pucv.cl/wp-content/uploads/2014/10/DSC_1059.jpg">
+<div class='ocultar-desborde relativo alto-lg atras'>
+  <div class='absoluto ancho-completo alto-lg atras'>
+    <div id='fondo-publicacion' class='cf alto-lg'>
+    <div class='pag sin-relleno'>
+    <h4 class='xs italica en-linea ancho-auto borde borde-negro relleno-inf-xs inf-lineal-xs'>Presentación libros Triángulo de Pascal y Estructura Esencial</h5>
+    </div>
+  </div>
 </div>
+<img class='ancho-completo fijo atras mas-atras noticia' src="http://www.ead.pucv.cl/wp-content/uploads/2014/10/DSC_1059.jpg">
+</div>
+
+
 
 <div class='fondo-gris-blanco al-frente cf ruido margen-especial relleno-especial'>
 <div class='pag cf'>
@@ -132,23 +141,24 @@ title: Pyxis Framework - Maquetas
 	</ul> 
 <div class='fila'>
   <div class='col-md-12'>
-    <h1 class='lg sin-margen relleno-sup-xs gruesa negro condensado'>Presentación libros Triángulo de Pascal y Estructura Esencial</h1>
+        <h1 class='lg sin-margen relleno-sup-xs gruesa negro condensado'>Presentación libros Triángulo de Pascal y Estructura Esencial
+        </h1>
   </div>
 </div>
 
-<div class='col-md-2 margen-sup-md'>
+<div class='col-md-2 col-sm-3 margen-sup-md contenidox'>
   <div class='fila'>
-<aside class='entry-details'>
-<ul class='xs sin-relleno'>
-  <li class='sin-estilo sans negro-fundido semi-gruesa relleno-inf-xs'><i class='icn icn-lapiz relleno-der-xs'></i>Publicación:<br>  30 de octubre, 2014, por Francesca Cambiaso</li>
-  <li class='sin-estilo sans negro-fundido semi-gruesa relleno-inf-xs'><i class='icn icn-marcador relleno-der-xs'></i>Archivado en:<br> <a href='#' class='sans semi-gruesa'> Actualidad</a>, <a class='semi-gruesa' href='#' class='sans'>Arquitectura</a>, <a class='semi-gruesa' href='#' class='sans semi-gruesa'>Carrusel</a>, <a href='#' class='sans semi-gruesa'>Investigación</a>, <a class='semi-gruesa' href='#' class='sans semi-gruesa'>Noticias</a></li>
-  <li class='sin-estilo sans negro-fundido semi-gruesa'><i class='icn icn-etiqueta relleno-der-xs'></i>Palabras clave: <a href='#' class='semi-gruesa sans'> Arquitectura</a>, <a class='semi-gruesa' href='#' class='semi-gruesa sans'>Estructura escencial</a>, <a class='semi-gruesa' href='#' class='sans'>Libros</a>, <a class='semi-gruesa' href='#' class='sans semi-gruesa'>Matemática</a>, <a href='#' class='sans semi-gruesa'>Publicaciones</a>, <a href='#' class='sans semi-gruesa'>Triángulo de Pascal</a></li>
-</ul>
-</aside>
-</div>
+      <aside class='entry-details fondo-gris-claro margen-sup-xs borde radio-md relleno-sm'>
+      <ul class='xs sin-relleno'>
+        <li class='sin-estilo serif italica negro-fundido gruesa relleno-inf-xs borde inf-lineal-xs borde-blanco'>Publicaciado el 30 de octubre, 2014, por Francesca Cambiaso.</li>
+        <li class='sin-estilo sans negro-fundido semi-gruesa relleno-inf-sm relleno-sup-sm'><i class='icn icn-marcador relleno-der-xs'></i>Archivado en: <a href='#' class='sans semi-gruesa'>Actualidad</a>, <a class='semi-gruesa' href='#' class='sans'>Arquitectura</a>, <a class='semi-gruesa' href='#' class='sans semi-gruesa'>Carrusel</a>, <a href='#' class='sans semi-gruesa'>Investigación</a>, <a class='semi-gruesa' href='#' class='sans semi-gruesa'>Noticias</a></li>
+        <li class='sin-estilo sans negro-fundido semi-gruesa'><i class='icn icn-etiqueta relleno-der-xs'></i>Palabras clave: <a href='#' class='semi-gruesa sans'> Arquitectura</a>, <a class='semi-gruesa' href='#' class='semi-gruesa sans'>Estructura escencial</a>, <a class='semi-gruesa' href='#' class='sans'>Libros</a>, <a class='semi-gruesa' href='#' class='sans semi-gruesa'>Matemática</a>, <a href='#' class='sans semi-gruesa'>Publicaciones</a>, <a href='#' class='sans semi-gruesa'>Triángulo de Pascal</a></li>
+      </ul>
+      </aside>
+  </div>
 </div>
 
-<div class='col-md-8'>
+<div class='col-md-8 col-sm-7'>
   <div class='fila'>
 <article class='h-entry margen-sup-md'>
 <div class='e-content p-sumary p-name'>
@@ -175,7 +185,7 @@ title: Pyxis Framework - Maquetas
 </article>
 </div>
 </div>
-<div class='col-md-2'>
+<div class='col-md-2 col-sm-2'>
   <div class='fila'>
     <h6 class='xs interletraje-xs negro condensado gruesa margen-sup-md altas'><i class='icn icn-noticias relleno-der-xs'></i>Más Noticias</h6>
     <ul class='xs sin-relleno'>
@@ -186,6 +196,16 @@ title: Pyxis Framework - Maquetas
       <img class='ancho-completo borde radio-md margen-sup-sm' src='http://www.ead.pucv.cl/wp-content/uploads/2014/09/IMG_0131.jpg'>
       <li class='sin-estilo'><h6 class='xs'><a class='sans semi-gruesa'>Construcción en serie de comedores para damnificados del incendio de Valparaíso</a></h6></li>
     </ul>
+    <h6 class='xs interletraje-xs negro condensado gruesa margen-sup-md altas'><i class='icn icn-noticias relleno-der-xs'></i>Articulos</h6>
+    <ul class='xs sin-relleno'>
+      <img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2014/12/corte.jpg'>
+      <li class='sin-estilo'><h6 class='xs'><a class='sans semi-gruesa'>Seminario Sustentabilidad en Chile: Experiencias locales para soluciones globales</a></h6></li>
+      <img class='ancho-completo borde radio-md margen-sup-sm' src='http://www.ead.pucv.cl/wp-content/uploads/2014/10/Afiche.jpg'>
+      <li class='sin-estilo'><h6 class='xs'><a class='sans semi-gruesa'>Invitación a participar en festival de intervenciones urbanas en Valparaíso</a></h6></li>
+      <img class='ancho-completo borde radio-md margen-sup-sm' src='http://www.ead.pucv.cl/wp-content/uploads/2014/04/DSC_0357.jpg'>
+      <li class='sin-estilo'><h6 class='xs'><a class='sans semi-gruesa'>Construcción en serie de comedores para damnificados del incendio de Valparaíso</a></h6></li>
+    </ul>
+    <h6 class='xs interletraje-xs negro condensado gruesa margen-sup-md altas'><i class='icn icn-twitter relleno-der-xs'></i>Twitter</h6>
 </div>
 </div> <!-- fin de fila -->
 </div>
