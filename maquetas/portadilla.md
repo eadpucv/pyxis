@@ -117,28 +117,39 @@ title: Pyxis Framework - Maquetas
   </div>
 </div>
 
+<div class='fondo-gris-blanco relleno-sup-xs'>
+  <div class='pag sin-relleno gutter'>
+    <div class='fila relleno-sup-xs'>
+      <div class='col-md-12'>
+        <div class='bloque ancho-completo'>
+          <!-- Breadcrumbs -->
+          <ul class='sin-relleno margen-sup-xs centrado margen-inf-xs' id="breadcrumb">
+              <li><a href='#'><i class='icn icn-hogar'></i></a></li>
+              <li><a href='#'>Carreras y postgrados</a></li>
+              <li><a>Diseño Gráfico</a></li>
+          </ul>
+            <h1 class='md negro-fundido condensado gruesa relleno-inf-xs centrado interletraje-xs'>— Diseño Gráfico —</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Carrousel -->
-<div data-ride="carousel" class="carousel slide oculto-sm oculto-xs" id="carousel-home">
-  <ol class="carousel-indicators">
-    <li data-slide-to="0" data-target="#carousel-home" class="active"></li>
-    <li data-slide-to="1" data-target="#carousel-home"></li>
-    <li data-slide-to="2" data-target="#carousel-home"></li>    
-    <li data-slide-to="3" data-target="#carousel-home"></li>
-    <li data-slide-to="4" data-target="#carousel-home"></li>
-  </ol>
+<div data-ride="carousel" class="carousel slide oculto-sm oculto-xs bloque ancho-completo" id="carousel-home">
   <div class="carousel-inner">
     <!-- item (la clase 'car-sm' corresponde al height de visibilidad) -->
-    <div class="item active car-lg">                  
+    <div class="item active car-sm">                  
       <img class='ancho-completo atras fijo absoluto abs-der portadilla' alt="First slide" src="http://www.ead.pucv.cl/wp-content/themes/gamma/img/disenografico.jpg">
       <!-- pie de imagen carousel -->
       <div class='ancho-completo alto-completo oculto-xs izquierda cf'>
           <a href='#'>
-            <div class='fondo-gris-blanco-trans-xs alto-completo absoluto abs-inf abs-izq bloque ancho-completo relleno-sm margen-sup-xs-negativo'>
-              <div class='pag sin-relleno cf margen-sup-lg'>
-              <div class='col-md-10 col-md-offset-1 margen-sup-lg'>
-              <h2 class='md interletraje-negativo centrado margen-sup-sm sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h2>
+            <div class='gris-blanco-gradiente alto-completo absoluto abs-inf abs-izq bloque ancho-completo relleno-xs margen-sup-xs-negativo'>
+              <div class='pag sin-relleno cf'>
+              <div class='col-md-10 col-md-offset-1'>
+              <h2 class='sm interletraje-negativo relleno-sup centrado margen-sup-xs sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h2>
               <div class='ancho-completo bloque izquierda'>
-              <span class='italica negro-fundido sombra-cabecera-blanco-xs relleno-sup-xs borde sup-lineal-xs inf-lineal-xs borde-blanco centrado relleno-inf-xs gruesa'>Publicado el 08 de noviembre, 2014.</span>
+              <span class='italica negro-fundido sombra-cabecera-blanco-xs relleno-sup-xs centrado relleno-inf-xs gruesa'>Publicado el 08 de noviembre, 2014.</span>
               <p class='margen-inf-sm sans sm negro centrado sombra-cabecera-blanco-xs relleno-sup-sm oculto-sm'>A los alumnos indicados para el taller se les permitirá buscar las opciones diferentes si presentan noticias sobre Valparaíso de los arquitectos Mauricio Puentes y Juan Purcell en FILSA [...]</p>
               <div class='centrado oculto-sm'>
               <span class='interletraje-xs fondo-blanco-trans sombra margen-inf-sm relleno-der-xs relleno-vertical-xs borde radio-md condensado negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario sin-interletraje relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
@@ -158,16 +169,16 @@ title: Pyxis Framework - Maquetas
         </div>
     </div>
     <!-- item -->
-    <div class="item car-lg">
+    <div class="item car-sm">
       <img class='ancho-completo atras fijo ocultar-desborde absoluto abs-der portadilla' alt="Second slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/12/DSC_1383.jpg">
       <div class='ancho-completo alto-completo oculto-xs izquierda cf'>
           <a href='#'>
-            <div class='fondo-gris-blanco-trans-xs alto-completo absoluto abs-inf abs-izq bloque ancho-completo relleno-sm'>
-              <div class='pag sin-relleno cf margen-sup-lg'>
-              <div class='col-md-10 col-md-offset-1 margen-sup-lg'>
-              <h2 class='md interletraje-negativo centrado margen-sup-sm sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Presentan libro "Fotografías de Valparaíso" de Juan Hernández</h2>
+            <div class='gris-blanco-gradiente alto-completo absoluto abs-inf abs-izq bloque ancho-completo relleno-sm'>
+              <div class='pag sin-relleno cf'>
+              <div class='col-md-10 col-md-offset-1'>
+              <h2 class='sm interletraje-negativo relleno-sup centrado sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Presentan libro "Fotografías de Valparaíso" de Juan Hernández</h2>
               <div class='ancho-completo bloque izquierda'>
-              <span class='xs italica negro-fundido sombra-cabecera-blanco-xs relleno-sup-xs borde sup-lineal-xs inf-lineal-xs borde-blanco centrado relleno-inf-xs gruesa'>Publicado el 08 de noviembre, 2014.</span>
+              <span class='italica negro-fundido sombra-cabecera-blanco-xs relleno-sup-xs centrado relleno-inf-xs gruesa'>Publicado el 08 de noviembre, 2014.</span>
               <p class='margen-inf-sm sans sm negro centrado sombra-cabecera-blanco-xs relleno-sup-sm'>30 Esta semana se realizó el lanzamiento del libro Fotografías de Valparaíso, del fotógrafo Juan Hernández, en la Casa Central de la Pontificia Universidad Católica de Valparaíso [...]</p>
               <div class='centrado'>
               <span class='interletraje-xs fondo-blanco-trans sombra margen-inf-sm relleno-der-xs relleno-vertical-xs borde radio-md condensado negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario sin-interletraje relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
@@ -187,20 +198,20 @@ title: Pyxis Framework - Maquetas
         </div>
     </div>
     <!-- item -->
-    <div class="item car-lg">
+    <div class="item car-sm">
       <img class='ancho-completo atras fijo ocultar-desborde absoluto abs-der portadilla' alt="Third slide" src="http://www.ead.pucv.cl/wp-content/uploads/2008/09/mesquita-4.bmp">
       <!-- pie de imagen carousel -->
       <div class='ancho-completo alto-completo oculto-xs izquierda cf'>
           <a href='#'>
-            <div class='fondo-gris-blanco-trans-xs alto-completo absoluto abs-inf abs-izq bloque ancho-completo relleno-sm'>
-              <div class='pag sin-relleno cf margen-sup-lg'>
-              <div class='col-md-10 col-md-offset-1 margen-sup-lg'>
-              <h1 class='sm interletraje-negativo centrado margen-sup-sm sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Croquis y Apuntes Mezquita de Córdoba</h1>
+            <div class='gris-blanco-gradiente alto-completo absoluto abs-inf abs-izq bloque ancho-completo relleno-sm'>
+              <div class='pag sin-relleno cf'>
+              <div class='col-md-10 col-md-offset-1'>
+              <h2 class='sm interletraje-negativo relleno-sup centrado sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Croquis y Apuntes Mezquita de Córdoba</h2>
               <div class='ancho-completo bloque izquierda'>
-              <span class='italica negro-fundido sombra-cabecera-blanco-xs relleno-sup-xs borde sup-lineal-xs inf-lineal-xs borde-blanco centrado relleno-inf-xs gruesa'>Publicado el 08 de noviembre, 2014.</span>
+              <span class='italica negro-fundido sombra-cabecera-blanco-xs relleno-sup-xs borde-blanco centrado relleno-inf-xs gruesa'>Publicado el 08 de noviembre, 2014.</span>
               <p class='margen-inf-sm sans sm negro centrado sombra-cabecera-blanco-xs relleno-sup-sm'>30 El presente documento fue realizado el año 1998 con ocasión de mi visita a la Mezquita de Córdoba, España. Más que una narración [...]</p>
               <div class='centrado'>
-              <span class='xs interletraje-xs fondo-blanco-trans sombra margen-inf-sm relleno-der-xs relleno-vertical-xs borde radio-md condensado negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario sin-interletraje relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
+              <span class='interletraje-xs fondo-blanco-trans sombra margen-inf-sm relleno-der-xs relleno-vertical-xs borde radio-md condensado negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario sin-interletraje relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
               </div>
               <div class='centrado w38 margen-auto'>
                 <div class='grupo-botones en-linea cf'>
@@ -217,20 +228,20 @@ title: Pyxis Framework - Maquetas
         </div>
     </div>
     <!-- item -->
-    <div class="item car-lg">
+    <div class="item car-sm">
       <img class='ancho-completo atras fijo ocultar-desborde absoluto abs-der portadilla' alt="Fourth slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/12/TRAVESIA-BS-AS-129.jpg">
       <!-- pie de imagen carousel -->
       <div class='ancho-completo alto-completo oculto-xs izquierda cf'>
           <a href='#'>
-            <div class='fondo-gris-blanco-trans-xs alto-completo absoluto abs-inf abs-izq bloque ancho-completo relleno-sm'>
-              <div class='pag sin-relleno cf margen-sup-lg'>
-              <div class='col-md-10 col-md-offset-1 margen-sup-lg'>
-              <h1 class='sm interletraje-negativo centrado margen-sup-sm sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Travesía de los Cuatro Cuadrantes</h1>
+            <div class='gris-blanco-gradiente alto-completo absoluto abs-inf abs-izq bloque ancho-completo relleno-sm'>
+              <div class='pag sin-relleno cf'>
+              <div class='col-md-10 col-md-offset-1'>
+              <h2 class='sm interletraje-negativo relleno-sup centrado sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Travesía de los Cuatro Cuadrantes</h2>
               <div class='ancho-completo bloque izquierda'>
-              <span class='italica negro-fundido sombra-cabecera-blanco-xs relleno-sup-xs borde sup-lineal-xs inf-lineal-xs borde-blanco centrado relleno-inf-xs gruesa'>Publicado el 08 de noviembre, 2014.</span> 
+              <span class='italica negro-fundido sombra-cabecera-blanco-xs relleno-sup-xs centrado relleno-inf-xs gruesa'>Publicado el 08 de noviembre, 2014.</span> 
               <p class='margen-inf-sm sans sm negro centrado sombra-cabecera-blanco-xs relleno-sup-sm'>Travesía de los Cuatro Cuadrantes es el nombre de la travesía y de las exposiciones que se realizaron como cierre de ella, el día sábado 8 de noviembre [...]</p>
               <div class='centrado'>
-              <span class='xs interletraje-xs fondo-blanco-trans sombra margen-inf-sm relleno-der-xs relleno-vertical-xs borde radio-md condensado negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario sin-interletraje relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
+              <span class='interletraje-xs fondo-blanco-trans sombra margen-inf-sm relleno-der-xs relleno-vertical-xs borde radio-md condensado negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario sin-interletraje relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
               </div>
               <div class='centrado w38 margen-auto'>
                 <div class='grupo-botones en-linea cf'>
@@ -247,20 +258,20 @@ title: Pyxis Framework - Maquetas
         </div>
     </div>
     <!-- item -->
-    <div class="item car-lg">
+    <div class="item car-sm">
       <img class='ancho-completo atras fijo ocultar-desborde absoluto abs-der portadilla' alt="Fifth slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/08/pizarra.jpg">
       <!-- pie de imagen carousel -->
       <div class='ancho-completo alto-completo oculto-xs izquierda cf'>
           <a href='#'>
-            <div class='fondo-gris-blanco-trans-xs alto-completo absoluto abs-inf abs-izq bloque ancho-completo relleno-sm'>
-              <div class='pag sin-relleno cf margen-sup-lg'>
-              <div class='col-md-10 col-md-offset-1 margen-sup-lg'>
-              <h1 class='sm interletraje-negativo centrado margen-sup-sm sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Profesor participará en seminario “Concepción, de la frontera a la globalización”</h1>
+            <div class='gris-blanco-gradiente alto-completo absoluto abs-inf abs-izq bloque ancho-completo relleno-sm'>
+              <div class='pag sin-relleno cf'>
+              <div class='col-md-10 col-md-offset-1'>
+              <h2 class='sm interletraje-negativo relleno-sup centrado sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Profesor participará en seminario “Concepción, de la frontera a la globalización”</h2>
               <div class='ancho-completo bloque izquierda'>
-              <span class='italica negro-fundido sombra-cabecera-blanco-xs relleno-sup-xs borde sup-lineal-xs inf-lineal-xs borde-blanco centrado relleno-inf-xs gruesa'>Publicado el 08 de noviembre, 2014.</span> 
+              <span class='italica negro-fundido sombra-cabecera-blanco-xs relleno-sup-xs centrado relleno-inf-xs gruesa'>Publicado el 08 de noviembre, 2014.</span> 
               <p class='margen-inf-sm sans sm negro centrado sombra-cabecera-blanco-xs relleno-sup-sm'>Entre el jueves 4 y el sábado 6 de diciembre se llevará a cabo el seminario Concepción, de la frontera a la globalización, organizado por la Escuela [...]</p>
               <div class='centrado'>
-              <span class='xs interletraje-xs fondo-blanco-trans sombra margen-inf-sm relleno-der-xs relleno-vertical-xs borde radio-md condensado negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario sin-interletraje relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
+              <span class='interletraje-xs fondo-blanco-trans sombra margen-inf-sm relleno-der-xs relleno-vertical-xs borde radio-md condensado negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario sin-interletraje relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
               </div>
               <div class='centrado w38 margen-auto'>
                 <div class='grupo-botones en-linea cf'>
@@ -277,7 +288,7 @@ title: Pyxis Framework - Maquetas
         </div>
     </div>
   </div>
-        <!-- botones adelante y atrás -->
+      <!-- botones adelante y atrás -->
       <a data-slide="prev" data-target='#carousel-home' href="#carousel-2" class="left carousel-control">
         <span class="icn icn-navizquierda"></span>
       </a>
@@ -287,48 +298,20 @@ title: Pyxis Framework - Maquetas
 </div> <!-- Fin de Carousel -->
 
 <div class='fondo-gris-blanco ruido margen-especial relleno-especial'>
-<div class='pag sin-relleno gutter'>
-  <div class='fila'>
-    <div class='col-md-12'>
-      <!-- Breadcrumbs -->
-      <ul class='sin-relleno margen-sup-sm' id="breadcrumb">
-          <li><a href='#'><i class='icn icn-hogar'></i></a></li>
-          <li><a href='#'>Carreras y postgrados</a></li>
-          <li><a>Diseño Gráfico</a></li>
-      </ul>
-      <div class='bloque ancho-completo'>
-          <h1 class='lg gruesa negro condensado sombra-cabecera-claro-sm margen-inf-sm en-linea margen-der-xs'>Diseño Gráfico</h1>
-          <h1 class='lg margen-inf-sm en-linea negro'>
-            <div class='en-linea tooltip-demo margen-izq-xs'>
-              <div class='oculto-xs'>
-                  <!-- Tooltip en botón 'editar'-->
-                  <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Editar página" class='btn sin-relleno sin-margen en-linea' href='#'>
-                    <!-- ícono de Tooltip -->
-                    <code class='sin-relleno bajas xs fondo-verde'><i class='icn icn-lapiz'></i></code>
-                  </a>
-                  <!-- Popover de aclaraciones para editar en WP -->
-                  <span class='margen-izq-xs-negativo xs interlinea-xs'>
-                    <a class='izquierda sin-sombra-cabecera' id="popover-test" data-content="Puedes editar el contenido de ésta y otras páginas en su tema de Wordpress. Sólo debes copiar el enlace y loguearte como usuario en: http://www.ead.pucv.cl/wp-admin" data-toggle="popover" data-original-title="" title="¿Quieres editar esta página?">
-                    <!-- ícono de popover -->
-                    <span class='sm sin-sombra-cabecera'><i class='icn icn-lupamas margen-izq-xs izquierda sin-sombra-cabecera'></i></span>
-                    </a>
-                  </span>
-              </div>
-            </div>
-          </h1>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- Contenido escrito -->
 <!-- Pag para page (para toda la página) -->
 <div class='pag page gutter'>
+<!-- Breadcrumbs -->
+<ul class='sin-relleno margen-sup-xs margen-inf' id="breadcrumb">
+    <li><a href='#'><i class='icn icn-hogar'></i></a></li>
+    <li><a href='#'>Carreras y postgrados</a></li>
+    <li><a>Diseño Gráfico</a></li>
+</ul>
       <!-- Contenido 1/8 -->
       <div class='fila'>
       <div class='col-md-9 col-sm-8'>
-      <img class='ancho-completo margen-inf-sm borde radio-md' src='https://farm4.staticflickr.com/3050/3077444322_10b6eb1bac_b.jpg'>
-      <h3 class='inteletraje-sm-negativo gruesa negro'><i class='icn icn-usuarios margen-der-xs'></i>Estudiar diseño en la e[ad]</h3>
+      <!--<img class='ancho-completo margen-inf-sm borde radio-md' src='https://farm4.staticflickr.com/3050/3077444322_10b6eb1bac_b.jpg'>-->
+      <h3 class='inteletraje-sm-negativo gruesa negro'><i class='icn icn-usuarios margen-der-xs'></i>Carrera de Diseño gráfico</h3>
       <p class='sans' class='margen-sup-xs'>La misión de la Escuela de Arquitectura y Diseño es cultivar el arte de la <a class='sans' href='#'>Arquitectura</a>, del <a class='sans' href='#'>Diseño Gráfico</a> y del <a class='sans' href='#'>Diseño Industrial</a> por medio de la creación y transmisión del conocimiento del oficio de estas artes, formar Arquitectos y Diseñadores con la vocación de concebir obras que den cabida y expresión al habitar humano. La Escuela afirma que tanto la Arquitectura como el Diseño son un Arte. Esto diferencia profundamente de otras orientaciones, disciplinas y saberes, e implica una manera peculiar de estudiar y de hacer.
       </p>
       <h5 class='serif italica negrita inteletraje-sm-negativo negro'>La observación como fundamento</h5>

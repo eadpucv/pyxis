@@ -118,35 +118,34 @@ title: Pyxis Framework - Maquetas
   </div>
 </div>
 
-<div class='ocultar-desborde relativo alto-lg atras'>
-  <div class='absoluto ancho-completo alto-lg atras'>
+<div class='ocultar-desborde relativo alto-lg'>
+  <div class='absoluto ancho-completo alto-lg'>
     <div id='fondo-publicacion' class='cf alto-lg'>
-    <div class='pag sin-relleno'>
-    <h4 class='xs italica en-linea ancho-auto borde borde-negro relleno-inf-xs inf-lineal-xs'>Presentación libros Triángulo de Pascal y Estructura Esencial</h5>
+    <div class='pag sin-relleno ancho-xs'>
+    <ul id="breadcrumb" class='sin-relleno'>
+      <li><a href='#'><i class='icn icn-hogar'></i></a></li>
+      <li><a href='#' class='md'>Actualidad</a></li>
+      <li><a href='#'>Arquitectura</a></li>
+      <li><a>Noticias</a></li>
+    </ul> 
+    <h2 class='lg en-linea ancho-auto sin-margen borde gruesa negro-fundido condensado sombra-cabecera-blanco-sm'>Presentación libros Triángulo de Pascal y Estructura Esencial</h2>
+      <aside class='entry-details fondo-gris-claro-trans margen-sup-xs borde radio-md'>
+      <ul class='sin-relleno al-frente'>
+        <li class='sin-estilo negro-fundido italica sombra-cabecera-claro-xs'>Publicaciado el 30 de octubre del 2014, por Francesca Cambiaso.</li>
+        <li class='sin-estilo sans negro-fundido semi-gruesa relleno-sup-sm sombra-cabecera-claro-xs'><i class='icn icn-marcador relleno-der-xs'></i>Archivado en: <a href='#' class='sans semi-gruesa'>Actualidad</a>, <a class='sans semi-gruesa' href='#'>Arquitectura</a>, <a class='semi-gruesa sans' href='#' class='sans semi-gruesa'>Carrusel</a>, <a href='#' class='sans semi-gruesa'>Investigación</a>, <a class='semi-gruesa sans' href='#' class='sans semi-gruesa'>Noticias</a>.</li>
+        <li class='sin-estilo sans negro-fundido semi-gruesa sombra-cabecera-claro-xs'><i class='icn icn-etiqueta relleno-der-xs'></i>Palabras clave: <a href='#' class='semi-gruesa sans'> Arquitectura</a>, <a class='semi-gruesa sans' href='#' class='semi-gruesa sans'>Estructura escencial</a>, <a class='semi-gruesa sans' href='#' class='sans'>Libros</a>, <a class='semi-gruesa sans' href='#' class='sans semi-gruesa'>Matemática</a>, <a href='#' class='sans semi-gruesa'>Publicaciones</a>, <a href='#' class='sans semi-gruesa'>Triángulo de Pascal</a>.</li>
+      </ul>
+      </aside>
+    </div>
     </div>
   </div>
+<img class='ancho-completo fijo atras mas-atras noticia' src="http://www.ead.pucv.cl/wp-content/uploads/2014/12/DSC_1408-1400x927.jpg">
 </div>
-<img class='ancho-completo fijo atras mas-atras noticia' src="http://www.ead.pucv.cl/wp-content/uploads/2014/10/DSC_1059.jpg">
-</div>
 
-
-
-<div class='fondo-gris-blanco al-frente cf ruido margen-especial relleno-especial'>
+<div class='fondo-gris-blanco al-frente cf ruido margen-especial relleno-especial margen-inf-negativo'>
 <div class='pag cf'>
-	<ul id="breadcrumb" class='sin-relleno'>
-	    <li><a href='#'><i class='icn icn-hogar'></i></a></li>
-	    <li><a href='#'>Actualidad</a></li>
-	    <li><a href='#'>Arquitectura</a></li>
-	    <li><a>Noticias</a></li>
-	</ul> 
-<div class='fila'>
-  <div class='col-md-12'>
-        <h1 class='lg sin-margen relleno-sup-xs gruesa negro condensado'>Presentación libros Triángulo de Pascal y Estructura Esencial
-        </h1>
-  </div>
-</div>
 
-<div class='col-md-2 col-sm-3 margen-sup-md contenidox'>
+<!--<div class='col-md-2 col-sm-3 margen-sup-md'>
   <div class='fila'>
       <aside class='entry-details fondo-gris-claro margen-sup-xs borde radio-md relleno-sm'>
       <ul class='xs sin-relleno'>
@@ -156,57 +155,98 @@ title: Pyxis Framework - Maquetas
       </ul>
       </aside>
   </div>
-</div>
+</div>-->
 
-<div class='col-md-8 col-sm-7'>
+<div class='col-md-10 col-sm-7'>
   <div class='fila'>
 <article class='h-entry margen-sup-md'>
 <div class='e-content p-sumary p-name'>
 	<p class='sm'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros Estructura Esencial. Curso de geometría para pensar construyendo un cuerpo estable, de Miguel Eyquem y El Triángulo de Pascal, cual arma para acceder al &c de Newton, de Isabel Margarita Reyes.</p>
 	<p class='sm'>Los libros son parte de la Serie Arbitrada 2014, convocatoria del Sistema de Biblioteca PUCV y Ediciones Universitarias de Valparaíso a concurso público para académicos de la universidad cuya finalidad es la difusión del conocimiento generado en las distintas facultades y escuelas.</p>
-	<img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2014/10/DSC_1040.jpg'>
+	<img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2014/12/DSC_13881.jpg'>
 	<blockquote class='pie-de-foto rojo'>Ivan Ivelich junto a otros profesores aclamando el éxito de sus pares.</blockquote>	
 	<p class='sm'>El Triángulo de Pascal  es un diálogo entre la observación y pensamientos matemáticos. El libro fue presentado por Arturo Mena, matemático y académico del Instituto de Matemáticas de la PUCV, quien lo describió como “bien escrito y matemáticamente correcto, sin contradicciones”. Destacó que esta Escuela ha puesto atención en cómo a un objeto se le declara con distintas expresiones que evocan distintos aspectos de esa extensión, y lo mismo ocurre con la obra de Isabel Magarita.</p>
 	<p class='sm'>El tema del libro nace a partir de una larga conversación entre Arturo Mena, Isabel Margarita Reyes y Alberto Cruz, y parte de ella queda plasmada en esta publicación. “Es una aproximación distinta; es un argumento riguroso, coherente. Un arquitecto que hace matemática es un matemático en ese acto”, continúa Mena, explicando que se trata de una obra que “deja en manifiesto el desnivel permanente entre ambas disciplinas, mostrando que la mirada de un arquitecto sobre matemática muestra cosas que los matemáticos no han visto“.</p>
-	<img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2014/10/DSC_1069.jpg'>
+	<img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2014/12/DSC_1376.jpg'>
 	<blockquote class='pie-de-foto'>Profesores tomando en cuenta la necesidad de incorporar nuevas cabezas a la coorporación.</blockquote>
 	<p class='sm'>El libro Estructura Esencial fue presentado por el arquitecto Hernán Cruz, quien se refirió al trabajo de Miguel y a las Torres de Agua, indicando que “hay una cosa con la forma”. De acuerdo al arquitecto, esa forma, en conjunto con la vida de la Escuela, unen talento y gracia con una voluntad, un desear algo.</p>
 	<p class='sm'>Continúa diciendo que “Miguel es un arquitecto plástico, y  tiene esa capacidad de dar forma, una plástica leve a sus estructuras; esa plasticidad de sus aviones y prototipos”.</p>
-	<img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2014/10/DSC_1059.jpg'>
+	<img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2014/12/DSC_1402.jpg'>
 	<p class='sm'>La investigación realizada por Miguel Eyquem se ubica entre la geometría del espacio y la ingeniería estructural:</p>
 	<blockquote class='sm'>"Este estudio considera la función mecánica en organismos edificados y sus componentes, e intenta correlacionar la función de cada uno con propiedades mecánicas medibles y con la estructura observada. Las funciones, propiedades y estructuras se discuten en términos de modelos y principios de diseño" (Estructura Esencial. Curso de geometría para pensar construyendo un cuerpo estable , “Sobre la estructura esencial”, p. 10).</blockquote>
 	<p class='sm'>Para concluir, Hernán Cruz deja una pregunta abierta: Hay unos pájaros que imitan la voz humana. ¿Qué imita Eyquem en sus vuelos?</p>
-	<img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2014/10/DSC_1126.jpg'>
+	<img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2014/12/DSC_1408.jpg'>
 	<p class='sm'>Iván Ivelic, director de la Escuela de Arquitectura y Diseño, expresó que éstos son “textos fundamentales” de la enseñanza de la Escuela, e instó a que lo que se celebró en esta ocasión “se encarne en nuevos proyectos editoriales”, tanto de los autores como de los demás académicos.</p>
-	<p class='sm'>El encuentro concluyó con un brindis para celebrar a los autores</p>
-	<img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2014/10/DSC_1065.jpg'>
-	<blockquote class='pie-de-foto'>Ágape especial con el menú del día***.</blockquote>
 </div>
 </article>
 </div>
 </div>
 <div class='col-md-2 col-sm-2'>
   <div class='fila'>
+     <h6 class='xs interletraje-xs negro condensado gruesa margen-sup altas'>Categorías</h6>
+      <ul class='xs sin-relleno'>
+        <li class='relleno-vertical-xs borde inf-lineal-xs sup-lineal-xs sin-estilo rojo'><a href='#' class='sans semi-gruesa'>Actualidad</a></li>
+        <li class='relleno-vertical-xs borde inf-lineal-xs sin-estilo rojo'><a href='#' class='sans semi-gruesa'>Estudiantes</a></li>
+        <li class='relleno-vertical-xs borde inf-lineal-xs sin-estilo rojo'><a href='#' class='sans semi-gruesa'>Carreras</a></li>
+        <li class='relleno-vertical-xs borde inf-lineal-xs sin-estilo rojo'><a href='#' class='sans semi-gruesa'>Arquitectura</a></li>
+        <li class='relleno-vertical-xs borde inf-lineal-xs sin-estilo rojo'><a href='#' class='sans semi-gruesa'>Diseño Gráfico</a></li>
+        <li class='relleno-vertical-xs borde inf-lineal-xs sin-estilo rojo'><a href='#' class='sans semi-gruesa'>Diseño industrial</a></li>
+        <li class='relleno-vertical-xs borde inf-lineal-xs sin-estilo rojo'><a href='#' class='sans semi-gruesa'>Estudios avanzados</a></li>
+        <li class='relleno-vertical-xs borde inf-lineal-xs sin-estilo rojo'><a href='#' class='sans semi-gruesa'>Concursos</a></li>
+        <li class='relleno-vertical-xs borde inf-lineal-xs sin-estilo rojo'><a href='#' class='sans semi-gruesa'>Observación de la semana</a></li>
+        <li class='relleno-vertical-xs borde inf-lineal-xs sin-estilo rojo'><a href='#' class='sans semi-gruesa'>Bolsa de trabajo</a></li>
+        <li class='relleno-vertical-xs borde inf-lineal-xs sin-estilo rojo'><a href='#' class='sans semi-gruesa'>Investigación</a></li>
+      </ul>
+      <h6 class='xs interletraje-xs negro condensado gruesa margen-sup altas'>Carreras</h6>
+      <ul class='xs sin-relleno'>
+        <li class='relleno-vertical-xs borde inf-lineal-xs sup-lineal-xs sin-estilo rojo'><a href='#' class='sans semi-gruesa'>Arquitectura</a></li>
+        <li class='relleno-vertical-xs borde inf-lineal-xs sin-estilo rojo'><a href='#' class='sans semi-gruesa'>Diseño Gráfico</a></li>
+        <li class='relleno-vertical-xs borde inf-lineal-xs sin-estilo rojo'><a href='#' class='sans semi-gruesa'>Diseño industrial</a></li>
+      </ul>
     <h6 class='xs interletraje-xs negro condensado gruesa margen-sup-md altas'><i class='icn icn-noticias relleno-der-xs'></i>Más Noticias</h6>
     <ul class='xs sin-relleno'>
-      <img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2014/10/6.-Caleta-Portales.jpg'>
-      <li class='sin-estilo'><h6 class='xs'><a class='sans semi-gruesa'>Proyecto de rehabilitación urbana: Parque costero para Valparaíso</a></h6></li>
+      <img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2014/12/P1020763-850x637.jpg'>
+      <li class='sin-estilo'><h5 class='xs'><a class='condensado gruesa'>Proyecto de rehabilitación urbana: Parque costero para Valparaíso</a></h5></li>
       <img class='ancho-completo borde radio-md margen-sup-sm' src='http://www.ead.pucv.cl/wp-content/uploads/2014/09/DSC_0675.jpg'>
-      <li class='sin-estilo'><h6 class='xs'><a class='sans semi-gruesa'>Escuela de Arquitectura y Diseño celebra a un nuevo grupo de titulados</a></h6></li>
+      <li class='sin-estilo'><h5 class='xs'><a class='condensado gruesa'>Escuela de Arquitectura y Diseño celebra a un nuevo grupo de titulados</a></h5></li>
       <img class='ancho-completo borde radio-md margen-sup-sm' src='http://www.ead.pucv.cl/wp-content/uploads/2014/09/IMG_0131.jpg'>
-      <li class='sin-estilo'><h6 class='xs'><a class='sans semi-gruesa'>Construcción en serie de comedores para damnificados del incendio de Valparaíso</a></h6></li>
+      <li class='sin-estilo'><h5 class='xs'><a class='condensado gruesa'>Construcción en serie de comedores para damnificados del incendio de Valparaíso</a></h5></li>
     </ul>
-    <h6 class='xs interletraje-xs negro condensado gruesa margen-sup-md altas'><i class='icn icn-noticias relleno-der-xs'></i>Articulos</h6>
+    <h5 class='xs interletraje-xs negro condensado gruesa margen-sup-md altas'><i class='icn icn-noticias relleno-der-xs'></i>Articulos</h5>
     <ul class='xs sin-relleno'>
       <img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2014/12/corte.jpg'>
-      <li class='sin-estilo'><h6 class='xs'><a class='sans semi-gruesa'>Seminario Sustentabilidad en Chile: Experiencias locales para soluciones globales</a></h6></li>
+      <li class='sin-estilo'><h5 class='xs'><a class='condensado gruesa'>Seminario Sustentabilidad en Chile: Experiencias locales para soluciones globales</a></h5></li>
       <img class='ancho-completo borde radio-md margen-sup-sm' src='http://www.ead.pucv.cl/wp-content/uploads/2014/10/Afiche.jpg'>
-      <li class='sin-estilo'><h6 class='xs'><a class='sans semi-gruesa'>Invitación a participar en festival de intervenciones urbanas en Valparaíso</a></h6></li>
+      <li class='sin-estilo'><h5 class='xs'><a class='condensado gruesa'>Invitación a participar en festival de intervenciones urbanas en Valparaíso</a></h5></li>
       <img class='ancho-completo borde radio-md margen-sup-sm' src='http://www.ead.pucv.cl/wp-content/uploads/2014/04/DSC_0357.jpg'>
-      <li class='sin-estilo'><h6 class='xs'><a class='sans semi-gruesa'>Construcción en serie de comedores para damnificados del incendio de Valparaíso</a></h6></li>
+      <li class='sin-estilo'><h5 class='xs'><a class='condensado gruesa'>Construcción en serie de comedores para damnificados del incendio de Valparaíso</a></h5></li>
     </ul>
     <h6 class='xs interletraje-xs negro condensado gruesa margen-sup-md altas'><i class='icn icn-twitter relleno-der-xs'></i>Twitter</h6>
 </div>
 </div> <!-- fin de fila -->
 </div>
+  <div class='pag'>
+    <div class='col-md-6'>
+      Aún no hay comentarios en esta publicación
+    </div>
+    <div class='col-md-6'>
+  <form role="form">
+                <div class="form-group">
+                <label for="nombre">Nombre *</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Introduce su nombre" required />
+                </div>
+                <div class="form-group">
+                <label for="correo-electronico">Correo electrónico</label>
+                <input type="email" class="form-control" id="correo-electronico" placeholder="correo electrónico">
+                </div>
+                <div class='form-group'>
+                <label>comentario</label>
+                <textarea placeholder='Comenta aquí' required></textarea>
+                </div>
+                <button type="submit" class="btn btn-default">comentar</button>
+    </form>
+  </div>
+  </div>
+  </div>
+
 </div>

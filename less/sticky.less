@@ -45,7 +45,7 @@
 		width: 210px;
 		a{
 			h6{
-		color: @negro-fundido;
+			color: @negro-fundido;
 				i{
 					color: @negro-fundido !important;
 				}
@@ -89,11 +89,17 @@
 	}
 	// Sticky en post
 	#fondo-publicacion{
-		background-color: @gris-blanco-transparente !important;
+		.gris-blanco-gradiente;
+		display: block;
 		.transition(.4s ease all);
 
-		h4{
-			margin-top: 220px !important;
+		h1{
+			display: block !important;
+			.transition(.4s ease all);
+		}
+
+		#breadcrumb{
+			margin-top: 17vh !important;
 		}
 	}
 }
@@ -136,9 +142,9 @@
 	#ejemplo-sticky{
 		a{
 			h6{
-			color: @rojo;
+			color: @negro;
 				i{
-					color: @rojo !important;
+					color: @negro !important;
 				}
 			}
 		}
@@ -182,13 +188,17 @@
 	}
 	// Sticky en post
 	#fondo-publicacion{
-		width: 100%;
-		background-color: transparent !important;
-		.transition(.7s ease all);
+		display: none;
+		.transition(.7s ease all) !important;
 
-		h4{
+		h1{
 			display: none !important;
-			.transition(.9s ease all);
+			.transition(.8s ease all) !important;
+		}
+
+		aside{
+			display: none !important;
+			.transition(.8s ease all) !important;
 		}
 	}
 }

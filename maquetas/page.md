@@ -155,13 +155,22 @@ title: Pyxis Framework - Maquetas
   <div class='fila'>
     <div class='col-md-3 col-sm-4 oculto-xs alto-lg'>
       <!-- Sticky 1/8 -->
+      <nav id="target_nav">
       <div id='ejemplo-sticky'>
-        <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-usuarios margen-der-xs'></i>Estudiar diseño en la e[ad]</h6></a>
+        <a href='#uno'><h6 class='xs active negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-usuarios margen-der-xs'></i>Estudiar diseño en la e[ad]</h6></a>
+        <a href='#dos'><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-usuario margen-der-xs sombra-cabecera-claro-xs'></i>Concepción del diseñador</h6></a>
+        <a href='#'><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-perfil margen-der-xs sombra-cabecera-claro-xs'></i>Perfil de egreso</h6></a>
+        <a href='#'><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-engranaje icn-spin margen-der-xs'></i>Competencias fundamentales</h6></a>
+        <a href='#'><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Objetivos educacionales</h6></a>
+        <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Malla curricular</h6></a>
+        <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Profesores de carrera</h6></a>
+        <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Profesores ayudantes</h6></a>
       </div>
+    </nav>
     </div>
-    <div class='col-md-9 col-sm-8 col-xs-12'>
+    <div id="scroll-able" data-spy="scroll" data-target="#target_nav" class='col-md-9 col-sm-8 col-xs-12'>
       <img class='ancho-completo margen-inf-sm borde radio-md' src='{{ site.baseurl }}/img/lalala2.jpg'>
-      <h3 class='inteletraje-sm-negativo gruesa negro'><i class='icn icn-usuarios margen-der-xs'></i>Estudiar diseño gráfico en la e[ad]</h3>
+      <h3 id='uno' class='active inteletraje-sm-negativo gruesa negro'><i class='icn icn-usuarios margen-der-xs'></i>Estudiar diseño gráfico en la e[ad]</h3>
       <p class='sans' class='margen-sup-xs'>La misión de la Escuela de Arquitectura y Diseño es cultivar el arte de la <a class='sans' href='#'>Arquitectura</a>, del <a class='sans' href='#'>Diseño Gráfico</a> y del <a class='sans' href='#'>Diseño Industrial</a> por medio de la creación y transmisión del conocimiento del oficio de estas artes, formar Arquitectos y Diseñadores con la vocación de concebir obras que den cabida y expresión al habitar humano. La Escuela afirma que tanto la Arquitectura como el Diseño son un Arte. Esto diferencia profundamente de otras orientaciones, disciplinas y saberes, e implica una manera peculiar de estudiar y de hacer.
       </p>
       <h5 class='serif italica negrita inteletraje-sm-negativo negro'>La observación como fundamento</h5>
@@ -170,17 +179,6 @@ title: Pyxis Framework - Maquetas
       <p class='sans'>Esta modalidad de estudiar y hacer exige de alumnos y profesores un real compromiso de vida. Este que le confiere a la Escuela una gran unidad y, a su vez establece un ámbito, y un ritmo de estudio que da cabida a actividades ordinarias y extraordinarias, en que participan creativamente todos los alumnos y profesores.</p>
       <h5 class='serif italica negrita inteletraje-sm-negativo negro'>El taller: columna vertebral</h5>
       <p class='sans'>El taller es la columna vertebral de los estudios de cada disciplina impartida en nuestra Escuela. En él tiene lugar el proceso creativo de cada estudiante, y es donde se decantan los conocimientos humanísticos, matemáticos, científicos y tecnológicos que se imparten en las demás asignaturas de nuestro <a class='sans' href='#'>Plan de Estudios</a>.</p>
-    </div> <!-- fin de col-->
-  </div> <!-- fin de fila -->
-  <div class='fila margen-sup-xs'>
-    <div class='col-md-3 col-sm-4 oculto-xs'>
-      <!-- Sticky 2/8 -->
-      <div id='ejemplo-sticky-2'>
-        <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-usuario margen-der-xs sombra-cabecera-claro-xs'></i>Concepción del diseñador</h6></a>
-      </div>
-      <!-- fin de sticky -->
-    </div>
-    <div class='col-md-9 col-sm-8 col-xs-12'>
       <div class='fila'>
         <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
           <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2012/04/regalo_T1_2012_02.jpg'></a>
@@ -197,7 +195,7 @@ title: Pyxis Framework - Maquetas
           <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Talleres de grabado"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/themes/gamma/img/diseno-grafico2.jpg'></a>
         </div>
       </div>
-      <h4 class='inteletraje-sm-negativo gruesa negro'><i class='icn icn-usuario margen-der-xs'></i>Concepción del diseñador</h4>
+      <h4 id='dos' class='inteletraje-sm-negativo gruesa negro'><i class='icn icn-usuario margen-der-xs'></i>Concepción del diseñador</h4>
       <p class='sans'>El Diseñador Gráfico de la Pontificia Universidad Católica de Valparaíso es capaz de ubicarse dentro de equipos multidisciplinarios proyectando y concretando trabajos de distintos grados de complejidad, de manera original y eficiente.</p>
       <p class='sans'>Además, ha desarrollado un lenguaje teórico del <a class='sans' href='#'>oficio</a> en constante resonancia con la <a class='sans' href='#'>Poesía</a>, lo cual le permite interpretar y poseer una visión artística del mundo, permanece así en la abertura creativa del oficio; concibiendo y realizando obras y estudios de postítulos en el ámbito profesional; generando líneas de investigación y estudiando postgrados en el ámbito académico.</p>
       <h5 class='serif italica negrita inteletraje-sm-negativo negro'>Sentido general de la formación</h5>
@@ -212,16 +210,6 @@ title: Pyxis Framework - Maquetas
       <p class='sans'>El método de trabajo del taller se basa en la “observación” dibujada, medida y escrita de la ciudad en que vivimos y lo que en ella acontece, para dar con el acto o lectura de su presente. Dichas experiencias, vividas por los alumnos en la ciudad, constituyen un suelo fecundo de relaciones las cuales son orientadas por el profesor comunicando a los alumnos su visión. La docencia impartida corresponde entonces a un acto creativo donde ningún taller es repetición de otro, procurando despertar la capacidad de observación en los alumnos y exteriorizar el modo peculiar en que ella se manifiesta para cada uno.</p>
       <p class='sans'>La observación -acto de naturaleza artística- al situarse en el origen mismo de la forma no se opone ni se contradice con la formación técnica, ya que como acto creativo se le ubica como un medio y no como un fin, concretándose para cada caso y nivel específico.</p>
       <p class='sans'>Todos los talleres realizan <a class='italica negrita' href='#'>travesías</a>, que son viajes en los que se recorre el continente americano, realizando obras junto a profesores y alumnos de <a class='sans' href='#'>Arquitectura</a> y <a class='sans' href='#'>Diseño Industrial</a>.</p>
-    </div>
-  </div> <!-- fin de fila -->
-  <div class='fila'>
-    <div class='col-md-3 col-sm-4 oculto-xs'>
-      <!-- Sticky 2/8 -->
-      <div id='ejemplo-sticky-3'>
-        <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-perfil margen-der-xs sombra-cabecera-claro-xs'></i>Perfil de egreso</h6></a>
-      </div> <!-- fin de sticky -->
-    </div> <!-- fin de col -->
-    <div class='col-md-9 col-sm-8 col-xs-12'>
       <div class='fila'>
         <div class='col-md-12 col-sm-12 col-xs-12 tooltip-demo tooltip-imagenes'>
           <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2014/08/MG_0755.jpg'></a>
@@ -240,16 +228,7 @@ title: Pyxis Framework - Maquetas
         <li class='italica'>Un egresado de esta Escuela posee las competencias que le permiten ejercer el Diseño Gráfico desde la observación, como origen del proceso creativo. Este ha sido encarnado durante los estudios de lo urbano en los talleres de Valparaíso, de lo experimental en la Ciudad Abierta y de la visión de Continente en las Travesías.</li>
         <li class='italica'>Un egresado de esta Escuela posee las competencias que le permiten ejercer el Diseño Gráfico desde la observación, como origen del proceso creativo. Este ha sido encarnado durante los estudios de lo urbano en los talleres de Valparaíso, de lo experimental en la Ciudad Abierta y de la visión de Continente en las Travesías.</li>
       </ul>
-    </div> <!-- fin de col -->
-  </div> <!-- fin de fila -->
   <div class='fila margen-sup-sm'>
-    <div class='col-md-3 col-sm-4 oculto-xs'>
-      <!-- Sticky 3/8 -->
-      <div id='ejemplo-sticky-4'>
-      <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-engranaje icn-spin margen-der-xs'></i>Competencias fundamentales</h6></a>
-      </div> <!-- fin de sticky -->
-    </div> <!-- fin de col -->
-    <div class='col-md-9 col-sm-8 col-xs-12'>
       <div class='fila'>
         <div class='col-md-12 col-sm-12 col-xs-12 tooltip-demo tooltip-imagenes'>
           <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2014/01/ceremoniatitulacion22014.jpg'></a>
@@ -283,15 +262,8 @@ title: Pyxis Framework - Maquetas
         <li class='italica'>Construye diálogos entre audiencias identificando territorios culturales, geográficos, sociales, económicos y tecnológicos para la innovación, dando respuestas y recreando los constantes cambios en el mundo.</li>
         <li class='italica'>Escucha empáticamente para integrar e interpretar la realidad de los requerimientos de forma visual, espacial e interactiva en concordancia y justeza al público que sirve.</li>
       </ul>
-    </div> <!-- fin de col -->
   </div> <!-- fin de fila -->
   <div class='fila margen-sup-sm'>
-    <div class='col-md-3 col-sm-4 oculto-xs'>
-      <!-- Sticky 5/8 -->
-      <div id='ejemplo-sticky-5'>
-        <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Objetivos educacionales</h6></a>
-      </div> <!-- fin de stikcy -->
-    </div>
     <div class='col-md-9 col-sm-8 col-xs-12'>
       <div class='fila'>
         <div class='col-md-12 col-sm-12 col-xs-12 tooltip-demo tooltip-imagenes'>
@@ -303,25 +275,10 @@ title: Pyxis Framework - Maquetas
     </div>
   </div>
   <div class='fila margen-sup-xs'>
-    <div class='col-md-3 col-sm-4 oculto-xs'>
-      <!-- Sticky 6/8 -->
-      <div id='ejemplo-sticky-6'>
-        <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Malla curricular</h6></a>
-      </div> <!-- fin de stikcy -->
-    </div> <!-- fin de col -->
-    <div class='col-md-9 col-sm-8 col-xs-12'>
       <h4 class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Malla Curricular</h4>
       <a class='btn btn-alerta'>Descargar malla curricular</a>
-    </div> <!-- fin de col -->
   </div>
   <div class='fila margen-sup-sm'>
-    <div class='col-md-3 col-sm-4 oculto-xs'>
-      <!-- Sticky 7/8 -->
-      <div id='ejemplo-sticky-7'>
-        <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Profesores de carrera</h6></a>
-      </div>
-    </div>
-    <div class='col-md-9 col-sm-8 col-xs-12'>
       <h4 class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Profesores de carrera</h4>
       <div class='fila'>
         <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
@@ -348,16 +305,8 @@ title: Pyxis Framework - Maquetas
           <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Katherine Exss"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://wiki.ead.pucv.cl/images/5/59/Katherine_exss_wiki.jpg'></a>
         </div>
       </div>
-    </div> <!-- fin de col-->
   </div> <!-- fin de fila-->
   <div class='fila margen-sup-sm'>
-    <div class='col-md-3 col-sm-4 oculto-xs'>
-      <!-- Sticky 8/8 -->
-      <div id='ejemplo-sticky-8'>
-        <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Profesores ayudantes</h6></a>
-      </div> <!-- fin de stikcy -->
-    </div>
-    <div class='col-md-9 col-sm-8 col-xs-12'>
       <h4 class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Profesores ayudantes</h4>
       <div class='fila'>
         <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
@@ -370,6 +319,6 @@ title: Pyxis Framework - Maquetas
           <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Jaime Pérez Moena"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://farm8.staticflickr.com/7220/7171615052_2a29d54806_q.jpg'></a>
         </div>
       </div>
-    </div> <!-- fin de col-->
   </div> <!-- fin de fila-->
+</div> <!-- fin de col-->
 </div> <!-- fin de * pag page * -->

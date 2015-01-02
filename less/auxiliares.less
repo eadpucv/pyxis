@@ -66,6 +66,7 @@
     &.textura-3{background-image: url("/img/fondo-textura-3.jpg")}
     &.textura-4{background-image: url("/img/fondo-textura-4.jpg")}
     &.textura-5{background-image: url("/img/fondo-textura.jpg")}
+    &.textura-6{background-image: url("/img/ruido-amplio.png")}
     }
 
 .negro-fundido{color: @negro-fundido}
@@ -83,6 +84,20 @@
 .fondo-gris-blanco{background-color: @gris-blanco; &.ruido{background: @gris-blanco url("/img/ruido-fondo-pyxis.png") repeat center}}
 .fondo-gris-blanco-trans{background-color: @gris-blanco-transparente; &.ruido{background: @gris-blanco url("/img/ruido-fondo-pyxis.png") repeat center}}
 .fondo-gris-blanco-trans-xs{background-color: @gris-blanco-transparente-xs; &.ruido{background: @gris-blanco url("/img/ruido-fondo-pyxis.png") repeat center}}
+.gris-blanco-gradiente{
+background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, rgb(249, 249, 249)),
+    color-stop(0.9, rgb(255, 255, 255))
+);
+background-image: -o-linear-gradient(bottom, rgba(249, 249, 249, 0.98) 30%, rgba(255, 255, 255, 0.45) 100%);
+background-image: -moz-linear-gradient(bottom, rgba(249, 249, 249, 0.98) 30%, rgba(255, 255, 255, 0.45) 100%);
+background-image: -webkit-linear-gradient(bottom, rgba(249, 249, 249, 0.98) 30%, rgba(255, 255, 255, 0.45) 100%);
+background-image: -ms-linear-gradient(bottom, rgba(249, 249, 249, 0.98) 30%, rgba(255, 255, 255, 0.45) 100%);
+background-image: linear-gradient(to bottom, rgba(249, 249, 249, 0.98) 30%, rgba(255, 255, 255, 0.45) 100%);
+}
 .blanco{color: @blanco}
 .fondo-blanco{background-color: @blanco}
 
@@ -234,7 +249,7 @@
 .alto-xs{height: @cuadratin * 4}
 .alto-sm{height: @cuadratin * 5}
 .alto-md{height: @cuadratin * 12.5}
-.alto-lg{height: @cuadratin * 22}
+.alto-lg{height: 87vh}
 .alto-completo{height: 100%}
 
 

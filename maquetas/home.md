@@ -128,21 +128,12 @@ title: Pyxis Framework - Maquetas
     <!-- item (la clase 'car-sm' corresponde al height de visibilidad) -->
     <div class="item active car-sm">
       <img class='ancho-completo absoluto' alt="First slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/12/IMG_3945.jpg">
-      <!-- pie de imagen carousel -->
-      <div class='fondo-gris-blanco absoluto abs-inf bloque ancho-completo al-frente borde sup-lineal-xs tooltip-demo'>
-        <p class='negro sombra-cabecera-blanco-xs sin-margen sans relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Presentación libros Triángulo de Pascal y Estructura Esencial
-          <a data-toggle="tooltip" href="#" title="Editar página" class='xs en-linea relleno-sup-xs sin-margen' href='#'>
-          <!-- ícono de Tooltip -->
-          <span><i class='icn icn-lapiz margen-izq-xs margen-sup-xs'></i></span>
-          </a>
-        </p>
-      </div>
       <div class='pag sin-relleno cf h100'>
       <div class='col-md-4 oculto-sm h100 oculto-xs derecha cf'>
         <a href="{{ site.baseurl }}/maquetas/post">
           <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque alto-completo relleno'>
             <h2 class='interletraje-negativo sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs justicado'></i>Presentación libros Triángulo de Pascal y Estructura Esencial</h2>
-            <p class='margen-sup-sm italica negro sombra-cabecera-blanco-xs borde sup-punteado-md borde-blanco relleno-sup-sm'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem, ambos arquitectos y académicos [...]</p>
+            <p class='margen-sup-sm italica negro sombra-cabecera-blanco-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem, ambos arquitectos y académicos [...]</p>
             <span class='xs interletraje-xs fondo-blanco-trans sombra relleno-der-xs relleno-vertical-xs borde radio-md condensado derecha negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario sin-interletraje relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
           </div>
           </a>
@@ -152,16 +143,12 @@ title: Pyxis Framework - Maquetas
     <!-- item -->
     <div class="item car-sm">
       <img class='ancho-completo absoluto' alt="Second slide" src="http://www.ead.pucv.cl/wp-content/uploads/2012/02/Vodudahue-1b.jpg">
-      <!-- pie de imagen carousel -->
-      <div class='fondo-gris-blanco absoluto abs-inf bloque ancho-completo al-frente borde sup-lineal-xs'>
-        <p class='negro sombra-cabecera-blanco-xs sin-margen sans relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</p>
-      </div>
       <div class='pag sin-relleno cf h100'>
       <div class='col-md-4 oculto-sm h100 oculto-xs derecha cf'>
           <a class='bloque' href='#'>
             <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque alto-completo relleno'>
               <h2 class='interletraje-negativo sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</h2>
-              <p class='margen-sup-sm italica negro sombra-cabecera-blanco-xs borde sup-punteado-md borde-blanco relleno-sup-sm'>La Escuela de Arquitectura y Diseño estuvo presente en la actividad mediante dos proyectos que se adjudicaron el fondo extraordinario Ideas y Manos para Valparaíso [...]</p>
+              <p class='margen-sup-sm italica negro sombra-cabecera-blanco-xs'>La Escuela de Arquitectura y Diseño estuvo presente en la actividad mediante dos proyectos que se adjudicaron el fondo extraordinario Ideas y Manos para Valparaíso [...]</p>
             <span class='xs interletraje-xs fondo-blanco-trans sombra relleno-der-xs relleno-vertical-xs borde radio-md condensado derecha negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario sin-interletraje relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>e[ad]</span>
             </div>
           </a>
@@ -171,16 +158,12 @@ title: Pyxis Framework - Maquetas
     <!-- item -->
     <div class="item car-sm">
       <img class='ancho-completo absoluto' alt="Third slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/11/PERSPECTIVA-RENDER-2.jpg">
-      <!-- pie de imagen carousel -->
-      <div class='fondo-gris-blanco absoluto abs-inf bloque ancho-completo al-frente borde sup-lineal-xs'>
-        <p class='sin-margen sans relleno-vertical-xs centrado'><i class='icn icn-noticias margen-der-xs'></i>Diseño Gráfico organiza taller abierto para alumnos interesados en la carrera</p>
-      </div>
       <div class='pag sin-relleno cf h100'>
       <div class='col-md-4 oculto-sm h100 oculto-xs derecha cf'>
           <a href='#'>
             <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque alto-completo relleno'>
               <h2 class='interletraje-negativo sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h2>
-              <p class='margen-sup-sm italica negro sombra-cabecera-blanco-xs borde sup-punteado-md borde-blanco relleno-sup-sm'>A los alumnos indicados para el taller se les permitirá buscar las opciones diferentes si presentan noticiass sobre Valparaíso de los arquitectos Mauricio Puentes y Juan Purcell en FILSA [...]</p>
+              <p class='margen-sup-sm italica negro sombra-cabecera-blanco-xs'>A los alumnos indicados para el taller se les permitirá buscar las opciones diferentes si presentan noticiass sobre Valparaíso de los arquitectos Mauricio Puentes y Juan Purcell en FILSA [...]</p>
               <span class='xs interletraje-xs fondo-blanco-trans sombra relleno-der-xs relleno-vertical-xs borde radio-md condensado derecha negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario sin-interletraje relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
             </div>
           </a>
@@ -198,33 +181,30 @@ title: Pyxis Framework - Maquetas
 </div>
 
 <!-- Info de docencia -->
-<div class='fondo-negro ruido'>
-  <div class='margen-inf'>
-<div class='pag'>
-    <div class='col-md-3 col-sm-4'>
-    <div class='fila relleno-izq-xs'>
-      <i class='icn icn-lg blanco margen-izq-sm icn-anuncio en-linea izquierda margen-inf'></i>
+<div class='margen-sup-xs'>
+<h2 class='xs centrado gris margen-inf relleno-sup-sm gris condensado fino interletraje-xs'><i class='icn icn-anuncio icn-light margen-der-xs sin-interletraje'></i>Información de docencia</h2>
+<div class='pag sin-relleno gutter'>
+    <div class='col-md-3 col-sm-4 relleno-vertical-sm borde radio-sup-der-sm radio-inf-der-sm'>
+      <i class='icn icn-lg negro-fundido rojo icn-anuncio icn-light en-linea izquierda margen-inf'></i>
       <div class='h100 tooltip-demo'>
-      <h6 class='xs sin-margen rojo condensado gruesa en-linea w60 altas relleno-izq-sm'>Proceso retarjetización TNE 2015</h6>
-        <span class='xs italica margen-izq-sm blanco relleno-inf-xs'>03 de noviembre, 2014</span>
+      <h6 class='xs sin-margen sans rojo gruesa en-linea w60 altas relleno-izq-sm'>Proceso retarjetización TNE 2015</h6>
+        <span class='xs italica margen-izq-sm relleno-inf-xs'>03 de noviembre, 2014</span>
           <!-- ícono de Tooltip -->
           <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea rojo relleno-sup-xs sin-margen' href='#'>
           <span><i class='icn icn-lapiz margen-izq-xs margen-sup-xs'></i></span>
           </a>
       </div>
     </div>
-    </div>
-    <div class='col-md-5 col-sm-12'>
+    <div class='col-md-5 col-sm-12 relleno-vertical-sm relleno-izq-sm'>
       <div class='fila der-lineal-xs'>
-      <p class='xs sans sin-margen relleno-horizontal-sm blanco justificado'>Debido al nuevo diseño en la Tarjeta Nacional Estudiantil 2015, JUNAEB realizará la captura fotográfica a los alumnos PUCV., matriculados en el 2º semestre 2014, los egresados y los estudiantes de postgrado que tienen la Tarjeta Nacional [...]</p>
+      <p class='xs sans sin-margen justificado'>Debido al nuevo diseño en la Tarjeta Nacional Estudiantil 2015, JUNAEB realizará la captura fotográfica a los alumnos PUCV, matriculados en el 2º semestre 2014, los egresados y los estudiantes de postgrado que tienen la Tarjeta Nacional [...]</p>
     </div>
     </div>
-    <div class='col-md-4 oculto-sm oculto-xs izq-lineal-xs'>
+    <div class='col-md-4 oculto-sm oculto-xs relleno-vertical-sm'>
       <div class='fila'>
-      <span class='centrado'><a class='btn btn-alerta fondo-blanco'>Ver información de docencia</a></span>
+      <span class='centrado'><a class='btn btn-alerta fondo-blanco'>Ver información</a></span>
       </div>
     </div>
-</div>
 </div>
 </div>
 
@@ -468,7 +448,6 @@ title: Pyxis Framework - Maquetas
               <div class='col-md-4 col-sm-12 oculto-xs'>
                 <h5 class='sm condensado gruesa negro margen-inf-sm'>Cuerpo docente</h5>
                 <p class='serif italica sin-margen relleno-inf-sm'>El cuerpo académico de la <span class='rojo'>e[ad]</span> está compuesto por arquitectos y diseñadores de dedicación exclusiva al quehacer académico, en constante perfeccionamiento y ejercicio del oficio, trabajando en conjunto con un destacado equipo de profesores de dedicación parcial que, desde su disciplina, fortalecen nuestra docencia.</p>
-                <hr class='sin-margen'>
                   <div class='grupo-botones oculto-sm margen-sup-xs'>
                     <button class='btn btn-alerta'>Profesores</button>
                   </div>
@@ -488,7 +467,6 @@ title: Pyxis Framework - Maquetas
               <div class='col-md-4 col-sm-12 oculto-xs'>
                 <h5 class='sm condensado gruesa negro margen-inf-sm'>La escuela y el oficio</h5>
                 <p class='serif italica sin-margen relleno-inf-sm'>La <span class='rojo'>e[ad]</span> se ha consolidado como una de las escuelas referentes en Chile y el mundo, que se funda en el encuentro y co-generación de los tres oficios que imparte: Arquitectura, y los Diseños Gráfico e Industrial, en permanente relación con la poesía. Así, afirmamos que tanto la Arquitectura como el Diseño son, en su sentido más profundo, un arte.</p>
-                <hr class='sin-margen'>
                   <div class='grupo-botones oculto-sm margen-sup-xs'>
                     <button class='btn btn-alerta'>Historia</button>
                     <button class='btn btn-alerta'>Amereida</button>
@@ -509,7 +487,6 @@ title: Pyxis Framework - Maquetas
               <div class='col-md-4 col-sm-12 oculto-xs'>
                 <h5 class='sm condensado gruesa negro margen-inf-sm'>Carreras y postgrados</h5>
                 <p class='serif italica sin-margen relleno-inf-sm'>La <span class='rojo'>e[ad]</span> ofrece tres carreras: Arquitectura, Diseño Gráfico y Diseño Industrial. Además, imparte el Magíster en Arquitectura y Diseño, en sus menciones Ciudad y Territorio, y Náutico y Marítimo.</p>
-                <hr class='sin-margen'>
                   <div class='grupo-botones oculto-sm margen-sup-xs'>
                     <button class='btn btn-alerta'>Arquitectura</button>
                     <button class='btn btn-alerta'>Diseños</button>
@@ -530,7 +507,6 @@ title: Pyxis Framework - Maquetas
               <div class='col-md-4 col-sm-offset-0 col-sm-12 oculto-xs'>
                 <h5 class='sm condensado gruesa negro margen-inf-sm'>Campus</h5>
                 <p class='serif italica sin-margen relleno-inf-sm'>La <span class='rojo'>e[ad]</span> desarrolla sus actividades académicas en dos lugares, principalmente: en Sede Recreo, en Viña del Mar y en la Ciudad Abierta.</p>
-                <hr class='sin-margen'>
                   <div class='grupo-botones oculto-sm margen-sup-xs'>
                     <button class='btn btn-alerta'>Casa de estudio</button>
                     <button class='btn btn-alerta'>Ciudad abierta</button>

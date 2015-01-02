@@ -69,6 +69,7 @@
     <script src="{{ site.baseurl }}/js/tooltip.js"></script> 
     <script src="{{ site.baseurl }}/js/popover.js"></script>
     <script src="{{ site.baseurl }}/js/affix.js"></script>
+    <script src="{{ site.baseurl }}/js/scrollspy.js"></script>
     <script src="{{ site.baseurl }}/js/dropdown.js"></script>  
     <script src="{{ site.baseurl }}/js/nav.js"></script>  
     <script src="{{ site.baseurl }}/js/smooth-scroll.js"></script>
@@ -81,7 +82,9 @@
 <script> 
 $('#carousel-home, #carousel-enlaces, #carousel-portada').carousel();
 </script>
-
+<script> 
+$('div#scroll-able').scrollspy({ target: '#target_nav' });
+</script>
 <script>     
     $( "#link_ejemplo_affix" ).click(function() {
     $( "#navbar" ).toggle();
