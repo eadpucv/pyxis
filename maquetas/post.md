@@ -122,15 +122,15 @@ title: Pyxis Framework - Maquetas
   <div class='absoluto ancho-completo alto-lg'>
     <div id='fondo-publicacion' class='cf alto-lg'>
     <div class='pag sin-relleno ancho-xs'>
-    <ul id="breadcrumb" class='sin-relleno'>
+    <ul id="breadcrumb" class='sin-relleno centrado'>
       <li><a href='#'><i class='icn icn-hogar'></i></a></li>
       <li><a href='#' class='md'>Actualidad</a></li>
       <li><a href='#'>Arquitectura</a></li>
       <li><a>Noticias</a></li>
     </ul> 
-    <h2 class='lg en-linea ancho-auto sin-margen borde gruesa negro-fundido condensado sombra-cabecera-blanco-sm'>Presentación libros Triángulo de Pascal y Estructura Esencial</h2>
+    <h1 class='md en-linea ancho-auto sin-margen borde gruesa centrado negro-fundido condensado sombra-cabecera-blanco-sm'>Presentación libros Triángulo de Pascal y Estructura Esencial</h2>
       <aside class='entry-details fondo-gris-claro-trans margen-sup-xs borde radio-md'>
-      <ul class='sin-relleno al-frente'>
+      <ul class='sin-relleno centrado al-frente'>
         <li class='sin-estilo negro-fundido italica sombra-cabecera-claro-xs'>Publicaciado el 30 de octubre del 2014, por Francesca Cambiaso.</li>
         <li class='sin-estilo sans negro-fundido semi-gruesa relleno-sup-sm sombra-cabecera-claro-xs'><i class='icn icn-marcador relleno-der-xs'></i>Archivado en: <a href='#' class='sans semi-gruesa'>Actualidad</a>, <a class='sans semi-gruesa' href='#'>Arquitectura</a>, <a class='semi-gruesa sans' href='#' class='sans semi-gruesa'>Carrusel</a>, <a href='#' class='sans semi-gruesa'>Investigación</a>, <a class='semi-gruesa sans' href='#' class='sans semi-gruesa'>Noticias</a>.</li>
         <li class='sin-estilo sans negro-fundido semi-gruesa sombra-cabecera-claro-xs'><i class='icn icn-etiqueta relleno-der-xs'></i>Palabras clave: <a href='#' class='semi-gruesa sans'> Arquitectura</a>, <a class='semi-gruesa sans' href='#' class='semi-gruesa sans'>Estructura escencial</a>, <a class='semi-gruesa sans' href='#' class='sans'>Libros</a>, <a class='semi-gruesa sans' href='#' class='sans semi-gruesa'>Matemática</a>, <a href='#' class='sans semi-gruesa'>Publicaciones</a>, <a href='#' class='sans semi-gruesa'>Triángulo de Pascal</a>.</li>
@@ -157,7 +157,7 @@ title: Pyxis Framework - Maquetas
   </div>
 </div>-->
 
-<div class='col-md-10 col-sm-7'>
+<div class='col-md-9 col-sm-7'>
   <div class='fila'>
 <article class='h-entry margen-sup-md'>
 <div class='e-content p-sumary p-name'>
@@ -181,7 +181,7 @@ title: Pyxis Framework - Maquetas
 </article>
 </div>
 </div>
-<div class='col-md-2 col-sm-2'>
+<div class='col-md-3 col-sm-2'>
   <div class='fila'>
      <h6 class='xs interletraje-xs negro condensado gruesa margen-sup altas'>Categorías</h6>
       <ul class='xs sin-relleno'>
@@ -202,6 +202,11 @@ title: Pyxis Framework - Maquetas
         <li class='relleno-vertical-xs borde inf-lineal-xs sup-lineal-xs sin-estilo rojo'><a href='#' class='sans semi-gruesa'>Arquitectura</a></li>
         <li class='relleno-vertical-xs borde inf-lineal-xs sin-estilo rojo'><a href='#' class='sans semi-gruesa'>Diseño Gráfico</a></li>
         <li class='relleno-vertical-xs borde inf-lineal-xs sin-estilo rojo'><a href='#' class='sans semi-gruesa'>Diseño industrial</a></li>
+      </ul>
+      <h6 class='xs interletraje-xs negro condensado gruesa margen-sup altas'>Estudios avanzados</h6>
+      <ul class='xs sin-relleno'>
+        <li class='relleno-vertical-xs sin-estilo borde inf-lineal-xs sup-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Magister Náutico y Marítimo</a></li>
+        <li class='relleno-vertical-xs  sin-estilo borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Magister Ciudad y Territorio</a></li>
       </ul>
     <h6 class='xs interletraje-xs negro condensado gruesa margen-sup-md altas'><i class='icn icn-noticias relleno-der-xs'></i>Más Noticias</h6>
     <ul class='xs sin-relleno'>

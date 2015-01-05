@@ -83,13 +83,6 @@ title: Pyxis Framework - Maquetas
               </ul>
         </li>
       </ul>
-      <div class='absoluto abs-der margen-sup-xs tooltip-demo oculto-sm oculto-xs'>
-        <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea relleno-sup-xs sin-margen' href='#'>
-          <!-- ícono de Tooltip -->
-          <span><i class='icn icn-lapiz margen-izq-xs margen-sup-xs'></i></span>
-          <span class='xs semi-gruesa sans margen-sup-xs'>editar</span>
-        </a>
-      </div>
   </div>
 </div>
 
@@ -124,52 +117,50 @@ title: Pyxis Framework - Maquetas
   <div class='fila'>
     <div class='col-md-12'>
       <!-- Breadcrumbs -->
-      <ul class='sin-relleno margen-sup-sm' id="breadcrumb">
+      <ul class='sin-relleno' id="breadcrumb">
           <li><a href='#'><i class='icn icn-hogar'></i></a></li>
           <li><a href='#'>Carreras y postgrados</a></li>
           <li><a>Diseño Gráfico</a></li>
       </ul>
       <div class='bloque ancho-completo'>
         	<h1 class='lg gruesa negro condensado sombra-cabecera-claro-sm margen-inf-md en-linea margen-der-xs'>Diseño Gráfico</h1>
-          <h1 class='lg margen-inf-md en-linea negro'>
-          	<div class='en-linea tooltip-demo margen-izq-xs'>
+          	<div class='en-linea tooltip-demo'>
             	<div class='oculto-xs'>
                   <!-- Tooltip en botón 'editar'-->
-                	<a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Editar página" class='btn sin-relleno sin-margen en-linea' href='#'>
-                    <!-- ícono de Tooltip -->
-                    <code class='sin-relleno bajas xs fondo-verde'><i class='icn icn-lapiz'></i></code>
-                  </a>
                   <!-- Popover de aclaraciones para editar en WP -->
-                	<span class='margen-izq-xs-negativo xs interlinea-xs'>
-                    <a class='izquierda sin-sombra-cabecera' id="popover-test" data-content="Puedes editar el contenido de ésta y otras páginas en su tema de Wordpress. Sólo debes copiar el enlace y loguearte como usuario en: http://www.ead.pucv.cl/wp-admin" data-toggle="popover" data-original-title="" title="¿Quieres editar esta página?">
+                	<span class='xs interlinea-xs'>
+                    <a class='borde radio-sm cursor fondo-blanco relleno-xs izquierda sin-sombra-cabecera' id="popover-test" data-content="Puedes editar el contenido de ésta y otras páginas en su tema de Wordpress. Sólo debes copiar el enlace y loguearte como usuario en: http://www.ead.pucv.cl/wp-admin" data-toggle="popover" data-original-title="" title="¿Quieres editar esta página?">
                     <!-- ícono de popover -->
-                    <span class='sm sin-sombra-cabecera'><i class='icn icn-lupamas margen-izq-xs izquierda sin-sombra-cabecera'></i></span>
+                    (?)
                     </a>
                   </span>
               </div>
       	    </div>
-    	 	  </h1>
       </div>
     </div>
   </div>
   <div class='fila'>
     <div class='col-md-3 col-sm-4 oculto-xs alto-lg'>
       <!-- Sticky 1/8 -->
-      <nav id="target_nav">
       <div id='ejemplo-sticky'>
-        <a href='#uno'><h6 class='xs active negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-usuarios margen-der-xs'></i>Estudiar diseño en la e[ad]</h6></a>
-        <a href='#dos'><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-usuario margen-der-xs sombra-cabecera-claro-xs'></i>Concepción del diseñador</h6></a>
-        <a href='#'><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-perfil margen-der-xs sombra-cabecera-claro-xs'></i>Perfil de egreso</h6></a>
-        <a href='#'><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-engranaje icn-spin margen-der-xs'></i>Competencias fundamentales</h6></a>
-        <a href='#'><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='sin-interletraje icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Objetivos educacionales</h6></a>
-        <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Malla curricular</h6></a>
-        <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Profesores de carrera</h6></a>
-        <a><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-sm'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Profesores ayudantes</h6></a>
+        <ul class='sin-relleno margen-der-sm'>
+          <li class='sin-estilo active'><a href='#uno'><h6 class='xs active negro condensado gruesa texto-derecha bloque relleno-der-xs'><i class='sin-interletraje icn icn-usuarios margen-der-xs'></i>Estudiar diseño en la e[ad]</h6></a></li>
+          <li class='sin-estilo'><a href='#dos'><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-xs'><i class='sin-interletraje icn icn-usuario margen-der-xs sombra-cabecera-claro-xs'></i>Programa de estudios</h6></a></li>
+          <li class='sin-estilo'><a href='#tres'><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-xs'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Malla curricular</h6></a></li>
+          <li class='sin-estilo'><a href='#cuatro'><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-xs'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Admisión</h6></a></li>
+          <li class='sin-estilo'><a href='#cinco'><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-xs'><i class='sin-interletraje icn icn-usuario margen-der-xs sombra-cabecera-claro-xs'></i>Concepción del diseñador</h6></a></li>
+          <li class='sin-estilo'><a href='#seis'><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-xs'><i class='sin-interletraje icn icn-perfil margen-der-xs sombra-cabecera-claro-xs'></i>Perfil de egreso</h6></a></li>
+          <li class='sin-estilo'><a href='#siete'><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-xs'><i class='sin-interletraje icn icn-engranaje icn-spin margen-der-xs'></i>Competencias fundamentales</h6></a></li>
+          <li class='sin-estilo'><a href='#ochco'><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-xs'><i class='sin-interletraje icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Objetivos educacionales</h6></a></li>
+          <li class='sin-estilo'><a href='nueve'><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-xs'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Profesores de carrera</h6></a></li>
+          <li class='sin-estilo'><a href='diez'><h6 class='xs negro condensado gruesa texto-derecha bloque relleno-der-xs'><i class='icn icn-usuariomas margen-der-xs sombra-cabecera-claro-xs'></i>Profesores ayudantes</h6></a></li>
+        </ul>
       </div>
-    </nav>
-    </div>
-    <div id="scroll-able" data-spy="scroll" data-target="#target_nav" class='col-md-9 col-sm-8 col-xs-12'>
-      <img class='ancho-completo margen-inf-sm borde radio-md' src='{{ site.baseurl }}/img/lalala2.jpg'>
+      </div>
+    <div class='col-md-9 col-sm-8 col-xs-12 relativo' class="scroll-able" data-spy="scroll" data-target="#target_nav">
+<article class='h-entry enunciado'>
+  <div class='e-content p-summary p-name carrera'>
+      <img class='ancho-completo margen-inf-sm borde radio-md' src='https://c2.staticflickr.com/6/5330/8869756121_a6d75304f0_h.jpg'>
       <h3 id='uno' class='active inteletraje-sm-negativo gruesa negro'><i class='icn icn-usuarios margen-der-xs'></i>Estudiar diseño gráfico en la e[ad]</h3>
       <p class='sans' class='margen-sup-xs'>La misión de la Escuela de Arquitectura y Diseño es cultivar el arte de la <a class='sans' href='#'>Arquitectura</a>, del <a class='sans' href='#'>Diseño Gráfico</a> y del <a class='sans' href='#'>Diseño Industrial</a> por medio de la creación y transmisión del conocimiento del oficio de estas artes, formar Arquitectos y Diseñadores con la vocación de concebir obras que den cabida y expresión al habitar humano. La Escuela afirma que tanto la Arquitectura como el Diseño son un Arte. Esto diferencia profundamente de otras orientaciones, disciplinas y saberes, e implica una manera peculiar de estudiar y de hacer.
       </p>
@@ -179,23 +170,117 @@ title: Pyxis Framework - Maquetas
       <p class='sans'>Esta modalidad de estudiar y hacer exige de alumnos y profesores un real compromiso de vida. Este que le confiere a la Escuela una gran unidad y, a su vez establece un ámbito, y un ritmo de estudio que da cabida a actividades ordinarias y extraordinarias, en que participan creativamente todos los alumnos y profesores.</p>
       <h5 class='serif italica negrita inteletraje-sm-negativo negro'>El taller: columna vertebral</h5>
       <p class='sans'>El taller es la columna vertebral de los estudios de cada disciplina impartida en nuestra Escuela. En él tiene lugar el proceso creativo de cada estudiante, y es donde se decantan los conocimientos humanísticos, matemáticos, científicos y tecnológicos que se imparten en las demás asignaturas de nuestro <a class='sans' href='#'>Plan de Estudios</a>.</p>
+      <!-- programa de estudios -->
+      <div class='fila'>
+        <div class='col-md-12 col-sm-12 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Talleres de grabado"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://c3.staticflickr.com/3/2861/8882116015_6a7770202b_h.jpg'></a>
+        </div>
+      </div>
+      <div class='fila'>
+        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Talleres de grabado"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://c1.staticflickr.com/9/8268/8701292715_727fe7da4c_h.jpg'></a>
+        </div>
+        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Talleres de grabado"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://c1.staticflickr.com/9/8135/8701294483_a8409b0eb6_h.jpg'></a>
+        </div>
+      </div>
+      <div class='fila'>
+        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Talleres de grabado"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://c2.staticflickr.com/6/5443/8870359908_c189e27d8b_h.jpg'></a>
+        </div>
+        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Talleres de grabado"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://c1.staticflickr.com/9/8134/8747338105_7e5c6f49ad_h.jpg'></a>
+        </div>
+      </div>
+      <div class='fila'>
+        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Talleres de grabado"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://c4.staticflickr.com/8/7148/6459302853_61c4b6403e_b.jpg'></a>
+        </div>
+        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Talleres de grabado"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://c4.staticflickr.com/8/7035/6459322575_14bd8c12d1_b.jpg'></a>
+        </div>
+      </div>
+      <div class='fila'>
+        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Talleres de grabado"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://c4.staticflickr.com/8/7019/6459531429_2a3e5df1bc_b.jpg'></a>
+        </div>
+        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Talleres de grabado"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://c2.staticflickr.com/6/5151/7110357177_3544943cf9_h.jpg'></a>
+        </div>
+      </div>
+      <div class='fila'>
+        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Talleres de grabado"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://c2.staticflickr.com/8/7021/6459524971_d1ae6b116d_b.jpg'></a>
+        </div>
+        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Talleres de grabado"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://c2.staticflickr.com/8/7156/6459320145_77b35f0f46_b.jpg'></a>
+        </div>
+      </div>
+      <h4 id='dos' class='inteletraje-sm-negativo gruesa negro'><i class='icn icn-usuario margen-der-xs'></i>Programa de estudios</h4>
+      <p class='sans'>Tablas de programa de estudios</p>
+      <div class='margen-sup-xs'>
+            <img class='ancho-completo margen-inf-sm borde radio-md' src='https://c1.staticflickr.com/3/2596/3883907356_7c7bd19054_b.jpg'>
+          <h4 id='tres' class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Malla Curricular</h4>
+          <a class='btn btn-alerta'>Descargar malla curricular</a>
+      </div>
+      <div class='margen-sup-xs'>
+          <h4 id='cuatro' class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Admisión</h4>
+          <p>Hola admisión</p>
+      </div>
+      <div class='fila'>
+        <div class='col-md-12 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://c3.staticflickr.com/3/2305/1806426912_c951330a30_b.jpg'></a>
+        </div>
+      </div>
+      <div class='fila'>
+        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://c3.staticflickr.com/3/2293/1767104777_0b88182767_b.jpg'></a>
+        </div>
+        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Ediciones e[ad]"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://c3.staticflickr.com/3/2089/1805569345_cb64899fd8_b.jpg'></a>
+        </div>
+      </div>
+      <div class='fila'>
+        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://c1.staticflickr.com/9/8483/8164661912_4c8ac2f815_h.jpg'></a>
+        </div>
+        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Ediciones e[ad]"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://c1.staticflickr.com/9/8207/8164633825_6e5a638028_h.jpg'></a>
+        </div>
+      </div>
+      <div class='fila'>
+        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://c1.staticflickr.com/9/8562/15990472942_5e12cfb1e0_h.jpg'></a>
+        </div>
+        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Ediciones e[ad]"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://c4.staticflickr.com/8/7557/15990314582_318b1d0580_h.jpg'></a>
+        </div>
+      </div>
+      <div class='fila'>
+        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://c1.staticflickr.com/1/57/206727152_3db9008c2a_z.jpg?zz=1'></a>
+        </div>
+        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Ediciones e[ad]"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://c1.staticflickr.com/1/220/456161299_c9dec39527_z.jpg?zz=1'></a>
+        </div>
+      </div>
       <div class='fila'>
         <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
           <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2012/04/regalo_T1_2012_02.jpg'></a>
         </div>
         <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Ediciones e[ad]"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2013/07/libros-2_1.jpg'></a>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Ediciones e[ad]"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/themes/gamma/img/disenografico.jpg'></a>
         </div>
       </div>
       <div class='fila'>
         <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Faenas farándula 2012"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/themes/gamma/img/disenografico.jpg'></a>
+          <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Faenas farándula 2012"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2013/07/libros-2_1.jpg'></a>
         </div>
         <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
           <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Talleres de grabado"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/themes/gamma/img/diseno-grafico2.jpg'></a>
         </div>
       </div>
-      <h4 id='dos' class='inteletraje-sm-negativo gruesa negro'><i class='icn icn-usuario margen-der-xs'></i>Concepción del diseñador</h4>
+      <h4 id='cinco' class='inteletraje-sm-negativo gruesa negro'><i class='icn icn-usuario margen-der-xs'></i>Concepción del diseñador</h4>
       <p class='sans'>El Diseñador Gráfico de la Pontificia Universidad Católica de Valparaíso es capaz de ubicarse dentro de equipos multidisciplinarios proyectando y concretando trabajos de distintos grados de complejidad, de manera original y eficiente.</p>
       <p class='sans'>Además, ha desarrollado un lenguaje teórico del <a class='sans' href='#'>oficio</a> en constante resonancia con la <a class='sans' href='#'>Poesía</a>, lo cual le permite interpretar y poseer una visión artística del mundo, permanece así en la abertura creativa del oficio; concibiendo y realizando obras y estudios de postítulos en el ámbito profesional; generando líneas de investigación y estudiando postgrados en el ámbito académico.</p>
       <h5 class='serif italica negrita inteletraje-sm-negativo negro'>Sentido general de la formación</h5>
@@ -223,18 +308,15 @@ title: Pyxis Framework - Maquetas
           <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2013/12/puntaarenas0052013.jpg'></a>
         </div>
       </div>
-      <h4 class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-perfil margen-der-xs'></i>Perfil de egreso</h4>
+      <h4 id='seis' class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-perfil margen-der-xs'></i>Perfil de egreso</h4>
       <ul class='margen-inf-sm'>
         <li class='italica'>Un egresado de esta Escuela posee las competencias que le permiten ejercer el Diseño Gráfico desde la observación, como origen del proceso creativo. Este ha sido encarnado durante los estudios de lo urbano en los talleres de Valparaíso, de lo experimental en la Ciudad Abierta y de la visión de Continente en las Travesías.</li>
         <li class='italica'>Un egresado de esta Escuela posee las competencias que le permiten ejercer el Diseño Gráfico desde la observación, como origen del proceso creativo. Este ha sido encarnado durante los estudios de lo urbano en los talleres de Valparaíso, de lo experimental en la Ciudad Abierta y de la visión de Continente en las Travesías.</li>
       </ul>
-  <div class='fila margen-sup-sm'>
-      <div class='fila'>
+      <div class='fila margen-sup-sm'>
         <div class='col-md-12 col-sm-12 col-xs-12 tooltip-demo tooltip-imagenes'>
           <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2014/01/ceremoniatitulacion22014.jpg'></a>
-        </div>
-      </div>
-      <h4 class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-engranaje icn-spin margen-der-xs'></i>Competencias fundamentales</h4>
+      <h4 id='siete' class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-engranaje icn-spin margen-der-xs'></i>Competencias fundamentales</h4>
       <p class='sans'>El egresado de la Escuela de Arquitectura y Diseño de la Pontificia Universidad Católica de Valparaíso posee las competencias valóricas, disciplinares y profesionales que le permiten ejercer el Diseño Gráfico a partir de una visión poética del mundo, colocándolo de esta manera en el origen del oficio y proyectándolo creativamente en todos los campos de su desempeño.</p>
       <p class='sans'>Esta virtud que se encarna a lo largo de los años de estudio, se hace posible a través del desarrollo de la observación; lenguaje complejo al que concurren el dibujo y el texto como medio eficaz para develar la realidad y proponer en ella las distintas escalas y campos del diseño.</p>
       <h5 class='serif italica negrita inteletraje-sm-negativo margen-inf-sm negro'>Competencias genéricas de formación fundamental</h5>
@@ -262,23 +344,19 @@ title: Pyxis Framework - Maquetas
         <li class='italica'>Construye diálogos entre audiencias identificando territorios culturales, geográficos, sociales, económicos y tecnológicos para la innovación, dando respuestas y recreando los constantes cambios en el mundo.</li>
         <li class='italica'>Escucha empáticamente para integrar e interpretar la realidad de los requerimientos de forma visual, espacial e interactiva en concordancia y justeza al público que sirve.</li>
       </ul>
+      </div>
   </div> <!-- fin de fila -->
   <div class='fila margen-sup-sm'>
-    <div class='col-md-9 col-sm-8 col-xs-12'>
+    <div class='col-md-12 col-sm-8 col-xs-12'>
       <div class='fila'>
         <div class='col-md-12 col-sm-12 col-xs-12 tooltip-demo tooltip-imagenes'>
       	<a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Regalo a los alumnos que egresan"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2014/03/DSC_1440.jpg'></a>
         </div>
       </div>
-      <h4 class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Objetivos educacionales</h4>
+      <h4 id='ocho' class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Objetivos educacionales</h4>
       <p  class='sans'>El ejercicio profesional se desarrolla en instituciones y empresas relacionadas con la comunicación, campo publicitario, editorial, la industria gráfica y multimedial. Ejercicio independiente de la profesión. Docencia universitaria y continuidad en estudios de post-grado.</p>
     </div>
   </div>
-  <div class='fila margen-sup-xs'>
-      <h4 class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Malla Curricular</h4>
-      <a class='btn btn-alerta'>Descargar malla curricular</a>
-  </div>
-  <div class='fila margen-sup-sm'>
       <h4 class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Profesores de carrera</h4>
       <div class='fila'>
         <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
@@ -305,9 +383,7 @@ title: Pyxis Framework - Maquetas
           <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Katherine Exss"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://wiki.ead.pucv.cl/images/5/59/Katherine_exss_wiki.jpg'></a>
         </div>
       </div>
-  </div> <!-- fin de fila-->
-  <div class='fila margen-sup-sm'>
-      <h4 class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Profesores ayudantes</h4>
+      <h4 id='diez' class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Profesores ayudantes</h4>
       <div class='fila'>
         <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
           <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Karen Carrera"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://farm8.staticflickr.com/7207/6979639313_f74d11b3cd_q.jpg'></a>
@@ -319,6 +395,8 @@ title: Pyxis Framework - Maquetas
           <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Jaime Pérez Moena"><img class='ancho-completo margen-inf-sm borde radio-md' src='https://farm8.staticflickr.com/7220/7171615052_2a29d54806_q.jpg'></a>
         </div>
       </div>
-  </div> <!-- fin de fila-->
+    </div>
+  </article>
 </div> <!-- fin de col-->
 </div> <!-- fin de * pag page * -->
+</div>

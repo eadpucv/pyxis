@@ -10,7 +10,7 @@ title: Pyxis Framework - Maquetas
       <span class='bloque izquierda sombra-cabecera-claro-xs relleno-der-xs rojo sans'><a class='lg ead sans' href='{{ site.baseurl }}/maquetas/home'>e[ad]</a></span>
   </div>
   <div class='izquierda relleno-sup-xs logo en-linea'>
-      <!--<span class='sm sans bloque negro'>Escuela de arquitectura y diseño</span>-->
+      <!--<span class='sm sans bloque negro'>Escuela de Magister Náutico y Marítimo y diseño</span>-->
       <!--<span class='xs bloque izquierda sans negro-fundido en-linea'>Pontificia universidad católica de Valparaíso</span>-->
   </div>
   </div>
@@ -81,13 +81,6 @@ title: Pyxis Framework - Maquetas
               </ul>
         </li>
       </ul>
-      <div class='absoluto abs-der margen-sup-xs tooltip-demo oculto-sm oculto-xs'>
-        <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea relleno-sup-xs sin-margen' href='#'>
-          <!-- ícono de Tooltip -->
-          <span><i class='icn icn-lapiz margen-izq-xs margen-sup-xs'></i></span>
-          <span class='xs semi-gruesa sans margen-sup-xs'>editar</span>
-        </a>
-      </div>
   </div>
 </div>
 
@@ -117,21 +110,35 @@ title: Pyxis Framework - Maquetas
   </div>
 </div>
 
-<div class='fondo-gris-blanco relleno-sup-xs'>
+<div class='fondo-gris-blanco oculto-sm oculto-xs relleno-sup-xs sombra-gris-blanco-gradiente'>
   <div class='pag sin-relleno gutter'>
     <div class='fila relleno-sup-xs'>
       <div class='col-md-12'>
         <div class='bloque ancho-completo'>
           <!-- Breadcrumbs -->
-          <ul class='sin-relleno margen-sup-xs centrado margen-inf-xs' id="breadcrumb">
+          <ul class='sin-relleno margen-sup-sm centrado margen-inf-xs' id="breadcrumb">
               <li><a href='#'><i class='icn icn-hogar'></i></a></li>
               <li><a href='#'>Carreras y postgrados</a></li>
               <li><a>Diseño Gráfico</a></li>
           </ul>
-            <h1 class='md negro-fundido condensado gruesa relleno-inf-xs centrado interletraje-xs'>— Diseño Gráfico —</h1>
+            <h1 class='md rojo condensado gruesa centrado interletraje-xs'>— Diseño Gráfico —</h1>
         </div>
       </div>
     </div>
+  </div>
+</div>
+
+<div class='oculto-lg oculto-md'>
+<div class='pag sin-relleno gutter'>
+      <div class='bloque ancho-completo'>
+        <!-- Breadcrumbs -->
+        <ul class='sin-relleno margen-sup-sm margen-inf-xs' id="breadcrumb">
+            <li><a href='#'><i class='icn icn-hogar'></i></a></li>
+            <li><a href='#'>Carreras y postgrados</a></li>
+            <li><a>Diseño Gráfico</a></li>
+        </ul>
+          <h1 class='lg rojo condensado gruesa borde relleno-inf-sm inf-lineal-xs'>Diseño Gráfico</h1>
+      </div>
   </div>
 </div>
 
@@ -144,10 +151,11 @@ title: Pyxis Framework - Maquetas
       <!-- pie de imagen carousel -->
       <div class='ancho-completo alto-completo oculto-xs izquierda cf'>
           <a href='#'>
-            <div class='gris-blanco-gradiente alto-completo absoluto abs-inf abs-izq bloque ancho-completo relleno-xs margen-sup-xs-negativo'>
+            <div class='gris-blanco-gradiente alto-completo absoluto abs-inf abs-izq bloque ancho-completo relleno-sm margen-sup-xs-negativo'>
               <div class='pag sin-relleno cf'>
               <div class='col-md-10 col-md-offset-1'>
-              <h2 class='sm interletraje-negativo relleno-sup centrado margen-sup-xs sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h2>
+              <h4 class='xs semi-gruesa interletraje-sm altas gris-claro centrado sans fino'><i class='icn icn-noticias margen-der-xs sin-interletraje'></i>Noticias</h4>
+              <h2 class='sm interletraje-negativo relleno-sup-xs centrado margen-sup-xs sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h2>
               <div class='ancho-completo bloque izquierda'>
               <span class='italica negro-fundido sombra-cabecera-blanco-xs relleno-sup-xs centrado relleno-inf-xs gruesa'>Publicado el 08 de noviembre, 2014.</span>
               <p class='margen-inf-sm sans sm negro centrado sombra-cabecera-blanco-xs relleno-sup-sm oculto-sm'>A los alumnos indicados para el taller se les permitirá buscar las opciones diferentes si presentan noticias sobre Valparaíso de los arquitectos Mauricio Puentes y Juan Purcell en FILSA [...]</p>
@@ -176,7 +184,8 @@ title: Pyxis Framework - Maquetas
             <div class='gris-blanco-gradiente alto-completo absoluto abs-inf abs-izq bloque ancho-completo relleno-sm'>
               <div class='pag sin-relleno cf'>
               <div class='col-md-10 col-md-offset-1'>
-              <h2 class='sm interletraje-negativo relleno-sup centrado sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Presentan libro "Fotografías de Valparaíso" de Juan Hernández</h2>
+              <h4 class='xs semi-gruesa interletraje-sm altas gris-claro centrado sans fino'><i class='icn icn-lapiz margen-der-xs'></i>Publicaciones</h4>
+              <h2 class='sm interletraje-negativo relleno-sup-xs centrado sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-lapiz margen-der-xs'></i>Presentan libro "Fotografías de Valparaíso" de Juan Hernández</h2>
               <div class='ancho-completo bloque izquierda'>
               <span class='italica negro-fundido sombra-cabecera-blanco-xs relleno-sup-xs centrado relleno-inf-xs gruesa'>Publicado el 08 de noviembre, 2014.</span>
               <p class='margen-inf-sm sans sm negro centrado sombra-cabecera-blanco-xs relleno-sup-sm'>30 Esta semana se realizó el lanzamiento del libro Fotografías de Valparaíso, del fotógrafo Juan Hernández, en la Casa Central de la Pontificia Universidad Católica de Valparaíso [...]</p>
@@ -206,7 +215,8 @@ title: Pyxis Framework - Maquetas
             <div class='gris-blanco-gradiente alto-completo absoluto abs-inf abs-izq bloque ancho-completo relleno-sm'>
               <div class='pag sin-relleno cf'>
               <div class='col-md-10 col-md-offset-1'>
-              <h2 class='sm interletraje-negativo relleno-sup centrado sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Croquis y Apuntes Mezquita de Córdoba</h2>
+              <h4 class='xs semi-gruesa interletraje-sm altas gris-claro centrado sans fino'><i class='icn icn-noticias margen-der-xs'></i>Noticias</h4>
+              <h2 class='sm interletraje-negativo relleno-sup-xs centrado sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Croquis y Apuntes Mezquita de Córdoba</h2>
               <div class='ancho-completo bloque izquierda'>
               <span class='italica negro-fundido sombra-cabecera-blanco-xs relleno-sup-xs borde-blanco centrado relleno-inf-xs gruesa'>Publicado el 08 de noviembre, 2014.</span>
               <p class='margen-inf-sm sans sm negro centrado sombra-cabecera-blanco-xs relleno-sup-sm'>30 El presente documento fue realizado el año 1998 con ocasión de mi visita a la Mezquita de Córdoba, España. Más que una narración [...]</p>
@@ -236,7 +246,8 @@ title: Pyxis Framework - Maquetas
             <div class='gris-blanco-gradiente alto-completo absoluto abs-inf abs-izq bloque ancho-completo relleno-sm'>
               <div class='pag sin-relleno cf'>
               <div class='col-md-10 col-md-offset-1'>
-              <h2 class='sm interletraje-negativo relleno-sup centrado sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Travesía de los Cuatro Cuadrantes</h2>
+              <h4 class='xs semi-gruesa interletraje-sm altas gris-claro centrado sans fino'><i class='icn icn-lapiz margen-der-xs'></i>Publicaciones</h4>
+              <h2 class='sm interletraje-negativo relleno-sup-xs centrado sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-lapiz margen-der-xs'></i>Travesía de los Cuatro Cuadrantes</h2>
               <div class='ancho-completo bloque izquierda'>
               <span class='italica negro-fundido sombra-cabecera-blanco-xs relleno-sup-xs centrado relleno-inf-xs gruesa'>Publicado el 08 de noviembre, 2014.</span> 
               <p class='margen-inf-sm sans sm negro centrado sombra-cabecera-blanco-xs relleno-sup-sm'>Travesía de los Cuatro Cuadrantes es el nombre de la travesía y de las exposiciones que se realizaron como cierre de ella, el día sábado 8 de noviembre [...]</p>
@@ -266,7 +277,8 @@ title: Pyxis Framework - Maquetas
             <div class='gris-blanco-gradiente alto-completo absoluto abs-inf abs-izq bloque ancho-completo relleno-sm'>
               <div class='pag sin-relleno cf'>
               <div class='col-md-10 col-md-offset-1'>
-              <h2 class='sm interletraje-negativo relleno-sup centrado sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Profesor participará en seminario “Concepción, de la frontera a la globalización”</h2>
+              <h4 class='xs semi-gruesa interletraje-sm altas gris-claro centrado sans fino'><i class='icn icn-noticias margen-der-xs'></i>Noticias</h4>
+              <h2 class='sm interletraje-negativo relleno-sup-xs centrado sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Profesor participará en seminario “Concepción, de la frontera a la globalización”</h2>
               <div class='ancho-completo bloque izquierda'>
               <span class='italica negro-fundido sombra-cabecera-blanco-xs relleno-sup-xs centrado relleno-inf-xs gruesa'>Publicado el 08 de noviembre, 2014.</span> 
               <p class='margen-inf-sm sans sm negro centrado sombra-cabecera-blanco-xs relleno-sup-sm'>Entre el jueves 4 y el sábado 6 de diciembre se llevará a cabo el seminario Concepción, de la frontera a la globalización, organizado por la Escuela [...]</p>
@@ -302,15 +314,9 @@ title: Pyxis Framework - Maquetas
 <!-- Pag para page (para toda la página) -->
 <div class='pag page gutter'>
 <!-- Breadcrumbs -->
-<ul class='sin-relleno margen-sup-xs margen-inf' id="breadcrumb">
-    <li><a href='#'><i class='icn icn-hogar'></i></a></li>
-    <li><a href='#'>Carreras y postgrados</a></li>
-    <li><a>Diseño Gráfico</a></li>
-</ul>
       <!-- Contenido 1/8 -->
-      <div class='fila'>
-      <div class='col-md-9 col-sm-8'>
-      <!--<img class='ancho-completo margen-inf-sm borde radio-md' src='https://farm4.staticflickr.com/3050/3077444322_10b6eb1bac_b.jpg'>-->
+      <div class='fila margen-sup-sm'>
+      <div class='col-md-8 col-sm-8'>
       <h3 class='inteletraje-sm-negativo gruesa negro'><i class='icn icn-usuarios margen-der-xs'></i>Carrera de Diseño gráfico</h3>
       <p class='sans' class='margen-sup-xs'>La misión de la Escuela de Arquitectura y Diseño es cultivar el arte de la <a class='sans' href='#'>Arquitectura</a>, del <a class='sans' href='#'>Diseño Gráfico</a> y del <a class='sans' href='#'>Diseño Industrial</a> por medio de la creación y transmisión del conocimiento del oficio de estas artes, formar Arquitectos y Diseñadores con la vocación de concebir obras que den cabida y expresión al habitar humano. La Escuela afirma que tanto la Arquitectura como el Diseño son un Arte. Esto diferencia profundamente de otras orientaciones, disciplinas y saberes, e implica una manera peculiar de estudiar y de hacer.
       </p>
@@ -321,13 +327,19 @@ title: Pyxis Framework - Maquetas
       <h5 class='serif italica negrita inteletraje-sm-negativo negro'>El taller: columna vertebral</h5>
       <p class='sans'>El taller es la columna vertebral de los estudios de cada disciplina impartida en nuestra Escuela. En él tiene lugar el proceso creativo de cada estudiante, y es donde se decantan los conocimientos humanísticos, matemáticos, científicos y tecnológicos que se imparten en las demás asignaturas de nuestro <a class='sans' href='#'>Plan de Estudios</a>.</p>
     </div> <!-- fin de col-->
-    <div class='col-md-3 col-sm-4 oculto-xs'>
+    <div class='col-md-4 col-sm-4 oculto-xs'>
       <h6 class='xs interletraje-xs negro condensado gruesa margen-izq-sm altas'>Enlaces</h6>
       <ol class='xs'>
-        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs sup-lineal-xs rojo'><a href='#' class='sans semi-gruesa xs'>Estudiar diseño gráfico</a></li>
+        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs sup-lineal-xs rojo'><a href='#' class='sans semi-gruesa xs'>Estudiar en diseño gráfico</a></li>
         <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Programa de estudios</a></li>
         <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Malla curricular</a></li>
         <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Admisión</a></li>
+        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa xs'>Concepción del diseñador</a></li>
+        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Perfil de egreso</a></li>
+        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Competencias fundamentales</a></li>
+        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Objetivos edcacionales</a></li>
+        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Profeosres de carrera</a></li>
+        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Profesores ayudantes</a></li>
       </ol>
       <h6 class='xs interletraje-xs negro condensado gruesa margen-sup margen-izq-sm altas'>Categorías</h6>
       <ul class='xs'>
@@ -348,6 +360,11 @@ title: Pyxis Framework - Maquetas
         <li class='relleno-vertical-xs borde inf-lineal-xs sup-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Arquitectura</a></li>
         <li class='relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Diseño Gráfico</a></li>
         <li class='relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Diseño industrial</a></li>
+      </ul>
+      <h6 class='xs interletraje-xs negro condensado gruesa margen-sup margen-izq-sm altas'>Estudios avanzados</h6>
+      <ul class='xs'>
+        <li class='relleno-vertical-xs borde inf-lineal-xs sup-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Magister Náutico y Marítimo</a></li>
+        <li class='relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Magister Ciudad y territorio</a></li>
       </ul>
       <h6 class='xs interletraje-xs negro condensado gruesa margen-sup margen-izq-sm altas'>Twitter</h6>
     </div>

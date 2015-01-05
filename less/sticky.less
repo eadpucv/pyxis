@@ -39,6 +39,16 @@
 				}
 			}
 		}
+		
+		li.active a{
+			h6{
+			color: @rojo;
+			border-right: 2px solid @rojo;
+				i{
+					color: @rojo !important;
+				}
+			}
+		}
 	}
 
   	#ejemplo-sticky-2, #ejemplo-sticky-3, #ejemplo-sticky-4, #ejemplo-sticky-5, #ejemplo-sticky-6, #ejemplo-sticky-7, #ejemplo-sticky-8{
@@ -87,6 +97,20 @@
 			}
 		}
 	}
+	
+	#boton-editar{
+		i{
+			top: -42px !important;
+			right: 8px;
+			color: @blanco;
+			font-size: 12px;
+			position: absolute !important;
+		}
+	}
+	#boton-editar.triangulo{
+		border-top: 50px solid @rojo;
+		.transition(.5s ease all);
+	}	
 	// Sticky en post
 	#fondo-publicacion{
 		.gris-blanco-gradiente;
@@ -99,7 +123,7 @@
 		}
 
 		#breadcrumb{
-			margin-top: 17vh !important;
+			margin-top: 150px !important;
 		}
 	}
 }
@@ -126,9 +150,7 @@
 				background-color: @blanco;
 
 				&.active > a{
-					
 						background-color: @blanco !important;
-					
 				}
 
 				&:last-child{
@@ -185,6 +207,15 @@
 				}	
 			}
 		}
+	}
+	#boton-editar{
+		i{
+			color: @rojo;
+		}
+	}
+	#boton-editar.triangulo{
+		border-top: 50px solid @ahuesado;
+		.transition(.3s ease all);
 	}
 	// Sticky en post
 	#fondo-publicacion{

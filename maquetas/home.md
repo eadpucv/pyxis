@@ -81,13 +81,6 @@ title: Pyxis Framework - Maquetas
               </ul>
         </li>
       </ul>
-      <div class='absoluto abs-der margen-sup-xs tooltip-demo oculto-sm oculto-xs'>
-        <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea relleno-sup-xs sin-margen' href='#'>
-          <!-- ícono de Tooltip -->
-          <span><i class='icn icn-lapiz margen-izq-xs margen-sup-xs'></i></span>
-          <span class='xs semi-gruesa sans margen-sup-xs'>editar</span>
-        </a>
-      </div>
   </div>
 </div>
 
