@@ -2,6 +2,7 @@
 layout: particular
 title: Pyxis Framework - Maquetas
 ---
+
 <!-- Menú dropdown -->
 <div class="oculto-xs fondo-gris-blanco ruido relleno-sup-sm">
   <div class='pag sin-relleno borde inf-lineal-xs'>
@@ -330,16 +331,16 @@ title: Pyxis Framework - Maquetas
     <div class='col-md-4 col-sm-4 oculto-xs'>
       <h6 class='xs interletraje-xs negro condensado gruesa margen-izq-sm altas'>Enlaces</h6>
       <ol class='xs'>
-        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs sup-lineal-xs rojo'><a href='#' class='sans semi-gruesa xs'>Estudiar en diseño gráfico</a></li>
-        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Programa de estudios</a></li>
-        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Malla curricular</a></li>
-        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Admisión</a></li>
-        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa xs'>Concepción del diseñador</a></li>
-        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Perfil de egreso</a></li>
-        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Competencias fundamentales</a></li>
-        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Objetivos edcacionales</a></li>
-        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Profeosres de carrera</a></li>
-        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Profesores ayudantes</a></li>
+        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs sup-lineal-xs rojo'><a href='http://127.0.0.1:4000/maquetas/page/#uno' class='sans semi-gruesa xs'>Estudiar en diseño gráfico</a></li>
+        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='http://127.0.0.1:4000/maquetas/page/#dos' class='sans semi-gruesa'>Programa de estudios</a></li>
+        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='http://127.0.0.1:4000/maquetas/page/#tres' class='sans semi-gruesa'>Malla curricular</a></li>
+        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='http://127.0.0.1:4000/maquetas/page/#cuatro' class='sans semi-gruesa'>Admisión</a></li>
+        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='http://127.0.0.1:4000/maquetas/page/#cinco' class='sans semi-gruesa xs'>Concepción del diseñador</a></li>
+        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='http://127.0.0.1:4000/maquetas/page/#seis' class='sans semi-gruesa'>Perfil de egreso</a></li>
+        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='http://127.0.0.1:4000/maquetas/page/#siete' class='sans semi-gruesa'>Competencias fundamentales</a></li>
+        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='http://127.0.0.1:4000/maquetas/page/#ocho' class='sans semi-gruesa'>Objetivos edcacionales</a></li>
+        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='http://127.0.0.1:4000/maquetas/page/#nueve' class='sans semi-gruesa'>Profeosres de carrera</a></li>
+        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='http://127.0.0.1:4000/maquetas/page/#diez' class='sans semi-gruesa'>Profesores ayudantes</a></li>
       </ol>
       <h6 class='xs interletraje-xs negro condensado gruesa margen-sup margen-izq-sm altas'>Categorías</h6>
       <ul class='xs'>

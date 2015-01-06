@@ -82,13 +82,6 @@ title: Pyxis Framework - Maquetas
               </ul>
         </li>
       </ul>
-      <div class='absoluto abs-der margen-sup-xs tooltip-demo oculto-sm oculto-xs'>
-        <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea relleno-sup-xs sin-margen' href='#'>
-          <!-- ícono de Tooltip -->
-          <span><i class='icn icn-lapiz margen-izq-xs margen-sup-xs'></i></span>
-          <span class='xs semi-gruesa sans margen-sup-xs'>editar</span>
-        </a>
-      </div>
   </div>
 </div>
 
@@ -128,10 +121,10 @@ title: Pyxis Framework - Maquetas
       <li><a href='#'>Arquitectura</a></li>
       <li><a>Noticias</a></li>
     </ul> 
-    <h1 class='md en-linea ancho-auto sin-margen borde gruesa centrado negro-fundido condensado sombra-cabecera-blanco-sm'>Presentación libros Triángulo de Pascal y Estructura Esencial</h2>
+    <h2 class='lg interletraje-negativo relleno-sup-xs centrado margen-sup-xs gruesa rojo condensado'>Presentación libros Triángulo de Pascal y Estructura Esencial</h2>
       <aside class='entry-details fondo-gris-claro-trans margen-sup-xs borde radio-md'>
-      <ul class='sin-relleno centrado al-frente'>
-        <li class='sin-estilo negro-fundido italica sombra-cabecera-claro-xs'>Publicaciado el 30 de octubre del 2014, por Francesca Cambiaso.</li>
+      <ul class='sm sin-relleno centrado al-frente'>
+        <li class='sm sin-estilo negro-fundido italica sombra-cabecera-claro-xs'>Publicaciado el 30 de octubre del 2014, por Francesca Cambiaso.</li>
         <li class='sin-estilo sans negro-fundido semi-gruesa relleno-sup-sm sombra-cabecera-claro-xs'><i class='icn icn-marcador relleno-der-xs'></i>Archivado en: <a href='#' class='sans semi-gruesa'>Actualidad</a>, <a class='sans semi-gruesa' href='#'>Arquitectura</a>, <a class='semi-gruesa sans' href='#' class='sans semi-gruesa'>Carrusel</a>, <a href='#' class='sans semi-gruesa'>Investigación</a>, <a class='semi-gruesa sans' href='#' class='sans semi-gruesa'>Noticias</a>.</li>
         <li class='sin-estilo sans negro-fundido semi-gruesa sombra-cabecera-claro-xs'><i class='icn icn-etiqueta relleno-der-xs'></i>Palabras clave: <a href='#' class='semi-gruesa sans'> Arquitectura</a>, <a class='semi-gruesa sans' href='#' class='semi-gruesa sans'>Estructura escencial</a>, <a class='semi-gruesa sans' href='#' class='sans'>Libros</a>, <a class='semi-gruesa sans' href='#' class='sans semi-gruesa'>Matemática</a>, <a href='#' class='sans semi-gruesa'>Publicaciones</a>, <a href='#' class='sans semi-gruesa'>Triángulo de Pascal</a>.</li>
       </ul>

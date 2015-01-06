@@ -357,7 +357,7 @@ title: Pyxis Framework - Maquetas
       <p  class='sans'>El ejercicio profesional se desarrolla en instituciones y empresas relacionadas con la comunicación, campo publicitario, editorial, la industria gráfica y multimedial. Ejercicio independiente de la profesión. Docencia universitaria y continuidad en estudios de post-grado.</p>
     </div>
   </div>
-      <h4 class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Profesores de carrera</h4>
+      <h4 id='nueve' class='inteletraje-sm-negativo gruesa negro margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Profesores de carrera</h4>
       <div class='fila'>
         <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
           <a data-toggle="tooltip" href="#" data-original-title='ahora sì' title="Sylvia Arriagada"><img class='ancho-completo margen-inf-sm borde radio-md' src='http://ipark2012ephemeraltravesia.files.wordpress.com/2012/09/silvia-arriagada.jpg'></a>
