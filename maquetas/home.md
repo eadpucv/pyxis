@@ -90,21 +90,72 @@ title: Pyxis Framework - Maquetas
     <div class='fondo-negro-fundido'>
     <div class='pag menu-movil'>
       <div class='centrado bloque izquierda margen-der-xs logo en-linea'>
-        <h1 class='lg linea centrado rojo sans'><a class='sans centrado' href='{{ site.baseurl }}/maquetas/home'>e[ad]</a></h1>
+        <h1 class='lg linea centrado sans'><a class='sans rojo centrado' href='{{ site.baseurl }}/maquetas/home'>e[ad]</a></h1>
       </div>
-      <a href="#menu" class="menu-link derecha"><i class="icn icn-lg icn-menu"></i> </a>
+      <a href="#menu" class="menu-link rojo derecha"><i class="icn icn-lg icn-menu"></i></a>
       <div class='izquierda ancho-completo relleno-inf-xs logo en-linea'>
         <span class='sm sans bloque blanco'>Escuela de Arquitectura y Diseño</span>
         <span class='xs bloque izquierda sans blanco en-linea'>Pontificia universidad católica de Valparaíso</span>
       </div>
     </div>
     <nav id="menu" class='lista-sin-estilo' role="navigation">
-      <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Escuela</a></li>
-      <li><a class='sans blanco' href='{{ site.baseurl }}/pags/grilla'>Carreras & postgrados</a></li>
-      <li><a class='sans blanco' href='{{ site.baseurl }}/pags/interaccion'>Estudiantes</a></li>
-      <li><a class='sans blanco' href='{{ site.baseurl }}/pags/color'>Admisión</a></li>
-      <li><a class='sans blanco' href='{{ site.baseurl }}/pags/color'>Extensión</a></li>
-      <li><a class='sans blanco margen-inf' href='{{ site.baseurl }}/pags/iconografia'>Amereida</a></li>
+      <li><a class='sans blanco'>Escuela</a></li>
+        <ul id="menu" class='fondo-blanco' role="navigation">
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>historia</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Amereida</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Campus</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Cuerpo académico</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Autoridades</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Noticias</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Agenda</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Información de docencia</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Wiki Casiopea</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Prensa</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Contacto</a></li>
+        </ul>
+      <li><a class='sans blanco'>Carreras & postgrados</a>
+        <ul id="menu" class='fondo-blanco' role="navigation">
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Arquitectura</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Diseño gráfico</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Diseño industrial</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Magister Náutico & Marítimo</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Magister Ciudad & Territorio</a></li>
+        </ul>
+      </li>
+      <li><a class='sans blanco'>Estudiantes</a>
+        <ul id="menu" class='fondo-blanco' role="navigation">
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Pregrado</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Postgrado</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Intercambio estudiantil</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Becas & ayudas estudiantiles</a></li>
+        </ul>
+      </li>
+      <li><a class='sans blanco'>Admisión</a>
+        <ul id="menu" class='fondo-blanco' role="navigation">
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Cuerpo coordinador</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Asunto estudiantiles</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Estudia en el extranjero</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Servicios e[ad]</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Bolsa de trabajo</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Ex-alumnos</a></li>
+        </ul>
+      </li>
+      <li><a class='sans blanco'>Extensión</a>
+        <ul id="menu" class='fondo-blanco' role="navigation">
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Archivo histórico J.V.A</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Ediciones e[ad]</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Concursos</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Investigación</a></li>
+        </ul>
+      </li>
+      <li><a class='sans blanco'>Amereida</a>
+        <ul id="menu" class='fondo-blanco' role="navigation">
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Taller de amereida</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Ciudad abierta</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Travesías</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Biblioteca Con§tel</a></li>
+        </ul>
+      </li>
     </nav>
   </div>
 </div>
@@ -122,12 +173,19 @@ title: Pyxis Framework - Maquetas
     <div class="item active car-sm">
       <img class='ancho-completo absoluto' alt="First slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/12/IMG_3945.jpg">
       <div class='pag sin-relleno cf h100'>
-      <div class='col-md-4 oculto-sm h100 oculto-xs derecha cf'>
+      <div class='col-md-4 col-sm-6 h100 oculto-xs derecha cf'>
         <a href="{{ site.baseurl }}/maquetas/post">
           <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque alto-completo relleno'>
             <h2 class='interletraje-negativo sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs justicado'></i>Presentación libros Triángulo de Pascal y Estructura Esencial</h2>
             <p class='margen-sup-sm italica negro sombra-cabecera-blanco-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem, ambos arquitectos y académicos [...]</p>
             <span class='xs interletraje-xs fondo-blanco-trans sombra relleno-der-xs relleno-vertical-xs borde radio-md condensado derecha negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario sin-interletraje relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
+          </div>
+        </a>
+      </div>
+        <div class='oculto-md oculto-sm col-xs-12 h100 cf'>
+          <a href='#'>
+          <div class='fondo-gris-blanco-trans absoluto abs-der ancho-completo abs-inf bloque relleno'>
+            <h5 class='sm interletraje-negativo centrado sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs justicado'></i>Presentación libros Triángulo de Pascal y Estructura Esencial</h5>
           </div>
           </a>
         </div>
@@ -137,7 +195,7 @@ title: Pyxis Framework - Maquetas
     <div class="item car-sm">
       <img class='ancho-completo absoluto' alt="Second slide" src="http://www.ead.pucv.cl/wp-content/uploads/2012/02/Vodudahue-1b.jpg">
       <div class='pag sin-relleno cf h100'>
-      <div class='col-md-4 oculto-sm h100 oculto-xs derecha cf'>
+      <div class='col-md-4 col-sm-6 h100 oculto-xs derecha cf'>
           <a class='bloque' href='#'>
             <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque alto-completo relleno'>
               <h2 class='interletraje-negativo sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</h2>
@@ -146,19 +204,33 @@ title: Pyxis Framework - Maquetas
             </div>
           </a>
         </div>
+        <div class='oculto-md oculto-sm col-xs-12 h100 cf'>
+          <a href='#'>
+          <div class='fondo-gris-blanco-trans absoluto abs-der ancho-completo abs-inf bloque relleno'>
+            <h5 class='sm interletraje-negativo centrado sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs justicado'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</h5>
+          </div>
+          </a>
+        </div>
     </div>
     </div>
     <!-- item -->
     <div class="item car-sm">
       <img class='ancho-completo absoluto' alt="Third slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/11/PERSPECTIVA-RENDER-2.jpg">
       <div class='pag sin-relleno cf h100'>
-      <div class='col-md-4 oculto-sm h100 oculto-xs derecha cf'>
+      <div class='col-md-4 col-sm-6 h100 oculto-xs derecha cf'>
           <a href='#'>
             <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque alto-completo relleno'>
               <h2 class='interletraje-negativo sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h2>
               <p class='margen-sup-sm italica negro sombra-cabecera-blanco-xs'>A los alumnos indicados para el taller se les permitirá buscar las opciones diferentes si presentan noticiass sobre Valparaíso de los arquitectos Mauricio Puentes y Juan Purcell en FILSA [...]</p>
               <span class='xs interletraje-xs fondo-blanco-trans sombra relleno-der-xs relleno-vertical-xs borde radio-md condensado derecha negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario sin-interletraje relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
             </div>
+          </a>
+        </div>
+        <div class='oculto-md oculto-sm col-xs-12 h100 cf'>
+          <a href='#'>
+          <div class='fondo-gris-blanco-trans absoluto abs-der ancho-completo abs-inf bloque relleno'>
+            <h5 class='sm interletraje-negativo centrado sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs justicado'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h5>
+          </div>
           </a>
         </div>
     </div>
@@ -441,7 +513,7 @@ title: Pyxis Framework - Maquetas
               <div class='col-md-4 col-sm-12 oculto-xs'>
                 <h5 class='sm condensado gruesa negro margen-inf-sm'>Cuerpo docente</h5>
                 <p class='serif italica sin-margen relleno-inf-sm'>El cuerpo académico de la <span class='rojo'>e[ad]</span> está compuesto por arquitectos y diseñadores de dedicación exclusiva al quehacer académico, en constante perfeccionamiento y ejercicio del oficio, trabajando en conjunto con un destacado equipo de profesores de dedicación parcial que, desde su disciplina, fortalecen nuestra docencia.</p>
-                  <div class='grupo-botones oculto-sm margen-sup-xs'>
+                  <div class='oculto-sm margen-sup-xs'>
                     <button class='btn btn-alerta'>Profesores</button>
                   </div>
               </div>

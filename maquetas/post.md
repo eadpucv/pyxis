@@ -91,42 +91,91 @@ title: Pyxis Framework - Maquetas
     <div class='fondo-negro-fundido'>
     <div class='pag menu-movil'>
       <div class='centrado bloque izquierda margen-der-xs logo en-linea'>
-        <h1 class='lg linea centrado rojo sans'><a class='sans rojo centrado' href='{{ site.baseurl }}/maquetas/home'>e[ad]</a></h1>
+        <h1 class='lg linea centrado sans'><a class='sans rojo centrado' href='{{ site.baseurl }}/maquetas/home'>e[ad]</a></h1>
       </div>
-      <a href="#menu" class="menu-link derecha"><i class="icn icn-lg icn-menu"></i> </a>
+      <a href="#menu" class="menu-link rojo derecha"><i class="icn icn-lg icn-menu"></i></a>
       <div class='izquierda ancho-completo relleno-inf-xs logo en-linea'>
         <span class='sm sans bloque blanco'>Escuela de Arquitectura y Diseño</span>
         <span class='xs bloque izquierda sans blanco en-linea'>Pontificia universidad católica de Valparaíso</span>
       </div>
     </div>
     <nav id="menu" class='lista-sin-estilo' role="navigation">
-      <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Escuela</a></li>
-      <li><a class='sans blanco' href='{{ site.baseurl }}/pags/grilla'>Carreras & postgrados</a></li>
-      <li><a class='sans blanco' href='{{ site.baseurl }}/pags/interaccion'>Estudiantes</a></li>
-      <li><a class='sans blanco' href='{{ site.baseurl }}/pags/color'>Admisión</a></li>
-      <li><a class='sans blanco' href='{{ site.baseurl }}/pags/color'>Extensión</a></li>
-      <li><a class='sans blanco margen-inf' href='{{ site.baseurl }}/pags/iconografia'>Amereida</a></li>
+      <li><a class='sans blanco'>Escuela</a></li>
+        <ul id="menu" class='fondo-blanco' role="navigation">
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>historia</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Amereida</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Campus</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Cuerpo académico</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Autoridades</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Noticias</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Agenda</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Información de docencia</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Wiki Casiopea</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Prensa</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Contacto</a></li>
+        </ul>
+      <li><a class='sans blanco'>Carreras & postgrados</a>
+        <ul id="menu" class='fondo-blanco' role="navigation">
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Arquitectura</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Diseño gráfico</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Diseño industrial</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Magister Náutico & Marítimo</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Magister Ciudad & Territorio</a></li>
+        </ul>
+      </li>
+      <li><a class='sans blanco'>Estudiantes</a>
+        <ul id="menu" class='fondo-blanco' role="navigation">
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Pregrado</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Postgrado</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Intercambio estudiantil</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Becas & ayudas estudiantiles</a></li>
+        </ul>
+      </li>
+      <li><a class='sans blanco'>Admisión</a>
+        <ul id="menu" class='fondo-blanco' role="navigation">
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Cuerpo coordinador</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Asunto estudiantiles</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Estudia en el extranjero</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Servicios e[ad]</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Bolsa de trabajo</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Ex-alumnos</a></li>
+        </ul>
+      </li>
+      <li><a class='sans blanco'>Extensión</a>
+        <ul id="menu" class='fondo-blanco' role="navigation">
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Archivo histórico J.V.A</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Ediciones e[ad]</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Concursos</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Investigación</a></li>
+        </ul>
+      </li>
+      <li><a class='sans blanco'>Amereida</a>
+        <ul id="menu" class='fondo-blanco' role="navigation">
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Taller de amereida</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Ciudad abierta</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Travesías</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Biblioteca Con§tel</a></li>
+        </ul>
+      </li>
     </nav>
-    </div>
   </div>
+</div>
 </div>
 
 <div class='ocultar-desborde relativo alto-lg'>
   <div class='absoluto ancho-completo alto-lg'>
-    <div id='fondo-publicacion' class='cf alto-lg'>
-    <div class='pag sin-relleno ancho-xs'>
-    <ul id="breadcrumb" class='sin-relleno centrado'>
+    <div id='fondo-publicacion' class='cf h50 absoluto abs-inf ancho-completo'>
+    <div class='pag fondo-blanco sin-relleno ancho-xs'>
+    <ul id="breadcrumb" class='sin-relleno'>
       <li><a href='#'><i class='icn icn-hogar'></i></a></li>
       <li><a href='#' class='md'>Actualidad</a></li>
       <li><a href='#'>Arquitectura</a></li>
       <li><a>Noticias</a></li>
     </ul> 
-    <h2 class='lg interletraje-negativo relleno-sup-xs centrado margen-sup-xs gruesa rojo condensado'>Presentación libros Triángulo de Pascal y Estructura Esencial</h2>
+    <h3 class='lg interletraje-negativo relleno-sup-xs margen-sup-xs gruesa rojo condensado'>Presentación libros Triángulo de Pascal y Estructura Esencial</h3>
       <aside class='entry-details fondo-gris-claro-trans margen-sup-xs borde radio-md'>
-      <ul class='sm sin-relleno centrado al-frente'>
+      <ul class='sm sin-relleno al-frente'>
         <li class='sm sin-estilo negro-fundido italica sombra-cabecera-claro-xs'>Publicaciado el 30 de octubre del 2014, por Francesca Cambiaso.</li>
-        <li class='sin-estilo sans negro-fundido semi-gruesa relleno-sup-sm sombra-cabecera-claro-xs'><i class='icn icn-marcador relleno-der-xs'></i>Archivado en: <a href='#' class='sans semi-gruesa'>Actualidad</a>, <a class='sans semi-gruesa' href='#'>Arquitectura</a>, <a class='semi-gruesa sans' href='#' class='sans semi-gruesa'>Carrusel</a>, <a href='#' class='sans semi-gruesa'>Investigación</a>, <a class='semi-gruesa sans' href='#' class='sans semi-gruesa'>Noticias</a>.</li>
-        <li class='sin-estilo sans negro-fundido semi-gruesa sombra-cabecera-claro-xs'><i class='icn icn-etiqueta relleno-der-xs'></i>Palabras clave: <a href='#' class='semi-gruesa sans'> Arquitectura</a>, <a class='semi-gruesa sans' href='#' class='semi-gruesa sans'>Estructura escencial</a>, <a class='semi-gruesa sans' href='#' class='sans'>Libros</a>, <a class='semi-gruesa sans' href='#' class='sans semi-gruesa'>Matemática</a>, <a href='#' class='sans semi-gruesa'>Publicaciones</a>, <a href='#' class='sans semi-gruesa'>Triángulo de Pascal</a>.</li>
       </ul>
       </aside>
     </div>
@@ -150,10 +199,14 @@ title: Pyxis Framework - Maquetas
   </div>
 </div>-->
 
-<div class='col-md-9 col-sm-7'>
+<div class='col-md-10 col-sm-7'>
   <div class='fila'>
-<article class='h-entry margen-sup-md'>
+<article class='h-entry margen-sup-sm'>
 <div class='e-content p-sumary p-name'>
+      <ul class='xs sin-relleno al-frente relleno-inf-sm'>
+        <li class='sin-estilo sans negro-fundido semi-gruesa relleno-sup-sm sombra-cabecera-claro-xs'><i class='icn icn-marcador relleno-der-xs'></i>Archivado en: <a href='#' class='sans semi-gruesa'>Actualidad</a>, <a class='sans semi-gruesa' href='#'>Arquitectura</a>, <a class='semi-gruesa sans' href='#' class='sans semi-gruesa'>Carrusel</a>, <a href='#' class='sans semi-gruesa'>Investigación</a>, <a class='semi-gruesa sans' href='#' class='sans semi-gruesa'>Noticias</a>.</li>
+        <li class='sin-estilo sans negro-fundido semi-gruesa sombra-cabecera-claro-xs'><i class='icn icn-etiqueta relleno-der-xs'></i>Palabras clave: <a href='#' class='semi-gruesa sans'> Arquitectura</a>, <a class='semi-gruesa sans' href='#' class='semi-gruesa sans'>Estructura escencial</a>, <a class='semi-gruesa sans' href='#' class='sans'>Libros</a>, <a class='semi-gruesa sans' href='#' class='sans semi-gruesa'>Matemática</a>, <a href='#' class='sans semi-gruesa'>Publicaciones</a>, <a href='#' class='sans semi-gruesa'>Triángulo de Pascal</a>.</li>
+      </ul>
 	<p class='sm'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros Estructura Esencial. Curso de geometría para pensar construyendo un cuerpo estable, de Miguel Eyquem y El Triángulo de Pascal, cual arma para acceder al &c de Newton, de Isabel Margarita Reyes.</p>
 	<p class='sm'>Los libros son parte de la Serie Arbitrada 2014, convocatoria del Sistema de Biblioteca PUCV y Ediciones Universitarias de Valparaíso a concurso público para académicos de la universidad cuya finalidad es la difusión del conocimiento generado en las distintas facultades y escuelas.</p>
 	<img class='ancho-completo borde radio-md' src='http://www.ead.pucv.cl/wp-content/uploads/2014/12/DSC_13881.jpg'>
@@ -174,9 +227,9 @@ title: Pyxis Framework - Maquetas
 </article>
 </div>
 </div>
-<div class='col-md-3 col-sm-2'>
+<div class='col-md-2 col-sm-2'>
   <div class='fila'>
-     <h6 class='xs interletraje-xs negro condensado gruesa margen-sup altas'>Categorías</h6>
+     <h6 class='xs interletraje-xs negro condensado gruesa margen-sup-sm altas'>Categorías</h6>
       <ul class='xs sin-relleno'>
         <li class='relleno-vertical-xs borde inf-lineal-xs sup-lineal-xs sin-estilo rojo'><a href='#' class='sans semi-gruesa'>Actualidad</a></li>
         <li class='relleno-vertical-xs borde inf-lineal-xs sin-estilo rojo'><a href='#' class='sans semi-gruesa'>Estudiantes</a></li>
