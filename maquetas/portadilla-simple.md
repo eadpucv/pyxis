@@ -2,7 +2,7 @@
 layout: particular
 title: Pyxis Framework - Maquetas
 ---
-
+https://c3.staticflickr.com/3/2186/1561078254_a5dc3cc23f_b.jpg
 <!-- Menú dropdown -->
 <div class="oculto-xs fondo-gris-blanco ruido  relleno-sup-sm">
   <div class='pag sin-relleno borde inf-lineal-xs'>
@@ -87,28 +87,77 @@ title: Pyxis Framework - Maquetas
 
 <!-- Menú responsivo -->
 <div class="oculto-lg oculto-md oculto-sm">
-  <div class='fondo-negro textura-2'>
-    <div class='fondo-negro-fundido'>
+  <div class='fondo-negro'>
     <div class='pag menu-movil'>
       <div class='centrado bloque izquierda margen-der-xs logo en-linea'>
-        <h1 class='lg linea centrado rojo sans'><a class='sans rojo centrado' href='{{ site.baseurl }}/maquetas/home'>e[ad]</a></h1>
+        <h1 class='sm linea centrado sans'><a class='sans rojo centrado' href='{{ site.baseurl }}/maquetas/home'>e[ad]</a></h1>
       </div>
-      <a href="#menu" class="menu-link derecha"><i class="icn icn-lg icn-menu"></i> </a>
-      <div class='izquierda ancho-completo relleno-inf-xs logo en-linea'>
+      <!--<div class='izquierda ancho-auto relleno-inf-xs logo en-linea'>
         <span class='sm sans bloque blanco'>Escuela de Arquitectura y Diseño</span>
         <span class='xs bloque izquierda sans blanco en-linea'>Pontificia universidad católica de Valparaíso</span>
-      </div>
+      </div>-->
+      <a href="#menu" class="menu-link rojo derecha"><i class="icn icn-lg icn-menu"></i></a>
     </div>
     <nav id="menu" class='lista-sin-estilo' role="navigation">
-      <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Escuela</a></li>
-      <li><a class='sans blanco' href='{{ site.baseurl }}/pags/grilla'>Carreras & postgrados</a></li>
-      <li><a class='sans blanco' href='{{ site.baseurl }}/pags/interaccion'>Estudiantes</a></li>
-      <li><a class='sans blanco' href='{{ site.baseurl }}/pags/color'>Admisión</a></li>
-      <li><a class='sans blanco' href='{{ site.baseurl }}/pags/color'>Extensión</a></li>
-      <li><a class='sans blanco margen-inf' href='{{ site.baseurl }}/pags/iconografia'>Amereida</a></li>
+      <li><a class='sans blanco'>Escuela</a></li>
+        <ul id="menu" class='fondo-blanco' role="navigation">
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>historia</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Amereida</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Campus</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Cuerpo académico</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Autoridades</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Noticias</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Agenda</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Información de docencia</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Wiki Casiopea</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Prensa</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Contacto</a></li>
+        </ul>
+      <li><a class='sans blanco'>Carreras & postgrados</a>
+        <ul id="menu" class='fondo-blanco' role="navigation">
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Arquitectura</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Diseño gráfico</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Diseño industrial</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Magister Náutico & Marítimo</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Magister Ciudad & Territorio</a></li>
+        </ul>
+      </li>
+      <li><a class='sans blanco'>Estudiantes</a>
+        <ul id="menu" class='fondo-blanco' role="navigation">
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Pregrado</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Postgrado</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Intercambio estudiantil</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Becas & ayudas estudiantiles</a></li>
+        </ul>
+      </li>
+      <li><a class='sans blanco'>Admisión</a>
+        <ul id="menu" class='fondo-blanco' role="navigation">
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Cuerpo coordinador</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Asunto estudiantiles</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Estudia en el extranjero</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Servicios e[ad]</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Bolsa de trabajo</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Ex-alumnos</a></li>
+        </ul>
+      </li>
+      <li><a class='sans blanco'>Extensión</a>
+        <ul id="menu" class='fondo-blanco' role="navigation">
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Archivo histórico J.V.A</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Ediciones e[ad]</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Concursos</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Investigación</a></li>
+        </ul>
+      </li>
+      <li><a class='sans blanco'>Amereida</a>
+        <ul id="menu" class='fondo-blanco' role="navigation">
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Taller de amereida</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Ciudad abierta</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Travesías</a></li>
+          <li><a class='sans blanco' href='{{ site.baseurl }}/pags/tipografia'>Biblioteca Con§tel</a></li>
+        </ul>
+      </li>
     </nav>
-    </div>
-  </div>
+</div>
 </div>
 
 <div class='fondo-gris-blanco oculto-sm oculto-xs relleno-sup-xs sombra-gris-blanco-gradiente'>

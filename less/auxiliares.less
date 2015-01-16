@@ -640,16 +640,22 @@ box-shadow:         0px 20px 30px 27px rgba(249, 249, 249, 1);
 .margen-sup-negativo{margin-top: -@cuadratin !important}
 .margen-sup-xs{margin-top: @cuadratin / 6.5 !important}
 .margen-sup-sm{margin-top: @cuadratin / 2 !important}
-.margen-sup-md{margin-top: @cuadratin * 1 !important}
+.margen-sup-md{margin-top: @cuadratin * .8 !important}
 .margen-sup-lg{margin-top: @cuadratin * 1.5 !important}
 
 .margen-inf{margin-bottom: @cuadratin !important}
 .margen-inf-xs{margin-bottom: @cuadratin / 6.6 !important}
 .margen-inf-sm{margin-bottom: @cuadratin / 2 !important}
-.margen-inf-md{margin-bottom: @cuadratin * 1 !important}
+.margen-inf-md{margin-bottom: @cuadratin * .8 !important}
 .margen-inf-lg{margin-bottom: @cuadratin * 1.5 !important}
 
 // Rellenos
+
+    // Completo
+.relleno-xs{&.responsivo{padding: @cuadratin / 2 !important}} // /6
+.relleno-sm{&.responsivo{padding: @cuadratin * 1.5 !important}} // /1.5
+.relleno-md{&.responsivo{padding: @cuadratin * 2 !important}} 
+.relleno-lg{&.responsivo{padding: @cuadratin * 3 !important}}
 
     // Laterales
 .relleno-horizontal{padding: 0 @cuadratin/2 !important}
@@ -737,6 +743,12 @@ box-shadow:         0px 20px 30px 27px rgba(249, 249, 249, 1);
 
 // Small screen / tablet
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+
+        // Completo
+    .relleno-xs{&.responsivo{padding: @cuadratin / 2 !important}} // /6
+    .relleno-sm{&.responsivo{padding: @cuadratin * 1.5 !important}} // /1.5
+    .relleno-md{&.responsivo{padding: @cuadratin * 2 !important}} 
+    .relleno-lg{&.responsivo{padding: @cuadratin * 3 !important}}
 
     .alto-xs{height: @cuadratin * 4;}
     .alto-sm{height: @cuadratin * 6}

@@ -86,17 +86,16 @@ title: Pyxis Framework - Maquetas
 
 <!-- Menú responsivo -->
 <div class="oculto-lg oculto-md oculto-sm">
-  <div class='fondo-negro textura-2'>
-    <div class='fondo-negro-fundido'>
+  <div class='fondo-negro'>
     <div class='pag menu-movil'>
       <div class='centrado bloque izquierda margen-der-xs logo en-linea'>
-        <h1 class='lg linea centrado sans'><a class='sans rojo centrado' href='{{ site.baseurl }}/maquetas/home'>e[ad]</a></h1>
+        <h1 class='sm linea centrado sans'><a class='sans rojo centrado' href='{{ site.baseurl }}/maquetas/home'>e[ad]</a></h1>
       </div>
-      <a href="#menu" class="menu-link rojo derecha"><i class="icn icn-lg icn-menu"></i></a>
-      <div class='izquierda ancho-completo relleno-inf-xs logo en-linea'>
+      <!--<div class='izquierda ancho-auto relleno-inf-xs logo en-linea'>
         <span class='sm sans bloque blanco'>Escuela de Arquitectura y Diseño</span>
         <span class='xs bloque izquierda sans blanco en-linea'>Pontificia universidad católica de Valparaíso</span>
-      </div>
+      </div>-->
+      <a href="#menu" class="menu-link rojo derecha"><i class="icn icn-lg icn-menu"></i></a>
     </div>
     <nav id="menu" class='lista-sin-estilo' role="navigation">
       <li><a class='sans blanco'>Escuela</a></li>
@@ -157,7 +156,6 @@ title: Pyxis Framework - Maquetas
         </ul>
       </li>
     </nav>
-  </div>
 </div>
 </div>
 
@@ -170,7 +168,28 @@ title: Pyxis Framework - Maquetas
   </ol>
   <div class="carousel-inner">
     <!-- item (la clase 'car-sm' corresponde al height de visibilidad) -->
-    <div class="item active car-sm">
+      <div class="item active car-sm">
+      <img class='ancho-completo absoluto' alt="Third slide" src="https://c1.staticflickr.com/1/81/231940814_ca6bd0139d_b.jpg">
+      <div class='pag sin-relleno cf h100'>
+      <div class='col-md-4 col-sm-6 h100 oculto-xs derecha cf'>
+          <a href='#'>
+            <div class='fondo-gris-blanco-trans absoluto abs-der abs-sup bloque alto-completo relleno'>
+              <h2 class='interletraje-negativo sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h2>
+              <p class='margen-sup-sm italica negro sombra-cabecera-blanco-xs'>A los alumnos indicados para el taller se les permitirá buscar las opciones diferentes si presentan noticiass sobre Valparaíso de los arquitectos Mauricio Puentes y Juan Purcell en FILSA [...]</p>
+              <span class='xs interletraje-xs fondo-blanco-trans sombra relleno-der-xs relleno-vertical-xs borde radio-md condensado derecha negro sombra-cabecera-blanco-xs'><i class='icn icn-usuario sin-interletraje relleno-der-xs borde icn-light radio-sup-izq-sm radio-inf-izq-sm relleno-izq-xs negro sombra-cabecera-blanco-xs'></i>Francesca Cambiaso</span>
+            </div>
+          </a>
+        </div>
+        <div class='oculto-md oculto-sm col-xs-12 h100 cf'>
+          <a href='#'>
+          <div class='fondo-gris-blanco-trans absoluto abs-der ancho-completo abs-inf bloque relleno'>
+            <h5 class='sm interletraje-negativo centrado sombra-cabecera-blanco-xs gruesa negro-fundido condensado'><i class='icn icn-noticias margen-der-xs justicado'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h5>
+          </div>
+          </a>
+        </div>
+    </div>
+    </div>
+    <div class="item car-sm">
       <img class='ancho-completo absoluto' alt="First slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/12/IMG_3945.jpg">
       <div class='pag sin-relleno cf h100'>
       <div class='col-md-4 col-sm-6 h100 oculto-xs derecha cf'>
@@ -276,7 +295,7 @@ title: Pyxis Framework - Maquetas
 <div class='pag sin-relleno gutter margen-sup-sm'>
   <h2 class='xs centrado gris margen-inf-md gris condensado fino interletraje-xs'><i class='icn icn-calendario icn-light margen-der-xs sin-interletraje'></i>Eventos</h2>
 
-    <div class='fila'>
+    <div class='fila margen-inf-sm'>
       <div class='col-md-6 col-sm-6 col-xs-12 gutter alto-sm auto margen-inf-sm'>
           <div class='fila'>
             <div class='col-lg-12 col-md-2 col-sm-12'>
@@ -354,16 +373,16 @@ title: Pyxis Framework - Maquetas
       <!-- 1 de 4 Columnas de noticias a lo largo -->
       <div class='col-md-4 col-sm-6 col-xs-12 margen-inf-sm h100'>
         <!-- Div que oculta el desborde de la imagen -->
-        <div class='fondo-blanco borde ocultar-desborde h100 radio-md sombra'>
+        <div class='borde ocultar-desborde h100 radio-md'>
           <div class='ocultar-desborde margen-inf-xs borde inf-lineal-xs alto-sm'>
             <a href='#'>
               <img class='w150 noticia' src="http://www.ead.pucv.cl/wp-content/uploads/2014/12/IMG_3945.jpg" alt="" class="ancho-maximo">
             </a>
           </div>
           <!-- Título, fecha de publicación, reseña de noticia -->
-          <div class='relleno-horizontal relleno-sup-xs tooltip-demo'>
-            <h4 class='xs sin-margen relleno-inf-xs centrado sombra-cabecera-claro-xs'><a class='condensado centrado negro-fundido gruesa' href='#'>Profesor participará en seminario “Concepción, de la frontera a la globalización”</a></h4>
-            <span class='centrado xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
+          <div class='relleno-sup-xs tooltip-demo'>
+            <h4 class='xs sin-margen relleno-inf-xs  sombra-cabecera-claro-xs'><a class='condensado  negro-fundido gruesa' href='#'>Profesor participará en seminario “Concepción, de la frontera a la globalización”</a></h4>
+            <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
               <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
                  <span class="icn-stack">
                   <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
@@ -378,16 +397,16 @@ title: Pyxis Framework - Maquetas
       <!-- 1 de 4 Columnas de noticias a lo largo -->
       <div class='col-md-4 col-sm-6 col-xs-12 margen-inf-sm h100'>
         <!-- Div que oculta el desborde de la imagen -->
-        <div class='fondo-blanco borde ocultar-desborde h100 radio-md sombra'>
+        <div class='borde ocultar-desborde h100 radio-md'>
           <div class='ocultar-desborde margen-inf-xs borde inf-lineal-xs alto-sm'>
             <a href='#'>
               <img class='w150 noticia' src="http://www.ead.pucv.cl/wp-content/uploads/2012/02/Vodudahue-1b.jpg" alt="" class="ancho-maximo">
             </a>
           </div>
             <!-- Título, fecha de publicación, reseña de noticia -->
-            <div class='relleno-horizontal relleno-sup-xs tooltip-demo'>
-            <h4 class='xs sin-margen relleno-inf-xs centrado sombra-cabecera-claro-xs'><a class='condensado centrado negro-fundido gruesa' href='#'>La naturaleza y su acción muestra la singularidad favorable</a></h4>
-            <span class='centrado xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
+            <div class='relleno-sup-xs tooltip-demo'>
+            <h4 class='xs sin-margen relleno-inf-xs  sombra-cabecera-claro-xs'><a class='condensado  negro-fundido gruesa' href='#'>La naturaleza y su acción muestra la singularidad favorable</a></h4>
+            <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
               <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
                <span class="icn-stack">
                 <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
@@ -402,16 +421,16 @@ title: Pyxis Framework - Maquetas
     <!-- 1 de 4 Columnas de noticias a lo largo -->
     <div class='col-md-4 col-sm-6 col-xs-12 h100'>
       <!-- Div que oculta el desborde de la imagen -->
-      <div class='fondo-blanco borde ocultar-desborde h100 radio-md sombra'>
+      <div class='borde ocultar-desborde h100 radio-md'>
         <div class='ocultar-desborde margen-inf-xs borde inf-lineal-xs alto-sm'>
           <a href='#'>
             <img class='w150 noticia' src="http://www.ead.pucv.cl/wp-content/uploads/2014/11/PERSPECTIVA-RENDER-2.jpg" alt="" class="ancho-maximo">
           </a>
         </div>
         <!-- Título, fecha de publicación, reseña de noticia -->
-        <div class='relleno-horizontal relleno-sup-xs tooltip-demo'>
-          <h4 class='xs sin-margen relleno-inf-xs centrado sombra-cabecera-claro-xs'><a class='condensado centrado negro-fundido gruesa' href='#'>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</a></h4>
-          <span class='centrado xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
+        <div class='relleno-sup-xs tooltip-demo'>
+          <h4 class='xs sin-margen relleno-inf-xs  sombra-cabecera-claro-xs'><a class='condensado  negro-fundido gruesa' href='#'>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</a></h4>
+          <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
             <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
                <span class="icn-stack">
                 <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
@@ -426,20 +445,20 @@ title: Pyxis Framework - Maquetas
  </div> <!-- fin de fila -->
 
   <!-- Fila de 3 noticias -->
-    <div class='fila alto-md margen-inf-md'>
+    <div class='fila alto-md'>
         <!-- 1 de 3 Columnas de noticias a lo largo -->
         <div class='col-md-4 col-sm-6 col-xs-12 margen-inf-sm h100'>
         <!-- Div que oculta el desborde de la imagen -->
-        <div class='fondo-blanco borde ocultar-desborde h100 radio-md sombra'>
+        <div class='borde ocultar-desborde h100 radio-md'>
           <div class='ocultar-desborde margen-inf-xs borde inf-lineal-xs alto-sm'>
             <a href='#'>
               <img class='w150 noticia' src="http://www.ead.pucv.cl/wp-content/uploads/2014/11/2014-11-11-18.29.59-1050x1400.jpg" alt="" class="ancho-maximo">
             </a>
           </div>
           <!-- Título, fecha de publicación, reseña de noticia -->
-          <div class='relleno-horizontal relleno-sup-xs tooltip-demo'>
-              <h4 class='xs sin-margen relleno-inf-xs centrado sombra-cabecera-claro-xs'><a class='condensado centrado negro-fundido gruesa' href='#'>Seminario Sustentabilidad en Chile: Experiencias locales para soluciones globales</a></h4>
-              <span class='centrado xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
+          <div class='relleno-sup-xs tooltip-demo'>
+              <h4 class='xs sin-margen relleno-inf-xs  sombra-cabecera-claro-xs'><a class='condensado  negro-fundido gruesa' href='#'>Seminario Sustentabilidad en Chile: Experiencias locales para soluciones globales</a></h4>
+              <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
                 <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
                  <span class="icn-stack">
                   <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
@@ -454,16 +473,16 @@ title: Pyxis Framework - Maquetas
         <!-- 1 de 3 Columnas de noticias a lo largo -->
         <div class='col-md-4 col-sm-6 col-xs-12 margen-inf-sm h100'>
           <!-- Div que oculta el desborde de la imagen -->
-          <div class='fondo-blanco borde ocultar-desborde h100 radio-md sombra'>
+          <div class='borde ocultar-desborde h100 radio-md'>
             <div class='ocultar-desborde margen-inf-xs borde inf-lineal-xs alto-sm'>
               <a href='#'>
                 <img class='w150 noticia' src="http://www.ead.pucv.cl/wp-content/uploads/2014/08/pizarra.jpg" alt="" class="ancho-maximo">
               </a>
             </div>
             <!-- Título, fecha de publicación, reseña de noticia -->
-            <div class='relleno-horizontal relleno-sup-xs tooltip-demo'>
-              <h4 class='xs sin-margen relleno-inf-xs centrado sombra-cabecera-claro-xs'><a class='condensado centrado negro-fundido gruesa' href='#'>Presentan libros sobre Valparaíso de los arquitectos Mauricio Puentes [...]</a></h4>
-              <span class='centrado xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
+            <div class='relleno-sup-xs tooltip-demo'>
+              <h4 class='xs sin-margen relleno-inf-xs  sombra-cabecera-claro-xs'><a class='condensado  negro-fundido gruesa' href='#'>Presentan libros sobre Valparaíso de los arquitectos Mauricio Puentes [...]</a></h4>
+              <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
                 <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
                  <span class="icn-stack">
                   <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
@@ -476,18 +495,18 @@ title: Pyxis Framework - Maquetas
           </div>
         </div>
         <!-- 1 de 3 Columnas de noticias a lo largo -->
-        <div class='col-md-4 col-sm-6 col-xs-12 margen-inf-sm h100'>
+        <div class='col-md-4 col-sm-6 col-xs-12 h100'>
           <!-- Div que oculta el desborde de la imagen -->
-          <div class='fondo-blanco borde ocultar-desborde h100 radio-md sombra'>
+          <div class='borde ocultar-desborde h100 radio-md'>
             <div class='ocultar-desborde margen-inf-xs borde inf-lineal-xs alto-sm'>
               <a href='#'>
                 <img class='w150 noticia' src="http://www.ead.pucv.cl/wp-content/uploads/2014/12/corte.jpg" alt="" class="ancho-maximo">
               </a>
             </div>
               <!-- Título, fecha de publicación, reseña de noticia -->
-            <div class='relleno-horizontal relleno-sup-xs tooltip-demo'>
-              <h4 class='xs sin-margen relleno-inf-xs centrado sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'>Venta de libros especializados en Artes Aplicadas – Ojoporojo Tienda</a></h4>
-              <span class='xs centrado relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
+            <div class='relleno-sup-xs tooltip-demo'>
+              <h4 class='xs sin-margen relleno-inf-xs  sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'>Venta de libros especializados en Artes Aplicadas – Ojoporojo Tienda</a></h4>
+              <span class='xs  relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
                 <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
                  <span class="icn-stack">
                   <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>

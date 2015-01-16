@@ -36,9 +36,49 @@
 // Index y Componentes
 
 #parallax-index {
-    height: auto;
+    height: 800px;
+    background-size: 100%;
     // Imagen de fondo: Constelación
     &.universo {
-        background: url(../img/universo.jpg) 50% 0 no-repeat fixed;
+        background: url(../img/universo.jpg) 100% 50% no-repeat fixed;
     }
 }   
+
+// Página Hitoria
+
+#parallax-historia{
+    height: 45vw;
+    width: 130%;
+
+    &.foto-1 {
+        width: 140%;
+        background: url(../img/fundacion.jpg) 140% 0% no-repeat fixed;
+    }
+    &.foto-2 {
+        width: 140%;
+        background: url('http://www.ead.pucv.cl/wp-content/uploads/2014/12/IMG_3945.jpg') 140% 0% no-repeat fixed;
+    }
+    &.foto-3 {
+        background: url('https://c2.staticflickr.com/6/5230/5818148143_6ce04bff4f_b.jpg') 140% 0% no-repeat fixed;
+    }
+}
+
+
+// --------------------------------------------------
+// diseño de utilidad responsive
+
+//  Extra Small screen / Phone
+@media(max-width: @screen-xs-max){
+}
+
+//  Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+}
+
+//  Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+}
+
+//  Large screen / wide desktop
+@media (min-width: @screen-lg){
+}

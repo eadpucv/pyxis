@@ -565,10 +565,8 @@ dl {
 .fecha-evento {
   font-family: @sans;
   padding: 0;
-  margin: @margen-lg * 2.5 @margen-lg 0 0;
-  font-size: @cuerpo-nav * 9.5;
-  letter-spacing: -@cuadratin-tercio;
-  line-height: inherit;
+  font-size: @cuerpo-nav * 6.5;
+  line-height: 0.9em;
 
   &.xs {
     font-size: @cuerpo-nav * 7;
@@ -883,7 +881,7 @@ span {
       &.no-responsivo{font-size: (@font-size-titulos-1)}
       //  Valores de cabecera:
       &.lg, &.grande, &.gigante { 
-        font-size: (@font-size-titulos-1 * 1.2);
+        font-size: (@font-size-titulos-1 * 1);
           &.no-responsivo{
             font-size: (@font-size-titulos-1 * 2);
           }
@@ -1066,6 +1064,33 @@ span {
       }
   }
 
+// Listas
+
+   ul, ol {
+      line-height: @interlinea;
+      font-size: @cuerpo * .9;
+      margin-bottom: @cuadratin;
+
+          //  Tamaños de Lista:
+
+      &.lg, &.grande { 
+        font-size: @cuerpo * 1.35;
+        line-height: 150%;
+      }
+      &.md, &.mediano {
+        font-size: @cuerpo * 1.2;
+        line-height: 150%;
+      }
+      &.sm, &.pequeno {
+        font-size: @cuerpo;
+        line-height: 150%;
+      }
+      &.xs, &.menudo {
+        font-size: @cuerpo * .75;
+        line-height: @interlinea * 1.1;
+      }
+  }
+
   //  código escrito:
 
   code {
@@ -1076,7 +1101,17 @@ span {
     line-height: @interlinea * .777;
     white-space: pre-wrap;
   }
+
+  //  Fecha
+
+.fecha-evento {
+  font-family: @sans;
+  padding: 0;
+  font-size: @cuerpo-nav * 3;
+  line-height: 0.9em;
+  }
 }
+
 
 //  Small screen / tablet
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
@@ -1326,6 +1361,33 @@ span {
           font-size: (@font-size-titulos-6 * .8);
         }
     }
+  }
+
+  //listas
+
+   ul, ol {
+      line-height: @interlinea;
+      font-size: @cuerpo;
+      margin-bottom: @cuadratin;
+
+          //  Tamaños de Lista:
+
+      &.lg, &.grande { 
+        font-size: @cuerpo * 1.35;
+        line-height: 150%;
+      }
+      &.md, &.mediano {
+        font-size: @cuerpo * 1.2;
+        line-height: 150%;
+      }
+      &.sm, &.pequeno {
+        font-size: @cuerpo;
+        line-height: 150%;
+      }
+      &.xs, &.menudo {
+        font-size: @cuerpo * .75;
+        line-height: @interlinea * 1.1;
+      }
   }
 
   //  código escrito:

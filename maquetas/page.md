@@ -88,17 +88,16 @@ title: Pyxis Framework - Maquetas
 
 <!-- Menú responsivo -->
 <div class="oculto-lg oculto-md oculto-sm">
-  <div class='fondo-negro textura-2'>
-    <div class='fondo-negro-fundido'>
+  <div class='fondo-negro'>
     <div class='pag menu-movil'>
       <div class='centrado bloque izquierda margen-der-xs logo en-linea'>
-        <h1 class='lg linea centrado sans'><a class='sans rojo centrado' href='{{ site.baseurl }}/maquetas/home'>e[ad]</a></h1>
+        <h1 class='sm linea centrado sans'><a class='sans rojo centrado' href='{{ site.baseurl }}/maquetas/home'>e[ad]</a></h1>
       </div>
-      <a href="#menu" class="menu-link rojo derecha"><i class="icn icn-lg icn-menu"></i></a>
-      <div class='izquierda ancho-completo relleno-inf-xs logo en-linea'>
+      <!--<div class='izquierda ancho-auto relleno-inf-xs logo en-linea'>
         <span class='sm sans bloque blanco'>Escuela de Arquitectura y Diseño</span>
         <span class='xs bloque izquierda sans blanco en-linea'>Pontificia universidad católica de Valparaíso</span>
-      </div>
+      </div>-->
+      <a href="#menu" class="menu-link rojo derecha"><i class="icn icn-lg icn-menu"></i></a>
     </div>
     <nav id="menu" class='lista-sin-estilo' role="navigation">
       <li><a class='sans blanco'>Escuela</a></li>
@@ -159,25 +158,23 @@ title: Pyxis Framework - Maquetas
         </ul>
       </li>
     </nav>
-  </div>
 </div>
 </div>
 
 <!-- Pag para page (para toda la página) -->
 <div class='pag page'>
-  <div class='fila'>
-    <div class='col-md-12'>
-      <!-- Breadcrumbs -->
-      <ul class='sin-relleno' id="breadcrumb">
-          <li><a href='#'><i class='icn icn-hogar'></i></a></li>
-          <li><a href='#'>Carreras y postgrados</a></li>
-          <li><a>Diseño Gráfico</a></li>
-      </ul>
-      <div class='bloque ancho-completo'>
-        	<h1 class='lg gruesa negro condensado sombra-cabecera-claro-sm margen-inf-md en-linea margen-der-xs'>Diseño Gráfico</h1>
-      </div>
-    </div>
+  <!-- Breadcrumbs -->
+  <ul class='sin-relleno margen-inf-xs' id="breadcrumb">
+    <li><a href='#'><i class='icn icn-hogar'></i></a></li>
+    <li><a href='#'>Carreras y postgrados</a></li>
+    <li><a>Diseño Gráfico</a></li>
+  </ul>
+  <div class='bloque ancho-completo'>
+    	<h1 class='lg gruesa negro condensado sombra-cabecera-claro-sm en-linea'>Diseño Gráfico</h1>
   </div>
+</div>
+
+<div class='pag sin-relleno gutter'>
   <div class='fila'>
     <div class='col-md-3 col-sm-4 oculto-xs alto-lg'>
       <!-- Sticky 1/8 -->
