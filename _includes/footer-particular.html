@@ -99,13 +99,16 @@ $('#tabla-contenido a').click(function (e) {
 </script>
 <script type="text/javascript">
   $(document).ready(function(){
-    $('body').localScroll(800);
+    $('body').localScroll(2000);
     //.parallax(xPosition, speedFactor, outerHeight) options:
     //xPosition - Horizontal position of the element
     //inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
     //outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
     $('#parallax, .ejemplo1, .ejemplo2, .ejemplo3, .universo').parallax("50%", 0.1, true);
-    $('#parallax-historia, .foto-1, .foto-2, .foto-3').parallax("50%", 0.3, true);
+    $('#parallax-historia, .foto-1, .foto-2, .foto-3, .foto-4').parallax("100%", 0.1, true);
+    $('#lala, .foto-5, .foto-6, .foto-7').parallax("100%", 0.1, true);
+    $('#lolo, .foto-8, .foto-9, .foto-10').parallax("0%", 0.1, true);
+
   })
 </script>
   <!-- Smooth Scoolling -->
