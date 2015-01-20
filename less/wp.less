@@ -1,88 +1,475 @@
-// Títulos y subtítulos
-// -------------------------
-//
-
-.entry-title {
-    margin: 0;
-    
-    &.especifico {
-        font-weight: 200;
-        font-size: 50px;
-        letter-spacing: -1px;
-        line-height: 55px;
+#carrusel-index, #carusel-portada{
+    //Carrusel de Home
+    .carousel{
+        .carousel-inner{
+            .car-sm{
+                img{
+                    .ancho-completo;
+                    .absoluto;
+                }
+                .pag {
+                    .cf;
+                    .h100;
+                    .oculto-xs {
+                        .h100;
+                        .derecha;
+                        .cf;
+                        a{
+                            div{
+                                .fondo-gris-blanco-trans;
+                                .absoluto;
+                                .abs-der;
+                                .abs-sup;
+                                .bloque;
+                                .alto-completo;
+                                .relleno;
+                                h2{
+                                    .negro-fundido;
+                                    .condensado;
+                                    .gruesa;
+                                    .sombra-cabecera-blanco-xs;
+                                    i{
+                                        .margen-der-xs;
+                                    }
+                                }
+                                p{
+                                    .italica;
+                                    .margen-sup-sm;
+                                    .sombra-cabecera-blanco-xs;
+                                }
+                                span{
+                                    .cond;
+                                    .negro;
+                                    .derecha;
+                                    .interletraje-xs;
+                                    .relleno-vertical-xs;
+                                    .relleno-der-xs;
+                                    .sombra;
+                                    .borde .radio-md;
+                                    i{
+                                        .negro;
+                                        .relleno-der-xs;
+                                        .relleno-izq-xs;
+                                        .icn-light;
+                                        .sombra-cabecera-blanco-xs;
+                                    }
+                                }
+                            }
+                            &:hover{
+                                h2{
+                                    .rojo;
+                                }
+                            }
+                        }
+                    }
+                    .oculto-md{
+                        .h100;
+                        .cf;
+                        a{
+                            div{
+                                .fondo-gris-blanco-trans;
+                                .absoluto;
+                                .abs-der;
+                                .abs-inf;
+                                .bloque;
+                                .relleno;
+                                .ancho-completo;
+                                h5{
+                                    .condensado;
+                                    .centrado;
+                                    .gruesa;
+                                    .sombra-cabecera-blanco-xs;
+                                    .negro-fundido;
+                                    i{
+                                        .margen-der-xs;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-
-    &.sobre-imagen{
-        display: block;
-        position: absolute;
-        bottom: 100px;
-        font-weight: 200;
-        font-size: 65px;
-        color: @blanco;
-        z-index: 11;
-        letter-spacing: -2px;
-        left: 260px;
-    }
-
-    &.portada {
-        letter-spacing: -1px;
-        display: inline-block;
-        text-align: right;
-        padding-right: 30px;
-        //margin: 0 40px 20px 10px;
-        border-right: 3px solid @rojo;
-    }
-
-     &.generico {
-         font-size: 18px;
-         text-transform: uppercase;
-         letter-spacing: 3px;
-         font-weight: 300;
-         padding-left: 10px;
-     }
 }
 
-.seccion{
-    text-align: center;
-    position: relative;
-    margin: 0px;
-    padding: 0 0 30px 0;
-
-    a {
-        h5 {
-            &:hover {
-                color: @rojo;
-                cursor: pointer;
+#index, #tag{
+    //titulos o encabezados de página
+    .titulo-seccion {
+        .centrado;
+        .fino;
+        .interletraje-xs;
+        .condensado;
+        .gris;
+        i{
+            .margen-der-xs;
+        }
+        a{
+            .condensado;
+            .gris;
+            i{
+                .margen-der-xs;
             }
         }
     }
 
-    h5 {
-        color: fade(@gris-oscuro, 75);
-        letter-spacing: 3px;
-        font-size: 16px;
-        text-transform: uppercase;
-        position: relative;
-        padding: 0 45px;
-        display: inline;
-        font-weight: 300;
-
-        &:before,
-        &:after{
-            content: "";
-            display: inline-block;
-            position: relative;
-            width: 25vw;
-            height: 2px;
-            top: -3px;
+// Ejemplo de evento
+.evento{
+    .fecha{
+        .izquierda; 
+        .fondo-blanco; 
+        .sombra; 
+        .borde; 
+        .radio-sup-der-sm; 
+        .radio-inf-der-sm;
+        .izq-lineal-sm; 
+        .borde-rojo; 
+        .margen-inf-sm; 
+        .ancho-completo;
+        span, p{
+            .cond;
+            .gruesa; 
+            .negro-fundido; 
+            .centrado; 
+            .relleno-xs;
         }
-
-
-        i{
-            font-size: 16px;
+    }
+    .contenido{
+        h1, h2, h3, h4, h5, h6 {
+            .cond;
+            .gruesa;
+            a{
+                .cond;
+                .gruesa;
+            }
+        }
+        .entry-details{
+            .italica;
+            .relleno-inf-sm;
+        }
+        p{
+            .sans;
         }
     }
 }
+
+// Ejemplo de noticia
+    .noticia{
+        .cabecera{
+            .alto-xs;
+            .margen-inf-xs;
+            .borde;
+            .radio-md;
+            .ocultar-desborde;
+            a{
+                img{
+                    .w150;
+                    .margen-sup-negativo;
+                    .transition(.2s ease all);
+                }
+                &:hover{
+                    img{
+                        .relleno-der-sm;
+                        .transition(.2s ease all);
+                    }
+                }
+            }
+        }
+        h1, h4, h2, h3, h4, h5, h6{
+            
+            .sombra-cabecera-claro-xs;
+            .relleno-inf-xs;
+            a{
+                .condensado; 
+                .gruesa;
+                .negro-fundido;
+                &:hover{
+                    .negro;
+                }
+            }
+        }
+        .entry-details, .datos-publicacion{
+            .rojo; 
+            .italica; 
+            .borde; 
+            .sup-lineal-xs;
+            .inf-lineal-xs;
+            .relleno-vertical-xs;
+            a{
+                .en-linea;
+                .icn-cuadrolleno{
+                    .gris-blanco;
+                }
+                .icn-lapiz{
+                    .negro-fundido;
+                }
+            }
+        }
+        p{
+            .sans;
+            .margen-sup-xs;
+        }
+    }
+// Ejemplo de publicacion
+   .publicacion{
+        .categoria{
+            i{
+                .margen-der-xs; 
+                .fondo-blanco;
+                .linea-lateral; 
+                .relleno-xs; 
+                .icn-light; 
+                .borde; 
+                .radio-sup-der-sm; 
+                .radio-inf-der-sm;
+                .sombra; 
+                .negro;
+            }
+            h1, h4, h2, h3, h4, h5, h6{
+                .altas; 
+                .negro-fundido; 
+                .en-linea; 
+                .relleno-izq-xs; 
+                .interletraje-xs; 
+                .sombra-cabecera-claro-xs;
+                .gruesa;
+                .condensado;
+            }
+            &:hover{
+                h1, h4, h2, h3, h4, h5, h6{
+                    .gris-oscuro !important;
+                }
+            }
+        }
+        h1, h4, h2, h3, h4, h5, h6{
+            .cond;
+            .gruesa;
+            a{
+                .cond;
+                .gruesa;
+            }
+        }
+        .entry-details{
+            .italica;
+            .relleno-sup-xs;
+        }
+        p{
+            .sans; 
+        }
+    }
+    .entry-title{
+        &.especifico{
+            .gruesa; 
+            .negro-fundido; 
+            .condensado;
+            .sombra-cabecera-claro-sm;
+        }
+    }
+}
+// Lectura de evento
+#single-event{
+    .fecha{
+        .borde; 
+        .izq-lineal-sm;
+        .relleno-vertical-sm; 
+        .borde-rojo; 
+        .margen-inf-xs; 
+        .sombra; 
+        .radio-sup-der-md; 
+        .radio-inf-der-md; 
+        .fondo-blanco;
+        .margen-der-md;
+        p.dia{
+            .rojo;
+            .centrado !important;
+        }
+        span.mes{
+            .condensado; 
+            .rojo;
+            .interletraje-sm;
+        }
+    }
+    .fecha-movil{
+        .borde; 
+        .izq-lineal-sm; 
+        .borde-rojo; 
+        .radio-sup-der-md; 
+        .radio-inf-der-md;
+        .relleno-vertical-xs; 
+        .margen-der-sm; 
+        .sombra; 
+        .fondo-blanco;
+        .dia{
+            .rojo;
+            .centrado;
+        }
+        .mes{
+            .condensado;
+            .rojo;
+            .interletraje-sm;
+        }
+    }
+    h1, h4, h2, h3, h4, h5, h6 .entry-title{
+         .gruesa; 
+         .condensado; 
+         .ancho-auto;
+         .negro-fundido
+    }
+}
+
+#page{
+    #ejemplo-sticky{
+        ul{
+            li{
+                a{
+                    h6{
+                        .negro; 
+                        .condensado; 
+                        .gruesa; 
+                        .texto-derecha; 
+                        .bloque; 
+                        .relleno-der-xs;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#page-full{
+    h1, h4, h2, h3, h4, h5, h6 .title{
+        .negro-fundido; 
+        .italica; 
+        .relleno-inf-sm;
+    }
+    .entry-title{
+        .absoluto; 
+        .margen-inf-md; 
+        .relleno-inf-lg; 
+        .abs-der; 
+        .abs-izq; 
+        .abs-inf; 
+        .interletraje-xs; 
+        .en-linea; 
+        .ancho-auto; 
+        .centrado; 
+        .condensado; 
+        .gruesa; 
+        .sombra-cabecera-neutro-xs;
+        .blanco;
+        font-style: normal;
+    }
+    .subtitulo{
+        .absoluto; 
+        .relleno-inf-lg;
+        .abs-der; 
+        .sombra-cabecera-neutro-xs; 
+        .interletraje-md; 
+        .abs-izq; 
+        .abs-inf; 
+        .en-linea; 
+        .ancho-auto; 
+        .semi-gruesa;
+        .centrado; 
+        .sans; 
+        .blanco;
+        .altas;
+        font-style: normal;
+    }
+    p{
+        .bloque; 
+        .margen-auto; 
+        .w55; 
+        .negro; 
+        .relleno-inf-sm;
+    }
+    span.wp-caption-text{
+        .sans; 
+        .blanco; 
+        .italica; 
+        .w45; 
+        .relleno-sup-lg; 
+        .margen-sup-lg; 
+        .sombra-cabecera-oscuro-xs;
+        &.derecha{
+            .derecha; 
+            .texto-derecha; 
+        }
+        &.referencia{
+            .condensado !important;
+            font-style: normal;
+        }
+    }
+    .personaje{
+        img{
+            .ancho-completo;
+            .margen-inf-xs;
+            .borde; 
+            .radio-md;
+        }
+        h1, h4, h2, h3, h4, h5, h6 .title{
+            .interletraje-sm; 
+            .sans; 
+            .altas; 
+            .margen-sup-xs; 
+            .derecha; 
+            .negro;
+        }
+        span{
+            .texto-derecha; 
+            .italica;
+        }
+        p{
+            .bloque; 
+            .negro; 
+            .w68; 
+            .relleno-inf-sm;
+            margin: 0 !important;
+        }
+    }
+}
+
+#sidebar{
+    .seccion{
+        .interletraje-xs;
+        .negro; 
+        .condensado; 
+        .gruesa; 
+        .altas;
+    }
+    ul{
+        li{
+            .relleno-vertical-xs; 
+            .borde; 
+            .inf-lineal-xs; 
+            .rojo;
+            &:first-child{
+                .borde;
+                .sup-lineal-xs;
+            }
+            a{
+                .sans;
+                .semi-gruesa;
+            }
+        }
+    }
+}
+
+.entry-title {
+    .negro-fundido; 
+    .gruesa; 
+    .condensado;
+}
+
+.entry-details{
+    .italica;
+}
+
+
+// Títulos y subtítulos
+// -------------------------
+//
+
 
 // Post en Gamma (estilos de Gamma)
 
@@ -158,18 +545,6 @@
 .e-content, .p-summary, .p-name {
     width: 100%;
     margin: 0 auto;
-}
-
-// Caption
-
-.wp-caption-text {
-    border-left: 2px solid @rojo;
-    display: inline-block;
-    font-size: 11px !important;
-    font-style: italic !important; 
-    line-height: 16px !important;
-    margin: 5px 0 15px !important;
-    padding: 0 0 0 10px !important;
 }
 
 
