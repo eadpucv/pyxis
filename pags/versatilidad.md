@@ -10,109 +10,15 @@ intro: Texto sobre versatilidad
         <div id='sub-componentes'>
         <div class='pag sin-relleno'>
             <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
-                <li class="active"><a id='subiendo-1' class='condensado' href="#parametros" role="tab" data-toggle="tab">Parámetros</a></li>
-                <li><a id='subiendo-2' class='condensado' href="#maquetas" role="tab" data-toggle="tab">Maquetas</a></li>
+                <li class="active"><a id='subiendo-1' class='condensado' href="#maquetas" role="tab" data-toggle="tab">Maquetas</a></li>
+                <li><a id='subiendo-2' class='condensado' href="#parametros" role="tab" data-toggle="tab">Parámetros</a></li>
                 <li class='subir'><a href="#topbar"><i class="icn icn-imagen"></i></a></li>
             </ul>
         </div>
     </div>
 
     <div class="tab-content margen-sup">
-    <div class="tab-pane fade in active" id="parametros">
-        <a class='btn btn-alerta' href='{{ site.baseurl }}/maquetas/page'>Ir a maquetas</a>
-
-    <!-- Menú dropdown -->
-    <div class="oculto-xs">
-      <div class='pag sin-relleno margen-sup-sm margen-inf-xs'>
-      <a href='{{ site.baseurl }}/maquetas/home'>
-      <img class='ancho-lg' alt="Third slide" src="{{ site.baseurl }}/img/logo-ead-pucv.png">
-      </a>
-          <ul class="nav nav-pills ">
-            <li class="dropdown">
-              <a href="#" data-toggle="dropdown" role="button" id="drop4" class="dropdown-toggle negro">Escuela<b class="caret"></b></a>
-                  <ul aria-labelledby="drop4" role="menu" class="dropdown-menu" id="menu1">
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Historia</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Amereida</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Campus</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Cuerpo académico</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Autoridades</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Noticias</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Agenda</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Información de docencia</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Wiki Casiopea</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Prensa</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Contacto</a></li>
-                  </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Carreras & Postgrados<b class="caret"></b></a>
-                  <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu2">
-                    <li role="presentation"><a href="{{ site.baseurl }}/maquetas/page" tabindex="-1" role="menuitem">Arquitectura</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Diseño gráfico</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Diseño industrial</a></li>
-                    <li class="divider" role="presentation"></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Magister Nautico & Marítimo</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Magister Ciudad & Territorio</a></li>
-                  </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Estudiantes<b class="caret"></b></a>
-                  <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Pregrado</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Postgrado</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Intercambio estudiantil</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Becas y ayudas estudiantiles</a></li>
-                  </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Admisión<b class="caret"></b></a>
-                  <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Cuerpo coordinador</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Asuntos estudiantiles</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Estudia en el extranjero</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Servicios e[ad]</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Bolsa de trabajo</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Ex-alumnos</a></li>
-                  </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Extensión<b class="caret"></b></a>
-                  <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Archivo histórico J.V.A</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Ediciones e[ad]</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Concursos</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Investigación</a></li>
-                  </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle negro">Amereida<b class="caret"></b></a>
-                  <ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Taller de amereida</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Ciudad abierta</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Travesías</a></li>
-                    <li role="presentation"><a href="#" tabindex="-1" role="menuitem">Biblioteca Constel</a></li>
-                  </ul>
-            </li>
-          </ul>
-      </div>
-    </div>
-
-    <!-- Menú responsivo -->
-    <div class="oculto-lg oculto-md oculto-sm">
-      <div class='pag menu-movil'>
-        <a href='{{ site.baseurl }}/'>
-          <img class='ancho-lg' alt="Third slide" src="{{ site.baseurl }}/img/logo-ead-pucv.png">
-        </a>
-        <a href="#menu" class="menu-link derecha"><i class="icn icn-menu"></i> </a>
-        </div>
-      <nav id="menu" class='lista-sin-estilo margen-inf-sm' role="navigation">
-        <li class='margen-sup'><a class='sans' href='{{ site.baseurl }}/pags/tipografia'>Escuela</a></li>
-        <li><a class='sans' href='{{ site.baseurl }}/pags/grilla'>Carreras & postgrados</a></li>
-        <li><a class='sans' href='{{ site.baseurl }}/pags/interaccion'>Estudiantes</a></li>
-        <li><a class='sans' href='{{ site.baseurl }}/pags/color'>Admisión</a></li>
-        <li><a class='sans' href='{{ site.baseurl }}/pags/iconografia'>Amereida</a></li>
-      </nav>
-    </div>
+    <div class="tab-pane fade" id="parametros">
 
     <h4 class='pizarra gruesa'>Márgenes</h4>
 
@@ -466,25 +372,25 @@ intro: Texto sobre versatilidad
             </code>
     
     </div> <!--fin de tab-pane-->
-<div class="tab-pane fade" id="maquetas">
+<div class="tab-pane active fade in" id="maquetas">
 
 <h4 class='pizarra gruesa'>Diseño sitio e[ad]</h4>
 
-<p>Los enlaces presentes a continuación resguardan el primer proyecto web estandarizado únicamente con Pyxis Framework y <a href=''>Stampa</a> en una serie de maquetas navegables y que corresponden al finiquito del diseño del sitio oficial de la <a href='#'>e[ad]</a> de la <a href='#'>Pontificia Universidad Católica de Valparaíso</a>. El proceso de trabajo contempla como primer objeto la <i>arquitectura de información</i> graficada en su mapa correspondiente. De manera ulterior, diez plantillas fueron diseñadas respondiendo a la demanda de contenidos y su debida lectura, además de compatibilizar con <a href='#'>Wordpress</a> como el sistema de gestión (<a href='#'>CSM</a>) utilizado por defecto.</p>
+<p>Los enlaces presentes a continuación resguardan el primer proyecto web estandarizado únicamente con Pyxis Framework y <a href='http://eadpucv.github.io/stampa/'>Stampa</a> en una serie de maquetas navegables y que corresponden al finiquito del diseño del sitio oficial de la <a href='http://www.ead.pucv.cl/'>e[ad]</a> de la <a href='http://www.ucv.cl/'>Pontificia Universidad Católica de Valparaíso</a>. El proceso de trabajo contempla como primer objeto la <i>arquitectura de información</i> graficada en su mapa correspondiente. De manera ulterior, diez plantillas fueron diseñadas respondiendo a la demanda de contenidos y su debida lectura, además de compatibilizar con <a href='#'>Wordpress</a> como el sistema de gestión (<a href='http://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_contenidos'>CSM</a>) utilizado por defecto.</p>
 <h5 class='pizarra gruesa'>Arquitectura de información</h5>
 <a href=''><img class='ancho-completo borde radio-md' src='http://127.0.0.1:4000/img/arq-info-ead.jpg'></a>
 <h5 class='pizarra gruesa margen-sup-sm'>Enlaces a maquetas</h5>
 <ol class='sm'>
-    <li class='sans'><a class='sans' href='{{ site.baseurl }}/maquetas/home'>Home</a></li>
-    <li class='sans'><a class='sans' href='{{ site.baseurl }}/maquetas/historia'>Historia</a></li>
-    <li class='sans'><a class='sans' href='{{ site.baseurl }}/maquetas/portadilla'>Portadilla</a></li>
-    <li class='sans'><a class='sans' href='{{ site.baseurl }}/maquetas/page'>Page</a></li>
-    <li class='sans'><a class='sans' href='{{ site.baseurl }}/maquetas/evento'>Evento</a></li>
-    <li class='sans'><a class='sans' href='{{ site.baseurl }}/maquetas/post'>Post</a></li>
-    <li class='sans'><a class='sans' href='{{ site.baseurl }}/maquetas/portada-noticias'>Portada de noticias</a></li>
-    <li class='sans'><a class='sans' href='{{ site.baseurl }}/maquetas/archive'>Noticias por categoría</a></li>
-    <li class='sans'><a class='sans' href='{{ site.baseurl }}/maquetas/portada-info-docencia'>Portada de información de docencia</a></li>
-    <li class='sans'><a class='sans' href='{{ site.baseurl }}/maquetas/info-docencia'>Información de docencia</a></li>
+    <li class='sans'><a class='sans' target="_blank" href='{{ site.baseurl }}/maquetas/home'>Home</a></li>
+    <li class='sans'><a class='sans' target="_blank" href='{{ site.baseurl }}/maquetas/historia'>Historia</a></li>
+    <li class='sans'><a class='sans' target="_blank" href='{{ site.baseurl }}/maquetas/portadilla'>Portadilla</a></li>
+    <li class='sans'><a class='sans' target="_blank" href='{{ site.baseurl }}/maquetas/page'>Page</a></li>
+    <li class='sans'><a class='sans' target="_blank" href='{{ site.baseurl }}/maquetas/evento'>Evento</a></li>
+    <li class='sans'><a class='sans' target="_blank" href='{{ site.baseurl }}/maquetas/post'>Post</a></li>
+    <li class='sans'><a class='sans' target="_blank" href='{{ site.baseurl }}/maquetas/portada-noticias'>Portada de noticias</a></li>
+    <li class='sans'><a class='sans' target="_blank" href='{{ site.baseurl }}/maquetas/archive'>Noticias por categoría</a></li>
+    <li class='sans'><a class='sans' target="_blank" href='{{ site.baseurl }}/maquetas/info-docencia'>Información de docencia</a></li>
+    <li class='sans'><a class='sans' target="_blank" href='{{ site.baseurl }}/maquetas/portada-info-docencia'>Portada de información de docencia</a></li>
 </ol>
 
 </div>

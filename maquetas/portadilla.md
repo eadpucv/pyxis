@@ -146,10 +146,10 @@ title: Pyxis Framework - Maquetas
     </div>
   </div>
       <!-- botones adelante y atrás -->
-      <a data-slide="prev" data-target='#carousel-home' href="#carousel-2" class="left carousel-control">
+      <a data-slide="prev" data-target='#carousel-home' href="#carousel-2" class="left portadilla carousel-control">
         <span class="icn icn-navizquierda"></span>
       </a>
-      <a data-slide="next" data-target='#carousel-home' href="#carousel-2" class="right carousel-control">
+      <a data-slide="next" data-target='#carousel-home' href="#carousel-2" class="right portadilla carousel-control">
         <span class="icn icn-nav"></span>
       </a>
 </div> <!-- Fin de Carousel -->
