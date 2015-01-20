@@ -36,9 +36,79 @@
 // Index y Componentes
 
 #parallax-index {
-    height: auto;
+    height: 800px;
+    background-size: 100%;
     // Imagen de fondo: Constelación
     &.universo {
-        background: url(../img/universo.jpg) 50% 0 no-repeat fixed;
+        background: url(../img/universo.jpg) 100% 50% no-repeat fixed;
     }
 }   
+
+// Página Hitoria
+
+#parallax-historia{
+    height: 46vw;
+    background-size: 120% !important;
+
+    &.foto-1 {
+        background: url(https://c4.staticflickr.com/8/7095/7165677888_176347af41_h.jpg) 100% 0% no-repeat fixed;
+    }
+    &.foto-2 {
+        background: url('https://c4.staticflickr.com/8/7139/7504543254_3ce32d2d24_h.jpg') 100% 80% no-repeat fixed;
+    }
+    &.foto-3 {
+        background: url('https://c2.staticflickr.com/8/7134/7514843956_0800eb803c_h.jpg') 100% 0% no-repeat fixed;
+    }
+    &.foto-4 {
+        background: url('https://c1.staticflickr.com/9/8147/7504036374_657f81ec78_h.jpg') 100% 0% no-repeat fixed;
+    }
+}
+
+#lala{
+    height: 46vw;
+    background-size: 120% !important;
+
+    &.foto-5 {
+        background: url('https://c4.staticflickr.com/4/3750/13877449393_cd7c458ec5_h.jpg') 100% 40% no-repeat fixed;
+    }
+    &.foto-6 {
+        background: url(https://c4.staticflickr.com/4/3818/13877400285_1347e68a62_h.jpg) 100% 0% no-repeat fixed;
+    }
+    &.foto-7 {
+        background: url(https://c3.staticflickr.com/3/2805/9293649147_e64ef8ef18_h.jpg) 100% 0% no-repeat fixed;
+    }
+}
+
+#lolo{
+    height: 46vw;
+    background-size: 120% !important;
+
+    &.foto-8 {
+        background: url('https://c1.staticflickr.com/1/1/127240655_69d8aa14c5_b.jpg') 50% 50% no-repeat fixed;
+    }
+    &.foto-9 {
+        background: url(https://c4.staticflickr.com/4/3745/13744665683_1d0e974a12_h.jpg) 100% 0% no-repeat fixed;
+    }
+    &.foto-10 {
+        background: url(../img/travesias.jpg) 40% 0% no-repeat fixed;
+    }
+}
+
+// --------------------------------------------------
+// diseño de utilidad responsive
+
+//  Extra Small screen / Phone
+@media(max-width: @screen-xs-max){
+}
+
+//  Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+}
+
+//  Medium screen / desktop
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+}
+
+//  Large screen / wide desktop
+@media (min-width: @screen-lg){
+}

@@ -39,15 +39,25 @@
 				}
 			}
 		}
+		
+		li.active a{
+			h6{
+			color: @rojo;
+			border-right: 2px solid @rojo;
+				i{
+					color: @rojo !important;
+				}
+			}
+		}
 	}
 
   	#ejemplo-sticky-2, #ejemplo-sticky-3, #ejemplo-sticky-4, #ejemplo-sticky-5, #ejemplo-sticky-6, #ejemplo-sticky-7, #ejemplo-sticky-8{
 		width: 210px;
 		a{
 			h6{
-		color: @gris-blanco;
+			color: @negro-fundido;
 				i{
-					color: @gris-blanco !important;
+					color: @negro-fundido !important;
 				}
 			}
 		}
@@ -65,9 +75,58 @@
 	#meta-barra, #meta-barra-movil{
 		width: 100%;
 		z-index: 200;
-		background-color: @negro;
+		background-color: @negro-fundido;
+		height: 35px;
+		ul{
+			li{
+				&:first-child{
+					a{
+					.transition(.1s ease all);
+					color: @blanco !important;
+					font-size: 11.25px;
+					}
+				}
+				&:last-child{
+					a{
+						i{
+							.transition(.3s ease all);
+							color: @blanco;	
+						}
+					}
+				}	
+			}
+		}
 	}
-} // Fin de Sticky-wrapper
+	
+	#boton-editar{
+		i{
+			top: -42px !important;
+			right: 8px;
+			color: @blanco;
+			font-size: 12px;
+			position: absolute !important;
+		}
+	}
+	#boton-editar.triangulo{
+		border-top: 50px solid @rojo;
+		.transition(.5s ease all);
+	}	
+	// Sticky en post
+	#fondo-publicacion{
+		display: block;
+		.transition(.4s ease all);
+
+		h1{
+			display: block !important;
+			.transition(.4s ease all);
+		}
+
+		#breadcrumb{
+			margin-top: 30px !important;
+		}
+	}
+}
+// Fin de Sticky-wrapper
 
 // * Sticky en funcionamiento *
 .is-sticky {
@@ -90,9 +149,7 @@
 				background-color: @blanco;
 
 				&.active > a{
-					
 						background-color: @blanco !important;
-					
 				}
 
 				&:last-child{
@@ -106,9 +163,9 @@
 	#ejemplo-sticky{
 		a{
 			h6{
-			color: @negro-fundido;
+			color: @negro;
 				i{
-					color: @negro-fundido !important;
+					color: @negro !important;
 				}
 			}
 		}
@@ -116,9 +173,9 @@
 	#ejemplo-sticky-2, #ejemplo-sticky-3, #ejemplo-sticky-4, #ejemplo-sticky-5, #ejemplo-sticky-6, #ejemplo-sticky-7, #ejemplo-sticky-8{
 		a{
 			h6{
-			color: @negro-fundido;
+			color: @rojo;
 				i{
-					color: @negro-fundido !important;
+					color: @rojo !important;
 				}
 			}
 		}
@@ -129,19 +186,49 @@
 		background-color: @negro-fundido;
 		width: 100%;
 		a{
-			color: @blanco !important;	
+			color: @blanco !important;
 		}
-			ul{
-				li{
-					&:last-child{
-						a{
-							i{
-								color: @rojo !important;	
-							}
-						}
-					}	
+		ul{
+			li{
+				&:first-child{
+					a{
+					.transition(.2s ease all);
+					color: @rojo !important;
+					}
 				}
+				&:last-child{
+					a{
+						i{
+							color: @rojo !important;	
+						}
+					}
+				}	
 			}
+		}
+	}
+	#boton-editar{
+		i{
+			color: @rojo;
+		}
+	}
+	#boton-editar.triangulo{
+		border-top: 50px solid @blanco;
+		.transition(.3s ease all);
+	}
+	// Sticky en post
+	#fondo-publicacion{
+		display: none;
+		.transition(.7s ease all) !important;
+
+		h1{
+			display: none !important;
+			.transition(.3s ease all);
+		}
+
+		aside{
+			display: none !important;
+			.transition(.8s ease all) !important;
+		}
 	}
 }
 
@@ -218,6 +305,60 @@
 		// Sticky como ejemeplo en Componente "Javascript"
 		#ejemplo-sticky, #ejemplo-sticky-2, #ejemplo-sticky-3, #ejemplo-sticky-4, #ejemplo-sticky-5, #ejemplo-sticky-6, #ejemplo-sticky-7, #ejemplo-sticky-8{
 			width: 260px !important;
+		}
+	}
+	.sticky-wrapper{
+		// Meta-barra dispuesta para maquetas de "Gamma"
+		#meta-barra, #meta-barra-movil{
+			width: 100%;
+			z-index: 200;
+			background-color: @negro;
+			ul{
+				li{
+					&:first-child{
+						a{
+						.transition(.1s ease all);
+						color: @blanco !important;
+						font-size: 1vw;
+						}
+					}
+					&:last-child{
+						a{
+							i{
+								.transition(.3s ease all);
+								color: @blanco;	
+							}
+						}
+					}	
+				}
+			}
+		}
+	}
+	.is-sticky {
+		// Meta-barra dispuesta para maquetas de "Gamma"
+		#meta-barra, #meta-barra-movil{
+			width: 100%;
+			z-index: 200;
+			background-color: @negro;
+			ul{
+				li{
+					&:first-child{
+						a{
+						.transition(.2s ease all);
+						color: @rojo !important;
+						font-size: 1.2vw;
+						}
+					}
+					&:last-child{
+						a{
+							i{
+								.transition(.3s ease all);
+								color: @rojo;	
+							}
+						}
+					}	
+				}
+			}
 		}
 	}
 }
