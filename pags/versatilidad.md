@@ -378,7 +378,7 @@ intro: Texto sobre versatilidad
 
 <p>Los enlaces presentes a continuación resguardan el primer proyecto web estandarizado únicamente con Pyxis Framework y <a href='http://eadpucv.github.io/stampa/'>Stampa</a> en una serie de maquetas navegables y que corresponden al finiquito del diseño del sitio oficial de la <a href='http://www.ead.pucv.cl/'>e[ad]</a> de la <a href='http://www.ucv.cl/'>Pontificia Universidad Católica de Valparaíso</a>. El proceso de trabajo contempla como primer objeto la <i>arquitectura de información</i> graficada en su mapa correspondiente. De manera ulterior, diez plantillas fueron diseñadas respondiendo a la demanda de contenidos y su debida lectura, además de compatibilizar con <a href='#'>Wordpress</a> como el sistema de gestión (<a href='http://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_contenidos'>CSM</a>) utilizado por defecto.</p>
 <h5 class='pizarra gruesa'>Arquitectura de información</h5>
-<a href=''><img class='ancho-completo borde radio-md' src='http://127.0.0.1:4000/img/arq-info-ead.jpg'></a>
+<a href=''><img class='ancho-completo borde radio-md' src='{{ site.baseurl }}/img/arq-info-ead.jpg'></a>
 <h5 class='pizarra gruesa margen-sup-sm'>Enlaces a maquetas</h5>
 <ol class='sm'>
     <li class='sans'><a class='sans' target="_blank" href='http://eadpucv.github.io/pyxis/maquetas/home/'>Home</a></li>
