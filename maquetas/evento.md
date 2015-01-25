@@ -15,10 +15,12 @@ title: Pyxis Framework - Maquetas
   		<p class='dia sin-margen'>12</p>
   		<span class='mes md centrado sin-relleno'>Diciembre</span>
   	</div>
+    <!-- fecha para móviles -->
   	<div class='oculto-lg oculto-md oculto-sm col-xs-3 fecha-movil'>
   		<p class='dia sin-margen relleno-sup-xs'>12</p>
   		<span class='mes xs centrado sin-relleno relleno-inf-xs'>Diciembre</span>
   	</div>
+    <!-- fin fecha móviles -->
   	<div class='col-md-9 col-sm-9 col-xs-12'>
       <div class='fila'>
         <h2 class='entry-title md'>Jalón Cinematográfico para las aulas de todos los participantes</h2>

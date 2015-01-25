@@ -44,6 +44,7 @@ title: Pyxis Framework - Maquetas
 		<h4 class='xs subtitulo'>Reseña biográfica</h4>
 	</div>
 	<div class='pag'>
+		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
 				<img src='/img/fundador1.jpg'>
@@ -55,6 +56,7 @@ title: Pyxis Framework - Maquetas
 				<p class='sm'>Alberto Cruz Covarrubias, destacado arquitecto chileno y teórico de la arquitectura, nace en Santiago de Chile en 1917. Ingresa a la Facultad de Arquitectura de la Universidad Católica de Chile, donde recibe su título de arquitecto en 1939. Entre 1940 y 1942 se desempeña en una oficina profesional, asociado con los arquitectos Jorge Elton y J. López, realizando encargos de viviendas en distintos lugares del país. Durante este último año se integra como profesor ayudante del Taller de Composición Decorativa en la Facultad de Arquitectura de la Universidad Católica de Chile. En conjunto con el arquitecto Alberto Piwonka, dan un giro al sentido y metodología de dicho taller, creando el “Curso del Espacio”, que debido a su fundamento y desarrollo de la actividad del curso, incidiría más tarde en la modificación de la enseñanza clásica propia de la Facultad. En 1949, participa en la reestructuración total del plan de estudios.</p>
 			</div>
 		</div>
+		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
 				<img src='/img/fundador2.jpg'>
@@ -66,6 +68,7 @@ title: Pyxis Framework - Maquetas
 				<p class='sm'>Estudió en la Scuola Italiana de Buenos Aires y posteriormente cursó dos años de Economía, sin llegar a terminar. En su lugar comenzó una singular trayectoria dedicada a la poesía. A los 21 años, junto a Gerardo Mello Mourao, Abdias do Nascimento, Efrain Bo, Raul Young, Napoleon López F, forman una alianza poética “La Santa Hermandad de la Orquídea”. En 1967 Iommi encabezó el movimiento de la reforma universitaria en Valparaíso, el que, en diversas variantes, se extiende al resto del país. Tras la llegada de Salvador Allende al gobierno en 1970, Iommi y sus amigos se instalaron en la localidad costera de Ritoque, al norte de Concón y fundaron la Ciudad Abierta.</p>
 			</div>
 		</div>
+		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
 				<img src='/img/fundador3.jpg'>
@@ -77,6 +80,7 @@ title: Pyxis Framework - Maquetas
 				<p class='sm'>Emigró a la Quinta Región en 1952. Desde ese momento “Tuto”, como cariñosamente es recordado en la Escuela de Arquitectura y Diseño de la PUCV, comenzó a realizar sus máximas pasiones que fueron crear planos y hacer clases. Su esposa, quién hoy vive en Santiago, recuerda que Arturo era muy feliz teniendo la posibilidad de enseñar a los alumnos, las técnicas que él había aprendido. “A él le encantaba hacer clases en la UCV, porque además era muy querido por los alumnos”. Estudió en Suecia y Noruega, fue citado por la ONU, junto a otros arquitectos del mundo para construir una escuela de arquitectura en Haití. Sin embargo, debido al régimen de dictadura que estaba viviendo el país, esta propuesta sólo quedó en planes.</p>
 			</div>
 		</div>
+		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
 				<img src='/img/fundador4.jpg'>
@@ -88,6 +92,7 @@ title: Pyxis Framework - Maquetas
 				<p class='sm'>Estudió en el colegio Colegio SS.CC. de Santiago, siendo Bachiller en Humanidades en 1944. Luego estudió arquitectura en la Escuela de Arquitectura de la P.U.C.C. (1945-1948) y en la Escuela de Arquitectura de la P.U.C.V. (1949-1950) donde se titula con la tesis Diseño Urbano para una ciudad de 25.000 habitantes (Talagante, Chile). Es miembro fundador del “Instituto de Arquitectura de la P.UCV”, junto a los profesores Alberto cruz C., Godofredo Iommi M., Miguel Eyquem A., Francisco Méndez L., Jaime Bellalta, José Vial A., y Arturo Baeza D. Dicho Instituto dará origen a la re-fundación de la Escuela de Arquitectura de la P.UCV., ocurrida en 1952. Orientación y Visión original de la arquitectura y de la enseñanza de la arquitectura, que perdura hasta hoy.</p>
 			</div>
 		</div>
+		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
 				<img src='/img/fundador5.jpg'>
@@ -99,6 +104,7 @@ title: Pyxis Framework - Maquetas
 				<p class='sm'>Sus estudios primarios y secundarios los realizó en el colegio de los Padres Alemanes de Santiago. Luego estudió de Arquitectura en la Universidad Católica de Chile, donde ingresa en 1944. Estando en quinto año participa activamente en el movimiento que culminó con el cambio del plan de estudios de dicha Escuela. Forma parte del grupo encabezado por Alberto Cruz y el poeta Godofredo Iommi, que en 1952, funda el Instituto de Arquitectura de la Universidad Católica de Valparaíso, dependiente directamente de la Rectoría. Este Instituto asume paulatinamente la orientación y docencia de la Escuela de Arquitectura de esa Universidad.</p>
 			</div>
 		</div>
+		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
 				<img src='/img/fundador6.jpg'>
@@ -110,6 +116,7 @@ title: Pyxis Framework - Maquetas
 				<p class='sm'>Estudió Arquitectura en la Pontificia Universidad Católica de Chile y en la facultad de Bellas Artes de la Universidad de Chile donde fue alumno de Carlos Pedraza.vivió durante 10 años en Francia entre los años 1959 y 1969 durante los cuales fue discípulo de Henry Goetz en París, Francia y del artista holandés George Vantongerloo del movimiento Stjl o style, quien influyó directamente en su obra. Durante su permanencia en Europa realizó trabajos de escenógrafo siendo autor de numerosos montajes teatrales en París. A su regresó a Chile ocupó la Cátedra de Artes Plásticas en el Instituto de Arte de la Universidad Católica de Valparaíso que ayudó a fundar y de la cual llegó a ser director desde 1971 a 1986. Al regresar a Chile Méndez participó en proyecto Amereida junto al arquitecto Alberto Cruz, el poeta Godofredo Iommi, el escultor Claudio Girola y otros profesionales arquitectos y artistas. Experimentó con la interpretación del paisaje de </p>
 			</div>
 		</div>
+		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
 				<img src='/img/fundador7.jpg'>
@@ -121,6 +128,7 @@ title: Pyxis Framework - Maquetas
 				<p class='sm'>Nacido en Santiago de Chile, Bellalta estudió en la Pontificia Universidad Católica de Chile, Graduate School of Design de la Universidad de Harvard y la Universidad de Londres. Se unió a la facultad de la Pontificia Universidad Católica en 1968, impartió la enseñanza de la arquitectura y el diseño urbano allí hasta 1975. Durante esos años también practica en privado y se desempeñó como director de la Agencia Nacional de Renovación Urbana de Chile y como director ejecutivo de la Academia de Humanismo Cristiano. Su galardonado diseño para el monasterio benedictino de Las Condes, Santiago, ha sido nombrado uno de los monumentos arquitectónicos históricos nacionales de Chile.</p>
 			</div>
 		</div>
+		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
 				<img src='/img/fundador8.jpg'>
@@ -206,7 +214,7 @@ title: Pyxis Framework - Maquetas
 			<p class='sm'>La observación implica una dimensión o magnitud de contemplación. Esta comienza por ir, por deambular para detenerse en cierto momento en algún punto.
 			Junto a la dimensión antes dicha se da otra magnitud de ejecución. En ella, una vez detenido se dibuja lo que se ve. Y al par se escribe un pequeño texto en la forma de unas notas. El dibujo trata de expresar la construcción humana que se ve, lo que ésta alcanza ya, alcanzará, o bien es inalcanzable, ello -se entiende- en cuanto a lo poético. El texto por su parte trata de expresar seso que se ve, en relación con la marcha general, en común, de la época. También -se entiende- en cuanto a lo poético.
 			La observación al ser una medida del habitar del hombre -como ya se dijo en el punto anterior- es una formulación escueta, precisa y taxativa. No puede ser nunca algo indeciso,vacilante, que enunciara opiniones o pareceres. Es que la observación es un acto. Un acto creativo. Que es el primero de concepción y realización de la obra. Por eso, el acto es algo en si mismo, concluso, tal como una obra lo es. Concluso a su vez quiere decir, presente, que ha cobrado su plena presencia.</p>
-			<h3 class='sm negro-fundido italica relleno-inf-sm'>Su labor</h3>
+			<h3 class='sm'>Su labor</h3>
 			<p class='sm'>El acto de la observación se practica mediante una actitud interna nuestra. Dicha actitud no es algo esporádico u ocasional. Al contrario, ella tiende a extenderse de una manera conformada.</p>
 		</div>
 	</div>

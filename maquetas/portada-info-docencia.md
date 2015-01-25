@@ -16,112 +16,73 @@ title: Pyxis Framework - Maquetas
   </div>
 
 <div class='fila margen-inf-sm'>
-      <!-- 1 de 4 Columnas de noticias a lo largo -->
-      <div class='col-md-4 col-sm-4 col-xs-12 margen-inf-sm alto-sm auto'>
-        <!-- Div que oculta el desborde de la imagen -->
-        <div class='borde ocultar-desborde alto-sm auto radio-md'>
-          <!-- Título, fecha de publicación, reseña de noticia -->
-          <div class='relleno-sup-xs tooltip-demo'>
-            <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>Profesor participará en seminario “Concepción, de la frontera a la globa5ización”</a></h5>
-            <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
-              <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
-                 <span class="icn-stack">
-                  <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
-                  <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
-                </span>
-              </a>
+  <!-- 1 de 4 Columnas de noticias a lo largo -->
+  <div class='col-md-4 col-sm-4 col-xs-12 margen-inf-sm alto-sm auto'>
+    <!-- Div que oculta el desborde de la imagen -->
+    <div class='borde ocultar-desborde alto-sm auto radio-md'>
+      <!-- Título, fecha de publicación, reseña de noticia -->
+      <div class='relleno-sup-xs tooltip-demo'>
+        <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>Profesor participará en seminario “Concepción, de la frontera a la globa5ización”</a></h4>
+        <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
+          <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+             <span class="icn-stack">
+              <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
+              <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
             </span>
-            <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
-          </div>
-        </div>
-      </div>
-      <!-- 1 de 4 Columnas de noticias a lo largo -->
-      <div class='col-md-4 col-sm-4 col-xs-12 margen-inf-sm alto-sm auto'>
-        <!-- Div que oculta el desborde de la imagen -->
-        <div class='borde ocultar-desborde alto-sm auto radio-md'>
-            <!-- Título, fecha de publicación, reseña de noticia -->
-            <div class='relleno-sup-xs tooltip-demo'>
-            <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>La naturaleza y su acción muestra la singularidad favorable</a></h4>
-            <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
-              <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
-               <span class="icn-stack">
-                <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
-                <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
-              </span>
-              </a>
-            </span>
-            <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
-          </div>
+          </a>
+        </span>
+        <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
       </div>
     </div>
-    <!-- 1 de 4 Columnas de noticias a lo largo -->
-    <div class='col-md-4 col-sm-4 col-xs-12 alto-sm auto'>
-      <!-- Div que oculta el desborde de la imagen -->
-      <div class='borde ocultar-desborde alto-sm auto radio-md'>
+  </div>
+  <!-- 1 de 4 Columnas de noticias a lo largo -->
+  <div class='col-md-4 col-sm-4 col-xs-12 margen-inf-sm alto-sm auto'>
+    <!-- Div que oculta el desborde de la imagen -->
+    <div class='borde ocultar-desborde alto-sm auto radio-md'>
         <!-- Título, fecha de publicación, reseña de noticia -->
         <div class='relleno-sup-xs tooltip-demo'>
-          <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</a></h4>
-          <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
-            <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
-               <span class="icn-stack">
-                <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
-                <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
-              </span>
-            </a>
+        <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>La naturaleza y su acción muestra la singularidad favorable</a></h4>
+        <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
+          <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+           <span class="icn-stack">
+            <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
+            <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
           </span>
-          <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
-        </div>
+          </a>
+        </span>
+        <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
       </div>
-    </div> <!-- fin de col menor -->
- </div> <!-- fin de fila -->
+    </div>
+  </div>
+  <!-- 1 de 4 Columnas de noticias a lo largo -->
+  <div class='col-md-4 col-sm-4 col-xs-12 alto-sm auto'>
+    <!-- Div que oculta el desborde de la imagen -->
+    <div class='borde ocultar-desborde alto-sm auto radio-md'>
+      <!-- Título, fecha de publicación, reseña de noticia -->
+      <div class='relleno-sup-xs tooltip-demo'>
+        <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</a></h4>
+        <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
+          <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+             <span class="icn-stack">
+              <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
+              <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
+            </span>
+          </a>
+        </span>
+        <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
+      </div>
+    </div>
+  </div> <!-- fin de col menor -->
+</div> <!-- fin de fila -->
 
 <div class='fila margen-inf-sm'>
-
-      <!-- 1 de 4 Columnas de noticias a lo largo -->
-      <div class='col-md-4 col-sm-4 col-xs-12 margen-inf-sm alto-sm auto'>
-        <!-- Div que oculta el desborde de la imagen -->
-        <div class='borde ocultar-desborde alto-sm auto radio-md'>
-          <!-- Título, fecha de publicación, reseña de noticia -->
-          <div class='relleno-sup-xs tooltip-demo'>
-            <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>Profesor participará en seminario “Concepción, de la frontera a la globa5ización”</a></h4>
-            <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
-              <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
-                 <span class="icn-stack">
-                  <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
-                  <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
-                </span>
-              </a>
-            </span>
-            <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
-          </div>
-        </div>
-      </div>
-      <!-- 1 de 4 Columnas de noticias a lo largo -->
-      <div class='col-md-4 col-sm-4 col-xs-12 alto-sm auto'>
-        <!-- Div que oculta el desborde de la imagen -->
-        <div class='borde ocultar-desborde alto-sm auto radio-md'>
-            <!-- Título, fecha de publicación, reseña de noticia -->
-            <div class='relleno-sup-xs tooltip-demo'>
-            <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>La naturaleza y su acción muestra la singularidad favorable</a></h4>
-            <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
-              <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
-               <span class="icn-stack">
-                <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
-                <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
-              </span>
-              </a>
-            </span>
-            <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
-          </div>
-      </div>
-    </div>
     <!-- 1 de 4 Columnas de noticias a lo largo -->
-    <div class='col-md-4 col-sm-4 col-xs-12 alto-sm auto'>
+    <div class='col-md-4 col-sm-4 col-xs-12 margen-inf-sm alto-sm auto'>
       <!-- Div que oculta el desborde de la imagen -->
       <div class='borde ocultar-desborde alto-sm auto radio-md'>
         <!-- Título, fecha de publicación, reseña de noticia -->
         <div class='relleno-sup-xs tooltip-demo'>
-          <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</a></h4>
+          <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>Profesor participará en seminario “Concepción, de la frontera a la globa5ización”</a></h4>
           <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
             <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
                <span class="icn-stack">
@@ -133,130 +94,166 @@ title: Pyxis Framework - Maquetas
           <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
         </div>
       </div>
-    </div> <!-- fin de col menor -->
- </div> <!-- fin de fila -->
+    </div>
+    <!-- 1 de 4 Columnas de noticias a lo largo -->
+    <div class='col-md-4 col-sm-4 col-xs-12 alto-sm auto'>
+      <!-- Div que oculta el desborde de la imagen -->
+      <div class='borde ocultar-desborde alto-sm auto radio-md'>
+          <!-- Título, fecha de publicación, reseña de noticia -->
+          <div class='relleno-sup-xs tooltip-demo'>
+          <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>La naturaleza y su acción muestra la singularidad favorable</a></h4>
+          <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
+            <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+             <span class="icn-stack">
+              <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
+              <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
+            </span>
+            </a>
+          </span>
+          <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- 1 de 4 Columnas de noticias a lo largo -->
+    <div class='col-md-4 col-sm-4 col-xs-12 alto-sm auto'>
+    <!-- Div que oculta el desborde de la imagen -->
+    <div class='borde ocultar-desborde alto-sm auto radio-md'>
+      <!-- Título, fecha de publicación, reseña de noticia -->
+      <div class='relleno-sup-xs tooltip-demo'>
+        <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</a></h4>
+        <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
+          <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+             <span class="icn-stack">
+              <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
+              <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
+            </span>
+          </a>
+        </span>
+        <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
+      </div>
+    </div>
+  </div> <!-- fin de col menor -->
+</div> <!-- fin de fila -->
+
+<!-- 1 de 4 Columnas de noticias a lo largo -->
+<div class='fila margen-inf-sm'>
+  <!-- 1 de 4 Columnas de noticias a lo largo -->
+  <div class='col-md-4 col-sm-4 col-xs-12 margen-inf-sm alto-sm auto'>
+    <!-- Div que oculta el desborde de la imagen -->
+    <div class='borde ocultar-desborde alto-sm auto radio-md'>
+      <!-- Título, fecha de publicación, reseña de noticia -->
+      <div class='relleno-sup-xs tooltip-demo'>
+        <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>Profesor participará en seminario “Concepción, de la frontera a la globa5ización”</a></h4>
+        <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
+          <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+             <span class="icn-stack">
+              <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
+              <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
+            </span>
+          </a>
+        </span>
+        <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- 1 de 4 Columnas de noticias a lo largo -->
+  <div class='col-md-4 col-sm-4 col-xs-12 margen-inf-sm alto-sm auto'>
+    <!-- Div que oculta el desborde de la imagen -->
+    <div class='borde ocultar-desborde alto-sm auto radio-md'>
+        <!-- Título, fecha de publicación, reseña de noticia -->
+        <div class='relleno-sup-xs tooltip-demo'>
+        <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>La naturaleza y su acción muestra la singularidad favorable</a></h4>
+        <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
+          <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+           <span class="icn-stack">
+            <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
+            <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
+          </span>
+          </a>
+        </span>
+        <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
+      </div>
+    </div>
+  </div>
+  <!-- 1 de 4 Columnas de noticias a lo largo -->
+  <div class='col-md-4 col-sm-4 col-xs-12 alto-sm auto'>
+    <!-- Div que oculta el desborde de la imagen -->
+    <div class='borde ocultar-desborde alto-sm auto radio-md'>
+      <!-- Título, fecha de publicación, reseña de noticia -->
+      <div class='relleno-sup-xs tooltip-demo'>
+        <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</a></h4>
+        <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
+          <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+             <span class="icn-stack">
+              <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
+              <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
+            </span>
+          </a>
+        </span>
+        <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
+      </div>
+    </div>
+  </div> <!-- fin de col menor -->
+</div> <!-- fin de fila -->
 
   <!-- 1 de 4 Columnas de noticias a lo largo -->
 <div class='fila margen-inf-sm'>
-
-      <!-- 1 de 4 Columnas de noticias a lo largo -->
-      <div class='col-md-4 col-sm-4 col-xs-12 margen-inf-sm alto-sm auto'>
-        <!-- Div que oculta el desborde de la imagen -->
-        <div class='borde ocultar-desborde alto-sm auto radio-md'>
-          <!-- Título, fecha de publicación, reseña de noticia -->
-          <div class='relleno-sup-xs tooltip-demo'>
-            <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>Profesor participará en seminario “Concepción, de la frontera a la globa5ización”</a></h4>
-            <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
-              <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
-                 <span class="icn-stack">
-                  <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
-                  <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
-                </span>
-              </a>
-            </span>
-            <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
-          </div>
-        </div>
-      </div>
-      <!-- 1 de 4 Columnas de noticias a lo largo -->
-      <div class='col-md-4 col-sm-4 col-xs-12 margen-inf-sm alto-sm auto'>
-        <!-- Div que oculta el desborde de la imagen -->
-        <div class='borde ocultar-desborde alto-sm auto radio-md'>
-            <!-- Título, fecha de publicación, reseña de noticia -->
-            <div class='relleno-sup-xs tooltip-demo'>
-            <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>La naturaleza y su acción muestra la singularidad favorable</a></h4>
-            <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
-              <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
-               <span class="icn-stack">
-                <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
-                <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
-              </span>
-              </a>
-            </span>
-            <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
-          </div>
-      </div>
-    </div>
-    <!-- 1 de 4 Columnas de noticias a lo largo -->
-    <div class='col-md-4 col-sm-4 col-xs-12 alto-sm auto'>
-      <!-- Div que oculta el desborde de la imagen -->
-      <div class='borde ocultar-desborde alto-sm auto radio-md'>
-        <!-- Título, fecha de publicación, reseña de noticia -->
-        <div class='relleno-sup-xs tooltip-demo'>
-          <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</a></h4>
-          <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
-            <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
-               <span class="icn-stack">
-                <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
-                <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
-              </span>
-            </a>
-          </span>
-          <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
-        </div>
-      </div>
-    </div> <!-- fin de col menor -->
- </div> <!-- fin de fila -->
-
   <!-- 1 de 4 Columnas de noticias a lo largo -->
-<div class='fila margen-inf-sm'>
-
-      <!-- 1 de 4 Columnas de noticias a lo largo -->
-      <div class='col-md-4 col-sm-4 col-xs-12 margen-inf-sm alto-sm auto'>
-        <!-- Div que oculta el desborde de la imagen -->
-        <div class='borde ocultar-desborde alto-sm auto radio-md'>
-          <!-- Título, fecha de publicación, reseña de noticia -->
-          <div class='relleno-sup-xs tooltip-demo'>
-            <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>Profesor participará en seminario “Concepción, de la frontera a la globa5ización”</a></h4>
-            <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
-              <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
-                 <span class="icn-stack">
-                  <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
-                  <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
-                </span>
-              </a>
+  <div class='col-md-4 col-sm-4 col-xs-12 margen-inf-sm alto-sm auto'>
+    <!-- Div que oculta el desborde de la imagen -->
+    <div class='borde ocultar-desborde alto-sm auto radio-md'>
+      <!-- Título, fecha de publicación, reseña de noticia -->
+      <div class='relleno-sup-xs tooltip-demo'>
+        <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>Profesor participará en seminario “Concepción, de la frontera a la globa5ización”</a></h4>
+        <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
+          <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+             <span class="icn-stack">
+              <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
+              <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
             </span>
-            <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
-          </div>
-        </div>
-      </div>
-      <!-- 1 de 4 Columnas de noticias a lo largo -->
-      <div class='col-md-4 col-sm-4 col-xs-12 margen-inf-sm alto-sm auto'>
-        <!-- Div que oculta el desborde de la imagen -->
-        <div class='borde ocultar-desborde alto-sm auto radio-md'>
-            <!-- Título, fecha de publicación, reseña de noticia -->
-            <div class='relleno-sup-xs tooltip-demo'>
-            <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>La naturaleza y su acción muestra la singularidad favorable</a></h4>
-            <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
-              <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
-               <span class="icn-stack">
-                <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
-                <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
-              </span>
-              </a>
-            </span>
-            <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
-          </div>
+          </a>
+        </span>
+        <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
       </div>
     </div>
-    <!-- 1 de 4 Columnas de noticias a lo largo -->
-    <div class='col-md-4 col-sm-4 col-xs-12 alto-sm auto'>
-      <!-- Div que oculta el desborde de la imagen -->
-      <div class='borde ocultar-desborde alto-sm auto radio-md'>
+  </div>
+  <!-- 1 de 4 Columnas de noticias a lo largo -->
+  <div class='col-md-4 col-sm-4 col-xs-12 margen-inf-sm alto-sm auto'>
+    <!-- Div que oculta el desborde de la imagen -->
+    <div class='borde ocultar-desborde alto-sm auto radio-md'>
         <!-- Título, fecha de publicación, reseña de noticia -->
         <div class='relleno-sup-xs tooltip-demo'>
-          <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</a></h4>
-          <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
-            <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
-               <span class="icn-stack">
-                <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
-                <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
-              </span>
-            </a>
+        <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>La naturaleza y su acción muestra la singularidad favorable</a></h4>
+        <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
+          <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+           <span class="icn-stack">
+            <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
+            <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
           </span>
-          <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
-        </div>
+          </a>
+        </span>
+        <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
       </div>
-    </div> <!-- fin de col menor -->
+    </div>
+  </div>
+  <!-- 1 de 4 Columnas de noticias a lo largo -->
+  <div class='col-md-4 col-sm-4 col-xs-12 alto-sm auto'>
+    <!-- Div que oculta el desborde de la imagen -->
+    <div class='borde ocultar-desborde alto-sm auto radio-md'>
+      <!-- Título, fecha de publicación, reseña de noticia -->
+      <div class='relleno-sup-xs tooltip-demo'>
+        <h4 class='xs sin-margen relleno-inf-xs sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-anuncio margen-der-xs sin-interletraje'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</a></h4>
+        <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
+          <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+             <span class="icn-stack">
+              <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
+              <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
+            </span>
+          </a>
+        </span>
+        <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
+      </div>
+    </div>
+  </div> <!-- fin de col menor -->
  </div> <!-- fin de fila -->
 </div> <!-- fin de fila -->
