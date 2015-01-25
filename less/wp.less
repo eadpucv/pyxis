@@ -93,6 +93,7 @@
     }
 }
 
+//  Home
 #index, #tag{
     //titulos o encabezados de página
     .titulo-seccion {
@@ -113,7 +114,7 @@
         }
     }
 
-// Ejemplo de evento
+// Ejemplo de evento en Home *
 .evento{
     .fecha{
         .izquierda; 
@@ -153,7 +154,7 @@
     }
 }
 
-// Ejemplo de noticia
+// Ejemplo de noticia en Home *
     .noticia{
         .cabecera{
             .alto-xs;
@@ -210,7 +211,7 @@
             .margen-sup-xs;
         }
     }
-// Ejemplo de publicacion
+// Ejemplo de publicacion en Home *
    .publicacion{
         .categoria{
             i{
@@ -266,7 +267,7 @@
         }
     }
 }
-// Lectura de evento
+// Lectura de evento desplegado *
 #single-event{
     .fecha{
         .borde; 
@@ -289,6 +290,7 @@
             .interletraje-sm;
         }
     }
+    // Fecha
     .fecha-movil{
         .borde; 
         .izq-lineal-sm; 
@@ -299,10 +301,12 @@
         .margen-der-sm; 
         .sombra; 
         .fondo-blanco;
+        // Día
         .dia{
             .rojo;
             .centrado;
         }
+        // Mes
         .mes{
             .condensado;
             .rojo;
@@ -316,10 +320,11 @@
          .negro-fundido
     }
 }
-
+// Page *
 #page{
     #ejemplo-sticky{
         ul{
+            .margen-der-sm;
             li{
                 a{
                     h6{
@@ -329,13 +334,59 @@
                         .texto-derecha; 
                         .bloque; 
                         .relleno-der-xs;
+                        i{
+                            .sombra-cabecera-claro-xs;
+                            .margen-izq-xs;
+                        }
                     }
                 }
             }
         }
     }
-}
 
+    .page-contenido, .e-content, .p-sumary{
+        p{
+            .sans;
+            a{
+                .sans;
+                &.italica, cite{
+                    .serif;
+                }
+            }
+            img{
+                .ancho-completo;
+                .margen-inf-sm; 
+                .borde;
+                .radio-md;
+            }
+        }
+        h3, h4{
+            .gruesa;
+            .negro-fundido;
+            i{
+                .margen-der-xs;
+            }
+        }
+        h5{
+            .serif;
+            .italica;
+            .negro-fundido;
+            .negrita;
+        }
+        img{
+            .ancho-completo;
+            .margen-inf-sm; 
+            .borde;
+            .radio-md;
+        }
+        ul{
+            li{
+                .italica;
+            }
+        }
+    }
+}
+// Page full o página completa (Historia) *
 #page-full{
     h1, h4, h2, h3, h4, h5, h6 .title{
         .negro-fundido; 

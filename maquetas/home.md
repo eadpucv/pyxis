@@ -16,34 +16,34 @@ title: Pyxis Framework - Maquetas
     </ol>
     <div class="carousel-inner">
       <!-- item (la clase 'car-sm' corresponde al height de visibilidad) -->
-        <div class="item active car-sm">
+      <div class="item active car-sm">
         <img alt="Third slide" src="https://c1.staticflickr.com/1/81/231940814_ca6bd0139d_b.jpg">
-          <div class='pag sin-relleno'>
-            <div class='col-md-4 col-sm-6 oculto-xs'>
-                <!-- enlace -->
-                <a href='#'>
-                  <div>
-                    <!-- título de noticia-->
-                    <h2><i class='icn icn-noticias'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h2>
-                    <!-- texto de noticia -->
-                    <p>A los alumnos indicados para el taller se les permitirá buscar las opciones diferentes si presentan noticiass sobre Valparaíso de los arquitectos Mauricio Puentes y Juan Purcell en FILSA [...]</p>
-                    <!-- autor de noticia -->
-                    <span class='xs'><i class='icn icn-usuario'></i>Francesca Cambiaso</span>
-                  </div>
-                </a>
-            </div>
-            <!-- móviles -->
-            <div class='oculto-md oculto-sm col-xs-12'>
+        <div class='pag sin-relleno'>
+          <div class='col-md-4 col-sm-6 oculto-xs'>
               <!-- enlace -->
               <a href='#'>
                 <div>
                   <!-- título de noticia-->
-                  <h5 class='sm'><i class='icn icn-noticias'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h5>
+                  <h2><i class='icn icn-noticias'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h2>
+                  <!-- texto de noticia -->
+                  <p>A los alumnos indicados para el taller se les permitirá buscar las opciones diferentes si presentan noticiass sobre Valparaíso de los arquitectos Mauricio Puentes y Juan Purcell en FILSA [...]</p>
+                  <!-- autor de noticia -->
+                  <span class='xs'><i class='icn icn-usuario'></i>Francesca Cambiaso</span>
                 </div>
               </a>
-            </div>
-        </div>
-      </div>
+          </div>
+          <!-- móviles -->
+          <div class='oculto-md oculto-sm col-xs-12'>
+            <!-- enlace -->
+            <a href='#'>
+              <div>
+                <!-- título de noticia-->
+                <h5 class='sm'><i class='icn icn-noticias'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h5>
+              </div>
+            </a>
+          </div><!-- fin de móvil -->
+        </div><!-- fin de pag -->
+      </div><!-- fin de item -->
       <!-- item (la clase 'car-sm' corresponde al height de visibilidad) -->
       <div class="item car-sm">
         <img alt="First slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/12/IMG_3945.jpg">
@@ -70,68 +70,67 @@ title: Pyxis Framework - Maquetas
               <h5 class='sm'><i class='icn icn-noticias'></i>Presentación libros Triángulo de Pascal y Estructura Esencial</h5>
             </div>
             </a>
-          </div>
-        </div>
-      </div>
+          </div><!-- fin de móvil -->
+        </div><!-- fin de pag -->
+      </div><!-- fin de item -->
       <!-- item (la clase 'car-sm' corresponde al height de visibilidad) -->
       <div class="item car-sm">
         <img alt="Second slide" src="http://www.ead.pucv.cl/wp-content/uploads/2012/02/Vodudahue-1b.jpg">
         <div class='pag sin-relleno'>
           <div class='col-md-4 col-sm-6 oculto-xs'>
-              <!-- enlace -->
-              <a href='#'>
-                <div>
-                  <!-- título de noticia-->
-                  <h2><i class='icn icn-noticias'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</h2>
-                  <!-- texto de noticia -->
-                  <p>La Escuela de Arquitectura y Diseño estuvo presente en la actividad mediante dos proyectos que se adjudicaron el fondo extraordinario Ideas y Manos para Valparaíso [...]</p>
-                  <!-- autor de noticia -->
-                  <span class='xs'><i class='icn icn-usuario'></i>e[ad]</span>
-                </div>
-              </a>
-            </div>
-            <!-- móviles -->
-            <div class='oculto-md oculto-sm col-xs-12'>
-              <!-- enlace -->
-              <a href='#'>
+            <!-- enlace -->
+            <a href='#'>
               <div>
                 <!-- título de noticia-->
-                <h5 class='sm'><i class='icn icn-noticias'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</h5>
+                <h2><i class='icn icn-noticias'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</h2>
+                <!-- texto de noticia -->
+                <p>La Escuela de Arquitectura y Diseño estuvo presente en la actividad mediante dos proyectos que se adjudicaron el fondo extraordinario Ideas y Manos para Valparaíso [...]</p>
+                <!-- autor de noticia -->
+                <span class='xs'><i class='icn icn-usuario'></i>e[ad]</span>
               </div>
-              </a>
+            </a>
+          </div>
+          <!-- móviles -->
+          <div class='oculto-md oculto-sm col-xs-12'>
+            <!-- enlace -->
+            <a href='#'>
+            <div>
+              <!-- título de noticia-->
+              <h5 class='sm'><i class='icn icn-noticias'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</h5>
             </div>
-        </div>
-      </div>
+            </a>
+          </div><!-- fin de móvil -->
+        </div><!-- fin de pag -->
+      </div><!-- fin de item -->
       <!-- item (la clase 'car-sm' corresponde al height de visibilidad) -->
       <div class="item car-sm">
         <img alt="Third slide" src="http://www.ead.pucv.cl/wp-content/uploads/2014/11/PERSPECTIVA-RENDER-2.jpg">
         <div class='pag sin-relleno'>
           <div class='col-md-4 col-sm-6 oculto-xs'>
-              <!-- enlace -->
-              <a href='#'>
-                <div>
-                  <!-- título de noticia-->
-                  <h2><i class='icn icn-noticias'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h2>
-                  <!-- texto de noticia -->
-                  <p>A los alumnos indicados para el taller se les permitirá buscar las opciones diferentes si presentan noticiass sobre Valparaíso de los arquitectos Mauricio Puentes y Juan Purcell en FILSA [...]</p>
-                  <!-- autor de noticia -->
-                  <span class='xs'><i class='icn icn-usuario'></i>Francesca Cambiaso</span>
-                </div>
-              </a>
-            </div>
-            <!-- móviles -->
-            <div class='oculto-md oculto-sm col-xs-12'>
-              <!-- enlace -->
-              <a href='#'>
-                <div>
-                  <!-- título de noticia-->
-                  <h5 class='sm'><i class='icn icn-noticias'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h5>
-                </div>
-              </a>
-            </div>
-        </div>
-      </div>
-    <!-- enlace -->
+            <!-- enlace -->
+            <a href='#'>
+              <div>
+                <!-- título de noticia-->
+                <h2><i class='icn icn-noticias'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h2>
+                <!-- texto de noticia -->
+                <p>A los alumnos indicados para el taller se les permitirá buscar las opciones diferentes si presentan noticiass sobre Valparaíso de los arquitectos Mauricio Puentes y Juan Purcell en FILSA [...]</p>
+                <!-- autor de noticia -->
+                <span class='xs'><i class='icn icn-usuario'></i>Francesca Cambiaso</span>
+              </div>
+            </a>
+          </div>
+          <!-- móviles -->
+          <div class='oculto-md oculto-sm col-xs-12'>
+            <!-- enlace -->
+            <a href='#'>
+              <div>
+                <!-- título de noticia-->
+                <h5 class='sm'><i class='icn icn-noticias'></i>Diseño gráfico organiza taller para alumnos interesados en la carrera</h5>
+              </div>
+            </a>
+          </div><!-- fin de móvil -->
+        </div><!-- fin de pag -->
+      </div><!-- fin de item -->
     </div> <!-- fin de carousel inner -->
         <!-- botones adelante y atrás -->
         <a data-slide="prev" data-target='#carousel-home' href="#carousel-2" class="left carousel-control">
@@ -141,7 +140,7 @@ title: Pyxis Framework - Maquetas
           <span class="icn icn-nav"></span>
         </a>
   </div>
-</div>
+</div><!-- fin de carrusel-index -->
 
 <div class='pag sin-relleno gutter margen-sup-sm'>
 <!-- Info de docencia -->
@@ -175,6 +174,7 @@ title: Pyxis Framework - Maquetas
 <h2 class='xs titulo-seccion margen-inf-md'><i class='icn icn-calendario icn-light'></i>Eventos</h2>
 
 <div class='fila'>
+  <!-- Evento 1 -->
   <div class='col-md-6 col-sm-6 col-xs-12 evento alto-xs margen-inf-sm'>
       <div class='fila'>
         <div class='col-lg-12 col-md-2 col-sm-2 col-xs-3'>
@@ -190,6 +190,7 @@ title: Pyxis Framework - Maquetas
         </div>
       </div>
   </div>
+  <!-- Evento 2 -->
   <div class='col-md-6 col-sm-6 col-xs-12 evento alto-xs margen-inf-sm'>
     <div class='fila'>
       <div class='col-lg-12 col-md-2 col-sm-2 col-xs-3'>
@@ -206,6 +207,7 @@ title: Pyxis Framework - Maquetas
       </div>
     </div>
   </div>
+  <!-- Evento 3 -->
   <div class='col-md-6 col-sm-6 col-xs-12 evento alto-xs margen-inf-sm'>
     <div class='fila'>
       <div class='col-lg-12 col-md-2 col-sm-2 col-xs-3'>
@@ -222,6 +224,7 @@ title: Pyxis Framework - Maquetas
       </div>
     </div>
   </div>
+  <!-- Evento 4 -->
   <div class='col-md-6 col-sm-6 col-xs-12 evento alto-xs margen-inf-sm'>
     <div class='fila'>
       <div class='col-lg-12 col-md-2 col-sm-2 col-xs-3'>
@@ -235,7 +238,7 @@ title: Pyxis Framework - Maquetas
           <span><i class='icn icn-lapiz icn-sm'></i></span>
           </a>
         <p class='xs'>Durante el lunes 6 y martes 7 de octubre se llevará a cabo una venta especial de libros de Ediciones ARQ, entre las 10:00 y las 16:00 horas en la Biblioteca de la Escuela <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a>
-  </p>
+        </p>
       </div>
     </div>
   </div>
@@ -369,7 +372,7 @@ title: Pyxis Framework - Maquetas
             <img src="http://www.ead.pucv.cl/wp-content/uploads/2014/12/corte.jpg" alt="">
           </a>
         </div>
-          <!-- Título, fecha de publicación, reseña de noticia -->
+        <!-- Título, fecha de publicación, reseña de noticia -->
         <div class='relleno-sup-xs tooltip-demo'>
           <h4 class='xs sin-margen'><a href='#'>Venta de libros especializados en Artes Aplicadas – Ojoporojo Tienda</a></h4>
           <span class='xs entry-details'>Publicado el 03 de noviembre, 2014.
@@ -489,6 +492,7 @@ title: Pyxis Framework - Maquetas
 <!-- pag -->
 <div class='pag margen-sup-sm'>
   <div class='fila'>
+    <!-- publicación -->
     <div class='col-lg-4 col-md-6 col-sm-6 col-xs-12 publicacion'>
       <a class='categoria' href='#'>
         <i class='icn icn-archivo'></i><h6 class='xs'>archivo histórico</h6>
@@ -503,6 +507,7 @@ title: Pyxis Framework - Maquetas
         <p class='xs margen-sup-xs'>35 Ediciones e[ad], Archivo Histórico José Vial Armstrong, en conjunto con Ediciones Universitarias de Valparaíso, tienen el agrado de invitarles a la presentación del libro tienen el agrado de invitarles a la presentación del libro “Fotografías <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
       </div>
     </div>
+    <!-- publicación -->
     <div class='col-lg-4 col-md-6 col-sm-6 col-xs-12 publicacion'>
       <a class='categoria' href='#'>
       <i class='icn icn-documento'></i><h6 class='xs'>magíster ciudad y territorio</h6>
@@ -517,6 +522,7 @@ title: Pyxis Framework - Maquetas
         <p class='xs margen-sup-xs'>35 El Magíster en Arquitectura y Diseño, mención Ciudad y Territorio, de la Pontificia Universidad Católica de Valparaíso, a partir de 2014, ofrecerá 2 períodos de ingreso durante el año con el fin de aumentar el <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
       </div>
     </div>
+    <!-- publicación -->
     <div class='col-lg-4 col-md-6 col-sm-6 col-xs-12 publicacion'>
       <a class='categoria' href='#'>
       <i class='icn icn-documento'></i><h6 class='xs'>magíster náutico y marítimo</h6>
@@ -531,6 +537,7 @@ title: Pyxis Framework - Maquetas
         <p class='xs margen-sup-xs'>35 El viernes 17 de octubre se llevó a cabo la presentación y tienen el material y el agrado de invitarles a la presentación del libro anteproyecto 'Parque de Mar Puerto Barón', del Magíster en Arquitectura <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
       </div>
     </div>
+    <!-- publicación -->
     <div class='col-lg-4 col-md-6 col-sm-6 col-xs-12 publicacion'>
       <a class='categoria' href='#'>
       <i class='icn icn-clip margen-der-xs relleno-der-xs fondo-blanco linea-lateral relleno-vertical-xs icn-light borde radio-sup-der-sm radio-inf-der-sm sombra relleno-izq-xs negro'></i><h6 class='xs'>Bolsa de trabajo</h6>
@@ -545,6 +552,7 @@ title: Pyxis Framework - Maquetas
         <p class='xs margen-sup-xs'>35 Fundación Superación de la Pobreza invita a diseñadores y arquitectos a postular al programa de intervención social Servicio País, cuyo propósito es contribuir al agrado de invitarles a la presentación del libro que “personas que <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
       </div>
     </div>
+    <!-- publicación -->
     <div class='col-lg-4 col-md-6 col-sm-6 col-xs-12 publicacion'>
       <a class='categoria' href='#'>
       <i class='icn icn-ojo'></i><h6 class='xs'>Observación de la semana</h6>
@@ -559,6 +567,7 @@ title: Pyxis Framework - Maquetas
         <p class='xs margen-sup-xs'>35 Un curso de agua turbulento, una cantidad de agua que va a una velocidad notable sobre un lecho de lava volcánica, entre piedras y rocas del agrado de invitarles a la presentación del libro mismo <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
       </div>
     </div>
+    <!-- publicación -->
     <div class='col-lg-4 col-md-6 col-sm-6 col-xs-12 publicacion'>
       <a class='categoria' href='#'>
       <i class='icn icn-libro'></i><h6 class='xs'>Investigación</h6>
