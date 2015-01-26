@@ -1,10 +1,6 @@
 {
   "name": "pyxis",
   "version": "3.0.0",
-  "dependencies": {
-    "jquery": "2.0.3",
-    "stampa": "https://github.com/eadpucv/stampa.git"
-  },
   "homepage": "https://github.com/eadpucv/pyxis",
   "authors": [
     "Idar <idargonzalez@gmail.com>",
@@ -12,25 +8,9 @@
     "Herbert Spencer <hspencer@ead.cl>"
   ],
   "description": "framework de la escuela de arquitectura y diseño PUCV",
-  "main": "index.md",
-  "keywords": [
-    "Pyxis",
-    "framework",
-    "Pyxis",
-    "ead",
-    "Escuela",
-    "de",
-    "arquitectura",
-    "y",
-    "Diseño",
-    "PUCV"
-  ],
-  "license": "mit",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+  "dependencies": {
+    "jquery": "2.0.3",
+    "stampa": "https://github.com/eadpucv/stampa.git"
+    },
+  "license": "mit"
 }
