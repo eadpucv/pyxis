@@ -100,7 +100,7 @@ p {
     }
 
     &.xs, &.menudo {
-      font-size: @cuerpo * .75;
+      font-size: @cuerpo * .85;
       line-height: @interlinea * 1.1;
     }
 
@@ -115,6 +115,12 @@ p {
 
     &.derecha{
       text-align: right;
+    }
+
+    // justificado
+    &.justificado{
+      text-align: justify;
+      word-wrap: break-word;
     }
 }
 
@@ -152,7 +158,7 @@ span {
     }
 
     &.xs, &.menudo {
-      font-size: @cuerpo * .75;
+      font-size: @cuerpo * .85;
       line-height: @interlinea ;
     }
 
@@ -312,6 +318,13 @@ div.poema{
 }
 
 //  Cabeceras:
+h1, h2, h3, h4, h5, h6{
+  // Justificados
+  &.justificado{
+      text-align: justify;
+      word-wrap: break-word;
+  }
+}
 
     //  Valores de cabecera:
 h1 {
@@ -470,7 +483,7 @@ ol li ol li ol li{list-style-type: lower-latin;}
       line-height: 150%;
     }
     &.xs, &.menudo {
-      font-size: @cuerpo * .75;
+      font-size: @cuerpo * .85;
       line-height: @interlinea * 1.1;
     }
 
@@ -549,13 +562,11 @@ dl {
 
   //  Fecha
 
-.fecha-evento {
+.dia {
   font-family: @sans;
   padding: 0;
-  margin: @margen-lg * 2.5 @margen-lg 0 0;
-  font-size: @cuerpo-nav * 9.5;
-  letter-spacing: -@cuadratin-tercio;
-  line-height: inherit;
+  font-size: @cuerpo-nav * 6.5;
+  line-height: 0.9em;
 
   &.xs {
     font-size: @cuerpo-nav * 7;
@@ -836,6 +847,33 @@ code {
       }
   }
 
+  //  Vistazo o Span:
+
+span {
+  line-height: @interlinea * .9;
+
+    //  Tamaños de Vistazo:
+    &.lg, &.grande { 
+        font-size: @cuerpo * 1.35; //1.2
+        line-height: @interlinea * .9;
+      }
+
+    &.md, &.mediano {
+      font-size: @cuerpo * 1.2; //1.7
+      line-height: @interlinea;
+      }
+
+    &.sm, &.pequeno {
+      font-size: @cuerpo; //1.2
+      line-height: @interlinea * .9;
+    }
+
+    &.xs, &.menudo {
+      font-size: @cuerpo * .8; //.75
+      line-height: @interlinea * .95;
+    }
+  }
+
   //  Cabeceras:
 
   h1 {
@@ -843,7 +881,7 @@ code {
       &.no-responsivo{font-size: (@font-size-titulos-1)}
       //  Valores de cabecera:
       &.lg, &.grande, &.gigante { 
-        font-size: (@font-size-titulos-1 * 1.2);
+        font-size: (@font-size-titulos-1 * 1);
           &.no-responsivo{
             font-size: (@font-size-titulos-1 * 2);
           }
@@ -1026,6 +1064,33 @@ code {
       }
   }
 
+// Listas
+
+   ul, ol {
+      line-height: @interlinea;
+      font-size: @cuerpo * .9;
+      margin-bottom: @cuadratin;
+
+          //  Tamaños de Lista:
+
+      &.lg, &.grande { 
+        font-size: @cuerpo * 1.35;
+        line-height: 150%;
+      }
+      &.md, &.mediano {
+        font-size: @cuerpo * 1.2;
+        line-height: 150%;
+      }
+      &.sm, &.pequeno {
+        font-size: @cuerpo;
+        line-height: 150%;
+      }
+      &.xs, &.menudo {
+        font-size: @cuerpo * .75;
+        line-height: @interlinea * 1.1;
+      }
+  }
+
   //  código escrito:
 
   code {
@@ -1036,7 +1101,17 @@ code {
     line-height: @interlinea * .777;
     white-space: pre-wrap;
   }
+
+  //  Fecha
+
+.dia {
+  font-family: @sans;
+  padding: 0;
+  font-size: @cuerpo-nav * 3;
+  line-height: 0.9em;
+  }
 }
+
 
 //  Small screen / tablet
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
@@ -1047,7 +1122,7 @@ code {
     margin: 0 0 @interlinea * 1.3 0;
     font-family: @texto-continuo;
     font-size: @cuerpo;
-    line-height: @interlinea * .9;
+    line-height: @interlinea * 1;
     font-weight: 300;
 
     //  Tamaños de Párrafos:
@@ -1071,6 +1146,35 @@ code {
       line-height: @interlinea * .95;
     }
   }
+
+  //  Vistazo o Span:
+
+span {
+  line-height: @interlinea * .9;
+
+    //  Tamaños de Vistazo:
+    &.lg, &.grande { 
+      font-size: @cuerpo * 1.35; //1.2
+      line-height: @interlinea * .9;
+      }
+
+    &.md, &.mediano {
+      font-size: @cuerpo * 1.2; //1.7
+      line-height: @interlinea;
+      }
+
+    &.sm, &.pequeno {
+      font-size: @cuerpo; //1.2
+      line-height: @interlinea * .9;
+    }
+
+    &.xs, &.menudo {
+      font-size: @cuerpo * .8; //.75
+      line-height: @interlinea * .95;
+    }
+  }
+
+  // Cabeceras
 
     h1 {
   font-size: @font-size-titulos-1; //*33/16=2.0625*//
@@ -1259,6 +1363,33 @@ code {
     }
   }
 
+  //listas
+
+   ul, ol {
+      line-height: @interlinea;
+      font-size: @cuerpo;
+      margin-bottom: @cuadratin;
+
+          //  Tamaños de Lista:
+
+      &.lg, &.grande { 
+        font-size: @cuerpo * 1.35;
+        line-height: 150%;
+      }
+      &.md, &.mediano {
+        font-size: @cuerpo * 1.2;
+        line-height: 150%;
+      }
+      &.sm, &.pequeno {
+        font-size: @cuerpo;
+        line-height: 150%;
+      }
+      &.xs, &.menudo {
+        font-size: @cuerpo * .75;
+        line-height: @interlinea * 1.1;
+      }
+  }
+
   //  código escrito:
 
   code {
@@ -1279,7 +1410,7 @@ code {
     // e[ad] escrito
 
     .ead{
-      font-size: 2.8vw !important;
+      font-size: 45px !important;
     }
 
     //  Vínculos:
@@ -1315,31 +1446,28 @@ code {
 
     p {
         margin: 0 0 @interlinea * 1.3 0;
-        font-size: 1.1vw; //@cuerpo
+        font-size: 1.2vw; //@cuerpo
         line-height: @interlinea;
 
         //  Tamaños de Párrafos:
 
         &.lg, &.grande { 
-          font-size: 1.5vw; //2.2
+          font-size: 1.5vw; a{font-size: 1.5vw;}
           line-height: @interlinea;
         }
 
         &.md, &.mediano {
-          font-size: 1.3vw; //1.7
+          font-size: 1.3vw; a{font-size: 1.3vw;}
           line-height: @interlinea;
         }
 
         &.sm, &.pequeno {
-          font-size: 1.2vw; //1.2
+          font-size: 1.1vw; a{font-size: 1.2vw;}
           line-height: @interlinea * 1.1;
         }
 
         &.xs, &.menudo {
-          font-size: 0.8vw;
-          a{
-            font-size: 0.8vw;
-          }
+          font-size: 0.8vw; a{font-size: 0.8vw;}
           line-height: @interlinea * 1.1;
         }
     }
@@ -1349,7 +1477,6 @@ code {
     span {
       margin: auto 0 auto 0;
       display: inline-block;
-      line-height: 25/@em;
 
         //  Sin márgenes:
 
@@ -1360,22 +1487,22 @@ code {
         //  Tamaños de Vistazo:
 
         &.lg, &.grande { 
-          font-size: 1.5vw; 
+          font-size: 1.5vw; a{font-size: 1.5w;}
           line-height: 150%;
           }
 
         &.md, &.mediano {
-          font-size: 1.1vw;
+          font-size: 1.1vw; a{font-size: 1.1vw;}
           line-height: 150%;
           }
 
         &.sm, &.pequeno {
-          font-size: 1.2vw; 
+          font-size: 1.1vw; a{font-size: 1.2vw;}
           line-height: 150%;
         }
 
         &.xs, &.menudo {
-          font-size: 0.8vw;
+          font-size: 0.8vw; a{font-size: 0.8vw;}
           line-height: @interlinea * 1.1;
         }
       }
@@ -1383,32 +1510,33 @@ code {
     // Cabeceras
 
     h1 {
-      font-size: 2.1vw; //*33/16=2.0625*//
+      font-size: 2.4vw; //*33/16=2.0625*//
+      a{font-size: 2.1vw}
         &.no-responsivo{font-size: 3.5vw}
 
         &.lg, &.grande, &.gigante { 
-          font-size: 4.5vw;
+          font-size: 4.5vw; a{font-size: 4.5vw;}
             &.no-responsivo{
               font-size: 4.5vw;
             }
         }
 
         &.md, &.mediano {
-          font-size: 3.5vw;
+          font-size: 3.5vw; a{font-size: 3.5vw;}
             &.no-responsivo{
               font-size: 3.5vw;
             }
         }
 
         &.sm, &.pequeno {
-          font-size: 2.8vw;
+          font-size: 2.8vw; a{font-size: 2.8vw;}
             &.no-responsivo{
               font-size: 2.8vw;
             }
         }
 
         &.xs, &.menudo {
-          font-size: 2vw;
+          font-size: 2vw; a{font-size: 2vw;}
             &.no-responsivo{
               font-size: 2vw;
             }
@@ -1416,35 +1544,33 @@ code {
     }
 
     h2 {
-      font-size: 1.8vw;  //*29/16=1.8125*//
+      font-size: 2.2vw;  //*29/16=1.8125*//
+      a{font-size: 1.8vw}
         &.no-responsivo{font-size: (@font-size-titulos-2)}
 
         &.lg, &.grande, &.gigante { 
-          font-size: 4vw;
+          font-size: 4vw; a{font-size: 4vw;}
             &.no-responsivo{
               font-size: 4vw;
             }
         }
 
         &.md, &.mediano {
-          font-size: 3vw;
+          font-size: 3vw; a{font-size: 3vw;}
             &.no-responsivo{
               font-size: 3vw;
             }
         }
 
         &.sm, &.pequeno {
-          font-size: 2.9vw;
+          font-size: 2.9vw; a{font-size: 2.9vw;}
             &.no-responsivo{
               font-size: (@font-size-titulos-2 * 1.2);
             }
         }
 
         &.xs, &.menudo {
-          font-size: 1.6vw;
-            a{
-              font-size: 1.6vw;
-            }
+          font-size: 1.6vw;a{font-size: 1.6vw;}
             &.no-responsivo{
               font-size: 1.7vw;
             }
@@ -1453,31 +1579,32 @@ code {
 
     h3 {
       font-size: 1.6vw;  //*27/16=1.6875*//
+      a{font-size: 1.6vw}
         &.no-responsivo{font-size: (@font-size-titulos-3)}
 
         &.lg, &.grande, &.gigante { 
-          font-size: 3.6vw;
+          font-size: 3.6vw; a{font-size: 3.6vw;}
             &.no-responsivo{
               font-size: 3.6vw;
             }
         }
 
         &.md, &.mediano {
-          font-size: 2.6vw;
+          font-size: 2.6vw; a{font-size: 2.6vw;}
             &.no-responsivo{
               font-size: 2.6vw;
             }
         }
 
         &.sm, &.pequeno {
-          font-size: 2vw;
+          font-size: 2vw; a{font-size: 2vw;}
             &.no-responsivo{
               font-size: 2vw;
             }
         }
 
         &.xs, &.menudo {
-          font-size: 1.4vw;
+          font-size: 1.4vw; a{font-size: 1.4vw;}
             &.no-responsivo{
               font-size: 1.4vw;
             }
@@ -1486,34 +1613,32 @@ code {
 
     h4 {
       font-size: 1.4vw;  //*23/16=1.4375*//
+      a{font-size: 1.4vw}
         &.no-responsivo{font-size: (@font-size-titulos-4)}
 
         &.lg, &.grande, &.gigante { 
-          font-size: 3.2vw;
+          font-size: 3.2vw; a{font-size: 3.2vw;}
             &.no-responsivo{
               font-size: 3.2vw;
             }
         }
 
         &.md, &.mediano {
-          font-size: 2.2vw;
+          font-size: 2.2vw; a{font-size: 2.2vw;}
             &.no-responsivo{
               font-size: 2.2vw;
             }
         }
 
         &.sm, &.pequeno {
-          font-size: 1.8vw;
+          font-size: 1.8vw; a{font-size: 1.8vw;}
             &.no-responsivo{
               font-size: 1.8vw;
             }
         }
 
         &.xs, &.menudo {
-          font-size: 1.3vw;
-          a{
-            font-size: 1.3vw;
-          }
+          font-size: 1.3vw; a{font-size: 1.3vw;}
             &.no-responsivo{
               font-size: 1.1vw;
             }
@@ -1522,70 +1647,73 @@ code {
 
     h5 {
       font-size: 1.2vw;  //*19/16=1.1875*//
+      a{font-size: 1.2vw}
         &.no-responsivo{font-size: (@font-size-titulos-5)}
 
         &.lg, &.grande, &.gigante { 
-          font-size: 2.7vw;
+          font-size: 2.7vw; a{font-size: 2.7vw;}
             &.no-responsivo{
               font-size: 2.7vw;
             }
         }
 
         &.md, &.mediano {
-          font-size: 1.8vw;
+          font-size: 1.8vw; a{font-size: 1.8vw;}
             &.no-responsivo{
               font-size: 1.8vw;
             }
         }
 
         &.sm, &.pequeno {
-          font-size: 1.4vw;
+          font-size: 1.4vw; a{font-size: 1.4vw;}
             &.no-responsivo{
               font-size: 1.4vw;
             }
         }
 
         &.xs, &.menudo {
-          font-size: .9vw;
-          a{
-            font-size: 1.1vw;
-          }
+          font-size: 1.1vw; a{font-size: 1.1vw;}
             &.no-responsivo{
-              font-size: .9vw;
+              font-size: 1vw;
             }
         }
     }
 
     h6 {
       font-size: 1vw;  //*17/16=1.0625*//
+      a{font-size: 1vw}
         &.no-responsivo{font-size: 1.1vw}
 
         &.lg, &.grande, &.gigante { 
-          font-size: 2.2vw;
+          font-size: 2.2vw; a{font-size: 2.2vw;}
             &.no-responsivo{
               font-size: 2.2vw;
             }
         }
 
         &.md, &.mediano {
-          font-size: 1.4vw;
+          font-size: 1.4vw; a{font-size: 1.4vw;}
             &.no-responsivo{
               font-size: 1.4vw;
             }
         }
 
         &.sm, &.pequeno {
-          font-size: 1vw;
+          font-size: 1vw; a{font-size: 1vw;}
             &.no-responsivo{
               font-size: 1vw;
             }
         }
 
         &.xs, &.menudo {
-          font-size: 1vw;
+          font-size: 1vw; a{font-size: 1vw;}
             &.no-responsivo{
               font-size: .7vw;
             }
         }
     }
+}
+
+.icn{
+  letter-spacing: normal !important;
 }

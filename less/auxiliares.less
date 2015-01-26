@@ -2,6 +2,17 @@
 // Estilos tipográficos auxiliares
 // --------------------------------------------------
 
+.triangulo{    
+    width: 0;
+    height: 0;
+    border-top: 50px solid @negro-fundido; 
+    border-left: 50px solid transparent; 
+}
+
+.cursor{
+cursor: pointer;
+}
+
 // clases porcentuales .w1 - .w100
 
 .w1{width:1% !important}.w2{width:2% !important}.w3{width:3% !important}.w4{width:4% !important}.w5{width:5% !important}.w6{width:6% !important}.w7{width:7% !important}
@@ -52,7 +63,16 @@
 
     // Negros y grises
 .negro{color: @negro}
-.fondo-negro{background-color: @negro}
+.fondo-negro{background-color: @negro; 
+    &.ruido{background-image: url("/img/ruido-negro-oscuro.png")}
+    &.textura-1{background-image: url("/img/fondo-textura-5.jpg")} 
+    &.textura-2{background-image: url("/img/fondo-textura-2.jpg")}
+    &.textura-3{background-image: url("/img/fondo-textura-3.jpg")}
+    &.textura-4{background-image: url("/img/fondo-textura-4.jpg")}
+    &.textura-5{background-image: url("/img/fondo-textura.jpg")}
+    &.textura-6{background-image: url("/img/ruido-amplio.png")}
+    }
+
 .negro-fundido{color: @negro-fundido}
 .fondo-negro-fundido{background-color: @negro-fundido}
 .pizarra{color: @pizarra}
@@ -65,9 +85,23 @@
 .fondo-gris-claro{background-color: @gris-claro}
 .gris-blanco{color: @gris-blanco}
 .gris-blanco-trans{color: @gris-blanco-transparente}
-.fondo-gris-blanco{background-color: @gris-blanco}
-.fondo-gris-blanco-trans{background-color: @gris-blanco-transparente}
-.fondo-gris-blanco-trans-xs{background-color: @gris-blanco-transparente-xs}
+.fondo-gris-blanco{background-color: @gris-blanco; &.ruido{background: @gris-blanco url("/img/ruido-fondo-pyxis.png") repeat center}}
+.fondo-gris-blanco-trans{background-color: @gris-blanco-transparente; &.ruido{background: @gris-blanco url("/img/ruido-fondo-pyxis.png") repeat center}}
+.fondo-gris-blanco-trans-xs{background-color: @gris-blanco-transparente-xs; &.ruido{background: @gris-blanco url("/img/ruido-fondo-pyxis.png") repeat center}}
+.gris-blanco-gradiente{
+background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, rgb(249, 249, 249)),
+    color-stop(0.9, rgb(255, 255, 255))
+);
+background-image: -o-linear-gradient(bottom, rgba(249, 249, 249, 0.98) 30%, rgba(255, 255, 255, 0.45) 100%);
+background-image: -moz-linear-gradient(bottom, rgba(249, 249, 249, 0.98) 30%, rgba(255, 255, 255, 0.45) 100%);
+background-image: -webkit-linear-gradient(bottom, rgba(249, 249, 249, 0.98) 30%, rgba(255, 255, 255, 0.45) 100%);
+background-image: -ms-linear-gradient(bottom, rgba(249, 249, 249, 0.98) 30%, rgba(255, 255, 255, 0.45) 100%);
+background-image: linear-gradient(to bottom, rgba(249, 249, 249, 0.98) 30%, rgba(255, 255, 255, 0.45) 100%);
+}
 .blanco{color: @blanco}
 .fondo-blanco{background-color: @blanco}
 
@@ -89,6 +123,9 @@
 
 
 // Márgenes
+
+// margen especial: Padding que destruye <p></p> mystery
+.margen-especial{margin-top: -25px !important; &.relleno-especial{padding-top:1px}}
 
     // Completo
 .margen{margin: @cuadratin}
@@ -129,8 +166,9 @@
 .margen-izq-lg{margin-left: @cuadratin * 2 }
 
 .margen-sup{margin-top: @cuadratin }
-.margen-sup-negativo{margin-top: -@cuadratin }
+.margen-sup-negativo{margin-top: -@cuadratin}
 .margen-sup-xs{margin-top: @cuadratin / 6 }
+.margen-sup-xs-negativo{margin-top: -@cuadratin / 6 }
 .margen-sup-sm{margin-top: @cuadratin / 1.5 }
 .margen-sup-md{margin-top: @cuadratin * 1.5 }
 .margen-sup-lg{margin-top: @cuadratin * 2 }
@@ -141,6 +179,8 @@
 .margen-inf-sm{margin-bottom: @cuadratin / 1.5 }
 .margen-inf-md{margin-bottom: @cuadratin * 1.5 }
 .margen-inf-lg{margin-bottom: @cuadratin * 2 }
+
+.margen-auto{margin: 0 auto;}
 
 
 // Rellenos
@@ -208,12 +248,12 @@
 .ancho-auto{width: auto !important;}
 
 
-// Altos específicos
+// Altos específicos para cajas invisibles
 
-.alto-xs{height: @cuadratin * 4}
-.alto-sm{height: @cuadratin * 5}
-.alto-md{height: @cuadratin * 12}
-.alto-lg{height: @cuadratin * 16}
+.alto-xs{height: @cuadratin * 6}
+.alto-sm{height: @cuadratin * 7}
+.alto-md{height: @cuadratin * 14}
+.alto-lg{height: 87vh}
 .alto-completo{height: 100%}
 
 
@@ -241,56 +281,56 @@
 
 .borde{
         // Borde Lineal
-        &.lineal-xs{border: 1px solid @gris-claro}
-        &.lineal-sm{border: 2px solid @gris-claro}
-        &.lineal-md{border: 3px solid @gris-claro}
-        &.lineal-lg{border: 5px solid @gris-claro}
+        &.lineal-xs{border: 1px solid @gris-claro; &.borde-rojo{border: 1px solid @rojo !important} &.borde-blanco{border: 1px solid @blanco !important} &.borde-negro{border: 1px solid @negro !important}}
+        &.lineal-sm{border: 2px solid @gris-claro; &.borde-rojo{border: 2px solid @rojo !important} &.borde-blanco{border: 2px solid @blanco !important} &.borde-negro{border: 2px solid @negro !important}}
+        &.lineal-md{border: 3px solid @gris-claro; &.borde-rojo{border: 3px solid @rojo !important} &.borde-blanco{border: 3px solid @blanco !important} &.borde-negro{border: 3px solid @negro !important}}
+        &.lineal-lg{border: 4px solid @gris-claro; &.borde-rojo{border: 4px solid @rojo !important} &.borde-blanco{border: 4px solid @blanco !important} &.borde-negro{border: 5px solid @negro !important}}
 
-        &.sup-lineal-xs{border-top: 1px solid @gris-claro}
-        &.sup-lineal-sm{border-top: 2px solid @gris-claro}
-        &.sup-lineal-md{border-top: 3px solid @gris-claro}
-        &.sup-lineal-lg{border-top: 5px solid @gris-claro}
+        &.sup-lineal-xs{border-top: 1px solid @gris-claro; &.borde-rojo{border-top: 1px solid @rojo !important} &.borde-blanco{border-top: 1px solid @blanco !important} &.borde-negro{border-top: 1px solid @negro !important}}
+        &.sup-lineal-sm{border-top: 2px solid @gris-claro; &.borde-rojo{border-top: 2px solid @rojo !important} &.borde-blanco{border-top: 2px solid @blanco !important} &.borde-negro{border-top: 2px solid @negro !important}}
+        &.sup-lineal-md{border-top: 3px solid @gris-claro; &.borde-rojo{border-top: 3px solid @rojo !important} &.borde-blanco{border-top: 3px solid @blanco !important} &.borde-negro{border-top: 3px solid @negro !important}}
+        &.sup-lineal-lg{border-top: 4px solid @gris-claro; &.borde-rojo{border-top: 4px solid @rojo !important} &.borde-blanco{border-top: 4px solid @blanco !important} &.borde-negro{border-top: 4px solid @negro !important}}
 
-        &.der-lineal-xs{border-right: 1px solid @gris-claro}
-        &.der-lineal-sm{border-right: 2px solid @gris-claro}
-        &.der-lineal-md{border-right: 3px solid @gris-claro}
-        &.der-lineal-lg{border-right: 5px solid @gris-claro}
+        &.der-lineal-xs{border-right: 1px solid @gris-claro; &.borde-rojo{border-right: 1px solid @rojo !important} &.borde-blanco{border-right: 1px solid @blanco !important} &.borde-negro{border-right: 1px solid @negro !important}}
+        &.der-lineal-sm{border-right: 2px solid @gris-claro; &.borde-rojo{border-right: 2px solid @rojo !important} &.borde-blanco{border-right: 2px solid @blanco !important} &.borde-negro{border-right: 2px solid @negro !important}}
+        &.der-lineal-md{border-right: 3px solid @gris-claro; &.borde-rojo{border-right: 3px solid @rojo !important} &.borde-blanco{border-right: 3px solid @blanco !important} &.borde-negro{border-right: 3px solid @negro !important}}
+        &.der-lineal-lg{border-right: 4px solid @gris-claro; &.borde-rojo{border-right: 4px solid @rojo !important} &.borde-blanco{border-right: 4px solid @blanco !important} &.borde-negro{border-right: 4px solid @negro !important}}
 
-        &.inf-lineal-xs{border-bottom: 1px solid @gris-claro}
-        &.inf-lineal-sm{border-bottom: 2px solid @gris-claro}
-        &.inf-lineal-md{border-bottom: 3px solid @gris-claro}
-        &.inf-lineal-lg{border-bottom: 5px solid @gris-claro}
+        &.inf-lineal-xs{border-bottom: 1px solid @gris-claro; &.borde-rojo{border-bottom: 1px solid @rojo !important} &.borde-blanco{border-bottom: 1px solid @blanco !important} &.borde-negro{border-bottom: 1px solid @pizarra !important}}
+        &.inf-lineal-sm{border-bottom: 2px solid @gris-claro; &.borde-rojo{border-bottom: 2px solid @rojo !important} &.borde-blanco{border-bottom: 2px solid @blanco !important} &.borde-negro{border-bottom: 2px solid @negro !important}}
+        &.inf-lineal-md{border-bottom: 3px solid @gris-claro; &.borde-rojo{border-bottom: 3px solid @rojo !important} &.borde-blanco{border-bottom: 3px solid @blanco !important} &.borde-negro{border-bottom: 3px solid @negro !important}}
+        &.inf-lineal-lg{border-bottom: 4px solid @gris-claro; &.borde-rojo{border-bottom: 4px solid @rojo !important} &.borde-blanco{border-bottom: 4px solid @blanco !important} &.borde-negro{border-bottom: 4px solid @negro !important}}
 
-        &.izq-lineal-xs{border-left: 1px solid @gris-claro}
-        &.izq-lineal-sm{border-left: 2px solid @gris-claro}
-        &.izq-lineal-md{border-left: 3px solid @gris-claro}
-        &.izq-lineal-lg{border-left: 5px solid @gris-claro}
+        &.izq-lineal-xs{border-left: 1px solid @gris-claro; &.borde-rojo{border-left: 1px solid @rojo !important} &.borde-blanco{border-left: 1px solid @blanco !important} &.borde-negro{border-left: 1px solid @negro !important}}
+        &.izq-lineal-sm{border-left: 2px solid @gris-claro; &.borde-rojo{border-left: 2px solid @rojo !important} &.borde-blanco{border-left: 2px solid @blanco !important} &.borde-negro{border-left: 2px solid @negro !important}}
+        &.izq-lineal-md{border-left: 3px solid @gris-claro; &.borde-rojo{border-left: 3px solid @rojo !important} &.borde-blanco{border-left: 3px solid @blanco !important} &.borde-negro{border-left: 3px solid @negro !important}}
+        &.izq-lineal-lg{border-left: 4px solid @gris-claro; &.borde-rojo{border-left: 4px solid @rojo !important} &.borde-blanco{border-left: 4px solid @blanco !important} &.borde-negro{border-left: 4px solid @negro !important}}
 
         // Borde Punteado
-        &.punteado-xs{border: 1px dotted @gris-claro}
-        &.punteado-sm{border: 2px dotted @gris-claro}
-        &.punteado-md{border: 3px dotted @gris-claro}
-        &.punteado-lg{border: 5px dotted @gris-claro}
+        &.punteado-xs{border: 1px dotted @gris-claro; &.borde-rojo{border: 1px dotted @rojo !important} &.borde-blanco{border: 1px dotted @blanco !important} &.borde-negro{border: 1px dotted @negro !important}}
+        &.punteado-sm{border: 2px dotted @gris-claro; &.borde-rojo{border: 2px dotted @rojo !important} &.borde-blanco{border: 2px dotted @blanco !important} &.borde-negro{border: 2px dotted @negro !important}}
+        &.punteado-md{border: 3px dotted @gris-claro; &.borde-rojo{border: 3px dotted @rojo !important} &.borde-blanco{border: 3px dotted @blanco !important} &.borde-negro{border: 3px dotted @negro !important}}
+        &.punteado-lg{border: 4px dotted @gris-claro; &.borde-rojo{border: 4px dotted @rojo !important} &.borde-blanco{border: 4px dotted @blanco !important} &.borde-negro{border: 4px dotted @negro !important}}
+    
+        &.sup-punteado-xs{border-top: 1px dotted @gris-claro; &.borde-rojo{border-top: 1px dotted @rojo !important} &.borde-blanco{border-top: 1px dotted @blanco !important} &.borde-negro{border-top: 1px dotted @negro !important}}
+        &.sup-punteado-sm{border-top: 2px dotted @gris-claro; &.borde-rojo{border-top: 2px dotted @rojo !important} &.borde-blanco{border-top: 2px dotted @blanco !important} &.borde-negro{border-top: 2px dotted @negro !important}}
+        &.sup-punteado-md{border-top: 3px dotted @gris-claro; &.borde-rojo{border-top: 3px dotted @rojo !important} &.borde-blanco{border-top: 3px dotted @blanco !important} &.borde-negro{border-top: 3px dotted @negro !important}}
+        &.sup-punteado-lg{border-top: 4px dotted @gris-claro; &.borde-rojo{border-top: 4px dotted @rojo !important} &.borde-blanco{border-top: 4px dotted @blanco !important} &.borde-negro{border-top: 4px dotted @negro !important}}
 
-        &.sup-punteado-xs{border-top: 1px dotted @gris-claro}
-        &.sup-punteado-sm{border-top: 2px dotted @gris-claro}
-        &.sup-punteado-md{border-top: 3px dotted @gris-claro}
-        &.sup-punteado-lg{border-top: 5px dotted @gris-claro}
+        &.der-punteado-xs{border-right: 1px dotted @gris-claro; &.borde-rojo{border-right: 1px dotted @rojo !important} &.borde-blanco{border-right: 1px dotted @blanco !important} &.borde-negro{border-right: 1px dotted @negro !important}}
+        &.der-punteado-sm{border-right: 2px dotted @gris-claro; &.borde-rojo{border-right: 2px dotted @rojo !important} &.borde-blanco{border-right: 2px dotted @blanco !important} &.borde-negro{border-right: 2px dotted @negro !important}}
+        &.der-punteado-md{border-right: 3px dotted @gris-claro; &.borde-rojo{border-right: 3px dotted @rojo !important} &.borde-blanco{border-right: 3px dotted @blanco !important} &.borde-negro{border-right: 3px dotted @negro !important}}
+        &.der-punteado-lg{border-right: 4px dotted @gris-claro; &.borde-rojo{border-right: 4px dotted @rojo !important} &.borde-blanco{border-right: 4px dotted @blanco !important} &.borde-negro{border-right: 4px dotted @negro !important}}
 
-        &.der-punteado-xs{border-right: 1px dotted @gris-claro}
-        &.der-punteado-sm{border-right: 2px dotted @gris-claro}
-        &.der-punteado-md{border-right: 3px dotted @gris-claro}
-        &.der-punteado-lg{border-right: 5px dotted @gris-claro}
+        &.inf-punteado-xs{border-bottom: 1px dotted @gris-claro; &.borde-rojo{border-bottom: 1px dotted @rojo !important} &.borde-blanco{border-bottom: 1px dotted @blanco !important} &.borde-negro{border-bottom: 1px dotted @negro !important}}
+        &.inf-punteado-sm{border-bottom: 2px dotted @gris-claro; &.borde-rojo{border-bottom: 2px dotted @rojo !important} &.borde-blanco{border-bottom: 2px dotted @blanco !important} &.borde-negro{border-bottom: 2px dotted @negro !important}}
+        &.inf-punteado-md{border-bottom: 3px dotted @gris-claro; &.borde-rojo{border-bottom: 3px dotted @rojo !important} &.borde-blanco{border-bottom: 3px dotted @blanco !important} &.borde-negro{border-bottom: 3px dotted @negro !important}}
+        &.inf-punteado-lg{border-bottom: 4px dotted @gris-claro; &.borde-rojo{border-bottom: 4px dotted @rojo !important} &.borde-blanco{border-bottom: 4px dotted @blanco !important} &.borde-negro{border-bottom: 4px dotted @negro !important}}
 
-        &.inf-punteado-xs{border-bottom: 1px dotted @gris-claro}
-        &.inf-punteado-sm{border-bottom: 2px dotted @gris-claro}
-        &.inf-punteado-md{border-bottom: 3px dotted @gris-claro}
-        &.inf-punteado-lg{border-bottom: 5px dotted @gris-claro}
-
-        &.izq-punteado-xs{border-left: 1px dotted @gris-claro}
-        &.izq-punteado-sm{border-left: 2px dotted @gris-claro}
-        &.izq-punteado-md{border-left: 3px dotted @gris-claro}
-        &.izq-punteado-lg{border-left: 5px dotted @gris-claro}
+        &.izq-punteado-xs{border-left: 1px dotted @gris-claro; &.borde-rojo{border-left: 1px dotted @rojo !important} &.borde-blanco{border-left: 1px dotted @blanco !important} &.borde-negro{border-left: 1px dotted @negro !important}}
+        &.izq-punteado-sm{border-left: 2px dotted @gris-claro; &.borde-rojo{border-left: 2px dotted @rojo !important} &.borde-blanco{border-left: 2px dotted @blanco !important} &.borde-negro{border-left: 2px dotted @negro !important}}
+        &.izq-punteado-md{border-left: 3px dotted @gris-claro; &.borde-rojo{border-left: 3px dotted @rojo !important} &.borde-blanco{border-left: 3px dotted @blanco !important} &.borde-negro{border-left: 3px dotted @negro !important}}
+        &.izq-punteado-lg{border-left: 4px dotted @gris-claro; &.borde-rojo{border-left: 4px dotted @rojo !important} &.borde-blanco{border-left: 4px dotted @blanco !important} &.borde-negro{border-left: 4px dotted @negro !important}}
 
         // Borde curvo
         &.radio-xs{border-radius: 1px}
@@ -301,22 +341,22 @@
         &.radio-sup-der-xs{border-top-right-radius: 1px}
         &.radio-sup-der-sm{border-top-right-radius: 2px}
         &.radio-sup-der-md{border-top-right-radius: 3px}
-        &.radio-sup-der-lg{border-top-right-radius: 5px}
+        &.radio-sup-der-lg{border-top-right-radius: 4px}
 
         &.radio-sup-izq-xs{border-top-left-radius: 1px}
         &.radio-sup-izq-sm{border-top-left-radius: 2px}
         &.radio-sup-izq-md{border-top-left-radius: 3px}
-        &.radio-sup-izq-lg{border-top-left-radius: 5px}
+        &.radio-sup-izq-lg{border-top-left-radius: 4px}
 
         &.radio-inf-der-xs{border-bottom-right-radius: 1px}
         &.radio-inf-der-sm{border-bottom-right-radius: 2px}
         &.radio-inf-der-md{border-bottom-right-radius: 3px}
-        &.radio-inf-der-lg{border-bottom-right-radius: 5px}
+        &.radio-inf-der-lg{border-bottom-right-radius: 4px}
 
         &.radio-inf-izq-xs{border-bottom-left-radius: 1px}
         &.radio-inf-izq-sm{border-bottom-left-radius: 2px}
         &.radio-inf-izq-md{border-bottom-left-radius: 3px}
-        &.radio-inf-izq-lg{border-bottom-left-radius: 5px}
+        &.radio-inf-izq-lg{border-bottom-left-radius: 4px}
 }
 
 
@@ -344,9 +384,19 @@
     &.abs-sup{top: 0}
     &.abs-inf{bottom: 0}
     &.abs-der{right: 0}
+        &.der-relleno{right: 15px;}
     &.abs-izq{left: 0}
+        &.izq-relleno{left: 15px;}
+    &.al-medio{top: 50%;}
 }
 
+.relativo{
+    position: relative !important; 
+}
+
+.fijo{
+    position: fixed !important;
+}
 
 // Ubicación direccional de elementos
 
@@ -387,10 +437,10 @@
 
     // Rotar un elemento a posición diagonal
 .diagonal {
-    /* Safari */-webkit-transform: rotate(-60deg);
-    /* Firefox */-moz-transform: rotate(-60deg);
-    /* IE */-ms-transform: rotate(-60deg);
-    /* Opera */-o-transform: rotate(-60deg);
+    /* Safari */-webkit-transform: rotate(60deg);
+    /* Firefox */-moz-transform: rotate(60deg);
+    /* IE */-ms-transform: rotate(60deg);
+    /* Opera */-o-transform: rotate(60deg);
     /* Internet Explorer */filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     margin: @margen-code;
 
@@ -402,6 +452,15 @@
     /* Internet Explorer */filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
     margin: 20px 0;    
     }
+}
+
+.horizontal {
+    /* Safari */-webkit-transform: rotate(-60deg);
+    /* Firefox */-moz-transform: rotate(-60deg);
+    /* IE */-ms-transform: rotate(-60deg);
+    /* Opera */-o-transform: rotate(-60deg);
+    /* Internet Explorer */filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    margin: @margen-code;
 }
 
     // Rotar un elemento a posición vertical
@@ -510,6 +569,11 @@
 
 .sin-sombra-cabecera{text-shadow: 0px !important}
 
+.sombra-gris-blanco-gradiente{
+-webkit-box-shadow: 0px 20px 30px 27px rgba(249, 249, 249, 1);
+-moz-box-shadow:    0px 20px 30px 27px rgba(249, 249, 249, 1);
+box-shadow:         0px 20px 30px 27px rgba(249, 249, 249, 1);
+}
     // Foco
 .foco{
     border: 1px solid fade(@pizarra, 50);
@@ -528,6 +592,13 @@
     // Posicionar al frente con z-index
 .al-frente{
     z-index: 100;
+}
+
+.atras{
+    z-index: -100;
+    &.mas-atras{
+        z-index: -110;
+    }
 }
 
 // --------------------------------------------------
@@ -553,33 +624,38 @@
     // Específicos
 .margen-der{margin-right: @cuadratin !important}
 .margen-der-negativo{margin-right: -@cuadratin !important}
-.margen-der-xs{margin-right: @cuadratin / 6 !important}
-.margen-der-sm{margin-right: @cuadratin / 1.5 !important}
-.margen-der-md{margin-right: @cuadratin * 0.5 !important}
-.margen-der-lg{margin-right: @cuadratin * 2 !important}
+.margen-der-xs{margin-right: @cuadratin / 6.5 !important}
+.margen-der-sm{margin-right: @cuadratin / 2 !important}
+.margen-der-md{margin-right: @cuadratin * 1 !important}
+.margen-der-lg{margin-right: @cuadratin * 1.5 !important}
 
 .margen-izq{margin-left: @cuadratin !important}
 .margen-izq-negativo{margin-left: -@cuadratin !important}
-.margen-izq-xs{margin-left: @cuadratin / 6 !important}
-.margen-izq-sm{margin-left: @cuadratin / 1.5 !important}
-.margen-izq-md{margin-left: @cuadratin * 0.5 !important}
-.margen-izq-lg{margin-left: @cuadratin * 2 !important}
+.margen-izq-xs{margin-left: @cuadratin / 6.5 !important}
+.margen-izq-sm{margin-left: @cuadratin / 2 !important}
+.margen-izq-md{margin-left: @cuadratin * 1 !important}
+.margen-izq-lg{margin-left: @cuadratin * 1.5 !important}
 
 .margen-sup{margin-top: @cuadratin !important}
 .margen-sup-negativo{margin-top: -@cuadratin !important}
-.margen-sup-xs{margin-top: @cuadratin / 6 !important}
-.margen-sup-sm{margin-top: @cuadratin / 1.5 !important}
-.margen-sup-md{margin-top: @cuadratin * 0.5 !important}
-.margen-sup-lg{margin-top: @cuadratin * 2 !important}
+.margen-sup-xs{margin-top: @cuadratin / 6.5 !important}
+.margen-sup-sm{margin-top: @cuadratin / 2 !important}
+.margen-sup-md{margin-top: @cuadratin * .8 !important}
+.margen-sup-lg{margin-top: @cuadratin * 1.5 !important}
 
 .margen-inf{margin-bottom: @cuadratin !important}
-.margen-inf-negativo{margin-bottom: -@cuadratin !important}
-.margen-inf-xs{margin-bottom: @cuadratin / 6 !important}
-.margen-inf-sm{margin-bottom: @cuadratin / 1.5 !important}
-.margen-inf-md{margin-bottom: @cuadratin * 0.5 !important}
-.margen-inf-lg{margin-bottom: @cuadratin * 2 !important}
+.margen-inf-xs{margin-bottom: @cuadratin / 6.6 !important}
+.margen-inf-sm{margin-bottom: @cuadratin / 2 !important}
+.margen-inf-md{margin-bottom: @cuadratin * .8 !important}
+.margen-inf-lg{margin-bottom: @cuadratin * 1.5 !important}
 
 // Rellenos
+
+    // Completo
+.relleno-xs{&.responsivo{padding: @cuadratin / 2 !important}} // /6
+.relleno-sm{&.responsivo{padding: @cuadratin * 1.5 !important}} // /1.5
+.relleno-md{&.responsivo{padding: @cuadratin * 2 !important}} 
+.relleno-lg{&.responsivo{padding: @cuadratin * 3 !important}}
 
     // Laterales
 .relleno-horizontal{padding: 0 @cuadratin/2 !important}
@@ -592,6 +668,30 @@
 .relleno-izq{padding-left: @cuadratin/2 !important}
 .relleno-sup{padding-top: @cuadratin/2 !important}
 .relleno-inf{padding-bottom: @cuadratin/2 !important}
+
+        //Derecha
+.relleno-der-xs{padding-right: @cuadratin / 6.5 !important}
+.relleno-der-sm{padding-right: @cuadratin / 2 !important}
+.relleno-der-md{padding-right: @cuadratin * 1 !important}
+.relleno-der-lg{padding-right: @cuadratin * 1.5 !important}
+
+        //Izquierda
+.relleno-izq-xs{padding-left: @cuadratin / 6.5 !important}
+.relleno-izq-sm{padding-left: @cuadratin / 2 !important}
+.relleno-izq-md{padding-left: @cuadratin * 1 !important}
+.relleno-izq-lg{padding-left: @cuadratin * 1.5 !important}
+
+        //Superior
+.relleno-sup-xs{padding-top: @cuadratin / 6.5 !important}
+.relleno-sup-sm{padding-top: @cuadratin / 2 !important}
+.relleno-sup-md{padding-top: @cuadratin * 1 !important}
+.relleno-sup-lg{padding-top: @cuadratin * 1.5 !important}
+
+        //Inferior
+.relleno-inf-xs{padding-bottom: @cuadratin / 6.5 !important}
+.relleno-inf-sm{padding-bottom: @cuadratin / 2 !important} 
+.relleno-inf-md{padding-bottom: @cuadratin * 1 !important}
+.relleno-inf-lg{padding-bottom: @cuadratin * 1.5 !important}
 
     // Propiedad para observar funcionamiento de la Grilla
     .ver {
@@ -618,10 +718,10 @@
 
     // Altos específicos
 
-    .alto-xs{height: @cuadratin * 4; &.auto{height: auto !important;}}
-    .alto-sm{height: 150px;}
-    .alto-md{height: auto}
-    .alto-lg{height: auto}
+    .alto-xs{height: auto !important;}
+    .alto-sm{height: auto !important;}
+    .alto-md{height: auto; &.auto{height: auto !important;}}
+    .alto-lg{height: auto; &.auto{height: auto !important;}}
     .alto-completo{height: 100%}
 
     // Ubicar a la derecha un elemento de bloque
@@ -635,10 +735,26 @@
         }
     }
 
+    .fijo{
+        position: relative !important;
+    }
+
 }
 
 // Small screen / tablet
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+
+        // Completo
+    .relleno-xs{&.responsivo{padding: @cuadratin / 2 !important}} // /6
+    .relleno-sm{&.responsivo{padding: @cuadratin * 1.5 !important}} // /1.5
+    .relleno-md{&.responsivo{padding: @cuadratin * 2 !important}} 
+    .relleno-lg{&.responsivo{padding: @cuadratin * 3 !important}}
+
+    .alto-xs{height: @cuadratin * 6;}
+    .alto-sm{height: @cuadratin * 7}
+    .alto-md{height: @cuadratin * 11.5}
+    .alto-lg{height: @cuadratin * 16}
+
 
     // Ubicar a la derecha un elemento de bloque
     .derecha{
@@ -649,6 +765,10 @@
             float: left !important;
             text-align: left !important;
         }
+    }
+    
+    .fijo{
+        position: relative !important;
     }
 }
 
@@ -661,8 +781,8 @@
     // Altos específicos
 
     .alto-xs{height: @cuadratin * 6}
-    .alto-sm{height: @cuadratin * 7}
-    .alto-md{height: @cuadratin * 14}
+    .alto-sm{height: 12vw}
+    .alto-md{height: 27vw} //14
     .alto-lg{height: @cuadratin * 18}
 
 }
