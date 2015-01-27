@@ -105,7 +105,7 @@ intro: Texto sobre versatilidad
     <h5 class='pizarra gruesa'>Márgen superior</h5>
     <h6 class='pizarra gruesa'>Margen superior estándar</h6>
     <div class='fondo-gris-claro'>
-        <img class='margen-sup fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+        <img class='margen-sup fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img-samples/manto4.jpg">
         <p class='fondo-gris-claro'><span class='sin-margen fondo-blanco ancho-completo'><b>margen-sup estándar</b> <span class='verde'>(md) = 45px o 3em</span></span><br><span class='sin-margen fondo-blanco ancho-completo'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span></p>
     </div>
 
@@ -113,36 +113,36 @@ intro: Texto sobre versatilidad
             <div class='col-md-3 col-sm-6 col-xs-12 margen-inf'>
                 <h6 class='pizarra gruesa'>Margen superior xs</h6>
                 <div class='fondo-gris-claro'>
-                    <img class='margen-sup-xs fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
-                    <img class='margen-sup-xs fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
-                    <img class='margen-sup-xs fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-xs fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img-samples/manto4.jpg">
+                    <img class='margen-sup-xs fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img-samples/manto4.jpg">
+                    <img class='margen-sup-xs fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img-samples/manto4.jpg">
                 </div>
                     <p class='fondo-gris-claro'><span class='sin-margen fondo-blanco ancho-completo margen-sup-sm'><b>margen-sup-xs</b><span class='verde'>(xs) = 5px o 0,33333333em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.  </span></p>
             </div>
             <div class='col-md-3 col-sm-6 col-xs-12 margen-inf'>
                 <h6 class='pizarra gruesa'>Margen superior sm</h6>
                 <div class='fondo-gris-claro'>
-                    <img class='margen-sup-sm fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
-                    <img class='margen-sup-sm fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
-                    <img class='margen-sup-sm fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-sm fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img-samples/manto4.jpg">
+                    <img class='margen-sup-sm fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img-samples/manto4.jpg">
+                    <img class='margen-sup-sm fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img-samples/manto4.jpg">
                 </div>
                     <p class='fondo-gris-claro'><span class='sin-margen fondo-blanco ancho-completo margen-sup-sm'><b>margen-sup-sm</b><span class='verde'>(sm) = 20px o 1,33333333em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.   </span></p>
             </div>
             <div class='col-md-3 col-sm-6 col-xs-12 margen-inf'>
                 <h6 class='pizarra gruesa'>Margen superior md</h6>
                 <div class='fondo-gris-claro'>
-                    <img class='margen-sup-md fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
-                    <img class='margen-sup-md fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
-                    <img class='margen-sup-md fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-md fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img-samples/manto4.jpg">
+                    <img class='margen-sup-md fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img-samples/manto4.jpg">
+                    <img class='margen-sup-md fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img-samples/manto4.jpg">
                 </div>
                     <p class='fondo-gris-claro'><span class='sin-margen fondo-blanco ancho-completo'><b>margen-sup-md</b> <span class='verde'>(md) = 45px o 3em</span></span><br><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.</span></p>
             </div>
             <div class='col-md-3 col-sm-6 col-xs-12 margen-inf'>
                 <h6 class='pizarra gruesa'>Margen superior lg</h6>
                 <div class='fondo-gris-claro'>
-                    <img class='margen-sup-lg fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
-                    <img class='margen-sup-lg fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
-                    <img class='margen-sup-lg fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+                    <img class='margen-sup-lg fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img-samples/manto4.jpg">
+                    <img class='margen-sup-lg fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img-samples/manto4.jpg">
+                    <img class='margen-sup-lg fondo-gris-claro w100' alt="Third slide" src="{{ site.baseurl }}/img-samples/manto4.jpg">
                 </div>
                     <p><span class='sin-margen fondo-blanco ancho-completo margen-sup-lg'><b>margen-sup-lg</b><br> <span class='verde'>(lg) = 60px o 4em</span></span><span class='sin-margen fondo-blanco'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum.</span></p>
             </div>
@@ -233,7 +233,7 @@ intro: Texto sobre versatilidad
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ornare ipsum. Mauris elementum arcu a nisl porta, eget sollicitudin diam accumsan. Phasellus mollis cursus vehicula. Mauris placerat vestibulum leo eu facilisis. Etiam sagittis blandit lectus, at hendrerit nunc egestas ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div class='col-md-5 col-sm-9 col-xs-12'>
-            <img class='w100' alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+            <img class='w100' alt="Third slide" src="{{ site.baseurl }}/img-samples/manto4.jpg">
             <blockquote class='pie-de-foto'>Pie de imagen</blockquote>
         </div>
     </div>
@@ -378,7 +378,7 @@ intro: Texto sobre versatilidad
 
 <p>Los enlaces presentes a continuación resguardan el primer proyecto web estandarizado únicamente con Pyxis Framework y <a href='http://eadpucv.github.io/stampa/'>Stampa</a> en una serie de maquetas navegables y que corresponden al finiquito del diseño del sitio oficial de la <a href='http://www.ead.pucv.cl/'>e[ad]</a> de la <a href='http://www.ucv.cl/'>Pontificia Universidad Católica de Valparaíso</a>. El proceso de trabajo contempla como primer objeto la <i>arquitectura de información</i> graficada en su mapa correspondiente. De manera ulterior, diez plantillas fueron diseñadas respondiendo a la demanda de contenidos y su debida lectura, además de compatibilizar con <a href='#'>Wordpress</a> como el sistema de gestión (<a href='http://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_contenidos'>CSM</a>) utilizado por defecto.</p>
 <h5 class='pizarra gruesa'>Arquitectura de información</h5>
-<a href=''><img class='ancho-completo borde radio-md' src='{{ site.baseurl }}/img/arq-info-ead.jpg'></a>
+<a href=''><img class='ancho-completo borde radio-md' src='{{ site.baseurl }}/img-samples/arq-info-ead.jpg'></a>
 <h5 class='pizarra gruesa margen-sup-sm'>Enlaces a maquetas</h5>
 <ol class='sm'>
     <li class='sans'><a class='sans' target="_blank" href='http://eadpucv.github.io/pyxis/maquetas/home/'>Home</a></li>

@@ -465,13 +465,13 @@ intro: Texto sobre javascript
           </ol>
           <div class="carousel-inner">
             <div class="item">
-              <img alt="First slide" src="{{ site.baseurl }}/img/manto-6.jpg">
+              <img alt="First slide" src="{{ site.baseurl }}/img-samples/manto-6.jpg">
             </div>
             <div class="item active">
-              <img alt="Second slide" src="{{ site.baseurl }}/img/torneo2.jpg">
+              <img alt="Second slide" src="{{ site.baseurl }}/img-samples/torneo2.jpg">
             </div>
             <div class="item">
-              <img alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+              <img alt="Third slide" src="{{ site.baseurl }}/img-samples/manto4.jpg">
             </div>
           </div>
           <a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
@@ -498,13 +498,13 @@ intro: Texto sobre javascript
   &lt;/ol>
   &lt;div class="carousel-inner">
     &lt;div class="item">
-      &lt;img alt="First slide" src="{{ site.baseurl }}/img/manto-6.jpg">
+      &lt;img alt="First slide" src="{{ site.baseurl }}/img-samples/manto-6.jpg">
     &lt;/div>
     &lt;div class="item active">
-      &lt;img alt="Second slide" src="{{ site.baseurl }}/img/torneo2.jpg">
+      &lt;img alt="Second slide" src="{{ site.baseurl }}/img-samples/torneo2.jpg">
     &lt;/div>
     &lt;div class="item">
-      &lt;img alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+      &lt;img alt="Third slide" src="{{ site.baseurl }}/img-samples/manto4.jpg">
     &lt;/div>
   &lt;/div>
   &lt;a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
@@ -654,13 +654,13 @@ intro: Texto sobre javascript
   &lt;/ol>
   &lt;div class="carousel-inner">
     &lt;div class="item">
-      &lt;img alt="First slide" src="{{ site.baseurl }}/img/manto-6.jpg">
+      &lt;img alt="First slide" src="{{ site.baseurl }}/img-samples/manto-6.jpg">
     &lt;/div>
     &lt;div class="item active">
-      &lt;img alt="Second slide" src="{{ site.baseurl }}/img/torneo2.jpg">
+      &lt;img alt="Second slide" src="{{ site.baseurl }}/img-samples/torneo2.jpg">
     &lt;/div>
     &lt;div class="item">
-      &lt;img alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+      &lt;img alt="Third slide" src="{{ site.baseurl }}/img-samples/manto4.jpg">
     &lt;/div>
   &lt;/div>
   &lt;a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
@@ -749,13 +749,13 @@ intro: Texto sobre javascript
   &lt;/ol>
   &lt;div class="carousel-inner">
     &lt;div class="item">
-      &lt;img alt="First slide" src="{{ site.baseurl }}/img/manto-6.jpg">
+      &lt;img alt="First slide" src="{{ site.baseurl }}/img-samples/manto-6.jpg">
     &lt;/div>
     &lt;div class="item active">
-      &lt;img alt="Second slide" src="{{ site.baseurl }}/img/torneo2.jpg">
+      &lt;img alt="Second slide" src="{{ site.baseurl }}/img-samples/torneo2.jpg">
     &lt;/div>
     &lt;div class="item">
-      &lt;img alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+      &lt;img alt="Third slide" src="{{ site.baseurl }}/img-samples/manto4.jpg">
     &lt;/div>
   &lt;/div>
   &lt;a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
@@ -845,13 +845,13 @@ intro: Texto sobre javascript
   &lt;/ol>
   &lt;div class="carousel-inner">
     &lt;div class="item">
-      &lt;img alt="First slide" src="{{ site.baseurl }}/img/manto-6.jpg">
+      &lt;img alt="First slide" src="{{ site.baseurl }}/img-samples/manto-6.jpg">
     &lt;/div>
     &lt;div class="item active">
-      &lt;img alt="Second slide" src="{{ site.baseurl }}/img/torneo2.jpg">
+      &lt;img alt="Second slide" src="{{ site.baseurl }}/img-samples/torneo2.jpg">
     &lt;/div>
     &lt;div class="item">
-      &lt;img alt="Third slide" src="{{ site.baseurl }}/img/manto4.jpg">
+      &lt;img alt="Third slide" src="{{ site.baseurl }}/img-samples/manto4.jpg">
     &lt;/div>
   &lt;/div>
   &lt;a data-slide="prev" href="#carousel-example-generic" class="left carousel-control">
