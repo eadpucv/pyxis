@@ -23,5 +23,5 @@
    "jquery": "2.0.3",
    "stampa": "https://github.com/eadpucv/stampa.git"
   },
-  "keywords": ["framework","gui","css","less"]
+  "keywords": ["framework","gui","css","less"],
 }
