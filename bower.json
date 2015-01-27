@@ -16,6 +16,7 @@
   "ignore": [
     "**/.*",
     "bower_components",
+    "_config.yml",
     "_gh-pages",
     "_includes",
     "_layouts",
