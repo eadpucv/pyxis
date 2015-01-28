@@ -9,5 +9,5 @@ baseurl: "http://eadpucv.github.io/pyxis"
 project:
 name: Pyxis
 exclude: [bower_components, less]
-version: 0.0.4
+version: 0.0.5
 
