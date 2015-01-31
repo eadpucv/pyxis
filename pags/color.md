@@ -43,12 +43,13 @@ intro: Texto sobre color
                     <div class='col-md-12'>
                         <h5 class='pizarra gruesa'>Grises</h5>
                         <div class="fila">
-                            <div class="col-lg-5 col-md-5 col-sm-5 oculto-xs">
-                                <code class='codigo-color sin-relleno sin-borde'>@negro / rgba(43, 44, 42, 1) / #2b2c2</code>
-                                <code class='codigo-color sin-relleno sin-borde'>@gris-oscuro / rgba(43, 44, 42, 1) / #2b2c2</code>
-                                <code class='codigo-color sin-relleno sin-borde'>@gris / rgba(193, 194, 194, 1) / #c1c2c2</code>
-                                <code class='codigo-color sin-relleno sin-borde'>@gris-claro / rgba(226, 226, 226, 1) / #e2e2e2</code>
-                                <code class='codigo-color sin-relleno sin-borde'>@gris-blanco / rgba(249, 249, 249, 1) / #f9f9f9</code>
+                            <div class="col-lg-5 col-md-5 col-sm-5 oculto-xs texto-derecha">
+                                <code class='linea blanco'>@negro</code><br>
+                                <code class='linea blanco'>@gris-oscuro</code><br>
+                                <code class='linea blanco'>@gris</code><br>
+                                <code class='linea blanco'>@gris-claro</code><br>
+                                <code class='linea blanco'>@gris-blanco</code><br>
+                                <code class='linea blanco'>@blanco</code>
                             </div>
                             <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                                 <div class='caja-color fondo-negro'></div>
@@ -62,12 +63,12 @@ intro: Texto sobre color
                         <hr class='invisible'>
                         <h5 class='pizarra gruesa'>Colores</h5>
                         <div class="fila">
-                            <div class="col-lg-5 col-md-5 col-sm-5 oculto-xs">
-                                <code class='codigo-color sin-relleno sin-borde'>@pizarra / rgba(45,45,50,.7) / </code>
-                                <code class='codigo-color sin-relleno sin-borde'>@naranja, @naranja-pastel / rgba(255, 146, 100, 1) / #ff9264 </code>
-                                <code class='codigo-color sin-relleno sin-borde'>@rojo, @rojo-pyxis / rgba(199, 81, 77, 1) / #c7514d</code>
-                                <code class='codigo-color sin-relleno sin-borde'>@verde, @verde-turquesa / rgba(127, 177, 41, 1) / #7fb129</code>  
-                                <code class='codigo-color sin-relleno sin-borde'>@azul, @azul-cielo-profundo / rgba(65, 130, 197, 1) / #4182c5 </code>         
+                            <div class="col-lg-5 col-md-5 col-sm-5 oculto-xs texto-derecha">
+                                <code class='linea blanco'>@pizarra</code><br>
+                                <code class='linea blanco'>@naranja</code><br>
+                                <code class='linea blanco'>@rojo</code><br>
+                                <code class='linea blanco'>@verde</code><br>
+                                <code class='linea blanco'>@azul</code>         
                             </div>
                             <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                                 <div class='caja-color fondo-pizarra'></div>
@@ -82,9 +83,9 @@ intro: Texto sobre color
                         <hr class='invisible'>
                         <h5 class='pizarra gruesa'>Colores adicionales</h5>
                         <div class="fila">
-                            <div class="col-lg-5 col-md-5 col-sm-5 oculto-xs">
-                                <code class='codigo-color sin-relleno sin-borde'>@masking / rgba(245, 242, 219, 1) / #f5f2db </code>
-                                <code class='codigo-color sin-relleno sin-borde'>@ahuesado / rgba(255, 255, 240, 1) / #FFFFF0</code> 
+                            <div class="col-lg-5 col-md-5 col-sm-5 oculto-xs texto-derecha">
+                                <code class='linea blanco'>@masking</code><br>
+                                <code class='linea blanco'>@ahuesado</code> 
                             </div>
                             <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                                 <div class='caja-color fondo-masking'></div>

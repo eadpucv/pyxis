@@ -107,14 +107,14 @@ background-image: linear-gradient(to bottom, rgba(249, 249, 249, 0.98) 30%, rgba
 .fondo-blanco{background-color: @blanco}
 
     // Colores
-.naranja, .naranja-pastel{color: @naranja}
-.fondo-naranja, .fondo-naranja-pastel{background-color: @naranja}
-.verde, .verde-turquesa{color: @verde}
-.fondo-verde, .fondo-verde-turquesa{background-color: @verde}
+.naranja{color: @naranja}
+.fondo-naranja{background-color: @naranja}
+.verde{color: @verde}
+.fondo-verde{background-color: @verde}
 .rojo{color: @rojo}
 .fondo-rojo{background-color: @rojo}
-.azul, .azul-cielo-profundo{color: @azul}
-.fondo-azul, .fondo-azul-cielo-profundo{background-color: @azul}
+.azul{color: @azul}
+.fondo-azul{background-color: @azul}
 
     // Colores Especiales
 .masking{color: @masking}
@@ -363,31 +363,30 @@ background-image: linear-gradient(to bottom, rgba(249, 249, 249, 0.98) 30%, rgba
 
 // Comportamiento de elementos
 
-    // Comportamiento de bloque
+// Comportamiento de bloque
 .bloque{
     display: block !important;
 }
 
-    // Comportamiento de línea
+// Comportamiento de línea
+.enlinea,
 .linea{
     display: inline !important;
 }
 
 //  Propiedad para alinear bloques
-
 .en-linea{
     display: inline-block !important;
 }
 
 .absoluto{
     position: absolute;
-
     &.abs-sup{top: 0}
     &.abs-inf{bottom: 0}
     &.abs-der{right: 0}
-        &.der-relleno{right: 15px;}
+    &.der-relleno{right: 15px;}
     &.abs-izq{left: 0}
-        &.izq-relleno{left: 15px;}
+    &.izq-relleno{left: 15px;}
     &.al-medio{top: 50%;}
 }
 
@@ -484,7 +483,7 @@ background-image: linear-gradient(to bottom, rgba(249, 249, 249, 0.98) 30%, rgba
 
 .mono{font-family: @mono;}
 
-    //  Código inserto en un párrafo
+//  Código inserto en un párrafo
 .codigo-parrafo {
     width: auto;
     background-color: @pizarra;
@@ -494,28 +493,9 @@ background-image: linear-gradient(to bottom, rgba(249, 249, 249, 0.98) 30%, rgba
     padding: 1px 5px !important;
 }
 
-    // Código en lista de colores
-.codigo-color {
-    margin: 0;
-    width: auto;
-    height: 20px;
-    font-size: 9px;
-    float: right;
-}
-
-    // Caja de colores
-.caja-color {
-    display: block;
-    float: right;
-    height: 20px;
-    margin: 0;
-    width: 100%;
-}
-
-
 // íconos de Stampa
 
-    //  Caja de ícono
+//  Caja de ícono
 .caja-icono {
     width: 90px;
     height: 90px;
