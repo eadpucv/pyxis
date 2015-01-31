@@ -690,26 +690,16 @@ code, pre {
 //  código escrito:
 
 code {
-  background-color: @gris;
+  background-color: darken(@gris-claro, 17);
+  text-shadow: 1px 1px 0 @gris;
   color: @blanco;
-  border: 1px solid @gris-claro;
-  border-right: 1px solid rgba(164,164,162,.1);
-  width: 100%; 
+  border: 1px solid darken(@gris-claro, 23);
   display: inline-block;
   line-height: @interlinea * .666;
   white-space: pre-wrap;
   font-size: 12px;
-  padding: 5px 100px;
+  padding: 2px 5px;
   margin: 0;
-
-  &.sin-relleno{
-    padding: 4px 8px;
-  }
-
-  // Sin bordes
-  &.sin-borde{
-    border: none;
-  }
 
   &.linea{
     display: inline;
@@ -717,11 +707,18 @@ code {
     padding: 0;
   }
 
+  &.bloque{
+    background-color: @pizarra;
+    line-height: 140%;
+    text-shadow: none;
+  }
+
   &.blanco{
     width: auto;
     background-color: transparent;
     border: none;
     color: @gris;
+    text-shadow: none;
   }
 
   //  Tamaños de Código escrito:
