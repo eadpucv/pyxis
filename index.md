@@ -34,7 +34,7 @@ title: Pyxis Framework
     </div>
   </div>
 </div>
-<div class='fondo-gris-claro'>
+<div class='ruido sombra-interior'>
   <div class='pag'>
       <h1 class='rojo fino centrado grande'>Fundamentos</h1>
       <p>En general, con el término framework, nos estamos refiriendo a una estructura digital definida por componentes personalizables e intercambiables para el desarrollo de una aplicación o sitio web. En otras palabras, un framework se puede considerar como una aplicación genérica incompleta y configurable a la que podemos ir añadiéndole constantemente piezas para construir una aplicación concreta.

@@ -5,7 +5,7 @@
 .triangulo{    
     width: 0;
     height: 0;
-    border-top: 50px solid @negro-fundido; 
+    border-top: 50px solid @gris-oscuro; 
     border-left: 50px solid transparent; 
 }
 
@@ -74,8 +74,8 @@ cursor: pointer;
 .textura-6{background-image: url("/img/ruido-amplio.png")}
     
 
-.negro-fundido{color: @negro-fundido}
-.fondo-negro-fundido{background-color: @negro-fundido}
+.negro-fundido{color: @gris-oscuro}
+.fondo-negro-fundido{background-color: @gris-oscuro}
 .pizarra{color: @pizarra}
 .fondo-pizarra{background-color: @pizarra}
 .gris-oscuro{color: @gris-oscuro}
@@ -569,6 +569,10 @@ background-image: linear-gradient(to bottom, rgba(249, 249, 249, 0.98) 30%, rgba
 .sombra-cabecera-oscuro-lg{text-shadow: 3px 3px 0 @negro}
 
 .sin-sombra-cabecera{text-shadow: 0px !important}
+
+.sombra-interior-xs{.box-shadow(inset 0 0 3px fade(@negro, 30))}
+.sombra-interior   {.box-shadow(inset 0 0 10px fade(@negro, 30))}
+.sombra-interior-lg{.box-shadow(inset 0 0 25px fade(@negro, 30))}
 
 .sombra-gris-blanco-gradiente{
 -webkit-box-shadow: 0px 20px 30px 27px rgba(249, 249, 249, 1);

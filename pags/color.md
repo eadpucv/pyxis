@@ -45,8 +45,7 @@ intro: Texto sobre color
                         <div class="fila">
                             <div class="col-lg-5 col-md-5 col-sm-5 oculto-xs">
                                 <code class='codigo-color sin-relleno sin-borde'>@negro / rgba(43, 44, 42, 1) / #2b2c2</code>
-                                <code class='codigo-color sin-relleno sin-borde'>@negro-fundido / rgba(43, 44, 42, 1) / #2b2c2</code>
-                                <code class='codigo-color sin-relleno sin-borde'>@pizarra / rgba(45,45,50,.7) / </code>
+                                <code class='codigo-color sin-relleno sin-borde'>@gris-oscuro / rgba(43, 44, 42, 1) / #2b2c2</code>
                                 <code class='codigo-color sin-relleno sin-borde'>@gris / rgba(193, 194, 194, 1) / #c1c2c2</code>
                                 <code class='codigo-color sin-relleno sin-borde'>@gris-claro / rgba(226, 226, 226, 1) / #e2e2e2</code>
                                 <code class='codigo-color sin-relleno sin-borde'>@gris-blanco / rgba(249, 249, 249, 1) / #f9f9f9</code>
@@ -54,7 +53,6 @@ intro: Texto sobre color
                             <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
                                 <div class='caja-color fondo-negro'></div>
                                 <div class='caja-color fondo-negro-fundido'></div>
-                                <div class='caja-color fondo-pizarra'></div>
                                 <div class='caja-color fondo-gris'></div>
                                 <div class='caja-color fondo-gris-claro'></div>
                                 <div class='caja-color fondo-gris-blanco'></div>
@@ -65,12 +63,14 @@ intro: Texto sobre color
                         <h5 class='pizarra gruesa'>Colores</h5>
                         <div class="fila">
                             <div class="col-lg-5 col-md-5 col-sm-5 oculto-xs">
+                                <code class='codigo-color sin-relleno sin-borde'>@pizarra / rgba(45,45,50,.7) / </code>
                                 <code class='codigo-color sin-relleno sin-borde'>@naranja, @naranja-pastel / rgba(255, 146, 100, 1) / #ff9264 </code>
                                 <code class='codigo-color sin-relleno sin-borde'>@rojo, @rojo-pyxis / rgba(199, 81, 77, 1) / #c7514d</code>
                                 <code class='codigo-color sin-relleno sin-borde'>@verde, @verde-turquesa / rgba(127, 177, 41, 1) / #7fb129</code>  
                                 <code class='codigo-color sin-relleno sin-borde'>@azul, @azul-cielo-profundo / rgba(65, 130, 197, 1) / #4182c5 </code>         
                             </div>
                             <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+                                <div class='caja-color fondo-pizarra'></div>
                                 <div class='caja-color fondo-naranja'></div>
                                 <div class='caja-color fondo-rojo'></div>
                                 <div class='caja-color fondo-verde'></div> 
