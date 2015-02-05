@@ -55,7 +55,7 @@ title: Pyxis Framework - Maquetas
 		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
-				<img src='/img-samples/fundador1.jpg'>
+				<img src='{{ site.baseurl }}/img-samples/fundador1.jpg'>
 				<h5 class='xs'>Alberto Cruz</h5>
 				<span>Arquitecto y teórico de la arquitectura, Premio Nacional de Arquitectura de 1975
 				n. 1917 – † 2013</span>
@@ -67,7 +67,7 @@ title: Pyxis Framework - Maquetas
 		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
-				<img src='/img-samples/fundador2.jpg'>
+				<img src='{{ site.baseurl }}/img-samples/fundador2.jpg'>
 				<h5 class='xs'>Godogredo Iommi</h5>
 				<span>Poeta y profesor universitario
 				n. 1917 – † 2001</span>
@@ -79,7 +79,7 @@ title: Pyxis Framework - Maquetas
 		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
-				<img src='/img-samples/fundador3.jpg'>
+				<img src='{{ site.baseurl }}/img-samples/fundador3.jpg'>
 				<h5 class='xs'>Arturo Baeza</h5>
 				<span>Arquitecto y profesor universitario
 				n. 1927 – † 2001</span>
@@ -91,7 +91,7 @@ title: Pyxis Framework - Maquetas
 		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
-				<img src='/img-samples/fundador4.jpg'>
+				<img src='{{ site.baseurl }}/img-samples/fundador4.jpg'>
 				<h5 class='xs'>Fabio Cruz</h5>
 				<span>Arquitecto
 				n. 1927 – † 2007</span>
@@ -103,7 +103,7 @@ title: Pyxis Framework - Maquetas
 		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
-				<img src='/img-samples/fundador5.jpg'>
+				<img src='{{ site.baseurl }}/img-samples/fundador5.jpg'>
 				<h5 class='xs'>José Viál Amstrong</h5>
 				<span>Arquitecto y profesor universitario
 				n. 1917 – † 1983</span>
@@ -115,7 +115,7 @@ title: Pyxis Framework - Maquetas
 		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
-				<img src='/img-samples/fundador6.jpg'>
+				<img src='{{ site.baseurl }}/img-samples/fundador6.jpg'>
 				<h5 class='xs'>Francisco Méndez</h5>
 				<span>Arquitecto, escenógrafo, artista digital y pintor
 				n. 1922 –</span>
@@ -127,7 +127,7 @@ title: Pyxis Framework - Maquetas
 		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
-				<img src='/img-samples/fundador7.jpg'>
+				<img src='{{ site.baseurl }}/img-samples/fundador7.jpg'>
 				<h5 class='xs'>Jaime Bellalta</h5>
 				<span>Arquitecto y profesor universitario
 				n. – † 2007</span>
@@ -139,7 +139,7 @@ title: Pyxis Framework - Maquetas
 		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
-				<img src='/img-samples/fundador8.jpg'>
+				<img src='{{ site.baseurl }}/img-samples/fundador8.jpg'>
 				<h5 class='xs'>Claudio Girola</h5>
 				<span>Escultor y artista visual
 				n. 1923 – † 1994</span>
