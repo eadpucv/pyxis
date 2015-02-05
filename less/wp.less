@@ -177,7 +177,7 @@
             }
         }
         h1, h4, h2, h3, h4, h5, h6{
-            
+            .condensado;
             .sombra-cabecera-claro-xs;
             .relleno-inf-xs;
             a{
@@ -388,7 +388,13 @@
 }
 // Page full o página completa (Historia) *
 #page-full{
-    h1, h4, h2, h3, h4, h5, h6 .title{
+    h1 .title{
+        .condensado;
+        .gruesa;
+        .gris-oscuro;
+        .relleno-inf-sm;
+    }
+    h2, h3, h4, h5, h6{
         .gris-oscuro; 
         .italica; 
         .relleno-inf-sm;
@@ -460,15 +466,20 @@
         }
         h1, h4, h2, h3, h4, h5, h6 .title{
             .interletraje-sm; 
+            .ancho-completo;
             .sans; 
             .altas; 
             .margen-sup-xs; 
-            .derecha; 
+            .derecha;
+            .texto-derecha;
             .negro;
+            .margen-inf-xs;
+            .relleno-inf-xs;
         }
         span{
             .texto-derecha; 
             .italica;
+            .margen-inf-sm
         }
         p{
             .bloque; 
@@ -480,6 +491,228 @@
     }
 }
 
+#portada-indice{
+    .noticia{ 
+            .cabecera{
+                .alto-xs;
+                .margen-inf-xs;
+                .borde;
+                .radio-md;
+                .ocultar-desborde;
+                    .indice{
+                        .absoluto; 
+                        .cf; 
+                        .al-frente; 
+                        .abs-sup; 
+                        .abs-inf; 
+                        .abs-der; 
+                        .der-relleno; 
+                        .abs-izq; 
+                        .izq-relleno; 
+                        .alto-xs;
+                        a{
+                            .sans; 
+                            .fondo-blanco; 
+                            .borde; 
+                            .radio-sup-izq-md; 
+                            .absoluto; 
+                            .abs-inf; 
+                            .abs-der; 
+                            .altas; 
+                            .interletraje-xs; 
+                            .bloque;
+                        }
+                    }
+                    img{
+                        .w150;
+                        .margen-sup-negativo;
+                        .transition(.2s ease all);
+                    }
+                    &:hover{
+                        img{
+                            .relleno-der-sm;
+                            .transition(.2s ease all);
+                        }
+                    }
+                }
+            h1, h4, h2, h3, h4, h5, h6{
+                .condensado;
+                .sombra-cabecera-claro-xs;
+                .relleno-inf-xs;
+                a{
+                    .condensado; 
+                    .gruesa;
+                    .gris-oscuro;
+                    &:hover{
+                        .negro;
+                    }
+                }
+            }
+            .entry-details, .datos-publicacion{
+                .rojo; 
+                .italica; 
+                .borde; 
+                .sup-lineal-xs;
+                .inf-lineal-xs;
+                .relleno-vertical-xs;
+                a{
+                    .en-linea;
+                    .icn-cuadrolleno{
+                        .gris-blanco;
+                    }
+                    .icn-lapiz{
+                        .gris-oscuro;
+                    }
+                }
+            }
+            p{
+                .sans;
+                .margen-sup-xs;
+            }
+    }
+}
+
+#portada-informacion{
+        .fila{
+            .margen-inf-sm;
+        }
+        h1{
+            .gruesa; 
+            .negro; 
+            .condensado; 
+            .sombra-cabecera-claro-sm; 
+            .margen-inf-sm; 
+        }
+
+        h2, h3, h4, h5, h6 .title{ 
+            .condensado;
+            .relleno-inf-xs; 
+            .sombra-cabecera-claro-xs;
+            a{
+                .condensado; 
+                .gris-oscuro; 
+                .gruesa;
+                i{
+                    .margen-der-xs; 
+                    .sin-interletraje;
+                }
+                &:hover{
+                    .rojo;
+                }
+            }
+        }
+        .entry-details, .datos-publicacion{
+            .rojo; 
+            .italica; 
+            .borde; 
+            .sup-lineal-xs;
+            .inf-lineal-xs;
+            .relleno-vertical-xs;
+            a{
+                .en-linea;
+                .icn-cuadrolleno{
+                    .gris-blanco;
+                }
+                .icn-lapiz{
+                    .gris-oscuro;
+                }
+            }
+        }
+        p{
+            .sans;
+            .margen-sup-xs;
+        }
+}
+
+// noticia genérica (resumen)
+    .noticia{
+        .cabecera{
+            .alto-xs;
+            .margen-inf-xs;
+            .borde;
+            .radio-md;
+            .ocultar-desborde;
+            a{
+                img{
+                    .w150;
+                    .margen-sup-negativo;
+                    .transition(.2s ease all);
+                }
+                &:hover{
+                    img{
+                        .relleno-der-sm;
+                        .transition(.2s ease all);
+                    }
+                }
+            }
+        }
+        h1, h4, h2, h3, h4, h5, h6{
+            .condensado;
+            .sombra-cabecera-claro-xs;
+            .relleno-inf-xs;
+            a{
+                .condensado; 
+                .gruesa;
+                .gris-oscuro;
+                &:hover{
+                    .negro;
+                }
+            }
+        }
+        .entry-details, .datos-publicacion{
+            .rojo; 
+            .italica; 
+            .borde; 
+            .sup-lineal-xs;
+            .inf-lineal-xs;
+            .relleno-vertical-xs;
+            a{
+                .en-linea;
+                .icn-cuadrolleno{
+                    .gris-blanco;
+                }
+                .icn-lapiz{
+                    .gris-oscuro;
+                }
+            }
+        }
+        p{
+            .sans;
+            .margen-sup-xs;
+        }
+    }
+
+#portadilla{
+    // Necesario fondo por z-index de imagen fixed 
+    background: @gris-blanco url("/img/ruido-fondo-pyxis.png") repeat center;
+    // Necesario margen negativo para sobreponer fondo con imagen fixed 
+    margin-bottom: -25px;
+    margin-top: -25px;
+
+        h3, .title{ 
+            .sans;
+            .gruesa;
+            i{
+                .margen-der-xs;
+            }
+        }
+
+        h5{
+            .serif; 
+            .italica; 
+            .negrita;
+        }
+
+        p{
+            .sans;
+        }
+}
+
+#post{
+    // Necesario fondo por z-index de imagen fixed 
+    background: @gris-blanco url("/img/ruido-fondo-pyxis.png") repeat center;  
+}
+
 #sidebar{
     .seccion{
         .interletraje-xs;
@@ -488,7 +721,7 @@
         .gruesa; 
         .altas;
     }
-    ul{
+    ul, ol{
         li{
             .relleno-vertical-xs; 
             .borde; 
@@ -502,6 +735,11 @@
                 .sans;
                 .semi-gruesa;
             }
+        }
+        img{
+            .ancho-completo; 
+            .borde; 
+            .radio-md;
         }
     }
 }
@@ -527,6 +765,16 @@
 .h-entry {
     width: 90%;
 
+    img{
+            .margen-inf-xs; 
+    }
+
+    p{
+        img{
+            .margen-inf-xs;
+        }
+    }
+
     .wpcf7{
             width: 65%;
         }
@@ -537,6 +785,7 @@
         margin: 0 @cuadratin @cuadratin @cuadratin;
         padding: 0 0 0 10px !important;
         color: rgba(1,1,1,0.8);
+
 
          //  Sin márgenes:
           &.sin-margen{
@@ -583,7 +832,8 @@
             font-style: inherit !important;
             font-style: italic !important; 
             line-height: 16px !important;
-            margin: 20px 0 30px !important;
+            .margen-sup-xs;
+            .margen-inf-sm;
             padding: 0 0 0 10px !important;
           }
     }
@@ -768,6 +1018,26 @@
     .e-content, .p-summary, .p-name {
         width: 100%;
     }
+
+    #page-full{
+        p{
+            .w100;
+        }
+    }
+
+    #post, .h-entry, .e-content, .p-summary, .p-name{
+        p{
+            .margen-sup-sm;
+        }
+        #breadcrumb{
+            .margen-inf-xs !important;
+        }
+        blockquote, .wp-caption-text{
+            line-height: 22/@em;
+            font-size: @cuerpo;
+        }
+    }
+
 }
 
 
@@ -795,6 +1065,24 @@
     .wrap {
         &.header {
             height: auto;
+        }
+    }
+
+    #portadilla{
+        .noticia{
+            .cabecera{
+                height: 130px;
+            }
+        }
+    }
+
+    #post, .h-entry{
+        #breadcrumb{
+            .margen-inf-xs !important;
+        }
+        ul, ol{
+            margin: 0px !important;
+            padding-bottom: 10px !important; 
         }
     }
 }
