@@ -43,7 +43,7 @@ title: Pyxis Framework - Maquetas
 		</div>
 	</div>
 	<!-- Segunda seccion -->
-	<div id='parallax-historia' class='foto-4 relativo oculto-sm oculto-xs'>
+	<div id='parallax-historia' class='foto-4 relativo oculto-xs'>
 		<h1 class='lg entry-title'>Fundadores</h1>
 		<h4 class='xs subtitulo'>Reseña biográfica</h4>
 	</div>
@@ -166,7 +166,7 @@ title: Pyxis Framework - Maquetas
 		</div>
 	</div>
 	<!-- Tercera seccion -->
-	<div id='lala' class='foto-7 relativo oculto-sm oculto-xs'>
+	<div id='lala' class='foto-7 relativo oculto-xs'>
 		<h1 class='lg entry-title'>Visión</h1>
 		<h4 class='xs subtitulo'>Escuela de arquitectura y diseño e[ad]</span></h4>
 	</div>
