@@ -5,7 +5,7 @@
 .triangulo{    
     width: 0;
     height: 0;
-    border-top: 50px solid @negro-fundido; 
+    border-top: 50px solid @gris-oscuro; 
     border-left: 50px solid transparent; 
 }
 
@@ -61,21 +61,21 @@ cursor: pointer;
 
 //  Colores
 
-    // Negros y grises
+// Negros y grises
 .negro{color: @negro}
 .fondo-negro{background-color: @negro}
+
+// Texturas
 .ruido{background-image: url("/img/ruido.png")}
 .ruido-negro{background-image: url("/img/ruido-negro-oscuro.png")}
-.textura-1{background-image: url("/img/fondo-textura-5.jpg")} 
+.textura-1{background-image: url("/img/fondo-textura-1.jpg")} 
 .textura-2{background-image: url("/img/fondo-textura-2.jpg")}
 .textura-3{background-image: url("/img/fondo-textura-3.jpg")}
 .textura-4{background-image: url("/img/fondo-textura-4.jpg")}
-.textura-5{background-image: url("/img/fondo-textura.jpg")}
+.textura-5{background-image: url("/img/fondo-textura-5.jpg")}
 .textura-6{background-image: url("/img/ruido-amplio.png")}
     
 
-.negro-fundido{color: @negro-fundido}
-.fondo-negro-fundido{background-color: @negro-fundido}
 .pizarra{color: @pizarra}
 .fondo-pizarra{background-color: @pizarra}
 .gris-oscuro{color: @gris-oscuro}
@@ -107,14 +107,14 @@ background-image: linear-gradient(to bottom, rgba(249, 249, 249, 0.98) 30%, rgba
 .fondo-blanco{background-color: @blanco}
 
     // Colores
-.naranja, .naranja-pastel{color: @naranja}
-.fondo-naranja, .fondo-naranja-pastel{background-color: @naranja}
-.verde, .verde-turquesa{color: @verde}
-.fondo-verde, .fondo-verde-turquesa{background-color: @verde}
+.naranja{color: @naranja}
+.fondo-naranja{background-color: @naranja}
+.verde{color: @verde}
+.fondo-verde{background-color: @verde}
 .rojo{color: @rojo}
 .fondo-rojo{background-color: @rojo}
-.azul, .azul-cielo-profundo{color: @azul}
-.fondo-azul, .fondo-azul-cielo-profundo{background-color: @azul}
+.azul{color: @azul}
+.fondo-azul{background-color: @azul}
 
     // Colores Especiales
 .masking{color: @masking}
@@ -363,31 +363,30 @@ background-image: linear-gradient(to bottom, rgba(249, 249, 249, 0.98) 30%, rgba
 
 // Comportamiento de elementos
 
-    // Comportamiento de bloque
+// Comportamiento de bloque
 .bloque{
     display: block !important;
 }
 
-    // Comportamiento de línea
+// Comportamiento de línea
+.enlinea,
 .linea{
     display: inline !important;
 }
 
 //  Propiedad para alinear bloques
-
 .en-linea{
     display: inline-block !important;
 }
 
 .absoluto{
     position: absolute;
-
     &.abs-sup{top: 0}
     &.abs-inf{bottom: 0}
     &.abs-der{right: 0}
-        &.der-relleno{right: 15px;}
+    &.der-relleno{right: 15px;}
     &.abs-izq{left: 0}
-        &.izq-relleno{left: 15px;}
+    &.izq-relleno{left: 15px;}
     &.al-medio{top: 50%;}
 }
 
@@ -484,38 +483,9 @@ background-image: linear-gradient(to bottom, rgba(249, 249, 249, 0.98) 30%, rgba
 
 .mono{font-family: @mono;}
 
-    //  Código inserto en un párrafo
-.codigo-parrafo {
-    width: auto;
-    background-color: @pizarra;
-    font-size: 13px;
-    font-weight: 100;
-    color: @blanco;
-    padding: 1px 5px !important;
-}
-
-    // Código en lista de colores
-.codigo-color {
-    margin: 0;
-    width: auto;
-    height: 20px;
-    font-size: 9px;
-    float: right;
-}
-
-    // Caja de colores
-.caja-color {
-    display: block;
-    float: right;
-    height: 20px;
-    margin: 0;
-    width: 100%;
-}
-
-
 // íconos de Stampa
 
-    //  Caja de ícono
+//  Caja de ícono
 .caja-icono {
     width: 90px;
     height: 90px;
@@ -569,6 +539,10 @@ background-image: linear-gradient(to bottom, rgba(249, 249, 249, 0.98) 30%, rgba
 .sombra-cabecera-oscuro-lg{text-shadow: 3px 3px 0 @negro}
 
 .sin-sombra-cabecera{text-shadow: 0px !important}
+
+.sombra-interior-xs{.box-shadow(inset 0 0 3px fade(@negro, 30))}
+.sombra-interior   {.box-shadow(inset 0 0 10px fade(@negro, 30))}
+.sombra-interior-lg{.box-shadow(inset 0 0 25px fade(@negro, 30))}
 
 .sombra-gris-blanco-gradiente{
 -webkit-box-shadow: 0px 20px 30px 27px rgba(249, 249, 249, 1);

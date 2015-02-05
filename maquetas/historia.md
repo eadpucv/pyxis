@@ -5,12 +5,16 @@ title: Pyxis Framework - Maquetas
 
 <div id='page-full'>
 	<!-- Primera seccion -->
-	<div id='parallax-historia' class='foto-1 relativo'>
+	<div id='parallax-historia' class='foto-1 relativo oculto-xs'>
 		<h1 class='lg entry-title'>Fundación</h1>
 		<h4 class='xs subtitulo'>Escuela de arquitectura y diseño, 1952</h4>
 	</div>
 	<div class='fondo-blanco'>
 		<div class='pag'>
+			<!-- móviles -->
+			<h1 class='lg title oculto-lg oculto-md oculto-sm'>Fundación</h1>
+			<h6 class='lg oculto-lg oculto-md oculto-sm'>Escuela de arquitectura y diseño, 1952</h6>
+			<!-- móviles -->
 			<p class='sm'>En 1952, un grupo de arquitectos y artistas -Alberto Cruz, Godofredo Iommi, Fabio Cruz P, Miguel Eyquem, José Vial, Arturo Baeza, Francisco Méndez, Jaime Bellalta y Claudio Girola, quien llegó al poco tiempo- se incorporan a la Escuela de Arquitectura de la Universidad Católica de Valparaíso, fundando, simultáneamente, el Instituto de Arquitectura que sirve y alimenta a la Escuela.</p>
 			<p class='sm'>Dicho grupo formula un planteamiento original acerca de la concepción de la poesía, el arte y oficio de la arquitectura. Tal planteamiento orienta y configura los estudios y la pedagogía de la Escuela.</p>
 			<p class='sm'>En 1964 se formula una visión poética de América: “Amereida”, que dice de su origen y destino. Siguiendo tal visión, profesores de la Escuela organizan una Travesía por el interior del Continente, uniendo Tierra del Fuego con Santa Cruz de la Sierra. Participan también en ella artistas e intelectuales europeos.</p>
@@ -21,9 +25,9 @@ title: Pyxis Framework - Maquetas
 			<p class='sm'>Ellas han llegado desde el Canal Beagle a la Isla de Pascua, el Amazonas, el Ecuador, las Pampas, la Selva. En las Travesías se llevan a cabo Actos y proclamaciones, culminan en leves obras de arquitectura y diseño que se donan a la gente del lugar.</p>
 		</div>
 	</div>
-	<div id='parallax-historia' class='foto-2'>
+	<div id='parallax-historia' class='foto-2 oculto-xs'>
 		<div class='pag'>
-		<span class='wp-caption-text derecha'>"Partida mañana a las siete antemeridiano desde santiago
+		<span class='wp-caption-text derecha oculto-sm'>"Partida mañana a las siete antemeridiano desde santiago
 		escalas del avión santiago puerto montt punta arenas
 		los nueve están – jonathan boulting alberto cruz fabio
 		cruz michel degury francois fédier claudio girola godofredo
@@ -32,22 +36,26 @@ title: Pyxis Framework - Maquetas
 		<span class='sm wp-caption-text referencia'>— Primera travesía 1965.</span>
 		</div>
 	</div>
-	<div id='parallax-historia' class='foto-3'>
+	<div id='parallax-historia' class='foto-3 oculto-xs'>
 		<div class='pag'>
-		<span class='wp-caption-text'>—"Mas ¿qué nos dice “mundo”? Latamente el mero juego de aparición y desaparición. Sólo en la latitud de tal juego el mundo se hace a sí mismo mundo; aparece como tal, dígase estante o cambiante. Aparece –desaparece– soñando, imaginando, recordando, olvidando, viendo, tocando, etc., etc. Ese juego de aparecer y desaparecer, ineludible, tiene como fondo el desaparecimiento mismo."</span>
+		<span class='wp-caption-text oculto-sm'>—"Mas ¿qué nos dice “mundo”? Latamente el mero juego de aparición y desaparición. Sólo en la latitud de tal juego el mundo se hace a sí mismo mundo; aparece como tal, dígase estante o cambiante. Aparece –desaparece– soñando, imaginando, recordando, olvidando, viendo, tocando, etc., etc. Ese juego de aparecer y desaparecer, ineludible, tiene como fondo el desaparecimiento mismo."</span>
 		<span class='sm wp-caption-text referencia derecha'>— Segunda carta sobre la Phalène.</span>
 		</div>
 	</div>
 	<!-- Segunda seccion -->
-	<div id='parallax-historia' class='foto-4 relativo'>
+	<div id='parallax-historia' class='foto-4 relativo oculto-sm oculto-xs'>
 		<h1 class='lg entry-title'>Fundadores</h1>
 		<h4 class='xs subtitulo'>Reseña biográfica</h4>
 	</div>
 	<div class='pag'>
+		<!-- móviles -->
+		<h1 class='lg title oculto-lg oculto-md oculto-sm'>Fundadores</h1>
+		<h6 class='lg oculto-lg oculto-md oculto-sm'>Reseña biográfica</h6>
+		<!-- móviles -->
 		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
-				<img src='/img/fundador1.jpg'>
+				<img src='/img-samples/fundador1.jpg'>
 				<h5 class='xs'>Alberto Cruz</h5>
 				<span>Arquitecto y teórico de la arquitectura, Premio Nacional de Arquitectura de 1975
 				n. 1917 – † 2013</span>
@@ -59,7 +67,7 @@ title: Pyxis Framework - Maquetas
 		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
-				<img src='/img/fundador2.jpg'>
+				<img src='/img-samples/fundador2.jpg'>
 				<h5 class='xs'>Godogredo Iommi</h5>
 				<span>Poeta y profesor universitario
 				n. 1917 – † 2001</span>
@@ -71,7 +79,7 @@ title: Pyxis Framework - Maquetas
 		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
-				<img src='/img/fundador3.jpg'>
+				<img src='/img-samples/fundador3.jpg'>
 				<h5 class='xs'>Arturo Baeza</h5>
 				<span>Arquitecto y profesor universitario
 				n. 1927 – † 2001</span>
@@ -83,7 +91,7 @@ title: Pyxis Framework - Maquetas
 		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
-				<img src='/img/fundador4.jpg'>
+				<img src='/img-samples/fundador4.jpg'>
 				<h5 class='xs'>Fabio Cruz</h5>
 				<span>Arquitecto
 				n. 1927 – † 2007</span>
@@ -95,7 +103,7 @@ title: Pyxis Framework - Maquetas
 		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
-				<img src='/img/fundador5.jpg'>
+				<img src='/img-samples/fundador5.jpg'>
 				<h5 class='xs'>José Viál Amstrong</h5>
 				<span>Arquitecto y profesor universitario
 				n. 1917 – † 1983</span>
@@ -107,7 +115,7 @@ title: Pyxis Framework - Maquetas
 		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
-				<img src='/img/fundador6.jpg'>
+				<img src='/img-samples/fundador6.jpg'>
 				<h5 class='xs'>Francisco Méndez</h5>
 				<span>Arquitecto, escenógrafo, artista digital y pintor
 				n. 1922 –</span>
@@ -119,7 +127,7 @@ title: Pyxis Framework - Maquetas
 		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
-				<img src='/img/fundador7.jpg'>
+				<img src='/img-samples/fundador7.jpg'>
 				<h5 class='xs'>Jaime Bellalta</h5>
 				<span>Arquitecto y profesor universitario
 				n. – † 2007</span>
@@ -131,7 +139,7 @@ title: Pyxis Framework - Maquetas
 		<!-- Fundador -->
 		<div class='fila personaje'>
 			<div class='col-md-3 col-md-offset-2'>
-				<img src='/img/fundador8.jpg'>
+				<img src='/img-samples/fundador8.jpg'>
 				<h5 class='xs'>Claudio Girola</h5>
 				<span>Escultor y artista visual
 				n. 1923 – † 1994</span>
@@ -141,29 +149,33 @@ title: Pyxis Framework - Maquetas
 			</div>
 		</div>
 	</div><!-- fin de pag -->
-	<div id='lala' class='foto-5'>
-		<div class='pag'>
-		<span class='wp-caption-text derecha'>—"Partida mañana a las siete antemeridiano desde santiago
+	<div id='lala' class='foto-5 oculto-xs'>
+		<div class='pag oculto-sm oculto-xs'>
+		<span class='wp-caption-text derecha oculto-sm'>—"Partida mañana a las siete antemeridiano desde santiago
 		escalas del avión santiago puerto montt punta arenas
 		los nueve están – jonathan boulting alberto cruz fabio
 		cruz michel degury francois fédier claudio girola godofredo
 		iommi jorge pérez román edison simons – henri tronquoy
-		nos alcanzará en medio de la patagonia"	<span class='sm wp-caption-text referencia'>— Primera travesía 1965.</span></span>
+		nos alcanzará en medio de la patagonia"	<span class='sm wp-caption-text referencia oculto-sm'>— Primera travesía 1965.</span></span>
 		</div>
 	</div>
 	<div id='lala' class='foto-6'>
-		<div class='pag'>
-		<span class='wp-caption-text'>—"Mas ¿qué nos dice “mundo”? Latamente el mero juego de aparición y desaparición. Sólo en la latitud de tal juego el mundo se hace a sí mismo mundo; aparece como tal, dígase estante o cambiante. Aparece –desaparece– soñando, imaginando, recordando, olvidando, viendo, tocando, etc., etc. Ese juego de aparecer y desaparecer, ineludible, tiene como fondo el desaparecimiento mismo."
-		<span class='sm wp-caption-text referencia'>— Primera travesía 1965.</span></span>
+		<div class='pag oculto-sm oculto-xs'>
+		<span class='wp-caption-text oculto-sm'>—"Mas ¿qué nos dice “mundo”? Latamente el mero juego de aparición y desaparición. Sólo en la latitud de tal juego el mundo se hace a sí mismo mundo; aparece como tal, dígase estante o cambiante. Aparece –desaparece– soñando, imaginando, recordando, olvidando, viendo, tocando, etc., etc. Ese juego de aparecer y desaparecer, ineludible, tiene como fondo el desaparecimiento mismo."
+		<span class='sm wp-caption-text referencia oculto-sm'>— Primera travesía 1965.</span></span>
 		</div>
 	</div>
 	<!-- Tercera seccion -->
-	<div id='lala' class='foto-7 relativo'>
+	<div id='lala' class='foto-7 relativo oculto-sm oculto-xs'>
 		<h1 class='lg entry-title'>Visión</h1>
 		<h4 class='xs subtitulo'>Escuela de arquitectura y diseño e[ad]</span></h4>
 	</div>
 	<div class='fondo-blanco'>
 		<div class='pag'>
+			<!-- móviles -->
+			<h1 class='lg title oculto-lg oculto-md oculto-sm'>Visión</h1>
+			<h6 class='lg oculto-lg oculto-md oculto-sm'>Escuela de arquitectura y diseño e[ad]</h6>
+			<!-- móviles -->
 			<p class='sm'>Desde su constitución, la e[ad] se ha consolidado como una de las escuelas referentes en Chile y el mundo, que se funda en el encuentro y co-generación de los tres oficios que imparte: Arquitectura, y los Diseños Gráfico e Industrial, en permanente relación con la poesía. Así, afirmamos que tanto la Arquitectura como el Diseño son, en su sentido más profundo, un arte.</p>
 			<p class='sm'>Concebimos la Escuela como comunidad real de vida, trabajo y estudio, fundada en la libertad y la verdadera autogestión. Pensamos que el estudiar y hacer se integran día a día, exigiendo de alumnos y profesores un real compromiso de vida que se transforma con alegría en una disponibilidad que va más allá de las ordinarias tareas académicas; factor que le confiere a la escuela una gran unidad y espíritu de cuerpo. El ámbito de trabajo y estudio de la Escuela da cabida a la permanente participación creativa de todos sus integrantes.</p>
 			<p class='sm'>La disciplina de la Arquitectura y el Diseño la aprehendemos a través de la observación de la realidad. Ésta es un modo de abstraer que permite penetrar la realidad de manera siempre nueva y original. La observación nace desde la contemplación, el croquis (dibujo a mano alzada) y la anotación escrita. Es a partir de este quehacer, más allá que del mero talento natural, que surgen los logros, y se desarrollan los distintos trabajos y estudios. La praxis de la observación consolida un punto de vista propio para el desarrollo de la disciplina.</p>
@@ -174,28 +186,32 @@ title: Pyxis Framework - Maquetas
 		</div>
 	</div>
 	<div id='lolo' class='foto-8'>
-		<div class='pag'>
-		<span class='wp-caption-text derecha'>—"Partida mañana a las siete antemeridiano desde santiago
+		<div class='pag oculto-sm oculto-xs'>
+		<span class='wp-caption-text derecha oculto-sm'>—"Partida mañana a las siete antemeridiano desde santiago
 		escalas del avión santiago puerto montt punta arenas
 		los nueve están – jonathan boulting alberto cruz fabio
 		cruz michel degury francois fédier claudio girola godofredo
 		iommi jorge pérez román edison simons – henri tronquoy
-		nos alcanzará en medio de la patagonia"	<span class='sm wp-caption-text referencia'>— Primera travesía 1965.</span></span>
+		nos alcanzará en medio de la patagonia"	<span class='sm wp-caption-text referencia oculto-sm'>— Primera travesía 1965.</span></span>
 		</div>
 	</div>
-	<div id='lolo' class='foto-9'>
-		<div class='pag'>
+	<div id='lolo' class='foto-9 oculto-xs'>
+		<div class='pag oculto-sm oculto-xs'>
 		<span class='wp-caption-text'>—"Mas ¿qué nos dice “mundo”? Latamente el mero juego de aparición y desaparición. Sólo en la latitud de tal juego el mundo se hace a sí mismo mundo; aparece como tal, dígase estante o cambiante. Aparece –desaparece– soñando, imaginando, recordando, olvidando, viendo, tocando, etc., etc. Ese juego de aparecer y desaparecer, ineludible, tiene como fondo el desaparecimiento mismo."
 		<span class='sm wp-caption-text referencia'>— Primera travesía 1965.</span></span>
 		</div>
 	</div>
 	<!-- Cuarta seccion -->
-	<div id='lolo' class='foto-10 relativo'>
+	<div id='lolo' class='foto-10 relativo oculto-xs'>
 		<h1 class='lg entry-title'>Oficio</h1>
 		<h4 class='xs subtitulo'>Trabajo y obra</h4>
 	</div>
 	<div class='fondo-blanco'>
 		<div class='pag'>
+			<!-- móviles -->
+			<h1 class='lg title oculto-lg oculto-md oculto-sm'>Oficio</h1>
+			<h6 class='lg oculto-lg oculto-md oculto-sm'>Trabajo y obra</h6>
+			<!-- móviles -->
 			<p class='sm'>La misión de la Escuela de Arquitectura y Diseño es cultivar, el arte de la Arquitectura, del Diseño Gráfico y del Diseño Industrial por medio de la creación y transmisión del conocimiento del oficio de estas artes, formar Arquitectos y Diseñadores con la vocación de concebir obras que den cabida y expresión al habitar humano.
 			La Escuela afirma que tanto la Arquitectura como el Diseño son un Arte. Esto diferencia profundamente de otras orientaciones, disciplinas y saberes, e implica una manera peculiar de estudiar y de hacer.</p>
 			<h3 class='sm'>La observación como fundamento</h3>

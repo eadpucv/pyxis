@@ -159,7 +159,7 @@ title: Pyxis Framework - Maquetas
       </div>
     </div>
     <div class='col-md-5 col-sm-12 relleno-izq-sm'>
-      <div class='fila der-lineal-xs'>
+      <div class='der-lineal-xs'>
       <p class='xs sans sin-margen justificado'>Debido al nuevo diseño en la Tarjeta Nacional Estudiantil 2015, JUNAEB realizará la captura fotográfica a los alumnos PUCV, matriculados en el 2º semestre 2014, los egresados y los estudiantes de postgrado que tienen la Tarjeta Nacional [...]</p>
     </div>
     </div>

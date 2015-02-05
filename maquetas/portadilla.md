@@ -154,7 +154,7 @@ title: Pyxis Framework - Maquetas
       </a>
 </div> <!-- Fin de Carousel -->
 
-<div class='fondo-gris-blanco ruido margen-especial relleno-especial'>
+<div id='portadilla'>
 <!-- Contenido escrito -->
 <!-- Pag para page (para toda la página) -->
 <div class='pag page gutter'>
@@ -162,209 +162,197 @@ title: Pyxis Framework - Maquetas
       <!-- Contenido 1/8 -->
       <div class='fila margen-sup-sm'>
       <div class='col-md-9 col-sm-8 col-xs-12'>
-      <h3 class='inteletraje-sm-negativo gruesa negro'><i class='icn icn-usuarios margen-der-xs'></i>Carrera de Diseño gráfico</h3>
-      <p class='sans' class='margen-sup-xs'>La misión de la Escuela de Arquitectura y Diseño es cultivar el arte de la <a class='sans' href='#'>Arquitectura</a>, del <a class='sans' href='#'>Diseño Gráfico</a> y del <a class='sans' href='#'>Diseño Industrial</a> por medio de la creación y transmisión del conocimiento del oficio de estas artes, formar Arquitectos y Diseñadores con la vocación de concebir obras que den cabida y expresión al habitar humano. La Escuela afirma que tanto la Arquitectura como el Diseño son un Arte. Esto diferencia profundamente de otras orientaciones, disciplinas y saberes, e implica una manera peculiar de estudiar y de hacer.
+      <h3><i class='icn icn-usuarios'></i>Carrera de Diseño gráfico</h3>
+      <p class='margen-sup-xs'>La misión de la Escuela de Arquitectura y Diseño es cultivar el arte de la <a class='sans' href='#'>Arquitectura</a>, del <a class='sans' href='#'>Diseño Gráfico</a> y del <a class='sans' href='#'>Diseño Industrial</a> por medio de la creación y transmisión del conocimiento del oficio de estas artes, formar Arquitectos y Diseñadores con la vocación de concebir obras que den cabida y expresión al habitar humano. La Escuela afirma que tanto la Arquitectura como el Diseño son un Arte. Esto diferencia profundamente de otras orientaciones, disciplinas y saberes, e implica una manera peculiar de estudiar y de hacer.
       </p>
-      <h5 class='serif italica negrita inteletraje-sm-negativo negro'>La observación como fundamento</h5>
-      <p class='sans'>En nuestra Escuela se accede a la Arquitectura y al Diseño a través de <a class='italica negrita' href='#'>la observación</a>. La observación es una actividad profundamente artística que permite penetrar la realidad de manera siempre nueva y original. A partir de esta postura de pensamiento tomada como fundamento se desarrollan los diferentes trabajos, estudios y proyectos.</p>
-      <h5 class='serif italica negrita inteletraje-sm-negativo negro'>Compromiso de vida y ámbito</h5>
-      <p class='sans'>Esta modalidad de estudiar y hacer exige de alumnos y profesores un real compromiso de vida. Este que le confiere a la Escuela una gran unidad y, a su vez establece un ámbito, y un ritmo de estudio que da cabida a actividades ordinarias y extraordinarias, en que participan creativamente todos los alumnos y profesores.</p>
-      <h5 class='serif italica negrita inteletraje-sm-negativo negro'>El taller: columna vertebral</h5>
-      <p class='sans'>El taller es la columna vertebral de los estudios de cada disciplina impartida en nuestra Escuela. En él tiene lugar el proceso creativo de cada estudiante, y es donde se decantan los conocimientos humanísticos, matemáticos, científicos y tecnológicos que se imparten en las demás asignaturas de nuestro <a class='sans' href='#'>Plan de Estudios</a>.</p>
-    <div class='fila alto-md'>
-      <!-- 1 de 4 Columnas de noticias a lo largo -->
-      <div class='col-md-6 col-sm-6 col-xs-12 margen-inf-xs h100'>
-        <!-- Div que oculta el desborde de la imagen -->
-        <div class='borde ocultar-desborde h100 radio-md'>
-          <div class='ocultar-desborde margen-inf-xs borde inf-lineal-xs alto-xs'>
-            <a href='#'>
-              <img class='w150 noticia' src="http://www.ead.pucv.cl/wp-content/uploads/2014/08/pizarra.jpg" alt="" class="ancho-maximo">
-            </a>
-          </div>
-          <!-- Título, fecha de publicación, reseña de noticia -->
-          <div class='relleno-sup-xs tooltip-demo'>
-            <h4 class='xs sin-margen relleno-inf-xs  sombra-cabecera-claro-xs'><a class='condensado  negro-fundido gruesa' href='#'><i class='icn icn-noticias margen-der-xs'></i>Profesor participará en seminario “Concepción, de la frontera a la globalización”</a></h4>
-            <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
-              <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
-                 <span class="icn-stack">
-                  <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
-                  <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
-                </span>
+      <h5>La observación como fundamento</h5>
+      <p>En nuestra Escuela se accede a la Arquitectura y al Diseño a través de <a class='italica negrita' href='#'>la observación</a>. La observación es una actividad profundamente artística que permite penetrar la realidad de manera siempre nueva y original. A partir de esta postura de pensamiento tomada como fundamento se desarrollan los diferentes trabajos, estudios y proyectos.</p>
+      <h5>Compromiso de vida y ámbito</h5>
+      <p>Esta modalidad de estudiar y hacer exige de alumnos y profesores un real compromiso de vida. Este que le confiere a la Escuela una gran unidad y, a su vez establece un ámbito, y un ritmo de estudio que da cabida a actividades ordinarias y extraordinarias, en que participan creativamente todos los alumnos y profesores.</p>
+      <h5>El taller: columna vertebral</h5>
+      <p>El taller es la columna vertebral de los estudios de cada disciplina impartida en nuestra Escuela. En él tiene lugar el proceso creativo de cada estudiante, y es donde se decantan los conocimientos humanísticos, matemáticos, científicos y tecnológicos que se imparten en las demás asignaturas de nuestro <a class='sans' href='#'>Plan de Estudios</a>.</p>
+      
+      <div class='fila alto-md'>
+        <!-- 1 de 4 Columnas de noticias a lo largo -->
+        <div class='col-md-6 col-sm-6 col-xs-12 noticia margen-inf-sm h100'>
+          <!-- Div que oculta el desborde de la imagen -->
+            <div class='cabecera'>
+              <a href='#'>
+                <img src="http://www.ead.pucv.cl/wp-content/uploads/2014/08/pizarra.jpg" alt="" class="ancho-maximo">
               </a>
-            </span>
-            <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem [...]</p>
-          </div>
-        </div>
-      </div>
-      <!-- 1 de 4 Columnas de noticias a lo largo -->
-      <div class='col-md-6 col-sm-6 col-xs-12 margen-inf-xs h100'>
-        <!-- Div que oculta el desborde de la imagen -->
-        <div class='borde ocultar-desborde h100 radio-md'>
-          <div class='ocultar-desborde margen-inf-xs borde inf-lineal-xs alto-xs'>
-            <a href='#'>
-              <img class='w150 noticia' src="https://c4.staticflickr.com/8/7479/15990827852_834b141f26_h.jpg" alt="" class="ancho-maximo">
-            </a>
-          </div>
+            </div>
             <!-- Título, fecha de publicación, reseña de noticia -->
             <div class='relleno-sup-xs tooltip-demo'>
-            <h4 class='xs sin-margen relleno-inf-xs  sombra-cabecera-claro-xs'><a class='condensado  negro-fundido gruesa' href='#'><i class='icn icn-noticias margen-der-xs'></i>La naturaleza y su acción muestra la singularidad favorable</a></h4>
-            <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
-              <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
-               <span class="icn-stack">
-                <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
-                <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
+              <h4 class='xs sin-margen relleno-inf-xs  sombra-cabecera-claro-xs'><a class='condensado  negro-fundido gruesa' href='#'><i class='icn icn-noticias margen-der-xs'></i>Profesor participará en seminario “Concepción, de la frontera a la globalización”</a></h4>
+              <span class='xs entry-details'>Publicado el 03 de noviembre, 2014.
+                <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+                   <span class="icn-stack">
+                    <span class="icn icn-cuadrolleno icn-stack-2x"></span>
+                    <span class="icn icn-lapiz icn-sm icn-stack-1x"></span>
+                  </span>
+                </a>
               </span>
-              </a>
-            </span>
-            <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem [...]</p>
+              <p class='xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a href='#'>[<i class='icn icn-lentes'></i>]</a></p>
+            </div>
           </div>
-      </div>
-    </div>
-  </div><!-- fin de fila-->
-
-    <div class='fila alto-md'>
         <!-- 1 de 4 Columnas de noticias a lo largo -->
-        <div class='col-md-6 col-sm-6 col-xs-12 margen-inf-xs h100'>
+        <div class='col-md-6 col-sm-6 col-xs-12 noticia margen-inf-sm h100'>
           <!-- Div que oculta el desborde de la imagen -->
-          <div class='borde ocultar-desborde h100 radio-md'>
-            <div class='ocultar-desborde margen-inf-xs borde inf-lineal-xs alto-xs'>
+            <div class='cabecera'>
+              <a href='#'>
+                <img src="https://c4.staticflickr.com/8/7479/15990827852_834b141f26_h.jpg" alt="" class="ancho-maximo">
+              </a>
+            </div>
+              <!-- Título, fecha de publicación, reseña de noticia -->
+              <div class='relleno-sup-xs tooltip-demo'>
+              <h4 class='xs sin-margen relleno-inf-xs  sombra-cabecera-claro-xs'><a class='condensado  negro-fundido gruesa' href='#'><i class='icn icn-noticias margen-der-xs'></i>La naturaleza y su acción muestra la singularidad favorable</a></h4>
+              <span class='xs entry-details'>Publicado el 03 de noviembre, 2014.
+                <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+                 <span class="icn-stack">
+                  <span class="icn icn-cuadrolleno icn-stack-2x"></span>
+                  <span class="icn icn-lapiz icn-sm icn-stack-1x"></span>
+                </span>
+                </a>
+              </span>
+              <p class='xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a href='#'>[<i class='icn icn-lentes'></i>]</a></p>
+            </div>
+        </div>
+      </div><!-- fin de fila-->
+
+      <div class='fila alto-md'>
+        <!-- 1 de 4 Columnas de noticias a lo largo -->
+        <div class='col-md-6 col-sm-6 col-xs-12 noticia margen-inf-sm h100'>
+          <!-- Div que oculta el desborde de la imagen -->
+            <div class='cabecera'>
               <a href='#'>            
-                <img class='w150 noticia' src="https://c2.staticflickr.com/8/7467/15805508679_a6d54ebbce_b.jpg" alt="" class="ancho-maximo">
+                <img src="https://c2.staticflickr.com/8/7467/15805508679_a6d54ebbce_b.jpg" alt="" class="ancho-maximo">
               </a>
             </div>
             <!-- Título, fecha de publicación, reseña de noticia -->
             <div class='relleno-sup-xs tooltip-demo'>
               <h4 class='xs sin-margen relleno-inf-xs  sombra-cabecera-claro-xs'><a class='condensado  negro-fundido gruesa' href='#'><i class='icn icn-noticias margen-der-xs'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</a></h4>
-              <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
+              <span class='xs entry-details'>Publicado el 03 de noviembre, 2014.
                 <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
                    <span class="icn-stack">
-                    <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
-                    <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
+                    <span class="icn icn-cuadrolleno icn-stack-2x"></span>
+                    <span class="icn icn-lapiz icn-sm icn-stack-1x"></span>
                   </span>
                 </a>
               </span>
-              <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem [...]</p>
+              <p class='xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a href='#'>[<i class='icn icn-lentes'></i>]</a></p>
             </div>
           </div>
-        </div> <!-- fin de col menor -->
-        <!-- 1 de 3 Columnas de noticias a lo largo -->
-        <div class='col-md-6 col-sm-6 col-xs-12 margen-inf-xs h100'>
-        <!-- Div que oculta el desborde de la imagen -->
-        <div class='borde ocultar-desborde h100 radio-md'>
-          <div class='ocultar-desborde margen-inf-xs borde inf-lineal-xs alto-xs'>
-            <a href='#'>
-              <img class='w150 noticia' src="https://c3.staticflickr.com/3/2811/13873404003_45d17990e7_h.jpg" alt="" class="ancho-maximo">
-            </a>
-          </div>
-          <!-- Título, fecha de publicación, reseña de noticia -->
-          <div class='relleno-sup-xs tooltip-demo'>
-              <h4 class='xs sin-margen relleno-inf-xs  sombra-cabecera-claro-xs'><a class='condensado  negro-fundido gruesa' href='#'><i class='icn icn-noticias margen-der-xs'></i>Seminario Sustentabilidad en Chile: Experiencias locales para soluciones globales</a></h4>
-              <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
-                <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
-                 <span class="icn-stack">
-                  <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
-                  <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
-                </span>
-                </a>
-              </span>
-              <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem [...]</p>
-            </div>
-          </div>
-        </div>
-     </div>
-
-    <div class='fila alto-md'>
-        <!-- 1 de 3 Columnas de noticias a lo largo -->
-        <div class='col-md-6 col-sm-6 col-xs-12 margen-inf-xs h100'>
+          <!-- 1 de 3 Columnas de noticias a lo largo -->
+          <div class='col-md-6 col-sm-6 col-xs-12 noticia margen-inf-sm h100'>
           <!-- Div que oculta el desborde de la imagen -->
-          <div class='borde ocultar-desborde h100 radio-md'>
-            <div class='ocultar-desborde margen-inf-xs borde inf-lineal-xs alto-xs'>
+            <div class='cabecera'>
               <a href='#'>
-                <img class='w150 noticia' src="https://c4.staticflickr.com/8/7497/15371239843_33aef76a49_h.jpg" alt="" class="ancho-maximo">
+                <img src="https://c3.staticflickr.com/3/2811/13873404003_45d17990e7_h.jpg" alt="" class="ancho-maximo">
               </a>
             </div>
             <!-- Título, fecha de publicación, reseña de noticia -->
             <div class='relleno-sup-xs tooltip-demo'>
-              <h4 class='xs sin-margen relleno-inf-xs  sombra-cabecera-claro-xs'><a class='condensado  negro-fundido gruesa' href='#'><i class='icn icn-noticias margen-der-xs'></i>Presentan libros sobre Valparaíso de los arquitectos Mauricio Puentes [...]</a></h4>
-              <span class=' xs relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
+              <h4 class='xs sin-margen relleno-inf-xs  sombra-cabecera-claro-xs'><a class='condensado  negro-fundido gruesa' href='#'><i class='icn icn-noticias margen-der-xs'></i>Seminario Sustentabilidad en Chile: Experiencias locales para soluciones globales</a></h4>
+              <span class='xs entry-details'>Publicado el 03 de noviembre, 2014.
                 <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
                  <span class="icn-stack">
-                  <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
-                  <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
+                  <span class="icn icn-cuadrolleno icn-stack-2x"></span>
+                  <span class="icn icn-lapiz icn-sm icn-stack-1x"></span>
                 </span>
                 </a>
               </span>
-              <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem [...]</p>
+              <p class='xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a href='#'>[<i class='icn icn-lentes'></i>]</a></p>
             </div>
           </div>
-        </div>
+      </div>
+
+      <div class='fila alto-md'>
         <!-- 1 de 3 Columnas de noticias a lo largo -->
-        <div class='col-md-6 col-sm-6 col-xs-12 margen-inf-xs h100'>
+        <div class='col-md-6 col-sm-6 col-xs-12 noticia margen-inf-sm h100'>
           <!-- Div que oculta el desborde de la imagen -->
-          <div class='borde ocultar-desborde h100 radio-md'>
-            <div class='ocultar-desborde margen-inf-xs borde inf-lineal-xs alto-xs'>
+            <div class='cabecera'>
               <a href='#'>
-                <img class='w150 noticia' src="https://c2.staticflickr.com/6/5554/14192965764_8d1524ca5f_h.jpg" alt="" class="ancho-maximo">
+                <img src="https://c4.staticflickr.com/8/7497/15371239843_33aef76a49_h.jpg" alt="" class="ancho-maximo">
+              </a>
+            </div>
+            <!-- Título, fecha de publicación, reseña de noticia -->
+            <div class='relleno-sup-xs tooltip-demo'>
+              <h4 class='xs sin-margen relleno-inf-xs  sombra-cabecera-claro-xs'><a class='condensado  negro-fundido gruesa' href='#'><i class='icn icn-noticias margen-der-xs'></i>Presentan libros sobre Valparaíso de los arquitectos Mauricio Puentes <a href='#'>[<i class='icn icn-lentes'></i>]</a></a></h4>
+              <span class='xs entry-details'>Publicado el 03 de noviembre, 2014.
+                <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+                 <span class="icn-stack">
+                  <span class="icn icn-cuadrolleno icn-stack-2x"></span>
+                  <span class="icn icn-lapiz icn-sm icn-stack-1x"></span>
+                </span>
+                </a>
+              </span>
+              <p class='xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a href='#'>[<i class='icn icn-lentes'></i>]</a></p>
+            </div>
+          </div>
+          <!-- 1 de 3 Columnas de noticias a lo largo -->
+          <div class='col-md-6 col-sm-6 col-xs-12 noticia margen-inf-sm h100'>
+          <!-- Div que oculta el desborde de la imagen -->
+            <div class='cabecera'>
+              <a href='#'>
+                <img src="https://c2.staticflickr.com/6/5554/14192965764_8d1524ca5f_h.jpg" alt="" class="ancho-maximo">
               </a>
             </div>
               <!-- Título, fecha de publicación, reseña de noticia -->
             <div class='relleno-sup-xs tooltip-demo'>
               <h4 class='xs sin-margen relleno-inf-xs  sombra-cabecera-claro-xs'><a class='condensado negro-fundido gruesa' href='#'><i class='icn icn-noticias margen-der-xs'></i>Venta de libros especializados en Artes Aplicadas – Ojoporojo Tienda</a></h4>
-              <span class='xs  relleno-vertical-xs rojo italica borde sup-lineal-xs inf-lineal-xs'>Publicado el 03 de noviembre, 2014.
+              <span class='xs entry-details'>Publicado el 03 de noviembre, 2014.
                 <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
                  <span class="icn-stack">
-                  <span class="icn icn-cuadrolleno icn-stack-2x gris-blanco"></span>
-                  <span class="icn icn-lapiz icn-sm icn-stack-1x negro-fundido"></span>
+                  <span class="icn icn-cuadrolleno icn-stack-2x"></span>
+                  <span class="icn icn-lapiz icn-sm icn-stack-1x"></span>
                 </span>
                 </a>
               </span>
-              <p class='xs sans negro margen-sup-xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem [...]</p>
+              <p class='xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a href='#'>[<i class='icn icn-lentes'></i>]</a></p>
             </div>
           </div>
-        </div>
-    </div>
-
-    </div>
-<!-- Aside -->
-<aside id='sidebar'>
+      </div>
+    </div><!-- fin de col -->
+  <!-- Aside -->
+  <aside id='sidebar'>
     <div class='col-md-3 col-sm-4 col-xs-12'>
-      <h6 class='xs interletraje-xs negro condensado gruesa margen-izq-sm altas'>Enlaces</h6>
-      <ol class='xs relleno-izq-md margen-inf'>
-        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs sup-lineal-xs rojo'><a href='http://127.0.0.1:4000/maquetas/page/#uno' class='sans semi-gruesa xs'>Estudiar en diseño gráfico</a></li>
-        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='http://127.0.0.1:4000/maquetas/page/#dos' class='sans semi-gruesa'>Programa de estudios</a></li>
-        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='http://127.0.0.1:4000/maquetas/page/#tres' class='sans semi-gruesa'>Malla curricular</a></li>
-        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='http://127.0.0.1:4000/maquetas/page/#cuatro' class='sans semi-gruesa'>Admisión</a></li>
-        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='http://127.0.0.1:4000/maquetas/page/#cinco' class='sans semi-gruesa'>Concepción del diseñador</a></li>
-        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='http://127.0.0.1:4000/maquetas/page/#seis' class='sans semi-gruesa'>Perfil de egreso</a></li>
-        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='http://127.0.0.1:4000/maquetas/page/#siete' class='sans semi-gruesa'>Competencias fundamentales</a></li>
-        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='http://127.0.0.1:4000/maquetas/page/#ocho' class='sans semi-gruesa'>Objetivos edcacionales</a></li>
-        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='http://127.0.0.1:4000/maquetas/page/#nueve' class='sans semi-gruesa'>Profeosres de carrera</a></li>
-        <li class='gruesa relleno-vertical-xs borde inf-lineal-xs rojo'><a href='http://127.0.0.1:4000/maquetas/page/#diez' class='sans semi-gruesa'>Profesores ayudantes</a></li>
+      <h6 class='xs seccion margen-izq'>Enlaces</h6>
+      <ol class='xs relleno-izq-md'>
+        <li><a href='http://127.0.0.1:4000/maquetas/page/#uno'>Estudiar en diseño gráfico</a></li>
+        <li><a href='http://127.0.0.1:4000/maquetas/page/#dos'>Programa de estudios</a></li>
+        <li><a href='http://127.0.0.1:4000/maquetas/page/#tres'>Malla curricular</a></li>
+        <li><a href='http://127.0.0.1:4000/maquetas/page/#cuatro'>Admisión</a></li>
+        <li><a href='http://127.0.0.1:4000/maquetas/page/#cinco'>Concepción del diseñador</a></li>
+        <li><a href='http://127.0.0.1:4000/maquetas/page/#seis'>Perfil de egreso</a></li>
+        <li><a href='http://127.0.0.1:4000/maquetas/page/#siete'>Competencias fundamentales</a></li>
+        <li><a href='http://127.0.0.1:4000/maquetas/page/#ocho'>Objetivos edcacionales</a></li>
+        <li><a href='http://127.0.0.1:4000/maquetas/page/#nueve'>Profeosres de carrera</a></li>
+        <li><a href='http://127.0.0.1:4000/maquetas/page/#diez'>Profesores ayudantes</a></li>
       </ol>
-      <h6 class='xs interletraje-xs negro condensado gruesa margen-izq-sm altas'>Categorías</h6>
+      <h6 class='xs seccion margen-izq margen-sup'>Categorías</h6>
       <ul class='xs'>
-        <li class='relleno-vertical-xs borde inf-lineal-xs sup-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Actualidad</a></li>
-        <li class='relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Estudiantes</a></li>
-        <li class='relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Carreras</a></li>
-        <li class='relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Arquitectura</a></li>
-        <li class='relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Diseño Gráfico</a></li>
-        <li class='relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Diseño industrial</a></li>
-        <li class='relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Estudios avanzados</a></li>
-        <li class='relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Concursos</a></li>
-        <li class='relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Observación de la semana</a></li>
-        <li class='relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Bolsa de trabajo</a></li>
-        <li class='relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Investigación</a></li>
+        <li><a href='#'>Actualidad</a></li>
+        <li><a href='#'>Estudiantes</a></li>
+        <li><a href='#'>Carreras</a></li>
+        <li><a href='#'>Arquitectura</a></li>
+        <li><a href='#'>Diseño Gráfico</a></li>
+        <li><a href='#'>Diseño industrial</a></li>
+        <li><a href='#'>Estudios avanzados</a></li>
+        <li><a href='#'>Concursos</a></li>
+        <li><a href='#'>Observación de la semana</a></li>
+        <li><a href='#'>Bolsa de trabajo</a></li>
+        <li><a href='#'>Investigación</a></li>
       </ul>
-      <h6 class='xs interletraje-xs negro condensado gruesa margen-sup margen-izq-sm altas'>Carreras</h6>
+      <h6 class='xs seccion margen-izq margen-sup'>Carreras</h6>
       <ul class='xs'>
-        <li class='relleno-vertical-xs borde inf-lineal-xs sup-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Arquitectura</a></li>
-        <li class='relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Diseño Gráfico</a></li>
-        <li class='relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Diseño industrial</a></li>
+        <li><a href='#'>Arquitectura</a></li>
+        <li><a href='#'>Diseño Gráfico</a></li>
+        <li><a href='#'>Diseño industrial</a></li>
       </ul>
-      <h6 class='xs interletraje-xs negro condensado gruesa margen-sup margen-izq-sm altas'>Estudios avanzados</h6>
+      <h6 class='xs seccion margen-izq margen-sup'>Estudios avanzados</h6>
       <ul class='xs'>
-        <li class='relleno-vertical-xs borde inf-lineal-xs sup-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Magister Náutico y Marítimo</a></li>
-        <li class='relleno-vertical-xs borde inf-lineal-xs rojo'><a href='#' class='sans semi-gruesa'>Magister Ciudad y territorio</a></li>
+        <li><a href='#'>Magister Náutico y Marítimo</a></li>
+        <li><a href='#'>Magister Ciudad y territorio</a></li>
       </ul>
       <h6 class='xs interletraje-xs negro condensado gruesa margen-sup margen-izq-sm altas'>Twitter</h6>
     <a class="twitter-timeline" href="https://twitter.com/eadpucv" data-widget-id="556872650858201090">Tweets por el @eadpucv.</a>
@@ -373,4 +361,4 @@ title: Pyxis Framework - Maquetas
   </aside>
   </div> <!-- fin de fila-->
 </div> <!-- fin de * pag page * -->
-</div>
+</div> <!-- fin de portadilla -->

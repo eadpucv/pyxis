@@ -21,11 +21,16 @@
 	width: 100%;
 }
 
+.nav-ead{
+	// Necesario para portadilla (asegurando fondo gris + ruido)
+	background: @gris-blanco url("/img/ruido-fondo-pyxis.png") repeat center;
+}
+
 //	Franjas para Layout 'Index' y 'Base': 
 
  .franja {
 	width: 100%;
-	background-color: @gris-claro;
+	// background-color: @gris-claro;
 	position: relative;
 	overflow: hidden;
 	.cf;
@@ -197,6 +202,38 @@ footer{
     }
   } 
 }
+
+// Colores
+
+// Caja de colores
+.caja-color {
+    display: block;
+    float: right;
+    height: 20px;
+    margin: 0 0 1px 0;
+    width: 100%;
+}
+
+// Interacción
+
+.btn-ver-codigo {
+    width: 100%;
+    margin-bottom: 0;
+    bottom: 0;
+    right: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    //background-color: @gris-claro;
+    color: @pizarra;
+    // border: none;
+    // box-shadow: none;
+    // padding: 5px 0;
+	margin-bottom: -.1em !important;
+    &:hover {
+        color: @rojo;
+    }
+}
+
 
 // --------------------------------------------------
 // EJEMPLOS DE DOCUMENTACIÓN (CLASES ESPECÍFICAS)

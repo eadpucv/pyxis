@@ -57,23 +57,23 @@ and jack.</p>
             </div>
 
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-            <code> 
+            <code class='bloque'> 
 h1, h2, h3, h4, h5, h6 {
     font-family: @tipografia-titulos;
 }
 
-@tipografia-titulos:            'Source Sans Pro';
+@tipografia-titulos: 'Source Sans Pro';
 
 h1, h2, h3, h4, h5, h6 {
     font-family: @tipografia-titulos-cond;
 }
 
-@tipografia-titulos-cond:            'Open Sans';
+@tipografia-titulos-cond: 'Open Sans';
             </code>
         </div>
         <div class="tab-pane fade" id="encabezados">
             <h4 class='pizarra gruesa'>Títulos</h4>
-            <p>Estas son las cabeceras HTML disponibles también en Pyxis. Las diferencias cuantitativas entre cabeceras, a medida que escalan, son de 2 a máximo 4px. <code class='codigo-parrafo'>&lt;h1&gt;</code> alberga un <i>font-size</i> de 33px, mientras que <code class='codigo-parrafo'>&lt;h6&gt;</code> es visible en 19px.</p>
+            <p>Estas son las cabeceras HTML disponibles también en Pyxis. Las diferencias cuantitativas entre cabeceras, a medida que escalan, son de 2 a máximo 4px. <code>&lt;h1&gt;</code> alberga un <i>font-size</i> de 33px, mientras que <code>&lt;h6&gt;</code> es visible en 19px.</p>
         
             <h1>Encabezado de Primer Nivel {33px}</h1>
             <h2>Encabezado de Segundo Nivel {29px}</h2>
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
 
             <hr class='invisible'>
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-            <code>
+            <code class='bloque'>
 &lt;h1>...&lt;/h1>
 &lt;h2>...&lt;/h2>
 &lt;h3>...&lt;/h3>
@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 
             <hr class='invisible'>
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-            <code>
+            <code class='bloque'>
 &lt;h1>&lt;small>...&lt;/small>&lt;/h1>
 &lt;h2>&lt;small>...&lt;/small>&lt;/h2>
 &lt;h3>&lt;small>...&lt;/small>&lt;/h3>
@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 
             <hr class='invisible'>
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-            <code>
+            <code class='bloque'>
 &lt;h1>...&lt;small>...&lt;/small>&lt;/h1>
 &lt;h2>...&lt;small>...&lt;/small>&lt;/h2>
 &lt;h3>...&lt;small>...&lt;/small>&lt;/h3>
@@ -178,7 +178,7 @@ h1, h2, h3, h4, h5, h6 {
             </div>
             <hr class='invisible'>
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-            <code>
+            <code class='bloque'>
 &lt;p class=&quot;menudo&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;xs&quot;&gt;...&lt;/p&gt;
             </code>
             <hr class='invisible'>
@@ -220,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
             </div>
             <hr class='invisible'>
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-            <code>
+            <code class='bloque'>
 &lt;p&gt;...&lt;/p&gt;
             </code>
             <hr class='invisible'>
@@ -262,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
             </div>
             <hr class='invisible'>
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-            <code>
+            <code class='bloque'>
 &lt;p class=&quot;pequeno&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;sm&quot;&gt;...&lt;/p&gt;
             </code>
             <hr class='invisible'>
@@ -303,7 +303,7 @@ h1, h2, h3, h4, h5, h6 {
                 </div>
             </div>
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-            <code>
+            <code class='bloque'>
 &lt;p class=&quot;grande&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;lg&quot;&gt;...&lt;/p&gt;
             </code>
             <hr class='invisible'>
@@ -347,7 +347,7 @@ h1, h2, h3, h4, h5, h6 {
 
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
 
-            <code>
+            <code class='bloque'>
 &lt;p class=&quot;menudo&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;xs&quot;&gt;...&lt;/p&gt;
 &lt;p&gt;...&lt;/p&gt;
 &lt;p class=&quot;pequeno&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;sm&quot;&gt;...&lt;/p&gt;
@@ -411,7 +411,7 @@ h1, h2, h3, h4, h5, h6 {
 
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
 
-            <code>
+            <code class='bloque'>
 &lt;span class=&quot;menudo&quot;&gt;...&lt;/span&gt;, &lt;span class=&quot;xs&quot;&gt;...&lt;/span&gt;
 &lt;span&gt;...&lt;/span&gt;
 &lt;span class=&quot;pequeno&quot;&gt;...&lt;/span&gt;, &lt;span class=&quot;sm&quot;&gt;...&lt;/span&gt;
@@ -503,7 +503,7 @@ h1, h2, h3, h4, h5, h6 {
             </div>
 
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-            <code>
+            <code class='bloque'>
 &lt;ul class='xs'&gt;
     &lt;li&gt;...&lt;/li&gt;
     &lt;li&gt;...&lt;/li&gt;
@@ -604,7 +604,7 @@ h1, h2, h3, h4, h5, h6 {
             </div>
 
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>  
-            <code>
+            <code class='bloque'>
 &lt;ol class='xs'&gt;
     &lt;li&gt;...&lt;/li&gt;
     &lt;li&gt;...&lt;/li&gt;
@@ -644,7 +644,7 @@ h1, h2, h3, h4, h5, h6 {
 
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
 
-            <code>
+            <code class='bloque'>
 &lt;p class=&quot;fino&quot;&gt;...&lt;/p&gt;
 &lt;p&gt;...&lt;/p&gt;
 &lt;p class=&quot;semi-gruesa&quot;&gt;...&lt;/p&gt;
@@ -666,7 +666,7 @@ h1, h2, h3, h4, h5, h6 {
 
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
 
-            <code>
+            <code class='bloque'>
 &lt;p class=&quot;italica&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;cursiva&quot;&gt;&lt;/p&gt;, &lt;p&gt;&lt;i&gt;...&lt;/i&gt;&lt;/p&gt;
 &lt;p class=&quot;altas&quot;&gt;...&lt;/p&gt;
 &lt;p class=&quot;bajas&quot;&gt;...&lt;/p&gt;
@@ -686,7 +686,7 @@ h1, h2, h3, h4, h5, h6 {
 
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
 
-            <code>
+            <code class='bloque'>
 &lt;p class=&quot;izquierda ancho-maximo&gt;...&lt;/p&gt;
 &lt;p class=&quot;centrado ancho-maximo&quot;&gt;...&lt;/p&gt;
 &lt;p class=&quot;derecha ancho-maximo&quot;&gt;...&lt;/p&gt;
@@ -738,7 +738,7 @@ h1, h2, h3, h4, h5, h6 {
                                     o vuelo de un sentido
 
                 </p>
-                <code>
+                <code class='bloque'>
 &lt;p class=&quot;poema&quot;&gt;...&lt;/p&gt;
                 </code> 
                 <hr class='invisible'>
@@ -756,7 +756,7 @@ h1, h2, h3, h4, h5, h6 {
                         Fax +56 32 2274421
                     </address>
                 </div>
-                <code>
+                <code class='bloque'>
 &lt;p class=&quot;direccion&quot;&gt;...&lt;/p&gt;
                 </code>
                 <hr class='invisible'>
@@ -768,7 +768,7 @@ h1, h2, h3, h4, h5, h6 {
                     <li><a class='gris-oscuro'>Carrusel</a></li>
                     <li><a class='gris-oscuro'>Noticias</a></li>
                 </ul>
-                <code>
+                <code class='bloque'>
 &lt;ul id=&quot;breadcrumb&quot;&gt;
     &lt;li&gt;&lt;a&gt;&lt;i class='icn icn-hogar'&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;
@@ -786,13 +786,13 @@ h1, h2, h3, h4, h5, h6 {
                 <hr class='invisible'>
                 <span class="xs referencias gris"><sup>[8] </sup> <strong>Norman D </strong>, <i>“El Diseño Emocional. Por qué nos gustan (o no) los objetos cotidianos.</i> Capítulo 3 Tres Niveles de diseño visceral, conductual y reflexivo. <br> Paidós Ediciones S.A. Barcelona, España. Año 2005. Páginas 81 – 121.ISBN 84-493-1729-0</span>
                 <hr class='invisible'>
-                <code>
+                <code class='bloque'>
 &lt;span class=&quot;italica md fina gris-oscuro&quot;&gt;...&lt;/span&gt;
                 </code>
                 <hr class='invisible'>
                 <h5 class='pizarra'>Fecha evento</h5>
                 <span class='fecha-evento'>12</span>
-                <code>
+                <code class='bloque'>
 &lt;p class=&quot;fecha-evento&quot;&gt;...&lt;/p&gt;
                 </code>
                 <hr class='invisible'>

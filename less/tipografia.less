@@ -690,51 +690,58 @@ code, pre {
 //  código escrito:
 
 code {
-  background-color: @pizarra;
+  background-color: darken(@gris-claro, 17);
+  text-shadow: 1px 1px 0 @gris;
   color: @blanco;
-  border: 1px solid @gris-claro;
-  border-right: 1px solid rgba(164,164,162,.1);
-  width: 100%; 
+  border: 1px solid darken(@gris-claro, 23);
   display: inline-block;
   line-height: @interlinea * .666;
   white-space: pre-wrap;
   font-size: 12px;
-  padding: 5px 100px;
+  padding: 2px 5px;
   margin: 0;
 
-  &.sin-relleno{
-    padding: 5px 8px;
+  &.linea{
+    display: inline;
+    line-height: 21px;
+    padding: 0;
   }
 
-    // Sin bordes
-    &.sin-borde{
-      border-right: 1px solid rgba(164, 164, 162, 0.2);
-      border-bottom: 1px solid rgba(164, 164, 162, 0.2);
-      border-top: 1px solid rgba(164, 164, 162, 0.2);
-      border-left: 1px solid rgba(164, 164, 162, 0.2);
-    }
+  &.bloque{
+    background-color: @pizarra;
+    line-height: 140%;
+    text-shadow: none;
+  }
 
-    //  Tamaños de Código escrito:
-    &.lg { 
-      font-size: @cuerpo * 1.9;
-      line-height: 140%;
-    }
+  &.blanco{
+    width: auto;
+    background-color: transparent;
+    border: none;
+    color: @gris;
+    text-shadow: none;
+  }
 
-    &.md {
-      font-size: @cuerpo * 1.4;
-      font-weight: 200;
-      line-height: 140%;
-    }
+  //  Tamaños de Código escrito:
+  &.lg { 
+    font-size: @cuerpo * 1.9;
+    line-height: 140%;
+  }
 
-    &.sm {
-      font-size: @cuerpo;
-      line-height: 130%;
-    }
+  &.md {
+    font-size: @cuerpo * 1.4;
+    font-weight: 200;
+    line-height: 140%;
+  }
 
-    &.xs {
-      font-size: @cuerpo * .55;
-      line-height: @interlinea * .9;
-    }
+  &.sm {
+    font-size: @cuerpo;
+    line-height: 130%;
+  }
+
+  &.xs {
+    font-size: @cuerpo * .55;
+    line-height: @interlinea * .9;
+  }
 }
 
 

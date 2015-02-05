@@ -26,15 +26,15 @@ intro: Texto sobre Interacción
           <div class="col-md-6 col-sm-12 col-xs-12">
             <h5 class='pizarra gruesa'>Formulario genérico</h5>
             <form role="form">
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label for="ejemplo-formulario">Dirección de e-mail *</label>
-                <input type="email" class="form-control" id="ejemplo-formulario" placeholder="Introduce email" required />
+                <input type="email" class="control" id="ejemplo-formulario" placeholder="Introduce email" required />
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label for="ejemplo-contraseña">Contraseña *</label>
-                <input type="password" class="form-control" id="ejemplo-contraseña" placeholder="Contraseña" required />
+                <input type="password" class="control" id="ejemplo-contraseña" placeholder="Contraseña" required />
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label for="ejemplo-archivo">Carga un archivo</label>
                 <input type="file" id="ejemplo-archivo">
               </div>
@@ -47,27 +47,27 @@ intro: Texto sobre Interacción
             </form>
             <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form1">ver código</a> 
             <div id="ver-codigo-form1" class="collapse">
-              <code>
-                &lt;form role="form">
-                &lt;div class="form-group">
-                &lt;label for="ejemplo-formulario">Dirección de e-mail *&lt;/label>
-                &lt;input type="email" class="form-control" id="ejemplo-formulario" placeholder="Introduce email" required />
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;label for="ejemplo-contraseña">Contraseña *&lt;/label>
-                &lt;input type="password" class="form-control" id="ejemplo-contraseña" placeholder="Contraseña" required />
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;label for="ejemplo-archivo">Carga un archivo&lt;/label>
-                &lt;input type="file" id="ejemplo-archivo">
-                &lt;/div>
-                &lt;div class="checkbox">
-                &lt;label>
-                &lt;input type="checkbox"> Anótame
-                &lt;/label>
-                &lt;/div>
-                &lt;button type="submit" class="btn btn-default">Enviar&lt;/button>
-                &lt;/form>
+              <code class='bloque'>
+&lt;form role="form">
+  &lt;div class="grupo-formulario">
+    &lt;label for="ejemplo-formulario">Dirección de e-mail *&lt;/label>
+    &lt;input type="email" class="control" id="ejemplo-formulario" placeholder="Introduce email" required />
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label for="ejemplo-contraseña">Contraseña *&lt;/label>
+    &lt;input type="password" class="control" id="ejemplo-contraseña" placeholder="Contraseña" required />
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label for="ejemplo-archivo">Carga un archivo&lt;/label>
+    &lt;input type="file" id="ejemplo-archivo">
+  &lt;/div>
+  &lt;div class="checkbox">
+    &lt;label>
+    &lt;input type="checkbox"> Anótame
+  &lt;/label>
+  &lt;/div>
+  &lt;button type="submit" class="btn btn-default">Enviar&lt;/button>
+&lt;/form>
               </code>
             </div>
           </div>
@@ -75,44 +75,44 @@ intro: Texto sobre Interacción
           <div class="col-md-6 col-sm-12 col-xs-12">
             <h5 class='pizarra gruesa'>Formulario genérico - variantes</h5>
             <form role="form">
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label>Seleccione color</label>
                 <input type="color" />
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label>Tiempo</label>
                 <input type="time" />
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label>Mes</label>
                 <input type="month" />
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label>Semana</label>
                 <input type="week" />
               </div>
             </form>
             <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form2">ver código</a>
             <div id="ver-codigo-form2" class="collapse">
-              <code>
-                &lt;form role="form">
-                &lt;div class="form-group">
-                &lt;label>Seleccione color&lt;/label>
-                &lt;input type="color" />
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;label>Tiempo&lt;/label>
-                &lt;input type="time" />
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;label>Mes&lt;/label>
-                &lt;input type="month" />
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;label>Semana&lt;/label>
-                &lt;input type="week" />
-                &lt;/div>
-                &lt;/form>
+              <code class='bloque'>
+&lt;form role="form">
+  &lt;div class="grupo-formulario">
+    &lt;label>Seleccione color&lt;/label>
+    &lt;input type="color" />
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label>Tiempo&lt;/label>
+    &lt;input type="time" />
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label>Mes&lt;/label>
+    &lt;input type="month" />
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label>Semana&lt;/label>
+    &lt;input type="week" />
+  &lt;/div>
+&lt;/form>
               </code>
             </div>
           </div>
@@ -121,19 +121,19 @@ intro: Texto sobre Interacción
 
         <div class="fila">
           <div class="col-md-12 col-sm-12 col-xs-12">
-            <h5 class='pizarra gruesa'>Formulario lineal</h5>
+            <h5 class='pizarra gruesa'>Formulario horizontal</h5>
             <form class="formulario-horizontal" role="form">
-              <div class="form-group">
-                <input type="email" class="form-control" id="ejemplo-nombre2" placeholder="Ingresa nombre" required />
+              <div class="grupo-formulario">
+                <input type="email" class="control" id="ejemplo-nombre2" placeholder="Ingresa nombre" required />
               </div>
               <div class="grupo-inputs">
                 <span class="input">@</span>
-                <input class="form-control" type="email" placeholder="Ingresa email" required />
+                <input class="control" type="email" placeholder="Ingresa email" required />
               </div>
-              <div class="form-group">
-                <input type="password" class="form-control" id="ejemplo-contraseña2" placeholder="Contraseña" required />
+              <div class="grupo-formulario">
+                <input type="password" class="control" id="ejemplo-contraseña2" placeholder="Contraseña" required />
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <div class="checkbox">
                   <label>
                     <input type="checkbox"> Recuerdame
@@ -144,29 +144,29 @@ intro: Texto sobre Interacción
             </form>
             <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form3">ver código</a>
             <div id="ver-codigo-form3" class="collapse">
-              <code>
-                &lt;form class="formulario-horizontal" role="form">
-                &lt;div class="form-group">
-                &lt;input type="email" class="form-control" id="ejemplo-nombre2" placeholder="Ingresa nombre" required />
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;div class="input-group">
-                &lt;div class="input-group-addon">@&lt;/div>
-                &lt;input class="form-control" type="email" placeholder="Ingresa email" required />
-                &lt;/div>
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;input type="password" class="form-control" id="ejemplo-contraseña2" placeholder="Contraseña" required />
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;div class="checkbox">
-                &lt;label>
-                &lt;input type="checkbox"> Recuerdame
-                &lt;/label>
-                &lt;/div>
-                &lt;/div>
-                &lt;button type="submit" class="btn btn-default">Accede&lt;/button>
-                &lt;/form>
+              <code class='bloque'>
+&lt;form class="formulario-horizontal" role="form">
+  &lt;div class="grupo-formulario">
+    &lt;input type="email" class="form-º" id="ejemplo-nombre2" placeholder="Ingresa nombre" required />
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;div class="input-group">
+      &lt;div class="input-group-addon">@&lt;/div>
+        &lt;input class="control" type="email" placeholder="Ingresa email" required />
+      &lt;/div>
+    &lt;/div>
+    &lt;div class="grupo-formulario">
+      &lt;input type="password" class="control" id="ejemplo-contraseña2" placeholder="Contraseña" required />
+    &lt;/div>
+    &lt;div class="grupo-formulario">
+      &lt;div class="checkbox">
+        &lt;label>
+          &lt;input type="checkbox"> Recuerdame
+        &lt;/label>
+      &lt;/div>
+    &lt;/div>
+  &lt;button type="submit" class="btn btn-default">Accede&lt;/button>
+&lt;/form>
               </code>
             </div>
           </div>
@@ -178,19 +178,19 @@ intro: Texto sobre Interacción
           <div class="col-md-6 col-sm-12 col-xs-12">
             <h5 class='pizarra gruesa'>Formulario de contacto</h5>
             <form role="form">
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label for="nombre">Nombre *</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Introduce su nombre" required />
+                <input type="text" class="control" id="nombre" placeholder="Introduce su nombre" required />
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label for="correo-electronico">Correo electrónico</label>
-                <input type="email" class="form-control" id="correo-electronico" placeholder="correo electrónico">
+                <input type="email" class="control" id="correo-electronico" placeholder="correo electrónico">
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label for="asunto">Asunto</label>
-                <input type="text" class="form-control" id="asunto" placeholder="asunto">
+                <input type="text" class="control" id="asunto" placeholder="asunto">
               </div>
-              <div class='form-group'>
+              <div class='grupo-formulario'>
                 <label>Mensaje</label>
                 <textarea placeholder='Su mensaje' required></textarea>
               </div>
@@ -198,38 +198,38 @@ intro: Texto sobre Interacción
             </form>
             <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form4">ver código</a>
             <div id="ver-codigo-form4" class="collapse">
-              <code>
-                &lt;form role="form">
-                &lt;div class="form-group">
-                &lt;label for="nombre">Nombre *&lt;/label>
-                &lt;input type="text" class="form-control" id="nombre" placeholder="Introduce su nombre" required />
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;label for="correo-electronico">Correo electrónico&lt;/label>
-                &lt;input type="email" class="form-control" id="correo-electronico" placeholder="correo electrónico">
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;label for="asunto">Asunto&lt;/label>
-                &lt;input type="text" class="form-control" id="asunto" placeholder="asunto">
-                &lt;/div>
-                &lt;div class='form-group'>
-                &lt;label>Mensaje&lt;/label>
-                &lt;textarea placeholder='Su mensaje' required>&lt;/textarea>
-                &lt;/div>
-                &lt;button type="submit" class="btn btn-default">Enviar&lt;/button>
-                &lt;/form>
+              <code class='bloque'>
+&lt;form role="form">
+  &lt;div class="grupo-formulario">
+    &lt;label for="nombre">Nombre *&lt;/label>
+    &lt;input type="text" class="control" id="nombre" placeholder="Introduce su nombre" required />
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label for="correo-electronico">Correo electrónico&lt;/label>
+    &lt;input type="email" class="control" id="correo-electronico" placeholder="correo electrónico">
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label for="asunto">Asunto&lt;/label>
+    &lt;input type="text" class="control" id="asunto" placeholder="asunto">
+  &lt;/div>
+  &lt;div class='grupo-formulario'>
+    &lt;label>Mensaje&lt;/label>
+    &lt;textarea placeholder='Su mensaje' required>&lt;/textarea>
+  &lt;/div>
+  &lt;button type="submit" class="btn btn-default">Enviar&lt;/button>
+&lt;/form>
               </code>
             </div>
           </div>
           <div class="col-md-6 col-sm-12 col-xs-12">
             <h5 class='pizarra gruesa'>Agregar página (Wiki Casiopea)</h5>
             <form role="form">
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label for="nombre">Nombre del objeto *</label>
                 <p class='especificacion'><strong>Ingresa el nombre de lo que vas a crear</strong>. Se creará una página con ese nombre. Si el nombre que eliges ya está ocupado, esta página te llevará al formulario que elijas con el contenido de la página existente donde podrás editar el nuevo objeto con atributos semánticos.</p>
-                <input type="text" class="form-control" id="nombre" placeholder="Introduce nombre de objeto a crear" required />
+                <input type="text" class="control" id="nombre" placeholder="Introduce nombre de objeto a crear" required />
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label class='pregunta'>Tipo de formulario</label>
                 <p class='especificacion'>Define el tipo de formulario que necesitas para tu objeto.</p>
                 <select>
@@ -254,36 +254,36 @@ intro: Texto sobre Interacción
             </form>
             <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form5">ver código</a>
             <div id="ver-codigo-form5" class="collapse">
-              <code>
-                &lt;form role="form">
-                &lt;div class="form-group">
-                &lt;label for="nombre">Nombre del objeto *&lt;/label>
-                &lt;p class='especificacion'>&lt;strong>Ingresa el nombre de lo que vas a crear&lt;/strong>. Se creará una página con ese nombre. Si el nombre que eliges ya está ocupado, esta página te llevará al formulario que elijas con el contenido de la página existente donde podrás editar el nuevo objeto con atributos semánticos.&lt;/p>
-                &lt;input type="text" class="form-control" id="nombre" placeholder="Introduce nombre de objeto a crear" required />
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;label class='pregunta'>Tipo de formulario&lt;/label>
-                &lt;p class='especificacion'>Define el tipo de formulario que necesitas para tu objeto.&lt;/p>
-                &lt;select>
-                &lt;option>Nueva asignatura&lt;/option>
-                &lt;option>Nueva bibliografía&lt;/option>
-                &lt;option>Nueva obra&lt;/option>
-                &lt;option>Nueva persona&lt;/option>
-                &lt;option>Nueva publicación&lt;/option>
-                &lt;option>Nueva revista académica&lt;/option>
-                &lt;option>Nueva tarea&lt;/option>
-                &lt;option>Nueva travesía&lt;/option>
-                &lt;option>Nuevo acto&lt;/option>
-                &lt;option>Nuevo caso de estudio&lt;/option>
-                &lt;option>Nuevo curso&lt;/option>
-                &lt;option>Nuevo evento&lt;/option>
-                &lt;option>Nuevo proyecto&lt;/option>
-                &lt;option>Nuevo proyecto de investigación&lt;/option>
-                &lt;option>Nuevo trabajo en madlab&lt;/option>
-                &lt;/select>
-                &lt;/div>
-                &lt;button type="submit" class="btn btn-default">Crear o editar&lt;/button>
-                &lt;/form>
+              <code class='bloque'>
+&lt;form role="form">
+  &lt;div class="grupo-formulario">
+    &lt;label for="nombre">Nombre del objeto *&lt;/label>
+    &lt;p class='especificacion'>&lt;strong>Ingresa el nombre de lo que vas a crear&lt;/strong>. Se creará una página con ese nombre. Si el nombre que eliges ya está ocupado, esta página te llevará al formulario que elijas con el contenido de la página existente donde podrás editar el nuevo objeto con atributos semánticos.&lt;/p>
+    &lt;input type="text" class="control" id="nombre" placeholder="Introduce nombre de objeto a crear" required />
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label class='pregunta'>Tipo de formulario&lt;/label>
+    &lt;p class='especificacion'>Define el tipo de formulario que necesitas para tu objeto.&lt;/p>
+    &lt;select>
+      &lt;option>Nueva asignatura&lt;/option>
+      &lt;option>Nueva bibliografía&lt;/option>
+      &lt;option>Nueva obra&lt;/option>
+      &lt;option>Nueva persona&lt;/option>
+      &lt;option>Nueva publicación&lt;/option>
+      &lt;option>Nueva revista académica&lt;/option>
+      &lt;option>Nueva tarea&lt;/option>
+      &lt;option>Nueva travesía&lt;/option>
+      &lt;option>Nuevo acto&lt;/option>
+      &lt;option>Nuevo caso de estudio&lt;/option>
+      &lt;option>Nuevo curso&lt;/option>
+      &lt;option>Nuevo evento&lt;/option>
+      &lt;option>Nuevo proyecto&lt;/option>
+      &lt;option>Nuevo proyecto de investigación&lt;/option>
+      &lt;option>Nuevo trabajo en madlab&lt;/option>
+    &lt;/select>
+  &lt;/div>
+  &lt;button type="submit" class="btn btn-default">Crear o editar&lt;/button>
+&lt;/form>
               </code>
             </div>
           </div>
@@ -295,11 +295,11 @@ intro: Texto sobre Interacción
           <div class="col-md-6 col-sm-12 col-xs-12">
             <h5 class='pizarra gruesa'>Crear un proyecto (Wiki Casiopea)</h5>
             <form role="form">
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label for="nombre">Título *</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Nombre del nuevo objeto" required />
+                <input type="text" class="control" id="nombre" placeholder="Nombre del nuevo objeto" required />
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label for="nombre">Tipo *</label>
                 <select>
                   <option>Alumno/a</option>
@@ -310,19 +310,19 @@ intro: Texto sobre Interacción
                   <option>Otro/a</option>
                 </select>
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label class='pregunta'>Palabras claves</label>
                 <input type='text' placeholder='todo en bajas, separadas por coma 'required/>
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label class='pregunta'>Año de inicio</label>
                 <input type='text' required/>
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label class='pregunta'>Año de término</label>
                 <input type='date' required/>
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label class='pregunta'>Carreras relacionadas</label>
                 <div class='opciones'>
                   <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Arquitectura</span></span>
@@ -335,39 +335,39 @@ intro: Texto sobre Interacción
                   <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Doctorado en A & D</span></span>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label class='pregunta'>Asignaturas relacionadas</label>
                 <input type='text' required />
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label class='pregunta'>Cursos relacionados</label>
                 <input type='text' required />
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label class='pregunta'>Profesor</label>
                 <input type='text' required />
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label class='pregunta'>Alumnos</label>
                 <input type='text' required />
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label for="ejemplo-archivo">Imagen (carga un archivo)</label>
                 <input type="file" id="ejemplo-archivo">
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label class='pregunta'>PDF</label>
                 <input type='text' required />
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label class='pregunta'>URL (enlace)</label>
                 <input type='url' required />
               </div>
-              <div class='form-group'>
+              <div class='grupo-formulario'>
                 <label>Descripción</label>
                 <textarea placeholder='Texto libre' required></textarea>
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label class='pregunta'>Configuración</label>
                 <div class='opciones'>
                   <span class='checkbox-span'><input type='checkbox' name='tipo-proyecto' /> <span class='xs'>Esta es una edición menor</span></span>
@@ -382,103 +382,103 @@ intro: Texto sobre Interacción
             </form>
             <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form6">ver código</a>
             <div id="ver-codigo-form6" class="collapse">
-              <code>
-                &lt;form role="form">
-                &lt;div class="form-group">
-                &lt;label for="nombre">Título *&lt;/label>
-                &lt;input type="text" class="form-control" id="nombre" placeholder="Nombre del nuevo objeto" required />
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;label for="nombre">Tipo *&lt;/label>
-                &lt;select>
-                &lt;option>Alumno/a&lt;/option>
-                &lt;option>Profesor/a&lt;/option>
-                &lt;option>Ex-alumno/a&lt;/option>
-                &lt;option>Amigo/a&lt;/option>
-                &lt;option>Staff&lt;/option>
-                &lt;option>Otro/a&lt;/option>
-                &lt;/select>
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;label class='pregunta'>Palabras claves&lt;/label>
-                &lt;input type='text' placeholder='todo en bajas, separadas por coma 'required/>
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;label class='pregunta'>Año de inicio&lt;/label>
-                &lt;input type='text' required/>
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;label class='pregunta'>Año de término&lt;/label>
-                &lt;input type='date' required/>
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;label class='pregunta'>Carreras relacionadas&lt;/label>
-                &lt;div class='opciones'>
-                &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Arquitectura&lt;/span>&lt;/span>
-                &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Diseño gráfico&lt;/span>&lt;/span>
-                &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Diseño industrial&lt;/span>&lt;/span>
-                &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Náutico y marítimo&lt;/span>&lt;/span>
-                &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Ciudad y territorio&lt;/span>&lt;/span>
-                &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Formación y oficio&lt;/span>&lt;/span>
-                &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Interacción&lt;/span>&lt;/span>
-                &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Doctorado en A & D&lt;/span>&lt;/span>
-                &lt;/div>
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;label class='pregunta'>Asignaturas relacionadas&lt;/label>
-                &lt;input type='text' required />
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;label class='pregunta'>Cursos relacionados&lt;/label>
-                &lt;input type='text' required />
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;label class='pregunta'>Profesor&lt;/label>
-                &lt;input type='text' required />
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;label class='pregunta'>Alumnos&lt;/label>
-                &lt;input type='text' required />
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;label for="ejemplo-archivo">Imagen (carga un archivo)&lt;/label>
-                &lt;input type="file" id="ejemplo-archivo">
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;label class='pregunta'>PDF&lt;/label>
-                &lt;input type='text' required />
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;label class='pregunta'>URL (enlace)&lt;/label>
-                &lt;input type='url' required />
-                &lt;/div>
-                &lt;div class='form-group'>
-                &lt;label>Descripción&lt;/label>
-                &lt;textarea placeholder='Texto libre' required>&lt;/textarea>
-                &lt;/div>
-                &lt;div class="form-group">
-                &lt;label class='pregunta'>Configuración&lt;/label>
-                &lt;div class='opciones'>
-                &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Esta es una edición menor&lt;/span>&lt;/span>
-                &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Vigilar esta página&lt;/span>&lt;/span>
-                &lt;/div>
-                &lt;/div>
-                &lt;button type="submit" class="btn btn-success">Grabar página&lt;/button>
-                &lt;button type="submit" class="btn btn-default">Previsualizar&lt;/button>
-                &lt;button type="submit" class="btn btn-cancel">Cancelar&lt;/button>
-                &lt;/form>
+              <code class='bloque'>
+&lt;form role="form">
+  &lt;div class="grupo-formulario">
+    &lt;label for="nombre">Título *&lt;/label>
+    &lt;input type="text" class="control" id="nombre" placeholder="Nombre del nuevo objeto" required />
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label for="nombre">Tipo *&lt;/label>
+    &lt;select>
+      &lt;option>Alumno/a&lt;/option>
+      &lt;option>Profesor/a&lt;/option>
+      &lt;option>Ex-alumno/a&lt;/option>
+      &lt;option>Amigo/a&lt;/option>
+      &lt;option>Staff&lt;/option>
+      &lt;option>Otro/a&lt;/option>
+    &lt;/select>
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label class='pregunta'>Palabras claves&lt;/label>
+    &lt;input type='text' placeholder='todo en bajas, separadas por coma 'required/>
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label class='pregunta'>Año de inicio&lt;/label>
+    &lt;input type='text' required/>
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label class='pregunta'>Año de término&lt;/label>
+    &lt;input type='date' required/>
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label class='pregunta'>Carreras relacionadas&lt;/label>
+    &lt;div class='opciones'>
+      &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Arquitectura&lt;/span>&lt;/span>
+      &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Diseño gráfico&lt;/span>&lt;/span>
+      &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Diseño industrial&lt;/span>&lt;/span>
+      &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Náutico y marítimo&lt;/span>&lt;/span>
+      &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Ciudad y territorio&lt;/span>&lt;/span>
+      &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Formación y oficio&lt;/span>&lt;/span>
+      &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Interacción&lt;/span>&lt;/span>
+      &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Doctorado en A & D&lt;/span>&lt;/span>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label class='pregunta'>Asignaturas relacionadas&lt;/label>
+    &lt;input type='text' required />
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label class='pregunta'>Cursos relacionados&lt;/label>
+    &lt;input type='text' required />
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label class='pregunta'>Profesor&lt;/label>
+    &lt;input type='text' required />
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label class='pregunta'>Alumnos&lt;/label>
+    &lt;input type='text' required />
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label for="ejemplo-archivo">Imagen (carga un archivo)&lt;/label>
+    &lt;input type="file" id="ejemplo-archivo">
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label class='pregunta'>PDF&lt;/label>
+    &lt;input type='text' required />
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label class='pregunta'>URL (enlace)&lt;/label>
+    &lt;input type='url' required />
+  &lt;/div>
+  &lt;div class='grupo-formulario'>
+    &lt;label>Descripción&lt;/label>
+    &lt;textarea placeholder='Texto libre' required>&lt;/textarea>
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label class='pregunta'>Configuración&lt;/label>
+    &lt;div class='opciones'>
+      &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Esta es una edición menor&lt;/span>&lt;/span>
+      &lt;span class='checkbox-span'>&lt;input type='checkbox' name='tipo-proyecto' /> &lt;span class='xs'>Vigilar esta página&lt;/span>&lt;/span>
+    &lt;/div>
+  &lt;/div>
+  &lt;button type="submit" class="btn btn-success">Grabar página&lt;/button>
+  &lt;button type="submit" class="btn btn-default">Previsualizar&lt;/button>
+  &lt;button type="submit" class="btn btn-cancel">Cancelar&lt;/button>
+&lt;/form>
               </code>
             </div>
           </div>
           <div class="col-md-6 col-sm-12 col-xs-12">
             <h5 class='pizarra gruesa'>Nuevo usuario (Personas)</h5>
             <form role="form">
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label for="nombre">Nombre de usuario</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Nombre del nuevo objeto" required />
+                <input type="text" class="control" id="nombre" placeholder="Nombre del nuevo objeto" required />
                 <p class='especificacion'>Elige un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</p>
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label for="nombre">Tipo *</label>
                 <select>
                   <option>Alumno/a</option>
@@ -489,7 +489,7 @@ intro: Texto sobre Interacción
                   <option>Otro/a</option>
                 </select>
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label for="nombre">Carrera</label>
                 <select>
                   <option>Arquitectura</option>
@@ -498,32 +498,32 @@ intro: Texto sobre Interacción
                   <option>Estudios avanzados</option>
                 </select>
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label class='pregunta'>Año de ingreso</label>
                 <input type='text' placeholder='todo en bajas, separadas por coma '/>
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label class='pregunta'>Nombre *</label>
                 <input type='text' required/>
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label class='pregunta'>Apellido *</label>
                 <input type='date' required/>
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label class='pregunta'>e-mail *</label>
                 <input type='email' required />
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label class='pregunta'>Página en Wiki Casiopea</label>
                 <input type='url' />
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <label for="nombre">Contraseña *</label>
                 <input type="password" id="contraseña" placeholder="introduzca contraseña" required />
                 <input type="password" id="contraseña" placeholder="verificación contraseña" required />
               </div>
-              <div class="form-group">
+              <div class="grupo-formulario">
                 <input type="checkbox">
                 Acepto los <a href='#'>términos y condiciones</a>
               </label>
@@ -532,65 +532,65 @@ intro: Texto sobre Interacción
           </form>
           <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form7">ver código</a>
           <div id="ver-codigo-form7" class="collapse">
-            <code>
-              &lt;form role="form">
-              &lt;div class="form-group">
-              &lt;label for="nombre">Nombre de usuario&lt;/label>
-              &lt;input type="text" class="form-control" id="nombre" placeholder="Nombre del nuevo objeto" required />
-              &lt;p class='especificacion'>Elige un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.&lt;/p>
-              &lt;/div>
-              &lt;div class="form-group">
-              &lt;label for="nombre">Tipo *&lt;/label>
-              &lt;select>
-              &lt;option>Alumno/a&lt;/option>
-              &lt;option>Profesor/a&lt;/option>
-              &lt;option>Ex-alumno/a&lt;/option>
-              &lt;option>Amigo/a&lt;/option>
-              &lt;option>Staff&lt;/option>
-              &lt;option>Otro/a&lt;/option>
-              &lt;/select>
-              &lt;/div>
-              &lt;div class="form-group">
-              &lt;label for="nombre">Carrera&lt;/label>
-              &lt;select>
-              &lt;option>Arquitectura&lt;/option>
-              &lt;option>Diseño gráfico&lt;/option>
-              &lt;option>Diseño industrial&lt;/option>
-              &lt;option>Estudios avanzados&lt;/option>
-              &lt;/select>
-              &lt;/div>
-              &lt;div class="form-group">
-              &lt;label class='pregunta'>Año de ingreso&lt;/label>
-              &lt;input type='text' placeholder='todo en bajas, separadas por coma '/>
-              &lt;/div>
-              &lt;div class="form-group">
-              &lt;label class='pregunta'>Nombre *&lt;/label>
-              &lt;input type='text' required/>
-              &lt;/div>
-              &lt;div class="form-group">
-              &lt;label class='pregunta'>Apellido *&lt;/label>
-              &lt;input type='date' required/>
-              &lt;/div>
-              &lt;div class="form-group">
-              &lt;label class='pregunta'>e-mail *&lt;/label>
-              &lt;input type='email' required />
-              &lt;/div>
-              &lt;div class="form-group">
-              &lt;label class='pregunta'>Página en Wiki Casiopea&lt;/label>
-              &lt;input type='url' />
-              &lt;/div>
-              &lt;div class="form-group">
-              &lt;label for="nombre">Contraseña *&lt;/label>
-              &lt;input type="password" id="contraseña" placeholder="introduzca contraseña" required />
-              &lt;input type="password" id="contraseña" placeholder="verificación contraseña" required />
-              &lt;/div>
-              &lt;div class="form-group">
-              &lt;input type="checkbox">
-              Acepto los &lt;a href='#'>términos y condiciones&lt;/a>
-              &lt;/label>
-              &lt;/div>
-              &lt;button type="submit" class="btn btn-success">Crear nuevo usuario&lt;/button>
-              &lt;/form>
+            <code class='bloque'>
+&lt;form role="form">
+  &lt;div class="grupo-formulario">
+    &lt;label for="nombre">Nombre de usuario&lt;/label>
+    &lt;input type="text" class="control" id="nombre" placeholder="Nombre del nuevo objeto" required />
+    &lt;p class='especificacion'>Elige un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.&lt;/p>
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label for="nombre">Tipo *&lt;/label>
+    &lt;select>
+      &lt;option>Alumno/a&lt;/option>
+      &lt;option>Profesor/a&lt;/option>
+      &lt;option>Ex-alumno/a&lt;/option>
+      &lt;option>Amigo/a&lt;/option>
+      &lt;option>Staff&lt;/option>
+      &lt;option>Otro/a&lt;/option>
+    &lt;/select>
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label for="nombre">Carrera&lt;/label>
+    &lt;select>
+      &lt;option>Arquitectura&lt;/option>
+      &lt;option>Diseño gráfico&lt;/option>
+      &lt;option>Diseño industrial&lt;/option>
+      &lt;option>Estudios avanzados&lt;/option>
+    &lt;/select>
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label class='pregunta'>Año de ingreso&lt;/label>
+    &lt;input type='text' placeholder='todo en bajas, separadas por coma '/>
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label class='pregunta'>Nombre *&lt;/label>
+    &lt;input type='text' required/>
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label class='pregunta'>Apellido *&lt;/label>
+    &lt;input type='date' required/>
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label class='pregunta'>e-mail *&lt;/label>
+    &lt;input type='email' required />
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label class='pregunta'>Página en Wiki Casiopea&lt;/label>
+    &lt;input type='url' />
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;label for="nombre">Contraseña *&lt;/label>
+    &lt;input type="password" id="contraseña" placeholder="introduzca contraseña" required />
+    &lt;input type="password" id="contraseña" placeholder="verificación contraseña" required />
+  &lt;/div>
+  &lt;div class="grupo-formulario">
+    &lt;input type="checkbox">
+    Acepto los &lt;a href='#'>términos y condiciones&lt;/a>
+    &lt;/label>
+  &lt;/div>
+  &lt;button type="submit" class="btn btn-success">Crear nuevo usuario&lt;/button>
+&lt;/form>
             </code>
           </div>
         </div>
