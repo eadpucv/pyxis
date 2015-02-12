@@ -154,7 +154,7 @@ title: Pyxis Framework - Maquetas
       </a>
 </div> <!-- Fin de Carousel -->
 
-<div id='portadilla'>
+<div style='background: url("{{ site.baseurl }}/img/ruido-fondo-pyxis.png") repeat center' id='portadilla'>
 <!-- Contenido escrito -->
 <!-- Pag para page (para toda la página) -->
 <div class='pag page gutter'>
@@ -354,9 +354,11 @@ title: Pyxis Framework - Maquetas
         <li><a href='#'>Magister Náutico y Marítimo</a></li>
         <li><a href='#'>Magister Ciudad y territorio</a></li>
       </ul>
-      <h6 class='xs interletraje-xs negro condensado gruesa margen-sup margen-izq-sm altas'>Twitter</h6>
-    <a class="twitter-timeline" href="https://twitter.com/eadpucv" data-widget-id="556872650858201090">Tweets por el @eadpucv.</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      <h6 class='xs interletraje-xs negro condensado gruesa margen-sup margen-izq altas'>Twitter</h6>
+      <ul class='xs'>
+    <li class='sin-estilo sin-relleno'><a class="twitter-timeline" href="https://twitter.com/eadpucv" data-widget-id="556872650858201090">Tweets por el @eadpucv.</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li>
+      </ul>
     </div>
   </aside>
   </div> <!-- fin de fila-->
