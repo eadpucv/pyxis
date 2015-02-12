@@ -33,7 +33,7 @@ title: Pyxis Framework - Maquetas
               </a>
           </div>
           <!-- móviles -->
-          <div class='oculto-md oculto-sm col-xs-12'>
+          <div class='oculto-lg oculto-md oculto-sm col-xs-12'>
             <!-- enlace -->
             <a href='#'>
               <div>
@@ -62,7 +62,7 @@ title: Pyxis Framework - Maquetas
             </a>
           </div>
           <!-- móviles -->
-          <div class='oculto-md oculto-sm col-xs-12'>
+          <div class='oculto-lg oculto-md oculto-sm col-xs-12'>
             <!-- enlace -->
             <a href='#'>
             <div>
@@ -91,7 +91,7 @@ title: Pyxis Framework - Maquetas
             </a>
           </div>
           <!-- móviles -->
-          <div class='oculto-md oculto-sm col-xs-12'>
+          <div class='oculto-lg oculto-md oculto-sm col-xs-12'>
             <!-- enlace -->
             <a href='#'>
             <div>
@@ -120,7 +120,7 @@ title: Pyxis Framework - Maquetas
             </a>
           </div>
           <!-- móviles -->
-          <div class='oculto-md oculto-sm col-xs-12'>
+          <div class='oculto-lg oculto-md oculto-sm col-xs-12'>
             <!-- enlace -->
             <a href='#'>
               <div>
@@ -177,10 +177,10 @@ title: Pyxis Framework - Maquetas
   <!-- Evento 1 -->
   <div class='col-md-6 col-sm-6 col-xs-12 evento alto-xs margen-inf-sm'>
       <div class='fila'>
-        <div class='col-lg-12 col-md-2 col-sm-2 col-xs-3'>
+        <div class='col-lg-2 col-md-2 col-sm-2 col-xs-3'>
           <div class='fecha'><span class='sm'>22 Oct</span></div>
         </div>
-        <div class='col-lg-12 col-md-10 col-sm-12 contenido tooltip-demo'>
+        <div class='col-lg-10 col-md-10 col-sm-12 contenido tooltip-demo'>
           <h5 class='xs sin-margen relleno-inf-xs'><a href='#'>Segundo coloquio de Fabricación Digital 2014: Nuevas tecnologías, nuevas prácticas</a></h5>
           <span class='xs entry-details'>Publicado el 08 de noviembre, 2014.</span><!-- ícono de Tooltip -->
           <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
@@ -193,10 +193,10 @@ title: Pyxis Framework - Maquetas
   <!-- Evento 2 -->
   <div class='col-md-6 col-sm-6 col-xs-12 evento alto-xs margen-inf-sm'>
     <div class='fila'>
-      <div class='col-lg-12 col-md-2 col-sm-2 col-xs-3'>
+      <div class='col-lg-2 col-md-2 col-sm-2 col-xs-3'>
         <div class='fecha'><span class='sm'>14 Oct</span></div>
       </div>
-      <div class='col-lg-12 col-md-10 col-sm-12 contenido tooltip-demo'>
+      <div class='col-lg-10 col-md-10 col-sm-12 contenido tooltip-demo'>
         <h5 class='xs sin-margen relleno-inf-xs'><a href='#'>Charla fundación Superación de la Pobrezas</a></h5>
         <span class='xs entry-details'>Publicado el 08 de noviembre, 2014.</span>
           <!--ícono de Tooltip -->
@@ -210,10 +210,10 @@ title: Pyxis Framework - Maquetas
   <!-- Evento 3 -->
   <div class='col-md-6 col-sm-6 col-xs-12 evento alto-xs margen-inf-sm'>
     <div class='fila'>
-      <div class='col-lg-12 col-md-2 col-sm-2 col-xs-3'>
+      <div class='col-lg-2 col-md-2 col-sm-2 col-xs-3'>
         <div class='fecha'><span class='sm'>06 Oct</span></div>
       </div>
-      <div class='col-lg-12 col-md-10 col-sm-12 contenido tooltip-demo'>
+      <div class='col-lg-10 col-md-10 col-sm-12 contenido tooltip-demo'>
         <h5 class='xs sin-margen relleno-inf-xs'><a href='#'>Venta especial ediciones ARQ</a></h5>
         <span class='xs entry-details'>Publicado el 08 de noviembre, 2014.</span>
           <!--ícono de Tooltip -->
@@ -227,10 +227,10 @@ title: Pyxis Framework - Maquetas
   <!-- Evento 4 -->
   <div class='col-md-6 col-sm-6 col-xs-12 evento alto-xs margen-inf-sm'>
     <div class='fila'>
-      <div class='col-lg-12 col-md-2 col-sm-2 col-xs-3'>
+      <div class='col-lg-2 col-md-2 col-sm-2 col-xs-3'>
         <div class='fecha'><span class='sm'>06 Oct</span></div>
       </div>
-      <div class='col-lg-12 col-md-10 col-sm-12 contenido tooltip-demo'>
+      <div class='col-lg-10 col-md-10 col-sm-12 contenido tooltip-demo'>
         <h5 class='xs sin-margen relleno-inf-xs'><a href='#'>Venta especial ediciones ARQ</a></h5>
         <span class='xs entry-details'>Publicado el 08 de noviembre, 2014.</span>
           <!--ícono de Tooltip -->
@@ -493,7 +493,7 @@ title: Pyxis Framework - Maquetas
 <div class='pag margen-sup-sm'>
   <div class='fila'>
     <!-- publicación -->
-    <div class='col-lg-4 col-md-6 col-sm-6 col-xs-12 publicacion'>
+    <div class='col-lg-6 col-md-6 col-sm-6 col-xs-12 publicacion'>
       <a class='categoria' href='#'>
         <i class='icn icn-archivo'></i><h6 class='xs'>archivo histórico</h6>
       </a>
@@ -508,7 +508,7 @@ title: Pyxis Framework - Maquetas
       </div>
     </div>
     <!-- publicación -->
-    <div class='col-lg-4 col-md-6 col-sm-6 col-xs-12 publicacion'>
+    <div class='col-lg-6 col-md-6 col-sm-6 col-xs-12 publicacion'>
       <a class='categoria' href='#'>
       <i class='icn icn-documento'></i><h6 class='xs'>magíster ciudad y territorio</h6>
       </a>
@@ -523,7 +523,7 @@ title: Pyxis Framework - Maquetas
       </div>
     </div>
     <!-- publicación -->
-    <div class='col-lg-4 col-md-6 col-sm-6 col-xs-12 publicacion'>
+    <div class='col-lg-6 col-md-6 col-sm-6 col-xs-12 publicacion'>
       <a class='categoria' href='#'>
       <i class='icn icn-documento'></i><h6 class='xs'>magíster náutico y marítimo</h6>
       </a>
@@ -538,7 +538,7 @@ title: Pyxis Framework - Maquetas
       </div>
     </div>
     <!-- publicación -->
-    <div class='col-lg-4 col-md-6 col-sm-6 col-xs-12 publicacion'>
+    <div class='col-lg-6 col-md-6 col-sm-6 col-xs-12 publicacion'>
       <a class='categoria' href='#'>
       <i class='icn icn-clip margen-der-xs relleno-der-xs fondo-blanco linea-lateral relleno-vertical-xs icn-light borde radio-sup-der-sm radio-inf-der-sm sombra relleno-izq-xs negro'></i><h6 class='xs'>Bolsa de trabajo</h6>
       </a>
@@ -553,7 +553,7 @@ title: Pyxis Framework - Maquetas
       </div>
     </div>
     <!-- publicación -->
-    <div class='col-lg-4 col-md-6 col-sm-6 col-xs-12 publicacion'>
+    <div class='col-lg-6 col-md-6 col-sm-6 col-xs-12 publicacion'>
       <a class='categoria' href='#'>
       <i class='icn icn-ojo'></i><h6 class='xs'>Observación de la semana</h6>
       </a>
@@ -568,7 +568,7 @@ title: Pyxis Framework - Maquetas
       </div>
     </div>
     <!-- publicación -->
-    <div class='col-lg-4 col-md-6 col-sm-6 col-xs-12 publicacion'>
+    <div class='col-lg-6 col-md-6 col-sm-6 col-xs-12 publicacion'>
       <a class='categoria' href='#'>
       <i class='icn icn-libro'></i><h6 class='xs'>Investigación</h6>
       </a>
