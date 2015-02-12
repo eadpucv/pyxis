@@ -13,7 +13,7 @@ title: Pyxis Framework - Maquetas
 <img class='ancho-completo fijo atras mas-atras noticia' src="http://www.ead.pucv.cl/wp-content/uploads/2014/12/DSC_1408-1400x927.jpg">
 </div>
 
-<div id='post'>
+<div style='background: url("{{ site.baseurl }}/img/ruido-fondo-pyxis.png") repeat center' id='post'>
 <div class='al-frente cf margen-especial relleno-especial'>
 <div class='pag cf'>
     <ul id="breadcrumb" class='sin-relleno'>
