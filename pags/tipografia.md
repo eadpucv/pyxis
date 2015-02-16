@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
         </div>
         <div class="tab-pane fade" id="encabezados">
             <h4 class='pizarra gruesa'>Títulos</h4>
-            <p>Estas son las cabeceras HTML disponibles también en Pyxis. Las diferencias cuantitativas entre cabeceras, a medida que escalan, son de 2 a máximo 4px. <code>&lt;h1&gt;</code> alberga un <i>font-size</i> de 33px, mientras que <code>&lt;h6&gt;</code> es visible en 19px.</p>
+            <p>Estas son las cabeceras HTML disponibles también en Pyxis. Las diferencias cuantitativas entre cabeceras, a medida que escalan, son de 2 a máximo 4px. <code class='linea'>&lt;h1&gt;</code> alberga un <i>font-size</i> de 33px, mientras que <code class='linea'>&lt;h6&gt;</code> es visible en 19px.</p>
         
             <h1>Encabezado de Primer Nivel {33px}</h1>
             <h2>Encabezado de Segundo Nivel {29px}</h2>
@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
 
             <!-- Sub-Cabeceras -->
             <h4 class='pizarra gruesa'>Subtítulos</h4><a name="titulo-tres"></a>
-            <p>Puedes insertar un subtítulo añadiendo la clase <code class='codigo-parrafo'>&ltsmall></code>, más fino y en una escala menor a las cabeceras comunes, pero adoptando la misma proporción de diferenciado. La disminución tipográfica es de un 80%.</p>
+            <p>Puedes insertar un subtítulo añadiendo la clase <code class='linea'>&ltsmall></code>, más fino y en una escala menor a las cabeceras comunes, pero adoptando la misma proporción de diferenciado. La disminución tipográfica es de un 80%.</p>
 
             <h1><small>Subtitulo de Primer Nivel</small></h1>
             <h2><small>Subtitulo de Segundo Nivel</small></h2>

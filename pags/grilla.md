@@ -31,7 +31,7 @@ link-8: Anidación y offset
                 <p>Sin embargo, existe una sintaxis que nos permite eliminar la separación interna y así mantener los bloques alineados hacia el borde de su contenedor. Al insertas las columnas dentro de una fila nos da esta posibilidad. Hay que tener en cuenta de que esto nos puede generar problemas si es que no hay otro elemento que contenga a la fila, ya que se creará un scroll horizontal, puesto que las columnas tomarán márgenes negativos y se saldrán de su contenedor natural.</p>
 
                 <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-                <code>
+                <code class='bloque'>
 // Sintaxis de columnas con separación interna, indentación (con gutter)
 &lt;div class='col-md-12'>&lt;/div>
 
