@@ -698,19 +698,23 @@ code {
   line-height: @interlinea * .666;
   white-space: pre-wrap;
   font-size: 12px;
-  padding: 2px 5px;
+  padding: 2px 15px;
   margin: 0;
 
   &.linea{
     display: inline;
     line-height: 21px;
-    padding: 0;
+    padding: 2px 5px;
   }
 
   &.bloque{
     background-color: @pizarra;
     line-height: 140%;
     text-shadow: none;
+  }
+
+  &.codigo-parrafo{
+    padding: 2px 5px;
   }
 
   &.blanco{
@@ -1101,7 +1105,7 @@ span {
   //  código escrito:
 
   code {
-    padding: 10px 20px;
+    padding: 10px 10px;
     border: 1px solid fade(@negro, 5);
     border-right: 1px solid fade(@negro, 5);
     border-bottom: 1px solid fade(@negro, 5);
@@ -1400,7 +1404,7 @@ span {
   //  código escrito:
 
   code {
-    padding: 5px 80px;
+    padding: 5px 15px;
     &.sin-relleno{
       padding: 5px 5px;
     }

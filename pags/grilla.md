@@ -31,7 +31,7 @@ link-8: Anidación y offset
                 <p>Sin embargo, existe una sintaxis que nos permite eliminar la separación interna y así mantener los bloques alineados hacia el borde de su contenedor. Al insertas las columnas dentro de una fila nos da esta posibilidad. Hay que tener en cuenta de que esto nos puede generar problemas si es que no hay otro elemento que contenga a la fila, ya que se creará un scroll horizontal, puesto que las columnas tomarán márgenes negativos y se saldrán de su contenedor natural.</p>
 
                 <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-                <code>
+                <code class='bloque'>
 // Sintaxis de columnas con separación interna, indentación (con gutter)
 &lt;div class='col-md-12'>&lt;/div>
 
@@ -48,7 +48,7 @@ link-8: Anidación y offset
                 <p><strong>Para ocultar columnas escribe 'oculto-(formato de tamaño)', y recuerda esta clase con la respectiva nomenclatura.</strong> Por ejemplo: </p>
 
                 <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-                <code> 
+                <code class='bloque'> 
 // visible en lg, md, sm pero no en xs
 &lt;div class='col-lg-12 col-md-12 col-sm-12 oculto-xs'&gt;&lt;/div&gt;
 
@@ -62,7 +62,7 @@ link-8: Anidación y offset
                 <p>Adicionalmente existe una manera de nombrar genéricamente si queremos que esté oculto o visible específicamente en alguna pantalla, lg - md - sm ó xs. Esto se aplica como clase extendida por lo tanto se puede mezclar nomenclaturas. Se explica a continuación:</p>
 
                 <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-                <code> 
+                <code class='bloque'> 
 // sólo visible en xs
 &lt;div class='visible-xs'&gt;&lt;/div&gt;
 
@@ -95,7 +95,7 @@ link-8: Anidación y offset
                 
                 <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla1">ver código</a> 
                 <div id="ver-codigo-grilla1" class="collapse">
-                    <code>
+                    <code class='bloque'>
 &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
 &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
 &lt;div class='col-lg-1 col-md-1 col-sm-1 col-xs-1'>&lt;/div>
@@ -128,7 +128,7 @@ link-8: Anidación y offset
               
                 <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla2">ver código</a> 
                 <div id="ver-codigo-grilla2" class="collapse">
-                    <code>
+                    <code class='bloque'>
 &lt;div class='col-md-1 col-sm-2 col-xs-8'>&lt;/div>
 &lt;div class='col-md-1 col-sm-2 col-xs-8'>&lt;/div>
 &lt;div class='col-md-1 col-sm-2 col-xs-8'>&lt;/div>
@@ -157,7 +157,7 @@ link-8: Anidación y offset
             
                 <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla3">ver código</a> 
                 <div id="ver-codigo-grilla3" class="collapse">
-                    <code>
+                    <code class='bloque'>
 &lt;div class='col-md-2 col-sm-6 col-xs-12'>&lt;/div>
 &lt;div class='col-md-2 col-sm-6 col-xs-12'>&lt;/div>
 &lt;div class='col-md-2 col-sm-3 col-xs-6'>&lt;/div>
@@ -182,7 +182,7 @@ link-8: Anidación y offset
                 </div>
                 <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla4">ver código</a> 
                 <div id="ver-codigo-grilla4" class="collapse">
-                    <code>
+                    <code class='bloque'>
 &lt;div class='fila'>
     &lt;div class='col-md-12 col-sm-12 col-xs-12'>&lt;/div>
 &lt;/div>
@@ -216,7 +216,7 @@ link-8: Anidación y offset
                 </div>
                 <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla5">ver código</a> 
                 <div id="ver-codigo-grilla5" class="collapse">
-                    <code>
+                    <code class='bloque'>
 &lt;div class='fila'>
     &lt;div class='col-md-12 col-sm-12 col-xs-12'>
         &lt;div  class='fila'>   
@@ -250,7 +250,7 @@ link-8: Anidación y offset
                 </div>
                 <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla6">ver código</a> 
                 <div id="ver-codigo-grilla6" class="collapse">
-                <code>
+                <code class='bloque'>
 &lt;div class='fila'>
     &lt;div class='col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-2'>&lt;/div>
     &lt;/div>

@@ -38,7 +38,7 @@ intro: Texto sobre color
         <div class="tab-content margen-sup">
             <div class="tab-pane fade in active" id="paleta">
                 <h4 class="pizarra gruesa">Paleta de Colores</h4>
-                <p>Se definen los colores a continuación, codificando en el nombre la variable cromática. Esta puede emplearse como variable <em>less</em> definida en <code>variables.less</code> de Pyxis. Los colores pueden aplicarse como clase, por ejemplo <code>.rojo</code> definiendo así el color del elemento (por lo general, el color del texto), y como <code>.fondo-rojo</code> para modificar el color de fondo de dicho elemento. Esta lógica está definida para todos los colores a continuación.</p>
+                <p>Se definen los colores a continuación, codificando en el nombre la variable cromática. Esta puede emplearse como variable <em>less</em> definida en <code class='linea'>variables.less</code> de Pyxis. Los colores pueden aplicarse como clase, por ejemplo <code class='linea'>.rojo</code> definiendo así el color del elemento (por lo general, el color del texto), y como <code class='linea'>.fondo-rojo</code> para modificar el color de fondo de dicho elemento. Esta lógica está definida para todos los colores a continuación.</p>
 
                 <div class='fila'>
                     <div class='col-md-12'>
