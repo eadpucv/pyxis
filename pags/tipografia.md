@@ -28,9 +28,9 @@ pde: type.pde
     <div class="tab-content margen-sup">
         <div class="tab-pane fade in active" id="familias">
             <h4 class='pizarra gruesa'>Parámetros de fuente</h4>
-            <p class='hyphens justify-content'>Pyxis utiliza globalmente y por defecto un <i>font-size</i> de <span class='verde'>@cuerpo:</span> <b>15px</b>, con un <i>line-height</i> de <span class='verde'>@interlinea:</span> <b>25px</b> y un <i>font-weight</i> de <span class='verde'>@peso:</span> <b>200</b>, lo cual hace referencia a un <i>font-style</i> "normal" o "regular" en las dos familias de fuente escogidas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tincidunt turpis et metus scelerisque posuere vel sed ligula. Cras ullamcorper tortor at tortor finibus posuere. Suspendisse egestas eget magna a luctus.</p>
+            <p class='hyphens justify-content'>Pyxis utiliza globalmente y por defecto un <i>font-size</i> de <span class='verde'>@cuerpo:</span> <b>15.5px</b>, con un <i>line-height</i> de <span class='verde'>@interlinea:</span> <b>25px</b> y un <i>font-weight</i> de <span class='verde'>@peso:</span> <b>200</b>, lo cual hace referencia a un <i>font-style</i> "normal" o "regular" en las dos familias de fuente escogidas.</p>
             <div class='fila'>
-                <div class='col-md-6 col-sm-12 col-xs-12'>
+                <div class='col-md-4 col-sm-12 col-xs-12'>
                     <h5 class='rojo gruesa'>Source Sans Pro</h5>
                     <pre>
 <p class='sin-margen gruesa negro-oscuro sans md'>
@@ -39,10 +39,10 @@ toxic brew for
 the evil queen 
 and jack.</p> 
                 </pre>
-                    <p>Se utiliza la familia tipográfica <a href="http://www.fontsquirrel.com/fonts/source-sans-pro" target="blank">Source Sans Pro</a>, para títulos y encabezados de texto. Esta tipografía de tipo sans-serif, presenta gran versatilidad a través de sus 12 pesos.</p>
+                    <p>Familia tipográfica <a href="http://www.fontsquirrel.com/fonts/source-sans-pro" target="blank">Source Sans Pro</a>. Primera fuente sans serif de Adobe de código abierto desde 2012, diseñada por <i>Paul D. Hunt</i>, para interfaces de usuario. Pyxis la utiliza para títulos, encabezados de texto y botones, presentando gran versatilidad a través de 6 pesos diferentes.</p>
                     
                 </div>
-                <div class='col-md-6 col-sm-12 col-xs-12'>
+                <div class='col-md-4 col-sm-12 col-xs-12'>
                     <h5 class='rojo gruesa'>Open Sans Condensed</h5>
                     <pre>
 <p class='condensado gruesa negro-oscuro sin-margen md'>
@@ -51,8 +51,19 @@ toxic brew for
 the evil queen 
 and jack.</p> 
                 </pre>
-                    <p>Se utiliza la familia tipográfica <a href="http://www.google.com/fonts/specimen/Open+Sans+Condensed" target="blank">Open Sans Condensed</a>, para títulos y encabezados de texto. Esta tipografía de tipo sans-serif, presenta gran versatilidad a través de sus 12 pesos.</p>
+                    <p>Familia tipográfica <a href="http://www.google.com/fonts/specimen/Open+Sans+Condensed" target="blank">Open Sans Condensed</a>. Fuente sans-serif diseñada por <i>Steve Matteson</i> en 2011, optimizada para impresiones, web e interfaces móviles. Pyxis la utiliza para títulos, encabezados de texto y de menús. Su versatilidad contempla 2 pesos (normal + bold) y su versión en itálicas.</p>
                     
+                </div>
+                <div class='col-md-4 col-sm-12 col-xs-12'>
+                    <h5 class='rojo gruesa'>Palatino Linotype</h5>
+                    <pre>
+<p class='serif gruesa negro-oscuro sin-margen md'>
+Grumpy wizards make
+toxic brew for
+the evil queen 
+and jack.</p> 
+                </pre>
+                    <p>Familia tipográfica <a href="http://www.google.com/fonts/specimen/Open+Sans+Condensed" target="blank">Palatino Linotype</a>. Fuente tipo serif diseñada por <i>Hermann Zapf</i> en 1948, optimizada para linotipia en 1999. Pyxis la utiliza para texto continuo, párrafos y refrencias. Su versatilidad contempla 2 pesos (normal + bold) y su versión en itálicas.</p>  
                 </div>
             </div>
 
@@ -73,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
         </div>
         <div class="tab-pane fade" id="encabezados">
             <h4 class='pizarra gruesa'>Títulos</h4>
-            <p>Estas son las cabeceras HTML disponibles también en Pyxis. Las diferencias cuantitativas entre cabeceras, a medida que escalan, son de 2 a máximo 4px. <code>&lt;h1&gt;</code> alberga un <i>font-size</i> de 33px, mientras que <code>&lt;h6&gt;</code> es visible en 19px.</p>
+            <p>Estas son las cabeceras HTML disponibles también en Pyxis. Las diferencias cuantitativas entre cabeceras, a medida que escalan, son de 2 a máximo 4px. <code class='linea'>&lt;h1&gt;</code> alberga un <i>font-size</i> de 33px, mientras que <code class='linea'>&lt;h6&gt;</code> es visible en 19px.</p>
         
             <h1>Encabezado de Primer Nivel {33px}</h1>
             <h2>Encabezado de Segundo Nivel {29px}</h2>
@@ -96,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 
             <!-- Sub-Cabeceras -->
             <h4 class='pizarra gruesa'>Subtítulos</h4><a name="titulo-tres"></a>
-            <p>Puedes insertar un subtítulo añadiendo la clase <code class='codigo-parrafo'>&ltsmall></code>, más fino y en una escala menor a las cabeceras comunes, pero adoptando la misma proporción de diferenciado. La disminución tipográfica es de un 80%.</p>
+            <p>Puedes insertar un subtítulo añadiendo la clase <code class='linea'>&ltsmall></code>, más fino y en una escala menor a las cabeceras comunes, pero adoptando la misma proporción de diferenciado. La disminución tipográfica es de un 80%.</p>
 
             <h1><small>Subtitulo de Primer Nivel</small></h1>
             <h2><small>Subtitulo de Segundo Nivel</small></h2>
@@ -756,6 +767,7 @@ h1, h2, h3, h4, h5, h6 {
                         Fax +56 32 2274421
                     </address>
                 </div>
+                <hr class='invisible'>
                 <code class='bloque'>
 &lt;p class=&quot;direccion&quot;&gt;...&lt;/p&gt;
                 </code>
@@ -768,6 +780,7 @@ h1, h2, h3, h4, h5, h6 {
                     <li><a class='gris-oscuro'>Carrusel</a></li>
                     <li><a class='gris-oscuro'>Noticias</a></li>
                 </ul>
+                <hr class='invisible'>
                 <code class='bloque'>
 &lt;ul id=&quot;breadcrumb&quot;&gt;
     &lt;li&gt;&lt;a&gt;&lt;i class='icn icn-hogar'&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
@@ -792,6 +805,7 @@ h1, h2, h3, h4, h5, h6 {
                 <hr class='invisible'>
                 <h5 class='pizarra'>Fecha evento</h5>
                 <span class='fecha-evento'>12</span>
+                <hr class='invisible'>
                 <code class='bloque'>
 &lt;p class=&quot;fecha-evento&quot;&gt;...&lt;/p&gt;
                 </code>

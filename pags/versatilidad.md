@@ -12,6 +12,7 @@ intro: Texto sobre versatilidad
             <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
                 <li class="active"><a id='subiendo-1' class='condensado' href="#maquetas" role="tab" data-toggle="tab">Maquetas</a></li>
                 <li><a id='subiendo-2' class='condensado' href="#parametros" role="tab" data-toggle="tab">Parámetros</a></li>
+                <li><a id='subiendo-2' class='condensado' href="#modelos" role="tab" data-toggle="tab">Modelos</a></li>
                 <li class='subir'><a href="#topbar"><i class="icn icn-imagen"></i></a></li>
             </ul>
         </div>
@@ -392,6 +393,330 @@ intro: Texto sobre versatilidad
     <li class='sans'><a class='sans' target="_blank" href='http://eadpucv.github.io/pyxis/maquetas/info-docencia/'>Información de docencia</a></li>
     <li class='sans'><a class='sans' target="_blank" href='http://eadpucv.github.io/pyxis/maquetas/portada-info-docencia/'>Portada de información de docencia</a></li>
 </ol>
+
+</div>
+<!-- modelos -->
+<div class="tab-pane fade" id="modelos">
+
+<h4 class='pizarra gruesa'>Eventos</h4>
+<p>Los enlaces presentes a continuación resguardan el primer proyecto web estandarizado únicamente con Pyxis Framework y <a href='http://eadpucv.github.io/stampa/'>Stampa</a> en una serie de maquetas navegables y que corresponden al finiquito del diseño del sitio oficial de la <a href='http://www.ead.pucv.cl/'>e[ad]</a></p>
+
+<div id='index'>
+  <!-- Evento 1 -->
+  <div class='fila'>
+      <div class='col-md-6 col-sm-6 col-xs-12 evento alto-xs'>
+          <div class='fila'>
+            <div class='col-lg-2 col-md-2 col-sm-2 col-xs-3'>
+              <div class='fecha'><span class='sm'>22 Oct</span></div>
+            </div>
+            <div class='col-lg-10 col-md-10 col-sm-12 contenido tooltip-demo'>
+              <h5 class='xs sin-margen relleno-inf-xs'><a href='#'>Segundo coloquio de Fabricación Digital 2014: Nuevas tecnologías, nuevas prácticas</a></h5>
+              <span class='xs entry-details'>Publicado el 08 de noviembre, 2014.</span><!-- ícono de Tooltip -->
+              <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+              <span><i class='icn icn-lapiz icn-sm'></i></span>
+              </a>
+              <p class='xs'>El lunes 20 de octubre se llevará a cabo en Valparaíso el segundo coloquio de Fabricación Digital organizado por la Escuela de Arquitectura y Diseño de la PUCV. Al evento <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
+            </div>
+          </div>
+      </div>
+      <!-- Evento 2 -->
+      <div class='col-md-6 col-sm-6 col-xs-12 evento alto-xs'>
+          <div class='fila'>
+            <div class='col-lg-2 col-md-2 col-sm-2 col-xs-3'>
+              <div class='fecha'><span class='sm'>22 Oct</span></div>
+            </div>
+            <div class='col-lg-10 col-md-10 col-sm-12 contenido tooltip-demo'>
+              <h5 class='xs sin-margen relleno-inf-xs'><a href='#'>Segundo coloquio de Fabricación Digital 2014: Nuevas tecnologías, nuevas prácticas</a></h5>
+              <span class='xs entry-details'>Publicado el 08 de noviembre, 2014.</span><!-- ícono de Tooltip -->
+              <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+              <span><i class='icn icn-lapiz icn-sm'></i></span>
+              </a>
+              <p class='xs'>El lunes 20 de octubre se llevará a cabo en Valparaíso el segundo coloquio de Fabricación Digital organizado por la Escuela de Arquitectura y Diseño de la PUCV. Al evento <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+
+<a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla1">Ver código</a> 
+        <div id="ver-codigo-grilla1" class="collapse">
+            <code>
+&lt;div id='index'>
+    &lt;div class='fila'>
+        &lt;div class='col-md-6 col-sm-6 col-xs-12 evento alto-xs'>
+          &lt;div class='fila'>
+            &lt;div class='col-lg-2 col-md-2 col-sm-2 col-xs-3'>
+              &lt;div class='fecha'>&lt;span class='sm'>22 Oct&lt;/span>&lt;/div>
+            &lt;/div>
+            &lt;div class='col-lg-10 col-md-10 col-sm-12 contenido tooltip-demo'>
+              &lt;h5 class='xs sin-margen relleno-inf-xs'>&lt;a href='#'>...&lt;/a>&lt;/h5>
+              &lt;span class='xs entry-details'>Publicado el 08 de noviembre, 2014.&lt;/span><!-- ícono de Tooltip -->
+              &lt;a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+              &lt;span>&lt;i class='icn icn-lapiz icn-sm'>&lt;/i>&lt;/span>
+              &lt;/a>
+              &lt;p class='xs'>... &lt;a class='' href='#'>[&lt;i class='icn icn-lentes'>&lt;/i>]&lt;/a>&lt;/p>
+            &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+            </code>
+        </div>
+<hr class='invisible'>
+
+<h4 class='pizarra gruesa'>Noticias</h4>
+<p>Los enlaces presentes a continuación resguardan el primer proyecto web estandarizado únicamente con Pyxis Framework y <a href='http://eadpucv.github.io/stampa/'>Stampa</a> en una serie de maquetas navegables y que corresponden al finiquito del diseño del sitio oficial</p>
+<div id='index'>
+    <div class='fila'>
+    <!-- 1 de 4 Columnas de noticias a lo largo -->
+    <div class='col-md-4 col-sm-12 col-xs-12 noticia'>
+      <!-- Div que oculta el desborde de la imagen -->
+        <div class='cabecera'>
+          <a href='#'>
+            <img src="http://www.ead.pucv.cl/wp-content/uploads/2014/12/IMG_3945.jpg" alt="">
+          </a>
+        </div>
+        <!-- Título, fecha de publicación, reseña de noticia -->
+        <div class='relleno-sup-xs tooltip-demo'>
+          <h4 class='xs sin-margen'><a href='#'>Profesor participará en seminario “Concepción, de la frontera a la globalización”</a></h4>
+          <span class='xs entry-details'>Publicado el 03 de noviembre, 2014.
+            <a data-toggle="tooltip" href="#" title="Editar" class='xs sin-margen' href='#'>
+               <span class="icn-stack">
+                <span class="icn icn-cuadrolleno icn-stack-2x"></span>
+                <span class="icn icn-lapiz icn-sm icn-stack-1x"></span>
+              </span>
+            </a>
+          </span>
+          <p class='xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a href='#'>[<i class='icn icn-lentes'></i>]</a></p>
+        </div>
+    </div>
+    <!-- 1 de 4 Columnas de noticias a lo largo -->
+    <div class='col-md-4 col-sm-6 col-xs-12 noticia'>
+      <!-- Div que oculta el desborde de la imagen -->
+        <div class='cabecera'>
+          <a href='#'>
+            <img src="http://www.ead.pucv.cl/wp-content/uploads/2014/12/IMG_3945.jpg" alt="">
+          </a>
+        </div>
+        <!-- Título, fecha de publicación, reseña de noticia -->
+        <div class='relleno-sup-xs tooltip-demo'>
+          <h4 class='xs sin-margen'><a href='#'>Profesor participará en seminario “Concepción, de la frontera a la globalización”</a></h4>
+          <span class='xs entry-details'>Publicado el 03 de noviembre, 2014.
+            <a data-toggle="tooltip" href="#" title="Editar" class='xs sin-margen' href='#'>
+               <span class="icn-stack">
+                <span class="icn icn-cuadrolleno icn-stack-2x"></span>
+                <span class="icn icn-lapiz icn-sm icn-stack-1x"></span>
+              </span>
+            </a>
+          </span>
+          <p class='xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a href='#'>[<i class='icn icn-lentes'></i>]</a></p>
+        </div>
+    </div>
+    <!-- 1 de 4 Columnas de noticias a lo largo -->
+    <div class='col-md-4 col-sm-6 col-xs-12 noticia'>
+      <!-- Div que oculta el desborde de la imagen -->
+        <div class='cabecera'>
+          <a href='#'>
+            <img src="http://www.ead.pucv.cl/wp-content/uploads/2014/12/IMG_3945.jpg" alt="">
+          </a>
+        </div>
+        <!-- Título, fecha de publicación, reseña de noticia -->
+        <div class='relleno-sup-xs tooltip-demo'>
+          <h4 class='xs sin-margen'><a href='#'>Profesor participará en seminario “Concepción, de la frontera a la globalización”</a></h4>
+          <span class='xs entry-details'>Publicado el 03 de noviembre, 2014.
+            <a data-toggle="tooltip" href="#" title="Editar" class='xs sin-margen' href='#'>
+               <span class="icn-stack">
+                <span class="icn icn-cuadrolleno icn-stack-2x"></span>
+                <span class="icn icn-lapiz icn-sm icn-stack-1x"></span>
+              </span>
+            </a>
+          </span>
+          <p class='xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a href='#'>[<i class='icn icn-lentes'></i>]</a></p>
+        </div>
+    </div>
+</div>
+</div>
+    <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla2">Ver código</a> 
+        <div id="ver-codigo-grilla2" class="collapse">
+            <code>
+&lt;div id='index'>
+    &lt;div class='fila'>
+    &lt;div class='col-md-4 col-sm-12 col-xs-12 noticia'>
+        &lt;div class='cabecera'>
+          &lt;a href='#'>
+            &lt;img src="http://www.ead.pucv.cl/wp-content/uploads/2014/12/IMG_3945.jpg" alt="">
+          &lt;/a>
+        &lt;/div>
+        &lt;div class='relleno-sup-xs tooltip-demo'>
+          &lt;h4 class='xs sin-margen'>&lt;a href='#'>...&lt;/a>&lt;/h4>
+          &lt;span class='xs entry-details'>Publicado el 03 de noviembre, 2014.
+            &lt;a data-toggle="tooltip" href="#" title="Editar" class='xs sin-margen' href='#'>
+               &lt;span class="icn-stack">
+                &lt;span class="icn icn-cuadrolleno icn-stack-2x">&lt;/span>
+                &lt;span class="icn icn-lapiz icn-sm icn-stack-1x">&lt;/span>
+              &lt;/span>
+            &lt;/a>
+          &lt;/span>
+          &lt;p class='xs'>... &lt;a href='#'>[&lt;i class='icn icn-lentes'>&lt;/i>]&lt;/a>&lt;/p>
+        &lt;/div>
+    &lt;/div>
+    &lt;/div>
+&lt;/div>
+            </code>
+        </div>
+<hr class='invisible'>
+
+<h4 class='pizarra gruesa'>Publicaciones</h4>
+<p>Los enlaces presentes a continuación resguardan el primer proyecto web estandarizado únicamente con Pyxis Framework y <a href='http://eadpucv.github.io/stampa/'>Stampa</a> en una serie de maquetas navegables y que corresponden al finiquito del diseño del sitio oficial</p>
+<div id='index'>
+    <div class='fila'>
+        <div class='col-lg-6 col-md-6 col-sm-6 col-xs-12 publicacion'>
+          <a class='categoria' href='#'>
+            <i class='icn icn-archivo'></i><h6 class='xs'>archivo histórico</h6>
+          </a>
+          <div class='alto-xs auto margen-inf-sm tooltip-demo'>
+            <h5 class='xs sin-margen relleno-inf-xs'><a href='#'>Presentación libro Fotografías de Valparaíso de Juan Hernández Tapia</a></h5>
+            <span class='xs entry-details'>Publicado el 08 de noviembre, 2014.</span>
+              <!--ícono de Tooltip -->
+              <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+              <span><i class='icn icn-lapiz icn-sm'></i></span>
+              </a>
+            <p class='xs margen-sup-xs'>35 Ediciones e[ad], Archivo Histórico José Vial Armstrong, en conjunto con Ediciones Universitarias de Valparaíso, tienen el agrado de invitarles a la presentación del libro tienen el agrado de invitarles a la presentación del libro “Fotografías <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
+          </div>
+        </div>
+        <div class='col-lg-6 col-md-6 col-sm-6 col-xs-12 publicacion'>
+          <a class='categoria' href='#'>
+            <i class='icn icn-archivo'></i><h6 class='xs'>archivo histórico</h6>
+          </a>
+          <div class='alto-xs auto margen-inf-sm tooltip-demo'>
+            <h5 class='xs sin-margen relleno-inf-xs'><a href='#'>Presentación libro Fotografías de Valparaíso de Juan Hernández Tapia</a></h5>
+            <span class='xs entry-details'>Publicado el 08 de noviembre, 2014.</span>
+              <!--ícono de Tooltip -->
+              <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+              <span><i class='icn icn-lapiz icn-sm'></i></span>
+              </a>
+            <p class='xs margen-sup-xs'>35 Ediciones e[ad], Archivo Histórico José Vial Armstrong, en conjunto con Ediciones Universitarias de Valparaíso, tienen el agrado de invitarles a la presentación del libro tienen el agrado de invitarles a la presentación del libro “Fotografías <a class='' href='#'>[<i class='icn icn-lentes'></i>]</a></p>
+          </div>
+        </div>
+    </div>
+</div>
+
+<a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla3">Ver código</a> 
+        <div id="ver-codigo-grilla3" class="collapse">
+            <code>
+&lt;div id='index'>
+    &lt;div class='fila'>
+        &lt;div class='col-lg-6 col-md-6 col-sm-6 col-xs-12 publicacion'>
+          &lt;a class='categoria' href='#'>
+            &lt;i class='icn icn-archivo'>&lt;/i>&lt;h6 class='xs'>archivo histórico&lt;/h6>
+          &lt;/a>
+          &lt;div class='alto-xs auto margen-inf-sm tooltip-demo'>
+            &lt;h5 class='xs sin-margen relleno-inf-xs'>&lt;a href='#'>...&lt;/a>&lt;/h5>
+            &lt;span class='xs entry-details'>Publicado el 08 de noviembre, 2014.&lt;/span>
+              &lt;!--ícono de Tooltip -->
+              &lt;a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+              &lt;span>&lt;i class='icn icn-lapiz icn-sm'>&lt;/i>&lt;/span>
+              &lt;/a>
+            &lt;p class='xs margen-sup-xs'>... &lt;a class='' href='#'>[&lt;i class='icn icn-lentes'>&lt;/i>]&lt;/a>&lt;/p>
+          &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+            </code>
+        </div>
+<hr class='invisible'>
+
+<h4 class='pizarra gruesa'>Información</h4>
+<p>Los enlaces presentes a continuación resguardan el primer proyecto web estandarizado únicamente con Pyxis Framework y <a href='http://eadpucv.github.io/stampa/'>Stampa</a> en una serie de maquetas navegables y que corresponden al finiquito del diseño del sitio oficial</p>
+
+<div id='portada-informacion'>
+    <div class='fila'>
+      <!-- 1 de 3 Columnas de noticias a lo largo -->
+      <div class='col-md-4 col-sm-4 col-xs-12 margen-inf-sm alto-sm auto'>
+        <!-- Div que oculta el desborde de la imagen -->
+        <div class='borde ocultar-desborde alto-sm auto radio-md'>
+          <!-- Título, fecha de publicación, reseña de noticia -->
+          <div class='relleno-sup-xs tooltip-demo'>
+            <h4 class='xs sin-margen'><a href='#'><i class='icn icn-anuncio'></i>Profesor participará en seminario “Concepción, de la frontera a la globa5ización”</a></h4>
+            <span class='xs entry-details'>Publicado el 03 de noviembre, 2014.
+              <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+                 <span class="icn-stack">
+                  <span class="icn icn-cuadrolleno icn-stack-2x"></span>
+                  <span class="icn icn-lapiz icn-sm icn-stack-1x"></span>
+                </span>
+              </a>
+            </span>
+            <p class='xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a href='#'>[<i class='icn icn-lentes'></i>]</a></p>
+          </div>
+        </div>
+      </div>
+      <!-- 1 de 3 Columnas de noticias a lo largo -->
+      <div class='col-md-4 col-sm-4 col-xs-12 margen-inf-sm alto-sm auto'>
+        <!-- Div que oculta el desborde de la imagen -->
+        <div class='borde ocultar-desborde alto-sm auto radio-md'>
+            <!-- Título, fecha de publicación, reseña de noticia -->
+            <div class='relleno-sup-xs tooltip-demo'>
+            <h4 class='xs sin-margen'><a href='#'><i class='icn icn-anuncio'></i>La naturaleza y su acción muestra la singularidad favorable</a></h4>
+            <span class='xs entry-details'>Publicado el 03 de noviembre, 2014.
+              <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+               <span class="icn-stack">
+                <span class="icn icn-cuadrolleno icn-stack-2x"></span>
+                <span class="icn icn-lapiz icn-sm icn-stack-1x"></span>
+              </span>
+              </a>
+            </span>
+            <p class='xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a href='#'>[<i class='icn icn-lentes'></i>]</a></p>
+          </div>
+        </div>
+      </div>
+      <!-- 1 de 3 Columnas de noticias a lo largo -->
+      <div class='col-md-4 col-sm-4 col-xs-12 alto-sm auto'>
+        <!-- Div que oculta el desborde de la imagen -->
+        <div class='borde ocultar-desborde alto-sm auto radio-md'>
+          <!-- Título, fecha de publicación, reseña de noticia -->
+          <div class='relleno-sup-xs tooltip-demo'>
+            <h4 class='xs sin-margen'><a href='#'><i class='icn icn-anuncio'></i>Proyectos de Diseño Gráfico participan en feria de fondos concursables DAE</a></h4>
+            <span class='xs entry-details'>Publicado el 03 de noviembre, 2014.
+              <a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+                 <span class="icn-stack">
+                  <span class="icn icn-cuadrolleno icn-stack-2x"></span>
+                  <span class="icn icn-lapiz icn-sm icn-stack-1x"></span>
+                </span>
+              </a>
+            </span>
+            <p class='xs'>En un encuentro entre arquitectura, matemática y poesía se llevó a cabo la presentación de los libros de Isabel Margarita Reyes y Miguel Eyquem <a href='#'>[<i class='icn icn-lentes'></i>]</a></p>
+          </div>
+        </div>
+      </div> <!-- fin de col menor -->
+    </div> <!-- fin de fila -->
+</div>
+
+<a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-grilla4">Ver código</a> 
+        <div id="ver-codigo-grilla4" class="collapse">
+            <code>
+&lt;div id='portada-informacion'>
+    &lt;div class='fila'>
+      &lt;div class='col-md-4 col-sm-4 col-xs-12 margen-inf-sm alto-sm auto'>
+        &lt;div class='borde ocultar-desborde alto-sm auto radio-md'>
+          &lt;div class='relleno-sup-xs tooltip-demo'>
+            &lt;h4 class='xs sin-margen'>&lt;a href='#'>&lt;i class='icn icn-anuncio'>&lt;/i>...”&lt;/a>&lt;/h4>
+            &lt;span class='xs entry-details'>Publicado el...
+              &lt;a data-toggle="tooltip" href="#" title="Editar" class='xs en-linea sin-margen' href='#'>
+                 &lt;span class="icn-stack">
+                  &lt;span class="icn icn-cuadrolleno icn-stack-2x">&lt;/span>
+                  &lt;span class="icn icn-lapiz icn-sm icn-stack-1x">&lt;/span>
+                &lt;/span>
+              &lt;/a>
+            &lt;/span>
+            &lt;p class='xs'>... &lt;a href='#'>[&lt;i class='icn icn-lentes'>&lt;/i>]&lt;/a>&lt;/p>
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+&lt;/div>
+            </code>
+        </div>
+<hr class='invisible'>
 
 </div>
 </div> <!-- fin de tab-content-->
