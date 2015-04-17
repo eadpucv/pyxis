@@ -382,16 +382,16 @@ intro: Texto sobre versatilidad
 <a href=''><img class='ancho-completo borde radio-md' src='{{ site.baseurl }}/img-samples/arq-info-ead.jpg'></a>
 <h5 class='pizarra gruesa margen-sup-sm'>Enlaces a maquetas</h5>
 <ol class='sm'>
-    <li class='sans'><a class='sans' target="_blank" href='http://eadpucv.github.io/pyxis/maquetas/home/'>Home</a></li>
-    <li class='sans'><a class='sans' target="_blank" href='http://eadpucv.github.io/pyxis/maquetas/historia/'>Historia</a></li>
-    <li class='sans'><a class='sans' target="_blank" href='http://eadpucv.github.io/pyxis/maquetas/portadilla/'>Portadilla</a></li>
-    <li class='sans'><a class='sans' target="_blank" href='http://eadpucv.github.io/pyxis/maquetas/page/'>Page</a></li>
-    <li class='sans'><a class='sans' target="_blank" href='http://eadpucv.github.io/pyxis/maquetas/evento/'>Evento</a></li>
-    <li class='sans'><a class='sans' target="_blank" href='http://eadpucv.github.io/pyxis/maquetas/post/'>Post</a></li>
-    <li class='sans'><a class='sans' target="_blank" href='http://eadpucv.github.io/pyxis/maquetas/portada-noticias/'>Portada de noticias</a></li>
-    <li class='sans'><a class='sans' target="_blank" href='http://eadpucv.github.io/pyxis/maquetas/archive/'>Noticias por categoría</a></li>
-    <li class='sans'><a class='sans' target="_blank" href='http://eadpucv.github.io/pyxis/maquetas/info-docencia/'>Información de docencia</a></li>
-    <li class='sans'><a class='sans' target="_blank" href='http://eadpucv.github.io/pyxis/maquetas/portada-info-docencia/'>Portada de información de docencia</a></li>
+    <li class='sans'><a class='sans' target="_blank" href='{{ site.baseurl }}/maquetas/home/'>Home</a></li>
+    <li class='sans'><a class='sans' target="_blank" href='{{ site.baseurl }}/maquetas/historia/'>Historia</a></li>
+    <li class='sans'><a class='sans' target="_blank" href='{{ site.baseurl }}/maquetas/portadilla/'>Portadilla</a></li>
+    <li class='sans'><a class='sans' target="_blank" href='{{ site.baseurl }}/maquetas/page/'>Page</a></li>
+    <li class='sans'><a class='sans' target="_blank" href='{{ site.baseurl }}/maquetas/evento/'>Evento</a></li>
+    <li class='sans'><a class='sans' target="_blank" href='{{ site.baseurl }}/maquetas/post/'>Post</a></li>
+    <li class='sans'><a class='sans' target="_blank" href='{{ site.baseurl }}/maquetas/portada-noticias/'>Portada de noticias</a></li>
+    <li class='sans'><a class='sans' target="_blank" href='{{ site.baseurl }}/maquetas/archive/'>Noticias por categoría</a></li>
+    <li class='sans'><a class='sans' target="_blank" href='{{ site.baseurl }}/maquetas/info-docencia/'>Información de docencia</a></li>
+    <li class='sans'><a class='sans' target="_blank" href='{{ site.baseurl }}/maquetas/portada-info-docencia/'>Portada de información de docencia</a></li>
 </ol>
 
 </div>
