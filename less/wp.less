@@ -1,90 +1,88 @@
-#carrusel-index, #carusel-portada{
-    //Carrusel de Home
-    .carousel{
-        .carousel-inner{
-            .car-sm{
-                img{
-                    .ancho-completo;
-                    .absoluto;
-                }
-                .pag {
-                    .cf;
+
+.carousel{
+    .carousel-inner{
+        .car-sm{
+            img{
+                .ancho-completo;
+                .absoluto;
+            }
+            .pag {
+                .cf;
+                .h100;
+                .oculto-xs {
                     .h100;
-                    .oculto-xs {
-                        .h100;
-                        .derecha;
-                        .cf;
-                        a{
-                            div{
-                                .fondo-gris-blanco-trans;
-                                .absoluto;
-                                .abs-der;
-                                .abs-sup;
-                                .bloque;
-                                .alto-completo;
-                                .relleno;
-                                h2{
-                                    .gris-oscuro;
-                                    .condensado;
-                                    .gruesa;
-                                    .sombra-cabecera-blanco-xs;
-                                    i{
-                                        .margen-der-xs;
-                                    }
-                                }
-                                p{
-                                    .italica;
-                                    .margen-sup-sm;
-                                    .sombra-cabecera-blanco-xs;
-                                }
-                                span{
-                                    .cond;
-                                    .negro;
-                                    .derecha;
-                                    .interletraje-xs;
-                                    .relleno-vertical-xs;
-                                    .relleno-der-xs;
-                                    .sombra;
-                                    .borde 
-                                    .radio-md;
-                                    i{
-                                        .negro;
-                                        .relleno-der-xs;
-                                        .relleno-izq-xs;
-                                        .margen-der-xs;
-                                        .icn-light;
-                                        .sombra-cabecera-blanco-xs;
-                                    }
+                    .derecha;
+                    .cf;
+                    a{
+                        div{
+                            .fondo-gris-blanco-trans;
+                            .absoluto;
+                            .abs-der;
+                            .abs-sup;
+                            .bloque;
+                            .alto-completo;
+                            .relleno;
+                            h2{
+                                .gris-oscuro;
+                                .condensado;
+                                .gruesa;
+                                .sombra-cabecera-blanco-xs;
+                                i{
+                                    .margen-der-xs;
                                 }
                             }
-                            &:hover{
-                                h2{
-                                    .rojo;
+                            p{
+                                .italica;
+                                .margen-sup-sm;
+                                .sombra-cabecera-blanco-xs;
+                            }
+                            span{
+                                .cond;
+                                .negro;
+                                .derecha;
+                                .interletraje-xs;
+                                .relleno-vertical-xs;
+                                .relleno-der-xs;
+                                .sombra;
+                                .borde 
+                                .radio-md;
+                                i{
+                                    .negro;
+                                    .relleno-der-xs;
+                                    .relleno-izq-xs;
+                                    .margen-der-xs;
+                                    .icn-light;
+                                    .sombra-cabecera-blanco-xs;
                                 }
                             }
                         }
+                        &:hover{
+                            h2{
+                                .rojo;
+                            }
+                        }
                     }
-                    .oculto-md{
-                        .h100;
-                        .cf;
-                        a{
-                            div{
-                                .fondo-gris-blanco-trans;
-                                .absoluto;
-                                .abs-der;
-                                .abs-inf;
-                                .bloque;
-                                .relleno;
-                                .ancho-completo;
-                                h5{
-                                    .condensado;
-                                    .centrado;
-                                    .gruesa;
-                                    .sombra-cabecera-blanco-xs;
-                                    .gris-oscuro;
-                                    i{
-                                        .margen-der-xs;
-                                    }
+                }
+                .oculto-md{
+                    .h100;
+                    .cf;
+                    a{
+                        div{
+                            .fondo-gris-blanco-trans;
+                            .absoluto;
+                            .abs-der;
+                            .abs-inf;
+                            .bloque;
+                            .relleno;
+                            .ancho-completo;
+                            h5{
+                                .condensado;
+                                .centrado;
+                                .gruesa;
+                                .sombra-cabecera-blanco-xs;
+                                .gris-oscuro;
+                                i{
+                                    .margen-der-xs;
                                 }
                             }
                         }
@@ -94,6 +92,7 @@
         }
     }
 }
+
 
 //  Home
 #index, #tag{
@@ -157,60 +156,62 @@
 }
 
 // Ejemplo de noticia en Home *
-    .noticia{
-        .cabecera{
-            .alto-xs;
-            .margen-inf-xs;
-            .borde;
-            .radio-md;
-            .ocultar-desborde;
-            a{
+.noticia{
+    .cabecera{
+        .alto-xs;
+        .margen-inf-xs;
+        .borde;
+        .radio-md;
+        .ocultar-desborde;
+        a{
+            img{
+                .w150;
+                .margen-sup-negativo;
+                .transition(.2s ease all);
+            }
+            &:hover{
                 img{
-                    .w150;
-                    .margen-sup-negativo;
+                    .relleno-der-sm;
                     .transition(.2s ease all);
                 }
-                &:hover{
-                    img{
-                        .relleno-der-sm;
-                        .transition(.2s ease all);
-                    }
-                }
             }
-        }
-        h1, h4, h2, h3, h4, h5, h6{
-            .condensado;
-            .sombra-cabecera-claro-xs;
-            .relleno-inf-xs;
-            a{
-                .condensado; 
-                .gruesa;
-                .gris-oscuro;
-                &:hover{
-                    .negro;
-                }
-            }
-        }
-        .entry-details, .datos-publicacion{
-            .rojo; 
-            .italica; 
-            .borde; 
-            .relleno-vertical-xs;
-            a{
-                .en-linea;
-                .icn-cuadrolleno{
-                    .gris-blanco;
-                }
-                .icn-lapiz{
-                    .gris-oscuro;
-                }
-            }
-        }
-        p{
-            .sans;
-            .margen-sup-xs;
         }
     }
+    h1, h4, h2, h3, h4, h5, h6{
+        .condensado;
+        .sombra-cabecera-claro-xs;
+        .relleno-inf-xs;
+        a{
+            .condensado; 
+            .gruesa;
+            .gris-oscuro;
+            &:hover{
+                .negro;
+            }
+        }
+    }
+    .entry-details, 
+    .datos-publicacion{
+        .rojo; 
+        .italica; 
+        .borde; 
+        .relleno-vertical-xs;
+        a{
+            .en-linea;
+            .icn-cuadrolleno{
+                .gris-blanco;
+            }
+            .icn-lapiz{
+                .gris-oscuro;
+            }
+        }
+    }
+    p{
+        .sans;
+        .margen-sup-xs;
+    }
+}
+
 // Ejemplo de publicacion en Home *
    .publicacion{
         .categoria{
@@ -269,6 +270,8 @@
         }
     }
 }
+
+
 // Lectura de evento desplegado *
 #single-event{
     .fecha{
@@ -493,86 +496,6 @@
     }
 }
 
-#portada-indice{
-    .noticia{ 
-            .cabecera{
-                .alto-xs;
-                .margen-inf-xs;
-                .borde;
-                .radio-md;
-                .ocultar-desborde;
-                    .indice{
-                        .absoluto; 
-                        .cf; 
-                        .al-frente; 
-                        .abs-sup; 
-                        .abs-inf; 
-                        .abs-der; 
-                        .der-relleno; 
-                        .abs-izq; 
-                        .izq-relleno; 
-                        .alto-xs;
-                        a{
-                            .sans; 
-                            .fondo-gris-blanco-trans; 
-                            .borde; 
-                            .radio-sup-izq-md; 
-                            .absoluto; 
-                            .abs-inf; 
-                            .abs-der; 
-                            .altas; 
-                            .interletraje-xs; 
-                            .bloque;
-                        }
-                    }
-                    img{
-                        .w150;
-                        .margen-sup-negativo;
-                        .transition(.2s ease all);
-                    }
-                    &:hover{
-                        img{
-                            .relleno-der-sm;
-                            .transition(.2s ease all);
-                        }
-                    }
-                }
-            h1, h4, h2, h3, h4, h5, h6{
-                .condensado;
-                .sombra-cabecera-claro-xs;
-                .relleno-inf-xs;
-                a{
-                    .condensado; 
-                    .gruesa;
-                    .gris-oscuro;
-                    &:hover{
-                        .negro;
-                    }
-                }
-            }
-            .entry-details, .datos-publicacion{
-                .rojo; 
-                .italica; 
-                .borde; 
-                .sup-lineal-xs;
-                .inf-lineal-xs;
-                .relleno-vertical-xs;
-                a{
-                    .en-linea;
-                    .icn-cuadrolleno{
-                        .gris-blanco;
-                    }
-                    .icn-lapiz{
-                        .gris-oscuro;
-                    }
-                }
-            }
-            p{
-                .sans;
-                .margen-sup-xs;
-            }
-    }
-}
 
 #portada-informacion{
         .fila{
@@ -627,62 +550,63 @@
 }
 
 // noticia genérica (resumen)
-    .noticia{
-        .cabecera{
-            .alto-xs;
-            .margen-inf-xs;
-            .borde;
-            .radio-md;
-            .ocultar-desborde;
-            a{
+.noticia{
+    .cabecera{
+        .alto-xs;
+        .margen-inf-xs;
+        .borde;
+        .radio-md;
+        .ocultar-desborde;
+        a{
+            img{
+                .w150;
+                .margen-sup-negativo;
+                .transition(.2s ease all);
+            }
+            &:hover{
                 img{
-                    .w150;
-                    .margen-sup-negativo;
+                    .relleno-der-sm;
                     .transition(.2s ease all);
                 }
-                &:hover{
-                    img{
-                        .relleno-der-sm;
-                        .transition(.2s ease all);
-                    }
-                }
             }
-        }
-        h1, h4, h2, h3, h4, h5, h6{
-            .condensado;
-            .sombra-cabecera-claro-xs;
-            .relleno-inf-xs;
-            a{
-                .condensado; 
-                .gruesa;
-                .gris-oscuro;
-                &:hover{
-                    .negro;
-                }
-            }
-        }
-        .entry-details, .datos-publicacion{
-            .rojo; 
-            .italica; 
-            .borde; 
-            .sup-lineal-xs;
-            .inf-lineal-xs;
-            .relleno-vertical-xs;
-            a{
-                .en-linea;
-                .icn-cuadrolleno{
-                    .gris-blanco;
-                }
-                .icn-lapiz{
-                    .gris-oscuro;
-                }
-            }
-        }
-        p{
-            .sans;
-            .margen-sup-xs;
         }
     }
+    h1, h4, h2, h3, h4, h5, h6{
+        .condensado;
+        .sombra-cabecera-claro-xs;
+        .relleno-inf-xs;
+        a{
+            .condensado; 
+            .gruesa;
+            .gris-oscuro;
+            &:hover{
+                .negro;
+            }
+        }
+    }
+    .entry-details, .datos-publicacion{
+        .rojo; 
+        .italica; 
+        .borde; 
+        .sup-lineal-xs;
+        .inf-lineal-xs;
+        //.relleno-vertical-xs;
+        font-size: 13px;
+        a{
+            .en-linea;
+            .icn-cuadrolleno{
+                .gris-blanco;
+            }
+            .icn-lapiz{
+                .gris-oscuro;
+            }
+        }
+    }
+    p{
+        .sans;
+        .margen-sup-xs;
+    }
+}
 
 #portadilla{
     // Necesario fondo por z-index de imagen fixed 
