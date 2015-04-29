@@ -90,6 +90,7 @@ q {
 small {
   font-size: 80%;
   font-family: 'Source Sans Pro';
+  margin-left: 10px;
 }
 sub,
 sup {
@@ -2817,7 +2818,7 @@ td.visible-print {
   clear: both;
 }
 .franja.xl {
-  min-height: 32.25806452em;
+  min-height: 32.25806452;
   text-align: center;
   padding: 45px 0;
 }
@@ -2913,7 +2914,7 @@ footer #mapa img {
 .menu-pyxis span {
   padding: 0;
   margin: 0 0 0 3px;
-  letter-spacing: 0.01612903em;
+  letter-spacing: 0.01612903;
 }
 .logo-pyxis {
   width: auto;
@@ -5379,7 +5380,7 @@ a.pequeno {
 a.xs,
 a.menudo {
   font-size: 11.625px;
-  line-height: 1.33548387em;
+  line-height: 1.33548387;
 }
 a:hover {
   color: #010101;
@@ -5398,7 +5399,7 @@ p {
   margin: 0 0 25px 0;
   font-family: 'Palatino', 'Times New Roman', Times, 'georgia', serif;
   font-size: 15.5px;
-  line-height: 1.48387097em;
+  line-height: 1.48387097;
   color: rgba(1, 1, 1, 0.8);
   font-weight: 300;
 }
@@ -5408,27 +5409,27 @@ p.sin-margen {
 p.lg,
 p.grande {
   font-size: 34.1px;
-  line-height: 1.33548387em;
+  line-height: 1.33548387;
 }
 p.md,
 p.mediano {
   font-size: 26.35px;
-  line-height: 1.48387097em;
+  line-height: 1.48387097;
 }
 p.st,
 p.estandar {
   font-size: 15.5px;
-  line-height: 1.48387097em;
+  line-height: 1.48387097;
 }
 p.sm,
 p.pequeno {
   font-size: 18.6px;
-  line-height: 1.48387097em;
+  line-height: 1.48387097;
 }
 p.xs,
 p.menudo {
   font-size: 13.175px;
-  line-height: 1.63225806em;
+  line-height: 1.63225806;
 }
 p.izquierda {
   text-align: left;
@@ -5446,7 +5447,7 @@ p.justificado {
 span {
   margin: auto 0 auto 0;
   display: inline-block;
-  line-height: 1.61290323em;
+  line-height: 1.61290323;
 }
 span.sin-margen {
   margin: 0;
@@ -5464,7 +5465,7 @@ span.mediano {
 span.st,
 span.estandar {
   font-size: 15.5px;
-  line-height: 1.48387097em;
+  line-height: 1.48387097;
 }
 span.sm,
 span.pequeno {
@@ -5474,7 +5475,7 @@ span.pequeno {
 span.xs,
 span.menudo {
   font-size: 13.175px;
-  line-height: 1.48387097em;
+  line-height: 1.48387097;
 }
 span.centrado {
   display: block;
@@ -5484,7 +5485,7 @@ poem,
 .poema {
   font-family: 'Palatino', 'Times New Roman', Times, 'georgia', serif;
   font-size: 15.5px;
-  line-height: 1.48387097em;
+  line-height: 1.48387097;
   white-space: pre-wrap;
 }
 #breadcrumb {
@@ -5597,24 +5598,31 @@ strong {
   text-transform: uppercase;
 }
 div.poema {
-  margin-bottom: 1.48387097em;
+  margin-bottom: 1.48387097;
   font-family: 'Palatino', 'Times New Roman', Times, 'georgia', serif;
   font-size: 13.5px;
-  line-height: 1.48387097em;
+  line-height: 1.48387097;
   white-space: pre;
   color: rgba(1, 1, 1, 0.8);
 }
 .parrafo-izquierdo {
   text-align: left;
 }
-h1.justificado,
-h2.justificado,
-h3.justificado,
-h4.justificado,
-h5.justificado,
-h6.justificado {
-  text-align: justify;
-  word-wrap: break-word;
+h1,
+h2,
+h3 {
+  font-family: 'Open Sans Condensed' !important;
+  font-weight: 700;
+  color: #a84744;
+  margin: 0px 0px 10px 0px;
+}
+h4,
+h5,
+h6 {
+  font-family: 'Source Sans Pro' !important;
+  font-weight: 400;
+  color: #2e403a;
+  margin: 0px 0px 20px 0px;
 }
 h1 {
   font-size: 2.2em;
@@ -5736,17 +5744,6 @@ h6.xs,
 h6.menudo {
   font-size: 0.90666666em;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Source Sans Pro';
-  font-weight: 400;
-  color: #2e403a;
-  margin: 0px 0px 10px 0px;
-}
 h1.sin-margen,
 h2.sin-margen,
 h3.sin-margen,
@@ -5814,9 +5811,9 @@ h6.condensado-fino {
 }
 .subtitulo {
   font-family: 'Source Sans Pro';
-  font-weight: 200;
+  font-weight: 700;
   color: #282824;
-  margin: 1.48387097em 0 1.48387097em 0;
+  margin: 1.48387097 0 1.48387097 0;
   vertical-align: bottom;
 }
 ol,
@@ -5847,7 +5844,7 @@ ol li ol li ol li {
 }
 ul,
 ol {
-  line-height: 1.61290323em;
+  line-height: 1.61290323;
   font-size: 15.5px;
   margin: 0;
   color: rgba(1, 1, 1, 0.8);
@@ -5878,7 +5875,7 @@ ol.xs,
 ul.menudo,
 ol.menudo {
   font-size: 13.175px;
-  line-height: 1.63225806em;
+  line-height: 1.63225806;
 }
 ul.sin-relleno,
 ol.sin-relleno {
@@ -5929,17 +5926,17 @@ ul.menu a li:hover {
   background-color: #c2c4ba;
 }
 dl {
-  margin-bottom: 1.48387097em;
+  margin-bottom: 1.48387097;
 }
 dl dt,
 dl dd {
-  line-height: 1.48387097em;
+  line-height: 1.48387097;
 }
 dl dt {
   font-weight: 600;
 }
 dl dd {
-  margin-left: 0.74193548em;
+  margin-left: 0.74193548;
 }
 .dia {
   font-family: 'Source Sans Pro';
@@ -5973,7 +5970,7 @@ hr.sin-margen {
   margin: 0 !important;
 }
 blockquote {
-  line-height: 1.41935484em;
+  line-height: 1.41935484;
 }
 blockquote.sin-margen {
   margin: 0;
@@ -5993,7 +5990,7 @@ blockquote.sm {
 }
 blockquote.xs {
   font-size: 11.625px;
-  line-height: 1.33548387em;
+  line-height: 1.33548387;
 }
 blockquote small {
   display: block;
@@ -6027,8 +6024,8 @@ blockquote.pie-de-foto {
 }
 address {
   display: block;
-  line-height: 1.48387097em;
-  margin-bottom: 1.48387097em;
+  line-height: 1.48387097;
+  margin-bottom: 1.48387097;
 }
 code,
 pre {
@@ -6043,7 +6040,7 @@ code {
   color: #ffffff;
   border: 1px solid #8a8e7b;
   display: inline-block;
-  line-height: 0.98825806em;
+  line-height: 0.98825806;
   white-space: pre-wrap;
   font-size: 12px;
   padding: 2px 15px;
@@ -6084,13 +6081,13 @@ code.sm {
 }
 code.xs {
   font-size: 8.525px;
-  line-height: 1.33548387em;
+  line-height: 1.33548387;
 }
 pre {
   display: block;
-  padding: 0.24193548em;
-  margin: 0 0 1.48387097em;
-  line-height: 1.48387097em;
+  padding: 0.24193548;
+  margin: 0 0 1.48387097;
+  line-height: 1.48387097;
   border-top: 1px solid rgba(164, 164, 162, 0.2);
   border-bottom: 1px solid rgba(164, 164, 162, 0.2);
   font-size: 12px;
@@ -6128,13 +6125,13 @@ pre {
 }
 .extracto {
   padding: 0;
-  line-height: 1.20193548em;
+  line-height: 1.20193548;
   font-family: 'Source Sans Pro';
   font-size: 0.938em;
 }
 .extracto li {
   list-style-type: none;
-  margin-bottom: 1.48387097em;
+  margin-bottom: 1.48387097;
 }
 .resumen {
   font-size: 15px;
@@ -6148,54 +6145,54 @@ pre {
 }
 @media (max-width: 767px) {
   p {
-    margin: 0 0 1.63225806em 0;
+    margin: 0 0 1.63225806 0;
     font-family: 'Palatino', 'Times New Roman', Times, 'georgia', serif;
     font-size: 13.95px;
-    line-height: 1.43935484em;
+    line-height: 1.43935484;
     font-weight: 300;
   }
   p.lg,
   p.grande {
     font-size: 20.925px;
-    line-height: 1.33548387em;
+    line-height: 1.33548387;
   }
   p.md,
   p.mediano {
     font-size: 18.6px;
-    line-height: 1.48387097em;
+    line-height: 1.48387097;
   }
   p.sm,
   p.pequeno {
     font-size: 15.5px;
-    line-height: 1.33548387em;
+    line-height: 1.33548387;
   }
   p.xs,
   p.menudo {
     font-size: 12.4px;
-    line-height: 1.48387097em;
+    line-height: 1.48387097;
   }
   span {
-    line-height: 1.33548387em;
+    line-height: 1.33548387;
   }
   span.lg,
   span.grande {
     font-size: 20.925px;
-    line-height: 1.33548387em;
+    line-height: 1.33548387;
   }
   span.md,
   span.mediano {
     font-size: 18.6px;
-    line-height: 1.48387097em;
+    line-height: 1.48387097;
   }
   span.sm,
   span.pequeno {
     font-size: 15.5px;
-    line-height: 1.33548387em;
+    line-height: 1.33548387;
   }
   span.xs,
   span.menudo {
     font-size: 12.4px;
-    line-height: 1.40967742em;
+    line-height: 1.40967742;
   }
   h1 {
     font-size: -0.8em;
@@ -6447,7 +6444,7 @@ pre {
   }
   ul,
   ol {
-    line-height: 1.48387097em;
+    line-height: 1.48387097;
     font-size: 13.95px;
     margin-bottom: 30px;
   }
@@ -6477,14 +6474,14 @@ pre {
   ul.menudo,
   ol.menudo {
     font-size: 11.625px;
-    line-height: 1.63225806em;
+    line-height: 1.63225806;
   }
   code {
     padding: 10px 10px;
     border: 1px solid rgba(1, 1, 1, 0.05);
     border-right: 1px solid rgba(1, 1, 1, 0.05);
     border-bottom: 1px solid rgba(1, 1, 1, 0.05);
-    line-height: 1.15296774em;
+    line-height: 1.15296774;
     white-space: pre-wrap;
   }
   .dia {
@@ -6496,54 +6493,54 @@ pre {
 }
 @media (min-width: 768px) and (max-width: 991px) {
   p {
-    margin: 0 0 1.92903226em 0;
+    margin: 0 0 1.92903226 0;
     font-family: 'Palatino', 'Times New Roman', Times, 'georgia', serif;
     font-size: 15.5px;
-    line-height: 1.48387097em;
+    line-height: 1.48387097;
     font-weight: 300;
   }
   p.lg,
   p.grande {
     font-size: 20.925px;
-    line-height: 1.33548387em;
+    line-height: 1.33548387;
   }
   p.md,
   p.mediano {
     font-size: 18.6px;
-    line-height: 1.48387097em;
+    line-height: 1.48387097;
   }
   p.sm,
   p.pequeno {
     font-size: 15.5px;
-    line-height: 1.33548387em;
+    line-height: 1.33548387;
   }
   p.xs,
   p.menudo {
     font-size: 12.4px;
-    line-height: 1.40967742em;
+    line-height: 1.40967742;
   }
   span {
-    line-height: 1.33548387em;
+    line-height: 1.33548387;
   }
   span.lg,
   span.grande {
     font-size: 20.925px;
-    line-height: 1.33548387em;
+    line-height: 1.33548387;
   }
   span.md,
   span.mediano {
     font-size: 18.6px;
-    line-height: 1.48387097em;
+    line-height: 1.48387097;
   }
   span.sm,
   span.pequeno {
     font-size: 15.5px;
-    line-height: 1.33548387em;
+    line-height: 1.33548387;
   }
   span.xs,
   span.menudo {
     font-size: 12.4px;
-    line-height: 1.40967742em;
+    line-height: 1.40967742;
   }
   h1 {
     font-size: 2.2em;
@@ -6787,7 +6784,7 @@ pre {
   }
   ul,
   ol {
-    line-height: 1.48387097em;
+    line-height: 1.48387097;
     font-size: 15.5px;
     margin-bottom: 30px;
   }
@@ -6817,7 +6814,7 @@ pre {
   ul.menudo,
   ol.menudo {
     font-size: 11.625px;
-    line-height: 1.63225806em;
+    line-height: 1.63225806;
   }
   code {
     padding: 5px 15px;
@@ -6852,17 +6849,17 @@ pre {
   a.xs,
   a.menudo {
     font-size: 1vw;
-    line-height: 1.33548387em;
+    line-height: 1.33548387;
   }
   p {
-    margin: 0 0 1.92903226em 0;
+    margin: 0 0 1.92903226 0;
     font-size: 1.2vw;
-    line-height: 1.48387097em;
+    line-height: 1.48387097;
   }
   p.lg,
   p.grande {
     font-size: 1.5vw;
-    line-height: 1.48387097em;
+    line-height: 1.48387097;
   }
   p.lg a,
   p.grande a {
@@ -6871,7 +6868,7 @@ pre {
   p.md,
   p.mediano {
     font-size: 1.3vw;
-    line-height: 1.48387097em;
+    line-height: 1.48387097;
   }
   p.md a,
   p.mediano a {
@@ -6880,7 +6877,7 @@ pre {
   p.sm,
   p.pequeno {
     font-size: 1.1vw;
-    line-height: 1.63225806em;
+    line-height: 1.63225806;
   }
   p.sm a,
   p.pequeno a {
@@ -6889,7 +6886,7 @@ pre {
   p.xs,
   p.menudo {
     font-size: 0.8vw;
-    line-height: 1.63225806em;
+    line-height: 1.63225806;
   }
   p.xs a,
   p.menudo a {
@@ -6932,7 +6929,7 @@ pre {
   span.xs,
   span.menudo {
     font-size: 0.8vw;
-    line-height: 1.63225806em;
+    line-height: 1.63225806;
   }
   span.xs a,
   span.menudo a {
@@ -7300,7 +7297,7 @@ pre {
   }
   ul,
   ol {
-    line-height: 1.61290323em;
+    line-height: 1.61290323;
     font-size: 1.2vw;
     margin: 0;
     color: rgba(1, 1, 1, 0.8);
@@ -7540,7 +7537,7 @@ input[type='file'],
   margin: 0 0 9.3px 0;
   font-size: 16px;
   font-weight: 300;
-  line-height: 1.48387097em;
+  line-height: 1.48387097;
   color: #575851;
   border: 1px solid #c2c4ba;
 }
@@ -22637,7 +22634,7 @@ tbody.collapse.in {
 }
 .h-entry blockquote,
 .h-entry .wp-caption-text {
-  line-height: 1.41935484em;
+  line-height: 1.41935484;
   border-left: 3px solid #c2c4ba;
   margin: 0 30px 30px 30px;
   padding: 0 0 0 10px !important;
@@ -22666,7 +22663,7 @@ tbody.collapse.in {
 .h-entry blockquote.xs,
 .h-entry .wp-caption-text.xs {
   font-size: 11.625px;
-  line-height: 1.33548387em;
+  line-height: 1.33548387;
 }
 .h-entry blockquote small,
 .h-entry .wp-caption-text small {
@@ -22872,7 +22869,7 @@ tbody.collapse.in {
   .e-content .wp-caption-text,
   .p-summary .wp-caption-text,
   .p-name .wp-caption-text {
-    line-height: 1.41935484em;
+    line-height: 1.41935484;
     font-size: 15.5px;
   }
 }

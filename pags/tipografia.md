@@ -83,15 +83,58 @@ h1, h2, h3, h4, h5, h6 {
             </code>
         </div>
         <div class="tab-pane fade" id="encabezados">
-            <h4 class='pizarra gruesa'>Títulos</h4>
-            <p>Estas son las cabeceras HTML disponibles también en Pyxis. Las diferencias cuantitativas entre cabeceras, a medida que escalan, son de 2 a máximo 4px. <code class='linea'>&lt;h1&gt;</code> alberga un <i>font-size</i> de 33px, mientras que <code class='linea'>&lt;h6&gt;</code> es visible en 19px.</p>
-        
-            <h1>Encabezado de Primer Nivel {33px}</h1>
-            <h2>Encabezado de Segundo Nivel {29px}</h2>
-            <h3>Encabezado de Tercer Nivel {27px}</h3>
-            <h4>Encabezado de Cuarto Nivel {23px}</h4>
-            <h5>Encabezado de Quinto Nivel {21px}</h5>
-            <h6>Encabezado de Sexto Nivel {19px}</h6>
+            <h4 class='pizarra gruesa'>Estandarización y uso de títulos</h4>
+            <p>Estas son las cabeceras HTML disponibles en Pyxis. Desde <code class='linea'>&lt;h1&gt;</code> a <code class='linea'>&lt;h3&gt;</code> los encabezados tienen una fuente condensada <b>'Open Sans'</b>: <span class='verde'>@cond</span> con un <i>font-weight</i> o peso de <b>700</b>, un color claro: <span class='verde'>@rojo</span> y un margen inferior de <b>10px</b>. Desde <code class='linea'>&lt;h4&gt;</code> a <code class='linea'>&lt;h6&gt;</code> los encabezados tienen una fuente normal sans serif <b>'Sorce Sans Pro'</b>: <span class='verde'>@sans</span> con un <i>font-weight</i> o peso de <b>400</b>, un color oscuro: <span class='verde'>@pizarra</span> y un margen inferior de <b>20px</b>. Esta dinámica está regulada para estandarizar la jerarquía y el debido uso de los encabezados.</p>
+
+            <h1>Encabezado de Primer Nivel {h1 > 33px}</h1>
+            <h2>Encabezado de Segundo Nivel {h2 > 29px}</h2>
+            <h3>Encabezado de Tercer Nivel {h3 > 27px}</h3>
+            <hr class='invisible sin-margen'>
+
+            <h4>Encabezado de Cuarto Nivel {h4 > 23px}</h4>
+            <h5>Encabezado de Quinto Nivel {h5 > 21px}</h5>
+            <h6>Encabezado de Sexto Nivel {h6 > 19px}</h6>
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+            <code class='bloque'> 
+// Títulos en Open Sans
+
+h1, h2, h3{
+  font-family: @cond;
+  font-weight: 700;
+  color: @rojo;
+  margin: 0 0 10px 0;
+}
+
+// Títulos en Source Sans Pro
+
+h4, h5, h6{
+  font-family: @sans;
+  font-weight: 400;
+  color: @pizarra;
+  margin: 0 0 20px 0;
+}
+            </code>
+            <hr class='invisible'></hr>
+
+            <h5 class='pizarra gruesa'>Ejemplos de uso debido</h5>
+            <p>Para estandarizar la versatilidad de los títulos, estas son las siguientes sugerencias de uso específico en la jerarquía de títulos: <code class='linea'>&lt;h1&gt;-&lt;h4&gt;</code> - <code class='linea'>&lt;h2&gt;-&lt;h5&gt;</code> - <code class='linea'>&lt;h3&gt;-&lt;h6&gt;</code></p>
+            <h1>h1 - h4<small>{Ejemplo 1}</small></h1>
+
+            <h1>Constatación de la relaidad</h1>
+            <h4>Breves anotaciones de Fabio Cruz</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
+
+            <h1>h2 - h5<small>{Ejemplo 2}</small></h1>
+
+            <h2>Constatación de la relaidad</h2>
+            <h5>Breves anotaciones de Fabio Cruz</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
+
+            <h1>h3 - h6<small>{Ejemplo 3}</small></h1>
+
+            <h3>Constatación de la relaidad</h3>
+            <h6>Breves anotaciones de Fabio Cruz</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
 
             <hr class='invisible'>
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
