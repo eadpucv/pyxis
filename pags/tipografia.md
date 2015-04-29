@@ -28,10 +28,10 @@ pde: type.pde
     <div class="tab-content margen-sup">
         <div class="tab-pane fade in active" id="familias">
             <h4 class='pizarra gruesa'>Parámetros de fuente</h4>
-            <p class='hyphens justify-content'>Pyxis utiliza globalmente y por defecto un <i>font-size</i> de <span class='verde'>@cuerpo:</span> <b>15.5px</b>, con un <i>line-height</i> de <span class='verde'>@interlinea:</span> <b>25px</b> y un <i>font-weight</i> de <span class='verde'>@peso:</span> <b>200</b>, lo cual hace referencia a un <i>font-style</i> "normal" o "regular" en las dos familias de fuente escogidas.</p>
+            <p class='hyphens justify-content'>Pyxis utiliza globalmente y por defecto un <i>font-size</i> de <span class='verde'>@cuerpo:</span> <b>16px</b>, con un <i>line-height</i> de <span class='verde'>@interlinea:</span> <b>25px</b> y un <i>font-weight</i> de <span class='verde'>@peso:</span> <b>200</b>, lo cual hace referencia a un <i>font-style</i> "normal" o "regular" en las tres familias de fuente escogidas.</p>
             <div class='fila'>
                 <div class='col-md-4 col-sm-12 col-xs-12'>
-                    <h5 class='rojo gruesa'>Source Sans Pro</h5>
+                    <h5 class='rojo gruesa sin-margen'>Source Sans Pro</h5>
                     <pre>
 <p class='sin-margen gruesa negro-oscuro sans md'>
 Grumpy wizards make
@@ -39,11 +39,11 @@ toxic brew for
 the evil queen 
 and jack.</p> 
                 </pre>
-                    <p>Familia tipográfica <a href="http://www.fontsquirrel.com/fonts/source-sans-pro" target="blank">Source Sans Pro</a>. Primera fuente sans serif de Adobe de código abierto desde 2012, diseñada por <i>Paul D. Hunt</i>, para interfaces de usuario. Pyxis la utiliza para títulos, encabezados de texto y botones, presentando gran versatilidad a través de 6 pesos diferentes.</p>
+                    <p>Familia tipográfica <a href="http://www.fontsquirrel.com/fonts/source-sans-pro" target="blank">Source Sans Pro</a>. Primera fuente sans serif de Adobe de código abierto desde 2012, diseñada por <i>Paul D. Hunt</i>, para interfaces de usuario. Pyxis la utiliza para encabezados de texto (h4, h5, h6), texto continuo y botones, presentando gran versatilidad a través de 6 pesos diferentes.</p>
                     
                 </div>
                 <div class='col-md-4 col-sm-12 col-xs-12'>
-                    <h5 class='rojo gruesa'>Open Sans Condensed</h5>
+                    <h5 class='rojo gruesa sin-margen'>Open Sans Condensed</h5>
                     <pre>
 <p class='condensado gruesa negro-oscuro sin-margen md'>
 Grumpy wizards make
@@ -51,11 +51,11 @@ toxic brew for
 the evil queen 
 and jack.</p> 
                 </pre>
-                    <p>Familia tipográfica <a href="http://www.google.com/fonts/specimen/Open+Sans+Condensed" target="blank">Open Sans Condensed</a>. Fuente sans-serif diseñada por <i>Steve Matteson</i> en 2011, optimizada para impresiones, web e interfaces móviles. Pyxis la utiliza para títulos, encabezados de texto y de menús. Su versatilidad contempla 2 pesos (normal + bold) y su versión en itálicas.</p>
+                    <p>Familia tipográfica <a href="http://www.google.com/fonts/specimen/Open+Sans+Condensed" target="blank">Open Sans Condensed</a>. Fuente sans-serif diseñada por <i>Steve Matteson</i> en 2011, optimizada para impresiones, web e interfaces móviles. Pyxis la utiliza para encabezados de texto (h1, h2, h3) y de menús. Su versatilidad contempla 2 pesos (normal + bold) y su versión en itálicas.</p>
                     
                 </div>
                 <div class='col-md-4 col-sm-12 col-xs-12'>
-                    <h5 class='rojo gruesa'>Palatino Linotype</h5>
+                    <h5 class='rojo gruesa sin-margen'>Palatino Linotype</h5>
                     <pre>
 <p class='serif gruesa negro-oscuro sin-margen md'>
 Grumpy wizards make
@@ -63,77 +63,110 @@ toxic brew for
 the evil queen 
 and jack.</p> 
                 </pre>
-                    <p>Familia tipográfica <a href="http://www.google.com/fonts/specimen/Open+Sans+Condensed" target="blank">Palatino Linotype</a>. Fuente tipo serif diseñada por <i>Hermann Zapf</i> en 1948, optimizada para linotipia en 1999. Pyxis la utiliza para texto continuo, párrafos y refrencias. Su versatilidad contempla 2 pesos (normal + bold) y su versión en itálicas.</p>  
+                    <p>Familia tipográfica <a href="http://www.google.com/fonts/specimen/Open+Sans+Condensed" target="blank">Palatino Linotype</a>. Fuente tipo serif diseñada por <i>Hermann Zapf</i> en 1948, optimizada para linotipia en 1999. Pyxis la utiliza para texto continuo, párrafos y refrencias en itálicas. Su versatilidad contempla 2 pesos (normal + bold) y su versión en itálicas.</p>  
                 </div>
             </div>
 
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
             <code class='bloque'> 
-h1, h2, h3, h4, h5, h6 {
-    font-family: @tipografia-titulos;
-}
+// Variables tipográficas
 
-@tipografia-titulos: 'Source Sans Pro';
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: @tipografia-titulos-cond;
-}
-
-@tipografia-titulos-cond: 'Open Sans';
+@sans:                          'Source Sans Pro';
+@cond:                          'Open Sans Condensed';
+@serif:                         'Palatino','Times New Roman', Times,'georgia', serif;
+@texto-continuo:                @sans;
+@italica:                       'Palatino', 'Source Sans Pro', serif;
+@italica-cond:                  @cond;
+@mono:                          'Lucida Console', monospace;
+@tipografia:                    'Palatino', 'georgia', serif;
+@tipografia-titulos:            @sans;
+@tipografia-titulos-cond:       @cond;
+@tipografia-referencias:        'Source Sans Pro';
             </code>
         </div>
         <div class="tab-pane fade" id="encabezados">
             <h4 class='pizarra gruesa'>Estandarización y uso de títulos</h4>
-            <p>Estas son las cabeceras HTML disponibles en Pyxis. Desde <code class='linea'>&lt;h1&gt;</code> a <code class='linea'>&lt;h3&gt;</code> los encabezados tienen una fuente condensada <b>'Open Sans'</b>: <span class='verde'>@cond</span> con un <i>font-weight</i> o peso de <b>700</b>, un color claro: <span class='verde'>@rojo</span> y un margen inferior de <b>10px</b>. Desde <code class='linea'>&lt;h4&gt;</code> a <code class='linea'>&lt;h6&gt;</code> los encabezados tienen una fuente normal sans serif <b>'Sorce Sans Pro'</b>: <span class='verde'>@sans</span> con un <i>font-weight</i> o peso de <b>400</b>, un color oscuro: <span class='verde'>@pizarra</span> y un margen inferior de <b>20px</b>. Esta dinámica está regulada para estandarizar la jerarquía y el debido uso de los encabezados. Las diferencias de márgenes está relacionada con la distancia necesaria hacia el párrafo que sigue a los titulares, de modo que el uso de los encabezados sea siempre en pares específicos; a saber: h1&h4, h2&h5, h3&h6.</p>
-
-            <h1>Encabezado de Primer Nivel<small>{h1 > 33px}</small></h1>
-            <h2>Encabezado de Segundo Nivel<small>{h2 > 29px}</small></h2>
-            <h3>Encabezado de Tercer Nivel<small>{h3 > 27px}</small></h3>
-            <hr class='invisible sin-margen'>
-
-            <h4>Encabezado de Cuarto Nivel<small>{h4 > 23px}</small></h4>
-            <h5>Encabezado de Quinto Nivel<small>{h5 > 21px}</small></h5>
-            <h6>Encabezado de Sexto Nivel<small>{h6 > 19px}</small></h6>
+            <h5 class='pizarra gruesa'>Títulares por defecto (h1, h2, h3, h4, h5, h6)</h5>
+            <p>Estas son las cabeceras HTML disponibles en Pyxis. De <code class='linea'>&lt;h1&gt;</code> a <code class='linea'>&lt;h2&gt;</code> los encabezados tienen una fuente condensada <b>'Open Sans Condensed'</b> (<span class='verde'>@cond</span>) con un <i>font-weight</i> o peso de <b>700</b> (<span class='verde'>@peso-titulos-1</span>), un color claro (<span class='verde'>@rojo</span>) y un margen inferior de <b>10px</b> (<span class='verde'>@margen-titulos-1</span>). De <code class='linea'>&lt;h3&gt;</code> a <code class='linea'>&lt;h4&gt;</code> los encabezados tienen una fuente serif <b>'palatino'</b> (<span class='verde'>@serif</span>) menteniendo el peso anterior, h3 de color claro y manteniendo su margen inferior, h4 de color oscuro (<span class='verde'>@pizarra</span>) y un margen inferior de <b>15px</b> (<span class='verde'>@margen-titulos-2</span>). De <code class='linea'>&lt;h5&gt;</code> a <code class='linea'>&lt;h6&gt;</code> los encabezados tienen una fuente sans serif <b>'Sorce Sans Pro'</b> (<span class='verde'>@sans</span>) con un <i>font-weight</i> o peso de <b>300</b> (<span class='verde'>@peso-titulos-2</span>), de color oscuro y el margen inferior estandarizado desde h4. La dinámica está regulada para observar una versatilidad necesaria en términos de una biblioteca de estilos. La diferencia de márgenes inferiores se relaciona con la distancia necesaria entre el párrafo de texto y el <b>titular secundario</b>, de modo que el uso de los encabezados sea siempre en pares específicos, como se muestran en los <i>ejemplos de uso múltiple</i>, presentes más abajo. En el siguiente ejemplo que muestra todos los encabezados, el margen superior e inferior es el mismo para cada uno (10px), y está especificado por la clase <b>"margen-defecto"</b>, únicamente con el fin de oredenar visualmente su nomenclatura.</p>
+            <h1 class='margen-defecto'>Encabezado de Primer Nivel<small>{33px}</small></h1>
+            <h2 class='margen-defecto'>Encabezado de Segundo Nivel<small>{29px}</small></h2>
+            <h3 class='margen-defecto'>Encabezado de Tercer Nivel<small>{27px}</small></h3>
+            <h4 class='margen-defecto'>Encabezado de Cuarto Nivel<small>{23px}</small></h4>
+            <h5 class='margen-defecto'>Encabezado de Quinto Nivel<small>{21px}</small></h5>
+            <h6 class='sin-margen'>Encabezado de Sexto Nivel<small>{19px}</small></h6>
+            <hr class='invisible'></hr>
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
             <code class='bloque'> 
-// Títulos en Open Sans
+// Títulos en 'Open Sans'
 
-h1, h2, h3{
+h1, h2{
   font-family: @cond;
   font-weight: @peso-titulos-1;
-  color: @color-titulos-1;
   margin: @margen-titulos-1;
 }
 
-// Títulos en Source Sans Pro
+// Título en 'Palatino'
 
-h4, h5, h6{
+h3, h4{
+  font-family: @serif;
+  font-weight: @peso-titulos-1;
+}
+
+// Títulos en 'Source Sans Pro'
+
+h5, h6{
   font-family: @sans;
   font-weight: @peso-titulos-2;
-  color: @color-titulos-2;
   margin: @margen-titulos-2;
 }
             </code>
             <hr class='invisible'></hr>
 
-            <h5 class='pizarra gruesa'>Ejemplos de uso debido</h5>
-            <p>Para estandarizar la versatilidad de los títulos, estas son las siguientes sugerencias de uso específico en la jerarquía de títulos: <code class='linea'>&lt;h1&gt;</code> & <code class='linea'>&lt;h4&gt;</code> - <code class='linea'>&lt;h2&gt;</code> & <code class='linea'>&lt;h5&gt;</code> - <code class='linea'>&lt;h3&gt;</code> & <code class='linea'>&lt;h6&gt;</code></p>
-            <h1>Constatación de la relaidad<small>{h1}</small></h1>
-            <h4>Breves anotaciones de Fabio Cruz<small>{h4}</small></h4>
+            <h5 class='pizarra gruesa'>Ejemplos de uso simple</h5>
+            <p>El uso simple de títulares radica en la legibilidad de un encabezado sin un titular secundario; es decir, un título que <b>por sí solo</b> encabeza un párrafo de texto continuo. En el primer grupo <b>(h1, h2, h3)</b> los encabezados se muestran en rojo (<span class='verde'>@rojo</span>) y con un margen inferior de <b>10px</b> (<span class='verde'>@margen-titulos-1</span>). En el segundo grupo <b>(h4, h5, h6)</b> los encabezados se muestran en negro (<span class='verde'>@pizarra</span>) y adoptan un margen inferior de <b>15px</b> (<span class='verde'>@margen-titulos-2</span>), lo cual es necesario para el <i>uso múltiple</i> de titulos y lograr que el párrafo de texto continuo se ubique a mayor distancia del titular secundario que la que existe entre éste y el titulo principal, respetando un orden lógico visual. A continuación, la siguiente serie de ejemplos da cuenta del utilidad de cada titular <b>de manera individual</b> con un párrafo de texto.</p>
+            <h1>"El acto arquitectónico" de Alberto Cruz<small>{h1}</small></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
 
-            <h2>Constatación de la relaidad<small>{h2}</small></h2>
-            <h5>Breves anotaciones de Fabio Cruz<small>{h5}</small></h5>
+            <h2>"El acto arquitectónico" de Alberto Cruz<small>{h2}</small></h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
 
-            <h3>Constatación de la relaidad<small>{h3}</small></h3>
-            <h6>Breves anotaciones de Fabio Cruz<small>{h6}</small></h6>
+            <h3>"El acto arquitectónico" de Alberto Cruz<small>{h3}</small></h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
 
-            <hr class='invisible'>
+            <h4>"El acto arquitectónico" de Alberto Cruz<small>{h4}</small></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
+
+            <h5>"El acto arquitectónico" de Alberto Cruz<small>{h5}</small></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
+
+            <h6>"El acto arquitectónico" de Alberto Cruz<small>{h6}</small></h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
             <code class='bloque'>
-// Pares específicos de uso
+// de uso simple
+
+&lt;h1>...&lt;/h1>
+&lt;p>...&lt;/p>
+            </code>
+            <hr class='invisible'>
+
+            <h5 class='pizarra gruesa'>Ejemplos de uso múltiple (titular secundario)</h5>
+            <p>Para observar la versatilidad y una jerarquía coherente en los titulares, a continuación se presentan tres <b>combinaciones de uso</b> (uso múltiple) diferentes. Es aquí que la diferencia entre márgenes inferiores de <b>10px</b> (<span class='verde'>@margen-titulos-1</span>) vs. <b>15px</b> (<span class='verde'>@margen-titulos-2</span>) tiene valor observable, al ser evidente la lógica de distancia entre el <b>titular principal</b> y el <b>titular secundario</b>, y la de éste con el párrafo de texto. A continuación, la siguiente serie da cuenta del uso de pares específicos de titulares, recurriendo en primer lugar a la jerarquía de tamaños: <b>(h1-h4)</b>, <b>(h2-h5)</b>, <b>(h3-h6)</b>.</p>
+            <h1>"El acto arquitectónico" de Alberto Cruz<small>{h1}</small></h1>
+            <h4>Breve reseña de la obra<small>{h4}</small></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
+
+            <h2>"El acto arquitectónico" de Alberto Cruz<small>{h2}</small></h2>
+            <h5>Breve reseña de la obra<small>{h5}</small></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
+
+            <h3>"El acto arquitectónico" de Alberto Cruz<small>{h3}</small></h3>
+            <h6>Breve reseña de la obra<small>{h6}</small></h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
+
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+            <code class='bloque'>
+// de uso múltiple (pares específicos)
 
 &lt;h1>...&lt;/h1>
 &lt;h4>...&lt;/h4>
@@ -148,41 +181,45 @@ h4, h5, h6{
 &lt;p>...&lt;/p>
             </code>
             <hr class='invisible'>
+            <p>De manera opcional, existen también las combinaciones de titulares respetando el nº actual estandarizado de "headings". En estos dos ejemplos: <b>(h4-h5)</b>, <b>(h5-h6)</b>, es observable su versatilidad, tomando en cuenta que son los de menor jerarquía.</p>
 
-            <!-- Sub-Cabeceras -->
-            <h4 class='pizarra gruesa'>Subtítulos</h4><a name="titulo-tres"></a>
-            <p>Puedes insertar un subtítulo añadiendo la clase <code class='linea'>&ltsmall></code>, más fino y en una escala menor a las cabeceras comunes, pero adoptando la misma proporción de diferenciado. La disminución tipográfica es de un 80%.</p>
+            <h4>"El acto arquitectónico" de Alberto Cruz<small>{h4}</small></h4>
+            <h5>Breve reseña de la obra<small>{h5}</small></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
 
-            <h1><small>Subtitulo de Primer Nivel</small></h1>
-            <h2><small>Subtitulo de Segundo Nivel</small></h2>
-            <h3><small>Subtitulo de Tercer Nivel</small></h3>
-            <h4><small>Subtitulo de Cuarto Nivel</small></h4>
-            <h5><small>Subtitulo de Quinto Nivel</small></h5>
-            <h6><small>Subtitulo de Sexto Nivel</small></h6>
+            <h5>"El acto arquitectónico" de Alberto Cruz<small>{h5}</small></h5>
+            <h6>Breve reseña de la obra<small>{h6}</small></h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
 
-            <hr class='invisible'>
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
             <code class='bloque'>
-&lt;h1>&lt;small>...&lt;/small>&lt;/h1>
-&lt;h2>&lt;small>...&lt;/small>&lt;/h2>
-&lt;h3>&lt;small>...&lt;/small>&lt;/h3>
-&lt;h4>&lt;small>...&lt;/small>&lt;/h4>
-&lt;h5>&lt;small>...&lt;/small>&lt;/h5>
-&lt;h6>&lt;small>...&lt;/small>&lt;/h6>
+// de uso múltiple (pares específicos)
+
+&lt;h4>...&lt;/h4>
+&lt;h5>...&lt;/h5>
+&lt;p>...&lt;/p>
+
+&lt;h5>...&lt;/h5>
+&lt;h6>...&lt;/h6>
+&lt;p>...&lt;/p>
             </code>
             <hr class='invisible'>
 
-            <h5 class='pizarra gruesa'>Ejemplo comparativo:</h5>
-            <h1>Encabezado de Primer Nivel {33px}<small>Subtitulo de Primer Nivel</small></h1>
-            <h2>Encabezado de Segundo Nivel {29px}<small>Subtitulo de Segundo Nivel</small></h2>
-            <h3>Encabezado de Tercer Nivel {27px}<small>Subtitulo de Tercer Nivel</small></h3>
-            <h4>Encabezado de Cuarto Nivel {23px}<small>Subtitulo de Cuarto Nivel</small></h4>
-            <h5>Encabezado de Quinto Nivel {21px}<small>Subtitulo de Quinto Nivel</small></h5>
-            <h6>Encabezado de Sexto Nivel {19px}<small>Subtitulo de Sexto Nivel</small></h6>
+            <!-- Sub-Cabeceras -->
+            <h4 class='pizarra gruesa'>Subtítulos</h4><a name="titulo-tres"></a>
+            <p>Puedes insertar un subtítulo añadiendo la clase <code class='linea'>&ltsmall></code> dentro de las etiquetas de encabezado. Se añadirá un subtítulo más fino y en una escala menor a las cabeceras comunes, pero adoptando la misma proporción en cada una; la disminución tipográfica es de un 80%.</p>
 
-            <hr class='invisible'>
+            <h1 class='margen-defecto'>"El acto arquitectónico" de Alberto Cruz<small>Breve reseña de la obra</small></h1>
+            <h2 class='margen-defecto'>"El acto arquitectónico" de Alberto Cruz<small>Breve reseña de la obra</small></h2>
+            <h3 class='margen-defecto'>"El acto arquitectónico" de Alberto Cruz<small>Breve reseña de la obra</small></h3>
+            <h4 class='margen-defecto'>"El acto arquitectónico" de Alberto Cruz<small>Breve reseña de la obra</small></h4>
+            <h5 class='margen-defecto'>"El acto arquitectónico" de Alberto Cruz<small>Breve reseña de la obra</small></h5>
+            <h6>"El acto arquitectónico" de Alberto Cruz<small>Breve reseña de la obra</small></h6>
+
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
             <code class='bloque'>
+// Subtítulos "inline"
+
 &lt;h1>...&lt;small>...&lt;/small>&lt;/h1>
 &lt;h2>...&lt;small>...&lt;/small>&lt;/h2>
 &lt;h3>...&lt;small>...&lt;/small>&lt;/h3>
