@@ -66,12 +66,12 @@ a{
 //  Párrafos:
 
 p {
-    margin: 0 0 25px 0;
+    margin: @margen-parrafo;
     font-family: @texto-continuo;
     font-size: @cuerpo;
     line-height: @interlinea;
     color: fade(@negro, 80%);
-    font-weight: 300;
+    font-weight: @peso-parrafo;
 
     b{
       font-weight: 400;
@@ -84,27 +84,22 @@ p {
 
     //  Tamaños de Párrafos:
     &.lg, &.grande { 
-      font-size: @cuerpo * 2.2;
-      line-height: @interlinea * .9;
+      font-size: @parrafo-lg;
+      line-height: @interlinea;
     }
 
     &.md, &.mediano {
-      font-size: @cuerpo * 1.7;
+      font-size: @parrafo-md;
       line-height: @interlinea;
     }
 
-    &.st, &.estandar{
-      font-size: @cuerpo;
-      line-height: @interlinea;
-    }
-
-    &.sm, &.pequeno {
-      font-size: @cuerpo * 1.2;
+    &.sm, &.pequeno{
+      font-size: @parrafo-sm;
       line-height: @interlinea;
     }
 
     &.xs, &.menudo {
-      font-size: @cuerpo * .85;
+      font-size: @parrafo-xs;
       line-height: @interlinea * 1.1;
     }
 
@@ -131,41 +126,37 @@ p {
 //  Vistazo o Span:
 
 span {
-  margin: auto 0 auto 0;
+  margin: @margen-span;
   display: inline-block;
   line-height: 25/@em;
+
+    //  Tamaños de Vistazo:
+    &.lg, &.grande { 
+      font-size: @span-lg;
+      line-height: @interlinea;
+    }
+
+    &.md, &.mediano {
+      font-size: @span-md;
+      line-height: @interlinea;
+    }
+
+    &.sm, &.pequeno{
+      font-size: @span-sm;
+      line-height: @interlinea;
+    }
+
+    &.xs, &.menudo {
+      font-size: @span-xs;
+      line-height: @interlinea * 1.1;
+    }
 
     //  Sin márgenes:
     &.sin-margen{
       margin: 0;
-        }
-
-    //  Tamaños de Vistazo:
-    &.lg, &.grande { 
-      font-size: @cuerpo * 2.2;
-      line-height: 150%;
-      }
-
-    &.md, &.mediano {
-      font-size: @cuerpo * 1.7;
-      line-height: 150%;
-      }
-
-    &.st, &.estandar{
-      font-size: @cuerpo;
-      line-height: @interlinea;
     }
 
-    &.sm, &.pequeno {
-      font-size: @cuerpo * 1.2;
-      line-height: 130%;
-    }
-
-    &.xs, &.menudo {
-      font-size: @cuerpo * .85;
-      line-height: @interlinea ;
-    }
-
+    // centrado
     &.centrado{
       display: block;
       margin: 0 auto;
@@ -273,33 +264,6 @@ em, i{
   &.condensada{
     font-family: @italica-cond;
   }
-}
-
-.negrita,
-strong{
-  font-weight: 700;
-}
-
-.fina,
-.fino{
-  font-weight: 200;
-}
-
-.pesada,
-.pesado{
-  font-weight: 900;
-  etter-spacing: 0.1ex;
-  font-family: @tipografia-titulos;
-}
-
-.gruesa{
-  font-weight: 700;
-}
-
-  // Sólo posible para títulos en @sans:
-.semi-gruesa {
-  font-family: @tipografia-titulos;
-  font-weight: 500;
 }
 
 .altas{
@@ -472,7 +436,6 @@ h1, h2, h3, h4, h5, h6 {
 ol,
 ul{
   position: relative;
-  margin-bottom: 0;
 }
 
 ul li {list-style-type: disc; &.sin-estilo{list-style: none !important;}
@@ -487,26 +450,30 @@ ol li ol li ol li{list-style-type: lower-latin;}
   ul, ol {
     line-height: 25/@em;
     font-size: @cuerpo;
-    margin: 0;
-    color: rgba(1,1,1,.8);
-    //margin: @cuadratin * 0.4 0 @interlinea @cuadratin;
+    color: @pizarra;
+    padding: @relleno-lista;
+    margin: @margen-lista;
+      // Para evitar espaciado en listas dentro de otras
+      ul, ol{
+        margin: 0 !important;
+      }
 
         //  Tamaños de Lista:
 
     &.lg, &.grande { 
-      font-size: @cuerpo * 2.2;
+      font-size: @lista-lg;
       line-height: 150%;
     }
     &.md, &.mediano {
-      font-size: @cuerpo * 1.7;
+      font-size: @lista-md;
       line-height: 150%;
     }
     &.sm, &.pequeno {
-      font-size: @cuerpo * 1.2;
+      font-size: @lista-sm;
       line-height: 150%;
     }
     &.xs, &.menudo {
-      font-size: @cuerpo * .85;
+      font-size: @lista-xs;
       line-height: @interlinea * 1.1;
     }
 
@@ -1402,7 +1369,7 @@ span {
    ul, ol {
       line-height: @interlinea;
       font-size: @cuerpo;
-      margin-bottom: @cuadratin;
+      //margin-bottom: @cuadratin;
 
           //  Tamaños de Lista:
 

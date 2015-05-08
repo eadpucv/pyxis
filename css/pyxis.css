@@ -1178,7 +1178,7 @@ th {
   font-family: 'Source Sans Pro';
   src: url('../fonts//source-sans-pro/SourceSansPro-Semibold-webfont.eot');
   src: url('../fonts//source-sans-pro/SourceSansPro-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts//source-sans-pro/SourceSansPro-Semibold-webfont.woff') format('woff'), url('../fonts//source-sans-pro/SourceSansPro-Semibold-webfont.ttf') format('truetype'), url('../fonts//source-sans-pro/SourceSansPro-Semibold-webfont.svg#SourceSansProSemibold') format('svg');
-  font-weight: 500;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
@@ -1193,6 +1193,11 @@ th {
   src: url('../fonts//source-sans-pro/SourceSansPro-Black-webfont.eot');
   src: url('../fonts//source-sans-pro/SourceSansPro-Black-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts//source-sans-pro/SourceSansPro-Black-webfont.woff') format('woff'), url('../fonts//source-sans-pro/SourceSansPro-Black-webfont.ttf') format('truetype'), url('../fonts//source-sans-pro/SourceSansPro-Black-webfont.svg#SourceSansProBlack') format('svg');
   font-weight: 900;
+  font-style: bolder;
+}
+@font-face {
+  font-family: 'Palatino';
+  font-weight: 700;
   font-style: bolder;
 }
 .cf,
@@ -4268,17 +4273,35 @@ h99 {
 .sin-interletraje {
   letter-spacing: 0px !important;
 }
-.peso-xs {
+.peso-xs,
+.ultra-fino,
+.ultra-fina {
   font-weight: 100;
 }
 .peso-sm {
-  font-weight: 200;
-}
-.peso-md {
   font-weight: 300;
 }
-.peso-lg {
-  font-weight: 500;
+.peso-md,
+.gruesa,
+.grueso {
+  font-weight: 700;
+}
+.peso-lg,
+.pesada,
+.pesado {
+  font-weight: 900;
+}
+.fina,
+.fino {
+  font-weight: 200;
+}
+.semi-gruesa {
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+}
+.negrita,
+strong {
+  font-weight: 700;
 }
 .borde.lineal-xs {
   border: 1px solid #c2c4ba;
@@ -5411,22 +5434,17 @@ p.sin-margen {
 }
 p.lg,
 p.grande {
-  font-size: 35.2px;
-  line-height: 1.29375;
+  font-size: 23.2px;
+  line-height: 1.4375;
 }
 p.md,
 p.mediano {
-  font-size: 27.2px;
-  line-height: 1.4375;
-}
-p.st,
-p.estandar {
-  font-size: 16px;
+  font-size: 19.2px;
   line-height: 1.4375;
 }
 p.sm,
 p.pequeno {
-  font-size: 19.2px;
+  font-size: 16px;
   line-height: 1.4375;
 }
 p.xs,
@@ -5452,33 +5470,28 @@ span {
   display: inline-block;
   line-height: 1.5625;
 }
-span.sin-margen {
-  margin: 0;
-}
 span.lg,
 span.grande {
-  font-size: 35.2px;
-  line-height: 150%;
+  font-size: 23.2px;
+  line-height: 1.4375;
 }
 span.md,
 span.mediano {
-  font-size: 27.2px;
-  line-height: 150%;
-}
-span.st,
-span.estandar {
-  font-size: 16px;
+  font-size: 19.2px;
   line-height: 1.4375;
 }
 span.sm,
 span.pequeno {
-  font-size: 19.2px;
-  line-height: 130%;
+  font-size: 16px;
+  line-height: 1.4375;
 }
 span.xs,
 span.menudo {
   font-size: 13.6px;
-  line-height: 1.4375;
+  line-height: 1.58125;
+}
+span.sin-margen {
+  margin: 0;
 }
 span.centrado {
   display: block;
@@ -5575,27 +5588,6 @@ i.condensado,
 em.condensada,
 i.condensada {
   font-family: 'Open Sans Condensed';
-}
-.negrita,
-strong {
-  font-weight: 700;
-}
-.fina,
-.fino {
-  font-weight: 200;
-}
-.pesada,
-.pesado {
-  font-weight: 900;
-  etter-spacing: 0.1ex;
-  font-family: 'Source Sans Pro';
-}
-.gruesa {
-  font-weight: 700;
-}
-.semi-gruesa {
-  font-family: 'Source Sans Pro';
-  font-weight: 500;
 }
 .altas {
   text-transform: uppercase;
@@ -5839,7 +5831,6 @@ h6.condensado-fino {
 ol,
 ul {
   position: relative;
-  margin-bottom: 0;
 }
 ul li {
   list-style-type: disc;
@@ -5866,28 +5857,35 @@ ul,
 ol {
   line-height: 1.5625;
   font-size: 16px;
-  margin: 0;
-  color: rgba(1, 1, 1, 0.8);
+  color: #2e403a;
+  padding: 0 0 0 40px;
+  margin: 0 0 30px 0;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin: 0 !important;
 }
 ul.lg,
 ol.lg,
 ul.grande,
 ol.grande {
-  font-size: 35.2px;
+  font-size: 23.2px;
   line-height: 150%;
 }
 ul.md,
 ol.md,
 ul.mediano,
 ol.mediano {
-  font-size: 27.2px;
+  font-size: 19.2px;
   line-height: 150%;
 }
 ul.sm,
 ol.sm,
 ul.pequeno,
 ol.pequeno {
-  font-size: 19.2px;
+  font-size: 16px;
   line-height: 150%;
 }
 ul.xs,
@@ -6806,7 +6804,6 @@ pre {
   ol {
     line-height: 1.4375;
     font-size: 16px;
-    margin-bottom: 30px;
   }
   ul.lg,
   ol.lg,
@@ -17490,7 +17487,7 @@ tbody.collapse.in {
   display: inline-block !important;
   width: auto !important;
   font-family: 'Source Sans Pro';
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   font-family: 'Source Sans Pro' !important;
   color: #ffffff;
@@ -21894,7 +21891,7 @@ tbody.collapse.in {
 #sidebar ol li a {
   font-family: 'Source Sans Pro' !important;
   font-family: 'Source Sans Pro';
-  font-weight: 500;
+  font-weight: 400;
 }
 #sidebar ul img,
 #sidebar ol img {

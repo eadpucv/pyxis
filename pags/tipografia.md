@@ -5,8 +5,10 @@ subtitle: <i class="icn icn-libro"></i> Tipografía
 intro: Texto sobre tipografía
 link-1: Fuentes
 link-2: Encabezados
-link-3: Tamaños
-link-4: Clases
+link-3: Párrafos
+link-4: Listas
+link-5: Estilos
+link-6: Clases
 pde: type.pde
 ---
 
@@ -17,8 +19,10 @@ pde: type.pde
             <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
                 <li class="active"><a id='subiendo-1' class='condensado' href="#familias" role="tab" data-toggle="tab">{{ page.link-1 }}</a></li>
                 <li><a id='subiendo-2' class='condensado' href="#encabezados" role="tab" data-toggle="tab">{{ page.link-2 }}</a></li>
-                <li><a id='subiendo-3' class='condensado' href="#valores" role="tab" data-toggle="tab">{{ page.link-3 }}</a></li>
-                <li><a id='subiendo-4' class='condensado' href="#clases" role="tab" data-toggle="tab">{{ page.link-4 }}</a></li>
+                <li><a id='subiendo-3' class='condensado' href="#parrafos" role="tab" data-toggle="tab">{{ page.link-3 }}</a></li>
+                <li><a id='subiendo-4' class='condensado' href="#listas" role="tab" data-toggle="tab">{{ page.link-4 }}</a></li>
+                <li><a id='subiendo-5' class='condensado' href="#estilos" role="tab" data-toggle="tab">{{ page.link-5 }}</a></li>
+                <li><a id='subiendo-6' class='condensado' href="#clases" role="tab" data-toggle="tab">{{ page.link-6 }}</a></li>
                 <li class='subir'><a href="#topbar"><i class="icn icn-libro"></i></a></li>
             </ul>
     </div>
@@ -85,9 +89,9 @@ and jack.</p>
             </code>
         </div>
         <div class="tab-pane fade" id="encabezados">
-            <h4 class='pizarra gruesa'>Estandarización y uso de títulos</h4>
-            <h5 class='pizarra gruesa'>Títulares por defecto (h1, h2, h3, h4, h5, h6)</h5>
-            <p>Estas son las cabeceras HTML disponibles en Pyxis. De <code class='linea'>&lt;h1&gt;</code> a <code class='linea'>&lt;h2&gt;</code> los encabezados tienen una fuente condensada <b>'Open Sans Condensed'</b> (<span class='verde'>@cond</span>) con un <i>font-weight</i> o peso de <b>700</b> (<span class='verde'>@peso-titulos-1</span>), un color claro (<span class='verde'>@rojo</span>) y un margen inferior de <b>10px</b> (<span class='verde'>@margen-titulos-1</span>). De <code class='linea'>&lt;h3&gt;</code> a <code class='linea'>&lt;h4&gt;</code> los encabezados tienen una fuente serif <b>'palatino'</b> (<span class='verde'>@serif</span>) menteniendo el peso anterior, h3 de color claro y manteniendo su margen inferior, h4 de color oscuro (<span class='verde'>@pizarra</span>) y un margen inferior de <b>15px</b> (<span class='verde'>@margen-titulos-2</span>). De <code class='linea'>&lt;h5&gt;</code> a <code class='linea'>&lt;h6&gt;</code> los encabezados tienen una fuente sans serif <b>'Sorce Sans Pro'</b> (<span class='verde'>@sans</span>) con un <i>font-weight</i> o peso de <b>300</b> (<span class='verde'>@peso-titulos-2</span>), de color oscuro y el margen inferior estandarizado desde h4. La dinámica está regulada para observar una versatilidad necesaria en términos de una biblioteca de estilos. La diferencia de márgenes inferiores se relaciona con la distancia necesaria entre el párrafo de texto y el <b>titular secundario</b>, de modo que el uso de los encabezados sea siempre en pares específicos, como se muestran en los <i>ejemplos de uso múltiple</i>, presentes más abajo. En el siguiente ejemplo que muestra todos los encabezados, el margen superior e inferior es el mismo para cada uno (10px), y está especificado por la clase <b>"margen-defecto"</b>, únicamente con el fin de oredenar visualmente su nomenclatura.</p>
+            <h4 class='pizarra gruesa'>Uso de títulos</h4>
+            <p>Estas son las cabeceras HTML disponibles en Pyxis. <code class='linea'>&lt;h1&gt;</code> y <code class='linea'>&lt;h2&gt;</code> tienen una fuente condensada <b>'Open Sans Condensed'</b> (<span class='verde'>@cond</span>) con un <i>font-weight</i> o peso de <b>700</b> (<span class='verde'>@peso-titulos-1</span>), un color claro (<span class='verde'>@rojo</span>) y un margen inferior de <b>10px</b> (<span class='verde'>@margen-titulos-1</span>). <code class='linea'>&lt;h3&gt;</code> y <code class='linea'>&lt;h4&gt;</code> tienen una fuente serif <b>'palatino'</b> (<span class='verde'>@serif</span>) menteniendo el peso anterior, h3 de color claro y manteniendo su margen inferior, h4 de color oscuro (<span class='verde'>@pizarra</span>) y un margen inferior de <b>15px</b> (<span class='verde'>@margen-titulos-2</span>). <code class='linea'>&lt;h5&gt;</code> y <code class='linea'>&lt;h6&gt;</code> tienen una fuente sans serif <b>'Sorce Sans Pro'</b> (<span class='verde'>@sans</span>) con un <i>font-weight</i> o peso de <b>300</b> (<span class='verde'>@peso-titulos-2</span>), de color oscuro y el margen inferior estandarizado desde h4. La dinámica está regulada para observar una versatilidad necesaria en términos de una biblioteca de estilos. La diferencia de márgenes inferiores se relaciona con la distancia necesaria entre el párrafo de texto y el <b>titular secundario</b>, de modo que el uso de los encabezados sea siempre en pares específicos, como se muestran en los <i>ejemplos de uso múltiple</i>, presentes más abajo. En el siguiente ejemplo que muestra todos los encabezados, el margen superior e inferior es el mismo para cada uno (10px), y está especificado por la clase <b>"margen-defecto"</b>, únicamente con el fin de oredenar visualmente su nomenclatura.</p>
+            <h5 class='pizarra'>Títulos por defecto (h1, h2, h3, h4, h5, h6)</h5>
             <h1 class='margen-defecto'>Encabezado de Primer Nivel<small>{33px}</small></h1>
             <h2 class='margen-defecto'>Encabezado de Segundo Nivel<small>{29px}</small></h2>
             <h3 class='margen-defecto'>Encabezado de Tercer Nivel<small>{27px}</small></h3>
@@ -122,7 +126,7 @@ h5, h6{
             </code>
             <hr class='invisible'></hr>
 
-            <h5 class='pizarra gruesa'>Ejemplos de uso simple</h5>
+            <h5 class='pizarra'>Ejemplos de uso simple</h5>
             <p>El uso simple de títulares radica en la legibilidad de un encabezado sin un titular secundario; es decir, un título que <b>por sí solo</b> encabeza un párrafo de texto continuo. En el primer grupo <b>(h1, h2, h3)</b> los encabezados se muestran en rojo (<span class='verde'>@rojo</span>) y con un margen inferior de <b>10px</b> (<span class='verde'>@margen-titulos-1</span>). En el segundo grupo <b>(h4, h5, h6)</b> los encabezados se muestran en negro (<span class='verde'>@pizarra</span>) y adoptan un margen inferior de <b>15px</b> (<span class='verde'>@margen-titulos-2</span>), lo cual es necesario para el <i>uso múltiple</i> de titulos y lograr que el párrafo de texto continuo se ubique a mayor distancia del titular secundario que la que existe entre éste y el titulo principal, respetando un orden lógico visual. A continuación, la siguiente serie de ejemplos da cuenta del utilidad de cada titular <b>de manera individual</b> con un párrafo de texto.</p>
             <h1>"El acto arquitectónico" de Alberto Cruz<small>{h1}</small></h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
@@ -150,7 +154,7 @@ h5, h6{
             </code>
             <hr class='invisible'>
 
-            <h5 class='pizarra gruesa'>Ejemplos de uso múltiple (titular secundario)</h5>
+            <h5 class='pizarra'>Ejemplos de uso múltiple (titular secundario)</h5>
             <p>Para observar la versatilidad y una jerarquía coherente en los titulares, a continuación se presentan tres <b>combinaciones de uso</b> (uso múltiple) diferentes. Es aquí que la diferencia entre márgenes inferiores de <b>10px</b> (<span class='verde'>@margen-titulos-1</span>) vs. <b>15px</b> (<span class='verde'>@margen-titulos-2</span>) tiene valor observable, al ser evidente la lógica de distancia entre el <b>titular principal</b> y el <b>titular secundario</b>, y la de éste con el párrafo de texto. A continuación, la siguiente serie da cuenta del uso de pares específicos de titulares, recurriendo en primer lugar a la jerarquía de tamaños: <b>(h1-h4)</b>, <b>(h2-h5)</b>, <b>(h3-h6)</b>.</p>
             <h1>"El acto arquitectónico" de Alberto Cruz<small>{h1}</small></h1>
             <h4>Breve reseña de la obra<small>{h4}</small></h4>
@@ -207,7 +211,7 @@ h5, h6{
 
             <!-- Sub-Cabeceras -->
             <h4 class='pizarra gruesa'>Subtítulos</h4><a name="titulo-tres"></a>
-            <p>Puedes insertar un subtítulo añadiendo la clase <code class='linea'>&ltsmall></code> dentro de las etiquetas de encabezado. Se añadirá un subtítulo más fino y en una escala menor a las cabeceras comunes, pero adoptando la misma proporción en cada una; la disminución tipográfica es de un 80%.</p>
+            <p>Puedes insertar un subtítulo añadiendo la clase <code class='linea'>&lt;small></code> dentro de las etiquetas de encabezado. Se añadirá un subtítulo más fino y en una escala menor a las cabeceras comunes, pero adoptando la misma proporción en cada una; la disminución tipográfica es de un 80%.</p>
 
             <h1 class='margen-defecto'>"El acto arquitectónico" de Alberto Cruz<small>Breve reseña de la obra</small></h1>
             <h2 class='margen-defecto'>"El acto arquitectónico" de Alberto Cruz<small>Breve reseña de la obra</small></h2>
@@ -227,45 +231,148 @@ h5, h6{
 &lt;h5>...&lt;small>...&lt;/small>&lt;/h5>
 &lt;h6>...&lt;small>...&lt;/small>&lt;/h6>
             </code>
+            <hr class='invisible'>
+            <h4 class='pizarra gruesa'>Tamaños de título</h4>
+            <h5 class='pizarra'>Tamaños por defecto (xs, sm, md, lg)</h5>
+            <p>Los tamaños de título están reglamentados por la misma nomenclatura que dispone la <a>grilla</a> de <a>Bootstrap</a>, donde <b>'xs'</b> dicta el valor <i>'Extra Small'</i> o tamaño de título <b>más pequeño</b>; <b>'sm'</b> dicta el valor <i>'Small'</i> o tamaño <b>pequeño</b>; <b>'md'</b> dicta el valor de <i>'medium'</i> o <b>mediano</b> y <b>'lg'</b> dicta el valor <i>'large'</i> o tamaño <b>gigante</b>, para establecer cuatro diferentes necesidades o contextos de uso de títulos en un layout determinado. Este es un ejemplo de tamaños para <b>&lt;h2></b>.</p>
+            <h2 class='xs'>"El acto arquitectónico"<small>{xs}</small></h2>
+            <h2 class='sm'>"El acto arquitectónico"<small>{sm}</small></h2>
+            <h2 class='md'>"El acto arquitectónico"<small>{md}</small></h2>
+            <h2 class='lg'>"El acto arquitectónico"<small>{lg}</small></h2>
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+            <code class='bloque'>
+// uso de tamaños para &lt;h2>
 
+&lt;h2 class='xs'>...&lt;/h2>
+&lt;h2 class='sm'>...&lt;/h2>
+&lt;h2 class='md'>...&lt;/h2>
+&lt;h2 class='lg'>...&lt;/h2>
+            </code>
+            <hr class='invisible'>
+           <p>También el uso múltiple de titulos está proporcionado a los tamaños que requieren para su uso en conjunto. Este es un ejemplo de tamaños para <b>&lt;h3></b> y <b>&lt;h6></b>.</p>
+            <h3 class='xs'>"El acto arquitectónico"<small>{xs}</small></h3>
+            <h6 class='xs'>Breve reseña de la obra<small>{xs}</small></h6>
+            <h3 class='sm'>"El acto arquitectónico"<small>{sm}</small></h3>
+            <h6 class='sm'>Breve reseña de la obra<small>{sm}</small></h6>
+            <h3 class='md'>"El acto arquitectónico"<small>{md}</small></h3>
+            <h6 class='md'>Breve reseña de la obra<small>{md}</small></h6>
+            <h3 class='lg'>"El acto arquitectónico"<small>{lg}</small></h3>
+            <h6 class='lg'>Breve reseña de la obra<small>{lg}</small></h6>
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+            <code class='bloque'>
+// uso de tamaños para &lt;h3> y &lt;h6>
+
+&lt;h3 class='xs'>...&lt;/h3>
+&lt;h6 class='xs'>...&lt;/h6>
+&lt;h3 class='sm'>...&lt;/h3>
+&lt;h6 class='sm'>...&lt;/h6>
+&lt;h3 class='md'>...&lt;/h3>
+&lt;h6 class='md'>...&lt;/h6>
+&lt;h3 class='lg'>...&lt;/h3>
+&lt;h6 class='lg'>...&lt;/h6>
+            </code>
         </div>
-        <div class="tab-pane fade" id="valores">
+        <div class="tab-pane fade" id="parrafos">
+            <h4 class='pizarra gruesa'>Uso de párrafos de texto</h4>
+            <p>Lo párrafos <code class='linea'>&lt;p></code> tienen por defecto una fuente sans serif <b>'Source Sans Pro'</b> (<span class='verde'>@texto-continuo</span>), con un font-size de <b>16px</b> (<span class='verde'>@cuerpo</span>), un font-weight o peso de <b>300</b> (<span class='verde'>@peso-parrafo</span>), un color oscuro al <b>80%</b> de (<span class='verde'>@negro</span>), un interlineado de <b>23/</b><span class='verde'>@em</span> (donde <span class='verde'>@em</span> = <span class='verde'>@cuerpo</span> * <b>1em</b> = <b>1.4375em</b>) y un margen inferior de <b>25px</b> (<span class='verde'>@margen-parrafo</span>) para generar espaciados entre cada párrafo. En el caso de que no sea útil dicho margen, puedes agregar la clase <i>'sin-margen'</i> para abolirlo (margin: 0px). Los párrafos de texto también tienen sus <b>grosores</b>, <b>estilos de carácter</b> y <b>alineación</b>, que se encuentran debidamente documentados en la sección 'estilos' dentro del sub-menú de <i>Tipografía</i>. En el siguiente ejemplo se muestran tres párrafos con sus estilos declarados por defecto, tomando en cuenta el uso de las etiquetas <code class='linea'>&lt;i></code> (itálicas) para el segundo, y <code class='linea'>&lt;b></code> (bold) para el tercero.</p>
+            <h5 class='pizarra'>Parrafos por defecto</h5>
+            <p>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento me bañe la cabeza. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga
+            "</p>
+            <p><i>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento me bañe la cabeza. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga"</i></p>
+            <p><b>Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento me bañe la cabeza. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga</b></p> 
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+            <code class='bloque'> 
+// Párrafo
+
+p{
+    margin: @margen-parrafo;
+    font-family: @texto-continuo;
+    font-size: @cuerpo;
+    line-height: @interlinea;
+    color: fade(@negro, 80%);
+    font-weight: @peso-parrafo;
+
+    //  Sin margen
+
+    &.sin-margen{
+      margin: 0;
+    }
+
+    // Alineación
+
+    &.izquierda{
+      text-align: left;
+    }
+    &.centrado{
+      text-align: center;
+    }
+    &.derecha{
+      text-align: right;
+    }
+
+    // justificado
+
+    &.justificado{
+      text-align: justify;
+      word-wrap: break-word;
+    }
+}
+            </code>
+            <hr class='invisible'>
             <h4 class='pizarra gruesa'>Tamaños de párrafo</h4>
-            <p>Los tamaños de párrafo están asociados a las medidas estandarizadas de acuerdo a la nomenclatura presente en la <a href='#'>Grilla</a>: <b>xs</b> (Extra-small), <b>sm</b> (Small), <b>md</b> (Medium) y <b>lg</b> (Large), respectivamente. En este caso, la nomenclatura de clases tiene referencia directa con su sinónimo declarado en español, a saber: <b>menudo (xs), pequeno (sm), mediano (md) y grande (lg)</b>. Para cada uno de los ejemplos de párrafo se antepone un título <span class='verde'>(hx)</span> con la clase correspondiente a su tamaño y jerarquía; de esta manera, se evidencia la versatilidad de cada elemento y su legibilidad sometida a los diferentes anchos de columna (col-lg, col-md, col-sm, col-xs). En cada ancho de patalla los párrafos muestran un orden diferente con el fin de comprender la dinámica en los anchos de línea y el interlineado del texto.</p>
+            <h5 class='pizarra'>Tamaños por defecto (xs, sm, md, lg)</h5>
+            <p>Los tamaños de párrafo están reglamentados por la misma nomenclatura que dispone la <a href='#'>grilla</a> de <a href='#'>Bootstrap</a>, donde <b>'xs'</b> dicta el valor <i>'Extra Small'</i> o tamaño de título más pequeño; <b>'sm'</b> dicta el valor <i>'Small'</i> o tamaño pequeño; <b>'md'</b> dicta el valor de <i>'medium'</i> o mediano y <b>'lg'</b> dicta el valor <i>'large'</i> o tamaño <b>gigante</b>, para establecer cuatro diferentes necesidades o contextos de uso de párrafos en un layout determinado.</p>
+            <p class='xs'><b>{xs}</b>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
+            <p class='sm'><b>{sm}</b>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
+            <p class='md'><b>{md}</b>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
+            <p class='lg'><b>{lg}</b>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+            <code class='bloque'>
+//  Tamaños de Párrafos:
+p {
+    &.lg, &.grande { 
+      font-size: @parrafo-lg;
+      line-height: @interlinea;
+    }
+
+    &.md, &.mediano {
+      font-size: @parrafo-md;
+      line-height: @interlinea;
+    }
+
+    &.sm, &.pequeno{
+      font-size: @parrafo-sm;
+      line-height: @interlinea;
+    }
+
+    &.xs, &.menudo {
+      font-size: @parrafo-xs;
+      line-height: @interlinea * 1.1;
+    }
+}
+            </code>
+            <hr class='invisible'>
             <h5 class='pizarra'>Menudo (xs)</h5>
-            <p>El tamaño de párrafo que responde a la clase <i>xs</i> o <i>menudo</i> contiene las propiedades de un tamaño de fuente <span class='verde'>(font-size: @cuerpo * .75)</span> de <b>11.25px</b> o <b>0.75em</b> y una interlínea <span class='verde'>(line-height: @interlinea * 1.1)</span> de <b>27.5px</b> o <b>1.83333333em</b>. </p>
+            <p>El tamaño de párrafo que responde a la clase <i>xs</i> o <i>menudo</i> contiene las propiedades de un tamaño de fuente de <b>13,6px</b> (<span class='verde'>@cuerpo * 0.85</span>) y una interlínea de <b>27.5px</b> <span class='verde'>(@interlinea * 1.1)</span>.</p>
             <hr>
-            <h6>Ejemplo</h6>
-            <h1 class='rojo menudo relleno-sup-sm'>h1</h1> 
-            <p class='xs sin-margen'><b>Menudo (xs)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
-            <i>Is there anybody out there?</i></p>
+            <p class='xs sin-margen'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
             <div class='fila'>
-                <div class='col-md-6 col-sm-8 col-xs-12'>
-                    <h2 class='rojo menudo relleno-sup-sm'>h2</h2>
-                    <p class='xs sin-margen'><b>Menudo (xs)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
-                    <i>Is there anybody out there?</i></p>
+                <div class='col-md-6 col-sm-8 col-xs-12 margen-sup-sm'>
+                    <p class='xs sin-margen'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
                 </div>
-                <div class='col-md-6 col-sm-4 col-xs-12'>
-                    <h3 class='rojo menudo relleno-sup-sm'>h3</h3>
-                    <p class='xs sin-margen'><b>Menudo (xs)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
-                    <i>Is there anybody out there?</i></p>
+                <div class='col-md-6 col-sm-4 col-xs-12 margen-sup-sm'>
+                    <p class='xs sin-margen'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
                 </div>
             </div>
             <div class='fila'>
-                <div class='col-md-4 col-sm-4 col-xs-12'>
-                    <h4 class='rojo menudo relleno-sup-sm'>h4</h4>
-                    <p class='xs sin-margen'><b>Menudo (xs)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
-                    <i>Is there anybody out there?</i></p>
+                <div class='col-md-4 col-sm-4 col-xs-12 margen-sup-sm'>
+                    <p class='xs sin-margen'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
                 </div>
-                <div class='col-md-4 col-sm-4 col-xs-12'>
-                    <h5 class='rojo menudo relleno-sup-sm'>h5</h5>
-                    <p class='xs sin-margen'><b>Menudo (xs)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
-                    <i>Is there anybody out there?</i></p>
+                <div class='col-md-4 col-sm-4 col-xs-12 margen-sup-sm'>
+                    <p class='xs sin-margen'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
                 </div>
-                <div class='col-md-4 col-sm-4 co-xs-12'>
-                    <h6 class='rojo menudo relleno-sup-sm'>h6</h6>
-                    <p class='xs sin-margen'><b>Menudo (xs)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
-                    <i>Is there anybody out there?</i></p>
+                <div class='col-md-4 col-sm-4 co-xs-12 margen-sup-sm'>
+                    <p class='xs sin-margen'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
                 </div>
             </div>
             <hr class='invisible'>
@@ -273,252 +380,237 @@ h5, h6{
             <code class='bloque'>
 &lt;p class=&quot;menudo&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;xs&quot;&gt;...&lt;/p&gt;
             </code>
-            <hr class='invisible'>
-            <h5 class='pizarra'>Estándar</h5>
-            <p>El tamaño de párrafo que responde a la clase <i>por defecto</i> contiene las propiedades de un tamaño de fuente <span class='verde'>(font-size: @cuerpo)</span> de <b>15px</b> o <b>1em</b> y una interlínea <span class='verde'>(line-height: @interlinea)</span> de <b>25px</b> o <b>1.66666667em</b></p>
-            <hr>
-            <h6>Ejemplo</h6>
-            <h1 class='rojo relleno-sup-sm'>h1</h1>
-            <p class='sin-margen'><b>Estándar</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
-            <i>Is there anybody out there?</i></p>
-            <div class='fila'>
-                <div class='col-md-6 col-sm-6 col-xs-12'>
-                    <h2 class='rojo relleno-sup-sm'>h2</h2>
-                    <p class='sin-margen relleno-sup-sm'><b>Estándar</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
-                    <i>Is there anybody out there?</i></p>
-                </div>
-                <div class='col-md-6 col-sm-6 col-xs-12'>
-                    <h3 class='rojo relleno-sup-sm'>h3</h3>
-                    <p class='sin-margen relleno-sup-sm'><b>Estándar</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
-                    <i>Is there anybody out there?</i></p>
-                </div>
-            </div>
-            <div class='fila'>
-                <div class='col-md-4 col-sm-12 col-xs-12'>
-                    <h4 class='rojo relleno-sup-sm'>h4</h4>
-                    <p class='sin-margen relleno-sup-sm'><b>Estándar</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
-                    <i>Is there anybody out there?</i></p>
-                </div>
-                <div class='col-md-4 col-sm-8 col-xs-12'>
-                    <h5 class='rojo relleno-sup-sm'>h5</h5>
-                    <p class='sin-margen relleno-sup-sm'><b>Estándar</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
-                    <i>Is there anybody out there?</i></p>
-                </div>
-                <div class='col-md-4 col-sm-4 col-xs-12'>
-                    <h6 class='rojo relleno-sup-sm'>h6</h6>
-                    <p class='sin-margen relleno-sup-sm'><b>Estándar</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
-                    <i>Is there anybody out there?</i></p>
-                </div>
-            </div>
-            <hr class='invisible'>
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-            <code class='bloque'>
-&lt;p&gt;...&lt;/p&gt;
-            </code>
-            <hr class='invisible'>
+            <hr class='invisible'> 
             <h5 class='pizarra'>Pequeño (sm)</h5>
-            <p>El tamaño de párrafo que responde a la clase <i>sm</i> o <i>pequeno</i> contiene las propiedades de un tamaño de fuente <span class='verde'>(font-size: @cuerpo * 1.2)</span> de <b>18px</b> o <b>1.2em</b> y una interlínea <span class='verde'>(line-height: @interlinea)</span> de <b>25px</b> o <b>1.66666667em</b></p>
+            <p>El tamaño de párrafo que responde a la clase <i>sm</i> o <i>pequeño</i> contiene las propiedades de un tamaño de fuente de <b>13,6px</b> (<span class='verde'>@cuerpo</span>) y una interlinea de <b>23/</b><span class='verde'>@em</span> (donde <span class='verde'>@em</span> = <span class='verde'>@cuerpo</span> * <b>1em</b> = <b>1.4375em</b>).</p>
             <hr>
-            <h6>Ejemplo</h6>
-            <h1 class='rojo pequeno relleno-sup-sm'>h1</h1>
-            <p class='sm sin-margen'><b>Pequeño (sm)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
-             <i>Is there anybody out there?</i> </p>
+            <p class='xs sin-margen'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
             <div class='fila'>
-                <div class='col-md-6 col-sm-6 col-xs-12'>
-                    <h2 class='rojo pequeno relleno-sup-sm'>h2</h2>
-                    <p class='sm sin-margen relleno-sup-sm'><b>Pequeño (sm)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
-                    <i>Is there anybody out there?</i></p>
+                <div class='col-md-6 col-sm-8 col-xs-12 margen-sup-sm'>
+                    <p>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
                 </div>
-                <div class='col-md-6 col-sm-6 col-xs-12'>
-                    <h3 class='rojo pequeno relleno-sup-sm'>h3</h3>
-                    <p class='sm sin-margen relleno-sup-sm'><b>Pequeño (sm)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
-                    <i>Is there anybody out there?</i></p>
+                <div class='col-md-6 col-sm-4 col-xs-12 margen-sup-sm'>
+                    <p>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
                 </div>
             </div>
             <div class='fila'>
-                <div class='col-md-4 col-sm-12 col-xs-12'>
-                    <h4 class='rojo pequeno relleno-sup-sm'>h4</h4>
-                    <p class='sm sin-margen relleno-sup-sm'><b>Pequeño (sm)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
-                    <i>Is there anybody out there?</i></p>
+                <div class='col-md-4 col-sm-4 col-xs-12 margen-sup-sm'>
+                    <p>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
                 </div>
-                <div class='col-md-4 col-sm-8 col-xs-12'>
-                    <h5 class='rojo pequeno relleno-sup-sm'>h5</h5>
-                    <p class='sm sin-margen relleno-sup-sm'><b>Pequeño (sm)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
-                    <i>Is there anybody out there?</i></p>
+                <div class='col-md-4 col-sm-4 col-xs-12 margen-sup-sm'>
+                    <p>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
                 </div>
-                <div class='col-md-4 col-sm-4 col-xs-12'>
-                    <h6 class='rojo pequeno relleno-sup-sm'>h6</h6>
-                    <p class='sm sin-margen relleno-sup-sm'><b>Pequeño (sm)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
-                    <i>Is there anybody out there?</i></p>
+                <div class='col-md-4 col-sm-4 co-xs-12 margen-sup-sm'>
+                    <p>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
                 </div>
             </div>
             <hr class='invisible'>
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
             <code class='bloque'>
-&lt;p class=&quot;pequeno&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;sm&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;menudo&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;xs&quot;&gt;...&lt;/p&gt;
             </code>
             <hr class='invisible'>
             <h5 class='pizarra'>Mediano (md)</h5>
-            <p>El tamaño de párrafo que responde a la clase <i>md</i> o <i>mediano</i> contiene las propiedades de un tamaño de fuente <span class='verde'>(font-size: @cuerpo * 1.7)</span> de <b>25.5px</b> o <b>1.7em</b> y una interlínea <span class='verde'>(line-height: @interlinea)</span> de <b>25px</b> o <b>1.66666667em</b></p>
+            <p>El tamaño de párrafo que responde a la clase <i>sm</i> o <i>pequeno</i> contiene las propiedades de un tamaño de fuente de <b>19,2px</b> (<span class='verde'>@cuerpo * 1.2</span>) y una interlinea de <b>23/</b><span class='verde'>@em</span> (donde <span class='verde'>@em</span> = <span class='verde'>@cuerpo</span> * <b>1em</b> = <b>1.4375em</b>)./p>
             <hr>
-            <h6>Ejemplo</h6>
-            <h1 class='rojo mediano relleno-sup-sm'>h1</h1>
-            <p class='mediano sin-margen'><b>Mediano (md)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here. You're father's gunna pick up our trail before long. Can Loca ride. Yeah, I can ride, Margaret, time to go! Maigret, thank you for everything. Goodbye Chenga. Goodbye miss. I'll be back" 
-            <i>Is there anybody out there?</i></p>
+            <p class='md sin-margen'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
             <div class='fila'>
-                <div class='col-md-6 col-sm-7 col-xs-12'>
-                    <h2 class='rojo mediano relleno-sup-sm'>h2</h2>
-                    <p class='md sin-margen relleno-sup-sm'><b>Mediano (md)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here... 
-                    <i>Is there anybody out there?</i></p>
+                <div class='col-md-6 col-sm-6 col-xs-12'>
+                    <p class='md sin-margen relleno-sup-sm'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
                 </div>
-                <div class='col-md-6 col-sm-5 col-xs-12'>
-                    <h3 class='rojo mediano relleno-sup-sm'>h3</h3>
-                    <p class='md sin-margen relleno-sup-sm'><b>Mediano (md)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here... 
-                    <i>Is there anybody out there?</i></p>
+                <div class='col-md-6 col-sm-6 col-xs-12'>
+                    <p class='md sin-margen relleno-sup-sm'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
                 </div>
             </div>
             <div class='fila'>
                 <div class='col-md-4 col-sm-12 col-xs-12'>
-                    <h4 class='rojo mediano relleno-sup-sm'>h4</h4>
-                    <p class='md sin-margen relleno-sup-sm'><b>Mediano (md)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here..." 
-                    <i>Is there anybody out there?</i></p>
+                    <p class='md sin-margen relleno-sup-sm'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
                 </div>
-                <div class='col-md-4 col-sm-6 col-xs-12'>
-                    <h5 class='rojo mediano relleno-sup-sm'>h5</h5>
-                    <p class='md sin-margen relleno-sup-sm'><b>Mediano (md)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here..." 
-                    <i>Is there anybody out there?</i></p>
+                <div class='col-md-4 col-sm-8 col-xs-12'>
+                    <p class='md sin-margen relleno-sup-sm'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
                 </div>
-                <div class='col-md-4 col-sm-6 col-xs-12'>
-                    <h6 class='rojo mediano relleno-sup-sm'>h6</h6>
-                    <p class='md sin-margen relleno-sup-sm'><b>Mediano (md)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night? It'll be a lot less safe to stay here..." 
-                    <i>Is there anybody out there?</i></p>
+                <div class='col-md-4 col-sm-4 col-xs-12'>
+                    <p class='md sin-margen relleno-sup-sm'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
                 </div>
             </div>
+            <hr class='invisible'>
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
             <code class='bloque'>
-&lt;p class=&quot;grande&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;lg&quot;&gt;...&lt;/p&gt;
+&lt;p class=&quot;pequeno&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;sm&quot;&gt;...&lt;/p&gt;
             </code>
             <hr class='invisible'>
             <h5 class='pizarra'>Grande (lg)</h5>
-            <p>El tamaño de párrafo que responde a la clase <i>lg</i> o <i>grande</i> contiene las propiedades de un tamaño de fuente <span class='verde'>(font-size: @cuerpo * 2.2)</span> de <b>33px</b> o <b>2.2em</b> y una interlínea <span class='verde'>(line-height: @interlinea * .9)</span> de <b>22.5px</b> o <b>1.5em</b></p>
+            <p>El tamaño de párrafo que responde a la clase <i>md</i> o <i>mediano</i> contiene las propiedades de un tamaño de fuente de <b>24px</b> (<span class='verde'>@cuerpo * 1.5</span>) y una interlinea de <b>23/</b><span class='verde'>@em</span> (donde <span class='verde'>@em</span> = <span class='verde'>@cuerpo</span> * <b>1em</b> = <b>1.4375em</b>).</p>
             <hr>
-            <h6>Ejemplo</h6>
-            <h1 class='rojo gigante relleno-sup-sm'>h1</h1>
-            <p class='grande sin-margen'><b>Grande (lg)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night?..." 
-            <i>Is there anybody out there?</i></p>
+            <p class='lg sin-margen'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>..."</p>
             <div class='fila'>
-                <div class='col-md-6 col-sm-5 col-xs-12'>
-                    <h2 class='rojo gigante relleno-sup-md'>h2</h2>
-                    <p class='lg sin-margen relleno-sup-sm'><b>Grande (lg)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night?... 
-                    <i>Is there anybody out there?</i></p>
-                </div>
                 <div class='col-md-6 col-sm-7 col-xs-12'>
-                    <h3 class='rojo gigante relleno-sup-md'>h3</h3>
-                    <p class='lg sin-margen relleno-sup-sm'><b>Grande (lg)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night?... 
-                    <i>Is there anybody out there?</i></p>
+                    <p class='lg sin-margen relleno-sup-sm'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>..."</p>
+                </div>
+                <div class='col-md-6 col-sm-5 col-xs-12'>
+                    <p class='lg sin-margen relleno-sup-sm'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>..."</i></p>
                 </div>
             </div>
             <div class='fila'>
-                <div class='col-md-4 col-sm-6 col-xs-12'>
-                    <h4 class='rojo gigante relleno-sup-md'>h4</h4>
-                    <p class='lg sin-margen relleno-sup-sm'><b>Grande (lg)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night?..." 
-                    <i>Is there anybody out there?</i></p>
-                </div>
-                <div class='col-md-4 col-sm-6 col-xs-12'>
-                    <h5 class='rojo gigante relleno-sup-md'>h5</h5>
-                    <p class='lg sin-margen relleno-sup-sm'><b>Grande (lg)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night?..." 
-                    <i>Is there anybody out there?</i></p>
-                </div>
                 <div class='col-md-4 col-sm-12 col-xs-12'>
-                    <h6 class='rojo gigante relleno-sup-md'>h6</h6>
-                    <p class='lg sin-margen relleno-sup-sm'><b>Grande (lg)</b><br>"Well, only got an hour of daylight left. Better get started, Isn't it unsafe to travel at night?..." 
-                    <i>Is there anybody out there?</i></p>
+                    <p class='lg sin-margen relleno-sup-sm'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>..."</i></p>
+                </div>
+                <div class='col-md-4 col-sm-6 col-xs-12'>
+                    <p class='lg sin-margen relleno-sup-sm'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>..."</p>
+                </div>
+                <div class='col-md-4 col-sm-6 col-xs-12'>
+                    <p class='lg sin-margen relleno-sup-sm'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>..."</p>
                 </div>
             </div>
             <hr class='invisible'>
-
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-
             <code class='bloque'>
-&lt;p class=&quot;menudo&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;xs&quot;&gt;...&lt;/p&gt;
-&lt;p&gt;...&lt;/p&gt;
-&lt;p class=&quot;pequeno&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;sm&quot;&gt;...&lt;/p&gt;
-&lt;p class=&quot;mediano&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;md&quot;&gt;...&lt;/p&gt;
 &lt;p class=&quot;grande&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;lg&quot;&gt;...&lt;/p&gt;
             </code>
             <hr class='invisible'>
-
             <h4 class='Pizarra gruesa'>Vistazo (span)</h4>
-            <p>El énfasis de vistazo sigue la misma línea que el de párrafo anterior.</p>
+            <p>El énfasis de <code class='linea'>&lt;span></code> o vistazo abarca la misma nomenclatura que la del párrafo <code class='linea'>&lt;p></code>. Su función es utilizar una sentencia dentro de un texto continuo para otorgarle una serie de estilos diferenciales. También se utiliza para pequeños textos de introducción o referencia. Puedes usar la clase 'centrado' para centrar el texto.</p>
 
-            <h1 class='rojo menudo en-linea relleno-der-sm'>h1</h1> 
-            <h2 class='rojo menudo en-linea relleno-der-sm'>h2</h2>
-            <h3 class='rojo menudo en-linea relleno-der-sm'>h3</h3>
-            <h4 class='rojo menudo en-linea relleno-der-sm'>h4</h4>
-            <h5 class='rojo menudo en-linea relleno-der-sm'>h5</h5>
-            <h6 class='rojo menudo en-linea relleno-der-sm'>h6</h6>
-            <span class='xs sin-margen'><b>Menudo (xs)</b> <br> Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento 
-            <i>me bañe la cabeza.</i></span>
+            <code class='bloque'>
+span {
+    margin: @margen-span;
+    display: inline-block;
+    line-height: 25/@em;
+
+    // centrado
+    &.centrado{
+        display: block;
+        margin: 0 auto;
+    }
+  }
+            </code>
             <hr class='invisible'>
+            <h4 class='pizarra gruesa'>Tamaños de vistazo</h4>
+            <h5 class='pizarra'>Tamaños por defecto (xs, sm, md, lg)</h5>
+            <p>Los tamaños de span están reglamentados por la misma nomenclatura que dispone la <a href='#'>grilla</a> de <a href='#'>Bootstrap</a>, al igual que en los tamaños de párrafo.</p>
 
-            <h1 class='rojo en-linea relleno-der-sm'>h1</h1>
-            <h2 class='rojo en-linea relleno-der-sm'>h2</h2>
-            <h3 class='rojo en-linea relleno-der-sm'>h3</h3>
-            <h4 class='rojo en-linea relleno-der-sm'>h4</h4>
-            <h5 class='rojo en-linea relleno-der-sm'>h5</h5>
-            <h6 class='rojo en-linea relleno-der-sm'>h6</h6>
-            <span class='sin-margen'><b>Estándar</b> <br> Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento 
+            <span class='xs margen-inf-sm'><b>Menudo (xs)</b> <br> Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento 
             <i>me bañe la cabeza.</i></span>
-            <hr class='invisible'>
 
-            <h1 class='rojo pequeno en-linea relleno-der-sm'>h1</h1>
-            <h2 class='rojo pequeno en-linea relleno-der-sm'>h2</h2>
-            <h3 class='rojo pequeno en-linea relleno-der-sm'>h3</h3>
-            <h4 class='rojo pequeno en-linea relleno-der-sm'>h4</h4>
-            <h5 class='rojo pequeno en-linea relleno-der-sm'>h5</h5>
-            <h6 class='rojo pequeno en-linea relleno-der-sm'>h6</h6>
-            <span class='sm'><b>Pequeño (sm)</b><br> Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento 
+            <span class='sm margen-inf-sm'><b>Pequeño (sm)</b><br> Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento 
              <i>me bañe la cabeza.</i> </span>
-            <hr class='invisible'>
 
-            <h1 class='rojo mediano en-linea relleno-der-sm'>h1</h1>
-            <h2 class='rojo mediano en-linea relleno-der-sm'>h2</h2>
-            <h3 class='rojo mediano en-linea relleno-der-sm'>h3</h3>
-            <h4 class='rojo mediano en-linea relleno-der-sm'>h4</h4>
-            <h5 class='rojo mediano en-linea relleno-der-sm'>h5</h5>
-            <h6 class='rojo mediano en-linea relleno-der-sm'>h6</h6>
-            <span class='md'><b>Mediano (md)</b><br> Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento 
+            <span class='md margen-inf-sm'><b>Mediano (md)</b><br> Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento 
             <i>me bañe la cabeza.</i></span>
-            <hr class='invisible'>
 
-            <h1 class='rojo gigante en-linea relleno-der-sm'>h1</h1>
-            <h2 class='rojo gigante en-linea relleno-der-sm'>h2</h2>
-            <h3 class='rojo gigante en-linea relleno-der-sm'>h3</h3>
-            <h4 class='rojo gigante en-linea relleno-der-sm'>h4</h4>
-            <h5 class='rojo gigante en-linea relleno-der-sm'>h5</h5>
-            <h6 class='rojo gigante en-linea relleno-der-sm'>h6</h6>
-            <span class='lg'><b>Grande (lg)</b> <br> Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento 
+            <span class='lg margen-inf-sm'><b>Grande (lg)</b> <br> Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento 
             <i>me bañe la cabeza.</i></span>
-            <hr class='invisible'>
 
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
 
             <code class='bloque'>
-&lt;span class=&quot;menudo&quot;&gt;...&lt;/span&gt;, &lt;span class=&quot;xs&quot;&gt;...&lt;/span&gt;
-&lt;span&gt;...&lt;/span&gt;
-&lt;span class=&quot;pequeno&quot;&gt;...&lt;/span&gt;, &lt;span class=&quot;sm&quot;&gt;...&lt;/span&gt;
-&lt;span class=&quot;mediano&quot;&gt;...&lt;/span&gt;, &lt;span class=&quot;md&quot;&gt;...&lt;/span&gt;
-&lt;span class=&quot;grande&quot;&gt;...&lt;/span&gt;, &lt;span class=&quot;lg&quot;&gt;...&lt;/span&gt;
+    //  Tamaños de Vistazo:
+span {
+    &.xs, &.menudo {
+      font-size: @span-xs;
+      line-height: @interlinea * 1.1;
+    }
+    &.sm, &.pequeno{
+      font-size: @span-sm;
+      line-height: @interlinea;
+    }
+    &.md, &.mediano {
+      font-size: @span-md;
+      line-height: @interlinea;
+    }
+    &.lg, &.grande { 
+      font-size: @span-lg;
+      line-height: @interlinea;
+    }
+}
             </code>
-            <hr class='invisible'>
+        </div> <!-- fin de este contenido -->
 
-            <!-- Listas -->
-            <h4 class='pizarra gruesa'>Tamaños de listas</h4>
-            <h6>Desordenada</h6>
+        <div class="tab-pane fade" id="listas">
+           <h4 class='pizarra gruesa'>Uso de listas</h4>
+            <p>Las listas <code class='linea'>&lt;ul></code> y <code class='linea'>&lt;ol></code> tienen por defecto un font-size de <b>16px</b> (<span class='verde'>@cuerpo</span>), una interlinea de <b>25/</b><span class='verde'>@em</span> (donde <span class='verde'>@em</span> = <span class='verde'>@cuerpo</span> * <b>1em</b>), un color oscuro (<span class='verde'>@pizarra</span>), un padding-left o relleno izquierdo de <b>40px</b> (<span class='verde'>@relleno-lista</span>) y un margin-bottom o margen inferior de <b>30px</b> (<span class='verde'>@margen-lista</span>). Si quieres abolir el relleno debes agregar la clase <i>'sin-relleno'</i> (padding: 0px). Si quieres abolir el margen debes agregar la clase <i>'sin-margen'</i> (margin: 0px). En el ejemplo a continuación se muestran los dos tipos de listas: <b>ordenada</b> y <b>desordenada</b>. La jerarquía da cuenta de cómo los sub-elementos de una lista se anidan en otra con su debido orden y estructura de numeración o etiquetas.</p>
+            <h5 class='pizarra'>Listas por defecto</h5>
             <div class='fila'>
                 <div class='col-md-6 col-sm-12 col-xs-12'>
+                    <ul>
+                        <li>Primer elemento</li>
+                        <li>Segundo elemento</li>
+                        <li>Tercer elemento</li>
+                    </ul>
+                </div>
+                <div class='col-md-6 col-sm-12 col-xs-12'>
+                    <ol>
+                        <li>Primer elemento</li>
+                        <li>Segundo elemento</li>
+                        <li>Tercer elemento</li>
+                    </ol>
+                </div>
+            </div>
+            <h5 class='pizarra'>Jerarquía</h5>
+            <div class='fila'>
+                <div class='col-md-6 col-sm-12 col-xs-12'>
+                    <ul>
+                        <li>Primer elemento</li>
+                            <ul>
+                                <li>Primer sub-elemento
+                                    <ul>
+                                        <li>Primer sub-sub-elemento</li>
+                                    </ul>
+                                 </li>
+                                <li>Segundo sub-elemento</li>
+                            </ul>
+                        </li>
+                        <li>Tercer elemento</li>
+                    </ul>
+                </div>
+                <div class='col-md-6 col-sm-12 col-xs-12'>
+                    <ol>
+                        <li>Segundo elemento</li>
+                            <ol>
+                                <li>Primer sub-elemento</li>
+                                    <ol>
+                                        <li>Primer sub-sub-elemento</li>
+                                    </ol>
+                                <li>Tercer sub-elemento</li>
+                            </ol>
+                        <li>Cuarto elemento</li>
+                    </ol>
+                </div>
+            </div>
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+            <code class='bloque'>
+ul, ol {
+    line-height: 25/@em;
+    font-size: @cuerpo;
+    color: @pizarra;
+    padding: @relleno-lista;
+    margin: @margen-lista;
+
+    // Para evitar espaciado en una lista dentro de otra
+    ul, ol{
+        margin: 0 !important;
+    }
+
+    // Para abolir padding
+    &.sin-relleno{
+        padding: 0;
+    }
+
+    // Para abolir margin
+    &.sin-margen{
+        margin: 0;
+    }
+}
+            </code>
+            <hr class='invisible'>
+            <h4 class='pizarra gruesa'>Tamaños de listas</h4>
+            <h5 class='pizarra'>Tamaños por defecto (xs, sm, md, lg)</h5>
+            <p>Los tamaños de lista están reglamentados por la misma nomenclatura que dispone la <a href='#'>grilla</a> de <a href='#'>Bootstrap</a>, donde <b>'xs'</b> dicta el valor <i>'Extra Small'</i> o tamaño de título más pequeño; <b>'sm'</b> dicta el valor <i>'Small'</i> o tamaño pequeño; <b>'md'</b> dicta el valor de <i>'medium'</i> o mediano y <b>'lg'</b> dicta el valor <i>'large'</i> o tamaño <b>gigante</b>, para establecer cuatro diferentes necesidades o contextos de uso de listas en un layout determinado.</p>
+            <div class='fila'>
+                <div class='col-md-6 col-sm-6 col-xs-12'>
+                    <h6>Desordenada</h6>
                     <ul class='xs'>
-                        <b>Menuda</b>
+                        <b>Menuda {xs}</b>
                         <li>Primer elemento</li>
                         <li>Segundo elemento
                             <ul class='xs'>
@@ -533,11 +625,9 @@ h5, h6{
                         <li>Tercer elemento</li>
                         <li>Cuarto elemento</li>
                     </ul>
-                    <hr class='invisible'>
-                </div>
-                <div class='col-md-6 col-sm-12 col-xs-12'>
                     <ul>
-                    <b>Estándar</b>
+                    
+                    <b>Pequeña {sm}</b>
                         <li>Primer elemento</li>
                         <li>Segundo elemento
                             <ul>
@@ -552,13 +642,9 @@ h5, h6{
                         <li>tercer elemento</li>
                         <li>cuarto elemento</li>
                     </ul>
-                    <hr class='invisible'>
-                </div>
-            </div>
-            <div class='fila'>
-                <div class='col-md-6 col-sm-12 col-xs-12'>
-                    <ul class='sm'>
-                    <b>Pequeña</b>
+                    
+                  <ul class='sm'>
+                    <b>Mediana {md}</b>
                         <li>Primer elemento</li>
                         <li>Segundo elemento
                             <ul class='sm'>
@@ -573,11 +659,9 @@ h5, h6{
                         <li>tercer elemento</li>
                         <li>cuarto elemento</li>
                     </ul>
-                    <hr class='invisible'>
-                </div>
-                <div class='col-md-6 col-sm-12 col-xs-12'>
+                    
                     <ul class='md'>
-                    <b>Grande</b>
+                    <b>Grande {lg}</b>
                         <li>Primer elemento</li>
                         <li>Segundo elemento</li>
                             <ul class='md'>
@@ -590,42 +674,12 @@ h5, h6{
                         <li>tercer elemento</li>
                         <li>cuarto elemento</li>
                     </ul>
-                    <hr class='invisible'>
+                    
                 </div>
-            </div>
-
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-            <code class='bloque'>
-&lt;ul class='xs'&gt;
-    &lt;li&gt;...&lt;/li&gt;
-    &lt;li&gt;...&lt;/li&gt;
-    &lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ul class='xs'&gt;
-    &lt;li&gt;...&lt;/li&gt;
-    &lt;li&gt;...&lt;/li&gt;
-    &lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ul class='sm'&gt;
-    &lt;li&gt;...&lt;/li&gt;
-    &lt;li&gt;...&lt;/li&gt;
-    &lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ul class='md'&gt; // 'lg'
-    &lt;li&gt;...&lt;/li&gt;
-    &lt;li&gt;...&lt;/li&gt;
-    &lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;
-            </code>
-            <hr class='invisible'>
-            <h6>Ordenada</h6>
-            <div class='fila'>
-                <div class='col-md-6 col-sm-12 col-xs-12'>
-                    <ol class='xs'>
-                        <b>Menuda</b>
+                <div class='col-md-6 col-sm-6 col-xs-12'>
+                <h6>Ordenada</h6>
+                  <ol class='xs'>
+                        <b>Menuda {xs}</b>
                         <li>Primer elemento</li>
                         <li>Segundo elemento</li>
                             <ol class='xs'>
@@ -638,11 +692,9 @@ h5, h6{
                         <li>Cuarto elemento</li>
                         <li>Quinto elemento</li>
                     </ol>
-                    <hr class='invisible'>
-                </div>
-                <div class='col-md-6 col-sm-12 col-xs-12'>
+                    
                     <ol>
-                        <b>Estándar</b>
+                        <b>Pequeña {sm}</b>
                         <li>Primer elemento</li>
                         <li>Segundo elemento</li>
                             <ol>
@@ -655,13 +707,9 @@ h5, h6{
                         <li>Cuarto elemento</li>
                         <li>Quinto elemento</li>
                     </ol>
-                    <hr class='invisible'>
-                </div>
-            </div>
-            <div class='fila'>
-                <div class='col-md-6 col-sm-12 col-xs-12'>
-                    <ol class='sm'>
-                        <b>Pequeña</b>
+                    
+                   <ol class='sm'>
+                        <b>Mediana {md}</b>
                         <li>Primer elemento</li>
                         <li>Segundo elemento</li>
                             <ol class='sm'>
@@ -674,11 +722,9 @@ h5, h6{
                         <li>Cuarto elemento</li>
                         <li>Quinto elemento</li>
                     </ol>
-                    <hr class='invisible'>
-                </div>
-                <div class='col-md-6 col-sm-12 col-xs-12'>
+                    
                     <ol class='md'>
-                        <b>Grande</b>
+                        <b>Grande {lg}</b>
                         <li>Primer elemento</li>
                         <li>Segundo elemento</li>
                             <ol class='md'>
@@ -690,49 +736,47 @@ h5, h6{
                             </ol>
                         <li>Cuarto elemento</li>
                         <li>Quinto elemento</li>
-                    </ol>
-                    <hr class='invisible'>
+                    </ol> 
                 </div>
             </div>
 
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>  
+            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
             <code class='bloque'>
-&lt;ol class='xs'&gt;
-    &lt;li&gt;...&lt;/li&gt;
-    &lt;li&gt;...&lt;/li&gt;
-    &lt;li&gt;...&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol class='xs'&gt;
-    &lt;li&gt;...&lt;/li&gt;
-    &lt;li&gt;...&lt;/li&gt;
-    &lt;li&gt;...&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol class='sm'&gt;
-    &lt;li&gt;...&lt;/li&gt;
-    &lt;li&gt;...&lt;/li&gt;
-    &lt;li&gt;...&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ol class='md'&gt; // 'lg'
-    &lt;li&gt;...&lt;/li&gt;
-    &lt;li&gt;...&lt;/li&gt;
-    &lt;li&gt;...&lt;/li&gt;
-&lt;/ol&gt;
+ul{
+    &.xs, &.menudo {
+      font-size: @lista-xs;
+      line-height: @interlinea * 1.1;
+    }
+    &.sm, &.pequeno {
+      font-size: @lista-sm;
+      line-height: 150%;
+    }
+    &.md, &.mediano {
+      font-size: @lista-md;
+      line-height: 150%;
+    }
+    &.lg, &.grande { 
+      font-size: @lista-lg;
+      line-height: 150%;
+    }
+}
             </code>
-            <hr class='invisible'>
+        </div>
 
-            <!-- Grosores -->
-            <h4 class='pizarra gruesa'>Grosores</h4>
-            <p>Las variables de fuente de acuerdo al grosor están estandarizadas por cuatro clases más la que viene por defecto.</p>
 
+        <div class="tab-pane fade" id="estilos">
+            <h4 class='pizarra gruesa'>Uso de estilos tipográficos</h4>
+            <p>Lo estilos tipográficos corresponden a <b>grosor</b>, <b>carácter</b> y <b>alineación</b>. Son necesarios para otorgar un énfasis diferente en un párrafo, sentencia o palabra de acuerdo a un contexto de lectura determinado.</p>
+
+            <h5 class='pizarra'>Estilos de grosor</h5>
+            <p>Los estilos de grosor son seis: '<i>ultrafino</i>' corresponde a un peso de <b>100</b> (<span class='verde'>@peso-ultrafino</span>), '<i>fino</i>' corresponde a un peso de <b>200</b> (<span class='verde'>@peso-fino</span>), '<i>estándar</i>' corresponde a un peso de <b>300</b> (<span class='verde'>@peso-estandar</span>), '<i>semigrueso</i>' corresponde a un peso de <b>400</b> (<span class='verde'>@peso-semigruesa</span>), '<i>grueso</i>' corresponde a un peso de <b>700</b> (<span class='verde'>@peso-gruesa</span>) y '<i>pesada</i>' corresponde a un peso de <b>900</b> (<span class='verde'>@peso-pesada</span>).</p>
+
+            <p class='ultra-fino'>Esto es un texto ultrafino</p>
             <p class='fino'>Esto es un texto fino</p>
             <p>Esto es un texto estándar</p>
             <p class='semi-gruesa'>Esto es un texto semigrueso</p>
             <p class='gruesa'>Esto es un texto grueso (negrita)</p>
             <p class='pesada'>Esto es un texto pesado</p>
-            <hr class='invisible'>
 
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
 
@@ -746,14 +790,14 @@ h5, h6{
             <hr class='invisible'>
 
             <!-- Estilos -->
-            <h4 class='pizarra gruesa'>Estilos de carácter</h4>
-            <p>Estilos de ajuste tipográfico de manera estándar</p>
+            <h5 class='pizarra gruesa'>Estilos de carácter</h5>
+            <p>Los estilos de carácter son cinco: '<i>italica</i>' corresponde a la etiqueta <code class='linea'>&lt;i></code> (<span class='verde'>@italica</span>), '<i>altas</i>', o texto en versalitas corresponde a la clase del mismo nombre (<span class='verde'>@texto-altas</span>), '<i>bajas</i>' corresponde al texto estándar con la clase del mismo nombre (<span class='verde'>@texto-bajas</span>), '<i>subrayado</i>' corresponde a la etiqueta <code class='linea'>&lt;u></code> y '<i>descartato</i>' corresponde a la etiqueta <code class='linea'>&lt;s></code>.</p>
 
             <p class='italica'>Esto es un texto en cursiva</p>
             <p class='altas'>Esto es un texto en altas</p>
             <p class='bajas'>Esto es un texto en bajas</p>
             <p class='subrayado'><u>Esto es un texto subrayado</u></p>
-            <p class='subrayado'><s>Esto es un texto descartado</s></p>
+            <p class='descartado'><s>Esto es un texto descartado</s></p>
              <hr class='invisible'>
 
             <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
@@ -768,8 +812,8 @@ h5, h6{
             <hr class='invisible'>
 
             <!-- Alineación -->
-            <h4 class='pizarra gruesa'>Alineación</h4>
-            <p>Estilos de ajuste en función de alinear el texto hacia alguna dirección.</p>
+            <h5 class='pizarra gruesa'>Estilos de alineación</h5>
+            <p>Los estilos de alineación son tres: <i>izquierda</i> o estándar, corresponde a la clase del mismo nombre (<span class='verde'>@izquierda</span>), <i>centrado</i> corresponde a la clase del mismo nombre (<span class='verde'>@centrado</span>) y <i>derecha</i> corresponde a la clase del mismo nombre (<span class='verde'>@derecha</span>) y se utilizan para alinear el texto en cierta dirección.</p>
 
             <p class='izquierda ancho-maximo'>Esto es un texto a la izquierda</p>
             <p class='centrado ancho-maximo'>Esto es un texto centrado</p>
@@ -783,8 +827,7 @@ h5, h6{
 &lt;p class=&quot;centrado ancho-maximo&quot;&gt;...&lt;/p&gt;
 &lt;p class=&quot;derecha ancho-maximo&quot;&gt;...&lt;/p&gt;
             </code>
-        </div> <!-- fin de este contenido -->
-
+        </div>
 
         <div class="tab-pane fade" id="clases">
             <h4 class='pizarra gruesa'>Clases diferenciales</h4>
