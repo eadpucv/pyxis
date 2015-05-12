@@ -71,22 +71,36 @@ and jack.</p>
                 </div>
             </div>
 
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+<div class='fila'>
+<div class='col-md-6'>
+            <h5 class='pizarra fino linea-lateral'>HTML</h5>
+            <code class='bloque'> 
+// Código de uso html
+
+&lt;p class='sans'>Grumpy wizards make toxic brew for the evil queen and jack.&lt;/p> 
+&lt;p class='condensado'>Grumpy wizards make toxic brew for the evil queen and jack.&lt;/p>
+&lt;p class='serif'>Grumpy wizards make toxic brew for the evil queen and jack.&lt;/p>
+            </code>
+</div>
+<div class='col-md-6'>
+            <h5 class='pizarra fino linea-lateral'>LESS</h5>
             <code class='bloque'> 
 // Variables tipográficas
 
-@sans:                          'Source Sans Pro';
-@cond:                          'Open Sans Condensed';
-@serif:                         'Palatino','Times New Roman', Times,'georgia', serif;
-@texto-continuo:                @sans;
-@italica:                       'Palatino', 'Source Sans Pro', serif;
-@italica-cond:                  @cond;
-@mono:                          'Lucida Console', monospace;
-@tipografia:                    'Palatino', 'georgia', serif;
-@tipografia-titulos:            @sans;
-@tipografia-titulos-cond:       @cond;
-@tipografia-referencias:        'Source Sans Pro';
+@sans:                        'Source Sans Pro';
+@cond:                        'Open Sans Condensed';
+@serif:                       'Palatino','Times New Roman', Times,'georgia', serif;
+@texto-continuo:              @sans;
+@italica:                     'Palatino', 'Source Sans Pro', serif;
+@italica-cond:                @cond;
+@mono:                        'Lucida Console', monospace;
+@tipografia:                  'Palatino', 'georgia', serif;
+@tipografia-titulos:          @sans;
+@tipografia-titulos-cond:     @cond;
+@tipografia-referencias:      'Source Sans Pro';
             </code>
+    </div>
+    </div>
         </div>
         <div class="tab-pane fade" id="encabezados">
             <h4 class='pizarra gruesa'>Uso de títulos</h4>
@@ -99,8 +113,77 @@ and jack.</p>
             <h5 class='margen-defecto'>Encabezado de Quinto Nivel<small>{21px}</small></h5>
             <h6 class='sin-margen'>Encabezado de Sexto Nivel<small>{19px}</small></h6>
             <hr class='invisible'></hr>
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+<div class='fila'>
+<div class='col-md-6 margen-inf-sm'>
+            <h5 class='pizarra fino linea-lateral'>HTML</h5>
+            <code class='bloque'>
+&lt;h1 class='margen-defecto'>Encabezado de Primer Nivel&lt;/h1>
+&lt;h2 class='margen-defecto'>Encabezado de Segundo Nivel>&lt;/h2>
+&lt;h3 class='margen-defecto'>Encabezado de Tercer Nivel&lt;/h3>
+&lt;h4 class='margen-defecto'>Encabezado de Cuarto Nivel&lt;/h4>
+&lt;h5 class='margen-defecto'>Encabezado de Quinto Nivel&lt;/h5>
+&lt;h6 class='sin-margen'>Encabezado de Sexto Nivel&lt;/h6>
+            </code>
+    </div>
+<div class='col-md-6'>
+            <h5 class='pizarra fino linea-lateral'>LESS</h5>
             <code class='bloque'> 
+// Variables de títulos
+
+    // Tamaños
+
+@font-size-titulos-1:     2.2em; //33px
+@font-size-titulos-2:     1.93333333em; //29px
+@font-size-titulos-3:     1.8em; //27px
+@font-size-titulos-4:     1.5333333em; //23px
+@font-size-titulos-5:     1.26666667em; //19px
+@font-size-titulos-6:     1.13333333em; //17px
+
+    // Estilos
+
+@color-titulos-1:               @rojo;
+@color-titulos-2:               @pizarra;
+@peso-titulos-1:                @peso-gruesa;
+@peso-titulos-2:                @peso-estandar;
+@margen-titulos-1:              0px 0px 10px 0px;
+@margen-titulos-2:              0px 0px 15px 0px;
+        </code>
+    </div>
+    </div>
+            <hr class='invisible'></hr>
+
+            <h5 class='pizarra'>Ejemplos de uso simple</h5>
+            <p>El uso simple de títulares radica en la legibilidad de un encabezado sin un titular secundario; es decir, un título que <b>por sí solo</b> encabeza un párrafo de texto continuo. En el primer grupo <b>(h1, h2, h3)</b> los encabezados se muestran en rojo (<span class='verde'>@rojo</span>) y con un margen inferior de <b>10px</b> (<span class='verde'>@margen-titulos-1</span>). En el segundo grupo <b>(h4, h5, h6)</b> los encabezados se muestran en negro (<span class='verde'>@pizarra</span>) y adoptan un margen inferior de <b>15px</b> (<span class='verde'>@margen-titulos-2</span>), lo cual es necesario para el <i>uso múltiple</i> de titulos y lograr que el párrafo de texto continuo se ubique a mayor distancia del titular secundario que la que existe entre éste y el titulo principal, respetando un orden lógico visual. A continuación, la siguiente serie de ejemplos da cuenta del utilidad de cada titular <b>de manera individual</b> con un párrafo de texto.</p>
+            <h1>"El acto arquitectónico" de Alberto Cruz<small>{h1}</small></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
+
+            <h2>"El acto arquitectónico" de Alberto Cruz<small>{h2}</small></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
+
+            <h3>"El acto arquitectónico" de Alberto Cruz<small>{h3}</small></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
+
+            <h4>"El acto arquitectónico" de Alberto Cruz<small>{h4}</small></h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
+
+            <h5>"El acto arquitectónico" de Alberto Cruz<small>{h5}</small></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
+
+            <h6>"El acto arquitectónico" de Alberto Cruz<small>{h6}</small></h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
+<div class='fila'>
+    <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                <code class='bloque'>
+// de uso simple
+
+&lt;h1>...&lt;/h1>
+&lt;p>...&lt;/p>
+                </code>
+    </div>
+    <div class='col-md-6'>
+                <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                <code class='bloque'>
 // Títulos en 'Open Sans'
 
 h1, h2{
@@ -123,35 +206,9 @@ h5, h6{
   font-weight: @peso-titulos-2;
   margin: @margen-titulos-2;
 }
-            </code>
-            <hr class='invisible'></hr>
-
-            <h5 class='pizarra'>Ejemplos de uso simple</h5>
-            <p>El uso simple de títulares radica en la legibilidad de un encabezado sin un titular secundario; es decir, un título que <b>por sí solo</b> encabeza un párrafo de texto continuo. En el primer grupo <b>(h1, h2, h3)</b> los encabezados se muestran en rojo (<span class='verde'>@rojo</span>) y con un margen inferior de <b>10px</b> (<span class='verde'>@margen-titulos-1</span>). En el segundo grupo <b>(h4, h5, h6)</b> los encabezados se muestran en negro (<span class='verde'>@pizarra</span>) y adoptan un margen inferior de <b>15px</b> (<span class='verde'>@margen-titulos-2</span>), lo cual es necesario para el <i>uso múltiple</i> de titulos y lograr que el párrafo de texto continuo se ubique a mayor distancia del titular secundario que la que existe entre éste y el titulo principal, respetando un orden lógico visual. A continuación, la siguiente serie de ejemplos da cuenta del utilidad de cada titular <b>de manera individual</b> con un párrafo de texto.</p>
-            <h1>"El acto arquitectónico" de Alberto Cruz<small>{h1}</small></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
-
-            <h2>"El acto arquitectónico" de Alberto Cruz<small>{h2}</small></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
-
-            <h3>"El acto arquitectónico" de Alberto Cruz<small>{h3}</small></h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
-
-            <h4>"El acto arquitectónico" de Alberto Cruz<small>{h4}</small></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
-
-            <h5>"El acto arquitectónico" de Alberto Cruz<small>{h5}</small></h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
-
-            <h6>"El acto arquitectónico" de Alberto Cruz<small>{h6}</small></h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-            <code class='bloque'>
-// de uso simple
-
-&lt;h1>...&lt;/h1>
-&lt;p>...&lt;/p>
-            </code>
+                </code>
+    </div>
+    </div>
             <hr class='invisible'>
 
             <h5 class='pizarra'>Ejemplos de uso múltiple (titular secundario)</h5>
@@ -168,7 +225,20 @@ h5, h6{
             <h6>Breve reseña de la obra<small>{h6}</small></h6>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
 
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+            <h5 class='pizarra'>Otros ejemplos</h5>
+            <p>De manera opcional, existen también las combinaciones de titulares respetando el nº actual estandarizado de "headings". En estos dos ejemplos: <b>(h4-h5)</b>, <b>(h5-h6)</b>, es observable su versatilidad, tomando en cuenta que son los de menor jerarquía.</p>
+
+            <h4>"El acto arquitectónico" de Alberto Cruz<small>{h4}</small></h4>
+            <h5>Breve reseña de la obra<small>{h5}</small></h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
+
+            <h5>"El acto arquitectónico" de Alberto Cruz<small>{h5}</small></h5>
+            <h6>Breve reseña de la obra<small>{h6}</small></h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
+
+<div class='fila'>
+<div class='col-md-6 margen-inf-sm'>
+            <h5 class='pizarra fino linea-lateral'>HTML</h5>
             <code class='bloque'>
 // de uso múltiple (pares específicos)
 
@@ -183,21 +253,8 @@ h5, h6{
 &lt;h3>...&lt;/h3>
 &lt;h6>...&lt;/h6>
 &lt;p>...&lt;/p>
-            </code>
-            <hr class='invisible'>
-            <p>De manera opcional, existen también las combinaciones de titulares respetando el nº actual estandarizado de "headings". En estos dos ejemplos: <b>(h4-h5)</b>, <b>(h5-h6)</b>, es observable su versatilidad, tomando en cuenta que son los de menor jerarquía.</p>
 
-            <h4>"El acto arquitectónico" de Alberto Cruz<small>{h4}</small></h4>
-            <h5>Breve reseña de la obra<small>{h5}</small></h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
-
-            <h5>"El acto arquitectónico" de Alberto Cruz<small>{h5}</small></h5>
-            <h6>Breve reseña de la obra<small>{h6}</small></h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <i>Aenean in euismod nibh, in tincidunt tortor</i>. Vivamus vulputate eros nec tempor finibus. Proin semper porttitor enim, a varius tortor tempus ut. Curabitur laoreet ullamcorper venenatis. In hac habitasse platea dictumst. <a>Duis</a> a ligula sagittis, euismod ante vel, hendrerit odio. Mauris pulvinar tincidunt felis, ac ullamcorper est tempus et. Quisque at tortor vel diam eleifend pretium vel eget eros.</p>
-
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-            <code class='bloque'>
-// de uso múltiple (pares específicos)
+// Otros ejemplos de uso
 
 &lt;h4>...&lt;/h4>
 &lt;h5>...&lt;/h5>
@@ -206,9 +263,45 @@ h5, h6{
 &lt;h5>...&lt;/h5>
 &lt;h6>...&lt;/h6>
 &lt;p>...&lt;/p>
-            </code>
-            <hr class='invisible'>
+</code>
+</div>
+<div class='col-md-6 margen-inf-sm'>
+            <h5 class='pizarra fino linea-lateral'>LESS</h5>
+            <code class='bloque'>
+// Clases específicas
 
+h1, h2, h3, h4, h5, h6 {
+
+    &.sin-margen{
+        margin: 0 !important;
+    }
+
+    &.margen-defecto{
+      margin: 10px 0 !important;
+    }
+
+    &.en-linea{
+      display: inline-block;
+    }
+    
+    &.filete{
+      border-bottom: 1px solid @color-borde;
+      .clearfix;
+    }
+
+    &.condensado{
+      font-family: @tipografia-titulos-cond !important;
+    }
+
+    &.condensado-fino {
+      font-family: @tipografia-titulos-cond;
+      font-weight: 200;
+    }
+}
+</code>
+    </div>
+    </div>
+            <hr class='invisible'>
             <!-- Sub-Cabeceras -->
             <h4 class='pizarra gruesa'>Subtítulos</h4><a name="titulo-tres"></a>
             <p>Puedes insertar un subtítulo añadiendo la clase <code class='linea'>&lt;small></code> dentro de las etiquetas de encabezado. Se añadirá un subtítulo más fino y en una escala menor a las cabeceras comunes, pero adoptando la misma proporción en cada una; la disminución tipográfica es de un 80%.</p>
@@ -220,7 +313,9 @@ h5, h6{
             <h5 class='margen-defecto'>"El acto arquitectónico" de Alberto Cruz<small>Breve reseña de la obra</small></h5>
             <h6>"El acto arquitectónico" de Alberto Cruz<small>Breve reseña de la obra</small></h6>
 
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+<div class='fila'>
+<div class='col-md-6 margen-inf-sm'>
+            <h5 class='pizarra fino linea-lateral'>HTML</h5>
             <code class='bloque'>
 // Subtítulos "inline"
 
@@ -231,6 +326,20 @@ h5, h6{
 &lt;h5>...&lt;small>...&lt;/small>&lt;/h5>
 &lt;h6>...&lt;small>...&lt;/small>&lt;/h6>
             </code>
+    </div>
+<div class='col-md-6 margen-inf-sm'>
+            <h5 class='pizarra fino linea-lateral'>LESS</h5>
+            <code class='bloque'>
+.subtitulo {
+    font-family: @tipografia-titulos;
+    font-weight: 700;
+    color: @gris-oscuro;
+    margin: @interlinea 0 @interlinea 0;
+    vertical-align: bottom;
+}
+            </code>
+    </div>
+    </div>
             <hr class='invisible'>
             <h4 class='pizarra gruesa'>Tamaños de título</h4>
             <h5 class='pizarra'>Tamaños por defecto (xs, sm, md, lg)</h5>
@@ -239,17 +348,9 @@ h5, h6{
             <h2 class='sm'>"El acto arquitectónico"<small>{sm}</small></h2>
             <h2 class='md'>"El acto arquitectónico"<small>{md}</small></h2>
             <h2 class='lg'>"El acto arquitectónico"<small>{lg}</small></h2>
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-            <code class='bloque'>
-// uso de tamaños para &lt;h2>
 
-&lt;h2 class='xs'>...&lt;/h2>
-&lt;h2 class='sm'>...&lt;/h2>
-&lt;h2 class='md'>...&lt;/h2>
-&lt;h2 class='lg'>...&lt;/h2>
-            </code>
             <hr class='invisible'>
-           <p>También el uso múltiple de titulos está proporcionado a los tamaños que requieren para su uso en conjunto. Este es un ejemplo de tamaños para <b>&lt;h3></b> y <b>&lt;h6></b>.</p>
+            <p>También el uso múltiple de titulos está proporcionado a los tamaños que requieren para su uso en conjunto. Este es un ejemplo de tamaños para <b>&lt;h3></b> y <b>&lt;h6></b>.</p>
             <h3 class='xs'>"El acto arquitectónico"<small>{xs}</small></h3>
             <h6 class='xs'>Breve reseña de la obra<small>{xs}</small></h6>
             <h3 class='sm'>"El acto arquitectónico"<small>{sm}</small></h3>
@@ -258,19 +359,123 @@ h5, h6{
             <h6 class='md'>Breve reseña de la obra<small>{md}</small></h6>
             <h3 class='lg'>"El acto arquitectónico"<small>{lg}</small></h3>
             <h6 class='lg'>Breve reseña de la obra<small>{lg}</small></h6>
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+<div class='fila'>
+<div class='col-md-6 margen-inf-sm'>
+            <h5 class='pizarra fino linea-lateral'>HTML</h5>
             <code class='bloque'>
+// uso de tamaños para &lt;h2>
+
+&lt;h2 class='xs'>"El acto arquitectónico"&lt;/h2>
+&lt;h2 class='sm'>"El acto arquitectónico"&lt;/h2>
+&lt;h2 class='md'>"El acto arquitectónico"&lt;/h2>
+&lt;h2 class='lg'>"El acto arquitectónico"&lt;/h2>
+
 // uso de tamaños para &lt;h3> y &lt;h6>
 
-&lt;h3 class='xs'>...&lt;/h3>
-&lt;h6 class='xs'>...&lt;/h6>
-&lt;h3 class='sm'>...&lt;/h3>
-&lt;h6 class='sm'>...&lt;/h6>
-&lt;h3 class='md'>...&lt;/h3>
-&lt;h6 class='md'>...&lt;/h6>
-&lt;h3 class='lg'>...&lt;/h3>
-&lt;h6 class='lg'>...&lt;/h6>
+&lt;h3 class='xs'>"El acto arquitectónico"&lt;/h3>
+&lt;h6 class='xs'>Breve reseña de la obra&lt;/h6>
+&lt;h3 class='sm'>"El acto arquitectónico"&lt;/h3>
+&lt;h6 class='sm'>Breve reseña de la obra&lt;/h6>
+&lt;h3 class='md'>"El acto arquitectónico"&lt;/h3>
+&lt;h6 class='md'>Breve reseña de la obra&lt;/h6>
+&lt;h3 class='lg'>"El acto arquitectónico"&lt;/h3>
+&lt;h6 class='lg'>Breve reseña de la obra&lt;/h6>
             </code>
+        </div>
+<div class='col-md-6 margen-inf-sm'>
+            <h5 class='pizarra fino linea-lateral'>LESS</h5>
+            <code class='bloque'>
+//  Valores de cabecera:
+
+h1 {
+  font-size: @font-size-titulos-1; //*33/16=2.0625*//
+  color: @color-titulos-1;
+
+    &.lg, &.grande, &.gigante { 
+      font-size: (@font-size-titulos-1 * 2);}
+    &.md, &.mediano {
+      font-size: (@font-size-titulos-1 * 1.5);}
+    &.sm, &.pequeno {
+      font-size: (@font-size-titulos-1 * 1.2);}
+    &.xs, &.menudo {
+      font-size: (@font-size-titulos-1 * .8);}
+}
+
+h2 {
+  font-size: @font-size-titulos-2;  //*29/16=1.8125*//
+  color: @color-titulos-1;
+
+    &.lg, &.grande, &.gigante { 
+      font-size: (@font-size-titulos-2 * 2);}
+    &.md, &.mediano {
+      font-size: (@font-size-titulos-2 * 1.5);}
+    &.sm, &.pequeno {
+      font-size: (@font-size-titulos-2 * 1.2);}
+    &.xs, &.menudo {
+      font-size: (@font-size-titulos-2 * .8);}
+}
+
+h3 {
+  font-size: @font-size-titulos-3;  //*27/16=1.6875*//
+  color: @color-titulos-1;
+  margin: @margen-titulos-1;
+
+    &.lg, &.grande, &.gigante { 
+      font-size: (@font-size-titulos-3 * 2);}
+    &.md, &.mediano {
+      font-size: (@font-size-titulos-3 * 1.5);}
+    &.sm, &.pequeno {
+      font-size: (@font-size-titulos-3 * 1.2);}
+    &.xs, &.menudo {
+      font-size: (@font-size-titulos-3 * .8);}
+}
+
+h4 {
+  font-size: @font-size-titulos-4;  //*23/16=1.4375*//
+  color: @color-titulos-2;
+  margin: @margen-titulos-2;
+
+    &.lg, &.grande, &.gigante { 
+      font-size: (@font-size-titulos-4 * 2);}
+    &.md, &.mediano {
+      font-size: (@font-size-titulos-4 * 1.5);}
+    &.sm, &.pequeno {
+      font-size: (@font-size-titulos-4 * 1.2);}
+    &.xs, &.menudo {
+      font-size: (@font-size-titulos-4 * .8);}
+}
+
+h5 {
+  font-size: @font-size-titulos-5;  //*19/16=1.1875*//
+  color: @color-titulos-2;
+  font-weight: 400;
+
+    &.lg, &.grande, &.gigante { 
+      font-size: (@font-size-titulos-5 * 2);}
+    &.md, &.mediano {
+      font-size: (@font-size-titulos-5 * 1.5);}
+    &.sm, &.pequeno {
+      font-size: (@font-size-titulos-5 * 1.2);}
+    &.xs, &.menudo {
+      font-size: (@font-size-titulos-5 * .8);}
+}
+
+h6 {
+  font-size: @font-size-titulos-6;  //*17/16=1.0625*//
+  color: @color-titulos-2;
+
+    &.lg, &.grande, &.gigante { 
+      font-size: (@font-size-titulos-6 * 2);}
+    &.md, &.mediano {
+      font-size: (@font-size-titulos-6 * 1.5);}
+    &.sm, &.pequeno {
+      font-size: (@font-size-titulos-6 * 1.2);}
+    &.xs, &.menudo {
+      font-size: (@font-size-titulos-6 * .8);}
+}
+            </code>
+    </div>
+    </div>
         </div>
         <div class="tab-pane fade" id="parrafos">
             <h4 class='pizarra gruesa'>Uso de párrafos de texto</h4>
@@ -280,44 +485,31 @@ h5, h6{
             "</p>
             <p><i>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento me bañe la cabeza. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga"</i></p>
             <p><b>Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento me bañe la cabeza. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga</b></p> 
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+
+<div class='fila'>
+<div class='col-md-6 margen-inf-sm'>
+            <h5 class='pizarra fino linea-lateral'>HTML</h5>
             <code class='bloque'> 
-// Párrafo
-
-p{
-    margin: @margen-parrafo;
-    font-family: @texto-continuo;
-    font-size: @cuerpo;
-    line-height: @interlinea;
-    color: fade(@negro, 80%);
-    font-weight: @peso-parrafo;
-
-    //  Sin margen
-
-    &.sin-margen{
-      margin: 0;
-    }
-
-    // Alineación
-
-    &.izquierda{
-      text-align: left;
-    }
-    &.centrado{
-      text-align: center;
-    }
-    &.derecha{
-      text-align: right;
-    }
-
-    // justificado
-
-    &.justificado{
-      text-align: justify;
-      word-wrap: break-word;
-    }
-}
+&lt;p>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento me bañe la cabeza. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga"&lt;/p>
+&lt;p>&lt;i>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento me bañe la cabeza. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga"&lt;/i>&lt;/p>
+&lt;p>&lt;b>Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento me bañe la cabeza. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga&lt;/b>&lt;/p> 
             </code>
+</div>
+<div class='col-md-6 margen-inf-sm'>
+            <h5 class='pizarra fino linea-lateral'>LESS</h5>
+            <code class='bloque'> 
+// párrafo
+
+@peso-parrafo:                  @peso-estandar;
+@margen-parrafo:                0 0 25px 0;
+
+@parrafo-xs:                    @cuerpo * .85;
+@parrafo-sm:                    @cuerpo;
+@parrafo-md:                    @cuerpo * 1.2;
+@parrafo-lg:                    @cuerpo * 1.45;
+            </code>
+        </div>
+        </div>
             <hr class='invisible'>
             <h4 class='pizarra gruesa'>Tamaños de párrafo</h4>
             <h5 class='pizarra'>Tamaños por defecto (xs, sm, md, lg)</h5>
@@ -326,9 +518,21 @@ p{
             <p class='sm'><b>{sm}</b>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
             <p class='md'><b>{md}</b>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
             <p class='lg'><b>{lg}</b>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento <i>me bañe la cabeza</i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".</p>
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-            <code class='bloque'>
-//  Tamaños de Párrafos:
+<div class='fila'>
+<div class='col-md-6 margen-inf-sm'>
+            <h5 class='pizarra fino linea-lateral'>HTML</h5>
+            <code class='bloque'> 
+&lt;p class='xs'>&lt;b>{xs}&lt;/b>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".&lt;/p>
+&lt;p class='sm'>&lt;b>{sm}&lt;/b>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".&lt;/p>
+&lt;p class='md'>&lt;b>{md}&lt;/b>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".&lt;/p>
+&lt;p class='lg'>&lt;b>{lg}&lt;/b>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".&lt;/p>
+            </code>
+</div>
+<div class='col-md-6 margen-inf-sm'>
+            <h5 class='pizarra fino linea-lateral'>LESS</h5>
+            <code class='bloque'> 
+//  Todos los tamaños de Párrafos:
+
 p {
     &.lg, &.grande { 
       font-size: @parrafo-lg;
@@ -351,6 +555,8 @@ p {
     }
 }
             </code>
+        </div>
+        </div>
             <hr class='invisible'>
             <h5 class='pizarra'>Menudo (xs)</h5>
             <p>El tamaño de párrafo que responde a la clase <i>xs</i> o <i>menudo</i> contiene las propiedades de un tamaño de fuente de <b>13,6px</b> (<span class='verde'>@cuerpo * 0.85</span>) y una interlínea de <b>27.5px</b> <span class='verde'>(@interlinea * 1.1)</span>.</p>
@@ -376,10 +582,45 @@ p {
                 </div>
             </div>
             <hr class='invisible'>
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-            <code class='bloque'>
-&lt;p class=&quot;menudo&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;xs&quot;&gt;...&lt;/p&gt;
+<div class='fila'>
+<div class='col-md-6 margen-inf-sm'>
+            <h5 class='pizarra fino linea-lateral'>HTML</h5>
+            <code class='bloque'> 
+&lt;div class='fila'>
+    &lt;div class='col-md-6 col-sm-8 col-xs-12 margen-sup-sm'>
+        &lt;p class='xs sin-margen'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".&lt;/p>
+    &lt;/div>
+    &lt;div class='col-md-6 col-sm-4 col-xs-12 margen-sup-sm'>
+        &lt;p class='xs sin-margen'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".&lt;/p>
+    &lt;/div>
+&lt;/div>
+&lt;div class='fila'>
+    &lt;div class='col-md-4 col-sm-4 col-xs-12 margen-sup-sm'>
+        &lt;p class='xs sin-margen'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".&lt;/p>
+    &lt;/div>
+    &lt;div class='col-md-4 col-sm-4 col-xs-12 margen-sup-sm'>
+        &lt;p class='xs sin-margen'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".&lt;/p>
+    &lt;/div>
+    &lt;div class='col-md-4 col-sm-4 co-xs-12 margen-sup-sm'>
+        &lt;p class='xs sin-margen'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".&lt;/p>
+    &lt;/div>
+&lt;/div>
             </code>
+</div>
+<div class='col-md-6 margen-inf-sm'>
+            <h5 class='pizarra fino linea-lateral'>LESS</h5>
+            <code class='bloque'> 
+// Tamaño xs o menudo:
+
+p {
+    &.xs, &.menudo {
+      font-size: @parrafo-xs;
+      line-height: @interlinea * 1.1;
+    }
+}
+            </code>
+        </div>
+        </div>
             <hr class='invisible'> 
             <h5 class='pizarra'>Pequeño (sm)</h5>
             <p>El tamaño de párrafo que responde a la clase <i>sm</i> o <i>pequeño</i> contiene las propiedades de un tamaño de fuente de <b>13,6px</b> (<span class='verde'>@cuerpo</span>) y una interlinea de <b>23/</b><span class='verde'>@em</span> (donde <span class='verde'>@em</span> = <span class='verde'>@cuerpo</span> * <b>1em</b> = <b>1.4375em</b>).</p>
@@ -405,10 +646,45 @@ p {
                 </div>
             </div>
             <hr class='invisible'>
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-            <code class='bloque'>
-&lt;p class=&quot;menudo&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;xs&quot;&gt;...&lt;/p&gt;
+<div class='fila'>
+<div class='col-md-6 margen-inf-sm'>
+            <h5 class='pizarra fino linea-lateral'>HTML</h5>
+            <code class='bloque'> 
+&lt;div class='fila'>
+    &lt;div class='col-md-6 col-sm-8 col-xs-12 margen-sup-sm'>
+        &lt;p>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".&lt;/p>
+    &lt;/div>
+    &lt;div class='col-md-6 col-sm-4 col-xs-12 margen-sup-sm'>
+        &lt;p>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".&lt;/p>
+    &lt;/div>
+&lt;/div>
+&lt;div class='fila'>
+    &lt;div class='col-md-4 col-sm-4 col-xs-12 margen-sup-sm'>
+        &lt;p>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".&lt;/p>
+    &lt;/div>
+    &lt;div class='col-md-4 col-sm-4 col-xs-12 margen-sup-sm'>
+        &lt;p>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".&lt;/p>
+    &lt;/div>
+    &lt;div class='col-md-4 col-sm-4 co-xs-12 margen-sup-sm'>
+        &lt;p>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".&lt;/p>
+    &lt;/div>
+&lt;/div>
             </code>
+</div>
+<div class='col-md-6 margen-inf-sm'>
+            <h5 class='pizarra fino linea-lateral'>LESS</h5>
+            <code class='bloque'> 
+// Tamaño sm, pequeño o estándar:
+
+p {
+    &.sm, &.pequeno{
+      font-size: @parrafo-sm;
+      line-height: @interlinea;
+    }
+}
+            </code>
+        </div>
+        </div>
             <hr class='invisible'>
             <h5 class='pizarra'>Mediano (md)</h5>
             <p>El tamaño de párrafo que responde a la clase <i>sm</i> o <i>pequeno</i> contiene las propiedades de un tamaño de fuente de <b>19,2px</b> (<span class='verde'>@cuerpo * 1.2</span>) y una interlinea de <b>23/</b><span class='verde'>@em</span> (donde <span class='verde'>@em</span> = <span class='verde'>@cuerpo</span> * <b>1em</b> = <b>1.4375em</b>)./p>
@@ -434,10 +710,45 @@ p {
                 </div>
             </div>
             <hr class='invisible'>
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-            <code class='bloque'>
-&lt;p class=&quot;pequeno&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;sm&quot;&gt;...&lt;/p&gt;
+<div class='fila'>
+<div class='col-md-6 margen-inf-sm'>
+            <h5 class='pizarra fino linea-lateral'>HTML</h5>
+            <code class='bloque'> 
+&lt;div class='fila'>
+    &lt;div class='col-md-6 col-sm-6 col-xs-12'>
+        &lt;p class='md sin-margen relleno-sup-sm'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".&lt;/p>
+    &lt;/div>
+    &lt;div class='col-md-6 col-sm-6 col-xs-12'>
+        &lt;p class='md sin-margen relleno-sup-sm'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".&lt;/p>
+    &lt;/div>
+&lt;/div>
+&lt;div class='fila'>
+    &lt;div class='col-md-4 col-sm-12 col-xs-12'>
+        &lt;p class='md sin-margen relleno-sup-sm'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".&lt;/p>
+    &lt;/div>
+    &lt;div class='col-md-4 col-sm-8 col-xs-12'>
+        &lt;p class='md sin-margen relleno-sup-sm'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".&lt;/p>
+    &lt;/div>
+    &lt;div class='col-md-4 col-sm-4 col-xs-12'>
+        &lt;p class='md sin-margen relleno-sup-sm'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>. Sin hablar, sin pensar, iré por los senderos: Pero el amor sin límites me crecerá en el alma. Me iré lejos, dichoso, como una chica. Por los campos, tan lejos como el gitano vaga".&lt;/p>
+    &lt;/div>
+&lt;/div>
             </code>
+</div>
+<div class='col-md-6 margen-inf-sm'>
+            <h5 class='pizarra fino linea-lateral'>LESS</h5>
+            <code class='bloque'> 
+// Tamaño md o mediano:
+
+p {
+    &.md, &.mediano {
+      font-size: @parrafo-md;
+      line-height: @interlinea;
+    }
+}
+            </code>
+        </div>
+        </div>
             <hr class='invisible'>
             <h5 class='pizarra'>Grande (lg)</h5>
             <p>El tamaño de párrafo que responde a la clase <i>md</i> o <i>mediano</i> contiene las propiedades de un tamaño de fuente de <b>24px</b> (<span class='verde'>@cuerpo * 1.5</span>) y una interlinea de <b>23/</b><span class='verde'>@em</span> (donde <span class='verde'>@em</span> = <span class='verde'>@cuerpo</span> * <b>1em</b> = <b>1.4375em</b>).</p>
@@ -463,15 +774,59 @@ p {
                 </div>
             </div>
             <hr class='invisible'>
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-            <code class='bloque'>
-&lt;p class=&quot;grande&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;lg&quot;&gt;...&lt;/p&gt;
+<div class='fila'>
+<div class='col-md-6 margen-inf-sm'>
+            <h5 class='pizarra fino linea-lateral'>HTML</h5>
+            <code class='bloque'> 
+&lt;div class='fila'>
+    &lt;div class='col-md-6 col-sm-7 col-xs-12'>
+        &lt;p class='lg sin-margen relleno-sup-sm'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>..."&lt;/p>
+    &lt;/div>
+    &lt;div class='col-md-6 col-sm-5 col-xs-12'>
+        &lt;p class='lg sin-margen relleno-sup-sm'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>..."&lt;/i>&lt;/p>
+    &lt;/div>
+&lt;/div>
+&lt;div class='fila'>
+    &lt;div class='col-md-4 col-sm-12 col-xs-12'>
+        &lt;p class='lg sin-margen relleno-sup-sm'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>..."&lt;/i>&lt;/p>
+    &lt;/div>
+    &lt;div class='col-md-4 col-sm-6 col-xs-12'>
+        &lt;p class='lg sin-margen relleno-sup-sm'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>..."&lt;/p>
+    &lt;/div>
+    &lt;div class='col-md-4 col-sm-6 col-xs-12'>
+        &lt;p class='lg sin-margen relleno-sup-sm'>"Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento &lt;i>me bañe la cabeza&lt;/i>..."&lt;/p>
+    &lt;/div>
+&lt;/div>
             </code>
+</div>
+<div class='col-md-6 margen-inf-sm'>
+            <h5 class='pizarra fino linea-lateral'>LESS</h5>
+            <code class='bloque'> 
+// Tamaño sm o estándar:
+
+p {
+    &.lg, &.grande { 
+      font-size: @parrafo-lg;
+      line-height: @interlinea;
+    }
+}
+            </code>
+        </div>
+        </div>
             <hr class='invisible'>
             <h4 class='Pizarra gruesa'>Vistazo (span)</h4>
-            <p>El énfasis de <code class='linea'>&lt;span></code> o vistazo abarca la misma nomenclatura que la del párrafo <code class='linea'>&lt;p></code>. Su función es utilizar una sentencia dentro de un texto continuo para otorgarle una serie de estilos diferenciales. También se utiliza para pequeños textos de introducción o referencia. Puedes usar la clase 'centrado' para centrar el texto.</p>
-
-            <code class='bloque'>
+            <p>El énfasis de <code class='linea'>&lt;span></code> o vistazo abarca la misma nomenclatura que la del párrafo <code class='linea'>&lt;p></code>. Su función es utilizar una sentencia dentro de un texto continuo para otorgarle una serie de estilos diferenciales. También se utiliza para pequeños textos de introducción o de referencia. Puedes usar la clase 'centrado' para centrar el texto.</p>
+            <!-- codigo -->
+            <div class='fila'>
+            <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                <code class='bloque'> 
+&lt;p>...&lt;span>...&lt;/span>&lt;/p>
+                </code>
+            </div>
+            <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                <code class='bloque'> 
 span {
     margin: @margen-span;
     display: inline-block;
@@ -483,7 +838,9 @@ span {
         margin: 0 auto;
     }
   }
-            </code>
+                </code>
+            </div>
+            </div>
             <hr class='invisible'>
             <h4 class='pizarra gruesa'>Tamaños de vistazo</h4>
             <h5 class='pizarra'>Tamaños por defecto (xs, sm, md, lg)</h5>
@@ -501,29 +858,51 @@ span {
             <span class='lg margen-inf-sm'><b>Grande (lg)</b> <br> Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento 
             <i>me bañe la cabeza.</i></span>
 
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+            <!-- codigo -->
+            <div class='fila'>
+            <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                <code class='bloque'> 
+&lt;span class='xs margen-inf-sm'>&lt;b>Menudo (xs)&lt;/b> &lt;br> Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento 
+&lt;i>me bañe la cabeza.&lt;/i>&lt;/span>
 
-            <code class='bloque'>
-    //  Tamaños de Vistazo:
+&lt;span class='sm margen-inf-sm'>&lt;b>Pequeño (sm)&lt;/b>&lt;br> Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento 
+ &lt;i>me bañe la cabeza.&lt;/i> &lt;/span>
+
+&lt;span class='md margen-inf-sm'>&lt;b>Mediano (md)&lt;/b>&lt;br> Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento 
+&lt;i>me bañe la cabeza.&lt;/i>&lt;/span>
+
+&lt;span class='lg margen-inf-sm'>&lt;b>Grande (lg)&lt;/b> &lt;br> Iré, cuando la tarde cante, azul, en verano, herido por el trigo, a pisar la pradera; soñador, sentiré su frescor en mis plantas y dejaré que el viento 
+&lt;i>me bañe la cabeza.&lt;/i>&lt;/span>
+                </code>
+            </div>
+            <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                <code class='bloque'> 
 span {
-    &.xs, &.menudo {
-      font-size: @span-xs;
-      line-height: @interlinea * 1.1;
-    }
-    &.sm, &.pequeno{
-      font-size: @span-sm;
-      line-height: @interlinea;
-    }
-    &.md, &.mediano {
-      font-size: @span-md;
-      line-height: @interlinea;
-    }
     &.lg, &.grande { 
       font-size: @span-lg;
       line-height: @interlinea;
     }
-}
-            </code>
+
+    &.md, &.mediano {
+      font-size: @span-md;
+      line-height: @interlinea;
+    }
+
+    &.sm, &.pequeno{
+      font-size: @span-sm;
+      line-height: @interlinea;
+    }
+
+    &.xs, &.menudo {
+      font-size: @span-xs;
+      line-height: @interlinea * 1.1;
+    }
+  }
+                </code>
+            </div>
+            </div>
         </div> <!-- fin de este contenido -->
 
         <div class="tab-pane fade" id="listas">
@@ -546,6 +925,57 @@ span {
                     </ol>
                 </div>
             </div>
+            <!-- codigo -->
+            <div class='fila'>
+            <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                <code class='bloque'> 
+// Lista ordenada
+
+&lt;ul>
+    &lt;li>Primer elemento&lt;/li>
+    &lt;li>Segundo elemento&lt;/li>
+    &lt;li>Tercer elemento&lt;/li>
+&lt;/ul>
+
+// Lista desordenada
+
+&lt;ol>
+    &lt;li>Primer elemento&lt;/li>
+    &lt;li>Segundo elemento&lt;/li>
+    &lt;li>Tercer elemento&lt;/li>
+&lt;/ol>
+                </code>
+            </div>
+            <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                <code class='bloque'> 
+ul, ol {
+    line-height: 25/@em;
+    font-size: @cuerpo;
+    color: @pizarra;
+    padding: @relleno-lista;
+    margin: @margen-lista;
+
+    // Para evitar espaciado en una lista dentro de otra
+    ul, ol{
+        margin: 0 !important;
+    }
+
+    // Para abolir padding
+    &.sin-relleno{
+        padding: 0;
+    }
+
+    // Para abolir margin
+    &.sin-margen{
+        margin: 0;
+    }
+}
+                </code>
+            </div>
+            </div>
+            <hr class='invisible'>
             <h5 class='pizarra'>Jerarquía</h5>
             <div class='fila'>
                 <div class='col-md-6 col-sm-12 col-xs-12'>
@@ -577,31 +1007,59 @@ span {
                     </ol>
                 </div>
             </div>
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-            <code class='bloque'>
-ul, ol {
-    line-height: 25/@em;
-    font-size: @cuerpo;
-    color: @pizarra;
-    padding: @relleno-lista;
-    margin: @margen-lista;
+            <!-- codigo -->
+            <div class='fila'>
+            <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                <code class='bloque'> 
+// Lista ordenada
 
-    // Para evitar espaciado en una lista dentro de otra
-    ul, ol{
-        margin: 0 !important;
-    }
+&lt;ul>
+    &lt;li>Primer elemento&lt;/li>
+        &lt;ul>
+            &lt;li>Primer sub-elemento
+                &lt;ul>
+                    &lt;li>Primer sub-sub-elemento&lt;/li>
+                &lt;/ul>
+             &lt;/li>
+            &lt;li>Segundo sub-elemento&lt;/li>
+        &lt;/ul>
+    &lt;/li>
+    &lt;li>Tercer elemento&lt;/li>
+&lt;/ul>
 
-    // Para abolir padding
-    &.sin-relleno{
-        padding: 0;
-    }
+// Lista desordenada
 
-    // Para abolir margin
-    &.sin-margen{
-        margin: 0;
-    }
-}
-            </code>
+&lt;ol>
+    &lt;li>Segundo elemento&lt;/li>
+        &lt;ol>
+            &lt;li>Primer sub-elemento&lt;/li>
+                &lt;ol>
+                    &lt;li>Primer sub-sub-elemento&lt;/li>
+                &lt;/ol>
+            &lt;li>Tercer sub-elemento&lt;/li>
+        &lt;/ol>
+    &lt;li>Cuarto elemento&lt;/li>
+&lt;/ol>
+                </code>
+            </div>
+            <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                <code class='bloque'> 
+ol, 
+ul {position: relative;}
+
+ul li {list-style-type: disc; &.sin-estilo{list-style: none !important;}} 
+
+ul li ul li {list-style-type: circle;}
+ul li ul li ul li {list-style-type: square;}
+
+ol li {list-style-type: decimal;}
+ol li ol li {list-style-type: lower-roman; }
+ol li ol li ol li {list-style-type: lower-latin;}
+                </code>
+            </div>
+            </div>
             <hr class='invisible'>
             <h4 class='pizarra gruesa'>Tamaños de listas</h4>
             <h5 class='pizarra'>Tamaños por defecto (xs, sm, md, lg)</h5>
@@ -625,8 +1083,8 @@ ul, ol {
                         <li>Tercer elemento</li>
                         <li>Cuarto elemento</li>
                     </ul>
-                    <ul>
                     
+                    <ul>
                     <b>Pequeña {sm}</b>
                         <li>Primer elemento</li>
                         <li>Segundo elemento
@@ -740,8 +1198,79 @@ ul, ol {
                 </div>
             </div>
 
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-            <code class='bloque'>
+            <!-- codigo -->
+            <div class='fila'>
+            <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                <code class='bloque'> 
+&lt;ul class='xs'>
+    &lt;b>Menuda {xs}&lt;/b>
+    &lt;li>Primer elemento&lt;/li>
+    &lt;li>Segundo elemento
+        &lt;ul class='xs'>
+            &lt;li>Primer sub-elemento
+                &lt;ul class='xs'>
+                    &lt;li>Primer sub-sub-elemento&lt;/li>
+                &lt;/ul>
+             &lt;/li>
+            &lt;li>Segundo sub-elemento&lt;/li>
+        &lt;/ul>
+    &lt;/li>
+    &lt;li>Tercer elemento&lt;/li>
+    &lt;li>Cuarto elemento&lt;/li>
+&lt;/ul>
+
+&lt;ul>
+    &lt;b>Grande {lg}&lt;/b>
+    &lt;li>Primer elemento&lt;/li>
+    &lt;li>Segundo elemento&lt;/li>
+        &lt;ul class='md'>
+            &lt;li>Primer sub-elemento&lt;/li>
+                &lt;ul class='md'>
+                    &lt;li>Primer sub-sub-elemento&lt;/li>
+                &lt;/ul>
+            &lt;li>Segundo sub-elemento&lt;/li>
+        &lt;/ul>
+    &lt;li>tercer elemento&lt;/li>
+    &lt;li>cuarto elemento&lt;/li>
+&lt;/ul>
+
+&lt;ul class='sm'>
+    &lt;b>Mediana {md}&lt;/b>
+    &lt;li>Primer elemento&lt;/li>
+    &lt;li>Segundo elemento
+        &lt;ul class='sm'>
+            &lt;li>Primer sub-elemento
+                &lt;ul class='sm'>
+                    &lt;li>Primer sub-sub-elemento&lt;/li>
+                &lt;/ul>
+            &lt;/li>
+            &lt;li>Segundo sub-elemento&lt;/li>
+        &lt;/ul>
+    &lt;/li>
+    &lt;li>tercer elemento&lt;/li>
+    &lt;li>cuarto elemento&lt;/li>
+&lt;/ul>
+
+&lt;ul class='md'>
+    &lt;b>Grande {lg}&lt;/b>
+    &lt;li>Primer elemento&lt;/li>
+    &lt;li>Segundo elemento&lt;/li>
+        &lt;ul class='md'>
+            &lt;li>Primer sub-elemento&lt;/li>
+                &lt;ul class='md'>
+                    &lt;li>Primer sub-sub-elemento&lt;/li>
+                &lt;/ul>
+            &lt;li>Segundo sub-elemento&lt;/li>
+        &lt;/ul>
+    &lt;li>tercer elemento&lt;/li>
+    &lt;li>cuarto elemento&lt;/li>
+&lt;/ul>
+                </code>
+            </div>
+            <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                <code class='bloque'> 
 ul{
     &.xs, &.menudo {
       font-size: @lista-xs;
@@ -760,9 +1289,10 @@ ul{
       line-height: 150%;
     }
 }
-            </code>
+                </code>
+            </div>
+            </div>
         </div>
-
 
         <div class="tab-pane fade" id="estilos">
             <h4 class='pizarra gruesa'>Uso de estilos tipográficos</h4>
@@ -778,15 +1308,61 @@ ul{
             <p class='gruesa'>Esto es un texto grueso (negrita)</p>
             <p class='pesada'>Esto es un texto pesado</p>
 
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+             <!-- codigo -->
+            <div class='fila'>
+            <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                <code class='bloque'> 
+&lt;p class='ultra-fino'>Esto es un texto ultrafino&lt;/p>
+&lt;p class='fino'>Esto es un texto fino&lt;/p>
+&lt;p>Esto es un texto estándar&lt;/p>
+&lt;p class='semi-gruesa'>Esto es un texto semigrueso&lt;/p>
+&lt;p class='gruesa'>Esto es un texto grueso (negrita)&lt;/p>
+&lt;p class='pesada'>Esto es un texto pesado&lt;/p>
+                </code>
+            </div>
+            <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                <code class='bloque'> 
+// Pesos en variables
 
-            <code class='bloque'>
-&lt;p class=&quot;fino&quot;&gt;...&lt;/p&gt;
-&lt;p&gt;...&lt;/p&gt;
-&lt;p class=&quot;semi-gruesa&quot;&gt;...&lt;/p&gt;
-&lt;p class=&quot;gruesa&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;negrita&quot;&gt;...&lt;/p&gt;, &lt;p&gt;&lt;b&gt;...&lt;/b&gt;&lt;/p&gt;
-&lt;p class=&quot;pesada&quot;&gt;...&lt;/p&gt;
-            </code>
+@peso-ultrafino:                100;
+@peso-fino:                     200;
+@peso-estandar:                 300;
+@peso-semigruesa:               400;
+@peso-gruesa:                   700;
+@peso-pesada:                   900;
+
+// Pesos en clases
+
+    // nomenclatura bootstrap
+
+.peso-xs, .ultra-fino, .ultra-fina {font-weight: @peso-ultrafino}
+.peso-sm {font-weight: @peso-estandar}
+.peso-md, .gruesa, .grueso {font-weight: @peso-gruesa}
+.peso-lg, .pesada, .pesado {font-weight: @peso-pesada}
+
+    // otros
+
+.fina,
+.fino{
+  font-weight: @peso-fino;
+}
+
+// Sólo posible para títulos en @sans:
+.semi-gruesa {
+  font-family: @tipografia-titulos;
+  font-weight: @peso-semigruesa;
+}
+
+.negrita,
+strong{
+  font-weight: @peso-gruesa;
+}
+                </code>
+            </div>
+            </div>
+
             <hr class='invisible'>
 
             <!-- Estilos -->
@@ -798,17 +1374,31 @@ ul{
             <p class='bajas'>Esto es un texto en bajas</p>
             <p class='subrayado'><u>Esto es un texto subrayado</u></p>
             <p class='descartado'><s>Esto es un texto descartado</s></p>
-             <hr class='invisible'>
 
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
+             <!-- codigo -->
+            <div class='fila'>
+            <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                <code class='bloque'> 
+&lt;p class='italica'>Esto es un texto en cursiva&lt;/p>
+&lt;p class='altas'>Esto es un texto en altas&lt;/p>
+&lt;p class='bajas'>Esto es un texto en bajas&lt;/p>
+&lt;p class='subrayado'>&lt;u>Esto es un texto subrayado&lt;/u>&lt;/p>
+&lt;p class='descartado'>&lt;s>Esto es un texto descartado&lt;/s>&lt;/p>
+                </code>
+            </div>
+            <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                <code class='bloque'> 
+// Estilos de carácter
 
-            <code class='bloque'>
-&lt;p class=&quot;italica&quot;&gt;...&lt;/p&gt;, &lt;p class=&quot;cursiva&quot;&gt;&lt;/p&gt;, &lt;p&gt;&lt;i&gt;...&lt;/i&gt;&lt;/p&gt;
-&lt;p class=&quot;altas&quot;&gt;...&lt;/p&gt;
-&lt;p class=&quot;bajas&quot;&gt;...&lt;/p&gt;
-&lt;p class=&quot;subrayado&quot;&gt;...&lt;/p&gt;, &lt;p&gt;&lt;u&gt;...&lt;/u&gt;&lt;/p&gt;
-&lt;p class=&quot;descartado&quot;&gt;...&lt;/p&gt;, &lt;p&gt;&lt;s&gt;...&lt;/s&gt;&lt;/p&gt;
-            </code>
+@italica:                       'Palatino', 'Source Sans Pro', serif;
+@altas:                         uppercase;
+@bajas:                         lowercase;
+                </code>
+            </div>
+            </div>
+          
             <hr class='invisible'>
 
             <!-- Alineación -->
@@ -819,84 +1409,34 @@ ul{
             <p class='centrado ancho-maximo'>Esto es un texto centrado</p>
             <p class='derecha ancho-maximo'>Esto es un texto a la derecha</p>
             
+            <!-- codigo -->
+            <div class='fila'>
+            <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                <code class='bloque'> 
+&lt;p class='izquierda ancho-maximo'>Esto es un texto a la izquierda&lt;/p>
+&lt;p class='centrado ancho-maximo'>Esto es un texto centrado&lt;/p>
+&lt;p class='derecha ancho-maximo'>Esto es un texto a la derecha&lt;/p>
+                </code>
+            </div>
+            <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                <code class='bloque'> 
+// alineación
 
-            <h5 class='pizarra fino linea-lateral'>Declaraciones</h5>
-
-            <code class='bloque'>
-&lt;p class=&quot;izquierda ancho-maximo&gt;...&lt;/p&gt;
-&lt;p class=&quot;centrado ancho-maximo&quot;&gt;...&lt;/p&gt;
-&lt;p class=&quot;derecha ancho-maximo&quot;&gt;...&lt;/p&gt;
-            </code>
+@izquierda:                     left;
+@centrado:                      center;
+@derecha:                       right;
+                </code>
+            </div>
+            </div>
         </div>
 
         <div class="tab-pane fade" id="clases">
-            <h4 class='pizarra gruesa'>Clases diferenciales</h4>
-            <h5 class='pizarra'>Poema</h5>
-            <p>La clase "poema" funciona de igual manera que la clase "code" o "pre", ya que nos permite hacer válido todos los elementos insertos en html, incluyendo los esppacios en blanco y los enter. Esto es útil al momento de escribir poemas.</p>
-            <p class='poema'>
-                    
-                    ¿no iluminan así las estrellas a los hombres
-                    y esclarecen
-                                para que haya pueblo?
-                    
-
-                    la travesía consigue su cielo
-                    como los ojos
-                    
-
-                    su tierra así transida
-                                          ¿no expondrá en la carne
-                    
-                    un ritmo
-                            que mueva a lenguaje?
-                                                 porque sin lenguaje
-                    todas las rutas hacia nuestra intimidad
-                                                aunque se adueñen
-                    deforman y engañan
-                    
-
-                                      ¿un lenguaje?
-                    ¿acaso este
-                                el que ya escucha las olas sordas 
-                                del mar americano
-                                golpear tras toda imitación
-                                                            y arrepentimiento
-                    el que urge continente
-                                            y nos abraza con su constelación
-                    para que haya suelos?
-                    
-
-
-                    bajo su luz
-                                    la carencia se muda en riesgo
-                    de otro significado
-                                    o vuelo de un sentido
-
-                </p>
-                <code class='bloque'>
-&lt;p class=&quot;poema&quot;&gt;...&lt;/p&gt;
-                </code> 
-                <hr class='invisible'>
-                <h5 class='pizarra'>Dirección</h5>
-                <div class='direccion'>
-                    <address class='margen-sup-xs'>
-                        e[ad]
-                        Escuela de Arquitectura y Diseño
-                        Pontificia Universidad Católica de Valparaíso
-                        Contacto
-                        Matta 12, Recreo, Viña del Mar, Chile.
-                        Cód. Postal: 2580129, Casilla 4170 V2 Valparaíso
-
-                        Teléfono +56 32 2274401
-                        Fax +56 32 2274421
-                    </address>
-                </div>
-                <hr class='invisible'>
-                <code class='bloque'>
-&lt;p class=&quot;direccion&quot;&gt;...&lt;/p&gt;
-                </code>
-                <hr class='invisible'>
+            <h4 class='pizarra gruesa'>Uso de clases diferenciales</h4>
+            <p>Las clases diferenciales son aquellas clases de estilos específicos con la función de <b>minimizar el trabajo y utilizar por defecto un conjunto de estilos</b> sobre una etiqueta en relación con la tipografía. Es decir, las clases diferenciales son parte de la estandarización de estilos con la opción de ser usadas o no. A continuación se observan cinco clases de uso genérico: '<i>Poema</i>', '<i>Dirección</i>', '<i>Breadcrumbs</i>', '<i>cita</i>' y '<i>fecha evento</i>'.</p>
                 <h5 class='pizarra'>Breadcrumb</h5>
+                <p>Esta clase es necesaria para ordenar visualmente la navegación del usuario en el sitio. Los nombres de las páginas de contenido se muestran de izquierda a derecha, según se haya profundizado en la navegación.</p>
                 <ul id='breadcrumb'>
                     <li><a class='gris-oscuro'><i class='icn icn-hogar'></i></a></li>
                     <li><a class='gris-oscuro'>Actualidad</a></li>
@@ -905,44 +1445,574 @@ ul{
                     <li><a class='gris-oscuro'>Noticias</a></li>
                 </ul>
                 <hr class='invisible'>
-                <code class='bloque'>
-&lt;ul id=&quot;breadcrumb&quot;&gt;
-    &lt;li&gt;&lt;a&gt;&lt;i class='icn icn-hogar'&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a&gt;...&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-                </code>
+                 <!-- codigo -->
+                <div class='fila'>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                    <code class='bloque'> 
+&lt;ul id='breadcrumb'>
+    &lt;li>&lt;a class='gris-oscuro'>&lt;i class='icn icn-hogar'>&lt;/i>&lt;/a>&lt;/li>
+    &lt;li>&lt;a class='gris-oscuro'>Actualidad&lt;/a>&lt;/li>
+    &lt;li>&lt;a class='gris-oscuro'>Arquitectura&lt;/a>&lt;/li>
+    &lt;li>&lt;a class='gris-oscuro'>Carrusel&lt;/a>&lt;/li>
+    &lt;li>&lt;a class='gris-oscuro'>Noticias&lt;/a>&lt;/li>
+&lt;/ul>
+                    </code>
+                </div>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                    <code class='bloque'>
+#breadcrumb{
+  text-transform: uppercase;
+  font-family: @tipografia-titulos;
+
+  li{
+    display: inline-block;
+    font-family: @cond;
+    font-size: @cuerpo * .8;
+
+      &:last-child{
+        a{
+          color: @negro;
+        }
+      &:after{
+        content: none;
+      }
+    }
+
+    &:after{
+      color: @negro;
+      content: "→"
+    }
+
+    a{
+      font-family: @cond;
+      font-weight: 700;
+      .margen-horizontal-xs;
+      font-size: @cuerpo * .75;
+
+      &:hover{
+        color: @rojo;
+      }
+    }
+  }
+}
+                    </code>
+                </div>
+                </div>
                 <hr class='invisible'>
-                <h5 class='pizarra'>Cita</h5>
-                <span class='italica lg fina gris-oscuro'>Sólo lo que se idea es lo que se ve; pero lo que se idea es lo que se inventa</span>
-                <span class='italica xs negrita rojo derecha'>Martin Heidegger</span>
+                <h5 class='pizarra'>Dirección</h5>
+                <p>La etiqueta <code class='linea'>&lt;address></code> da cuenta de información específica de contacto, direcciones, teléfonos, etc.</p>
+                    <address>
+                        e[ad]
+                        Escuela de Arquitectura y Diseño
+                        Pontificia Universidad Católica de Valparaíso
+                        Contacto
+                    </adress>
+                    <address>
+                        Matta 12, Recreo, Viña del Mar, Chile.
+                    </adress>
+                    <address>
+                        Cód. Postal: 2580129, Casilla 4170 V2 Valparaíso
+                    </address>
+                    <address>
+                        Teléfono +56 32 2274401
+                        Fax +56 32 2274421
+                    </address>
+
                 <hr class='invisible'>
-                <span class='italica md gris-oscuro'>Hay dos cosas infinitas: el Universo y la estupidez humana, y del Universo no estoy seguro.</span>        
-                <span class='italica xs negrita rojo derecha'>Albert Einstein</span>
+                 <!-- codigo -->
+                <div class='fila'>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                    <code class='bloque'> 
+&lt;address>
+    e[ad]
+    Escuela de Arquitectura y Diseño
+    Pontificia Universidad Católica de Valparaíso
+    Contacto
+&lt;/adress>
+&lt;address>
+    Matta 12, Recreo, Viña del Mar, Chile.
+&lt;/adress>
+&lt;address>
+    Cód. Postal: 2580129, Casilla 4170 V2 Valparaíso
+&lt;/address>
+&lt;address>
+    Teléfono +56 32 2274401
+    Fax +56 32 2274421
+&lt;/address>
+                    </code>
+                </div>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                    <code class='bloque'>
+lala
+                    </code>
+                </div>
+                </div>
                 <hr class='invisible'>
-                <span class="xs referencias gris"><sup>[8] </sup> <strong>Norman D </strong>, <i>“El Diseño Emocional. Por qué nos gustan (o no) los objetos cotidianos.</i> Capítulo 3 Tres Niveles de diseño visceral, conductual y reflexivo. <br> Paidós Ediciones S.A. Barcelona, España. Año 2005. Páginas 81 – 121.ISBN 84-493-1729-0</span>
+                <h5 class='pizarra'>blockquote</h5>
+                <p>La etiqueta <code class='linea'>&lt;blockquote></code> es de utilidad a la hora de diferenciar un texto de referencia, una frase ajena o un texto aparte.</p>
+                <blockquote>
+                "Este estudio considera la función mecánica en organismos edificados y sus componentes, e intenta correlacionar la función de cada uno con propiedades mecánicas medibles y con la estructura observada. Las funciones, propiedades y estructuras se discuten en términos de modelos y principios de diseño" <cite>(Estructura Esencial. Curso de geometría para pensar construyendo un cuerpo estable , “Sobre la estructura esencial”, p. 10)</cite>.
+                </blockquote>
                 <hr class='invisible'>
-                <code class='bloque'>
-&lt;span class=&quot;italica md fina gris-oscuro&quot;&gt;...&lt;/span&gt;
-                </code>
+                 <!-- codigo -->
+                <div class='fila'>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                    <code class='bloque'> 
+&lt;blockquote>
+"Este estudio considera la función mecánica en organismos edificados y sus componentes, e intenta correlacionar la función de cada uno con propiedades mecánicas medibles y con la estructura observada. Las funciones, propiedades y estructuras se discuten en términos de modelos y principios de diseño" &lt;cite>(Estructura Esencial. Curso de geometría para pensar construyendo un cuerpo estable , “Sobre la estructura esencial”, p. 10)&lt;/cite>.
+&lt;/blockquote>
+                    </code>
+                </div>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                    <code class='bloque'>
+blockquote{
+    line-height: 22/@em;
+    border-left: 3px solid @gris-claro;
+    margin: 0 @cuadratin @cuadratin @cuadratin;
+    padding: 0 0 0 10px !important;
+    color: rgba(1,1,1,0.8);
+
+     //  Sin márgenes:
+      &.sin-margen{
+        margin: 0;
+      }
+
+      //  Tamaños de Párrafos:
+      &.lg { 
+        font-size: @cuerpo * 2.2;
+        line-height: 140%;
+      }
+
+      &.md {
+        font-size: @cuerpo * 1.7;
+        font-weight: 200;
+        line-height: 140%;
+      }
+
+      &.sm {
+        font-size: @cuerpo * 1.2;
+        line-height: 140%;
+      }
+
+      &.xs {
+        font-size: @cuerpo * .75;
+        line-height: @interlinea * .9;
+      }
+
+        //  Chico:
+      small {
+        display: block;
+        color: @gris-claro;
+        &:before {
+        content: '\2014 \00A0';
+      }
+    }
+}
+                    </code>
+                </div>
+                </div>
+                <hr class='invisible'>
+                <h5 class='pizarra'>Figcaption</h5>
+                <p>La etiqueta <code class='linea'>&lt;figcaption></code> es utilizada en caso de agregar un pie de imagen a una publicación.</p>
+                <figcaption class='wp-caption-text'>
+                Dibujo de observación sobre Av.Argentina en Valpraíso.
+                </figcaption>
+                <hr class='invisible'>
+                 <!-- codigo -->
+                <div class='fila'>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                    <code class='bloque'> 
+&lt;figcaption class='wp-caption-text'>
+Dibujo de observación sobre Av.Argentina en Valpraíso.
+&lt;/figcaption>
+                    </code>
+                </div>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                    <code class='bloque'>
+// Pie de imagen
+
+figcaption, .wp-caption-text{
+        line-height: 24px;
+        font-family: @serif;
+        font-weight: @peso-fino;
+        border-left: 2px solid fade(@rojo, 80);
+        display: inline-block;
+        font-size: 16px;
+        font-style: inherit !important;
+        font-style: italic !important; 
+        line-height: 16px !important;
+        .margen-sup-xs;
+        .margen-inf-sm;
+        padding: 0 0 0 10px !important;
+}
+                    </code>
+                </div>
+                </div>
+                <hr class='invisible'>
+                <h5 class='pizarra'>Cite</h5>
+                <p>La etiqueta <code class='linea'>&lt;cite></code> es útil para hacer referencia a una frase ajena o autor.</p>
+                <cite>Sólo lo que se idea es lo que se ve; pero lo que se idea es lo que se inventa</cite>
+                <hr class='invisible'>
+                 <!-- codigo -->
+                <div class='fila'>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                    <code class='bloque'> 
+&lt;cite>Sólo lo que se idea es lo que se ve; pero lo que se idea es lo que se inventa&lt;/cite>
+                    </code>
+                </div>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                    <code class='bloque'>
+lala
+                    </code>
+                </div>
+                </div>
+                <hr class='invisible'>
+                <h5 class='pizarra'>datos</h5>
+                <p>Esta clase es utilizada para mostrar los datos de una publicación con sus respectivos enlaces.</p>
+                <ul class='xs sin-relleno al-frente relleno-inf-sm sin-margen oculto-xs'>
+                <li class='sin-estilo sans negro-fundido semi-gruesa relleno-sup-sm sombra-cabecera-claro-xs'><i class='icn icn-marcador relleno-der-xs'></i>Archivado en: <a href='#' class='sans semi-gruesa'>Actualidad</a>, <a class='sans semi-gruesa' href='#'>Arquitectura</a>, <a class='semi-gruesa sans' href='#' class='sans semi-gruesa'>Carrusel</a>, <a href='#' class='sans semi-gruesa'>Investigación</a>, <a class='semi-gruesa sans' href='#' class='sans semi-gruesa'>Noticias</a>.</li>
+                <li class='sin-estilo sans negro-fundido semi-gruesa sombra-cabecera-claro-xs'><i class='icn icn-etiqueta relleno-der-xs'></i>Palabras clave: <a href='#' class='semi-gruesa sans'> Arquitectura</a>, <a class='semi-gruesa sans' href='#' class='semi-gruesa sans'>Estructura escencial</a>, <a class='semi-gruesa sans' href='#' class='sans'>Libros</a>, <a class='semi-gruesa sans' href='#' class='sans semi-gruesa'>Matemática</a>, <a href='#' class='sans semi-gruesa'>Publicaciones</a>, <a href='#' class='sans semi-gruesa'>Triángulo de Pascal</a>.</li>
+                </ul>
+                <hr class='invisible'>
+                 <!-- codigo -->
+                <div class='fila'>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                    <code class='bloque'> 
+&lt;ul class='xs sin-relleno al-frente relleno-inf-sm sin-margen oculto-xs'>
+&lt;li class='sin-estilo sans negro-fundido semi-gruesa relleno-sup-sm sombra-cabecera-claro-xs'>&lt;i class='icn icn-marcador relleno-der-xs'>&lt;/i>Archivado en: &lt;a href='#' class='sans semi-gruesa'>Actualidad&lt;/a>, &lt;a class='sans semi-gruesa' href='#'>Arquitectura&lt;/a>, &lt;a class='semi-gruesa sans' href='#' class='sans semi-gruesa'>Carrusel&lt;/a>, &lt;a href='#' class='sans semi-gruesa'>Investigación&lt;/a>, &lt;a class='semi-gruesa sans' href='#' class='sans semi-gruesa'>Noticias&lt;/a>.&lt;/li>
+&lt;li class='sin-estilo sans negro-fundido semi-gruesa sombra-cabecera-claro-xs'>&lt;i class='icn icn-etiqueta relleno-der-xs'>&lt;/i>Palabras clave: &lt;a href='#' class='semi-gruesa sans'> Arquitectura&lt;/a>, &lt;a class='semi-gruesa sans' href='#' class='semi-gruesa sans'>Estructura escencial&lt;/a>, &lt;a class='semi-gruesa sans' href='#' class='sans'>Libros&lt;/a>, &lt;a class='semi-gruesa sans' href='#' class='sans semi-gruesa'>Matemática&lt;/a>, &lt;a href='#' class='sans semi-gruesa'>Publicaciones&lt;/a>, &lt;a href='#' class='sans semi-gruesa'>Triángulo de Pascal&lt;/a>.&lt;/li>
+                    </code>
+                </div>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                    <code class='bloque'>
+lala
+                    </code>
+                </div>
+                </div>
                 <hr class='invisible'>
                 <h5 class='pizarra'>Fecha evento</h5>
-                <span class='fecha-evento'>12</span>
-                <hr class='invisible'>
-                <code class='bloque'>
-&lt;p class=&quot;fecha-evento&quot;&gt;...&lt;/p&gt;
-                </code>
-                <hr class='invisible'>
-                <div class='izquierda margen-der-xs logo en-linea'>
-                    <span class='lg bloque izquierda rojo sans'>e[ad]</span>
-                 </div>
-                <div class='izquierda relleno-sup-xs logo en-linea'>
-                    <span class='sm sans bloque negro-fundido'>Escuela de arquitectura y diseño</span>
-                    <span class='xs bloque negro-fundido en-linea'>Pontificia universidad católica de Valparaíso</span>
+                <p>La estructura básica de este ejemplo para mostrar una fecha específica, radica en escribir el <i>día</i> y el <i>mes</i>, los cuales tienen cada uno su clase dentro del contenedor <i>fecha</i>.</p>
+                <div class='fila'>
+                    <div class='col-md-12'>
+                        <div class='col-md-2 col-sm-2 oculto-xs fecha'>
+                            <p class='dia sin-margen'>12</p>
+                            <span class='mes md centrado sin-relleno'>Diciembre</span>
+                        </div>
+                        <!-- fecha para móviles -->
+                        <div class='oculto-lg oculto-md oculto-sm col-xs-3 fecha-movil'>
+                            <p class='dia sin-margen relleno-sup-xs'>12</p>
+                            <span class='mes xs centrado sin-relleno relleno-inf-xs'>Diciembre</span>
+                        </div>
+                    </div>
                 </div>
-             
-               
+                <hr class='invisible'>
+                 <!-- codigo -->
+                <div class='fila'>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                    <code class='bloque'> 
+&lt;div class='fila'>
+    &lt;div class='col-md-12'>
+        &lt;div class='col-md-2 col-sm-2 oculto-xs fecha'>
+            &lt;p class='dia sin-margen'>12&lt;/p>
+            &lt;span class='mes md centrado sin-relleno'>Diciembre&lt;/span>
+        &lt;/div>
+        &lt;!-- fecha para móviles -->
+        &lt;div class='oculto-lg oculto-md oculto-sm col-xs-3 fecha-movil'>
+            &lt;p class='dia sin-margen relleno-sup-xs'>12&lt;/p>
+            &lt;span class='mes xs centrado sin-relleno relleno-inf-xs'>Diciembre&lt;/span>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+                    </code>
+                </div>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                    <code class='bloque'>
+.fecha{
+    .borde; 
+    .izq-lineal-sm;
+    .relleno-vertical-sm; 
+    .borde-rojo; 
+    .margen-inf-xs; 
+    .sombra; 
+    .radio-sup-der-md; 
+    .radio-inf-der-md; 
+    .fondo-blanco;
+    .margen-der-md;
+    p.dia{
+        .rojo;
+        .centrado !important;
+    }
+    span.mes{
+        .condensado; 
+        .rojo;
+        .interletraje-sm;
+    }
+}
+// Fecha
+.fecha-movil{
+    .borde; 
+    .izq-lineal-sm; 
+    .borde-rojo; 
+    .radio-sup-der-md; 
+    .radio-inf-der-md;
+    .relleno-vertical-xs; 
+    .margen-der-sm; 
+    .sombra; 
+    .fondo-blanco;
+    // Día
+    .dia{
+        .rojo;
+        .centrado;
+    }
+    // Mes
+    .mes{
+        .condensado;
+        .rojo;
+        .interletraje-sm;
+    }
+}
+                    </code>
+                </div>
+                </div>
+                <hr class='invisible'>
+                <h5 class='pizarra'>Entry-title</h5>
+                <p>Esta clase tiene referencia directa con la estructura de Wordpress para nominar un título de entrada en un post o publicación (h-entry).</p>
+                <h3 class='lg entry-title'>Presentación libros Triángulo de Pascal y Estructura Esencial</h3>
+                <hr class='invisible'>
+                 <!-- codigo -->
+                <div class='fila'>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                    <code class='bloque'> 
+&lt;h3 class='lg entry-title'>Presentación libros Triángulo de Pascal y Estructura Esencial</h3>
+                    </code>
+                </div>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                    <code class='bloque'>
+.entry-title {
+    .gris-oscuro; 
+    .gruesa; 
+    .condensado;
+}
+                    </code>
+                </div>
+                </div>
+                <hr class='invisible'>
+                <h5 class='pizarra'>Logo</h5>
+                <p>La estructura básica del logo es tipográfia y está basada en dos <code class='linea'>&lt;div></code> que contienen una etiqueta <code class='linea'>&lt;span></code>.</p>
+                <div class='ancho-completo cf'>
+                <div class='bloque auto margen-inf-sm en-linea izquierda cf'>
+                <div class='izquierda margen-der-xs logo en-linea'>
+                  <span class='bloque izquierda sombra-cabecera-claro-xs relleno-der-xs rojo sans'><a class='lg ead sans' href='{{ site.baseurl }}/maquetas/home'>e[ad]</a></span>
+                </div>
+                <div class='izquierda relleno-sup-xs logo en-linea'>
+                  <span class='sm sans bloque negro'>Escuela de arquitectura y diseño</span>
+                  <span class='xs bloque izquierda sans negro-fundido en-linea'>Pontificia universidad católica de Valparaíso</span>
+                </div>
+                </div>  
+                </div>
+                <hr class='invisible'>
+                 <!-- codigo -->
+                <div class='fila'>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                    <code class='bloque'> 
+&lt;div class='ancho-completo cf'>
+&lt;div class='bloque auto margen-inf-sm en-linea izquierda cf'>
+&lt;div class='izquierda margen-der-xs logo en-linea'>
+  &lt;span class='bloque izquierda sombra-cabecera-claro-xs relleno-der-xs rojo sans'>&lt;a class='lg ead sans' href='{{ site.baseurl }}/maquetas/home'>e[ad]&lt;/a>&lt;/span>
+&lt;/div>
+&lt;div class='izquierda relleno-sup-xs logo en-linea'>
+  &lt;span class='sm sans bloque negro'>Escuela de arquitectura y diseño&lt;/span>
+  &lt;span class='xs bloque izquierda sans negro-fundido en-linea'>Pontificia universidad católica de Valparaíso&lt;/span>
+&lt;/div>
+&lt;/div>  
+&lt;/div>
+                    </code>
+                </div>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                    <code class='bloque'>
+lala
+                    </code>
+                </div>
+                </div>
+                <hr class='invisible'>
+                <h5 class='pizarra'>Entry-details</h5>
+                <p>Esta clase tiene referencia directa con la estructura de Wordpress para nominar los datos sobre fecha y autor de la publicación.</p>
+                <aside class='entry-details'>
+                    <ul class='sm sin-relleno al-frente sin-margen'>
+                        <li class='sm sin-estilo negro-fundido italica sombra-cabecera-claro-xs'>Publicaciado el 30 de octubre del 2014, por Francesca Cambiaso.</li>
+                    </ul>
+                </aside>
+                <hr class='invisible'>
+                 <!-- codigo -->
+                <div class='fila'>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                    <code class='bloque'> 
+&lt;aside class='entry-details'>
+    &lt;ul class='sm sin-relleno al-frente sin-margen'>
+        &lt;li class='sm sin-estilo negro-fundido italica sombra-cabecera-claro-xs'>Publicaciado el 30 de octubre del 2014, por Francesca Cambiaso.&lt;/li>
+    &lt;/ul>
+&lt;/aside>
+                    </code>
+                </div>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                    <code class='bloque'>
+.entry-details{
+    .italica;
+}
+                    </code>
+                </div>
+                </div>
+                <hr class='invisible'>
+                <h5 class='pizarra'>Sidebar</h5>
+                <p>La estructura básica del logo es tipográfia y está basada en dos <code class='linea'>&lt;div></code> que contienen una etiqueta <code class='linea'>&lt;span></code>.</p>
+                <div class='ancho-completo cf'>
+                <aside id='sidebar'>
+                <div class='col-md-3 col-sm-3'>
+                     <h6 class='xs seccion margen-sup'>Categorías</h6>
+                      <ul class='xs sin-relleno'>
+                        <li class='sin-estilo'><a href='#'>Actualidad</a></li>
+                        <li class='sin-estilo'><a href='#'>Estudiantes</a></li>
+                        <li class='sin-estilo'><a href='#'>Carreras</a></li>
+                      </ul>
+                      <h6 class='xs seccion margen-sup'>Carreras</h6>
+                      <ul class='xs sin-relleno'>
+                        <li class='relleno-vertical-xs borde inf-lineal-xs sup-lineal-xs sin-estilo rojo'><a href='#'>Arquitectura</a></li>
+                        <li class='sin-estilo'><a href='#'>Diseño Gráfico</a></li>
+                        <li class='sin-estilo'><a href='#'>Diseño industrial</a></li>
+                      </ul>
+                </div> <!-- fin de fila -->
+                </aside>
+                </div>
+                <hr class='invisible'>
+                 <!-- codigo -->
+                <div class='fila'>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                    <code class='bloque'> 
+&lt;div class='ancho-completo cf'>
+&lt;aside id='sidebar'>
+&lt;div class='col-md-3 col-sm-3'>
+     &lt;h6 class='xs seccion margen-sup'>Categorías&lt;/h6>
+      &lt;ul class='xs sin-relleno'>
+        &lt;li class='sin-estilo'>&lt;a href='#'>Actualidad&lt;/a>&lt;/li>
+        &lt;li class='sin-estilo'>&lt;a href='#'>Estudiantes&lt;/a>&lt;/li>
+        &lt;li class='sin-estilo'>&lt;a href='#'>Carreras&lt;/a>&lt;/li>
+      &lt;/ul>
+      &lt;h6 class='xs seccion margen-sup'>Carreras&lt;/h6>
+      &lt;ul class='xs sin-relleno'>
+        &lt;li class='relleno-vertical-xs borde inf-lineal-xs sup-lineal-xs sin-estilo rojo'>&lt;a href='#'>Arquitectura&lt;/a>&lt;/li>
+        &lt;li class='sin-estilo'>&lt;a href='#'>Diseño Gráfico&lt;/a>&lt;/li>
+        &lt;li class='sin-estilo'>&lt;a href='#'>Diseño industrial&lt;/a>&lt;/li>
+      &lt;/ul>
+&lt;/div> &lt;!-- fin de fila -->
+&lt;/aside>
+&lt;/div>
+                    </code>
+                </div>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                    <code class='bloque'>
+#sidebar{
+    .seccion{
+        .interletraje-xs;
+        .negro; 
+        .condensado; 
+        .gruesa; 
+        .altas;
+    }
+                    </code>
+                </div>
+                </div>
+                <hr class='invisible'>
+            <h5 class='pizarra'>Poema</h5>
+            <p>Esta clase, de igual manera que las etiquetas <code class='linea'>&lt;code></code> o <code class='linea'>&lt;pre></code>, funciona permitiendo que los elementos insertos en el html sean observables tal y como fueron escritos en el código, incluyendo espacios en blanco y tabulaciones. Esto es útil al momento de escribir un texto para conservar su condición original de lectura.</p>
+            <p class='poema'>   
+            ¿no iluminan así las estrellas a los hombres
+            y esclarecen
+                        para que haya pueblo?
+            
+
+            la travesía consigue su cielo
+            como los ojos
+            
+
+            su tierra así transida
+                                  ¿no expondrá en la carne
+            
+            un ritmo
+                    que mueva a lenguaje?
+                                         porque sin lenguaje
+            todas las rutas hacia nuestra intimidad
+                                        aunque se adueñen
+            deforman y engañan
+            
+
+                              ¿un lenguaje?
+                </p>
+                 <!-- codigo -->
+                <div class='fila'>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                    <code class='bloque'> 
+&lt;p class='poema'>   
+¿no iluminan así las estrellas a los hombres
+y esclarecen
+            para que haya pueblo?
+
+
+la travesía consigue su cielo
+como los ojos
+
+
+su tierra así transida
+                      ¿no expondrá en la carne
+
+un ritmo
+        que mueva a lenguaje?
+                             porque sin lenguaje
+todas las rutas hacia nuestra intimidad
+                            aunque se adueñen
+deforman y engañan
+
+
+                  ¿un lenguaje?
+    &lt;/p>
+                    </code>
+                </div>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                    <code class='bloque'>
+poem,
+.poema{
+  font-family: @serif;
+  font-size:   @cuerpo * 1.0;
+  line-height: @interlinea;
+  white-space: pre-wrap;
+}
+                    </code>
+                </div>
+                </div> 
+                <hr class='invisible'>
         </div>
     </div>
 </div>

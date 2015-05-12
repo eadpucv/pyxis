@@ -253,11 +253,6 @@ em, i{
   font-family: @italica;
   font-style: italic;
   font-weight: 300;
-    
-  &.grande{
-    letter-spacing: -.1ex;
-    font-weight: 200;
-  }
 
   &.cond,
   &.condensado,
@@ -434,12 +429,10 @@ h1, h2, h3, h4, h5, h6 {
 // Listas:
 
 ol,
-ul{
-  position: relative;
-}
+ul{position: relative;}
 
-ul li {list-style-type: disc; &.sin-estilo{list-style: none !important;}
-} 
+ul li {list-style-type: disc; &.sin-estilo{list-style: none !important;}} 
+
 ul li ul li{list-style-type: circle;}
 ul li ul li ul li{list-style-type: square;}
 
@@ -591,57 +584,77 @@ hr {
 
   // Citas:
 
-blockquote {
-  line-height: 22/@em;
+// Address
 
-  //  Sin márgenes:
-  &.sin-margen{
-    margin: 0;
-  }
+    address{
+        
+    }
 
-  //  Tamaños de Párrafos:
-  &.lg { 
-    font-size: @cuerpo * 2.2;
-    line-height: 140%;
-  }
 
-  &.md {
-    font-size: @cuerpo * 1.7;
-    font-weight: 200;
-    line-height: 140%;
-  }
+// CITA
+// -------------------------
+// 
 
-  &.sm {
-    font-size: @cuerpo * 1.2;
-    line-height: 130%;
-  }
+    blockquote{
+        line-height: 22/@em;
+        border-left: 3px solid @gris-claro;
+        margin: 0 @cuadratin @cuadratin @cuadratin;
+        padding: 0 0 0 10px !important;
+        color: rgba(1,1,1,0.8);
 
-  &.xs {
-    font-size: @cuerpo * .75;
-    line-height: @interlinea * .9;
-  }
-  
-  //  Chico:
-  small {
-    display: block;
-    color: @gris-claro;
-    &:before {
-    content: '\2014 \00A0';
-  }
-}
-  //  Pie de foto 
-  &.pie-de-foto{
-    line-height: 24px;
-    font-weight: 100;
-    border-left: 2px solid @rojo;
-    display: inline-block;
-    font-size: 12px !important;
-    font-style: italic !important; 
-    line-height: 16px !important;
-    margin: 5px 0 15px !important;
-    padding: 0 0 0 10px !important;
-  }
-}
+         //  Sin márgenes:
+          &.sin-margen{
+            margin: 0;
+          }
+
+          //  Tamaños de Párrafos:
+          &.lg { 
+            font-size: @cuerpo * 2.2;
+            line-height: 140%;
+          }
+
+          &.md {
+            font-size: @cuerpo * 1.7;
+            font-weight: 200;
+            line-height: 140%;
+          }
+
+          &.sm {
+            font-size: @cuerpo * 1.2;
+            line-height: 140%;
+          }
+
+          &.xs {
+            font-size: @cuerpo * .75;
+            line-height: @interlinea * .9;
+          }
+
+            //  Chico:
+          small {
+            display: block;
+            color: @gris-claro;
+            &:before {
+            content: '\2014 \00A0';
+          }
+        }
+    }
+
+    // Pie de imagen
+
+    figcaption, .wp-caption-text{
+            line-height: 24px;
+            font-family: @serif;
+            font-weight: @peso-fino;
+            border-left: 2px solid fade(@rojo, 80);
+            display: inline-block;
+            font-size: 16px;
+            font-style: inherit !important;
+            font-style: italic !important; 
+            line-height: 16px !important;
+            .margen-sup-xs;
+            .margen-inf-sm;
+            padding: 0 0 0 10px !important;
+    }
 
 .autor {
     line-height: 22px;
@@ -666,6 +679,7 @@ address {
   display: block;
   line-height: @interlinea;
   margin-bottom: @interlinea;
+  font-style: normal;
 }
 
 //  Código y Texto sin estilos:
@@ -701,6 +715,9 @@ code {
     background-color: @pizarra;
     line-height: 140%;
     text-shadow: none;
+    white-space: pre;
+    max-height: 160px;
+    overflow: scroll;
   }
 
   &.codigo-parrafo{
