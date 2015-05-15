@@ -16,7 +16,7 @@
          url('@{ruta-tipografias}/open-sans-condensed/opensans-condlight-webfont.woff2') format('woff2'),
          url('@{ruta-tipografias}/open-sans-condensed/opensans-condlight-webfont.ttf') format('truetype'),
          url('@{ruta-tipografias}/open-sans-condensed/opensans-condlight-webfont.svg#open_sanscondensed_light') format('svg');
-    font-weight: 200;
+    font-weight: @peso-fino;
     font-style: normal;
 }
 
@@ -29,7 +29,7 @@
          url('@{ruta-tipografias}/open-sans-condensed/opensans-condlightitalic-webfont.woff2') format('woff2'),
          url('@{ruta-tipografias}/open-sans-condensed/opensans-condlightitalic-webfont.ttf') format('truetype'),
          url('@{ruta-tipografias}/open-sans-condensed/opensans-condlightitalic-webfont.svg#open_sansCnLtIt') format('svg');
-    font-weight: 200;
+    font-weight: @peso-fino;
     font-style: italic;
 }
 
@@ -42,7 +42,7 @@
          url('@{ruta-tipografias}/open-sans-condensed/opensans-condbold-webfont.woff2') format('woff2'),
          url('@{ruta-tipografias}/open-sans-condensed/opensans-condbold-webfont.ttf') format('truetype'),
          url('@{ruta-tipografias}/open-sans-condensed/opensans-condbold-webfont.svg#open_sans_condensedbold') format('svg');
-    font-weight: 700;
+    font-weight: @peso-gruesa;
     font-style: bold;
 }
 
@@ -57,7 +57,7 @@
          url('@{ruta-tipografias}/source-sans-pro/SourceSansPro-ExtraLight-webfont.woff') format('woff'),
          url('@{ruta-tipografias}/source-sans-pro/SourceSansPro-ExtraLight-webfont.ttf') format('truetype'),
          url('@{ruta-tipografias}/source-sans-pro/SourceSansPro-ExtraLight-webfont.svg#SourceSansProExtraLight') format('svg');
-    font-weight: 100;
+    font-weight: @peso-ultrafino;
     font-style: lighter;
 }
 
@@ -69,7 +69,7 @@
          url('@{ruta-tipografias}/source-sans-pro/SourceSansPro-Light-webfont.woff') format('woff'),
          url('@{ruta-tipografias}/source-sans-pro/SourceSansPro-Light-webfont.ttf') format('truetype'),
          url('@{ruta-tipografias}/source-sans-pro/SourceSansPro-Light-webfont.svg#SourceSansProLight') format('svg');
-    font-weight: 200;
+    font-weight: @peso-fino;
     font-style: normal;
 }
 
@@ -81,7 +81,7 @@
          url('@{ruta-tipografias}/source-sans-pro/SourceSansPro-Regular-webfont.woff') format('woff'),
          url('@{ruta-tipografias}/source-sans-pro/SourceSansPro-Regular-webfont.ttf') format('truetype'),
          url('@{ruta-tipografias}/source-sans-pro/SourceSansPro-Regular-webfont.svg#SourceSansProRegular') format('svg');
-    font-weight: 300;
+    font-weight: @peso-estandar;
     font-style: normal;
 }
 
@@ -93,7 +93,7 @@
          url('@{ruta-tipografias}/source-sans-pro/SourceSansPro-Semibold-webfont.woff') format('woff'),
          url('@{ruta-tipografias}/source-sans-pro/SourceSansPro-Semibold-webfont.ttf') format('truetype'),
          url('@{ruta-tipografias}/source-sans-pro/SourceSansPro-Semibold-webfont.svg#SourceSansProSemibold') format('svg');
-    font-weight: 500;
+    font-weight: @peso-semigruesa;
     font-style: normal;
 }
 
@@ -105,7 +105,7 @@
          url('@{ruta-tipografias}/source-sans-pro/SourceSansPro-Bold-webfont.woff') format('woff'),
          url('@{ruta-tipografias}/source-sans-pro/SourceSansPro-Bold-webfont.ttf') format('truetype'),
          url('@{ruta-tipografias}/source-sans-pro/SourceSansPro-Bold-webfont.svg#SourceSansProBold') format('svg');
-    font-weight: 700;
+    font-weight: @peso-gruesa;
     font-style: bold;
 }
 
@@ -117,6 +117,12 @@
          url('@{ruta-tipografias}/source-sans-pro/SourceSansPro-Black-webfont.woff') format('woff'),
          url('@{ruta-tipografias}/source-sans-pro/SourceSansPro-Black-webfont.ttf') format('truetype'),
          url('@{ruta-tipografias}/source-sans-pro/SourceSansPro-Black-webfont.svg#SourceSansProBlack') format('svg');
-    font-weight: 900;
+    font-weight: @peso-pesada;
+    font-style: bolder;
+}
+
+@font-face {
+    font-family: 'Palatino';
+    font-weight: @peso-gruesa;
     font-style: bolder;
 }

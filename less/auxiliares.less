@@ -272,10 +272,30 @@ background-image: linear-gradient(to bottom, rgba(249, 249, 249, 0.98) 30%, rgba
 
 // Pesos
 
-.peso-xs{font-weight: 100}
-.peso-sm{font-weight: 200}
-.peso-md {font-weight: 300}
-.peso-lg{font-weight: 500}
+    // nomenclatura bootstrap
+
+.peso-xs, .ultra-fino, .ultra-fina{font-weight: @peso-ultrafino}
+.peso-sm{font-weight: @peso-estandar}
+.peso-md, .gruesa, .grueso {font-weight: @peso-gruesa}
+.peso-lg, .pesada, .pesado{font-weight: @peso-pesada}
+
+    // clases
+
+.fina,
+.fino{
+  font-weight: @peso-fino;
+}
+
+// Sólo posible para títulos en @sans:
+.semi-gruesa {
+  font-family: @tipografia-titulos;
+  font-weight: @peso-semigruesa;
+}
+
+.negrita,
+strong{
+  font-weight: @peso-gruesa;
+}
 
 
 // Bordes
