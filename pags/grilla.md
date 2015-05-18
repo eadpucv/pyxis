@@ -183,41 +183,25 @@ link-7: Anidar y offset
             <div class="tab-pane fade" id="ordenar-ocultar">
                 <h4 class='pizarra gruesa'>Ordenar columnas</h4>
                 <p>Ordenar columnas es necesario para adptar el contenido expuesto a diferentes dispositivos y anchos de pantalla. El diseño es previo a la diagramación que la grilla como herramienta sistematiza de manera funcional. Para obtener un ancho de columna específico debes guiarte con la siguiente nomenclatura: <strong>'col-(formato de tamaño)-(nº de columnas)'</strong> dentro del <code class='linea'>&lt;div></code> que la declara como clase.</p>
+                <p>En el siguiente ejemplo se puede apreciar una gran versatilidad de tamaños de columna para exponer el contenido. Al reducir el ancho de pantalla del navegador se observa, luego de un <b>breakpoint</b> declarado, el orden automático de las columnas señaladas para cada dispositivo. puedes observar el comportamiento de las columnas y compararlo con el código html.</p>
                 <div class='fila'>
                 <div class='col-lg-12 cf'>
-                    <div class='col-md-4 col-sm-4 col-xs-4 ver'><p>01</p></div>
-                    <div class='col-md-4 col-sm-4 col-xs-4 ver'><p>02</p></div>
-                    <div class='col-md-4 col-sm-4 col-xs-4 ver'><p>02</p></div>
-
-                    <div class='col-md-6 col-sm-6 col-xs-6 ver'><p>03</p></div>
-                    <div class='col-md-6 col-sm-6 col-xs-6 ver'><p>04</p></div>
-
-                    <div class='col-md-2 col-sm-2 col-xs-6 ver'><p>05</p></div>
-                    <div class='col-md-2 col-sm-2 col-xs-6 ver'><p>06</p></div>
-                    <div class='col-md-2 col-sm-2 col-xs-6 ver'><p>07</p></div>
-                    <div class='col-md-2 col-sm-2 col-xs-6 ver'><p>08</p></div>
-                    <div class='col-md-2 col-sm-2 col-xs-12 ver'><p>09</p></div>
-                    <div class='col-md-2 col-sm-2 col-xs-12 ver'><p>10</p></div>
+                    <div class='col-md-4 col-sm-4 col-xs-4 ver'>01</div>
+                    <div class='col-md-4 col-sm-4 col-xs-4 ver'>02</div>
+                    <div class='col-md-4 col-sm-4 col-xs-4 ver'>02</div>
                 </div>
+                <div class='col-lg-12 cf'>
+                    <div class='col-md-6 col-sm-6 col-xs-6 ver'>03</div>
+                    <div class='col-md-6 col-sm-6 col-xs-6 ver'>04</div>
                 </div>
-
-                <hr class='invisible'>
-                <h5 class='pizarra gruesa'>Ejemplo</h5>
-                <p>En el siguiente ejemplo se puede apreciar una gran versatilidad de tamaños de columna para exponer el contenido. Al reducir el ancho de pantalla del navegador se observa, luego de un <b>breakpoint</b> declarado, el orden automático de las columnas señaladas para cada dispositivo.</p>
-                <div class='fila'>
-                    <div class='col-md-4 col-sm-4 col-xs-4'><img class='ancho-completo margen-inf-xs' src='/img-samples/manto-ejemplo-apaisado.jpg'></div>
-                    <div class='col-md-4 col-sm-4 col-xs-4'><img class='ancho-completo margen-inf-xs' src='/img-samples/manto-ejemplo-apaisado.jpg'></div>
-                    <div class='col-md-4 col-sm-4 col-xs-4'><img class='ancho-completo margen-inf-xs' src='/img-samples/manto-ejemplo-apaisado.jpg'></div>
-
-                    <div class='col-md-6 col-sm-6 col-xs-6'><img class='ancho-completo margen-inf-xs' src='/img-samples/manto-ejemplo-apaisado.jpg'></div>
-                    <div class='col-md-6 col-sm-6 col-xs-6'><img class='ancho-completo margen-inf-xs' src='/img-samples/manto-ejemplo-apaisado.jpg'></div>
-
-                    <div class='col-md-2 col-sm-2 col-xs-6'><img class='ancho-completo' src='/img-samples/manto-ejemplo-apaisado.jpg'></div>
-                    <div class='col-md-2 col-sm-2 col-xs-6'><img class='ancho-completo' src='/img-samples/manto-ejemplo-apaisado.jpg'></div>
-                    <div class='col-md-2 col-sm-2 col-xs-6'><img class='ancho-completo' src='/img-samples/manto-ejemplo-apaisado.jpg'></div>
-                    <div class='col-md-2 col-sm-2 col-xs-6'><img class='ancho-completo' src='/img-samples/manto-ejemplo-apaisado.jpg'></div>
-                    <div class='col-md-2 col-sm-2 col-xs-12'><img class='ancho-completo' src='/img-samples/manto-ejemplo-apaisado.jpg'></div>
-                    <div class='col-md-2 col-sm-2 col-xs-12'><img class='ancho-completo' src='/img-samples/manto-ejemplo-apaisado.jpg'></div>   
+                <div class='col-lg-12 cf'>
+                    <div class='col-md-2 col-sm-4 col-xs-12 ver'>05</div>
+                    <div class='col-md-2 col-sm-4 col-xs-12 ver'>06</div>
+                    <div class='col-md-2 col-sm-4 col-xs-12 ver'>07</div>
+                    <div class='col-md-2 col-sm-4 col-xs-12 ver'>08</div>
+                    <div class='col-md-2 col-sm-4 col-xs-12 ver'>09</div>
+                    <div class='col-md-2 col-sm-4 col-xs-12 ver'>10</div>
+                </div>
                 </div>
                 <hr class='invisible'>
 
@@ -260,28 +244,19 @@ link-7: Anidar y offset
                 </div>
                 </div>
           
-
                 <h4 class='pizarra gruesa'>Ocultar columnas</h4>
                 <p>Ocultar columnas es de utilidad cuando se requiere hacer desaparecer un contenido en un ancho de pantalla específico. Para ocultar columnas debes escribir la siguiente nomenclatura: <strong>'oculto-(formato de tamaño)'</strong> dentro del <code class='linea'>&lt;div></code> que que la declara como clase. Por el contrario, puedes agregar la clase <strong>'visible-(formato de tamaño)'</strong> para que se muestre un contenido en particular, dejando a los demás ocultos.</p>
+                <p>En el siguiente ejemplo se muestra cómo una columna está oculta en el ancho de pantalla <b>mediano</b>, visible en el ancho <b>pequeño</b> y oculto en el tamaño <b>extra-pequeño</b>. Puedes reducir la pantalla del navegador para observar dicha dinámica.</p>
 
                 <div class='fila'>
                 <div class='col-lg-12'>
-                    <div class='col-md-3 col-sm-3 col-xs-12 ver'><p>01</p></div>
-                    <div class='col-md-3 col-sm-3 col-xs-12 ver'><p>02</p></div>
-                    <div class='col-md-3 col-sm-3 col-xs-12 ver'><p>03</p></div>
-                    <div class='oculto-lg oculto-md col-sm-3 oculto-xs ver'><p>04</p></div>
+                    <div class='col-md-3 col-sm-3 col-xs-12 ver'>01</div>
+                    <div class='col-md-3 col-sm-3 col-xs-12 ver'>02</div>
+                    <div class='col-md-3 col-sm-3 col-xs-12 ver'>03</div>
+                    <div class='oculto-lg oculto-md col-sm-3 oculto-xs ver'>04</div>
                 </div>
                 </div>
 
-                <hr class='invisible'>
-                <h5 class='pizarra gruesa'>Ejemplo</h5>
-                <p>En el siguiente ejemplo se muestra cómo una columna está oculta en el ancho de pantalla <b>mediano</b>, visible en el ancho <b>pequeño</b> y oculto en el tamaño <b>extra-pequeño</b>. Puedes reducir la pantalla del navegador para observar dicha dinámica.</p>
-                <div class='fila'>
-                    <div class='col-md-3 col-sm-3 col-xs-12'><img class='ancho-completo' src='/img-samples/manto-ejemplo-apaisado.jpg'></div>
-                    <div class='col-md-3 col-sm-3 col-xs-12'><img class='ancho-completo' src='/img-samples/manto-ejemplo-apaisado.jpg'></div>
-                    <div class='col-md-3 col-sm-3 col-xs-12'><img class='ancho-completo' src='/img-samples/manto-ejemplo-apaisado.jpg'></div>
-                    <div class='oculto-lg oculto-md col-sm-3 oculto-xs'><img class='ancho-completo' src='/img-samples/manto-ejemplo-apaisado.jpg'></div>
-                </div>
                 <hr class='invisible'>
                 <!-- codigo -->
                 <div class='fila'>
@@ -321,11 +296,13 @@ link-7: Anidar y offset
                     <div class='col-md-10 ver'>
                         col-md-10 (columna exterior)
                         <div class='fila'>
-                            <div class='col-md-8 ver'>
-                                col-md-8 (columna interior 1)
-                            </div>
-                            <div class='col-md-4 ver'>
-                                col-md-4 (columna interior 2)
+                            <div class='col-md-12'>
+                                <div class='col-md-8 col-xs-12 ver'>
+                                    col-md-8 (columna interior 1)
+                                </div>
+                                <div class='col-md-4 ver'>
+                                    col-md-4 (columna interior 2)
+                                </div>
                             </div>
                         </div>
                     </div>
