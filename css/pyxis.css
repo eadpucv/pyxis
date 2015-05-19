@@ -9079,22 +9079,22 @@ form.buscador input[type=submit] {
   }
 }
 ::-webkit-input-placeholder {
-  color: #282824;
-  font-weight: 300;
+  color: #c2c4ba;
+  font-weight: 200;
 }
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #282824;
-  font-weight: 300;
+  color: #c2c4ba;
+  font-weight: 200;
 }
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #282824;
-  font-weight: 300;
+  color: #c2c4ba;
+  font-weight: 200;
 }
 :-ms-input-placeholder {
-  color: #282824;
-  font-weight: 300;
+  color: #c2c4ba;
+  font-weight: 200;
 }
 @media (min-width: 1445px) {
   button,
