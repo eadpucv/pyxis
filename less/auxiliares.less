@@ -66,7 +66,7 @@ cursor: pointer;
 .fondo-negro{background-color: @negro}
 
 // Texturas
-.ruido{background-image: url("/img/ruido.png")}
+.ruido{background-image: url("/img/ruido-fondo-pyxis.png")}
 .ruido-negro{background-image: url("/img/ruido-negro-oscuro.png")}
 .textura-1{background-image: url("/img/fondo-textura-1.jpg")} 
 .textura-2{background-image: url("/img/fondo-textura-2.jpg")}
@@ -272,10 +272,30 @@ background-image: linear-gradient(to bottom, rgba(249, 249, 249, 0.98) 30%, rgba
 
 // Pesos
 
-.peso-xs{font-weight: 100}
-.peso-sm{font-weight: 200}
-.peso-md {font-weight: 300}
-.peso-lg{font-weight: 500}
+    // nomenclatura bootstrap
+
+.peso-xs, .ultra-fino, .ultra-fina{font-weight: @peso-ultrafino}
+.peso-sm{font-weight: @peso-estandar}
+.peso-md, .gruesa, .grueso {font-weight: @peso-gruesa}
+.peso-lg, .pesada, .pesado{font-weight: @peso-pesada}
+
+    // clases
+
+.fina,
+.fino{
+  font-weight: @peso-fino;
+}
+
+// Sólo posible para títulos en @sans:
+.semi-gruesa {
+  font-family: @tipografia-titulos;
+  font-weight: @peso-semigruesa;
+}
+
+.negrita,
+strong{
+  font-weight: @peso-gruesa;
+}
 
 
 // Bordes
@@ -493,8 +513,8 @@ background-image: linear-gradient(to bottom, rgba(249, 249, 249, 0.98) 30%, rgba
     display: block;
     border-radius: 5px;
     text-align: center;
-    margin: 10px;
-    padding: 5px;
+    margin: 0px 20px 20px 0;
+    padding: 10px;
     float: left;
 }
 
@@ -676,12 +696,12 @@ box-shadow:         0px 20px 30px 27px rgba(249, 249, 249, 1);
     .caja-icono {
         display: block;
         float: none;
-        width:90%;
+        width: 100%;
         height: auto;
         background-color: rgba(226, 226, 226, 1);
         display: block;
         margin: 5px 0px;
-        padding: 5px;
+        padding: 10px 0 20px 0;
         float: left;
     }
     //  Párrafo de caja-ícono

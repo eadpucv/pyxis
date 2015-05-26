@@ -245,6 +245,16 @@ footer{
 //  Extra Small screen / Phone
 @media(max-width: @screen-xs-max){
 
+//	para que no caiga el título en móviles 
+
+.franja {
+	&.xs{
+		i{
+			display: none;
+		}
+	}
+}
+
   	.pag{
 		padding: @cuadratin/1.5;
 
@@ -401,19 +411,13 @@ footer{
 		}
 	}
 
-  	.franja {
-		&.xs{
-			height: 7.5vw;
-		}
-   	}
-
 	// Ilustración de logo en Index
 	.imagen-index {
-		height: 15vw;
+		height: 13vw;
 	}
 
 	.imagen-menu {
-		height: 15vw;
+		height: 13vw;
 	}
 
 	//	Footer

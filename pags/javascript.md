@@ -26,11 +26,9 @@ intro: Texto sobre javascript
     <!-- Tab panes -->
     <div class="tab-content margen-sup">
       <div class="tab-pane fade in active" id="modal">
-        <h4 class='pizarra gruesa'>Jquery</h4>
-           <p>Los javascript se utilizan para auxiliar en la interacción entre el usuario y el sistema. Para utilizarlo, es necesario incorporar archivos que contengan los script y establecer una conexión entre elementos de HTML y el script inscrito en el archivo .js</p>
-        <h5 class='pizarra gruesa'>Modal</h5>
+        <h4 class='pizarra'>Modal o ventana emergente</h4>
+        <p>El modal es básicamente una ventana emergente utilizada para comunicar al usuario una advertencia, un comunicado, un contenido de jerarquía oculta u otro mensaje desde la plataforma. El modal debe siempre aparecer sobre el contenido de la página en la que navega el usuario a través de un z-index específico (<span class='verde'>@zindex-modal</span>).</p>
         <button class="btn btn-md" data-toggle="modal" data-target="#modal_de_ejemplo"> Ejecutar Modal </button>
-        <p>Se parte con la idea de que los formularios es donde ocurre una mayor transacción de interacción entre el usuario y el sistema. Para que que la interacción sea de manera cómoda y agradable, se incorpora un elemento de interacción adicional de manera auxiliar, donde aparece más contenido en una ventana emergente.</p>
         <div class="modal fade" id="modal_de_ejemplo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
           <div class="modal-dialog">
               <div class="modal-content">
@@ -50,389 +48,422 @@ intro: Texto sobre javascript
               </div>
           </div>
         </div>
-        <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-modal">ver código</a> 
-        <div id="ver-codigo-modal" class="collapse pag-javascript">
-          <h6>Archivos necesarios</h6>
-          <code class='margen-inf-sm'>
-&lt;script src="js/jquery.js"&gt;&lt;/script&gt;
-&lt;script src="js/modal.js"&gt;&lt;/script&gt;
-          </code>
-          <h6>Codigo de ejemplo</h6>
-          <code>
-&lt;div class="modal fade">
+        <hr class='invisible'>
+        <div class='fila'>
+          <div class='col-md-4 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                <code class='bloque'>
+&lt;button class="btn btn-md" data-toggle="modal" data-target="#modal_de_ejemplo"> Ejecutar Modal &lt;/button>
+&lt;div class="modal fade" id="modal_de_ejemplo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   &lt;div class="modal-dialog">
-    &lt;div class="modal-content">
-      &lt;div class="modal-header">
-        &lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;&lt;/button&gt;
-        &lt;h4 class="modal-title">Titulo del Modal&lt;/h4&gt;
+      &lt;div class="modal-content">
+          &lt;div class="modal-header">
+              &lt;h4 class="modal-title" id="myModalLabel">Titulo del Modal&lt;/h4>
+          &lt;/div>
+          &lt;div class="modal-body">
+            &lt;p>...&lt;/p>
+            &lt;p>...&lt;/p>
+          &lt;/div>
+          &lt;div class="modal-footer">
+              &lt;button type="button" class="btn btn-default" data-dismiss="modal">Cerrar&lt;/button>
+              &lt;button type="button" class="btn btn-primary">Otro Boton&lt;/button>
+          &lt;/div>    
       &lt;/div>
-      &lt;div class="modal-body">
-        &lt;p>Contenido del Modal&hellip;&lt;/p>
-      &lt;/div>
-      &lt;div class="modal-footer">
-        &lt;button type="button" class="btn btn-default" data-dismiss="modal">Cerrar&lt;/button&gt;
-      &lt;/div>
-    &lt;/div&gt;<!-- /.modal-content -->
-  &lt;/div&gt;<!-- /.modal-dialog -->
-&lt;/div&gt;<!-- /.modal -->
-          </code>
+  &lt;/div>
+&lt;/div>
+                </code>
+          </div>
+          <div class='col-md-4 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                <code class='bloque'>
+.modal-open {
+  overflow: hidden;
+}
+
+.modal {
+  display: none;
+  overflow: auto;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: @zindex-modal;
+  -webkit-overflow-scrolling: touch;
+
+  &.fade .modal-dialog {
+    .translate(0, -25%);
+    .transition-transform(~"0.3s ease-out");
+  }
+  &.in .modal-dialog { .translate(0, 0)}
+}
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+
+.modal-content {
+  position: relative;
+  background-color: @modal-content-bg;
+  border: 1px solid @modal-content-fallback-border-color; //old browsers fallback (ie8 etc)
+  border: 1px solid @modal-content-border-color;
+  border-radius: @border-radius-large;
+  .box-shadow(0 3px 9px rgba(0,0,0,.5));
+  background-clip: padding-box;
+  // Remove focus outline from opened modal
+  outline: none;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: @zindex-modal-background;
+  background-color: @modal-backdrop-bg;
+  // Fade for backdrop
+  &.fade { .opacity(0); }
+  &.in { .opacity(@modal-backdrop-opacity); }
+}
+
+.modal-header {
+  padding: @modal-title-padding;
+  border-bottom: 1px solid @modal-header-border-color;
+  min-height: (@modal-title-padding + @modal-title-line-height);
+}
+                </code>
+        </div>
+        <div class='col-md-4'>
+                <h5 class='pizarra fino linea-lateral'>JS</h5>
+                <code class='bloque'>
+&lt;script src="js/jquery.js">&lt;/script>
+&lt;script src="js/modal.js">&lt;/script>
+                </code>
+        </div>
         </div>
       </div>
       <div class="tab-pane fade" id="tooltip">
-        <h4 class='pizarra gruesa'>Tooltip</h4>
-            <h5 class='gruesa'>Ejemplo</h5>
+        <h4 class='pizarra gruesa'>Tooltip o viñeta de información</h4>
+        <p>El tooltip es una pequeña señal de ayuda que funciona al situar el cursor sobre algún elemento del DOM. Despliega la información del atributo "title" del elemento HTML y puede dar cuenta de una mayor contextualización hacia el usuario. Entre sus declaraciones de variables específicas se observa un ancho máximo (<span class='verde'>@tooltip-max-width</span>), un z-index (<span class='verde'>@zindex-tooltip</span>), colores (<span class='verde'>@tooltip-color</span>, <span class='verde'>@tooltip-bg</span>), etc.</p>
         <ul class="tooltip-demo margen-vertical-md">
             <li><a class='sans' data-toggle="tooltip" data-toggle="tooltip" data-original-title="Este es un tooltip funcionando">Tooltip funcionando</a></li>
-        </ul> 
-        <p>El tooltip es una pequeña señal de ayuda que funciona al situar el cursor sobre algún elemento del DOM. Despliega la información del atributo "title" del elemento HTML y puede dar cuenta de una mayor contextualización hacia el usuario</p>
-        <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-tooltip">ver código</a> 
-        <div id="ver-codigo-tooltip" class="collapse pag-javascript">
-          <h6>Archivos necesarios</h6>
-          <code class='margen-inf-sm'>
+        </ul>  
+        <hr class='invisible'>
+        <div class='fila'>
+          <div class='col-md-4 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                <code class='bloque'>
+&lt;ul class="tooltip-demo margen-vertical-md">
+    &lt;li>&lt;a class='sans' data-toggle="tooltip" data-toggle="tooltip" data-original-title="Este es un tooltip funcionando">Tooltip funcionando&lt;/a>&lt;/li>
+&lt;/ul>  
+                </code>
+          </div>
+          <div class='col-md-4 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                <code class='bloque'>
+.tooltip {
+  position: absolute;
+  z-index: @zindex-tooltip; 
+  display: block;
+  visibility: visible;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.4;
+  .opacity(0);
+
+  a{
+    &:hover{
+      color: @blanco !important;
+    }
+  }
+
+  &.in     { .opacity(@tooltip-opacity); }
+  &.top    { margin-top:  -3px; padding: @tooltip-arrow-width 0; }
+  &.right  { margin-left:  3px; padding: 0 @tooltip-arrow-width; }
+  &.bottom { margin-top:   3px; padding: @tooltip-arrow-width 0; }
+  &.left   { margin-left: -3px; padding: 0 @tooltip-arrow-width; }
+}
+
+.tooltip-inner {
+  max-width: @tooltip-max-width;
+  padding: 3px 8px;
+  color: @tooltip-color;
+  text-align: center;
+  font-family: @sans;
+  text-decoration: none;
+  background-color: @tooltip-bg;
+  border-radius: @border-radius-base;
+}
+
+.tooltip-imagenes{
+
+.tooltip {
+  font-size: @cuerpo * 0.8;
+}
+
+.tooltip-inner {
+  color: @negro;
+  background-color: @masking;  
+  border-radius: 1px;
+}
+
+.tooltip {
+  &.top .tooltip-arrow {
+    border-top-color: @gris-blanco;
+  }
+  &.top-left .tooltip-arrow {
+    border-top-color: @gris-blanco;
+  }
+  &.top-right .tooltip-arrow {
+    border-top-color: @gris-blanco;
+  }
+  &.right .tooltip-arrow {
+    border-right-color: @gris-blanco;
+  }
+  &.left .tooltip-arrow {
+    border-left-color: @gris-blanco;
+  }
+  &.bottom .tooltip-arrow {
+    border-bottom-color: @gris-blanco;
+  }
+  &.bottom-left .tooltip-arrow {
+    border-bottom-color: @gris-blanco;
+  }
+  &.bottom-right .tooltip-arrow {
+    border-bottom-color: @gris-blanco;
+  }
+}
+}
+
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+                </code>
+        </div>
+        <div class='col-md-4'>
+                <h5 class='pizarra fino linea-lateral'>JS</h5>
+                <code class='bloque'>
 &lt;script src="js/jquery.js">&lt;/script>
 &lt;script src="js/tooltip.js">&lt;/script>
-          </code>
-          <h6>Codigo (uso en html)</h6>
-          <code class='margen-inf-sm'>
-&lt;a data-toggle="tooltip" href="#" data-toggle="tooltip" title="Esto es un tooltip">Elemento con Tooltip&lt;/a>
-          </code>
-          <p class='sans'>Luego, por un tema de performance, debes inicializar los tooltip, el siguiente codigo selecciona e inicializa todos los elementos "a" que se encuentren dentro del elemento con clase "tooltip-demo" que tengan el atributo data-toggle=tooltip </p>
-          <code>
-&lt;script> $('.tooltip-demo').tooltip({selector: "a[data-toggle=tooltip]"});&lt;/script>
-          </code>
+                </code>
+        </div>
         </div>
       </div>
       <div class="tab-pane fade" id="popover">
         <h4 class='pizarra gruesa'>Popover</h4> 
-        <h5 class='gruesa'>Ejemplo</h5>
+        <p>El popover es una pequeña ventana de ayuda o de advertencia específica. Despliega la información del atributo "title" del elemento HTML. A diferencia del tooltip, éste debe ser cliqueado con el cursor para gatillar la interacción del elemento. En sus declaraciones específicas de variables se observa un ancho máximo (<span class='verde'>@popover-max-width</span>), un z-index (<span class='verde'>@zindex-popover</span>), colores (<span class='verde'>@popover-bg</span>), etc. Para inicializar los popovers (similiar a lo hecho con los tooltip), se requiere el <code class='linea'>&lt;script></code> con su respectivo id (en este caso, '#popover-test') en el elemento <code class='linea'>&lt;a></code> declarado para su ejecución.</p>
         <a class="btn margen-vertical-md" id="popover-test" title="" data-content="Este es un popover..." data-toggle="popover" data-original-title="Titulo de un popover">Popover</a>
-        <p>El popover es una pequeña ventana de ayuda que funciona al situar el cursor sobre algún elemento del DOM. Despliega la información del atributo "title" del elemento HTML. A diferencia del tooltip, éste debe ser cliqueado para gatillar la interacción.</p>
-        <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-popover">ver código</a> 
-        <div id="ver-codigo-popover" class="collapse pag-javascript">
-          <h6>Archivos necesarios</h6> 
-          <code class='margen-inf-sm'>
-&lt;script src="js/jquery.js"> &lt;/script>
-&lt;script src="js/popover.js"> &lt;/script>
-          </code>
-          <h6>Ejemplo</h6>
-          <code class='margen-inf-sm'>
-&lt;a class="btn" id="popover-test" data-content="Este es un popover..." data-toggle="popover" data-original-title="Titulo de un popover">Elemento con Popover&lt;/a>
-          </code>
-          <p>Luego, por un tema de performance, debes inicializar los popovers (similiar a lo hecho con los tooltip), el siguiente codigo selecciona el elemento "a" con el id "popover-test" y lo inicializa </p>  
-          <code>
+        <hr class='invisible'>
+        <div class='fila'>
+          <div class='col-md-4 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                <code class='bloque'>
+&lt;a class="btn margen-vertical-md" id="popover-test" title="" data-content="Este es un popover..." data-toggle="popover" data-original-title="Titulo de un popover">Popover&lt;/a>
+                </code>
+          </div>
+          <div class='col-md-4 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                <code class='bloque'>
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: @zindex-popover;
+  display: none;
+  max-width: @popover-max-width;
+  padding: 1px;
+  text-align: left; // Reset given new insertion method
+  background-color: @popover-bg;
+  background-clip: padding-box;
+  border: 1px solid @popover-fallback-border-color;
+  border: 1px solid @popover-border-color;
+  border-radius: @border-radius-large;
+  .box-shadow(0 5px 10px rgba(0,0,0,.2));
+
+  &.top     { margin-top: -@popover-arrow-width; }
+  &.right   { margin-left: @popover-arrow-width; }
+  &.bottom  { margin-top: @popover-arrow-width; }
+  &.left    { margin-left: -@popover-arrow-width; }
+}
+
+.popover-title {
+  margin: 0; // reset heading margin
+  padding: 10px 15px;
+  font-size: @font-size-base;
+  font-weight: normal;
+  line-height: 18px;
+  background-color: @blanco;
+  border-bottom: 1px solid darken(@popover-title-bg, 5%);
+  border-radius: 5px 5px 0 0;
+}
+
+.popover-content {
+  padding: 20px 15px;
+  font-family: @sans;
+  background-color: @gris-blanco;
+}
+
+.popover > .arrow {
+  &,
+  &:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+  }
+}
+.popover > .arrow {
+  border-width: @popover-arrow-outer-width;
+}
+.popover > .arrow:after {
+  border-width: @popover-arrow-width;
+  content: "";
+}
+                </code>
+        </div>
+        <div class='col-md-4'>
+                <h5 class='pizarra fino linea-lateral'>JS</h5>
+                <code class='bloque'>
+&lt;script src="js/jquery.js">&lt;/script>
+&lt;script src="js/popover.js">&lt;/script>
 &lt;script> $('#popover-test').popover();&lt;/script>
-          </code>
+                </code>
+        </div>
         </div>
       </div>
       <div class="tab-pane fade" id="sticky">
-        <h4 class='pizarra gruesa'>Sticky</h4>
-<div id='page'>
 
-<!-- Pag para page (para toda la página) -->
-<div class='pag page'>
-  <!-- Breadcrumbs -->
-  <ul class='sin-relleno margen-inf-xs' id="breadcrumb">
-    <li><a href='#'><i class='icn icn-hogar'></i></a></li>
-    <li><a href='#'>Carreras y postgrados</a></li>
-    <li><a>Diseño Gráfico</a></li>
-  </ul>
-  <div class='bloque ancho-completo'>
-      <h1 class='lg entry-title especifico'>Diseño Gráfico</h1>
-  </div>
-</div>
-
-<div class='pag sin-relleno gutter'>
-  <div class='fila'>
-    <div class='col-md-3 col-sm-4 oculto-xs alto-lg'>
-      <!-- Sticky 1/8 -->
-      <div id='ejemplo-sticky'>
-        <ul class='sin-relleno'>
-          <li class='sin-estilo active'><a href='#uno'><h6 class='xs active'>Estudiar diseño en la e[ad]<i class='icn icn-usuariomas'></i></h6></a></li>
-          <li class='sin-estilo'><a href='#dos'><h6 class='xs'>Programa de estudios<i class='icn icn-libro'></i></h6></a></li>
-          <li class='sin-estilo'><a href='#tres'><h6 class='xs'>Malla curricular<i class='icn icn-biblioteca'></i></h6></a></li>
-          <li class='sin-estilo'><a href='#cuatro'><h6 class='xs'>Admisión<i class='icn icn-ingresar'></i></h6></a></li>
-          <li class='sin-estilo'><a href='#cinco'><h6 class='xs'>Concepción del diseñador<i class='icn icn-acto'></i></h6></a></li>
-          <li class='sin-estilo'><a href='#seis'><h6 class='xs'>Perfil de egreso<i class='icn icn-perfil'></i></h6></a></li>
-          <li class='sin-estilo'><a href='#siete'><h6 class='xs'>Competencias fundamentales<i class='icn icn-engranaje icn-spin'></i></h6></a></li>
-          <li class='sin-estilo'><a href='#ocho'><h6 class='xs'>Objetivos educacionales<i class='icn icn-lentes'></i></h6></a></li>
-          <li class='sin-estilo'><a href='nueve'><h6 class='xs'>Profesores<i class='icn icn-usuarios'></i></h6></a></li>
-        </ul>
-      </div>
-    </div>
-  <div class='col-md-9 col-sm-8 col-xs-12 relativo' class="scroll-able" data-spy="scroll" data-target="#target_nav">
-  <article class='h-entry enunciado'>
-  <div class='e-content p-summary p-name page-contenido'>
-      <img src='https://c2.staticflickr.com/6/5330/8869756121_a6d75304f0_h.jpg'>
-      <h3 id='uno' class='active'><i class='icn icn-usuarios'></i>Estudiar diseño gráfico en la e[ad]</h3>
-      <p>La misión de la Escuela de Arquitectura y Diseño es cultivar el arte de la <a href='#'>Arquitectura</a>, del <a href='#'>Diseño Gráfico</a> y del <a href='#'>Diseño Industrial</a> por medio de la creación y transmisión del conocimiento del oficio de estas artes, formar Arquitectos y Diseñadores con la vocación de concebir obras que den cabida y expresión al habitar humano. La Escuela afirma que tanto la Arquitectura como el Diseño son un Arte. Esto diferencia profundamente de otras orientaciones, disciplinas y saberes, e implica una manera peculiar de estudiar y de hacer.
-      </p>
-      <h5>La observación como fundamento</h5>
-      <p>En nuestra Escuela se accede a la Arquitectura y al Diseño a través de <a class='italica negrita' href='#'>la observación</a>. La observación es una actividad profundamente artística que permite penetrar la realidad de manera siempre nueva y original. A partir de esta postura de pensamiento tomada como fundamento se desarrollan los diferentes trabajos, estudios y proyectos.</p>
-      <h5>Compromiso de vida y ámbito</h5>
-      <p>Esta modalidad de estudiar y hacer exige de alumnos y profesores un real compromiso de vida. Este que le confiere a la Escuela una gran unidad y, a su vez establece un ámbito, y un ritmo de estudio que da cabida a actividades ordinarias y extraordinarias, en que participan creativamente todos los alumnos y profesores.</p>
-      <h5>El taller: columna vertebral</h5>
-      <p>El taller es la columna vertebral de los estudios de cada disciplina impartida en nuestra Escuela. En él tiene lugar el proceso creativo de cada estudiante, y es donde se decantan los conocimientos humanísticos, matemáticos, científicos y tecnológicos que se imparten en las demás asignaturas de nuestro <a href='#'>Plan de Estudios</a>.</p>
-      <!-- programa de estudios -->
-      <div class='fila'>
-        <div class='col-md-12 col-sm-12 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Talleres de grabado"><img src='https://c3.staticflickr.com/3/2861/8882116015_6a7770202b_h.jpg'></a>
+        <div class='col-md-3 col-sm-4 oculto-xs alto-lg'>
+        <div id='ejemplo-sticky'>
+          <ul class='sin-relleno'>
+            <li class='sin-estilo active'><a href='#uno'><h4 class='pizarra gruesa'>Sticky</h4></a></li>
+            <li class='sin-estilo'><a href='#dos'><h6 class='xs'>Sticky nº2<i class='icn icn-libro'></i></h6></a></li>
+            <li class='sin-estilo'><a href='#tres'><h6 class='xs'>Sticky nº3<i class='icn icn-biblioteca'></i></h6></a></li>
+            <li class='sin-estilo'><a href='#cuatro'><h6 class='xs'>Sticky nº4<i class='icn icn-ingresar'></i></h6></a></li>
+            <li class='sin-estilo'><a href='#cinco'><h6 class='xs'>Sticky nº5<i class='icn icn-acto'></i></h6></a></li>
+          </ul>
         </div>
-      </div>
-      <div class='fila'>
-        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Talleres de grabado"><img src='https://c1.staticflickr.com/9/8268/8701292715_727fe7da4c_h.jpg'></a>
         </div>
-        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Talleres de grabado"><img src='https://c1.staticflickr.com/9/8135/8701294483_a8409b0eb6_h.jpg'></a>
-        </div>
-      </div>
-      <div class='fila'>
-        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Talleres de grabado"><img src='https://c2.staticflickr.com/6/5443/8870359908_c189e27d8b_h.jpg'></a>
-        </div>
-        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Talleres de grabado"><img src='https://c1.staticflickr.com/9/8134/8747338105_7e5c6f49ad_h.jpg'></a>
-        </div>
-      </div>
-      <div class='fila'>
-        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Talleres de grabado"><img src='https://c4.staticflickr.com/8/7148/6459302853_61c4b6403e_b.jpg'></a>
-        </div>
-        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Talleres de grabado"><img src='https://c4.staticflickr.com/8/7035/6459322575_14bd8c12d1_b.jpg'></a>
-        </div>
-      </div>
-      <div class='fila'>
-        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Talleres de grabado"><img src='https://c4.staticflickr.com/8/7019/6459531429_2a3e5df1bc_b.jpg'></a>
-        </div>
-        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Talleres de grabado"><img src='https://c2.staticflickr.com/6/5151/7110357177_3544943cf9_h.jpg'></a>
-        </div>
-      </div>
-      <div class='fila'>
-        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Talleres de grabado"><img src='https://c2.staticflickr.com/8/7021/6459524971_d1ae6b116d_b.jpg'></a>
-        </div>
-        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Talleres de grabado"><img src='https://c2.staticflickr.com/8/7156/6459320145_77b35f0f46_b.jpg'></a>
-        </div>
-      </div>
-      <h4 id='dos'><i class='icn icn-usuario margen-der-xs'></i>Programa de estudios</h4>
-      <p>Tablas de programa de estudios</p>
-      <div class='margen-sup-xs'>
-          <img src='https://c1.staticflickr.com/3/2596/3883907356_7c7bd19054_b.jpg'>
-          <h4 id='tres' class='inteletraje-sm-negativo margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Malla Curricular</h4>
-          <a class='btn btn-alerta'>Descargar malla curricular</a>
-      </div>
-      <div class='margen-sup-xs'>
-          <h4 id='cuatro' class='inteletraje-sm-negativo margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Admisión</h4>
-          <p>Hola admisión</p>
-      </div>
-      <div class='fila'>
-        <div class='col-md-12 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Regalo a los alumnos que egresan"><img src='https://c3.staticflickr.com/3/2305/1806426912_c951330a30_b.jpg'></a>
-        </div>
-      </div>
-      <div class='fila'>
-        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Regalo a los alumnos que egresan"><img src='https://c3.staticflickr.com/3/2293/1767104777_0b88182767_b.jpg'></a>
-        </div>
-        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Ediciones e[ad]"><img src='https://c3.staticflickr.com/3/2089/1805569345_cb64899fd8_b.jpg'></a>
-        </div>
-      </div>
-      <div class='fila'>
-        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Regalo a los alumnos que egresan"><img src='https://c1.staticflickr.com/9/8483/8164661912_4c8ac2f815_h.jpg'></a>
-        </div>
-        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Ediciones e[ad]"><img src='https://c1.staticflickr.com/9/8207/8164633825_6e5a638028_h.jpg'></a>
-        </div>
-      </div>
-      <div class='fila'>
-        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Regalo a los alumnos que egresan"><img src='https://c1.staticflickr.com/9/8562/15990472942_5e12cfb1e0_h.jpg'></a>
-        </div>
-        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Ediciones e[ad]"><img src='https://c4.staticflickr.com/8/7557/15990314582_318b1d0580_h.jpg'></a>
-        </div>
-      </div>
-      <div class='fila'>
-        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Regalo a los alumnos que egresan"><img src='https://c1.staticflickr.com/1/57/206727152_3db9008c2a_z.jpg?zz=1'></a>
-        </div>
-        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Ediciones e[ad]"><img src='https://c1.staticflickr.com/1/220/456161299_c9dec39527_z.jpg?zz=1'></a>
-        </div>
-      </div>
-      <div class='fila'>
-        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Regalo a los alumnos que egresan"><img src='http://www.ead.pucv.cl/wp-content/uploads/2012/04/regalo_T1_2012_02.jpg'></a>
-        </div>
-        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Ediciones e[ad]"><img src='http://www.ead.pucv.cl/wp-content/themes/gamma/img/disenografico.jpg'></a>
-        </div>
-      </div>
-      <div class='fila'>
-        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Faenas farándula 2012"><img src='http://www.ead.pucv.cl/wp-content/uploads/2013/07/libros-2_1.jpg'></a>
-        </div>
-        <div class='col-md-6 col-md-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Talleres de grabado"><img src='http://www.ead.pucv.cl/wp-content/themes/gamma/img/diseno-grafico2.jpg'></a>
-        </div>
-      </div>
-      <h4 id='cinco'><i class='icn icn-usuario margen-der-xs'></i>Concepción del diseñador</h4>
-      <p>El Diseñador Gráfico de la Pontificia Universidad Católica de Valparaíso es capaz de ubicarse dentro de equipos multidisciplinarios proyectando y concretando trabajos de distintos grados de complejidad, de manera original y eficiente.</p>
-      <p>Además, ha desarrollado un lenguaje teórico del <a href='#'>oficio</a> en constante resonancia con la <a href='#'>Poesía</a>, lo cual le permite interpretar y poseer una visión artística del mundo, permanece así en la abertura creativa del oficio; concibiendo y realizando obras y estudios de postítulos en el ámbito profesional; generando líneas de investigación y estudiando postgrados en el ámbito académico.</p>
-      <h5>Sentido general de la formación</h5>
-      <p>En esta Escuela, cuyo centro es <a href='#'>el taller</a>, la convergencia de todas las dimensiones formativas va en dirección a acotar el proceso de una obra, que se da en cinco dimensiones, ellas son:</p>
-      <ul class='margen-inf'>
-        <li class='italica'>El Origen Común desde una misma Visión.</li>
-        <li class='italica'>El Ser en Completitud.</li>
-        <li class='italica'>Un Método de Estudio.</li>
-        <li class='italica'>La capacidad de contemplación.</li>
-        <li class='italica'>La Capacidad de Celebración.</li>
-      </ul>
-      <p>El método de trabajo del taller se basa en la “observación” dibujada, medida y escrita de la ciudad en que vivimos y lo que en ella acontece, para dar con el acto o lectura de su presente. Dichas experiencias, vividas por los alumnos en la ciudad, constituyen un suelo fecundo de relaciones las cuales son orientadas por el profesor comunicando a los alumnos su visión. La docencia impartida corresponde entonces a un acto creativo donde ningún taller es repetición de otro, procurando despertar la capacidad de observación en los alumnos y exteriorizar el modo peculiar en que ella se manifiesta para cada uno.</p>
-      <p>La observación -acto de naturaleza artística- al situarse en el origen mismo de la forma no se opone ni se contradice con la formación técnica, ya que como acto creativo se le ubica como un medio y no como un fin, concretándose para cada caso y nivel específico.</p>
-      <p>Todos los talleres realizan <a class='italica' href='#'>travesías</a>, que son viajes en los que se recorre el continente americano, realizando obras junto a profesores y alumnos de <a href='#'>Arquitectura</a> y <a href='#'>Diseño Industrial</a>.</p>
-      <div class='fila'>
-        <div class='col-md-12 col-sm-12 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Regalo a los alumnos que egresan"><img src='http://www.ead.pucv.cl/wp-content/uploads/2014/08/MG_0755.jpg'></a>
-        </div>
-      </div>
-      <div class='fila'>
-        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Regalo a los alumnos que egresan"><img src='http://www.ead.pucv.cl/wp-content/uploads/2013/12/puntaarenas0012013.jpg'></a>
-        </div>
-        <div class='col-md-6 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Regalo a los alumnos que egresan"><img src='http://www.ead.pucv.cl/wp-content/uploads/2013/12/puntaarenas0052013.jpg'></a>
-        </div>
-      </div>
-      <h4 id='seis' class='margen-inf-sm'><i class='icn icn-perfil margen-der-xs'></i>Perfil de egreso</h4>
-      <ul class='margen-inf-sm'>
-        <li class='italica'>Un egresado de esta Escuela posee las competencias que le permiten ejercer el Diseño Gráfico desde la observación, como origen del proceso creativo. Este ha sido encarnado durante los estudios de lo urbano en los talleres de Valparaíso, de lo experimental en la Ciudad Abierta y de la visión de Continente en las Travesías.</li>
-        <li class='italica'>Un egresado de esta Escuela posee las competencias que le permiten ejercer el Diseño Gráfico desde la observación, como origen del proceso creativo. Este ha sido encarnado durante los estudios de lo urbano en los talleres de Valparaíso, de lo experimental en la Ciudad Abierta y de la visión de Continente en las Travesías.</li>
-      </ul>
-      <div class='fila margen-sup-sm'>
-        <div class='col-md-12 col-sm-12 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Regalo a los alumnos que egresan"><img src='http://www.ead.pucv.cl/wp-content/uploads/2014/01/ceremoniatitulacion22014.jpg'></a>
-      <h4 id='siete' class='margen-inf-sm'><i class='icn icn-engranaje icn-spin margen-der-xs'></i>Competencias fundamentales</h4>
-      <p>El egresado de la Escuela de Arquitectura y Diseño de la Pontificia Universidad Católica de Valparaíso posee las competencias valóricas, disciplinares y profesionales que le permiten ejercer el Diseño Gráfico a partir de una visión poética del mundo, colocándolo de esta manera en el origen del oficio y proyectándolo creativamente en todos los campos de su desempeño.</p>
-      <p>Esta virtud que se encarna a lo largo de los años de estudio, se hace posible a través del desarrollo de la observación; lenguaje complejo al que concurren el dibujo y el texto como medio eficaz para develar la realidad y proponer en ella las distintas escalas y campos del diseño.</p>
-      <h5 class='margen-inf-sm'>Competencias genéricas de formación fundamental</h5>
-      <ul class='margen-inf-sm'>
-        <li class='italica'>Posee una postura ética fundada en el compromiso con la obra que emprende y con la responsabilidad social implícita en toda creación humana, en concordancia con el marco valórico señalado en la misión de nuestra universidad.</li>
-        <li class='italica'>Posee un lenguaje teórico del oficio en constante resonancia con la poesía, lo cual le permite interpretar y manifestar a través del elogio y la celebración una visión artística del mundo.</li>
-        <li class='italica'>Posee un pensamiento crítico para abordar y generar proyectos, desarrollarse profesionalmente, y realizar estudios de postítulo y posgrado.</li>
-      </ul>
-      <h5 class='margen-inf-sm'>Competencias específicas disciplinares</h5>
-      <ul class='margen-inf-sm'>
-        <li class='italica'>Con capacidad de observación que le permite acceder a un sentido original de la realidad, orientado a la construcción de los fundamentos del trabajo creativo.</li>
-        <li class='italica'>Posee un lenguaje teórico del oficio en constante resonancia con la poesía y las distintas manifestaciones artísticas, lo cual le permite reinterpretar el mundo.</li>
-        <li class='italica'>Posee una abertura creativa del oficio que integra e interpreta la realidad de los requerimientos en formas visuales, espaciales e interactivas en concordancia y justeza al público que sirve.</li>
-        <li class='italica'>Posee gran versatilidad para afrontar artísticamente el oficio en todas sus manifestaciones y magnitudes: desde el diseño tipográfico al complejo editorial, desde la miniatura al gran formato, desde el afiche a la escenografía, desde el grabado a la página web, desde la infografía a la interfaz, desde el envase al packaging, desde el módulo a la exposición y finalmente desde todos ellos al espacio.</li>
-        <li class='italica'>Es capaz de formular un pensamiento previo a la idea, comprendiendo y analizando los actos, construcciones humanas y elementos naturales que lo circundan.</li>
-        <li class='italica'>Domina el lenguaje computacional específico del oficio, quedando acorde con las actuales dinámicas de búsqueda, creación, proyección necesarias para comprender las técnicas modernas de producción, pudiendo dialogar así con diferentes disciplinas.</li>
-        <li class='italica'>Domina un lenguaje de dibujo para develar la realidad y utilizarla además como elemento expresivo y proyectivo de las nuevas ideas hacia la realidad.</li>
-      </ul>
-      <h5 class='margen-inf-sm'>Competencias específicas profesionales</h5>
-      <ul class='margen-inf-sm'>
-        <li class='italica'>Lidera e integra equipos transdisciplinarios, ideando, proyectando y concretando trabajos en distintos grados de complejidad de manera original y eficiente.</li>
-        <li class='italica'>Domina las bases de los lenguajes técnicos y tecnológicos lo que le permiten interactuar con distintas especialidades.</li>
-        <li class='italica'>Reconoce y abstrae cualquier campo del diseño gráfico que le permite actuar con autonomía y eficiencia en ellos, sea por autogestión o coparticipación.</li>
-        <li class='italica'>Gestiona proyectos desde su diseño hasta la producción de la obra, respondiendo a los requerimientos del medio.</li>
-        <li class='italica'>Construye diálogos entre audiencias identificando territorios culturales, geográficos, sociales, económicos y tecnológicos para la innovación, dando respuestas y recreando los constantes cambios en el mundo.</li>
-        <li class='italica'>Escucha empáticamente para integrar e interpretar la realidad de los requerimientos de forma visual, espacial e interactiva en concordancia y justeza al público que sirve.</li>
-      </ul>
-      </div>
-  </div> <!-- fin de fila -->
-  <div class='fila margen-sup-sm'>
-    <div class='col-md-12 col-sm-8 col-xs-12'>
-      <div class='fila'>
-        <div class='col-md-12 col-sm-12 col-xs-12 tooltip-demo tooltip-imagenes'>
-        <a data-toggle="tooltip" href="#" title="Regalo a los alumnos que egresan"><img src='http://www.ead.pucv.cl/wp-content/uploads/2014/03/DSC_1440.jpg'></a>
-        </div>
-      </div>
-      <h4 id='ocho' class='margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Objetivos educacionales</h4>
-      <p  class='sans'>El ejercicio profesional se desarrolla en instituciones y empresas relacionadas con la comunicación, campo publicitario, editorial, la industria gráfica y multimedial. Ejercicio independiente de la profesión. Docencia universitaria y continuidad en estudios de post-grado.</p>
-    </div>
-  </div>
-      <h4 id='nueve' class='margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Profesores de carrera</h4>
-      <div class='fila'>
-        <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Sylvia Arriagada"><img src='http://ipark2012ephemeraltravesia.files.wordpress.com/2012/09/silvia-arriagada.jpg'></a>
-        </div>
-        <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="José Balcells"><img src='http://ipark2012ephemeraltravesia.files.wordpress.com/2012/09/jose-balcells.jpg'></a>
-        </div>
-        <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Alejandro Garretón"><img src='https://farm4.staticflickr.com/3262/3483598559_d1c644fb76_q.jpg'></a>
-        </div>
-        <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Manuel Sanfuentes"><img src='https://farm4.staticflickr.com/3157/3082752662_1d39dde79b_q.jpg'></a>
-        </div>
-      </div>
-      <div class='fila'>
-        <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Herbert Spencer"><img src='https://farm6.staticflickr.com/5194/7176578488_3c88076e53_q.jpg'></a>
-        </div>
-        <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Michèle Wilkomirsky"><img src='https://farm5.staticflickr.com/4004/4481267383_02353ef1ba_q.jpg'></a>
-        </div>
-        <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Katherine Exss"><img src='http://wiki.ead.pucv.cl/images/5/59/Katherine_exss_wiki.jpg'></a>
-        </div>
-      </div>
-      <h4 id='diez' class='margen-inf-sm'><i class='icn icn-usuariomas margen-der-xs'></i>Profesores ayudantes</h4>
-      <div class='fila'>
-        <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Karen Carrera"><img src='https://farm8.staticflickr.com/7207/6979639313_f74d11b3cd_q.jpg'></a>
-        </div>
-        <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Macarena Álamos"><img src='https://farm3.staticflickr.com/2493/4172133723_ffbc7e6c4d_q.jpg'></a>
-        </div>
-        <div class='col-md-3 col-sm-6 col-xs-12 tooltip-demo tooltip-imagenes'>
-          <a data-toggle="tooltip" href="#" title="Jaime Pérez Moena"><img src='https://farm8.staticflickr.com/7220/7171615052_2a29d54806_q.jpg'></a>
-        </div>
-      </div>
-    </div>
-  </article>
-</div> <!-- fin de col-->
-</div> <!-- fin de fila -->
-</div> <!-- fin de pag -->
-
-</div> <!-- fin de page * -->        
-
   
-        <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-affix">ver código</a> 
-        <div id="ver-codigo-affix" class="collapse pag-javascript"> 
-          <h6>Archivos necesarios</h6>
-          <code class='margen-inf-sm'>
-&lt;script src="js/jquery.js">&lt;/script>
-&lt;script src="js/sticky.js">&lt;/script>
-          </code>
-          <h6>Codigo</h6>
-          <code>
-Primero es necesario establecer un contenedor con un id específico. Dentro de la &lt;ul>, los &lt;li> contienen un &lt;a href='...'> donde '...' debe ser el mismo id perteneciente a cualquier otro elemento dentro del contenido; en este caso, por ejemplo, un &lt;h3>.  
- Ejemplo:
- 
-      &lt;div id='ejemplo-sticky'>
-        &lt;ul class='sin-relleno'>
-          &lt;li class='sin-estilo active'>&lt;a href='#uno'>&lt;h6 class='xs active'>Estudiar diseño en la e[ad]&lt;i class='icn icn-usuariomas'>&lt;/i>&lt;/h6>&lt;/a>&lt;/li>
-          &lt;li class='sin-estilo'>&lt;a href='#dos'>&lt;h6 class='xs'>Programa de estudios&lt;i class='icn icn-libro'>&lt;/i>&lt;/h6>&lt;/a>&lt;/li>
-        &lt;/ul>
-      &lt;/div>
+        <div class='col-md-9 col-sm-8 col-xs-12 relativo' class="scroll-able" data-spy="scroll" data-target="#target_nav">
+        <p>El popover es una pequeña ventana de ayuda o de advertencia específica. Despliega la información del atributo "title" del elemento HTML. A diferencia del tooltip, éste debe ser cliqueado con el cursor para gatillar la interacción del elemento. En sus declaraciones específicas de variables se observa un ancho máximo (<span class='verde'>@popover-max-width</span>), un z-index (<span class='verde'>@zindex-popover</span>), colores (<span class='verde'>@popover-bg</span>), etc. Para inicializar los popovers (similiar a lo hecho con los tooltip), se requiere el <code class='linea'>&lt;script></code> con su respectivo id (en este caso, '#popover-test') en el elemento <code class='linea'>&lt;a></code> declarado para su ejecución.</p>
 
-    &lt;h3 id='uno'>
-    &lt;h3 id='dos'>
-    etc...
-          </code>
+          <h3 id='uno' class='active'><i class='icn icn-usuarios'></i>Estudiar diseño gráfico en la e[ad]</h3>
+        <p>La misión de la Escuela de Arquitectura y Diseño es cultivar el arte de la <a href='#'>Arquitectura</a>, del <a href='#'>Diseño Gráfico</a> y del <a href='#'>Diseño Industrial</a> por medio de la creación y transmisión del conocimiento del oficio de estas artes, formar Arquitectos y Diseñadores con la vocación de concebir obras que den cabida y expresión al habitar humano. La Escuela afirma que tanto la Arquitectura como el Diseño son un Arte. Esto diferencia profundamente de otras orientaciones, disciplinas y saberes, e implica una manera peculiar de estudiar y de hacer.
+        </p>
+          <h3 id='dos' class='active'><i class='icn icn-usuarios'></i>Estudiar diseño gráfico en la e[ad]</h3>
+        <p>La misión de la Escuela de Arquitectura y Diseño es cultivar el arte de la <a href='#'>Arquitectura</a>, del <a href='#'>Diseño Gráfico</a> y del <a href='#'>Diseño Industrial</a> por medio de la creación y transmisión del conocimiento del oficio de estas artes, formar Arquitectos y Diseñadores con la vocación de concebir obras que den cabida y expresión al habitar humano. La Escuela afirma que tanto la Arquitectura como el Diseño son un Arte. Esto diferencia profundamente de otras orientaciones, disciplinas y saberes, e implica una manera peculiar de estudiar y de hacer.
+        </p>
+          <h3 id='tres' class='active'><i class='icn icn-usuarios'></i>Estudiar diseño gráfico en la e[ad]</h3>
+        <p>La misión de la Escuela de Arquitectura y Diseño es cultivar el arte de la <a href='#'>Arquitectura</a>, del <a href='#'>Diseño Gráfico</a> y del <a href='#'>Diseño Industrial</a> por medio de la creación y transmisión del conocimiento del oficio de estas artes, formar Arquitectos y Diseñadores con la vocación de concebir obras que den cabida y expresión al habitar humano. La Escuela afirma que tanto la Arquitectura como el Diseño son un Arte. Esto diferencia profundamente de otras orientaciones, disciplinas y saberes, e implica una manera peculiar de estudiar y de hacer.
+        </p>
+          <h3 id='cuatro' class='active'><i class='icn icn-usuarios'></i>Estudiar diseño gráfico en la e[ad]</h3>
+        <p>La misión de la Escuela de Arquitectura y Diseño es cultivar el arte de la <a href='#'>Arquitectura</a>, del <a href='#'>Diseño Gráfico</a> y del <a href='#'>Diseño Industrial</a> por medio de la creación y transmisión del conocimiento del oficio de estas artes, formar Arquitectos y Diseñadores con la vocación de concebir obras que den cabida y expresión al habitar humano. La Escuela afirma que tanto la Arquitectura como el Diseño son un Arte. Esto diferencia profundamente de otras orientaciones, disciplinas y saberes, e implica una manera peculiar de estudiar y de hacer.
+        </p>
+          <h3 id='cinco' class='active'><i class='icn icn-usuarios'></i>Estudiar diseño gráfico en la e[ad]</h3>
+        <p>La misión de la Escuela de Arquitectura y Diseño es cultivar el arte de la <a href='#'>Arquitectura</a>, del <a href='#'>Diseño Gráfico</a> y del <a href='#'>Diseño Industrial</a> por medio de la creación y transmisión del conocimiento del oficio de estas artes, formar Arquitectos y Diseñadores con la vocación de concebir obras que den cabida y expresión al habitar humano. La Escuela afirma que tanto la Arquitectura como el Diseño son un Arte. Esto diferencia profundamente de otras orientaciones, disciplinas y saberes, e implica una manera peculiar de estudiar y de hacer.
+        </p>
+          <h3 id='seis' class='active'><i class='icn icn-usuarios'></i>Estudiar diseño gráfico en la e[ad]</h3>
+        <p>La misión de la Escuela de Arquitectura y Diseño es cultivar el arte de la <a href='#'>Arquitectura</a>, del <a href='#'>Diseño Gráfico</a> y del <a href='#'>Diseño Industrial</a> por medio de la creación y transmisión del conocimiento del oficio de estas artes, formar Arquitectos y Diseñadores con la vocación de concebir obras que den cabida y expresión al habitar humano. La Escuela afirma que tanto la Arquitectura como el Diseño son un Arte. Esto diferencia profundamente de otras orientaciones, disciplinas y saberes, e implica una manera peculiar de estudiar y de hacer.
+        </p>
+          <h3 id='siete' class='active'><i class='icn icn-usuarios'></i>Estudiar diseño gráfico en la e[ad]</h3>
+        <p>La misión de la Escuela de Arquitectura y Diseño es cultivar el arte de la <a href='#'>Arquitectura</a>, del <a href='#'>Diseño Gráfico</a> y del <a href='#'>Diseño Industrial</a> por medio de la creación y transmisión del conocimiento del oficio de estas artes, formar Arquitectos y Diseñadores con la vocación de concebir obras que den cabida y expresión al habitar humano. La Escuela afirma que tanto la Arquitectura como el Diseño son un Arte. Esto diferencia profundamente de otras orientaciones, disciplinas y saberes, e implica una manera peculiar de estudiar y de hacer.
+        </p>
+        </div>
+
+        <hr class='invisible'>
+        <div class='fila'>
+          <div class='col-md-4 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                <code class='bloque'>
+&lt;a class="btn margen-vertical-md" id="popover-test" title="" data-content="Este es un popover..." data-toggle="popover" data-original-title="Titulo de un popover">Popover&lt;/a>
+                </code>
+          </div>
+          <div class='col-md-4 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                <code class='bloque'>
+.popover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: @zindex-popover;
+  display: none;
+  max-width: @popover-max-width;
+  padding: 1px;
+  text-align: left; // Reset given new insertion method
+  background-color: @popover-bg;
+  background-clip: padding-box;
+  border: 1px solid @popover-fallback-border-color;
+  border: 1px solid @popover-border-color;
+  border-radius: @border-radius-large;
+  .box-shadow(0 5px 10px rgba(0,0,0,.2));
+
+  &.top     { margin-top: -@popover-arrow-width; }
+  &.right   { margin-left: @popover-arrow-width; }
+  &.bottom  { margin-top: @popover-arrow-width; }
+  &.left    { margin-left: -@popover-arrow-width; }
+}
+
+.popover-title {
+  margin: 0; // reset heading margin
+  padding: 10px 15px;
+  font-size: @font-size-base;
+  font-weight: normal;
+  line-height: 18px;
+  background-color: @blanco;
+  border-bottom: 1px solid darken(@popover-title-bg, 5%);
+  border-radius: 5px 5px 0 0;
+}
+
+.popover-content {
+  padding: 20px 15px;
+  font-family: @sans;
+  background-color: @gris-blanco;
+}
+
+.popover > .arrow {
+  &,
+  &:after {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+  }
+}
+.popover > .arrow {
+  border-width: @popover-arrow-outer-width;
+}
+.popover > .arrow:after {
+  border-width: @popover-arrow-width;
+  content: "";
+}
+                </code>
+        </div>
+        <div class='col-md-4'>
+                <h5 class='pizarra fino linea-lateral'>JS</h5>
+                <code class='bloque'>
+&lt;script src="js/jquery.js">&lt;/script>
+&lt;script src="js/popover.js">&lt;/script>
+&lt;script> $('#popover-test').popover();&lt;/script>
+                </code>
+        </div>
         </div>
       </div>
       <div class="tab-pane fade" id="dropdown">
         <h4 class='pizarra gruesa'>Dropdowns</h4>
+        <p>Utilizar dropdowns permite condensar una navegación compleja en grandes rótulos, dando paso a a una navegación más simplificada con una jerarquía notoria. La jerarquía se divide en dos clases; la primera en el orden de cada enlace, y la segunda en la categoría de "separaeted link", bajo un <code class='linea'>&lt;hr></code> o <i>divider</i>. Entre las variables específicas resaltan el font-size (<span class='verde'>@cuerpo-nav z-index</span>), z-index (<span class='verde'>@zindex-dropdown</span>), hr o <i>dividers</i> (<span class='verde'>@dropdown-divider-bg</span>), colores (<span class='verde'>@dropdown-bg</span>) e íconos o <i>carets</i> de despliegue (<span class='verde'>@caret-width-base </span>).</p>
         <ul class="nav nav-pills margen-vertical-md">
           <li class="dropdown">
             <a href="#" data-toggle="dropdown" role="button" id="drop4" class="dropdown-toggle">Dropdown 1<b class="caret"></b></a>
@@ -465,26 +496,185 @@ Primero es necesario establecer un contenedor con un id específico. Dentro de l
             </ul>
           </li>
         </ul>
-        <p>Utilizar dropdowns permite condensar una navegación compleja en grandes rótulos, dando paso a a una navegación más simplificada con una jerarquía notoria.</p>
-        <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-dropdown">ver código</a> 
-        <div id="ver-codigo-dropdown" class="collapse pag-javascript">  
-          <h6>Archivos necesarios</h6>
-          <code class='margen-inf-sm'>
+        <hr class='invisible'>
+        <div class='fila'>
+          <div class='col-md-4 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                <code class='bloque'>
+&lt;ul class="nav nav-pills margen-vertical-md">
+  &lt;li class="dropdown">
+    &lt;a href="#" data-toggle="dropdown" role="button" id="drop4" class="dropdown-toggle">Dropdown 1&lt;b class="caret">&lt;/b>&lt;/a>
+    &lt;ul aria-labelledby="drop4" role="menu" class="dropdown-menu" id="menu1">
+      &lt;li role="presentation">&lt;a href="#" tabindex="-1" role="menuitem">Una cosa&lt;/a>&lt;/li>
+      &lt;li role="presentation">&lt;a href="#" tabindex="-1" role="menuitem">Otra cosa&lt;/a>&lt;/li>
+      &lt;li role="presentation">&lt;a href="#" tabindex="-1" role="menuitem">Relevancia de tercera cosa&lt;/a>&lt;/li>
+      &lt;li class="divider" role="presentation">&lt;/li>
+      &lt;li role="presentation">&lt;a href="#" tabindex="-1" role="menuitem">Algo más&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/li>
+  &lt;li class="dropdown">
+    &lt;a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle">Dropdown 2 &lt;b class="caret">&lt;/b>&lt;/a>
+    &lt;ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu2">
+      &lt;li role="presentation">&lt;a href="#" tabindex="-1" role="menuitem">Action&lt;/a>&lt;/li>
+      &lt;li role="presentation">&lt;a href="#" tabindex="-1" role="menuitem">Another action&lt;/a>&lt;/li>
+      &lt;li role="presentation">&lt;a href="#" tabindex="-1" role="menuitem">Something else here&lt;/a>&lt;/li>
+      &lt;li class="divider" role="presentation">&lt;/li>
+      &lt;li role="presentation">&lt;a href="#" tabindex="-1" role="menuitem">Separated link&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/li>
+  &lt;li class="dropdown">
+    &lt;a href="#" data-toggle="dropdown" role="button" id="drop5" class="dropdown-toggle">Dropdown 3 &lt;b class="caret">&lt;/b>&lt;/a>
+    &lt;ul aria-labelledby="drop5" role="menu" class="dropdown-menu" id="menu3">
+      &lt;li role="presentation">&lt;a href="#" tabindex="-1" role="menuitem">Action&lt;/a>&lt;/li>
+      &lt;li role="presentation">&lt;a href="#" tabindex="-1" role="menuitem">Another action&lt;/a>&lt;/li>
+      &lt;li role="presentation">&lt;a href="#" tabindex="-1" role="menuitem">Something else here&lt;/a>&lt;/li>
+      &lt;li class="divider" role="presentation">&lt;/li>
+      &lt;li role="presentation">&lt;a href="#" tabindex="-1" role="menuitem">Separated link&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/li>
+&lt;/ul>
+                </code>
+          </div>
+          <div class='col-md-4 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                <code class='bloque'>
+.nav-divider(@color: #e5e5e5) {
+  height: 1px;
+  margin: ((@line-height-computed / 2) - 1) 0;
+  overflow: hidden;
+  background-color: @color;
+}
+
+.navbar-vertical-align(@element-height) {
+  margin-top: ((@navbar-height - @element-height) / 2);
+  margin-bottom: ((@navbar-height - @element-height) / 2);
+}
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: @cuadratin-tercio;
+  margin-right: @cuadratin * 1.5;
+  vertical-align: middle;
+  border-top: @caret-width-base solid;
+  border-right: @caret-width-base solid transparent;
+  border-left: @caret-width-base solid transparent;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  z-index: @zindex-dropdown;
+  display: none; // none by default, but block on "open" of the menu
+  float: left;
+  min-width: 160px;
+  padding: @cuadratin-tercio @cuadratin-tercio;
+  margin:0; // override default ul
+  list-style: none;
+  font-size: @cuerpo-nav;
+  background-color: @dropdown-bg;
+  border: 1px solid @dropdown-fallback-border; // IE8 fallback
+  border: 1px solid @gris-claro;
+  background-clip: padding-box;
+
+  li{
+    list-style: none;
+  }
+
+  .divider {
+    .nav-divider(@dropdown-divider-bg);
+  }
+
+  > li > a {
+    display: block;
+    padding: @cuadratin-tercio / 2 @cuadratin-tercio;
+    clear: both;
+    font-family: @sans;
+    font-weight: 300;
+    line-height: @line-height-base;
+    color: @negro;
+    white-space: nowrap; // prevent links from randomly breaking onto new lines
+  }
+
+  &.xs {
+      background-color: @azul;
+      width: 100%;
+  }
+
+  &.left {
+    left: 0;
+    right: auto;
+  }
+}
+
+.dropdown-menu > li > a {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: @rojo;
+    background-color: @gris-blanco;
+  }
+}
+
+.dropdown-menu > .disabled > a {
+  &,
+  &:hover,
+  &:focus {
+    color: @rojo;
+  }
+}
+
+.dropdown-menu > .disabled > a {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    background-color: transparent;
+    background-image: none; // Remove CSS gradient
+    .reset-filter();
+    cursor: not-allowed;
+  }
+}
+
+// Backdrop to catch body clicks on mobile, etc.
+.dropdown-backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: (@zindex-dropdown - 10);
+}
+
+.dropup,
+.navbar-fixed-bottom .dropdown {
+  // Reverse the caret
+  .caret {
+    border-top: 0;
+    border-bottom: @caret-width-base solid;
+    content: "";
+  }
+  // Different positioning for bottom up menu
+  .dropdown-menu {
+    top: auto;
+    bottom: 100%;
+    margin-bottom: 1px;
+  }
+}
+                </code>
+        </div>
+        <div class='col-md-4'>
+                <h5 class='pizarra fino linea-lateral'>JS</h5>
+                <code class='bloque'>
 &lt;script src="js/jquery.js">&lt;/script>
 &lt;script src="js/dropdown.js">&lt;/script>
-          </code>
-          <h6>Codigo</h6>
-          <code>
-&lt;div class="dropdown">
-  &lt;a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown trigger&lt;/a>
-  &lt;ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-    &lt;li role="presentation">&lt;a href="#" tabindex="-1" role="menuitem">Action&lt;/a>&lt;/li>
-    &lt;li role="presentation">&lt;a href="#" tabindex="-1" role="menuitem">Another action&lt;/a>&lt;/li>
-    &lt;li role="presentation">&lt;a href="#" tabindex="-1" role="menuitem">Something else here&lt;/a>&lt;/li>
-    &lt;li class="divider" role="presentation">&lt;/li>
-    &lt;li role="presentation">&lt;a href="#" tabindex="-1" role="menuitem">Separated link&lt;/a>&lt;/li>
-  &lt;/ul>
-          </code>
+                </code>
+        </div>
         </div>
       </div>
       <div class="tab-pane fade" id="carrusel">

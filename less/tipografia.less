@@ -66,12 +66,16 @@ a{
 //  Párrafos:
 
 p {
-    margin: 0 0 25px 0;
+    margin: @margen-parrafo;
     font-family: @texto-continuo;
     font-size: @cuerpo;
     line-height: @interlinea;
     color: fade(@negro, 80%);
-    font-weight: 300;
+    font-weight: @peso-parrafo;
+
+    b{
+      font-weight: 400;
+    }
 
     //  Sin márgenes:
     &.sin-margen{
@@ -80,27 +84,22 @@ p {
 
     //  Tamaños de Párrafos:
     &.lg, &.grande { 
-      font-size: @cuerpo * 2.2;
-      line-height: @interlinea * .9;
+      font-size: @parrafo-lg;
+      line-height: @interlinea;
     }
 
     &.md, &.mediano {
-      font-size: @cuerpo * 1.7;
+      font-size: @parrafo-md;
       line-height: @interlinea;
     }
 
-    &.st, &.estandar{
-      font-size: @cuerpo;
-      line-height: @interlinea;
-    }
-
-    &.sm, &.pequeno {
-      font-size: @cuerpo * 1.2;
+    &.sm, &.pequeno{
+      font-size: @parrafo-sm;
       line-height: @interlinea;
     }
 
     &.xs, &.menudo {
-      font-size: @cuerpo * .85;
+      font-size: @parrafo-xs;
       line-height: @interlinea * 1.1;
     }
 
@@ -127,41 +126,37 @@ p {
 //  Vistazo o Span:
 
 span {
-  margin: auto 0 auto 0;
+  margin: @margen-span;
   display: inline-block;
   line-height: 25/@em;
+
+    //  Tamaños de Vistazo:
+    &.lg, &.grande { 
+      font-size: @span-lg;
+      line-height: @interlinea;
+    }
+
+    &.md, &.mediano {
+      font-size: @span-md;
+      line-height: @interlinea;
+    }
+
+    &.sm, &.pequeno{
+      font-size: @span-sm;
+      line-height: @interlinea;
+    }
+
+    &.xs, &.menudo {
+      font-size: @span-xs;
+      line-height: @interlinea * 1.1;
+    }
 
     //  Sin márgenes:
     &.sin-margen{
       margin: 0;
-        }
-
-    //  Tamaños de Vistazo:
-    &.lg, &.grande { 
-      font-size: @cuerpo * 2.2;
-      line-height: 150%;
-      }
-
-    &.md, &.mediano {
-      font-size: @cuerpo * 1.7;
-      line-height: 150%;
-      }
-
-    &.st, &.estandar{
-      font-size: @cuerpo;
-      line-height: @interlinea;
     }
 
-    &.sm, &.pequeno {
-      font-size: @cuerpo * 1.2;
-      line-height: 130%;
-    }
-
-    &.xs, &.menudo {
-      font-size: @cuerpo * .85;
-      line-height: @interlinea ;
-    }
-
+    // centrado
     &.centrado{
       display: block;
       margin: 0 auto;
@@ -170,6 +165,7 @@ span {
 
 // Clases diferenciadas:
 
+poem,
 .poema{
   font-family: @serif;
   font-size:   @cuerpo * 1.0;
@@ -257,44 +253,12 @@ em, i{
   font-family: @italica;
   font-style: italic;
   font-weight: 300;
-    
-  &.grande{
-    letter-spacing: -.1ex;
-    font-weight: 200;
-  }
 
   &.cond,
   &.condensado,
   &.condensada{
     font-family: @italica-cond;
   }
-}
-
-.negrita,
-strong{
-  font-weight: 700;
-}
-
-.fina,
-.fino{
-  font-weight: 200;
-}
-
-.pesada,
-.pesado{
-  font-weight: 900;
-  etter-spacing: 0.1ex;
-  font-family: @tipografia-titulos;
-}
-
-.gruesa{
-  font-weight: 700;
-}
-
-  // Sólo posible para títulos en @sans:
-.semi-gruesa {
-  font-family: @tipografia-titulos;
-  font-weight: 500;
 }
 
 .altas{
@@ -318,17 +282,27 @@ div.poema{
 }
 
 //  Cabeceras:
-h1, h2, h3, h4, h5, h6{
-  // Justificados
-  &.justificado{
-      text-align: justify;
-      word-wrap: break-word;
-  }
+
+h1, h2{
+  font-family: @cond !important;
+  font-weight: @peso-titulos-1;
+  margin: @margen-titulos-1;
+}
+
+h3, h4{
+  font-family: @serif !important;
+  font-weight: @peso-titulos-1;
+}
+
+h5, h6{
+  font-family: @sans;
+  margin: @margen-titulos-2;
 }
 
     //  Valores de cabecera:
 h1 {
   font-size: @font-size-titulos-1; //*33/16=2.0625*//
+  color: @color-titulos-1;
 
     &.lg, &.grande, &.gigante { 
       font-size: (@font-size-titulos-1 * 2);}
@@ -342,6 +316,7 @@ h1 {
 
 h2 {
   font-size: @font-size-titulos-2;  //*29/16=1.8125*//
+  color: @color-titulos-1;
 
     &.lg, &.grande, &.gigante { 
       font-size: (@font-size-titulos-2 * 2);}
@@ -355,6 +330,8 @@ h2 {
 
 h3 {
   font-size: @font-size-titulos-3;  //*27/16=1.6875*//
+  color: @color-titulos-1;
+  margin: @margen-titulos-1;
 
     &.lg, &.grande, &.gigante { 
       font-size: (@font-size-titulos-3 * 2);}
@@ -368,6 +345,8 @@ h3 {
 
 h4 {
   font-size: @font-size-titulos-4;  //*23/16=1.4375*//
+  color: @color-titulos-2;
+  margin: @margen-titulos-2;
 
     &.lg, &.grande, &.gigante { 
       font-size: (@font-size-titulos-4 * 2);}
@@ -381,6 +360,8 @@ h4 {
 
 h5 {
   font-size: @font-size-titulos-5;  //*19/16=1.1875*//
+  color: @color-titulos-2;
+  font-weight: 400;
 
     &.lg, &.grande, &.gigante { 
       font-size: (@font-size-titulos-5 * 2);}
@@ -394,6 +375,7 @@ h5 {
 
 h6 {
   font-size: @font-size-titulos-6;  //*17/16=1.0625*//
+  color: @color-titulos-2;
 
     &.lg, &.grande, &.gigante { 
       font-size: (@font-size-titulos-6 * 2);}
@@ -406,13 +388,13 @@ h6 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: @tipografia-titulos;
-    font-weight: 400;
-    color: @pizarra;
-    margin: 0px 0px 10px 0px;
 
     &.sin-margen{
         margin: 0 !important;
+    }
+
+    &.margen-defecto{
+      margin: 10px 0 !important;
     }
 
     &.en-linea{
@@ -438,7 +420,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .subtitulo {
     font-family: @tipografia-titulos;
-    font-weight: 200;
+    font-weight: 700;
     color: @gris-oscuro;
     margin: @interlinea 0 @interlinea 0;
     vertical-align: bottom;
@@ -447,13 +429,10 @@ h1, h2, h3, h4, h5, h6 {
 // Listas:
 
 ol,
-ul{
-  position: relative;
-  margin-bottom: 0;
-}
+ul{position: relative;}
 
-ul li {list-style-type: disc; &.sin-estilo{list-style: none !important;}
-} 
+ul li {list-style-type: disc; &.sin-estilo{list-style: none !important;}} 
+
 ul li ul li{list-style-type: circle;}
 ul li ul li ul li{list-style-type: square;}
 
@@ -464,26 +443,30 @@ ol li ol li ol li{list-style-type: lower-latin;}
   ul, ol {
     line-height: 25/@em;
     font-size: @cuerpo;
-    margin: 0;
-    color: rgba(1,1,1,.8);
-    //margin: @cuadratin * 0.4 0 @interlinea @cuadratin;
+    color: @pizarra;
+    padding: @relleno-lista;
+    margin: @margen-lista;
+      // Para evitar espaciado en listas dentro de otras
+      ul, ol{
+        margin: 0 !important;
+      }
 
         //  Tamaños de Lista:
 
     &.lg, &.grande { 
-      font-size: @cuerpo * 2.2;
+      font-size: @lista-lg;
       line-height: 150%;
     }
     &.md, &.mediano {
-      font-size: @cuerpo * 1.7;
+      font-size: @lista-md;
       line-height: 150%;
     }
     &.sm, &.pequeno {
-      font-size: @cuerpo * 1.2;
+      font-size: @lista-sm;
       line-height: 150%;
     }
     &.xs, &.menudo {
-      font-size: @cuerpo * .85;
+      font-size: @lista-xs;
       line-height: @interlinea * 1.1;
     }
 
@@ -601,57 +584,81 @@ hr {
 
   // Citas:
 
-blockquote {
-  line-height: 22/@em;
+// Address
 
-  //  Sin márgenes:
-  &.sin-margen{
-    margin: 0;
-  }
+    address{
+        
+    }
 
-  //  Tamaños de Párrafos:
-  &.lg { 
-    font-size: @cuerpo * 2.2;
-    line-height: 140%;
-  }
 
-  &.md {
-    font-size: @cuerpo * 1.7;
-    font-weight: 200;
-    line-height: 140%;
-  }
+// CITA
+// -------------------------
+// 
 
-  &.sm {
-    font-size: @cuerpo * 1.2;
-    line-height: 130%;
-  }
+    blockquote{
+        line-height: 22/@em;
+        border-left: 3px solid @gris-claro;
+        margin: 0 @cuadratin @cuadratin @cuadratin;
+        padding: 0 0 0 10px !important;
+        color: rgba(1,1,1,0.8);
 
-  &.xs {
-    font-size: @cuerpo * .75;
-    line-height: @interlinea * .9;
-  }
-  
-  //  Chico:
-  small {
-    display: block;
-    color: @gris-claro;
-    &:before {
-    content: '\2014 \00A0';
-  }
-}
-  //  Pie de foto 
-  &.pie-de-foto{
-    line-height: 24px;
-    font-weight: 100;
-    border-left: 2px solid @rojo;
-    display: inline-block;
-    font-size: 12px !important;
-    font-style: italic !important; 
-    line-height: 16px !important;
-    margin: 5px 0 15px !important;
-    padding: 0 0 0 10px !important;
-  }
-}
+         //  Sin márgenes:
+          &.sin-margen{
+            margin: 0;
+          }
+
+          &.sin-borde{
+            border: 0px !important;
+          }
+
+          //  Tamaños de Párrafos:
+          &.lg { 
+            font-size: @cuerpo * 2.2;
+            line-height: 140%;
+          }
+
+          &.md {
+            font-size: @cuerpo * 1.7;
+            font-weight: 200;
+            line-height: 140%;
+          }
+
+          &.sm {
+            font-size: @cuerpo * 1.2;
+            line-height: 140%;
+          }
+
+          &.xs {
+            font-size: @cuerpo * .75;
+            line-height: @interlinea * .9;
+          }
+
+            //  Chico:
+          small {
+            display: block;
+            color: @gris-claro;
+            &:before {
+            content: '\2014 \00A0';
+          }
+        }
+    }
+
+    // Pie de imagen
+
+    figcaption, .wp-caption-text{
+            line-height: 24px;
+            font-family: @serif;
+            font-weight: @peso-fino;
+            border-left: 2px solid fade(@rojo, 80);
+            display: inline-block;
+            font-size: 16px;
+            font-style: inherit !important;
+            font-style: italic !important; 
+            line-height: 16px !important;
+            .margen-sup-xs;
+            .margen-inf-sm;
+            padding: 0 0 0 10px !important;
+    }
 
 .autor {
     line-height: 22px;
@@ -676,6 +683,7 @@ address {
   display: block;
   line-height: @interlinea;
   margin-bottom: @interlinea;
+  font-style: normal;
 }
 
 //  Código y Texto sin estilos:
@@ -711,6 +719,9 @@ code {
     background-color: @pizarra;
     line-height: 140%;
     text-shadow: none;
+    white-space: pre;
+    max-height: 160px;
+    overflow: scroll;
   }
 
   &.codigo-parrafo{
@@ -1379,7 +1390,7 @@ span {
    ul, ol {
       line-height: @interlinea;
       font-size: @cuerpo;
-      margin-bottom: @cuadratin;
+      //margin-bottom: @cuadratin;
 
           //  Tamaños de Lista:
 
@@ -1415,323 +1426,18 @@ span {
 @media (min-width: @screen-md) and (max-width: @screen-md-max){
 }
 
+//  Medium screen / desktop
+@media (min-width: @screen-lg) and (max-width: @screen-md-max){
+}
+
 //  Large screen / wide desktop
 @media (min-width: @screen-lg){
 
-    // e[ad] escrito
-
-    .ead{
-      font-size: 45px !important;
-    }
-
-    //  Vínculos:
-
-    a{
-      font-size: 1.1vw;
-
-          //  Tamaños de Vínculos:
-
-        &.lg, &.grande  { 
-          font-size: 1.5vw;
-          line-height: 140%;
-        }
-
-        &.md, &.mediano  {
-          font-size: 1.1vw;
-          font-weight: 200;
-          line-height: 140%;
-        }
-
-        &.sm, &.pequeno  {
-          font-size: 1.2vw;;
-          line-height: 130%;
-        }
-
-        &.xs, &.menudo  {
-          font-size: 1vw;
-          line-height: @interlinea * .9;
-        }
-      }
-
-    //  Párrafos:
-
-    p {
-        margin: 0 0 @interlinea * 1.3 0;
-        font-size: 1.2vw; //@cuerpo
-        line-height: @interlinea;
-
-        //  Tamaños de Párrafos:
-
-        &.lg, &.grande { 
-          font-size: 1.5vw; a{font-size: 1.5vw;}
-          line-height: @interlinea;
-        }
-
-        &.md, &.mediano {
-          font-size: 1.3vw; a{font-size: 1.3vw;}
-          line-height: @interlinea;
-        }
-
-        &.sm, &.pequeno {
-          font-size: 1.1vw; a{font-size: 1.2vw;}
-          line-height: @interlinea * 1.1;
-        }
-
-        &.xs, &.menudo {
-          font-size: 0.8vw; a{font-size: 0.8vw;}
-          line-height: @interlinea * 1.1;
-        }
-    }
-
-    //  Vistazo:
-
-    span {
-      margin: auto 0 auto 0;
-      display: inline-block;
-
-        //  Sin márgenes:
-
-        &.sin-margen{
-          margin: 0;
-            }
-
-        //  Tamaños de Vistazo:
-
-        &.lg, &.grande { 
-          font-size: 1.5vw; a{font-size: 1.5w;}
-          line-height: 150%;
-          }
-
-        &.md, &.mediano {
-          font-size: 1.1vw; a{font-size: 1.1vw;}
-          line-height: 150%;
-          }
-
-        &.sm, &.pequeno {
-          font-size: 1.1vw; a{font-size: 1.2vw;}
-          line-height: 150%;
-        }
-
-        &.xs, &.menudo {
-          font-size: 0.8vw; a{font-size: 0.8vw;}
-          line-height: @interlinea * 1.1;
-        }
-      }
-
-    // Cabeceras
-
-    h1 {
-      font-size: 2.4vw; //*33/16=2.0625*//
-      a{font-size: 2.1vw}
-        &.no-responsivo{font-size: 3.5vw}
-
-        &.lg, &.grande, &.gigante { 
-          font-size: 4.5vw; a{font-size: 4.5vw;}
-            &.no-responsivo{
-              font-size: 4.5vw;
-            }
-        }
-
-        &.md, &.mediano {
-          font-size: 3.5vw; a{font-size: 3.5vw;}
-            &.no-responsivo{
-              font-size: 3.5vw;
-            }
-        }
-
-        &.sm, &.pequeno {
-          font-size: 2.8vw; a{font-size: 2.8vw;}
-            &.no-responsivo{
-              font-size: 2.8vw;
-            }
-        }
-
-        &.xs, &.menudo {
-          font-size: 2vw; a{font-size: 2vw;}
-            &.no-responsivo{
-              font-size: 2vw;
-            }
-        }
-    }
-
-    h2 {
-      font-size: 2.2vw;  //*29/16=1.8125*//
-      a{font-size: 1.8vw}
-        &.no-responsivo{font-size: (@font-size-titulos-2)}
-
-        &.lg, &.grande, &.gigante { 
-          font-size: 4vw; a{font-size: 4vw;}
-            &.no-responsivo{
-              font-size: 4vw;
-            }
-        }
-
-        &.md, &.mediano {
-          font-size: 3vw; a{font-size: 3vw;}
-            &.no-responsivo{
-              font-size: 3vw;
-            }
-        }
-
-        &.sm, &.pequeno {
-          font-size: 2.9vw; a{font-size: 2.9vw;}
-            &.no-responsivo{
-              font-size: (@font-size-titulos-2 * 1.2);
-            }
-        }
-
-        &.xs, &.menudo {
-          font-size: 1.6vw;a{font-size: 1.6vw;}
-            &.no-responsivo{
-              font-size: 1.7vw;
-            }
-        }
-    }
-
-    h3 {
-      font-size: 1.6vw;  //*27/16=1.6875*//
-      a{font-size: 1.6vw}
-        &.no-responsivo{font-size: (@font-size-titulos-3)}
-
-        &.lg, &.grande, &.gigante { 
-          font-size: 3.6vw; a{font-size: 3.6vw;}
-            &.no-responsivo{
-              font-size: 3.6vw;
-            }
-        }
-
-        &.md, &.mediano {
-          font-size: 2.6vw; a{font-size: 2.6vw;}
-            &.no-responsivo{
-              font-size: 2.6vw;
-            }
-        }
-
-        &.sm, &.pequeno {
-          font-size: 2vw; a{font-size: 2vw;}
-            &.no-responsivo{
-              font-size: 2vw;
-            }
-        }
-
-        &.xs, &.menudo {
-          font-size: 1.4vw; a{font-size: 1.4vw;}
-            &.no-responsivo{
-              font-size: 1.4vw;
-            }
-        }
-    }
-
-    h4 {
-      font-size: 1.4vw;  //*23/16=1.4375*//
-      a{font-size: 1.4vw}
-        &.no-responsivo{font-size: (@font-size-titulos-4)}
-
-        &.lg, &.grande, &.gigante { 
-          font-size: 3.2vw; a{font-size: 3.2vw;}
-            &.no-responsivo{
-              font-size: 3.2vw;
-            }
-        }
-
-        &.md, &.mediano {
-          font-size: 2.2vw; a{font-size: 2.2vw;}
-            &.no-responsivo{
-              font-size: 2.2vw;
-            }
-        }
-
-        &.sm, &.pequeno {
-          font-size: 1.8vw; a{font-size: 1.8vw;}
-            &.no-responsivo{
-              font-size: 1.8vw;
-            }
-        }
-
-        &.xs, &.menudo {
-          font-size: 1.3vw; a{font-size: 1.3vw;}
-            &.no-responsivo{
-              font-size: 1.1vw;
-            }
-        }
-    }
-
-    h5 {
-      font-size: 1.2vw;  //*19/16=1.1875*//
-      a{font-size: 1.2vw}
-        &.no-responsivo{font-size: (@font-size-titulos-5)}
-
-        &.lg, &.grande, &.gigante { 
-          font-size: 2.7vw; a{font-size: 2.7vw;}
-            &.no-responsivo{
-              font-size: 2.7vw;
-            }
-        }
-
-        &.md, &.mediano {
-          font-size: 1.8vw; a{font-size: 1.8vw;}
-            &.no-responsivo{
-              font-size: 1.8vw;
-            }
-        }
-
-        &.sm, &.pequeno {
-          font-size: 1.4vw; a{font-size: 1.4vw;}
-            &.no-responsivo{
-              font-size: 1.4vw;
-            }
-        }
-
-        &.xs, &.menudo {
-          font-size: 1.1vw; a{font-size: 1.1vw;}
-            &.no-responsivo{
-              font-size: 1vw;
-            }
-        }
-    }
-
-    h6 {
-      font-size: 1vw;  //*17/16=1.0625*//
-      a{font-size: 1vw}
-        &.no-responsivo{font-size: 1.1vw}
-
-        &.lg, &.grande, &.gigante { 
-          font-size: 2.2vw; a{font-size: 2.2vw;}
-            &.no-responsivo{
-              font-size: 2.2vw;
-            }
-        }
-
-        &.md, &.mediano {
-          font-size: 1.4vw; a{font-size: 1.4vw;}
-            &.no-responsivo{
-              font-size: 1.4vw;
-            }
-        }
-
-        &.sm, &.pequeno {
-          font-size: 1vw; a{font-size: 1vw;}
-            &.no-responsivo{
-              font-size: 1vw;
-            }
-        }
-
-        &.xs, &.menudo {
-          font-size: 1vw; a{font-size: 1vw;}
-            &.no-responsivo{
-              font-size: .7vw;
-            }
-        }
-    }
-
-    ul, ol {
-      line-height: 25/@em;
-      font-size: 1.2vw;
-      margin: 0;
-      color: rgba(1,1,1,.8);
-      //margin: @cuadratin * 0.4 0 @interlinea @cuadratin;
+  p{
+    line-height: @interlinea * 1.1 !important;
   }
 }
+
 
 .icn{
   letter-spacing: normal !important;
