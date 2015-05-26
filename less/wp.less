@@ -1,90 +1,88 @@
-#carrusel-index, #carusel-portada{
-    //Carrusel de Home
-    .carousel{
-        .carousel-inner{
-            .car-sm{
-                img{
-                    .ancho-completo;
-                    .absoluto;
-                }
-                .pag {
-                    .cf;
+
+.carousel{
+    .carousel-inner{
+        .car-sm{
+            img{
+                .ancho-completo;
+                .absoluto;
+            }
+            .pag {
+                .cf;
+                .h100;
+                .oculto-xs {
                     .h100;
-                    .oculto-xs {
-                        .h100;
-                        .derecha;
-                        .cf;
-                        a{
-                            div{
-                                .fondo-gris-blanco-trans;
-                                .absoluto;
-                                .abs-der;
-                                .abs-sup;
-                                .bloque;
-                                .alto-completo;
-                                .relleno;
-                                h2{
-                                    .gris-oscuro;
-                                    .condensado;
-                                    .gruesa;
-                                    .sombra-cabecera-blanco-xs;
-                                    i{
-                                        .margen-der-xs;
-                                    }
-                                }
-                                p{
-                                    .italica;
-                                    .margen-sup-sm;
-                                    .sombra-cabecera-blanco-xs;
-                                }
-                                span{
-                                    .cond;
-                                    .negro;
-                                    .derecha;
-                                    .interletraje-xs;
-                                    .relleno-vertical-xs;
-                                    .relleno-der-xs;
-                                    .sombra;
-                                    .borde 
-                                    .radio-md;
-                                    i{
-                                        .negro;
-                                        .relleno-der-xs;
-                                        .relleno-izq-xs;
-                                        .margen-der-xs;
-                                        .icn-light;
-                                        .sombra-cabecera-blanco-xs;
-                                    }
+                    .derecha;
+                    .cf;
+                    a{
+                        div{
+                            .fondo-gris-blanco-trans;
+                            .absoluto;
+                            .abs-der;
+                            .abs-sup;
+                            .bloque;
+                            .alto-completo;
+                            .relleno;
+                            h2{
+                                .gris-oscuro;
+                                .condensado;
+                                .gruesa;
+                                .sombra-cabecera-blanco-xs;
+                                i{
+                                    .margen-der-xs;
                                 }
                             }
-                            &:hover{
-                                h2{
-                                    .rojo;
+                            p{
+                                .italica;
+                                .margen-sup-sm;
+                                .sombra-cabecera-blanco-xs;
+                            }
+                            span{
+                                .cond;
+                                .negro;
+                                .derecha;
+                                .interletraje-xs;
+                                .relleno-vertical-xs;
+                                .relleno-der-xs;
+                                .sombra;
+                                .borde 
+                                .radio-md;
+                                i{
+                                    .negro;
+                                    .relleno-der-xs;
+                                    .relleno-izq-xs;
+                                    .margen-der-xs;
+                                    .icn-light;
+                                    .sombra-cabecera-blanco-xs;
                                 }
                             }
                         }
+                        &:hover{
+                            h2{
+                                .rojo;
+                            }
+                        }
                     }
-                    .oculto-md{
-                        .h100;
-                        .cf;
-                        a{
-                            div{
-                                .fondo-gris-blanco-trans;
-                                .absoluto;
-                                .abs-der;
-                                .abs-inf;
-                                .bloque;
-                                .relleno;
-                                .ancho-completo;
-                                h5{
-                                    .condensado;
-                                    .centrado;
-                                    .gruesa;
-                                    .sombra-cabecera-blanco-xs;
-                                    .gris-oscuro;
-                                    i{
-                                        .margen-der-xs;
-                                    }
+                }
+                .oculto-md{
+                    .h100;
+                    .cf;
+                    a{
+                        div{
+                            .fondo-gris-blanco-trans;
+                            .absoluto;
+                            .abs-der;
+                            .abs-inf;
+                            .bloque;
+                            .relleno;
+                            .ancho-completo;
+                            h5{
+                                .condensado;
+                                .centrado;
+                                .gruesa;
+                                .sombra-cabecera-blanco-xs;
+                                .gris-oscuro;
+                                i{
+                                    .margen-der-xs;
                                 }
                             }
                         }
@@ -94,6 +92,7 @@
         }
     }
 }
+
 
 //  Home
 #index, #tag{
@@ -157,62 +156,62 @@
 }
 
 // Ejemplo de noticia en Home *
-    .noticia{
-        .cabecera{
-            .alto-xs;
-            .margen-inf-xs;
-            .borde;
-            .radio-md;
-            .ocultar-desborde;
-            a{
+.noticia{
+    .cabecera{
+        .alto-xs;
+        .margen-inf-xs;
+        .borde;
+        .radio-md;
+        .ocultar-desborde;
+        a{
+            img{
+                .w150;
+                .margen-sup-negativo;
+                .transition(.2s ease all);
+            }
+            &:hover{
                 img{
-                    .w150;
-                    .margen-sup-negativo;
+                    .relleno-der-sm;
                     .transition(.2s ease all);
                 }
-                &:hover{
-                    img{
-                        .relleno-der-sm;
-                        .transition(.2s ease all);
-                    }
-                }
             }
-        }
-        h1, h4, h2, h3, h4, h5, h6{
-            .condensado;
-            .sombra-cabecera-claro-xs;
-            .relleno-inf-xs;
-            a{
-                .condensado; 
-                .gruesa;
-                .gris-oscuro;
-                &:hover{
-                    .negro;
-                }
-            }
-        }
-        .entry-details, .datos-publicacion{
-            .rojo; 
-            .italica; 
-            .borde; 
-            .sup-lineal-xs;
-            .inf-lineal-xs;
-            .relleno-vertical-xs;
-            a{
-                .en-linea;
-                .icn-cuadrolleno{
-                    .gris-blanco;
-                }
-                .icn-lapiz{
-                    .gris-oscuro;
-                }
-            }
-        }
-        p{
-            .sans;
-            .margen-sup-xs;
         }
     }
+    h1, h4, h2, h3, h4, h5, h6{
+        .condensado;
+        .sombra-cabecera-claro-xs;
+        .relleno-inf-xs;
+        a{
+            .condensado; 
+            .gruesa;
+            .gris-oscuro;
+            &:hover{
+                .negro;
+            }
+        }
+    }
+    .entry-details, 
+    .datos-publicacion{
+        .rojo; 
+        .italica; 
+        .borde; 
+        .relleno-vertical-xs;
+        a{
+            .en-linea;
+            .icn-cuadrolleno{
+                .gris-blanco;
+            }
+            .icn-lapiz{
+                .gris-oscuro;
+            }
+        }
+    }
+    p{
+        .sans;
+        .margen-sup-xs;
+    }
+}
+
 // Ejemplo de publicacion en Home *
    .publicacion{
         .categoria{
@@ -271,8 +270,7 @@
         }
     }
 }
-// Lectura de evento desplegado *
-#single-event{
+
     .fecha{
         .borde; 
         .izq-lineal-sm;
@@ -317,6 +315,9 @@
             .interletraje-sm;
         }
     }
+
+// Lectura de evento desplegado *
+#single-event{
     h1, h4, h2, h3, h4, h5, h6 .entry-title{
          .gruesa; 
          .condensado; 
@@ -495,86 +496,6 @@
     }
 }
 
-#portada-indice{
-    .noticia{ 
-            .cabecera{
-                .alto-xs;
-                .margen-inf-xs;
-                .borde;
-                .radio-md;
-                .ocultar-desborde;
-                    .indice{
-                        .absoluto; 
-                        .cf; 
-                        .al-frente; 
-                        .abs-sup; 
-                        .abs-inf; 
-                        .abs-der; 
-                        .der-relleno; 
-                        .abs-izq; 
-                        .izq-relleno; 
-                        .alto-xs;
-                        a{
-                            .sans; 
-                            .fondo-gris-blanco-trans; 
-                            .borde; 
-                            .radio-sup-izq-md; 
-                            .absoluto; 
-                            .abs-inf; 
-                            .abs-der; 
-                            .altas; 
-                            .interletraje-xs; 
-                            .bloque;
-                        }
-                    }
-                    img{
-                        .w150;
-                        .margen-sup-negativo;
-                        .transition(.2s ease all);
-                    }
-                    &:hover{
-                        img{
-                            .relleno-der-sm;
-                            .transition(.2s ease all);
-                        }
-                    }
-                }
-            h1, h4, h2, h3, h4, h5, h6{
-                .condensado;
-                .sombra-cabecera-claro-xs;
-                .relleno-inf-xs;
-                a{
-                    .condensado; 
-                    .gruesa;
-                    .gris-oscuro;
-                    &:hover{
-                        .negro;
-                    }
-                }
-            }
-            .entry-details, .datos-publicacion{
-                .rojo; 
-                .italica; 
-                .borde; 
-                .sup-lineal-xs;
-                .inf-lineal-xs;
-                .relleno-vertical-xs;
-                a{
-                    .en-linea;
-                    .icn-cuadrolleno{
-                        .gris-blanco;
-                    }
-                    .icn-lapiz{
-                        .gris-oscuro;
-                    }
-                }
-            }
-            p{
-                .sans;
-                .margen-sup-xs;
-            }
-    }
-}
 
 #portada-informacion{
         .fila{
@@ -629,62 +550,63 @@
 }
 
 // noticia genérica (resumen)
-    .noticia{
-        .cabecera{
-            .alto-xs;
-            .margen-inf-xs;
-            .borde;
-            .radio-md;
-            .ocultar-desborde;
-            a{
+.noticia{
+    .cabecera{
+        .alto-xs;
+        .margen-inf-xs;
+        .borde;
+        .radio-md;
+        .ocultar-desborde;
+        a{
+            img{
+                .w150;
+                .margen-sup-negativo;
+                .transition(.2s ease all);
+            }
+            &:hover{
                 img{
-                    .w150;
-                    .margen-sup-negativo;
+                    .relleno-der-sm;
                     .transition(.2s ease all);
                 }
-                &:hover{
-                    img{
-                        .relleno-der-sm;
-                        .transition(.2s ease all);
-                    }
-                }
             }
-        }
-        h1, h4, h2, h3, h4, h5, h6{
-            .condensado;
-            .sombra-cabecera-claro-xs;
-            .relleno-inf-xs;
-            a{
-                .condensado; 
-                .gruesa;
-                .gris-oscuro;
-                &:hover{
-                    .negro;
-                }
-            }
-        }
-        .entry-details, .datos-publicacion{
-            .rojo; 
-            .italica; 
-            .borde; 
-            .sup-lineal-xs;
-            .inf-lineal-xs;
-            .relleno-vertical-xs;
-            a{
-                .en-linea;
-                .icn-cuadrolleno{
-                    .gris-blanco;
-                }
-                .icn-lapiz{
-                    .gris-oscuro;
-                }
-            }
-        }
-        p{
-            .sans;
-            .margen-sup-xs;
         }
     }
+    h1, h4, h2, h3, h4, h5, h6{
+        .condensado;
+        .sombra-cabecera-claro-xs;
+        .relleno-inf-xs;
+        a{
+            .condensado; 
+            .gruesa;
+            .gris-oscuro;
+            &:hover{
+                .negro;
+            }
+        }
+    }
+    .entry-details, .datos-publicacion{
+        .rojo; 
+        .italica; 
+        .borde; 
+        .sup-lineal-xs;
+        .inf-lineal-xs;
+        //.relleno-vertical-xs;
+        font-size: 13px;
+        a{
+            .en-linea;
+            .icn-cuadrolleno{
+                .gris-blanco;
+            }
+            .icn-lapiz{
+                .gris-oscuro;
+            }
+        }
+    }
+    p{
+        .sans;
+        .margen-sup-xs;
+    }
+}
 
 #portadilla{
     // Necesario fondo por z-index de imagen fixed 
@@ -754,11 +676,6 @@
 }
 
 
-// Títulos y subtítulos
-// -------------------------
-//
-
-
 // Post en Gamma (estilos de Gamma)
 
 .h-entry {
@@ -777,65 +694,6 @@
     .wpcf7{
             width: 65%;
         }
-
-    blockquote, .wp-caption-text{
-        line-height: 22/@em;
-        border-left: 3px solid @gris-claro;
-        margin: 0 @cuadratin @cuadratin @cuadratin;
-        padding: 0 0 0 10px !important;
-        color: rgba(1,1,1,0.8);
-
-
-         //  Sin márgenes:
-          &.sin-margen{
-            margin: 0;
-          }
-
-          //  Tamaños de Párrafos:
-          &.lg { 
-            font-size: @cuerpo * 2.2;
-            line-height: 140%;
-          }
-
-          &.md {
-            font-size: @cuerpo * 1.7;
-            font-weight: 200;
-            line-height: 140%;
-          }
-
-          &.sm {
-            font-size: @cuerpo * 1.2;
-            line-height: 140%;
-          }
-
-          &.xs {
-            font-size: @cuerpo * .75;
-            line-height: @interlinea * .9;
-          }
-
-            //  Chico:
-          small {
-            display: block;
-            color: @gris-claro;
-            &:before {
-            content: '\2014 \00A0';
-          }
-        }
-          //  Pie de foto 
-          &.pie-de-foto{
-            line-height: 24px;
-            font-weight: 100;
-            border-left: 2px solid fade(@rojo, 80);
-            display: inline-block;
-            font-size: 16px !important;
-            font-style: inherit !important;
-            font-style: italic !important; 
-            line-height: 16px !important;
-            .margen-sup-xs;
-            .margen-inf-sm;
-            padding: 0 0 0 10px !important;
-          }
-    }
 
         &.enunciado{
             width: 100% !important;

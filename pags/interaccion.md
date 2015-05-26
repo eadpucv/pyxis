@@ -20,11 +20,11 @@ intro: Texto sobre Interacción
     <!-- contenido en tabs -->
     <div class="tab-content margen-sup">
       <div class="tab-pane fade in active" id="formularios">
-        <h4 class='pizarra gruesa'>Formularios</h4>
-        <p>Éstos elementos son los encargados de establecer un vínculo de comunicación entre el usuario y la plataforma o sistema. Por una parte existen los formularios que son los objetos digitales de recibir la información que proporciona el usuario a través de distintos input. La configuración de los input resulta ser un tipo de formulario. Mientras que los botones son el elemento interactivo más común de los sitios web, donde al ser accionado se gatilla algún elemento, interacción o envía algún tipo de introducción.</p>
+        <h4 class='pizarra gruesa'>Formularios de interacción</h4>
+        <p>Los elementos de interacción son aquellos <b>encargados de establecer un vínculo de comunicación entre el usuario y la plataforma o el servicio web</b>. En el caso de las <i>fichas</i> o <i>formularios</i>, existen variadas funciones, lo que requiere diferentes casillas o <i>inputs</i> de relleno. Adaptados al sistema o servicio de la e[ad] como una organización, los formularios se clasifican según su plataforma web; a saber: <a href=''>Sitio oficial</a>, <a href=''>Wiki Casipea</a> o 'Personas'. De modo que cada formulario a continuación refiere a una plataforma en particular. Por otro lado, independiente de la categoría, cada input o casilla puede ser usada de manera individual, interpretando el código html y css.</p>
         <div class='fila'>
           <div class="col-md-6 col-sm-12 col-xs-12">
-            <h5 class='pizarra gruesa'>Formulario genérico</h5>
+            <h5 class='pizarra'>Formulario genérico</h5>
             <form role="form">
               <div class="grupo-formulario">
                 <label for="ejemplo-formulario">Dirección de e-mail *</label>
@@ -45,8 +45,10 @@ intro: Texto sobre Interacción
               </div>
               <button type="submit" class="btn btn-default">Enviar</button>
             </form>
-            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form1">ver código</a> 
-            <div id="ver-codigo-form1" class="collapse">
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12 relleno-sup">
+            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form1html">ver código HTML</a> 
+            <div id="ver-codigo-form1html" class="collapse">
               <code class='bloque'>
 &lt;form role="form">
   &lt;div class="grupo-formulario">
@@ -70,10 +72,64 @@ intro: Texto sobre Interacción
 &lt;/form>
               </code>
             </div>
-          </div>
+            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form1less">ver código LESS</a> 
+            <div id="ver-codigo-form1less" class="collapse">
+              <code class='bloque'>
+form{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid @gris;
+    margin-bottom: 0 !important;
+    .clearfix;
+    .margen-inf;
 
+    label{
+        font-family: @cond;
+        text-transform: uppercase;
+        font-size: 90%;
+        letter-spacing: .02ex;
+        color: @gris-oscuro; 
+        display: block;
+        padding-bottom: 5px;
+        padding-top: 10px;
+
+        &.checkbox{
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 400;
+            
+            input[type=checkbox]{
+                display: inline-block;
+                margin-right: 1ex; 
+                padding: @padding-md;
+            }
+        }
+    }
+}
+
+    input[type='text'],
+    input[type='password'],
+    input[type='email'], 
+    textarea,
+    select{
+        height: auto;
+        width: 100%;
+        padding: 5px 10px;
+        color: @gris-oscuro;
+        .border-radius(@radio);
+        &:valid{
+            color: @gris-oscuro;
+        }
+    }
+              </code>
+            </div>
+          </div>
+        </div> <!--fin de fila-->
+        <hr class='invisible'>
+
+        <div class="fila">
           <div class="col-md-6 col-sm-12 col-xs-12">
-            <h5 class='pizarra gruesa'>Formulario genérico - variantes</h5>
+            <h5 class='pizarra'>Formulario genérico - variantes</h5>
             <form role="form">
               <div class="grupo-formulario">
                 <label>Seleccione color</label>
@@ -92,8 +148,10 @@ intro: Texto sobre Interacción
                 <input type="week" />
               </div>
             </form>
-            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form2">ver código</a>
-            <div id="ver-codigo-form2" class="collapse">
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12 margen-sup">
+            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form2html">ver código HTML</a>
+            <div id="ver-codigo-form2html" class="collapse">
               <code class='bloque'>
 &lt;form role="form">
   &lt;div class="grupo-formulario">
@@ -115,13 +173,64 @@ intro: Texto sobre Interacción
 &lt;/form>
               </code>
             </div>
-          </div>
-        </div> <!--fin de fila-->
-        <hr class='invisible'>
+            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form2less">ver código LESS</a>
+            <div id="ver-codigo-form2less" class="collapse">
+              <code class='bloque'>
+    // Reset
+.input,
+textarea,
+select,
+input[type='text'],
+input[type='password'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='date'],
+input[type='month'],
+input[type='time'],
+input[type='week'],
+input[type='number'],
+input[type='email'],
+input[type='url'],
+input[type='search'],
+input[type='tel'],
+input[type='color'],
+input[type='file'],
+.uneditable-input, {
+    font-family: @sans;
+    width: 100%;
+    display: inline-block;
+    padding: @padding-md 3 * @padding-md;
+    margin: 0 0 @margen-sm 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: @interlinea;
+    color: @gris;
+    border: 1px solid @gris-claro;
+    &:focus{
+      box-shadow: inset 0 @boton-resalte 0 fade(@negro, 13);
+      background-color: fade(@negro, 3);
+    }
 
-        <div class="fila">
+    &.sin-margen{
+        margin: 0;
+    }
+
+    &.buscar{
+        width: auto;
+        padding: 6.5px 1.5px 3.5px 10px !important;
+        background-color: @gris-blanco-transparente;
+        font-size: 15px !important;
+    }
+}
+              </code>
+            </div>
+          </div>
+        </div>
+      <hr class='invisible'>
+
+      <div class='fila'>
           <div class="col-md-12 col-sm-12 col-xs-12">
-            <h5 class='pizarra gruesa'>Formulario horizontal</h5>
+            <h5 class='pizarra'>Formulario horizontal</h5>
             <form class="formulario-horizontal" role="form">
               <div class="grupo-formulario">
                 <input type="email" class="control" id="ejemplo-nombre2" placeholder="Ingresa nombre" required />
@@ -142,41 +251,63 @@ intro: Texto sobre Interacción
               </div>
               <button type="submit" class="btn btn-default">Accede</button>
             </form>
-            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form3">ver código</a>
-            <div id="ver-codigo-form3" class="collapse">
+            <div class='fila'>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+              <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form3html">ver código HTML</a>
+              <div id="ver-codigo-form3html" class="collapse">
+                <code class='bloque'>
+  &lt;form class="formulario-horizontal" role="form">
+    &lt;div class="grupo-formulario">
+      &lt;input type="email" class="form-º" id="ejemplo-nombre2" placeholder="Ingresa nombre" required />
+    &lt;/div>
+    &lt;div class="grupo-formulario">
+      &lt;div class="input-group">
+        &lt;div class="input-group-addon">@&lt;/div>
+          &lt;input class="control" type="email" placeholder="Ingresa email" required />
+        &lt;/div>
+      &lt;/div>
+      &lt;div class="grupo-formulario">
+        &lt;input type="password" class="control" id="ejemplo-contraseña2" placeholder="Contraseña" required />
+      &lt;/div>
+      &lt;div class="grupo-formulario">
+        &lt;div class="checkbox">
+          &lt;label>
+            &lt;input type="checkbox"> Recuerdame
+          &lt;/label>
+        &lt;/div>
+      &lt;/div>
+    &lt;button type="submit" class="btn btn-default">Accede&lt;/button>
+  &lt;/form>
+                </code>
+              </div>
+            </div>
+              <div class="col-md-6 col-sm-12 col-xs-12">
+            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form3less">ver código LESS</a>
+            <div id="ver-codigo-form3less" class="collapse">
               <code class='bloque'>
-&lt;form class="formulario-horizontal" role="form">
-  &lt;div class="grupo-formulario">
-    &lt;input type="email" class="form-º" id="ejemplo-nombre2" placeholder="Ingresa nombre" required />
-  &lt;/div>
-  &lt;div class="grupo-formulario">
-    &lt;div class="input-group">
-      &lt;div class="input-group-addon">@&lt;/div>
-        &lt;input class="control" type="email" placeholder="Ingresa email" required />
-      &lt;/div>
-    &lt;/div>
-    &lt;div class="grupo-formulario">
-      &lt;input type="password" class="control" id="ejemplo-contraseña2" placeholder="Contraseña" required />
-    &lt;/div>
-    &lt;div class="grupo-formulario">
-      &lt;div class="checkbox">
-        &lt;label>
-          &lt;input type="checkbox"> Recuerdame
-        &lt;/label>
-      &lt;/div>
-    &lt;/div>
-  &lt;button type="submit" class="btn btn-default">Accede&lt;/button>
-&lt;/form>
+.formulario-horizontal .input-group {
+    display: inline-table;
+    vertical-align: super !important;
+}
+
+.grupo-formulario,
+.form-group {
+    span {
+        margin: 0;
+    }
+}
               </code>
             </div>
           </div>
+          </div><!-- fin de fila interior -->
         </div>
+        </div><!-- fin de fila exterior -->
 
         <hr class='invisible'>
 
         <div class="fila">
           <div class="col-md-6 col-sm-12 col-xs-12">
-            <h5 class='pizarra gruesa'>Formulario de contacto</h5>
+            <h5 class='pizarra'>Formulario de contacto</h5>
             <form role="form">
               <div class="grupo-formulario">
                 <label for="nombre">Nombre *</label>
@@ -196,8 +327,10 @@ intro: Texto sobre Interacción
               </div>
               <button type="submit" class="btn btn-default">Enviar</button>
             </form>
-            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form4">ver código</a>
-            <div id="ver-codigo-form4" class="collapse">
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12 margen-sup">
+            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form4html">ver código HTML</a>
+            <div id="ver-codigo-form4html" class="collapse">
               <code class='bloque'>
 &lt;form role="form">
   &lt;div class="grupo-formulario">
@@ -220,9 +353,65 @@ intro: Texto sobre Interacción
 &lt;/form>
               </code>
             </div>
+            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form4less">ver código LESS</a>
+            <div id="ver-codigo-form4less" class="collapse">
+              <code class='bloque'>
+form{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid @gris;
+    margin-bottom: 0 !important;
+    .clearfix;
+    .margen-inf;
+
+    label{
+        font-family: @cond;
+        text-transform: uppercase;
+        font-size: 90%;
+        letter-spacing: .02ex;
+        color: @gris-oscuro; 
+        display: block;
+        padding-bottom: 5px;
+        padding-top: 10px;
+
+        &.checkbox{
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 400;
+            
+            input[type=checkbox]{
+                display: inline-block;
+                margin-right: 1ex; 
+                padding: @padding-md;
+            }
+        }
+    }
+}
+
+    input[type='text'],
+    input[type='password'],
+    input[type='email'], 
+    textarea,
+    select{
+        height: auto;
+        width: 100%;
+        padding: 5px 10px;
+        color: @gris-oscuro;
+        .border-radius(@radio);
+        &:valid{
+            color: @gris-oscuro;
+        }
+    }
+              </code>
+            </div>
           </div>
+        </div>
+
+        <hr class='invisible'>
+
+       <div class="fila">
           <div class="col-md-6 col-sm-12 col-xs-12">
-            <h5 class='pizarra gruesa'>Agregar página (Wiki Casiopea)</h5>
+            <h5 class='pizarra'>Agregar página (Wiki Casiopea)</h5>
             <form role="form">
               <div class="grupo-formulario">
                 <label for="nombre">Nombre del objeto *</label>
@@ -252,8 +441,10 @@ intro: Texto sobre Interacción
               </div>
               <button type="submit" class="btn btn-default">Crear o editar</button>
             </form>
-            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form5">ver código</a>
-            <div id="ver-codigo-form5" class="collapse">
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12 margen-sup">
+            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form5html">ver código HTML</a>
+            <div id="ver-codigo-form5html" class="collapse">
               <code class='bloque'>
 &lt;form role="form">
   &lt;div class="grupo-formulario">
@@ -286,14 +477,66 @@ intro: Texto sobre Interacción
 &lt;/form>
               </code>
             </div>
+            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form5less">ver código LESS</a>
+            <div id="ver-codigo-form5less" class="collapse">
+              <code class='bloque'>
+// Reset
+
+.input,
+textarea,
+select,
+input[type='text'],
+input[type='password'],
+input[type='datetime'],
+input[type='datetime-local'],
+input[type='date'],
+input[type='month'],
+input[type='time'],
+input[type='week'],
+input[type='number'],
+input[type='email'],
+input[type='url'],
+input[type='search'],
+input[type='tel'],
+input[type='color'],
+input[type='file'],
+.uneditable-input, {
+    font-family: @sans;
+    width: 100%;
+    display: inline-block;
+    padding: @padding-md 3 * @padding-md;
+    margin: 0 0 @margen-sm 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: @interlinea;
+    color: @gris;
+    border: 1px solid @gris-claro;
+    &:focus{
+      box-shadow: inset 0 @boton-resalte 0 fade(@negro, 13);
+      background-color: fade(@negro, 3);
+    }
+
+    &.sin-margen{
+        margin: 0;
+    }
+
+    &.buscar{
+        width: auto;
+        padding: 6.5px 1.5px 3.5px 10px !important;
+        background-color: @gris-blanco-transparente;
+        font-size: 15px !important;
+    }
+}
+              </code>
+            </div>
           </div>
         </div>
 
-        <hr class='invisible'>
+       <hr class='invisible'>
 
-        <div class="fila">
+       <div class="fila">
           <div class="col-md-6 col-sm-12 col-xs-12">
-            <h5 class='pizarra gruesa'>Crear un proyecto (Wiki Casiopea)</h5>
+            <h5 class='pizarra'>Crear un proyecto (Wiki Casiopea)</h5>
             <form role="form">
               <div class="grupo-formulario">
                 <label for="nombre">Título *</label>
@@ -380,8 +623,10 @@ intro: Texto sobre Interacción
                 <button type="submit" class="btn btn-cancel">Cancelar</button>
               </div>
             </form>
-            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form6">ver código</a>
-            <div id="ver-codigo-form6" class="collapse">
+          </div>
+          <div class="col-md-6 col-sm-12 col-xs-12 margen-sup">
+            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form6html">ver código HTML</a>
+            <div id="ver-codigo-form6html" class="collapse">
               <code class='bloque'>
 &lt;form role="form">
   &lt;div class="grupo-formulario">
@@ -469,9 +714,67 @@ intro: Texto sobre Interacción
 &lt;/form>
               </code>
             </div>
-          </div>
-          <div class="col-md-6 col-sm-12 col-xs-12">
-            <h5 class='pizarra gruesa'>Nuevo usuario (Personas)</h5>
+            <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form6less">ver código LESS</a>
+            <div id="ver-codigo-form6less" class="collapse">
+              <code class='bloque'>
+// grupo inputs
+
+.grupo-inputs{
+    position: relative;
+    display: inline-block;
+    input, .input{
+        position: relative;
+        width: auto !important;
+        display: inline-block;
+        border-radius: 0 !important;
+    }
+    :first-child{
+    .border-radius(@radio 0 0@radio) !important;
+    }
+    :last-child{
+    .border-radius(0 @radio @radio 0) !important;
+        margin-left: -3px;
+    }
+    .input{
+        background-color: @gris-claro;
+        line-height: 1.49;
+        top: -3px;
+        right: -2px;
+    }
+
+      &.metabarra{
+          input, .input{
+        }
+        :first-child{
+            border-radius: 0px !important;
+        }
+        :last-child{
+            border-radius: 0px !important;
+        }
+            .input{
+                background-color: @gris-claro;
+                padding: 4.5px 10.5px 3.5px 12.5px!important;
+                right: -4px;
+                top: 0px !important;
+            }
+
+            &.buscar{
+                padding: 5.5px 1.5px 3.5px 10px !important;
+                font-size: 15px !important;
+                margin-left: -4px;
+            }
+        }     
+    }
+              </code>
+            </div>
+        </div>
+      </div>
+
+      <hr class='invisible'>
+
+    <div class='fila'>
+      <div class='col-md-6 col-sm-12 col-xs-12'>
+            <h5 class='pizarra'>Nuevo usuario (Personas)</h5>
             <form role="form">
               <div class="grupo-formulario">
                 <label for="nombre">Nombre de usuario</label>
@@ -530,8 +833,10 @@ intro: Texto sobre Interacción
             </div>
             <button type="submit" class="btn btn-success">Crear nuevo usuario</button>
           </form>
-          <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form7">ver código</a>
-          <div id="ver-codigo-form7" class="collapse">
+      </div>
+      <div class='col-md-6 col-sm-12 col-xs-12 margen-sup'>
+          <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form7html">ver código HTML</a>
+          <div id="ver-codigo-form7html" class="collapse">
             <code class='bloque'>
 &lt;form role="form">
   &lt;div class="grupo-formulario">
@@ -593,100 +898,315 @@ intro: Texto sobre Interacción
 &lt;/form>
             </code>
           </div>
-        </div>
+          <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-form7less">ver código LESS</a>
+          <div id="ver-codigo-form7less" class="collapse">
+            <code class='bloque'>
+form{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid @gris;
+    margin-bottom: 0 !important;
+    .clearfix;
+    .margen-inf;
+
+    label{
+        font-family: @cond;
+        text-transform: uppercase;
+        font-size: 90%;
+        letter-spacing: .02ex;
+        color: @gris-oscuro; 
+        display: block;
+        padding-bottom: 5px;
+        padding-top: 10px;
+
+        &.checkbox{
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 400;
+            
+            input[type=checkbox]{
+                display: inline-block;
+                margin-right: 1ex; 
+                padding: @padding-md;
+            }
+        }
+    }
+
+    .grupo{
+        &.obligatorio{
+            position: relative;
+            label:after{
+                font-family: Stampa;
+                line-height: 1;
+                color: @rojo;
+                //content: @icn-var-asterisco;
+            }
+            select,
+            input{
+                border: 1px solid fade(@gris-oscuro, 70);
+                width: 100%;
+            }
+        }
+    }
+
+    legend{
+        font-size: @cuerpo * 1.5;
+        margin: @cuerpo 0;
+        font-weight: 100;
+        color: fade(@pizarra, 30);
+    }
+    
+    input[type='text'],
+    input[type='password'],
+    input[type='email'], 
+    textarea,
+    select{
+        height: auto;
+        width: 100%;
+        padding: 5px 10px;
+        color: @gris-oscuro;
+        .border-radius(@radio);
+        &:valid{
+            color: @gris-oscuro;
+        }
+    }
+        
+    input, textarea{
+         color: fade(@azul, 70%);
+        .border-radius(@radio);
+        .borde;
+
+        &:focus{
+            .foco;
+        }
+
+        &.sin-radio{
+            border-radius: 0px;
+        }
+    }
+
+    textarea {
+        height: @cuadratin * 6;
+    }
+
+
+    select{
+        .border-radius(4px);
+        .borde;
+        margin: 0;
+        color:@pizarra;
+        padding: @padding-md;
+        height: auto;
+    }
+
+    &.buscador{
+        text-align: right;
+
+        input.texto{
+            .pegado-antes;
+        }
+        input[type=submit]{
+            .pegado-despues;
+            margin: -4px 0 0 -4px;
+        }                           
+    }
+}
+            </code>
+          </div>
       </div>
     </div>
+  </div>
+
     <div class="tab-pane fade" id="botones">
       <!-- Botones -->
-
       <h4 class='pizarra gruesa'>Botones</h4><a name="titulo-siete"></a>
-      <p>Los botones se definen genéricamente mediante la clase <code class='codigo-parrafo'>&lt;btn></code> y se aplican a las etiquetas <code class='codigo-parrafo'>&lt;a></code>, <code class='codigo-parrafo'>&lt;input [type='submit']></code> y a los elementos <code class='codigo-parrafo'>&lt;button></code> genéricos de los formularios. Los estilos están pensados para ser aplicados de forma semántica como se describe en la tabla, pudiendo usarse en combinación con atributos de tamaño (<code class='codigo-parrafo'>xs</code>, <code class='codigo-parrafo'>md</code>, <code class='codigo-parrafo'>gigante</code>) y de atributo (<code class='codigo-parrafo'>accion</code>, <code class='codigo-parrafo'>alerta</code>).
+      <p>Los botones se definen genéricamente mediante la clase <i>'btn'</i> y se aplican a las etiquetas <code class='codigo-parrafo'>&lt;a></code>, <code class='codigo-parrafo'>&lt;input [type='submit']></code> y a los elementos <code class='codigo-parrafo'>&lt;button></code> genéricos de los formularios. Los estilos están pensados para ser aplicados de forma semántica como se describe en la tabla, pudiendo usarse en combinación con atributos de tamaño (<i>'xs'</i>, <i>'sm'</i>, <i>'md'</i> y <i>'lg'</i>) y de otras dos clases (<i class='codigo-parrafo'>'accion'</i>, <i>'alerta'</i>).
       </p>
-      <table class='w100'>
-        <tr>
-          <th class='w60'>
-            Elemento
-          </th>
-          <th class='w30'>
-            Código
-          </th>
-        </tr>
-        <tr>
-          <td>
-            <a class='btn btn-sm'>Neutral</a>
-          </td>
-          <td>
-            <code>btn btn-sm</code>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a class='btn btn-md'>Neutral</a>
-          </td>
-          <td>
-            <code>btn btn-md</code>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a class='btn btn-lg'>Neutral</a>
-          </td>
-          <td>
-            <code>btn btn-lg</code>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a class='btn btn-lg btn-accion'>Acción</a>
-            <a class='btn btn-md btn-accion'>Acción</a>
-            <a class='btn btn-sm btn-accion'>Acción</a>
-          </td>
-          <td>
-            <code>btn btn-accion</code>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a class='btn btn-lg btn-alerta'>Alerta</a>
-            <a class='btn btn-md btn-alerta'>Alerta</a>
-            <a class='btn btn-sm btn-alerta'>Alerta</a>
-          </td>
-          <td>
-            <code>btn btn-alerta</code>
-          </td>
-        </tr>
-      </table>
-      <h3 class='margen-sup'>Grupos de Botones</h3>
-      <table class="w100">
-        <tr>
-          <tr>
-            <th class='w60'>
-              Elemento
-            </th>
-            <th class='w30'>
-              Código
-            </th>
-          </tr>
-          <td>
-            <div class="grupo-botones">
-              <a class='btn' type='submit'>Opción 1</a>
-              <a class='btn' type='submit'>Opción 2</a>
-              <a class='btn' type='submit'>Opción 3</a>
-              <a class='btn' type='submit'>Opción 4</a>
-            </div>
-          </td>
-          <td>
-            <code class='sin-relleno'>
+
+  <!-- 1 -->
+  <div class='fila'>
+      <div class='col-md-4'>
+        <h6 class='oculto-sm oculto-xs rojo'>Elemento</h6>
+        <div class='ancho-completo bloque'>
+          <a class='btn btn-sm'>Neutral</a>
+        </div>
+      </div>
+      <div class='col-md-4'>
+        <h6 class='oculto-sm oculto-xs rojo'>HTML</h6>
+        <code class='bloque'>
+&lt;a class='btn btn-sm'>Neutral&lt;/a>
+        </code>
+      </div>
+      <div class='col-md-4'>      
+        <h6 class='oculto-sm oculto-xs rojo'>CSS</h6>
+        <code class='bloque'>
+&.btn-sm{
+    font-size: @cuerpo * .8;
+    font-weight: normal;
+    padding: 5px 7px;
+}
+        </code>
+      </div>
+  </div>
+  <!-- 2 -->
+    <div class='fila'>
+      <div class='col-md-4'>
+        
+        <div class='ancho-completo bloque'>
+        <a class='btn btn-md'>Neutral</a>
+        </div>
+      </div>
+      <div class='col-md-4'>
+
+      <code class='bloque'>
+&lt;a class='btn btn-md'>Neutral&lt;/a>
+      </code>
+      </div>
+      <div class='col-md-4'>      
+
+        <code class='bloque'>
+&.btn-md{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: @cuerpo * 1;
+    padding: @padding-md 2*@padding-md;
+}
+        </code>
+      </div>
+  </div>
+  <!-- 3 -->
+    <div class='fila'>
+      <div class='col-md-4'>
+        
+        <div class='ancho-completo bloque'>
+        <a class='btn btn-lg'>Neutral</a>
+        </div>
+      </div>
+      <div class='col-md-4'>
+
+      <code class='bloque'>
+&lt;a class='btn btn-lg'>Neutral&lt;/a>
+      </code>
+      </div>
+      <div class='col-md-4'>      
+
+        <code class='bloque'>
+&.btn-lg{
+    font-size: @cuerpo * 1.5;
+    letter-spacing: .05ex;
+    font-weight: 200;
+    padding: @padding-lg 1.8*@padding-lg;
+}
+        </code>
+      </div>
+  </div>
+  <!-- 4 -->
+    <div class='fila'>
+      <div class='col-md-4'>
+        
+        <div class='ancho-completo bloque'>
+          <a class='btn btn-lg btn-accion'>Acción</a>
+          <a class='btn btn-md btn-accion'>Acción</a>
+          <a class='btn btn-sm btn-accion'>Acción</a>
+        </div>
+      </div>
+      <div class='col-md-4'>
+
+      <code class='bloque'>
+&lt;a class='btn btn-lg btn-accion'>Acción&lt;/a>
+&lt;a class='btn btn-md btn-accion'>Acción&lt;/a>
+&lt;a class='btn btn-sm btn-accion'>Acción&lt;/a>
+      </code>
+      </div>
+      <div class='col-md-4'>      
+
+        <code class='bloque'>
+&.btn-accion{
+    color: @blanco;
+    text-shadow: 1px 1px 0 fade(@negro, 40%);
+    background-color: @verde;
+    &:hover{
+        background-color: darken(@verde, 10%);
+    }
+}
+        </code>
+    </div>
+  </div>
+  <!-- 5 -->
+    <div class='fila'>
+      <div class='col-md-4'>
+        
+        <div class='ancho-completo bloque'>
+          <a class='btn btn-lg btn-alerta'>Alerta</a>
+          <a class='btn btn-md btn-alerta'>Alerta</a>
+          <a class='btn btn-sm btn-alerta'>Alerta</a>
+        </div>
+      </div>
+      <div class='col-md-4'>
+
+      <code class='bloque'>
+&lt;a class='btn btn-lg btn-alerta'>Alerta&lt;/a>
+&lt;a class='btn btn-md btn-alerta'>Alerta&lt;/a>
+&lt;a class='btn btn-sm btn-alerta'>Alerta&lt;/a>
+      </code>
+      </div>
+      <div class='col-md-4'>      
+
+        <code class='bloque'>
+&.btn-alerta{
+    color: @blanco;
+    text-shadow: 1px 1px 0 fade(@negro, 40%);
+    background-color:  @rojo-alerta !important;
+    &:hover{
+        background-color: darken(@rojo, 7%) !important;
+        color: @blanco;
+    }
+}
+        </code>
+    </div>
+  </div>
+  <!-- 6 -->
+      
+  <h5 class='margen-sup pizarra'>Grupos de Botones</h5>
+  <div class='fila'>
+      <div class='col-md-5 col-sm-12 cf'>
+        <h6 class='oculto-sm oculto-xs rojo'>Elemento</h6>
+        <div class='ancho-completo bloque'>
+          <div class="grupo-botones">
+            <a class='btn' type='submit'>Opción 1</a>
+            <a class='btn' type='submit'>Opción 2</a>
+            <a class='btn' type='submit'>Opción 3</a>
+            <a class='btn' type='submit'>Opción 4</a>
+          </div>
+        </div>
+      </div>
+      <div class='col-md-4 col-sm-12'>
+        <h6 class='oculto-sm oculto-xs rojo'>HTML</h6>
+        <code class='bloque'>
 &lt;div class="grupo-botones">
   &lt;a class='btn' type='submit'>Opción 1&lt;/a>
   &lt;a class='btn' type='submit'>Opción 2&lt;/a>
   &lt;a class='btn' type='submit'>Opción 3&lt;/a>
   &lt;a class='btn' type='submit'>Opción 4&lt;/a>
-&lt;/div>   
-            </code>
-          </td>
-        </tr>
-      </table>
+&lt;/div>
+        </code>
+      </div>
+      <div class='col-md-3 col-sm-12'>      
+        <h6 class='oculto-sm oculto-xs rojo'>CSS</h6>
+        <code class='bloque'>
+.grupo-botones{
+  .btn{
+    float: left;
+    border-radius: 0;
+    margin-left: -1px;
+    &:first-child{.border-radius(@radio 0 0 @radio) !important;}
+    &:last-child{.border-radius(0 @radio @radio 0) !important;}
+  }
+}
+        </code>
+      </div>
+  </div>
+
     </div>
   </div>
 </div>
