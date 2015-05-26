@@ -2977,6 +2977,9 @@ footer #mapa img {
   color: #a84744;
 }
 @media (max-width: 767px) {
+  .franja.xs i {
+    display: none;
+  }
   .pag {
     padding: 20px;
   }
@@ -3090,14 +3093,11 @@ footer #mapa img {
     padding: 0;
     position: relative;
   }
-  .franja.xs {
-    height: 7.5vw;
-  }
   .imagen-index {
-    height: 15vw;
+    height: 13vw;
   }
   .imagen-menu {
-    height: 15vw;
+    height: 13vw;
   }
   footer #mapa {
     height: 11vw;
@@ -3843,7 +3843,7 @@ h99 {
   background-color: #010101;
 }
 .ruido {
-  background-image: url("/img/ruido.png");
+  background-image: url("/img/ruido-fondo-pyxis.png");
 }
 .ruido-negro {
   background-image: url("/img/ruido-negro-oscuro.png");
@@ -4982,8 +4982,8 @@ strong {
   display: block;
   border-radius: 5px;
   text-align: center;
-  margin: 10px;
-  padding: 5px;
+  margin: 0px 20px 20px 0;
+  padding: 10px;
   float: left;
 }
 .caja-icono p {
@@ -5262,12 +5262,12 @@ strong {
   }
   .caja-icono {
     float: none;
-    width: 90%;
+    width: 100%;
     height: auto;
     background-color: #e2e2e2;
     display: block;
     margin: 5px 0px;
-    padding: 5px;
+    padding: 10px 0 20px 0;
     float: left;
   }
   .caja-icono p {
@@ -6849,483 +6849,8 @@ pre {
   }
 }
 @media (min-width: 1445px) {
-  .ead {
-    font-size: 45px !important;
-  }
-  a {
-    font-size: 1.1vw;
-  }
-  a.lg,
-  a.grande {
-    font-size: 1.5vw;
-    line-height: 140%;
-  }
-  a.md,
-  a.mediano {
-    font-size: 1.1vw;
-    font-weight: 200;
-    line-height: 140%;
-  }
-  a.sm,
-  a.pequeno {
-    font-size: 1.2vw;
-    line-height: 130%;
-  }
-  a.xs,
-  a.menudo {
-    font-size: 1vw;
-    line-height: 1.29375;
-  }
   p {
-    margin: 0 0 1.86875 0;
-    font-size: 1.2vw;
-    line-height: 1.4375;
-  }
-  p.lg,
-  p.grande {
-    font-size: 1.5vw;
-    line-height: 1.4375;
-  }
-  p.lg a,
-  p.grande a {
-    font-size: 1.5vw;
-  }
-  p.md,
-  p.mediano {
-    font-size: 1.3vw;
-    line-height: 1.4375;
-  }
-  p.md a,
-  p.mediano a {
-    font-size: 1.3vw;
-  }
-  p.sm,
-  p.pequeno {
-    font-size: 1.1vw;
-    line-height: 1.58125;
-  }
-  p.sm a,
-  p.pequeno a {
-    font-size: 1.2vw;
-  }
-  p.xs,
-  p.menudo {
-    font-size: 0.8vw;
-    line-height: 1.58125;
-  }
-  p.xs a,
-  p.menudo a {
-    font-size: 0.8vw;
-  }
-  span {
-    margin: auto 0 auto 0;
-    display: inline-block;
-  }
-  span.sin-margen {
-    margin: 0;
-  }
-  span.lg,
-  span.grande {
-    font-size: 1.5vw;
-    line-height: 150%;
-  }
-  span.lg a,
-  span.grande a {
-    font-size: 1.5w;
-  }
-  span.md,
-  span.mediano {
-    font-size: 1.1vw;
-    line-height: 150%;
-  }
-  span.md a,
-  span.mediano a {
-    font-size: 1.1vw;
-  }
-  span.sm,
-  span.pequeno {
-    font-size: 1.1vw;
-    line-height: 150%;
-  }
-  span.sm a,
-  span.pequeno a {
-    font-size: 1.2vw;
-  }
-  span.xs,
-  span.menudo {
-    font-size: 0.8vw;
-    line-height: 1.58125;
-  }
-  span.xs a,
-  span.menudo a {
-    font-size: 0.8vw;
-  }
-  h1 {
-    font-size: 2.4vw;
-  }
-  h1 a {
-    font-size: 2.1vw;
-  }
-  h1.no-responsivo {
-    font-size: 3.5vw;
-  }
-  h1.lg,
-  h1.grande,
-  h1.gigante {
-    font-size: 4.5vw;
-  }
-  h1.lg a,
-  h1.grande a,
-  h1.gigante a {
-    font-size: 4.5vw;
-  }
-  h1.lg.no-responsivo,
-  h1.grande.no-responsivo,
-  h1.gigante.no-responsivo {
-    font-size: 4.5vw;
-  }
-  h1.md,
-  h1.mediano {
-    font-size: 3.5vw;
-  }
-  h1.md a,
-  h1.mediano a {
-    font-size: 3.5vw;
-  }
-  h1.md.no-responsivo,
-  h1.mediano.no-responsivo {
-    font-size: 3.5vw;
-  }
-  h1.sm,
-  h1.pequeno {
-    font-size: 2.8vw;
-  }
-  h1.sm a,
-  h1.pequeno a {
-    font-size: 2.8vw;
-  }
-  h1.sm.no-responsivo,
-  h1.pequeno.no-responsivo {
-    font-size: 2.8vw;
-  }
-  h1.xs,
-  h1.menudo {
-    font-size: 2vw;
-  }
-  h1.xs a,
-  h1.menudo a {
-    font-size: 2vw;
-  }
-  h1.xs.no-responsivo,
-  h1.menudo.no-responsivo {
-    font-size: 2vw;
-  }
-  h2 {
-    font-size: 2.2vw;
-  }
-  h2 a {
-    font-size: 1.8vw;
-  }
-  h2.no-responsivo {
-    font-size: 1.93333333em;
-  }
-  h2.lg,
-  h2.grande,
-  h2.gigante {
-    font-size: 4vw;
-  }
-  h2.lg a,
-  h2.grande a,
-  h2.gigante a {
-    font-size: 4vw;
-  }
-  h2.lg.no-responsivo,
-  h2.grande.no-responsivo,
-  h2.gigante.no-responsivo {
-    font-size: 4vw;
-  }
-  h2.md,
-  h2.mediano {
-    font-size: 3vw;
-  }
-  h2.md a,
-  h2.mediano a {
-    font-size: 3vw;
-  }
-  h2.md.no-responsivo,
-  h2.mediano.no-responsivo {
-    font-size: 3vw;
-  }
-  h2.sm,
-  h2.pequeno {
-    font-size: 2.9vw;
-  }
-  h2.sm a,
-  h2.pequeno a {
-    font-size: 2.9vw;
-  }
-  h2.sm.no-responsivo,
-  h2.pequeno.no-responsivo {
-    font-size: 2.32em;
-  }
-  h2.xs,
-  h2.menudo {
-    font-size: 1.6vw;
-  }
-  h2.xs a,
-  h2.menudo a {
-    font-size: 1.6vw;
-  }
-  h2.xs.no-responsivo,
-  h2.menudo.no-responsivo {
-    font-size: 1.7vw;
-  }
-  h3 {
-    font-size: 1.6vw;
-  }
-  h3 a {
-    font-size: 1.6vw;
-  }
-  h3.no-responsivo {
-    font-size: 1.8em;
-  }
-  h3.lg,
-  h3.grande,
-  h3.gigante {
-    font-size: 3.6vw;
-  }
-  h3.lg a,
-  h3.grande a,
-  h3.gigante a {
-    font-size: 3.6vw;
-  }
-  h3.lg.no-responsivo,
-  h3.grande.no-responsivo,
-  h3.gigante.no-responsivo {
-    font-size: 3.6vw;
-  }
-  h3.md,
-  h3.mediano {
-    font-size: 2.6vw;
-  }
-  h3.md a,
-  h3.mediano a {
-    font-size: 2.6vw;
-  }
-  h3.md.no-responsivo,
-  h3.mediano.no-responsivo {
-    font-size: 2.6vw;
-  }
-  h3.sm,
-  h3.pequeno {
-    font-size: 2vw;
-  }
-  h3.sm a,
-  h3.pequeno a {
-    font-size: 2vw;
-  }
-  h3.sm.no-responsivo,
-  h3.pequeno.no-responsivo {
-    font-size: 2vw;
-  }
-  h3.xs,
-  h3.menudo {
-    font-size: 1.4vw;
-  }
-  h3.xs a,
-  h3.menudo a {
-    font-size: 1.4vw;
-  }
-  h3.xs.no-responsivo,
-  h3.menudo.no-responsivo {
-    font-size: 1.4vw;
-  }
-  h4 {
-    font-size: 1.4vw;
-  }
-  h4 a {
-    font-size: 1.4vw;
-  }
-  h4.no-responsivo {
-    font-size: 1.5333333em;
-  }
-  h4.lg,
-  h4.grande,
-  h4.gigante {
-    font-size: 3.2vw;
-  }
-  h4.lg a,
-  h4.grande a,
-  h4.gigante a {
-    font-size: 3.2vw;
-  }
-  h4.lg.no-responsivo,
-  h4.grande.no-responsivo,
-  h4.gigante.no-responsivo {
-    font-size: 3.2vw;
-  }
-  h4.md,
-  h4.mediano {
-    font-size: 2.2vw;
-  }
-  h4.md a,
-  h4.mediano a {
-    font-size: 2.2vw;
-  }
-  h4.md.no-responsivo,
-  h4.mediano.no-responsivo {
-    font-size: 2.2vw;
-  }
-  h4.sm,
-  h4.pequeno {
-    font-size: 1.8vw;
-  }
-  h4.sm a,
-  h4.pequeno a {
-    font-size: 1.8vw;
-  }
-  h4.sm.no-responsivo,
-  h4.pequeno.no-responsivo {
-    font-size: 1.8vw;
-  }
-  h4.xs,
-  h4.menudo {
-    font-size: 1.3vw;
-  }
-  h4.xs a,
-  h4.menudo a {
-    font-size: 1.3vw;
-  }
-  h4.xs.no-responsivo,
-  h4.menudo.no-responsivo {
-    font-size: 1.1vw;
-  }
-  h5 {
-    font-size: 1.2vw;
-  }
-  h5 a {
-    font-size: 1.2vw;
-  }
-  h5.no-responsivo {
-    font-size: 1.26666667em;
-  }
-  h5.lg,
-  h5.grande,
-  h5.gigante {
-    font-size: 2.7vw;
-  }
-  h5.lg a,
-  h5.grande a,
-  h5.gigante a {
-    font-size: 2.7vw;
-  }
-  h5.lg.no-responsivo,
-  h5.grande.no-responsivo,
-  h5.gigante.no-responsivo {
-    font-size: 2.7vw;
-  }
-  h5.md,
-  h5.mediano {
-    font-size: 1.8vw;
-  }
-  h5.md a,
-  h5.mediano a {
-    font-size: 1.8vw;
-  }
-  h5.md.no-responsivo,
-  h5.mediano.no-responsivo {
-    font-size: 1.8vw;
-  }
-  h5.sm,
-  h5.pequeno {
-    font-size: 1.4vw;
-  }
-  h5.sm a,
-  h5.pequeno a {
-    font-size: 1.4vw;
-  }
-  h5.sm.no-responsivo,
-  h5.pequeno.no-responsivo {
-    font-size: 1.4vw;
-  }
-  h5.xs,
-  h5.menudo {
-    font-size: 1.1vw;
-  }
-  h5.xs a,
-  h5.menudo a {
-    font-size: 1.1vw;
-  }
-  h5.xs.no-responsivo,
-  h5.menudo.no-responsivo {
-    font-size: 1vw;
-  }
-  h6 {
-    font-size: 1vw;
-  }
-  h6 a {
-    font-size: 1vw;
-  }
-  h6.no-responsivo {
-    font-size: 1.1vw;
-  }
-  h6.lg,
-  h6.grande,
-  h6.gigante {
-    font-size: 2.2vw;
-  }
-  h6.lg a,
-  h6.grande a,
-  h6.gigante a {
-    font-size: 2.2vw;
-  }
-  h6.lg.no-responsivo,
-  h6.grande.no-responsivo,
-  h6.gigante.no-responsivo {
-    font-size: 2.2vw;
-  }
-  h6.md,
-  h6.mediano {
-    font-size: 1.4vw;
-  }
-  h6.md a,
-  h6.mediano a {
-    font-size: 1.4vw;
-  }
-  h6.md.no-responsivo,
-  h6.mediano.no-responsivo {
-    font-size: 1.4vw;
-  }
-  h6.sm,
-  h6.pequeno {
-    font-size: 1vw;
-  }
-  h6.sm a,
-  h6.pequeno a {
-    font-size: 1vw;
-  }
-  h6.sm.no-responsivo,
-  h6.pequeno.no-responsivo {
-    font-size: 1vw;
-  }
-  h6.xs,
-  h6.menudo {
-    font-size: 1vw;
-  }
-  h6.xs a,
-  h6.menudo a {
-    font-size: 1vw;
-  }
-  h6.xs.no-responsivo,
-  h6.menudo.no-responsivo {
-    font-size: .7vw;
-  }
-  ul,
-  ol {
-    line-height: 1.5625;
-    font-size: 1.2vw;
-    margin: 0;
-    color: rgba(1, 1, 1, 0.8);
+    line-height: 1.58125 !important;
   }
 }
 .icn {

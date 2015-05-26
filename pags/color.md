@@ -77,8 +77,6 @@ intro: Texto sobre color
                                 <div class='caja-color fondo-rojo'></div>
                                 <div class='caja-color fondo-verde'></div> 
                                 <div class='caja-color fondo-azul'></div>
-                                
-
                             </div>
                         </div>
 

@@ -2,7 +2,6 @@
 layout: base
 title: Pyxis Framework - Iconografía
 subtitle: <i class="icn icn-stampa"></i> Iconografía
-intro: Texto sobre Iconografía
 ---
 
 <div class='fila'>
@@ -18,20 +17,17 @@ intro: Texto sobre Iconografía
     </div>
     <div class="tab-content margen-sup">
         <div class="tab-pane fade in active" id="stampa-regular">
-        <h4 class='pizarra gruesa'>Stampa v3.0.0</h4>
-            <p>Stampa es una familia tipográfica de íconos diseñada para trabajar con Pyxis.
-            Consta de un set de 95 glifos en 2 pesos tipográficos: "Regular" y "Ligera", diseñados especialmente para su visualización en texto continuo y rotulados, respectivamente. Su uso depende únicamente de CSS3, y son llamados en el HTML usando clases de la cascada de estilos que permiten controlar su tamaño, color y distintas funciones.</p>
-            <h5 class='rojo'><i class="icn icn-estrella icn-sm"></i>  <a href="http://fontawesome.io/">Font Awesome</a></h5>
-            <p>Font Awesome es el lenguaje iconográfico diseñado especialmente para Bootstrap. El proyecto está completamente documentado en Github, y siendo de código abierto, fue posible incorporar ciertos componentes de su repositorio al proyecto Stampa.</p>
-            <h5 class='rojo'><i class="icn icn-estrella icn-sm"></i>  <a href="http://icomoon.io/">Icomoon</a></h5>
-            <p>Icomoon es una solución para la problemática de los íconos escalables en la web. Incluye sets de  íconos, una aplicación web y un host para fuentes iconográficas.Para el desarrollo de Stampa se usa la aplicaciçón Icomoon App, con la cual se convierten los archivos .svg provenientes de illustrator en glifos con un código Unicode asignado.</p>
-            <p>En la versión  3.0.0 de Stampa, se introduce la variante de peso a la fuente iconográfica llamada 'Ligera', utilizando el sufijo <code class='linea'>-lig</code> para su nombramiento.<br>Se aconseja que el uso de la fuente en su peso 'Regular' sea en un mínimo de 16 px, y el uso del peso 'Ligero' sea en al menos 21 px; esto es, para lograr la mejor visualización posible en dispositivos web.<br>
-            Para una lista completa de íconos de la versión 3.0.0,  ve la <a href="http://eadpucv.github.io/stampa/cheatsheet.html">Cheatsheet</a>.
-    <h5 class="rojo gruesa"> Stampa Regular </h5>
+        <h4 class='pizarra gruesa'>Stampa Regular</h4>
+            <p>Stampa <b>v3.0.0</b> es una familia tipográfica de íconos diseñada para trabajar con <i>Pyxis</i>.
+            Consta de un <b>set de 95 glifos en 2 pesos tipográficos: "Regular" y "Ligera"</b>, diseñados especialmente para su visualización en texto continuo y rotulados, respectivamente. Su uso depende únicamente de CSS3, y son llamados en el HTML usando clases de la cascada de estilos que permiten controlar su tamaño, color y distintas funciones.</p>
+            <h5 class='rojo'><i class="icn icn-ingresar icn-sm"></i> <a href="http://fontawesome.io/">Font Awesome</a></h5>
+            <p>Font Awesome es el lenguaje iconográfico diseñado especialmente para <a href='http://getbootstrap.com/'>Bootstrap</a>. El proyecto está completamente documentado en <a href='https://github.com/FortAwesome/Font-Awesome'>Github</a>, y siendo de código abierto, fue posible incorporar ciertos componentes de su repositorio al proyecto <a href='https://github.com/eadpucv/stampa'>Stampa</a>.</p>
+            <h5 class='rojo'><i class="icn icn-ingresar icn-sm"></i>  <a href="http://icomoon.io/">Icomoon</a></h5>
+            <p>Icomoon es una solución para la problemática de los <b>íconos escalables en la web</b>. Incluye sets de  íconos, una aplicación web y un host para fuentes iconográficas. Para el desarrollo de Stampa se usa la aplicación <a href='https://icomoon.io/app/#/select'>Icomoon App</a>, con la cual se convierten los archivos <b>.svg</b> provenientes de <i>Adobe illustrator</i> en glifos con un código <i>Unicode</i> asignado.</p>
 
+<h6>Íconos de aplicación web</h6>
 <div class='fila'>
- <h3 class="clear divide">Íconos de aplicación web </h3>
-    <ul>
+    <section class='col-md-12'>
         {% include icn.html name='ampolleta'%}
         {% include icn.html name='aviso'%}
         {% include icn.html name='camara'%}
@@ -83,24 +79,24 @@ intro: Texto sobre Iconografía
         {% include icn.html name='usuariomenos'%}
         {% include icn.html name='usuarios'%}
         {% include icn.html name='rama'%}
-    </ul>
+    </section>
 </div>
 
+<h6>Íconos tipográficos</h6>
 <div class='fila'>
-    <h3 class="clear divide">Íconos tipográficos</h3>
-    <ul>
+    <section class='col-md-12'>
        {% include icn.html name='asterisco'%}
        {% include icn.html name='ese'%}
        {% include icn.html name='hedera'%}
        {% include icn.html name='mas'%}
        {% include icn.html name='menos'%}
        {% include icn.html name='parrafo'%} 
-    </ul>
+    </section>
 </div>
 
+<h6>Íconos direccionales</h6>
 <div class='fila'>
-    <h3 class="clear divide">Íconos direccionales</h3>
-    <ul>
+    <section class='col-md-12'>
         {% include icn.html name='caron'%}
         {% include icn.html name='caronizquierda'%}
         {% include icn.html name='caronarriba'%}
@@ -117,22 +113,22 @@ intro: Texto sobre Iconografía
         {% include icn.html name='nav'%}
         {% include icn.html name='navarriba'%}
         {% include icn.html name='navabajo'%}
-    </ul>
+    </section>
 </div>
 
+<h6>Íconos temporales</h6>
 <div class='fila'>
-    <h3 class="clear divide">Íconos temporales </h3>
-    <ul>
+    <section class='col-md-12'>
         {% include icn.html name='calendario'%}
         {% include icn.html name='tiempo'%}
         {% include icn.html name='reloj'%}
         {% include icn.html name='alarma'%}
-    </ul>
+    </section>
 </div>
 
+<h6>Íconos enumeradores</h6>
 <div class='fila'>
-    <h3 class="clear divide">Íconos enumeradores</h3>
-    <ul>
+    <section class='col-md-12'>
         {% include icn.html name='circulo'%}
         {% include icn.html name='circulolleno'%}
         {% include icn.html name='cuadro'%}
@@ -140,12 +136,12 @@ intro: Texto sobre Iconografía
         {% include icn.html name='equis'%}
         {% include icn.html name='vineta'%}
         {% include icn.html name='visto'%}
-    </ul>
+    </section>
 </div>
 
+<h6>Íconos de aplicación e[ad]</h6>
 <div class='fila'>
-    <h3 class="clear divide">Íconos de aplicación e[ad]</h3>
-    <ul>
+    <section class='col-md-12'>
         {% include icn.html name='acto'%}
         {% include icn.html name='anuncio'%}
         {% include icn.html name='archivo'%}
@@ -160,12 +156,12 @@ intro: Texto sobre Iconografía
         {% include icn.html name='stampa'%}
         {% include icn.html name='trabajo'%}
         {% include icn.html name='travesia'%}
-    </ul>
+    </section>
 </div>
 
+<h6>Íconos de aplicaciones externas</h6>
 <div class='fila'>
-    <h3 class="clear divide">Íconos de aplicaciones externas</h3>
-    <ul>
+    <section class='col-md-12'>
         {% include icn.html name='bower'%}
         {% include icn.html name='facebook'%}
         {% include icn.html name='flickr'%}
@@ -175,15 +171,18 @@ intro: Texto sobre Iconografía
         {% include icn.html name='twitter'%}
         {% include icn.html name='vimeo'%}
         {% include icn.html name='youtube'%}
-    </ul>
+    </section>
 </div>
 </div>
 
 <div class="tab-pane fade in" id="stampa-ligera">
-<h2 id="ligera">Stampa Ligera</h2>
-<div class='fila'> 
-    <h3 class="clear divide">Íconos de aplicación web </h3>
-    <ul>
+<h4 id="pizarra">Stampa Ligera</h4>
+        <p>En la versión  3.0.0 de Stampa, se introduce la variante de peso a la fuente iconográfica llamada 'Ligera', utilizando el sufijo <code class='linea'>-lig</code> para su nombramiento. Se aconseja que el uso de la fuente en su peso 'Regular' sea en un mínimo de 16px, y el uso del peso 'Ligero' sea en al menos 21px; esto para mejorar la visualización en dispositivos web.
+        Para una lista completa de íconos de la versión 3.0.0, puedes ingresar a la <a href="http://eadpucv.github.io/stampa/cheatsheet.html">Cheatsheet</a>.
+
+<h6>Íconos de aplicación web</h6>
+<div class='fila'>
+    <section class='col-md-12'>
         {% include icn-light.html name='ampolleta'%}
         {% include icn-light.html name='aviso'%}
         {% include icn-light.html name='camara'%}
@@ -236,24 +235,24 @@ intro: Texto sobre Iconografía
         {% include icn-light.html name='usuariomenos'%}
         {% include icn-light.html name='usuarios'%}
         {% include icn-light.html name='rama'%}
-    </ul>
+    </section>
 </div>
 
+<h6>Íconos tipográficos</h6>
 <div class='fila'>
-    <h3 class="clear divide">Íconos tipográficos</h3>
-    <ul>
+    <section class='col-md-12'>
        {% include icn-light.html name='asterisco'%}
        {% include icn-light.html name='ese'%}
        {% include icn-light.html name='hedera'%}
        {% include icn-light.html name='mas'%}
        {% include icn-light.html name='menos'%}
        {% include icn-light.html name='parrafo'%} 
-    </ul>
+    </section>
 </div>
 
+<h6>Íconos direccionales</h6>
 <div class='fila'>
-    <h3 class="clear divide">Íconos direccionales</h3>
-    <ul>
+    <section class='col-md-12'>
         {% include icn-light.html name='caron'%}
         {% include icn-light.html name='caronizquierda'%}
         {% include icn-light.html name='caronarriba'%}
@@ -270,22 +269,22 @@ intro: Texto sobre Iconografía
         {% include icn-light.html name='nav'%}
         {% include icn-light.html name='navarriba'%}
         {% include icn-light.html name='navabajo'%}
-    </ul>
+    </section>
 </div>
 
+<h6>Íconos temporales</h6>
 <div class='fila'>
-    <h3 class="clear divide">Íconos temporales </h3>
-    <ul>
+    <section class='col-md-12'>
         {% include icn-light.html name='calendario'%}
         {% include icn-light.html name='tiempo'%}
         {% include icn-light.html name='reloj'%}
         {% include icn-light.html name='alarma'%}
-    </ul>
+    </section>
 </div>
 
+<h6>Íconos enumeradores</h6>
 <div class='fila'>
-    <h3 class="clear divide">Íconos enumeradores</h3>
-    <ul>
+    <section class='col-md-12'>
         {% include icn-light.html name='circulo'%}
         {% include icn-light.html name='cuadro'%}
         {% include icn-light.html name='equis'%}
@@ -294,9 +293,9 @@ intro: Texto sobre Iconografía
     </ul>
 </div>
 
+<h6>Íconos de aplicación e[ad]</h6>
 <div class='fila'>
-    <h3 class="clear divide">Íconos de aplicación e[ad]</h3>
-    <ul>
+    <section class='col-md-12'>
         {% include icn-light.html name='acto'%}
         {% include icn-light.html name='anuncio'%}
         {% include icn-light.html name='archivo'%}
@@ -311,12 +310,12 @@ intro: Texto sobre Iconografía
         {% include icn-light.html name='stampa'%}
         {% include icn-light.html name='trabajo'%}
         {% include icn-light.html name='travesia'%}
-    </ul>
+    </section>
 </div>
 
+<h6>Íconos de aplicaciones externas</h6>
 <div class='fila'>
-    <h3 class="clear divide">Íconos de aplicaciones externas</h3>
-    <ul>
+    <section class='col-md-12'>
         {% include icn-light.html name='bower'%}
         {% include icn-light.html name='facebook'%}
         {% include icn-light.html name='flickr'%}
@@ -326,7 +325,7 @@ intro: Texto sobre Iconografía
         {% include icn-light.html name='twitter'%}
         {% include icn-light.html name='vimeo'%}
         {% include icn-light.html name='youtube'%}
-    </ul>
+    </section>
 </div>
 
 </div>
