@@ -2983,6 +2983,9 @@ footer #mapa img {
   color: #a84744;
 }
 @media (max-width: 767px) {
+  .franja.xl {
+    padding: 30px 0px;
+  }
   .franja.xs i {
     display: none;
   }
@@ -3166,6 +3169,11 @@ table td {
 }
 table.sin-bordes td {
   border: none;
+}
+@media (max-width: 767px) {
+  .imagen-index {
+    height: 150px;
+  }
 }
 .triangulo {
   width: 0;
@@ -5474,7 +5482,7 @@ p.justificado {
 span {
   margin: auto 0 auto 0;
   display: inline-block;
-  line-height: 1.5625;
+  line-height: auto;
 }
 span.lg,
 span.grande {
@@ -6473,6 +6481,9 @@ pre {
   h6.xs.no-responsivo,
   h6.menudo.no-responsivo {
     font-size: 0.90666666em;
+  }
+  blockquote {
+    margin: 0px 0px 20px;
   }
   ul,
   ol {
