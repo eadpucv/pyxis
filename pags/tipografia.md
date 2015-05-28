@@ -72,7 +72,11 @@ and jack.</p>
             </div>
 
 <div class='fila'>
+<<<<<<< HEAD
 <div class='col-md-6'>
+=======
+<div class='col-md-6 margen-inf-sm'>
+>>>>>>> master
             <h5 class='pizarra fino linea-lateral'>HTML</h5>
             <code class='bloque'> 
 // Código de uso html
