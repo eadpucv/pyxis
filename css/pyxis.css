@@ -5368,9 +5368,6 @@ strong {
   .alto-sm {
     height: 12vw;
   }
-  .alto-md {
-    height: 27vw;
-  }
   .alto-lg {
     height: 87vh;
   }
@@ -5468,7 +5465,7 @@ p.justificado {
 span {
   margin: auto 0 auto 0;
   display: inline-block;
-  line-height: 1.5625;
+  line-height: auto;
 }
 span.lg,
 span.grande {
@@ -6031,6 +6028,10 @@ figcaption,
   margin-top: 5px;
   margin-bottom: 20px;
   padding: 0 0 0 10px !important;
+}
+figcaption.sin-borde,
+.wp-caption-text.sin-borde {
+  border: 0px;
 }
 .autor {
   line-height: 22px;
@@ -6807,6 +6808,10 @@ pre {
   h6.xs.no-responsivo,
   h6.menudo.no-responsivo {
     font-size: 0.90666666em;
+  }
+  blockquote {
+    padding: 0px !important;
+    margin: 0 30px !important;
   }
   ul,
   ol {
@@ -13009,6 +13014,25 @@ tbody.collapse.in {
   font-family: 'Source Sans Pro' !important;
   margin-top: 5px;
 }
+#index .publicacion .entry-details,
+#tag .publicacion .entry-details {
+  font-family: 'Palatino', 'Source Sans Pro', serif;
+  font-style: italic;
+  font-weight: 300;
+  padding-top: 5px !important;
+}
+#index .publicacion .entry-details.cond,
+#tag .publicacion .entry-details.cond,
+#index .publicacion .entry-details.condensado,
+#tag .publicacion .entry-details.condensado,
+#index .publicacion .entry-details.condensada,
+#tag .publicacion .entry-details.condensada {
+  font-family: 'Open Sans Condensed';
+}
+#index .publicacion p,
+#tag .publicacion p {
+  font-family: 'Source Sans Pro' !important;
+}
 #index .publicacion .categoria i,
 #tag .publicacion .categoria i {
   margin-right: 5px;
@@ -13817,25 +13841,6 @@ tbody.collapse.in {
 #tag .publicacion h6 a {
   font-family: 'Open Sans Condensed' !important;
   font-weight: 700;
-}
-#index .publicacion .entry-details,
-#tag .publicacion .entry-details {
-  font-family: 'Palatino', 'Source Sans Pro', serif;
-  font-style: italic;
-  font-weight: 300;
-  padding-top: 5px !important;
-}
-#index .publicacion .entry-details.cond,
-#tag .publicacion .entry-details.cond,
-#index .publicacion .entry-details.condensado,
-#tag .publicacion .entry-details.condensado,
-#index .publicacion .entry-details.condensada,
-#tag .publicacion .entry-details.condensada {
-  font-family: 'Open Sans Condensed';
-}
-#index .publicacion p,
-#tag .publicacion p {
-  font-family: 'Source Sans Pro' !important;
 }
 #index .entry-title.especifico,
 #tag .entry-title.especifico {

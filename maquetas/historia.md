@@ -27,19 +27,19 @@ title: Pyxis Framework - Maquetas
 	</div>
 	<div id='parallax-historia' class='foto-2 oculto-xs'>
 		<div class='pag'>
-		<span class='wp-caption-text derecha oculto-sm'>"Partida mañana a las siete antemeridiano desde santiago
+		<span class='wp-caption-text sin-borde  derecha oculto-sm'>"Partida mañana a las siete antemeridiano desde santiago
 		escalas del avión santiago puerto montt punta arenas
 		los nueve están – jonathan boulting alberto cruz fabio
 		cruz michel degury francois fédier claudio girola godofredo
 		iommi jorge pérez román edison simons – henri tronquoy
 		nos alcanzará en medio de la patagonia"</span>
-		<span class='sm wp-caption-text referencia'>— Primera travesía 1965.</span>
+		<span class='sm wp-caption-text sin-borde referencia'>— Primera travesía 1965.</span>
 		</div>
 	</div>
 	<div id='parallax-historia' class='foto-3 oculto-xs'>
 		<div class='pag'>
-		<span class='wp-caption-text oculto-sm'>—"Mas ¿qué nos dice “mundo”? Latamente el mero juego de aparición y desaparición. Sólo en la latitud de tal juego el mundo se hace a sí mismo mundo; aparece como tal, dígase estante o cambiante. Aparece –desaparece– soñando, imaginando, recordando, olvidando, viendo, tocando, etc., etc. Ese juego de aparecer y desaparecer, ineludible, tiene como fondo el desaparecimiento mismo."</span>
-		<span class='sm wp-caption-text referencia derecha'>— Segunda carta sobre la Phalène.</span>
+		<span class='wp-caption-text sin-borde oculto-sm'>—"Mas ¿qué nos dice “mundo”? Latamente el mero juego de aparición y desaparición. Sólo en la latitud de tal juego el mundo se hace a sí mismo mundo; aparece como tal, dígase estante o cambiante. Aparece –desaparece– soñando, imaginando, recordando, olvidando, viendo, tocando, etc., etc. Ese juego de aparecer y desaparecer, ineludible, tiene como fondo el desaparecimiento mismo."</span>
+		<span class='sm wp-caption-text sin-borde referencia derecha'>— Segunda carta sobre la Phalène.</span>
 		</div>
 	</div>
 	<!-- Segunda seccion -->
@@ -151,18 +151,18 @@ title: Pyxis Framework - Maquetas
 	</div><!-- fin de pag -->
 	<div id='lala' class='foto-5 oculto-xs'>
 		<div class='pag oculto-sm oculto-xs'>
-		<span class='wp-caption-text derecha oculto-sm'>—"Partida mañana a las siete antemeridiano desde santiago
+		<span class='wp-caption-text sin-borde derecha oculto-sm'>—"Partida mañana a las siete antemeridiano desde santiago
 		escalas del avión santiago puerto montt punta arenas
 		los nueve están – jonathan boulting alberto cruz fabio
 		cruz michel degury francois fédier claudio girola godofredo
 		iommi jorge pérez román edison simons – henri tronquoy
-		nos alcanzará en medio de la patagonia"	<span class='sm wp-caption-text referencia oculto-sm'>— Primera travesía 1965.</span></span>
+		nos alcanzará en medio de la patagonia"	<span class='sm wp-caption-text sin-borde referencia oculto-sm'>— Primera travesía 1965.</span></span>
 		</div>
 	</div>
 	<div id='lala' class='foto-6'>
 		<div class='pag oculto-sm oculto-xs'>
-		<span class='wp-caption-text oculto-sm'>—"Mas ¿qué nos dice “mundo”? Latamente el mero juego de aparición y desaparición. Sólo en la latitud de tal juego el mundo se hace a sí mismo mundo; aparece como tal, dígase estante o cambiante. Aparece –desaparece– soñando, imaginando, recordando, olvidando, viendo, tocando, etc., etc. Ese juego de aparecer y desaparecer, ineludible, tiene como fondo el desaparecimiento mismo."
-		<span class='sm wp-caption-text referencia oculto-sm'>— Primera travesía 1965.</span></span>
+		<span class='wp-caption-text sin-borde oculto-sm'>—"Mas ¿qué nos dice “mundo”? Latamente el mero juego de aparición y desaparición. Sólo en la latitud de tal juego el mundo se hace a sí mismo mundo; aparece como tal, dígase estante o cambiante. Aparece –desaparece– soñando, imaginando, recordando, olvidando, viendo, tocando, etc., etc. Ese juego de aparecer y desaparecer, ineludible, tiene como fondo el desaparecimiento mismo."
+		<span class='sm wp-caption-text sin-borde referencia oculto-sm'>— Primera travesía 1965.</span></span>
 		</div>
 	</div>
 	<!-- Tercera seccion -->
@@ -187,18 +187,18 @@ title: Pyxis Framework - Maquetas
 	</div>
 	<div id='lolo' class='foto-8'>
 		<div class='pag oculto-sm oculto-xs'>
-		<span class='wp-caption-text derecha oculto-sm'>—"Partida mañana a las siete antemeridiano desde santiago
+		<span class='wp-caption-text sin-borde derecha oculto-sm'>—"Partida mañana a las siete antemeridiano desde santiago
 		escalas del avión santiago puerto montt punta arenas
 		los nueve están – jonathan boulting alberto cruz fabio
 		cruz michel degury francois fédier claudio girola godofredo
 		iommi jorge pérez román edison simons – henri tronquoy
-		nos alcanzará en medio de la patagonia"	<span class='sm wp-caption-text referencia oculto-sm'>— Primera travesía 1965.</span></span>
+		nos alcanzará en medio de la patagonia"	<span class='sm wp-caption-text sin-borde referencia oculto-sm'>— Primera travesía 1965.</span></span>
 		</div>
 	</div>
 	<div id='lolo' class='foto-9 oculto-xs'>
 		<div class='pag oculto-sm oculto-xs'>
-		<span class='wp-caption-text'>—"Mas ¿qué nos dice “mundo”? Latamente el mero juego de aparición y desaparición. Sólo en la latitud de tal juego el mundo se hace a sí mismo mundo; aparece como tal, dígase estante o cambiante. Aparece –desaparece– soñando, imaginando, recordando, olvidando, viendo, tocando, etc., etc. Ese juego de aparecer y desaparecer, ineludible, tiene como fondo el desaparecimiento mismo."
-		<span class='sm wp-caption-text referencia'>— Primera travesía 1965.</span></span>
+		<span class='wp-caption-text sin-borde'>—"Mas ¿qué nos dice “mundo”? Latamente el mero juego de aparición y desaparición. Sólo en la latitud de tal juego el mundo se hace a sí mismo mundo; aparece como tal, dígase estante o cambiante. Aparece –desaparece– soñando, imaginando, recordando, olvidando, viendo, tocando, etc., etc. Ese juego de aparecer y desaparecer, ineludible, tiene como fondo el desaparecimiento mismo."
+		<span class='sm wp-caption-text sin-borde referencia'>— Primera travesía 1965.</span></span>
 		</div>
 	</div>
 	<!-- Cuarta seccion -->
