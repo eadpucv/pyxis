@@ -1562,12 +1562,8 @@ footer ul li {
     display: inline-block;
     padding: 11.2px 0 14px 0;
   }
-<<<<<<< HEAD
   .logo-pyxis a h6 {
     margin: .1em !important;
-=======
-  .logo-pyxis h6 {
->>>>>>> master
     display: inline-block;
   }
   .logo-pyxis img {
@@ -1650,12 +1646,9 @@ footer ul li {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-<<<<<<< HEAD
   .logo-pyxis a h6 {
     margin: .1em !important;
   }
-=======
->>>>>>> master
   .nav-pills {
     margin: 0;
   }
@@ -2816,11 +2809,8 @@ td.visible-print {
   width: 100%;
 }
 .nav-ead {
-<<<<<<< HEAD
   background: url({{ site.baseurl }}/img/ruido-fondo-pyxis.png) repeat center;
   background: url("{{ site.baseurl }}../img/ruido-fondo-pyxis.png") repeat center;
-=======
->>>>>>> master
   background: url("{{ site.baseurl }}/img/ruido-fondo-pyxis.png") repeat center;
   background-image: url('{{ site.baseurl }}/img/ruido-fondo-pyxis.png') repeat center;
 }
@@ -2993,12 +2983,9 @@ footer #mapa img {
   color: #a84744;
 }
 @media (max-width: 767px) {
-<<<<<<< HEAD
   .franja.xl {
     padding: 30px 0px;
   }
-=======
->>>>>>> master
   .franja.xs i {
     display: none;
   }
@@ -3183,14 +3170,11 @@ table td {
 table.sin-bordes td {
   border: none;
 }
-<<<<<<< HEAD
 @media (max-width: 767px) {
   .imagen-index {
     height: 150px;
   }
 }
-=======
->>>>>>> master
 .triangulo {
   width: 0;
   height: 0;
@@ -5398,12 +5382,6 @@ strong {
   .alto-sm {
     height: 12vw;
   }
-<<<<<<< HEAD
-  .alto-md {
-    height: 27vw;
-  }
-=======
->>>>>>> master
   .alto-lg {
     height: 87vh;
   }
@@ -6065,13 +6043,10 @@ figcaption,
   margin-bottom: 20px;
   padding: 0 0 0 10px !important;
 }
-<<<<<<< HEAD
-=======
 figcaption.sin-borde,
 .wp-caption-text.sin-borde {
   border: 0px;
 }
->>>>>>> master
 .autor {
   line-height: 22px;
   margin-bottom: 30px;
@@ -6508,12 +6483,9 @@ pre {
   h6.menudo.no-responsivo {
     font-size: 0.90666666em;
   }
-<<<<<<< HEAD
   blockquote {
     margin: 0px 0px 20px;
   }
-=======
->>>>>>> master
   ul,
   ol {
     line-height: 1.4375;
@@ -6854,13 +6826,10 @@ pre {
   h6.menudo.no-responsivo {
     font-size: 0.90666666em;
   }
-<<<<<<< HEAD
-=======
   blockquote {
     padding: 0px !important;
     margin: 0 30px !important;
   }
->>>>>>> master
   ul,
   ol {
     line-height: 1.4375;
@@ -13062,8 +13031,6 @@ tbody.collapse.in {
   font-family: 'Source Sans Pro' !important;
   margin-top: 5px;
 }
-<<<<<<< HEAD
-=======
 #index .publicacion .entry-details,
 #tag .publicacion .entry-details {
   font-family: 'Palatino', 'Source Sans Pro', serif;
@@ -13083,7 +13050,6 @@ tbody.collapse.in {
 #tag .publicacion p {
   font-family: 'Source Sans Pro' !important;
 }
->>>>>>> master
 #index .publicacion .categoria i,
 #tag .publicacion .categoria i {
   margin-right: 5px;
@@ -13893,28 +13859,6 @@ tbody.collapse.in {
   font-family: 'Open Sans Condensed' !important;
   font-weight: 700;
 }
-<<<<<<< HEAD
-#index .publicacion .entry-details,
-#tag .publicacion .entry-details {
-  font-family: 'Palatino', 'Source Sans Pro', serif;
-  font-style: italic;
-  font-weight: 300;
-  padding-top: 5px !important;
-}
-#index .publicacion .entry-details.cond,
-#tag .publicacion .entry-details.cond,
-#index .publicacion .entry-details.condensado,
-#tag .publicacion .entry-details.condensado,
-#index .publicacion .entry-details.condensada,
-#tag .publicacion .entry-details.condensada {
-  font-family: 'Open Sans Condensed';
-}
-#index .publicacion p,
-#tag .publicacion p {
-  font-family: 'Source Sans Pro' !important;
-}
-=======
->>>>>>> master
 #index .entry-title.especifico,
 #tag .entry-title.especifico {
   font-weight: 700;
