@@ -678,8 +678,21 @@ intro: Texto sobre javascript
         </div>
       </div>
       <div class="tab-pane fade" id="carrusel">
-        <h4 class='pizarra gruesa'>Carousel</h4>
-        <h5 class='gruesa'>Ejemplo estándar</h5>
+        <h4 class='pizarra'>Carousel</h4>
+        <p>El carrusel...
+
+        Utilizar dropdowns permite condensar una navegación compleja en grandes rótulos, dando paso a a una navegación más simplificada con una jerarquía notoria. La jerarquía se divide en dos clases; la primera en el orden de cada enlace, y la segunda en la categoría de "separaeted link", bajo un <code class='linea'>&lt;hr></code> o <i>divider</i>. Entre las variables específicas resaltan el font-size (<span class='verde'>@cuerpo-nav z-index</span>), z-index (<span class='verde'>@zindex-dropdown</span>), hr o <i>dividers</i> (<span class='verde'>@dropdown-divider-bg</span>), colores (<span class='verde'>@dropdown-bg</span>) e íconos o <i>carets</i> de despliegue (<span class='verde'>@caret-width-base </span>).</p>
+        <div class='fila'>
+        <div class='col-md-12'>
+                <h5 class='pizarra fino linea-lateral'>JS</h5>
+                <code class='bloque'>
+&lt;script src="js/jquery.js">&lt;/script>
+&lt;script src="js/carousel.js">&lt;/script>
+                </code>
+        </div>
+        </div>
+        <hr class='invisible'>
+        <h5 class='pizarra'>Ejemplo estándar</h5>
 <!-- carrusel-index WP-->
 <div data-ride="carousel" class="carousel slide" id="carousel-example">
   <ol class="carousel-indicators">
@@ -705,15 +718,12 @@ intro: Texto sobre javascript
     <span class="icn icn-nav"></span>
   </a>
 </div>
-<a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-carrusel-example">ver código</a> 
-        <div id="ver-codigo-carrusel-example" class="collapse pag-javascript">  
-          <h6>Archivos necesarios</h6>
-          <code class='bloque margen-inf-sm'>
-&lt;script src="js/jquery.js">&lt;/script>
-&lt;script src="js/carousel.js">&lt;/script>
-          </code>
-          <h6>Codigo</h6>
-          <code class='bloque'>
+
+<hr class='invisible'>
+          <div class='fila'>
+          <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                <code class='bloque'>
 &lt;div data-ride="carousel" class="carousel slide" id="carousel-example">
   &lt;ol class="carousel-indicators">
     &lt;li data-slide-to="0" data-target="#carousel-example-generic" class="active">&lt;/li>
@@ -738,10 +748,109 @@ intro: Texto sobre javascript
     &lt;span class="icn icn-nav">&lt;/span>
   &lt;/a>
 &lt;/div>
-          </code>
+                </code>
+          </div>
+          <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                <code class='bloque'>
+.carousel{
+    .carousel-inner{
+        .car-sm{
+            img{
+                .ancho-completo;
+                .absoluto;
+            }
+            .pag {
+                .cf;
+                .h100;
+                .oculto-xs {
+                    .h100;
+                    .derecha;
+                    .cf;
+                    a{
+                        div{
+                            .fondo-gris-blanco-trans;
+                            .absoluto;
+                            .abs-der;
+                            .abs-sup;
+                            .bloque;
+                            .alto-completo;
+                            .relleno;
+                            h2{
+                                .gris-oscuro;
+                                .condensado;
+                                .gruesa;
+                                .sombra-cabecera-blanco-xs;
+                                i{
+                                    .margen-der-xs;
+                                }
+                            }
+                            p{
+                                .italica;
+                                .margen-sup-sm;
+                                .sombra-cabecera-blanco-xs;
+                            }
+                            span{
+                                .cond;
+                                .negro;
+                                .derecha;
+                                .interletraje-xs;
+                                .relleno-vertical-xs;
+                                .relleno-der-xs;
+                                .sombra;
+                                .borde 
+                                .radio-md;
+                                i{
+                                    .negro;
+                                    .relleno-der-xs;
+                                    .relleno-izq-xs;
+                                    .margen-der-xs;
+                                    .icn-light;
+                                    .sombra-cabecera-blanco-xs;
+                                }
+                            }
+                        }
+                        &:hover{
+                            h2{
+                                .rojo;
+                            }
+                        }
+                    }
+                }
+                .oculto-md{
+                    .h100;
+                    .cf;
+                    a{
+                        div{
+                            .fondo-gris-blanco-trans;
+                            .absoluto;
+                            .abs-der;
+                            .abs-inf;
+                            .bloque;
+                            .relleno;
+                            .ancho-completo;
+                            h5{
+                                .condensado;
+                                .centrado;
+                                .gruesa;
+                                .sombra-cabecera-blanco-xs;
+                                .gris-oscuro;
+                                i{
+                                    .margen-der-xs;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+                </code>
         </div>
-        <hr class='invisible'>
-        <h5 class='gruesa'>Ejemplo carrusel index</h5>
+        </div>
+<hr class='invisible'>
+<h5 class='pizarra'>Ejemplo en index</h5>
 <!-- carrusel-index WP-->
 <div id='carrusel-index'>
   <!-- Carrousel -->
@@ -849,15 +958,12 @@ intro: Texto sobre javascript
         </a>
   </div>
 </div><!-- fin de carrusel-index -->
-        <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-carrusel-home">ver código</a> 
-        <div id="ver-codigo-carrusel-home" class="collapse pag-javascript">  
-          <h6>Archivos necesarios</h6>
-          <code class='bloque margen-inf-sm'>
-&lt;script src="js/jquery.js">&lt;/script>
-&lt;script src="js/carousel.js">&lt;/script>
-          </code>
-          <h6>Codigo</h6>
-          <code class='bloque'>
+
+<hr class='invisible'>
+          <div class='fila'>
+          <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                <code class='bloque'>
 &lt;div id='carrusel-index'>
   &lt;!-- Carrousel -->
   &lt;div data-ride="carousel" class="carousel slide" id="carousel-home">
@@ -935,10 +1041,109 @@ intro: Texto sobre javascript
         &lt;/a>
   &lt;/div>
 &lt;/div><!-- fin de carrusel-index -->
-          </code>
+                </code>
+          </div>
+          <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                <code class='bloque'>
+.carousel{
+    .carousel-inner{
+        .car-sm{
+            img{
+                .ancho-completo;
+                .absoluto;
+            }
+            .pag {
+                .cf;
+                .h100;
+                .oculto-xs {
+                    .h100;
+                    .derecha;
+                    .cf;
+                    a{
+                        div{
+                            .fondo-gris-blanco-trans;
+                            .absoluto;
+                            .abs-der;
+                            .abs-sup;
+                            .bloque;
+                            .alto-completo;
+                            .relleno;
+                            h2{
+                                .gris-oscuro;
+                                .condensado;
+                                .gruesa;
+                                .sombra-cabecera-blanco-xs;
+                                i{
+                                    .margen-der-xs;
+                                }
+                            }
+                            p{
+                                .italica;
+                                .margen-sup-sm;
+                                .sombra-cabecera-blanco-xs;
+                            }
+                            span{
+                                .cond;
+                                .negro;
+                                .derecha;
+                                .interletraje-xs;
+                                .relleno-vertical-xs;
+                                .relleno-der-xs;
+                                .sombra;
+                                .borde 
+                                .radio-md;
+                                i{
+                                    .negro;
+                                    .relleno-der-xs;
+                                    .relleno-izq-xs;
+                                    .margen-der-xs;
+                                    .icn-light;
+                                    .sombra-cabecera-blanco-xs;
+                                }
+                            }
+                        }
+                        &:hover{
+                            h2{
+                                .rojo;
+                            }
+                        }
+                    }
+                }
+                .oculto-md{
+                    .h100;
+                    .cf;
+                    a{
+                        div{
+                            .fondo-gris-blanco-trans;
+                            .absoluto;
+                            .abs-der;
+                            .abs-inf;
+                            .bloque;
+                            .relleno;
+                            .ancho-completo;
+                            h5{
+                                .condensado;
+                                .centrado;
+                                .gruesa;
+                                .sombra-cabecera-blanco-xs;
+                                .gris-oscuro;
+                                i{
+                                    .margen-der-xs;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+                </code>
+        </div>
         </div>
         <hr class='invisible'>
-        <h5 class='gruesa'>Ejemplo carrusel portadilla</h5>
+        <h5 class='pizarra'>Ejemplo carrusel portadilla</h5>
 <div data-ride="carousel" class="carousel slide oculto-sm oculto-xs bloque ancho-completo" id="carousel-portadilla">
     <ol class="carousel-indicators">
       <li data-slide-to="0" data-target="#carousel-portadilla" class="active"></li>
@@ -1039,15 +1244,12 @@ intro: Texto sobre javascript
     </div>
   </div>
 </div> <!-- Fin de Carousel -->
-        <a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-carrusel-portadilla">ver código</a> 
-        <div id="ver-codigo-carrusel-portadilla" class="collapse pag-javascript">  
-          <h6>Archivos necesarios</h6>
-          <code class='bloque margen-inf-sm'>
-&lt;script src="js/jquery.js">&lt;/script>
-&lt;script src="js/carousel.js">&lt;/script>
-          </code>
-          <h6>Codigo</h6>
-          <code class='bloque'>
+
+<hr class='invisible'>
+          <div class='fila'>
+          <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                <code class='bloque'>
 &lt;div data-ride="carousel" class="carousel slide oculto-sm oculto-xs bloque ancho-completo" id="carousel-portadilla">
     &lt;ol class="carousel-indicators">
       &lt;li data-slide-to="0" data-target="#carousel-portadilla" class="active">&lt;/li>
@@ -1118,11 +1320,110 @@ intro: Texto sobre javascript
     &lt;/div>
   &lt;/div>
 &lt;/div> <!-- Fin de Carousel -->
-          </code>
+                </code>
+          </div>
+          <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                <code class='bloque'>
+.carousel{
+    .carousel-inner{
+        .car-sm{
+            img{
+                .ancho-completo;
+                .absoluto;
+            }
+            .pag {
+                .cf;
+                .h100;
+                .oculto-xs {
+                    .h100;
+                    .derecha;
+                    .cf;
+                    a{
+                        div{
+                            .fondo-gris-blanco-trans;
+                            .absoluto;
+                            .abs-der;
+                            .abs-sup;
+                            .bloque;
+                            .alto-completo;
+                            .relleno;
+                            h2{
+                                .gris-oscuro;
+                                .condensado;
+                                .gruesa;
+                                .sombra-cabecera-blanco-xs;
+                                i{
+                                    .margen-der-xs;
+                                }
+                            }
+                            p{
+                                .italica;
+                                .margen-sup-sm;
+                                .sombra-cabecera-blanco-xs;
+                            }
+                            span{
+                                .cond;
+                                .negro;
+                                .derecha;
+                                .interletraje-xs;
+                                .relleno-vertical-xs;
+                                .relleno-der-xs;
+                                .sombra;
+                                .borde 
+                                .radio-md;
+                                i{
+                                    .negro;
+                                    .relleno-der-xs;
+                                    .relleno-izq-xs;
+                                    .margen-der-xs;
+                                    .icn-light;
+                                    .sombra-cabecera-blanco-xs;
+                                }
+                            }
+                        }
+                        &:hover{
+                            h2{
+                                .rojo;
+                            }
+                        }
+                    }
+                }
+                .oculto-md{
+                    .h100;
+                    .cf;
+                    a{
+                        div{
+                            .fondo-gris-blanco-trans;
+                            .absoluto;
+                            .abs-der;
+                            .abs-inf;
+                            .bloque;
+                            .relleno;
+                            .ancho-completo;
+                            h5{
+                                .condensado;
+                                .centrado;
+                                .gruesa;
+                                .sombra-cabecera-blanco-xs;
+                                .gris-oscuro;
+                                i{
+                                    .margen-der-xs;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+                </code>
+        </div>
         </div>
         <hr class='invisible'>
 
-<h5 class='gruesa'>Ejemplo carrusel enlaces</h5>
+<h5 class='pizarra'>Ejemplo carrusel enlaces</h5>
 <!-- Carrousel ancho completo-->
 <div class='oculto-xs'>
   <div data-ride="carousel" class="carousel slide" id="carousel-enlaces">
@@ -1217,15 +1518,12 @@ intro: Texto sobre javascript
   </div>
 </div>
 
-<a class="btn btn-ver-codigo" data-toggle="collapse" data-target="#ver-codigo-carrusel-enlaces">ver código</a> 
-        <div id="ver-codigo-carrusel-enlaces" class="collapse pag-javascript">  
-          <h6>Archivos necesarios</h6>
-          <code class='bloque margen-inf-sm'>
-&lt;script src="js/jquery.js">&lt;/script>
-&lt;script src="js/carousel.js">&lt;/script>
-          </code>
-          <h6>Codigo</h6>
-          <code class='bloque'>
+
+<hr class='invisible'>
+          <div class='fila'>
+          <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                <code class='bloque'>
 &lt;div class='oculto-xs'>
   &lt;div data-ride="carousel" class="carousel slide" id="carousel-enlaces">
     &lt;div class="carousel-inner">
@@ -1278,7 +1576,106 @@ intro: Texto sobre javascript
     &lt;/a>
   &lt;/div>
 &lt;/div>
-          </code>
+                </code>
+          </div>
+          <div class='col-md-6 margen-inf-sm'>
+                <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                <code class='bloque'>
+.carousel{
+    .carousel-inner{
+        .car-sm{
+            img{
+                .ancho-completo;
+                .absoluto;
+            }
+            .pag {
+                .cf;
+                .h100;
+                .oculto-xs {
+                    .h100;
+                    .derecha;
+                    .cf;
+                    a{
+                        div{
+                            .fondo-gris-blanco-trans;
+                            .absoluto;
+                            .abs-der;
+                            .abs-sup;
+                            .bloque;
+                            .alto-completo;
+                            .relleno;
+                            h2{
+                                .gris-oscuro;
+                                .condensado;
+                                .gruesa;
+                                .sombra-cabecera-blanco-xs;
+                                i{
+                                    .margen-der-xs;
+                                }
+                            }
+                            p{
+                                .italica;
+                                .margen-sup-sm;
+                                .sombra-cabecera-blanco-xs;
+                            }
+                            span{
+                                .cond;
+                                .negro;
+                                .derecha;
+                                .interletraje-xs;
+                                .relleno-vertical-xs;
+                                .relleno-der-xs;
+                                .sombra;
+                                .borde 
+                                .radio-md;
+                                i{
+                                    .negro;
+                                    .relleno-der-xs;
+                                    .relleno-izq-xs;
+                                    .margen-der-xs;
+                                    .icn-light;
+                                    .sombra-cabecera-blanco-xs;
+                                }
+                            }
+                        }
+                        &:hover{
+                            h2{
+                                .rojo;
+                            }
+                        }
+                    }
+                }
+                .oculto-md{
+                    .h100;
+                    .cf;
+                    a{
+                        div{
+                            .fondo-gris-blanco-trans;
+                            .absoluto;
+                            .abs-der;
+                            .abs-inf;
+                            .bloque;
+                            .relleno;
+                            .ancho-completo;
+                            h5{
+                                .condensado;
+                                .centrado;
+                                .gruesa;
+                                .sombra-cabecera-blanco-xs;
+                                .gris-oscuro;
+                                i{
+                                    .margen-der-xs;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+                </code>
+        </div>
         </div>
       </div>
       <div class="tab-pane fade" id="parallax-tab">

@@ -128,7 +128,7 @@ p {
 span {
   margin: @margen-span;
   display: inline-block;
-  line-height: 25/@em;
+  line-height: auto;
 
     //  Tamaños de Vistazo:
     &.lg, &.grande { 
@@ -658,6 +658,10 @@ hr {
             .margen-sup-xs;
             .margen-inf-sm;
             padding: 0 0 0 10px !important;
+
+            &.sin-borde{
+              border: 0px;
+            }
     }
 
 .autor {
@@ -1383,6 +1387,11 @@ span {
           font-size: (@font-size-titulos-6 * .8);
         }
     }
+  }
+
+  blockquote{
+    padding: 0px !important;
+    margin: 0 30px !important;
   }
 
   //listas
