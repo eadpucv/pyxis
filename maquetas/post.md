@@ -3,7 +3,7 @@ layout: particular
 title: Pyxis Framework - Maquetas
 ---
 
-{% include site-post-cabecra.html %}
+{% include site-post-cabecera.html %}
 <div style='background: url("{{ site.baseurl }}/img/ruido-fondo-pyxis.png") repeat center' id='post'>
   <div class='al-frente cf margen-especial relleno-especial'>
     <div class='pag cf'>
