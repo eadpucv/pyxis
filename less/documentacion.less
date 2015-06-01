@@ -23,8 +23,15 @@
 
 .nav-ead{
 	// Necesario para portadilla (asegurando fondo gris + ruido)
+
+
+	background: url({{ site.baseurl }}/img/ruido-fondo-pyxis.png) repeat center;
+
+	background: url("{{ site.baseurl }}../img/ruido-fondo-pyxis.png") repeat center;
+
 	background: url("{{ site.baseurl }}/img/ruido-fondo-pyxis.png") repeat center;
 	background-image: url('{{ site.baseurl }}/img/ruido-fondo-pyxis.png') repeat center;
+
 }
 
 //	Franjas para Layout 'Index' y 'Base': 
@@ -248,6 +255,10 @@ footer{
 //	para que no caiga el título en móviles 
 
 .franja {
+	&.xl{
+		padding: 30px 0px;
+	}
+
 	&.xs{
 		i{
 			display: none;
