@@ -4252,7 +4252,7 @@ h99 {
   height: 210px;
 }
 .alto-md {
-  height: 420px;
+  height: 450px;
 }
 .alto-lg {
   height: 87vh;
@@ -6827,8 +6827,7 @@ pre {
     font-size: 0.90666666em;
   }
   blockquote {
-    padding: 0px !important;
-    margin: 0 30px !important;
+    margin: 0 30px 30px !important;
   }
   ul,
   ol {
