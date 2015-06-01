@@ -401,11 +401,13 @@ footer{
     a{
       display: inline-block;
       padding: @cuerpo *.7 0 14px 0;
+      
+        h6 {
+        margin: .1em !important;
+        display: inline-block;
+      }
     }
 
-    h6 {
-      display: inline-block;
-    }
 
     img {
       width: auto;
@@ -505,6 +507,14 @@ footer{
 
 //  Small screen / tablet
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+
+  .logo-pyxis {
+    a{
+      h6{
+        margin: .1em !important;
+      }
+    }
+  }
 
   .nav-pills {
     margin: 0;
