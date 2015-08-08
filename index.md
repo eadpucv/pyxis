@@ -29,7 +29,7 @@ title: Pyxis Framework
         <p class='parrafo-izquierdo sans'>El framework al igual que sus dependencias están alojados en github, por ende toda su estructura y elaboración está al libre acceso de cualquier persona, pudiendo tomar partes del framework y extenderlas a su propio deseo.</p>
       </div>
       <div class="index-responsive">
-        <img class='w100' src="img/pyxisresponsive.png" alt="">        
+        <img class='w100' src="img/pyxis-interactive.gif" alt="">        
       </div>
     </div>
   </div>
