@@ -9,7 +9,7 @@ title: Pyxis Framework
       <h1 class='rojo fino centrado grande'>Componentes</h1>
       <h5 class='centrado'>Pyxis se articula con diversos elementos , que proponen un entorno de trabajo específico. Los elementos se incorporan para facilitar el uso del framework.</h5>
       <div class='col-lg-3 col-md-3 col-sm-3 oculto-xs centrado'>
-        <i class="icn icn-pc-lig icn-xl"></i> <i class="icn icn-light icn-tablet icn-xl"></i> <i class="icn icn-light icn-movil icn-xl"></i> <i class="icn icn-light icn-pc icn-xl"></i> 
+        <i class="icn icn-light icn-pc icn-xl"></i>  <i class="icn icn-light icn-tablet icn-xl"></i> <i class="icn icn-light icn-movil icn-xl"></i>
         <h2 class='rojo'>Responsive</h2>
         <p class='parrafo-izquierdo sans'>Al incorporar una grilla responsiva y adaptable, permite que la construcción de bloques en la diagramación de la página sea fácil y coherente. Esta es la base para lograr una accesibilidad a las plataformas de cualquier dispositivo sin importar su resolución de pantalla.</p>
       </div>
