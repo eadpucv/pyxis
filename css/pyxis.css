@@ -3122,7 +3122,7 @@ footer #mapa img {
 */
 body {
   font-size: 16px;
-  background: url("{{ site.baseurl }}/img/ruido-fondo-pyxis.png") repeat center;
+  background: url("../img/ruido-fondo-pyxis.png") repeat center;
 }
 img.xs {
   width: 40%;
@@ -9156,6 +9156,7 @@ tbody.collapse.in {
   left: auto;
 }
 .dropdown-menu .divider {
+  border: 1px solid red;
   height: 1px;
   margin: 13px 0;
   overflow: hidden;
@@ -9492,7 +9493,7 @@ tbody.collapse.in {
   background-color: rgba(0, 0, 0, 0);
 }
 .carousel-indicators .active {
-  margin: 0;
+  margin: 0 1px;
   width: 12px;
   height: 12px;
   background-color: #ffffff;
@@ -10085,6 +10086,9 @@ tbody.collapse.in {
     transition: 0.3s ease all;
     color: #a84744;
   }
+}
+body {
+  background-color: red !important;
 }
 .carousel .carousel-inner .car-sm img {
   width: 100%;
