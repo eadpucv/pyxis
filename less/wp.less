@@ -154,8 +154,16 @@
     }
 }
 
+.clear {
+    clear: both;
+}
+
 // Ejemplo de publicacion en Home *
    .publicacion{
+        // border:1px solid red;
+        &:nth-child(odd){
+            clear:both;
+        }
         .entry-details{
             .italica;
             .relleno-sup-xs;
