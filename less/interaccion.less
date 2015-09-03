@@ -110,10 +110,21 @@ a.btn{
 .grupo-botones{
   .btn{
     float: left;
-    border-radius: 0;
     margin-left: -1px;
-    &:first-child{.border-radius(@radio 0 0 @radio) !important;}
-    &:last-child{.border-radius(0 @radio @radio 0) !important;}
+    &:first-child{
+        .border-radius(@radio 0 0 @radio);
+    }
+    // Desde el 2ndo botón en adelante
+    &:nth-child(n+2){
+        .border-radius(0 0 0 0) !important;
+    }
+    &:last-of-type{
+        .border-radius(0 @radio @radio 0) !important;
+    }
+    // Cuando existe sólo 1 botón
+    &:only-child{
+        .border-radius(@radio @radio @radio @radio) !important;
+    }
   }
 }
 
