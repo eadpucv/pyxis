@@ -696,6 +696,7 @@
 
 .wp-pagenavi {
     .pages{
+        border-color: transparent;
         .italica;
         .rojo;
         .relleno-der-sm;
@@ -703,15 +704,19 @@
     }
     .current{
         background-color: #eceee6;
+        border-color: transparent !important;
+
     }
-    .page, .nextpostslink, .current{
+    .page, .nextpostslink, .previouspostslink, .current{
         padding: 5px 10px;
         margin-right: 5px;
+        border-color: transparent;
     }
-    .page, .nextpostslink{
+    .page, .nextpostslink, .previouspostslink{
         &:hover {
             background-color: #a84744;
             color: #fff;
+            border-color: transparent !important;
             .transition(.2s ease all);
         }
     }
