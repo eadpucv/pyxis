@@ -316,47 +316,44 @@ table.malla-nueva tr td{
 .ficha-personal{
 	display: inline-block;
 	margin-bottom: 20px;
-	// min-height: 250px;
-
+	// Floats
 	&:nth-child(odd){
         clear:both;
     }
-}
-
-.ficha-personal .foto{
-	width: 150px;
-	height: 100%;
-	float: left;
-	// border-radius: 50%;
-	overflow: hidden;
-	max-height: 150px;
-	margin-right: 10px;
-
-	a {
-		display: block;
+    .foto{
+		width: 150px;
 		height: 100%;
+		float: left;
+		overflow: hidden;
+		max-height: 150px;
+		margin-right: 10px;
+
+		a {
+			display: block;
+			height: 100%;
+		}
+		img {
+			height: 100%;
+			margin-bottom: 0 !important;
+		}
 	}
-	img {
-		height: 100%;
-		margin-bottom: 0 !important;
+
+	.title{
+		display: table;
+
+		h3{
+			font-size: 17px;
+			font-weight: normal;
+		}
+
+		.bio{
+			display: block;
+			font-size: 12px;
+			font-weight: normal;
+			line-height: 110%;
+		}
+
 	}
-}
-
-.ficha-personal .title{
-	display: table;
-	// padding-left: 10px;
-}
-
-.ficha-personal .title h3{
-	font-size: 17px;
-	font-weight: normal;
-}
-
-.ficha-personal .title .bio{
-	display: block;
-	font-size: 12px;
-	font-weight: normal;
-	line-height: 110%;
 }
 
 /* tabla malla nueva, tabla de colores para asignaturas ________________________________________ */
