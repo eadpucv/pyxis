@@ -22,145 +22,144 @@ iframe{
 
 /* Tablas _______________________________________________________________ */
 
-table.plantilla{
-	font-size: 95%;
-	padding-bottom: 18px;
-	margin: 1em 0;
-	line-height: 120%;
-	border: none;
-	border-radius: 6px;
+table {
+
+	&.plantilla{
+		font-size: 95%;
+		padding-bottom: 18px;
+		margin: 1em 0;
+		line-height: 120%;
+		border: none;
+		border-radius: 6px;
+		tbody tr{
+			vertical-align: top;
+			th {
+				text-align: right;
+				min-width: 110px;
+				width: 20%;
+				padding: 2px 1.5ex 0 0;
+				color: rgba(0, 0, 0, .5);
+				font-weight: normal;
+				text-transform: uppercase;
+				font-size: 10px;
+				letter-spacing: 0.03ex;
+				background-color: transparent;
+				color: rgba(0,0,0,0.3);
+				font-weight: bold;
+			}
+		}
+	}
+	&.at {
+		border-top: 1px solid #CCC;
+		width: 100%;
+		tbody tr{
+			display: block;
+			border-bottom: 1px solid #CCC;
+		}
+	}
+	&.formtable{
+		border-collapse: collapse;
+		border: none;
+		tbody tr th{
+			text-align: right;
+			padding: 0 1.5ex 0 0;
+			color: #555;
+			font-weight: normal;
+			font-size: 85%;
+			white-space: nowrap;
+
+		}
+		tbody tr th, tbody tr td{
+			padding: 5px;
+			line-height: 110%;
+			vertical-align: top;
+		} 
+	}
+	&.competencias{
+		margin: 0 0 0 2em;
+		border: none;
+		border-collapse: collapse;
+		tbody tr {
+			border-bottom: 1px solid #CCC !important;
+			&:last-child{
+				border-bottom: 1px solid transparent !important;
+			}
+			th{
+				background: transparent;
+				letter-spacing: normal;
+				text-transform: uppercase;
+				padding: 1.5em 0 1.5em 0;
+				color: #b3b3b3;
+			}
+			td {
+				background: transparent;
+				background-color: transparent;
+				vertical-align: top;
+				padding: 1em;
+				ul{
+					padding-top: 0;
+					margin-top: 0;
+				}
+			}
+		}
+	}
+	&.malla {
+		tbody {
+			tr {
+				td{
+					vertical-align: top;
+					ul{
+						padding: 0 0 2em 0;
+						ul{
+							padding: 0;
+						}
+					}
+					&.year{
+						padding: 0;
+						color: #c00;
+						text-transform: uppercase;
+						font-size: 0.8em;
+						font-weight: bold;
+						letter-spacing: -.06ex;
+					}
+				}
+				th{
+					color: #666;
+					font-size: 1.3em;
+					font-weight: normal;
+					text-transform: uppercase;
+					padding: 2em 0 1em;
+				}
+			}
+		}
+	}
+	&.malla-nueva {
+		tr th, tr td{
+			vertical-align: top;
+		}
+		tr {
+			th{
+				padding: 1ex;
+			}
+			td{
+				padding: 0;
+			}
+		}
+	}
 }
 
-table.plantilla tbody tr{
-	vertical-align: top;
-}
-
-table.plantilla tbody tr th {
-	text-align: right;
-	min-width: 110px;
-	width: 20%;
-	padding: 2px 1.5ex 0 0;
-	color: rgba(0, 0, 0, .5);
-	font-weight: normal;
-	text-transform: uppercase;
-	font-size: 10px;
-	letter-spacing: 0.03ex;
-	background-color: transparent;
-	color: rgba(0,0,0,0.3);
-	font-weight: bold;
-}
-
-table.at {
-	border-top: 1px solid #CCC;
-	width: 100%;
-}
-
-table.at tbody tr{
-	display: block;
-	border-bottom: 1px solid #CCC;
-}
-
-table.formtable{
-	border-collapse: collapse;
-	border: none;
-}
-
-table.formtable tbody tr th{
-	text-align: right;
-	padding: 0 1.5ex 0 0;
-	color: #555;
-	font-weight: normal;
-	font-size: 85%;
-	white-space: nowrap;
-
-} 
-
-table.formtable tbody tr th,
-table.formtable tbody tr td{
-	padding: 5px;
-	line-height: 110%;
-	vertical-align: top;
-} 
-
-table.competencias{
-	margin: 0 0 0 2em;
-	border: none;
-	border-collapse: collapse;
-}
-
-table.competencias tbody tr th{
-	letter-spacing: normal;
-	text-transform: uppercase;
-	padding: 1.5em 0 1.5em 0;
-	color: #b3b3b3;
-}
-
-table.competencias tbody tr td {
-	background-color: transparent;
-	vertical-align: top;
-	padding: 1em;
-}
-
-table.competencias tbody tr td ul{
-	padding-top: 0;
-	margin-top: 0;
-}
-
-table.competencias tbody tr{
-	border-bottom: 1px solid #CCC !important;
-}
-
-table.competencias tbody tr:last-child{
-	border-bottom: 1px solid transparent !important;
-}
-
-table.competencias tbody tr th, table.competencias tbody tr td{
-	background: transparent;
-}
-
-table.malla tbody tr td{
-	vertical-align: top;
-}
-
-table.malla tbody tr td ul{
-	padding: 0 0 2em 0;
-}
-
-table.malla tbody tr td ul ul{
-	padding: 0;
-}
-
-table.malla tbody td.year{
-	padding: 0;
-	color: #c00;
-	text-transform: uppercase;
-	font-size: 0.8em;
-	font-weight: bold;
-	letter-spacing: -.06ex;
-}
-
-table.malla tbody tr th{
-	color: #666;
-	font-size: 1.3em;
-	font-weight: normal;
-	text-transform: uppercase;
-	padding: 2em 0 1em;
-}
-
-td.Créditos{
-	text-align: center;
-}
-
-td.Clave{
-	font-weight: bold;
-	font-family: Courier, monospace;
-}
-
-td.Competencias-Fundamentales,
-td.Competencias-Disciplinares,
-td.Competencias-Profesionales{
-	font-size: .8em;
-	line-height: 1.1em;
+td {
+	&.Creditos{
+		text-align: center;
+	}
+	&.Clave{
+		font-weight: bold;
+		font-family: Courier, monospace;
+	}
+	&.Competencias-Fundamentales, &.Competencias-Disciplinares, &.Competencias-Profesionales{
+		font-size: .8em;
+		line-height: 1.1em;
+	}
 }
 .ficha{
 	border-collapse: collapse;
@@ -206,117 +205,94 @@ td.nombre{
 	content: "";
 }
 
-/* tabla malla nueva, tabla de colores para asignaturas ________________________________________ */
-
-table.malla-nueva tr th,
-table.malla-nueva tr td{
-	vertical-align: top;
-}
-
-table.malla-nueva tr th{
-	padding: 1ex;
-}
-
-table.malla-nueva tr td{
-	padding: 0;
-}
-
 /* Ficha Asignatura: es una plantilla que se utiliza como Template para resultados semánticos */
 
 .ficha-asignatura{
 	display: block;
 	padding: 1ex;
-}
-
-.ficha-asignatura:hover{
-	background-color: #FFF;
-}
-
-.ficha-asignatura .clave,
-.ficha-asignatura .creditos{
-	float: left;
-	color: #5C5C5C;
-	background-color: transparent;
-	border: none;
-	margin: 0;
-	font-weight: bolder;
-	font-size: 10px;
-	line-height: 1.1em;
-	border: 1px solid transparent;
-}
-
-.ficha-asignatura .clave{
-	padding: .5ex;
-	font-weight: bold;
-}
-
-.ficha-asignatura .creditos{
-	color: #FFF;
-	background-color: rgba(0, 0, 0, 0.5);
-	padding: 0.6ex 1.2ex 0.4ex 1.2ex;
-	border-radius: 10px;
-	box-shadow: 0 0 0px 2px #FFF inset;
-	border: none;
-}
-
-.ficha-asignatura .nombre-asignatura a{
-	display: block;
-	clear: both;
-	font-size: 14px;
-	padding: .5ex;
-	line-height: 110%;
-	font-weight: 700 !important;
-}
-
-.ficha-asignatura .nombre-asignatura a:hover{
-	background-color: transparent;
-	text-decoration: underline;
+	&:hover{
+		background-color: #FFF;
+	}
+	.clave, creditos{
+		float: left;
+		color: #5C5C5C;
+		background-color: transparent;
+		border: none;
+		margin: 0;
+		font-weight: bolder;
+		font-size: 10px;
+		line-height: 1.1em;
+		border: 1px solid transparent;
+	}
+	.clave{
+		padding: .5ex;
+		font-weight: bold;
+	}
+	.creditos{
+		color: #FFF;
+		background-color: rgba(0, 0, 0, 0.5);
+		padding: 0.6ex 1.2ex 0.4ex 1.2ex;
+		border-radius: 10px;
+		box-shadow: 0 0 0px 2px #FFF inset;
+		border: none;
+	}
+	.nombre-asignatura a{
+		display: block;
+		clear: both;
+		font-size: 14px;
+		padding: .5ex;
+		line-height: 110%;
+		font-weight: 700 !important;
+		&:hover{
+			background-color: transparent;
+			text-decoration: underline;
+		}
+	}
 }
 
 /* vcard para Plantilla: Personas _______________________________________________________ */
 
 .vcard{
 	text-align: center;
-}
+	.person-name{
+		display: inline-block;
+		margin: 1ex 0px;
+		font-size: 1.5em;
+		letter-spacing: -0.03ex;
+		color: black;
+		font-weight: bold;
+	}
+	.titulo p, .titulo .bio, .titulo .url{
+		font-family: "Source Sans Pro";
+		font-size: 1em;
+		line-height: 120%;
+		font-style: normal;
+		text-align: center;
+	}
 
-.vcard .person-name{
-	display: inline-block;
-	margin: 1ex 0px;
-	font-size: 1.5em;
-	letter-spacing: -0.03ex;
-	color: black;
-	font-weight: bold;
-}
-.vcard .titulo p,
-.vcard .titulo .bio, 
-.vcard .titulo .url{
-	font-family: "Source Sans Pro";
-	font-size: 1em;
-	line-height: 120%;
-	font-style: normal;
-	text-align: center;
 }
 
 /* para la Plantilla: Listado de Profesores ________________________________________________ */
 
-.listado-profesores .nombre a{
-	font-weight: 300;
+.listado-profesores {
+	.nombre a{
+		font-weight: 300;
+	}
+	small{
+		display: block;
+		line-height: 120%;
+		margin: 0px 0px 1em;
+		font-size: 80%;
+		font-weight: 400;
+	}
 }
 
-.listado-profesores small{
-	display: block;
-	line-height: 120%;
-	margin: 0px 0px 1em;
-	font-size: 80%;
-	font-weight: 400;
-}
 
 /* para la Plantilla: Ficha Personal _______________________________________________________ */
 
 .ficha-personal{
 	display: inline-block;
 	margin-bottom: 20px;
-	// Floats
 	&:nth-child(odd){
         clear:both;
     }
@@ -354,70 +330,6 @@ table.malla-nueva tr td{
 		}
 
 	}
-}
-
-/* tabla malla nueva, tabla de colores para asignaturas ________________________________________ */
-
-table.malla-nueva tr th,
-table.malla-nueva tr td{
-	vertical-align: top;
-}
-
-table.malla-nueva tr th{
-	padding: 1ex;
-}
-
-table.malla-nueva tr td{
-	padding: 0;
-}
-
-/* Ficha Asignatura: es una plantilla que se utiliza como Template para resultados semánticos */
-
-.ficha-asignatura{
-	display: block;
-	padding: 1ex;
-}
-
-.ficha-asignatura:hover{
-	background-color: #FFF;
-}
-
-.ficha-asignatura .clave,
-.ficha-asignatura .creditos{
-	float: left;
-	color: #5C5C5C;
-	background-color: transparent;
-	border: none;
-	margin: 0;
-	font-weight: bolder;
-	font-size: 10px;
-	border: 1px solid transparent;
-}
-
-.ficha-asignatura .clave{
-	padding: .5ex;
-}
-
-.ficha-asignatura .creditos{
-	color: #FFF;
-	background-color: rgba(0, 0, 0, 0.5);
-	padding: 0.6ex 1.2ex 0.4ex 1.2ex;
-	border-radius: 10px;
-	box-shadow: 0 0 0px 2px #FFF inset;
-	border: none;
-}
-
-.ficha-asignatura .nombre-asignatura a{
-	display: block;
-	clear: both;
-	font-size: 14px;
-	padding: .5ex;
-	line-height: 110%;
-}
-
-.ficha-asignatura .nombre-asignatura a:hover{
-	background-color: transparent;
-	text-decoration: underline;
 }
 
 /* Semantic Media Wiki _______________________________________________________ */
