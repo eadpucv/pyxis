@@ -315,21 +315,40 @@ table.malla-nueva tr td{
 
 .ficha-personal{
 	display: inline-block;
-	min-height: 250px;
+	margin-bottom: 20px;
+	// min-height: 250px;
+
+	&:nth-child(odd){
+        clear:both;
+    }
 }
 
 .ficha-personal .foto{
 	width: 150px;
+	height: 100%;
 	float: left;
-	border-radius: 50%;
+	// border-radius: 50%;
+	overflow: hidden;
+	max-height: 150px;
+	margin-right: 10px;
+
+	a {
+		display: block;
+		height: 100%;
+	}
+	img {
+		height: 100%;
+		margin-bottom: 0 !important;
+	}
 }
 
 .ficha-personal .title{
-	
+	display: table;
+	// padding-left: 10px;
 }
 
 .ficha-personal .title h3{
-	font-size: 14px;
+	font-size: 17px;
 	font-weight: normal;
 }
 
