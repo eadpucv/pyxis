@@ -23,6 +23,28 @@ iframe{
 /* Tablas _______________________________________________________________ */
 
 table {
+	td {
+		border-color: transparent;
+	}
+	ul {
+		margin-right: 5px;
+		li {
+			margin-left: 0;
+			font-size: 14px;
+			list-style-position: inside;
+			font-style: normal;
+			font-family: @sans;
+
+			ul li {
+				margin-left: 10px;
+				font-family: @sans !important;
+			}
+		}
+	}
+
+	tr td b{
+		font-size: 0.9em;
+	}
 
 	&.plantilla{
 		font-size: 95%;
@@ -118,7 +140,7 @@ table {
 						padding: 0;
 						color: #c00;
 						text-transform: uppercase;
-						font-size: 0.8em;
+						font-size: 0.95em;
 						font-weight: bold;
 						letter-spacing: -.06ex;
 					}
@@ -295,7 +317,6 @@ td.nombre{
 	margin-bottom: 20px;
 	&:nth-of-type(odd){
         clear:both;
-        border:1px solid red;
     }
     .foto{
 		width: 150px;
@@ -354,7 +375,11 @@ td.nombre{
 /* Fragmento/bloque inserto desde la Wiki _____________________________________ */
 
 .wikiembed-fragment {
-	border:1px solid red;
 	display: inline-block;
+}
+.wiki-embed-source {
+	font-size: 10px;
+	font-style: italic;
+	float: right;
 }
 
