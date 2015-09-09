@@ -293,8 +293,9 @@ td.nombre{
 .ficha-personal{
 	display: inline-block;
 	margin-bottom: 20px;
-	&:nth-child(odd){
+	&:nth-of-type(odd){
         clear:both;
+        border:1px solid red;
     }
     .foto{
 		width: 150px;
@@ -348,5 +349,12 @@ td.nombre{
 .img-responsive{
 	width: 100%;
 	height: auto;
+}
+
+/* Fragmento/bloque inserto desde la Wiki _____________________________________ */
+
+.wikiembed-fragment {
+	border:1px solid red;
+	display: inline-block;
 }
 
