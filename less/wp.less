@@ -125,29 +125,28 @@
   overflow: hidden;
 }
 
+.carousel-flex {
+    display: -webkit-flex !important;
+    display: flex !important;
+    div {
+        margin: auto 0;
+        h5 {
+            margin-top: -25px;
+        }
+    }
+}
 // Ejemplo de evento en Home *
 .evento{
-    // border:1px solid red;
     &:nth-child(4){
         clear:both;
     }
     .fecha{
-        // border:1px solid red;
         margin-bottom: 0;
         margin-right: 0;
         border-left: none !important;
         background-color: rgba(236, 238, 230, 0.8);
         box-shadow: none;
-        // .izquierda; 
         border-radius: 0;
-        // .fondo-blanco; 
-        // .sombra; 
-        // .borde; 
-        // .radio-sup-der-sm; 
-        // .radio-inf-der-sm;
-        // .izq-lineal-sm; 
-        // .borde-rojo; 
-        // .margen-inf-sm; 
         .ancho-completo;
         span, p{
             .cond;
@@ -171,15 +170,12 @@
         }
         .entry-details{
             .italica;
-            // .relleno-inf-sm;
         }
         p{
             .sans;
         }
     }
-    // .contenido {
-    //     .margen-sup-xs;
-    // }
+
     .cabecera {
         padding-left: 0;
         display: -webkit-flex;
