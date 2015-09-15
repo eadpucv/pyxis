@@ -820,6 +820,113 @@
     }
 }
 
+// Diseño de comentarios y caja para comentar
+//------------------------------------------------
+
+// Caja para dejar comentario
+.comment-respond {
+    // Rótulo
+    .comment-reply-title{
+        height: 23px;
+        font-size: 18px;
+        margin-top: -33px;
+        .italica;
+
+        #cancel-comment-reply-link {
+            border:1px solid @rojo;
+            border-radius: @radio;
+            float: right;
+            padding: 5px;
+            .rojo;
+            &:hover {
+                .gris;
+                border-color: @gris;
+            }
+        }
+    }
+    // Notas
+    .comment-notes {
+        .gris;
+        .fino;
+        font-size: 14px;
+    }
+    // Caja de comentario
+    .comment-form {
+        border-color: fade(@gris-claro, 40%);
+        background-color: fade(#fff, 20%);
+    }
+}
+
+// Caja de comentario realizado 
+.comment {
+    list-style: none;
+}
+.comment-body {
+    padding: 10px;
+    border:1px solid fade(@gris-claro, 40%);
+    border-radius: @radio;
+    background-color: fade(#fff, 20%);
+    .margen-inf-md;
+    // Datos del autor
+    .comment-author  {
+        display: inline-block;
+        width: 100%;
+        display: -webkit-flex;
+        display: flex;
+        img {
+            float: left;
+            margin: 0;
+            list-style: none;
+        }
+        .fn {
+            font-size: 18px;
+            .sans;
+            font-style: normal;
+            margin: auto 15px;
+        }
+        .says {
+            padding-top: 2px;
+            font-size: 14px;
+            .italica;
+            .sans;
+        }
+    }
+    // Datos de la publicación
+    .comment-meta {
+        padding: 10px 0;
+        font-size: 13px;
+        .italica;
+        .serif;
+        .margen-inf-xs;
+    }
+    // Esperando moderación
+    .comment-awaiting-moderation {
+        font-size: 11px;
+        color: darken(@gris-claro, 10%);
+        .fino;
+        .sans;
+        font-style: normal;
+    }
+    // Realizar una respuesta
+    .reply {
+        padding: 10px;
+        display: inline-block;
+        width: 100%;
+        .comment-reply-link {
+            border:1px solid @gris-claro;
+            border-radius: @radio;
+            float: right;
+            padding: 5px;
+            .gris-claro;
+            &:hover {
+                .rojo;
+                border-color: @rojo;
+            }
+        }
+    }
+}
+
+
 .pagina {
     
     padding: 0 10px;
