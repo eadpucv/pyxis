@@ -765,14 +765,16 @@
     .current{
         background-color: #eceee6;
         border-color: transparent !important;
-
     }
-    .page, .nextpostslink, .previouspostslink, .current{
+    .extend {
+        .rojo;
+    }
+    .page, .nextpostslink, .previouspostslink, .current, .extend, .last{
         padding: 5px 10px;
         margin-right: 5px;
         border-color: transparent;
     }
-    .page, .nextpostslink, .previouspostslink{
+    .page, .nextpostslink, .previouspostslink, .last{
         &:hover {
             background-color: #a84744;
             color: #fff;
@@ -781,6 +783,42 @@
         }
     }
 }  
+
+// Diseño de lista de páginas hijas
+//------------------------------------------------
+
+.paginas-hijas {
+    .margen-sup-md;
+    .margen-inf-md;
+    .pagenav {
+        .rojo;
+        .serif;
+        list-style: none;
+        .fino;
+        font-style: italic;
+        ul {
+            .margen-sup-xs;
+            li {
+                font-style: normal;
+                list-style: none;
+                .relleno-sup-xs;
+                .relleno-inf-xs;
+                a {
+                    color: darken(@gris-claro, 10%);
+                }
+                // border:1px solid orange;
+                ul li {
+                    padding-bottom: 0 !important;
+                }
+                a:hover {
+                    .rojo;
+                    .transition(.2s ease all);
+                    
+                }
+            }
+        }
+    }
+}
 
 .pagina {
     
