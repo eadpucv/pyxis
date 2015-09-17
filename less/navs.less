@@ -192,10 +192,8 @@ a.menu-link {
   right: 0;
   border-bottom-left-radius: @radio;
   border-bottom-right-radius: @radio;
-  // height: 25px;
   padding: 2px 6px 4px 6px;
   float: right;
-  // width: 180px;
   input {
     float: right;
     background-color: transparent;
@@ -473,6 +471,33 @@ footer{
   // Remove the top rounded corners here since there is a hard edge above the menu
   .border-top-radius(0);
 }
+
+// Menú responsive
+
+.menu-movil-categorias {
+    // border:1px solid blue;
+    border-top: 1px solid @gris-claro !important;
+    li {
+      display: block;
+      background-color: rgba(236, 238, 230, 0.8); 
+      border-bottom: 1px solid @gris-claro;
+      a {
+        .rojo !important;
+      }
+      ul {
+        border-top: 1px solid @gris-claro !important;
+        li {
+          background-color: #fff;
+          border-bottom: 1px solid rgba(236, 238, 230, 0.8); ;
+          a {
+            .negro !important;
+          }
+        }
+      }
+    }
+}
+
+
 
 // --------------------------------------------------
 // diseño de utilidad responsive
