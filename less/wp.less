@@ -284,50 +284,56 @@
 
 }
 
-    .fecha{
-        .borde; 
-        .izq-lineal-sm;
-        .relleno-vertical-sm; 
-        .borde-rojo; 
-        .margen-inf-xs; 
-        .sombra; 
-        .radio-sup-der-md; 
-        .radio-inf-der-md; 
-        .fondo-blanco;
-        .margen-der-md;
-        p.dia{
-            .rojo;
-            .centrado !important;
-        }
-        span.mes{
-            .condensado; 
-            .rojo;
-            .interletraje-sm;
-        }
+// Fecha en page de evento
+.fecha, .fecha-page{
+    background-color: rgba(236, 238, 230, 0.8);
+    border-bottom-left-radius: @radio;
+    border-bottom-right-radius: @radio;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    display: -webkit-flex;
+    display: flex;
+    .relleno-vertical-sm; 
+    .margen-inf-xs; 
+    .margen-der-md;
+    .contenido-fecha {
+        margin: auto;
     }
-    // Fecha
-    .fecha-movil{
-        .borde; 
-        .izq-lineal-sm; 
-        .borde-rojo; 
-        .radio-sup-der-md; 
-        .radio-inf-der-md;
-        .relleno-vertical-xs; 
-        .margen-der-sm; 
-        .sombra; 
-        .fondo-blanco;
-        // Día
-        .dia{
-            .rojo;
-            .centrado;
-        }
-        // Mes
-        .mes{
-            .condensado;
-            .rojo;
-            .interletraje-sm;
-        }
+    p.dia{
+        .rojo;
+        .centrado !important;
     }
+    span.mes{
+        .condensado; 
+        .rojo;
+        .interletraje-sm;
+    }
+}
+// Fecha
+.fecha-movil{
+    .margen-der-sm; 
+    background-color: rgba(236, 238, 230, 0.8);
+    border-bottom-left-radius: @radio;
+    border-bottom-right-radius: @radio;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    display: -webkit-flex;
+    display: flex;
+    .contenido-fecha {
+        margin: auto;
+    }
+    // Día
+    .dia{
+        .rojo;
+        .centrado;
+    }
+    // Mes
+    .mes{
+        .condensado;
+        .rojo;
+        .interletraje-sm;
+    }
+}
 
 // Lectura de evento desplegado *
 #single-event{
@@ -1135,7 +1141,7 @@
         }
     }
 
-    .docencia-flex {
+    .docencia-flex, .fecha-page {
         display: none !important;
     }
     .noticia {
@@ -1144,7 +1150,6 @@
         left: 0 !important;
         margin-bottom: 40px;
     }
-
 }
 
 
@@ -1192,6 +1197,9 @@
             padding-bottom: 10px !important; 
         }
     }
+    .fecha-movil {
+        display: none !important;
+    }
 }
 
 // Medium screen / desktop
@@ -1212,6 +1220,10 @@
             height: 140px;
         }
     }
+
+    .fecha-movil {
+        display: none !important;
+    }
 }
 
 // Large screen / wide desktop
@@ -1221,5 +1233,9 @@
     // ajuste de página
     .wrap, .wrap-footer {
         max-width: 1366px;
+    }
+
+    .fecha-movil {
+        display: none !important;
     }
 }
