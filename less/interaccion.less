@@ -343,6 +343,40 @@ form{
     vertical-align: super !important;
 }
 
+// Formulario de Wordpress
+.searchform {
+    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: rgba(236, 238, 230, 0.8);
+    .screen-reader-text {
+        color: @gris-claro;
+    }
+    #s {
+        background-color: rgba(255, 255, 255, 0.4);
+        border-color: @gris-claro;
+        &:focus {
+            .transition(.2s ease all);
+            background-color: #fff;
+            box-shadow: none !important;
+            outline: 0 !important;
+            color: @gris;
+        }
+    }
+    #searchsubmit {
+        float: right;
+    }
+    input[type='submit'] {
+        color: @gris-claro;
+        box-shadow: none;
+        text-shadow: none;
+        &:hover {
+            .gris;
+            border-color: @gris;
+        }
+    }
+}
+
 .grupo-formulario,
 .form-group {
     span {
