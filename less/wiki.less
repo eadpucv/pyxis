@@ -314,17 +314,16 @@ td.nombre{
 
 .ficha-personal{
 	display: inline-block;
-	margin-bottom: 20px;
-	&:nth-of-type(odd){
-        clear:both;
-    }
+	margin-bottom: 35px;
+	// padding-left: 0;
     .foto{
-		width: 150px;
+		width: 135px;
 		height: 100%;
 		float: left;
 		overflow: hidden;
-		max-height: 150px;
+		max-height: 135px;
 		margin-right: 10px;
+		// margin: 0 auto;
 
 		a {
 			display: block;
@@ -375,6 +374,7 @@ td.nombre{
 /* Fragmento/bloque inserto desde la Wiki _____________________________________ */
 
 .wikiembed-fragment {
+	width: 100%;
 	display: inline-block;
 }
 .wiki-embed-source {
@@ -391,5 +391,44 @@ td.nombre{
 	height: 35px !important;
 	margin-bottom: 10px;
 	color: fade(#999, 50%);
+}
+
+// --------------------------------------------------
+// diseño de utilidad responsive
+
+// Extra small screen / phone
+@media(max-width: @screen-xs-max){
+	.ficha-personal{
+		border:1px solid green;
+	}
+}
+
+// Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+	.ficha-personal{
+		border:1px solid yellow;
+	}
+}
+
+// Medium screen / desktop
+
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+	.ficha-personal{
+		// border:1px solid orange;
+		&:nth-of-type(odd){
+	        clear:both;
+	    }
+	}
+}
+
+// Large screen / wide desktop
+
+@media (min-width: @screen-lg){
+	.ficha-personal{
+		// border:1px solid red;
+		&:nth-of-type(3n+4){
+	        clear:both;
+	    }
+	}
 }
 
