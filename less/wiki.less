@@ -23,6 +23,19 @@ iframe{
 /* Tablas _______________________________________________________________ */
 
 table {
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 4px;
+	tbody {
+		tr {
+			// border:1px solid blue;
+			td {
+				border-top:1px solid fade(@gris-claro, 20%);
+			}
+			th {
+				border-bottom:2px solid fade(@gris-claro, 20%);
+			}
+		}
+	}
 	td {
 		border-color: transparent;
 	}
@@ -44,6 +57,25 @@ table {
 
 	tr td b{
 		font-size: 0.9em;
+	}
+
+	&.wikitable {
+		border-radius: 4px;
+		th {
+			background-color: rgba(236, 238, 230, 0.8);
+			border-color: fade(@gris-claro, 10%);
+			border-bottom:2px solid fade(@gris-claro, 20%);
+			text-transform: capitalize;
+		}
+		td {
+			padding: 15px 5px;
+			border-color: fade(@gris-claro, 5%);
+			border-bottom: 1px solid fade(@gris-claro, 20%);
+			font-size: 14px;
+		}
+		.row-odd {
+			background-color: rgba(255, 255, 255, 0.6);
+		}
 	}
 
 	&.plantilla{
@@ -137,8 +169,10 @@ table {
 						}
 					}
 					&.year{
-						padding: 0;
+						padding: 5px;
 						color: #c00;
+						background-color: rgba(236, 238, 230, 0.8);
+						// border-left:2px solid fade(@gris-claro, 20%);
 						text-transform: uppercase;
 						font-size: 0.95em;
 						font-weight: bold;
@@ -398,16 +432,11 @@ td.nombre{
 
 // Extra small screen / phone
 @media(max-width: @screen-xs-max){
-	.ficha-personal{
-		border:1px solid green;
-	}
+	
 }
 
 // Small screen / tablet
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
-	.ficha-personal{
-		border:1px solid yellow;
-	}
 }
 
 // Medium screen / desktop
