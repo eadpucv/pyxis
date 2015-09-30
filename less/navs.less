@@ -185,24 +185,22 @@ a.menu-link {
 }
 // Caja de búsqueda ubicado en el nav y logueo de usuario
 .nav-login {
-  background-color: rgba(236, 238, 230, 0.8);
+  background-color: rgba(255, 255, 255, 0.3);
+  // background-color: rgba(236, 238, 230, 0.8);
   position: absolute;
   border-top: 2px solid @rojo;
   top: -25px;
-  right: 0px;
+  right: 0;
   border-bottom-left-radius: @radio;
   border-bottom-right-radius: @radio;
   padding: 2px 6px 4px 6px;
+  white-space: nowrap;
   float: left;
   a {
-    .derecha;
-    float: left;
-    margin-top: -1px;
     i {
-      font-size: 13px;
+      font-size: 12px;
     }
     span {
-      // margin-top: -1px;
       font-size: 11.5px;
     }
   }
@@ -213,44 +211,28 @@ a.menu-link {
   max-width: 150px;
   margin: 10px 0;
   float: right;
-  // background-color: rgba(236, 238, 230, 0.8);
-  // position: absolute;
-  // top: -25px;
-  // right: 0;
-  // border-bottom-left-radius: @radio;
-  // border-bottom-right-radius: @radio;
   padding: 0px;
-  // float: right;
   input {
-    // float: right;
     border-bottom-left-radius: @radio;
     border-bottom-right-radius: @radio;
     background-color: transparent;
     border-color: transparent !important;
     border-bottom: 1px solid fade(@gris-claro, 45%) !important;
-    // width: 120px !important;
-    // margin-top: 1px !important;
-    // margin-right: 10px !important;
     margin-bottom: 0 !important;
     padding: 6px !important;
     font-size: 14px !important;
     .transition(.2s ease all);
-    // text-align: right;
     &::-webkit-input-placeholder {
        color: fade(@gris-claro, 60%);
-       // text-align: right;
     }
     &:-moz-placeholder { /* Firefox 18- */
        color: fade(@gris-claro, 60%);
-       // text-align: right;  
     }
     &::-moz-placeholder {  /* Firefox 19+ */
        color: fade(@gris-claro, 60%);
-       // text-align: right;  
     }
     &:-ms-input-placeholder {  
        color: fade(@gris-claro, 60%);
-       // text-align: right;  
     }
     &:focus {
       box-shadow: none !important;
@@ -688,6 +670,14 @@ footer{
     margin-top: 6px;
   }
 
+  .nav-login {
+    left: auto;
+    right: 0;
+    a span {
+      font-size: 10px;
+    }
+  }
+
 }
 
 //  Medium screen / desktop
@@ -702,6 +692,15 @@ footer{
   .nav-busqueda {
     margin-top: 6px;
     max-width: 110px;
+  }
+
+  .nav-login {
+    left: auto;
+    padding: 0px 4px 1px 4px;
+    right: 0;
+    a span, a i {
+      font-size: 10px;
+    }
   }
 }
 
