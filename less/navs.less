@@ -185,8 +185,8 @@ a.menu-link {
 }
 // Caja de búsqueda ubicado en el nav y logueo de usuario
 .nav-login {
-  background-color: rgba(255, 255, 255, 0.3);
-  // background-color: rgba(236, 238, 230, 0.8);
+  // background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(236, 238, 230, 0.8);
   position: absolute;
   border-top: 2px solid @rojo;
   top: -25px;
@@ -217,28 +217,29 @@ a.menu-link {
     border-top-right-radius: @radio;
     background-color: transparent;
     border-color: transparent !important;
-    border-bottom: 1px solid fade(@gris-claro, 45%) !important;
+    border-bottom: 2px solid fade(@gris-claro, 20%) !important;
     margin-bottom: 0 !important;
     padding: 6px !important;
     font-size: 14px !important;
     .transition(.2s ease all);
     &::-webkit-input-placeholder {
-       color: fade(@gris-claro, 60%);
+       color: fade(@gris, 50%);
     }
     &:-moz-placeholder { /* Firefox 18- */
-       color: fade(@gris-claro, 60%);
+       color: fade(@gris, 50%);
     }
     &::-moz-placeholder {  /* Firefox 19+ */
-       color: fade(@gris-claro, 60%);
+       color: fade(@gris, 50%);
     }
     &:-ms-input-placeholder {  
-       color: fade(@gris-claro, 60%);
+       color: fade(@gris, 50%);
     }
     &:focus {
       box-shadow: none !important;
       outline: 0 !important;
       color: @gris;
-      background-color: rgba(236, 238, 230, 0.8) !important;
+      background-color: #fff !important;
+      // background-color: rgba(236, 238, 230, 0.8) !important;
       .transition(.2s ease all);
       &::-webkit-input-placeholder {
          color: @gris-claro;
