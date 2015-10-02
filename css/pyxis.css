@@ -2982,9 +2982,7 @@ td.visible-print {
 }
 .fondo-header-pyxis {
   background-color: rgba(236, 238, 230, 0.8);
-  -webkit-box-shadow: 0 0 10px rgba(1, 1, 1, 0.3);
-  -moz-box-shadow: 0 0 10px rgba(1, 1, 1, 0.3);
-  box-shadow: 0 0 10px rgba(1, 1, 1, 0.3);
+  border-bottom: 2px solid rgba(194, 196, 186, 0.2);
   top: 0;
   z-index: -1;
   margin: 0 auto;
@@ -3114,18 +3112,17 @@ footer #mapa img {
   float: left;
   padding: 0;
   margin: 0;
-  border: 1px solid red;
   height: 57px;
   display: -webkit-flex;
   display: flex;
 }
 .logo-pyxis img {
-  border: 1px solid red;
   width: 24px;
   float: left;
   margin: auto;
 }
 .logo-pyxis h6 {
+  display: block;
   margin: auto;
 }
 .logo-pyxis.footer {
@@ -10200,9 +10197,7 @@ tbody.collapse.in {
   background-color: #ffffff;
   width: 100%;
   z-index: 100;
-  -webkit-box-shadow: 0 0 10px rgba(1, 1, 1, 0.6);
-  -moz-box-shadow: 0 0 10px rgba(1, 1, 1, 0.6);
-  box-shadow: 0 0 10px rgba(1, 1, 1, 0.6);
+  border-bottom: 2px solid rgba(194, 196, 186, 0.2);
 }
 .is-sticky #sub-componentes i {
   display: inline-block;
