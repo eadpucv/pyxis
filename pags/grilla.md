@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Pyxis Framework - Grilla
-subtitle: <i class="icn icn-pc"></i> Grilla
+subtitle: <i class="icn icn-pc fino"></i> Grilla
 link-5: Sintaxis
 link-6: Ordenar y ocultar
 link-7: Anidar y offset

@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Pyxis Framework - Versatilidad
-subtitle: <i class="icn icn-imagen"></i> Versatilidad
+subtitle: <i class="icn icn-imagen fino"></i> Versatilidad
 intro: Texto sobre versatilidad
 ---
 

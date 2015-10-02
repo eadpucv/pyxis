@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Pyxis Framework - Tipografía
-subtitle: <i class="icn icn-libro"></i> Tipografía
+subtitle: <i class="icn icn-libro fino"></i> Tipografía
 intro: Texto sobre tipografía
 link-1: Fuentes
 link-2: Encabezados
