@@ -37,9 +37,9 @@ title: Pyxis Framework
 <div class='ruido sombra-interior'>
   <div class='pag'>
       <h1 class='rojo fino centrado grande'>Fundamentos</h1>
-      <p>En general, con el término framework, nos estamos refiriendo a una estructura digital definida por componentes personalizables e intercambiables para el desarrollo de una aplicación o sitio web. En otras palabras, un framework se puede considerar como una aplicación genérica incompleta y configurable a la que podemos ir añadiéndole constantemente piezas para construir una aplicación concreta.
+      <p class="sm">En general, con el término framework, nos estamos refiriendo a una estructura digital definida por componentes personalizables e intercambiables para el desarrollo de una aplicación o sitio web. En otras palabras, un framework se puede considerar como una aplicación genérica incompleta y configurable a la que podemos ir añadiéndole constantemente piezas para construir una aplicación concreta.
       Los objetivos principales que persigue un framework son:</p>
-      <p><i>Acelerar el proceso de desarrollo de un sitio, reutilizar código ya existente y promover buenas prácticas de desarrollo con el uso de patrones o esquemas de diseño.</i> </p>
+      <p class="grueso gris">Acelerar el proceso de desarrollo de un sitio, reutilizar código ya existente y promover buenas prácticas de desarrollo con el uso de patrones o esquemas de diseño.</p>
       <h3 class='rojo fino centrado'>¿Por qué un framework para la e[ad]?</h3>
       <p>Las organizaciones, a medida que crecen, van generando nuevos puntos de contacto con sus públicos o audiencias. Hoy día, estos puntos de contacto son múltiples servicios que se traducen en variadas interfaces; tanto materiales como digitales, impresas o proyectadas, grandes o pequeñas, móviles o estacionarias. Mantener un lenguaje consistente a través de todos los servicios y dispositivos se vuelve una tarea titánica si se piensa cada uno por separado. Se hace preciso, entonces, definir un <i>lenguage gráfico global</i> que sea capaz de interpretar la voz de la organización y que se adapte a cada contexto, formato y dispositivo.</p>
       <p>Este proyecto busca definir fundamentos gráficos elementales para pantallas e impresos cumpliendo las siguientes premisas:</p>
