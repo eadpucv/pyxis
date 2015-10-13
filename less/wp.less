@@ -948,6 +948,31 @@
     }
 }
 
+// Caja de búsqueda en sidebar
+
+.widget_search {
+    display: inline-block;
+    width: 100%;
+    .nav-busqueda {
+        max-width: 100%;
+        float: none !important;
+        input {
+            border-bottom: 2px solid @gris-claro;
+            &::-webkit-input-placeholder {
+               color: @gris-claro;
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+               color: @gris-claro;
+            }
+            &::-moz-placeholder {  /* Firefox 19+ */
+               color: @gris-claro;
+            }
+            &:-ms-input-placeholder {  
+               color: @gris-claro;
+            }
+        }
+    }    
+}
 
 .pag.cf {
     margin-bottom: 16px;
