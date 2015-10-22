@@ -950,8 +950,14 @@
 
 // Widget > Noticias
 
-.widget-post-categories .noticia {
-    padding: 15px;
+.widget-post-categories {
+    .fila {
+        &>div {
+            // border:1px solid red;
+            // width: 280px;
+            padding: .5rem;
+        }
+    }
 }
 
 // Caja de búsqueda en sidebar
@@ -1198,8 +1204,12 @@
     }
     
     // Ajuste para bloques con Masonry
-    .widget-post-categories .noticia {
-        width: 100%;
+    .widget-post-categories {
+        .fila {
+            &>div {
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -1253,8 +1263,12 @@
     }
     
     // Ajuste para bloques con Masonry
-    .widget-post-categories .noticia {
-        width: 50%;
+    .widget-post-categories {
+        .fila {
+            &>div {
+                width: 240px;
+            }
+        }
     }
 }
 
@@ -1282,8 +1296,12 @@
     }
     
     // Ajuste para bloques con Masonry
-    .widget-post-categories .noticia {
-        width: 33.3%;
+    .widget-post-categories {
+        .fila {
+            &>div {
+                width: 296px;
+            }
+        }
     }
 }
 
@@ -1303,5 +1321,13 @@
     // Ajuste para bloques con Masonry
     .widget-post-categories .noticia {
         width: 33.3%;
+    }
+
+    .widget-post-categories {
+        .fila {
+            &>div {
+                width: 354px;
+            }
+        }
     }
 }
