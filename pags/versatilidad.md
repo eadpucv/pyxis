@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Pyxis Framework - Versatilidad
-subtitle: <i class="icn icn-imagen"></i> Versatilidad
+subtitle: <i class="icn icn-imagen fino"></i> Versatilidad
 intro: Texto sobre versatilidad
 ---
 
@@ -471,7 +471,8 @@ intro: Texto sobre versatilidad
 
 <h4 class='pizarra gruesa'>Diseño sitio e[ad]</h4>
 
-<p>Los enlaces presentes a continuación resguardan el primer proyecto web estandarizado únicamente con Pyxis Framework y <a href='http://eadpucv.github.io/stampa/'>Stampa</a> en una serie de maquetas navegables y que corresponden al finiquito del diseño del sitio oficial de la <a href='http://www.ead.pucv.cl/'>e[ad]</a> de la <a href='http://www.ucv.cl/'>Pontificia Universidad Católica de Valparaíso</a>. El proceso de trabajo contempla como primer objeto la <i>arquitectura de información</i> graficada en su mapa correspondiente. De manera ulterior, diez plantillas fueron diseñadas respondiendo a la demanda de contenidos y su debida lectura, además de compatibilizar con <a href='#'>Wordpress</a> como el sistema de gestión (<a href='http://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_contenidos'>CSM</a>) utilizado por defecto.</p>
+<p>Los enlaces presentes a continuación resguardan el primer proyecto web estandarizado únicamente con Pyxis Framework y <a href='http://eadpucv.github.io/stampa/'>Stampa</a> en una serie de maquetas navegables y que corresponden al finiquito del diseño del sitio oficial de la <a href='http://www.ead.pucv.cl/'>e[ad]</a> de la <a href='http://www.ucv.cl/'>Pontificia Universidad Católica de Valparaíso</a>. El proceso de trabajo contempla como primer objeto la <i>arquitectura de información</i> graficada en su mapa correspondiente. De manera ulterior, diez plantillas fueron diseñadas respondiendo a la demanda de contenidos y su debida lectura, además de compatibilizar con <a href='#'>Wordpress</a> como el sistema de gestión (<a href='http://es.wikipedia.org/wiki/Sistema_de_gesti%C3%B3n_de_contenidos'>CMS</a>) utilizado por defecto.</p>
+<p>El diálogo entre Pyxis y el tema de Wordpress <b>Gamma</b>, requiere de un diseño específico dentro del contexto de Wordpress y los requerimientos técnicos de la plataforma, como es la paginación, pantallas de error, indexación, interacciones de comentarios, etc. Que corresponden a una dimensión de uso real en la plataforma. Es por eso que Pyxis aloja una hoja de estilos llamado wp.less donde todo el estándar del sistema está albergado. Además de esta hoja, se incluye wiki.less, que también incorpora los estilos básicos de la Wiki Casiopea, al ser embebida en Gamma (sitio e[ad]).</p>
 <h5 class='pizarra gruesa'>Arquitectura de información</h5>
 <a href=''><img class='ancho-completo borde radio-md' src='{{ site.baseurl }}/img-samples/arq-info-ead.jpg'></a>
 <h5 class='pizarra gruesa margen-sup-sm'>Enlaces a maquetas</h5>

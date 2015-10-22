@@ -1,3 +1,6 @@
+//
+// Estilos específicos para el theme de wordpress: Gamma
+// --------------------------------------------------  
 
 .carousel{
     .carousel-inner{
@@ -90,9 +93,23 @@
                 }
             }
         }
+        .car-xs{
+            div {
+                position: relative;
+            }
+            .grupo-botones {
+                display: inline-block;
+                position: absolute;
+                z-index: 1000;
+                bottom: 10px;
+                left: 25px;
+                a {
+                    margin: 0;
+                }
+            }
+        }
     }
 }
-
 
 //  Home
 #index, #tag{
@@ -115,18 +132,41 @@
         }
     }
 
+.docencia-flex {
+    display: -webkit-flex;
+    display: flex;
+    a {
+        margin: auto !important;
+    }
+}
+
+.carousel-flex {
+    display: -webkit-flex !important;
+    display: flex !important;
+    div {
+        margin: auto 0;
+        h5 {
+            margin-top: -25px;
+        }
+    }
+}
 // Ejemplo de evento en Home *
 .evento{
+    &:nth-child(4){
+        clear:both;
+    }
     .fecha{
-        .izquierda; 
-        .fondo-blanco; 
-        .sombra; 
-        .borde; 
-        .radio-sup-der-sm; 
-        .radio-inf-der-sm;
-        .izq-lineal-sm; 
-        .borde-rojo; 
-        .margen-inf-sm; 
+        margin-bottom: 0;
+        margin-right: 0;
+        border-left: none !important;
+        background-color: rgba(236, 238, 230, 0.8);
+        border-bottom-left-radius: @radio;
+        border-bottom-right-radius: @radio;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        box-shadow: none;
+        border-top: 2px solid @rojo;
+        // border-radius: 0;
         .ancho-completo;
         span, p{
             .cond;
@@ -135,8 +175,14 @@
             .centrado; 
             .relleno-xs;
         }
+        span {
+            margin: auto;
+        }
     }
-    .contenido{
+    .contenido, .cabecera{
+        display: inline-block;
+        .margen-sup-xs;
+
         h1, h2, h3, h4, h5, h6 {
             .cond;
             .gruesa;
@@ -147,73 +193,35 @@
         }
         .entry-details{
             .italica;
-            .relleno-inf-sm;
         }
         p{
             .sans;
         }
     }
-}
 
-// Ejemplo de noticia en Home *
-.noticia{
-    .cabecera{
-        .alto-xs;
-        .margen-inf-xs;
-        .borde;
-        .radio-md;
-        .ocultar-desborde;
-        a{
-            img{
-                .w150;
-                .margen-sup-negativo;
-                .transition(.2s ease all);
-            }
-            &:hover{
-                img{
-                    .relleno-der-sm;
-                    .transition(.2s ease all);
-                }
-            }
-        }
+    .cabecera {
+        padding-left: 0;
+        display: -webkit-flex;
+        display: flex;
+      h5 {
+        margin: auto 0 !important;
+      }
     }
-    h1, h4, h2, h3, h4, h5, h6{
-        .condensado;
-        .sombra-cabecera-claro-xs;
-        .relleno-inf-xs;
-        a{
-            .condensado; 
-            .gruesa;
-            .gris-oscuro;
-            &:hover{
-                .negro;
-            }
+    &:hover {
+        background-color: fade(#fff, 70%);
+        .transition(.2s ease all);
+        .fecha {
+            background-color: rgba(236, 238, 230, 1);
         }
-    }
-    .entry-details, 
-    .datos-publicacion{
-        .rojo; 
-        .italica; 
-        .borde; 
-        .relleno-vertical-xs;
-        a{
-            .en-linea;
-            .icn-cuadrolleno{
-                .gris-blanco;
-            }
-            .icn-lapiz{
-                .gris-oscuro;
-            }
-        }
-    }
-    p{
-        .sans;
-        .margen-sup-xs;
     }
 }
 
 // Ejemplo de publicacion en Home *
    .publicacion{
+        margin-bottom: 15px;
+        &:nth-child(1){
+            clear:both;
+        }
         .entry-details{
             .italica;
             .relleno-sup-xs;
@@ -260,6 +268,16 @@
                 .gruesa;
             }
         }
+        &:hover {
+            .transition(.2s ease all);
+            background-color: fade(#fff, 70%);
+            h1, h2, h3, h4, h5, h6 {
+                a{
+                    .transition(.2s ease all);
+                    .rojo;
+                }
+            }
+        }
     }
 
     .entry-title{
@@ -270,52 +288,63 @@
             .sombra-cabecera-claro-sm;
         }
     }
+
 }
 
-    .fecha{
-        .borde; 
-        .izq-lineal-sm;
-        .relleno-vertical-sm; 
-        .borde-rojo; 
-        .margen-inf-xs; 
-        .sombra; 
-        .radio-sup-der-md; 
-        .radio-inf-der-md; 
-        .fondo-blanco;
-        .margen-der-md;
-        p.dia{
-            .rojo;
-            .centrado !important;
-        }
-        span.mes{
-            .condensado; 
-            .rojo;
-            .interletraje-sm;
-        }
+// Fecha en page de evento
+.fecha, .fecha-page{
+    background-color: rgba(236, 238, 230, 0.8);
+    border-bottom-left-radius: @radio;
+    border-bottom-right-radius: @radio;
+    border-top: 2px solid @rojo;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    display: -webkit-flex;
+    display: flex;
+    .relleno-vertical-sm; 
+    .margen-inf-xs; 
+    .margen-der-md;
+    .contenido-fecha {
+        margin: auto;
     }
-    // Fecha
-    .fecha-movil{
-        .borde; 
-        .izq-lineal-sm; 
-        .borde-rojo; 
-        .radio-sup-der-md; 
-        .radio-inf-der-md;
-        .relleno-vertical-xs; 
-        .margen-der-sm; 
-        .sombra; 
-        .fondo-blanco;
-        // Día
-        .dia{
-            .rojo;
-            .centrado;
-        }
-        // Mes
-        .mes{
-            .condensado;
-            .rojo;
-            .interletraje-sm;
-        }
+    p.dia{
+        .rojo;
+        .centrado !important;
     }
+    span.mes{
+        .condensado; 
+        .rojo;
+        .interletraje-sm;
+    }
+}
+// Fecha
+.fecha-movil{
+    .margen-der-sm; 
+    background-color: rgba(236, 238, 230, 0.8);
+    border-bottom-left-radius: @radio;
+    border-bottom-right-radius: @radio;
+    border-top: 2px solid @rojo;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    display: -webkit-flex;
+    display: flex;
+    .contenido-fecha {
+        margin: auto;
+    }
+    // Día
+    .dia{
+        font-size: 35px;
+        .rojo;
+        .centrado;
+    }
+    // Mes
+    .mes{
+        letter-spacing: 0.5px;
+        .condensado;
+        .rojo;
+        .interletraje-sm;
+    }
+}
 
 // Lectura de evento desplegado *
 #single-event{
@@ -465,6 +494,7 @@
     }
     .personaje{
         img{
+            .alto-completo;
             .ancho-completo;
             .margen-inf-xs;
             .borde; 
@@ -558,34 +588,37 @@
         .borde;
         .radio-md;
         .ocultar-desborde;
+        margin-top: 15px;
+        min-height: 180px;
         a{
             img{
-                .w150;
-                .margen-sup-negativo;
-                .transition(.2s ease all);
+                // .w150;
+                .w110;
+                // .margen-sup-negativo;
+                // .transition(.2s ease all);
             }
-            &:hover{
-                img{
-                    .relleno-der-sm;
-                    .transition(.2s ease all);
-                }
-            }
+            // &:hover{
+            //     img{
+            //         .relleno-der-sm;
+            //         .transition(.2s ease all);
+            //     }
+            // }
+            display: block; // Para contener a la imagen
+            line-height: 0; // Para evitar un relleno en la parte inferior
         }
     }
     h1, h4, h2, h3, h4, h5, h6{
         .condensado;
-        .sombra-cabecera-claro-xs;
+        // .sombra-cabecera-claro-xs;
         .relleno-inf-xs;
         a{
             .condensado; 
             .gruesa;
             .gris-oscuro;
-            &:hover{
-                .negro;
-            }
         }
     }
     .entry-details, .datos-publicacion{
+        .relleno-vertical-xs;
         .rojo; 
         .italica; 
         .borde; 
@@ -606,6 +639,17 @@
     p{
         .sans;
         .margen-sup-xs;
+    }
+    .margen-inf-sm;
+    &:hover {
+        .transition(.2s ease all);
+        background-color: fade(#fff, 70%);
+        h1, h2, h3, h4, h5, h6 {
+            a{
+                .transition(.2s ease all);
+                .rojo;
+            }
+        }
     }
 }
 
@@ -679,16 +723,39 @@
 
 // Post en Gamma (estilos de Gamma)
 
+// El fondo estaba aplicado en el html, ahora se insertan en el LESS
+#post, #portadilla {
+    background: url(../img/ruido-fondo-pyxis.png) repeat center;
+}
+.nav-ead {
+    padding-top: 25px;
+    background: url(../img/ruido-fondo-pyxis.png) repeat center;    
+}
+
+#tag {
+    .fila {
+        clear: both;
+    }
+}
+
+#sidebar ul li {
+    list-style: none !important;
+}
+
+// Fin copia temporal de giornata.less
+
 .h-entry {
     width: 90%;
 
     img{
-            .margen-inf-xs; 
+        .margen-inf-xs; 
     }
 
     p{
         img{
             .margen-inf-xs;
+            width: 100%;
+            height: 100%;
         }
     }
 
@@ -706,7 +773,222 @@
     margin: 0 auto;
 }
 
+// Diseño de paginador (nav de entre páginas)
+//---------------------------------------------
 
+.wp-pagenavi {
+    .pages{
+        border-color: transparent;
+        .italica;
+        .rojo;
+        .relleno-der-sm;
+        font-size: 13px;
+    }
+    .current{
+        background-color: #eceee6;
+        border-color: transparent !important;
+    }
+    .extend {
+        .rojo;
+    }
+    .page, .nextpostslink, .previouspostslink, .current, .extend, .last{
+        padding: 5px 10px;
+        margin-right: 5px;
+        border-color: transparent;
+    }
+    .page, .nextpostslink, .previouspostslink, .last{
+        &:hover {
+            background-color: #a84744;
+            color: #fff;
+            border-color: transparent !important;
+            .transition(.2s ease all);
+        }
+    }
+}  
+
+// Diseño de lista de páginas hijas
+//------------------------------------------------
+
+.paginas-hijas {
+    .margen-sup-md;
+    .margen-inf-md;
+    .pagenav {
+        .rojo;
+        .serif;
+        list-style: none;
+        .fino;
+        font-style: italic;
+        ul {
+            .margen-sup-xs;
+            li {
+                font-style: normal;
+                list-style: none;
+                .relleno-sup-xs;
+                .relleno-inf-xs;
+                a {
+                    color: darken(@gris-claro, 10%);
+                }
+                // border:1px solid orange;
+                ul li {
+                    padding-bottom: 0 !important;
+                }
+                a:hover {
+                    .rojo;
+                    .transition(.2s ease all);
+                    
+                }
+            }
+        }
+    }
+}
+
+// Diseño de comentarios y caja para comentar
+//------------------------------------------------
+
+// Caja para dejar comentario
+.comment-respond {
+    // Rótulo
+    .comment-reply-title{
+        height: 23px;
+        font-size: 18px;
+        margin-top: -33px;
+        .italica;
+
+        #cancel-comment-reply-link {
+            border:1px solid @rojo;
+            border-radius: @radio;
+            float: right;
+            padding: 5px;
+            .rojo;
+            &:hover {
+                .gris;
+                border-color: @gris;
+            }
+        }
+    }
+    // Notas
+    .comment-notes {
+        .gris;
+        .fino;
+        font-size: 14px;
+    }
+    // Caja de comentario
+    .comment-form {
+        border-color: fade(@gris-claro, 40%);
+        background-color: fade(#fff, 20%);
+    }
+}
+
+// Caja de comentario realizado 
+.comment {
+    list-style: none;
+}
+.comment-body {
+    padding: 10px;
+    border:1px solid fade(@gris-claro, 40%);
+    border-radius: @radio;
+    background-color: fade(#fff, 20%);
+    .margen-inf-md;
+    // Datos del autor
+    .comment-author  {
+        display: inline-block;
+        width: 100%;
+        display: -webkit-flex;
+        display: flex;
+        img {
+            float: left;
+            margin: 0;
+            list-style: none;
+        }
+        .fn {
+            font-size: 18px;
+            .sans;
+            font-style: normal;
+            margin: auto 15px;
+        }
+        .says {
+            padding-top: 2px;
+            font-size: 14px;
+            .italica;
+            .sans;
+        }
+    }
+    // Datos de la publicación
+    .comment-meta {
+        padding: 10px 0;
+        font-size: 13px;
+        .italica;
+        .serif;
+        .margen-inf-xs;
+    }
+    // Esperando moderación
+    .comment-awaiting-moderation {
+        font-size: 11px;
+        color: darken(@gris-claro, 10%);
+        .fino;
+        .sans;
+        font-style: normal;
+    }
+    // Realizar una respuesta
+    .reply {
+        padding: 10px;
+        display: inline-block;
+        width: 100%;
+        .comment-reply-link {
+            border:1px solid @gris-claro;
+            border-radius: @radio;
+            float: right;
+            padding: 5px;
+            .gris-claro;
+            &:hover {
+                .rojo;
+                border-color: @rojo;
+            }
+        }
+    }
+}
+
+// Widget > Noticias
+
+.widget-post-categories {
+    .fila {
+        &>div {
+            // border:1px solid red;
+            // width: 280px;
+            padding: .5rem;
+        }
+    }
+}
+
+// Caja de búsqueda en sidebar
+
+.widget_search {
+    display: inline-block;
+    width: 100%;
+    .nav-busqueda {
+        max-width: 100%;
+        float: none !important;
+        input {
+            border-bottom: 2px solid @gris-claro;
+            &::-webkit-input-placeholder {
+               color: @gris-claro;
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+               color: @gris-claro;
+            }
+            &::-moz-placeholder {  /* Firefox 19+ */
+               color: @gris-claro;
+            }
+            &:-ms-input-placeholder {  
+               color: @gris-claro;
+            }
+        }
+    }    
+}
+
+.pag.cf {
+    margin-bottom: 16px;
+}
 .pagina {
     
     padding: 0 10px;
@@ -907,6 +1189,28 @@
         }
     }
 
+    .docencia-flex, .fecha-page {
+        display: none !important;
+    }
+    .noticia {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        margin-bottom: 40px;
+    }
+
+    .comment-respond .comment-reply-title{
+        margin-top: 0;
+    }
+    
+    // Ajuste para bloques con Masonry
+    .widget-post-categories {
+        .fila {
+            &>div {
+                width: 100%;
+            }
+        }
+    }
 }
 
 
@@ -954,6 +1258,18 @@
             padding-bottom: 10px !important; 
         }
     }
+    .fecha-movil {
+        display: none !important;
+    }
+    
+    // Ajuste para bloques con Masonry
+    .widget-post-categories {
+        .fila {
+            &>div {
+                width: 240px;
+            }
+        }
+    }
 }
 
 // Medium screen / desktop
@@ -974,6 +1290,19 @@
             height: 140px;
         }
     }
+
+    .fecha-movil {
+        display: none !important;
+    }
+    
+    // Ajuste para bloques con Masonry
+    .widget-post-categories {
+        .fila {
+            &>div {
+                width: 296px;
+            }
+        }
+    }
 }
 
 // Large screen / wide desktop
@@ -983,5 +1312,22 @@
     // ajuste de página
     .wrap, .wrap-footer {
         max-width: 1366px;
+    }
+
+    .fecha-movil {
+        display: none !important;
+    }
+    
+    // Ajuste para bloques con Masonry
+    .widget-post-categories .noticia {
+        width: 33.3%;
+    }
+
+    .widget-post-categories {
+        .fila {
+            &>div {
+                width: 354px;
+            }
+        }
     }
 }

@@ -1,0 +1,480 @@
+//
+// Estilos específicos para la Wiki Casiopea, incrustada en Gamma
+// --------------------------------------------------  
+
+// Original sacado desde: MediaWiki:Common.css
+
+/* canvas para processingjs */
+
+canvas{
+	max-width: 100% !important;
+	height: auto;
+	overflow: hidden;
+}
+
+/* Iframes (para Google Widgets, Docs, Spreadsheets, etc ________________ */
+
+iframe{
+	border: 1px solid #eee;
+	border-radius: 6px;
+	box-shadow: 0 0 30px rgba(0,0,0,0.1);
+}
+
+/* Tablas _______________________________________________________________ */
+
+table {
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 4px;
+	tbody {
+		tr {
+			// border:1px solid blue;
+			td {
+				border-top:1px solid fade(@gris-claro, 20%);
+			}
+			th {
+				border-bottom:2px solid fade(@gris-claro, 20%);
+			}
+		}
+	}
+	td {
+		border-color: transparent;
+	}
+	ul {
+		margin-right: 5px;
+		li {
+			margin-left: 0;
+			font-size: 14px;
+			list-style-position: inside;
+			font-style: normal;
+			font-family: @sans;
+
+			ul li {
+				margin-left: 10px;
+				font-family: @sans !important;
+			}
+		}
+	}
+
+	tr td b{
+		font-size: 0.9em;
+	}
+
+	&.wikitable {
+		border-radius: 4px;
+		th {
+			background-color: rgba(236, 238, 230, 0.8);
+			border-color: fade(@gris-claro, 10%);
+			border-bottom:2px solid fade(@gris-claro, 20%);
+			text-transform: capitalize;
+		}
+		td {
+			padding: 15px 5px;
+			border-color: fade(@gris-claro, 5%);
+			border-bottom: 1px solid fade(@gris-claro, 20%);
+			font-size: 14px;
+		}
+		.row-odd {
+			background-color: rgba(255, 255, 255, 0.6);
+		}
+	}
+
+	&.plantilla{
+		font-size: 95%;
+		padding-bottom: 18px;
+		margin: 1em 0;
+		line-height: 120%;
+		border: none;
+		border-radius: 6px;
+		tbody tr{
+			vertical-align: top;
+			th {
+				text-align: right;
+				min-width: 110px;
+				width: 20%;
+				padding: 2px 1.5ex 0 0;
+				color: rgba(0, 0, 0, .5);
+				font-weight: normal;
+				text-transform: uppercase;
+				font-size: 10px;
+				letter-spacing: 0.03ex;
+				background-color: transparent;
+				color: rgba(0,0,0,0.3);
+				font-weight: bold;
+			}
+		}
+	}
+	&.at {
+		border-top: 1px solid #CCC;
+		width: 100%;
+		tbody tr{
+			display: block;
+			border-bottom: 1px solid #CCC;
+		}
+	}
+	&.formtable{
+		border-collapse: collapse;
+		border: none;
+		tbody tr th{
+			text-align: right;
+			padding: 0 1.5ex 0 0;
+			color: #555;
+			font-weight: normal;
+			font-size: 85%;
+			white-space: nowrap;
+
+		}
+		tbody tr th, tbody tr td{
+			padding: 5px;
+			line-height: 110%;
+			vertical-align: top;
+		} 
+	}
+	&.competencias{
+		margin: 0 0 0 2em;
+		border: none;
+		border-collapse: collapse;
+		tbody tr {
+			border-bottom: 1px solid #CCC !important;
+			&:last-child{
+				border-bottom: 1px solid transparent !important;
+			}
+			th{
+				background: transparent;
+				letter-spacing: normal;
+				text-transform: uppercase;
+				padding: 1.5em 0 1.5em 0;
+				color: #b3b3b3;
+			}
+			td {
+				background: transparent;
+				background-color: transparent;
+				vertical-align: top;
+				padding: 1em;
+				ul{
+					padding-top: 0;
+					margin-top: 0;
+				}
+			}
+		}
+	}
+	&.malla {
+		tbody {
+			tr {
+				td{
+					vertical-align: top;
+					ul{
+						padding: 0 0 2em 0;
+						ul{
+							padding: 0;
+						}
+					}
+					&.year{
+						padding: 5px;
+						color: #c00;
+						background-color: rgba(236, 238, 230, 0.8);
+						// border-left:2px solid fade(@gris-claro, 20%);
+						text-transform: uppercase;
+						font-size: 0.95em;
+						font-weight: bold;
+						letter-spacing: -.06ex;
+					}
+				}
+				th{
+					color: #666;
+					font-size: 1.3em;
+					font-weight: normal;
+					text-transform: uppercase;
+					padding: 2em 0 1em;
+				}
+			}
+		}
+	}
+	&.malla-nueva {
+		tr th, tr td{
+			vertical-align: top;
+		}
+		tr {
+			th{
+				padding: 1ex;
+			}
+			td{
+				padding: 0;
+			}
+		}
+	}
+}
+
+td {
+	&.Creditos{
+		text-align: center;
+	}
+	&.Clave{
+		font-weight: bold;
+		font-family: Courier, monospace;
+	}
+	&.Competencias-Fundamentales, &.Competencias-Disciplinares, &.Competencias-Profesionales{
+		font-size: .8em;
+		line-height: 1.1em;
+	}
+}
+.ficha{
+	border-collapse: collapse;
+}
+
+.bio, td.bio{
+	font:italic normal 85%/111% ;
+}
+
+/* Ajustes para cuando se hace wiki embed y se trae el índice _____________________ */
+
+.toc {
+	border: none !important;
+	background-color: transparent !important;
+	ul li {
+		list-style: none;
+		font-size: 13px;
+		ul {
+			padding-left: 10px !important;
+			li ul {
+				padding-left: 15px !important;
+			}
+		}
+	}
+}
+
+/* ajustes para asignaturas _______________________________________________________ */
+
+.clave{
+   font-family: mono, "Courier";
+   display: inline-block;
+   padding: 0 3px; 
+   margin: 0 3px 3px 0;
+   color: #FFF;
+   background-color: #000;
+   border-radius: 2px
+}
+
+td.nombre{
+	padding: 1em !important;
+	font-weight: 900;
+	font-size: 26px;
+	height: 34px;
+	line-height: 100%;
+}
+
+.asignaturas,
+.profesor{
+   display: inline-block;
+   padding: 0 3px; 
+   border-radius: 2px
+}
+.asignaturas::after,
+.profesor::after{
+	content: ", ";
+}
+
+.asignaturas:last-of-type::after,
+.profesor:last-of-type::after{
+	content: "";
+}
+
+/* Ficha Asignatura: es una plantilla que se utiliza como Template para resultados semánticos */
+
+.ficha-asignatura{
+	display: block;
+	padding: 1ex;
+	&:hover{
+		background-color: #FFF;
+	}
+	.clave, creditos{
+		float: left;
+		color: #5C5C5C;
+		background-color: transparent;
+		border: none;
+		margin: 0;
+		font-weight: bolder;
+		font-size: 10px;
+		line-height: 1.1em;
+		border: 1px solid transparent;
+	}
+	.clave{
+		padding: .5ex;
+		font-weight: bold;
+	}
+	.creditos{
+		color: #FFF;
+		background-color: rgba(0, 0, 0, 0.5);
+		padding: 0.6ex 1.2ex 0.4ex 1.2ex;
+		border-radius: 10px;
+		box-shadow: 0 0 0px 2px #FFF inset;
+		border: none;
+	}
+	.nombre-asignatura a{
+		display: block;
+		clear: both;
+		font-size: 14px;
+		padding: .5ex;
+		line-height: 110%;
+		font-weight: 700 !important;
+		&:hover{
+			background-color: transparent;
+			text-decoration: underline;
+		}
+	}
+}
+
+/* vcard para Plantilla: Personas _______________________________________________________ */
+
+.vcard{
+	text-align: center;
+	.person-name{
+		display: inline-block;
+		margin: 1ex 0px;
+		font-size: 1.5em;
+		letter-spacing: -0.03ex;
+		color: black;
+		font-weight: bold;
+	}
+	.titulo p, .titulo .bio, .titulo .url{
+		font-family: "Source Sans Pro";
+		font-size: 1em;
+		line-height: 120%;
+		font-style: normal;
+		text-align: center;
+	}
+
+}
+
+/* para la Plantilla: Listado de Profesores ________________________________________________ */
+
+.listado-profesores {
+	.nombre a{
+		font-weight: 300;
+	}
+	small{
+		display: block;
+		line-height: 120%;
+		margin: 0px 0px 1em;
+		font-size: 80%;
+		font-weight: 400;
+	}
+}
+
+
+/* para la Plantilla: Ficha Personal _______________________________________________________ */
+
+.ficha-personal{
+	display: inline-block;
+	margin-bottom: 35px;
+	// padding-left: 0;
+    .foto{
+		width: 135px;
+		height: 100%;
+		float: left;
+		overflow: hidden;
+		max-height: 135px;
+		margin-right: 10px;
+		// margin: 0 auto;
+
+		a {
+			display: block;
+			height: 100%;
+		}
+		img {
+			height: 100%;
+			margin-bottom: 0 !important;
+		}
+	}
+
+	.title{
+		display: table;
+
+		h3{
+			font-size: 17px;
+			font-weight: normal;
+		}
+
+		.bio{
+			display: block;
+			font-size: 12px;
+			font-weight: normal;
+			line-height: 110%;
+		}
+
+	}
+}
+
+/* Semantic Media Wiki _______________________________________________________ */
+
+.aviso,
+.mw-warning-with-logexcerpt,
+.smw-editpage-help {
+	background-color: #FFFBAE;
+	border: 0px solid transparent !important;
+	padding: 1em 1em 1.5em 1em !important;
+	margin-bottom: 2em !important;
+	border-radius: 6px;
+}
+
+/*__________ utiles (no sé por qué no están con bootstrap _________*/
+.img-responsive{
+	width: 100%;
+	height: auto;
+}
+
+/* Fragmento/bloque inserto desde la Wiki _____________________________________ */
+
+.wikiembed-fragment {
+	width: 100%;
+	display: inline-block;
+}
+.wiki-embed-source {
+	font-size: 10px;
+	font-style: italic;
+	float: right;
+	margin-bottom: 30px;
+}
+
+.MediaTransformError {
+	padding: 7px 10px 10px 10px;
+	border:1px dashed fade(#999, 15%);
+	font-style: italic;
+	height: 35px !important;
+	margin-bottom: 10px;
+	color: fade(#999, 50%);
+}
+
+// --------------------------------------------------
+// diseño de utilidad responsive
+
+// Extra small screen / phone
+@media(max-width: @screen-xs-max){
+	
+}
+
+// Small screen / tablet
+@media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+}
+
+// Medium screen / desktop
+
+@media (min-width: @screen-md) and (max-width: @screen-md-max){
+	.ficha-personal{
+		// border:1px solid orange;
+		&:nth-of-type(odd){
+	        clear:both;
+	    }
+	}
+}
+
+// Large screen / wide desktop
+
+@media (min-width: @screen-lg){
+	.ficha-personal{
+		// border:1px solid red;
+		&:nth-of-type(3n+4){
+	        clear:both;
+	    }
+	}
+}
+

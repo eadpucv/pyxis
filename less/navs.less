@@ -126,10 +126,20 @@ a.menu-link {
     position: relative;
     display: block;
 
+    &:last-child {
+      a {
+        padding-right: 0;
+      }
+      .caret {
+        margin-right: 0;
+      }
+    }
+
     > a {
       position: relative;
       display: block;
       padding: @nav-link-padding;
+      // padding: 10px 5px;
       &:hover,
       &:focus {
         text-decoration: none;
@@ -173,7 +183,103 @@ a.menu-link {
     max-width: none;
   }
 }
+// Caja de búsqueda ubicado en el nav y logueo de usuario
+.nav-login {
+  // background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(236, 238, 230, 0.8);
+  position: absolute;
+  border-top: 2px solid @rojo;
+  top: -25px;
+  right: 0;
+  border-bottom-left-radius: @radio;
+  border-bottom-right-radius: @radio;
+  padding: 2px 6px 4px 6px;
+  white-space: nowrap;
+  float: left;
+  a {
+    i {
+      font-size: 12px;
+    }
+    span {
+      font-size: 11.5px;
+    }
+  }
+}
 
+// Caja de búsqueda ubicado en el nav
+.nav-busqueda {
+  max-width: 150px;
+  margin: 10px 0;
+  float: right;
+  padding: 0px;
+  form, .searchform {
+    padding: 0;
+    background-color: transparent;
+  }
+  input {
+    border-top-left-radius: @radio;
+    border-top-right-radius: @radio;
+    background-color: transparent;
+    border-color: transparent !important;
+    border-bottom: 2px solid fade(@gris-claro, 20%) !important;
+    margin-bottom: 0 !important;
+    padding: 6px !important;
+    font-size: 14px !important;
+    .transition(.2s ease all);
+    &::-webkit-input-placeholder {
+       color: fade(@gris, 50%);
+    }
+    &:-moz-placeholder { /* Firefox 18- */
+       color: fade(@gris, 50%);
+    }
+    &::-moz-placeholder {  /* Firefox 19+ */
+       color: fade(@gris, 50%);
+    }
+    &:-ms-input-placeholder {  
+       color: fade(@gris, 50%);
+    }
+    &:focus {
+      box-shadow: none !important;
+      outline: 0 !important;
+      color: @gris;
+      background-color: #fff !important;
+      // background-color: rgba(236, 238, 230, 0.8) !important;
+      .transition(.2s ease all);
+      &::-webkit-input-placeholder {
+         color: @gris-claro;
+         border-color: 0.9px solid @gris-claro !important;
+         .transition(.2s ease all);
+      }
+      &:-moz-placeholder { /* Firefox 18- */
+         color: @gris-claro;
+         border-color: 0.9px solid @gris-claro !important;  
+         .transition(.2s ease all);
+      }
+      &::-moz-placeholder {  /* Firefox 19+ */
+         color: @gris-claro;
+         border-color: 0.9px solid @gris-claro !important; 
+         .transition(.2s ease all); 
+      }
+      &:-ms-input-placeholder {  
+         color: @gris-claro;
+         border-color: 0.9px solid @gris-claro !important;  
+         .transition(.2s ease all);
+      }
+    }
+  }
+  a {
+    .derecha;
+    float: right;
+    margin-top: -1px;
+    i {
+      font-size: 13px;
+    }
+    span {
+      // margin-top: -1px;
+      font-size: 11.5px;
+    }
+  }
+}
 
 // Tabs
 // -------------------------
@@ -386,6 +492,33 @@ footer{
   .border-top-radius(0);
 }
 
+// Menú responsive
+
+.menu-movil-categorias {
+    // border:1px solid blue;
+    border-top: 1px solid @gris-claro !important;
+    li {
+      display: block;
+      background-color: rgba(236, 238, 230, 0.8); 
+      border-bottom: 1px solid @gris-claro;
+      a {
+        .rojo !important;
+      }
+      ul {
+        border-top: 1px solid @gris-claro !important;
+        li {
+          background-color: #fff;
+          border-bottom: 1px solid rgba(236, 238, 230, 0.8); ;
+          a {
+            .negro !important;
+          }
+        }
+      }
+    }
+}
+
+
+
 // --------------------------------------------------
 // diseño de utilidad responsive
 
@@ -529,10 +662,51 @@ footer{
       }
     }
   }
+
+  .nav > li > a {
+      font-size: 14px;
+      position: relative;
+      display: block;
+      padding: 12px 3px 10px 0;
+  }
+
+  .nav-busqueda {
+    max-width: 80px;
+    margin-top: 6px;
+  }
+
+  .nav-login {
+    left: auto;
+    right: 0;
+    a span {
+      font-size: 10px;
+    }
+  }
+
 }
 
 //  Medium screen / desktop
 @media (min-width: @screen-md) and (max-width: @screen-md-max){
+
+  .nav > li > a {
+      position: relative;
+      display: block;
+      padding: 10px 5px 10px 0;
+  }
+
+  .nav-busqueda {
+    margin-top: 6px;
+    max-width: 110px;
+  }
+
+  .nav-login {
+    left: auto;
+    padding: 0px 4px 1px 4px;
+    right: 0;
+    a span, a i {
+      font-size: 10px;
+    }
+  }
 }
 
 //  Large screen / wide desktop
@@ -540,39 +714,42 @@ footer{
 
   //  Por defecto:
 
-.nav-pills {
-  margin: 0;
-  > li {
-    float: left;
+  .nav-pills {
+    margin: 0;
+    > li {
+      float: left;
 
-    // Links rendered as pills
-    > a {
-      font-size: 18px;
-      border-radius: @nav-pills-border-radius;
-      font-family: @sans;
-      padding: 15px 0px 10px 0;
+      // Links rendered as pills
+      > a {
+        font-size: 18px;
+        border-radius: @nav-pills-border-radius;
+        font-family: @sans;
+        padding: 15px 0px 10px 0;
 
-    }
-    + li {
-      margin-left: 2px;
-    }
+      }
+      + li {
+        margin-left: 2px;
+      }
 
-    // Active state
-    &.active > a {
-      &,
-      &:hover,
-      &:focus {
-        color: @nav-pills-active-link-hover-color;
-        background-color: @nav-pills-active-link-hover-bg;
+      // Active state
+      &.active > a {
+        &,
+        &:hover,
+        &:focus {
+          color: @nav-pills-active-link-hover-color;
+          background-color: @nav-pills-active-link-hover-bg;
+        }
       }
     }
   }
 }
-}
 
 // Large screen / wide desktop
 @media (min-width: @screen-lg){
-
+  
+  .nav-busqueda {
+    max-width: 150px;
+  }
     // logo 
 
   .logo-pyxis {

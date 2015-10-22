@@ -110,10 +110,21 @@ a.btn{
 .grupo-botones{
   .btn{
     float: left;
-    border-radius: 0;
     margin-left: -1px;
-    &:first-child{.border-radius(@radio 0 0 @radio) !important;}
-    &:last-child{.border-radius(0 @radio @radio 0) !important;}
+    &:first-child{
+        .border-radius(@radio 0 0 @radio);
+    }
+    // Desde el 2ndo botón en adelante
+    &:nth-child(n+2){
+        .border-radius(0 0 0 0) !important;
+    }
+    &:last-of-type{
+        .border-radius(0 @radio @radio 0) !important;
+    }
+    // Cuando existe sólo 1 botón
+    &:only-child{
+        .border-radius(@radio @radio @radio @radio) !important;
+    }
   }
 }
 
@@ -330,6 +341,40 @@ form{
 .formulario-horizontal .input-group {
     display: inline-table;
     vertical-align: super !important;
+}
+
+// Formulario de Wordpress
+.searchform {
+    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: rgba(236, 238, 230, 0.8);
+    .screen-reader-text {
+        color: @gris-claro;
+    }
+    #s {
+        background-color: rgba(255, 255, 255, 0.4);
+        border-color: @gris-claro;
+        &:focus {
+            .transition(.2s ease all);
+            background-color: #fff;
+            box-shadow: none !important;
+            outline: 0 !important;
+            color: @gris;
+        }
+    }
+    #searchsubmit {
+        float: right;
+    }
+    input[type='submit'] {
+        color: @gris-claro;
+        box-shadow: none;
+        text-shadow: none;
+        &:hover {
+            .gris;
+            border-color: @gris;
+        }
+    }
 }
 
 .grupo-formulario,

@@ -35,10 +35,10 @@
       }
     }
 
-  &.car-xs{height: 360px; .ocultar-desborde;}
-  &.car-sm{height: 500px; .ocultar-desborde;}
-  &.car-md{height: 600px; .ocultar-desborde;}
-  &.car-lg{height: 700px; &.relativo-vw{height: 55vw;}}
+  &.car-xs{height: 360px; .ocultar-desborde; .img {height: 360px; .ocultar-desborde}}
+  &.car-sm{height: 500px; .ocultar-desborde; .img {height: 500px; .ocultar-desborde}}
+  &.car-md{height: 600px; .ocultar-desborde; .img {height: 600px; .ocultar-desborde}}
+  &.car-lg{height: 700px; .img {height: 700px; .ocultar-desborde} &.relativo-vw{height: 55vw;}}
 
       display: none;
       position: relative;
@@ -204,7 +204,7 @@
     display: inline-block;
     width: 10px;
     height: 10px;
-    margin: 1px;
+    margin: 1px 2px;
     text-indent: -999px;
     border: 1px solid @carousel-indicator-border-color;
     border-radius: 10px;
@@ -214,7 +214,7 @@
   }
 
   .active {
-    margin: 0;
+    margin: 0 2px;
     width: 12px;
     height: 12px;
     background-color: @carousel-indicator-active-bg;
@@ -333,10 +333,10 @@
     img{
       top: 0%;
     }
-    &.car-xs{height: 360px}
-    &.car-sm{height: 200px}
-    &.car-md{height: auto}
-    &.car-lg{height: auto}
+    &.car-xs{height: 360px; .img {height: 360px; .ocultar-desborde}}
+    &.car-sm{height: 200px; .img {height: 200px; .ocultar-desborde}}
+    &.car-md{height: auto; .img {height: auto; .ocultar-desborde}}
+    &.car-lg{height: auto; .img {height: auto; .ocultar-desborde}}
     }
   }
 }
@@ -346,10 +346,10 @@
 
     .carousel-inner{
     > .item {
-  &.car-xs{height: 360px}
-  &.car-sm{height: 400px}
-  &.car-md{height: auto}
-  &.car-lg{height: 400px}
+  &.car-xs{height: 360px; .img {height: 360px; .ocultar-desborde}}
+  &.car-sm{height: 400px; .img {height: 400px; .ocultar-desborde}}
+  &.car-md{height: auto; .img {height: auto; .ocultar-desborde}}
+  &.car-lg{height: 400px; .img {height: 400; .ocultar-desborde}}
   }
 }
 
@@ -387,10 +387,10 @@
 
   .carousel-inner {
     > .item {
-    &.car-xs{height: 420px}
-    &.car-sm{height: 36vw}
-    &.car-md{height: 650px}
-    &.car-lg{height: 700px}
+    &.car-xs{height: 420px; .img {height: 420px; .ocultar-desborde}}
+    &.car-sm{height: 36vw; .img {height: 36vw; .ocultar-desborde}}
+    &.car-md{height: 650px; .img {height: 650px; .ocultar-desborde}}
+    &.car-lg{height: 700px; .img {height: 700px; .ocultar-desborde}}
     
       .transition(.6s ease-in-out left);
       > img,

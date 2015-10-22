@@ -12,9 +12,10 @@
 // Menú superior Pyxis
 
 .fondo-header-pyxis {
-	background-color: @blanco;
+	// background-color: @blanco;
+	background-color: rgba(236, 238, 230, 0.8);
 	// min-height: 60px;
-  	.box-shadow(0 0 10px fade(@negro, 30));
+  	border-bottom: 2px solid fade(@gris-claro, 20%);
 	top: 0;
 	z-index: -1;
 	margin: 0 auto;
@@ -173,25 +174,20 @@ footer{
   float: left;
   padding: 0;
   margin: 0;
-  
-  a{
-    display: inline-block;
-    padding: @cuerpo *.7 0 0 0;
+  height: 57px;
+	display: -webkit-flex;
+    display: flex;
+	
+	img {
+		width: 24px;
+		float: left;
+		margin: auto;
+	}
 
-    &.sin-relleno{
-        padding: 0 !important;
-    }
-    
-    img {
-      width: 24px;
-      float: left;
-      margin: @cuerpo * .3 / 2;
-    }
-
-    h6{
-      margin: .3em 0 -.3ex 0;
-    }
-  }
+	h6{
+		display: block;
+		margin: auto;
+	}
   
   &.footer {
     float: none;
@@ -293,7 +289,7 @@ footer{
 
 	  //aside
 	#sidebar{
-		.fondo-blanco;
+		// .fondo-blanco;
 		.relleno-vertical-sm;
 		ul, ol{
 			li{
