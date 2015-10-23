@@ -2,7 +2,32 @@
 layout: index
 title: Pyxis Framework
 ---
-
+<div id='parallax' class='universo'>
+  <div class="pag">
+    <h1 class='blanco fino gigante centrado'>Fundamentos y visión</h1>
+    <p class="blanco sm">En general, con el término framework, nos estamos refiriendo a una estructura digital definida por componentes personalizables e intercambiables para el desarrollo de una aplicación o sitio web. En otras palabras, un framework se puede considerar como una aplicación genérica incompleta y configurable a la que podemos ir añadiéndole constantemente piezas para construir una aplicación concreta.Los objetivos principales que persigue un framework son:</p>
+    <p class="blanco sm">
+      Acelerar el proceso de desarrollo de un sitio, reutilizar código ya existente y promover buenas prácticas de desarrollo con el uso de patrones o esquemas de diseño.
+    </p>
+    <h3 class='blanco fino centrado'>¿Por qué un framework para la e[ad]?</h3>
+    <p class="blanco sm">Las organizaciones, a medida que crecen, van generando nuevos puntos de contacto con sus públicos o audiencias. Hoy día, estos puntos de contacto son múltiples servicios que se traducen en variadas interfaces; tanto materiales como digitales, impresas o proyectadas, grandes o pequeñas, móviles o estacionarias. Mantener un lenguaje consistente a través de todos los servicios y dispositivos se vuelve una tarea titánica si se piensa cada uno por separado. Se hace preciso, entonces, definir un <i>lenguage gráfico global</i> que sea capaz de interpretar la voz de la organización y que se adapte a cada contexto, formato y dispositivo.</p>
+    <p class="blanco sm">Este proyecto busca definir fundamentos gráficos elementales para pantallas e impresos cumpliendo las siguientes premisas:</p>
+    <div class='fila'>
+      <div class='col-md-4 centrado'>
+        <i class="icn icn-xl icn-light icn-lg icn-manoarriba"></i> 
+        <p class='xs parrafo-izquierdo blanco'>Flexibilidad y adaptabilidad para múltiples formatos, dispositivos y modos de interacción (puntero o el dedo)</p>
+      </div>
+      <div class='col-md-4 centrado'>
+        <i class="icn icn-xl icn-light icn-lg icn-lentes"></i> 
+        <p class='xs parrafo-izquierdo blanco'>Marcado semántico en castellano, permitiendo una lectura fácil y natural del código</p>
+      </div>
+      <div class='col-md-4 centrado'>
+        <i class="icn icn-xl icn-light icn-lg icn-sitemap"></i> 
+        <p class='xs parrafo-izquierdo blanco'>Orden y claridad de las funciones de cada archivo de este proyecto, ya que se desarrolla bajo el esquema de <a href="http://lesscss.org/"><i class="icn icn-less"></i> less </a></p>
+      </div>
+    </div>
+  </div>
+</div>
 <div class='fondo-blanco'>
   <div class='pag'>
     <div class='fila'>
@@ -34,31 +59,6 @@ title: Pyxis Framework
     </div>
   </div>
 </div>
-<div class='ruido sombra-interior'>
-  <div class='pag'>
-      <h1 class='rojo fino centrado grande'>Fundamentos</h1>
-      <p class="sm">En general, con el término framework, nos estamos refiriendo a una estructura digital definida por componentes personalizables e intercambiables para el desarrollo de una aplicación o sitio web. En otras palabras, un framework se puede considerar como una aplicación genérica incompleta y configurable a la que podemos ir añadiéndole constantemente piezas para construir una aplicación concreta.
-      Los objetivos principales que persigue un framework son:</p>
-      <p class="grueso gris">Acelerar el proceso de desarrollo de un sitio, reutilizar código ya existente y promover buenas prácticas de desarrollo con el uso de patrones o esquemas de diseño.</p>
-      <h3 class='rojo fino centrado'>¿Por qué un framework para la e[ad]?</h3>
-      <p>Las organizaciones, a medida que crecen, van generando nuevos puntos de contacto con sus públicos o audiencias. Hoy día, estos puntos de contacto son múltiples servicios que se traducen en variadas interfaces; tanto materiales como digitales, impresas o proyectadas, grandes o pequeñas, móviles o estacionarias. Mantener un lenguaje consistente a través de todos los servicios y dispositivos se vuelve una tarea titánica si se piensa cada uno por separado. Se hace preciso, entonces, definir un <i>lenguage gráfico global</i> que sea capaz de interpretar la voz de la organización y que se adapte a cada contexto, formato y dispositivo.</p>
-      <p>Este proyecto busca definir fundamentos gráficos elementales para pantallas e impresos cumpliendo las siguientes premisas:</p>
-        <div class='fila'>
-        <div class='col-md-4 centrado'>
-          <i class="icn icn-xl icn-light icn-lg icn-manoarriba"></i> 
-          <p class='xs parrafo-izquierdo'>Flexibilidad y adaptabilidad para múltiples formatos, dispositivos y modos de interacción (puntero o el dedo)</p>
-        </div>
-        <div class='col-md-4 centrado'>
-          <i class="icn icn-xl icn-light icn-lg icn-lentes"></i> 
-          <p class='xs parrafo-izquierdo'>Marcado semántico en castellano, permitiendo una lectura fácil y natural del código</p>
-        </div>
-        <div class='col-md-4 centrado'>
-          <i class="icn icn-xl icn-light icn-lg icn-sitemap"></i> 
-          <p class='xs parrafo-izquierdo'>Orden y claridad de las funciones de cada archivo de este proyecto, ya que se desarrolla bajo el esquema de <a href="http://lesscss.org/"><i class="icn icn-less"></i> less </a></p>
-        </div>
-        </div>
-  </div>
-</div>
 <div class='fondo-blanco'>
   <div class='pag'>
     <h1 class='rojo fino centrado grande'>Dependencias</h1>
@@ -70,9 +70,6 @@ title: Pyxis Framework
       <p>Stampa es un proyecto centralizado en la iconografía que se complementa con Pyxis. Es una rama de la función del Framework para desarrollar las herramientas de diseño, externalizada en su propio <a href='#'>repositorio</a> y <a href='#'>documentación</a>.</p>
       <h6 class='rojo centrado'>Origen</h6>
       <p>"Stampa", en italiano, significa: "carattere, indole", lo que en español se traduce como "carácter o índole", referenciando la tipografía y lo iconográfico. </p>
-      <h1 class='centrado rojo'><i class="icn icn-travesia icn-lg"></i> Travesías (en construcción)</h1>
-      <h6 class='centrado rojo'>Acerca de la plataformae en proceso de rediseño</h6>
-      <p>El sitio actual de travesías requiere una renovación en cuanto al diseño de interfaz y principalmente lo que sostiene todo el diseño, su arquitectura de información. Existe una lista de parámetros para medir la eficiencia de un sitio, en base a los requerimientos de contenidos y usabilidad actuales. </p>
       </div>
       <div class='col-md-6'>
       <h1 class='rojo centrado'><i class="icn icn-light icn-lg icn-noticias"></i>Gamma</h1>

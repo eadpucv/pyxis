@@ -1393,6 +1393,11 @@ nav[role=navigation] li a {
   float: right;
   padding: 0px;
 }
+.nav-busqueda form,
+.nav-busqueda .searchform {
+  padding: 0;
+  background-color: transparent;
+}
 .nav-busqueda input {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -4150,6 +4155,12 @@ h99 {
 }
 .fondo-ahuesado {
   background-color: #ffffef;
+}
+.gris-auxiliar {
+  color: rgba(236, 238, 230, 0.8);
+}
+.fondo-gris-auxiliar {
+  background-color: rgba(236, 238, 230, 0.8);
 }
 .margen-especial {
   margin-top: -25px !important;
@@ -9986,7 +9997,6 @@ tbody.collapse.in {
 #parallax {
   background-size: 100%;
   color: white;
-  height: 300px;
   margin: 0 auto;
   padding: 0;
 }
@@ -9995,13 +10005,19 @@ tbody.collapse.in {
   padding: 100px 0 0 0;
 }
 #parallax.ejemplo-1 {
+  height: 300px;
   background: url(../img-samples/mantoaero2.jpg) 100% 0 no-repeat fixed;
 }
 #parallax.ejemplo-2 {
+  height: 500px;
   background: url(../img-samples/manto-6.jpg) 100% 0 no-repeat fixed;
 }
 #parallax.ejemplo-3 {
+  height: 800px;
   background: url(../img-samples/torneo2.jpg) 100% 50% no-repeat fixed;
+}
+#parallax.universo {
+  background: url(../img/universo.jpg) 100% 50% no-repeat fixed;
 }
 #parallax-index {
   height: 800px;
@@ -19060,6 +19076,34 @@ tbody.collapse.in {
   color: #a84744;
   border-color: #a84744;
 }
+.widget-post-categories .fila > div {
+  padding: .5rem;
+}
+.widget_search {
+  display: inline-block;
+  width: 100%;
+}
+.widget_search .nav-busqueda {
+  max-width: 100%;
+  float: none !important;
+}
+.widget_search .nav-busqueda input {
+  border-bottom: 2px solid #c2c4ba;
+}
+.widget_search .nav-busqueda input::-webkit-input-placeholder {
+  color: #c2c4ba;
+}
+.widget_search .nav-busqueda input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #c2c4ba;
+}
+.widget_search .nav-busqueda input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #c2c4ba;
+}
+.widget_search .nav-busqueda input:-ms-input-placeholder {
+  color: #c2c4ba;
+}
 .pag.cf {
   margin-bottom: 16px;
 }
@@ -19799,6 +19843,9 @@ tbody.collapse.in {
   .comment-respond .comment-reply-title {
     margin-top: 0;
   }
+  .widget-post-categories .fila > div {
+    width: 100%;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .wrap,
@@ -19837,6 +19884,9 @@ tbody.collapse.in {
   .fecha-movil {
     display: none !important;
   }
+  .widget-post-categories .fila > div {
+    width: 240px;
+  }
 }
 @media (min-width: 992px) and (max-width: 1444px) {
   .wrap,
@@ -19853,6 +19903,9 @@ tbody.collapse.in {
   .fecha-movil {
     display: none !important;
   }
+  .widget-post-categories .fila > div {
+    width: 296px;
+  }
 }
 @media (min-width: 1445px) {
   .wrap,
@@ -19861,6 +19914,12 @@ tbody.collapse.in {
   }
   .fecha-movil {
     display: none !important;
+  }
+  .widget-post-categories .noticia {
+    width: 33.3%;
+  }
+  .widget-post-categories .fila > div {
+    width: 354px;
   }
 }
 /* canvas para processingjs */
@@ -20057,6 +20116,21 @@ td.Competencias-Profesionales {
 .bio,
 td.bio {
   font: italic normal 85%/111%;
+}
+/* Ajustes para cuando se hace wiki embed y se trae el índice _____________________ */
+.toc {
+  border: none !important;
+  background-color: transparent !important;
+}
+.toc ul li {
+  list-style: none;
+  font-size: 13px;
+}
+.toc ul li ul {
+  padding-left: 10px !important;
+}
+.toc ul li ul li ul {
+  padding-left: 15px !important;
 }
 /* ajustes para asignaturas _______________________________________________________ */
 .clave {

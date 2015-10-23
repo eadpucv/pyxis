@@ -50,6 +50,7 @@ intro: Texto sobre color
                                 <code class='linea blanco'>@gris</code><br>
                                 <code class='linea blanco'>@gris-claro</code><br>
                                 <code class='linea blanco'>@gris-blanco</code><br>
+                                <code class="linea blanco">@gris-auxiliar</code><br>
                                 <code class='linea blanco'>@blanco</code>
                             </div>
                             <div class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
@@ -58,6 +59,7 @@ intro: Texto sobre color
                                 <div class='caja-color fondo-gris'></div>
                                 <div class='caja-color fondo-gris-claro'></div>
                                 <div class='caja-color fondo-gris-blanco'></div>
+                                <div class='caja-color fondo-gris-auxiliar'></div>
                                 <div class='caja-color fondo-blanco'></div>
                             </div>
                         </div>
@@ -98,7 +100,7 @@ intro: Texto sobre color
 
             <div class="tab-pane fade" id="texturas">
                 <h4 class="pizarra gruesa">Texturas</h4>
-                <p>Siguiendo la misma lógica de nombres y clases CSS, se dinen la siguientes texturas:</p>
+                <p>Siguiendo la misma lógica de nombres y clases CSS, se definen la siguientes texturas:</p>
                 <div class='col-md-12'>
                     <h5 class='pizarra gruesa'>Texturas</h5>
                     <div class="fila">
