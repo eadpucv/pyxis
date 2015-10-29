@@ -7441,7 +7441,8 @@ input[type='file'].buscar,
 form {
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #575851;
+  border: 1px solid rgba(194, 196, 186, 0.4);
+  background-color: rgba(236, 238, 230, 0.1);
   margin-bottom: 0 !important;
   *zoom: 1;
   margin-bottom: 30px;
@@ -8919,21 +8920,25 @@ form.buscador input[type=submit] {
   }
 }
 ::-webkit-input-placeholder {
-  color: #c2c4ba;
+  color: #575851;
+  font-size: .9rem;
   font-weight: 200;
 }
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #c2c4ba;
+  color: #575851;
+  font-size: .9rem;
   font-weight: 200;
 }
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #c2c4ba;
+  color: #575851;
+  font-size: .9rem;
   font-weight: 200;
 }
 :-ms-input-placeholder {
-  color: #c2c4ba;
+  color: #575851;
+  font-size: .9rem;
   font-weight: 200;
 }
 @media (min-width: 1445px) {
