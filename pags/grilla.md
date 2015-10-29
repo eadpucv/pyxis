@@ -13,7 +13,8 @@ link-7: Anidar y offset
             <div class='pag sin-relleno'>
                 <ul class="nav nav-tabs" role="tablist" id="tabla-contenido">
                     <li class="active"><a id='subiendo-1' class='condensado' href="#sintaxis" role="tab" data-toggle="tab">Sintaxis</a></li>
-                    <li><a id='subiendo-2' class='condensado' href="#ordenar-ocultar" role="tab" data-toggle="tab">Ordenar y ocultar</a></li>
+                    <li><a id='subiendo-2' class='condensado' href="#ordenar-ocultar" role="tab" data-toggle="tab">Ordenar y ocultar columnas</a></li>
+                    <li><a id='subiendo-3' class='condensado' href="#ordenar-bloques" role="tab" data-toggle="tab">Ordenar bloques (Flex)</a></li>
                     <li><a id='subiendo-4' class='condensado' href="#anidacion" role="tab" data-toggle="tab">Anidar y offset</a></li>
                     <li class='subir'><a href="#topbar"><i class="icn icn-pc"></i></a></li>
                 </ul>
@@ -283,6 +284,148 @@ link-7: Anidar y offset
     background-color: @gris-claro;
     color: rgba(0, 0, 0, 0.8);
     padding: @cuadratin / 2;
+}
+                    </code>
+                </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="ordenar-bloques">
+                <h4 class='pizarra gruesa'>Ordenar bloques (flex)</h4>
+                <p>El flex o flexbox es una propiedad de CSS que ha estado haciéndose popular porque resuelve un problema muy recurrente en relación al diseño. Se trata de cómo uno puede ordenar, alinear o centrar bloques y su contenido de manera automática sin necesidad de aplicar doble propiedad CSS para llegar al mismo objetivo. Por ejemplo, si queremos centrar un elemento horizontalmente, se puede dar una posición absoluta dentro de un contenedor relativo, dándole un valor left de 50% y un margin-left negativo a la mitad del ancho del elemento. Qué ocurre con elementos con ancho variable? Bueno, no se podría resolver de manera elegante.</p>
+                <h5 class="pizarra">Caso 1: Elemento hijo centrado</h5>
+                <div class="container-flex ver">
+                    .container-flex
+                    <div class="flex-centrar ver">
+                        .flex-centrar
+                    </div>
+                </div>
+                <p>En este caso, el elemento padre utiliza la clase <b>.container-flex</b> y su hijo <b>.flex-centrar</b> tiene valor margen auto. Esto hace que el contenedor adopte márgenes automáticos quedando centrado perfectamente.</p>
+                <div class='fila'>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                    <code class='bloque'> 
+&lt;div class="container-flex">
+    .container-flex
+    &lt;div class="flex-centrar">
+        .flex-centrar
+    &lt;/div>
+&lt;/div>
+                    </code>
+                </div>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                    <code class='bloque'>
+// Contenedor flex
+.container-flex {
+    display: -webkit-flex;
+    display: flex;
+}
+
+// Centrados
+.flex-centrar {
+    margin: auto;
+}
+.flex-centrar-vertical {
+    margin: auto 0;
+}
+.flex-centrar-horizontal {
+    margin: 0 auto;
+}
+                    </code>
+                </div>
+                </div>
+                <br>
+                <h5 class="pizarra">Caso 2: Ancho relativo según elemento padre</h5>
+                <div class="container-flex ver">
+                    <div style="width: 200px" class="ver">
+                        ancho 200px
+                    </div>
+                    <div class="flex-1 ver">
+                        .flex-1
+                    </div>
+                    <div class="flex-2 ver">
+                        .flex-2
+                    </div>
+                </div>
+                <p>La combinación también se puede aplicar, aún cuando exista algun elemento con un ancho específico, otro elemento tome el ancho que queda. En fin, es una propiedad muy amplia dando muchos casos de uso aplicables.</p>
+                <div class='fila'>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                    <code class='bloque'> 
+&lt;div class="container-flex">
+    &lt;div style="width: 200px">
+        ancho 200px
+    &lt;/div>
+    &lt;div class="flex-1">
+        .flex-1
+    &lt;/div>
+    &lt;div class="flex-2">
+        .flex-2
+    &lt;/div>
+&lt;/div>
+                    </code>
+                </div>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                    <code class='bloque'>
+// Partes (Fracción) flex
+
+// Este bloque ocupará 1 de n partes
+.flex-1 {
+  -webkit-flex: 1;
+          flex: 1;
+}
+// Este bloque ocupará 2 de n partes
+.flex-2 {
+  -webkit-flex: 2;
+          flex: 2;
+}
+// Este bloque ocupará 3 de n partes
+.flex-3 {
+  -webkit-flex: 3;
+          flex: 3;
+}
+                    </code>
+                </div>
+                </div>
+                <br>
+                <h5 class="pizarra">Caso 3: Elementos padres e hijos alineados</h5>
+                <div class="flexbox ver">
+                    <div class="container-flex ver flex-1">
+                        Éste .container-flex adopta alto del otro contenedor
+                        <div class="ver flex-centrar" style="height: 200px">.flex-centrar + height: 200px. Este elemento (hijo) se centra en relación al elemento hijo del contenedor padre de al lado.</div>
+                    </div>
+                    <div class="container-flex ver flex-1">
+                        <div class="ver" style="height: 450px">height: 450px</div>
+                    </div>
+                </div>
+                <p>Si se desea tener dos elementos (padres) de la misma altura y que sus contenidos (hijos) estén alineados o relacionados, se puede crear un contenedor de estos dos elementos (padres).</p>
+                <div class='fila'>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>HTML</h5>
+                    <code class='bloque'> 
+&lt;div class="flexbox">
+    &lt;div class="container-flex flex-1">
+        Éste .container-flex adopta alto del otro contenedor
+        &lt;div class="flex-centrar" style="height: 200px">flex-centrar + height: 200px. Este elemento (hijo) se centra en relación al elemento hijo del contenedor padre de al lado.&lt;/div>
+    &lt;/div>
+    &lt;div class="container-flex flex-1">
+        &lt;div style="height: 450px">height: 450px&lt;/div>
+    &lt;/div>
+&lt;/div>
+                    </code>
+                </div>
+                <div class='col-md-6 margen-inf-sm'>
+                    <h5 class='pizarra fino linea-lateral'>LESS</h5>
+                    <code class='bloque'>
+// Caja flex: Nos permite insertarla afuera de dos contenedores e igualar su altura. 
+// Luego, dentro de ellos uno puede volver a aplicar otro contenedor flex y añadir un
+// Margen automático para alineación vertical entre dos contenedores
+.flexbox {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
 }
                     </code>
                 </div>

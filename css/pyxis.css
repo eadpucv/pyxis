@@ -1499,13 +1499,15 @@ nav[role=navigation] li a {
 }
 .nav-tabs > li {
   display: inline-block;
-  margin-bottom: 0px;
-  margin-left-top: 0px;
+  margin: 0 15px;
   background-color: #ffffff;
   border-bottom: 3px solid #ffffff;
   -webkit-border-bottom: 3px solid #ffffff;
   -moz-border-bottom: 3px solid #ffffff;
   z-index: 30;
+}
+.nav-tabs > li:first-child {
+  margin-left: 0;
 }
 .nav-tabs > li > a {
   margin: 0px;
@@ -5120,6 +5122,31 @@ strong {
   display: flex;
   overflow: hidden;
 }
+.container-flex {
+  display: -webkit-flex;
+  display: flex;
+}
+.flex-centrar {
+  margin: auto;
+}
+.flex-centrar-vertical {
+  margin: auto 0;
+}
+.flex-centrar-horizontal {
+  margin: 0 auto;
+}
+.flex-1 {
+  -webkit-flex: 1;
+  flex: 1;
+}
+.flex-2 {
+  -webkit-flex: 2;
+  flex: 2;
+}
+.flex-3 {
+  -webkit-flex: 3;
+  flex: 3;
+}
 .centrada,
 .centrado {
   text-align: center;
@@ -7414,7 +7441,8 @@ input[type='file'].buscar,
 form {
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #575851;
+  border: 1px solid rgba(194, 196, 186, 0.4);
+  background-color: rgba(236, 238, 230, 0.1);
   margin-bottom: 0 !important;
   *zoom: 1;
   margin-bottom: 30px;
@@ -8892,21 +8920,25 @@ form.buscador input[type=submit] {
   }
 }
 ::-webkit-input-placeholder {
-  color: #c2c4ba;
+  color: #575851;
+  font-size: .9rem;
   font-weight: 200;
 }
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #c2c4ba;
+  color: #575851;
+  font-size: .9rem;
   font-weight: 200;
 }
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #c2c4ba;
+  color: #575851;
+  font-size: .9rem;
   font-weight: 200;
 }
 :-ms-input-placeholder {
-  color: #c2c4ba;
+  color: #575851;
+  font-size: .9rem;
   font-weight: 200;
 }
 @media (min-width: 1445px) {

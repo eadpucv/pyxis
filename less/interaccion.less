@@ -227,7 +227,8 @@ input[type='file'],
 form{
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid @gris;
+    border:1px solid fade(@gris-claro, 40%);
+    background-color: fade(@gris-auxiliar, 10%);
     margin-bottom: 0 !important;
     .clearfix;
     .margen-inf;
@@ -463,22 +464,26 @@ form{
 
 // Placeholders
 ::-webkit-input-placeholder {
-    color: @gris-claro;
+    color: @gris;
+    font-size: .9rem;
     font-weight: @peso-fino;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-    color: @gris-claro;
+    color: @gris;
+    font-size: .9rem;
     font-weight: @peso-fino;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-    color: @gris-claro;
+    color: @gris;
+    font-size: .9rem;
     font-weight: @peso-fino;
 }
 
 :-ms-input-placeholder {  
-    color: @gris-claro;
+    color: @gris;
+    font-size: .9rem;
     font-weight: @peso-fino;
 }
 

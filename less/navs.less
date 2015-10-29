@@ -296,13 +296,15 @@ a.menu-link {
 
   > li {
     display: inline-block;
-    margin-bottom: 0px;
-    margin-left-top: 0px;
+    margin: 0 15px;
     background-color: @blanco;
     border-bottom: 3px solid @blanco;
     -webkit-border-bottom: 3px solid @blanco;
     -moz-border-bottom: 3px solid @blanco;
     z-index: 30;
+    &:first-child {
+      margin-left: 0;
+    }
 
     // Actual tabs (as links)
     > a {
@@ -314,6 +316,7 @@ a.menu-link {
       line-height: @line-height-base;
       border-bottom: transparent;
       border-radius: none;
+
     }
 
     &:hover{
