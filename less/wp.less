@@ -356,7 +356,7 @@
     }
 }
 // Page *
-#page{
+#page, #portadilla{
     #ejemplo-sticky{
         ul{
             .margen-der-sm;
@@ -393,6 +393,12 @@
                 .margen-inf-sm; 
                 .borde;
                 .radio-md;
+            }
+            .ajax-loader {
+                width: auto !important;
+                margin-bottom: 0;
+                border: none;
+                border-radius: none;
             }
         }
         h3, h4{
@@ -588,7 +594,7 @@
         .borde;
         .radio-md;
         .ocultar-desborde;
-        margin-top: 15px;
+        // margin-top: 15px;
         min-height: 180px;
         a{
             img{
@@ -658,7 +664,7 @@
     background: @gris-blanco url("/img/ruido-fondo-pyxis.png") repeat center;
     // Necesario margen negativo para sobreponer fondo con imagen fixed 
     margin-bottom: -25px;
-    margin-top: -25px;
+    // margin-top: -25px;
 
         h3, .title{ 
             .sans;
@@ -1132,6 +1138,22 @@
                 width: 100%;
         }
     }
+}
+
+.edit-absolute, .ayuda-absolute {
+    background-color: @gris-auxiliar;
+    border-top:2px solid @rojo;
+    position: fixed;
+    padding: 2px 10px 2px 10px;
+    font-size: 11px;
+}
+.edit-absolute{
+    right: 95px;
+    top: 32px;
+}
+.ayuda-absolute {
+    right: 32px;
+    top: 32px;
 }
 
 // --------------------------------------------------
