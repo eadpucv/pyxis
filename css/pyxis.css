@@ -4068,7 +4068,7 @@ h99 {
 }
 .fondo-carrusel {
   background-color: rgba(1, 1, 1, 0.06);
-  box-shadow: inset 0 2px 2px rgba(1, 1, 1, 0.15);
+  box-shadow: inset 0 1px 4px rgba(1, 1, 1, 0.22);
 }
 .pizarra {
   color: #2e403a;
