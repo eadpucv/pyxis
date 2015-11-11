@@ -66,15 +66,18 @@ cursor: pointer;
 .fondo-negro{background-color: @negro}
 
 // Texturas
-.ruido{background-image: url("/img/ruido-fondo-pyxis.png")}
-.ruido-negro{background-image: url("/img/ruido-negro-oscuro.png")}
-.textura-1{background-image: url("/img/fondo-textura-1.jpg")} 
-.textura-2{background-image: url("/img/fondo-textura-2.jpg")}
-.textura-3{background-image: url("/img/fondo-textura-3.jpg")}
-.textura-4{background-image: url("/img/fondo-textura-4.jpg")}
-.textura-5{background-image: url("/img/fondo-textura-5.jpg")}
-.textura-6{background-image: url("/img/ruido-amplio.png")}
-    
+.ruido{background-image: url("../img/ruido-fondo-pyxis.png")}
+.ruido-negro{background-image: url("../img/ruido-negro-oscuro.png")}
+.textura-1{background-image: url("../img/fondo-textura-1.jpg")} 
+.textura-2{background-image: url("../img/fondo-textura-2.jpg")}
+.textura-3{background-image: url("../img/fondo-textura-3.jpg")}
+.textura-4{background-image: url("../img/fondo-textura-4.jpg")}
+.textura-5{background-image: url("../img/fondo-textura-5.jpg")}
+.textura-6{background-image: url("../img/ruido-amplio.png")}
+.fondo-carrusel{
+    background-color: fade(@negro, 6);
+    box-shadow: inset 0 2px 2px fade(@negro, 15);
+}
 
 .pizarra{color: @pizarra}
 .fondo-pizarra{background-color: @pizarra}
@@ -87,8 +90,8 @@ cursor: pointer;
 .gris-blanco{color: @gris-blanco}
 .gris-blanco-trans{color: @gris-blanco-transparente}
 .fondo-gris-blanco{background-color: @gris-blanco}
-.fondo-gris-blanco-trans{background-color: @gris-blanco-transparente; &.ruido{background: @gris-blanco url("/img/ruido-fondo-pyxis.png") repeat center}}
-.fondo-gris-blanco-trans-xs{background-color: @gris-blanco-transparente-xs; &.ruido{background: @gris-blanco url("/img/ruido-fondo-pyxis.png") repeat center}}
+.fondo-gris-blanco-trans{background-color: @gris-blanco-transparente; &.ruido{background: @gris-blanco url("../img/ruido-fondo-pyxis.png") repeat center}}
+.fondo-gris-blanco-trans-xs{background-color: @gris-blanco-transparente-xs; &.ruido{background: @gris-blanco url("../img/ruido-fondo-pyxis.png") repeat center}}
 .gris-blanco-gradiente{
 background-image: -webkit-gradient(
     linear,
