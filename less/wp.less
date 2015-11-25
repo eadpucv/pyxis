@@ -992,6 +992,85 @@
     }    
 }
 
+.widget-sin-busqueda {
+    position: relative;
+    h1, h2, h3, h4, h5, h6 {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        margin-left: -122px;
+    }
+    p, a, span {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        margin-left: -122px;
+    }
+}
+
+.busqueda-ancha {
+    margin: 40px auto 80px auto !important;
+    background-color: transparent;
+    width: 80%;
+    p {
+        margin-top: 10px;
+        text-align: center;
+        font-style: italic;
+        color: rgb(153, 153, 153);
+        font-family: @serif;
+    }
+    input[type="text"] {
+        margin-bottom: 0;
+        border-top-left-radius: @radio;
+        border-top-right-radius: @radio;
+        border-bottom-right-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+        background-color: #fff;
+        border: 1px solid fade(@gris-claro, 50%)!important;
+        border-bottom: 2px solid fade(@gris-claro, 50%) !important;
+        &::-webkit-input-placeholder {
+           color: @gris-claro;
+        }
+        &:-moz-placeholder { /* Firefox 18- */
+           color: @gris-claro;
+        }
+        &::-moz-placeholder {  /* Firefox 19+ */
+           color: @gris-claro;
+        }
+        &:-ms-input-placeholder {  
+           color: @gris-claro;
+        }
+        &:focus {
+          box-shadow: none !important;
+          outline: 0 !important;
+          color: @gris-oscuro;
+          background-color: #fff !important;
+          border-bottom: 2px solid @rojo !important;
+          .transition(.2s ease all);
+          &::-webkit-input-placeholder {
+             color: @gris;
+             border-color: 0.9px solid @gris !important;
+             .transition(.2s ease all);
+          }
+          &:-moz-placeholder { /* Firefox 18- */
+             color: @gris;
+             border-color: 0.9px solid @gris !important;  
+             .transition(.2s ease all);
+          }
+          &::-moz-placeholder {  /* Firefox 19+ */
+             color: @gris;
+             border-color: 0.9px solid @gris !important; 
+             .transition(.2s ease all); 
+          }
+          &:-ms-input-placeholder {  
+             color: @gris;
+             border-color: 0.9px solid @gris !important;  
+             .transition(.2s ease all);
+          }
+        }
+    }
+}
+
 .pag.cf {
     margin-bottom: 16px;
 }
@@ -1245,6 +1324,18 @@ body.admin-bar {
             &>div {
                 width: 100%;
             }
+        }
+    }
+
+    .widget-sin-busqueda {
+        position: relative;
+        h3{
+            position: absolute;
+            top: 20%;
+            left: 10px;
+            margin-left: 0px;
+            max-width: 90%;
+            font-size: 27px;
         }
     }
 }
