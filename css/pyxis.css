@@ -20553,6 +20553,24 @@ body.admin-bar .ayuda-absolute {
   font-size: 11px;
   z-index: 100;
 }
+footer .linea-inferior {
+  border-bottom: 1px solid #444;
+  margin-bottom: 20px;
+}
+footer .diseno-pyxis p {
+  color: #ffffff;
+  margin: 0;
+  font-size: 12px;
+  font-style: italic;
+  font-family: 'Palatino', 'Times New Roman', Times, 'georgia', serif;
+}
+footer .diseno-pyxis a {
+  display: -webkit-flex;
+  display: flex;
+}
+footer .diseno-pyxis a h6 {
+  margin: auto 0;
+}
 @media (max-width: 767px) {
   .wrap,
   .contenedor-sin-relleno,
