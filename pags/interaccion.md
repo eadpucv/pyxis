@@ -26,6 +26,10 @@ intro: Texto sobre Interacción
           <div class="col-md-6 col-sm-12 col-xs-12">
             <h5 class='pizarra'>Formulario genérico</h5>
             <form role="form">
+              <h3 class="sans fino rojo">
+                Formulario
+              </h3>
+              <hr>
               <div class="grupo-formulario">
                 <label for="ejemplo-formulario">Dirección de e-mail *</label>
                 <input type="email" class="control" id="ejemplo-formulario" placeholder="Introduce email" required />
@@ -232,6 +236,8 @@ input[type='file'],
           <div class="col-md-12 col-sm-12 col-xs-12">
             <h5 class='pizarra'>Formulario horizontal</h5>
             <form class="formulario-horizontal" role="form">
+              <h3 class="sans rojo fino">Ingrese con sus datos</h3>
+              <hr>
               <div class="grupo-formulario">
                 <input type="email" class="control" id="ejemplo-nombre2" placeholder="Ingresa nombre" required />
               </div>
@@ -242,14 +248,7 @@ input[type='file'],
               <div class="grupo-formulario">
                 <input type="password" class="control" id="ejemplo-contraseña2" placeholder="Contraseña" required />
               </div>
-              <div class="grupo-formulario">
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox"> Recuerdame
-                  </label>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-default">Accede</button>
+              <button type="submit" class="btn btn-accion btn-lg derecha">Accede</button>
             </form>
             <div class='fila'>
               <div class="col-md-6 col-sm-12 col-xs-12">
@@ -776,62 +775,74 @@ input[type='file'],
       <div class='col-md-6 col-sm-12 col-xs-12'>
             <h5 class='pizarra'>Nuevo usuario (Personas)</h5>
             <form role="form">
-              <div class="grupo-formulario">
-                <label for="nombre">Nombre de usuario</label>
-                <input type="text" class="control" id="nombre" placeholder="Nombre del nuevo objeto" required />
-                <p class='especificacion'>Elige un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</p>
+              <div class="col-md-12">
+                <h3 class="fino sans rojo"><i class="icn icn-perfil nav-icn"></i> Registro de nuevo usuario</h3>
               </div>
-              <div class="grupo-formulario">
-                <label for="nombre">Tipo *</label>
-                <select>
-                  <option>Alumno/a</option>
-                  <option>Profesor/a</option>
-                  <option>Ex-alumno/a</option>
-                  <option>Amigo/a</option>
-                  <option>Staff</option>
-                  <option>Otro/a</option>
-                </select>
+              <div class="col-md-12">
+                <h5 class="fino sans pizarra">Tus datos personales</h5>
+                <hr>
+                <div class="margen-inf-sm">
+                  <label for="username">Nombre de usuario</label>
+                  <div class="grupo-inputs">
+                        <div class="input"><i class="icn icn-md icn-usuario"></i></div>
+                        <input type="text" class="control" id="username" placeholder="juanperez"/>    
+                    </div>
+                    <span class="xs margen-sup-xs">Elije un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.</span>
+                </div>
+                <div class="margen-inf-sm">
+                  <label for="names">Nombres</label>
+                  <div class="grupo-inputs">    
+                        <div class="input"><i class="icn icn-md icn-perfil"></i></div>
+                        <input type="text" class="control" id="names" placeholder="Juan José"/> 
+                    </div>
+                </div>
+                <div class="margen-inf-sm">
+                  <label for="lastnames">Apellidos</label>
+                  <div class="grupo-inputs">    
+                        <div class="input"><i class="icn icn-md icn-perfil"></i></div>
+                        <input type="text" class="control" id="lastnames" placeholder="Pérez López"/> 
+                    </div>
+                </div>
+                <div class="margen-inf-sm">
+                  <label for="rut">Rut</label>
+                  <div class="grupo-inputs">    
+                        <div class="input"><i class="icn icn-md icn-acto"></i></div>
+                        <input type="text" class="control" id="rut" placeholder="12.345.678-9"/>  
+                    </div>
+                </div>
+                <div class="margen-inf-sm">
+                  <label for="usertype">Relación con la e[ad]</label>
+                  <div class="grupo-inputs">
+                        <div class="input"><i class="icn icn-md icn-caronabajo"></i></div>
+                        <select name="usertype" placeholder="selecciona tu carrera">
+                      <option></option>
+                        <option>Alumno(a)</option>
+                        <option>Profesor(a)</option>
+                        <option>Ex-alumno(a)</option>
+                        <option>Ex-profesor(a)</option>
+                        <option>Amigo(a)</option>
+                        <option>Otro(a)</option>
+                      </select>
+                    </div>  
+                </div>
+                <div class="margen-inf-sm">
+                  <label for="course">Carrera</label>
+                  <div class="grupo-inputs">
+                        <div class="input"><i class="icn icn-md icn-caronabajo"></i></div>
+                        <select name="course">
+                      <option selected></option>
+                        <option>Arquitectura</option>
+                        <option>Diseño</option>
+                        <option>Diseño Gráfico</option>
+                        <option>Diseño Industrial</option>
+                        <option>Magister en Arquitectura y Diseño</option>
+                      </select>
+                    </div>  
+                </div>
+                <div class="margen-inf-sm">
+                  <a class="btn btn-accion btn-lg btn-bloque btn-registro1" href="#registro-2">Siguiente</a>
+                </div>
               </div>
-              <div class="grupo-formulario">
-                <label for="nombre">Carrera</label>
-                <select>
-                  <option>Arquitectura</option>
-                  <option>Diseño gráfico</option>
-                  <option>Diseño industrial</option>
-                  <option>Estudios avanzados</option>
-                </select>
-              </div>
-              <div class="grupo-formulario">
-                <label class='pregunta'>Año de ingreso</label>
-                <input type='text' placeholder='todo en bajas, separadas por coma '/>
-              </div>
-              <div class="grupo-formulario">
-                <label class='pregunta'>Nombre *</label>
-                <input type='text' required/>
-              </div>
-              <div class="grupo-formulario">
-                <label class='pregunta'>Apellido *</label>
-                <input type='date' required/>
-              </div>
-              <div class="grupo-formulario">
-                <label class='pregunta'>e-mail *</label>
-                <input type='email' required />
-              </div>
-              <div class="grupo-formulario">
-                <label class='pregunta'>Página en Wiki Casiopea</label>
-                <input type='url' />
-              </div>
-              <div class="grupo-formulario">
-                <label for="nombre">Contraseña *</label>
-                <input type="password" id="contraseña" placeholder="introduzca contraseña" required />
-                <input type="password" id="contraseña" placeholder="verificación contraseña" required />
-              </div>
-              <div class="grupo-formulario">
-                <input type="checkbox">
-                Acepto los <a href='#'>términos y condiciones</a>
-              </label>
-            </div>
-            <button type="submit" class="btn btn-success">Crear nuevo usuario</button>
           </form>
       </div>
       <div class='col-md-6 col-sm-12 col-xs-12 margen-sup'>
@@ -839,62 +850,74 @@ input[type='file'],
           <div id="ver-codigo-form7html" class="collapse">
             <code class='bloque'>
 &lt;form role="form">
-  &lt;div class="grupo-formulario">
-    &lt;label for="nombre">Nombre de usuario&lt;/label>
-    &lt;input type="text" class="control" id="nombre" placeholder="Nombre del nuevo objeto" required />
-    &lt;p class='especificacion'>Elige un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.&lt;/p>
+  &lt;div class="col-md-12">
+    &lt;h3 class="fino sans rojo">&lt;i class="icn icn-perfil nav-icn">&lt;/i> Registro de nuevo usuario&lt;/h3>
   &lt;/div>
-  &lt;div class="grupo-formulario">
-    &lt;label for="nombre">Tipo *&lt;/label>
-    &lt;select>
-      &lt;option>Alumno/a&lt;/option>
-      &lt;option>Profesor/a&lt;/option>
-      &lt;option>Ex-alumno/a&lt;/option>
-      &lt;option>Amigo/a&lt;/option>
-      &lt;option>Staff&lt;/option>
-      &lt;option>Otro/a&lt;/option>
-    &lt;/select>
+  &lt;div class="col-md-12">
+    &lt;h5 class="fino sans pizarra">Tus datos personales&lt;/h5>
+    &lt;hr>
+    &lt;div class="margen-inf-sm">
+      &lt;label for="username">Nombre de usuario&lt;/label>
+      &lt;div class="grupo-inputs">
+            &lt;div class="input">&lt;i class="icn icn-md icn-usuario">&lt;/i>&lt;/div>
+            &lt;input type="text" class="control" id="username" placeholder="juanperez"/>    
+        &lt;/div>
+        &lt;span class="xs margen-sup-xs">Elije un nombre que puedas recordar con facilidad. Se recomienda no utilizar espacios ni mayúsculas ya que el sistema los distingue y después son fáciles de olvidar.&lt;/span>
+    &lt;/div>
+    &lt;div class="margen-inf-sm">
+      &lt;label for="names">Nombres&lt;/label>
+      &lt;div class="grupo-inputs">    
+            &lt;div class="input">&lt;i class="icn icn-md icn-perfil">&lt;/i>&lt;/div>
+            &lt;input type="text" class="control" id="names" placeholder="Juan José"/> 
+        &lt;/div>
+    &lt;/div>
+    &lt;div class="margen-inf-sm">
+      &lt;label for="lastnames">Apellidos&lt;/label>
+      &lt;div class="grupo-inputs">    
+            &lt;div class="input">&lt;i class="icn icn-md icn-perfil">&lt;/i>&lt;/div>
+            &lt;input type="text" class="control" id="lastnames" placeholder="Pérez López"/> 
+        &lt;/div>
+    &lt;/div>
+    &lt;div class="margen-inf-sm">
+      &lt;label for="rut">Rut&lt;/label>
+      &lt;div class="grupo-inputs">    
+            &lt;div class="input">&lt;i class="icn icn-md icn-acto">&lt;/i>&lt;/div>
+            &lt;input type="text" class="control" id="rut" placeholder="12.345.678-9"/>  
+        &lt;/div>
+    &lt;/div>
+    &lt;div class="margen-inf-sm">
+      &lt;label for="usertype">Relación con la e[ad]&lt;/label>
+      &lt;div class="grupo-inputs">
+            &lt;div class="input">&lt;i class="icn icn-md icn-caronabajo">&lt;/i>&lt;/div>
+            &lt;select name="usertype" placeholder="selecciona tu carrera">
+          &lt;option>&lt;/option>
+            &lt;option>Alumno(a)&lt;/option>
+            &lt;option>Profesor(a)&lt;/option>
+            &lt;option>Ex-alumno(a)&lt;/option>
+            &lt;option>Ex-profesor(a)&lt;/option>
+            &lt;option>Amigo(a)&lt;/option>
+            &lt;option>Otro(a)&lt;/option>
+          &lt;/select>
+        &lt;/div>  
+    &lt;/div>
+    &lt;div class="margen-inf-sm">
+      &lt;label for="course">Carrera&lt;/label>
+      &lt;div class="grupo-inputs">
+            &lt;div class="input">&lt;i class="icn icn-md icn-caronabajo">&lt;/i>&lt;/div>
+            &lt;select name="course">
+          &lt;option selected>&lt;/option>
+            &lt;option>Arquitectura&lt;/option>
+            &lt;option>Diseño&lt;/option>
+            &lt;option>Diseño Gráfico&lt;/option>
+            &lt;option>Diseño Industrial&lt;/option>
+            &lt;option>Magister en Arquitectura y Diseño&lt;/option>
+          &lt;/select>
+        &lt;/div>  
+    &lt;/div>
+    &lt;div class="margen-inf-sm">
+      &lt;a class="btn btn-accion btn-lg btn-bloque btn-registro1" href="#registro-2">Siguiente&lt;/a>
+    &lt;/div>
   &lt;/div>
-  &lt;div class="grupo-formulario">
-    &lt;label for="nombre">Carrera&lt;/label>
-    &lt;select>
-      &lt;option>Arquitectura&lt;/option>
-      &lt;option>Diseño gráfico&lt;/option>
-      &lt;option>Diseño industrial&lt;/option>
-      &lt;option>Estudios avanzados&lt;/option>
-    &lt;/select>
-  &lt;/div>
-  &lt;div class="grupo-formulario">
-    &lt;label class='pregunta'>Año de ingreso&lt;/label>
-    &lt;input type='text' placeholder='todo en bajas, separadas por coma '/>
-  &lt;/div>
-  &lt;div class="grupo-formulario">
-    &lt;label class='pregunta'>Nombre *&lt;/label>
-    &lt;input type='text' required/>
-  &lt;/div>
-  &lt;div class="grupo-formulario">
-    &lt;label class='pregunta'>Apellido *&lt;/label>
-    &lt;input type='date' required/>
-  &lt;/div>
-  &lt;div class="grupo-formulario">
-    &lt;label class='pregunta'>e-mail *&lt;/label>
-    &lt;input type='email' required />
-  &lt;/div>
-  &lt;div class="grupo-formulario">
-    &lt;label class='pregunta'>Página en Wiki Casiopea&lt;/label>
-    &lt;input type='url' />
-  &lt;/div>
-  &lt;div class="grupo-formulario">
-    &lt;label for="nombre">Contraseña *&lt;/label>
-    &lt;input type="password" id="contraseña" placeholder="introduzca contraseña" required />
-    &lt;input type="password" id="contraseña" placeholder="verificación contraseña" required />
-  &lt;/div>
-  &lt;div class="grupo-formulario">
-    &lt;input type="checkbox">
-    Acepto los &lt;a href='#'>términos y condiciones&lt;/a>
-    &lt;/label>
-  &lt;/div>
-  &lt;button type="submit" class="btn btn-success">Crear nuevo usuario&lt;/button>
 &lt;/form>
             </code>
           </div>
