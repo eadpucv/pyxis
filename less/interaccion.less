@@ -339,9 +339,14 @@ form{
 // clases de formularios
 // todo comentado porque está copiado de bootstrap, al menos traducir
 
-.formulario-horizontal .input-group {
-    display: inline-table;
-    vertical-align: super !important;
+.formulario-horizontal{
+     .input-group {
+        display: inline-table;
+        vertical-align: super !important;
+    }
+    .grupo-inputs {
+        width: auto !important;
+    }
 }
 
 // Formulario de Wordpress
@@ -408,7 +413,6 @@ form{
     .input-group {
         display: inline-table;
         vertical-align: middle;
-        top: 1px;
         .input-group-addon,
         .input-group-btn,
         .form-control {
@@ -418,7 +422,6 @@ form{
 
     .btn{
         margin: 0;
-        top:-.45em
     }
 
     // Input groups need that 100% width though
@@ -464,44 +467,569 @@ form{
 
 // Placeholders
 ::-webkit-input-placeholder {
-    color: @gris;
-    font-size: .9rem;
+    color: @gris-claro;
+    font-style: italic;
     font-weight: @peso-fino;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-    color: @gris;
-    font-size: .9rem;
+    color: @gris-claro;
+    font-style: italic;
     font-weight: @peso-fino;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-    color: @gris;
-    font-size: .9rem;
+    color: @gris-claro;
+    font-style: italic;
     font-weight: @peso-fino;
 }
 
 :-ms-input-placeholder {  
-    color: @gris;
-    font-size: .9rem;
+    color: @gris-claro;
+    font-style: italic;
     font-weight: @peso-fino;
 }
 
-//  Extra small screen / phone
+// Incorporación 10 marzo 2016: Clases armadas en Personas e[ad]
+
+// Auxiliar
+.sin-margen-izq {
+    margin-left: 0 !important;
+}
+.sin-margen-der {
+    margin-right: 0 !important;
+}
+.sin-margen-sup {
+    margin-top: 0 !important;
+}
+.sin-margen-inf {
+    margin-bottom: 0 !important;
+}
+
+
+
+// Interacción
+.btn-bloque {
+    width: 100%;
+}
+input.btn-accion[type="submit"], input.btn-alerta[type="submit"] {
+    color: #fff !important;
+}
+button.btn-lg, button.btn.btn-lg, input.btn-lg[type="submit"], a.btn.btn-lg {
+    font-size: 21px;
+}
+button.btn-facebook, button.btn-twitter, button.btn-google, .btn-facebook, .btn-twitter, .btn-google, .btn.btn-facebook, .btn.btn-twitter, .btn.btn-google {
+    margin-top: 0;
+    color: #fff;
+    &:hover {
+        color: #fff;
+    }
+    &:active {
+        margin: 0 auto 15px auto;
+    }
+    &.btn-deshabilitado {
+        background-color: #999;
+    }
+}
+button, a {
+    &.btn-deshabilitado {
+        background-color: #999;
+    }
+}
+button.btn-facebook, .btn-facebook, .btn.btn-facebook {
+    background-color: #3b5998;
+    &:hover {
+        background-color: darken(#3b5998, 10%);
+    }
+}
+button.btn-twitter, .btn-twitter, .btn.btn-twitter {
+    background-color: #00aced;
+    &:hover {
+        background-color: darken(#00aced, 10%);
+    }
+}
+button.btn-google, .btn-google, .btn.btn-google {
+    background-color: #dd4b39;
+    &:hover {
+        background-color: darken(#dd4b39, 10%);
+    }
+}
+.btn-accion-hover:hover{
+    color: @blanco !important;
+    text-shadow: 1px 1px 0 fade(@negro, 40%);
+    background-color: @verde !important;
+}
+.btn-alerta-hover:hover{
+    color: @blanco !important;
+    text-shadow: 1px 1px 0 fade(@negro, 40%);
+    background-color:  @rojo-alerta !important;
+}
+input, select {
+    &:focus {
+        box-shadow: 0 2px 0 @gris-auxiliar inset !important;
+        background-color: rgba(255, 255, 255, 0.8) !important;
+    }
+}
+
+.checkbox.bloque{
+    display: block;
+    width: 100%;
+}
+
+.grupo-inputs {
+    display: inline-table;
+    vertical-align: middle;
+    width: 100%;
+    .input {
+        background-color: @gris-auxiliar;
+        top: 0;
+        border-right: none;
+        right: 0;
+        white-space: nowrap;
+        vertical-align: middle;
+        display: table-cell;
+        max-width: 50px !important;
+        width: 50px !important;
+        text-align: center;
+        .icn {
+            display: inline;
+            line-height: 1.20em;
+        }
+    }
+    input, select {
+        float: left;
+        left: -2px;
+        width: 100% !important;
+        display: table-cell;
+        // border-left: none;
+    }
+    select {
+        // border:1px solid red;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -webkit-border-radius: 0px;
+        border-radius: 0px !important;
+        margin-left: 0px !important;
+    }
+}
+
+
+
+.grupo-inputs select:last-child {
+    // border:1px solid blue;
+}
+.grupo-inputs :last-child {
+    margin-left: 0;
+}
+
+form {
+    label {
+        letter-spacing: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        font-family: @sans;
+        text-transform: none;
+        color: @rojo;
+        .fino;
+        .margen-inf-xs;
+    }
+    input {
+        color: @gris !important;
+    }
+    .button {
+        font-size: 16px;
+    }
+    // label {
+    //  // text-align: right;
+    //  display: inline-block;
+    //  margin-right: 0;
+    // }
+    .checkbox label {
+        display: inline-block;
+        text-align: left;
+        span {
+            font-size: 13px;
+            display: inline;
+        }
+    }
+    .control, select {
+        height: 45px !important;
+        margin-bottom: 0;
+    }
+    select {
+        font-size: 17px;
+    }
+}
+label {
+    letter-spacing: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: @sans;
+    text-transform: none;
+    color: @rojo;
+    .fino;
+    .margen-inf-xs;
+}
+input {
+    color: @gris !important;
+}
+.button {
+    font-size: 16px;
+}
+// label {
+//  // text-align: right;
+//  display: inline-block;
+//  margin-right: 0;
+// }
+.checkbox label {
+    display: inline-block;
+    text-align: left;
+    span {
+        font-size: 13px;
+        display: inline;
+    }
+}
+.input, input.control {
+    margin: 0;
+}
+.control, select, .grupo-inputs .input {
+    height: 45px !important;
+    margin-bottom: 0;
+}
+select {
+    font-size: 17px;
+}
+
+.tooltip {
+  position: absolute;
+  z-index: @zindex-tooltip; 
+  display: block;
+  visibility: visible;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.4;
+  .opacity(0);
+
+  a{
+    &:hover{
+      color: @blanco !important;
+    }
+  }
+
+  &.in     { .opacity(@tooltip-opacity); }
+  &.top    { margin-top:  -3px; padding: @tooltip-arrow-width 0; }
+  &.right  { margin-left:  3px; padding: 0 @tooltip-arrow-width; }
+  &.bottom { margin-top:   3px; padding: @tooltip-arrow-width 0; }
+  &.left   { margin-left: -3px; padding: 0 @tooltip-arrow-width; }
+}
+
+.tooltip-inner {
+  max-width: @tooltip-max-width;
+  padding: 3px 8px;
+  color: @tooltip-color;
+  text-align: center;
+  font-family: @sans;
+  text-decoration: none;
+  background-color: @tooltip-bg;
+  border-radius: @border-radius-base;
+}
+
+.tooltip-imagenes{
+
+    .tooltip {
+      font-size: @cuerpo * 0.8;
+    }
+
+    .tooltip-inner {
+      color: @negro;
+      background-color: @masking;  
+      border-radius: 1px;
+    }
+
+    .tooltip {
+      &.top .tooltip-arrow {
+        border-top-color: @gris-blanco;
+      }
+      &.top-left .tooltip-arrow {
+        border-top-color: @gris-blanco;
+      }
+      &.top-right .tooltip-arrow {
+        border-top-color: @gris-blanco;
+      }
+      &.right .tooltip-arrow {
+        border-right-color: @gris-blanco;
+      }
+      &.left .tooltip-arrow {
+        border-left-color: @gris-blanco;
+      }
+      &.bottom .tooltip-arrow {
+        border-bottom-color: @gris-blanco;
+      }
+      &.bottom-left .tooltip-arrow {
+        border-bottom-color: @gris-blanco;
+      }
+      &.bottom-right .tooltip-arrow {
+        border-bottom-color: @gris-blanco;
+      }
+    }
+}
+
+.tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+}
+
+.modal.helper {
+    .modal-dialog {
+        width: 100vw;
+        top: 20%;
+    }
+    .modal-content {
+        border-radius: 0;
+    }
+    .modal-body {
+        display: -webkit-flex;
+        display: flex;
+        margin: 40px auto auto auto;
+        max-width: 950px;
+        h2, h3, i {
+            margin: auto;
+        }
+        i {
+            margin-right: 20px;
+        }
+    }
+    &.error {
+        h2, h3, i{
+            color: @rojo;
+        }
+    }
+    &.exito {
+        h2, h3, i{
+            color: @verde;
+        }
+    }
+}
+
+.bloque-perfil {
+    text-align: center;
+    .cabecera {
+        width: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+        max-width: 400px;
+        margin: 20px auto;
+        img {
+            width: 100%;
+        }
+    }
+}
+.paginacion {
+    text-align: center;
+    li {
+        margin-right: 5px;
+        display: inline-block;
+        a {
+            padding: 5px 10px;
+        }
+    }
+    .activo {
+        background-color: @rojo;
+        color: #fff;
+        a {
+            color: #fff !important;
+        }
+        &:hover a {
+            background-color: @rojo;
+            color: #fff !important;
+        }
+    }
+}
+
+// Alertas
+
+.alerta {
+    display: none;
+    position: relative;
+    padding: 20px;
+  // margin-bottom: @line-height-computed;
+    border: 1px solid transparent;
+    border-radius: @radio;
+
+    // Headings for larger alerts
+    h4 {
+    margin-top: 0;
+    // Specified for the h4 to prevent conflicts of changing @headings-color
+    color: inherit;
+    }
+
+    // Provide class for links that match alerts
+    .alert-link {
+
+    }
+
+    // Improve alignment and spacing of inner content
+    > p,
+    > ul {
+    margin-bottom: 0;
+    }
+
+    > p + p {
+    margin-top: 5px;
+    }
+}
+
+// Dismissible alerts
+//
+// Expand the right padding and account for the close button's positioning.
+
+.alert-dismissable, // The misspelled .alert-dismissable was deprecated in 3.2.0.
+.alert-dismissible {
+  padding-right: 40px;
+
+  // Adjust close link position
+  .close {
+    position: absolute;
+    top: -2px;
+    right: 20px;
+    color: inherit;
+    background-color: transparent;
+    // border: none;
+  }
+}
+
+.alerta-precaucion {
+    background-color: @masking;
+    color: darken(@masking, 50%);
+    border-color: darken(@masking, 50%);
+}
+.alerta-accion {
+    background-color: @verde;
+    color: #fff;
+    border-color: darken(@verde, 50%);
+}
+.alerta-error {
+    background-color: @rojo-alerta;
+    color: #fff;
+    border-color: darken(@rojo-alerta, 50%);
+}
+
+
+// --------------------------------------------------
+// diseño de utilidad responsive
+
+  //  Extra-small screen / Phones
 @media(max-width: @screen-xs-max){
+    form {
+        label {
+            font-size: 11px;
+        }
+    }
+    .nav-icn {
+        visibility: hidden;
+    }
 }
 
 // Small screen / tablet
 @media (min-width: @screen-sm) and (max-width: @screen-sm-max){
+    form {
+        label {
+            font-size: 12px;
+        }
+    }
+    table, .tabla-personas {
+        th {
+            font-size: 14px;
+        }
+
+        tbody {
+            td {
+                font-size: 12px;
+                a, a.btn {
+                    font-size: 12px;
+                }
+            }
+        }
+        td {
+            font-size: 12px;
+        }
+
+    }
 }
 
 // Medium screen / desktop
 @media (min-width: @screen-md) and (max-width: @screen-md-max){
+    form {
+        label {
+            font-size: 14px;
+        }
+    }
+
+    table, .tabla-personas {
+        th {
+            font-size: 16px;
+        }
+        tr  {
+            padding: 10px;
+        }
+        tbody {
+            td {
+                font-size: 14px;
+                padding: 5px 5px;
+                a, a.btn {
+                    font-size: 14px;
+                    padding: 5px;
+                }
+            }
+        }
+        td {
+            font-size: 14px;
+        }
+
+    }
+
 }
 
 // Large screen / wide desktop
 @media (min-width: @screen-lg){
+    form {
+        label {
+            font-size: 16px;
+        }
+        input, .control, select {
+            font-size: 19px;
+        }
+    }
 
+    table, .tabla-personas {
+        th {
+            font-size: 20px;
+        }
+        tr  {
+            padding: 10px;
+        }
+        tbody {
+            td {
+                font-size: 17px;
+                padding: 5px 5px;
+                a, a.btn {
+                    font-size: 17px;
+                    padding: 5px;
+                }
+            }
+        }
+        td {
+            font-size: 17px;
+        }
+
+    }
+
+    .nav-icn {
+        visibility: visible;
+    }
     //  Botones, formularios
     button,
     button.btn,
@@ -531,4 +1059,5 @@ form{
             }
         }
     }
+
 }
